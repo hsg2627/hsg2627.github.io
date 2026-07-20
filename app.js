@@ -42,6 +42,7 @@ const QUIZ_DATA = [
     category: "Main Idea",
     tag: "Ý CHÍNH",
     text: `Hurricanes generally occur in the North Atlantic from May through November, with the peak of the hurricane season in September; only rarely will they occur from December through April in that part of the ocean. The main reason for the occurrence of hurricanes during this period is that the temperature on the water’s surface is at its warmest and the humidity of the air is at its highest.
+
 Of the tropical storms that occur each year in the North Atlantic, only about five, on the average are powerful enough to be called hurricanes. To be classified as a hurricane, a tropical storm must have winds reaching speeds of at least 117 kilometers per hour, but the winds are often much higher than that; the winds of intense hurricanes can easily surpass 240 kilometers per hour.`,
     questions: [
       {
@@ -78,6 +79,7 @@ Of the tropical storms that occur each year in the North Atlantic, only about fi
     category: "Vocabulary",
     tag: "TỪ VỰNG",
     text: `The oxidation of exhaust gases is one of the primary sources of the world’s pollution. The brown haze that is poised over some of the world’s largest cities is properly called photochemical smog; it results from chemical reactions that take place in the air, using the energy of sunlight. The production of smog begins when gases are created in the cylinders of vehicle engines. It is there that oxygen and nitrogen gas combine as the fuel burns to form nitric oxide (NO), a colorless gas. The nitric oxide is forced out into the air through the vehicle tailpipe along with other gases.
+
 When the gas reaches the air, it comes into contact with available oxygen from the atmosphere and combines with the oxygen to produce nitrogen dioxide (NO2), which is a gas with a brownish hue. This nitrogen dioxide plays a role in the formation of acid rain in wetter or more humid climates and tends to decompose back into nitric oxide as it releases an oxygen atom...`,
     questions: [
       {
@@ -257,7 +259,7 @@ When the gas reaches the air, it comes into contact with available oxygen from t
     title: "Passage 7: Arctic Camouflage Strategies",
     category: "Paraphrase",
     tag: "CÁC DẠNG KHÁC",
-    text: `Camouflage is one of the most effective ways for animals to avoid attack in the treeless Arctic. [A] However, the summer and winter landscapes there are so diverse that a single protective coloring scheme would, of course, prove ineffective in one season or the other. [B] Thus, many of the inhabitants of the Arctic tundra change their camouflage twice a year. [C] The arctic fox is a clear-cut example of this phenomenon... [D]`,
+    text: `Camouflage is one of the most effective ways for animals to avoid attack in the treeless Arctic. However, the summer and winter landscapes there are so diverse that a single protective coloring scheme would, of course, prove ineffective in one season or the other. Thus, many of the inhabitants of the Arctic tundra change their camouflage twice a year. The arctic fox is a clear-cut example of this phenomenon; it sports a brownish-gray coat in the summer which then turns white as cold weather sets in...`,
     questions: [
       {
         id: "q24",
@@ -350,7 +352,7 @@ function renderQuiz() {
     ? QUIZ_DATA 
     : QUIZ_DATA.filter(item => item.category === currentFilter);
 
-  filteredData.forEach((passageData, pIndex) => {
+  filteredData.forEach((passageData) => {
     const pCard = document.createElement("div");
     pCard.className = "passage-card";
 
@@ -395,13 +397,22 @@ function renderQuiz() {
       `;
     });
 
+    // Parallel 2-column Layout: Left side passage, Right side questions
     pCard.innerHTML = `
       <div class="passage-header">
         <h3 class="passage-title">${passageData.title}</h3>
         <span class="passage-tag">${passageData.tag}</span>
       </div>
-      <div class="passage-body">${passageData.text}</div>
-      <div class="questions-list">${questionsHtml}</div>
+      <div class="passage-split-grid">
+        <div class="passage-left-pane">
+          <div class="pane-label">📄 Reading Passage</div>
+          <div class="passage-body">${passageData.text}</div>
+        </div>
+        <div class="passage-right-pane">
+          <div class="pane-label">❓ Practice Questions</div>
+          <div class="questions-list">${questionsHtml}</div>
+        </div>
+      </div>
     `;
 
     quizContainer.appendChild(pCard);
