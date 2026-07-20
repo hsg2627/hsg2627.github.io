@@ -24,6 +24,7 @@
       </div>
       <ul class="nav-links">
         <li><button class="nav-btn active" data-tab="overview">Overview</button></li>
+        <li><button class="nav-btn" data-tab="skills">Reading Comprehension Skills</button></li>
         <li><button class="nav-btn" data-tab="strategies">5 Key Strategies</button></li>
         <li><button class="nav-btn" data-tab="quiz">Practice Quiz</button></li>
         <li><button class="nav-btn" data-tab="vocab">Vocab Bank</button></li>
@@ -67,6 +68,87 @@
         <p class="section-desc">Understand the exam structure and master systematic techniques to eliminate distractor traps.</p>
       </div>
 
+      <!-- Reading Comprehension Skills Box -->
+      <div class="skills-box-container">
+        <div class="skills-box-header">
+          <div class="skills-box-badge">📚 CORE EXAM MODULES</div>
+          <h2 class="skills-box-title">Reading Comprehension Skills</h2>
+          <p class="skills-box-desc">Nội dung bài học đã deploy được phân loại thành các ô kỹ năng đọc hiểu chuyên sâu kèm theo bài đọc và câu hỏi thực hành tương ứng.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-box-card">
+            <div class="skill-card-top">
+              <span class="skill-badge main-idea-badge">Category: Main Idea</span>
+              <span class="skill-level">CEFR B1-C1</span>
+            </div>
+            <h3 class="skill-card-title">🎯 Main Idea & Subject Identification</h3>
+            <p class="skill-card-desc">Xác định ý chính, chủ đề bao quát và tiêu đề phù hợp nhất cho đoạn văn mà không rơi vào bẫy quá hẹp (Too Narrow) hoặc quá rộng.</p>
+            <div class="skill-meta">
+              <span>📄 2 Passages</span>
+              <span>❓ 4 Practice Questions</span>
+            </div>
+            <button class="skill-action-btn" onclick="filterAndSwitchQuiz('Main Idea')">Thực hành Kỹ năng này →</button>
+          </div>
+
+          <div class="skill-box-card">
+            <div class="skill-card-top">
+              <span class="skill-badge vocab-badge">Category: Vocabulary</span>
+              <span class="skill-level">CEFR B1-C1</span>
+            </div>
+            <h3 class="skill-card-title">🔤 Vocabulary & Pronoun Reference</h3>
+            <p class="skill-card-desc">Đoán nghĩa từ vựng trong ngữ cảnh học thuật và quy chiếu đại từ (it, they, those, this process) chính xác trong văn bản.</p>
+            <div class="skill-meta">
+              <span>📄 2 Passages</span>
+              <span>❓ 4 Practice Questions</span>
+            </div>
+            <button class="skill-action-btn" onclick="filterAndSwitchQuiz('Vocabulary')">Thực hành Kỹ năng này →</button>
+          </div>
+
+          <div class="skill-box-card">
+            <div class="skill-card-top">
+              <span class="skill-badge detail-badge">Category: Detail</span>
+              <span class="skill-level">CEFR B1-B2</span>
+            </div>
+            <h3 class="skill-card-title">🔎 Factual Details & EXCEPT Questions</h3>
+            <p class="skill-card-desc">Dò tìm từ khóa (Scan & Skim) để tìm chi tiết thực tế và loại trừ đáp án sai hoặc không được nhắc tới trong bài.</p>
+            <div class="skill-meta">
+              <span>📄 1 Passage</span>
+              <span>❓ 2 Practice Questions</span>
+            </div>
+            <button class="skill-action-btn" onclick="filterAndSwitchQuiz('Detail')">Thực hành Kỹ năng này →</button>
+          </div>
+
+          <div class="skill-box-card">
+            <div class="skill-card-top">
+              <span class="skill-badge inference-badge">Category: Inference</span>
+              <span class="skill-level">CEFR B2-C1</span>
+            </div>
+            <h3 class="skill-card-title">💡 Logical Inferences & Author's Purpose</h3>
+            <p class="skill-card-desc">Rút ra suy luận logic 100% dựa trên căn cứ văn bản và giải mã mục đích viết (Why does the author mention X?) của tác giả.</p>
+            <div class="skill-meta">
+              <span>📄 1 Passage</span>
+              <span>❓ 2 Practice Questions</span>
+            </div>
+            <button class="skill-action-btn" onclick="filterAndSwitchQuiz('Inference')">Thực hành Kỹ năng này →</button>
+          </div>
+
+          <div class="skill-box-card">
+            <div class="skill-card-top">
+              <span class="skill-badge paraphrase-badge">Category: Paraphrase</span>
+              <span class="skill-level">CEFR B2-C1</span>
+            </div>
+            <h3 class="skill-card-title">🧩 Sentence Insertion & Paraphrasing</h3>
+            <p class="skill-card-desc">Nắm vững liên kết câu (Transition signals, reference anchors) để chèn câu đúng vị trí và chọn câu diễn đạt lại chuẩn xác nhất.</p>
+            <div class="skill-meta">
+              <span>📄 1 Passage</span>
+              <span>❓ 1 Practice Question</span>
+            </div>
+            <button class="skill-action-btn" onclick="filterAndSwitchQuiz('Paraphrase')">Thực hành Kỹ năng này →</button>
+          </div>
+        </div>
+      </div>
+
       <div class="strategies-grid">
         <div class="strategy-card">
           <div class="strategy-icon">🎯</div>
@@ -88,6 +170,93 @@
             <li>Skim topic sentences first before reading full detail</li>
             <li>Scan specifically for names, dates, and technical keywords</li>
           </ul>
+    </section>
+
+    <!-- Tab: Reading Comprehension Skills -->
+    <section id="skills" class="tab-content">
+      <div class="section-header">
+        <h2 class="section-title">Reading Comprehension Skills</h2>
+        <p class="section-desc">Phân loại chi tiết toàn bộ các ô kỹ năng đọc hiểu VSTEP B1-C1 đã deploy.</p>
+      </div>
+
+      <!-- Reading Comprehension Skills Box -->
+      <div class="skills-box-container">
+        <div class="skills-box-header">
+          <div class="skills-box-badge">📚 CORE EXAM MODULES</div>
+          <h2 class="skills-box-title">Reading Comprehension Skills</h2>
+          <p class="skills-box-desc">Nội dung bài học đã deploy được phân loại thành các ô kỹ năng đọc hiểu chuyên sâu kèm theo bài đọc và câu hỏi thực hành tương ứng.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-box-card">
+            <div class="skill-card-top">
+              <span class="skill-badge main-idea-badge">Category: Main Idea</span>
+              <span class="skill-level">CEFR B1-C1</span>
+            </div>
+            <h3 class="skill-card-title">🎯 Main Idea & Subject Identification</h3>
+            <p class="skill-card-desc">Xác định ý chính, chủ đề bao quát và tiêu đề phù hợp nhất cho đoạn văn mà không rơi vào bẫy quá hẹp (Too Narrow) hoặc quá rộng.</p>
+            <div class="skill-meta">
+              <span>📄 2 Passages</span>
+              <span>❓ 4 Practice Questions</span>
+            </div>
+            <button class="skill-action-btn" onclick="filterAndSwitchQuiz('Main Idea')">Thực hành Kỹ năng này →</button>
+          </div>
+
+          <div class="skill-box-card">
+            <div class="skill-card-top">
+              <span class="skill-badge vocab-badge">Category: Vocabulary</span>
+              <span class="skill-level">CEFR B1-C1</span>
+            </div>
+            <h3 class="skill-card-title">🔤 Vocabulary & Pronoun Reference</h3>
+            <p class="skill-card-desc">Đoán nghĩa từ vựng trong ngữ cảnh học thuật và quy chiếu đại từ (it, they, those, this process) chính xác trong văn bản.</p>
+            <div class="skill-meta">
+              <span>📄 2 Passages</span>
+              <span>❓ 4 Practice Questions</span>
+            </div>
+            <button class="skill-action-btn" onclick="filterAndSwitchQuiz('Vocabulary')">Thực hành Kỹ năng này →</button>
+          </div>
+
+          <div class="skill-box-card">
+            <div class="skill-card-top">
+              <span class="skill-badge detail-badge">Category: Detail</span>
+              <span class="skill-level">CEFR B1-B2</span>
+            </div>
+            <h3 class="skill-card-title">🔎 Factual Details & EXCEPT Questions</h3>
+            <p class="skill-card-desc">Dò tìm từ khóa (Scan & Skim) để tìm chi tiết thực tế và loại trừ đáp án sai hoặc không được nhắc tới trong bài.</p>
+            <div class="skill-meta">
+              <span>📄 1 Passage</span>
+              <span>❓ 2 Practice Questions</span>
+            </div>
+            <button class="skill-action-btn" onclick="filterAndSwitchQuiz('Detail')">Thực hành Kỹ năng này →</button>
+          </div>
+
+          <div class="skill-box-card">
+            <div class="skill-card-top">
+              <span class="skill-badge inference-badge">Category: Inference</span>
+              <span class="skill-level">CEFR B2-C1</span>
+            </div>
+            <h3 class="skill-card-title">💡 Logical Inferences & Author's Purpose</h3>
+            <p class="skill-card-desc">Rút ra suy luận logic 100% dựa trên căn cứ văn bản và giải mã mục đích viết (Why does the author mention X?) của tác giả.</p>
+            <div class="skill-meta">
+              <span>📄 1 Passage</span>
+              <span>❓ 2 Practice Questions</span>
+            </div>
+            <button class="skill-action-btn" onclick="filterAndSwitchQuiz('Inference')">Thực hành Kỹ năng này →</button>
+          </div>
+
+          <div class="skill-box-card">
+            <div class="skill-card-top">
+              <span class="skill-badge paraphrase-badge">Category: Paraphrase</span>
+              <span class="skill-level">CEFR B2-C1</span>
+            </div>
+            <h3 class="skill-card-title">🧩 Sentence Insertion & Paraphrasing</h3>
+            <p class="skill-card-desc">Nắm vững liên kết câu (Transition signals, reference anchors) để chèn câu đúng vị trí và chọn câu diễn đạt lại chuẩn xác nhất.</p>
+            <div class="skill-meta">
+              <span>📄 1 Passage</span>
+              <span>❓ 1 Practice Question</span>
+            </div>
+            <button class="skill-action-btn" onclick="filterAndSwitchQuiz('Paraphrase')">Thực hành Kỹ năng này →</button>
+          </div>
         </div>
       </div>
     </section>

@@ -473,3 +473,36 @@ function initVocabulary() {
 
   renderVocab();
 }
+
+// Global Helper to filter quiz category & switch tab from Reading Comprehension Skills cards
+function filterAndSwitchQuiz(category) {
+  const navBtns = document.querySelectorAll(".nav-btn");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  navBtns.forEach(b => b.classList.remove("active"));
+  tabContents.forEach(c => c.classList.remove("active"));
+
+  const quizNavBtn = document.querySelector('.nav-btn[data-tab="quiz"]');
+  const quizTabContent = document.getElementById("quiz");
+
+  if (quizNavBtn && quizTabContent) {
+    quizNavBtn.classList.add("active");
+    quizTabContent.classList.add("active");
+    currentTab = "quiz";
+  }
+
+  const filterChips = document.querySelectorAll(".filter-chip");
+  filterChips.forEach(chip => {
+    if (chip.getAttribute("data-filter") === category) {
+      chip.classList.add("active");
+    } else {
+      chip.classList.remove("active");
+    }
+  });
+
+  currentFilter = category;
+  renderQuiz();
+
+  quizTabContent.scrollIntoView({ behavior: 'smooth' });
+}
+
