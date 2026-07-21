@@ -299,7 +299,8 @@ const VOCABULARY_DATA = [
 ];
 
 // App State
-let currentTab = "overview";
+let currentTab = "home";
+let currentSubTab = "rc-overview";
 let currentFilter = "All";
 let userAnswers = {};
 let score = 0;
@@ -307,11 +308,12 @@ let score = 0;
 // DOM Initialization
 document.addEventListener("DOMContentLoaded", () => {
   initNavigation();
+  initSubTabs();
   initQuiz();
   initVocabulary();
 });
 
-// Navigation Handler
+// Main Tab Navigation (Home / Reading Comprehension / Listening / Collocations / Dashboard)
 function initNavigation() {
   const navBtns = document.querySelectorAll(".nav-btn");
   const tabContents = document.querySelectorAll(".tab-content");
@@ -323,10 +325,110 @@ function initNavigation() {
       tabContents.forEach(c => c.classList.remove("active"));
 
       btn.classList.add("active");
-      document.getElementById(tabId).classList.add("active");
+      const targetSec = document.getElementById(tabId);
+      if (targetSec) targetSec.classList.add("active");
       currentTab = tabId;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // Track GA4 page view tab
+      trackGAEvent('page_view_tab', { tab_id: tabId });
+
+      // Render dashboard if active
+      if (tabId === 'learning-dashboard') {
+        renderLearningDashboard();
+      }
     });
   });
+}
+
+// Sub-tab Navigation inside skill modules (Reading Comprehension / Listening Skills)
+function initSubTabs() {
+  const containers = document.querySelectorAll(".tab-content");
+  containers.forEach(container => {
+    const subTabs = container.querySelectorAll(".sub-tab");
+    const subContents = container.querySelectorAll(".sub-tab-content");
+
+    subTabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        const subTabId = tab.getAttribute("data-subtab");
+        subTabs.forEach(t => t.classList.remove("active"));
+        subContents.forEach(c => c.classList.remove("active"));
+
+        tab.classList.add("active");
+        const targetSub = container.querySelector("#" + subTabId);
+        if (targetSub) {
+          targetSub.classList.add("active");
+        }
+        currentSubTab = subTabId;
+      });
+    });
+  });
+}
+
+// Go back to Home tab
+function goHome() {
+  const navBtns = document.querySelectorAll(".nav-btn");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  navBtns.forEach(b => b.classList.remove("active"));
+  tabContents.forEach(c => c.classList.remove("active"));
+
+  const homeBtn = document.querySelector('.nav-btn[data-tab="home"]');
+  const homeTab = document.getElementById("home");
+
+  if (homeBtn) homeBtn.classList.add("active");
+  if (homeTab) homeTab.classList.add("active");
+  currentTab = "home";
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Open a skill tab (e.g., reading-comprehension) from homepage card
+function openSkillTab(tabId) {
+  const navBtns = document.querySelectorAll(".nav-btn");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  navBtns.forEach(b => b.classList.remove("active"));
+  tabContents.forEach(c => c.classList.remove("active"));
+
+  const targetBtn = document.querySelector(`.nav-btn[data-tab="${tabId}"]`);
+  const targetTab = document.getElementById(tabId);
+
+  if (targetBtn) targetBtn.classList.add("active");
+  if (targetTab) {
+    targetTab.classList.add("active");
+    currentTab = tabId;
+  }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Switch to quiz sub-tab and filter by category (called from skill cards)
+function filterQuizCategory(category) {
+  // Switch to rc-quiz sub-tab
+  const subTabs = document.querySelectorAll(".sub-tab");
+  const subContents = document.querySelectorAll(".sub-tab-content");
+
+  subTabs.forEach(t => t.classList.remove("active"));
+  subContents.forEach(c => c.classList.remove("active"));
+
+  const quizSubTab = document.querySelector('.sub-tab[data-subtab="rc-quiz"]');
+  const quizContent = document.getElementById("rc-quiz");
+
+  if (quizSubTab) quizSubTab.classList.add("active");
+  if (quizContent) quizContent.classList.add("active");
+  currentSubTab = "rc-quiz";
+
+  // Apply filter
+  const filterChips = document.querySelectorAll(".filter-chip");
+  filterChips.forEach(chip => {
+    if (chip.getAttribute("data-filter") === category) {
+      chip.classList.add("active");
+    } else {
+      chip.classList.remove("active");
+    }
+  });
+
+  currentFilter = category;
+  renderQuiz();
 }
 
 // Quiz Render & Handler
@@ -397,7 +499,6 @@ function renderQuiz() {
       `;
     });
 
-    // Parallel 2-column Layout: Left side passage, Right side questions
     pCard.innerHTML = `
       <div class="passage-header">
         <h3 class="passage-title">${passageData.title}</h3>
@@ -422,13 +523,25 @@ function renderQuiz() {
 }
 
 function handleOptionSelect(qId, selectedIdx, correctIdx) {
-  if (userAnswers[qId] !== undefined) return; // Prevent re-answer
+  if (userAnswers[qId] !== undefined) return;
 
   userAnswers[qId] = selectedIdx;
-  if (selectedIdx === correctIdx) {
+  const isCorrect = selectedIdx === correctIdx;
+  if (isCorrect) {
     score++;
   }
 
+  // Find category for this question
+  let cat = currentFilter !== 'All' ? currentFilter : 'Main Idea';
+  if (typeof QUIZ_DATA !== 'undefined') {
+    QUIZ_DATA.forEach(p => {
+      p.questions.forEach(q => {
+        if (q.id === qId) cat = q.category;
+      });
+    });
+  }
+
+  recordQuizAttempt('Reading', cat, isCorrect ? 1 : 0, 1);
   renderQuiz();
 }
 
@@ -474,35 +587,1195 @@ function initVocabulary() {
   renderVocab();
 }
 
-// Global Helper to filter quiz category & switch tab from Reading Comprehension Skills cards
-function filterAndSwitchQuiz(category) {
-  const navBtns = document.querySelectorAll(".nav-btn");
-  const tabContents = document.querySelectorAll(".tab-content");
+// ==================== COLLOCATIONS MODULE LOGIC ====================
+let collocCurrentPage = 1;
+const collocItemsPerPage = 24;
+let collocSearchQuery = "";
+let collocLevelFilter = "All";
+let collocUnitFilter = "All";
+let collocFilteredList = [];
+let collocFlashcardIndex = 0;
+let collocFlashcardDeck = [];
 
-  navBtns.forEach(b => b.classList.remove("active"));
-  tabContents.forEach(c => c.classList.remove("active"));
+let sufferQuizItems = [];
+let sufferUserAnswers = {};
+let sufferScore = 0;
 
-  const quizNavBtn = document.querySelector('.nav-btn[data-tab="quiz"]');
-  const quizTabContent = document.getElementById("quiz");
+function initCollocations() {
+  if (typeof COLLOCATIONS_DATA === 'undefined') return;
 
-  if (quizNavBtn && quizTabContent) {
-    quizNavBtn.classList.add("active");
-    quizTabContent.classList.add("active");
-    currentTab = "quiz";
+  collocFilteredList = [...COLLOCATIONS_DATA];
+  collocFlashcardDeck = [...COLLOCATIONS_DATA];
+
+  const searchInput = document.getElementById("colloc-search");
+  const unitSelect = document.getElementById("colloc-unit-select");
+  const filterChips = document.querySelectorAll(".colloc-filter-chip");
+  const prevBtn = document.getElementById("colloc-prev-page");
+  const nextBtn = document.getElementById("colloc-next-page");
+
+  // Populate Unit selector dropdown if COLLOCATIONS_UNITS is available
+  if (unitSelect && typeof COLLOCATIONS_UNITS !== 'undefined') {
+    unitSelect.innerHTML = '<option value="All">📚 Tất cả 101 Units (Sub-decks)</option>';
+    COLLOCATIONS_UNITS.forEach(unitName => {
+      const opt = document.createElement("option");
+      opt.value = unitName;
+      opt.textContent = `Unit: ${unitName}`;
+      unitSelect.appendChild(opt);
+    });
+
+    unitSelect.addEventListener("change", (e) => {
+      collocUnitFilter = e.target.value;
+      collocCurrentPage = 1;
+      applyCollocFilters();
+    });
   }
 
-  const filterChips = document.querySelectorAll(".filter-chip");
+  if (searchInput) {
+    searchInput.addEventListener("input", (e) => {
+      collocSearchQuery = e.target.value.toLowerCase().trim();
+      collocCurrentPage = 1;
+      applyCollocFilters();
+    });
+  }
+
   filterChips.forEach(chip => {
-    if (chip.getAttribute("data-filter") === category) {
+    chip.addEventListener("click", () => {
+      filterChips.forEach(c => c.classList.remove("active"));
       chip.classList.add("active");
-    } else {
-      chip.classList.remove("active");
-    }
+      collocLevelFilter = chip.getAttribute("data-level");
+      collocCurrentPage = 1;
+      applyCollocFilters();
+    });
   });
 
-  currentFilter = category;
-  renderQuiz();
+  if (prevBtn) {
+    prevBtn.addEventListener("click", () => {
+      if (collocCurrentPage > 1) {
+        collocCurrentPage--;
+        renderCollocationsPage();
+      }
+    });
+  }
 
-  quizTabContent.scrollIntoView({ behavior: 'smooth' });
+  if (nextBtn) {
+    nextBtn.addEventListener("click", () => {
+      const maxPage = Math.ceil(collocFilteredList.length / collocItemsPerPage);
+      if (collocCurrentPage < maxPage) {
+        collocCurrentPage++;
+        renderCollocationsPage();
+      }
+    });
+  }
+
+  renderCollocationsPage();
+  updateFlashcardUI();
+  generateSufferQuizRound();
 }
+
+function applyCollocFilters() {
+  if (typeof COLLOCATIONS_DATA === 'undefined') return;
+
+  collocFilteredList = COLLOCATIONS_DATA.filter(item => {
+    const matchesSearch = !collocSearchQuery || 
+      item.term.toLowerCase().includes(collocSearchQuery) ||
+      item.vn.toLowerCase().includes(collocSearchQuery) ||
+      item.def.toLowerCase().includes(collocSearchQuery) ||
+      (item.pos && item.pos.toLowerCase().includes(collocSearchQuery));
+
+    const matchesLevel = collocLevelFilter === "All" || item.level === collocLevelFilter;
+    const matchesUnit = collocUnitFilter === "All" || item.unit === collocUnitFilter;
+
+    return matchesSearch && matchesLevel && matchesUnit;
+  });
+
+  renderCollocationsPage();
+}
+
+// ==================== SUFFER QUIZ MODE (ANKI CLOZE TEST) ====================
+function generateSufferQuizRound() {
+  if (typeof COLLOCATIONS_DATA === 'undefined') return;
+
+  // Filter items that have cloze or examples
+  const eligible = COLLOCATIONS_DATA.filter(item => item.cloze1 || item.ex1);
+  if (eligible.length === 0) return;
+
+  // Pick 10 random items
+  sufferQuizItems = [...eligible].sort(() => Math.random() - 0.5).slice(0, 10);
+  sufferUserAnswers = {};
+  sufferScore = 0;
+
+  renderSufferQuiz();
+}
+
+function renderSufferQuiz() {
+  const container = document.getElementById("suffer-quiz-container");
+  const scoreDisplay = document.getElementById("suffer-score-display");
+  if (!container) return;
+
+  container.innerHTML = "";
+
+  sufferQuizItems.forEach((item, qIdx) => {
+    const qCard = document.createElement("div");
+    qCard.className = "passage-card";
+    qCard.style.marginBottom = "1.5rem";
+
+    const isAnswered = sufferUserAnswers[item.id] !== undefined;
+    const selectedIdx = sufferUserAnswers[item.id];
+
+    // Generate 4 options (1 correct term + 3 distractors from Google Sheet dataset)
+    if (!item.quizOptions) {
+      let optionWords = [];
+      if (Array.isArray(item.distractors) && item.distractors.length >= 3) {
+        optionWords = item.distractors.slice(0, 3).map(d => d.word);
+      } else {
+        optionWords = COLLOCATIONS_DATA
+          .filter(d => d.term !== item.term)
+          .sort(() => Math.random() - 0.5)
+          .slice(0, 3)
+          .map(d => d.term);
+      }
+      
+      const allOpts = [item.term, ...optionWords].sort(() => Math.random() - 0.5);
+      item.quizOptions = allOpts;
+      item.correctIdx = allOpts.indexOf(item.term);
+    }
+
+    let optsHtml = "";
+    item.quizOptions.forEach((optTerm, oIdx) => {
+      let btnClass = "option-btn";
+      if (isAnswered) {
+        if (oIdx === item.correctIdx) btnClass += " show-correct";
+        if (selectedIdx === oIdx) {
+          btnClass += oIdx === item.correctIdx ? " selected-correct" : " selected-incorrect";
+        }
+      }
+      optsHtml += `
+        <button class="${btnClass}" onclick="handleSufferAnswer('${item.id}', ${oIdx}, ${item.correctIdx})">
+          <span>${optTerm}</span>
+          ${isAnswered && oIdx === item.correctIdx ? '<span>✓</span>' : ''}
+          ${isAnswered && selectedIdx === oIdx && oIdx !== item.correctIdx ? '<span>✗</span>' : ''}
+        </button>
+      `;
+    });
+
+    const clozeText = item.cloze1 ? item.cloze1 : item.ex1.replace(item.term, '_____________');
+
+    qCard.innerHTML = `
+      <div class="passage-header">
+        <h4 style="font-size: 1.1rem; color: var(--brand-teal-dark); font-weight: 800;">Question ${qIdx + 1} of 10</h4>
+        <span class="level-badge level-${item.level.toLowerCase()}">${item.level} | ${item.unit || 'Unit'}</span>
+      </div>
+      <div style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.25rem; color: var(--text-primary); font-weight: 500;">
+        ${clozeText}
+      </div>
+      <div class="options-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+        ${optsHtml}
+      </div>
+      <div class="explanation-box ${isAnswered ? 'visible' : ''}">
+        <div class="explanation-header">💡 Đáp án chuẩn: ${item.term} ${item.ipa ? `(${item.ipa})` : ''}</div>
+        <div style="margin-bottom: 0.35rem;"><strong>🇻🇳 Nghĩa Tiếng Việt:</strong> ${item.vn}</div>
+        ${item.def ? `<div style="margin-bottom: 0.35rem;"><strong>Định nghĩa Tiếng Anh:</strong> ${item.def}</div>` : ''}
+        ${item.ex1_vn ? `<div class="vn-translation">Dịch nghĩa câu ví dụ: ${item.ex1_vn}</div>` : ''}
+      </div>
+    `;
+
+    container.appendChild(qCard);
+  });
+
+  if (scoreDisplay) {
+    const totalAnswered = Object.keys(sufferUserAnswers).length;
+    scoreDisplay.textContent = `${sufferScore} / 10 Đúng (${totalAnswered} Đã trả lời)`;
+  }
+}
+
+function handleSufferAnswer(itemId, selectedIdx, correctIdx) {
+  if (sufferUserAnswers[itemId] !== undefined) return;
+
+  sufferUserAnswers[itemId] = selectedIdx;
+  const isCorrect = selectedIdx === correctIdx;
+  if (isCorrect) {
+    sufferScore++;
+  }
+
+  recordQuizAttempt('Collocations', 'Suffer Quiz', isCorrect ? 1 : 0, 1);
+  renderSufferQuiz();
+}
+
+function renderCollocationsPage() {
+  const grid = document.getElementById("colloc-grid");
+  const pageInfo = document.getElementById("colloc-page-info");
+  const prevBtn = document.getElementById("colloc-prev-page");
+  const nextBtn = document.getElementById("colloc-next-page");
+
+  if (!grid) return;
+
+  grid.innerHTML = "";
+
+  const totalItems = collocFilteredList.length;
+  const maxPage = Math.ceil(totalItems / collocItemsPerPage) || 1;
+  if (collocCurrentPage > maxPage) collocCurrentPage = maxPage;
+
+  const startIdx = (collocCurrentPage - 1) * collocItemsPerPage;
+  const pageItems = collocFilteredList.slice(startIdx, startIdx + collocItemsPerPage);
+
+  if (pageItems.length === 0) {
+    grid.innerHTML = `
+      <div style="grid-column: 1 / -1; text-align: center; padding: 3rem 1rem; color: var(--text-muted);">
+        <h3>🔍 Không tìm thấy cụm Collocation phù hợp</h3>
+        <p>Vui lòng thử từ khóa tìm kiếm hoặc bộ lọc khác.</p>
+      </div>
+    `;
+  } else {
+    pageItems.forEach(item => {
+      const card = document.createElement("div");
+      card.className = "colloc-card";
+
+      let levelClass = "level-b2";
+      if (item.level === "B1") levelClass = "level-b1";
+      if (item.level === "C1") levelClass = "level-c1";
+      if (item.level === "C2") levelClass = "level-c2";
+
+      let exHtml = "";
+      if (item.ex1) {
+        exHtml += `<div class="example-item"><div class="example-en">• ${item.ex1}</div>${item.ex1_vn ? `<div class="example-vn">🇻🇳 ${item.ex1_vn}</div>` : ''}</div>`;
+      }
+      if (item.ex2) {
+        exHtml += `<div class="example-item"><div class="example-en">• ${item.ex2}</div>${item.ex2_vn ? `<div class="example-vn">🇻🇳 ${item.ex2_vn}</div>` : ''}</div>`;
+      }
+
+      card.innerHTML = `
+        <div>
+          <div class="colloc-header">
+            <h3 class="colloc-term">${item.term}</h3>
+            <div class="colloc-meta-badges">
+              <span class="level-badge ${levelClass}">${item.level}</span>
+            </div>
+          </div>
+          ${item.ipa ? `<div class="colloc-ipa">${item.ipa}</div>` : ''}
+          ${item.pos ? `<span class="colloc-pos-tag">${item.pos}</span>` : ''}
+          <div class="colloc-vn">🇻🇳 ${item.vn}</div>
+          ${item.def ? `<div class="colloc-def">${item.def}</div>` : ''}
+        </div>
+        ${exHtml ? `<div class="colloc-examples">${exHtml}</div>` : ''}
+      `;
+
+      grid.appendChild(card);
+    });
+  }
+
+  if (pageInfo) {
+    pageInfo.textContent = `Page ${collocCurrentPage} of ${maxPage} (${totalItems.toLocaleString()} items)`;
+  }
+  if (prevBtn) prevBtn.disabled = collocCurrentPage <= 1;
+  if (nextBtn) nextBtn.disabled = collocCurrentPage >= maxPage;
+}
+
+// Flashcard 3D Interactive Logic
+function toggleFlashcardFlip() {
+  const card = document.getElementById("main-flashcard");
+  if (card) {
+    card.classList.toggle("flipped");
+    if (card.classList.contains("flipped")) {
+      const item = collocFlashcardDeck[collocFlashcardIndex];
+      if (item && item.term) {
+        recordFlashcardFlip(item.term);
+      }
+    }
+  }
+}
+
+function nextCollocFlashcard() {
+  if (collocFlashcardDeck.length === 0) return;
+  collocFlashcardIndex = (collocFlashcardIndex + 1) % collocFlashcardDeck.length;
+  resetAndShowFlashcard();
+}
+
+function prevCollocFlashcard() {
+  if (collocFlashcardDeck.length === 0) return;
+  collocFlashcardIndex = (collocFlashcardIndex - 1 + collocFlashcardDeck.length) % collocFlashcardDeck.length;
+  resetAndShowFlashcard();
+}
+
+function shuffleCollocFlashcards() {
+  if (typeof COLLOCATIONS_DATA === 'undefined') return;
+  collocFlashcardDeck = [...COLLOCATIONS_DATA].sort(() => Math.random() - 0.5);
+  collocFlashcardIndex = 0;
+  resetAndShowFlashcard();
+}
+
+function resetAndShowFlashcard() {
+  const card = document.getElementById("main-flashcard");
+  if (card) card.classList.remove("flipped");
+  setTimeout(() => {
+    updateFlashcardUI();
+  }, 150);
+}
+
+function updateFlashcardUI() {
+  if (collocFlashcardDeck.length === 0) return;
+  const item = collocFlashcardDeck[collocFlashcardIndex];
+
+  const counter = document.getElementById("fc-counter");
+  const termEl = document.getElementById("fc-term");
+  const ipaEl = document.getElementById("fc-ipa");
+  const posEl = document.getElementById("fc-pos");
+  const vnEl = document.getElementById("fc-vn");
+  const defEl = document.getElementById("fc-def");
+  const exEl = document.getElementById("fc-ex");
+
+  if (counter) counter.textContent = `Card ${collocFlashcardIndex + 1} of ${collocFlashcardDeck.length.toLocaleString()}`;
+  if (termEl) termEl.textContent = item.term;
+  if (ipaEl) ipaEl.textContent = item.ipa || '';
+  if (posEl) posEl.textContent = item.pos || '';
+  if (vnEl) vnEl.textContent = '🇻🇳 ' + item.vn;
+  if (defEl) defEl.textContent = item.def || '';
+  if (exEl) exEl.textContent = item.ex1 ? ('• ' + item.ex1) : '';
+}
+
+// Add initCollocations to DOMContentLoaded
+document.addEventListener("DOMContentLoaded", () => {
+  initCollocations();
+  initTrangAnhGamificationModule();
+  renderLearningDashboard();
+});
+
+// ==================== GA4 & LEARNING DASHBOARD LOGIC ====================
+function trackGAEvent(eventName, eventParams = {}) {
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', eventName, eventParams);
+  }
+  console.log('[GA4 Event]:', eventName, eventParams);
+}
+
+function getLearningStats() {
+  const defaultStats = {
+    streak: { count: 1, lastDate: new Date().toISOString().split('T')[0] },
+    flashcardsCount: 0,
+    attempts: [
+      { id: 1, time: 'Initial Practice', skill: 'Reading (Main Idea)', score: '2/2', pct: 100 },
+      { id: 2, time: 'Initial Practice', skill: 'Reading (Vocabulary)', score: '2/2', pct: 100 },
+      { id: 3, time: 'Initial Practice', skill: 'Collocations (Suffer Quiz)', score: '8/10', pct: 80 }
+    ],
+    catStats: {
+      'Main Idea': { correct: 2, total: 2 },
+      'Vocabulary': { correct: 2, total: 2 },
+      'Detail': { correct: 1, total: 2 },
+      'Inference': { correct: 1, total: 2 },
+      'Paraphrase': { correct: 1, total: 1 },
+      'Collocations': { correct: 8, total: 10 }
+    }
+  };
+
+  try {
+    const data = localStorage.getItem('ENGLISH_INSIDERS_STATS');
+    if (!data) return defaultStats;
+    return JSON.parse(data);
+  } catch (e) {
+    return defaultStats;
+  }
+}
+
+function saveLearningStats(stats) {
+  try {
+    localStorage.setItem('ENGLISH_INSIDERS_STATS', JSON.stringify(stats));
+  } catch (e) {}
+}
+
+function recordQuizAttempt(skillName, catName, correct, total) {
+  const stats = getLearningStats();
+  const pct = Math.round((correct / total) * 100);
+  const nowStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) + ' ' + new Date().toLocaleDateString();
+
+  // Record attempt
+  stats.attempts.unshift({
+    id: Date.now(),
+    time: nowStr,
+    skill: `${skillName} (${catName})`,
+    score: `${correct}/${total}`,
+    pct: pct
+  });
+
+  // Keep last 30 attempts
+  if (stats.attempts.length > 30) stats.attempts.pop();
+
+  // Category stats
+  if (!stats.catStats[catName]) {
+    stats.catStats[catName] = { correct: 0, total: 0 };
+  }
+  stats.catStats[catName].correct += correct;
+  stats.catStats[catName].total += total;
+
+  // Streak calculation
+  const today = new Date().toISOString().split('T')[0];
+  if (stats.streak.lastDate !== today) {
+    const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+    if (stats.streak.lastDate === yesterday) {
+      stats.streak.count += 1;
+    } else {
+      stats.streak.count = 1;
+    }
+    stats.streak.lastDate = today;
+  }
+
+  saveLearningStats(stats);
+
+  // Track GA4 event
+  trackGAEvent('quiz_completed', {
+    skill: skillName,
+    category: catName,
+    score: correct,
+    total: total,
+    accuracy: pct
+  });
+
+  // Re-render dashboard if currently active
+  if (currentTab === 'learning-dashboard') {
+    renderLearningDashboard();
+  }
+}
+
+function recordFlashcardFlip(term) {
+  const stats = getLearningStats();
+  stats.flashcardsCount = (stats.flashcardsCount || 0) + 1;
+  saveLearningStats(stats);
+
+  trackGAEvent('flashcard_flipped', { term: term });
+}
+
+function resetLearningStats() {
+  if (confirm("Bạn có chắc chắn muốn xóa toàn bộ lịch sử học tập và đặt lại thống kê không?")) {
+    localStorage.removeItem('ENGLISH_INSIDERS_STATS');
+    renderLearningDashboard();
+  }
+}
+
+let chartCatAccInstance = null;
+let chartScoreTrendInstance = null;
+let chartActivityInstance = null;
+
+function renderLearningDashboard() {
+  const stats = getLearningStats();
+
+  // 1. Stat Summary Cards
+  const streakEl = document.getElementById("dash-streak-count");
+  const totalQuizzesEl = document.getElementById("dash-total-quizzes");
+  const flashcardsEl = document.getElementById("dash-flashcards-count");
+  const overallAccEl = document.getElementById("dash-overall-acc");
+
+  const totalQuizzes = stats.attempts.length;
+  let sumCorrect = 0;
+  let sumTotal = 0;
+  Object.values(stats.catStats).forEach(cs => {
+    sumCorrect += cs.correct;
+    sumTotal += cs.total;
+  });
+  const overallAcc = sumTotal > 0 ? ((sumCorrect / sumTotal) * 100).toFixed(1) : "0.0";
+
+  if (streakEl) streakEl.textContent = `${stats.streak.count || 1} Day Streak 🔥`;
+  if (totalQuizzesEl) totalQuizzesEl.textContent = `${totalQuizzes} Quizzes`;
+  if (flashcardsEl) flashcardsEl.textContent = `${(stats.flashcardsCount || 0).toLocaleString()} Cards`;
+  if (overallAccEl) overallAccEl.textContent = `${overallAcc}% Accuracy`;
+
+  // 2. Table History Log
+  const tbody = document.getElementById("dash-history-table-body");
+  if (tbody) {
+    tbody.innerHTML = "";
+    if (stats.attempts.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="4" style="text-align: center; color: var(--text-muted);">Chưa có lịch sử làm bài. Hãy thử sức với các bài Quiz để xem thống kê!</td></tr>`;
+    } else {
+      stats.attempts.slice(0, 10).forEach(att => {
+        const tr = document.createElement("tr");
+        let badgeStyle = "background: #dcfce7; color: #15803d;";
+        if (att.pct < 50) badgeStyle = "background: #fee2e2; color: #b91c1c;";
+        else if (att.pct < 80) badgeStyle = "background: #fef3c7; color: #b45309;";
+
+        tr.innerHTML = `
+          <td>${att.time}</td>
+          <td><strong>${att.skill}</strong></td>
+          <td>${att.score}</td>
+          <td><span style="${badgeStyle} font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 50px; font-size: 0.8rem;">${att.pct}%</span></td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+  }
+
+  // 3. Render Chart.js Visualizations (if Chart constructor exists)
+  if (typeof Chart === 'undefined') return;
+
+  // Chart 1: Category Accuracy (Bar Chart)
+  const ctxCat = document.getElementById("chartCategoryAccuracy");
+  if (ctxCat) {
+    if (chartCatAccInstance) chartCatAccInstance.destroy();
+    const catNames = ['Main Idea', 'Vocabulary', 'Detail', 'Inference', 'Paraphrase', 'Collocations'];
+    const catData = catNames.map(cn => {
+      const cs = stats.catStats[cn];
+      return cs && cs.total > 0 ? Math.round((cs.correct / cs.total) * 100) : 0;
+    });
+
+    chartCatAccInstance = new Chart(ctxCat, {
+      type: 'bar',
+      data: {
+        labels: catNames,
+        datasets: [{
+          label: 'Accuracy (%)',
+          data: catData,
+          backgroundColor: ['#3b82f6', '#f59e0b', '#10b981', '#8b5cf6', '#ec4899', '#0d9488'],
+          borderRadius: 8
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: { y: { min: 0, max: 100 } },
+        plugins: { legend: { display: false } }
+      }
+    });
+  }
+
+  // Chart 2: Score Trend (Line Chart)
+  const ctxTrend = document.getElementById("chartScoreTrend");
+  if (ctxTrend) {
+    if (chartScoreTrendInstance) chartScoreTrendInstance.destroy();
+    const recentAtts = [...stats.attempts].reverse().slice(-10);
+    const labels = recentAtts.map((a, i) => `Attempt #${i+1}`);
+    const dataPts = recentAtts.map(a => a.pct);
+
+    chartScoreTrendInstance = new Chart(ctxTrend, {
+      type: 'line',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'Score Accuracy (%)',
+          data: dataPts,
+          borderColor: '#0f766e',
+          backgroundColor: 'rgba(15, 118, 110, 0.12)',
+          fill: true,
+          tension: 0.35,
+          pointRadius: 5
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: { y: { min: 0, max: 100 } }
+      }
+    });
+  }
+
+  // Chart 3: Skill Activity Breakdown (Doughnut Chart)
+  const ctxAct = document.getElementById("chartActivityBreakdown");
+  if (ctxAct) {
+    if (chartActivityInstance) chartActivityInstance.destroy();
+    chartActivityInstance = new Chart(ctxAct, {
+      type: 'doughnut',
+      data: {
+        labels: ['Reading Quizzes', 'Colloc Quizzes', 'Flashcards Reviewed'],
+        datasets: [{
+          data: [
+            stats.attempts.filter(a => a.skill.includes('Reading')).length,
+            stats.attempts.filter(a => a.skill.includes('Collocations')).length,
+            stats.flashcardsCount || 1
+          ],
+          backgroundColor: ['#0f766e', '#0d9488', '#f59e0b']
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false
+      }
+    });
+  }
+}
+
+// ==================== CÔ TRANG ANH GAMIFICATION MODULE LOGIC ====================
+let taXP = 0;
+let taStreak = 1;
+let taHearts = 5;
+let taCurrentTopic = "all";
+let taQuizCurrentIdx = 0;
+let taQuizUserAnswers = {};
+let taQuizScore = 0;
+
+let taPowerups = { '5050': true, 'hint': true };
+
+// Speed Match State
+let matchTimerInterval = null;
+let matchSeconds = 0;
+let matchScore = 0;
+let matchCombo = 1;
+let matchSelectedCard = null;
+let matchTiles = [];
+
+// Word Scramble State
+let scrambleCurrentIdx = 0;
+let scrambleUserSlots = [];
+let scramblePoolWords = [];
+
+// Flashcard State
+let taFcDeck = [];
+let taFcIndex = 0;
+
+function initTrangAnhGamificationModule() {
+  if (typeof TRANG_ANH_COLLOCATIONS === 'undefined') return;
+
+  loadTaStats();
+  initTaQuiz();
+  initSpeedMatchGame();
+  initTaScramble();
+  initTaFlashcards();
+  initTaBank();
+}
+
+function loadTaStats() {
+  try {
+    const saved = localStorage.getItem("ENGLISH_INSIDERS_TA_GAMIFIED");
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      taXP = parsed.xp || 0;
+      taStreak = parsed.streak || 1;
+    }
+  } catch (e) {}
+  updateTaStatsUI();
+}
+
+function saveTaStats() {
+  try {
+    localStorage.setItem("ENGLISH_INSIDERS_TA_GAMIFIED", JSON.stringify({
+      xp: taXP,
+      streak: taStreak
+    }));
+  } catch (e) {}
+}
+
+function addXP(amount, reason = "") {
+  taXP += amount;
+  saveTaStats();
+  updateTaStatsUI();
+  showXpFloatAnimation(amount, reason);
+}
+
+function showXpFloatAnimation(amount, reason) {
+  const el = document.createElement("div");
+  el.style.position = "fixed";
+  el.style.bottom = "20%";
+  el.style.right = "10%";
+  el.style.background = "linear-gradient(135deg, #f59e0b, #d97706)";
+  el.style.color = "#ffffff";
+  el.style.padding = "0.75rem 1.5rem";
+  el.style.borderRadius = "20px";
+  el.style.fontWeight = "800";
+  el.style.fontSize = "1.2rem";
+  el.style.boxShadow = "0 10px 25px rgba(245, 158, 11, 0.4)";
+  el.style.zIndex = "9999";
+  el.style.transition = "all 0.8s ease-out";
+  el.innerHTML = `+${amount} XP! ${reason}`;
+
+  document.body.appendChild(el);
+
+  setTimeout(() => {
+    el.style.transform = "translateY(-40px)";
+    el.style.opacity = "0";
+  }, 50);
+
+  setTimeout(() => {
+    if (el.parentNode) el.parentNode.removeChild(el);
+  }, 900);
+}
+
+function getRankLevelInfo(xp) {
+  if (xp < 100) return { level: 1, title: "Lv. 1 Novice Learner" };
+  if (xp < 350) return { level: 2, title: "Lv. 2 Collocation Apprentice" };
+  if (xp < 800) return { level: 3, title: "Lv. 3 Idiom Expert" };
+  if (xp < 1500) return { level: 4, title: "Lv. 4 Master Collocator" };
+  return { level: 5, title: "Lv. 5 Legend of Idioms 👑" };
+}
+
+function updateTaStatsUI() {
+  const levelInfo = getRankLevelInfo(taXP);
+  
+  const levelEl = document.getElementById("ta-level-title");
+  const xpEl = document.getElementById("ta-xp-count");
+  const streakEl = document.getElementById("ta-streak-count");
+  const heartsEl = document.getElementById("ta-hearts-display");
+  const accEl = document.getElementById("ta-accuracy-display");
+
+  if (levelEl) levelEl.textContent = levelInfo.title;
+  if (xpEl) xpEl.textContent = `${taXP.toLocaleString()} XP`;
+  if (streakEl) streakEl.textContent = `${taStreak} Day 🔥`;
+  
+  if (heartsEl) {
+    let hStr = "";
+    for (let i = 0; i < taHearts; i++) hStr += "❤️";
+    for (let i = taHearts; i < 5; i++) hStr += "🖤";
+    heartsEl.textContent = hStr || "🖤 (No Lives)";
+  }
+
+  if (accEl) {
+    const totalAns = Object.keys(taQuizUserAnswers).length;
+    if (totalAns === 0) {
+      accEl.textContent = "100%";
+    } else {
+      const pct = Math.round((taQuizScore / totalAns) * 100);
+      accEl.textContent = `${pct}%`;
+    }
+  }
+}
+
+// 1. Quiz Arena Functions
+function initTaQuiz() {
+  const filterBtns = document.querySelectorAll("#ta-topic-filters .filter-chip");
+  filterBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      filterBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      taCurrentTopic = btn.getAttribute("data-topic");
+      taQuizCurrentIdx = 0;
+      renderTaQuizCard();
+    });
+  });
+
+  renderTaQuizCard();
+}
+
+function getFilteredQuizQuestions() {
+  if (typeof TRANG_ANH_QUIZ_QUESTIONS === 'undefined') return [];
+  if (taCurrentTopic === 'all') return TRANG_ANH_QUIZ_QUESTIONS;
+  return TRANG_ANH_QUIZ_QUESTIONS.filter(q => q.topic === taCurrentTopic);
+}
+
+function renderTaQuizCard() {
+  const container = document.getElementById("ta-quiz-card-container");
+  if (!container) return;
+
+  const questions = getFilteredQuizQuestions();
+  container.innerHTML = "";
+
+  if (questions.length === 0) {
+    container.innerHTML = `
+      <div style="text-align: center; padding: 3rem 1rem; color: var(--text-muted);">
+        <h3>🎯 Không có câu hỏi nào cho chủ đề này</h3>
+      </div>
+    `;
+    return;
+  }
+
+  if (taQuizCurrentIdx >= questions.length) taQuizCurrentIdx = 0;
+  const q = questions[taQuizCurrentIdx];
+
+  const qCard = document.createElement("div");
+  qCard.className = "passage-card";
+  qCard.style.marginBottom = "1.5rem";
+
+  const isAnswered = taQuizUserAnswers[q.id] !== undefined;
+  const selectedOpt = taQuizUserAnswers[q.id];
+
+  let optionsHtml = "";
+  q.options.forEach((opt, oIdx) => {
+    let optClass = "option-btn";
+    if (isAnswered) {
+      if (oIdx === q.correct) optClass += " show-correct";
+      if (selectedOpt === oIdx) {
+        optClass += oIdx === q.correct ? " selected-correct" : " selected-incorrect";
+      }
+    }
+    optionsHtml += `
+      <button class="${optClass}" id="opt-btn-${q.id}-${oIdx}" onclick="handleTaQuizAnswer('${q.id}', ${oIdx}, ${q.correct})">
+        <span>${opt}</span>
+        ${isAnswered && oIdx === q.correct ? '<span>✓</span>' : ''}
+        ${isAnswered && selectedOpt === oIdx && oIdx !== q.correct ? '<span>✗</span>' : ''}
+      </button>
+    `;
+  });
+
+  qCard.innerHTML = `
+    <div class="passage-header">
+      <h4 style="font-size: 1.1rem; color: #7c3aed; font-weight: 800;">Question ${taQuizCurrentIdx + 1} of ${questions.length}</h4>
+      <span class="badge-tag gamified-badge">${q.topic.toUpperCase()}</span>
+    </div>
+    <div style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 1.5rem; color: var(--text-primary); font-weight: 600;">
+      ${q.question}
+    </div>
+    <div class="options-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem;">
+      ${optionsHtml}
+    </div>
+    <div class="explanation-box ${isAnswered ? 'visible' : ''}">
+      <div class="explanation-header">💡 Giải thích từ Cô Trang Anh:</div>
+      <div><strong>🇻🇳 Dịch nghĩa:</strong> ${q.explanation}</div>
+      ${q.explanationEn ? `<div style="margin-top:0.4rem; color:var(--text-muted);"><strong>🇬🇧 English Context:</strong> ${q.explanationEn}</div>` : ''}
+    </div>
+
+    <div style="display: flex; justify-content: space-between; margin-top: 1.5rem;">
+      <button class="card-btn outline-amber" style="width: auto;" onclick="prevTaQuizQuestion()" ${taQuizCurrentIdx === 0 ? 'disabled' : ''}>← Câu trước</button>
+      <button class="card-btn filled gamified-btn" style="width: auto;" onclick="nextTaQuizQuestion()">Câu tiếp theo →</button>
+    </div>
+  `;
+
+  container.appendChild(qCard);
+}
+
+function handleTaQuizAnswer(qId, selectedIdx, correctIdx) {
+  if (taQuizUserAnswers[qId] !== undefined) return;
+
+  taQuizUserAnswers[qId] = selectedIdx;
+  const isCorrect = selectedIdx === correctIdx;
+
+  if (isCorrect) {
+    taQuizScore++;
+    addXP(50, "Quiz Arena Correct!");
+    recordQuizAttempt("Cô Trang Anh Quiz", taCurrentTopic, 1, 1);
+  } else {
+    if (taHearts > 0) taHearts--;
+    recordQuizAttempt("Cô Trang Anh Quiz", taCurrentTopic, 0, 1);
+  }
+
+  updateTaStatsUI();
+  renderTaQuizCard();
+}
+
+function prevTaQuizQuestion() {
+  if (taQuizCurrentIdx > 0) {
+    taQuizCurrentIdx--;
+    renderTaQuizCard();
+  }
+}
+
+function nextTaQuizQuestion() {
+  const questions = getFilteredQuizQuestions();
+  if (taQuizCurrentIdx < questions.length - 1) {
+    taQuizCurrentIdx++;
+    renderTaQuizCard();
+  } else {
+    alert("🎉 Bạn đã hoàn thành tất cả các câu hỏi thuộc chủ đề này!");
+  }
+}
+
+function usePowerup5050() {
+  const questions = getFilteredQuizQuestions();
+  if (questions.length === 0) return;
+  const q = questions[taQuizCurrentIdx];
+  if (taQuizUserAnswers[q.id] !== undefined) return;
+
+  // Find 2 wrong options and hide them
+  let wrongIndices = [];
+  q.options.forEach((opt, idx) => {
+    if (idx !== q.correct) wrongIndices.push(idx);
+  });
+  wrongIndices.sort(() => Math.random() - 0.5);
+
+  const hide1 = wrongIndices[0];
+  const hide2 = wrongIndices[1];
+
+  const btn1 = document.getElementById(`opt-btn-${q.id}-${hide1}`);
+  const btn2 = document.getElementById(`opt-btn-${q.id}-${hide2}`);
+
+  if (btn1) btn1.style.visibility = "hidden";
+  if (btn2) btn2.style.visibility = "hidden";
+
+  document.getElementById("btn-5050").disabled = true;
+}
+
+function usePowerupHint() {
+  const questions = getFilteredQuizQuestions();
+  if (questions.length === 0) return;
+  const q = questions[taQuizCurrentIdx];
+
+  alert(`🔍 GỢI Ý CÔ TRANG ANH:\n${q.explanation}`);
+  document.getElementById("btn-hint").disabled = true;
+}
+
+// 2. Speed Match Functions
+function initSpeedMatchGame() {
+  if (typeof TRANG_ANH_COLLOCATIONS === 'undefined') return;
+
+  const grid = document.getElementById("ta-match-grid");
+  if (!grid) return;
+
+  clearInterval(matchTimerInterval);
+  matchSeconds = 0;
+  matchScore = 0;
+  matchCombo = 1;
+  matchSelectedCard = null;
+
+  document.getElementById("match-timer-display").textContent = "00:00";
+  document.getElementById("match-score-display").textContent = "0 / 8";
+  document.getElementById("match-combo-display").textContent = "x1";
+
+  // Pick 8 random collocations
+  const pool = [...TRANG_ANH_COLLOCATIONS].sort(() => Math.random() - 0.5).slice(0, 8);
+  matchTiles = [];
+
+  pool.forEach((item, idx) => {
+    matchTiles.push({ id: `eng_${idx}`, pairId: idx, text: item.phrase, type: 'eng' });
+    matchTiles.push({ id: `vie_${idx}`, pairId: idx, text: item.meaning, type: 'vie' });
+  });
+
+  matchTiles.sort(() => Math.random() - 0.5);
+
+  grid.innerHTML = "";
+  matchTiles.forEach(tile => {
+    const card = document.createElement("div");
+    card.className = "match-card";
+    card.id = `tile-${tile.id}`;
+    card.textContent = tile.text;
+    card.onclick = () => handleMatchTileClick(tile);
+    grid.appendChild(card);
+  });
+
+  // Start timer
+  matchTimerInterval = setInterval(() => {
+    matchSeconds++;
+    const mins = String(Math.floor(matchSeconds / 60)).padStart(2, '0');
+    const secs = String(matchSeconds % 60).padStart(2, '0');
+    document.getElementById("match-timer-display").textContent = `${mins}:${secs}`;
+  }, 1000);
+}
+
+function handleMatchTileClick(tile) {
+  const tileEl = document.getElementById(`tile-${tile.id}`);
+  if (!tileEl || tileEl.classList.contains("matched")) return;
+
+  if (!matchSelectedCard) {
+    matchSelectedCard = tile;
+    tileEl.classList.add("selected");
+  } else if (matchSelectedCard.id === tile.id) {
+    matchSelectedCard = null;
+    tileEl.classList.remove("selected");
+  } else {
+    // Check match
+    const prevEl = document.getElementById(`tile-${matchSelectedCard.id}`);
+    if (matchSelectedCard.pairId === tile.pairId && matchSelectedCard.type !== tile.type) {
+      // MATCH!
+      if (prevEl) prevEl.classList.replace("selected", "matched");
+      tileEl.classList.add("matched");
+
+      matchScore++;
+      const xpGained = 30 * matchCombo;
+      addXP(xpGained, `Speed Match Combo x${matchCombo}!`);
+      matchCombo++;
+
+      document.getElementById("match-score-display").textContent = `${matchScore} / 8`;
+      document.getElementById("match-combo-display").textContent = `x${matchCombo}`;
+
+      matchSelectedCard = null;
+
+      if (matchScore === 8) {
+        clearInterval(matchTimerInterval);
+        setTimeout(() => {
+          alert(`🎉 XUẤT SẮC! Bạn đã ghép thành công tất cả 8 cặp trong ${matchSeconds} giây!`);
+        }, 300);
+      }
+    } else {
+      // MISMATCH
+      tileEl.classList.add("wrong-shake");
+      if (prevEl) prevEl.classList.add("wrong-shake");
+      matchCombo = 1;
+      document.getElementById("match-combo-display").textContent = "x1";
+
+      setTimeout(() => {
+        if (prevEl) prevEl.classList.remove("selected", "wrong-shake");
+        tileEl.classList.remove("wrong-shake");
+        matchSelectedCard = null;
+      }, 450);
+    }
+  }
+}
+
+// 3. Word Scramble Functions
+function initTaScramble() {
+  if (typeof TRANG_ANH_COLLOCATIONS === 'undefined') return;
+  scrambleCurrentIdx = 0;
+  renderScrambleQuestion();
+}
+
+function renderScrambleQuestion() {
+  const container = document.getElementById("scramble-game-container");
+  if (!container) return;
+
+  const item = TRANG_ANH_COLLOCATIONS[scrambleCurrentIdx];
+  const phraseWords = item.phrase.split(" ");
+  scramblePoolWords = [...phraseWords].sort(() => Math.random() - 0.5);
+  scrambleUserSlots = Array(phraseWords.length).fill(null);
+
+  container.innerHTML = `
+    <div class="scramble-box">
+      <div class="scramble-prompt">🇻🇳 Meaning: "${item.meaning}"</div>
+      <div style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.5rem;">Cụm từ gốc gồm ${phraseWords.length} từ. Nhấp các ô từ bên dưới để ghép:</div>
+
+      <div class="scramble-slots" id="scramble-slots-container">
+        ${scrambleUserSlots.map((s, idx) => `<div class="scramble-slot" onclick="removeScrambleSlot(${idx})">${s || ''}</div>`).join('')}
+      </div>
+
+      <div class="scramble-pool" id="scramble-pool-container">
+        ${scramblePoolWords.map((w, idx) => `<button class="scramble-tile" id="sc-tile-${idx}" onclick="pickScrambleWord('${w.replace(/'/g, "\\'")}', ${idx})">${w}</button>`).join('')}
+      </div>
+
+      <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center;">
+        <button class="card-btn outline-amber" style="width: auto;" onclick="resetScrambleQuestion()">🔄 Lấy lại từ đầu</button>
+        <button class="card-btn filled gamified-btn" style="width: auto;" onclick="checkScrambleAnswer()">✅ Kiểm tra đáp án</button>
+        <button class="card-btn outline-amber" style="width: auto;" onclick="nextScrambleQuestion()">Câu tiếp →</button>
+      </div>
+    </div>
+  `;
+}
+
+function pickScrambleWord(word, tileIdx) {
+  const firstEmpty = scrambleUserSlots.indexOf(null);
+  if (firstEmpty !== -1) {
+    scrambleUserSlots[firstEmpty] = { word, tileIdx };
+    const tileBtn = document.getElementById(`sc-tile-${tileIdx}`);
+    if (tileBtn) tileBtn.classList.add("used");
+    renderScrambleSlots();
+  }
+}
+
+function removeScrambleSlot(slotIdx) {
+  const slotObj = scrambleUserSlots[slotIdx];
+  if (slotObj) {
+    const tileBtn = document.getElementById(`sc-tile-${slotObj.tileIdx}`);
+    if (tileBtn) tileBtn.classList.remove("used");
+    scrambleUserSlots[slotIdx] = null;
+    renderScrambleSlots();
+  }
+}
+
+function renderScrambleSlots() {
+  const container = document.getElementById("scramble-slots-container");
+  if (!container) return;
+  container.innerHTML = scrambleUserSlots.map((s, idx) => 
+    `<div class="scramble-slot" onclick="removeScrambleSlot(${idx})">${s ? s.word : ''}</div>`
+  ).join('');
+}
+
+function resetScrambleQuestion() {
+  renderScrambleQuestion();
+}
+
+function checkScrambleAnswer() {
+  const item = TRANG_ANH_COLLOCATIONS[scrambleCurrentIdx];
+  const userPhrase = scrambleUserSlots.map(s => s ? s.word : '').join(' ').trim();
+  
+  if (userPhrase.toLowerCase() === item.phrase.toLowerCase()) {
+    addXP(40, "Word Scramble Solved!");
+    alert(`🎉 CHÍNH XÁC! Cụm từ chuẩn: "${item.phrase}"`);
+  } else {
+    alert(`❌ CHƯA CHÍNH XÁC!\nĐáp án đúng là: "${item.phrase}"`);
+  }
+}
+
+function nextScrambleQuestion() {
+  scrambleCurrentIdx = (scrambleCurrentIdx + 1) % TRANG_ANH_COLLOCATIONS.length;
+  renderScrambleQuestion();
+}
+
+// 4. 3D Flashcard Functions
+function initTaFlashcards() {
+  if (typeof TRANG_ANH_COLLOCATIONS === 'undefined') return;
+  taFcDeck = [...TRANG_ANH_COLLOCATIONS];
+  taFcIndex = 0;
+  updateTaFlashcardUI();
+}
+
+function toggleTaFlashcardFlip() {
+  const card = document.getElementById("ta-main-flashcard");
+  if (card) card.classList.toggle("flipped");
+}
+
+function nextTaFlashcard() {
+  if (taFcDeck.length === 0) return;
+  taFcIndex = (taFcIndex + 1) % taFcDeck.length;
+  resetAndShowTaFlashcard();
+}
+
+function prevTaFlashcard() {
+  if (taFcDeck.length === 0) return;
+  taFcIndex = (taFcIndex - 1 + taFcDeck.length) % taFcDeck.length;
+  resetAndShowTaFlashcard();
+}
+
+function markTaFcMastered() {
+  addXP(15, "Flashcard Mastered!");
+  nextTaFlashcard();
+}
+
+function markTaFcNeedPractice() {
+  nextTaFlashcard();
+}
+
+function resetAndShowTaFlashcard() {
+  const card = document.getElementById("ta-main-flashcard");
+  if (card) card.classList.remove("flipped");
+  setTimeout(() => {
+    updateTaFlashcardUI();
+  }, 150);
+}
+
+function updateTaFlashcardUI() {
+  if (taFcDeck.length === 0) return;
+  const item = taFcDeck[taFcIndex];
+
+  const tagEl = document.getElementById("ta-fc-topic-tag");
+  const counterEl = document.getElementById("ta-fc-counter");
+  const termEl = document.getElementById("ta-fc-term");
+  const ipaEl = document.getElementById("ta-fc-ipa");
+  const vnEl = document.getElementById("ta-fc-vn");
+  const exEl = document.getElementById("ta-fc-ex");
+
+  if (tagEl) tagEl.textContent = (item.topic || 'Collocation').toUpperCase();
+  if (counterEl) counterEl.textContent = `Card ${taFcIndex + 1} of ${taFcDeck.length}`;
+  if (termEl) termEl.textContent = item.phrase;
+  if (ipaEl) ipaEl.textContent = item.ipa || '';
+  if (vnEl) vnEl.textContent = item.meaning;
+  if (exEl) exEl.textContent = item.example ? (`• ${item.example}`) : '';
+}
+
+function speakTaTerm() {
+  if (taFcDeck.length === 0) return;
+  const item = taFcDeck[taFcIndex];
+  if (typeof window.speechSynthesis !== 'undefined') {
+    const utter = new SpeechSynthesisUtterance(item.phrase);
+    utter.lang = 'en-US';
+    utter.rate = 0.9;
+    window.speechSynthesis.speak(utter);
+  }
+}
+
+// 5. Glossary Bank Functions
+function initTaBank() {
+  const searchInput = document.getElementById("ta-bank-search");
+  const grid = document.getElementById("ta-bank-grid");
+  if (!grid || typeof TRANG_ANH_COLLOCATIONS === 'undefined') return;
+
+  function renderBank(filter = "") {
+    grid.innerHTML = "";
+    const filtered = TRANG_ANH_COLLOCATIONS.filter(item => 
+      item.phrase.toLowerCase().includes(filter.toLowerCase()) ||
+      item.meaning.toLowerCase().includes(filter.toLowerCase())
+    );
+
+    filtered.forEach(item => {
+      const card = document.createElement("div");
+      card.className = "vocab-card";
+      card.innerHTML = `
+        <div class="vocab-word">${item.phrase}</div>
+        <div class="vocab-pos">${item.type || 'Collocation'} • ${item.ipa || ''}</div>
+        <div class="vocab-vn">🇻🇳 ${item.meaning}</div>
+        ${item.example ? `<div class="vocab-def" style="margin-top:0.5rem; font-style:italic;">• ${item.example}</div>` : ''}
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", (e) => {
+      renderBank(e.target.value);
+    });
+  }
+
+  renderBank();
+}
+
+
+
+
 
