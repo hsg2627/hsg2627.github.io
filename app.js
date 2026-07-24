@@ -291,11 +291,7 @@ const VOCABULARY_DATA = [
   { word: "Protagonist", pos: "n.", def: "The leading character or main figure", vn: "Nhân vật chính" },
   { word: "Endured", pos: "v.", def: "Lasted over a long period of time", vn: "Kéo dài, tồn tại qua thời gian" },
   { word: "Epic", pos: "adj.", def: "Extensive, heroic, or grand in scale", vn: "Mang tính lịch sử, trường 篇" },
-  { word: "Congregate", pos: "v.", def: "To gather together in a crowd or group", vn: "Tập hợp, tụ họp" },
-  { word: "Clastic", pos: "adj.", def: "Denoting rocks composed of broken fragments of older rocks", vn: "Trầm tích vỡ mảnh" },
-  { word: "Cartographer", pos: "n.", def: "A person who draws or produces maps", vn: "Người vẽ bản đồ" },
-  { word: "Filibuster", pos: "n.", def: "A prolonged speech obstructing legislative action", vn: "Thủ tục trì hoãn lập pháp" },
-  { word: "Aposematic", pos: "adj.", def: "Warning coloration in animals indicating toxicity", vn: "Màu sắc cảnh báo độc tố" }
+  { word: "Congregate", pos: "v.", def: "To gather together in a crowd or group", vn: "Tập hợp, tụ họp" }
 ];
 
 // App State
@@ -307,11 +303,11 @@ let score = 0;
 
 // DOM Initialization
 document.addEventListener("DOMContentLoaded", () => {
-  initNavigation();
-  initSubTabs();
-  initQuiz();
-  initVocabulary();
-  initFovModule();
+  try { initNavigation(); } catch (e) { console.error("Navigation error:", e); }
+  try { initSubTabs(); } catch (e) { console.error("SubTabs error:", e); }
+  try { initQuiz(); } catch (e) { console.error("Quiz error:", e); }
+  try { initVocabulary(); } catch (e) { console.error("Vocab error:", e); }
+  try { initFovModule(); } catch (e) { console.error("FOV error:", e); }
 });
 
 // Global TTS Speech Helper
@@ -432,12 +428,15 @@ function filterQuizCategory(category) {
 
 // Quiz Render & Handler
 function initQuiz() {
+  const quizContainer = document.getElementById("quiz-passages-container");
+  if (!quizContainer) return;
+
   const filterChips = document.querySelectorAll(".filter-chip");
   filterChips.forEach(chip => {
     chip.addEventListener("click", () => {
       filterChips.forEach(c => c.classList.remove("active"));
       chip.classList.add("active");
-      currentFilter = chip.getAttribute("data-filter");
+      currentFilter = chip.getAttribute("data-filter") || "All";
       renderQuiz();
     });
   });
@@ -447,6 +446,7 @@ function initQuiz() {
 
 function renderQuiz() {
   const quizContainer = document.getElementById("quiz-passages-container");
+  if (!quizContainer) return;
   quizContainer.innerHTML = "";
 
   const filteredData = currentFilter === "All" 
@@ -546,7 +546,9 @@ function handleOptionSelect(qId, selectedIdx, correctIdx) {
 
 function updateScoreDisplay() {
   const scoreDisplay = document.getElementById("score-display");
-  const totalAnswered = Object.keys(userAnswers).length;
+  if (!scoreDisplay) return;
+
+  let totalAnswered = Object.keys(userAnswers).length;
   let totalQuestions = 0;
   QUIZ_DATA.forEach(p => totalQuestions += p.questions.length);
 
@@ -557,10 +559,37 @@ function updateScoreDisplay() {
 function initVocabulary() {
   const vocabGrid = document.getElementById("vocab-grid");
   const searchInput = document.getElementById("vocab-search");
+  if (!vocabGrid) return;
 
   function renderVocab(filter = "") {
     vocabGrid.innerHTML = "";
     const filtered = VOCABULARY_DATA.filter(v => 
+      v.word.toLowerCase().includes(filter.toLowerCase()) ||
+      v.def.toLowerCase().includes(filter.toLowerCase()) ||
+      v.vn.toLowerCase().includes(filter.toLowerCase())
+    );
+
+    filtered.forEach(v => {
+      const card = document.createElement("div");
+      card.className = "vocab-card";
+      card.innerHTML = `
+        <div class="vocab-word">${v.word}</div>
+        <div class="vocab-pos">${v.pos}</div>
+        <div class="vocab-def">${v.def}</div>
+        <div class="vocab-vn">🇻🇳 ${v.vn}</div>
+      `;
+      vocabGrid.appendChild(card);
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", (e) => {
+      renderVocab(e.target.value);
+    });
+  }
+
+  renderVocab();
+}ATA.filter(v => 
       v.word.toLowerCase().includes(filter.toLowerCase()) ||
       v.def.toLowerCase().includes(filter.toLowerCase()) ||
       v.vn.toLowerCase().includes(filter.toLowerCase())
