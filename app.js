@@ -1879,6 +1879,493 @@ const FOV_VOCABULARY_DATA = [
   { word: "Intervention", pos: "noun", ipa: "/ˌɪntərˈvenʃn/", level: "C1", vn: "Sự can thiệp, biện pháp điều trị (Từ trái nghĩa: inactivity)", def: "Action taken to improve a situation or treat a condition.", example: "Timely medical intervention saved the patient's life.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
   { word: "Boost", pos: "verb", ipa: "/buːst/", level: "B2", vn: "Thúc đẩy, tăng cường (Từ trái nghĩa: limit)", def: "Help or encourage something to increase or improve.", example: "Positive feedback can boost employee confidence.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
 
+  // --- CHAPTER 2: INTO THE FLOW ---
+  { word: "Gripped", pos: "adjective", ipa: "/ɡrɪpt/", level: "B2", vn: "Bị cuốn hút, bị lôi cuốn sâu sắc", def: "Deeply engaged, interested, or strongly affected by something.", example: "The audience was completely gripped by the suspenseful movie.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Absorbed", pos: "adjective", ipa: "/əbˈzɔːrbd/", level: "B2", vn: "Mải mê, say sưa (đến mức không chú ý xung quanh)", def: "Very interested in something, often to the point of not noticing other things happening around.", example: "She was so absorbed in her reading that she lost track of time.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Fiercely", pos: "adverb", ipa: "/ˈfɪrsli/", level: "B2", vn: "Dữ dội, mãnh liệt, quyết liệt", def: "Energetically and with strong feelings or intensity.", example: "The athletes competed fiercely for the championship gold medal.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Ache", pos: "verb / noun", ipa: "/eɪk/", level: "B1", vn: "Đau nhức ê ẩm, khát khao", def: "To feel a continuous but not very sharp pain in a body part.", example: "After running the marathon, her aching legs needed rest.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Explode", pos: "verb", ipa: "/ɪkˈsploʊd/", level: "B2", vn: "Bùng nổ, tăng vọt đột ngột", def: "To suddenly increase greatly in number, amount, or degree; or to burst with noise.", example: "E-sports exploded in popularity among teenagers worldwide.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Overcome", pos: "verb", ipa: "/ˌoʊvərˈkʌm/", level: "B2", vn: "Vượt qua, khống chế (khó khăn, cảm xúc)", def: "To successfully control or deal with a feeling or problem.", example: "She managed to overcome her fear of public speaking.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Intellectual", pos: "adjective / noun", ipa: "/ˌɪntəˈlektʃuəl/", level: "B2", vn: "Thuộc trí tuệ, cần suy nghĩ chuyên sâu", def: "Needing serious thought in order to be understood; or a well-educated person.", example: "Chess provides an intellectually stimulating challenge for players.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Drift", pos: "verb", ipa: "/drɪft/", level: "B2", vn: "Trôi dạt, sống trôi nổi không mục đích", def: "To move, change, or do something without any set plan or purpose.", example: "Without clear goals, it is easy to drift through life.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Confront", pos: "verb", ipa: "/kənˈfrʌnt/", level: "B2", vn: "Đương đầu, đối mặt trực diện với khó khăn", def: "To deal with something very difficult or unpleasant in a brave and determined way.", example: "Instead of avoiding problems, you should confront them directly.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Tension", pos: "noun", ipa: "/ˈtenʃn/", level: "B2", vn: "Sự căng thẳng, áp lực tâm lý", def: "A nervous feeling that makes it impossible to relax.", example: "Meditation helps reduce mental tension and anxiety.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Fulfillment", pos: "noun", ipa: "/fʊlˈfɪlmənt/", level: "C1", vn: "Sự mãn nguyện, cảm giác hoàn thành mục tiêu", def: "The feeling of being happy and satisfied with your life because of doing meaningful things.", example: "Volunteering brings a deep sense of personal fulfillment.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Motivation", pos: "noun", ipa: "/ˌmoʊtɪˈveɪʃn/", level: "B2", vn: "Động lực, lý do thúc đẩy hành động", def: "The reason why you want to do something or the willingness to achieve goals.", example: "High motivation is essential for mastering a complex skill.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Worthwhile", pos: "adjective", ipa: "/ˌwɜːrθˈwaɪl/", level: "B2", vn: "Đáng giá, có ý nghĩa", def: "Important, enjoyable, or interesting enough to be worth time and effort.", example: "Learning a foreign language is a difficult but worthwhile goal.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Interval", pos: "noun", ipa: "/ˈɪntərvl/", level: "B2", vn: "Khoảng thời gian nghỉ, định kỳ", def: "A period of time between two events or activities.", example: "The teacher scheduled tests at regular intervals throughout the semester.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Peer", pos: "noun", ipa: "/pɪr/", level: "B2", vn: "Bạn đồng lứa, bạn học, người cùng địa vị", def: "A person who is the same age or has the same social position/abilities as you.", example: "Teens are strongly influenced by their peer group.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Feedback", pos: "noun", ipa: "/ˈfiːdbæk/", level: "B2", vn: "Phản hồi, thông tin nhận xét", def: "Advice, criticism, or information about how good or useful something is.", example: "Immediate feedback helps learners correct their errors quickly.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Thus", pos: "adverb", ipa: "/ðʌs/", level: "B2", vn: "Do đó, vì vậy, như thế", def: "As a result of this; therefore.", example: "He studied hard and thus achieved high scores in all subjects.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Trivial", pos: "adjective", ipa: "/ˈtrɪviəl/", level: "B2", vn: "Tầm thường, không quan trọng", def: "Of little value or importance; minor.", example: "Don't waste precious time worrying about trivial matters.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Medal", pos: "noun", ipa: "/ˈmedl/", level: "B1", vn: "Huy chương", def: "A flat piece of metal given as a prize in a competition.", example: "She won a gold medal in the 100-meter sprint.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Amusement", pos: "noun", ipa: "/əˈmjuːzmənt/", level: "B2", vn: "Trò giải trí, hoạt động vui chơi", def: "An activity or game that provides entertainment.", example: "Playing board games is a popular family amusement.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Fictional", pos: "adjective", ipa: "/ˈfɪkʃənl/", level: "B2", vn: "Hư cấu, tưởng tượng (không có thật)", def: "Imaginary or invented; not real.", example: "Sherlock Holmes is a fictional detective created by Arthur Conan Doyle.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Strive", pos: "verb", ipa: "/straɪv/", level: "C1", vn: "Cố gắng hết sức, phấn đấu", def: "To make great efforts to achieve or obtain something.", example: "We must strive to achieve our highest potential.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Lung", pos: "noun", ipa: "/lʌŋ/", level: "B1", vn: "Lá phổi (cơ quan hô hấp)", def: "One of the two breathing organs in the chest.", example: "Deep breathing exercises expand your lungs and reduce stress.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+  { word: "Distracted", pos: "adjective", ipa: "/dɪˈstræktɪd/", level: "B2", vn: "Mất tập trung, xao nhãng", def: "Unable to concentrate because one's attention is given to something else.", example: "Noise outside the exam room left many students distracted.", chapter: "ch2", chapterTitle: "Chapter 2: Into the Flow" },
+
+  // --- CHAPTER ACADEMIC (CORE AWL) ---
+  { word: "Ubiquitous", pos: "adjective", ipa: "/juːˈbɪkwɪtəs/", level: "B2", vn: "Phổ biến ở khắp mọi nơi, có mặt khắp nơi", def: "Present, appearing, or found everywhere.", example: "Smartphones have become ubiquitous in modern daily life.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Ephemeral", pos: "adjective", ipa: "/ɪˈfemərəl/", level: "C1", vn: "Phù du, chóng khánh, ngắn ngủi", def: "Lasting for a very short time.", example: "Fashions are ephemeral, changing with every season.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Plausible", pos: "adjective", ipa: "/ˈplɔːzəbl/", level: "B2", vn: "Hợp lý, đáng tin cậy", def: "Seeming reasonable or probable.", example: "She offered a plausible explanation for her tardiness.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Meticulous", pos: "adjective", ipa: "/məˈtɪkjələs/", level: "C1", vn: "Tỉ mỉ, cẩn thận từng chi tiết", def: "Showing great attention to detail; very careful and precise.", example: "The researcher conducted a meticulous analysis of the data.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Pragmatic", pos: "adjective", ipa: "/præɡˈmætɪk/", level: "C1", vn: "Thực tế, thực dụng, trọng thực tiễn", def: "Dealing with things sensibly and realistically.", example: "We need a pragmatic solution rather than an idealist theory.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Exacerbate", pos: "verb", ipa: "/ɪɡˈzæsərbeɪt/", level: "C1", vn: "Làm trầm trọng thêm, làm xấu đi", def: "Make a problem or bad situation worse.", example: "Pollution will exacerbate respiratory illnesses in urban areas.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Resilient", pos: "adjective", ipa: "/rɪˈzɪliənt/", level: "B2", vn: "Kiên cường, có khả năng phục hồi nhanh", def: "Able to withstand or recover quickly from difficult conditions.", example: "Local communities proved resilient in the face of the economic crisis.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Ambiguous", pos: "adjective", ipa: "/æmˈbɪɡjuəs/", level: "B2", vn: "Mơ hồ, nhập nhằng, có nhiều cách hiểu", def: "Open to more than one interpretation; unclear.", example: "The instructions were ambiguous and led to confusion.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Disparate", pos: "adjective", ipa: "/ˈdɪspərət/", level: "C2", vn: "Khác biệt hoàn toàn, không thể so sánh", def: "Essentially different in kind; not allowing comparison.", example: "The team brought together experts from disparate fields.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Profound", pos: "adjective", ipa: "/prəˈfaʊnd/", level: "B2", vn: "Sâu sắc, thâm thúy, ảnh hưởng to lớn", def: "Very great or intense; possessing deep insight.", example: "The discovery had a profound impact on medical science.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Consolidate", pos: "verb", ipa: "/kənˈsɑːlɪdeɪt/", level: "C1", vn: "Củng cố, hợp nhất", def: "Make something physically stronger or more solid; combine.", example: "The company plans to consolidate its market position.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Capricious", pos: "adjective", ipa: "/kəˈprɪʃəs/", level: "C2", vn: "Thất thường, hay thay đổi vô cớ", def: "Given to sudden and unaccountable changes of mood or behavior.", example: "The weather in the mountains can be highly capricious.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Impeccable", pos: "adjective", ipa: "/ɪmˈpekəbl/", level: "C1", vn: "Hoàn hảo, không chê vào đâu được", def: "Faultless; in accordance with the highest standards.", example: "Her English pronunciation and grammar are impeccable.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Substantiate", pos: "verb", ipa: "/səbˈstænʃieɪt/", level: "C2", vn: "Chứng minh, đưa ra bằng chứng xác minh", def: "Provide evidence to support or prove the truth of.", example: "The study failed to substantiate the claims made by the manufacturer.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Scrutinize", pos: "verb", ipa: "/ˈskruːtənaɪz/", level: "C1", vn: "Xem xét kỹ lưỡng, soi xét cẩn thận", def: "Examine or inspect closely and thoroughly.", example: "Inspectors scrutinize every component before shipping.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Inevitably", pos: "adverb", ipa: "/ɪnˈevɪtəbli/", level: "B2", vn: "Tất yếu, không thể tránh khỏi", def: "Certain to happen; unavoidably.", example: "Technological advancements inevitably reshape the labor market.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Paramount", pos: "adjective", ipa: "/ˈpærəmaʊnt/", level: "C1", vn: "Tối quan trọng, có ý nghĩa hàng đầu", def: "More important than anything else; supreme.", example: "Safety must remain the paramount concern for engineers.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Fluctuate", pos: "verb", ipa: "/ˈflʌktʃueɪt/", level: "B2", vn: "Biến động, dao động thất thường", def: "Rise and fall irregularly in number or amount.", example: "Stock prices fluctuate depending on market demand.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Divergence", pos: "noun", ipa: "/daɪˈvɜːrdʒəns/", level: "C1", vn: "Sự phân kỳ, sự khác biệt ý kiến/hướng đi", def: "A difference in opinions, interests, or direction.", example: "There is a clear divergence between the two research reports.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Fostering", pos: "verb", ipa: "/ˈfɔːstərɪŋ/", level: "B2", vn: "Thúc đẩy, nuôi dưỡng, khuyến khích phát triển", def: "Encouraging the development or growth of something.", example: "The school aims at fostering creativity among young learners.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Intrinsic", pos: "adjective", ipa: "/ɪnˈtrɪnzɪk/", level: "C1", vn: "Bản chất, thuộc về bên trong, cốt lõi", def: "Belonging naturally; essential.", example: "Interest in learning is an intrinsic motivation for success.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Elucidate", pos: "verb", ipa: "/ɪˈluːsɪdeɪt/", level: "C2", vn: "Làm sáng tỏ, giải thích rõ ràng", def: "Make something clear; explain thoroughly.", example: "The professor gave examples to elucidate the complex theorem.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Superfluous", pos: "adjective", ipa: "/suːˈpɜːrfluəs/", level: "C2", vn: "Dư thừa, thừa thải, không cần thiết", def: "Unnecessary, especially through being more than enough.", example: "Avoid including superfluous details in your academic summary.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Cognitive", pos: "adjective", ipa: "/ˈkɑːɡnətɪv/", level: "B2", vn: "Thuộc về nhận thức, trí tuệ", def: "Relating to mental processes of perception and reasoning.", example: "Reading enhances cognitive abilities in young children.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Empirical", pos: "adjective", ipa: "/ɪmˈpɪrɪkl/", level: "C1", vn: "Dựa trên thực nghiệm, quan sát thực tế", def: "Based on observation or experiment rather than theory.", example: "Scientific laws require strong empirical evidence to be accepted.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" }
+];
+
+const FOV_QUIZ_DATA = [
+  // --- CHAPTER 1 QUESTIONS (ALL 23 EXERCISES) ---
+  // Set 1 (7 questions)
+  {
+    id: "ch1_q1",
+    chapter: "ch1",
+    question: "Definition Match: 'occurring because of a natural tendency to behave in a particular way or a natural ability to know something that is not learned'",
+    options: ["A. philosophy", "B. instinctively", "C. mystery", "D. manner"],
+    correct: 1,
+    explanation: "Instinctively means occurring because of a natural tendency or unlearned ability.",
+    explanationVn: "Giải thích: 'Instinctively' (theo bản năng) xuất phát từ xu hướng tự nhiên không qua học tập."
+  },
+  {
+    id: "ch1_q2",
+    chapter: "ch1",
+    question: "Definition Match: 'the study of the nature and meaning of existence, truth, good, and evil'",
+    options: ["A. philosophy", "B. deed", "C. mystery", "D. manner"],
+    correct: 0,
+    explanation: "Philosophy is the study of existence, truth, good, and evil.",
+    explanationVn: "Giải thích: 'Philosophy' (triết học) là việc nghiên cứu bản chất sự tồn tại, chân lý và đạo đức."
+  },
+  {
+    id: "ch1_q3",
+    chapter: "ch1",
+    question: "Definition Match: 'something a person does, especially something that is very good or bad'",
+    options: ["A. manner", "B. restaurant", "C. deed", "D. graft"],
+    correct: 2,
+    explanation: "Deed is something a person does, an action.",
+    explanationVn: "Giải thích: 'Deed' (hành động, việc làm) là việc con người thực hiện (việc tốt hoặc xấu)."
+  },
+  {
+    id: "ch1_q4",
+    chapter: "ch1",
+    question: "Definition Match: 'a place where you can buy and eat a meal'",
+    options: ["A. mystery", "B. restaurant", "C. manner", "D. steak"],
+    correct: 1,
+    explanation: "Restaurant is a commercial place where meals are served.",
+    explanationVn: "Giải thích: 'Restaurant' (nhà hàng) là nơi mua và ăn các bữa ăn."
+  },
+  {
+    id: "ch1_q5",
+    chapter: "ch1",
+    question: "Definition Match: 'an event, situation, etc., that people do not understand or cannot explain'",
+    options: ["A. mystery", "B. philosophy", "C. deed", "D. pace"],
+    correct: 0,
+    explanation: "Mystery is an unexplained or mysterious event/situation.",
+    explanationVn: "Giải thích: 'Mystery' (bí ẩn) là sự kiện hay tình huống chưa thể giải thích được."
+  },
+  {
+    id: "ch1_q6",
+    chapter: "ch1",
+    question: "Definition Match: 'the way in which something is done or happens'",
+    options: ["A. graft", "B. manner", "C. pace", "D. esteem"],
+    correct: 1,
+    explanation: "Manner refers to the way or style in which something is done.",
+    explanationVn: "Giải thích: 'Manner' (cách thức, phong thái) là phương thức việc gì đó được thực hiện."
+  },
+  {
+    id: "ch1_q7",
+    chapter: "ch1",
+    question: "Definition Match: 'to add something very different to something, so that it becomes part of it'",
+    options: ["A. inherit", "B. devote", "C. graft", "D. assert"],
+    correct: 2,
+    explanation: "Graft means to join or add something different onto something else.",
+    explanationVn: "Giải thích: 'Graft' (ghép/gắn kết) là thêm một thành phần khác vào để trở thành một phần của nó."
+  },
+
+  // Set 2 (7 questions)
+  {
+    id: "ch1_q8",
+    chapter: "ch1",
+    question: "Definition Match: 'the speed at which something happens or is done'",
+    options: ["A. pace", "B. therapy", "C. monk", "D. esteem"],
+    correct: 0,
+    explanation: "Pace refers to the rate of speed of progress or movement.",
+    explanationVn: "Giải thích: 'Pace' (nhịp độ, tốc độ) là vận tốc diễn ra của một sự việc."
+  },
+  {
+    id: "ch1_q9",
+    chapter: "ch1",
+    question: "Definition Match: 'a large, thick piece of good-quality red meat'",
+    options: ["A. steak", "B. deed", "C. graft", "D. pace"],
+    correct: 0,
+    explanation: "Steak is a thick slice of high-quality red meat.",
+    explanationVn: "Giải thích: 'Steak' (thịt bít tết) là miếng thịt đỏ dày chất lượng cao."
+  },
+  {
+    id: "ch1_q10",
+    chapter: "ch1",
+    question: "Definition Match: 'to be born with the same character or physical appearance as your parents'",
+    options: ["A. devote", "B. inherit", "C. assert", "D. review"],
+    correct: 1,
+    explanation: "Inherit means to receive genetic traits or physical features from parents.",
+    explanationVn: "Giải thích: 'Inherit' (thừa hưởng, di truyền) là sinh ra mang đặc điểm của bố mẹ."
+  },
+  {
+    id: "ch1_q11",
+    chapter: "ch1",
+    question: "Definition Match: 'a member of an all-male religious group that lives apart from other people'",
+    options: ["A. monk", "B. therapy", "C. esteem", "D. deed"],
+    correct: 0,
+    explanation: "Monk is a member of a male religious community.",
+    explanationVn: "Giải thích: 'Monk' (thầy tu, nhà sư) là nam tu sĩ sống trong cộng đồng tôn giáo riêng biệt."
+  },
+  {
+    id: "ch1_q12",
+    chapter: "ch1",
+    question: "Definition Match: 'to use all or most of your time and effort in order to do something or help someone'",
+    options: ["A. assert", "B. devote", "C. boost", "D. inherit"],
+    correct: 1,
+    explanation: "Devote means to dedicate time and energy to a cause or person.",
+    explanationVn: "Giải thích: 'Devote' (cống hiến, dành trọn) là dùng toàn bộ thời gian/tâm trí cho mục tiêu."
+  },
+  {
+    id: "ch1_q13",
+    chapter: "ch1",
+    question: "Definition Match: 'treatment that helps someone feel better or grow stronger'",
+    options: ["A. therapy", "B. esteem", "C. mystery", "D. intervention"],
+    correct: 0,
+    explanation: "Therapy is healing treatment for physical or mental conditions.",
+    explanationVn: "Giải thích: 'Therapy' (liệu pháp điều trị) là phương pháp giúp cải thiện sức khỏe."
+  },
+  {
+    id: "ch1_q14",
+    chapter: "ch1",
+    question: "Definition Match: 'a feeling of respect for someone, or a good opinion of someone'",
+    options: ["A. longing", "B. esteem", "C. discipline", "D. manner"],
+    correct: 1,
+    explanation: "Esteem is respect and high regard for someone.",
+    explanationVn: "Giải thích: 'Esteem' (sự tôn trọng/kính trọng) là tình cảm nể trọng đối với ai đó."
+  },
+
+  // Part B (9 Odd-Word-Out Synonym questions)
+  {
+    id: "ch1_q15",
+    chapter: "ch1",
+    question: "Find the word or phrase that is NOT a synonym for 'thrill':",
+    options: ["A. excitement", "B. boredom", "C. pleasure", "D. adventure"],
+    correct: 1,
+    explanation: "Excitement, pleasure, and adventure are synonyms for thrill. Boredom is the antonym (sự nhàm chán).",
+    explanationVn: "Giải thích: Excitement, pleasure, adventure là từ đồng nghĩa với thrill (phấn khích). Boredom (nhàm chán) là từ trái nghĩa."
+  },
+  {
+    id: "ch1_q16",
+    chapter: "ch1",
+    question: "Find the word or phrase that is NOT a synonym for 'discipline':",
+    options: ["A. control", "B. regulation", "C. restraint", "D. indulgence"],
+    correct: 3,
+    explanation: "Control, regulation, and restraint mean discipline. Indulgence means self-gratification (nuông chiều/buông thả).",
+    explanationVn: "Giải thích: Control, regulation, restraint là từ đồng nghĩa với discipline (kỷ luật). Indulgence (nuông chiều) là từ trái nghĩa."
+  },
+  {
+    id: "ch1_q17",
+    chapter: "ch1",
+    question: "Find the word or phrase that is NOT a synonym for 'longing':",
+    options: ["A. desire", "B. dislike", "C. wish", "D. want"],
+    correct: 1,
+    explanation: "Desire, wish, and want mean longing. Dislike is the opposite (không thích).",
+    explanationVn: "Giải thích: Desire, wish, want là từ đồng nghĩa với longing (khao khát). Dislike (không thích) là từ trái nghĩa."
+  },
+  {
+    id: "ch1_q18",
+    chapter: "ch1",
+    question: "Find the word or phrase that is NOT a synonym for 'cheerful':",
+    options: ["A. serious", "B. happy", "C. positive", "D. joyful"],
+    correct: 0,
+    explanation: "Happy, positive, and joyful mean cheerful. Serious means solemn or somber (trầm lắng/nghiêm túc).",
+    explanationVn: "Giải thích: Happy, positive, joyful là từ đồng nghĩa với cheerful (vui vẻ). Serious (nghiêm túc/trầm lắng) là từ trái nghĩa."
+  },
+  {
+    id: "ch1_q19",
+    chapter: "ch1",
+    question: "Find the word or phrase that is NOT a synonym for 'astonishing':",
+    options: ["A. amazing", "B. predictable", "C. surprising", "D. shocking"],
+    correct: 1,
+    explanation: "Amazing, surprising, and shocking mean astonishing. Predictable means expected (đoán trước được).",
+    explanationVn: "Giải thích: Amazing, surprising, shocking là từ đồng nghĩa với astonishing (sửng sốt). Predictable (đoán trước được) là từ trái nghĩa."
+  },
+  {
+    id: "ch1_q20",
+    chapter: "ch1",
+    question: "Find the word or phrase that is NOT a synonym for 'assert':",
+    options: ["A. state", "B. declare", "C. claim", "D. deny"],
+    correct: 3,
+    explanation: "State, declare, and claim mean to assert. Deny means to state something is NOT true (phủ nhận).",
+    explanationVn: "Giải thích: State, declare, claim có nghĩa là khẳng định/tuyên bố. Deny (phủ nhận) là từ trái nghĩa."
+  },
+  {
+    id: "ch1_q21",
+    chapter: "ch1",
+    question: "Find the word or phrase that is NOT a synonym for 'review':",
+    options: ["A. evaluation", "B. assessment", "C. description", "D. proposal"],
+    correct: 3,
+    explanation: "Evaluation, assessment, and description are related to review. Proposal is a plan/suggestion (đề xuất).",
+    explanationVn: "Giải thích: Evaluation, assessment, description liên quan đến việc đánh giá/khảo sát. Proposal (đề xuất) không phải từ đồng nghĩa."
+  },
+  {
+    id: "ch1_q22",
+    chapter: "ch1",
+    question: "Find the word or phrase that is NOT a synonym for 'intervention':",
+    options: ["A. interference", "B. inactivity", "C. treatment", "D. interruption"],
+    correct: 1,
+    explanation: "Interference, treatment, and interruption are related to intervention. Inactivity means doing nothing.",
+    explanationVn: "Giải thích: Interference, treatment, interruption có nghĩa liên quan đến sự can thiệp. Inactivity (không hoạt động) là từ trái nghĩa."
+  },
+  {
+    id: "ch1_q23",
+    chapter: "ch1",
+    question: "Find the word or phrase that is NOT a synonym for 'boost':",
+    options: ["A. increase", "B. enhance", "C. improve", "D. limit"],
+    correct: 3,
+    explanation: "Increase, enhance, and improve mean to boost. Limit means to restrict (giới hạn).",
+    explanationVn: "Giải thích: Increase, enhance, improve nghĩa là thúc đẩy/tăng cường. Limit (giới hạn) là từ trái nghĩa."
+  },
+
+  // --- CHAPTER 2 QUESTIONS (24 QUESTIONS) ---
+  {
+    id: "ch2_q1",
+    chapter: "ch2",
+    question: "Definition Match: 'deeply engaged, interested, or strongly affected by something'",
+    options: ["A. absorbed", "B. gripped", "C. distracted", "D. tension"],
+    correct: 1,
+    explanation: "Gripped means deeply engaged, interested, or strongly affected.",
+    explanationVn: "Giải thích: 'Gripped' nghĩa là bị cuốn hút, lôi cuốn sâu sắc."
+  },
+  {
+    id: "ch2_q2",
+    chapter: "ch2",
+    question: "Definition Match: 'very interested in something, often to the point of not noticing other things happening around you'",
+    options: ["A. absorbed", "B. trivial", "C. fictional", "D. drift"],
+    correct: 0,
+    explanation: "Absorbed means deeply engrossed so as not to notice surroundings.",
+    explanationVn: "Giải thích: 'Absorbed' nghĩa là mải mê, say sưa không chú ý xung quanh."
+  },
+  {
+    id: "ch2_q3",
+    chapter: "ch2",
+    question: "Definition Match: 'energetically and with strong feelings'",
+    options: ["A. fiercely", "B. thus", "C. worthwhile", "D. intellectual"],
+    correct: 0,
+    explanation: "Fiercely means with strong feelings, intensity, or energy.",
+    explanationVn: "Giải thích: 'Fiercely' nghĩa là dữ dội, mãnh liệt."
+  },
+  {
+    id: "ch2_q4",
+    chapter: "ch2",
+    question: "Definition Match: 'to feel a continuous but not very sharp pain in a part of your body'",
+    options: ["A. ache", "B. strive", "C. confront", "D. lung"],
+    correct: 0,
+    explanation: "Ache means to feel a continuous mild pain.",
+    explanationVn: "Giải thích: 'Ache' nghĩa là đau nhức ê ẩm kéo dài."
+  },
+  {
+    id: "ch2_q5",
+    chapter: "ch2",
+    question: "Definition Match: 'to suddenly increase greatly in number, amount, or degree'",
+    options: ["A. explode", "B. overcome", "C. drift", "D. motivate"],
+    correct: 0,
+    explanation: "Explode in this context means to suddenly increase greatly.",
+    explanationVn: "Giải thích: 'Explode' nghĩa là bùng nổ, tăng vọt đột ngột."
+  },
+  {
+    id: "ch2_q6",
+    chapter: "ch2",
+    question: "Definition Match: 'able to successfully control a feeling or problem that would prevent you from achieving something'",
+    options: ["A. overcome", "B. confront", "C. strive", "D. absorb"],
+    correct: 0,
+    explanation: "Overcome means to successfully deal with or control a problem.",
+    explanationVn: "Giải thích: 'Overcome' nghĩa là vượt qua, khống chế khó khăn."
+  },
+  {
+    id: "ch2_q7",
+    chapter: "ch2",
+    question: "Definition Match: 'needing serious thought in order to be understood'",
+    options: ["A. intellectual", "B. trivial", "C. fictional", "D. peer"],
+    correct: 0,
+    explanation: "Intellectual means requiring serious thought or mental effort.",
+    explanationVn: "Giải thích: 'Intellectual' nghĩa là thuộc trí tuệ, đòi hỏi suy nghĩ chuyên sâu."
+  },
+  {
+    id: "ch2_q8",
+    chapter: "ch2",
+    question: "Definition Match: 'to move, change, or do something without any plan or purpose'",
+    options: ["A. drift", "B. strive", "C. confront", "D. ache"],
+    correct: 0,
+    explanation: "Drift means to move or live without purpose or aim.",
+    explanationVn: "Giải thích: 'Drift' nghĩa là trôi dạt, sống trôi nổi không mục đích."
+  },
+  {
+    id: "ch2_q9",
+    chapter: "ch2",
+    question: "Definition Match: 'to deal with something very difficult or unpleasant in a brave and determined way'",
+    options: ["A. confront", "B. overcome", "C. avoid", "D. distracted"],
+    correct: 0,
+    explanation: "Confront means to face and deal with a difficult situation bravely.",
+    explanationVn: "Giải thích: 'Confront' nghĩa là đương đầu, đối mặt trực diện với khó khăn."
+  },
+  {
+    id: "ch2_q10",
+    chapter: "ch2",
+    question: "Definition Match: 'a nervous feeling that makes it impossible to relax'",
+    options: ["A. tension", "B. fulfillment", "C. motivation", "D. feedback"],
+    correct: 0,
+    explanation: "Tension is mental or emotional strain causing nervousness.",
+    explanationVn: "Giải thích: 'Tension' nghĩa là sự căng thẳng, áp lực tâm lý."
+  },
+  {
+    id: "ch2_q11",
+    chapter: "ch2",
+    question: "Definition Match: 'the feeling of being happy and satisfied with your life because you are doing interesting, useful, or important things'",
+    options: ["A. fulfillment", "B. tension", "C. amusement", "D. medal"],
+    correct: 0,
+    explanation: "Fulfillment is a feeling of satisfaction from achieving worthwhile things.",
+    explanationVn: "Giải thích: 'Fulfillment' nghĩa là cảm giác mãn nguyện, tự hào với cuộc sống."
+  },
+  {
+    id: "ch2_q12",
+    chapter: "ch2",
+    question: "Definition Match: 'the reason why you want to do something or eagerness to achieve goals'",
+    options: ["A. motivation", "B. feedback", "C. interval", "D. peer"],
+    correct: 0,
+    explanation: "Motivation is the driving force or reason behind actions.",
+    explanationVn: "Giải thích: 'Motivation' nghĩa là động lực, lý do thúc đẩy hành động."
+  },
+  {
+    id: "ch2_q13",
+    chapter: "ch2",
+    question: "Fill in the blank: Supporters of democracy believe that 'life, liberty, and the pursuit of happiness' are not only ________ (valuable, meaningful) but also basic human rights.",
+    options: ["A. worthwhile", "B. trivial", "C. fictional", "D. distracted"],
+    correct: 0,
+    explanation: "Worthwhile means valuable or meaningful enough to pursue.",
+    explanationVn: "Giải thích: 'Worthwhile' nghĩa là đáng giá, có ý nghĩa."
+  },
+  {
+    id: "ch2_q14",
+    chapter: "ch2",
+    question: "Fill in the blank: Schoolchildren take standardized tests at preset ________ (period, time) to find out whether they are achieving expected levels.",
+    options: ["A. intervals", "B. feedback", "C. medals", "D. peers"],
+    correct: 0,
+    explanation: "Intervals refers to preset periods or spaces of time between events.",
+    explanationVn: "Giải thích: 'Intervals' nghĩa là khoảng thời gian định kỳ."
+  },
+  {
+    id: "ch2_q15",
+    chapter: "ch2",
+    question: "Fill in the blank: Researchers found that teens who spend large amounts of time with ________ (friend, classmate) instead of doing challenging tasks fail to develop their abilities.",
+    options: ["A. peers", "B. medals", "C. lungs", "D. amusements"],
+    correct: 0,
+    explanation: "Peers refers to classmates, friends, or equals.",
+    explanationVn: "Giải thích: 'Peers' nghĩa là bạn đồng lứa, bạn học."
+  },
+  {
+    id: "ch2_q16",
+    chapter: "ch2",
+    question: "Fill in the blank: When left-handed people throw a baseball with their right hand, they get negative internal ________ (response, advice) showing how uncomfortable it is.",
+    options: ["A. feedback", "B. tension", "C. medal", "D. interval"],
+    correct: 0,
+    explanation: "Feedback refers to internal or external response/evaluation.",
+    explanationVn: "Giải thích: 'Feedback' nghĩa là thông tin phản hồi."
+  },
+  {
+    id: "ch2_q17",
+    chapter: "ch2",
+    question: "Fill in the blank: There are many activities we cannot avoid; ________ (therefore, so), no one can be in the flow all of the time.",
+    options: ["A. thus", "B. trivial", "C. absorbed", "D. strive"],
+    correct: 0,
+    explanation: "Thus means therefore, so, or as a result.",
+    explanationVn: "Giải thích: 'Thus' nghĩa là do đó, vì vậy."
+  },
+  {
+    id: "ch2_q18",
+    chapter: "ch2",
+    question: "Fill in the blank: It can be easy to fill your day with ________ (not valuable, unimportant) tasks and finish realizing you haven't done much.",
+    options: ["A. trivial", "B. intellectual", "C. worthwhile", "D. gripped"],
+    correct: 0,
+    explanation: "Trivial means unimportant or of small value.",
+    explanationVn: "Giải thích: 'Trivial' nghĩa là tầm thường, không quan trọng."
+  },
+  {
+    id: "ch2_q19",
+    chapter: "ch2",
+    question: "Fill in the blank: Finishers' ________ (award, prize) and event T-shirts provide extra motivation for runners to participate in road races.",
+    options: ["A. medals", "B. lungs", "C. peers", "D. intervals"],
+    correct: 0,
+    explanation: "Medals are awards given to race finishers.",
+    explanationVn: "Giải thích: 'Medals' nghĩa là huy chương thưởng."
+  },
+  {
+    id: "ch2_q20",
+    chapter: "ch2",
+    question: "Fill in the blank: Everyday ________ (hobby, activity) such as flying kites and playing video games can bring about flow if properly challenging.",
+    options: ["A. amusements", "B. tensions", "C. lungs", "D. feedbacks"],
+    correct: 0,
+    explanation: "Amusements refers to hobbies, activities, or forms of entertainment.",
+    explanationVn: "Giải thích: 'Amusements' nghĩa là trò giải trí, hoạt động vui chơi."
+  },
+  {
+    id: "ch2_q21",
+    chapter: "ch2",
+    question: "Fill in the blank: In the ________ (imaginary, made-up) world of Second Life, online players create and trade items with one another.",
+    options: ["A. fictional", "B. empirical", "C. intellectual", "D. trivial"],
+    correct: 0,
+    explanation: "Fictional means imaginary or made-up.",
+    explanationVn: "Giải thích: 'Fictional' nghĩa là hư cấu, tưởng tượng."
+  },
+  {
+    id: "ch2_q22",
+    chapter: "ch2",
+    question: "Fill in the blank: There are no shortcuts to a full life; humans must continually ________ (make every effort, try hard) to explore and achieve.",
+    options: ["A. strive", "B. drift", "C. ache", "D. explode"],
+    correct: 0,
+    explanation: "Strive means to make every effort or try hard.",
+    explanationVn: "Giải thích: 'Strive' nghĩa là cố gắng hết sức, phấn đấu."
+  },
+  {
+    id: "ch2_q23",
+    chapter: "ch2",
+    question: "Fill in the blank: Conditions like asthma affect the small tubes that carry air in and out of the ________ (chest, organ for breathing).",
+    options: ["A. lungs", "B. medals", "C. peers", "D. intervals"],
+    correct: 0,
+    explanation: "Lungs are the chest organs responsible for breathing.",
+    explanationVn: "Giải thích: 'Lungs' nghĩa là lá phổi (cơ quan hô hấp)."
+  },
+  {
+    id: "ch2_q24",
+    chapter: "ch2",
+    question: "Fill in the blank: For someone who is easily ________ (unfocused, inattentive), achieving flow is more difficult than for concentrated people.",
+    options: ["A. distracted", "B. absorbed", "C. gripped", "D. fulfilled"],
+    correct: 0,
+    explanation: "Distracted means unfocused or inattentive.",
+    explanationVn: "Giải thích: 'Distracted' nghĩa là mất tập trung, xao nhãng."
+  },
+
   // --- CHAPTER ACADEMIC (CORE AWL) ---
   { word: "Ubiquitous", pos: "adjective", ipa: "/juːˈbɪkwɪtəs/", level: "B2", vn: "Phổ biến ở khắp mọi nơi, có mặt khắp nơi", def: "Present, appearing, or found everywhere.", example: "Smartphones have become ubiquitous in modern daily life.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
   { word: "Ephemeral", pos: "adjective", ipa: "/ɪˈfemərəl/", level: "C1", vn: "Phù du, chóng khánh, ngắn ngủi", def: "Lasting for a very short time.", example: "Fashions are ephemeral, changing with every season.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
