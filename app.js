@@ -314,30 +314,25 @@ document.addEventListener("DOMContentLoaded", () => {
   initFovModule();
 });
 
+// Global TTS Speech Helper
+function speakWord(text) {
+  if (typeof window.speechSynthesis !== 'undefined') {
+    window.speechSynthesis.cancel();
+    const utter = new SpeechSynthesisUtterance(text);
+    utter.lang = 'en-US';
+    utter.rate = 0.9;
+    window.speechSynthesis.speak(utter);
+  }
+}
+
 // Main Tab Navigation (Home / Reading Comprehension / Listening / Collocations / Dashboard)
 function initNavigation() {
   const navBtns = document.querySelectorAll(".nav-btn");
-  const tabContents = document.querySelectorAll(".tab-content");
-
   navBtns.forEach(btn => {
     btn.addEventListener("click", () => {
       const tabId = btn.getAttribute("data-tab");
-      navBtns.forEach(b => b.classList.remove("active"));
-      tabContents.forEach(c => c.classList.remove("active"));
-
-      btn.classList.add("active");
-      const targetSec = document.getElementById(tabId);
-      if (targetSec) targetSec.classList.add("active");
-      currentTab = tabId;
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-
-      // Track GA4 page view tab
+      openSkillTab(tabId);
       trackGAEvent('page_view_tab', { tab_id: tabId });
-
-      // Render dashboard if active
-      if (tabId === 'learning-dashboard') {
-        renderLearningDashboard();
-      }
     });
   });
 }
@@ -363,6 +358,12 @@ function initSubTabs() {
         currentSubTab = subTabId;
         if (subTabId === "fov-memory-lab") {
           renderFovCTest();
+        } else if (subTabId === "fov-flashcards") {
+          initFovFlashcards();
+        } else if (subTabId === "fov-quiz") {
+          renderFovQuiz();
+        } else if (subTabId === "fov-bank") {
+          initFovBank();
         }
       });
     });
@@ -371,19 +372,7 @@ function initSubTabs() {
 
 // Go back to Home tab
 function goHome() {
-  const navBtns = document.querySelectorAll(".nav-btn");
-  const tabContents = document.querySelectorAll(".tab-content");
-
-  navBtns.forEach(b => b.classList.remove("active"));
-  tabContents.forEach(c => c.classList.remove("active"));
-
-  const homeBtn = document.querySelector('.nav-btn[data-tab="home"]');
-  const homeTab = document.getElementById("home");
-
-  if (homeBtn) homeBtn.classList.add("active");
-  if (homeTab) homeTab.classList.add("active");
-  currentTab = "home";
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  openSkillTab("home");
 }
 
 // Open a skill tab (e.g., reading-comprehension) from homepage card
@@ -403,6 +392,12 @@ function openSkillTab(tabId) {
     currentTab = tabId;
   }
   window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  if (tabId === 'learning-dashboard') {
+    renderLearningDashboard();
+  } else if (tabId === 'focus-on-vocabulary') {
+    initFovModule();
+  }
 }
 
 // Switch to quiz sub-tab and filter by category (called from skill cards)
@@ -2696,6 +2691,7 @@ function initFovModule() {
 
 // Open specific sub-tab inside Focus on Vocabulary module
 function openFovSubTab(subTabId) {
+  openSkillTab('focus-on-vocabulary');
   const container = document.getElementById("focus-on-vocabulary");
   if (!container) return;
   const subTabs = container.querySelectorAll(".sub-tab");
@@ -2712,6 +2708,12 @@ function openFovSubTab(subTabId) {
 
   if (subTabId === "fov-memory-lab") {
     renderFovCTest();
+  } else if (subTabId === "fov-flashcards") {
+    initFovFlashcards();
+  } else if (subTabId === "fov-quiz") {
+    renderFovQuiz();
+  } else if (subTabId === "fov-bank") {
+    initFovBank();
   }
 }
 
