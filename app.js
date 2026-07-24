@@ -616,30 +616,6 @@ function initVocabulary() {
   }
 
   renderVocab();
-}ATA.filter(v => 
-      v.word.toLowerCase().includes(filter.toLowerCase()) ||
-      v.def.toLowerCase().includes(filter.toLowerCase()) ||
-      v.vn.toLowerCase().includes(filter.toLowerCase())
-    );
-
-    filtered.forEach(v => {
-      const card = document.createElement("div");
-      card.className = "vocab-card";
-      card.innerHTML = `
-        <div class="vocab-word">${v.word}</div>
-        <div class="vocab-pos">${v.pos}</div>
-        <div class="vocab-def">${v.def}</div>
-        <div class="vocab-vn">🇻🇳 ${v.vn}</div>
-      `;
-      vocabGrid.appendChild(card);
-    });
-  }
-
-  searchInput.addEventListener("input", (e) => {
-    renderVocab(e.target.value);
-  });
-
-  renderVocab();
 }
 
 // ==================== COLLOCATIONS MODULE LOGIC ====================
