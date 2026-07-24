@@ -1850,38 +1850,141 @@ function initTaBank() {
 // FOCUS ON VOCABULARY MODULE LOGIC & DATA STORES
 // ==========================================================================
 
+let currentFovChapter = "all";
+
 const FOV_VOCABULARY_DATA = [
-  { word: "Ubiquitous", pos: "adjective", ipa: "/juːˈbɪkwɪtəs/", level: "B2", vn: "Phổ biến ở khắp mọi nơi, có mặt khắp nơi", def: "Present, appearing, or found everywhere.", example: "Smartphones have become ubiquitous in modern daily life." },
-  { word: "Ephemeral", pos: "adjective", ipa: "/ɪˈfemərəl/", level: "C1", vn: "Phù du, chóng khánh, ngắn ngủi", def: "Lasting for a very short time.", example: "Fashions are ephemeral, changing with every season." },
-  { word: "Plausible", pos: "adjective", ipa: "/ˈplɔːzəbl/", level: "B2", vn: "Hợp lý, đáng tin cậy", def: "Seeming reasonable or probable.", example: "She offered a plausible explanation for her tardiness." },
-  { word: "Meticulous", pos: "adjective", ipa: "/məˈtɪkjələs/", level: "C1", vn: "Tỉ mỉ, cẩn thận từng chi tiết", def: "Showing great attention to detail; very careful and precise.", example: "The researcher conducted a meticulous analysis of the data." },
-  { word: "Pragmatic", pos: "adjective", ipa: "/præɡˈmætɪk/", level: "C1", vn: "Thực tế, thực dụng, trọng thực tiễn", def: "Dealing with things sensibly and realistically.", example: "We need a pragmatic solution rather than an idealist theory." },
-  { word: "Exacerbate", pos: "verb", ipa: "/ɪɡˈzæsərbeɪt/", level: "C1", vn: "Làm trầm trọng thêm, làm xấu đi", def: "Make a problem or bad situation worse.", example: "Pollution will exacerbate respiratory illnesses in urban areas." },
-  { word: "Resilient", pos: "adjective", ipa: "/rɪˈzɪliənt/", level: "B2", vn: "Kiên cường, có khả năng phục hồi nhanh", def: "Able to withstand or recover quickly from difficult conditions.", example: "Local communities proved resilient in the face of the economic crisis." },
-  { word: "Ambiguous", pos: "adjective", ipa: "/æmˈbɪɡjuəs/", level: "B2", vn: "Mơ hồ, nhập nhằng, có nhiều cách hiểu", def: "Open to more than one interpretation; unclear.", example: "The instructions were ambiguous and led to confusion." },
-  { word: "Disparate", pos: "adjective", ipa: "/ˈdɪspərət/", level: "C2", vn: "Khác biệt hoàn toàn, không thể so sánh", def: "Essentially different in kind; not allowing comparison.", example: "The team brought together experts from disparate fields." },
-  { word: "Profound", pos: "adjective", ipa: "/prəˈfaʊnd/", level: "B2", vn: "Sâu sắc, thâm thúy, ảnh hưởng to lớn", def: "Very great or intense; possessing deep insight.", example: "The discovery had a profound impact on medical science." },
-  { word: "Consolidate", pos: "verb", ipa: "/kənˈsɑːlɪdeɪt/", level: "C1", vn: "Củng cố, hợp nhất", def: "Make something physically stronger or more solid; combine.", example: "The company plans to consolidate its market position." },
-  { word: "Capricious", pos: "adjective", ipa: "/kəˈprɪʃəs/", level: "C2", vn: "Thất thường, hay thay đổi vô cớ", def: "Given to sudden and unaccountable changes of mood or behavior.", example: "The weather in the mountains can be highly capricious." },
-  { word: "Impeccable", pos: "adjective", ipa: "/ɪmˈpekəbl/", level: "C1", vn: "Hoàn hảo, không chê vào đâu được", def: "Faultless; in accordance with the highest standards.", example: "Her English pronunciation and grammar are impeccable." },
-  { word: "Substantiate", pos: "verb", ipa: "/səbˈstænʃieɪt/", level: "C2", vn: "Chứng minh, đưa ra bằng chứng xác minh", def: "Provide evidence to support or prove the truth of.", example: "The study failed to substantiate the claims made by the manufacturer." },
-  { word: "Scrutinize", pos: "verb", ipa: "/ˈskruːtənaɪz/", level: "C1", vn: "Xem xét kỹ lưỡng, soi xét cẩn thận", def: "Examine or inspect closely and thoroughly.", example: "Inspectors scrutinize every component before shipping." },
-  { word: "Inevitably", pos: "adverb", ipa: "/ɪnˈevɪtəbli/", level: "B2", vn: "Tất yếu, không thể tránh khỏi", def: "Certain to happen; unavoidably.", example: "Technological advancements inevitably reshape the labor market." },
-  { word: "Paramount", pos: "adjective", ipa: "/ˈpærəmaʊnt/", level: "C1", vn: "Tối quan trọng, có ý nghĩa hàng đầu", def: "More important than anything else; supreme.", example: "Safety must remain the paramount concern for engineers." },
-  { word: "Fluctuate", pos: "verb", ipa: "/ˈflʌktʃueɪt/", level: "B2", vn: "Biến động, dao động thất thường", def: "Rise and fall irregularly in number or amount.", example: "Stock prices fluctuate depending on market demand." },
-  { word: "Divergence", pos: "noun", ipa: "/daɪˈvɜːrdʒəns/", level: "C1", vn: "Sự phân kỳ, sự khác biệt ý kiến/hướng đi", def: "A difference in opinions, interests, or direction.", example: "There is a clear divergence between the two research reports." },
-  { word: "Fostering", pos: "verb", ipa: "/ˈfɔːstərɪŋ/", level: "B2", vn: "Thúc đẩy, nuôi dưỡng, khuyến khích phát triển", def: "Encouraging the development or growth of something.", example: "The school aims at fostering creativity among young learners." },
-  { word: "Intrinsic", pos: "adjective", ipa: "/ɪnˈtrɪnzɪk/", level: "C1", vn: "Bản chất, thuộc về bên trong, cốt lõi", def: "Belonging naturally; essential.", example: "Interest in learning is an intrinsic motivation for success." },
-  { word: "Elucidate", pos: "verb", ipa: "/ɪˈluːsɪdeɪt/", level: "C2", vn: "Làm sáng tỏ, giải thích rõ ràng", def: "Make something clear; explain thoroughly.", example: "The professor gave examples to elucidate the complex theorem." },
-  { word: "Superfluous", pos: "adjective", ipa: "/suːˈpɜːrfluəs/", level: "C2", vn: "Dư thừa, thừa thải, không cần thiết", def: "Unnecessary, especially through being more than enough.", example: "Avoid including superfluous details in your academic summary." },
-  { word: "Cognitive", pos: "adjective", ipa: "/ˈkɑːɡnətɪv/", level: "B2", vn: "Thuộc về nhận thức, trí tuệ", def: "Relating to mental processes of perception and reasoning.", example: "Reading enhances cognitive abilities in young children." },
-  { word: "Empirical", pos: "adjective", ipa: "/ɪmˈpɪrɪkl/", level: "C1", vn: "Dựa trên thực nghiệm, quan sát thực tế", def: "Based on observation or experiment rather than theory.", example: "Scientific laws require strong empirical evidence to be accepted." }
+  // --- CHAPTER 1: CAN WE BE HAPPIER? ---
+  { word: "Instinctively", pos: "adverb", ipa: "/ɪnˈstɪŋktɪvli/", level: "B2", vn: "Theo bản năng, tự nhiên phát sinh", def: "Occurring because of a natural tendency to behave in a particular way or a natural ability to know something that is not learned.", example: "She instinctively reached out to catch the falling glass.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Philosophy", pos: "noun", ipa: "/fəˈlɑːsəfi/", level: "B2", vn: "Triết học, triết lý sống", def: "The study of the nature and meaning of existence, truth, good, and evil.", example: "His personal philosophy is to treat everyone with kindness.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Deed", pos: "noun", ipa: "/diːd/", level: "B2", vn: "Hành động, việc làm", def: "Something a person does, especially something that is very good or bad.", example: "A good deed is never wasted.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Restaurant", pos: "noun", ipa: "/ˈrestrɑːnt/", level: "A1", vn: "Nhà hàng, quán ăn", def: "A place where you can buy and eat a meal.", example: "We celebrated her graduation at an Italian restaurant.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Mystery", pos: "noun", ipa: "/ˈmɪstri/", level: "B1", vn: "Bí ẩn, điều chưa giải thích được", def: "An event, situation, etc., that people do not understand or cannot explain.", example: "The cause of the sudden disappearance remains a mystery.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Manner", pos: "noun", ipa: "/ˈmænər/", level: "B2", vn: "Cách thức, phong thái", def: "The way in which something is done or happens.", example: "He spoke in a calm and reassuring manner.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Graft", pos: "verb / noun", ipa: "/ɡræft/", level: "C1", vn: "Ghép vào, gắn kết cái mới vào", def: "To add something very different to something, so that it becomes part of it.", example: "Surgeons managed to graft new skin onto the wounded area.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Pace", pos: "noun", ipa: "/peɪs/", level: "B2", vn: "Nhịp độ, tốc độ tiến trình", def: "The speed at which something happens or is done.", example: "The pace of technological change is accelerating rapidly.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Steak", pos: "noun", ipa: "/steɪk/", level: "A2", vn: "Miếng thịt bít tết nướng", def: "A large, thick piece of good-quality red meat.", example: "He ordered a ribeye steak cooked to perfection.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Inherit", pos: "verb", ipa: "/ɪnˈherɪt/", level: "B2", vn: "Thừa hưởng, di truyền tính trạng", def: "To be born with the same character or physical appearance as your parents.", example: "She inherited her grandmother's artistic talent.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Monk", pos: "noun", ipa: "/mʌŋk/", level: "B2", vn: "Thầy tu, nhà sư", def: "A member of an all-male religious group living apart from secular society.", example: "The monk dedicated his day to prayer and meditation.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Devote", pos: "verb", ipa: "/dɪˈvoʊt/", level: "B2", vn: "Cống hiến, dành hết thời gian/tâm trí", def: "To use all or most of your time and effort in order to do something.", example: "She devotes hours every week to community service.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Therapy", pos: "noun", ipa: "/ˈθerəpi/", level: "B2", vn: "Liệu pháp điều trị, chữa trị tâm lý", def: "Treatment that helps someone feel better or grow stronger.", example: "Music therapy has proved effective in reducing anxiety.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Esteem", pos: "noun", ipa: "/ɪˈstiːm/", level: "C1", vn: "Sự tôn trọng, đánh giá cao", def: "A feeling of respect for someone, or a good opinion of someone.", example: "High self-esteem helps students overcome challenges.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Obscure", pos: "adjective", ipa: "/əbˈskjʊr/", level: "C1", vn: "Mơ hồ, khó hiểu (Từ trái nghĩa: precise)", def: "Not discovered or known about; unclear or vague.", example: "The manuscript was written in an obscure dialect.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Thrill", pos: "noun", ipa: "/θrɪl/", level: "B2", vn: "Cảm giác phấn khích (Từ trái nghĩa: boredom)", def: "A sudden feeling of excitement and pleasure.", example: "Riding the roller coaster gave her an incredible thrill.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Discipline", pos: "noun", ipa: "/ˈdɪsəplɪn/", level: "B2", vn: "Kỷ luật, sự tự giác (Từ trái nghĩa: indulgence)", def: "The practice of training self-control and rule obedience.", example: "Maintaining daily study discipline requires strong determination.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Longing", pos: "noun", ipa: "/ˈlɔːŋɪŋ/", level: "C1", vn: "Khao khát, mong mỏi tha thiết (Từ trái nghĩa: dislike)", def: "A yearning desire or strong wish for something.", example: "He felt a deep longing for his childhood home.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Cheerful", pos: "adjective", ipa: "/ˈtʃɪrfl/", level: "B1", vn: "Vui vẻ, phấn khởi (Từ trái nghĩa: serious)", def: "Noticeably happy and optimistic.", example: "Her cheerful smile brightened up the room.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Astonishing", pos: "adjective", ipa: "/əˈstɑːnɪʃɪŋ/", level: "B2", vn: "Đáng kinh ngạc, gây sửng sốt (Từ trái nghĩa: predictable)", def: "Extremely surprising or impressive; amazing.", example: "The athlete set an astonishing new world record.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Assert", pos: "verb", ipa: "/əˈsɜːrt/", level: "C1", vn: "Khẳng định, tuyên bố quả quyết (Từ trái nghĩa: deny)", def: "State a fact or belief confidently and forcefully.", example: "She asserted her independence by starting her own business.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Review", pos: "noun", ipa: "/rɪˈvjuː/", level: "B1", vn: "Sự đánh giá, xem xét (Không đồng nghĩa: proposal)", def: "A formal assessment or examination of something.", example: "The book received glowing reviews from critics.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Intervention", pos: "noun", ipa: "/ˌɪntərˈvenʃn/", level: "C1", vn: "Sự can thiệp, biện pháp điều trị (Từ trái nghĩa: inactivity)", def: "Action taken to improve a situation or treat a condition.", example: "Timely medical intervention saved the patient's life.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+  { word: "Boost", pos: "verb", ipa: "/buːst/", level: "B2", vn: "Thúc đẩy, tăng cường (Từ trái nghĩa: limit)", def: "Help or encourage something to increase or improve.", example: "Positive feedback can boost employee confidence.", chapter: "ch1", chapterTitle: "Chapter 1: Can we be happier?" },
+
+  // --- CHAPTER ACADEMIC (CORE AWL) ---
+  { word: "Ubiquitous", pos: "adjective", ipa: "/juːˈbɪkwɪtəs/", level: "B2", vn: "Phổ biến ở khắp mọi nơi, có mặt khắp nơi", def: "Present, appearing, or found everywhere.", example: "Smartphones have become ubiquitous in modern daily life.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Ephemeral", pos: "adjective", ipa: "/ɪˈfemərəl/", level: "C1", vn: "Phù du, chóng khánh, ngắn ngủi", def: "Lasting for a very short time.", example: "Fashions are ephemeral, changing with every season.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Plausible", pos: "adjective", ipa: "/ˈplɔːzəbl/", level: "B2", vn: "Hợp lý, đáng tin cậy", def: "Seeming reasonable or probable.", example: "She offered a plausible explanation for her tardiness.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Meticulous", pos: "adjective", ipa: "/məˈtɪkjələs/", level: "C1", vn: "Tỉ mỉ, cẩn thận từng chi tiết", def: "Showing great attention to detail; very careful and precise.", example: "The researcher conducted a meticulous analysis of the data.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Pragmatic", pos: "adjective", ipa: "/præɡˈmætɪk/", level: "C1", vn: "Thực tế, thực dụng, trọng thực tiễn", def: "Dealing with things sensibly and realistically.", example: "We need a pragmatic solution rather than an idealist theory.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Exacerbate", pos: "verb", ipa: "/ɪɡˈzæsərbeɪt/", level: "C1", vn: "Làm trầm trọng thêm, làm xấu đi", def: "Make a problem or bad situation worse.", example: "Pollution will exacerbate respiratory illnesses in urban areas.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Resilient", pos: "adjective", ipa: "/rɪˈzɪliənt/", level: "B2", vn: "Kiên cường, có khả năng phục hồi nhanh", def: "Able to withstand or recover quickly from difficult conditions.", example: "Local communities proved resilient in the face of the economic crisis.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Ambiguous", pos: "adjective", ipa: "/æmˈbɪɡjuəs/", level: "B2", vn: "Mơ hồ, nhập nhằng, có nhiều cách hiểu", def: "Open to more than one interpretation; unclear.", example: "The instructions were ambiguous and led to confusion.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Disparate", pos: "adjective", ipa: "/ˈdɪspərət/", level: "C2", vn: "Khác biệt hoàn toàn, không thể so sánh", def: "Essentially different in kind; not allowing comparison.", example: "The team brought together experts from disparate fields.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Profound", pos: "adjective", ipa: "/prəˈfaʊnd/", level: "B2", vn: "Sâu sắc, thâm thúy, ảnh hưởng to lớn", def: "Very great or intense; possessing deep insight.", example: "The discovery had a profound impact on medical science.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Consolidate", pos: "verb", ipa: "/kənˈsɑːlɪdeɪt/", level: "C1", vn: "Củng cố, hợp nhất", def: "Make something physically stronger or more solid; combine.", example: "The company plans to consolidate its market position.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Capricious", pos: "adjective", ipa: "/kəˈprɪʃəs/", level: "C2", vn: "Thất thường, hay thay đổi vô cớ", def: "Given to sudden and unaccountable changes of mood or behavior.", example: "The weather in the mountains can be highly capricious.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Impeccable", pos: "adjective", ipa: "/ɪmˈpekəbl/", level: "C1", vn: "Hoàn hảo, không chê vào đâu được", def: "Faultless; in accordance with the highest standards.", example: "Her English pronunciation and grammar are impeccable.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Substantiate", pos: "verb", ipa: "/səbˈstænʃieɪt/", level: "C2", vn: "Chứng minh, đưa ra bằng chứng xác minh", def: "Provide evidence to support or prove the truth of.", example: "The study failed to substantiate the claims made by the manufacturer.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Scrutinize", pos: "verb", ipa: "/ˈskruːtənaɪz/", level: "C1", vn: "Xem xét kỹ lưỡng, soi xét cẩn thận", def: "Examine or inspect closely and thoroughly.", example: "Inspectors scrutinize every component before shipping.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Inevitably", pos: "adverb", ipa: "/ɪnˈevɪtəbli/", level: "B2", vn: "Tất yếu, không thể tránh khỏi", def: "Certain to happen; unavoidably.", example: "Technological advancements inevitably reshape the labor market.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Paramount", pos: "adjective", ipa: "/ˈpærəmaʊnt/", level: "C1", vn: "Tối quan trọng, có ý nghĩa hàng đầu", def: "More important than anything else; supreme.", example: "Safety must remain the paramount concern for engineers.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Fluctuate", pos: "verb", ipa: "/ˈflʌktʃueɪt/", level: "B2", vn: "Biến động, dao động thất thường", def: "Rise and fall irregularly in number or amount.", example: "Stock prices fluctuate depending on market demand.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Divergence", pos: "noun", ipa: "/daɪˈvɜːrdʒəns/", level: "C1", vn: "Sự phân kỳ, sự khác biệt ý kiến/hướng đi", def: "A difference in opinions, interests, or direction.", example: "There is a clear divergence between the two research reports.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Fostering", pos: "verb", ipa: "/ˈfɔːstərɪŋ/", level: "B2", vn: "Thúc đẩy, nuôi dưỡng, khuyến khích phát triển", def: "Encouraging the development or growth of something.", example: "The school aims at fostering creativity among young learners.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Intrinsic", pos: "adjective", ipa: "/ɪnˈtrɪnzɪk/", level: "C1", vn: "Bản chất, thuộc về bên trong, cốt lõi", def: "Belonging naturally; essential.", example: "Interest in learning is an intrinsic motivation for success.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Elucidate", pos: "verb", ipa: "/ɪˈluːsɪdeɪt/", level: "C2", vn: "Làm sáng tỏ, giải thích rõ ràng", def: "Make something clear; explain thoroughly.", example: "The professor gave examples to elucidate the complex theorem.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Superfluous", pos: "adjective", ipa: "/suːˈpɜːrfluəs/", level: "C2", vn: "Dư thừa, thừa thải, không cần thiết", def: "Unnecessary, especially through being more than enough.", example: "Avoid including superfluous details in your academic summary.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Cognitive", pos: "adjective", ipa: "/ˈkɑːɡnətɪv/", level: "B2", vn: "Thuộc về nhận thức, trí tuệ", def: "Relating to mental processes of perception and reasoning.", example: "Reading enhances cognitive abilities in young children.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" },
+  { word: "Empirical", pos: "adjective", ipa: "/ɪmˈpɪrɪkl/", level: "C1", vn: "Dựa trên thực nghiệm, quan sát thực tế", def: "Based on observation or experiment rather than theory.", example: "Scientific laws require strong empirical evidence to be accepted.", chapter: "ch_academic", chapterTitle: "Chapter Academic (Core AWL)" }
 ];
 
 const FOV_QUIZ_DATA = [
+  // --- CHAPTER 1 QUESTIONS ---
+  {
+    id: "ch1_q1",
+    chapter: "ch1",
+    question: "[Chapter 1] Definition Match: 'Occurring because of a natural tendency to behave in a particular way or a natural ability to know something that is not learned'",
+    options: [
+      "A. philosophy",
+      "B. instinctively",
+      "C. mystery",
+      "D. manner"
+    ],
+    correct: 1,
+    explanation: "Instinctively means occurring because of a natural tendency or unlearned ability.",
+    explanationVn: "Giải thích: 'Instinctively' (theo bản năng) xuất phát từ xu hướng tự nhiên không qua học tập."
+  },
+  {
+    id: "ch1_q2",
+    chapter: "ch1",
+    question: "[Chapter 1] Definition Match: 'Treatment that helps someone feel better or grow stronger'",
+    options: [
+      "A. therapy",
+      "B. esteem",
+      "C. monk",
+      "D. pace"
+    ],
+    correct: 0,
+    explanation: "Therapy is treatment helping someone feel better or grow stronger physically/mentally.",
+    explanationVn: "Giải thích: 'Therapy' (liệu pháp) là trị liệu giúp cải thiện sức khỏe thể chất hoặc tinh thần."
+  },
+  {
+    id: "ch1_q3",
+    chapter: "ch1",
+    question: "[Chapter 1] Odd Word Out: Which word is NOT a synonym for 'discipline'?",
+    options: [
+      "A. control",
+      "B. regulation",
+      "C. restraint",
+      "D. indulgence"
+    ],
+    correct: 3,
+    explanation: "Control, regulation, and restraint are synonyms of discipline. Indulgence is the opposite (nuông chiều/buông thả).",
+    explanationVn: "Giải thích: Control, regulation, restraint là từ đồng nghĩa với discipline (kỷ luật). Indulgence (nuông chiều) là từ trái nghĩa."
+  },
+  {
+    id: "ch1_q4",
+    chapter: "ch1",
+    question: "[Chapter 1] Odd Word Out: Which word is NOT a synonym for 'assert'?",
+    options: [
+      "A. state",
+      "B. declare",
+      "C. claim",
+      "D. deny"
+    ],
+    correct: 3,
+    explanation: "State, declare, and claim mean to assert. Deny means to state that something is NOT true (phủ nhận).",
+    explanationVn: "Giải thích: State, declare, claim có nghĩa là khẳng định/tuyên bố. Deny (phủ nhận) là từ trái nghĩa."
+  },
+  {
+    id: "ch1_q5",
+    chapter: "ch1",
+    question: "[Chapter 1] Odd Word Out: Which word is NOT a synonym for 'boost'?",
+    options: [
+      "A. increase",
+      "B. enhance",
+      "C. improve",
+      "D. limit"
+    ],
+    correct: 3,
+    explanation: "Boost means to increase, enhance, or improve. Limit means to restrict (hạn chế/giới hạn).",
+    explanationVn: "Giải thích: Increase, enhance, improve nghĩa là thúc đẩy/tăng cường. Limit (giới hạn) là từ trái nghĩa."
+  },
+
+  // --- ACADEMIC CORE QUESTIONS ---
   {
     id: "fov_q1",
-    question: "The team's research paper was praised because every claim was ________ by solid empirical data gathered over five years.",
+    chapter: "ch_academic",
+    question: "[Academic] The team's research paper was praised because every claim was ________ by solid empirical data gathered over five years.",
     options: [
       "A. substantiated",
       "B. exacerbated",
@@ -1894,7 +1997,8 @@ const FOV_QUIZ_DATA = [
   },
   {
     id: "fov_q2",
-    question: "Because the wording of the contract was overly ________, both parties interpreted the payment terms differently.",
+    chapter: "ch_academic",
+    question: "[Academic] Because the wording of the contract was overly ________, both parties interpreted the payment terms differently.",
     options: [
       "A. pragmatic",
       "B. ambiguous",
@@ -1907,7 +2011,8 @@ const FOV_QUIZ_DATA = [
   },
   {
     id: "fov_q3",
-    question: "Attempting to cut municipal budgets during a recession will only ________ existing social inequality.",
+    chapter: "ch_academic",
+    question: "[Academic] Attempting to cut municipal budgets during a recession will only ________ existing social inequality.",
     options: [
       "A. consolidate",
       "B. elucidate",
@@ -1920,7 +2025,8 @@ const FOV_QUIZ_DATA = [
   },
   {
     id: "fov_q4",
-    question: "Rather than getting lost in abstract philosophy, the manager adopted a ________ approach to solve workplace disputes.",
+    chapter: "ch_academic",
+    question: "[Academic] Rather than getting lost in abstract philosophy, the manager adopted a ________ approach to solve workplace disputes.",
     options: [
       "A. pragmatic",
       "B. superfluous",
@@ -1933,7 +2039,8 @@ const FOV_QUIZ_DATA = [
   },
   {
     id: "fov_q5",
-    question: "Ensure your final thesis statement is concise and remove any ________ sentences that do not support your main argument.",
+    chapter: "ch_academic",
+    question: "[Academic] Ensure your final thesis statement is concise and remove any ________ sentences that do not support your main argument.",
     options: [
       "A. paramount",
       "B. resilient",
@@ -1949,7 +2056,29 @@ const FOV_QUIZ_DATA = [
 let fovFcIndex = 0;
 let fovUserQuizAnswers = {};
 
+function getFovFilteredData() {
+  if (currentFovChapter === "all") return FOV_VOCABULARY_DATA;
+  return FOV_VOCABULARY_DATA.filter(item => item.chapter === currentFovChapter);
+}
+
+function getFovFilteredQuizData() {
+  if (currentFovChapter === "all") return FOV_QUIZ_DATA;
+  return FOV_QUIZ_DATA.filter(item => item.chapter === currentFovChapter);
+}
+
 function initFovModule() {
+  const chapterChips = document.querySelectorAll(".fov-chapter-chip");
+  chapterChips.forEach(chip => {
+    chip.addEventListener("click", () => {
+      chapterChips.forEach(c => c.classList.remove("active"));
+      chip.classList.add("active");
+      currentFovChapter = chip.getAttribute("data-chapter") || "all";
+      initFovFlashcards();
+      initFovQuiz();
+      initFovBank();
+    });
+  });
+
   initFovFlashcards();
   initFovQuiz();
   initFovBank();
@@ -1984,14 +2113,16 @@ function toggleFovFlashcardFlip() {
 }
 
 function nextFovFlashcard() {
-  if (FOV_VOCABULARY_DATA.length === 0) return;
-  fovFcIndex = (fovFcIndex + 1) % FOV_VOCABULARY_DATA.length;
+  const deck = getFovFilteredData();
+  if (deck.length === 0) return;
+  fovFcIndex = (fovFcIndex + 1) % deck.length;
   resetAndShowFovFlashcard();
 }
 
 function prevFovFlashcard() {
-  if (FOV_VOCABULARY_DATA.length === 0) return;
-  fovFcIndex = (fovFcIndex - 1 + FOV_VOCABULARY_DATA.length) % FOV_VOCABULARY_DATA.length;
+  const deck = getFovFilteredData();
+  if (deck.length === 0) return;
+  fovFcIndex = (fovFcIndex - 1 + deck.length) % deck.length;
   resetAndShowFovFlashcard();
 }
 
@@ -2004,8 +2135,11 @@ function resetAndShowFovFlashcard() {
 }
 
 function updateFovFlashcardUI() {
-  if (FOV_VOCABULARY_DATA.length === 0) return;
-  const item = FOV_VOCABULARY_DATA[fovFcIndex];
+  const deck = getFovFilteredData();
+  if (deck.length === 0) return;
+  if (fovFcIndex >= deck.length) fovFcIndex = 0;
+
+  const item = deck[fovFcIndex];
 
   const badgeEl = document.getElementById("fov-fc-badge");
   const counterEl = document.getElementById("fov-fc-counter");
@@ -2016,8 +2150,8 @@ function updateFovFlashcardUI() {
   const defEl = document.getElementById("fov-fc-def");
   const exEl = document.getElementById("fov-fc-ex");
 
-  if (badgeEl) badgeEl.textContent = `CEFR ${item.level} VOCABULARY`;
-  if (counterEl) counterEl.textContent = `Card ${fovFcIndex + 1} of ${FOV_VOCABULARY_DATA.length}`;
+  if (badgeEl) badgeEl.textContent = `${item.chapterTitle || 'VOCABULARY'} • CEFR ${item.level}`;
+  if (counterEl) counterEl.textContent = `Card ${fovFcIndex + 1} of ${deck.length}`;
   if (termEl) termEl.textContent = item.word;
   if (ipaEl) ipaEl.textContent = item.ipa || '';
   if (posEl) posEl.textContent = item.pos || 'vocabulary';
@@ -2027,8 +2161,9 @@ function updateFovFlashcardUI() {
 }
 
 function speakFovTerm() {
-  if (FOV_VOCABULARY_DATA.length === 0) return;
-  const item = FOV_VOCABULARY_DATA[fovFcIndex];
+  const deck = getFovFilteredData();
+  if (deck.length === 0) return;
+  const item = deck[fovFcIndex];
   if (typeof window.speechSynthesis !== 'undefined') {
     const utter = new SpeechSynthesisUtterance(item.word);
     utter.lang = 'en-US';
@@ -2053,11 +2188,12 @@ function renderFovQuiz() {
   const scoreDisplay = document.getElementById("fov-score-display");
   if (!container) return;
 
+  const quizPool = getFovFilteredQuizData();
   container.innerHTML = "";
   let correctCount = 0;
-  const total = FOV_QUIZ_DATA.length;
+  const total = quizPool.length;
 
-  FOV_QUIZ_DATA.forEach((q, qIndex) => {
+  quizPool.forEach((q, qIndex) => {
     const isAnswered = fovUserQuizAnswers.hasOwnProperty(q.id);
     const selectedOpt = fovUserQuizAnswers[q.id];
     if (isAnswered && selectedOpt === q.correct) {
@@ -2120,8 +2256,9 @@ function initFovBank() {
   function renderFovBankGrid() {
     grid.innerHTML = "";
     const filterText = searchInput ? searchInput.value.toLowerCase().trim() : "";
+    const pool = getFovFilteredData();
 
-    const filtered = FOV_VOCABULARY_DATA.filter(item => {
+    const filtered = pool.filter(item => {
       const matchText = item.word.toLowerCase().includes(filterText) ||
                         item.vn.toLowerCase().includes(filterText) ||
                         item.def.toLowerCase().includes(filterText);
@@ -2135,7 +2272,10 @@ function initFovBank() {
       card.innerHTML = `
         <div style="display:flex; justify-content:space-between; align-items:center;">
           <div class="vocab-word">${item.word}</div>
-          <span class="badge-tag" style="font-size:0.75rem;">CEFR ${item.level}</span>
+          <div style="display:flex; gap:0.4rem; align-items:center;">
+            <span class="badge-tag" style="font-size:0.7rem; background:#e0f2fe; color:#0369a1;">${item.chapterTitle || 'Chapter'}</span>
+            <span class="badge-tag" style="font-size:0.7rem;">CEFR ${item.level}</span>
+          </div>
         </div>
         <div class="vocab-pos">${item.pos} ${item.ipa ? '• ' + item.ipa : ''}</div>
         <div class="vocab-vn">🇻🇳 ${item.vn}</div>
@@ -2146,7 +2286,7 @@ function initFovBank() {
     });
 
     if (filtered.length === 0) {
-      grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 2rem; color: var(--text-muted);">Không tìm thấy từ vựng phù hợp với từ khóa hoặc cấp độ đã chọn.</div>`;
+      grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 2rem; color: var(--text-muted);">Không tìm thấy từ vựng phù hợp với từ khóa, Chapter hoặc cấp độ đã chọn.</div>`;
     }
   }
 
