@@ -65,7 +65,7 @@
         <div class="exercise-grid">
           
           <!-- Card 1: Reading Comprehension -->
-          <div class="exercise-card highlight-card">
+          <div class="exercise-card highlight-card" onclick="openSkillTab('reading-comprehension')" style="cursor: pointer;">
             <div class="card-top">
               <div class="tag-group">
                 <span class="badge-tag">READING PRACTICE</span>
@@ -75,12 +75,12 @@
               <p class="card-desc">Comprehensive VSTEP & Academic English reading practice. Master main ideas, vocabulary in context, detailed facts, and inferences with step-by-step solutions and Vietnamese translations.</p>
             </div>
             <div class="card-bottom">
-              <button class="card-btn filled" onclick="openSkillTab('reading-comprehension')">Start Reading Comprehension</button>
+              <button class="card-btn filled" onclick="event.stopPropagation(); openSkillTab('reading-comprehension')">Start Reading Comprehension</button>
             </div>
           </div>
 
           <!-- Card 2: Listening Skills -->
-          <div class="exercise-card highlight-card">
+          <div class="exercise-card highlight-card" onclick="openSkillTab('listening-skills')" style="cursor: pointer;">
             <div class="card-top">
               <div class="tag-group">
                 <span class="badge-tag">LISTENING PRACTICE</span>
@@ -90,12 +90,12 @@
               <p class="card-desc">Contemporary Topics & C1 Advanced Listening strategy. Master the 3-phase methodology, active note-taking, cognitive processing, logic trap analysis, and colloquial vocabulary.</p>
             </div>
             <div class="card-bottom">
-              <button class="card-btn filled" onclick="openSkillTab('listening-skills')">Start Listening Skills</button>
+              <button class="card-btn filled" onclick="event.stopPropagation(); openSkillTab('listening-skills')">Start Listening Skills</button>
             </div>
           </div>
 
           <!-- Card 3: Collocations -->
-          <div class="exercise-card highlight-card">
+          <div class="exercise-card highlight-card" onclick="openSkillTab('collocations')" style="cursor: pointer;">
             <div class="card-top">
               <div class="tag-group">
                 <span class="badge-tag">VOCABULARY IN USE</span>
@@ -105,12 +105,12 @@
               <p class="card-desc">Master 2,600+ academic collocations, noun phrases, phrasal verbs, and advanced expressions from Cambridge Vocabulary in Use (Advanced) with IPA phonetics, definitions, Vietnamese translations, and 3D flashcards.</p>
             </div>
             <div class="card-bottom">
-              <button class="card-btn filled" onclick="openSkillTab('collocations')">Start Collocations</button>
+              <button class="card-btn filled" onclick="event.stopPropagation(); openSkillTab('collocations')">Start Collocations</button>
             </div>
           </div>
 
           <!-- Card 4: Learning Dashboard -->
-          <div class="exercise-card highlight-card">
+          <div class="exercise-card highlight-card" onclick="openSkillTab('learning-dashboard')" style="cursor: pointer;">
             <div class="card-top">
               <div class="tag-group">
                 <span class="badge-tag">STUDY ANALYTICS</span>
@@ -120,12 +120,12 @@
               <p class="card-desc">Track your study progress, quiz scores, accuracy rates by category, flashcards reviewed, and learning streak in real time with interactive Chart.js charts and activity logs.</p>
             </div>
             <div class="card-bottom">
-              <button class="card-btn filled" onclick="openSkillTab('learning-dashboard')">Open Learning Dashboard</button>
+              <button class="card-btn filled" onclick="event.stopPropagation(); openSkillTab('learning-dashboard')">Open Learning Dashboard</button>
             </div>
           </div>
 
           <!-- Card 5: English Collocations (Gamified Arena) -->
-          <div class="exercise-card highlight-card gamified-card">
+          <div class="exercise-card highlight-card gamified-card" onclick="openSkillTab('trang-anh-collocations')" style="cursor: pointer;">
             <div class="card-top">
               <div class="tag-group">
                 <span class="badge-tag gamified-badge">🎮 GAMIFIED PRACTICE</span>
@@ -135,12 +135,12 @@
               <p class="card-desc">Chinh phục 2,000+ cụm từ cố định và thành ngữ tiếng Anh qua giao diện Gamification tương tác: Đấu trí Quiz Arena (Timer, Lifelines, 50:50), Ghép thẻ Nối cặp Siêu tốc, Thử thách Xếp từ Scramble, Flashcards 3D & Bảng Vinh danh XP!</p>
             </div>
             <div class="card-bottom">
-              <button class="card-btn filled gamified-btn" onclick="openSkillTab('trang-anh-collocations')">🎮 Vào Bài Tập Gamification →</button>
+              <button class="card-btn filled gamified-btn" onclick="event.stopPropagation(); openSkillTab('trang-anh-collocations')">🎮 Vào Bài Tập Gamification →</button>
             </div>
           </div>
 
           <!-- Card 6: Focus on Vocabulary -->
-          <div class="exercise-card highlight-card">
+          <div class="exercise-card highlight-card" onclick="openSkillTab('focus-on-vocabulary')" style="cursor: pointer;">
             <div class="card-top">
               <div class="tag-group">
                 <span class="badge-tag">VOCABULARY MASTER</span>
@@ -150,7 +150,7 @@
               <p class="card-desc">Luyện tập từ vựng học thuật chuyên sâu: Vocabulary in Context, Synonyms & Antonyms, Prefixes & Root Words, Thẻ nhớ 3D Flashcards tương tác, Bài tập trắc nghiệm chọn từ và Chiến thuật làm bài từ vựng đỉnh cao!</p>
             </div>
             <div class="card-bottom">
-              <button class="card-btn filled" onclick="openSkillTab('focus-on-vocabulary')">Start Focus on Vocabulary</button>
+              <button class="card-btn filled" onclick="event.stopPropagation(); openSkillTab('focus-on-vocabulary')">Start Focus on Vocabulary</button>
             </div>
           </div>
 
@@ -1750,8 +1750,8 @@
 
   </main>
 
-  <script src="collocations_data.js?v=2.9"></script>
-  <script src="trang_anh_data.js?v=2.9"></script>
-  <script src="app.js?v=2.9"></script>
+  <script src="collocations_data.js?v=3.0"></script>
+  <script src="trang_anh_data.js?v=3.0"></script>
+  <script src="app.js?v=3.0"></script>
 </body>
 </html>
