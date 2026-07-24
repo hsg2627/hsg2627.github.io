@@ -1257,6 +1257,7 @@
         <!-- Sub-tabs navigation inside Focus on Vocabulary -->
         <div class="sub-tabs">
           <button class="sub-tab active" data-subtab="fov-overview">Overview & Modules</button>
+          <button class="sub-tab" data-subtab="fov-memory-lab">🧠 Active Memory Lab</button>
           <button class="sub-tab" data-subtab="fov-flashcards">🎴 3D Flashcards</button>
           <button class="sub-tab" data-subtab="fov-quiz">📝 Practice Quiz</button>
           <button class="sub-tab" data-subtab="fov-bank">📖 Academic Vocab Explorer</button>
@@ -1278,7 +1279,7 @@
         <div id="fov-overview" class="sub-tab-content active">
           <div class="sub-section-header">
             <h3 class="sub-section-title">Focus on Vocabulary Modules & Learning Pathways</h3>
-            <p class="sub-section-desc">Hệ thống bài học từ vựng chuyên sâu giúp bạn xây dựng vốn từ học thuật bền vững, làm chủ ngữ cảnh và phân tích cấu tạo từ.</p>
+            <p class="sub-section-desc">Hệ thống bài học từ vựng chuyên sâu giúp bạn xây dựng vốn từ học thuật bền vững, làm chủ ngữ cảnh và phân tích cấu tạo từ dựa trên thiết kế Memory Retrieval.</p>
           </div>
 
           <div class="skills-grid">
@@ -1295,6 +1296,20 @@
                 <span>❓ Interactive Practice</span>
               </div>
               <button class="skill-action-btn" onclick="openFovSubTab('fov-quiz')">Thực hành Trắc nghiệm Ngữ cảnh →</button>
+            </div>
+
+            <div class="skill-box-card" style="border-top: 3.5px solid #8b5cf6;">
+              <div class="skill-card-top">
+                <span class="skill-badge inference-badge">Category: Cognitive Recall</span>
+                <span class="skill-level">CEFR B1-C2</span>
+              </div>
+              <h3 class="skill-card-title">🧠 Active Memory Lab</h3>
+              <p class="skill-card-desc">Luyện tập ghi nhớ bền vững qua 4 cơ chế khoa học: C-Test (Phục hồi từ khuyết ký tự), Collocation Chunks, Biến đổi Họ từ và Ép buộc đặt câu liên hệ bản thân.</p>
+              <div class="skill-meta">
+                <span>⚡ Active Retrieval</span>
+                <span>✍️ Personal Prompts</span>
+              </div>
+              <button class="skill-action-btn" onclick="openFovSubTab('fov-memory-lab')">Vào Phòng Luyện Ghi Nhớ →</button>
             </div>
 
             <div class="skill-box-card">
@@ -1340,6 +1355,120 @@
             </div>
 
           </div>
+
+          <!-- Spaced Repetition Schedule Banner -->
+          <div style="background: linear-gradient(135deg, #0f766e 0%, #115e59 100%); color: #ffffff; border-radius: var(--radius-xl); padding: 2rem; margin-top: 2rem; box-shadow: var(--shadow-md);">
+            <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 1.3rem; font-weight: 800; margin-bottom: 0.75rem;">
+              <span>🗓️ Chu kỳ Ôn tập Ghi nhớ Ngắt quãng (Spaced Repetition Schedule)</span>
+            </div>
+            <p style="opacity: 0.95; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">Dựa trên đường cong quên của Ebbinghaus & Nguyên lý Memory Retrieval trong bộ sách Focus on Vocabulary, tiến trình ôn tập chuẩn khoa học gồm 4 giai đoạn:</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+              <div style="background: rgba(255,255,255,0.12); padding: 1.1rem; border-radius: var(--radius-md); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.18);">
+                <div style="font-weight: 800; font-size: 1.1rem; color: #fde68a; margin-bottom: 0.25rem;">📌 Ngày 1: Tiếp nhận</div>
+                <div style="font-size: 0.85rem; opacity: 0.9;">Đọc bài đọc nguyên bản + Làm bài tập C-Test khuyết ký tự trong Active Memory Lab.</div>
+              </div>
+              <div style="background: rgba(255,255,255,0.12); padding: 1.1rem; border-radius: var(--radius-md); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.18);">
+                <div style="font-weight: 800; font-size: 1.1rem; color: #fde68a; margin-bottom: 0.25rem;">⚡ Ngày 2: Củng cố</div>
+                <div style="font-size: 0.85rem; opacity: 0.9;">Thực hành Collocation Chunks + Biến đổi bảng Họ từ (Word Families).</div>
+              </div>
+              <div style="background: rgba(255,255,255,0.12); padding: 1.1rem; border-radius: var(--radius-md); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.18);">
+                <div style="font-weight: 800; font-size: 1.1rem; color: #fde68a; margin-bottom: 0.25rem;">✍️ Ngày 7: Mã hóa sâu</div>
+                <div style="font-size: 0.85rem; opacity: 0.9;">Thực hiện bài tập Forced Production (Viết đoạn văn tự đặt câu liên hệ bản thân).</div>
+              </div>
+              <div style="background: rgba(255,255,255,0.12); padding: 1.1rem; border-radius: var(--radius-md); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.18);">
+                <div style="font-weight: 800; font-size: 1.1rem; color: #fde68a; margin-bottom: 0.25rem;">🏆 Ngày 30: Kiểm chứng</div>
+                <div style="font-size: 0.85rem; opacity: 0.9;">Làm bài kiểm tra trắc nghiệm tổng hợp Spaced Retrieval Quiz của Chapter.</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Sub-tab: Active Memory Lab (Cognitive Recall System) -->
+        <div id="fov-memory-lab" class="sub-tab-content">
+          <div class="sub-section-header">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+              <div>
+                <h3 class="sub-section-title">🧠 Active Memory Lab (Cognitive Science Recall)</h3>
+                <p class="sub-section-desc">Cải tiến dựa trên nghiên cứu Tâm lý học Thần kinh & Khoa học Ghi nhớ (Active Retrieval & Elaborative Encoding) từ bộ sách Focus on Vocabulary 1 & 2.</p>
+              </div>
+              <div style="background: #f0fdf4; border: 1.5px solid #86efac; padding: 0.6rem 1rem; border-radius: var(--radius-md); font-size: 0.85rem; color: #166534; font-weight: 700;">
+                ⚡ Mức độ ghi nhớ: <span id="fov-memory-score-badge">0 / 0 Thử thách</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory Exercise Mode Selector Chips -->
+          <div class="quiz-controls" style="margin-bottom: 1.5rem; background: #ffffff; border: 1px solid var(--border-subtle);">
+            <div class="filter-group">
+              <button class="filter-chip fov-mem-mode-btn active" onclick="switchFovMemoryMode('c-test')">🔤 Task 1: C-Test (Partial Spelled Recall)</button>
+              <button class="filter-chip fov-mem-mode-btn" onclick="switchFovMemoryMode('collocation')">🔗 Task 2: Collocation Chunks</button>
+              <button class="filter-chip fov-mem-mode-btn" onclick="switchFovMemoryMode('morphology')">🧬 Task 3: Word Family Transformation</button>
+              <button class="filter-chip fov-mem-mode-btn" onclick="switchFovMemoryMode('forced-production')">✍️ Task 4: Forced Production (Personal Prompt)</button>
+            </div>
+          </div>
+
+          <!-- Mode 1: C-Test Partial Spelled Recall -->
+          <div id="fov-mem-mode-c-test" class="fov-mem-mode-content active">
+            <div style="background: #ffffff; border-radius: var(--radius-lg); padding: 1.75rem; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--brand-teal-dark);">Task 1: Active Recall with Partial Hints (C-Test / Phục hồi ký tự khuyết)</h4>
+                <button class="card-btn outline-amber" style="width: auto; padding: 0.4rem 1rem; font-size: 0.85rem;" onclick="renderFovCTest()">🔄 Đổi danh sách câu</button>
+              </div>
+              <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">Điền các chữ cái còn thiếu của từ mục tiêu dựa vào ngữ cảnh câu và gợi ý định nghĩa. Phương pháp này ép não bộ kích hoạt trí nhớ chủ động (Spelling Retrieval).</p>
+
+              <div id="fov-ctest-container" style="display: flex; flex-direction: column; gap: 1.25rem;">
+                <!-- Rendered dynamically by JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Mode 2: Collocation Chunk Association -->
+          <div id="fov-mem-mode-collocation" class="fov-mem-mode-content" style="display: none;">
+            <div style="background: #ffffff; border-radius: var(--radius-lg); padding: 1.75rem; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--brand-teal-dark);">Task 2: Collocation Chunk Association Grid (Lưới liên tưởng cụm từ)</h4>
+                <button class="card-btn outline-amber" style="width: auto; padding: 0.4rem 1rem; font-size: 0.85rem;" onclick="renderFovCollocTask()">🔄 Đổi thử thách cụm từ</button>
+              </div>
+              <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">Ghép các từ bổ nghĩa (Cột A) với Từ mục tiêu (Cột B) để tạo thành Collocation chuẩn, sau đó hoàn thành câu ngữ cảnh.</p>
+
+              <div id="fov-colloc-container">
+                <!-- Rendered dynamically by JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Mode 3: Word Family Transformation -->
+          <div id="fov-mem-mode-morphology" class="fov-mem-mode-content" style="display: none;">
+            <div style="background: #ffffff; border-radius: var(--radius-lg); padding: 1.75rem; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--brand-teal-dark);">Task 3: Forced Word Family Transformation (Biến đổi dạng Họ từ)</h4>
+                <button class="card-btn outline-amber" style="width: auto; padding: 0.4rem 1rem; font-size: 0.85rem;" onclick="renderFovMorphTask()">🔄 Đổi bài tập họ từ</button>
+              </div>
+              <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">Chuyển đổi dạng từ gốc trong ngoặc sang đúng Từ loại (Danh từ, Động từ, Tính từ, Trạng từ) phù hợp với cấu trúc cú pháp của câu.</p>
+
+              <div id="fov-morph-container">
+                <!-- Rendered dynamically by JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Mode 4: Forced Production (Personal Prompt) -->
+          <div id="fov-mem-mode-forced-production" class="fov-mem-mode-content" style="display: none;">
+            <div style="background: #ffffff; border-radius: var(--radius-lg); padding: 1.75rem; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--brand-teal-dark);">Task 4: Self-Referential Forced Production (Thử thách đặt câu liên hệ bản thân)</h4>
+                <button class="card-btn outline-amber" style="width: auto; padding: 0.4rem 1rem; font-size: 0.85rem;" onclick="renderFovForcedProduction()">🔄 Đổi bộ từ ngẫu nhiên</button>
+              </div>
+              <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">Mã hóa sâu (Elaborative Encoding): Viết 2-3 câu trả lời cho câu hỏi tình huống bên dưới, bắt buộc phải sử dụng đủ tất cả các từ mục tiêu được yêu cầu.</p>
+
+              <div id="fov-production-container">
+                <!-- Rendered dynamically by JS -->
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <!-- Sub-tab 2: 3D Flashcards -->
@@ -1621,8 +1750,8 @@
 
   </main>
 
-  <script src="collocations_data.js?v=2.5"></script>
-  <script src="trang_anh_data.js?v=2.5"></script>
-  <script src="app.js?v=2.5"></script>
+  <script src="collocations_data.js?v=2.6"></script>
+  <script src="trang_anh_data.js?v=2.6"></script>
+  <script src="app.js?v=2.6"></script>
 </body>
 </html>

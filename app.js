@@ -361,6 +361,9 @@ function initSubTabs() {
           targetSub.classList.add("active");
         }
         currentSubTab = subTabId;
+        if (subTabId === "fov-memory-lab") {
+          renderFovCTest();
+        }
       });
     });
   });
@@ -2680,12 +2683,15 @@ function initFovModule() {
       initFovFlashcards();
       initFovQuiz();
       initFovBank();
+      renderFovCTest();
+      renderFovForcedProduction();
     });
   });
 
   initFovFlashcards();
   initFovQuiz();
   initFovBank();
+  renderFovCTest();
 }
 
 // Open specific sub-tab inside Focus on Vocabulary module
@@ -2703,6 +2709,10 @@ function openFovSubTab(subTabId) {
 
   if (targetTabBtn) targetTabBtn.classList.add("active");
   if (targetContent) targetContent.classList.add("active");
+
+  if (subTabId === "fov-memory-lab") {
+    renderFovCTest();
+  }
 }
 
 // 1. FOV Flashcards Logic
@@ -2909,6 +2919,309 @@ function initFovBank() {
 
   renderFovBankGrid();
 }
+
+// ==========================================================================
+// ACTIVE MEMORY LAB (COGNITIVE RECALL & ELABORATIVE ENCODING) LOGIC
+// ==========================================================================
+
+let fovMemoryScore = 0;
+let fovTotalMemoryTasks = 0;
+
+function switchFovMemoryMode(mode) {
+  const btns = document.querySelectorAll(".fov-mem-mode-btn");
+  btns.forEach(btn => btn.classList.remove("active"));
+
+  const targetBtn = Array.from(btns).find(b => b.getAttribute("onclick").includes(mode));
+  if (targetBtn) targetBtn.classList.add("active");
+
+  const modeContents = document.querySelectorAll(".fov-mem-mode-content");
+  modeContents.forEach(mc => mc.style.display = "none");
+
+  const activeContent = document.getElementById(`fov-mem-mode-${mode}`);
+  if (activeContent) {
+    activeContent.style.display = "block";
+  }
+
+  if (mode === "c-test") renderFovCTest();
+  else if (mode === "collocation") renderFovCollocTask();
+  else if (mode === "morphology") renderFovMorphTask();
+  else if (mode === "forced-production") renderFovForcedProduction();
+}
+
+// Helper to mask middle characters of a word for C-Test
+function createPartialMask(word) {
+  const len = word.length;
+  if (len <= 3) return word[0] + "_".repeat(len - 1);
+  
+  let result = word[0];
+  for (let i = 1; i < len - 1; i++) {
+    if (i % 2 === 1) result += "_";
+    else result += word[i];
+  }
+  result += word[len - 1];
+  return result;
+}
+
+// 1. Task 1: C-Test Partial Spelled Recall
+function renderFovCTest() {
+  const container = document.getElementById("fov-ctest-container");
+  if (!container) return;
+
+  const data = getFovFilteredData();
+  const pool = data.length > 0 ? data.slice(0, 8) : FOV_VOCABULARY_DATA.slice(0, 8);
+  
+  container.innerHTML = "";
+  fovTotalMemoryTasks = pool.length;
+
+  pool.forEach((item, index) => {
+    const mask = createPartialMask(item.word);
+    const maskedExample = item.example ? item.example.replace(new RegExp(item.word, "gi"), mask) : "";
+
+    const card = document.createElement("div");
+    card.style.cssText = "background: #f8fafc; border: 1px solid #e2e8f0; border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 0.5rem;";
+    card.innerHTML = `
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem;">
+        <span style="font-weight: 800; color: var(--brand-teal); font-size: 0.85rem;">ITEM ${index + 1} OF ${pool.length} • CEFR ${item.level}</span>
+        <span style="font-size: 0.8rem; background: #e0f2fe; color: #0369a1; padding: 0.2rem 0.6rem; border-radius: 50px; font-weight: 700;">${item.pos}</span>
+      </div>
+      <div style="font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; line-height: 1.5;">
+        ${item.example ? item.example.replace(new RegExp(item.word, "gi"), `<span style="color: #0f766e; font-weight: 800; font-family: monospace; font-size: 1.15rem; background: #e6f7f5; padding: 0.1rem 0.5rem; border-radius: 4px;">${mask}</span>`) : ''}
+      </div>
+      <div style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.85rem;">
+        💡 <em>Gợi ý định nghĩa:</em> <strong>${item.def}</strong> (${item.vn})
+      </div>
+      <div style="display: flex; gap: 0.6rem; align-items: center;">
+        <input type="text" id="ctest-input-${index}" placeholder="Gõ từ hoàn chỉnh..." style="flex: 1; padding: 0.65rem 1rem; border: 1.5px solid #cbd5e1; border-radius: var(--radius-md); font-size: 1rem; font-weight: 600;" onkeypress="if(event.key==='Enter') checkCTestAnswer(${index}, '${item.word.replace(/'/g, "\\'")}')">
+        <button class="card-btn brand-teal" style="width: auto; padding: 0.65rem 1.25rem;" onclick="checkCTestAnswer(${index}, '${item.word.replace(/'/g, "\\'")}')">Check</button>
+        <button class="card-btn outline-amber" style="width: auto; padding: 0.65rem 0.9rem;" onclick="speakWord('${item.word.replace(/'/g, "\\'")}')">🔊</button>
+      </div>
+      <div id="ctest-feedback-${index}" style="margin-top: 0.6rem; font-size: 0.9rem; font-weight: 700; display: none;"></div>
+    `;
+    container.appendChild(card);
+  });
+
+  updateFovMemoryBadge();
+}
+
+function checkCTestAnswer(index, correctWord) {
+  const input = document.getElementById(`ctest-input-${index}`);
+  const feedback = document.getElementById(`ctest-feedback-${index}`);
+  if (!input || !feedback) return;
+
+  const userVal = input.value.trim().toLowerCase();
+  const target = correctWord.toLowerCase();
+
+  feedback.style.display = "block";
+  if (userVal === target) {
+    feedback.style.color = "#15803d";
+    feedback.innerHTML = `✓ Chính xác! Từ đúng là <strong>${correctWord}</strong>.`;
+    input.style.borderColor = "#22c55e";
+    input.style.background = "#dcfce7";
+  } else {
+    feedback.style.color = "#dc2626";
+    feedback.innerHTML = `✗ Chưa chính xác. Đáp án đúng: <strong>${correctWord}</strong>.`;
+    input.style.borderColor = "#ef4444";
+    input.style.background = "#fee2e2";
+  }
+}
+
+// 2. Task 2: Collocation Chunk Association
+const FOV_COLLOC_DATA = [
+  { pair: ["earning", "capacity"], full: "earning capacity", sentence: "Higher education significantly increases a person's ________.", options: ["earning capacity", "storage capacity", "full capacity"] },
+  { pair: ["deep", "longing"], full: "deep longing", sentence: "He felt a ________ for his childhood home after years of living abroad.", options: ["deep longing", "serious manner", "cheerful deed"] },
+  { pair: ["good", "deed"], full: "good deed", sentence: "Helping an elderly person cross the street is a simple ________.", options: ["good deed", "good restaurant", "good therapy"] },
+  { pair: ["timely", "intervention"], full: "timely intervention", sentence: "The doctor's ________ saved the patient from serious complications.", options: ["timely intervention", "timely review", "timely proposal"] },
+  { pair: ["strenuous", "effort"], full: "strenuous effort", sentence: "Athletes must make a ________ to win a gold medal at the Olympics.", options: ["strenuous effort", "trivial task", "fictional world"] },
+  { pair: ["peer", "group"], full: "peer group", sentence: "Teenagers are heavily influenced by the opinions of their ________.", options: ["peer group", "interval time", "lung capacity"] }
+];
+
+function renderFovCollocTask() {
+  const container = document.getElementById("fov-colloc-container");
+  if (!container) return;
+
+  container.innerHTML = `
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem;">
+      ${FOV_COLLOC_DATA.map((item, i) => `
+        <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: var(--radius-md); padding: 1.25rem;">
+          <div style="font-size: 0.85rem; font-weight: 800; color: var(--brand-teal); margin-bottom: 0.5rem;">COLLOCATION CHALLENGE ${i + 1}</div>
+          <div style="font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.85rem; line-height: 1.5;">
+            ${item.sentence.replace("________", `<strong style="color: #0f766e; text-decoration: underline;">[ ${item.pair[0]} + ? ]</strong>`)}
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+            ${item.options.map(opt => `
+              <button class="quiz-option" style="padding: 0.65rem 1rem; font-size: 1rem;" onclick="checkCollocAnswer(this, '${opt}', '${item.full}')">${opt}</button>
+            `).join('')}
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function checkCollocAnswer(btn, selected, correct) {
+  const parent = btn.parentElement;
+  const btns = parent.querySelectorAll(".quiz-option");
+  btns.forEach(b => b.disabled = true);
+
+  if (selected === correct) {
+    btn.classList.add("correct");
+  } else {
+    btn.classList.add("incorrect");
+    btns.forEach(b => {
+      if (b.textContent === correct) b.classList.add("correct");
+    });
+  }
+}
+
+// 3. Task 3: Word Family Transformation
+const FOV_MORPH_DATA = [
+  { root: "absorbed (adj)", targetPos: "Noun", sentence: "Her total ________ in the novel made her lose track of time.", correct: "absorption" },
+  { root: "confront (v)", targetPos: "Noun", sentence: "Instead of avoiding the issue, they prepared for a direct ________.", correct: "confrontation" },
+  { root: "intellectual (adj)", targetPos: "Adverb", sentence: "Chess is an ________ stimulating game that exercises the mind.", correct: "intellectually" },
+  { root: "motivate (v)", targetPos: "Noun", sentence: "High internal ________ is key to achieving long-term success.", correct: "motivation" },
+  { root: "explode (v)", targetPos: "Noun", sentence: "Anger can lead to a sudden ________ of emotional tension.", correct: "explosion" },
+  { root: "fulfillment (n)", targetPos: "Adjective", sentence: "Helping others enables people to lead more ________ lives.", correct: "fulfilling" }
+];
+
+function renderFovMorphTask() {
+  const container = document.getElementById("fov-morph-container");
+  if (!container) return;
+
+  container.innerHTML = `
+    <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+      ${FOV_MORPH_DATA.map((item, index) => `
+        <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: var(--radius-md); padding: 1.25rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span style="font-weight: 800; color: var(--brand-teal); font-size: 0.85rem;">TASK ${index + 1} • TRANSFORM TO: ${item.targetPos.toUpperCase()}</span>
+            <span style="font-size: 0.8rem; background: #fef3c7; color: #92400e; padding: 0.2rem 0.6rem; border-radius: 50px; font-weight: 700;">Root: ${item.root}</span>
+          </div>
+          <div style="font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.85rem;">
+            ${item.sentence.replace("________", `<span style="color:#0f766e; text-decoration:underline;">( ${item.root} ➔ ${item.targetPos} )</span>`)}
+          </div>
+          <div style="display: flex; gap: 0.6rem;">
+            <input type="text" id="morph-input-${index}" placeholder="Nhập dạng từ biến đổi..." style="flex: 1; padding: 0.65rem 1rem; border: 1.5px solid #cbd5e1; border-radius: var(--radius-md); font-size: 1rem; font-weight: 600;" onkeypress="if(event.key==='Enter') checkMorphAnswer(${index}, '${item.correct}')">
+            <button class="card-btn brand-teal" style="width: auto; padding: 0.65rem 1.25rem;" onclick="checkMorphAnswer(${index}, '${item.correct}')">Submit</button>
+          </div>
+          <div id="morph-feedback-${index}" style="margin-top: 0.6rem; font-size: 0.9rem; font-weight: 700; display: none;"></div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function checkMorphAnswer(index, correctWord) {
+  const input = document.getElementById(`morph-input-${index}`);
+  const feedback = document.getElementById(`morph-feedback-${index}`);
+  if (!input || !feedback) return;
+
+  const val = input.value.trim().toLowerCase();
+  feedback.style.display = "block";
+
+  if (val === correctWord.toLowerCase()) {
+    feedback.style.color = "#15803d";
+    feedback.innerHTML = `✓ Chính xác! Dạng đúng: <strong>${correctWord}</strong>.`;
+    input.style.borderColor = "#22c55e";
+    input.style.background = "#dcfce7";
+  } else {
+    feedback.style.color = "#dc2626";
+    feedback.innerHTML = `✗ Chưa đúng. Dạng từ chuẩn: <strong>${correctWord}</strong>.`;
+    input.style.borderColor = "#ef4444";
+    input.style.background = "#fee2e2";
+  }
+}
+
+// 4. Task 4: Self-Referential Forced Production
+function renderFovForcedProduction() {
+  const container = document.getElementById("fov-production-container");
+  if (!container) return;
+
+  const data = getFovFilteredData();
+  const pool = data.length >= 3 ? data : FOV_VOCABULARY_DATA;
+  
+  // Pick 3 random words
+  const shuffled = [...pool].sort(() => 0.5 - Math.random());
+  const selectedWords = shuffled.slice(0, 3).map(w => w.word);
+
+  const prompts = [
+    `Hãy chia sẻ về một mục tiêu hoặc sở thích học tập của bạn: Bạn đang nỗ lực như thế nào và điều gì mang lại cho bạn cảm hứng?`,
+    `Mô tả một trải nghiệm hoặc thử thách gần đây mà bạn đã vượt qua trong công việc hoặc cuộc sống hàng ngày.`,
+    `Bạn đánh giá thế nào về tầm quan trọng của việc duy trì thói quen học từ vựng mỗi ngày đối với bản thân?`
+  ];
+  const promptText = prompts[Math.floor(Math.random() * prompts.length)];
+
+  container.innerHTML = `
+    <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: var(--radius-lg); padding: 1.5rem;">
+      <div style="font-weight: 800; color: var(--brand-teal-dark); font-size: 1.1rem; margin-bottom: 0.5rem;">
+        💬 CHỦ ĐỀ THỦ THÁCH:
+      </div>
+      <div style="font-size: 1.05rem; font-style: italic; color: var(--text-primary); margin-bottom: 1.25rem; background: #ffffff; padding: 1rem; border-radius: var(--radius-md); border-left: 4px solid var(--brand-teal);">
+        "${promptText}"
+      </div>
+
+      <div style="margin-bottom: 1rem;">
+        <span style="font-weight: 700; font-size: 0.9rem; color: var(--text-secondary); margin-right: 0.5rem;">TỪ MỤC TIÊU BẮT BUỘC SỬ DỤNG:</span>
+        <div id="required-words-badges" style="display: inline-flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.4rem;">
+          ${selectedWords.map(w => `
+            <span id="badge-word-${w.toLowerCase()}" style="background: #e2e8f0; color: #475569; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.85rem; font-weight: 700; transition: all 0.3s ease;">
+              ⏳ ${w}
+            </span>
+          `).join('')}
+        </div>
+      </div>
+
+      <textarea id="forced-prod-textarea" rows="5" placeholder="Viết câu trả lời của bạn bằng Tiếng Anh (2-3 câu). Hệ thống sẽ tự động quét và đánh dấu các từ mục tiêu bạn đã dùng..." style="width: 100%; padding: 1rem; border: 1.5px solid #cbd5e1; border-radius: var(--radius-md); font-size: 1.05rem; font-family: inherit; margin-bottom: 1rem; line-height: 1.6;" oninput="checkForcedProdText(['${selectedWords[0]}', '${selectedWords[1]}', '${selectedWords[2]}'])"></textarea>
+
+      <div id="forced-prod-status" style="font-weight: 700; font-size: 0.95rem; color: var(--text-muted);">
+        Viết tối thiểu 1 câu chứa đủ 3 từ mục tiêu trên.
+      </div>
+    </div>
+  `;
+}
+
+function checkForcedProdText(words) {
+  const textarea = document.getElementById("forced-prod-textarea");
+  const status = document.getElementById("forced-prod-status");
+  if (!textarea || !status) return;
+
+  const text = textarea.value.toLowerCase();
+  let matchedCount = 0;
+
+  words.forEach(word => {
+    const badge = document.getElementById(`badge-word-${word.toLowerCase()}`);
+    if (!badge) return;
+
+    // Regex check root or basic inflections (e.g. strive, striving, strived)
+    const rootPattern = word.toLowerCase().substring(0, Math.max(3, word.length - 2));
+    if (text.includes(rootPattern)) {
+      badge.style.background = "#dcfce7";
+      badge.style.color = "#15803d";
+      badge.style.border = "1px solid #86efac";
+      badge.innerHTML = `✓ ${word}`;
+      matchedCount++;
+    } else {
+      badge.style.background = "#e2e8f0";
+      badge.style.color = "#475569";
+      badge.style.border = "none";
+      badge.innerHTML = `⏳ ${word}`;
+    }
+  });
+
+  if (matchedCount === words.length) {
+    status.style.color = "#15803d";
+    status.innerHTML = `🎉 Xuất sắc! Bạn đã sử dụng thành công cả 3 từ mục tiêu trong câu liên hệ bản thân!`;
+  } else {
+    status.style.color = "#475569";
+    status.innerHTML = `Đã dùng: ${matchedCount} / ${words.length} từ mục tiêu.`;
+  }
+}
+
+function updateFovMemoryBadge() {
+  const badge = document.getElementById("fov-memory-score-badge");
+  if (badge) {
+    badge.textContent = `${fovMemoryScore} / ${fovTotalMemoryTasks} Hoàn thành`;
+  }
+}
+
 
 
 

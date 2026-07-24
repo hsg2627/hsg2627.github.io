@@ -1,0 +1,24 @@
+{
+  "word": "capacity",
+  "pos": "noun",
+  "cefr": "B2/C1",
+  "definition_en": "the maximum amount that something can contain or produce",
+  "definition_vi": "sức chứa, năng lực, khả năng",
+  "word_family": {
+    "verb": null,
+    "noun": ["capacity", "incapacity"],
+    "adjective": ["capacious"],
+    "adverb": null
+  },
+  "collocations": [
+    "earning capacity",
+    "storage capacity",
+    "full capacity",
+    "capacity to do something"
+  ],
+  "example_sentences": [
+    "The theater was filled to capacity for the premier performance.",
+    "Her capacity to absorb complex information impressed her professors."
+  ],
+  "mnemonic_seed": "Cap (nón) chứa đầy năng lượng/sức chứa."
+}
