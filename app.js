@@ -1908,17 +1908,13 @@ const FOV_VOCABULARY_DATA = [
 ];
 
 const FOV_QUIZ_DATA = [
-  // --- CHAPTER 1 QUESTIONS ---
+  // --- CHAPTER 1 QUESTIONS (ALL 23 EXERCISES) ---
+  // Set 1 (7 questions)
   {
     id: "ch1_q1",
     chapter: "ch1",
-    question: "[Chapter 1] Definition Match: 'Occurring because of a natural tendency to behave in a particular way or a natural ability to know something that is not learned'",
-    options: [
-      "A. philosophy",
-      "B. instinctively",
-      "C. mystery",
-      "D. manner"
-    ],
+    question: "Definition Match: 'occurring because of a natural tendency to behave in a particular way or a natural ability to know something that is not learned'",
+    options: ["A. philosophy", "B. instinctively", "C. mystery", "D. manner"],
     correct: 1,
     explanation: "Instinctively means occurring because of a natural tendency or unlearned ability.",
     explanationVn: "Giải thích: 'Instinctively' (theo bản năng) xuất phát từ xu hướng tự nhiên không qua học tập."
@@ -1926,57 +1922,203 @@ const FOV_QUIZ_DATA = [
   {
     id: "ch1_q2",
     chapter: "ch1",
-    question: "[Chapter 1] Definition Match: 'Treatment that helps someone feel better or grow stronger'",
-    options: [
-      "A. therapy",
-      "B. esteem",
-      "C. monk",
-      "D. pace"
-    ],
+    question: "Definition Match: 'the study of the nature and meaning of existence, truth, good, and evil'",
+    options: ["A. philosophy", "B. deed", "C. mystery", "D. manner"],
     correct: 0,
-    explanation: "Therapy is treatment helping someone feel better or grow stronger physically/mentally.",
-    explanationVn: "Giải thích: 'Therapy' (liệu pháp) là trị liệu giúp cải thiện sức khỏe thể chất hoặc tinh thần."
+    explanation: "Philosophy is the study of existence, truth, good, and evil.",
+    explanationVn: "Giải thích: 'Philosophy' (triết học) là việc nghiên cứu bản chất sự tồn tại, chân lý và đạo đức."
   },
   {
     id: "ch1_q3",
     chapter: "ch1",
-    question: "[Chapter 1] Odd Word Out: Which word is NOT a synonym for 'discipline'?",
-    options: [
-      "A. control",
-      "B. regulation",
-      "C. restraint",
-      "D. indulgence"
-    ],
-    correct: 3,
-    explanation: "Control, regulation, and restraint are synonyms of discipline. Indulgence is the opposite (nuông chiều/buông thả).",
-    explanationVn: "Giải thích: Control, regulation, restraint là từ đồng nghĩa với discipline (kỷ luật). Indulgence (nuông chiều) là từ trái nghĩa."
+    question: "Definition Match: 'something a person does, especially something that is very good or bad'",
+    options: ["A. manner", "B. restaurant", "C. deed", "D. graft"],
+    correct: 2,
+    explanation: "Deed is something a person does, an action.",
+    explanationVn: "Giải thích: 'Deed' (hành động, việc làm) là việc con người thực hiện (việc tốt hoặc xấu)."
   },
   {
     id: "ch1_q4",
     chapter: "ch1",
-    question: "[Chapter 1] Odd Word Out: Which word is NOT a synonym for 'assert'?",
-    options: [
-      "A. state",
-      "B. declare",
-      "C. claim",
-      "D. deny"
-    ],
-    correct: 3,
-    explanation: "State, declare, and claim mean to assert. Deny means to state that something is NOT true (phủ nhận).",
-    explanationVn: "Giải thích: State, declare, claim có nghĩa là khẳng định/tuyên bố. Deny (phủ nhận) là từ trái nghĩa."
+    question: "Definition Match: 'a place where you can buy and eat a meal'",
+    options: ["A. mystery", "B. restaurant", "C. manner", "D. steak"],
+    correct: 1,
+    explanation: "Restaurant is a commercial place where meals are served.",
+    explanationVn: "Giải thích: 'Restaurant' (nhà hàng) là nơi mua và ăn các bữa ăn."
   },
   {
     id: "ch1_q5",
     chapter: "ch1",
-    question: "[Chapter 1] Odd Word Out: Which word is NOT a synonym for 'boost'?",
-    options: [
-      "A. increase",
-      "B. enhance",
-      "C. improve",
-      "D. limit"
-    ],
+    question: "Definition Match: 'an event, situation, etc., that people do not understand or cannot explain'",
+    options: ["A. mystery", "B. philosophy", "C. deed", "D. pace"],
+    correct: 0,
+    explanation: "Mystery is an unexplained or mysterious event/situation.",
+    explanationVn: "Giải thích: 'Mystery' (bí ẩn) là sự kiện hay tình huống chưa thể giải thích được."
+  },
+  {
+    id: "ch1_q6",
+    chapter: "ch1",
+    question: "Definition Match: 'the way in which something is done or happens'",
+    options: ["A. graft", "B. manner", "C. pace", "D. esteem"],
+    correct: 1,
+    explanation: "Manner refers to the way or style in which something is done.",
+    explanationVn: "Giải thích: 'Manner' (cách thức, phong thái) là phương thức việc gì đó được thực hiện."
+  },
+  {
+    id: "ch1_q7",
+    chapter: "ch1",
+    question: "Definition Match: 'to add something very different to something, so that it becomes part of it'",
+    options: ["A. inherit", "B. devote", "C. graft", "D. assert"],
+    correct: 2,
+    explanation: "Graft means to join or add something different onto something else.",
+    explanationVn: "Giải thích: 'Graft' (ghép/gắn kết) là thêm một thành phần khác vào để trở thành một phần của nó."
+  },
+
+  // Set 2 (7 questions)
+  {
+    id: "ch1_q8",
+    chapter: "ch1",
+    question: "Definition Match: 'the speed at which something happens or is done'",
+    options: ["A. pace", "B. therapy", "C. monk", "D. esteem"],
+    correct: 0,
+    explanation: "Pace refers to the rate of speed of progress or movement.",
+    explanationVn: "Giải thích: 'Pace' (nhịp độ, tốc độ) là vận tốc diễn ra của một sự việc."
+  },
+  {
+    id: "ch1_q9",
+    chapter: "ch1",
+    question: "Definition Match: 'a large, thick piece of good-quality red meat'",
+    options: ["A. steak", "B. deed", "C. graft", "D. pace"],
+    correct: 0,
+    explanation: "Steak is a thick slice of high-quality red meat.",
+    explanationVn: "Giải thích: 'Steak' (thịt bít tết) là miếng thịt đỏ dày chất lượng cao."
+  },
+  {
+    id: "ch1_q10",
+    chapter: "ch1",
+    question: "Definition Match: 'to be born with the same character or physical appearance as your parents'",
+    options: ["A. devote", "B. inherit", "C. assert", "D. review"],
+    correct: 1,
+    explanation: "Inherit means to receive genetic traits or physical features from parents.",
+    explanationVn: "Giải thích: 'Inherit' (thừa hưởng, di truyền) là sinh ra mang đặc điểm của bố mẹ."
+  },
+  {
+    id: "ch1_q11",
+    chapter: "ch1",
+    question: "Definition Match: 'a member of an all-male religious group that lives apart from other people'",
+    options: ["A. monk", "B. therapy", "C. esteem", "D. deed"],
+    correct: 0,
+    explanation: "Monk is a member of a male religious community.",
+    explanationVn: "Giải thích: 'Monk' (thầy tu, nhà sư) là nam tu sĩ sống trong cộng đồng tôn giáo riêng biệt."
+  },
+  {
+    id: "ch1_q12",
+    chapter: "ch1",
+    question: "Definition Match: 'to use all or most of your time and effort in order to do something or help someone'",
+    options: ["A. assert", "B. devote", "C. boost", "D. inherit"],
+    correct: 1,
+    explanation: "Devote means to dedicate time and energy to a cause or person.",
+    explanationVn: "Giải thích: 'Devote' (cống hiến, dành trọn) là dùng toàn bộ thời gian/tâm trí cho mục tiêu."
+  },
+  {
+    id: "ch1_q13",
+    chapter: "ch1",
+    question: "Definition Match: 'treatment that helps someone feel better or grow stronger'",
+    options: ["A. therapy", "B. esteem", "C. mystery", "D. intervention"],
+    correct: 0,
+    explanation: "Therapy is healing treatment for physical or mental conditions.",
+    explanationVn: "Giải thích: 'Therapy' (liệu pháp điều trị) là phương pháp giúp cải thiện sức khỏe."
+  },
+  {
+    id: "ch1_q14",
+    chapter: "ch1",
+    question: "Definition Match: 'a feeling of respect for someone, or a good opinion of someone'",
+    options: ["A. longing", "B. esteem", "C. discipline", "D. manner"],
+    correct: 1,
+    explanation: "Esteem is respect and high regard for someone.",
+    explanationVn: "Giải thích: 'Esteem' (sự tôn trọng/kính trọng) là tình cảm nể trọng đối với ai đó."
+  },
+
+  // Part B (9 Odd-Word-Out Synonym questions)
+  {
+    id: "ch1_q15",
+    chapter: "ch1",
+    question: "Find the word or phrase that is NOT a synonym for 'thrill':",
+    options: ["A. excitement", "B. boredom", "C. pleasure", "D. adventure"],
+    correct: 1,
+    explanation: "Excitement, pleasure, and adventure are synonyms for thrill. Boredom is the antonym (sự nhàm chán).",
+    explanationVn: "Giải thích: Excitement, pleasure, adventure là từ đồng nghĩa với thrill (phấn khích). Boredom (nhàm chán) là từ trái nghĩa."
+  },
+  {
+    id: "ch1_q16",
+    chapter: "ch1",
+    question: "Find the word or phrase that is NOT a synonym for 'discipline':",
+    options: ["A. control", "B. regulation", "C. restraint", "D. indulgence"],
     correct: 3,
-    explanation: "Boost means to increase, enhance, or improve. Limit means to restrict (hạn chế/giới hạn).",
+    explanation: "Control, regulation, and restraint mean discipline. Indulgence means self-gratification (nuông chiều/buông thả).",
+    explanationVn: "Giải thích: Control, regulation, restraint là từ đồng nghĩa với discipline (kỷ luật). Indulgence (nuông chiều) là từ trái nghĩa."
+  },
+  {
+    id: "ch1_q17",
+    chapter: "ch1",
+    question: "Find the word or phrase that is NOT a synonym for 'longing':",
+    options: ["A. desire", "B. dislike", "C. wish", "D. want"],
+    correct: 1,
+    explanation: "Desire, wish, and want mean longing. Dislike is the opposite (không thích).",
+    explanationVn: "Giải thích: Desire, wish, want là từ đồng nghĩa với longing (khao khát). Dislike (không thích) là từ trái nghĩa."
+  },
+  {
+    id: "ch1_q18",
+    chapter: "ch1",
+    question: "Find the word or phrase that is NOT a synonym for 'cheerful':",
+    options: ["A. serious", "B. happy", "C. positive", "D. joyful"],
+    correct: 0,
+    explanation: "Happy, positive, and joyful mean cheerful. Serious means solemn or somber (trầm lắng/nghiêm túc).",
+    explanationVn: "Giải thích: Happy, positive, joyful là từ đồng nghĩa với cheerful (vui vẻ). Serious (nghiêm túc/trầm lắng) là từ trái nghĩa."
+  },
+  {
+    id: "ch1_q19",
+    chapter: "ch1",
+    question: "Find the word or phrase that is NOT a synonym for 'astonishing':",
+    options: ["A. amazing", "B. predictable", "C. surprising", "D. shocking"],
+    correct: 1,
+    explanation: "Amazing, surprising, and shocking mean astonishing. Predictable means expected (đoán trước được).",
+    explanationVn: "Giải thích: Amazing, surprising, shocking là từ đồng nghĩa với astonishing (sửng sốt). Predictable (đoán trước được) là từ trái nghĩa."
+  },
+  {
+    id: "ch1_q20",
+    chapter: "ch1",
+    question: "Find the word or phrase that is NOT a synonym for 'assert':",
+    options: ["A. state", "B. declare", "C. claim", "D. deny"],
+    correct: 3,
+    explanation: "State, declare, and claim mean to assert. Deny means to state something is NOT true (phủ nhận).",
+    explanationVn: "Giải thích: State, declare, claim có nghĩa là khẳng định/tuyên bố. Deny (phủ nhận) là từ trái nghĩa."
+  },
+  {
+    id: "ch1_q21",
+    chapter: "ch1",
+    question: "Find the word or phrase that is NOT a synonym for 'review':",
+    options: ["A. evaluation", "B. assessment", "C. description", "D. proposal"],
+    correct: 3,
+    explanation: "Evaluation, assessment, and description are related to review. Proposal is a plan/suggestion (đề xuất).",
+    explanationVn: "Giải thích: Evaluation, assessment, description liên quan đến việc đánh giá/khảo sát. Proposal (đề xuất) không phải từ đồng nghĩa."
+  },
+  {
+    id: "ch1_q22",
+    chapter: "ch1",
+    question: "Find the word or phrase that is NOT a synonym for 'intervention':",
+    options: ["A. interference", "B. inactivity", "C. treatment", "D. interruption"],
+    correct: 1,
+    explanation: "Interference, treatment, and interruption are related to intervention. Inactivity means doing nothing.",
+    explanationVn: "Giải thích: Interference, treatment, interruption có nghĩa liên quan đến sự can thiệp. Inactivity (không hoạt động) là từ trái nghĩa."
+  },
+  {
+    id: "ch1_q23",
+    chapter: "ch1",
+    question: "Find the word or phrase that is NOT a synonym for 'boost':",
+    options: ["A. increase", "B. enhance", "C. improve", "D. limit"],
+    correct: 3,
+    explanation: "Increase, enhance, and improve mean to boost. Limit means to restrict (giới hạn).",
     explanationVn: "Giải thích: Increase, enhance, improve nghĩa là thúc đẩy/tăng cường. Limit (giới hạn) là từ trái nghĩa."
   },
 
@@ -1984,72 +2126,47 @@ const FOV_QUIZ_DATA = [
   {
     id: "fov_q1",
     chapter: "ch_academic",
-    question: "[Academic] The team's research paper was praised because every claim was ________ by solid empirical data gathered over five years.",
-    options: [
-      "A. substantiated",
-      "B. exacerbated",
-      "C. repudiated",
-      "D. fluctuated"
-    ],
+    question: "The team's research paper was praised because every claim was ________ by solid empirical data gathered over five years.",
+    options: ["A. substantiated", "B. exacerbated", "C. repudiated", "D. fluctuated"],
     correct: 0,
-    explanation: "Substantiated means proved or supported with evidence. Context: claims backed by empirical data.",
-    explanationVn: "Giải thích: 'Substantiated' nghĩa là được chứng minh/xác minh bằng bằng chứng. Ngữ cảnh: các khẳng định được chứng minh bằng dữ liệu thực nghiệm."
+    explanation: "Substantiated means proved or supported with evidence.",
+    explanationVn: "Giải thích: 'Substantiated' nghĩa là được chứng minh/xác minh bằng bằng chứng."
   },
   {
     id: "fov_q2",
     chapter: "ch_academic",
-    question: "[Academic] Because the wording of the contract was overly ________, both parties interpreted the payment terms differently.",
-    options: [
-      "A. pragmatic",
-      "B. ambiguous",
-      "C. impeccable",
-      "D. ubiquitous"
-    ],
+    question: "Because the wording of the contract was overly ________, both parties interpreted the payment terms differently.",
+    options: ["A. pragmatic", "B. ambiguous", "C. impeccable", "D. ubiquitous"],
     correct: 1,
-    explanation: "Ambiguous means unclear or open to multiple interpretations, causing different understandings.",
-    explanationVn: "Giải thích: 'Ambiguous' nghĩa là mơ hồ, nhập nhằng, dẫn đến hai bên hiểu điều khoản thanh toán theo hai cách khác nhau."
+    explanation: "Ambiguous means unclear or open to multiple interpretations.",
+    explanationVn: "Giải thích: 'Ambiguous' nghĩa là mơ hồ, nhập nhằng."
   },
   {
     id: "fov_q3",
     chapter: "ch_academic",
-    question: "[Academic] Attempting to cut municipal budgets during a recession will only ________ existing social inequality.",
-    options: [
-      "A. consolidate",
-      "B. elucidate",
-      "C. exacerbate",
-      "D. scrutinize"
-    ],
+    question: "Attempting to cut municipal budgets during a recession will only ________ existing social inequality.",
+    options: ["A. consolidate", "B. elucidate", "C. exacerbate", "D. scrutinize"],
     correct: 2,
     explanation: "Exacerbate means to make a bad situation or problem worse.",
-    explanationVn: "Giải thích: 'Exacerbate' nghĩa là làm trầm trọng thêm. Ngữ cảnh: cắt giảm ngân sách sẽ làm trầm trọng thêm tình trạng bất bình đẳng xã hội."
+    explanationVn: "Giải thích: 'Exacerbate' nghĩa là làm trầm trọng thêm."
   },
   {
     id: "fov_q4",
     chapter: "ch_academic",
-    question: "[Academic] Rather than getting lost in abstract philosophy, the manager adopted a ________ approach to solve workplace disputes.",
-    options: [
-      "A. pragmatic",
-      "B. superfluous",
-      "C. ephemeral",
-      "D. capricious"
-    ],
+    question: "Rather than getting lost in abstract philosophy, the manager adopted a ________ approach to solve workplace disputes.",
+    options: ["A. pragmatic", "B. superfluous", "C. ephemeral", "D. capricious"],
     correct: 0,
-    explanation: "Pragmatic means practical and realistic rather than theoretical or idealistic.",
-    explanationVn: "Giải thích: 'Pragmatic' nghĩa là thực tế/thực dụng, trái ngược với lý thuyết triết học trừu tượng (abstract philosophy)."
+    explanation: "Pragmatic means practical and realistic rather than theoretical.",
+    explanationVn: "Giải thích: 'Pragmatic' nghĩa là thực tế/thực dụng."
   },
   {
     id: "fov_q5",
     chapter: "ch_academic",
-    question: "[Academic] Ensure your final thesis statement is concise and remove any ________ sentences that do not support your main argument.",
-    options: [
-      "A. paramount",
-      "B. resilient",
-      "C. superfluous",
-      "D. meticulous"
-    ],
+    question: "Ensure your final thesis statement is concise and remove any ________ sentences that do not support your main argument.",
+    options: ["A. paramount", "B. resilient", "C. superfluous", "D. meticulous"],
     correct: 2,
     explanation: "Superfluous means unnecessary or extra beyond what is needed.",
-    explanationVn: "Giải thích: 'Superfluous' nghĩa là dư thừa, không cần thiết. Ngữ cảnh: loại bỏ các câu dư thừa không hỗ trợ luận điểm."
+    explanationVn: "Giải thích: 'Superfluous' nghĩa là dư thừa, không cần thiết."
   }
 ];
 
