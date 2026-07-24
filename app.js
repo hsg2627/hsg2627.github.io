@@ -310,6 +310,17 @@ document.addEventListener("DOMContentLoaded", () => {
   try { initFovModule(); } catch (e) { console.error("FOV error:", e); }
 });
 
+// Global GA4 Event Tracking Helper
+function trackGAEvent(eventName, params) {
+  if (typeof window.gtag === 'function') {
+    try {
+      window.gtag('event', eventName, params);
+    } catch (e) {
+      console.warn("GA tracking error:", e);
+    }
+  }
+}
+
 // Global TTS Speech Helper
 function speakWord(text) {
   if (typeof window.speechSynthesis !== 'undefined') {
@@ -325,10 +336,12 @@ function speakWord(text) {
 function initNavigation() {
   const navBtns = document.querySelectorAll(".nav-btn");
   navBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", (e) => {
       const tabId = btn.getAttribute("data-tab");
-      openSkillTab(tabId);
-      trackGAEvent('page_view_tab', { tab_id: tabId });
+      if (tabId) {
+        openSkillTab(tabId);
+        trackGAEvent('page_view_tab', { tab_id: tabId });
+      }
     });
   });
 }
@@ -389,24 +402,38 @@ function openSkillTab(tabId) {
   }
   window.scrollTo({ top: 0, behavior: 'smooth' });
 
-  if (tabId === 'learning-dashboard') {
-    renderLearningDashboard();
-  } else if (tabId === 'focus-on-vocabulary') {
-    initFovModule();
+  // Safely initialize active module
+  try {
+    if (tabId === 'learning-dashboard') {
+      if (typeof renderLearningDashboard === 'function') renderLearningDashboard();
+    } else if (tabId === 'focus-on-vocabulary') {
+      if (typeof initFovModule === 'function') initFovModule();
+    } else if (tabId === 'collocations') {
+      if (typeof initCollocations === 'function') initCollocations();
+    } else if (tabId === 'trang-anh-collocations') {
+      if (typeof initTrangAnhCollocations === 'function') initTrangAnhCollocations();
+    } else if (tabId === 'reading-comprehension') {
+      if (typeof initQuiz === 'function') initQuiz();
+    }
+  } catch (err) {
+    console.error("Module initialization error:", err);
   }
 }
 
 // Switch to quiz sub-tab and filter by category (called from skill cards)
 function filterQuizCategory(category) {
-  // Switch to rc-quiz sub-tab
-  const subTabs = document.querySelectorAll(".sub-tab");
-  const subContents = document.querySelectorAll(".sub-tab-content");
+  openSkillTab('reading-comprehension');
+  const container = document.getElementById("reading-comprehension");
+  if (!container) return;
+
+  const subTabs = container.querySelectorAll(".sub-tab");
+  const subContents = container.querySelectorAll(".sub-tab-content");
 
   subTabs.forEach(t => t.classList.remove("active"));
   subContents.forEach(c => c.classList.remove("active"));
 
-  const quizSubTab = document.querySelector('.sub-tab[data-subtab="rc-quiz"]');
-  const quizContent = document.getElementById("rc-quiz");
+  const quizSubTab = container.querySelector('.sub-tab[data-subtab="rc-quiz"]');
+  const quizContent = container.querySelector("#rc-quiz");
 
   if (quizSubTab) quizSubTab.classList.add("active");
   if (quizContent) quizContent.classList.add("active");
