@@ -39,7 +39,8 @@
         <li><button class="nav-btn" data-tab="reading-comprehension">Reading Comprehension</button></li>
         <li><button class="nav-btn" data-tab="listening-skills">Listening Skills</button></li>
         <li><button class="nav-btn" data-tab="collocations">Collocations</button></li>
-        <li><button class="nav-btn" data-tab="trang-anh-collocations">🔥 Cô Trang Anh (2,000)</button></li>
+        <li><button class="nav-btn" data-tab="trang-anh-collocations">🔥 English Collocations</button></li>
+        <li><button class="nav-btn" data-tab="focus-on-vocabulary">🔤 Focus on Vocabulary</button></li>
         <li><button class="nav-btn" data-tab="learning-dashboard">📊 Dashboard</button></li>
       </ul>
     </div>
@@ -123,18 +124,33 @@
             </div>
           </div>
 
-          <!-- Card 5: Cô Trang Anh 2,000 Collocations & Idioms (Gamified Arena) -->
+          <!-- Card 5: English Collocations (Gamified Arena) -->
           <div class="exercise-card highlight-card gamified-card">
             <div class="card-top">
               <div class="tag-group">
                 <span class="badge-tag gamified-badge">🎮 GAMIFIED PRACTICE</span>
-                <span class="badge-tag">CÔ TRANG ANH 2,000+</span>
+                <span class="badge-tag">ENGLISH COLLOCATIONS</span>
               </div>
-              <h3 class="card-title">🔥 2000 Collocations & Idioms (Cô Trang Anh)</h3>
-              <p class="card-desc">Chinh phục 2,000+ cụm từ cố định và thành ngữ tiếng Anh theo giáo trình Cô Trang Anh qua giao diện Gamification tương tác: Đấu trí Quiz Arena (Timer, Lifelines, 50:50), Ghép thẻ Nối cặp Siêu tốc, Thử thách Xếp từ Scramble, Flashcards 3D & Bảng Vinh danh XP!</p>
+              <h3 class="card-title">🔥 English Collocations</h3>
+              <p class="card-desc">Chinh phục 2,000+ cụm từ cố định và thành ngữ tiếng Anh qua giao diện Gamification tương tác: Đấu trí Quiz Arena (Timer, Lifelines, 50:50), Ghép thẻ Nối cặp Siêu tốc, Thử thách Xếp từ Scramble, Flashcards 3D & Bảng Vinh danh XP!</p>
             </div>
             <div class="card-bottom">
               <button class="card-btn filled gamified-btn" onclick="openSkillTab('trang-anh-collocations')">🎮 Vào Bài Tập Gamification →</button>
+            </div>
+          </div>
+
+          <!-- Card 6: Focus on Vocabulary -->
+          <div class="exercise-card highlight-card">
+            <div class="card-top">
+              <div class="tag-group">
+                <span class="badge-tag">VOCABULARY MASTER</span>
+                <span class="badge-tag">CEFR B1–C2</span>
+              </div>
+              <h3 class="card-title">🔤 Focus on Vocabulary</h3>
+              <p class="card-desc">Luyện tập từ vựng học thuật chuyên sâu: Vocabulary in Context, Synonyms & Antonyms, Prefixes & Root Words, Thẻ nhớ 3D Flashcards tương tác, Bài tập trắc nghiệm chọn từ và Chiến thuật làm bài từ vựng đỉnh cao!</p>
+            </div>
+            <div class="card-bottom">
+              <button class="card-btn filled" onclick="openSkillTab('focus-on-vocabulary')">Start Focus on Vocabulary</button>
             </div>
           </div>
 
@@ -238,6 +254,20 @@
                 <span>❓ 1 Practice Question</span>
               </div>
               <button class="skill-action-btn" onclick="filterQuizCategory('Paraphrase')">Thực hành Kỹ năng này →</button>
+            </div>
+
+            <div class="skill-box-card">
+              <div class="skill-card-top">
+                <span class="skill-badge vocab-badge">Category: Focus on Vocab</span>
+                <span class="skill-level">CEFR B1-C2</span>
+              </div>
+              <h3 class="skill-card-title">🔤 Focus on Vocabulary & Root Words</h3>
+              <p class="skill-card-desc">Học từ vựng theo gốc từ (Roots/Affixes), từ đồng nghĩa - trái nghĩa, từ vựng trong ngữ cảnh VSTEP/IELTS/Cambridge và phương pháp Spaced Repetition.</p>
+              <div class="skill-meta">
+                <span>📖 100+ Core Vocab</span>
+                <span>❓ Practice & 3D Flashcards</span>
+              </div>
+              <button class="skill-action-btn" onclick="openSkillTab('focus-on-vocabulary')">Khám phá Thư mục này →</button>
             </div>
           </div>
         </div>
@@ -1001,16 +1031,16 @@
       </div>
     </section>
 
-    <!-- ==================== CÔ TRANG ANH (2,000 COLLOCATIONS & IDIOMS) GAMIFIED TAB ==================== -->
+    <!-- ==================== ENGLISH COLLOCATIONS GAMIFIED TAB ==================== -->
     <section id="trang-anh-collocations" class="tab-content">
       <div class="reading-box-container">
         
         <!-- Module Header -->
         <div class="reading-box-header gamified-header">
           <button class="back-home-btn" onclick="goHome()">← Back to Home</button>
-          <div class="reading-box-badge gamified-hero-badge">⚡ GAMIFICATION ARENA • CÔ TRANG ANH</div>
-          <h2 class="reading-box-title">2,000 Collocations & Idioms Master</h2>
-          <p class="reading-box-desc">Hệ thống bài tập Gamification tương tác cao theo giáo trình Cô Trang Anh. Luyện tập đấu trí Quiz Arena, Ghép thẻ Siêu tốc, Thử thách Xếp từ Scramble và Flashcards 3D để tích lũy XP & thăng cấp Badge!</p>
+          <div class="reading-box-badge gamified-hero-badge">⚡ GAMIFICATION ARENA • ENGLISH COLLOCATIONS</div>
+          <h2 class="reading-box-title">English Collocations Master (2,600+ Cụm Từ)</h2>
+          <p class="reading-box-desc">Hệ thống bài tập Gamification tương tác cao với toàn bộ kho 2,600+ English Collocations & Idioms. Luyện tập đấu trí Quiz Arena, Ghép thẻ Siêu tốc, Thử thách Xếp từ Scramble và Flashcards 3D để tích lũy XP & thăng cấp Badge!</p>
         </div>
 
         <!-- Player Gamification Stats Bar -->
@@ -1062,7 +1092,7 @@
           <button class="sub-tab" data-subtab="ta-match">⚡ Speed Match (Ghép thẻ)</button>
           <button class="sub-tab" data-subtab="ta-scramble">🧩 Word Scramble (Xếp từ)</button>
           <button class="sub-tab" data-subtab="ta-flashcards">🎴 Flashcard 3D</button>
-          <button class="sub-tab" data-subtab="ta-bank">📖 Kho 2,000 Cụm Từ</button>
+          <button class="sub-tab" data-subtab="ta-bank">📖 Kho 2,600+ Cụm Từ</button>
         </div>
 
         <!-- Sub-tab 1: Quiz Arena -->
@@ -1076,10 +1106,17 @@
           <div class="arena-controls">
             <div class="topic-filter-chips" id="ta-topic-filters">
               <button class="filter-chip active" data-topic="all">Tất cả bài tập</button>
+              <button class="filter-chip" data-topic="B1">🌱 Level B1 (Cơ bản)</button>
+              <button class="filter-chip" data-topic="B2">⚡ Level B2 (Trung cấp)</button>
+              <button class="filter-chip" data-topic="C1">🔥 Level C1 (Nâng cao)</button>
+              <button class="filter-chip" data-topic="C2">👑 Level C2 (Chuyên gia)</button>
               <button class="filter-chip" data-topic="family">Gia đình (Family)</button>
+              <button class="filter-chip" data-topic="relationships">Tình cảm & Mối quan hệ</button>
+              <button class="filter-chip" data-topic="character">Tính cách & Con người</button>
+              <button class="filter-chip" data-topic="everyday_collocations">Cụm từ thông dụng</button>
               <button class="filter-chip" data-topic="color_idioms">Thành ngữ Màu sắc</button>
-              <button class="filter-chip" data-topic="body_idioms">Thành ngữ Cơ thể</button>
-              <button class="filter-chip" data-topic="environment">Môi trường (Environment)</button>
+              <button class="filter-chip" data-topic="body_idioms">Thành ngữ Cơ thể & Động vật</button>
+              <button class="filter-chip" data-topic="environment">Môi trường & Xã hội</button>
               <button class="filter-chip" data-topic="success_failure">Thành công & Thất bại</button>
             </div>
 
@@ -1189,8 +1226,8 @@
         <!-- Sub-tab 5: Kho Từ Vựng -->
         <div id="ta-bank" class="sub-tab-content">
           <div class="sub-section-header">
-            <h3 class="sub-section-title">📖 Kho 2,000 Collocations & Idioms Cô Trang Anh</h3>
-            <p class="sub-section-desc">Tra cứu nhanh chóng tất cả cụm từ cố định, thành ngữ kèm theo phát âm IPA, ví dụ và nghĩa Tiếng Việt.</p>
+            <h3 class="sub-section-title">📖 Kho 2,600+ English Collocations & Idioms</h3>
+            <p class="sub-section-desc">Tra cứu nhanh chóng hơn 2,600+ cụm từ cố định, thành ngữ kèm theo phát âm IPA, ví dụ và nghĩa Tiếng Việt.</p>
           </div>
 
           <div style="margin-bottom: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
@@ -1199,6 +1236,261 @@
 
           <div id="ta-bank-grid" class="vocab-grid">
             <!-- Rendered dynamically by app.js -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== FOCUS ON VOCABULARY TAB ==================== -->
+    <section id="focus-on-vocabulary" class="tab-content">
+      <div class="reading-box-container">
+        
+        <!-- Module Header -->
+        <div class="reading-box-header">
+          <button class="back-home-btn" onclick="goHome()">← Back to Home</button>
+          <div class="reading-box-badge">🔤 FOCUS ON VOCABULARY • ACADEMIC & CONTEXTUAL</div>
+          <h2 class="reading-box-title">Focus on Vocabulary (CEFR B1–C2 Academic)</h2>
+          <p class="reading-box-desc">Chinh phục kho từ vựng học thuật chuyên sâu VSTEP, IELTS, TOEFL & Cambridge qua 5 phương pháp tương tác: Tổng quan Kỹ năng, Thẻ nhớ 3D Flashcards, Tra cứu Từ vựng, Bài tập Trắc nghiệm Ngữ cảnh và Chiến thuật Gốc từ (Roots & Affixes).</p>
+        </div>
+
+        <!-- Sub-tabs navigation inside Focus on Vocabulary -->
+        <div class="sub-tabs">
+          <button class="sub-tab active" data-subtab="fov-overview">Overview & Modules</button>
+          <button class="sub-tab" data-subtab="fov-flashcards">🎴 3D Flashcards</button>
+          <button class="sub-tab" data-subtab="fov-quiz">📝 Practice Quiz</button>
+          <button class="sub-tab" data-subtab="fov-bank">📖 Academic Vocab Explorer</button>
+          <button class="sub-tab" data-subtab="fov-strategies">💡 4 Word-Building Strategies</button>
+        </div>
+
+        <!-- Sub-tab 1: Overview & Modules -->
+        <div id="fov-overview" class="sub-tab-content active">
+          <div class="sub-section-header">
+            <h3 class="sub-section-title">Focus on Vocabulary Modules & Learning Pathways</h3>
+            <p class="sub-section-desc">Hệ thống bài học từ vựng chuyên sâu giúp bạn xây dựng vốn từ học thuật bền vững, làm chủ ngữ cảnh và phân tích cấu tạo từ.</p>
+          </div>
+
+          <div class="skills-grid">
+            
+            <div class="skill-box-card">
+              <div class="skill-card-top">
+                <span class="skill-badge vocab-badge">Category: Contextual Vocab</span>
+                <span class="skill-level">CEFR B1-C2</span>
+              </div>
+              <h3 class="skill-card-title">🔍 Vocabulary in Context</h3>
+              <p class="skill-card-desc">Suy đoán chính xác ý nghĩa từ mới trong các bài đọc học thuật VSTEP/IELTS thông qua tín hiệu ngữ cảnh (Context Clues) mà không phụ thuộc vào từ điển.</p>
+              <div class="skill-meta">
+                <span>📄 Authentic Texts</span>
+                <span>❓ Interactive Practice</span>
+              </div>
+              <button class="skill-action-btn" onclick="openFovSubTab('fov-quiz')">Thực hành Trắc nghiệm Ngữ cảnh →</button>
+            </div>
+
+            <div class="skill-box-card">
+              <div class="skill-card-top">
+                <span class="skill-badge main-idea-badge">Category: Word Formation</span>
+                <span class="skill-level">CEFR B2-C1</span>
+              </div>
+              <h3 class="skill-card-title">🧩 Morphology & Root Words</h3>
+              <p class="skill-card-desc">Giải mã cấu tạo từ bằng cách phân tích Tiền tố (Prefixes), Hậu tố (Suffixes) và Gốc từ Latin/Greek (Roots) để nhân số lượng từ vựng lên gấp 5 lần.</p>
+              <div class="skill-meta">
+                <span>🌱 Roots & Affixes</span>
+                <span>💡 4 Key Strategies</span>
+              </div>
+              <button class="skill-action-btn" onclick="openFovSubTab('fov-strategies')">Xem Chiến thuật Gốc từ →</button>
+            </div>
+
+            <div class="skill-box-card">
+              <div class="skill-card-top">
+                <span class="skill-badge detail-badge">Category: Spaced Repetition</span>
+                <span class="skill-level">CEFR B1-C2</span>
+              </div>
+              <h3 class="skill-card-title">🎴 3D Interactive Flashcards</h3>
+              <p class="skill-card-desc">Học từ vựng qua thẻ 3D lật tự động, xem phiên âm IPA, nghĩa Tiếng Việt, ví dụ ứng dụng, phát âm Audio chuẩn bản ngữ và đánh giá ghi nhớ.</p>
+              <div class="skill-meta">
+                <span>🔊 Native Audio</span>
+                <span>🔄 3D Flip Deck</span>
+              </div>
+              <button class="skill-action-btn" onclick="openFovSubTab('fov-flashcards')">Mở Bộ Thẻ 3D Flashcard →</button>
+            </div>
+
+            <div class="skill-box-card">
+              <div class="skill-card-top">
+                <span class="skill-badge paraphrase-badge">Category: Academic Bank</span>
+                <span class="skill-level">CEFR B1-C2</span>
+              </div>
+              <h3 class="skill-card-title">📖 Academic Vocab Explorer</h3>
+              <p class="skill-card-desc">Tra cứu nhanh chóng kho từ vựng học thuật đa dạng (AWL - Academic Word List), tìm kiếm trực tiếp và lọc theo các cấp độ CEFR B1, B2, C1, C2.</p>
+              <div class="skill-meta">
+                <span>🔍 Live Search</span>
+                <span>🎯 CEFR Filters</span>
+              </div>
+              <button class="skill-action-btn" onclick="openFovSubTab('fov-bank')">Khám phá Kho Từ vựng →</button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Sub-tab 2: 3D Flashcards -->
+        <div id="fov-flashcards" class="sub-tab-content">
+          <div class="sub-section-header">
+            <h3 class="sub-section-title">🎴 Thẻ Ghi Nhớ Từ Vựng Học Thuật 3D (Spaced Repetition)</h3>
+            <p class="sub-section-desc">Chạm hoặc click vào thẻ để lật xem phiên âm IPA, giải nghĩa Tiếng Việt, câu ví dụ thực tế và nghe phát âm Audio.</p>
+          </div>
+
+          <div style="text-align: center; font-weight: 700; color: var(--brand-teal); margin-bottom: 1rem;" id="fov-fc-counter">
+            Card 1 of 30
+          </div>
+
+          <!-- 3D Flashcard Wrapper -->
+          <div class="flashcard-wrapper">
+            <div id="fov-main-flashcard" class="flashcard" onclick="toggleFovFlashcardFlip()">
+              
+              <!-- Front Side -->
+              <div class="flashcard-front">
+                <div style="font-size: 0.8rem; font-weight: 800; color: var(--brand-teal); text-transform: uppercase; margin-bottom: 0.75rem;" id="fov-fc-badge">ACADEMIC VOCABULARY</div>
+                <h2 id="fov-fc-term" style="font-size: 2.2rem; font-weight: 800; color: var(--brand-teal-dark); margin-bottom: 0.5rem;">Ubiquitous</h2>
+                <div id="fov-fc-ipa" style="font-size: 1.1rem; color: var(--text-muted); font-family: serif;">/juːˈbɪkwɪtəs/</div>
+                <div id="fov-fc-pos" style="font-size: 0.85rem; font-weight: 700; color: var(--brand-teal); background: var(--brand-teal-light); padding: 0.2rem 0.6rem; border-radius: 4px; margin-top: 0.75rem;">adjective</div>
+                <div class="flashcard-hint">🔄 Click hoặc chạm để lật xem giải nghĩa & ví dụ</div>
+              </div>
+
+              <!-- Back Side -->
+              <div class="flashcard-back">
+                <div id="fov-fc-vn" style="font-size: 1.35rem; font-weight: 800; color: #0d9488; background: #f0fdfa; padding: 0.6rem 1rem; border-radius: var(--radius-md); border: 1px solid #ccfbf1; margin-bottom: 0.75rem;">
+                  🇻🇳 Phổ biến ở khắp mọi nơi, có mặt khắp nơi
+                </div>
+                <div id="fov-fc-def" style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
+                  Present, appearing, or found everywhere.
+                </div>
+                <div id="fov-fc-ex" style="font-size: 0.95rem; color: var(--text-primary); font-style: italic; background: #f8fafc; padding: 0.75rem 1rem; border-radius: var(--radius-md); border-left: 3px solid var(--brand-teal);">
+                  • Smartphones have become ubiquitous in modern daily life.
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Flashcard Controls -->
+          <div class="flashcard-controls">
+            <button class="card-btn filled" style="width: auto; padding: 0.75rem 1.5rem;" onclick="prevFovFlashcard()">← Thẻ trước</button>
+            <button class="card-btn outline-amber" style="width: auto; padding: 0.75rem 1.5rem;" onclick="toggleFovFlashcardFlip()">🔄 Lật thẻ</button>
+            <button class="audio-btn" style="padding: 0.75rem 1.25rem; background: #0f766e; color: white; border-radius: 8px; font-weight: 600;" onclick="speakFovTerm()">🔊 Phát âm</button>
+            <button class="card-btn filled" style="width: auto; padding: 0.75rem 1.5rem;" onclick="nextFovFlashcard()">Thẻ tiếp theo →</button>
+          </div>
+
+        </div>
+
+        <!-- Sub-tab 3: Practice Quiz -->
+        <div id="fov-quiz" class="sub-tab-content">
+          <div class="sub-section-header">
+            <h3 class="sub-section-title">📝 Contextual Vocabulary Practice Quiz</h3>
+            <p class="sub-section-desc">Kiểm tra khả năng vận dụng từ vựng học thuật trong câu ngữ cảnh thực tế với đáp án giải thích chi tiết.</p>
+          </div>
+
+          <div class="quiz-controls" style="margin-bottom: 2rem;">
+            <div style="display: flex; gap: 1rem; align-items: center; justify-content: space-between; width: 100%; flex-wrap: wrap;">
+              <button class="card-btn filled" style="width: auto;" onclick="resetFovQuiz()">🎲 Bắt đầu lại lượt Quiz</button>
+              <div class="score-tracker">
+                <span>Quiz Score:</span>
+                <span id="fov-score-display" class="score-badge">0 / 0 Đúng</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="fov-quiz-container">
+            <!-- Rendered dynamically by app.js -->
+          </div>
+        </div>
+
+        <!-- Sub-tab 4: Academic Vocab Explorer -->
+        <div id="fov-bank" class="sub-tab-content">
+          <div class="sub-section-header">
+            <h3 class="sub-section-title">📖 Academic Vocab Explorer</h3>
+            <p class="sub-section-desc">Tra cứu nhanh từ vựng học thuật cao cấp kèm phiên âm IPA, định nghĩa Tiếng Anh và dịch nghĩa Tiếng Việt.</p>
+          </div>
+
+          <div style="margin-bottom: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+            <input type="text" id="fov-bank-search" class="vocab-search" placeholder="🔍 Tìm kiếm từ vựng, phiên âm IPA hoặc nghĩa tiếng Việt..." style="flex: 2; min-width: 280px; margin-bottom: 0;">
+            <div class="filter-group" style="flex: 1; margin-bottom: 0;">
+              <button class="filter-chip fov-level-chip active" data-fovlevel="All">All Levels</button>
+              <button class="filter-chip fov-level-chip" data-fovlevel="B1">CEFR B1</button>
+              <button class="filter-chip fov-level-chip" data-fovlevel="B2">CEFR B2</button>
+              <button class="filter-chip fov-level-chip" data-fovlevel="C1">CEFR C1</button>
+              <button class="filter-chip fov-level-chip" data-fovlevel="C2">CEFR C2</button>
+            </div>
+          </div>
+
+          <div id="fov-bank-grid" class="vocab-grid">
+            <!-- Rendered dynamically by app.js -->
+          </div>
+        </div>
+
+        <!-- Sub-tab 5: 4 Word-Building Strategies -->
+        <div id="fov-strategies" class="sub-tab-content">
+          <div class="sub-section-header">
+            <h3 class="sub-section-title">💡 4 Core Strategies for Building Academic Vocabulary</h3>
+            <p class="sub-section-desc">Làm chủ các chiến thuật mở rộng từ vựng học thuật bền vững và hiệu quả nhất.</p>
+          </div>
+
+          <div class="strategies-grid">
+            
+            <div class="strategy-card">
+              <div class="strategy-icon">🔍</div>
+              <h3 class="strategy-title">1. Contextual Clues (Đoán nghĩa qua Ngữ cảnh)</h3>
+              <ul class="strategy-steps">
+                <li>Xác định từ nối tương phản (however, whereas, despite) hoặc giải thích (meaning, defined as).</li>
+                <li>Phân tích mối quan hệ nguyên nhân - kết quả xung quanh từ chưa biết.</li>
+                <li>Thay thử các từ đồng nghĩa đoán nhận vào vị trí để kiểm tra tính hợp lý của câu.</li>
+              </ul>
+              <div class="trap-box">
+                <div class="trap-title">⚠️ Lỗi thường gặp</div>
+                <div><strong>Tra từ điển quá sớm:</strong> Ngắt gián đoạn mạch đọc làm giảm khả năng phản xạ tư duy trực tiếp bằng tiếng Anh.</div>
+              </div>
+            </div>
+
+            <div class="strategy-card">
+              <div class="strategy-icon">🧩</div>
+              <h3 class="strategy-title">2. Morphological Analysis (Phân tích Gốc từ)</h3>
+              <ul class="strategy-steps">
+                <li>Tách từ thành: Tiền tố (Prefix) + Gốc từ (Root) + Hậu tố (Suffix).</li>
+                <li>Ví dụ: <em>UN-PREDICT-ABLE</em> (Un = không, Predict = đoán, Able = có thể).</li>
+                <li>Nắm vững 20 Tiền tố & 14 Gốc từ Latin/Greek phổ biến nhất để suy ra 100,000+ từ.</li>
+              </ul>
+              <div class="trap-box">
+                <div class="trap-title">⚠️ Lỗi thường gặp</div>
+                <div><strong>Bỏ qua hậu tố:</strong> Hậu tố quyết định Từ loại (Noun, Verb, Adj, Adv), giúp loại nhanh các phương án sai dạng từ.</div>
+              </div>
+            </div>
+
+            <div class="strategy-card">
+              <div class="strategy-icon">🎯</div>
+              <h3 class="strategy-title">3. Lexical Chunks & Collocations (Học theo Cụm)</h3>
+              <ul class="strategy-steps">
+                <li>Không bao giờ ghi nhớ từng từ đơn lẻ rời rạc.</li>
+                <li>Học kèm động từ + danh từ đi cùng (vd: <em>pose a threat, draw a conclusion</em>).</li>
+                <li>Ghi chép từ vựng theo chủ đề (Academic Word List) thay vì thứ tự bảng chữ cái A-Z.</li>
+              </ul>
+              <div class="trap-box">
+                <div class="trap-title">⚠️ Lỗi thường gặp</div>
+                <div><strong>Dịch thô Word-for-Word:</strong> Ghép từ tiếng Việt sang tiếng Anh gây ra các cụm từ sai tự nhiên.</div>
+              </div>
+            </div>
+
+            <div class="strategy-card">
+              <div class="strategy-icon">🧠</div>
+              <h3 class="strategy-title">4. Spaced Repetition & Active Retrieval</h3>
+              <ul class="strategy-steps">
+                <li>Sử dụng hệ thống lật thẻ Flashcard theo các mốc thời gian: 1 ngày, 3 ngày, 7 ngày, 30 ngày.</li>
+                <li>Tự đặt câu thực hành thực tế cho từng từ vựng mới học.</li>
+                <li>Kích hoạt chủ động (Active Recall) bằng cách đọc định nghĩa trước khi nhìn thấy từ gốc.</li>
+              </ul>
+              <div class="trap-box">
+                <div class="trap-title">⚠️ Lỗi thường gặp</div>
+                <div><strong>Đọc thụ động:</strong> Chỉ đọc đi đọc lại danh sách từ mà không tự kiểm tra khả năng nhớ lại.</div>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -1318,8 +1610,8 @@
 
   </main>
 
-  <script src="collocations_data.js?v=2.1"></script>
-  <script src="trang_anh_data.js?v=2.1"></script>
-  <script src="app.js?v=2.1"></script>
+  <script src="collocations_data.js?v=2.2"></script>
+  <script src="trang_anh_data.js?v=2.2"></script>
+  <script src="app.js?v=2.2"></script>
 </body>
 </html>

@@ -311,6 +311,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initSubTabs();
   initQuiz();
   initVocabulary();
+  initFovModule();
 });
 
 // Main Tab Navigation (Home / Reading Comprehension / Listening / Collocations / Dashboard)
@@ -1188,7 +1189,29 @@ function renderLearningDashboard() {
   }
 }
 
-// ==================== CÔ TRANG ANH GAMIFICATION MODULE LOGIC ====================
+// ==================== ENGLISH COLLOCATIONS GAMIFICATION MODULE LOGIC ====================
+function getTaCollocationsPool() {
+  let pool = (typeof TRANG_ANH_COLLOCATIONS !== 'undefined') ? [...TRANG_ANH_COLLOCATIONS] : [];
+  if (typeof COLLOCATIONS_DATA !== 'undefined' && Array.isArray(COLLOCATIONS_DATA)) {
+    const existing = new Set(pool.map(x => (x.phrase || '').toLowerCase()));
+    COLLOCATIONS_DATA.forEach(item => {
+      if (item.term && !existing.has(item.term.toLowerCase())) {
+        pool.push({
+          id: item.id,
+          phrase: item.term,
+          meaning: item.vn,
+          topic: "everyday_collocations",
+          type: item.pos || "Collocation",
+          example: item.ex1 || item.def || "",
+          ipa: item.ipa || ""
+        });
+        existing.add(item.term.toLowerCase());
+      }
+    });
+  }
+  return pool;
+}
+
 let taXP = 0;
 let taStreak = 1;
 let taHearts = 5;
@@ -1339,9 +1362,43 @@ function initTaQuiz() {
 }
 
 function getFilteredQuizQuestions() {
-  if (typeof TRANG_ANH_QUIZ_QUESTIONS === 'undefined') return [];
-  if (taCurrentTopic === 'all') return TRANG_ANH_QUIZ_QUESTIONS;
-  return TRANG_ANH_QUIZ_QUESTIONS.filter(q => q.topic === taCurrentTopic);
+  let questions = (typeof TRANG_ANH_QUIZ_QUESTIONS !== 'undefined') ? [...TRANG_ANH_QUIZ_QUESTIONS] : [];
+  
+  if (typeof COLLOCATIONS_DATA !== 'undefined' && Array.isArray(COLLOCATIONS_DATA)) {
+    const isLevelFilter = ['B1', 'B2', 'C1', 'C2'].includes(taCurrentTopic);
+    const filteredData = COLLOCATIONS_DATA.filter(item => {
+      if (!item.cloze1 || !item.distractors || item.distractors.length < 3) return false;
+      if (isLevelFilter) return item.level === taCurrentTopic;
+      return true;
+    });
+
+    filteredData.slice(0, 60).forEach((item) => {
+      const wrong = item.distractors.slice(0, 3).map(d => d.word);
+      const options = [item.term, ...wrong];
+      const seed = item.term.length % 4;
+      const shiftedOpts = options.slice(seed).concat(options.slice(0, seed));
+      const correctIdx = shiftedOpts.indexOf(item.term);
+      const formattedOpts = shiftedOpts.map((opt, i) => `${String.fromCharCode(65 + i)}. ${opt}`);
+      
+      questions.push({
+        id: `auto_q_${item.id}`,
+        topic: item.level || "B2",
+        level: item.level || "B2",
+        question: item.cloze1,
+        options: formattedOpts,
+        correct: correctIdx,
+        explanation: `Cụm từ '${item.term}' nghĩa là: ${item.vn}.`,
+        explanationEn: item.ex1 || item.def || ""
+      });
+    });
+  }
+
+  if (taCurrentTopic === 'all') return questions;
+  const isLevel = ['B1', 'B2', 'C1', 'C2'].includes(taCurrentTopic);
+  if (isLevel) {
+    return questions.filter(q => (q.level === taCurrentTopic || q.topic === taCurrentTopic));
+  }
+  return questions.filter(q => q.topic === taCurrentTopic);
 }
 
 function renderTaQuizCard() {
@@ -1400,7 +1457,7 @@ function renderTaQuizCard() {
       ${optionsHtml}
     </div>
     <div class="explanation-box ${isAnswered ? 'visible' : ''}">
-      <div class="explanation-header">💡 Giải thích từ Cô Trang Anh:</div>
+      <div class="explanation-header">💡 Giải thích đáp án:</div>
       <div><strong>🇻🇳 Dịch nghĩa:</strong> ${q.explanation}</div>
       ${q.explanationEn ? `<div style="margin-top:0.4rem; color:var(--text-muted);"><strong>🇬🇧 English Context:</strong> ${q.explanationEn}</div>` : ''}
     </div>
@@ -1423,10 +1480,10 @@ function handleTaQuizAnswer(qId, selectedIdx, correctIdx) {
   if (isCorrect) {
     taQuizScore++;
     addXP(50, "Quiz Arena Correct!");
-    recordQuizAttempt("Cô Trang Anh Quiz", taCurrentTopic, 1, 1);
+    recordQuizAttempt("English Collocations Quiz", taCurrentTopic, 1, 1);
   } else {
     if (taHearts > 0) taHearts--;
-    recordQuizAttempt("Cô Trang Anh Quiz", taCurrentTopic, 0, 1);
+    recordQuizAttempt("English Collocations Quiz", taCurrentTopic, 0, 1);
   }
 
   updateTaStatsUI();
@@ -1480,7 +1537,7 @@ function usePowerupHint() {
   if (questions.length === 0) return;
   const q = questions[taQuizCurrentIdx];
 
-  alert(`🔍 GỢI Ý CÔ TRANG ANH:\n${q.explanation}`);
+  alert(`🔍 GỢI Ý:\n${q.explanation}`);
   document.getElementById("btn-hint").disabled = true;
 }
 
@@ -1501,8 +1558,8 @@ function initSpeedMatchGame() {
   document.getElementById("match-score-display").textContent = "0 / 8";
   document.getElementById("match-combo-display").textContent = "x1";
 
-  // Pick 8 random collocations
-  const pool = [...TRANG_ANH_COLLOCATIONS].sort(() => Math.random() - 0.5).slice(0, 8);
+  // Pick 8 random collocations from full pool
+  const pool = getTaCollocationsPool().sort(() => Math.random() - 0.5).slice(0, 8);
   matchTiles = [];
 
   pool.forEach((item, idx) => {
@@ -1592,7 +1649,10 @@ function renderScrambleQuestion() {
   const container = document.getElementById("scramble-game-container");
   if (!container) return;
 
-  const item = TRANG_ANH_COLLOCATIONS[scrambleCurrentIdx];
+  const pool = getTaCollocationsPool();
+  if (pool.length === 0) return;
+  if (scrambleCurrentIdx >= pool.length) scrambleCurrentIdx = 0;
+  const item = pool[scrambleCurrentIdx];
   const phraseWords = item.phrase.split(" ");
   scramblePoolWords = [...phraseWords].sort(() => Math.random() - 0.5);
   scrambleUserSlots = Array(phraseWords.length).fill(null);
@@ -1652,7 +1712,8 @@ function resetScrambleQuestion() {
 }
 
 function checkScrambleAnswer() {
-  const item = TRANG_ANH_COLLOCATIONS[scrambleCurrentIdx];
+  const pool = getTaCollocationsPool();
+  const item = pool[scrambleCurrentIdx];
   const userPhrase = scrambleUserSlots.map(s => s ? s.word : '').join(' ').trim();
   
   if (userPhrase.toLowerCase() === item.phrase.toLowerCase()) {
@@ -1664,14 +1725,14 @@ function checkScrambleAnswer() {
 }
 
 function nextScrambleQuestion() {
-  scrambleCurrentIdx = (scrambleCurrentIdx + 1) % TRANG_ANH_COLLOCATIONS.length;
+  const pool = getTaCollocationsPool();
+  scrambleCurrentIdx = (scrambleCurrentIdx + 1) % pool.length;
   renderScrambleQuestion();
 }
 
 // 4. 3D Flashcard Functions
 function initTaFlashcards() {
-  if (typeof TRANG_ANH_COLLOCATIONS === 'undefined') return;
-  taFcDeck = [...TRANG_ANH_COLLOCATIONS];
+  taFcDeck = getTaCollocationsPool();
   taFcIndex = 0;
   updateTaFlashcardUI();
 }
@@ -1744,26 +1805,36 @@ function speakTaTerm() {
 function initTaBank() {
   const searchInput = document.getElementById("ta-bank-search");
   const grid = document.getElementById("ta-bank-grid");
-  if (!grid || typeof TRANG_ANH_COLLOCATIONS === 'undefined') return;
+  if (!grid) return;
+
+  const pool = getTaCollocationsPool();
 
   function renderBank(filter = "") {
     grid.innerHTML = "";
-    const filtered = TRANG_ANH_COLLOCATIONS.filter(item => 
+    const filtered = pool.filter(item => 
       item.phrase.toLowerCase().includes(filter.toLowerCase()) ||
       item.meaning.toLowerCase().includes(filter.toLowerCase())
     );
 
-    filtered.forEach(item => {
+    const limit = filter ? filtered.length : 150;
+    filtered.slice(0, limit).forEach(item => {
       const card = document.createElement("div");
       card.className = "vocab-card";
       card.innerHTML = `
         <div class="vocab-word">${item.phrase}</div>
-        <div class="vocab-pos">${item.type || 'Collocation'} • ${item.ipa || ''}</div>
+        <div class="vocab-pos">${item.type || 'Collocation'} ${item.ipa ? '• ' + item.ipa : ''}</div>
         <div class="vocab-vn">🇻🇳 ${item.meaning}</div>
         ${item.example ? `<div class="vocab-def" style="margin-top:0.5rem; font-style:italic;">• ${item.example}</div>` : ''}
       `;
       grid.appendChild(card);
     });
+
+    if (!filter && filtered.length > 150) {
+      const moreInfo = document.createElement("div");
+      moreInfo.style.cssText = "grid-column: 1/-1; text-align: center; padding: 1rem; color: var(--text-muted); font-weight: 600;";
+      moreInfo.textContent = `💡 Đang hiển thị 150 / ${filtered.length.toLocaleString()} cụm từ. Nhập từ khóa vào ô tìm kiếm ở trên để tra cứu toàn bộ kho cụm từ!`;
+      grid.appendChild(moreInfo);
+    }
   }
 
   if (searchInput) {
@@ -1773,6 +1844,326 @@ function initTaBank() {
   }
 
   renderBank();
+}
+
+// ==========================================================================
+// FOCUS ON VOCABULARY MODULE LOGIC & DATA STORES
+// ==========================================================================
+
+const FOV_VOCABULARY_DATA = [
+  { word: "Ubiquitous", pos: "adjective", ipa: "/juːˈbɪkwɪtəs/", level: "B2", vn: "Phổ biến ở khắp mọi nơi, có mặt khắp nơi", def: "Present, appearing, or found everywhere.", example: "Smartphones have become ubiquitous in modern daily life." },
+  { word: "Ephemeral", pos: "adjective", ipa: "/ɪˈfemərəl/", level: "C1", vn: "Phù du, chóng khánh, ngắn ngủi", def: "Lasting for a very short time.", example: "Fashions are ephemeral, changing with every season." },
+  { word: "Plausible", pos: "adjective", ipa: "/ˈplɔːzəbl/", level: "B2", vn: "Hợp lý, đáng tin cậy", def: "Seeming reasonable or probable.", example: "She offered a plausible explanation for her tardiness." },
+  { word: "Meticulous", pos: "adjective", ipa: "/məˈtɪkjələs/", level: "C1", vn: "Tỉ mỉ, cẩn thận từng chi tiết", def: "Showing great attention to detail; very careful and precise.", example: "The researcher conducted a meticulous analysis of the data." },
+  { word: "Pragmatic", pos: "adjective", ipa: "/præɡˈmætɪk/", level: "C1", vn: "Thực tế, thực dụng, trọng thực tiễn", def: "Dealing with things sensibly and realistically.", example: "We need a pragmatic solution rather than an idealist theory." },
+  { word: "Exacerbate", pos: "verb", ipa: "/ɪɡˈzæsərbeɪt/", level: "C1", vn: "Làm trầm trọng thêm, làm xấu đi", def: "Make a problem or bad situation worse.", example: "Pollution will exacerbate respiratory illnesses in urban areas." },
+  { word: "Resilient", pos: "adjective", ipa: "/rɪˈzɪliənt/", level: "B2", vn: "Kiên cường, có khả năng phục hồi nhanh", def: "Able to withstand or recover quickly from difficult conditions.", example: "Local communities proved resilient in the face of the economic crisis." },
+  { word: "Ambiguous", pos: "adjective", ipa: "/æmˈbɪɡjuəs/", level: "B2", vn: "Mơ hồ, nhập nhằng, có nhiều cách hiểu", def: "Open to more than one interpretation; unclear.", example: "The instructions were ambiguous and led to confusion." },
+  { word: "Disparate", pos: "adjective", ipa: "/ˈdɪspərət/", level: "C2", vn: "Khác biệt hoàn toàn, không thể so sánh", def: "Essentially different in kind; not allowing comparison.", example: "The team brought together experts from disparate fields." },
+  { word: "Profound", pos: "adjective", ipa: "/prəˈfaʊnd/", level: "B2", vn: "Sâu sắc, thâm thúy, ảnh hưởng to lớn", def: "Very great or intense; possessing deep insight.", example: "The discovery had a profound impact on medical science." },
+  { word: "Consolidate", pos: "verb", ipa: "/kənˈsɑːlɪdeɪt/", level: "C1", vn: "Củng cố, hợp nhất", def: "Make something physically stronger or more solid; combine.", example: "The company plans to consolidate its market position." },
+  { word: "Capricious", pos: "adjective", ipa: "/kəˈprɪʃəs/", level: "C2", vn: "Thất thường, hay thay đổi vô cớ", def: "Given to sudden and unaccountable changes of mood or behavior.", example: "The weather in the mountains can be highly capricious." },
+  { word: "Impeccable", pos: "adjective", ipa: "/ɪmˈpekəbl/", level: "C1", vn: "Hoàn hảo, không chê vào đâu được", def: "Faultless; in accordance with the highest standards.", example: "Her English pronunciation and grammar are impeccable." },
+  { word: "Substantiate", pos: "verb", ipa: "/səbˈstænʃieɪt/", level: "C2", vn: "Chứng minh, đưa ra bằng chứng xác minh", def: "Provide evidence to support or prove the truth of.", example: "The study failed to substantiate the claims made by the manufacturer." },
+  { word: "Scrutinize", pos: "verb", ipa: "/ˈskruːtənaɪz/", level: "C1", vn: "Xem xét kỹ lưỡng, soi xét cẩn thận", def: "Examine or inspect closely and thoroughly.", example: "Inspectors scrutinize every component before shipping." },
+  { word: "Inevitably", pos: "adverb", ipa: "/ɪnˈevɪtəbli/", level: "B2", vn: "Tất yếu, không thể tránh khỏi", def: "Certain to happen; unavoidably.", example: "Technological advancements inevitably reshape the labor market." },
+  { word: "Paramount", pos: "adjective", ipa: "/ˈpærəmaʊnt/", level: "C1", vn: "Tối quan trọng, có ý nghĩa hàng đầu", def: "More important than anything else; supreme.", example: "Safety must remain the paramount concern for engineers." },
+  { word: "Fluctuate", pos: "verb", ipa: "/ˈflʌktʃueɪt/", level: "B2", vn: "Biến động, dao động thất thường", def: "Rise and fall irregularly in number or amount.", example: "Stock prices fluctuate depending on market demand." },
+  { word: "Divergence", pos: "noun", ipa: "/daɪˈvɜːrdʒəns/", level: "C1", vn: "Sự phân kỳ, sự khác biệt ý kiến/hướng đi", def: "A difference in opinions, interests, or direction.", example: "There is a clear divergence between the two research reports." },
+  { word: "Fostering", pos: "verb", ipa: "/ˈfɔːstərɪŋ/", level: "B2", vn: "Thúc đẩy, nuôi dưỡng, khuyến khích phát triển", def: "Encouraging the development or growth of something.", example: "The school aims at fostering creativity among young learners." },
+  { word: "Intrinsic", pos: "adjective", ipa: "/ɪnˈtrɪnzɪk/", level: "C1", vn: "Bản chất, thuộc về bên trong, cốt lõi", def: "Belonging naturally; essential.", example: "Interest in learning is an intrinsic motivation for success." },
+  { word: "Elucidate", pos: "verb", ipa: "/ɪˈluːsɪdeɪt/", level: "C2", vn: "Làm sáng tỏ, giải thích rõ ràng", def: "Make something clear; explain thoroughly.", example: "The professor gave examples to elucidate the complex theorem." },
+  { word: "Superfluous", pos: "adjective", ipa: "/suːˈpɜːrfluəs/", level: "C2", vn: "Dư thừa, thừa thải, không cần thiết", def: "Unnecessary, especially through being more than enough.", example: "Avoid including superfluous details in your academic summary." },
+  { word: "Cognitive", pos: "adjective", ipa: "/ˈkɑːɡnətɪv/", level: "B2", vn: "Thuộc về nhận thức, trí tuệ", def: "Relating to mental processes of perception and reasoning.", example: "Reading enhances cognitive abilities in young children." },
+  { word: "Empirical", pos: "adjective", ipa: "/ɪmˈpɪrɪkl/", level: "C1", vn: "Dựa trên thực nghiệm, quan sát thực tế", def: "Based on observation or experiment rather than theory.", example: "Scientific laws require strong empirical evidence to be accepted." }
+];
+
+const FOV_QUIZ_DATA = [
+  {
+    id: "fov_q1",
+    question: "The team's research paper was praised because every claim was ________ by solid empirical data gathered over five years.",
+    options: [
+      "A. substantiated",
+      "B. exacerbated",
+      "C. repudiated",
+      "D. fluctuated"
+    ],
+    correct: 0,
+    explanation: "Substantiated means proved or supported with evidence. Context: claims backed by empirical data.",
+    explanationVn: "Giải thích: 'Substantiated' nghĩa là được chứng minh/xác minh bằng bằng chứng. Ngữ cảnh: các khẳng định được chứng minh bằng dữ liệu thực nghiệm."
+  },
+  {
+    id: "fov_q2",
+    question: "Because the wording of the contract was overly ________, both parties interpreted the payment terms differently.",
+    options: [
+      "A. pragmatic",
+      "B. ambiguous",
+      "C. impeccable",
+      "D. ubiquitous"
+    ],
+    correct: 1,
+    explanation: "Ambiguous means unclear or open to multiple interpretations, causing different understandings.",
+    explanationVn: "Giải thích: 'Ambiguous' nghĩa là mơ hồ, nhập nhằng, dẫn đến hai bên hiểu điều khoản thanh toán theo hai cách khác nhau."
+  },
+  {
+    id: "fov_q3",
+    question: "Attempting to cut municipal budgets during a recession will only ________ existing social inequality.",
+    options: [
+      "A. consolidate",
+      "B. elucidate",
+      "C. exacerbate",
+      "D. scrutinize"
+    ],
+    correct: 2,
+    explanation: "Exacerbate means to make a bad situation or problem worse.",
+    explanationVn: "Giải thích: 'Exacerbate' nghĩa là làm trầm trọng thêm. Ngữ cảnh: cắt giảm ngân sách sẽ làm trầm trọng thêm tình trạng bất bình đẳng xã hội."
+  },
+  {
+    id: "fov_q4",
+    question: "Rather than getting lost in abstract philosophy, the manager adopted a ________ approach to solve workplace disputes.",
+    options: [
+      "A. pragmatic",
+      "B. superfluous",
+      "C. ephemeral",
+      "D. capricious"
+    ],
+    correct: 0,
+    explanation: "Pragmatic means practical and realistic rather than theoretical or idealistic.",
+    explanationVn: "Giải thích: 'Pragmatic' nghĩa là thực tế/thực dụng, trái ngược với lý thuyết triết học trừu tượng (abstract philosophy)."
+  },
+  {
+    id: "fov_q5",
+    question: "Ensure your final thesis statement is concise and remove any ________ sentences that do not support your main argument.",
+    options: [
+      "A. paramount",
+      "B. resilient",
+      "C. superfluous",
+      "D. meticulous"
+    ],
+    correct: 2,
+    explanation: "Superfluous means unnecessary or extra beyond what is needed.",
+    explanationVn: "Giải thích: 'Superfluous' nghĩa là dư thừa, không cần thiết. Ngữ cảnh: loại bỏ các câu dư thừa không hỗ trợ luận điểm."
+  }
+];
+
+let fovFcIndex = 0;
+let fovUserQuizAnswers = {};
+
+function initFovModule() {
+  initFovFlashcards();
+  initFovQuiz();
+  initFovBank();
+}
+
+// Open specific sub-tab inside Focus on Vocabulary module
+function openFovSubTab(subTabId) {
+  const container = document.getElementById("focus-on-vocabulary");
+  if (!container) return;
+  const subTabs = container.querySelectorAll(".sub-tab");
+  const subContents = container.querySelectorAll(".sub-tab-content");
+
+  subTabs.forEach(t => t.classList.remove("active"));
+  subContents.forEach(c => c.classList.remove("active"));
+
+  const targetTabBtn = container.querySelector(`.sub-tab[data-subtab="${subTabId}"]`);
+  const targetContent = container.querySelector("#" + subTabId);
+
+  if (targetTabBtn) targetTabBtn.classList.add("active");
+  if (targetContent) targetContent.classList.add("active");
+}
+
+// 1. FOV Flashcards Logic
+function initFovFlashcards() {
+  fovFcIndex = 0;
+  updateFovFlashcardUI();
+}
+
+function toggleFovFlashcardFlip() {
+  const card = document.getElementById("fov-main-flashcard");
+  if (card) card.classList.toggle("flipped");
+}
+
+function nextFovFlashcard() {
+  if (FOV_VOCABULARY_DATA.length === 0) return;
+  fovFcIndex = (fovFcIndex + 1) % FOV_VOCABULARY_DATA.length;
+  resetAndShowFovFlashcard();
+}
+
+function prevFovFlashcard() {
+  if (FOV_VOCABULARY_DATA.length === 0) return;
+  fovFcIndex = (fovFcIndex - 1 + FOV_VOCABULARY_DATA.length) % FOV_VOCABULARY_DATA.length;
+  resetAndShowFovFlashcard();
+}
+
+function resetAndShowFovFlashcard() {
+  const card = document.getElementById("fov-main-flashcard");
+  if (card) card.classList.remove("flipped");
+  setTimeout(() => {
+    updateFovFlashcardUI();
+  }, 150);
+}
+
+function updateFovFlashcardUI() {
+  if (FOV_VOCABULARY_DATA.length === 0) return;
+  const item = FOV_VOCABULARY_DATA[fovFcIndex];
+
+  const badgeEl = document.getElementById("fov-fc-badge");
+  const counterEl = document.getElementById("fov-fc-counter");
+  const termEl = document.getElementById("fov-fc-term");
+  const ipaEl = document.getElementById("fov-fc-ipa");
+  const posEl = document.getElementById("fov-fc-pos");
+  const vnEl = document.getElementById("fov-fc-vn");
+  const defEl = document.getElementById("fov-fc-def");
+  const exEl = document.getElementById("fov-fc-ex");
+
+  if (badgeEl) badgeEl.textContent = `CEFR ${item.level} VOCABULARY`;
+  if (counterEl) counterEl.textContent = `Card ${fovFcIndex + 1} of ${FOV_VOCABULARY_DATA.length}`;
+  if (termEl) termEl.textContent = item.word;
+  if (ipaEl) ipaEl.textContent = item.ipa || '';
+  if (posEl) posEl.textContent = item.pos || 'vocabulary';
+  if (vnEl) vnEl.textContent = `🇻🇳 ${item.vn}`;
+  if (defEl) defEl.textContent = item.def;
+  if (exEl) exEl.textContent = item.example ? (`• ${item.example}`) : '';
+}
+
+function speakFovTerm() {
+  if (FOV_VOCABULARY_DATA.length === 0) return;
+  const item = FOV_VOCABULARY_DATA[fovFcIndex];
+  if (typeof window.speechSynthesis !== 'undefined') {
+    const utter = new SpeechSynthesisUtterance(item.word);
+    utter.lang = 'en-US';
+    utter.rate = 0.9;
+    window.speechSynthesis.speak(utter);
+  }
+}
+
+// 2. FOV Practice Quiz Logic
+function initFovQuiz() {
+  fovUserQuizAnswers = {};
+  renderFovQuiz();
+}
+
+function resetFovQuiz() {
+  fovUserQuizAnswers = {};
+  renderFovQuiz();
+}
+
+function renderFovQuiz() {
+  const container = document.getElementById("fov-quiz-container");
+  const scoreDisplay = document.getElementById("fov-score-display");
+  if (!container) return;
+
+  container.innerHTML = "";
+  let correctCount = 0;
+  const total = FOV_QUIZ_DATA.length;
+
+  FOV_QUIZ_DATA.forEach((q, qIndex) => {
+    const isAnswered = fovUserQuizAnswers.hasOwnProperty(q.id);
+    const selectedOpt = fovUserQuizAnswers[q.id];
+    if (isAnswered && selectedOpt === q.correct) {
+      correctCount++;
+    }
+
+    const card = document.createElement("div");
+    card.className = "quiz-passage-card";
+    card.style.marginBottom = "1.5rem";
+
+    let optionsHTML = q.options.map((opt, oIndex) => {
+      let optClass = "quiz-option";
+      if (isAnswered) {
+        if (oIndex === q.correct) optClass += " correct";
+        else if (oIndex === selectedOpt) optClass += " incorrect";
+      }
+      return `<button class="${optClass}" onclick="selectFovOption('${q.id}', ${oIndex})" ${isAnswered ? 'disabled' : ''}>${opt}</button>`;
+    }).join("");
+
+    let explanationHTML = "";
+    if (isAnswered) {
+      explanationHTML = `
+        <div class="explanation-box active">
+          <div class="explanation-header">💡 Detailed Explanation & Context Evidence</div>
+          <p style="margin-bottom: 0.5rem;"><strong>English:</strong> ${q.explanation}</p>
+          <p><strong>Tiếng Việt:</strong> ${q.explanationVn}</p>
+        </div>
+      `;
+    }
+
+    card.innerHTML = `
+      <div style="font-weight: 800; color: var(--brand-teal); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.85rem;">Question ${qIndex + 1} of ${total}</div>
+      <div style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1rem; line-height: 1.5;">${q.question}</div>
+      <div class="options-grid">${optionsHTML}</div>
+      ${explanationHTML}
+    `;
+
+    container.appendChild(card);
+  });
+
+  if (scoreDisplay) {
+    scoreDisplay.textContent = `${correctCount} / ${total} Đúng`;
+  }
+}
+
+function selectFovOption(questionId, optionIndex) {
+  fovUserQuizAnswers[questionId] = optionIndex;
+  renderFovQuiz();
+}
+
+// 3. FOV Academic Vocab Explorer Logic
+function initFovBank() {
+  const searchInput = document.getElementById("fov-bank-search");
+  const grid = document.getElementById("fov-bank-grid");
+  const chips = document.querySelectorAll(".fov-level-chip");
+  if (!grid) return;
+
+  let currentLevelFilter = "All";
+
+  function renderFovBankGrid() {
+    grid.innerHTML = "";
+    const filterText = searchInput ? searchInput.value.toLowerCase().trim() : "";
+
+    const filtered = FOV_VOCABULARY_DATA.filter(item => {
+      const matchText = item.word.toLowerCase().includes(filterText) ||
+                        item.vn.toLowerCase().includes(filterText) ||
+                        item.def.toLowerCase().includes(filterText);
+      const matchLevel = currentLevelFilter === "All" || item.level === currentLevelFilter;
+      return matchText && matchLevel;
+    });
+
+    filtered.forEach(item => {
+      const card = document.createElement("div");
+      card.className = "vocab-card";
+      card.innerHTML = `
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <div class="vocab-word">${item.word}</div>
+          <span class="badge-tag" style="font-size:0.75rem;">CEFR ${item.level}</span>
+        </div>
+        <div class="vocab-pos">${item.pos} ${item.ipa ? '• ' + item.ipa : ''}</div>
+        <div class="vocab-vn">🇻🇳 ${item.vn}</div>
+        <div class="vocab-def" style="margin-top:0.5rem; color:var(--text-secondary);">${item.def}</div>
+        ${item.example ? `<div class="vocab-def" style="margin-top:0.5rem; font-style:italic;">• ${item.example}</div>` : ''}
+      `;
+      grid.appendChild(card);
+    });
+
+    if (filtered.length === 0) {
+      grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 2rem; color: var(--text-muted);">Không tìm thấy từ vựng phù hợp với từ khóa hoặc cấp độ đã chọn.</div>`;
+    }
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", renderFovBankGrid);
+  }
+
+  chips.forEach(chip => {
+    chip.addEventListener("click", () => {
+      chips.forEach(c => c.classList.remove("active"));
+      chip.classList.add("active");
+      currentLevelFilter = chip.getAttribute("data-fovlevel") || "All";
+      renderFovBankGrid();
+    });
+  });
+
+  renderFovBankGrid();
 }
 
 
