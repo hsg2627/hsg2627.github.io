@@ -301,6 +301,193 @@ let currentFilter = "All";
 let userAnswers = {};
 let score = 0;
 
+// ==================== LISTENING PRACTICE MODULE LOGIC ====================
+const LISTENING_PRACTICE_DATA = [
+  {
+    id: "ls_q15",
+    qNum: 15,
+    question: "15. Why did Lenny decide to do a degree?",
+    options: [
+      "A. He was self-conscious because he didn't have one.",
+      "B. Other actors persuaded him that it was a good idea.",
+      "C. He needed one to further his acting career.",
+      "D. He was impressed by other actors who had been to university."
+    ],
+    correct: 0, // A
+    explanation: "Lenny explains that he felt self-conscious/insecure around colleagues who had university degrees, which motivated him to enroll in an Open University degree course.",
+    explanationVn: "Giải thích: Lenny chia sẻ rằng ông cảm thấy tự ti/e ngại khi thấy nhiều đồng nghiệp xung quanh có bằng đại học, điều này thôi thúc ông quyết định đăng ký học bằng đại học."
+  },
+  {
+    id: "ls_q16",
+    qNum: 16,
+    question: "16. What effect has studying for a degree had on Lenny?",
+    options: [
+      "A. It has developed his ability to think more clearly about his work in general.",
+      "B. It has made him think more seriously about his career.",
+      "C. It has given him the confidence to try for more challenging acting roles.",
+      "D. It causes him a lot of stress when he has to write an essay."
+    ],
+    correct: 0, // A
+    explanation: "Studying for a degree taught him how to structure his thoughts logically and think much more clearly and analytically about his comedy and projects.",
+    explanationVn: "Giải thích: Việc học đại học giúp ông rèn luyện tư duy logic, sắp xếp ý tưởng và suy nghĩ mạch lạc, rõ ràng hơn về toàn bộ công việc và dự án hài của mình."
+  },
+  {
+    id: "ls_q17",
+    qNum: 17,
+    question: "17. According to Lenny, how does comedy affect the way people feel?",
+    options: [
+      "A. It hinders their appreciation of the seriousness of a situation.",
+      "B. It helps them deal with disturbing images.",
+      "C. It makes people more sensitive.",
+      "D. It enables them to laugh at heartbreaking stories."
+    ],
+    correct: 1, // B
+    explanation: "Lenny states that comedy provides an emotional release, acting as a coping mechanism that helps people deal with disturbing images or tragic situations.",
+    explanationVn: "Giải thích: Hài hước đóng vai trò như một cơ chế giúp giải tỏa cảm xúc, giúp người xem dễ dàng xử lý và tiếp nhận những hình ảnh đau thương, gây chấn động."
+  },
+  {
+    id: "ls_q18",
+    qNum: 18,
+    question: "18. What does Lenny say about the work of Comic Relief in Africa?",
+    options: [
+      "A. People in Africa now have new ways of raising money for themselves.",
+      "B. The task they are facing is too big for them to make a real difference.",
+      "C. People aren't committed enough yet to the cause.",
+      "D. It should be a steady process to help the local communities."
+    ],
+    correct: 3, // D
+    explanation: "He emphasizes that relief work shouldn't be a quick temporary fix, but a steady, continuous process aimed at empowering local communities step by step.",
+    explanationVn: "Giải thích: Ông nhấn mạnh rằng hoạt động cứu trợ không nên chỉ mang tính thời điểm mà phải là một quá trình bền vững, từng bước giúp đỡ các cộng đồng địa phương."
+  },
+  {
+    id: "ls_q19",
+    qNum: 19,
+    question: "19. What does Lenny say about his visit to Debre Zeit?",
+    options: [
+      "A. He enjoyed working as a care worker for a while.",
+      "B. He was impressed by Fanti's bravery despite his illness.",
+      "C. He was moved by the way the people there handled their situation.",
+      "D. He was impressed by the way Fanti praised comic Relief."
+    ],
+    correct: 2, // C
+    explanation: "Lenny describes being deeply touched and moved by the incredible resilience, dignity, and spirit of the local people in handling their dire circumstances.",
+    explanationVn: "Giải thích: Lenny bị xúc động sâu sắc trước tinh thần kiên cường, phẩm giá và cách người dân địa phương đối mặt và vượt qua hoàn cảnh khó khăn."
+  },
+  {
+    id: "ls_q20",
+    qNum: 20,
+    question: "20. What does Lenny say about writing comedy?",
+    options: [
+      "A. He hopes that he will soon be a more self-confident writer.",
+      "B. He finds it really easy since starting his degree.",
+      "C. He doesn't think he'll ever have the confidence to write something on his own.",
+      "D. He no longer likes working with other writers."
+    ],
+    correct: 2, // C
+    explanation: "Lenny confesses that writing solo requires an extreme level of self-belief, and he doesn't think he will ever have enough confidence to write an entire project completely alone without collaborators.",
+    explanationVn: "Giải thích: Ông thừa nhận việc viết hài một mình đòi hỏi sự tự tin rất lớn và ông nghĩ mình khó có thể đủ tự tin để độc lập viết hoàn chỉnh một kịch bản mà không có sự hợp tác."
+  }
+];
+
+let lsUserAnswers = {};
+let lsScore = 0;
+
+function initListeningPractice() {
+  renderListeningPractice();
+}
+
+function renderListeningPractice() {
+  const container = document.getElementById("listening-practice-container");
+  const scoreDisplay = document.getElementById("ls-score-display");
+  if (!container) return;
+
+  container.innerHTML = "";
+
+  LISTENING_PRACTICE_DATA.forEach((qItem) => {
+    const qCard = document.createElement("div");
+    qCard.className = "passage-card";
+    qCard.style.marginBottom = "1.5rem";
+
+    const isAnswered = lsUserAnswers[qItem.id] !== undefined;
+    const selectedIdx = lsUserAnswers[qItem.id];
+
+    let optsHtml = "";
+    qItem.options.forEach((optStr, oIdx) => {
+      let btnClass = "option-btn";
+      if (isAnswered) {
+        if (oIdx === qItem.correct) btnClass += " show-correct";
+        if (selectedIdx === oIdx) {
+          btnClass += oIdx === qItem.correct ? " selected-correct" : " selected-incorrect";
+        }
+      }
+      optsHtml += `
+        <button class="${btnClass}" onclick="handleListeningAnswer('${qItem.id}', ${oIdx}, ${qItem.correct})">
+          <span>${optStr}</span>
+          ${isAnswered && oIdx === qItem.correct ? '<span>✓</span>' : ''}
+          ${isAnswered && selectedIdx === oIdx && oIdx !== qItem.correct ? '<span>✗</span>' : ''}
+        </button>
+      `;
+    });
+
+    qCard.innerHTML = `
+      <div class="passage-header">
+        <h4 style="font-size: 1.1rem; color: var(--brand-teal-dark); font-weight: 800;">Question ${qItem.qNum}</h4>
+        <span class="level-badge level-c1">C1 ADVANCED • MULTIPLE CHOICE</span>
+      </div>
+      <div style="font-size: 1.15rem; line-height: 1.5; margin-bottom: 1.25rem; color: var(--text-primary); font-weight: 700;">
+        ${qItem.question}
+      </div>
+      <div class="options-grid" style="display: flex; flex-direction: column; gap: 0.65rem;">
+        ${optsHtml}
+      </div>
+      <div class="explanation-box ${isAnswered ? 'visible' : ''}">
+        <div class="explanation-header">💡 Detailed Pedagogical Explanation:</div>
+        <div style="margin-bottom: 0.4rem;">${qItem.explanation}</div>
+        <div class="vn-translation">${qItem.explanationVn}</div>
+      </div>
+    `;
+
+    container.appendChild(qCard);
+  });
+
+  if (scoreDisplay) {
+    const totalAnswered = Object.keys(lsUserAnswers).length;
+    scoreDisplay.textContent = `${lsScore} / 6 Correct (${totalAnswered} Answered)`;
+  }
+}
+
+function handleListeningAnswer(qId, selectedIdx, correctIdx) {
+  if (lsUserAnswers[qId] !== undefined) return;
+
+  lsUserAnswers[qId] = selectedIdx;
+  const isCorrect = selectedIdx === correctIdx;
+  if (isCorrect) {
+    lsScore++;
+  }
+
+  recordQuizAttempt('Listening', 'Lenny Henry CAE C1', isCorrect ? 1 : 0, 1);
+  renderListeningPractice();
+}
+
+function setAudioSpeed(rate, btn) {
+  const audio = document.getElementById("ls-audio-element");
+  if (audio) {
+    audio.playbackRate = rate;
+  }
+  if (btn && btn.parentElement) {
+    const btns = btn.parentElement.querySelectorAll(".speed-btn");
+    btns.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+  }
+}
+
+function skipAudioTime(seconds) {
+  const audio = document.getElementById("ls-audio-element");
+  if (audio) {
+    audio.currentTime = Math.max(0, audio.currentTime + seconds);
+  }
+}
+
 // DOM Initialization
 document.addEventListener("DOMContentLoaded", () => {
   try { initNavigation(); } catch (e) { console.error("Navigation error:", e); }
@@ -308,6 +495,7 @@ document.addEventListener("DOMContentLoaded", () => {
   try { initQuiz(); } catch (e) { console.error("Quiz error:", e); }
   try { initVocabulary(); } catch (e) { console.error("Vocab error:", e); }
   try { initFovModule(); } catch (e) { console.error("FOV error:", e); }
+  try { initListeningPractice(); } catch (e) { console.error("Listening error:", e); }
 });
 
 // Global TTS Speech Helper
@@ -362,6 +550,8 @@ function initSubTabs() {
           renderFovQuiz();
         } else if (subTabId === "fov-bank") {
           initFovBank();
+        } else if (subTabId === "ls-practice") {
+          initListeningPractice();
         }
       });
     });
@@ -403,6 +593,8 @@ function openSkillTab(tabId) {
       if (typeof initTrangAnhCollocations === 'function') initTrangAnhCollocations();
     } else if (tabId === 'reading-comprehension') {
       if (typeof initQuiz === 'function') initQuiz();
+    } else if (tabId === 'listening-skills') {
+      if (typeof initListeningPractice === 'function') initListeningPractice();
     }
   } catch (err) {
     console.error("Module initialization error:", err);
