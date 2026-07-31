@@ -1133,46 +1133,151 @@ h1, h2, h3, h4, h5, h6 {
 
 .vocab-card {
   background: #ffffff;
-  border-radius: var(--radius-lg);
-  padding: 1.35rem;
-  border: 1px solid var(--border-subtle);
-  box-shadow: var(--shadow-sm);
-  transition: all 0.2s ease;
+  border-radius: var(--radius-lg, 12px);
+  padding: 1.15rem 1.25rem;
+  border: 1px solid var(--border-subtle, #e2e8f0);
+  border-top: 3px solid #0d9488;
+  box-shadow: var(--shadow-sm, 0 1px 3px rgba(0,0,0,0.05));
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
 }
 
 .vocab-card:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--brand-teal);
+  box-shadow: var(--shadow-md, 0 4px 6px -1px rgba(0, 0, 0, 0.1));
+  border-color: #0d9488;
 }
 
-.vocab-word {
-  font-size: 1.25rem;
+.vocab-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.15rem;
+  width: 100%;
+}
+
+.folder-branch-path {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.735rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.branch-root {
+  color: #64748b;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  flex-shrink: 0;
+}
+
+.branch-sep {
+  color: #cbd5e1;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.branch-folder {
+  color: #0369a1;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.branch-file {
+  color: #0d9488;
   font-weight: 800;
-  color: var(--brand-teal-dark);
+  background: #ccfbf1;
+  padding: 0.05rem 0.4rem;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.vocab-word-title, .vocab-word {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.vocab-pos-line {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.15rem;
+}
+
+.vocab-pos-badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #0d9488;
+  background: #ccfbf1;
+  padding: 0.15rem 0.55rem;
+  border-radius: 4px;
+  text-transform: lowercase;
+}
+
+.vocab-ipa-text {
+  font-size: 0.9rem;
+  color: #64748b;
+  font-weight: 500;
+  font-family: 'Charis SIL', 'Arial Unicode MS', Segoe UI, sans-serif;
+  text-transform: lowercase;
 }
 
 .vocab-pos {
-  font-size: 0.775rem;
-  font-weight: 700;
+  font-size: 0.8rem;
+  font-weight: 600;
   color: var(--text-muted);
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  text-transform: lowercase;
+  margin-bottom: 0.25rem;
+}
+
+.vocab-vn {
+  font-size: 0.925rem;
+  font-weight: 600;
+  color: #0f766e;
+  background: #f0fdfa;
+  border: 1px solid #ccfbf1;
+  padding: 0.45rem 0.75rem;
+  border-radius: var(--radius-md, 8px);
+  line-height: 1.4;
 }
 
 .vocab-def {
   font-size: 0.9rem;
-  color: var(--text-secondary);
-  margin-bottom: 0.75rem;
+  color: #334155;
+  line-height: 1.5;
+  margin-top: 0.15rem;
 }
 
-.vocab-vn {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #0d9488;
-  background: #f0fdfa;
-  padding: 0.4rem 0.6rem;
-  border-radius: var(--radius-sm);
+.vocab-ex {
+  font-size: 0.875rem;
+  color: #475569;
+  font-style: italic;
+  background: #f8fafc;
+  border-left: 3px solid #cbd5e1;
+  padding: 0.45rem 0.75rem;
+  border-radius: 0 6px 6px 0;
+  margin-top: 0.25rem;
+  line-height: 1.4;
 }
 
 /* Contemporary Topics 3-Phase Listening Strategy Styles */

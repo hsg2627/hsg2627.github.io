@@ -488,6 +488,41 @@ function skipAudioTime(seconds) {
   }
 }
 
+// URL Hash Router & Navigation State
+function updateUrlHash(tabId, subTabId) {
+  let hash = '';
+  if (tabId && tabId !== 'home') {
+    hash = tabId;
+    if (subTabId) {
+      hash += '/' + subTabId;
+    }
+  }
+  if (window.location.hash !== '#' + hash) {
+    if (history.pushState) {
+      history.pushState(null, null, hash ? '#' + hash : window.location.pathname + window.location.search);
+    } else {
+      window.location.hash = hash;
+    }
+  }
+}
+
+function parseAndLoadHashRoute() {
+  const rawHash = window.location.hash.replace(/^#\/?/, '').trim();
+  if (!rawHash) return;
+
+  const parts = rawHash.split('/');
+  const tabId = parts[0];
+  const subTabId = parts[1] || null;
+
+  if (tabId) {
+    openSkillTab(tabId, subTabId, true);
+  }
+}
+
+window.addEventListener("hashchange", () => {
+  parseAndLoadHashRoute();
+});
+
 // DOM Initialization
 document.addEventListener("DOMContentLoaded", () => {
   try { initNavigation(); } catch (e) { console.error("Navigation error:", e); }
@@ -496,6 +531,10 @@ document.addEventListener("DOMContentLoaded", () => {
   try { initVocabulary(); } catch (e) { console.error("Vocab error:", e); }
   try { initFovModule(); } catch (e) { console.error("FOV error:", e); }
   try { initListeningPractice(); } catch (e) { console.error("Listening error:", e); }
+
+  if (window.location.hash) {
+    setTimeout(parseAndLoadHashRoute, 150);
+  }
 });
 
 // Global TTS Speech Helper
@@ -527,6 +566,7 @@ function initNavigation() {
 function initSubTabs() {
   const containers = document.querySelectorAll(".tab-content");
   containers.forEach(container => {
+    const tabId = container.id;
     const subTabs = container.querySelectorAll(".sub-tab");
     const subContents = container.querySelectorAll(".sub-tab-content");
 
@@ -542,6 +582,10 @@ function initSubTabs() {
           targetSub.classList.add("active");
         }
         currentSubTab = subTabId;
+
+        // Update URL hash with tabId/subTabId
+        updateUrlHash(tabId, subTabId);
+
         if (subTabId === "fov-memory-lab") {
           renderFovCTest();
         } else if (subTabId === "fov-flashcards") {
@@ -563,8 +607,8 @@ function goHome() {
   openSkillTab("home");
 }
 
-// Open a skill tab (e.g., reading-comprehension) from homepage card
-function openSkillTab(tabId) {
+// Open a skill tab (e.g., reading-comprehension) from homepage card or URL
+function openSkillTab(tabId, subTabId = null, skipHashUpdate = false) {
   const navBtns = document.querySelectorAll(".nav-btn");
   const tabContents = document.querySelectorAll(".tab-content");
 
@@ -598,6 +642,40 @@ function openSkillTab(tabId) {
     }
   } catch (err) {
     console.error("Module initialization error:", err);
+  }
+
+  let activeSubTab = subTabId;
+
+  // If subTabId is provided, activate it inside targetTab
+  if (subTabId && targetTab) {
+    const subTabs = targetTab.querySelectorAll(".sub-tab");
+    const subContents = targetTab.querySelectorAll(".sub-tab-content");
+
+    subTabs.forEach(t => t.classList.remove("active"));
+    subContents.forEach(c => c.classList.remove("active"));
+
+    const targetTabBtn = targetTab.querySelector(`.sub-tab[data-subtab="${subTabId}"]`);
+    const targetContent = targetTab.querySelector("#" + subTabId);
+
+    if (targetTabBtn) targetTabBtn.classList.add("active");
+    if (targetContent) targetContent.classList.add("active");
+    currentSubTab = subTabId;
+
+    if (subTabId === "fov-memory-lab") {
+      renderFovCTest();
+    } else if (subTabId === "fov-flashcards") {
+      initFovFlashcards();
+    } else if (subTabId === "fov-quiz") {
+      renderFovQuiz();
+    } else if (subTabId === "fov-bank") {
+      initFovBank();
+    } else if (subTabId === "ls-practice") {
+      initListeningPractice();
+    }
+  }
+
+  if (!skipHashUpdate) {
+    updateUrlHash(tabId, activeSubTab);
   }
 }
 
@@ -763,6 +841,49 @@ function updateScoreDisplay() {
   scoreDisplay.textContent = `${score} / ${totalQuestions} Correct (${totalAnswered} Answered)`;
 }
 
+// Dictionary formatting helpers
+function formatPos(pos) {
+  if (!pos) return '';
+  let str = pos.trim().toLowerCase();
+  
+  const map = {
+    'adjective': 'adj.',
+    'adj': 'adj.',
+    'adverb': 'adv.',
+    'adv': 'adv.',
+    'noun': 'n.',
+    'n': 'n.',
+    'verb': 'v.',
+    'v': 'v.',
+    'preposition': 'prep.',
+    'prep': 'prep.',
+    'conjunction': 'conj.',
+    'conj': 'conj.',
+    'pronoun': 'pron.',
+    'pron': 'pron.',
+    'collocation': 'colloc.',
+    'phrasal verb': 'phr. v.',
+    'idiom': 'idiom'
+  };
+
+  if (str.includes('/') || str.includes(',')) {
+    const parts = str.split(/[\/,]/).map(p => p.trim());
+    return parts.map(p => map[p] || (p.endsWith('.') ? p : p + '.')).join(', ');
+  }
+
+  if (map[str]) return map[str];
+  if (str.endsWith('.')) return str;
+  return str + '.';
+}
+
+function formatIpa(ipa) {
+  if (!ipa) return '';
+  let cleaned = ipa.trim().toLowerCase();
+  if (!cleaned.startsWith('/')) cleaned = '/' + cleaned;
+  if (!cleaned.endsWith('/')) cleaned = cleaned + '/';
+  return cleaned;
+}
+
 // Vocabulary Render & Search
 function initVocabulary() {
   const vocabGrid = document.getElementById("vocab-grid");
@@ -780,11 +901,23 @@ function initVocabulary() {
     filtered.forEach(v => {
       const card = document.createElement("div");
       card.className = "vocab-card";
+      const formattedPos = formatPos(v.pos);
+      const formattedIpa = formatIpa(v.ipa);
       card.innerHTML = `
-        <div class="vocab-word">${v.word}</div>
-        <div class="vocab-pos">${v.pos}</div>
-        <div class="vocab-def">${v.def}</div>
+        <div class="vocab-card-header">
+          <div class="folder-branch-path">
+            <span class="branch-root">📁 Vocab</span>
+            <span class="branch-sep">/</span>
+            <span class="branch-folder">📂 General</span>
+          </div>
+        </div>
+        <div class="vocab-word-title">${v.word}</div>
+        <div class="vocab-pos-line">
+          ${formattedPos ? `<span class="vocab-pos-badge">${formattedPos}</span>` : ''}
+          ${formattedIpa ? `<span class="vocab-ipa-text">${formattedIpa}</span>` : ''}
+        </div>
         <div class="vocab-vn">🇻🇳 ${v.vn}</div>
+        <div class="vocab-def">${v.def}</div>
       `;
       vocabGrid.appendChild(card);
     });
@@ -2031,11 +2164,23 @@ function initTaBank() {
     filtered.slice(0, limit).forEach(item => {
       const card = document.createElement("div");
       card.className = "vocab-card";
+      const formattedPos = formatPos(item.type || 'collocation');
+      const formattedIpa = formatIpa(item.ipa);
       card.innerHTML = `
-        <div class="vocab-word">${item.phrase}</div>
-        <div class="vocab-pos">${item.type || 'Collocation'} ${item.ipa ? '• ' + item.ipa : ''}</div>
+        <div class="vocab-card-header">
+          <div class="folder-branch-path">
+            <span class="branch-root">📁 Collocations</span>
+            <span class="branch-sep">/</span>
+            <span class="branch-folder">📂 Academic</span>
+          </div>
+        </div>
+        <div class="vocab-word-title">${item.phrase}</div>
+        <div class="vocab-pos-line">
+          <span class="vocab-pos-badge">${formattedPos}</span>
+          ${formattedIpa ? `<span class="vocab-ipa-text">${formattedIpa}</span>` : ''}
+        </div>
         <div class="vocab-vn">🇻🇳 ${item.meaning}</div>
-        ${item.example ? `<div class="vocab-def" style="margin-top:0.5rem; font-style:italic;">• ${item.example}</div>` : ''}
+        ${item.example ? `<div class="vocab-ex">• ${item.example}</div>` : ''}
       `;
       grid.appendChild(card);
     });
@@ -2660,30 +2805,7 @@ function initFovModule() {
 
 // Open specific sub-tab inside Focus on Vocabulary module
 function openFovSubTab(subTabId) {
-  openSkillTab('focus-on-vocabulary');
-  const container = document.getElementById("focus-on-vocabulary");
-  if (!container) return;
-  const subTabs = container.querySelectorAll(".sub-tab");
-  const subContents = container.querySelectorAll(".sub-tab-content");
-
-  subTabs.forEach(t => t.classList.remove("active"));
-  subContents.forEach(c => c.classList.remove("active"));
-
-  const targetTabBtn = container.querySelector(`.sub-tab[data-subtab="${subTabId}"]`);
-  const targetContent = container.querySelector("#" + subTabId);
-
-  if (targetTabBtn) targetTabBtn.classList.add("active");
-  if (targetContent) targetContent.classList.add("active");
-
-  if (subTabId === "fov-memory-lab") {
-    renderFovCTest();
-  } else if (subTabId === "fov-flashcards") {
-    initFovFlashcards();
-  } else if (subTabId === "fov-quiz") {
-    renderFovQuiz();
-  } else if (subTabId === "fov-bank") {
-    initFovBank();
-  }
+  openSkillTab('focus-on-vocabulary', subTabId);
 }
 
 // 1. FOV Flashcards Logic
@@ -2738,8 +2860,8 @@ function updateFovFlashcardUI() {
   if (badgeEl) badgeEl.textContent = `${item.chapterTitle || 'VOCABULARY'} • CEFR ${item.level}`;
   if (counterEl) counterEl.textContent = `Card ${fovFcIndex + 1} of ${deck.length}`;
   if (termEl) termEl.textContent = item.word;
-  if (ipaEl) ipaEl.textContent = item.ipa || '';
-  if (posEl) posEl.textContent = item.pos || 'vocabulary';
+  if (ipaEl) ipaEl.textContent = formatIpa(item.ipa);
+  if (posEl) posEl.textContent = formatPos(item.pos || 'vocabulary');
   if (vnEl) vnEl.textContent = `🇻🇳 ${item.vn}`;
   if (defEl) defEl.textContent = item.def;
   if (exEl) exEl.textContent = item.example ? (`• ${item.example}`) : '';
@@ -2854,18 +2976,26 @@ function initFovBank() {
     filtered.forEach(item => {
       const card = document.createElement("div");
       card.className = "vocab-card";
+      const formattedPos = formatPos(item.pos);
+      const formattedIpa = formatIpa(item.ipa);
       card.innerHTML = `
-        <div style="display:flex; justify-content:space-between; align-items:center;">
-          <div class="vocab-word">${item.word}</div>
-          <div style="display:flex; gap:0.4rem; align-items:center;">
-            <span class="badge-tag" style="font-size:0.7rem; background:#e0f2fe; color:#0369a1;">${item.chapterTitle || 'Chapter'}</span>
-            <span class="badge-tag" style="font-size:0.7rem;">CEFR ${item.level}</span>
+        <div class="vocab-card-header">
+          <div class="folder-branch-path">
+            <span class="branch-root">📁 FOV</span>
+            <span class="branch-sep">/</span>
+            <span class="branch-folder" title="${item.chapterTitle || 'Chapter'}">📂 ${item.chapterTitle || 'Chapter'}</span>
+            <span class="branch-sep">/</span>
+            <span class="branch-file">CEFR ${item.level}</span>
           </div>
         </div>
-        <div class="vocab-pos">${item.pos} ${item.ipa ? '• ' + item.ipa : ''}</div>
+        <div class="vocab-word-title">${item.word}</div>
+        <div class="vocab-pos-line">
+          ${formattedPos ? `<span class="vocab-pos-badge">${formattedPos}</span>` : ''}
+          ${formattedIpa ? `<span class="vocab-ipa-text">${formattedIpa}</span>` : ''}
+        </div>
         <div class="vocab-vn">🇻🇳 ${item.vn}</div>
-        <div class="vocab-def" style="margin-top:0.5rem; color:var(--text-secondary);">${item.def}</div>
-        ${item.example ? `<div class="vocab-def" style="margin-top:0.5rem; font-style:italic;">• ${item.example}</div>` : ''}
+        <div class="vocab-def">${item.def}</div>
+        ${item.example ? `<div class="vocab-ex">• ${item.example}</div>` : ''}
       `;
       grid.appendChild(card);
     });
@@ -2949,11 +3079,14 @@ function renderFovCTest() {
     const maskedExample = item.example ? item.example.replace(new RegExp(item.word, "gi"), mask) : "";
 
     const card = document.createElement("div");
-    card.style.cssText = "background: #f8fafc; border: 1px solid #e2e8f0; border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 0.5rem;";
+    card.style.cssText = "background: #ffffff; border: 1px solid #e2e8f0; border-top: 3px solid #0d9488; border-radius: var(--radius-md); padding: 1.25rem; margin-bottom: 0.5rem;";
     card.innerHTML = `
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem;">
-        <span style="font-weight: 800; color: var(--brand-teal); font-size: 0.85rem;">ITEM ${index + 1} OF ${pool.length} • CEFR ${item.level}</span>
-        <span style="font-size: 0.8rem; background: #e0f2fe; color: #0369a1; padding: 0.2rem 0.6rem; border-radius: 50px; font-weight: 700;">${item.pos}</span>
+      <div class="folder-branch-path" style="margin-bottom: 0.6rem;">
+        <span class="branch-root">📁 Memory Lab</span>
+        <span class="branch-sep">/</span>
+        <span class="branch-folder">📂 Item ${index + 1}/${pool.length}</span>
+        <span class="branch-sep">/</span>
+        <span class="branch-file">CEFR ${item.level}</span>
       </div>
       <div style="font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.5rem; line-height: 1.5;">
         ${item.example ? item.example.replace(new RegExp(item.word, "gi"), `<span style="color: #0f766e; font-weight: 800; font-family: monospace; font-size: 1.15rem; background: #e6f7f5; padding: 0.1rem 0.5rem; border-radius: 4px;">${mask}</span>`) : ''}
