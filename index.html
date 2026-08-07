@@ -1502,122 +1502,73 @@
 
     .ggd-modal-title {
       font-weight: 800;
-      font-size: 1.35rem;
+      font-size: 34px; /* Main Heading H1: 32px - 40px */
       color: #ffffff;
     }
 
-    .ggd-modal-close {
-      background: #2b1d47;
-      color: #ef4444;
-      border: 2px solid #ef4444;
-      border-radius: 10px;
-      width: 38px;
-      height: 38px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .ggd-modal-close:hover {
-      background: #ef4444;
-      color: #ffffff;
-    }
-
-    .ggd-task-hud {
-      background: #1c1433;
-      border: 2px solid #38bdf8;
-      border-radius: 12px;
+    .ggd-panel-header {
+      background: linear-gradient(90deg, #1b1233 0%, #2b1d4e 100%);
+      border-bottom: 2px solid #facc15;
       padding: 12px 18px;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 12px;
+      color: #facc15;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 20px;
     }
 
-    .ggd-task-progress-mini {
-      width: 140px;
-      height: 10px;
-      background: #0a0614;
-      border-radius: 999px;
-      overflow: hidden;
-      border: 1px solid #334155;
-    }
-
-    .ggd-task-progress-mini-fill {
-      height: 100%;
-      background: #38bdf8;
-      transition: width 0.3s ease;
-    }
-
-    .ggd-dossier {
-      background: #1b1331;
-      border: 2px solid #facc15;
-      border-radius: 12px;
-      padding: 14px 18px;
-      margin-bottom: 20px;
-      box-shadow: inset 0 0 10px rgba(250, 204, 21, 0.1);
-    }
-
-    .ggd-dossier-summary {
-      font-family: 'Press Start 2P', cursive;
-      font-size: 9.5px;
-      color: #facc15;
-      cursor: pointer;
-      outline: none;
-      user-select: none;
-    }
-
-    .ggd-dossier-body {
-      margin-top: 12px;
-      font-size: 0.92rem;
-      line-height: 1.65;
+    .ggd-dossier-body-scroll {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
       color: #e2e8f0;
-      border-top: 1px solid rgba(250, 204, 21, 0.2);
-      padding-top: 10px;
+      font-size: 16px; /* Main Body: 16px - 18px */
+      line-height: 1.7;
     }
 
-    .ggd-dossier-body p { margin-bottom: 8px; }
-    .ggd-dossier-body ul { margin-left: 20px; margin-bottom: 8px; }
+    .ggd-dossier-body p { margin-bottom: 10px; font-size: 16px; }
+    .ggd-dossier-body ul { margin-left: 24px; margin-bottom: 10px; font-size: 16px; }
     .ggd-dossier-body strong { color: #38bdf8; }
     .ggd-dossier-body code {
       background: #0d081a;
       color: #facc15;
-      padding: 2px 6px;
+      padding: 3px 8px;
       border-radius: 4px;
       font-family: monospace;
+      font-size: 15px;
     }
 
     /* Enhanced Dossier Visual Components */
     .ggd-pos-grid-table {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 12px;
-      margin: 16px 0;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+      margin: 18px 0;
     }
     .ggd-pos-mini-card {
       background: #120b24;
       border: 1px solid rgba(255, 255, 255, 0.12);
       border-left: 4px solid var(--pos-color, #38bdf8);
       border-radius: 10px;
-      padding: 12px 14px;
+      padding: 14px 16px;
     }
     .ggd-pos-mini-head {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
     .ggd-pos-mini-title {
       font-weight: 800;
       color: #ffffff;
-      font-size: 0.92rem;
+      font-size: 18px; /* Subheadings H3: 20px-28px range */
     }
     .ggd-badge {
       display: inline-block;
-      padding: 3px 8px;
+      padding: 4px 10px;
       border-radius: 6px;
-      font-size: 0.72rem;
+      font-size: 12px;
       font-weight: 800;
       text-transform: uppercase;
     }
@@ -1634,71 +1585,73 @@
       background: #0d071a;
       border: 2px dashed #facc15;
       border-radius: 14px;
-      padding: 18px;
-      margin: 18px 0;
+      padding: 20px;
+      margin: 20px 0;
       text-align: center;
     }
     .ggd-sentence-words {
-      line-height: 2.4;
-      font-size: 1.05rem;
+      line-height: 2.6;
+      font-size: 18px; /* Body text: 18px */
     }
     .ggd-word-pill {
       display: inline-block;
-      padding: 4px 10px;
-      margin: 3px;
+      padding: 5px 12px;
+      margin: 4px;
       border-radius: 8px;
       font-weight: 700;
-      font-size: 0.92rem;
+      font-size: 17px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.3);
     }
     .ggd-dossier-sec {
       background: #140d28;
       border: 1px solid #2e1d52;
       border-radius: 12px;
-      padding: 16px;
-      margin-top: 14px;
+      padding: 18px;
+      margin-top: 16px;
     }
     .ggd-dossier-sec-title {
-      font-size: 1rem;
+      font-size: 22px; /* Subheadings H2, H3: 20px - 28px */
       font-weight: 800;
       color: #facc15;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       display: flex;
       align-items: center;
-      gap: 8px;
-      border-bottom: 1px solid rgba(250, 204, 21, 0.2);
-      padding-bottom: 6px;
+      gap: 10px;
+      border-bottom: 1px solid rgba(250, 204, 21, 0.25);
+      padding-bottom: 8px;
     }
     .ggd-example-box {
       background: #0a0515;
-      border-left: 3px solid #38bdf8;
-      padding: 10px 14px;
+      border-left: 4px solid #38bdf8;
+      padding: 12px 16px;
       border-radius: 0 8px 8px 0;
-      margin: 8px 0;
+      margin: 10px 0;
       font-style: italic;
       color: #cbd5e1;
+      font-size: 16px; /* Main body: 16px */
+      line-height: 1.7;
     }
     .ggd-inline-quiz-box {
       background: #110924;
       border: 2px solid #10b981;
       border-radius: 12px;
-      padding: 16px;
-      margin-top: 20px;
+      padding: 18px;
+      margin-top: 22px;
     }
     .ggd-inline-q-item {
-      margin-bottom: 14px;
-      padding-bottom: 12px;
+      margin-bottom: 16px;
+      padding-bottom: 14px;
       border-bottom: 1px dashed #241742;
     }
     .ggd-inline-opt-btn {
       background: #1f143a;
       border: 1.5px solid #432e70;
       color: #e2e8f0;
-      padding: 6px 14px;
-      margin: 4px 4px 4px 0;
+      padding: 8px 16px;
+      margin: 4px 6px 4px 0;
       border-radius: 8px;
       cursor: pointer;
-      font-size: 0.88rem;
+      font-size: 16px; /* Main body: 16px */
       transition: all 0.2s ease;
     }
     .ggd-inline-opt-btn:hover {
@@ -1718,8 +1671,8 @@
       border-color: #dc2626 !important;
     }
     .ggd-inline-feedback {
-      margin-top: 6px;
-      font-size: 0.85rem;
+      margin-top: 8px;
+      font-size: 16px; /* Main body: 16px */
       font-weight: 700;
       display: none;
     }
@@ -1733,11 +1686,11 @@
     }
 
     .ggd-question-text {
-      font-size: 1.05rem;
+      font-size: 18px; /* Main Question Body: 18px */
       font-weight: 700;
       color: #ffffff;
       margin-bottom: 18px;
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
     .ggd-options-grid {
@@ -1751,8 +1704,8 @@
       color: #f1f5f9;
       border: 2px solid #312154;
       border-radius: 10px;
-      padding: 12px 18px;
-      font-size: 0.95rem;
+      padding: 14px 20px;
+      font-size: 16px; /* Option Body Text: 16px */
       font-weight: 600;
       text-align: left;
       cursor: pointer;
@@ -2536,7 +2489,7 @@
               <!-- LEFT PANEL: THEORY DOSSIER -->
               <div class="ggd-split-left-panel">
                 <div class="ggd-panel-header">
-                  <span>📜 HỒ SƠ MẬT NGỮ PHÁP (GOOSE INTELLIGENCE FILE)</span>
+                  <span>📜 GOOSE INTELLIGENCE FILE (THEORY DOSSIER)</span>
                 </div>
                 <div class="ggd-dossier-body-scroll" id="ggd-modal-theory">
                   <!-- Theory text renders here -->
@@ -2546,7 +2499,7 @@
               <!-- RIGHT PANEL: 1-TASK-ONLY AREA -->
               <div class="ggd-split-right-panel">
                 <div class="ggd-panel-header right">
-                  <span>🎯 THỬ THÁCH NHIỆM VỤ (MISSION TASK)</span>
+                  <span>🎯 MISSION TASK</span>
                 </div>
 
                 <div class="ggd-split-right-content">
@@ -2564,8 +2517,8 @@
 
                   <!-- Modal Footer Controls -->
                   <div class="ggd-modal-footer-inside">
-                    <button class="ggd-btn secondary" onclick="closeGgdTaskModal()">Rút Lui 🚶</button>
-                    <button class="ggd-btn primary" id="ggd-next-btn" onclick="nextGgdQuestion()" style="display: none;">Nhiệm Vụ Tiếp Theo ➔</button>
+                    <button class="ggd-btn secondary" onclick="closeGgdTaskModal()">Retreat 🚶</button>
+                    <button class="ggd-btn primary" id="ggd-next-btn" onclick="nextGgdQuestion()" style="display: none;">Next Task ➔</button>
                   </div>
                 </div>
               </div>
@@ -3659,88 +3612,88 @@
           theory: `
             <div class="ggd-dossier-wrapper">
               <div style="background: linear-gradient(135deg, #1e1338 0%, #110924 100%); border: 2px solid #facc15; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;">
-                <h3 style="color: #facc15; font-size: 1.2rem; font-weight: 900; margin-bottom: 6px;">🎯 CHUYÊN ĐỀ 1: 8 TỪ LOẠI TRONG TIẾNG ANH (THE 8 PARTS OF SPEECH)</h3>
-                <p style="color: #94a3b8; font-size: 0.88rem;">Tài liệu giải mã bí mật ngữ pháp dành cho Cadet Goose tại Navigation Deck 🧭</p>
+                <h3 style="color: #facc15; font-size: 34px; font-weight: 900; margin-bottom: 8px;">🎯 UNIT 1: THE 8 PARTS OF SPEECH</h3>
+                <p style="color: #94a3b8; font-size: 16px;">Goose Intelligence Dossier for Cadet Goose at Navigation Deck 🧭</p>
               </div>
 
-              <!-- SƠ ĐỒ BẢNG 8 TỪ LOẠI -->
+              <!-- SUMMARY CHART -->
               <div style="margin-bottom: 20px;">
-                <h4 style="color: #38bdf8; font-size: 0.98rem; font-weight: 800; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">📊 BẢNG TỔNG QUAN 8 TỪ LOẠI (SUMMARY CHART)</h4>
+                <h4 style="color: #38bdf8; font-size: 22px; font-weight: 800; margin-bottom: 14px; display: flex; align-items: center; gap: 8px;">📊 THE 8 PARTS OF SPEECH SUMMARY CHART</h4>
                 <div class="ggd-pos-grid-table">
                   <div class="ggd-pos-mini-card" style="--pos-color: #00e5ff;">
-                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">1. Noun (Danh từ)</span><span class="ggd-badge badge-noun">Cyan</span></div>
-                    <p style="font-size: 0.85rem; color: #cbd5e1;">Refers to people, places, things, or ideas (<em>goose, spaceship, courage</em>).</p>
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">1. Noun</span><span class="ggd-badge badge-noun">Cyan</span></div>
+                    <p style="font-size: 16px; color: #cbd5e1;">Refers to people, places, things, or ideas (<em>goose, spaceship, courage</em>).</p>
                   </div>
                   <div class="ggd-pos-mini-card" style="--pos-color: #ccff00;">
-                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">2. Pronoun (Đại từ)</span><span class="ggd-badge badge-pronoun">Lime</span></div>
-                    <p style="font-size: 0.85rem; color: #cbd5e1;">Takes the place of a noun (<em>he, she, it, they, someone</em>).</p>
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">2. Pronoun</span><span class="ggd-badge badge-pronoun">Lime</span></div>
+                    <p style="font-size: 16px; color: #cbd5e1;">Takes the place of a noun (<em>he, she, it, they, someone</em>).</p>
                   </div>
                   <div class="ggd-pos-mini-card" style="--pos-color: #00e676;">
-                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">3. Adjective (Tính từ)</span><span class="ggd-badge badge-adj">Green</span></div>
-                    <p style="font-size: 0.85rem; color: #cbd5e1;">Describes or modifies a noun or pronoun (<em>cheerful, brave, round</em>).</p>
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">3. Adjective</span><span class="ggd-badge badge-adj">Green</span></div>
+                    <p style="font-size: 16px; color: #cbd5e1;">Describes or modifies a noun or pronoun (<em>cheerful, brave, round</em>).</p>
                   </div>
                   <div class="ggd-pos-mini-card" style="--pos-color: #ff5252;">
-                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">4. Verb (Động từ)</span><span class="ggd-badge badge-verb">Red</span></div>
-                    <p style="font-size: 0.85rem; color: #cbd5e1;">Describes an action, occurrence, or state of being (<em>fly, sang, seem</em>).</p>
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">4. Verb</span><span class="ggd-badge badge-verb">Red</span></div>
+                    <p style="font-size: 16px; color: #cbd5e1;">Describes an action, occurrence, or state of being (<em>fly, sang, seem</em>).</p>
                   </div>
                   <div class="ggd-pos-mini-card" style="--pos-color: #7c4dff;">
-                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">5. Adverb (Trạng từ)</span><span class="ggd-badge badge-adv">Purple</span></div>
-                    <p style="font-size: 0.85rem; color: #cbd5e1;">Describes/modifies a verb, adjective, or another adverb (<em>loudly, swiftly, very</em>).</p>
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">5. Adverb</span><span class="ggd-badge badge-adv">Purple</span></div>
+                    <p style="font-size: 16px; color: #cbd5e1;">Describes/modifies a verb, adjective, or another adverb (<em>loudly, swiftly, very</em>).</p>
                   </div>
                   <div class="ggd-pos-mini-card" style="--pos-color: #ff80ab;">
-                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">6. Preposition (Giới từ)</span><span class="ggd-badge badge-prep">Pink</span></div>
-                    <p style="font-size: 0.85rem; color: #cbd5e1;">Shows relationships between words in a sentence (<em>in, on, under, during</em>).</p>
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">6. Preposition</span><span class="ggd-badge badge-prep">Pink</span></div>
+                    <p style="font-size: 16px; color: #cbd5e1;">Shows relationships between words in a sentence (<em>in, on, under, during</em>).</p>
                   </div>
                   <div class="ggd-pos-mini-card" style="--pos-color: #b0bec5;">
-                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">7. Conjunction (Liên từ)</span><span class="ggd-badge badge-conj">Grey</span></div>
-                    <p style="font-size: 0.85rem; color: #cbd5e1;">Connects words, phrases, or clauses (<em>and, but, because, although</em>).</p>
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">7. Conjunction</span><span class="ggd-badge badge-conj">Grey</span></div>
+                    <p style="font-size: 16px; color: #cbd5e1;">Connects words, phrases, or clauses (<em>and, but, because, although</em>).</p>
                   </div>
                   <div class="ggd-pos-mini-card" style="--pos-color: #00bfa5;">
-                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">8. Interjection (Thán từ)</span><span class="ggd-badge badge-inj">Teal</span></div>
-                    <p style="font-size: 0.85rem; color: #cbd5e1;">Expresses emotion, gives commands, or serves as greeting (<em>Wow!, Quack!, Alas!</em>).</p>
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">8. Interjection</span><span class="ggd-badge badge-inj">Teal</span></div>
+                    <p style="font-size: 16px; color: #cbd5e1;">Expresses emotion, gives commands, or serves as greeting (<em>Wow!, Quack!, Alas!</em>).</p>
                   </div>
                 </div>
               </div>
 
-              <!-- CÂU MẪU MINH HỌA TRỰC QUAN -->
+              <!-- COLOR-CODED MASTER SENTENCE -->
               <div class="ggd-master-sentence-card">
-                <div style="font-size: 0.85rem; color: #facc15; font-weight: 800; text-transform: uppercase; margin-bottom: 8px;">🌟 PHÂN TÍCH CÂU VÍ DỤ MẪU (COLOR-CODED MASTER SENTENCE)</div>
-                <div class="ggd-sentence-words">
+                <div style="font-size: 16px; color: #facc15; font-weight: 800; text-transform: uppercase; margin-bottom: 10px;">🌟 MASTER SENTENCE ANALYSIS</div>
+                <div class="ggd-sentence-words" style="font-size: 18px;">
                   "
-                  <span class="ggd-word-pill badge-adj" title="Adjective (Tính từ)">cheerful</span>
-                  <span class="ggd-word-pill badge-noun" title="Noun (Danh từ)">bird</span>
-                  <span class="ggd-word-pill badge-verb" title="Verb (Động từ)">sang</span>
-                  <span class="ggd-word-pill badge-adv" title="Adverb (Trạng từ)">loudly</span>
-                  <span class="ggd-word-pill badge-prep" title="Preposition (Giới từ)">in</span>
+                  <span class="ggd-word-pill badge-adj" title="Adjective">cheerful</span>
+                  <span class="ggd-word-pill badge-noun" title="Noun">bird</span>
+                  <span class="ggd-word-pill badge-verb" title="Verb">sang</span>
+                  <span class="ggd-word-pill badge-adv" title="Adverb">loudly</span>
+                  <span class="ggd-word-pill badge-prep" title="Preposition">in</span>
                   the
-                  <span class="ggd-word-pill badge-noun" title="Noun (Danh từ)">tree</span>,
-                  <span class="ggd-word-pill badge-conj" title="Conjunction (Liên từ)">but</span>,
-                  <span class="ggd-word-pill badge-inj" title="Interjection (Thán từ)">alas</span>,
-                  <span class="ggd-word-pill badge-pronoun" title="Pronoun (Đại từ)">it</span>
-                  <span class="ggd-word-pill badge-verb" title="Verb (Động từ)">flew</span>
-                  <span class="ggd-word-pill badge-adv" title="Adverb (Trạng từ)">away</span>."
+                  <span class="ggd-word-pill badge-noun" title="Noun">tree</span>,
+                  <span class="ggd-word-pill badge-conj" title="Conjunction">but</span>,
+                  <span class="ggd-word-pill badge-inj" title="Interjection">alas</span>,
+                  <span class="ggd-word-pill badge-pronoun" title="Pronoun">it</span>
+                  <span class="ggd-word-pill badge-verb" title="Verb">flew</span>
+                  <span class="ggd-word-pill badge-adv" title="Adverb">away</span>."
                 </div>
-                <p style="font-size: 0.82rem; color: #94a3b8; margin-top: 8px;">💡 Rê chuột / xem từng nhãn màu để thấy rõ vai trò ngữ pháp của mỗi từ!</p>
+                <p style="font-size: 15px; color: #94a3b8; margin-top: 10px;">💡 Hover over color tags to analyze the grammatical role of each word!</p>
               </div>
 
-              <!-- NỘI DUNG CHI TIẾT 8 PHẦN -->
+              <!-- DETAILED SECTIONS -->
               <div class="ggd-dossier-sec">
-                <div class="ggd-dossier-sec-title">🏷️ 1. NOUNS (DANH TỪ)</div>
-                <p>A noun is a word that names a person, place, concept, or object. Anything that names a thing is a noun.</p>
-                <div class="ggd-example-box">
+                <div class="ggd-dossier-sec-title">🏷️ 1. NOUNS</div>
+                <p style="font-size: 17px;">A noun is a word that names a person, place, concept, or object. Anything that names a thing is a noun.</p>
+                <div class="ggd-example-box" style="font-size: 16px;">
                   • <strong>Common vs. Proper Nouns:</strong><br>
-                  - <em>Common Nouns</em> (Danh từ chung): General names (e.g. <code>The planet orbits a distant star.</code> / <code>That game show was fun.</code>)<br>
-                  - <em>Proper Nouns</em> (Danh từ riêng - viết hoa): Specific names/titles (e.g. <code>You can see Jupiter in the sky.</code> / <code>Jeopardy! is my favorite game show.</code>)<br><br>
+                  - <em>Common Nouns:</em> General names (e.g. <code>The planet orbits a distant star.</code> / <code>That game show was fun.</code>)<br>
+                  - <em>Proper Nouns:</em> Specific names/titles, capitalized (e.g. <code>You can see Jupiter in the sky.</code> / <code>Jeopardy! is my favorite game show.</code>)<br><br>
                   • <strong>Concrete vs. Abstract Nouns:</strong><br>
-                  - <em>Concrete Nouns</em> (Danh từ cụ thể): Physical objects seen/touched (e.g. <code>She gave me some beautiful flowers.</code>)<br>
-                  - <em>Abstract Nouns</em> (Danh từ trừu tượng): Intangible qualities/ideas (e.g. <code>Love is a powerful force.</code> / <code>Courage saved the crew.</code>)
+                  - <em>Concrete Nouns:</em> Physical objects seen/touched (e.g. <code>She gave me some beautiful flowers.</code>)<br>
+                  - <em>Abstract Nouns:</em> Intangible qualities/ideas (e.g. <code>Love is a powerful force.</code> / <code>Courage saved the crew.</code>)
                 </div>
               </div>
 
               <div class="ggd-dossier-sec">
-                <div class="ggd-dossier-sec-title">👤 2. PRONOUNS (ĐẠI TỪ)</div>
-                <p>Pronouns substitute for specific nouns when the reader/listener already knows what noun is being referred to.</p>
-                <div class="ggd-example-box">
+                <div class="ggd-dossier-sec-title">👤 2. PRONOUNS</div>
+                <p style="font-size: 17px;">Pronouns substitute for specific nouns when the reader/listener already knows what specific noun is being referred to.</p>
+                <div class="ggd-example-box" style="font-size: 16px;">
                   • <strong>4 Types of Pronouns:</strong><br>
                   - <em>Subjective:</em> I, he, she, we, it, you, they<br>
                   - <em>Objective:</em> me, him, her, us, it, you, them<br>
@@ -3753,33 +3706,33 @@
               </div>
 
               <div class="ggd-dossier-sec">
-                <div class="ggd-dossier-sec-title">🎨 3. ADJECTIVES (TÍNH TỪ)</div>
-                <p>Adjectives describe or modify nouns. They can go before the noun (<code>a brown dog</code>) or after a linking verb (<code>My dog is brown</code>).</p>
-                <div class="ggd-example-box">
+                <div class="ggd-dossier-sec-title">🎨 3. ADJECTIVES</div>
+                <p style="font-size: 17px;">Adjectives describe or modify nouns. They can go right before the noun (<code>a brown dog</code>) or after a linking verb (<code>My dog is brown</code>).</p>
+                <div class="ggd-example-box" style="font-size: 16px;">
                   • <strong>Types:</strong> Descriptive (<em>red, cheerful</em>), Quantitative (<em>many, three</em>), Comparative (<em>taller</em>), Superlative (<em>tallest</em>).<br><br>
-                  • <strong>Order of Adjectives (Trật tự OSASCOMP):</strong><br>
+                  • <strong>Order of Adjectives (OSASCOMP):</strong><br>
                   <code>Opinion → Size → Age → Shape → Color → Origin → Material → Purpose</code><br>
-                  👉 Ví dụ: <em>She bought a <strong>lovely</strong> (Opinion) <strong>small</strong> (Size) <strong>old</strong> (Age) <strong>round</strong> (Shape) <strong>brown</strong> (Color) <strong>British</strong> (Origin) <strong>wooden</strong> (Material) <strong>coffee</strong> (Purpose) table.</em>
+                  👉 Example: <em>She bought a <strong>lovely</strong> (Opinion) <strong>small</strong> (Size) <strong>old</strong> (Age) <strong>round</strong> (Shape) <strong>brown</strong> (Color) <strong>British</strong> (Origin) <strong>wooden</strong> (Material) <strong>coffee</strong> (Purpose) table.</em>
                 </div>
               </div>
 
               <div class="ggd-dossier-sec">
-                <div class="ggd-dossier-sec-title">⚡ 4. VERBS (ĐỘNG TỪ)</div>
-                <p>Verbs describe specific physical or mental actions, or states of being.</p>
-                <div class="ggd-example-box">
+                <div class="ggd-dossier-sec-title">⚡ 4. VERBS</div>
+                <p style="font-size: 17px;">Verbs describe specific physical or mental actions, or states of being.</p>
+                <div class="ggd-example-box" style="font-size: 16px;">
                   • <strong>Action vs. Nonaction (Stative) Verbs:</strong><br>
                   - <em>Action Verbs:</em> Physical action (<code>He runs every morning.</code>)<br>
                   - <em>Nonaction (Stative) Verbs:</em> Feelings/states of being (<code>She seems happy.</code> / <code>to love, to be</code>)<br><br>
                   • <strong>Transitive vs. Intransitive Verbs:</strong><br>
-                  - <em>Transitive (Ngoại động từ):</em> Requires direct object (<code>She closed the door.</code> -> closed what? the door).<br>
-                  - <em>Intransitive (Nội động từ):</em> Complete without direct object (<code>She sleeps.</code>)
+                  - <em>Transitive:</em> Requires direct object (<code>She closed the door.</code> -> closed what? the door).<br>
+                  - <em>Intransitive:</em> Complete without direct object (<code>She sleeps.</code>)
                 </div>
               </div>
 
               <div class="ggd-dossier-sec">
-                <div class="ggd-dossier-sec-title">🚀 5. ADVERBS (TRẠNG TỪ)</div>
-                <p>An adverb describes a verb, an adjective, or another adverb. Usually ends in <code>-ly</code> (<em>quietly, gracefully</em>), but not always (<em>soon, often, always, fast</em>).</p>
-                <div class="ggd-example-box">
+                <div class="ggd-dossier-sec-title">🚀 5. ADVERBS</div>
+                <p style="font-size: 17px;">An adverb describes a verb, an adjective, or another adverb. Usually ends in <code>-ly</code> (<em>quietly, gracefully</em>), but not always (<em>soon, often, always, fast</em>).</p>
+                <div class="ggd-example-box" style="font-size: 16px;">
                   - <strong>Time:</strong> yesterday, always, soon<br>
                   - <strong>Place:</strong> here, outside, everywhere<br>
                   - <strong>Manner:</strong> quietly, quickly, gracefully (e.g. <code>I entered quietly.</code>)<br>
@@ -3788,9 +3741,9 @@
               </div>
 
               <div class="ggd-dossier-sec">
-                <div class="ggd-dossier-sec-title">📍 6. PREPOSITIONS (GIỚI TỪ)</div>
-                <p>Prepositions tell the relationships between words (location, direction, time, cause).</p>
-                <div class="ggd-example-box">
+                <div class="ggd-dossier-sec-title">📍 6. PREPOSITIONS</div>
+                <p style="font-size: 17px;">Prepositions tell the relationships between words (location, direction, time, cause).</p>
+                <div class="ggd-example-box" style="font-size: 16px;">
                   - <strong>Direction:</strong> to, into, toward<br>
                   - <strong>Location:</strong> in, on, under (e.g. <code>The pizza is in the oven.</code>)<br>
                   - <strong>Time:</strong> at, before, during<br>
@@ -3799,111 +3752,111 @@
               </div>
 
               <div class="ggd-dossier-sec">
-                <div class="ggd-dossier-sec-title">🔗 7. CONJUNCTIONS (LIÊN TỪ)</div>
-                <p>Conjunctions link words, phrases, or clauses to build complex sentences.</p>
-                <div class="ggd-example-box">
-                  - <strong>Coordinating (Nối ngang hàng - FANBOYS):</strong> and, but, or, yet, for, nor, so (e.g. <code>I like pizza and pasta, but not olives.</code>)<br>
-                  - <strong>Subordinating (Nối mệnh đề phụ):</strong> because, although, if, while (e.g. <code>She stayed home because she was sick.</code>)<br>
-                  - <strong>Correlative (Đi theo cặp):</strong> either/or, neither/nor, not only/but also (e.g. <code>Either you apologize, or I'm leaving.</code>)
+                <div class="ggd-dossier-sec-title">🔗 7. CONJUNCTIONS</div>
+                <p style="font-size: 17px;">Conjunctions link words, phrases, or clauses to build complex sentences.</p>
+                <div class="ggd-example-box" style="font-size: 16px;">
+                  - <strong>Coordinating (FANBOYS):</strong> and, but, or, yet, for, nor, so (e.g. <code>I like pizza and pasta, but not olives.</code>)<br>
+                  - <strong>Subordinating:</strong> because, although, if, while (e.g. <code>She stayed home because she was sick.</code>)<br>
+                  - <strong>Correlative:</strong> either/or, neither/nor, not only/but also (e.g. <code>Either you apologize, or I'm leaving.</code>)
                 </div>
               </div>
 
               <div class="ggd-dossier-sec">
-                <div class="ggd-dossier-sec-title">💥 8. INTERJECTIONS (THÁN TỪ)</div>
-                <p>Words/phrases expressing strong emotion, command, reaction, or sudden feeling.</p>
-                <div class="ggd-example-box">
+                <div class="ggd-dossier-sec-title">💥 8. INTERJECTIONS</div>
+                <p style="font-size: 17px;">Words/phrases expressing strong emotion, command, reaction, or sudden feeling.</p>
+                <div class="ggd-example-box" style="font-size: 16px;">
                   • Examples: <code>Wow! That was incredible.</code> | <code>Oops! I dropped the keycard.</code> | <code>Phew, finally passed the exam!</code> | <code>Well, we should go.</code>
                 </div>
               </div>
 
-              <!-- MẸO NHẬN BIẾT & TỪ ĐA NĂNG -->
+              <!-- PRO TIPS & SHAPESHIFTER WORDS -->
               <div class="ggd-dossier-sec" style="border-color: #38bdf8;">
                 <div class="ggd-dossier-sec-title" style="color: #38bdf8;">🕵️ PRO IDENTIFICATION TIPS & SHAPESHIFTER WORDS</div>
-                <p style="font-weight: 700; color: #facc15; margin-bottom: 6px;">💡 4 Mẹo nhận biết từ loại siêu tốc:</p>
-                <ul style="margin-left: 20px; margin-bottom: 12px; font-size: 0.88rem;">
+                <p style="font-weight: 700; color: #facc15; font-size: 17px; margin-bottom: 8px;">💡 4 Pro Identification Hacks:</p>
+                <ul style="margin-left: 20px; margin-bottom: 14px; font-size: 16px;">
                   <li><strong>1. Adjective + -ly = Adverb:</strong> <em>commonly, quickly, swiftly</em>.</li>
-                  <li><strong>2. Pronoun Swap Test:</strong> Tráo đổi được với danh từ -> Là đại từ (<em>He played / Steve played</em>).</li>
-                  <li><strong>3. Verb 'Do' Test:</strong> Có thể thêm 'do' phía trước -> Là động từ (<em>I have... / I do have...</em>).</li>
-                  <li><strong>4. Adjective Removal Test:</strong> Bỏ từ đi mà câu vẫn đủ nghĩa -> Thường là tính từ (<em>red van / van</em>).</li>
+                  <li><strong>2. Pronoun Swap Test:</strong> Swap for a noun -> Pronoun (<em>He played / Steve played</em>).</li>
+                  <li><strong>3. Verb 'Do' Test:</strong> Insert 'do' before it -> Verb (<em>I have... / I do have...</em>).</li>
+                  <li><strong>4. Adjective Removal Test:</strong> Remove word without breaking structure -> Adjective (<em>red van / van</em>).</li>
                 </ul>
 
-                <p style="font-weight: 700; color: #facc15; margin-bottom: 6px;">🔄 Từ đa năng (Shapeshifter Words - Một từ nhiều từ loại):</p>
-                <div class="ggd-example-box" style="font-style: normal; font-size: 0.85rem;">
+                <p style="font-weight: 700; color: #facc15; font-size: 17px; margin-bottom: 8px;">🔄 Shapeshifter Words (Multiple Parts of Speech):</p>
+                <div class="ggd-example-box" style="font-style: normal; font-size: 16px;">
                   • <code>WORK:</code> I went to <strong>work</strong> (Noun) | I <strong>work</strong> in space (Verb)<br>
                   • <code>WELL:</code> Paints very <strong>well</strong> (Adverb) | Feel <strong>well</strong> (Adj) | Water <strong>well</strong> (Noun)<br>
                   • <code>BUT:</code> Cooked breakfast, <strong>but</strong> Steve cooked dinner (Conjunction) | Brought everything <strong>but</strong> the pens (Preposition)<br>
                   • <code>LIKE:</code> I <strong>like</strong> space (Verb) | Runs <strong>like</strong> wind (Prep) | Do it <strong>like</strong> I said (Conj)<br>
-                  • <code>EVOLUTION:</code> <strong>Adult</strong> (Noun/Adj) ➔ <strong>Adulting</strong> (Verb mới sáng tạo: <em>trao quyền tự lập, trả hóa đơn...</em>)
+                  • <code>EVOLUTION:</code> <strong>Adult</strong> (Noun/Adj) ➔ <strong>Adulting</strong> (Brand-new verb: <em>paying bills, buying groceries...</em>)
                 </div>
 
-                <p style="font-weight: 700; color: #facc15; margin-top: 10px; margin-bottom: 6px;">🔓 Open vs. Closed Word Classes:</p>
-                <p style="font-size: 0.88rem;">
-                  - <strong>Open Classes (Nouns, Verbs, Adj, Adv):</strong> Liên tục phát triển từ mới (<em>dumbphone, greenwash, cringe...</em>).<br>
-                  - <strong>Closed Classes (Pronouns, Prepositions, Conjunctions):</strong> Cố định, ít thay đổi (<em>under, she, and...</em>).
+                <p style="font-weight: 700; color: #facc15; font-size: 17px; margin-top: 14px; margin-bottom: 8px;">🔓 Open vs. Closed Word Classes:</p>
+                <p style="font-size: 16px;">
+                  - <strong>Open Word Classes (Nouns, Verbs, Adj, Adv):</strong> Regularly acquires new words (<em>dumbphone, greenwash, cringe...</em>).<br>
+                  - <strong>Closed Word Classes (Pronouns, Prepositions, Conjunctions):</strong> Fixed structural word set (<em>under, she, and...</em>).
                 </p>
               </div>
 
               <!-- GOOSE INTELLIGENCE FAQS -->
               <div class="ggd-dossier-sec" style="border-color: #a855f7;">
                 <div class="ggd-dossier-sec-title" style="color: #c084fc;">❓ GOOSE INTELLIGENCE FAQS</div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; font-size: 0.85rem;">
-                  <div style="background: #0d061c; padding: 10px; border-radius: 8px;">
-                    <strong>Q: 8 từ loại gồm những gì?</strong><br>
-                    <span style="color: #cbd5e1;">Noun, Pronoun, Adjective, Verb, Adverb, Preposition, Conjunction, Interjection.</span>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; font-size: 16px;">
+                  <div style="background: #0d061c; padding: 12px; border-radius: 8px;">
+                    <strong style="color: #facc15;">Q: What are the 8 parts of speech?</strong><br>
+                    <span style="color: #cbd5e1;">Nouns, Pronouns, Adjectives, Verbs, Adverbs, Prepositions, Conjunctions, and Interjections.</span>
                   </div>
-                  <div style="background: #0d061c; padding: 10px; border-radius: 8px;">
-                    <strong>Q: Làm sao nhận biết vai trò từ?</strong><br>
-                    <span style="color: #cbd5e1;">Xem chức năng ngữ cảnh trong câu (mô tả hành động = verb, mô tả vật = noun).</span>
+                  <div style="background: #0d061c; padding: 12px; border-radius: 8px;">
+                    <strong style="color: #facc15;">Q: How do you tell what part of speech a word is?</strong><br>
+                    <span style="color: #cbd5e1;">Look at its role in the sentence (describing action = verb, naming thing = noun).</span>
                   </div>
-                  <div style="background: #0d061c; padding: 10px; border-radius: 8px;">
-                    <strong>Q: 1 từ có thể mang nhiều từ loại không?</strong><br>
-                    <span style="color: #cbd5e1;">Có! Từ như 'work', 'well', 'but', 'like' thay đổi từ loại tùy ngữ cảnh.</span>
+                  <div style="background: #0d061c; padding: 12px; border-radius: 8px;">
+                    <strong style="color: #facc15;">Q: Can a word be more than one part of speech?</strong><br>
+                    <span style="color: #cbd5e1;">Yes! Words like 'work', 'well', 'but', and 'like' function as different parts depending on context.</span>
                   </div>
-                  <div style="background: #0d061c; padding: 10px; border-radius: 8px;">
-                    <strong>Q: Từ loại mở & đóng khác nhau ra sao?</strong><br>
-                    <span style="color: #cbd5e1;">Open class liên tục nạp từ mới; Closed class cố định ngữ pháp.</span>
+                  <div style="background: #0d061c; padding: 12px; border-radius: 8px;">
+                    <strong style="color: #facc15;">Q: What is open vs. closed word classes?</strong><br>
+                    <span style="color: #cbd5e1;">Open class words can evolve with new entries; closed class words remain fixed.</span>
                   </div>
                 </div>
               </div>
 
-              <!-- PRACTICE RIGHT IN LESSON -->
+              <!-- INLINE PRACTICE CHECK -->
               <div class="ggd-inline-quiz-box">
-                <div style="font-weight: 800; color: #4ade80; font-size: 1rem; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
-                  🎯 THỬ SỨC NGAY TRONG BÀI GIẢNG (INLINE PRACTICE CHECK)
+                <div style="font-weight: 800; color: #4ade80; font-size: 22px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                  🎯 INLINE PRACTICE CHECK
                 </div>
-                <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 12px;">Bấm chọn đáp án bên dưới để kiểm tra mức độ ghi nhớ lý thuyết của bạn!</p>
+                <p style="font-size: 16px; color: #94a3b8; margin-bottom: 14px;">Select an option below to test your theory knowledge!</p>
 
                 <!-- Inline Q1 -->
                 <div class="ggd-inline-q-item">
-                  <div style="font-weight: 700; color: #fff; margin-bottom: 6px;">1. Từ loại nào bổ nghĩa cho Động từ, Tính từ hoặc Trạng từ khác?</div>
+                  <div style="font-weight: 700; color: #fff; font-size: 17px; margin-bottom: 8px;">1. Which part of speech modifies a verb, an adjective, or another adverb?</div>
                   <div>
-                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, false, '❌ Sai rồi! Adjective chỉ bổ nghĩa cho Noun/Pronoun.')">A. Adjective</button>
-                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, true, '🪿 QUACK! CHÍNH XÁC! Adverb bổ nghĩa cho Verb, Adj hoặc Adv khác.')">B. Adverb</button>
-                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, false, '❌ Sai rồi! Conjunction dùng để nối từ/mệnh đề.')">C. Conjunction</button>
+                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, false, '❌ Incorrect! Adjectives only modify Nouns/Pronouns.')">A. Adjective</button>
+                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, true, '🪿 QUACK! CORRECT! Adverbs modify Verbs, Adjectives, or other Adverbs.')">B. Adverb</button>
+                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, false, '❌ Incorrect! Conjunctions connect words or clauses.')">C. Conjunction</button>
                   </div>
-                  <div class="ggd-inline-feedback"></div>
+                  <div class="ggd-inline-feedback" style="font-size: 16px;"></div>
                 </div>
 
                 <!-- Inline Q2 -->
                 <div class="ggd-inline-q-item">
-                  <div style="font-weight: 700; color: #fff; margin-bottom: 6px;">2. Trong câu "She closed the door", động từ "closed" thuộc loại nào?</div>
+                  <div style="font-weight: 700; color: #fff; font-size: 17px; margin-bottom: 8px;">2. In "She closed the door", what type of verb is "closed"?</div>
                   <div>
-                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, true, '🪿 QUACK! CHÍNH XÁC! Transitive (Ngoại động từ) vì cần tân ngữ \'the door\'.')">A. Transitive Verb</button>
-                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, false, '❌ Chưa đúng! Intransitive verb không cần tân ngữ.')">B. Intransitive Verb</button>
-                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, false, '❌ Chưa đúng! Closed là động từ hành động thể chất.')">C. Nonaction Verb</button>
+                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, true, '🪿 QUACK! CORRECT! Transitive verb because it requires the direct object \'the door\'.')">A. Transitive Verb</button>
+                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, false, '❌ Incorrect! Intransitive verbs do not require direct objects.')">B. Intransitive Verb</button>
+                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, false, '❌ Incorrect! Closed is a physical action verb.')">C. Nonaction Verb</button>
                   </div>
-                  <div class="ggd-inline-feedback"></div>
+                  <div class="ggd-inline-feedback" style="font-size: 16px;"></div>
                 </div>
 
                 <!-- Inline Q3 -->
                 <div class="ggd-inline-q-item">
-                  <div style="font-weight: 700; color: #fff; margin-bottom: 6px;">3. "FANBOYS" (And, But, Or...) thuộc nhóm Liên từ nào?</div>
+                  <div style="font-weight: 700; color: #fff; font-size: 17px; margin-bottom: 8px;">3. What type of conjunctions are "FANBOYS" (And, But, Or...)?</div>
                   <div>
-                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, true, '🪿 QUACK! CHÍNH XÁC! FANBOYS là các Coordinating Conjunctions (Liên từ kết hợp).')">A. Coordinating</button>
-                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, false, '❌ Sai rồi! Subordinating gồm because, although, if...')">B. Subordinating</button>
-                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, false, '❌ Sai rồi! Correlative đi theo cặp như either...or.')">C. Correlative</button>
+                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, true, '🪿 QUACK! CORRECT! FANBOYS are Coordinating Conjunctions.')">A. Coordinating</button>
+                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, false, '❌ Incorrect! Subordinating conjunctions include because, although...')">B. Subordinating</button>
+                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, false, '❌ Incorrect! Correlative conjunctions work in pairs (either...or).')">C. Correlative</button>
                   </div>
-                  <div class="ggd-inline-feedback"></div>
+                  <div class="ggd-inline-feedback" style="font-size: 16px;"></div>
                 </div>
               </div>
             </div>
