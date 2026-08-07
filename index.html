@@ -666,6 +666,231 @@
       line-height: 1.5;
     }
 
+    /* GAMIFIED ARENA STYLES */
+    .game-hud-bar {
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+      border-radius: 16px;
+      padding: 16px 24px;
+      color: #ffffff;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 24px rgba(49, 46, 129, 0.25);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .game-stat-badge {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.12);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .game-progress-wrapper {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .game-progress-bar {
+      background: rgba(255, 255, 255, 0.2);
+      height: 12px;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-top: 6px;
+    }
+
+    .game-progress-fill {
+      background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
+      height: 100%;
+      width: 0%;
+      transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 0 12px rgba(16, 185, 129, 0.6);
+    }
+
+    .game-level-header {
+      background: linear-gradient(90deg, #4f46e5 0%, #6366f1 100%);
+      color: #ffffff;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 800;
+      margin: 28px 0 16px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+    }
+
+    .game-reading-card {
+      background: #f8fafc;
+      padding: 22px;
+      border-radius: 14px;
+      border: 2px solid #e0e7ff;
+      border-left: 6px solid #4f46e5;
+      margin-bottom: 24px;
+      font-size: 1rem;
+      line-height: 1.75;
+      color: #1e1b4b;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.03);
+    }
+
+    .game-question-card {
+      background: #ffffff;
+      border: 2px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 22px;
+      margin-bottom: 20px;
+      transition: all 0.25s ease;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+      position: relative;
+    }
+
+    .game-question-card:hover {
+      border-color: #818cf8;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(99, 102, 241, 0.12);
+    }
+
+    .game-question-title {
+      font-weight: 800;
+      margin-bottom: 16px;
+      color: #0f172a;
+      font-size: 1.05rem;
+      line-height: 1.5;
+    }
+
+    .game-options-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    @media (max-width: 640px) {
+      .game-options-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .game-opt-btn {
+      background: #ffffff;
+      border: 2px solid #cbd5e1;
+      border-bottom: 4px solid #94a3b8;
+      padding: 14px 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      text-align: left;
+      font-size: 0.95rem;
+      font-weight: 700;
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #1e293b;
+      width: 100%;
+      user-select: none;
+    }
+
+    .game-opt-btn:hover {
+      border-color: #6366f1;
+      border-bottom-color: #4f46e5;
+      background: #f5f3ff;
+      color: #4f46e5;
+      transform: translateY(-2px);
+    }
+
+    .game-opt-btn:active {
+      transform: translateY(2px);
+      border-bottom-width: 2px;
+    }
+
+    .game-opt-btn.selected {
+      border-color: #4f46e5 !important;
+      border-bottom-color: #3730a3 !important;
+      background: #e0e7ff !important;
+      color: #3730a3 !important;
+      font-weight: 800;
+      box-shadow: 0 0 12px rgba(79, 70, 229, 0.3);
+    }
+
+    .game-opt-btn.correct {
+      background: #dcfce7 !important;
+      border-color: #10b981 !important;
+      border-bottom-color: #047857 !important;
+      color: #047857 !important;
+      font-weight: 800;
+    }
+
+    .game-opt-btn.wrong {
+      background: #fee2e2 !important;
+      border-color: #ef4444 !important;
+      border-bottom-color: #b91c1c !important;
+      color: #b91c1c !important;
+      font-weight: 800;
+    }
+
+    .game-explain-box {
+      margin-top: 14px;
+      padding: 14px 18px;
+      background: #f8fafc;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      color: #475569;
+      display: none;
+      border-left: 5px solid #6366f1;
+      line-height: 1.6;
+    }
+
+    .game-controls-bar {
+      position: sticky;
+      bottom: 20px;
+      background: rgba(30, 27, 75, 0.95);
+      backdrop-filter: blur(12px);
+      padding: 16px 24px;
+      border-radius: 16px;
+      border: 2px solid rgba(99, 102, 241, 0.3);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      z-index: 20;
+      color: #ffffff;
+    }
+
+    .game-submit-btn {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: #ffffff;
+      border: none;
+      border-bottom: 4px solid #047857;
+      padding: 14px 32px;
+      font-size: 1.05rem;
+      font-weight: 800;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .game-submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
+    }
+
+    .game-submit-btn:active {
+      transform: translateY(2px);
+      border-bottom-width: 2px;
+    }
+
     .hidden {
       display: none !important;
     }
@@ -1318,58 +1543,83 @@
           </div>
         </section>
 
-        <!-- ==================== VIEW 9: SUBTASK - PRACTICE TEST 10 ==================== -->
+        <!-- ==================== VIEW 9: SUBTASK - PRACTICE TEST 10 (GAMIFIED ARENA) ==================== -->
         <section id="task-e10-test" class="view-panel task-view">
-          <header class="task-header">
-            <span class="task-tag">ENGLISH 10 / PRACTICE TEST</span>
-            <h2>⏱️ Practice Test - Unit 1: Family (Global Success 10)</h2>
-            <p style="margin-top: 4px; opacity: 0.9; font-size: 0.9rem;">LUYỆN THI THPT QUỐC GIA & BÀI TẬP TỔNG HỢP TIẾNG ANH 10</p>
-          </header>
+          <!-- GAME HUD HEADER BAR -->
+          <div class="game-hud-bar">
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="font-size: 2rem;">🏆</div>
+              <div>
+                <div style="font-size: 0.78rem; font-weight: 800; letter-spacing: 1px; color: #a5b4fc; text-transform: uppercase;">PRACTICE ARENA</div>
+                <h2 style="color: #ffffff; font-size: 1.3rem; margin: 0; font-weight: 800;">Unit 1: Family Life (Global Success 10)</h2>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+              <div class="game-stat-badge">⚡ XP: <span id="game-xp-display" style="color: #f59e0b;">0</span></div>
+              <div class="game-stat-badge">🔥 Streak: <span id="game-streak-display" style="color: #ef4444;">0</span></div>
+              <div class="game-progress-wrapper">
+                <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 800;">
+                  <span>Tiến độ</span>
+                  <span id="game-progress-text">0 / 18</span>
+                </div>
+                <div class="game-progress-bar">
+                  <div class="game-progress-fill" id="game-progress-fill"></div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="task-body">
-            <div class="quiz-practice-container" style="background: #ffffff; padding: 24px; border-radius: 16px; border: 1.5px solid #e2e8f0; box-shadow: 0 4px 20px rgba(0,0,0,0.05); margin-top: 10px;">
-              <form id="quizForm" onsubmit="return false;">
-                <!-- PART 1: MULTIPLE CHOICE -->
-                <div class="quiz-section-title" style="background: #e0e7ff; color: #4f46e5; padding: 10px 16px; border-radius: 8px; font-size: 16px; font-weight: 700; margin: 10px 0 16px 0; display: flex; align-items: center; gap: 10px;">
-                  📌 PART 1: MULTIPLE CHOICE (Từ vựng & Ngữ pháp)
-                </div>
-                <div id="part1-container"></div>
+            <form id="quizForm" onsubmit="return false;">
+              <!-- LEVEL 1: MULTIPLE CHOICE -->
+              <div class="game-level-header">
+                🎯 LEVEL 1: VOCABULARY & GRAMMAR (Từ vựng & Ngữ pháp)
+              </div>
+              <div id="part1-container"></div>
 
-                <!-- PART 2: READING CLOZE TEXT -->
-                <div class="quiz-section-title" style="background: #e0e7ff; color: #4f46e5; padding: 10px 16px; border-radius: 8px; font-size: 16px; font-weight: 700; margin: 28px 0 16px 0; display: flex; align-items: center; gap: 10px;">
-                  📖 PART 2: READING CLOZE TEXT (Điền từ vào đoạn văn)
-                </div>
-                <div class="reading-box" style="background: #f1f5f9; padding: 20px; border-radius: 10px; border-left: 4px solid #4f46e5; margin-bottom: 20px; font-size: 15px; line-height: 1.7;">
-                  Family time is when family members do things <b>(6)</b> ________. Ways of spending family time vary from taking a family <b>(7)</b> ________ in a nice place every year, or planning a family movie night every week, to having one <b>(8)</b> ________ together every day. Some families spend time together just by having regular family meetings. Family members can sit together to <b>(9)</b> ________ important issues and make decisions, or just have a chat. Some people may think it is <b>(10)</b> ________ for everyone to find time for their family. In many cases, parents as well as children have to adjust their own timetables to make time to be with their family.
-                </div>
-                <div id="part2-container"></div>
+              <!-- LEVEL 2: READING CLOZE TEXT -->
+              <div class="game-level-header">
+                📖 LEVEL 2: CLOZE READING (Điền từ vào đoạn văn)
+              </div>
+              <div class="game-reading-card">
+                <div style="font-weight: 800; color: #4f46e5; margin-bottom: 8px; font-size: 0.9rem;">📜 MISSION PASSAGE:</div>
+                Family time is when family members do things <b>(6)</b> ________. Ways of spending family time vary from taking a family <b>(7)</b> ________ in a nice place every year, or planning a family movie night every week, to having one <b>(8)</b> ________ together every day. Some families spend time together just by having regular family meetings. Family members can sit together to <b>(9)</b> ________ important issues and make decisions, or just have a chat. Some people may think it is <b>(10)</b> ________ for everyone to find time for their family. In many cases, parents as well as children have to adjust their own timetables to make time to be with their family.
+              </div>
+              <div id="part2-container"></div>
 
-                <!-- PART 3: SENTENCE ORDERING -->
-                <div class="quiz-section-title" style="background: #e0e7ff; color: #4f46e5; padding: 10px 16px; border-radius: 8px; font-size: 16px; font-weight: 700; margin: 28px 0 16px 0; display: flex; align-items: center; gap: 10px;">
-                  🔀 PART 3: SENTENCE ORDERING (Sắp xếp đoạn văn / Hội thoại)
-                </div>
-                <div id="part3-container"></div>
+              <!-- LEVEL 3: SENTENCE ORDERING -->
+              <div class="game-level-header">
+                🔀 LEVEL 3: SENTENCE PUZZLE (Sắp xếp đoạn văn / Hội thoại)
+              </div>
+              <div id="part3-container"></div>
 
-                <!-- PART 4: READING COMPREHENSION -->
-                <div class="quiz-section-title" style="background: #e0e7ff; color: #4f46e5; padding: 10px 16px; border-radius: 8px; font-size: 16px; font-weight: 700; margin: 28px 0 16px 0; display: flex; align-items: center; gap: 10px;">
-                  📚 PART 4: READING COMPREHENSION (Đọc hiểu văn bản)
-                </div>
-                <div class="reading-box" style="background: #f1f5f9; padding: 20px; border-radius: 10px; border-left: 4px solid #4f46e5; margin-bottom: 20px; font-size: 15px; line-height: 1.7;">
-                  <b>FAMILY TRADITIONS AND CELEBRATIONS</b><br><br>
-                  Family traditions are meaningful activities that families do together repeatedly, often at specific times of the year or on special occasions. These can be simple routines like eating dinner together every Sunday, or major events like holiday celebrations. Traditions help families preserve their beliefs, stories, and history. Most importantly, they bring family members closer and create lasting memories that endure over time.<br><br>
-                  Many families have traditions around holidays. For example, during Christmas, some families decorate a tree together or sing carols. In Vietnam, families often gather for Tet, sharing special meals and wishing each other good luck. Birthdays are also moments for traditions, like baking a favorite cake or having a special meal. But traditions are not only for holidays. Some families have a movie night every Friday, or they go camping together every summer. These regular practices help family members spend quality time and feel emotionally connected.<br><br>
-                  Family traditions do more than just make good memories. They give each family a unique sense of belonging. When children take part in traditions, they learn about their family's background and what is important to their parents and grandparents. Traditions offer comfort and a sense of stability during times of change. They also help pass down important family values, such as kindness, diligence, or respecting elders. Through these shared experiences, family members learn more about one another and build stronger relationships.
-                </div>
-                <div id="part4-container"></div>
+              <!-- LEVEL 4: READING COMPREHENSION -->
+              <div class="game-level-header">
+                📚 LEVEL 4: STORY MASTER (Đọc hiểu văn bản "Family Traditions")
+              </div>
+              <div class="game-reading-card">
+                <div style="font-weight: 800; color: #4f46e5; margin-bottom: 8px; font-size: 0.9rem;">📜 STORY PASSAGE: FAMILY TRADITIONS AND CELEBRATIONS</div>
+                Family traditions are meaningful activities that families do together repeatedly, often at specific times of the year or on special occasions. These can be simple routines like eating dinner together every Sunday, or major events like holiday celebrations. Traditions help families preserve their beliefs, stories, and history. Most importantly, they bring family members closer and create lasting memories that endure over time.<br><br>
+                Many families have traditions around holidays. For example, during Christmas, some families decorate a tree together or sing carols. In Vietnam, families often gather for Tet, sharing special meals and wishing each other good luck. Birthdays are also moments for traditions, like baking a favorite cake or having a special meal. But traditions are not only for holidays. Some families have a movie night every Friday, or they go camping together every summer. These regular practices help family members spend quality time and feel emotionally connected.<br><br>
+                Family traditions do more than just make good memories. They give each family a unique sense of belonging. When children take part in traditions, they learn about their family's background and what is important to their parents and grandparents. Traditions offer comfort and a sense of stability during times of change. They also help pass down important family values, such as kindness, diligence, or respecting elders. Through these shared experiences, family members learn more about one another and build stronger relationships.
+              </div>
+              <div id="part4-container"></div>
 
-                <div class="controls-bar" style="position: sticky; bottom: 20px; background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(10px); padding: 16px 24px; border-radius: 14px; border: 1.5px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; margin-top: 30px; box-shadow: 0 6px 24px rgba(0,0,0,0.12); z-index: 10;">
-                  <div class="score-display" id="scoreDisplay" style="font-size: 1.15rem; font-weight: 800; color: #4f46e5;">Điểm số: -- / 18</div>
-                  <button type="button" class="submit-btn" onclick="checkAnswers()" style="background: #4f46e5; color: #ffffff; border: none; padding: 12px 28px; font-size: 1rem; font-weight: 700; border-radius: 10px; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(79,70,229,0.3);">
-                    📝 Nộp Bài & Xem Đáp Án
-                  </button>
+              <!-- GAME CONTROLS FLOATING BAR -->
+              <div class="game-controls-bar">
+                <div style="display: flex; align-items: center; gap: 14px;">
+                  <div style="font-size: 1.5rem;">🎮</div>
+                  <div>
+                    <div style="font-size: 0.75rem; color: #a5b4fc; font-weight: 700; text-transform: uppercase;">KẾT QUẢ ĐẠT ĐƯỢC</div>
+                    <div class="score-display" id="scoreDisplay" style="font-size: 1.25rem; font-weight: 800; color: #f59e0b;">Điểm: -- / 18</div>
+                  </div>
                 </div>
-              </form>
-            </div>
+                <button type="button" class="game-submit-btn" onclick="checkAnswers()">
+                  🚀 NỘP BÀI & NHẬN PHẦN THƯỞNG
+                </button>
+              </div>
+            </form>
           </div>
         </section>
 
@@ -1972,30 +2222,48 @@
           }
       ];
 
+      let userGameXP = 0;
+
+      function updateGameHUD() {
+        const answeredCount = Object.keys(userAnswers).length;
+        const progressPercent = Math.round((answeredCount / quizData.length) * 100);
+
+        const progressFill = document.getElementById("game-progress-fill");
+        const progressText = document.getElementById("game-progress-text");
+        const xpText = document.getElementById("game-xp-display");
+
+        if (progressFill) progressFill.style.width = `${progressPercent}%`;
+        if (progressText) progressText.textContent = `${answeredCount} / ${quizData.length}`;
+        
+        userGameXP = answeredCount * 100;
+        if (xpText) xpText.textContent = userGameXP;
+      }
+
       function renderQuiz() {
           quizData.forEach(q => {
               const container = document.getElementById(`part${q.part}-container`);
               if (!container) return;
               const qCard = document.createElement('div');
-              qCard.className = 'question-card';
+              qCard.className = 'game-question-card';
               qCard.id = `card-${q.id}`;
 
               let optionsHTML = '';
               q.options.forEach((opt, idx) => {
                   optionsHTML += `
-                      <button type="button" class="option-btn" onclick="selectOption('${q.id}', ${idx})">
+                      <button type="button" class="game-opt-btn" onclick="selectOption('${q.id}', ${idx})">
                           ${opt}
                       </button>
                   `;
               });
 
               qCard.innerHTML = `
-                  <div class="question-text">${q.question}</div>
-                  <div class="options-grid" id="options-${q.id}">${optionsHTML}</div>
-                  <div class="explanation" id="explain-${q.id}"><b>Giải thích:</b> ${q.explain}</div>
+                  <div class="game-question-title">${q.question}</div>
+                  <div class="game-options-grid" id="options-${q.id}">${optionsHTML}</div>
+                  <div class="game-explain-box" id="explain-${q.id}"><b>💡 Giải thích chi tiết:</b> ${q.explain}</div>
               `;
               container.appendChild(qCard);
           });
+          updateGameHUD();
       }
 
       const userAnswers = {};
@@ -2004,7 +2272,7 @@
           userAnswers[qId] = optIdx;
           const optionsContainer = document.getElementById(`options-${qId}`);
           if (!optionsContainer) return;
-          const buttons = optionsContainer.getElementsByClassName('option-btn');
+          const buttons = optionsContainer.getElementsByClassName('game-opt-btn');
           
           for (let i = 0; i < buttons.length; i++) {
               buttons[i].classList.remove('selected');
@@ -2012,15 +2280,19 @@
           if (buttons[optIdx]) {
               buttons[optIdx].classList.add('selected');
           }
+          updateGameHUD();
       };
 
       window.checkAnswers = async function() {
           let score = 0;
+          let currentStreak = 0;
+          let maxStreak = 0;
+
           quizData.forEach(q => {
               const selectedOpt = userAnswers[q.id];
               const optionsContainer = document.getElementById(`options-${q.id}`);
               if (!optionsContainer) return;
-              const buttons = optionsContainer.getElementsByClassName('option-btn');
+              const buttons = optionsContainer.getElementsByClassName('game-opt-btn');
               const explainBox = document.getElementById(`explain-${q.id}`);
 
               if (explainBox) explainBox.style.display = 'block';
@@ -2028,35 +2300,47 @@
               if (selectedOpt !== undefined) {
                   if (selectedOpt === q.answer) {
                       score++;
+                      currentStreak++;
+                      if (currentStreak > maxStreak) maxStreak = currentStreak;
                       if (buttons[selectedOpt]) buttons[selectedOpt].classList.add('correct');
                   } else {
+                      currentStreak = 0;
                       if (buttons[selectedOpt]) buttons[selectedOpt].classList.add('wrong');
                       if (buttons[q.answer]) buttons[q.answer].classList.add('correct');
                   }
               } else {
+                  currentStreak = 0;
                   if (buttons[q.answer]) buttons[q.answer].classList.add('correct');
               }
           });
 
-          const scoreText = `Điểm số: ${score} / ${quizData.length}`;
+          const streakText = document.getElementById("game-streak-display");
+          if (streakText) streakText.textContent = maxStreak;
+
+          const scoreText = `Điểm: ${score} / ${quizData.length}`;
           document.getElementById('scoreDisplay').innerText = scoreText;
 
           // Gửi dữ liệu điểm số tự động tới Google Sheets
           const name = getStudentName();
           const scorePercent = Math.round((score / quizData.length) * 100);
           
+          let rankTitle = "🏆 S RANK (HUYỀN THOẠI 🌟🌟🌟)";
+          if (scorePercent < 50) rankTitle = "☘️ C RANK (TẬP SỰ 🌟)";
+          else if (scorePercent < 80) rankTitle = "⚔️ B RANK (CHIẾN BINH 🌟🌟)";
+          else if (scorePercent < 95) rankTitle = "🥇 A RANK (DŨNG SĨ 🌟🌟🌟)";
+
           await submitToGoogleSheets(
             "ENGLISH 10",
             "Practice Test",
             "Full Test",
             scorePercent,
-            `Luyện thi Unit 1 Family: Đạt ${score}/${quizData.length} câu (${scorePercent}%)`
+            `Game Arena Unit 1 Family: ${score}/${quizData.length} câu (${scorePercent}%), XP: ${score * 100}, Max Streak: ${maxStreak}`
           );
 
           if (name) {
-            alert(`🎉 CHÚC MỪNG ${name.toUpperCase()} ĐÃ HOÀN THÀNH BÀI THI!\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n📊 Điểm số: ${score} / ${quizData.length} câu (${scorePercent}%)\n\nKết quả bài làm đã được tự động ghi nhận và nộp lên hệ thống!`);
+            alert(`🎉 CHÚC MỪNG ${name.toUpperCase()} CHIẾN THẮNG GAME ARENA!\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🏅 Danh hiệu: ${rankTitle}\n🎯 Điểm số: ${score} / ${quizData.length} câu (${scorePercent}%)\n⚡ XP Nhận được: +${score * 150} XP\n🔥 Chuỗi Streak cao nhất: ${maxStreak}\n\nDữ liệu phần thưởng đã được tự động lưu và gửi về hệ thống!`);
           } else {
-            alert(`🎉 BẠN ĐÃ HOÀN THÀNH BÀI THI!\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n📊 Điểm số: ${score} / ${quizData.length} câu (${scorePercent}%)\n\n💡 Ghi chú: Nhập tên của bạn ở góc trên bên phải để giáo viên ghi nhận kết quả theo tên nhé!`);
+            alert(`🎉 BẠN ĐÃ HOÀN THÀNH GAME ARENA!\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🏅 Danh hiệu: ${rankTitle}\n🎯 Điểm số: ${score} / ${quizData.length} câu (${scorePercent}%)\n⚡ XP Nhận được: +${score * 150} XP\n🔥 Chuỗi Streak cao nhất: ${maxStreak}\n\n💡 Nhập tên ở góc trên bên phải để nhận xếp hạng giải đấu nhé!`);
           }
       };
 
