@@ -17,17 +17,16 @@
 
   <style>
     /* ==========================================================================
-       1. CẤU HÌNH BIẾN MÀU GỐC & FONT CHỮ SANS-SERIF
+       1. CẤU HÌNH BIẾN MÀU GỐC & FONT CHỮ - LIGHT THEME WITH NAVY TEXT #283567
        ========================================================================== */
     :root {
       --color-bg-main: #f8fafc;
-      --color-sidebar-bg: #0f172a;
-      --color-sidebar-hover: #1e293b;
+      --color-primary-navy: #283567;
       --color-primary-blue: #2563eb;
       --color-primary-dark: #1d4ed8;
       --color-accent-green: #059669;
-      --color-text-dark: #0f172a;
-      --color-text-muted: #64748b;
+      --color-text-dark: #283567;
+      --color-text-muted: #475569;
       --color-border: #e2e8f0;
       --color-card-bg: #ffffff;
     }
@@ -43,95 +42,24 @@
       display: flex;
       height: 100vh;
       background-color: var(--color-bg-main);
-      color: var(--color-text-dark);
+      color: var(--color-primary-navy);
       overflow: hidden;
     }
 
-    /* ==========================================================================
-       2. SIDEBAR NAVIGATION
-       ========================================================================== */
+    /* ẨN THANH ĐIỀU HƯỚNG BÊN TRÁI */
     .sidebar {
-      width: 270px;
-      background-color: var(--color-sidebar-bg);
-      color: #ffffff;
-      padding: 20px 16px;
-      display: flex;
-      flex-direction: column;
-      border-right: 1px solid rgba(255, 255, 255, 0.1);
-      flex-shrink: 0;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 1.15rem;
-      font-weight: 700;
-      margin-bottom: 24px;
-      padding: 0 8px;
-    }
-
-    .brand img.logo {
-      width: 36px;
-      height: 36px;
-    }
-
-    .brand span {
-      color: #ffffff;
-    }
-
-    .brand span strong {
-      color: #60a5fa;
-    }
-
-    .nav-group-label {
-      font-size: 0.72rem;
-      color: #94a3b8;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      margin: 18px 8px 8px 8px;
-      text-transform: uppercase;
-    }
-
-    .nav-item {
-      width: 100%;
-      text-align: left;
-      background: transparent;
-      border: none;
-      color: #cbd5e1;
-      padding: 10px 12px;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 0.88rem;
-      font-weight: 500;
-      transition: all 0.2s ease;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .nav-item:hover, .nav-item.active {
-      background-color: var(--color-sidebar-hover);
-      color: #ffffff;
-    }
-
-    .nav-item.active {
-      border-left: 3px solid var(--color-primary-blue);
-    }
-
-    .nav-item.sub-item {
-      padding-left: 28px;
-      font-size: 0.84rem;
+      display: none !important;
     }
 
     /* ==========================================================================
-       3. MAIN CONTAINER & TOP HEADER
+       2. MAIN CONTAINER & TOP HEADER
        ========================================================================== */
     .main-wrapper {
       flex: 1;
       display: flex;
       flex-direction: column;
       overflow: hidden;
+      width: 100%;
     }
 
     .top-header {
@@ -141,34 +69,56 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 28px;
+      padding: 0 36px;
+      box-shadow: 0 1px 4px rgba(40, 53, 103, 0.05);
     }
 
     .header-left {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 20px;
+    }
+
+    .brand-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--color-primary-navy);
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .brand-top img {
+      width: 34px;
+      height: 34px;
+    }
+
+    .brand-top span strong {
+      color: #2563eb;
     }
 
     .back-btn {
       background-color: #eff6ff;
-      color: var(--color-primary-blue);
-      border: 1px solid #bfdbfe;
+      color: var(--color-primary-navy);
+      border: 1.5px solid #bfdbfe;
       padding: 8px 16px;
-      border-radius: 6px;
+      border-radius: 8px;
       cursor: pointer;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 0.85rem;
       transition: all 0.2s ease;
     }
 
     .back-btn:hover {
-      background-color: var(--color-primary-blue);
+      background-color: var(--color-primary-navy);
       color: #ffffff;
+      border-color: var(--color-primary-navy);
     }
 
     .breadcrumb {
-      font-size: 0.85rem;
+      font-size: 0.88rem;
       color: var(--color-text-muted);
       display: flex;
       align-items: center;
@@ -176,17 +126,23 @@
     }
 
     .crumb-current {
-      color: var(--color-primary-blue);
-      font-weight: 600;
+      color: var(--color-primary-navy);
+      font-weight: 700;
     }
 
     /* ==========================================================================
-       4. WORKSPACE PANELS & SINGLE-TASK FOCUS CONTROL
+       3. WORKSPACE PANELS & SINGLE-TASK FOCUS CONTROL
        ========================================================================== */
     .content-area {
       flex: 1;
-      padding: 32px;
+      padding: 32px 36px;
       overflow-y: auto;
+    }
+
+    .content-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      width: 100%;
     }
 
     .view-panel {
@@ -200,18 +156,18 @@
       opacity: 1;
     }
 
-    /* HERO BANNER (Matching Mockup Warm Cream Style) */
+    /* HERO BANNER (Soft Cream / Warm Peach Tone) */
     .hero-banner {
       background: #F7EBE1;
-      color: #1E293B;
+      color: var(--color-primary-navy);
       padding: 32px 36px;
       border-radius: 20px;
       margin-bottom: 24px;
       display: flex;
       align-items: center;
       gap: 24px;
-      border: 1px solid rgba(180, 140, 120, 0.15);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+      border: 1px solid rgba(180, 140, 120, 0.18);
+      box-shadow: 0 4px 20px rgba(40, 53, 103, 0.04);
     }
 
     .hero-banner img {
@@ -222,7 +178,7 @@
 
     .hero-banner .subtitle {
       font-size: 0.72rem;
-      color: #2D3B72;
+      color: var(--color-primary-navy);
       background: #E6D5C7;
       font-weight: 700;
       letter-spacing: 0.05em;
@@ -236,13 +192,14 @@
     .hero-banner h1 {
       font-size: 1.85rem;
       font-weight: 800;
-      color: #1E293B;
+      color: var(--color-primary-navy);
       margin: 4px 0 6px 0;
       letter-spacing: -0.5px;
     }
 
     .hero-banner p {
-      color: #475569;
+      color: var(--color-primary-navy);
+      opacity: 0.9;
       font-size: 0.95rem;
       line-height: 1.5;
     }
@@ -257,10 +214,10 @@
       align-items: center;
       gap: 12px;
       background: #ffffff;
-      border: 1.5px solid #2D3B72;
+      border: 1.5px solid var(--color-primary-navy);
       border-radius: 9999px;
       padding: 12px 24px;
-      box-shadow: 0 2px 10px rgba(45, 59, 114, 0.05);
+      box-shadow: 0 2px 10px rgba(40, 53, 103, 0.05);
       transition: all 0.2s ease;
     }
 
@@ -271,7 +228,7 @@
 
     .search-icon {
       font-size: 1.1rem;
-      color: #2D3B72;
+      color: var(--color-primary-navy);
     }
 
     .search-input-wrapper input {
@@ -279,7 +236,8 @@
       outline: none;
       width: 100%;
       font-size: 0.95rem;
-      color: #0f172a;
+      color: var(--color-primary-navy);
+      font-weight: 500;
       background: transparent;
     }
 
@@ -295,7 +253,7 @@
     .categories-section-header h2 {
       font-size: 1.25rem;
       font-weight: 800;
-      color: #0f172a;
+      color: var(--color-primary-navy);
       display: flex;
       align-items: center;
       gap: 8px;
@@ -315,17 +273,17 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 10px 30px rgba(40, 53, 103, 0.12);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .category-card:hover {
       transform: translateY(-3px);
-      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
+      box-shadow: 0 14px 36px rgba(40, 53, 103, 0.18);
     }
 
     .card-hsg12 {
-      background: #283567; /* Deep Navy Blue */
+      background: #283567; /* Deep Navy Blue #283567 */
     }
 
     .card-english10 {
@@ -375,7 +333,7 @@
     .card-desc {
       font-size: 0.86rem;
       line-height: 1.5;
-      color: rgba(255, 255, 255, 0.9);
+      color: rgba(255, 255, 255, 0.92);
     }
 
     .category-tags {
@@ -407,7 +365,7 @@
 
     .category-action-btn {
       background: #F7EBE1; /* Matching warm cream tone */
-      color: #1A2342;
+      color: var(--color-primary-navy);
       border: none;
       border-radius: 9999px;
       padding: 12px 28px;
@@ -433,12 +391,20 @@
     .task-tag {
       font-size: 0.8rem;
       font-weight: 700;
-      color: var(--color-primary-blue);
+      color: var(--color-primary-navy);
     }
 
     .task-header h2 {
-      font-size: 1.6rem;
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--color-primary-navy);
       margin: 6px 0;
+    }
+
+    .task-header p {
+      color: var(--color-primary-navy);
+      opacity: 0.85;
+      font-size: 0.95rem;
     }
 
     .task-body {
@@ -449,20 +415,25 @@
 
     .skill-card {
       background: white;
-      padding: 20px;
-      border-radius: 10px;
+      padding: 24px;
+      border-radius: 14px;
       border: 1px solid var(--color-border);
+      box-shadow: 0 2px 8px rgba(40, 53, 103, 0.04);
     }
 
     .skill-card h3 {
-      font-size: 1.1rem;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--color-primary-navy);
       margin-bottom: 8px;
     }
 
     .skill-card p {
-      color: var(--color-text-muted);
+      color: var(--color-primary-navy);
+      opacity: 0.85;
       font-size: 0.92rem;
       margin-bottom: 12px;
+      line-height: 1.5;
     }
 
     .meta-info {
@@ -478,52 +449,23 @@
 </head>
 <body>
 
-  <!-- SIDEBAR NAVIGATION -->
-  <aside class="sidebar">
-    <div class="brand">
-      <img src="images/English_Insider_Logo.svg" alt="English Insiders Logo" class="logo">
-      <span>English<strong>Insiders</strong></span>
-    </div>
-
-    <nav class="nav-menu" aria-label="Main Navigation">
-      <div class="nav-group-label">📂 Điều hướng chính</div>
-      <button class="nav-item active" data-target="overview-view">
-        <span class="icon">🏠</span> Tổng quan
-      </button>
-
-      <div class="nav-group-label">📚 HSG 12</div>
-      <button class="nav-item sub-item" data-target="task-hsg12-reading">
-        <span class="icon">📖</span> Reading Comprehension
-      </button>
-      <button class="nav-item sub-item" data-target="task-hsg12-listening">
-        <span class="icon">🎧</span> Listening Skills
-      </button>
-
-      <div class="nav-group-label">📖 ENGLISH 10</div>
-      <button class="nav-item sub-item" data-target="task-e10-grammar">
-        <span class="icon">📝</span> Grammar
-      </button>
-      <button class="nav-item sub-item" data-target="task-e10-vocab">
-        <span class="icon">🔤</span> Vocabulary
-      </button>
-
-      <div class="nav-group-label">⚡ Tiện ích</div>
-      <button class="nav-item" data-target="task-utility-vocab">
-        <span class="icon">📝</span> Vocabulary in Use
-      </button>
-    </nav>
-  </aside>
-
   <!-- MAIN WORKSPACE CONTAINER -->
   <div class="main-wrapper">
     
     <!-- TOP HEADER & BREADCRUMB -->
     <header class="top-header">
       <div class="header-left">
+        <!-- LOGO & TIÊU ĐỀ TRÊN TOPBAR -->
+        <div class="brand-top" id="brand-home-btn">
+          <img src="images/English_Insider_Logo.svg" alt="English Insiders Logo">
+          <span>English<strong>Insiders</strong></span>
+        </div>
+
         <!-- NÚT QUAY LẠI TỰ ĐỘNG HIỆN KHI VÀO THƯ MỤC CON -->
         <button id="back-to-home-btn" class="back-btn hidden" aria-label="Quay lại Tổng quan">
           ← Quay lại Tổng quan
         </button>
+        
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <span class="crumb-home">Home</span>
           <span class="separator">/</span>
@@ -531,190 +473,180 @@
         </nav>
       </div>
       <div class="header-right">
-        <span class="user-badge" style="font-size: 0.9rem; font-weight: 500;">👤 Giáo viên / Học sinh</span>
+        <span class="user-badge" style="font-size: 0.9rem; font-weight: 600; color: #283567;">👤 Giáo viên / Học sinh</span>
       </div>
     </header>
 
     <!-- CONTENT AREA (SINGLE TASK FOCUS WORKSPACE) -->
     <main class="content-area">
+      <div class="content-container">
 
-      <!-- VIEW 1: THƯ MỤC MẸ (TRANG CHỦ MẪU MỚI) -->
-      <section id="overview-view" class="view-panel active">
-        
-        <!-- HERO BANNER -->
-        <article class="hero-banner">
-          <img src="images/English_Insider_Logo.svg" alt="English Insiders Logo">
-          <div>
-            <span class="subtitle">ENGLISH INSIDERS HUB</span>
-            <h1>English Insiders Learning Portal</h1>
-            <p>Hệ thống kho học liệu Tiếng Anh chuyên sâu - Chuyên đề Đội tuyển HSG 12 & Chương trình Tiếng Anh 10.</p>
-          </div>
-        </article>
-
-        <!-- QUICK SEARCH BAR -->
-        <div class="search-bar-container">
-          <div class="search-input-wrapper">
-            <span class="search-icon">🔍</span>
-            <input type="text" id="quickSearchInput" placeholder="Tìm kiếm nhanh học liệu, chuyên đề, từ vựng...">
-          </div>
-        </div>
-
-        <!-- SECTION TITLE -->
-        <div class="categories-section-header">
-          <h2>✨ Danh Mục Học Liệu Chính</h2>
-        </div>
-
-        <!-- GRID DANH MỤC CÁC THƯ MỤC MẸ -->
-        <div class="category-grid">
+        <!-- VIEW 1: THƯ MỤC MẸ (TRANG CHỦ MẪU MỚI) -->
+        <section id="overview-view" class="view-panel active">
           
-          <!-- CARD THƯ MỤC MẸ: HSG 12 -->
-          <article class="category-card card-hsg12">
-            <div class="card-top">
-              <img src="images/HSG12_logo.svg" alt="HSG 12 Logo" class="card-banner-img">
-              <div class="card-info">
-                <span class="card-badge">CHUYÊN ĐỀ ĐỘI TUYỂN</span>
-                <h2 class="card-title">HSG 12</h2>
-                <p class="card-desc">Kho học liệu chuyên sâu dành cho đội tuyển HSG 12. Bao gồm 3 chuyên đề cốt lõi: Reading Comprehension, Listening Skills và Vocabulary.</p>
-              </div>
+          <!-- HERO BANNER -->
+          <article class="hero-banner">
+            <img src="images/English_Insider_Logo.svg" alt="English Insiders Logo">
+            <div>
+              <span class="subtitle">ENGLISH INSIDERS HUB</span>
+              <h1>English Insiders Learning Portal</h1>
+              <p>Hệ thống kho học liệu Tiếng Anh chuyên sâu - Chuyên đề Đội tuyển HSG 12 & Chương trình Tiếng Anh 10.</p>
             </div>
-
-            <div class="category-tags">
-              <button class="btn-tag btn-subfolder" data-target="task-hsg12-reading">
-                <span>📖 Reading Comprehension</span>
-              </button>
-              <button class="btn-tag btn-subfolder" data-target="task-hsg12-listening">
-                <span>🎧 Listening Skills</span>
-              </button>
-              <button class="btn-tag btn-subfolder" data-target="task-utility-vocab">
-                <span>📘 Vocabulary</span>
-              </button>
-            </div>
-
-            <button class="category-action-btn btn-subfolder" data-target="task-hsg12-reading">
-              Truy cập HSG 12 →
-            </button>
           </article>
 
-          <!-- CARD THƯ MỤC MẸ: ENGLISH 10 -->
-          <article class="category-card card-english10">
-            <div class="card-top">
-              <img src="images/English10_logo.svg" alt="ENGLISH 10 Logo" class="card-banner-img">
-              <div class="card-info">
-                <span class="card-badge">CHƯƠNG TRÌNH LỚP 10</span>
-                <h2 class="card-title">ENGLISH 10</h2>
-                <p class="card-desc">Chương trình bài học & luyện tập toàn diện Tiếng Anh 10. Bao gồm 3 phân môn: Grammar, Vocabulary và Practice Test.</p>
+          <!-- QUICK SEARCH BAR -->
+          <div class="search-bar-container">
+            <div class="search-input-wrapper">
+              <span class="search-icon">🔍</span>
+              <input type="text" id="quickSearchInput" placeholder="Tìm kiếm nhanh học liệu, chuyên đề, từ vựng...">
+            </div>
+          </div>
+
+          <!-- SECTION TITLE -->
+          <div class="categories-section-header">
+            <h2>✨ Danh Mục Học Liệu Chính</h2>
+          </div>
+
+          <!-- GRID DANH MỤC CÁC THƯ MỤC MẸ -->
+          <div class="category-grid">
+            
+            <!-- CARD THƯ MỤC MẸ: HSG 12 -->
+            <article class="category-card card-hsg12">
+              <div class="card-top">
+                <img src="images/HSG12_logo.svg" alt="HSG 12 Logo" class="card-banner-img">
+                <div class="card-info">
+                  <span class="card-badge">CHUYÊN ĐỀ ĐỘI TUYỂN</span>
+                  <h2 class="card-title">HSG 12</h2>
+                  <p class="card-desc">Kho học liệu chuyên sâu dành cho đội tuyển HSG 12. Bao gồm 3 chuyên đề cốt lõi: Reading Comprehension, Listening Skills và Vocabulary.</p>
+                </div>
               </div>
+
+              <div class="category-tags">
+                <button class="btn-tag btn-subfolder" data-target="task-hsg12-reading">
+                  <span>📖 Reading Comprehension</span>
+                </button>
+                <button class="btn-tag btn-subfolder" data-target="task-hsg12-listening">
+                  <span>🎧 Listening Skills</span>
+                </button>
+                <button class="btn-tag btn-subfolder" data-target="task-utility-vocab">
+                  <span>📘 Vocabulary</span>
+                </button>
+              </div>
+
+              <button class="category-action-btn btn-subfolder" data-target="task-hsg12-reading">
+                Truy cập HSG 12 →
+              </button>
+            </article>
+
+            <!-- CARD THƯ MỤC MẸ: ENGLISH 10 -->
+            <article class="category-card card-english10">
+              <div class="card-top">
+                <img src="images/English10_logo.svg" alt="ENGLISH 10 Logo" class="card-banner-img">
+                <div class="card-info">
+                  <span class="card-badge">CHƯƠNG TRÌNH LỚP 10</span>
+                  <h2 class="card-title">ENGLISH 10</h2>
+                  <p class="card-desc">Chương trình bài học & luyện tập toàn diện Tiếng Anh 10. Bao gồm 3 phân môn: Grammar, Vocabulary và Practice Test.</p>
+                </div>
+              </div>
+
+              <div class="category-tags">
+                <button class="btn-tag btn-subfolder" data-target="task-e10-grammar">
+                  <span>📝 Grammar</span>
+                </button>
+                <button class="btn-tag btn-subfolder" data-target="task-e10-vocab">
+                  <span>🔤 Vocabulary</span>
+                </button>
+                <button class="btn-tag btn-subfolder" data-target="task-e10-grammar">
+                  <span>🧪 Practice Test</span>
+                </button>
+              </div>
+
+              <button class="category-action-btn btn-subfolder" data-target="task-e10-grammar">
+                Truy cập ENGLISH 10 →
+              </button>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- VIEW 2: TÁC VỤ CON - READING COMPREHENSION -->
+        <section id="task-hsg12-reading" class="view-panel task-view">
+          <header class="task-header">
+            <span class="task-tag">HSG 12 / READING</span>
+            <h2>📖 Reading Comprehension Skills</h2>
+            <p>Nội dung bài học và thực hành đọc hiểu chuyên sâu VSTEP B1-C1 & Cambridge Advanced C1.</p>
+          </header>
+
+          <div class="task-body">
+            <div class="skill-card">
+              <h3>🎯 Main Idea & Subject Identification</h3>
+              <p>Xác định ý chính, chủ đề bao quát và tiêu đề phù hợp nhất cho đoạn văn mà không rơi vào bẫy quá hẹp (Too Narrow) hoặc quá rộng.</p>
+              <div class="meta-info">📄 2 Passages | ❓ 4 Practice Questions</div>
             </div>
-
-            <div class="category-tags">
-              <button class="btn-tag btn-subfolder" data-target="task-e10-grammar">
-                <span>📝 Grammar</span>
-              </button>
-              <button class="btn-tag btn-subfolder" data-target="task-e10-vocab">
-                <span>🔤 Vocabulary</span>
-              </button>
-              <button class="btn-tag btn-subfolder" data-target="task-e10-grammar">
-                <span>🧪 Practice Test</span>
-              </button>
+            <div class="skill-card">
+              <h3>🔤 Vocabulary & Pronoun Reference</h3>
+              <p>Đoán nghĩa từ vựng trong ngữ cảnh học thuật và quy chiếu đại từ chính xác trong văn bản.</p>
+              <div class="meta-info">📄 2 Passages | ❓ 4 Practice Questions</div>
             </div>
-
-            <button class="category-action-btn btn-subfolder" data-target="task-e10-grammar">
-              Truy cập ENGLISH 10 →
-            </button>
-          </article>
-
-        </div>
-      </section>
-
-      <!-- VIEW 2: TÁC VỤ CON - READING COMPREHENSION -->
-      <section id="task-hsg12-reading" class="view-panel task-view">
-        <header class="task-header">
-          <span class="task-tag">HSG 12 / READING</span>
-          <h2>📖 Reading Comprehension Skills</h2>
-          <p>Nội dung bài học và thực hành đọc hiểu chuyên sâu VSTEP B1-C1 & Cambridge Advanced C1.</p>
-        </header>
-
-        <div class="task-body">
-          <div class="skill-card">
-            <h3>🎯 Main Idea & Subject Identification</h3>
-            <p>Xác định ý chính, chủ đề bao quát và tiêu đề phù hợp nhất cho đoạn văn mà không rơi vào bẫy quá hẹp (Too Narrow) hoặc quá rộng.</p>
-            <div class="meta-info">📄 2 Passages | ❓ 4 Practice Questions</div>
           </div>
-          <div class="skill-card">
-            <h3>🔤 Vocabulary & Pronoun Reference</h3>
-            <p>Đoán nghĩa từ vựng trong ngữ cảnh học thuật và quy chiếu đại từ chính xác trong văn bản.</p>
-            <div class="meta-info">📄 2 Passages | ❓ 4 Practice Questions</div>
+        </section>
+
+        <!-- VIEW 3: TÁC VỤ CON - LISTENING SKILLS -->
+        <section id="task-hsg12-listening" class="view-panel task-view">
+          <header class="task-header">
+            <span class="task-tag">HSG 12 / LISTENING</span>
+            <h2>🎧 Academic Listening Strategy</h2>
+            <p>Hệ thống chiến lược xử lý bài Listening Multiple Choice theo giáo trình Contemporary Topics & Cambridge C1.</p>
+          </header>
+
+          <div class="task-body">
+            <div class="skill-card">
+              <h3>📝 Kỹ năng Note-taking & Ghi chú nhanh</h3>
+              <p>Quy trình 3 giai đoạn xử lý bài nghe độ dài lớn và phân tích bẫy logic.</p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- VIEW 3: TÁC VỤ CON - LISTENING SKILLS -->
-      <section id="task-hsg12-listening" class="view-panel task-view">
-        <header class="task-header">
-          <span class="task-tag">HSG 12 / LISTENING</span>
-          <h2>🎧 Academic Listening Strategy</h2>
-          <p>Hệ thống chiến lược xử lý bài Listening Multiple Choice theo giáo trình Contemporary Topics & Cambridge C1.</p>
-        </header>
+        <!-- VIEW 4: TÁC VỤ CON - GRAMMAR 10 -->
+        <section id="task-e10-grammar" class="view-panel task-view">
+          <header class="task-header">
+            <span class="task-tag">ENGLISH 10 / GRAMMAR</span>
+            <h2>📝 English 10 Grammar Topics</h2>
+            <p>Chủ điểm ngữ pháp trọng tâm chương trình Tiếng Anh 10.</p>
+          </header>
+        </section>
 
-        <div class="task-body">
-          <div class="skill-card">
-            <h3>📝 Kỹ năng Note-taking & Ghi chú nhanh</h3>
-            <p>Quy trình 3 giai đoạn xử lý bài nghe độ dài lớn và phân tích bẫy logic.</p>
-          </div>
-        </div>
-      </section>
+        <!-- VIEW 5: TÁC VỤ CON - VOCAB 10 -->
+        <section id="task-e10-vocab" class="view-panel task-view">
+          <header class="task-header">
+            <span class="task-tag">ENGLISH 10 / VOCABULARY</span>
+            <h2>🔤 English 10 Vocabulary Practice</h2>
+            <p>Từ vựng theo từng Unit chương trình Tiếng Anh 10.</p>
+          </header>
+        </section>
 
-      <!-- VIEW 4: TÁC VỤ CON - GRAMMAR 10 -->
-      <section id="task-e10-grammar" class="view-panel task-view">
-        <header class="task-header">
-          <span class="task-tag tag-green">ENGLISH 10 / GRAMMAR</span>
-          <h2>📝 English 10 Grammar Topics</h2>
-          <p>Chủ điểm ngữ pháp trọng tâm chương trình Tiếng Anh 10.</p>
-        </header>
-      </section>
-
-      <!-- VIEW 5: TÁC VỤ CON - VOCAB 10 -->
-      <section id="task-e10-vocab" class="view-panel task-view">
-        <header class="task-header">
-          <span class="task-tag tag-green">ENGLISH 10 / VOCABULARY</span>
-          <h2>🔤 English 10 Vocabulary Practice</h2>
-          <p>Từ vựng theo từng Unit chương trình Tiếng Anh 10.</p>
-        </header>
-      </section>
-
+      </div>
     </main>
   </div>
 
-  <!-- JAVASCRIPT XỬ LÝ FOCUS TÁC VỤ TỰ ĐỘNG ẨN MỤC MẸ -->
+  <!-- JAVASCRIPT XỬ LÝ FOCUS TÁC VỤ -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const views = document.querySelectorAll(".view-panel");
-      const navItems = document.querySelectorAll(".nav-item");
       const subFolderBtns = document.querySelectorAll(".btn-subfolder");
       const backBtn = document.getElementById("back-to-home-btn");
+      const brandHomeBtn = document.getElementById("brand-home-btn");
       const crumbActive = document.getElementById("crumb-active");
 
-      // Hàm chuyển tab và ẩn thư mục mẹ
+      // Hàm chuyển view
       function switchFocusView(targetId, targetName) {
-        // 1. Ẩn toàn bộ các view panel
         views.forEach(view => view.classList.remove("active"));
 
-        // 2. Kích hoạt hiển thị duy nhất panel được bấm chọn
         const activeTarget = document.getElementById(targetId);
         if (activeTarget) {
           activeTarget.classList.add("active");
         }
 
-        // 3. Đổi trạng thái active ở Menu Sidebar
-        navItems.forEach(item => {
-          if (item.getAttribute("data-target") === targetId) {
-            item.classList.add("active");
-          } else {
-            item.classList.remove("active");
-          }
-        });
-
-        // 4. Cập nhật Breadcrumb & Nút quay lại
         if (targetId === "overview-view") {
           backBtn.classList.add("hidden");
           crumbActive.textContent = "Tổng quan";
@@ -723,20 +655,17 @@
           crumbActive.textContent = targetName || "Tác vụ hiện tại";
         }
 
-        // Cuộn lên đầu trang làm việc
         document.querySelector('.content-area').scrollTop = 0;
       }
 
-      // Sự kiện khi bấm trên Sidebar
-      navItems.forEach(item => {
-        item.addEventListener("click", () => {
-          const target = item.getAttribute("data-target");
-          const label = item.textContent.trim();
-          switchFocusView(target, label);
+      // Bấm vào tên thương hiệu topbar để về Tổng quan
+      if (brandHomeBtn) {
+        brandHomeBtn.addEventListener("click", () => {
+          switchFocusView("overview-view", "Tổng quan");
         });
-      });
+      }
 
-      // Sự kiện khi bấm vào các thư mục con hoặc tag trong trang Tổng quan
+      // Bấm các tag/nút mở thư mục con
       subFolderBtns.forEach(btn => {
         btn.addEventListener("click", () => {
           const target = btn.getAttribute("data-target");
@@ -745,10 +674,12 @@
         });
       });
 
-      // Nút quay lại trang Tổng quan (Thư mục mẹ)
-      backBtn.addEventListener("click", () => {
-        switchFocusView("overview-view", "Tổng quan");
-      });
+      // Nút quay lại trang Tổng quan
+      if (backBtn) {
+        backBtn.addEventListener("click", () => {
+          switchFocusView("overview-view", "Tổng quan");
+        });
+      }
     });
   </script>
 </body>
