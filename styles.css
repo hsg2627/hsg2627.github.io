@@ -3079,6 +3079,157 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-width: 2px;
 }
 
+/* DOLOC TOWN 150% SCALED PIXEL STYLES */
+.pixel-hud-bar {
+  background: #1e1435;
+  border: 3px solid #000000;
+  box-shadow: inset -3px -3px 0 #0f0a1c, inset 3px 3px 0 #3d2b63, 4px 4px 0 #000000;
+  border-radius: 8px;
+  padding: 14px 22px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.pixel-tag {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  padding: 8px 14px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  display: inline-block;
+  text-shadow: 1px 1px #000000;
+  line-height: 1.4;
+}
+
+.pixel-box {
+  background: #261c38;
+  border: 3px solid #000000;
+  box-shadow: inset -3px -3px 0 #150f24, inset 3px 3px 0 #43335e, 4px 4px 0 #000000;
+  border-radius: 8px;
+  color: #ffffff;
+}
+
+.pixel-card {
+  background: #261c38;
+  border: 3px solid #000000;
+  box-shadow: inset -3px -3px 0 #150f24, inset 3px 3px 0 #43335e, 4px 4px 0 #000000;
+  border-radius: 10px;
+  padding: 24px;
+  transition: all 0.2s ease;
+}
+
+.pixel-card:hover {
+  transform: translateY(-4px);
+  box-shadow: inset -3px -3px 0 #150f24, inset 3px 3px 0 #634d8a, 6px 6px 0 #000000;
+}
+
+.pixel-card-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.35rem;
+  color: #facc15;
+  margin-bottom: 16px;
+  text-shadow: 2px 2px #000000;
+  line-height: 1.6;
+}
+
+.pixel-card-desc {
+  font-family: 'Silkscreen', cursive;
+  font-size: 1.25rem;
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.pixel-btn {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  background: #22c55e;
+  color: #ffffff;
+  border: 2px solid #000000;
+  box-shadow: inset -2px -2px 0 #15803d, inset 2px 2px 0 #86efac, 2px 2px 0 #000000;
+  padding: 12px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-shadow: 1px 1px #000000;
+  transition: all 0.1s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pixel-btn:hover {
+  filter: brightness(1.15);
+  transform: scale(1.03);
+}
+
+.pixel-btn:active {
+  transform: translateY(2px);
+  box-shadow: inset 2px 2px 0 #15803d, inset -2px -2px 0 #86efac;
+}
+
+.pixel-opt-btn {
+  background: #1e1435;
+  border: 3px solid #000000;
+  box-shadow: inset -3px -3px 0 #110b21, inset 3px 3px 0 #4c3977, 3px 3px 0 #000000;
+  padding: 16px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  font-family: 'Silkscreen', cursive;
+  font-size: 1.3rem;
+  color: #ffffff;
+  transition: all 0.15s ease;
+  width: 100%;
+  user-select: none;
+  line-height: 1.6;
+}
+
+.pixel-opt-btn:hover {
+  background: #37265c;
+  border-color: #facc15;
+  color: #facc15;
+}
+
+.pixel-opt-btn.selected {
+  background: #facc15 !important;
+  color: #000000 !important;
+  font-weight: 700;
+  border-color: #000000 !important;
+  box-shadow: inset -3px -3px 0 #ca8a04, inset 3px 3px 0 #fef08a, 3px 3px 0 #000000 !important;
+}
+
+.pixel-opt-btn.correct {
+  background: #22c55e !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+  box-shadow: inset -3px -3px 0 #15803d, inset 3px 3px 0 #86efac, 3px 3px 0 #000000 !important;
+}
+
+.pixel-opt-btn.wrong {
+  background: #ef4444 !important;
+  color: #ffffff !important;
+  border-color: #000000 !important;
+  box-shadow: inset -3px -3px 0 #b91c1c, inset 3px 3px 0 #fca5a5, 3px 3px 0 #000000 !important;
+}
+
+.pixel-explain-box {
+  margin-top: 16px;
+  padding: 16px 20px;
+  background: #170f28;
+  border: 2px solid #000000;
+  border-left: 6px solid #facc15;
+  border-radius: 6px;
+  font-family: 'Silkscreen', cursive;
+  font-size: 1.25rem;
+  color: #cbd5e1;
+  display: none;
+  line-height: 1.7;
+}
+
 
 
 
