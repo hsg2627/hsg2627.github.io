@@ -3132,11 +3132,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .pixel-card-title {
   font-family: 'Silkscreen', cursive;
-  font-size: 1.25rem;
+  font-size: 1.7rem;
   font-weight: 700;
   color: #facc15;
-  margin-bottom: 16px;
-  text-shadow: 1px 1px #000000;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #000000;
   line-height: 1.65;
 }
 

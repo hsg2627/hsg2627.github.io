@@ -943,11 +943,11 @@
 
     .pixel-card-title {
       font-family: 'Silkscreen', cursive;
-      font-size: 1.25rem;
+      font-size: 1.7rem;
       font-weight: 700;
       color: #facc15;
-      margin-bottom: 16px;
-      text-shadow: 1px 1px #000000;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px #000000;
       line-height: 1.65;
     }
 
@@ -2582,7 +2582,7 @@
               });
 
               qCard.innerHTML = `
-                  <div class="pixel-card-title" style="color: #ffffff; font-size: 0.92rem;">${q.question}</div>
+                  <div class="pixel-card-title">${q.question}</div>
                   <div class="game-options-grid" id="options-${q.id}">${optionsHTML}</div>
                   <div class="pixel-explain-box" id="explain-${q.id}"><b>💡 GIẢI THÍCH CHI TIẾT:</b> ${q.explain}</div>
               `;
