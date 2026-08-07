@@ -1379,6 +1379,102 @@
       position: relative;
     }
 
+    /* GGD SIDE-BY-SIDE SPLIT MODAL STYLES */
+    .ggd-modal-box.ggd-split-modal {
+      max-width: 1300px;
+      width: 95vw;
+      height: 88vh;
+      max-height: 900px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 24px;
+      overflow: hidden;
+    }
+
+    .ggd-split-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* 50% Left Theory, 50% Right Task */
+      gap: 20px;
+      flex: 1;
+      min-height: 0; /* Critical for inner scrolling */
+      margin-top: 10px;
+    }
+
+    @media (max-width: 960px) {
+      .ggd-split-container {
+        grid-template-columns: 1fr;
+        overflow-y: auto;
+      }
+      .ggd-modal-box.ggd-split-modal {
+        height: 92vh;
+        overflow-y: auto;
+      }
+    }
+
+    .ggd-split-left-panel {
+      background: #0d071a;
+      border: 2px solid #facc15;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: inset 0 0 15px rgba(250, 204, 21, 0.08);
+    }
+
+    .ggd-split-right-panel {
+      background: #0d071a;
+      border: 2px solid #38bdf8;
+      border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      padding: 16px;
+      box-shadow: inset 0 0 15px rgba(56, 189, 248, 0.08);
+    }
+
+    .ggd-panel-header {
+      background: linear-gradient(90deg, #1b1233 0%, #2b1d4e 100%);
+      border-bottom: 2px solid #facc15;
+      padding: 10px 16px;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 9px;
+      color: #facc15;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .ggd-panel-header.right {
+      border-bottom-color: #38bdf8;
+      color: #38bdf8;
+    }
+
+    .ggd-dossier-body-scroll {
+      flex: 1;
+      overflow-y: auto;
+      padding: 18px;
+      color: #e2e8f0;
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+
+    .ggd-split-right-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      justify-content: space-between;
+    }
+
+    .ggd-modal-footer-inside {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid #241742;
+    }
+
     .ggd-modal-header {
       display: flex;
       align-items: center;
@@ -2406,16 +2502,16 @@
           </div>
         </section>
 
-        <!-- GGD TASK PLAY MODAL -->
+        <!-- GGD TASK PLAY MODAL (SIDE-BY-SIDE SPLIT PANEL) -->
         <div id="ggd-task-modal" class="ggd-modal-overlay">
-          <div class="ggd-modal-box">
+          <div class="ggd-modal-box ggd-split-modal">
             <!-- Modal Header -->
             <div class="ggd-modal-header">
               <div style="display: flex; align-items: center; gap: 12px;">
                 <span class="ggd-modal-icon" id="ggd-modal-room-icon">🧭</span>
                 <div>
                   <div class="ggd-modal-level-tag" id="ggd-modal-level-tag">LEVEL 1 • NAVIGATION ROOM</div>
-                  <h3 class="ggd-modal-title" id="ggd-modal-title">Parts of Speech</h3>
+                  <h3 class="ggd-modal-title" id="ggd-modal-title">Parts of Speech (Cadet Goose)</h3>
                 </div>
               </div>
               <button class="ggd-modal-close" onclick="closeGgdTaskModal()">✖</button>
@@ -2423,42 +2519,58 @@
 
             <!-- Modal Task HUD (Progress & Lives) -->
             <div class="ggd-task-hud">
-              <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="display: flex; align-items: center; gap: 14px;">
                 <span class="ggd-lives" id="ggd-task-lives">🪿🪿🪿</span>
                 <span style="font-family: 'Press Start 2P', cursive; font-size: 11px; color: #a5b4fc;" id="ggd-task-step-counter">TASK 1 / 5</span>
               </div>
-              <div class="ggd-task-progress-mini">
-                <div class="ggd-task-progress-mini-fill" id="ggd-task-mini-fill" style="width: 0%;"></div>
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="font-family: 'Press Start 2P', cursive; font-size: 8px; color: #94a3b8;">SECTOR PROGRESS:</span>
+                <div class="ggd-task-progress-mini">
+                  <div class="ggd-task-progress-mini-fill" id="ggd-task-mini-fill" style="width: 0%;"></div>
+                </div>
               </div>
             </div>
 
-            <!-- Theory Collapsible Dossier -->
-            <details class="ggd-dossier" id="ggd-dossier-details" open>
-              <summary class="ggd-dossier-summary">
-                📜 HỒ SƠ MẬT NGỮ PHÁP (GOOSE INTELLIGENCE FILE) <span style="font-size: 0.78rem; color: #facc15; font-weight: normal; margin-left: 8px;">[Bấm để ẩn/hiện lý thuyết]</span>
-              </summary>
-              <div class="ggd-dossier-body" id="ggd-modal-theory">
-                <!-- Theory text -->
+            <!-- SPLIT PANEL CONTAINER (SIDE-BY-SIDE) -->
+            <div class="ggd-split-container">
+              <!-- LEFT PANEL: THEORY DOSSIER -->
+              <div class="ggd-split-left-panel">
+                <div class="ggd-panel-header">
+                  <span>📜 HỒ SƠ MẬT NGỮ PHÁP (GOOSE INTELLIGENCE FILE)</span>
+                </div>
+                <div class="ggd-dossier-body-scroll" id="ggd-modal-theory">
+                  <!-- Theory text renders here -->
+                </div>
               </div>
-            </details>
 
-            <!-- Question Task Card -->
-            <div class="ggd-question-card" id="ggd-question-container">
-              <div class="ggd-question-text" id="ggd-q-text">Loading question...</div>
-              <div class="ggd-options-grid" id="ggd-q-options"></div>
-              
-              <!-- Instant Feedback Box -->
-              <div class="ggd-feedback-box" id="ggd-q-feedback" style="display: none;">
-                <div id="ggd-feedback-title" style="font-weight: 800; font-family: 'Press Start 2P', cursive; font-size: 11px; margin-bottom: 6px;"></div>
-                <div id="ggd-feedback-explain" style="font-size: 0.9rem; line-height: 1.5;"></div>
+              <!-- RIGHT PANEL: 1-TASK-ONLY AREA -->
+              <div class="ggd-split-right-panel">
+                <div class="ggd-panel-header right">
+                  <span>🎯 THỬ THÁCH NHIỆM VỤ (MISSION TASK)</span>
+                </div>
+
+                <div class="ggd-split-right-content">
+                  <!-- Single Task Question Card -->
+                  <div class="ggd-question-card" id="ggd-question-container" style="margin-bottom: 0;">
+                    <div class="ggd-question-text" id="ggd-q-text">Loading question...</div>
+                    <div class="ggd-options-grid" id="ggd-q-options"></div>
+                    
+                    <!-- Instant Feedback Box -->
+                    <div class="ggd-feedback-box" id="ggd-q-feedback" style="display: none; margin-top: 14px;">
+                      <div id="ggd-feedback-title" style="font-weight: 800; font-family: 'Press Start 2P', cursive; font-size: 10px; margin-bottom: 6px;"></div>
+                      <div id="ggd-feedback-explain" style="font-size: 0.88rem; line-height: 1.5;"></div>
+                    </div>
+                  </div>
+
+                  <!-- Modal Footer Controls -->
+                  <div class="ggd-modal-footer-inside">
+                    <button class="ggd-btn secondary" onclick="closeGgdTaskModal()">Rút Lui 🚶</button>
+                    <button class="ggd-btn primary" id="ggd-next-btn" onclick="nextGgdQuestion()" style="display: none;">Nhiệm Vụ Tiếp Theo ➔</button>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <!-- Modal Footer Controls -->
-            <div class="ggd-modal-footer">
-              <button class="ggd-btn secondary" onclick="closeGgdTaskModal()">Rút Lui 🚶</button>
-              <button class="ggd-btn primary" id="ggd-next-btn" onclick="nextGgdQuestion()" style="display: none;">Nhiệm Vụ Tiếp Theo ➔</button>
-            </div>
           </div>
         </div>
 
@@ -4432,10 +4544,6 @@
         document.getElementById("ggd-modal-level-tag").textContent = `LEVEL ${lvl.id} • ${lvl.room.toUpperCase()}`;
         document.getElementById("ggd-modal-title").textContent = `${lvl.name} (${lvl.role})`;
         document.getElementById("ggd-modal-theory").innerHTML = lvl.theory;
-
-        // Reset details state
-        const details = document.getElementById("ggd-dossier-details");
-        if (details) details.open = true;
 
         renderCurrentQuestion();
         
