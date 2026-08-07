@@ -508,16 +508,42 @@ function updateUrlHash(tabId, subTabId) {
 
 function parseAndLoadHashRoute() {
   const rawHash = window.location.hash.replace(/^#\/?/, '').trim();
-  if (!rawHash) return;
+  if (!rawHash || rawHash === 'home') {
+    goHome();
+    return;
+  }
+
+  if (rawHash === 'hsg12' || rawHash === 'hsg-12' || rawHash === 'hsg_12') {
+    navigateTo('HSG 12');
+    return;
+  } else if (rawHash === 'english10' || rawHash === 'english-10' || rawHash === 'english_10') {
+    navigateTo('ENGLISH 10');
+    return;
+  }
 
   const parts = rawHash.split('/');
-  const tabId = parts[0];
-  const subTabId = parts[1] || null;
-
-  if (tabId) {
-    openSkillTab(tabId, subTabId, true);
+  const target = parts[parts.length - 1];
+  if (target) {
+    navigateTo(target);
   }
 }
+
+// DOM Initialization
+document.addEventListener("DOMContentLoaded", () => {
+  try { initSubTabs(); } catch (e) { console.error("SubTabs error:", e); }
+  try { initFilterTabs(); } catch (e) { console.error("FilterTabs error:", e); }
+  try { renderFolders('home_overview'); } catch (e) { console.error("RenderFolders error:", e); }
+  try { initQuiz(); } catch (e) { console.error("Quiz error:", e); }
+  try { initVocabulary(); } catch (e) { console.error("Vocab error:", e); }
+  try { initFovModule(); } catch (e) { console.error("FOV error:", e); }
+  try { initListeningPractice(); } catch (e) { console.error("Listening error:", e); }
+
+  if (window.location.hash) {
+    setTimeout(parseAndLoadHashRoute, 150);
+  } else {
+    goHome();
+  }
+});
 
 // ====== DỮ LIỆU THƯ MỤC (FOLDER SYSTEM) ======
 // ====== DỮ LIỆU THƯ MỤC (FOLDER SYSTEM) ======
@@ -759,21 +785,7 @@ window.addEventListener("hashchange", () => {
   parseAndLoadHashRoute();
 });
 
-// DOM Initialization
-document.addEventListener("DOMContentLoaded", () => {
-  try { initNavigation(); } catch (e) { console.error("Navigation error:", e); }
-  try { initSubTabs(); } catch (e) { console.error("SubTabs error:", e); }
-  try { initFilterTabs(); } catch (e) { console.error("FilterTabs error:", e); }
-  try { renderFolders('all'); } catch (e) { console.error("RenderFolders error:", e); }
-  try { initQuiz(); } catch (e) { console.error("Quiz error:", e); }
-  try { initVocabulary(); } catch (e) { console.error("Vocab error:", e); }
-  try { initFovModule(); } catch (e) { console.error("FOV error:", e); }
-  try { initListeningPractice(); } catch (e) { console.error("Listening error:", e); }
 
-  if (window.location.hash) {
-    setTimeout(parseAndLoadHashRoute, 150);
-  }
-});
 
 // Global TTS Speech Helper
 function speakWord(text) {
