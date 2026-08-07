@@ -599,6 +599,12 @@ function handleQuickSearch(query) {
   if (clearBtn) {
     clearBtn.style.display = cleanQuery ? 'block' : 'none';
   }
+  
+  const mainCategories = document.querySelector('.main-categories-section');
+  if (mainCategories) {
+    mainCategories.style.display = cleanQuery ? 'none' : 'block';
+  }
+
   openSkillTab('home');
   renderFolders(cleanQuery || 'all');
 }
@@ -608,27 +614,47 @@ function clearQuickSearch() {
   if (input) input.value = '';
   const clearBtn = document.getElementById('clearSearchBtn');
   if (clearBtn) clearBtn.style.display = 'none';
-  renderFolders('all');
+  
+  const mainCategories = document.querySelector('.main-categories-section');
+  if (mainCategories) mainCategories.style.display = 'block';
+
+  renderFolders('home_overview');
 }
 
-function renderFolders(filter = 'all') {
+function renderFolders(filter = 'home_overview') {
   const grid = document.getElementById('folderGrid');
+  const mainCategories = document.querySelector('.main-categories-section');
+  const titleEl = document.getElementById('folderTitle');
+  const countEl = document.getElementById('itemCount');
   if (!grid) return;
+
+  if (filter === 'home_overview') {
+    if (mainCategories) mainCategories.style.display = 'block';
+    if (titleEl) titleEl.textContent = '📁 Thư Mục Học Liệu';
+    grid.style.display = 'none';
+    if (countEl) countEl.style.display = 'none';
+    return;
+  }
+
+  // Show sub-folder grid and hide main category cards when entering a category or searching
+  if (mainCategories) mainCategories.style.display = 'none';
+  grid.style.display = 'grid';
+  if (countEl) countEl.style.display = 'inline-block';
 
   let filtered = folderData;
   if (filter !== 'all') {
     filtered = folderData.filter(f => 
+      f.type.toLowerCase() === filter.toLowerCase() ||
       f.type.toLowerCase().includes(filter.toLowerCase()) || 
       f.name.toLowerCase().includes(filter.toLowerCase()) ||
       f.path.toLowerCase().includes(filter.toLowerCase())
     );
   }
 
-  const countEl = document.getElementById('itemCount');
-  if (countEl) countEl.textContent = filtered.length + ' thư mục';
+  if (countEl) countEl.textContent = filtered.length + ' thư mục con';
 
   if (filtered.length === 0) {
-    grid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:40px; color: var(--text-sub);">
+    grid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:40px; color: var(--palette-muted);">
       <span style="font-size:48px;">🔍</span><br>Không tìm thấy thư mục phù hợp.
     </div>`;
     return;
@@ -642,7 +668,7 @@ function renderFolders(filter = 'all') {
       <div class="folder-desc">${item.desc}</div>
       <div class="folder-meta">
         <span class="type-badge">${item.type}</span>
-        <span class="arrow">Mở thư mục →</span>
+        <span class="arrow">Mở học liệu →</span>
       </div>
     </div>
   `).join('');
@@ -668,8 +694,25 @@ function updateBreadcrumb(path) {
   if (breadcrumbEl) breadcrumbEl.innerHTML = breadHtml;
 }
 
+function goHome() {
+  openSkillTab('home');
+  updateUrlHash('home');
+  const breadcrumbEl = document.getElementById('breadcrumb');
+  if (breadcrumbEl) {
+    breadcrumbEl.innerHTML = `
+      <span onclick="goHome()">Home</span>
+      <span class="separator">›</span>
+      <span class="current">Trang chủ</span>
+    `;
+  }
+  const titleEl = document.getElementById('folderTitle');
+  if (titleEl) titleEl.textContent = '📁 Thư Mục Học Liệu';
+  
+  renderFolders('home_overview');
+}
+
 function navigateTo(path) {
-  if (path === 'Home') {
+  if (path === 'Home' || path === 'home') {
     goHome();
     return;
   }
@@ -681,24 +724,20 @@ function navigateTo(path) {
     trackGAEvent('select_category', { category_id: 'ENGLISH_10', category_name: 'English 10' });
   }
 
-  const sidebarItem = document.querySelector(`.sidebar-item[data-nav="${path}"]`);
-  document.querySelectorAll('.sidebar-item').forEach(el => el.classList.remove('active'));
-  if (sidebarItem) {
-    sidebarItem.classList.add('active');
-  }
-
   const item = folderData.find(f => f.fullPath === path || f.name === path || f.path === path);
   if (item && item.targetTab) {
     openSkillTab(item.targetTab, item.targetSubTab);
     updateBreadcrumb(item.path);
+    updateUrlHash(item.path.replace(/\s*\/\s*/g, '/').toLowerCase());
     return;
   }
 
   openSkillTab('home');
   const titleEl = document.getElementById('folderTitle');
-  if (titleEl) titleEl.textContent = `📁 ${path}`;
+  if (titleEl) titleEl.textContent = `📁 Thư mục con: ${path}`;
 
   updateBreadcrumb(path);
+  updateUrlHash(path.replace(/\s*\/\s*/g, '/').toLowerCase());
   renderFolders(path);
 }
 
