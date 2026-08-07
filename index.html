@@ -174,9 +174,9 @@
       opacity: 1;
     }
 
-    /* HERO BANNER (SOLID CREAM BACKGROUND, SOLID NAVY TEXT) */
+    /* HERO BANNER (SOLID CREAM BACKGROUND WITH BACKGROUND_3.SVG) */
     .hero-banner {
-      background: #F7EBE1;
+      background: linear-gradient(135deg, rgba(247, 235, 225, 0.88) 0%, rgba(230, 213, 199, 0.92) 100%), url('images/Background_3.svg') center/cover no-repeat;
       color: var(--color-primary-navy);
       padding: 32px 36px;
       border-radius: 20px;
@@ -292,7 +292,15 @@
       box-shadow: 0 10px 30px rgba(40, 53, 103, 0.12);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       cursor: pointer;
-      background: #283567; /* Solid Navy Blue #283567, NO Gradients */
+      background: #283567; /* Solid Navy Blue #283567 */
+    }
+
+    .category-card.card-hsg12 {
+      background: linear-gradient(135deg, rgba(17, 24, 68, 0.75) 0%, rgba(32, 43, 102, 0.8) 50%, rgba(75, 86, 148, 0.85) 100%), url('images/Background_1.svg') center/cover no-repeat !important;
+    }
+
+    .category-card.card-english10 {
+      background: linear-gradient(135deg, rgba(17, 24, 68, 0.7) 0%, rgba(35, 44, 102, 0.75) 50%, rgba(75, 86, 148, 0.8) 100%), url('images/Background_3.svg') center/cover no-repeat !important;
     }
 
     .category-card:hover {
@@ -615,7 +623,7 @@
             </article>
 
             <!-- CARD 2: ENGLISH 10 -->
-            <article class="category-card" data-target="category-english10-view" data-label="ENGLISH 10">
+            <article class="category-card card-english10" data-target="category-english10-view" data-label="ENGLISH 10">
               <div class="card-top">
                 <img src="images/English10_logo.svg" alt="ENGLISH 10 Logo" class="card-banner-img">
                 <div class="card-info">
@@ -707,7 +715,7 @@
         <!-- ==================== VIEW 3: ENGLISH 10 CATEGORY VIEW ==================== -->
         <section id="category-english10-view" class="view-panel">
           <!-- Featured Banner for ENGLISH 10 -->
-          <article class="category-card" style="margin-bottom: 2rem; cursor: default;">
+          <article class="category-card card-english10" style="margin-bottom: 2rem; cursor: default;">
             <div class="card-top">
               <img src="images/English10_logo.svg" alt="ENGLISH 10 Logo" class="card-banner-img" style="width: 140px; height: 100px;">
               <div class="card-info">
