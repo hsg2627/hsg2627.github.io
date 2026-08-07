@@ -689,9 +689,20 @@
             <div>
               <span class="subtitle" style="background: #FAF7BB; color: #283567; font-weight: 800; padding: 4px 12px; border-radius: 20px; display: inline-block; margin-bottom: 8px;">DATA ANALYTICS HUB</span>
               <h1 style="color: #ffffff; font-size: 1.85rem; margin: 4px 0;">Dashboard Theo Dõi Dữ Liệu 2 Thư Mục Mẹ</h1>
-              <p style="color: #e2e8f0; font-size: 0.92rem; margin-top: 6px;">
+              <p style="color: #e2e8f0; font-size: 0.92rem; margin-top: 6px; margin-bottom: 12px;">
                 Theo dõi chi tiết tiến độ hoàn thành, kết quả luyện tập & mức độ ghi nhớ từ vựng giữa <strong>HSG 12</strong> và <strong>ENGLISH 10</strong>.
               </p>
+              <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;">
+                <button id="dash-btn-config-url" style="background: #059669; color: #ffffff; border: none; padding: 7px 16px; border-radius: 8px; font-weight: 700; font-size: 0.82rem; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); transition: all 0.2s;">
+                  ⚙️ Cấu Hình Google Sheets API
+                </button>
+                <button id="dash-btn-refresh" style="background: #ffffff; color: #283567; border: none; padding: 7px 16px; border-radius: 8px; font-weight: 700; font-size: 0.82rem; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.2); transition: all 0.2s;">
+                  🔄 Làm Mới Dữ Liệu
+                </button>
+                <button id="dash-btn-export" style="background: rgba(255,255,255,0.18); color: #ffffff; border: 1px solid rgba(255,255,255,0.4); padding: 7px 16px; border-radius: 8px; font-weight: 700; font-size: 0.82rem; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: all 0.2s;">
+                  📥 Xuất Báo Cáo
+                </button>
+              </div>
             </div>
           </article>
 
@@ -1045,17 +1056,32 @@
           </header>
 
           <div class="task-body">
-            <div class="skill-card">
-              <h3>🎯 Main Idea & Subject Identification</h3>
-              <div class="meta-info">📄 2 Passages | ❓ 4 Practice Questions</div>
+            <div class="skill-card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <h3 style="margin-bottom: 4px;">🎯 Main Idea & Subject Identification</h3>
+                <div class="meta-info">📄 2 Passages | ❓ 4 Practice Questions</div>
+              </div>
+              <button onclick="testSubmitResult('HSG 12', 'Reading Comprehension', 'Quiz', 90)" style="background: #283567; color: #ffffff; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer;">
+                📝 Nộp Điểm Bài Làm →
+              </button>
             </div>
-            <div class="skill-card">
-              <h3>🔤 Vocabulary & Pronoun Reference</h3>
-              <div class="meta-info">📄 2 Passages | ❓ 4 Practice Questions</div>
+            <div class="skill-card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <h3 style="margin-bottom: 4px;">🔤 Vocabulary & Pronoun Reference</h3>
+                <div class="meta-info">📄 2 Passages | ❓ 4 Practice Questions</div>
+              </div>
+              <button onclick="testSubmitResult('HSG 12', 'Reading Comprehension', 'Exercise', 85)" style="background: #283567; color: #ffffff; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer;">
+                📝 Nộp Điểm Bài Làm →
+              </button>
             </div>
-            <div class="skill-card">
-              <h3>⚡ Fact & Negative Fact Questions</h3>
-              <div class="meta-info">📄 3 Passages | ❓ 6 Practice Questions</div>
+            <div class="skill-card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <h3 style="margin-bottom: 4px;">⚡ Fact & Negative Fact Questions</h3>
+                <div class="meta-info">📄 3 Passages | ❓ 6 Practice Questions</div>
+              </div>
+              <button onclick="testSubmitResult('HSG 12', 'Reading Comprehension', 'Quiz', 95)" style="background: #283567; color: #ffffff; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer;">
+                📝 Nộp Điểm Bài Làm →
+              </button>
             </div>
           </div>
         </section>
@@ -1068,13 +1094,23 @@
           </header>
 
           <div class="task-body">
-            <div class="skill-card">
-              <h3>📝 Note-taking Strategy & Skill</h3>
-              <div class="meta-info">🎧 1 Audio Interview | ❓ 5 Practice Questions</div>
+            <div class="skill-card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <h3 style="margin-bottom: 4px;">📝 Note-taking Strategy & Skill</h3>
+                <div class="meta-info">🎧 1 Audio Interview | ❓ 5 Practice Questions</div>
+              </div>
+              <button onclick="testSubmitResult('HSG 12', 'Listening Skills', 'Exercise', 80)" style="background: #283567; color: #ffffff; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer;">
+                📝 Nộp Điểm Bài Làm →
+              </button>
             </div>
-            <div class="skill-card">
-              <h3>🎙️ CAE C1 Radio Interview with Lenny Henry</h3>
-              <div class="meta-info">🎧 Audio Player Ready | ❓ 6 Practice Questions</div>
+            <div class="skill-card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <h3 style="margin-bottom: 4px;">🎙️ CAE C1 Radio Interview with Lenny Henry</h3>
+                <div class="meta-info">🎧 Audio Player Ready | ❓ 6 Practice Questions</div>
+              </div>
+              <button onclick="testSubmitResult('HSG 12', 'Listening Skills', 'Listening Test', 88)" style="background: #283567; color: #ffffff; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer;">
+                📝 Nộp Điểm Bài Làm →
+              </button>
             </div>
           </div>
         </section>
@@ -1087,9 +1123,14 @@
           </header>
 
           <div class="task-body">
-            <div class="skill-card">
-              <h3>📚 Academic Word List (AWL) & Collocations</h3>
-              <div class="meta-info">📖 2,600+ Collocations | ⚡ Flashcards & Quiz</div>
+            <div class="skill-card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <h3 style="margin-bottom: 4px;">📚 Academic Word List (AWL) & Collocations</h3>
+                <div class="meta-info">📖 2,600+ Collocations | ⚡ Flashcards & Quiz</div>
+              </div>
+              <button onclick="testSubmitResult('HSG 12', 'Vocabulary', 'Flashcard Mastery', 92)" style="background: #283567; color: #ffffff; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer;">
+                📝 Nộp Điểm Bài Làm →
+              </button>
             </div>
           </div>
         </section>
@@ -1102,13 +1143,23 @@
           </header>
 
           <div class="task-body">
-            <div class="skill-card">
-              <h3>⏳ Unit 1: Present Simple & Present Continuous</h3>
-              <div class="meta-info">📘 Grammar Theory | ❓ 15 Practice Questions</div>
+            <div class="skill-card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <h3 style="margin-bottom: 4px;">⏳ Unit 1: Present Simple & Present Continuous</h3>
+                <div class="meta-info">📘 Grammar Theory | ❓ 15 Practice Questions</div>
+              </div>
+              <button onclick="testSubmitResult('ENGLISH 10', 'Grammar', 'Grammar Exercise', 95)" style="background: #059669; color: #ffffff; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer;">
+                📝 Nộp Điểm Bài Làm →
+              </button>
             </div>
-            <div class="skill-card">
-              <h3>🔄 Unit 2: Passive Voice with Modals</h3>
-              <div class="meta-info">📘 Grammar Theory | ❓ 15 Practice Questions</div>
+            <div class="skill-card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <h3 style="margin-bottom: 4px;">🔄 Unit 2: Passive Voice with Modals</h3>
+                <div class="meta-info">📘 Grammar Theory | ❓ 15 Practice Questions</div>
+              </div>
+              <button onclick="testSubmitResult('ENGLISH 10', 'Grammar', 'Grammar Exercise', 90)" style="background: #059669; color: #ffffff; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer;">
+                📝 Nộp Điểm Bài Làm →
+              </button>
             </div>
           </div>
         </section>
@@ -1121,9 +1172,14 @@
           </header>
 
           <div class="task-body">
-            <div class="skill-card">
-              <h3>🏠 Unit 1: Family Life Vocabulary</h3>
-              <div class="meta-info">🔤 30 Word Items | ⚡ Practice Arena</div>
+            <div class="skill-card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <h3 style="margin-bottom: 4px;">🏠 Unit 1: Family Life Vocabulary</h3>
+                <div class="meta-info">🔤 30 Word Items | ⚡ Practice Arena</div>
+              </div>
+              <button onclick="testSubmitResult('ENGLISH 10', 'Vocabulary', 'Vocab Quiz', 96)" style="background: #059669; color: #ffffff; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer;">
+                📝 Nộp Điểm Bài Làm →
+              </button>
             </div>
           </div>
         </section>
@@ -1136,9 +1192,14 @@
           </header>
 
           <div class="task-body">
-            <div class="skill-card">
-              <h3>📝 Midterm 1 Practice Test (Standard 60 Mins)</h3>
-              <div class="meta-info">⏱️ 40 Questions | 🏆 Automatic Scoring</div>
+            <div class="skill-card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <h3 style="margin-bottom: 4px;">📝 Midterm 1 Practice Test (Standard 60 Mins)</h3>
+                <div class="meta-info">⏱️ 40 Questions | 🏆 Automatic Scoring</div>
+              </div>
+              <button onclick="testSubmitResult('ENGLISH 10', 'Practice Test', 'Full Test', 88)" style="background: #059669; color: #ffffff; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer;">
+                📝 Nộp Điểm Bài Làm →
+              </button>
             </div>
           </div>
         </section>
@@ -1410,37 +1471,42 @@
       }
 
       // =====================================================================
-      // GOOGLE SHEETS INTEGRATION
+      // GOOGLE SHEETS INTEGRATION & SCRIPT URL MANAGEMENT
       // =====================================================================
-      // ⚠️ HƯỚNG DẪN: Sau khi tạo Google Apps Script Web App,
-      //    thay thế URL bên dưới bằng URL thật của bạn.
-      const GOOGLE_SCRIPT_URL = "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
+      function getGoogleScriptUrl() {
+        return localStorage.getItem("ei_google_script_url") || "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
+      }
+
+      function setGoogleScriptUrl(url) {
+        if (url) {
+          localStorage.setItem("ei_google_script_url", url.trim());
+        } else {
+          localStorage.removeItem("ei_google_script_url");
+        }
+      }
 
       /**
        * Gửi dữ liệu học tập lên Google Sheets
-       * @param {string} parentFolder - "HSG 12" hoặc "ENGLISH 10"
-       * @param {string} subFolder - Tên phân môn con
-       * @param {string} activityType - "Quiz" | "Flashcard" | "Exercise"
-       * @param {number} score - Điểm số (0-100)
-       * @param {string} note - Ghi chú thêm (tùy chọn)
        */
       async function submitToGoogleSheets(parentFolder, subFolder, activityType, score, note = "") {
         const studentName = getStudentName();
         if (!studentName) {
-          alert("⚠️ Vui lòng nhập tên của bạn trước khi nộp bài!");
+          alert("⚠️ Vui lòng nhập tên của bạn ở góc trên bên phải trước khi làm bài!");
           showNameForm();
           return false;
         }
 
-        if (GOOGLE_SCRIPT_URL === "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE") {
-          console.log("📊 [Demo] Dữ liệu sẽ được gửi khi cấu hình Google Apps Script URL:", {
+        const scriptUrl = getGoogleScriptUrl();
+
+        if (!scriptUrl || scriptUrl === "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE") {
+          console.log("📊 [Demo Mode] Dữ liệu học sinh chưa gửi lên Sheets do chưa nhập Web App URL:", {
             studentName, parentFolder, subFolder, activityType, score, note
           });
           return true;
         }
 
         try {
-          await fetch(GOOGLE_SCRIPT_URL, {
+          await fetch(scriptUrl, {
             method: "POST",
             mode: "no-cors",
             headers: { "Content-Type": "application/json" },
@@ -1456,14 +1522,72 @@
           console.log("✅ Đã gửi dữ liệu lên Google Sheets thành công!");
           return true;
         } catch (err) {
-          console.error("❌ Lỗi gửi dữ liệu:", err);
+          console.error("❌ Lỗi gửi dữ liệu lên Google Sheets:", err);
           return false;
         }
       }
 
-      // Đăng ký hàm toàn cục để các module quiz/flashcard khác có thể gọi
+      // Giả lập thử nghiệm nộp điểm bài tập/quiz
+      window.testSubmitResult = async function(parentFolder, subFolder, activityType, defaultScore) {
+        const name = getStudentName();
+        if (!name) {
+          alert("⚠️ Vui lòng nhập tên học sinh của bạn ở góc trên bên phải trước!");
+          showNameForm();
+          return;
+        }
+
+        const scriptUrl = getGoogleScriptUrl();
+        const isConfigured = scriptUrl && scriptUrl !== "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
+
+        const userScore = prompt(
+          `📝 NỘP BÀI TẬP / QUIZ\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n👤 Học sinh: ${name}\n📌 Thư mục: ${parentFolder} / ${subFolder}\n⚡ Loại bài: ${activityType}\n\nNhập điểm số đạt được (từ 0 đến 100):`,
+          defaultScore || "85"
+        );
+
+        if (userScore === null) return;
+
+        const numScore = parseInt(userScore, 10);
+        if (isNaN(numScore) || numScore < 0 || numScore > 100) {
+          alert("⚠️ Vui lòng nhập điểm số hợp lệ từ 0 đến 100!");
+          return;
+        }
+
+        const success = await submitToGoogleSheets(parentFolder, subFolder, activityType, numScore, "Nộp bài trực tiếp từ trang học phần");
+
+        if (success) {
+          if (isConfigured) {
+            alert(`🎉 ĐÃ NỘP BÀI THÀNH CÔNG LÊN GOOGLE SHEETS!\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n👤 Tên học sinh: ${name}\n📂 Thư mục: ${parentFolder}\n📖 Phân môn: ${subFolder}\n🎯 Điểm số: ${numScore}/100\n\nDữ liệu đã được lưu trực tiếp vào bảng tính Google Sheets của Giáo Viên!`);
+          } else {
+            alert(`✅ ĐÃ LƯU KẾT QUẢ THỬ NGHIỆM!\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n👤 Tên học sinh: ${name}\n📂 Thư mục: ${parentFolder}\n📖 Phân môn: ${subFolder}\n🎯 Điểm số: ${numScore}/100\n\n💡 Ghi chú: Hãy cài đặt URL Google Apps Script trong phần Dashboard để tự động ghi dữ liệu vào Google Sheets thật!`);
+          }
+        }
+      };
+
+      // Đăng ký hàm toàn cục
       window.submitToGoogleSheets = submitToGoogleSheets;
       window.getStudentName = getStudentName;
+      window.getGoogleScriptUrl = getGoogleScriptUrl;
+      window.setGoogleScriptUrl = setGoogleScriptUrl;
+
+      // Nút cấu hình Google Script URL trong Dashboard (nếu có)
+      const configUrlBtn = document.getElementById("dash-btn-config-url");
+      if (configUrlBtn) {
+        configUrlBtn.addEventListener("click", () => {
+          const currentUrl = getGoogleScriptUrl();
+          const newUrl = prompt(
+            "⚙️ CẤU HÌNH GOOGLE APPS SCRIPT WEB APP URL\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nDán Web App URL thu được ở Bước 1.2 vào đây:\n(Ví dụ: https://script.google.com/macros/s/AKfycb.../exec)",
+            currentUrl === "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE" ? "" : currentUrl
+          );
+          if (newUrl !== null) {
+            setGoogleScriptUrl(newUrl);
+            if (newUrl.trim()) {
+              alert("✅ Đã lưu Google Apps Script Web App URL thành công! Mọi bài nộp của học sinh từ bây giờ sẽ được gửi trực tiếp về Google Sheets.");
+            } else {
+              alert("ℹ️ Đã xóa URL. Hệ thống đang ở chế độ Thử nghiệm (Demo).");
+            }
+          }
+        });
+      }
 
     });
   </script>
