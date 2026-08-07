@@ -2844,14 +2844,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ordering-item {
-  background: #f8fafc;
-  border: 1px solid #cbd5e1;
-  padding: 10px 14px;
-  margin: 6px 0;
+  background: #170f28;
+  border: 2px solid #3d2b63;
+  padding: 14px 18px;
+  margin: 10px 0;
   border-radius: 8px;
-  font-size: 0.9rem;
-  color: #1e293b;
-  line-height: 1.5;
+  font-family: 'Silkscreen', cursive;
+  font-size: 1.1rem;
+  color: #ffffff;
+  line-height: 1.65;
+  display: block;
+  word-wrap: break-word;
 }
 
 /* GAMIFIED ARENA STYLES */
@@ -3128,12 +3131,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pixel-card-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: 1.35rem;
+  font-family: 'Silkscreen', cursive;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: #facc15;
   margin-bottom: 16px;
-  text-shadow: 2px 2px #000000;
-  line-height: 1.6;
+  text-shadow: 1px 1px #000000;
+  line-height: 1.65;
 }
 
 .pixel-card-desc {
