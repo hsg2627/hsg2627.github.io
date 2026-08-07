@@ -647,28 +647,24 @@ function clearQuickSearch() {
   renderFolders('home_overview');
 }
 
-function renderFolders(filter = 'home_overview') {
+function renderFolders(filter = 'all') {
   const grid = document.getElementById('folderGrid');
   const mainCategories = document.querySelector('.main-categories-section');
   const titleEl = document.getElementById('folderTitle');
   const countEl = document.getElementById('itemCount');
   if (!grid) return;
 
-  if (filter === 'home_overview') {
-    if (mainCategories) mainCategories.style.display = 'block';
-    if (titleEl) titleEl.textContent = '📁 Thư Mục Học Liệu';
-    grid.style.display = 'none';
-    if (countEl) countEl.style.display = 'none';
-    return;
+  // Always keep 2 main parent category cards visible on index.html unless searching
+  if (mainCategories) {
+    const searchInput = document.getElementById('quickSearchInput');
+    const hasSearch = searchInput && searchInput.value.trim().length > 0;
+    mainCategories.style.display = hasSearch ? 'none' : 'block';
   }
 
-  // Show sub-folder grid and hide main category cards when entering a category or searching
-  if (mainCategories) mainCategories.style.display = 'none';
   grid.style.display = 'grid';
-  if (countEl) countEl.style.display = 'inline-block';
 
   let filtered = folderData;
-  if (filter !== 'all') {
+  if (filter !== 'all' && filter !== 'home_overview') {
     filtered = folderData.filter(f => 
       f.type.toLowerCase() === filter.toLowerCase() ||
       f.type.toLowerCase().includes(filter.toLowerCase()) || 
@@ -677,7 +673,11 @@ function renderFolders(filter = 'home_overview') {
     );
   }
 
-  if (countEl) countEl.textContent = filtered.length + ' thư mục con';
+  if (titleEl) titleEl.textContent = '📁 Danh Sách Tất Cả Học Liệu';
+  if (countEl) {
+    countEl.style.display = 'inline-block';
+    countEl.textContent = filtered.length + ' thư mục';
+  }
 
   if (filtered.length === 0) {
     grid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:40px; color: var(--palette-muted);">
@@ -686,18 +686,24 @@ function renderFolders(filter = 'home_overview') {
     return;
   }
 
-  grid.innerHTML = filtered.map(item => `
-    <div class="folder-card" onclick="navigateTo('${item.fullPath}')">
-      <div class="folder-icon">${item.icon}</div>
-      <div class="folder-name">${item.name}</div>
-      <div class="folder-path">📌 ${item.path}</div>
-      <div class="folder-desc">${item.desc}</div>
-      <div class="folder-meta">
-        <span class="type-badge">${item.type}</span>
-        <span class="arrow">Mở học liệu →</span>
+  grid.innerHTML = filtered.map(item => {
+    let pageUrl = 'index.html';
+    if (item.type === 'HSG 12') pageUrl = 'hsg12.html';
+    else if (item.type === 'ENGLISH 10') pageUrl = 'english10.html';
+
+    return `
+      <div class="folder-card" onclick="window.location.href='${pageUrl}'">
+        <div class="folder-icon">${item.icon}</div>
+        <div class="folder-name">${item.name}</div>
+        <div class="folder-path">📌 ${item.path}</div>
+        <div class="folder-desc">${item.desc}</div>
+        <div class="folder-meta">
+          <span class="type-badge">${item.type}</span>
+          <span class="arrow">Mở học liệu →</span>
+        </div>
       </div>
-    </div>
-  `).join('');
+    `;
+  }).join('');
 }
 
 function updateBreadcrumb(path) {
