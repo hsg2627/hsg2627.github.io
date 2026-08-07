@@ -647,41 +647,45 @@ function clearQuickSearch() {
   renderFolders('home_overview');
 }
 
-function renderFolders(filter = 'all') {
+function renderFolders(filter = 'home_overview') {
   const grid = document.getElementById('folderGrid');
   const mainCategories = document.querySelector('.main-categories-section');
+  const titleHeader = document.querySelector('.content-header');
   const titleEl = document.getElementById('folderTitle');
   const countEl = document.getElementById('itemCount');
   if (!grid) return;
 
-  // Always keep 2 main parent category cards visible on index.html unless searching
-  if (mainCategories) {
-    const searchInput = document.getElementById('quickSearchInput');
-    const hasSearch = searchInput && searchInput.value.trim().length > 0;
-    mainCategories.style.display = hasSearch ? 'none' : 'block';
+  const searchInput = document.getElementById('quickSearchInput');
+  const hasSearch = searchInput && searchInput.value.trim().length > 0;
+
+  if (!hasSearch) {
+    if (mainCategories) mainCategories.style.display = 'block';
+    grid.style.display = 'none';
+    if (titleHeader) titleHeader.style.display = 'none';
+    return;
   }
 
+  // Searching mode
+  if (mainCategories) mainCategories.style.display = 'none';
   grid.style.display = 'grid';
+  if (titleHeader) titleHeader.style.display = 'flex';
 
-  let filtered = folderData;
-  if (filter !== 'all' && filter !== 'home_overview') {
-    filtered = folderData.filter(f => 
-      f.type.toLowerCase() === filter.toLowerCase() ||
-      f.type.toLowerCase().includes(filter.toLowerCase()) || 
-      f.name.toLowerCase().includes(filter.toLowerCase()) ||
-      f.path.toLowerCase().includes(filter.toLowerCase())
-    );
-  }
+  const cleanQuery = searchInput.value.trim().toLowerCase();
+  const filtered = folderData.filter(f => 
+    f.type.toLowerCase().includes(cleanQuery) || 
+    f.name.toLowerCase().includes(cleanQuery) ||
+    f.path.toLowerCase().includes(cleanQuery)
+  );
 
-  if (titleEl) titleEl.textContent = '📁 Danh Sách Tất Cả Học Liệu';
+  if (titleEl) titleEl.textContent = '🔍 Kết Quả Tìm Kiếm';
   if (countEl) {
     countEl.style.display = 'inline-block';
-    countEl.textContent = filtered.length + ' thư mục';
+    countEl.textContent = filtered.length + ' kết quả';
   }
 
   if (filtered.length === 0) {
     grid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:40px; color: var(--palette-muted);">
-      <span style="font-size:48px;">🔍</span><br>Không tìm thấy thư mục phù hợp.
+      <span style="font-size:48px;">🔍</span><br>Không tìm thấy học liệu phù hợp với từ khóa "${searchInput.value.trim()}".
     </div>`;
     return;
   }
