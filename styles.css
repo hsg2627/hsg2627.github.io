@@ -64,7 +64,7 @@ html {
 }
 
 body {
-  background-color: var(--bg);
+  background: url('images/Background.jpg') center / cover no-repeat fixed;
   color: var(--text-main);
   min-height: 100vh;
   display: flex;
@@ -399,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
   flex: 1;
   padding: 28px 32px;
   overflow-y: auto;
-  background: var(--bg);
+  background: transparent;
 }
 
 .content-header {
