@@ -1,1872 +1,609 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>English Insiders - Master Your English Skills</title>
-  <meta name="description" content="English Insiders - Practice English reading comprehension, listening skills, collocations, vocabulary, grammar, and more with interactive exercises.">
-  
-  <!-- Google Analytics 4 (GA4) Integration -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6MZ872R2DE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-6MZ872R2DE');
-  </script>
+  <title>English Insiders Learning Portal | HSG 12 & Tiếng Anh 10</title>
+  <meta name="description" content="Hệ thống kho học liệu Tiếng Anh chuyên sâu - Chuyên đề Đội tuyển HSG 12 & Chương trình Tiếng Anh 10 toàn diện.">
+  <meta name="keywords" content="English Insiders, HSG 12 Tiếng Anh, VSTEP, Cambridge C1, Tiếng Anh 10, Reading, Listening, Vocabulary">
+  <meta name="author" content="English Insiders Team">
+  <meta property="og:title" content="English Insiders Learning Portal">
+  <meta property="og:description" content="Kho học liệu Tiếng Anh chuyên sâu chuyên đề HSG 12 & Tiếng Anh 10.">
+  <meta property="og:image" content="images/English_Insider_Logo.svg">
+  <meta property="og:type" content="website">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Chart.js CDN for Learning Dashboard -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/English_Insider_Logo.svg">
 
-  <link rel="stylesheet" href="styles.css?v=2.0">
+  <style>
+    /* ==========================================================================
+       1. CẤU HÌNH BIẾN MÀU GỐC & FONT CHỮ SANS-SERIF
+       ========================================================================== */
+    :root {
+      --color-bg-main: #f8fafc;
+      --color-sidebar-bg: #0f172a;
+      --color-sidebar-hover: #1e293b;
+      --color-primary-blue: #2563eb;
+      --color-primary-dark: #1d4ed8;
+      --color-accent-green: #059669;
+      --color-text-dark: #0f172a;
+      --color-text-muted: #64748b;
+      --color-border: #e2e8f0;
+      --color-card-bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      /* GIỮ NGUYÊN FONT SANS-SERIF TỰ NHIÊN CỦA HỆ THỐNG WEB GỐC */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background-color: var(--color-bg-main);
+      color: var(--color-text-dark);
+      overflow: hidden;
+    }
+
+    /* ==========================================================================
+       2. SIDEBAR NAVIGATION
+       ========================================================================== */
+    .sidebar {
+      width: 270px;
+      background-color: var(--color-sidebar-bg);
+      color: #ffffff;
+      padding: 20px 16px;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+      flex-shrink: 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      padding: 0 8px;
+    }
+
+    .brand img.logo {
+      width: 36px;
+      height: 36px;
+    }
+
+    .brand span {
+      color: #ffffff;
+    }
+
+    .brand span strong {
+      color: #60a5fa;
+    }
+
+    .nav-group-label {
+      font-size: 0.72rem;
+      color: #94a3b8;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      margin: 18px 8px 8px 8px;
+      text-transform: uppercase;
+    }
+
+    .nav-item {
+      width: 100%;
+      text-align: left;
+      background: transparent;
+      border: none;
+      color: #cbd5e1;
+      padding: 10px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-item:hover, .nav-item.active {
+      background-color: var(--color-sidebar-hover);
+      color: #ffffff;
+    }
+
+    .nav-item.active {
+      border-left: 3px solid var(--color-primary-blue);
+    }
+
+    .nav-item.sub-item {
+      padding-left: 28px;
+      font-size: 0.84rem;
+    }
+
+    /* ==========================================================================
+       3. MAIN CONTAINER & TOP HEADER
+       ========================================================================== */
+    .main-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .top-header {
+      height: 64px;
+      background-color: var(--color-card-bg);
+      border-bottom: 1px solid var(--color-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 28px;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .back-btn {
+      background-color: #eff6ff;
+      color: var(--color-primary-blue);
+      border: 1px solid #bfdbfe;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: all 0.2s ease;
+    }
+
+    .back-btn:hover {
+      background-color: var(--color-primary-blue);
+      color: #ffffff;
+    }
+
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .crumb-current {
+      color: var(--color-primary-blue);
+      font-weight: 600;
+    }
+
+    /* ==========================================================================
+       4. WORKSPACE PANELS & SINGLE-TASK FOCUS CONTROL
+       ========================================================================== */
+    .content-area {
+      flex: 1;
+      padding: 32px;
+      overflow-y: auto;
+    }
+
+    .view-panel {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    .view-panel.active {
+      display: block;
+      opacity: 1;
+    }
+
+    /* HERO BANNER GỐC */
+    .hero-banner {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #ffffff;
+      padding: 32px;
+      border-radius: 12px;
+      margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .hero-banner img {
+      width: 64px;
+      height: 64px;
+    }
+
+    .hero-banner .subtitle {
+      font-size: 0.8rem;
+      color: #60a5fa;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .hero-banner h1 {
+      font-size: 1.6rem;
+      margin: 4px 0 6px 0;
+    }
+
+    .hero-banner p {
+      color: #94a3b8;
+      font-size: 0.95rem;
+    }
+
+    /* CATEGORY CARDS GRID */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .category-card {
+      background: var(--color-card-bg);
+      padding: 28px;
+      border-radius: 12px;
+      border: 1px solid var(--color-border);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+
+    .card-header-info {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .card-header-info img {
+      width: 48px;
+      height: 48px;
+    }
+
+    .card-tag {
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .tag-blue { color: var(--color-primary-blue); }
+    .tag-green { color: var(--color-accent-green); }
+
+    .card-desc {
+      color: var(--color-text-muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .sub-folders {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .btn-subfolder {
+      text-align: left;
+      padding: 12px 16px;
+      background-color: #f8fafc;
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--color-text-dark);
+      transition: all 0.2s ease;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn-subfolder:hover {
+      background-color: var(--color-primary-blue);
+      color: #ffffff;
+      border-color: var(--color-primary-blue);
+    }
+
+    /* TASK VIEW FOCUS STYLING */
+    .task-header {
+      margin-bottom: 24px;
+    }
+
+    .task-tag {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--color-primary-blue);
+    }
+
+    .task-header h2 {
+      font-size: 1.6rem;
+      margin: 6px 0;
+    }
+
+    .task-body {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .skill-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid var(--color-border);
+    }
+
+    .skill-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .skill-card p {
+      color: var(--color-text-muted);
+      font-size: 0.92rem;
+      margin-bottom: 12px;
+    }
+
+    .meta-info {
+      font-size: 0.82rem;
+      color: #64748b;
+      font-weight: 600;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- ====== SIDEBAR ====== -->
+  <!-- SIDEBAR NAVIGATION -->
   <aside class="sidebar">
-    <div class="sidebar-logo" onclick="goHome()">
-      <img src="images/English_Insider_Logo.svg" alt="English Insiders Logo" class="sidebar-brand-img">
-      English<span>Insiders</span>
+    <div class="brand">
+      <img src="images/English_Insider_Logo.svg" alt="English Insiders Logo" class="logo">
+      <span>English<strong>Insiders</strong></span>
     </div>
 
-    <div class="sidebar-section">
-      <div class="sidebar-section-title">📂 Điều hướng chính</div>
-      <div class="sidebar-item active" data-nav="Home" onclick="navigateTo('Home')">
+    <nav class="nav-menu" aria-label="Main Navigation">
+      <div class="nav-group-label">📂 Điều hướng chính</div>
+      <button class="nav-item active" data-target="overview-view">
         <span class="icon">🏠</span> Tổng quan
-      </div>
-      <div class="sidebar-item" data-nav="HSG 12" onclick="navigateTo('HSG 12')">
-        <span class="icon">📚</span> HSG 12
-      </div>
-      <div class="sidebar-item" data-nav="ENGLISH 10" onclick="navigateTo('ENGLISH 10')">
-        <span class="icon">📖</span> ENGLISH 10
-      </div>
-      <div class="sidebar-item" data-nav="Academic" onclick="navigateTo('Academic')">
-        <span class="icon">🎓</span> Academic (B2-C2)
-      </div>
-    </div>
+      </button>
 
-    <div class="sidebar-divider"></div>
+      <div class="nav-group-label">📚 HSG 12</div>
+      <button class="nav-item sub-item" data-target="task-hsg12-reading">
+        <span class="icon">📖</span> Reading Comprehension
+      </button>
+      <button class="nav-item sub-item" data-target="task-hsg12-listening">
+        <span class="icon">🎧</span> Listening Skills
+      </button>
 
-    <div class="sidebar-section">
-      <div class="sidebar-section-title">⚡ Tiện ích</div>
-      <div class="sidebar-item" data-nav="Vocabulary in Use" onclick="navigateTo('Vocabulary')">
+      <div class="nav-group-label">📖 ENGLISH 10</div>
+      <button class="nav-item sub-item" data-target="task-e10-grammar">
+        <span class="icon">📝</span> Grammar
+      </button>
+      <button class="nav-item sub-item" data-target="task-e10-vocab">
+        <span class="icon">🔤</span> Vocabulary
+      </button>
+
+      <div class="nav-group-label">⚡ Tiện ích</div>
+      <button class="nav-item" data-target="task-utility-vocab">
         <span class="icon">📝</span> Vocabulary in Use
-      </div>
-      <div class="sidebar-item" data-nav="Listening Practice" onclick="navigateTo('Listening Skills')">
-        <span class="icon">🎧</span> Listening Practice
-      </div>
-      <div class="sidebar-item" data-nav="Dashboard" onclick="navigateTo('Learning Analytics & Dashboard')">
-        <span class="icon">📊</span> Dashboard
-      </div>
-    </div>
-
-    <div class="sidebar-divider"></div>
-
-    <div class="sidebar-section" style="margin-top: auto;">
-      <div class="sidebar-section-title">🔗 Kết nối</div>
-      <div class="social-links">
-        <a href="#">GitHub</a>
-        <a href="#">Facebook</a>
-        <a href="#">Drive</a>
-        <a href="#">Quizizz</a>
-      </div>
-      <div style="margin-top: 12px; font-size: 12px; color: var(--text-sub); padding-left: 8px;">
-        ⏱ Cập nhật: 07/08/2026
-      </div>
-    </div>
+      </button>
+    </nav>
   </aside>
 
-  <!-- ====== MAIN CONTENT ====== -->
-  <div class="main-content">
-
-    <!-- Topbar -->
-    <header class="topbar">
-      <div class="topbar-left">
-        <!-- Brand Logo & Title -->
-        <a href="index.html" class="topbar-brand" style="display: flex; align-items: center; gap: 12px; text-decoration: none; margin-right: 8px;">
-          <img src="images/English_Insider_Logo.svg" alt="English Insiders Logo" style="height: 38px; width: auto; object-fit: contain;">
-          <span style="font-size: 1.2rem; font-weight: 800; color: #0A2947; letter-spacing: -0.3px;">English Insiders</span>
-        </a>
-
-        <!-- Nút HOME -->
-        <a href="index.html" class="btn-home" style="text-decoration: none;">🏠 Home</a>
-        
-        <!-- Breadcrumb -->
-        <div class="breadcrumb" id="breadcrumb">
-          <a href="index.html" style="color: inherit; text-decoration: none;">Home</a>
-          <span class="separator">›</span>
-          <span class="current" id="currentPath">Kho học liệu</span>
-        </div>
+  <!-- MAIN WORKSPACE CONTAINER -->
+  <div class="main-wrapper">
+    
+    <!-- TOP HEADER & BREADCRUMB -->
+    <header class="top-header">
+      <div class="header-left">
+        <!-- NÚT QUAY LẠI TỰ ĐỘNG HIỆN KHI VÀO THƯ MỤC CON -->
+        <button id="back-to-home-btn" class="back-btn hidden" aria-label="Quay lại Tổng quan">
+          ← Quay lại Tổng quan
+        </button>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <span class="crumb-home">Home</span>
+          <span class="separator">/</span>
+          <span id="crumb-active" class="crumb-current">Tổng quan</span>
+        </nav>
       </div>
-      <div class="topbar-right">
-        <span class="badge">👤 Giáo viên</span>
+      <div class="header-right">
+        <span class="user-badge" style="font-size: 0.9rem; font-weight: 500;">👤 Giáo viên / Học sinh</span>
       </div>
     </header>
 
-    <!-- Content Area -->
+    <!-- CONTENT AREA (SINGLE TASK FOCUS WORKSPACE) -->
     <main class="content-area">
 
-      <!-- ==================== HOME TAB ==================== -->
-      <section id="home" class="tab-content active">
-
-        <!-- Site Hero Header Banner with Brand Logo (Background #F7EAE0, Text #0A2947) -->
-        <div class="site-hero-banner" style="background: #F7EAE0; border-radius: var(--radius-xl); padding: 2rem 2.5rem; margin-bottom: 2rem; color: #0A2947; display: flex; align-items: center; gap: 2rem; border: 2px solid rgba(10, 41, 71, 0.15); box-shadow: 0 12px 30px rgba(10, 41, 71, 0.08);">
-          <img src="images/English_Insider_Logo.svg" alt="English Insiders Logo" style="height: 90px; width: auto; object-fit: contain;">
+      <!-- VIEW 1: THƯ MỤC MẸ (SẼ ẨN HOÀN TOÀN KHI BẤM CHỌN MỤC CON) -->
+      <section id="overview-view" class="view-panel active">
+        <article class="hero-banner">
+          <img src="images/English_Insider_Logo.svg" alt="English Insiders Portal Logo">
           <div>
-            <span class="category-badge" style="background: rgba(10, 41, 71, 0.12); color: #0A2947; border: 1px solid rgba(10, 41, 71, 0.2);">English Insiders Hub</span>
-            <h1 style="font-size: 2.1rem; font-weight: 800; color: #0A2947; margin: 0.2rem 0 0.4rem 0;">English Insiders Learning Portal</h1>
-            <p style="color: #0A2947; opacity: 0.9; font-size: 0.95rem; line-height: 1.5; margin: 0;">Hệ thống kho học liệu Tiếng Anh chuyên sâu - Chuyên đề Đội tuyển HSG 12 & Chương trình Tiếng Anh 10.</p>
+            <span class="subtitle">English Insiders Hub</span>
+            <h1>English Insiders Learning Portal</h1>
+            <p>Hệ thống kho học liệu Tiếng Anh chuyên sâu - Chuyên đề Đội tuyển HSG 12 & Chương trình Tiếng Anh 10.</p>
           </div>
-        </div>
+        </article>
 
-        <!-- Quick Search Bar -->
-        <div class="search-bar-container">
-          <div class="search-input-wrapper">
-            <span class="search-icon">🔍</span>
-            <input type="text" id="quickSearchInput" placeholder="Tìm kiếm nhanh học liệu, chuyên đề, từ vựng..." oninput="handleQuickSearch(this.value)">
-            <button class="clear-search-btn" id="clearSearchBtn" onclick="clearQuickSearch()">✕</button>
-          </div>
-        </div>
-
-        <!-- Featured Category Cards Grid (Standalone Page Routing) -->
-        <div class="main-categories-section">
-          <h3 class="categories-section-title">✨ Danh Mục Học Liệu Chính</h3>
-          <div class="category-banner-grid">
-            
-            <!-- Category 1: HSG 12 -->
-            <div class="category-banner-card card-hsg12" onclick="window.location.href='hsg12.html'">
-              <div class="card-avatar-wrapper">
-                <img src="images/HSG12_logo.svg" alt="HSG 12 Logo" class="category-avatar-img">
-              </div>
-              <div class="card-info">
-                <span class="category-badge hsg12-badge">Chuyên Đề Đội Tuyển</span>
-                <h2 class="category-title">HSG 12</h2>
-                <p class="category-desc">Kho học liệu chuyên sâu dành cho đội tuyển HSG 12. Bao gồm 3 chuyên đề cốt lõi: Reading Comprehension, Listening Skills và Vocabulary.</p>
-                <div class="category-tags">
-                  <a href="hsg12.html#reading" onclick="event.stopPropagation()" style="color:inherit; text-decoration:none;"><span>📖 Reading Comprehension</span></a>
-                  <a href="hsg12.html#listening" onclick="event.stopPropagation()" style="color:inherit; text-decoration:none;"><span>🎧 Listening Skills</span></a>
-                  <a href="hsg12.html#vocab" onclick="event.stopPropagation()" style="color:inherit; text-decoration:none;"><span>📘 Vocabulary</span></a>
-                </div>
-                <a href="hsg12.html" class="category-action-btn btn-hsg12" style="text-decoration: none; display: inline-block;">Truy cập HSG 12 →</a>
+        <!-- GRID DANH MỤC CÁC THƯ MỤC MẸ -->
+        <div class="category-grid">
+          
+          <!-- CARD THƯ MỤC MẸ: HSG 12 -->
+          <article class="category-card">
+            <div class="card-header-info">
+              <img src="images/HSG12_logo.svg" alt="HSG 12 Logo">
+              <div>
+                <span class="card-tag tag-blue">Chuyên Đề Đội Tuyển</span>
+                <h2>HSG 12</h2>
               </div>
             </div>
+            <p class="card-desc">Kho học liệu chuyên sâu dành cho đội tuyển HSG 12. Bao gồm 3 chuyên đề cốt lõi: Reading Comprehension, Listening Skills và Vocabulary.</p>
 
-            <!-- Category 2: ENGLISH 10 -->
-            <div class="category-banner-card card-english10" onclick="window.location.href='english10.html'">
-              <div class="card-avatar-wrapper">
-                <img src="images/English10_logo.svg" alt="ENGLISH 10 Logo" class="category-avatar-img">
-              </div>
-              <div class="card-info">
-                <span class="category-badge english10-badge">Chương Trình Lớp 10</span>
-                <h2 class="category-title">ENGLISH 10</h2>
-                <p class="category-desc">Chương trình bài học & luyện tập toàn diện Tiếng Anh 10. Bao gồm 3 phân môn: Grammar, Vocabulary và Practice Test.</p>
-                <div class="category-tags">
-                  <a href="english10.html#grammar" onclick="event.stopPropagation()" style="color:inherit; text-decoration:none;"><span>📝 Grammar</span></a>
-                  <a href="english10.html#vocabulary" onclick="event.stopPropagation()" style="color:inherit; text-decoration:none;"><span>🔤 Vocabulary</span></a>
-                  <a href="english10.html#test" onclick="event.stopPropagation()" style="color:inherit; text-decoration:none;"><span>⏱️ Practice Test</span></a>
-                </div>
-                <a href="english10.html" class="category-action-btn btn-english10" style="text-decoration: none; display: inline-block;">Truy cập ENGLISH 10 →</a>
+            <div class="sub-folders">
+              <button class="btn-subfolder" data-target="task-hsg12-reading">
+                <span>📖 Reading Comprehension</span>
+                <span>→</span>
+              </button>
+              <button class="btn-subfolder" data-target="task-hsg12-listening">
+                <span>🎧 Listening Skills</span>
+                <span>→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- CARD THƯ MỤC MẸ: ENGLISH 10 -->
+          <article class="category-card">
+            <div class="card-header-info">
+              <img src="images/English10_logo.svg" alt="ENGLISH 10 Logo">
+              <div>
+                <span class="card-tag tag-green">Chương Trình Lớp 10</span>
+                <h2>ENGLISH 10</h2>
               </div>
             </div>
+            <p class="card-desc">Chương trình bài học & luyện tập toàn diện Tiếng Anh 10. Bao gồm các phân môn Grammar, Vocabulary và Practice Test.</p>
 
-          </div>
-        </div>
+            <div class="sub-folders">
+              <button class="btn-subfolder" data-target="task-e10-grammar">
+                <span>📝 Grammar Units</span>
+                <span>→</span>
+              </button>
+              <button class="btn-subfolder" data-target="task-e10-vocab">
+                <span>🔤 Vocabulary Practice</span>
+                <span>→</span>
+              </button>
+            </div>
+          </article>
 
-        <div class="content-header" style="margin-top: 32px; display: none;">
-          <h2 id="folderTitle">🔍 Kết Quả Tìm Kiếm</h2>
-          <span class="count" id="itemCount">0 kết quả</span>
-        </div>
-
-        <!-- Grid các ô thư mục (ẩn mặc định, chỉ hiện khi gõ tìm kiếm) -->
-        <div class="folder-grid" id="folderGrid" style="display: none;">
-          <!-- Rendered dynamically by app.js when searching -->
         </div>
       </section>
 
-    <!-- ==================== READING COMPREHENSION TAB ==================== -->
-    <section id="reading-comprehension" class="tab-content">
-      <div class="reading-box-container">
-        
-        <!-- Reading Comprehension Header -->
-        <div class="reading-box-header">
-          <button class="back-home-btn" onclick="goHome()">← Back to Home</button>
-          <div class="reading-box-badge">📚 READING COMPREHENSION</div>
-          <h2 class="reading-box-title">Reading Comprehension</h2>
-          <p class="reading-box-desc">Nội dung bài học và thực hành đọc hiểu chuyên sâu VSTEP B1-C1. Bao gồm tổng quan kỹ năng, chiến thuật làm bài, bài tập tương tác và kho từ vựng học thuật.</p>
-        </div>
+      <!-- VIEW 2: TÁC VỤ CON - READING COMPREHENSION (CHỈ HIỂN THỊ KHI ĐƯỢC CHỌN) -->
+      <section id="task-hsg12-reading" class="view-panel task-view">
+        <header class="task-header">
+          <span class="task-tag">HSG 12 / READING</span>
+          <h2>📖 Reading Comprehension Skills</h2>
+          <p>Nội dung bài học và thực hành đọc hiểu chuyên sâu VSTEP B1-C1 & Cambridge Advanced C1.</p>
+        </header>
 
-        <!-- Sub-tabs navigation inside Reading Comprehension -->
-        <div class="sub-tabs">
-          <button class="sub-tab active" data-subtab="rc-overview">Overview</button>
-          <button class="sub-tab" data-subtab="rc-strategies">5 Key Strategies</button>
-          <button class="sub-tab" data-subtab="rc-quiz">Practice Quiz</button>
-          <button class="sub-tab" data-subtab="rc-vocab">Vocab Bank</button>
-        </div>
-
-        <!-- Sub-tab 1: Overview (Skills Cards) -->
-        <div id="rc-overview" class="sub-tab-content active">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">Reading Comprehension Skills</h3>
-            <p class="sub-section-desc">Nội dung bài học đã deploy được phân loại thành các ô kỹ năng đọc hiểu chuyên sâu kèm theo bài đọc và câu hỏi thực hành tương ứng.</p>
+        <div class="task-body">
+          <div class="skill-card">
+            <h3>🎯 Main Idea & Subject Identification</h3>
+            <p>Xác định ý chính, chủ đề bao quát và tiêu đề phù hợp nhất cho đoạn văn mà không rơi vào bẫy quá hẹp (Too Narrow) hoặc quá rộng.</p>
+            <div class="meta-info">📄 2 Passages | ❓ 4 Practice Questions</div>
           </div>
-
-          <div class="skills-grid">
-            <div class="skill-box-card">
-              <div class="skill-card-top">
-                <span class="skill-badge main-idea-badge">Category: Main Idea</span>
-                <span class="skill-level">CEFR B1-C1</span>
-              </div>
-              <h3 class="skill-card-title">🎯 Main Idea & Subject Identification</h3>
-              <p class="skill-card-desc">Xác định ý chính, chủ đề bao quát và tiêu đề phù hợp nhất cho đoạn văn mà không rơi vào bẫy quá hẹp (Too Narrow) hoặc quá rộng.</p>
-              <div class="skill-meta">
-                <span>📄 2 Passages</span>
-                <span>❓ 4 Practice Questions</span>
-              </div>
-              <button class="skill-action-btn" onclick="filterQuizCategory('Main Idea')">Thực hành Kỹ năng này →</button>
-            </div>
-
-            <div class="skill-box-card">
-              <div class="skill-card-top">
-                <span class="skill-badge vocab-badge">Category: Vocabulary</span>
-                <span class="skill-level">CEFR B1-C1</span>
-              </div>
-              <h3 class="skill-card-title">🔤 Vocabulary & Pronoun Reference</h3>
-              <p class="skill-card-desc">Đoán nghĩa từ vựng trong ngữ cảnh học thuật và quy chiếu đại từ (it, they, those, this process) chính xác trong văn bản.</p>
-              <div class="skill-meta">
-                <span>📄 2 Passages</span>
-                <span>❓ 4 Practice Questions</span>
-              </div>
-              <button class="skill-action-btn" onclick="filterQuizCategory('Vocabulary')">Thực hành Kỹ năng này →</button>
-            </div>
-
-            <div class="skill-box-card">
-              <div class="skill-card-top">
-                <span class="skill-badge detail-badge">Category: Detail</span>
-                <span class="skill-level">CEFR B1-B2</span>
-              </div>
-              <h3 class="skill-card-title">🔎 Factual Details & EXCEPT Questions</h3>
-              <p class="skill-card-desc">Dò tìm từ khóa (Scan & Skim) để tìm chi tiết thực tế và loại trừ đáp án sai hoặc không được nhắc tới trong bài.</p>
-              <div class="skill-meta">
-                <span>📄 1 Passage</span>
-                <span>❓ 2 Practice Questions</span>
-              </div>
-              <button class="skill-action-btn" onclick="filterQuizCategory('Detail')">Thực hành Kỹ năng này →</button>
-            </div>
-
-            <div class="skill-box-card">
-              <div class="skill-card-top">
-                <span class="skill-badge inference-badge">Category: Inference</span>
-                <span class="skill-level">CEFR B2-C1</span>
-              </div>
-              <h3 class="skill-card-title">💡 Logical Inferences & Author's Purpose</h3>
-              <p class="skill-card-desc">Rút ra suy luận logic 100% dựa trên căn cứ văn bản và giải mã mục đích viết (Why does the author mention X?) của tác giả.</p>
-              <div class="skill-meta">
-                <span>📄 1 Passage</span>
-                <span>❓ 2 Practice Questions</span>
-              </div>
-              <button class="skill-action-btn" onclick="filterQuizCategory('Inference')">Thực hành Kỹ năng này →</button>
-            </div>
-
-            <div class="skill-box-card">
-              <div class="skill-card-top">
-                <span class="skill-badge paraphrase-badge">Category: Paraphrase</span>
-                <span class="skill-level">CEFR B2-C1</span>
-              </div>
-              <h3 class="skill-card-title">🧩 Sentence Insertion & Paraphrasing</h3>
-              <p class="skill-card-desc">Nắm vững liên kết câu (Transition signals, reference anchors) để chèn câu đúng vị trí và chọn câu diễn đạt lại chuẩn xác nhất.</p>
-              <div class="skill-meta">
-                <span>📄 1 Passage</span>
-                <span>❓ 1 Practice Question</span>
-              </div>
-              <button class="skill-action-btn" onclick="filterQuizCategory('Paraphrase')">Thực hành Kỹ năng này →</button>
-            </div>
-
-            <div class="skill-box-card">
-              <div class="skill-card-top">
-                <span class="skill-badge vocab-badge">Category: Focus on Vocab</span>
-                <span class="skill-level">CEFR B1-C2</span>
-              </div>
-              <h3 class="skill-card-title">🔤 Focus on Vocabulary & Root Words</h3>
-              <p class="skill-card-desc">Học từ vựng theo gốc từ (Roots/Affixes), từ đồng nghĩa - trái nghĩa, từ vựng trong ngữ cảnh VSTEP/IELTS/Cambridge và phương pháp Spaced Repetition.</p>
-              <div class="skill-meta">
-                <span>📖 100+ Core Vocab</span>
-                <span>❓ Practice & 3D Flashcards</span>
-              </div>
-              <button class="skill-action-btn" onclick="openSkillTab('focus-on-vocabulary')">Khám phá Thư mục này →</button>
-            </div>
+          <div class="skill-card">
+            <h3>🔤 Vocabulary & Pronoun Reference</h3>
+            <p>Đoán nghĩa từ vựng trong ngữ cảnh học thuật và quy chiếu đại từ chính xác trong văn bản.</p>
+            <div class="meta-info">📄 2 Passages | ❓ 4 Practice Questions</div>
           </div>
         </div>
+      </section>
 
-        <!-- Sub-tab 2: 5 Key Strategies -->
-        <div id="rc-strategies" class="sub-tab-content">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">5 Core Reading Strategies</h3>
-            <p class="sub-section-desc">Master the exact tactical workflows required for each VSTEP question category.</p>
-          </div>
+      <!-- VIEW 3: TÁC VỤ CON - LISTENING SKILLS (CHỈ HIỂN THỊ KHI ĐƯỢC CHỌN) -->
+      <section id="task-hsg12-listening" class="view-panel task-view">
+        <header class="task-header">
+          <span class="task-tag">HSG 12 / LISTENING</span>
+          <h2>🎧 Academic Listening Strategy</h2>
+          <p>Hệ thống chiến lược xử lý bài Listening Multiple Choice theo giáo trình Contemporary Topics & Cambridge C1.</p>
+        </header>
 
-          <div class="strategies-grid">
-            <div class="strategy-card">
-              <div class="strategy-icon">📌</div>
-              <h3 class="strategy-title">1. Main Idea & Subject (Ý chính)</h3>
-              <ul class="strategy-steps">
-                <li>Read the first 1-2 lines of each paragraph.</li>
-                <li>Identify the recurring topic noun across the entire text.</li>
-                <li>Check if the option covers the WHOLE text, not just one detail.</li>
-              </ul>
-              <div class="trap-box">
-                <div class="trap-title">⚠️ Common Distractor Trap</div>
-                <div><strong>Too Narrow:</strong> Picking a specific example from one paragraph as the main idea of the passage.</div>
-              </div>
-            </div>
-
-            <div class="strategy-card">
-              <div class="strategy-icon">🔤</div>
-              <h3 class="strategy-title">2. Vocabulary & Pronoun Reference</h3>
-              <ul class="strategy-steps">
-                <li>Locate target word and read +/- 1 surrounding sentence.</li>
-                <li>Substitute candidate words to check context alignment.</li>
-                <li>For pronouns (it/they/those), trace back to singular/plural antecedents.</li>
-              </ul>
-              <div class="trap-box">
-                <div class="trap-title">⚠️ Common Distractor Trap</div>
-                <div><strong>Literal Dictionary Fallacy:</strong> Choosing a word's common meaning when the context demands an academic secondary meaning.</div>
-              </div>
-            </div>
-
-            <div class="strategy-card">
-              <div class="strategy-icon">🔎</div>
-              <h3 class="strategy-title">3. Factual Details & EXCEPT Questions</h3>
-              <ul class="strategy-steps">
-                <li>Highlight key nouns, dates, or terms in the question stem.</li>
-                <li>Scan the passage rapidly to locate the exact paragraph.</li>
-                <li>For EXCEPT questions: 3 options are stated; 1 is false/unmentioned.</li>
-              </ul>
-              <div class="trap-box">
-                <div class="trap-title">⚠️ Common Distractor Trap</div>
-                <div><strong>Subtle Misstatements:</strong> Options using text words but reversing relationships.</div>
-              </div>
-            </div>
-
-            <div class="strategy-card">
-              <div class="strategy-icon">💡</div>
-              <h3 class="strategy-title">4. Inferences & Author's Purpose</h3>
-              <ul class="strategy-steps">
-                <li>Inferences must be 100% logically proven by text facts.</li>
-                <li>Avoid speculative guesses outside the passage boundaries.</li>
-                <li>Author's Purpose: Ask 'Why is this example included here?'</li>
-              </ul>
-              <div class="trap-box">
-                <div class="trap-title">⚠️ Common Distractor Trap</div>
-                <div><strong>Over-assumption:</strong> Selecting plausible real-world statements that are NOT supported by passage facts.</div>
-              </div>
-            </div>
-
-            <div class="strategy-card">
-              <div class="strategy-icon">🧩</div>
-              <h3 class="strategy-title">5. Sentence Insertion & Paraphrasing</h3>
-              <ul class="strategy-steps">
-                <li>Check transition signals (However, Thus, For instance).</li>
-                <li>Look for reference anchors (This process, These maps).</li>
-                <li>Paraphrase: Retain core subject + predicate + key condition.</li>
-              </ul>
-              <div class="trap-box">
-                <div class="trap-title">⚠️ Common Distractor Trap</div>
-                <div><strong>Omission Trap:</strong> Paraphrase options that miss crucial qualifying conditions.</div>
-              </div>
-            </div>
+        <div class="task-body">
+          <div class="skill-card">
+            <h3>📝 Kỹ năng Note-taking & Ghi chú nhanh</h3>
+            <p>Quy trình 3 giai đoạn xử lý bài nghe độ dài lớn và phân tích bẫy logic.</p>
           </div>
         </div>
-
-        <!-- Sub-tab 3: Practice Quiz -->
-        <div id="rc-quiz" class="sub-tab-content">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">Interactive Practice Quiz</h3>
-            <p class="sub-section-desc">Test your comprehension with authentic VSTEP passages and get instant detailed explanations.</p>
-          </div>
-
-          <div class="quiz-controls">
-            <div class="filter-group">
-              <button class="filter-chip active" data-filter="All">All Categories</button>
-              <button class="filter-chip" data-filter="Main Idea">Main Idea</button>
-              <button class="filter-chip" data-filter="Vocabulary">Vocabulary</button>
-              <button class="filter-chip" data-filter="Detail">Factual Details</button>
-              <button class="filter-chip" data-filter="Inference">Inferences</button>
-              <button class="filter-chip" data-filter="Paraphrase">Sentence Paraphrase</button>
-            </div>
-
-            <div class="score-tracker">
-              <span>Score:</span>
-              <span id="score-display" class="score-badge">0 / 0 Correct</span>
-            </div>
-          </div>
-
-          <div id="quiz-passages-container">
-            <!-- Rendered dynamically by app.js -->
-          </div>
-        </div>
-
-        <!-- Sub-tab 4: Vocab Bank -->
-        <div id="rc-vocab" class="sub-tab-content">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">Academic Vocabulary Bank</h3>
-            <p class="sub-section-desc">Key high-frequency vocabulary extracted from VSTEP test passages with English definitions and Vietnamese translations.</p>
-          </div>
-
-          <input type="text" id="vocab-search" class="vocab-search" placeholder="🔍 Search vocabulary word, definition, or Vietnamese meaning...">
-
-          <div id="vocab-grid" class="vocab-grid">
-            <!-- Rendered dynamically by app.js -->
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== LISTENING SKILLS TAB ==================== -->
-    <section id="listening-skills" class="tab-content">
-      <div class="reading-box-container">
-        
-        <!-- Listening Skills Header -->
-        <div class="reading-box-header">
-          <button class="back-home-btn" onclick="goHome()">← Back to Home</button>
-          <div class="reading-box-badge">🎧 LISTENING SKILLS (B2–C2)</div>
-          <h2 class="reading-box-title">Academic Listening Strategy & Methodology</h2>
-          <p class="reading-box-desc">Hệ thống hóa chiến lược xử lý bài Listening Multiple Choice theo giáo trình <strong>Contemporary Topics (4th Edition)</strong> & chuẩn Cambridge C1 Advanced. Bao gồm quy trình 3 giai đoạn, kỹ năng ghi chú Note-taking, 4 năng lực tư duy cốt lõi và phân tích bẫy logic.</p>
-        </div>
-
-        <!-- Practice Audio Notice -->
-        <div class="notice-box info-notice" style="background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); border: 1.5px solid #38bdf8;">
-          <div class="notice-icon" style="font-size: 1.6rem;">🎧</div>
-          <div class="notice-content">
-            <h4 style="color: #0369a1;">Hệ thống Lý Thuyết & Bài Thực Hành Audio Listening (Cambridge CAE C1)</h4>
-            <p style="color: #0c4a6e;">Trang hiện tại kết hợp toàn bộ <strong>Hệ thống phương pháp luận & Kỹ năng Note-taking</strong> bên dưới cùng với <strong>Bài thực hành Audio trực tiếp</strong> (Radio Interview với Lenny Henry - Track 4). Hãy chuyển qua lại giữa các thẻ sub-tab để kết hợp vừa học lý thuyết vừa làm bài tập thực tế!</p>
-          </div>
-        </div>
-
-        <!-- Sub-tabs navigation inside Listening Skills -->
-        <div class="sub-tabs">
-          <button class="sub-tab active" data-subtab="ls-strategy">3-Phase Strategy (Contemporary Topics)</button>
-          <button class="sub-tab" data-subtab="ls-practice">🎧 Audio Practice Task (Lenny Henry)</button>
-          <button class="sub-tab" data-subtab="ls-traps">B2–C2 Trap Analysis</button>
-          <button class="sub-tab" data-subtab="ls-format">Format & Standards</button>
-          <button class="sub-tab" data-subtab="ls-colloquial">Colloquial Vocab & Stress</button>
-          <button class="sub-tab" data-subtab="ls-troubleshoot">Problems & Action Plan</button>
-        </div>
-
-        <!-- Sub-tab 0: Audio Practice Task -->
-        <div id="ls-practice" class="sub-tab-content">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">🎧 C1 Advanced Listening Practice: Radio Interview with Lenny Henry</h3>
-            <p class="sub-section-desc">Nghe đoạn phỏng vấn đài phát thanh với nghệ sĩ hài Lenny Henry (Track 04 - Succeed in CAE) và trả lời các câu hỏi trắc nghiệm 15–20 bên dưới.</p>
-          </div>
-
-          <!-- Audio Player Card -->
-          <div class="audio-player-card">
-            <div class="audio-header-row">
-              <div class="audio-track-info">
-                <div class="audio-badge">TRACK 04 • CAE C1 ADVANCED</div>
-                <h4 class="audio-title">Radio Interview with Lenny Henry (Comedian)</h4>
-                <p class="audio-subtitle">Succeed in CAE - CD1 Track 4 | Listening Part 3 (Multiple Choice)</p>
-              </div>
-              <div class="audio-score-badge" id="ls-score-display">0 / 6 Correct</div>
-            </div>
-
-            <!-- HTML5 Audio Element -->
-            <div class="audio-controls-wrapper">
-              <audio id="ls-audio-element" controls preload="metadata" style="width: 100%; outline: none; border-radius: var(--radius-md);">
-                <source src="audio/04_Track_4.mp3" type="audio/mpeg">
-                Trình duyệt của bạn không hỗ trợ phát thẻ audio.
-              </audio>
-            </div>
-
-            <!-- Quick Speed & Skip Control Buttons -->
-            <div class="audio-extra-controls">
-              <div class="control-group">
-                <span class="control-label">⚡ Speed:</span>
-                <button class="speed-btn active" onclick="setAudioSpeed(1.0, this)">1.0x</button>
-                <button class="speed-btn" onclick="setAudioSpeed(0.8, this)">0.8x (Slower)</button>
-                <button class="speed-btn" onclick="setAudioSpeed(1.2, this)">1.2x (Faster)</button>
-              </div>
-              <div class="control-group">
-                <span class="control-label">⏩ Seek:</span>
-                <button class="seek-btn" onclick="skipAudioTime(-5)">⏪ -5s</button>
-                <button class="seek-btn" onclick="skipAudioTime(5)">⏩ +5s</button>
-                <button class="seek-btn" onclick="skipAudioTime(-10)">⏪ -10s</button>
-                <button class="seek-btn" onclick="skipAudioTime(10)">⏩ +10s</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Strategy Tip Alert -->
-          <div class="listening-strategy-tip">
-            <span style="font-size: 1.25rem;">💡</span>
-            <div>
-              <strong>Chiến thuật áp dụng:</strong> Đọc trước câu hỏi 15-20 và gạch chân từ khóa trước khi nghe (Giai đoạn 1). Trong khi nghe, ghi chú ngắn gọn bằng ký hiệu (Giai đoạn 2). Cảnh giác với bẫy lặp từ (Word Match) và bẫy thay đổi ý kiến (Mind Change)!
-            </div>
-          </div>
-
-          <!-- Practice Questions Container -->
-          <div id="listening-practice-container">
-            <!-- Rendered dynamically by app.js -->
-          </div>
-        </div>
-
-        <!-- Sub-tab 1: 3-Phase Strategy (Contemporary Topics) -->
-        <div id="ls-strategy" class="sub-tab-content active">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">Chiến Lược 3 Giai Đoạn Xử Lý Bài Listening Multiple Choice</h3>
-            <p class="sub-section-desc">Hệ thống phương pháp luận toàn diện dành cho trình độ Trung – Caocấp (B2–C2) chuẩn Contemporary Topics (4th Edition).</p>
-          </div>
-
-          <!-- Flowchart Banner -->
-          <div class="phase-flowchart">
-            <div class="phase-step-node">
-              <div class="node-num">GIAI ĐOẠN 1</div>
-              <div class="node-title">Chuẩn Bị</div>
-              <div class="node-sub">Pre-listening Activation</div>
-            </div>
-            <div class="phase-arrow">➔</div>
-            <div class="phase-step-node">
-              <div class="node-num">GIAI ĐOẠN 2</div>
-              <div class="node-title">Nghe & Ghi Chú</div>
-              <div class="node-sub">Active Listening & Note-taking</div>
-            </div>
-            <div class="phase-arrow">➔</div>
-            <div class="phase-step-node">
-              <div class="node-num">GIAI ĐOẠN 3</div>
-              <div class="node-title">Phân Tích & Chọn Đáp Án</div>
-              <div class="node-sub">Cognitive Processing</div>
-            </div>
-          </div>
-
-          <!-- Phase 1 Detail Card -->
-          <div class="phase-card-block">
-            <div class="phase-header-badge">
-              <span class="phase-badge-tag">GIAI ĐOẠN 1</span>
-              <h3 class="phase-block-title">Pre-listening Activation (Giai đoạn chuẩn bị)</h3>
-            </div>
-            
-            <div class="sub-feature-grid">
-              <div class="sub-feature-card">
-                <h4>🧠 Kích hoạt vốn từ & Ngữ cảnh (Schema Activation)</h4>
-                <ul>
-                  <li>Dự đoán chủ đề bài nghe thông qua danh mục từ vựng chuyên ngành (Academic Word List).</li>
-                  <li>Kích hoạt kiến thức nền (prior knowledge) và các khái niệm liên quan trước khi băng phát.</li>
-                </ul>
-              </div>
-
-              <div class="sub-feature-card">
-                <h4>🎯 Phân tích Option & Định vị Keyword</h4>
-                <ul>
-                  <li>Gạch chân các <strong>từ khóa phân biệt</strong> giữa các phương án (danh từ, động từ hành động, tính từ so sánh/đối lập).</li>
-                  <li>Xác định dạng thông tin câu hỏi yêu cầu: <em>Ý chính (Main idea), Chi tiết (Detail), Định nghĩa (Definition), Nguyên nhân - Kết quả (Cause-Effect), Suy luận (Inference).</em></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Phase 2 Detail Card -->
-          <div class="phase-card-block">
-            <div class="phase-header-badge">
-              <span class="phase-badge-tag">GIAI ĐOẠN 2</span>
-              <h3 class="phase-block-title">Active Listening & Note-taking (Trong khi nghe & Ghi chú)</h3>
-            </div>
-            <p style="font-size: 0.925rem; color: var(--text-secondary); margin-bottom: 1rem;">
-              Do dạng bài Multiple Choice ở cấp độ B2–C2 thường dài và chứa nhiều bẫy, <strong>kỹ năng ghi chú (Note-taking) đóng vai trò sống còn</strong>.
-            </p>
-
-            <div class="sub-feature-grid">
-              <div class="sub-feature-card">
-                <h4>📡 Bắt tín hiệu cấu trúc (Signal Words)</h4>
-                <ul>
-                  <li><strong>Trật tự ý:</strong> <em>First, Next, Moving on to, Finally...</em></li>
-                  <li><strong>So sánh & Đối lập:</strong> <em>In contrast, However, On the other hand, Similarly...</em></li>
-                  <li><strong>Định nghĩa & Thuật ngữ:</strong> Nhận biết khoảng lặng (pauses), từ được nhấn mạnh hoặc cụm dẫn (<em>known as, referred to as</em>).</li>
-                </ul>
-              </div>
-
-              <div class="sub-feature-card">
-                <h4>✍️ Ghi chú hệ thống & Tối ưu tốc độ</h4>
-                <ul>
-                  <li><strong>Sử dụng ký hiệu & Chữ viết tắt:</strong> Giúp bắt kịp tốc độ nói của giảng viên/nhân vật.</li>
-                  <li><strong>Cấu trúc phân cấp (Indentation):</strong> Viết ý chính ở lề trái, lùi vào bên phải cho các chi tiết bổ trợ và ví dụ minh họa.</li>
-                </ul>
-
-                <div style="margin-top: 0.75rem;">
-                  <strong style="font-size: 0.85rem; color: var(--brand-teal-dark);">Bảng ký hiệu ghi chú nhanh:</strong>
-                  <div class="symbol-grid">
-                    <div class="symbol-item"><span class="symbol-code">=</span><span class="symbol-label">Bằng/Bản chất</span></div>
-                    <div class="symbol-item"><span class="symbol-code">≠</span><span class="symbol-label">Khác/Khái niệm</span></div>
-                    <div class="symbol-item"><span class="symbol-code">&gt;</span><span class="symbol-label">Lớn/Hơn</span></div>
-                    <div class="symbol-item"><span class="symbol-code">&lt;</span><span class="symbol-label">Nhỏ/Kém</span></div>
-                    <div class="symbol-item"><span class="symbol-code">↑</span><span class="symbol-label">Tăng/Phát triển</span></div>
-                    <div class="symbol-item"><span class="symbol-code">↓</span><span class="symbol-label">Giảm/Suy suyển</span></div>
-                    <div class="symbol-item"><span class="symbol-code">➔</span><span class="symbol-label">Dẫn đến/KQ</span></div>
-                    <div class="symbol-item"><span class="symbol-code">∴</span><span class="symbol-label">Do đó/Kết luận</span></div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sub-feature-card" style="grid-column: 1 / -1;">
-                <h4>🎧 Xử lý đặc trưng âm thanh (Phonological Features)</h4>
-                <ul>
-                  <li>Lắng nghe theo <strong>Thought Groups</strong> (cụm ý nghĩa) và <strong>Key Word Stress</strong> (từ được nhấn âm) thay vì cố nghe từng từ riêng lẻ.</li>
-                  <li>Cảnh giác với hiện tượng <strong>Nối âm (Glides/Linking)</strong> và <strong>Biến âm / Nuốt âm (Reduced/Disappearing sounds)</strong> dễ làm biến dạng từ khóa.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Phase 3 Detail Card -->
-          <div class="phase-card-block">
-            <div class="phase-header-badge">
-              <span class="phase-badge-tag">GIAI ĐOẠN 3</span>
-              <h3 class="phase-block-title">Post-listening Processing (Phân tích & Chọn đáp án)</h3>
-            </div>
-            <p style="font-size: 0.925rem; color: var(--text-secondary); margin-bottom: 1rem;">
-              Bài thi trắc nghiệm học thuật đòi hỏi <strong>4 năng lực tư duy cốt lõi</strong> để đưa ra đáp án chính xác:
-            </p>
-
-            <div class="cognitive-table-container">
-              <table class="cognitive-table">
-                <thead>
-                  <tr>
-                    <th>Dạng tư duy</th>
-                    <th>Đặc điểm bài nghe</th>
-                    <th>Chiến thuật chọn đáp án</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="type-cell">Verbatim Recall</td>
-                    <td class="feature-cell">Truy xuất thông tin thực tế (con số, dữ liệu, ngày tháng).</td>
-                    <td class="action-cell">Đối chiếu trực tiếp với con số/thống kê ghi chú được.</td>
-                  </tr>
-                  <tr>
-                    <td class="type-cell">Paraphrasing <span class="core-tag">CỐT LÕI</span></td>
-                    <td class="feature-cell">Đáp án đúng <strong>rất hiếm khi</strong> dùng lại nguyên văn từ trong audio.</td>
-                    <td class="action-cell">Tìm phương án <strong>đồng nghĩa / diễn đạt lại</strong> đúng bản chất ý tưởng.</td>
-                  </tr>
-                  <tr>
-                    <td class="type-cell">Inferencing</td>
-                    <td class="feature-cell">Ý kiến / Thái độ / Ý ngầm hiểu không được nói trực tiếp.</td>
-                    <td class="action-cell">Dựa vào ngữ điệu (intonation), từ nối và lập luận tổng thể để suy luận.</td>
-                  </tr>
-                  <tr>
-                    <td class="type-cell">Synthesizing</td>
-                    <td class="feature-cell">Yêu cầu tổng hợp thông tin từ nhiều đoạn khác nhau trong bài giảng.</td>
-                    <td class="action-cell">Rà soát lại sơ đồ ghi chú (Outline/Notes) để thấy bức tranh toàn cảnh.</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <!-- Dual-Cycle Listening Box -->
-          <div class="dual-cycle-box">
-            <div class="dual-cycle-header">
-              <span style="font-size: 1.6rem;">💡</span>
-              <h3 class="dual-cycle-title">Mẹo Luyện Tập Theo Giáo Trình: Quy Trình 2 Chu Kỳ Nghe</h3>
-            </div>
-            <p style="font-size: 0.95rem; color: #166534; line-height: 1.55;">
-              Khi ôn luyện bài nghe học thuật, khuyến nghị thực hiện đúng <strong>2 chu kỳ nghe song song</strong> để tối đa hóa phản xạ:
-            </p>
-
-            <div class="dual-cycle-grid">
-              <div class="cycle-card">
-                <h4>🌀 Chu Kỳ 1: Top-down Processing</h4>
-                <p>Nghe tổng quát lấy ý chính, xác định cấu trúc bài giảng và mối liên hệ giữa các phần.</p>
-              </div>
-
-              <div class="cycle-card">
-                <h4>🔎 Chu Kỳ 2: Bottom-up Processing</h4>
-                <p>Nghe lấy chi tiết, phân tích các bẫy logic, đối chiếu lại sơ đồ Note-taking để hoàn thiện khả năng phản xạ.</p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Sub-tab 2: B2–C2 Trap Analysis -->
-        <div id="ls-traps" class="sub-tab-content">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">⚠️ Các Bẫy Logic Thường Gặp Trong Bài Multiple Choice (B2–C2)</h3>
-            <p class="sub-section-desc">Nhận diện và phòng tránh các loại bẫy tư duy tinh vi trong kỳ thi Listening trình độ trung - cao cấp.</p>
-          </div>
-
-          <div class="trap-grid-advanced">
-            
-            <div class="trap-card-advanced">
-              <div class="trap-card-header">
-                <span class="trap-icon-large">🎯</span>
-                <h4 class="trap-title-advanced">1. Bẫy Từ trùng lặp (Word Match Trap)</h4>
-              </div>
-              <div class="trap-desc-advanced">
-                Đáp án sai thường chứa <strong>chính xác 100% từ ngữ</strong> xuất hiện trong file nghe, nhưng từ đó đã bị đảo ngược ngữ cảnh, đặt vào cấu trúc phủ định, hoặc chỉ là một chi tiết phụ/ví dụ không đáp ứng yêu cầu câu hỏi.
-              </div>
-              <div class="trap-countermeasure">
-                🛡️ <strong>Chiến thuật đối phó:</strong> Cảnh giác với các phương án lặp lại nguyên văn từ vựng bài nghe. Luôn tìm phương án đã được <strong>Paraphrase (diễn đạt lại)</strong>.
-              </div>
-            </div>
-
-            <div class="trap-card-advanced">
-              <div class="trap-card-header">
-                <span class="trap-icon-large">🔄</span>
-                <h4 class="trap-title-advanced">2. Bẫy Thay đổi ý kiến (Mind Change Trap)</h4>
-              </div>
-              <div class="trap-desc-advanced">
-                Người nói đưa ra một thông tin ban đầu làm bạn tưởng là đáp án, nhưng ngay sau đó lập tức bác bỏ hoặc sửa lại bằng các cụm chuyển ý như: <em>Actually..., On second thought..., Mind you..., Hang on a minute...</em>
-              </div>
-              <div class="trap-countermeasure">
-                🛡️ <strong>Chiến thuật đối phó:</strong> Đợi người nói hoàn thành trọn vẹn ý kiến/lượt nói của họ trước khi đưa ra quyết định chốt đáp án cuối cùng.
-              </div>
-            </div>
-
-            <div class="trap-card-advanced">
-              <div class="trap-card-header">
-                <span class="trap-icon-large">🚨</span>
-                <h4 class="trap-title-advanced">3. Bẫy Khái quát hóa quá mức (Over-generalization Trap)</h4>
-              </div>
-              <div class="trap-desc-advanced">
-                Các phương án gài bẫy thường sử dụng từ ngữ mang tính tuyệt đối như <em>always, never, only, all, completely</em>, trong khi bài nghe thực tế chỉ đề cập ở mức độ tương đối hoặc có điều kiện đi kèm.
-              </div>
-              <div class="trap-countermeasure">
-                🛡️ <strong>Chiến thuật đối phó:</strong> Loại trừ các phương án mang tính khẳng định tuyệt đối nếu trong bài nghe người nói có dùng các từ giảm nhẹ (hedging words: <em>tend to, mostly, generally, might</em>).
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Sub-tab 3: Format & Standards -->
-        <div id="ls-format" class="sub-tab-content">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">Listening Exam Format & Cambridge Standards</h3>
-            <p class="sub-section-desc">Tổng quan cấu trúc dạng bài Listening Part 1 trong kỳ thi C1 Advanced (Cambridge English).</p>
-          </div>
-
-          <div class="format-grid">
-            <div class="format-card">
-              <div class="format-icon">🎙️</div>
-              <div class="format-info">
-                <h4>3 Short Extracts</h4>
-                <p>Nghe 3 đoạn hội thoại độc lập trong các bối cảnh đời sống hoặc công việc.</p>
-              </div>
-            </div>
-
-            <div class="format-card">
-              <div class="format-icon">❓</div>
-              <div class="format-info">
-                <h4>6 Multiple-Choice Items</h4>
-                <p>Mỗi đoạn hội thoại có 2 câu hỏi 3 lựa chọn (A, B, C). Tổng cộng 6 câu hỏi.</p>
-              </div>
-            </div>
-
-            <div class="format-card">
-              <div class="format-icon">🔁</div>
-              <div class="format-info">
-                <h4>Hear Recording Twice</h4>
-                <p>Mỗi đoạn kéo dài ~1 phút và được phát đúng 2 lần để xác nhận đáp án.</p>
-              </div>
-            </div>
-
-            <div class="format-card">
-              <div class="format-icon">⏳</div>
-              <div class="format-info">
-                <h4>5 Minutes Transfer Time</h4>
-                <p>Cuối bài thi có 5 phút để chuyển toàn bộ đáp án vào phiếu trả lời.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="strategy-card" style="margin-bottom: 2rem;">
-            <div class="strategy-icon">🎯</div>
-            <h3 class="strategy-title">Yếu tố kỹ năng bài thi Listening Part 1 đánh giá</h3>
-            <ul class="strategy-steps">
-              <li><strong>Understanding Gist & Detail:</strong> Nắm bắt ý chính bao quát và chi tiết cụ thể trong lời nói của nhân vật.</li>
-              <li><strong>Speaker's Attitude & Opinion:</strong> Nhận biết thái độ, cảm xúc, lập trường hoặc sự đồng ý/bất đồng ý giữa các nhân vật.</li>
-              <li><strong>Informal & Colloquial English:</strong> Hiểu các cụm từ khẩu ngữ tiếng Anh giao tiếp tự nhiên của người bản xứ.</li>
-              <li><strong>Emphatic Stress & Intonation:</strong> Đọc vị ý đồ của người nói thông qua sự thay đổi trọng âm và ngữ điệu câu.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Sub-tab 4: Colloquial Vocabulary & Stress -->
-        <div id="ls-colloquial" class="sub-tab-content">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">Informal & Colloquial Language & Sentence Stress</h3>
-            <p class="sub-section-desc">Các từ vựng khẩu ngữ thường gặp và cách trọng âm câu (Emphatic Stress) biến đổi ý nghĩa lời nói.</p>
-          </div>
-
-          <div class="colloquial-grid">
-            
-            <div class="colloquial-card">
-              <div class="colloquial-header">
-                <div class="colloquial-word">gasping for</div>
-                <span class="colloquial-pos">phrasal verb</span>
-              </div>
-              <div class="colloquial-meaning">👉 Rất thèm / cực kỳ cần một thứ gì đó (Want or need something very much).</div>
-              <div class="colloquial-example">"I'm absolutely gasping for a cup of coffee right now after that long drive."</div>
-            </div>
-
-            <div class="colloquial-card">
-              <div class="colloquial-header">
-                <div class="colloquial-word">cheers</div>
-                <span class="colloquial-pos">exclamation</span>
-              </div>
-              <div class="colloquial-meaning">👉 Lời cảm ơn thân mật / chúc mừng khi cụng ly (Thank you).</div>
-              <div class="colloquial-example">"Cheers for helping out last night! I really appreciate your support."</div>
-            </div>
-
-            <div class="colloquial-card">
-              <div class="colloquial-header">
-                <div class="colloquial-word">chock-a-block</div>
-                <span class="colloquial-pos">adjective</span>
-              </div>
-              <div class="colloquial-meaning">👉 Đông đúc / chật cứng người hoặc đồ đạc (Full of people or things).</div>
-              <div class="colloquial-example">"There's no way we'll get a table. The restaurant is absolutely chock-a-block!"</div>
-            </div>
-
-            <div class="colloquial-card">
-              <div class="colloquial-header">
-                <div class="colloquial-word">splash out (on)</div>
-                <span class="colloquial-pos">phrasal verb</span>
-              </div>
-              <div class="colloquial-meaning">👉 Vung tiền / chi nhiều tiền mua đồ xa xỉ không quá bắt buộc.</div>
-              <div class="colloquial-example">"I don't usually splash out on expensive shoes, but these were unmissable."</div>
-            </div>
-
-            <div class="colloquial-card">
-              <div class="colloquial-header">
-                <div class="colloquial-word">gear</div>
-                <span class="colloquial-pos">noun (uncountable)</span>
-              </div>
-              <div class="colloquial-meaning">👉 Quần áo hoặc dụng cụ/thiết bị chuyên dụng (Clothes or equipment).</div>
-              <div class="colloquial-example">"I got all the way to the gym and then realised I'd left my sports gear at home."</div>
-            </div>
-
-            <div class="colloquial-card">
-              <div class="colloquial-header">
-                <div class="colloquial-word">no doubt</div>
-                <span class="colloquial-pos">phrase</span>
-              </div>
-              <div class="colloquial-meaning">👉 Chắc chắn rồi / Rất có khả năng cao (Very likely).</div>
-              <div class="colloquial-example">"No doubt James will be at the party tonight; he never misses a gathering."</div>
-            </div>
-
-          </div>
-
-          <!-- Sentence Stress Cases -->
-          <div class="sub-section-header" style="margin-top: 2rem;">
-            <h3 class="sub-section-title">Pronunciation: Stressed Words & Meaning Shift</h3>
-            <p class="sub-section-desc">Sự thay đổi ý nghĩa khi người nói nhấn mạnh vào các từ khác nhau trong cùng 1 câu:</p>
-          </div>
-
-          <div class="stress-grid">
-            <div class="stress-card">
-              <div class="stress-sentence">Case 1: "<span class="stress-highlight">JAMES</span> told me he finished the project yesterday."</div>
-              <div class="stress-meaning">🎯 <strong>Ý nghĩa:</strong> Nhấn mạnh chính James là người nói tin này (chứ không phải ai khác).</div>
-            </div>
-
-            <div class="stress-card">
-              <div class="stress-sentence">Case 2: "James told me he <span class="stress-highlight">FINISHED</span> the project yesterday."</div>
-              <div class="stress-meaning">🎯 <strong>Ý nghĩa:</strong> Nhấn mạnh việc dự án đã được hoàn thành trọn vẹn (chứ không phải mới bắt đầu).</div>
-            </div>
-
-            <div class="stress-card">
-              <div class="stress-sentence">Case 3: "James told me he finished the project <span class="stress-highlight">YESTERDAY</span>."</div>
-              <div class="stress-meaning">🎯 <strong>Ý nghĩa:</strong> Nhấn mạnh vào mốc thời gian hoàn thành (ngày hôm qua chứ không phải hôm nay).</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sub-tab 5: Problems & Action Plan -->
-        <div id="ls-troubleshoot" class="sub-tab-content">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">Common Listening Problems & Solutions</h3>
-            <p class="sub-section-desc">Ma trận nhận diện vấn đề thường gặp khi nghe và các giải pháp khắc phục triệt để.</p>
-          </div>
-
-          <div class="matrix-table-container">
-            <table class="matrix-table">
-              <thead>
-                <tr>
-                  <th>Vấn đề gặp phải (Problem)</th>
-                  <th>Giải pháp khắc phục (Suggested Solutions)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="problem-cell">1. Bị mất tập trung giữa chừng (I stopped paying attention).</td>
-                  <td>
-                    <ul class="solution-list">
-                      <li>Nghỉ giải lao định kỳ giữa các bài nghe.</li>
-                      <li>Tránh luyện nghe những lúc cơ thể quá mệt mỏi.</li>
-                      <li>Cất hết các thiết bị gây xao nhãng (điện thoại, mạng xã hội).</li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="problem-cell">2. Bị bận tâm bởi câu trước / từ không biết (I lost focus worrying about previous answer/unknown word).</td>
-                  <td>
-                    <ul class="solution-list">
-                      <li>Luyện nghe thường xuyên để tạo thói quen phản xạ bỏ qua từ khó.</li>
-                      <li>Ghi nhớ rằng băng sẽ được phát 2 lần để kiểm tra lại.</li>
-                      <li>Nếu không chắc chắn, hãy phán đoán tốt nhất và tiếp tục nghe ngay.</li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="problem-cell">3. Có từ vựng mới trong câu hỏi / đáp án (Unfamiliar word in question/options).</td>
-                  <td>
-                    <ul class="solution-list">
-                      <li>Tra từ điển Cambridge Dictionary và ghi lại vào sổ tay.</li>
-                      <li>Đặt câu cá nhân hóa chứa từ mới đó.</li>
-                      <li>Tạo câu hỏi tương tác chứa từ mới để ôn tập cùng bạn học.</li>
-                    </ul>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="problem-cell">4. Người nói nói quá nhanh / không nhận ra phát âm (Fast speech / unrecognised pronunciation).</td>
-                  <td>
-                    <ul class="solution-list">
-                      <li>Ôn lại quy luật trọng âm từ (vd: <em>arríve</em>).</li>
-                      <li>Học các hiện tượng nối âm (linking words) và biến âm trong tiếng Anh giao tiếp tự nhiên (tham khảo BBC Learning English).</li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <!-- S.M.A.R.T Action Plan -->
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">Lập kế hoạch hành động S.M.A.R.T cho kỹ năng Nghe</h3>
-            <p class="sub-section-desc">Phương pháp giúp bạn đo lường và tiến bộ đều đặn mỗi ngày.</p>
-          </div>
-
-          <div class="smart-grid">
-            <div class="smart-card">
-              <div class="smart-letter">S</div>
-              <div class="smart-title">Specific</div>
-              <div class="smart-desc">Cụ thể: Xác định chính xác sẽ nghe gì, khi nào và tần suất như thế nào.</div>
-            </div>
-
-            <div class="smart-card">
-              <div class="smart-letter">M</div>
-              <div class="smart-title">Measurable</div>
-              <div class="smart-desc">Đo lường được: Ghi lại số điểm hoặc số từ mới học được qua mỗi bài.</div>
-            </div>
-
-            <div class="smart-card">
-              <div class="smart-letter">A</div>
-              <div class="smart-title">Achievable</div>
-              <div class="smart-desc">Khả thi: Đặt mục tiêu vừa sức với thời gian và nguồn lực sẵn có.</div>
-            </div>
-
-            <div class="smart-card">
-              <div class="smart-letter">R</div>
-              <div class="smart-title">Relevant</div>
-              <div class="smart-desc">Thực tế: Tập trung khắc phục đúng điểm yếu đã phát hiện qua bảng sự cố.</div>
-            </div>
-
-            <div class="smart-card">
-              <div class="smart-letter">T</div>
-              <div class="smart-title">Time-based</div>
-              <div class="smart-desc">Thời hạn: Đặt thời gian hoàn thành rõ ràng (ví dụ: hoàn thành 1 bài trước thứ Ba).</div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== COLLOCATIONS TAB ==================== -->
-    <section id="collocations" class="tab-content">
-      <div class="reading-box-container">
-        
-        <!-- Collocations Header -->
-        <div class="reading-box-header">
-          <button class="back-home-btn" onclick="goHome()">← Back to Home</button>
-          <div class="reading-box-badge">📖 CAMBRIDGE VOCABULARY IN USE - ADVANCED</div>
-          <h2 class="reading-box-title">Collocations & Academic Vocabulary Library</h2>
-          <p class="reading-box-desc">Kho <strong>2,625+ cụm từ kết hợp (Collocations)</strong>, danh từ ghép, phrasal verbs và ngữ vựng học thuật trình độ B1-C2 trích xuất trực tiếp từ bộ giáo trình danh tiếng <strong>Cambridge Vocabulary in Use (Advanced)</strong>.</p>
-        </div>
-
-        <!-- Sub-tabs navigation inside Collocations -->
-        <div class="sub-tabs">
-          <button class="sub-tab active" data-subtab="colloc-library">Interactive Library</button>
-          <button class="sub-tab" data-subtab="colloc-flashcard">3D Flashcard Deck</button>
-          <button class="sub-tab" data-subtab="colloc-quiz">Suffer Quiz Mode</button>
-        </div>
-
-        <!-- Sub-tab 1: Interactive Library -->
-        <div id="colloc-library" class="sub-tab-content active">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">Tra cứu & Khám phá 2,625+ Cụm Từ Theo 101 Sub-decks</h3>
-            <p class="sub-section-desc">Hỗ trợ tìm kiếm thông minh theo từ khóa tiếng Anh, giải nghĩa tiếng Việt, phiên âm IPA, ví dụ thực tế và bộ lọc theo 101 Units (Sub-decks).</p>
-          </div>
-
-          <!-- Search & Filter Controls -->
-          <div class="quiz-controls" style="margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
-            <div style="display: flex; gap: 0.75rem; width: 100%; flex-wrap: wrap;">
-              <input type="text" id="colloc-search" class="vocab-search" style="margin-bottom: 0; flex: 2; min-width: 280px;" placeholder="🔍 Tìm kiếm cụm collocation, nghĩa tiếng Việt (vd: mượn sách, đánh giá, truy cập)...">
-              <select id="colloc-unit-select" class="vocab-search" style="margin-bottom: 0; flex: 1; min-width: 240px; cursor: pointer; background: #ffffff;">
-                <option value="All">📚 Tất cả 101 Units (Sub-decks)</option>
-                <!-- Rendered dynamically by app.js -->
-              </select>
-            </div>
-            
-            <div class="filter-group">
-              <button class="filter-chip colloc-filter-chip active" data-level="All">All Levels</button>
-              <button class="filter-chip colloc-filter-chip" data-level="B1">CEFR B1</button>
-              <button class="filter-chip colloc-filter-chip" data-level="B2">CEFR B2</button>
-              <button class="filter-chip colloc-filter-chip" data-level="C1">CEFR C1</button>
-              <button class="filter-chip colloc-filter-chip" data-level="C2">CEFR C2</button>
-            </div>
-          </div>
-
-          <!-- Collocations Grid -->
-          <div id="colloc-grid" class="colloc-grid">
-            <!-- Rendered dynamically by app.js -->
-          </div>
-
-          <!-- Pagination Controls -->
-          <div class="pagination-container">
-            <button id="colloc-prev-page" class="page-btn">← Trang trước</button>
-            <span id="colloc-page-info" class="page-info">Page 1 of 88 (2,625 items)</span>
-            <button id="colloc-next-page" class="page-btn">Trang sau →</button>
-          </div>
-        </div>
-
-        <!-- Sub-tab 2: 3D Flashcard Deck -->
-        <div id="colloc-flashcard" class="sub-tab-content">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">Thẻ Ghi Nhớ 3D Flashcard Tương Tác (Spaced Repetition)</h3>
-            <p class="sub-section-desc">Chạm hoặc click vào thẻ để lật xem phiên âm IPA, nghĩa tiếng Việt, định nghĩa và ví dụ thực tế.</p>
-          </div>
-
-          <div style="text-align: center; font-weight: 700; color: var(--brand-teal);" id="fc-counter">
-            Card 1 of 2,625
-          </div>
-
-          <!-- 3D Flip Flashcard -->
-          <div class="flashcard-wrapper">
-            <div id="main-flashcard" class="flashcard" onclick="toggleFlashcardFlip()">
-              
-              <!-- Front Side -->
-              <div class="flashcard-front">
-                <div style="font-size: 0.8rem; font-weight: 800; color: var(--brand-teal); text-transform: uppercase; margin-bottom: 0.75rem;">CAMBRIDGE ADVANCED</div>
-                <h2 id="fc-term" style="font-size: 2rem; font-weight: 800; color: var(--brand-teal-dark); margin-bottom: 0.5rem;">inter-library loan</h2>
-                <div id="fc-ipa" style="font-size: 1.1rem; color: var(--text-muted); font-family: serif;">ˌɪntə ˈlaɪbrəri ləʊn</div>
-                <div id="fc-pos" style="font-size: 0.85rem; font-weight: 700; color: var(--brand-teal); background: var(--brand-teal-light); padding: 0.2rem 0.6rem; border-radius: 4px; margin-top: 0.75rem;">noun phrase</div>
-                <div class="flashcard-hint">🔄 Click hoặc chạm để lật xem giải nghĩa & ví dụ</div>
-              </div>
-
-              <!-- Back Side -->
-              <div class="flashcard-back">
-                <div id="fc-vn" style="font-size: 1.35rem; font-weight: 800; color: #0d9488; background: #f0fdfa; padding: 0.6rem 1rem; border-radius: var(--radius-md); border: 1px solid #ccfbf1; margin-bottom: 0.75rem;">
-                  🇻🇳 mượn liên thư viện
-                </div>
-                <div id="fc-def" style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
-                  a system where libraries lend books to each other
-                </div>
-                <div id="fc-ex" style="font-size: 0.95rem; color: var(--text-primary); font-style: italic; background: #f8fafc; padding: 0.75rem 1rem; border-radius: var(--radius-md); border-left: 3px solid var(--brand-teal);">
-                  • I requested the book through the inter-library loan system.
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Flashcard Navigation Buttons -->
-          <div class="flashcard-controls">
-            <button class="card-btn filled" style="width: auto; padding: 0.75rem 1.5rem;" onclick="prevCollocFlashcard()">← Thẻ trước</button>
-            <button class="card-btn outline-amber" style="width: auto; padding: 0.75rem 1.5rem;" onclick="toggleFlashcardFlip()">🔄 Lật thẻ</button>
-            <button class="card-btn filled" style="width: auto; padding: 0.75rem 1.5rem;" onclick="nextCollocFlashcard()">Thẻ tiếp theo →</button>
-            <button class="skill-action-btn" style="width: auto; padding: 0.75rem 1.25rem;" onclick="shuffleCollocFlashcards()">🔀 Xáo trộn bộ thẻ</button>
-          </div>
-
-        </div>
-
-        <!-- Sub-tab 3: Suffer Quiz Mode -->
-        <div id="colloc-quiz" class="sub-tab-content">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">⚡ Chế Độ Thử Thách Suffer Quiz (Cloze Fill-in-the-Blank)</h3>
-            <p class="sub-section-desc">Kiểm tra khả năng phản xạ điền cụm từ kết hợp thích hợp vào câu ngữ cảnh thực tế.</p>
-          </div>
-
-          <div class="quiz-controls" style="margin-bottom: 2rem;">
-            <div style="display: flex; gap: 1rem; align-items: center; justify-content: space-between; width: 100%; flex-wrap: wrap;">
-              <button class="card-btn filled" style="width: auto;" onclick="generateSufferQuizRound()">🎲 Bắt đầu lượt Quiz mới (10 câu)</button>
-              <div class="score-tracker">
-                <span>Quiz Score:</span>
-                <span id="suffer-score-display" class="score-badge">0 / 0 Đúng</span>
-              </div>
-            </div>
-          </div>
-
-          <div id="suffer-quiz-container">
-            <!-- Rendered dynamically by app.js -->
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== ENGLISH COLLOCATIONS GAMIFIED TAB ==================== -->
-    <section id="trang-anh-collocations" class="tab-content">
-      <div class="reading-box-container">
-        
-        <!-- Module Header -->
-        <div class="reading-box-header gamified-header">
-          <button class="back-home-btn" onclick="goHome()">← Back to Home</button>
-          <div class="reading-box-badge gamified-hero-badge">⚡ GAMIFICATION ARENA • ENGLISH COLLOCATIONS</div>
-          <h2 class="reading-box-title">English Collocations Master (2,600+ Cụm Từ)</h2>
-          <p class="reading-box-desc">Hệ thống bài tập Gamification tương tác cao với toàn bộ kho 2,600+ English Collocations & Idioms. Luyện tập đấu trí Quiz Arena, Ghép thẻ Siêu tốc, Thử thách Xếp từ Scramble và Flashcards 3D để tích lũy XP & thăng cấp Badge!</p>
-        </div>
-
-        <!-- Player Gamification Stats Bar -->
-        <div class="player-stats-bar">
-          <div class="stat-pill level-pill">
-            <span class="stat-icon">🏆</span>
-            <div class="stat-detail">
-              <div class="stat-label">RANK LEVEL</div>
-              <div class="stat-value" id="ta-level-title">Lv. 1 Novice Learner</div>
-            </div>
-          </div>
-
-          <div class="stat-pill xp-pill">
-            <span class="stat-icon">⭐</span>
-            <div class="stat-detail">
-              <div class="stat-label">TOTAL XP</div>
-              <div class="stat-value" id="ta-xp-count">0 XP</div>
-            </div>
-          </div>
-
-          <div class="stat-pill streak-pill">
-            <span class="stat-icon">🔥</span>
-            <div class="stat-detail">
-              <div class="stat-label">DAILY STREAK</div>
-              <div class="stat-value" id="ta-streak-count">1 Day 🔥</div>
-            </div>
-          </div>
-
-          <div class="stat-pill hearts-pill">
-            <span class="stat-icon">❤️</span>
-            <div class="stat-detail">
-              <div class="stat-label">QUIZ LIVES</div>
-              <div class="stat-value" id="ta-hearts-display">❤️❤️❤️❤️❤️</div>
-            </div>
-          </div>
-
-          <div class="stat-pill accuracy-pill">
-            <span class="stat-icon">🎯</span>
-            <div class="stat-detail">
-              <div class="stat-label">ACCURACY</div>
-              <div class="stat-value" id="ta-accuracy-display">100%</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sub-tabs navigation for Gamification Modes -->
-        <div class="sub-tabs gamified-subtabs">
-          <button class="sub-tab active" data-subtab="ta-quiz">🎮 Quiz Arena (Đấu trí)</button>
-          <button class="sub-tab" data-subtab="ta-match">⚡ Speed Match (Ghép thẻ)</button>
-          <button class="sub-tab" data-subtab="ta-scramble">🧩 Word Scramble (Xếp từ)</button>
-          <button class="sub-tab" data-subtab="ta-flashcards">🎴 Flashcard 3D</button>
-          <button class="sub-tab" data-subtab="ta-bank">📖 Kho 2,600+ Cụm Từ</button>
-        </div>
-
-        <!-- Sub-tab 1: Quiz Arena -->
-        <div id="ta-quiz" class="sub-tab-content active">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">🎯 Boss Quiz Arena</h3>
-            <p class="sub-section-desc">Thử thách trắc nghiệm đấu trí với đồng hồ đếm ngược, thanh sinh lực (Lives), điểm combo và hỗ trợ Power-ups (50:50, Hint Clue).</p>
-          </div>
-
-          <!-- Controls & Powerups -->
-          <div class="arena-controls">
-            <div class="topic-filter-chips" id="ta-topic-filters">
-              <button class="filter-chip active" data-topic="all">Tất cả bài tập</button>
-              <button class="filter-chip" data-topic="B1">🌱 Level B1 (Cơ bản)</button>
-              <button class="filter-chip" data-topic="B2">⚡ Level B2 (Trung cấp)</button>
-              <button class="filter-chip" data-topic="C1">🔥 Level C1 (Nâng cao)</button>
-              <button class="filter-chip" data-topic="C2">👑 Level C2 (Chuyên gia)</button>
-              <button class="filter-chip" data-topic="family">Gia đình (Family)</button>
-              <button class="filter-chip" data-topic="relationships">Tình cảm & Mối quan hệ</button>
-              <button class="filter-chip" data-topic="character">Tính cách & Con người</button>
-              <button class="filter-chip" data-topic="everyday_collocations">Cụm từ thông dụng</button>
-              <button class="filter-chip" data-topic="color_idioms">Thành ngữ Màu sắc</button>
-              <button class="filter-chip" data-topic="body_idioms">Thành ngữ Cơ thể & Động vật</button>
-              <button class="filter-chip" data-topic="environment">Môi trường & Xã hội</button>
-              <button class="filter-chip" data-topic="success_failure">Thành công & Thất bại</button>
-            </div>
-
-            <div class="powerup-group">
-              <button class="powerup-btn" id="btn-5050" onclick="usePowerup5050()">
-                <span class="powerup-icon">💡</span>
-                <span>50 : 50</span>
-              </button>
-              <button class="powerup-btn" id="btn-hint" onclick="usePowerupHint()">
-                <span class="powerup-icon">🔍</span>
-                <span>Gợi ý Clue</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Timer Bar -->
-          <div class="quiz-timer-container">
-            <div class="quiz-timer-bar" id="ta-quiz-timer-fill"></div>
-          </div>
-
-          <!-- Question Arena Card -->
-          <div id="ta-quiz-card-container">
-            <!-- Rendered dynamically by app.js -->
-          </div>
-        </div>
-
-        <!-- Sub-tab 2: Speed Match -->
-        <div id="ta-match" class="sub-tab-content">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">⚡ Speed Match (Nối cặp siêu tốc)</h3>
-            <p class="sub-section-desc">Ghép từng cặp cụm từ Collocation Tiếng Anh với nghĩa Tiếng Việt tương ứng càng nhanh càng tốt để kích hoạt Combo x2, x3 và nhận thêm XP bonus!</p>
-          </div>
-
-          <div class="match-scoreboard">
-            <div class="match-stat">⏱️ Thời gian: <span id="match-timer-display">00:00</span></div>
-            <div class="match-stat">✨ Cặp đã ghép: <span id="match-score-display">0 / 8</span></div>
-            <div class="match-stat combo-stat">🔥 Combo Multiplier: <span id="match-combo-display">x1</span></div>
-            <button class="card-btn filled" style="width: auto; padding: 0.5rem 1rem;" onclick="initSpeedMatchGame()">🎲 Lượt Nối Thẻ Mới</button>
-          </div>
-
-          <div class="match-grid" id="ta-match-grid">
-            <!-- Rendered dynamically by app.js -->
-          </div>
-        </div>
-
-        <!-- Sub-tab 3: Word Scramble -->
-        <div id="ta-scramble" class="sub-tab-content">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">🧩 Word Scramble (Thử thách Xếp từ)</h3>
-            <p class="sub-section-desc">Kéo hoặc nhấn vào các ô từ bị xáo trộn để xếp thành cụm Collocation/Idiom chuẩn xác theo ngữ nghĩa cho trước.</p>
-          </div>
-
-          <div id="scramble-game-container">
-            <!-- Rendered dynamically by app.js -->
-          </div>
-        </div>
-
-        <!-- Sub-tab 4: Flashcard 3D -->
-        <div id="ta-flashcards" class="sub-tab-content">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">🎴 Thẻ Nhớ 3D Luyện Tập Thông Minh</h3>
-            <p class="sub-section-desc">Lật thẻ 3D để học nghĩa, phát âm IPA, câu ví dụ và nhấn phát âm thanh chuẩn native.</p>
-          </div>
-
-          <div class="flashcard-wrapper">
-            <div class="flashcard-container" id="ta-main-flashcard" onclick="toggleTaFlashcardFlip()">
-              <div class="flashcard-inner">
-                <div class="flashcard-front">
-                  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-                    <span class="badge-tag" id="ta-fc-topic-tag">FAMILY</span>
-                    <span id="ta-fc-counter" style="font-size: 0.9rem; font-weight: 700; opacity: 0.8;">Card 1 of 50</span>
-                  </div>
-                  
-                  <div style="text-align: center; margin: 2rem 0;">
-                    <div id="ta-fc-term" style="font-size: 2.2rem; font-weight: 800; color: #ffffff; font-family: 'Outfit', sans-serif;">Immediate family</div>
-                    <div id="ta-fc-ipa" style="font-size: 1.1rem; opacity: 0.9; margin-top: 0.5rem; color: #a7f3d0;">/ɪˈmiːdiət ˈfæməli/</div>
-                  </div>
-
-                  <div style="display: flex; gap: 0.5rem; align-items: center;">
-                    <button class="audio-btn" onclick="event.stopPropagation(); speakTaTerm()">🔊 Phát âm</button>
-                    <span style="font-size: 0.85rem; opacity: 0.8;">(Nhấp thẻ để lật xem nghĩa 🔄)</span>
-                  </div>
-                </div>
-
-                <div class="flashcard-back">
-                  <div style="font-size: 0.9rem; font-weight: 700; color: var(--brand-teal-dark); margin-bottom: 0.5rem;">🇻🇳 DỊCH NGHĨA TIẾNG VIỆT</div>
-                  <div id="ta-fc-vn" style="font-size: 1.5rem; font-weight: 800; color: var(--brand-teal-darker); margin-bottom: 1rem;">Gia đình ruột thịt (bố mẹ và con cái)</div>
-                  
-                  <div style="background: rgba(15, 118, 110, 0.06); padding: 1rem; border-radius: var(--radius-md); text-align: left; width: 100%; border-left: 4px solid var(--brand-teal);">
-                    <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-muted);">CÂU VÍ DỤ TRONG NGỮ CẢNH:</div>
-                    <div id="ta-fc-ex" style="font-size: 1rem; font-weight: 600; color: var(--text-primary); margin-top: 0.25rem;">• I live with my immediate family in Hanoi.</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Flashcard Action Buttons -->
-            <div class="flashcard-actions">
-              <button class="card-btn outline-amber" onclick="prevTaFlashcard()">← Thẻ trước</button>
-              <button class="card-btn filled" style="background: #ef4444; color: white;" onclick="markTaFcNeedPractice()">❌ Chưa thuộc (+0 XP)</button>
-              <button class="card-btn filled" style="background: #10b981; color: white;" onclick="markTaFcMastered()">✅ Đã thuộc (+15 XP)</button>
-              <button class="card-btn outline-amber" onclick="nextTaFlashcard()">Thẻ sau →</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sub-tab 5: Kho Từ Vựng -->
-        <div id="ta-bank" class="sub-tab-content">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">📖 Kho 2,600+ English Collocations & Idioms</h3>
-            <p class="sub-section-desc">Tra cứu nhanh chóng hơn 2,600+ cụm từ cố định, thành ngữ kèm theo phát âm IPA, ví dụ và nghĩa Tiếng Việt.</p>
-          </div>
-
-          <div style="margin-bottom: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-            <input type="text" id="ta-bank-search" class="vocab-search" placeholder="🔍 Tìm kiếm cụm từ tiếng Anh hoặc dịch nghĩa tiếng Việt..." style="flex: 1; min-width: 280px;">
-          </div>
-
-          <div id="ta-bank-grid" class="vocab-grid">
-            <!-- Rendered dynamically by app.js -->
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== FOCUS ON VOCABULARY TAB ==================== -->
-    <section id="focus-on-vocabulary" class="tab-content">
-      <div class="reading-box-container">
-        
-        <!-- Module Header -->
-        <div class="reading-box-header">
-          <button class="back-home-btn" onclick="goHome()">← Back to Home</button>
-          <div class="reading-box-badge">🔤 FOCUS ON VOCABULARY • ACADEMIC & CONTEXTUAL</div>
-          <h2 class="reading-box-title">Focus on Vocabulary (CEFR B1–C2 Academic)</h2>
-          <p class="reading-box-desc">Chinh phục kho từ vựng học thuật chuyên sâu VSTEP, IELTS, TOEFL & Cambridge qua 5 phương pháp tương tác: Tổng quan Kỹ năng, Thẻ nhớ 3D Flashcards, Tra cứu Từ vựng, Bài tập Trắc nghiệm Ngữ cảnh và Chiến thuật Gốc từ (Roots & Affixes).</p>
-        </div>
-
-        <!-- Sub-tabs navigation inside Focus on Vocabulary -->
-        <div class="sub-tabs">
-          <button class="sub-tab active" data-subtab="fov-overview">Overview & Modules</button>
-          <button class="sub-tab" data-subtab="fov-memory-lab">🧠 Active Memory Lab</button>
-          <button class="sub-tab" data-subtab="fov-flashcards">🎴 3D Flashcards</button>
-          <button class="sub-tab" data-subtab="fov-quiz">📝 Practice Quiz</button>
-          <button class="sub-tab" data-subtab="fov-bank">📖 Academic Vocab Explorer</button>
-          <button class="sub-tab" data-subtab="fov-strategies">💡 4 Word-Building Strategies</button>
-        </div>
-
-        <!-- Chapter Selector Filter Chips Bar -->
-        <div style="margin: 1.25rem 0 0.5rem 0; padding: 0.85rem 1.25rem; background: #ffffff; border-radius: var(--radius-lg); border: 1px solid var(--border-subtle); display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; box-shadow: var(--shadow-sm);">
-          <span style="font-weight: 800; color: var(--brand-teal-dark); font-size: 0.9rem; display: flex; align-items: center; gap: 0.4rem;">
-            📚 CHỌN CHAPTER:
-          </span>
-          <button class="filter-chip fov-chapter-chip active" data-chapter="all">Tất cả Chapters</button>
-          <button class="filter-chip fov-chapter-chip" data-chapter="ch1">🌟 Chapter 1: Can we be happier?</button>
-          <button class="filter-chip fov-chapter-chip" data-chapter="ch2">🚀 Chapter 2: Into the Flow</button>
-          <button class="filter-chip fov-chapter-chip" data-chapter="ch_academic">🎓 Academic Core (AWL)</button>
-        </div>
-
-        <!-- Sub-tab 1: Overview & Modules -->
-        <div id="fov-overview" class="sub-tab-content active">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">Focus on Vocabulary Modules & Learning Pathways</h3>
-            <p class="sub-section-desc">Hệ thống bài học từ vựng chuyên sâu giúp bạn xây dựng vốn từ học thuật bền vững, làm chủ ngữ cảnh và phân tích cấu tạo từ dựa trên thiết kế Memory Retrieval.</p>
-          </div>
-
-          <div class="skills-grid">
-            
-            <div class="skill-box-card">
-              <div class="skill-card-top">
-                <div class="folder-branch-path">
-                  <span class="branch-root">📁 Modules</span>
-                  <span class="branch-sep">/</span>
-                  <span class="branch-folder">📂 Contextual Vocab</span>
-                  <span class="branch-sep">/</span>
-                  <span class="branch-file">CEFR B1-C2</span>
-                </div>
-              </div>
-              <h3 class="skill-card-title">🔍 Vocabulary in Context</h3>
-              <p class="skill-card-desc">Suy đoán chính xác ý nghĩa từ mới trong các bài đọc học thuật VSTEP/IELTS thông qua tín hiệu ngữ cảnh (Context Clues) mà không phụ thuộc vào từ điển.</p>
-              <div class="skill-meta">
-                <span>📄 Authentic Texts</span>
-                <span>❓ Interactive Practice</span>
-              </div>
-              <button class="skill-action-btn" onclick="openFovSubTab('fov-quiz')">Thực hành Trắc nghiệm Ngữ cảnh →</button>
-            </div>
-
-            <div class="skill-box-card" style="border-top: 3.5px solid #8b5cf6;">
-              <div class="skill-card-top">
-                <div class="folder-branch-path">
-                  <span class="branch-root">📁 Modules</span>
-                  <span class="branch-sep">/</span>
-                  <span class="branch-folder">📂 Cognitive Recall</span>
-                  <span class="branch-sep">/</span>
-                  <span class="branch-file">CEFR B1-C2</span>
-                </div>
-              </div>
-              <h3 class="skill-card-title">🧠 Active Memory Lab</h3>
-              <p class="skill-card-desc">Luyện tập ghi nhớ bền vững qua 4 cơ chế khoa học: C-Test (Phục hồi từ khuyết ký tự), Collocation Chunks, Biến đổi Họ từ và Ép buộc đặt câu liên hệ bản thân.</p>
-              <div class="skill-meta">
-                <span>⚡ Active Retrieval</span>
-                <span>✍️ Personal Prompts</span>
-              </div>
-              <button class="skill-action-btn" onclick="openFovSubTab('fov-memory-lab')">Vào Phòng Luyện Ghi Nhớ →</button>
-            </div>
-
-            <div class="skill-box-card">
-              <div class="skill-card-top">
-                <div class="folder-branch-path">
-                  <span class="branch-root">📁 Modules</span>
-                  <span class="branch-sep">/</span>
-                  <span class="branch-folder">📂 Word Formation</span>
-                  <span class="branch-sep">/</span>
-                  <span class="branch-file">CEFR B2-C1</span>
-                </div>
-              </div>
-              <h3 class="skill-card-title">🧩 Morphology & Root Words</h3>
-              <p class="skill-card-desc">Giải mã cấu tạo từ bằng cách phân tích Tiền tố (Prefixes), Hậu tố (Suffixes) và Gốc từ Latin/Greek (Roots) để nhân số lượng từ vựng lên gấp 5 lần.</p>
-              <div class="skill-meta">
-                <span>🌱 Roots & Affixes</span>
-                <span>💡 4 Key Strategies</span>
-              </div>
-              <button class="skill-action-btn" onclick="openFovSubTab('fov-strategies')">Xem Chiến thuật Gốc từ →</button>
-            </div>
-
-            <div class="skill-box-card">
-              <div class="skill-card-top">
-                <div class="folder-branch-path">
-                  <span class="branch-root">📁 Modules</span>
-                  <span class="branch-sep">/</span>
-                  <span class="branch-folder">📂 Spaced Repetition</span>
-                  <span class="branch-sep">/</span>
-                  <span class="branch-file">CEFR B1-C2</span>
-                </div>
-              </div>
-              <h3 class="skill-card-title">🎴 3D Interactive Flashcards</h3>
-              <p class="skill-card-desc">Học từ vựng qua thẻ 3D lật tự động, xem phiên âm IPA, nghĩa Tiếng Việt, ví dụ ứng dụng, phát âm Audio chuẩn bản ngữ và đánh giá ghi nhớ.</p>
-              <div class="skill-meta">
-                <span>🔊 Native Audio</span>
-                <span>🔄 3D Flip Deck</span>
-              </div>
-              <button class="skill-action-btn" onclick="openFovSubTab('fov-flashcards')">Mở Bộ Thẻ 3D Flashcard →</button>
-            </div>
-
-            <div class="skill-box-card">
-              <div class="skill-card-top">
-                <div class="folder-branch-path">
-                  <span class="branch-root">📁 Modules</span>
-                  <span class="branch-sep">/</span>
-                  <span class="branch-folder">📂 Academic Bank</span>
-                  <span class="branch-sep">/</span>
-                  <span class="branch-file">CEFR B1-C2</span>
-                </div>
-              </div>
-              <h3 class="skill-card-title">📖 Academic Vocab Explorer</h3>
-              <p class="skill-card-desc">Tra cứu nhanh chóng kho từ vựng học thuật đa dạng (AWL - Academic Word List), tìm kiếm trực tiếp và lọc theo các cấp độ CEFR B1, B2, C1, C2.</p>
-              <div class="skill-meta">
-                <span>🔍 Live Search</span>
-                <span>🎯 CEFR Filters</span>
-              </div>
-              <button class="skill-action-btn" onclick="openFovSubTab('fov-bank')">Khám phá Kho Từ vựng →</button>
-            </div>
-
-          </div>
-
-          <!-- Spaced Repetition Schedule Banner -->
-          <div style="background: linear-gradient(135deg, #0f766e 0%, #115e59 100%); color: #ffffff; border-radius: var(--radius-xl); padding: 2rem; margin-top: 2rem; box-shadow: var(--shadow-md);">
-            <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 1.3rem; font-weight: 800; margin-bottom: 0.75rem;">
-              <span>🗓️ Chu kỳ Ôn tập Ghi nhớ Ngắt quãng (Spaced Repetition Schedule)</span>
-            </div>
-            <p style="opacity: 0.95; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1.5rem;">Dựa trên đường cong quên của Ebbinghaus & Nguyên lý Memory Retrieval trong bộ sách Focus on Vocabulary, tiến trình ôn tập chuẩn khoa học gồm 4 giai đoạn:</p>
-            
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
-              <div style="background: rgba(255,255,255,0.12); padding: 1.1rem; border-radius: var(--radius-md); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.18);">
-                <div style="font-weight: 800; font-size: 1.1rem; color: #fde68a; margin-bottom: 0.25rem;">📌 Ngày 1: Tiếp nhận</div>
-                <div style="font-size: 0.85rem; opacity: 0.9;">Đọc bài đọc nguyên bản + Làm bài tập C-Test khuyết ký tự trong Active Memory Lab.</div>
-              </div>
-              <div style="background: rgba(255,255,255,0.12); padding: 1.1rem; border-radius: var(--radius-md); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.18);">
-                <div style="font-weight: 800; font-size: 1.1rem; color: #fde68a; margin-bottom: 0.25rem;">⚡ Ngày 2: Củng cố</div>
-                <div style="font-size: 0.85rem; opacity: 0.9;">Thực hành Collocation Chunks + Biến đổi bảng Họ từ (Word Families).</div>
-              </div>
-              <div style="background: rgba(255,255,255,0.12); padding: 1.1rem; border-radius: var(--radius-md); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.18);">
-                <div style="font-weight: 800; font-size: 1.1rem; color: #fde68a; margin-bottom: 0.25rem;">✍️ Ngày 7: Mã hóa sâu</div>
-                <div style="font-size: 0.85rem; opacity: 0.9;">Thực hiện bài tập Forced Production (Viết đoạn văn tự đặt câu liên hệ bản thân).</div>
-              </div>
-              <div style="background: rgba(255,255,255,0.12); padding: 1.1rem; border-radius: var(--radius-md); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.18);">
-                <div style="font-weight: 800; font-size: 1.1rem; color: #fde68a; margin-bottom: 0.25rem;">🏆 Ngày 30: Kiểm chứng</div>
-                <div style="font-size: 0.85rem; opacity: 0.9;">Làm bài kiểm tra trắc nghiệm tổng hợp Spaced Retrieval Quiz của Chapter.</div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Sub-tab: Active Memory Lab (Cognitive Recall System) -->
-        <div id="fov-memory-lab" class="sub-tab-content">
-          <div class="sub-section-header">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
-              <div>
-                <h3 class="sub-section-title">🧠 Active Memory Lab (Cognitive Science Recall)</h3>
-                <p class="sub-section-desc">Cải tiến dựa trên nghiên cứu Tâm lý học Thần kinh & Khoa học Ghi nhớ (Active Retrieval & Elaborative Encoding) từ bộ sách Focus on Vocabulary 1 & 2.</p>
-              </div>
-              <div style="background: #f0fdf4; border: 1.5px solid #86efac; padding: 0.6rem 1rem; border-radius: var(--radius-md); font-size: 0.85rem; color: #166534; font-weight: 700;">
-                ⚡ Mức độ ghi nhớ: <span id="fov-memory-score-badge">0 / 0 Thử thách</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Memory Exercise Mode Selector Chips -->
-          <div class="quiz-controls" style="margin-bottom: 1.5rem; background: #ffffff; border: 1px solid var(--border-subtle);">
-            <div class="filter-group">
-              <button class="filter-chip fov-mem-mode-btn active" onclick="switchFovMemoryMode('c-test')">🔤 Task 1: C-Test (Partial Spelled Recall)</button>
-              <button class="filter-chip fov-mem-mode-btn" onclick="switchFovMemoryMode('collocation')">🔗 Task 2: Collocation Chunks</button>
-              <button class="filter-chip fov-mem-mode-btn" onclick="switchFovMemoryMode('morphology')">🧬 Task 3: Word Family Transformation</button>
-              <button class="filter-chip fov-mem-mode-btn" onclick="switchFovMemoryMode('forced-production')">✍️ Task 4: Forced Production (Personal Prompt)</button>
-            </div>
-          </div>
-
-          <!-- Mode 1: C-Test Partial Spelled Recall -->
-          <div id="fov-mem-mode-c-test" class="fov-mem-mode-content active">
-            <div style="background: #ffffff; border-radius: var(--radius-lg); padding: 1.75rem; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--brand-teal-dark);">Task 1: Active Recall with Partial Hints (C-Test / Phục hồi ký tự khuyết)</h4>
-                <button class="card-btn outline-amber" style="width: auto; padding: 0.4rem 1rem; font-size: 0.85rem;" onclick="renderFovCTest()">🔄 Đổi danh sách câu</button>
-              </div>
-              <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">Điền các chữ cái còn thiếu của từ mục tiêu dựa vào ngữ cảnh câu và gợi ý định nghĩa. Phương pháp này ép não bộ kích hoạt trí nhớ chủ động (Spelling Retrieval).</p>
-
-              <div id="fov-ctest-container" style="display: flex; flex-direction: column; gap: 1.25rem;">
-                <!-- Rendered dynamically by JS -->
-              </div>
-            </div>
-          </div>
-
-          <!-- Mode 2: Collocation Chunk Association -->
-          <div id="fov-mem-mode-collocation" class="fov-mem-mode-content" style="display: none;">
-            <div style="background: #ffffff; border-radius: var(--radius-lg); padding: 1.75rem; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--brand-teal-dark);">Task 2: Collocation Chunk Association Grid (Lưới liên tưởng cụm từ)</h4>
-                <button class="card-btn outline-amber" style="width: auto; padding: 0.4rem 1rem; font-size: 0.85rem;" onclick="renderFovCollocTask()">🔄 Đổi thử thách cụm từ</button>
-              </div>
-              <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">Ghép các từ bổ nghĩa (Cột A) với Từ mục tiêu (Cột B) để tạo thành Collocation chuẩn, sau đó hoàn thành câu ngữ cảnh.</p>
-
-              <div id="fov-colloc-container">
-                <!-- Rendered dynamically by JS -->
-              </div>
-            </div>
-          </div>
-
-          <!-- Mode 3: Word Family Transformation -->
-          <div id="fov-mem-mode-morphology" class="fov-mem-mode-content" style="display: none;">
-            <div style="background: #ffffff; border-radius: var(--radius-lg); padding: 1.75rem; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--brand-teal-dark);">Task 3: Forced Word Family Transformation (Biến đổi dạng Họ từ)</h4>
-                <button class="card-btn outline-amber" style="width: auto; padding: 0.4rem 1rem; font-size: 0.85rem;" onclick="renderFovMorphTask()">🔄 Đổi bài tập họ từ</button>
-              </div>
-              <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">Chuyển đổi dạng từ gốc trong ngoặc sang đúng Từ loại (Danh từ, Động từ, Tính từ, Trạng từ) phù hợp với cấu trúc cú pháp của câu.</p>
-
-              <div id="fov-morph-container">
-                <!-- Rendered dynamically by JS -->
-              </div>
-            </div>
-          </div>
-
-          <!-- Mode 4: Forced Production (Personal Prompt) -->
-          <div id="fov-mem-mode-forced-production" class="fov-mem-mode-content" style="display: none;">
-            <div style="background: #ffffff; border-radius: var(--radius-lg); padding: 1.75rem; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                <h4 style="font-size: 1.25rem; font-weight: 800; color: var(--brand-teal-dark);">Task 4: Self-Referential Forced Production (Thử thách đặt câu liên hệ bản thân)</h4>
-                <button class="card-btn outline-amber" style="width: auto; padding: 0.4rem 1rem; font-size: 0.85rem;" onclick="renderFovForcedProduction()">🔄 Đổi bộ từ ngẫu nhiên</button>
-              </div>
-              <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">Mã hóa sâu (Elaborative Encoding): Viết 2-3 câu trả lời cho câu hỏi tình huống bên dưới, bắt buộc phải sử dụng đủ tất cả các từ mục tiêu được yêu cầu.</p>
-
-              <div id="fov-production-container">
-                <!-- Rendered dynamically by JS -->
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Sub-tab 2: 3D Flashcards -->
-        <div id="fov-flashcards" class="sub-tab-content">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">🎴 Thẻ Ghi Nhớ Từ Vựng Học Thuật 3D (Spaced Repetition)</h3>
-            <p class="sub-section-desc">Chạm hoặc click vào thẻ để lật xem phiên âm IPA, giải nghĩa Tiếng Việt, câu ví dụ thực tế và nghe phát âm Audio.</p>
-          </div>
-
-          <div style="text-align: center; font-weight: 700; color: var(--brand-teal); margin-bottom: 1rem;" id="fov-fc-counter">
-            Card 1 of 30
-          </div>
-
-          <!-- 3D Flashcard Wrapper -->
-          <div class="flashcard-wrapper">
-            <div id="fov-main-flashcard" class="flashcard" onclick="toggleFovFlashcardFlip()">
-              
-              <!-- Front Side -->
-              <div class="flashcard-front">
-                <div style="font-size: 0.8rem; font-weight: 800; color: var(--brand-teal); text-transform: uppercase; margin-bottom: 0.75rem;" id="fov-fc-badge">ACADEMIC VOCABULARY</div>
-                <h2 id="fov-fc-term" style="font-size: 2.2rem; font-weight: 800; color: var(--brand-teal-dark); margin-bottom: 0.5rem;">Ubiquitous</h2>
-                <div id="fov-fc-ipa" style="font-size: 1.1rem; color: var(--text-muted); font-family: serif;">/juːˈbɪkwɪtəs/</div>
-                <div id="fov-fc-pos" style="font-size: 0.85rem; font-weight: 700; color: var(--brand-teal); background: var(--brand-teal-light); padding: 0.2rem 0.6rem; border-radius: 4px; margin-top: 0.75rem;">adjective</div>
-                <div class="flashcard-hint">🔄 Click hoặc chạm để lật xem giải nghĩa & ví dụ</div>
-              </div>
-
-              <!-- Back Side -->
-              <div class="flashcard-back">
-                <div id="fov-fc-vn" style="font-size: 1.35rem; font-weight: 800; color: #0d9488; background: #f0fdfa; padding: 0.6rem 1rem; border-radius: var(--radius-md); border: 1px solid #ccfbf1; margin-bottom: 0.75rem;">
-                  🇻🇳 Phổ biến ở khắp mọi nơi, có mặt khắp nơi
-                </div>
-                <div id="fov-fc-def" style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.5;">
-                  Present, appearing, or found everywhere.
-                </div>
-                <div id="fov-fc-ex" style="font-size: 0.95rem; color: var(--text-primary); font-style: italic; background: #f8fafc; padding: 0.75rem 1rem; border-radius: var(--radius-md); border-left: 3px solid var(--brand-teal);">
-                  • Smartphones have become ubiquitous in modern daily life.
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Flashcard Controls -->
-          <div class="flashcard-controls">
-            <button class="card-btn filled" style="width: auto; padding: 0.75rem 1.5rem;" onclick="prevFovFlashcard()">← Thẻ trước</button>
-            <button class="card-btn outline-amber" style="width: auto; padding: 0.75rem 1.5rem;" onclick="toggleFovFlashcardFlip()">🔄 Lật thẻ</button>
-            <button class="audio-btn" style="padding: 0.75rem 1.25rem; background: #0f766e; color: white; border-radius: 8px; font-weight: 600;" onclick="speakFovTerm()">🔊 Phát âm</button>
-            <button class="card-btn filled" style="width: auto; padding: 0.75rem 1.5rem;" onclick="nextFovFlashcard()">Thẻ tiếp theo →</button>
-          </div>
-
-        </div>
-
-        <!-- Sub-tab 3: Practice Quiz -->
-        <div id="fov-quiz" class="sub-tab-content">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">📝 Contextual Vocabulary Practice Quiz</h3>
-            <p class="sub-section-desc">Kiểm tra khả năng vận dụng từ vựng học thuật trong câu ngữ cảnh thực tế với đáp án giải thích chi tiết.</p>
-          </div>
-
-          <div class="quiz-controls" style="margin-bottom: 2rem;">
-            <div style="display: flex; gap: 1rem; align-items: center; justify-content: space-between; width: 100%; flex-wrap: wrap;">
-              <button class="card-btn filled" style="width: auto;" onclick="resetFovQuiz()">🎲 Bắt đầu lại lượt Quiz</button>
-              <div class="score-tracker">
-                <span>Quiz Score:</span>
-                <span id="fov-score-display" class="score-badge">0 / 0 Đúng</span>
-              </div>
-            </div>
-          </div>
-
-          <div id="fov-quiz-container">
-            <!-- Rendered dynamically by app.js -->
-          </div>
-        </div>
-
-        <!-- Sub-tab 4: Academic Vocab Explorer -->
-        <div id="fov-bank" class="sub-tab-content">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">📖 Academic Vocab Explorer</h3>
-            <p class="sub-section-desc">Tra cứu nhanh từ vựng học thuật cao cấp kèm phiên âm IPA, định nghĩa Tiếng Anh và dịch nghĩa Tiếng Việt.</p>
-          </div>
-
-          <div style="margin-bottom: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
-            <input type="text" id="fov-bank-search" class="vocab-search" placeholder="🔍 Tìm kiếm từ vựng, phiên âm IPA hoặc nghĩa tiếng Việt..." style="flex: 2; min-width: 280px; margin-bottom: 0;">
-            <div class="filter-group" style="flex: 1; margin-bottom: 0;">
-              <button class="filter-chip fov-level-chip active" data-fovlevel="All">All Levels</button>
-              <button class="filter-chip fov-level-chip" data-fovlevel="B1">CEFR B1</button>
-              <button class="filter-chip fov-level-chip" data-fovlevel="B2">CEFR B2</button>
-              <button class="filter-chip fov-level-chip" data-fovlevel="C1">CEFR C1</button>
-              <button class="filter-chip fov-level-chip" data-fovlevel="C2">CEFR C2</button>
-            </div>
-          </div>
-
-          <div id="fov-bank-grid" class="vocab-grid">
-            <!-- Rendered dynamically by app.js -->
-          </div>
-        </div>
-
-        <!-- Sub-tab 5: 4 Word-Building Strategies -->
-        <div id="fov-strategies" class="sub-tab-content">
-          <div class="sub-section-header">
-            <h3 class="sub-section-title">💡 4 Core Strategies for Building Academic Vocabulary</h3>
-            <p class="sub-section-desc">Làm chủ các chiến thuật mở rộng từ vựng học thuật bền vững và hiệu quả nhất.</p>
-          </div>
-
-          <div class="strategies-grid">
-            
-            <div class="strategy-card">
-              <div class="strategy-icon">🔍</div>
-              <h3 class="strategy-title">1. Contextual Clues (Đoán nghĩa qua Ngữ cảnh)</h3>
-              <ul class="strategy-steps">
-                <li>Xác định từ nối tương phản (however, whereas, despite) hoặc giải thích (meaning, defined as).</li>
-                <li>Phân tích mối quan hệ nguyên nhân - kết quả xung quanh từ chưa biết.</li>
-                <li>Thay thử các từ đồng nghĩa đoán nhận vào vị trí để kiểm tra tính hợp lý của câu.</li>
-              </ul>
-              <div class="trap-box">
-                <div class="trap-title">⚠️ Lỗi thường gặp</div>
-                <div><strong>Tra từ điển quá sớm:</strong> Ngắt gián đoạn mạch đọc làm giảm khả năng phản xạ tư duy trực tiếp bằng tiếng Anh.</div>
-              </div>
-            </div>
-
-            <div class="strategy-card">
-              <div class="strategy-icon">🧩</div>
-              <h3 class="strategy-title">2. Morphological Analysis (Phân tích Gốc từ)</h3>
-              <ul class="strategy-steps">
-                <li>Tách từ thành: Tiền tố (Prefix) + Gốc từ (Root) + Hậu tố (Suffix).</li>
-                <li>Ví dụ: <em>UN-PREDICT-ABLE</em> (Un = không, Predict = đoán, Able = có thể).</li>
-                <li>Nắm vững 20 Tiền tố & 14 Gốc từ Latin/Greek phổ biến nhất để suy ra 100,000+ từ.</li>
-              </ul>
-              <div class="trap-box">
-                <div class="trap-title">⚠️ Lỗi thường gặp</div>
-                <div><strong>Bỏ qua hậu tố:</strong> Hậu tố quyết định Từ loại (Noun, Verb, Adj, Adv), giúp loại nhanh các phương án sai dạng từ.</div>
-              </div>
-            </div>
-
-            <div class="strategy-card">
-              <div class="strategy-icon">🎯</div>
-              <h3 class="strategy-title">3. Lexical Chunks & Collocations (Học theo Cụm)</h3>
-              <ul class="strategy-steps">
-                <li>Không bao giờ ghi nhớ từng từ đơn lẻ rời rạc.</li>
-                <li>Học kèm động từ + danh từ đi cùng (vd: <em>pose a threat, draw a conclusion</em>).</li>
-                <li>Ghi chép từ vựng theo chủ đề (Academic Word List) thay vì thứ tự bảng chữ cái A-Z.</li>
-              </ul>
-              <div class="trap-box">
-                <div class="trap-title">⚠️ Lỗi thường gặp</div>
-                <div><strong>Dịch thô Word-for-Word:</strong> Ghép từ tiếng Việt sang tiếng Anh gây ra các cụm từ sai tự nhiên.</div>
-              </div>
-            </div>
-
-            <div class="strategy-card">
-              <div class="strategy-icon">🧠</div>
-              <h3 class="strategy-title">4. Spaced Repetition & Active Retrieval</h3>
-              <ul class="strategy-steps">
-                <li>Sử dụng hệ thống lật thẻ Flashcard theo các mốc thời gian: 1 ngày, 3 ngày, 7 ngày, 30 ngày.</li>
-                <li>Tự đặt câu thực hành thực tế cho từng từ vựng mới học.</li>
-                <li>Kích hoạt chủ động (Active Recall) bằng cách đọc định nghĩa trước khi nhìn thấy từ gốc.</li>
-              </ul>
-              <div class="trap-box">
-                <div class="trap-title">⚠️ Lỗi thường gặp</div>
-                <div><strong>Đọc thụ động:</strong> Chỉ đọc đi đọc lại danh sách từ mà không tự kiểm tra khả năng nhớ lại.</div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==================== LEARNING DASHBOARD TAB ==================== -->
-    <section id="learning-dashboard" class="tab-content">
-      <div class="reading-box-container">
-        
-        <!-- Dashboard Header -->
-        <div class="reading-box-header">
-          <button class="back-home-btn" onclick="goHome()">← Back to Home</button>
-          <div class="reading-box-badge">📊 LEARNING ANALYTICS & PROGRESS</div>
-          <h2 class="reading-box-title">Learning Dashboard & GA4 Analytics</h2>
-          <p class="reading-box-desc">Bảng thống kê kết quả học tập cá nhân thời gian thực và hệ thống đo lường chuyển đổi dữ liệu Google Analytics 4 (GA4).</p>
-        </div>
-
-        <!-- Stat Summary Cards Grid -->
-        <div class="format-grid" style="margin-bottom: 2rem;">
-          <div class="format-card" style="border-top: 4px solid #ef4444;">
-            <div class="format-icon">🔥</div>
-            <div class="format-info">
-              <h4 id="dash-streak-count">1 Day Streak</h4>
-              <p>Chuỗi ngày học liên tục gần nhất</p>
-            </div>
-          </div>
-
-          <div class="format-card" style="border-top: 4px solid var(--brand-teal);">
-            <div class="format-icon">🎯</div>
-            <div class="format-info">
-              <h4 id="dash-total-quizzes">0 Quizzes</h4>
-              <p>Bài tập Quiz đã hoàn thành</p>
-            </div>
-          </div>
-
-          <div class="format-card" style="border-top: 4px solid #f59e0b;">
-            <div class="format-icon">🃏</div>
-            <div class="format-info">
-              <h4 id="dash-flashcards-count">0 Cards</h4>
-              <p>Số thẻ Flashcard đã lật xem</p>
-            </div>
-          </div>
-
-          <div class="format-card" style="border-top: 4px solid #10b981;">
-            <div class="format-icon">⭐</div>
-            <div class="format-info">
-              <h4 id="dash-overall-acc">0.0% Accuracy</h4>
-              <p>Tỷ lệ trả lời chính xác tổng quan</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Charts Grid Section -->
-        <div class="sub-section-header">
-          <h3 class="sub-section-title">Visual Analytics & Performance Breakdown</h3>
-          <p class="sub-section-desc">Biểu đồ phân tích chuyên sâu kỹ năng đọc hiểu, diễn biến điểm số và phân bổ thời gian học tập.</p>
-        </div>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem;">
-          
-          <!-- Chart 1: Category Accuracy -->
-          <div style="background: #ffffff; padding: 1.5rem; border-radius: var(--radius-xl); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
-            <h4 style="font-size: 1.1rem; color: var(--text-primary); font-weight: 800; margin-bottom: 1rem; text-align: center;">🎯 Reading Accuracy by Skill Category</h4>
-            <div style="position: relative; height: 260px;">
-              <canvas id="chartCategoryAccuracy"></canvas>
-            </div>
-          </div>
-
-          <!-- Chart 2: Score Trend -->
-          <div style="background: #ffffff; padding: 1.5rem; border-radius: var(--radius-xl); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
-            <h4 style="font-size: 1.1rem; color: var(--text-primary); font-weight: 800; margin-bottom: 1rem; text-align: center;">📈 Score Progress Trend (Recent Attempts)</h4>
-            <div style="position: relative; height: 260px;">
-              <canvas id="chartScoreTrend"></canvas>
-            </div>
-          </div>
-
-          <!-- Chart 3: Skill Activity Breakdown -->
-          <div style="background: #ffffff; padding: 1.5rem; border-radius: var(--radius-xl); border: 1px solid var(--border-subtle); box-shadow: var(--shadow-sm);">
-            <h4 style="font-size: 1.1rem; color: var(--text-primary); font-weight: 800; margin-bottom: 1rem; text-align: center;">🍰 Study Activity Distribution</h4>
-            <div style="position: relative; height: 260px;">
-              <canvas id="chartActivityBreakdown"></canvas>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Recent Activity History Log Table -->
-        <div class="sub-section-header">
-          <h3 class="sub-section-title">Lịch Sử Học Tập & Thực Hành Gần Đây</h3>
-          <p class="sub-section-desc">Ghi nhận chi tiết từng lượt làm bài Quiz và kết quả trả lời.</p>
-        </div>
-
-        <div class="matrix-table-container">
-          <table class="matrix-table">
-            <thead>
-              <tr>
-                <th>Thời gian (Timestamp)</th>
-                <th>Kỹ năng / Phân loại (Skill)</th>
-                <th>Kết quả (Score)</th>
-                <th>Tỷ lệ đúng (Accuracy)</th>
-              </tr>
-            </thead>
-            <tbody id="dash-history-table-body">
-              <!-- Rendered dynamically by app.js -->
-            </tbody>
-          </table>
-        </div>
-
-        <!-- Reset Data Button -->
-        <div style="text-align: right; margin-top: 1.5rem;">
-          <button class="card-btn outline-amber" style="width: auto; padding: 0.6rem 1.25rem; font-size: 0.875rem;" onclick="resetLearningStats()">🗑️ Xóa & Đặt lại dữ liệu học tập</button>
-        </div>
-
-      </div>
-    </section>
+      </section>
+
+      <!-- VIEW 4: TÁC VỤ CON - GRAMMAR 10 -->
+      <section id="task-e10-grammar" class="view-panel task-view">
+        <header class="task-header">
+          <span class="task-tag tag-green">ENGLISH 10 / GRAMMAR</span>
+          <h2>📝 English 10 Grammar Topics</h2>
+          <p>Chủ điểm ngữ pháp trọng tâm chương trình Tiếng Anh 10.</p>
+        </header>
+      </section>
+
+      <!-- VIEW 5: TÁC VỤ CON - VOCAB 10 -->
+      <section id="task-e10-vocab" class="view-panel task-view">
+        <header class="task-header">
+          <span class="task-tag tag-green">ENGLISH 10 / VOCABULARY</span>
+          <h2>🔤 English 10 Vocabulary Practice</h2>
+          <p>Từ vựng theo từng Unit chương trình Tiếng Anh 10.</p>
+        </header>
+      </section>
 
     </main>
   </div>
 
-  <script src="collocations_data.js?v=3.2"></script>
-  <script src="trang_anh_data.js?v=3.2"></script>
-  <script src="app.js?v=3.2"></script>
+  <!-- JAVASCRIPT XỬ LÝ FOCUS TÁC VỤ TỰ ĐỘNG ẨN MỤC MẸ -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const views = document.querySelectorAll(".view-panel");
+      const navItems = document.querySelectorAll(".nav-item");
+      const subFolderBtns = document.querySelectorAll(".btn-subfolder");
+      const backBtn = document.getElementById("back-to-home-btn");
+      const crumbActive = document.getElementById("crumb-active");
+
+      // Hàm chuyển tab và ẩn thư mục mẹ
+      function switchFocusView(targetId, targetName) {
+        // 1. Ẩn toàn bộ các view panel (Thư mục mẹ & các tác vụ khác)
+        views.forEach(view => view.classList.remove("active"));
+
+        // 2. Kích hoạt hiển thị duy nhất panel được bấm chọn
+        const activeTarget = document.getElementById(targetId);
+        if (activeTarget) {
+          activeTarget.classList.add("active");
+        }
+
+        // 3. Đổi trạng thái active ở Menu Sidebar
+        navItems.forEach(item => {
+          if (item.getAttribute("data-target") === targetId) {
+            item.classList.add("active");
+          } else {
+            item.classList.remove("active");
+          }
+        });
+
+        // 4. Cập nhật Breadcrumb & Nút quay lại
+        if (targetId === "overview-view") {
+          backBtn.classList.add("hidden");
+          crumbActive.textContent = "Tổng quan";
+        } else {
+          backBtn.classList.remove("hidden");
+          crumbActive.textContent = targetName || "Tác vụ hiện tại";
+        }
+
+        // Cuộn lên đầu trang làm việc
+        document.querySelector('.content-area').scrollTop = 0;
+      }
+
+      // Sự kiện khi bấm trên Sidebar
+      navItems.forEach(item => {
+        item.addEventListener("click", () => {
+          const target = item.getAttribute("data-target");
+          const label = item.textContent.trim();
+          switchFocusView(target, label);
+        });
+      });
+
+      // Sự kiện khi bấm vào các thư mục con trong trang Tổng quan
+      subFolderBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const target = btn.getAttribute("data-target");
+          const label = btn.querySelector('span').textContent.trim();
+          switchFocusView(target, label);
+        });
+      });
+
+      // Nút quay lại trang Tổng quan (Thư mục mẹ)
+      backBtn.addEventListener("click", () => {
+        switchFocusView("overview-view", "Tổng quan");
+      });
+    });
+  </script>
 </body>
 </html>
