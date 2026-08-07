@@ -519,6 +519,196 @@ function parseAndLoadHashRoute() {
   }
 }
 
+// ====== DỮ LIỆU THƯ MỤC (FOLDER SYSTEM) ======
+const folderData = [
+  {
+    id: 'folder1',
+    name: 'HSG 12 - English 10 - Skills',
+    path: 'HSG 12 / English 10 / Skills',
+    icon: '📂',
+    desc: 'Luyện tập các kỹ năng Reading, Writing, Speaking cho lớp 10 (Đội tuyển HSG 12).',
+    type: 'Kỹ năng',
+    fullPath: 'HSG 12 - English 10 - Skills',
+    targetTab: 'reading-comprehension',
+    targetSubTab: 'rc-overview'
+  },
+  {
+    id: 'folder2',
+    name: 'HSG 12 - English 10 - Vocabulary',
+    path: 'HSG 12 / English 10 / Vocabulary',
+    icon: '📘',
+    desc: 'Từ vựng chuyên sâu theo chủ đề, kèm bài tập ứng dụng cho HSG 12.',
+    type: 'Từ vựng',
+    fullPath: 'HSG 12 - English 10 - Vocabulary',
+    targetTab: 'focus-on-vocabulary',
+    targetSubTab: 'fov-overview'
+  },
+  {
+    id: 'folder3',
+    name: 'HSG 11 - English 11 - Reading',
+    path: 'HSG 11 / English 11 / Reading',
+    icon: '📖',
+    desc: 'Chuyên đề đọc hiểu, phân tích đoạn văn và câu hỏi suy luận.',
+    type: 'Reading',
+    fullPath: 'HSG 11 - English 11 - Reading',
+    targetTab: 'reading-comprehension',
+    targetSubTab: 'rc-quiz'
+  },
+  {
+    id: 'folder4',
+    name: 'VSTEP Practice - B1-C1',
+    path: 'VSTEP / Practice',
+    icon: '🎯',
+    desc: 'Bộ đề thi thử VSTEP đầy đủ 4 kỹ năng, cập nhật cấu trúc mới.',
+    type: 'Luyện thi',
+    fullPath: 'VSTEP Practice - B1-C1',
+    targetTab: 'reading-comprehension',
+    targetSubTab: 'rc-strategies'
+  },
+  {
+    id: 'folder5',
+    name: 'Academic Vocabulary - B2-C2',
+    path: 'Academic / Vocabulary',
+    icon: '🏛️',
+    desc: 'Từ vựng học thuật dành cho bậc B2-C2, kèm collocations đi kèm.',
+    type: 'Học thuật',
+    fullPath: 'Academic Vocabulary - B2-C2',
+    targetTab: 'focus-on-vocabulary',
+    targetSubTab: 'fov-bank'
+  },
+  {
+    id: 'folder6',
+    name: '2,600+ Collocations',
+    path: 'Collocations / Essentials',
+    icon: '🔗',
+    desc: 'Bộ sưu tập hơn 2.600 cụm từ thông dụng, phân loại theo chủ đề.',
+    type: 'Collocations',
+    fullPath: '2,600+ Collocations',
+    targetTab: 'collocations',
+    targetSubTab: null
+  },
+  {
+    id: 'folder7',
+    name: 'Academic Listening Practice',
+    path: 'Listening / B2-C2 Practice',
+    icon: '🎧',
+    desc: 'Luyện nghe học thuật chuẩn Cambridge CAE & Contemporary Topics với Audio player tương tác.',
+    type: 'Listening',
+    fullPath: 'Academic Listening Practice',
+    targetTab: 'listening-skills',
+    targetSubTab: 'ls-practice'
+  },
+  {
+    id: 'folder8',
+    name: 'English Collocations Quiz Arena',
+    path: 'Collocations / Gamification',
+    icon: '🎮',
+    desc: 'Đấu trí Quiz Arena, Nối cặp Siêu tốc, Thử thách Scramble, Flashcards 3D & Bảng Vinh danh XP.',
+    type: 'Collocations',
+    fullPath: 'English Collocations Quiz Arena',
+    targetTab: 'trang-anh-collocations',
+    targetSubTab: null
+  }
+];
+
+function renderFolders(filter = 'all') {
+  const grid = document.getElementById('folderGrid');
+  if (!grid) return;
+
+  let filtered = folderData;
+  if (filter !== 'all') {
+    filtered = folderData.filter(f => 
+      f.type.toLowerCase().includes(filter.toLowerCase()) || 
+      f.name.toLowerCase().includes(filter.toLowerCase()) ||
+      f.path.toLowerCase().includes(filter.toLowerCase())
+    );
+  }
+
+  const countEl = document.getElementById('itemCount');
+  if (countEl) countEl.textContent = filtered.length + ' thư mục';
+
+  if (filtered.length === 0) {
+    grid.innerHTML = `<div style="grid-column:1/-1; text-align:center; padding:40px; color: var(--text-sub);">
+      <span style="font-size:48px;">🔍</span><br>Không tìm thấy thư mục phù hợp.
+    </div>`;
+    return;
+  }
+
+  grid.innerHTML = filtered.map(item => `
+    <div class="folder-card" onclick="navigateTo('${item.fullPath}')">
+      <div class="folder-icon">${item.icon}</div>
+      <div class="folder-name">${item.name}</div>
+      <div class="folder-path">📌 ${item.path}</div>
+      <div class="folder-desc">${item.desc}</div>
+      <div class="folder-meta">
+        <span class="type-badge">${item.type}</span>
+        <span class="arrow">Mở thư mục →</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function updateBreadcrumb(path) {
+  const parts = path.split(' / ');
+  let breadHtml = `<span onclick="goHome()">Home</span>`;
+  let currentPathAcc = '';
+
+  parts.forEach((p, index) => {
+    currentPathAcc += (index > 0 ? ' / ' : '') + p;
+    const isLast = index === parts.length - 1;
+    breadHtml += ` <span class="separator">›</span> `;
+    if (isLast) {
+      breadHtml += `<span class="current">${p}</span>`;
+    } else {
+      breadHtml += `<span onclick="navigateTo('${currentPathAcc}')">${p}</span>`;
+    }
+  });
+
+  const breadcrumbEl = document.getElementById('breadcrumb');
+  if (breadcrumbEl) breadcrumbEl.innerHTML = breadHtml;
+}
+
+function navigateTo(path) {
+  if (path === 'Home') {
+    goHome();
+    return;
+  }
+
+  const sidebarItem = document.querySelector(`.sidebar-item[data-nav="${path}"]`);
+  document.querySelectorAll('.sidebar-item').forEach(el => el.classList.remove('active'));
+  if (sidebarItem) {
+    sidebarItem.classList.add('active');
+  }
+
+  const item = folderData.find(f => f.fullPath === path || f.name === path);
+  if (item && item.targetTab) {
+    openSkillTab(item.targetTab, item.targetSubTab);
+    updateBreadcrumb(item.path);
+    return;
+  }
+
+  openSkillTab('home');
+  const titleEl = document.getElementById('folderTitle');
+  if (titleEl) titleEl.textContent = `📁 ${path}`;
+
+  updateBreadcrumb(path);
+  renderFolders(path);
+}
+
+function initFilterTabs() {
+  const filterBtns = document.querySelectorAll('.filter-tabs button');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      const filter = this.getAttribute('data-filter') || 'all';
+      
+      openSkillTab('home');
+      renderFolders(filter);
+    });
+  });
+}
+
 window.addEventListener("hashchange", () => {
   parseAndLoadHashRoute();
 });
@@ -527,6 +717,8 @@ window.addEventListener("hashchange", () => {
 document.addEventListener("DOMContentLoaded", () => {
   try { initNavigation(); } catch (e) { console.error("Navigation error:", e); }
   try { initSubTabs(); } catch (e) { console.error("SubTabs error:", e); }
+  try { initFilterTabs(); } catch (e) { console.error("FilterTabs error:", e); }
+  try { renderFolders('all'); } catch (e) { console.error("RenderFolders error:", e); }
   try { initQuiz(); } catch (e) { console.error("Quiz error:", e); }
   try { initVocabulary(); } catch (e) { console.error("Vocab error:", e); }
   try { initFovModule(); } catch (e) { console.error("FOV error:", e); }
@@ -546,20 +738,6 @@ function speakWord(text) {
     utter.rate = 0.9;
     window.speechSynthesis.speak(utter);
   }
-}
-
-// Main Tab Navigation (Home / Reading Comprehension / Listening / Collocations / Dashboard)
-function initNavigation() {
-  const navBtns = document.querySelectorAll(".nav-btn");
-  navBtns.forEach(btn => {
-    btn.addEventListener("click", (e) => {
-      const tabId = btn.getAttribute("data-tab");
-      if (tabId) {
-        openSkillTab(tabId);
-        trackGAEvent('page_view_tab', { tab_id: tabId });
-      }
-    });
-  });
 }
 
 // Sub-tab Navigation inside skill modules (Reading Comprehension / Listening Skills)
@@ -583,7 +761,6 @@ function initSubTabs() {
         }
         currentSubTab = subTabId;
 
-        // Update URL hash with tabId/subTabId
         updateUrlHash(tabId, subTabId);
 
         if (subTabId === "fov-memory-lab") {
@@ -605,24 +782,51 @@ function initSubTabs() {
 // Go back to Home tab
 function goHome() {
   openSkillTab("home");
+  const breadcrumbEl = document.getElementById('breadcrumb');
+  if (breadcrumbEl) {
+    breadcrumbEl.innerHTML = `
+      <span onclick="goHome()">Home</span>
+      <span class="separator">›</span>
+      <span class="current">Kho học liệu</span>
+    `;
+  }
+  const titleEl = document.getElementById('folderTitle');
+  if (titleEl) titleEl.textContent = '📁 Tất cả thư mục';
+  
+  renderFolders('all');
+  document.querySelectorAll('.sidebar-item').forEach(el => el.classList.remove('active'));
+  const homeSidebarItem = document.querySelector('.sidebar-item[data-nav="Home"]');
+  if (homeSidebarItem) homeSidebarItem.classList.add('active');
 }
 
 // Open a skill tab (e.g., reading-comprehension) from homepage card or URL
 function openSkillTab(tabId, subTabId = null, skipHashUpdate = false) {
-  const navBtns = document.querySelectorAll(".nav-btn");
   const tabContents = document.querySelectorAll(".tab-content");
-
-  navBtns.forEach(b => b.classList.remove("active"));
   tabContents.forEach(c => c.classList.remove("active"));
 
-  const targetBtn = document.querySelector(`.nav-btn[data-tab="${tabId}"]`);
   const targetTab = document.getElementById(tabId);
 
-  if (targetBtn) targetBtn.classList.add("active");
   if (targetTab) {
     targetTab.classList.add("active");
     currentTab = tabId;
   }
+
+  // Synchronize sidebar active state
+  document.querySelectorAll('.sidebar-item').forEach(el => el.classList.remove('active'));
+  if (tabId === 'home') {
+    const item = document.querySelector('.sidebar-item[data-nav="Home"]');
+    if (item) item.classList.add('active');
+  } else if (tabId === 'collocations') {
+    const item = document.querySelector('.sidebar-item[data-nav="Vocabulary in Use"]');
+    if (item) item.classList.add('active');
+  } else if (tabId === 'listening-skills') {
+    const item = document.querySelector('.sidebar-item[data-nav="Listening Practice"]');
+    if (item) item.classList.add('active');
+  } else if (tabId === 'learning-dashboard') {
+    const item = document.querySelector('.sidebar-item[data-nav="Dashboard"]');
+    if (item) item.classList.add('active');
+  }
+
   window.scrollTo({ top: 0, behavior: 'smooth' });
 
   // Safely initialize active module
