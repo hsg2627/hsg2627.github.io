@@ -1048,6 +1048,579 @@
     .hidden {
       display: none !important;
     }
+
+    /* ==========================================================================
+       GOOSE GOOSE DUCK GRAMMAR GAME SYSTEM STYLES
+       ========================================================================== */
+    .ggd-hud-container {
+      background: #0f0a1c;
+      border: 3px solid #312154;
+      box-shadow: inset -3px -3px 0 #07040f, inset 3px 3px 0 #4c357f, 0 8px 24px rgba(0, 0, 0, 0.4);
+      border-radius: 16px;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 24px;
+      color: #ffffff;
+    }
+
+    .ggd-hud-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .ggd-avatar-badge {
+      width: 46px;
+      height: 46px;
+      background: #1e1435;
+      border: 2px solid #facc15;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      box-shadow: 2px 2px 0 #000;
+    }
+
+    .ggd-player-title {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 9px;
+      color: #38bdf8;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .ggd-player-name {
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: #facc15;
+      letter-spacing: -0.2px;
+    }
+
+    .ggd-hud-center {
+      flex: 1;
+      max-width: 420px;
+      min-width: 240px;
+    }
+
+    .ggd-gauge-wrapper {
+      background: #19102b;
+      border: 2px solid #3b82f6;
+      border-radius: 12px;
+      padding: 8px 14px;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .ggd-gauge-label {
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 8.5px;
+      color: #93c5fd;
+      margin-bottom: 6px;
+    }
+
+    .ggd-gauge-bar {
+      height: 12px;
+      background: #090514;
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .ggd-gauge-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #22c55e 0%, #4ade80 100%);
+      transition: width 0.4s ease;
+      box-shadow: 0 0 10px rgba(34, 197, 94, 0.8);
+    }
+
+    .ggd-hud-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .ggd-stat-chip {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 9px;
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: 2px solid #000;
+      box-shadow: 2px 2px 0 #000;
+    }
+
+    .ggd-stat-chip.gold { background: #eab308; color: #000; }
+    .ggd-stat-chip.exp { background: #3b82f6; color: #fff; }
+
+    .ggd-icon-btn {
+      background: #312154;
+      color: #facc15;
+      border: 2px solid #000;
+      box-shadow: 2px 2px 0 #000;
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 9px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .ggd-icon-btn:hover {
+      transform: translateY(-2px);
+      background: #4c357f;
+    }
+
+    .ggd-icon-btn.reset { background: #dc2626; color: #fff; }
+    .ggd-icon-btn.unlock-all { background: #059669; color: #fff; }
+
+    /* GGD HERO BANNER */
+    .ggd-hero-banner {
+      border: 4px solid #1a1a1a;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), inset 0 0 40px rgba(0, 0, 0, 0.6);
+      border-radius: 20px;
+      padding: 36px 32px;
+      color: #ffffff;
+      margin-bottom: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ggd-badge-pill {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 9px;
+      background: #3b82f6;
+      color: #ffffff;
+      padding: 5px 12px;
+      border: 2px solid #000;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 12px;
+      box-shadow: 2px 2px 0 #000;
+    }
+
+    .ggd-hero-content h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 1.5rem;
+      color: #facc15;
+      text-shadow: 3px 3px #000;
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+
+    .ggd-hero-content p {
+      font-size: 0.95rem;
+      color: #e2e8f0;
+      max-width: 720px;
+      line-height: 1.6;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    /* GGD LEVEL MAP GRID */
+    .ggd-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 20px;
+    }
+
+    .ggd-card {
+      background: #181329;
+      border: 3px solid #312154;
+      border-radius: 16px;
+      padding: 20px;
+      color: #ffffff;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    }
+
+    .ggd-card.unlocked {
+      cursor: pointer;
+      border-color: #3b82f6;
+    }
+
+    .ggd-card.unlocked:hover {
+      transform: translateY(-5px);
+      border-color: #facc15;
+      box-shadow: 0 12px 28px rgba(250, 204, 21, 0.25);
+    }
+
+    .ggd-card.cleared {
+      border-color: #22c55e;
+      background: linear-gradient(145deg, #13221b 0%, #181329 100%);
+    }
+
+    .ggd-card.locked {
+      opacity: 0.65;
+      filter: grayscale(0.4);
+      border-color: #334155;
+      cursor: not-allowed;
+    }
+
+    .ggd-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .ggd-level-badge {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 8px;
+      background: #312154;
+      color: #38bdf8;
+      padding: 4px 8px;
+      border-radius: 6px;
+      border: 1px solid #4c357f;
+    }
+
+    .ggd-card.cleared .ggd-level-badge {
+      background: #14532d;
+      color: #4ade80;
+      border-color: #22c55e;
+    }
+
+    .ggd-room-icon {
+      font-size: 1.8rem;
+      width: 44px;
+      height: 44px;
+      background: #0f0a1c;
+      border: 2px solid #3b82f6;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 2px 2px 0 #000;
+    }
+
+    .ggd-card.cleared .ggd-room-icon {
+      border-color: #22c55e;
+    }
+
+    .ggd-card-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+
+    .ggd-room-name {
+      font-size: 0.78rem;
+      color: #94a3b8;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .ggd-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .ggd-status-tag {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 8px;
+      padding: 5px 10px;
+      border-radius: 6px;
+      border: 1.5px solid #000;
+    }
+
+    .ggd-status-tag.locked { background: #334155; color: #cbd5e1; }
+    .ggd-status-tag.unlocked { background: #2563eb; color: #fff; }
+    .ggd-status-tag.cleared { background: #16a34a; color: #fff; }
+
+    .ggd-star-rating {
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+    }
+
+    /* GGD MODALS */
+    .ggd-modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(8, 5, 18, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .ggd-modal-overlay.active {
+      display: flex;
+    }
+
+    .ggd-modal-box {
+      background: #140e24;
+      border: 4px solid #3b82f6;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.8), inset 0 0 20px rgba(59, 130, 246, 0.2);
+      border-radius: 20px;
+      width: 100%;
+      max-width: 780px;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 28px;
+      color: #ffffff;
+      position: relative;
+    }
+
+    .ggd-modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 2px solid #291e45;
+    }
+
+    .ggd-modal-icon {
+      font-size: 2.2rem;
+      background: #251942;
+      border: 2px solid #facc15;
+      padding: 6px 12px;
+      border-radius: 12px;
+      box-shadow: 2px 2px 0 #000;
+    }
+
+    .ggd-modal-level-tag {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 8.5px;
+      color: #facc15;
+      margin-bottom: 4px;
+    }
+
+    .ggd-modal-title {
+      font-weight: 800;
+      font-size: 1.35rem;
+      color: #ffffff;
+    }
+
+    .ggd-modal-close {
+      background: #2b1d47;
+      color: #ef4444;
+      border: 2px solid #ef4444;
+      border-radius: 10px;
+      width: 38px;
+      height: 38px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .ggd-modal-close:hover {
+      background: #ef4444;
+      color: #ffffff;
+    }
+
+    .ggd-task-hud {
+      background: #1c1433;
+      border: 2px solid #38bdf8;
+      border-radius: 12px;
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .ggd-task-progress-mini {
+      width: 140px;
+      height: 10px;
+      background: #0a0614;
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid #334155;
+    }
+
+    .ggd-task-progress-mini-fill {
+      height: 100%;
+      background: #38bdf8;
+      transition: width 0.3s ease;
+    }
+
+    .ggd-dossier {
+      background: #1b1331;
+      border: 2px solid #facc15;
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-bottom: 20px;
+      box-shadow: inset 0 0 10px rgba(250, 204, 21, 0.1);
+    }
+
+    .ggd-dossier-summary {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 9.5px;
+      color: #facc15;
+      cursor: pointer;
+      outline: none;
+      user-select: none;
+    }
+
+    .ggd-dossier-body {
+      margin-top: 12px;
+      font-size: 0.92rem;
+      line-height: 1.65;
+      color: #e2e8f0;
+      border-top: 1px solid rgba(250, 204, 21, 0.2);
+      padding-top: 10px;
+    }
+
+    .ggd-dossier-body p { margin-bottom: 8px; }
+    .ggd-dossier-body ul { margin-left: 20px; margin-bottom: 8px; }
+    .ggd-dossier-body strong { color: #38bdf8; }
+    .ggd-dossier-body code {
+      background: #0d081a;
+      color: #facc15;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+
+    .ggd-question-card {
+      background: #1a122e;
+      border: 2px solid #312154;
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 20px;
+    }
+
+    .ggd-question-text {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 18px;
+      line-height: 1.5;
+    }
+
+    .ggd-options-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .ggd-opt-btn {
+      background: #251942;
+      color: #f1f5f9;
+      border: 2px solid #312154;
+      border-radius: 10px;
+      padding: 12px 18px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 2px 2px 0 #000;
+    }
+
+    .ggd-opt-btn:hover:not(:disabled) {
+      background: #3b2766;
+      border-color: #38bdf8;
+      color: #ffffff;
+      transform: translateX(4px);
+    }
+
+    .ggd-opt-btn.correct {
+      background: #14532d !important;
+      border-color: #22c55e !important;
+      color: #4ade80 !important;
+      box-shadow: 0 0 12px rgba(34, 197, 94, 0.4);
+    }
+
+    .ggd-opt-btn.wrong {
+      background: #7f1d1d !important;
+      border-color: #ef4444 !important;
+      color: #fca5a5 !important;
+    }
+
+    .ggd-feedback-box {
+      margin-top: 16px;
+      padding: 14px 18px;
+      background: #0d081a;
+      border: 2px solid #38bdf8;
+      border-radius: 10px;
+      color: #f1f5f9;
+    }
+
+    .ggd-modal-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .ggd-btn {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 9px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      border: 2px solid #000;
+      box-shadow: 3px 3px 0 #000;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .ggd-btn.primary { background: #22c55e; color: #000; }
+    .ggd-btn.primary:hover { background: #4ade80; transform: translateY(-2px); }
+    .ggd-btn.secondary { background: #3b4252; color: #fff; }
+
+    /* RESULT MODAL STYLES */
+    .result-box {
+      text-align: center;
+      border-color: #facc15;
+    }
+
+    .ggd-result-heading {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 1.4rem;
+      color: #facc15;
+      text-shadow: 3px 3px #000;
+      margin-bottom: 8px;
+    }
+
+    .ggd-stars-row {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      letter-spacing: 6px;
+    }
+
+    .ggd-result-stats-card {
+      background: #1b1331;
+      border: 2px solid #312154;
+      border-radius: 14px;
+      padding: 18px;
+      max-width: 480px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .stat-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.92rem;
+    }
+
+    .stat-item:last-child { border-bottom: none; }
+    .stat-item .label { color: #94a3b8; font-weight: 600; }
+    .stat-item .val { color: #ffffff; font-weight: 800; }
+    .stat-item .val.highlight { color: #4ade80; font-family: 'Press Start 2P', cursive; font-size: 9px; }
   </style>
 </head>
 <body>
@@ -1651,34 +2224,130 @@
           </div>
         </section>
 
-        <!-- ==================== VIEW 7: SUBTASK - GRAMMAR 10 ==================== -->
+        <!-- ==================== VIEW 7: SUBTASK - GRAMMAR 10 (GOOSE GOOSE DUCK GAME) ==================== -->
         <section id="task-e10-grammar" class="view-panel task-view">
-          <header class="task-header">
-            <span class="task-tag">ENGLISH 10 / GRAMMAR</span>
-            <h2>📝 English 10 Grammar Topics & Exercises</h2>
-          </header>
-
-          <div class="task-body">
-            <div class="skill-card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+          <!-- GGD TOP HUD -->
+          <div class="ggd-hud-container">
+            <div class="ggd-hud-left">
+              <div class="ggd-avatar-badge">🪿</div>
               <div>
-                <h3 style="margin-bottom: 4px;">⏳ Unit 1: Present Simple & Present Continuous</h3>
-                <div class="meta-info">📘 Grammar Theory | ❓ 15 Practice Questions</div>
+                <div class="ggd-player-title" id="ggd-player-rank">CADET GOOSE</div>
+                <div class="ggd-player-name" id="ggd-player-name">STUDENT</div>
               </div>
-              <button onclick="testSubmitResult('ENGLISH 10', 'Grammar', 'Grammar Exercise', 95)" style="background: #059669; color: #ffffff; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer;">
-                📝 Nộp Điểm Bài Làm →
-              </button>
             </div>
-            <div class="skill-card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
-              <div>
-                <h3 style="margin-bottom: 4px;">🔄 Unit 2: Passive Voice with Modals</h3>
-                <div class="meta-info">📘 Grammar Theory | ❓ 15 Practice Questions</div>
+            <div class="ggd-hud-center">
+              <div class="ggd-gauge-wrapper">
+                <div class="ggd-gauge-label">
+                  <span>🚀 SPACESHIP MISSION PROGRESS</span>
+                  <span id="ggd-overall-percent">0%</span>
+                </div>
+                <div class="ggd-gauge-bar">
+                  <div class="ggd-gauge-fill" id="ggd-overall-fill" style="width: 0%;"></div>
+                </div>
               </div>
-              <button onclick="testSubmitResult('ENGLISH 10', 'Grammar', 'Grammar Exercise', 90)" style="background: #059669; color: #ffffff; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer;">
-                📝 Nộp Điểm Bài Làm →
-              </button>
+            </div>
+            <div class="ggd-hud-right">
+              <span class="ggd-stat-chip gold">🪙 <span id="ggd-gold-val">0</span> G</span>
+              <span class="ggd-stat-chip exp">⚡ <span id="ggd-exp-val">0</span> EXP</span>
+              <button class="ggd-icon-btn" id="ggd-sfx-toggle" onclick="toggleGgdSfx()" title="Bật/Tắt Âm thanh">🔊 SFX</button>
+              <button class="ggd-icon-btn reset" onclick="resetGgdProgress()" title="Reset Tiến Trình Game">🔄 Reset</button>
+              <button class="ggd-icon-btn unlock-all" onclick="toggleUnlockAllGgd()" title="Teacher / Unlock All Levels">🔓 Unlock All</button>
             </div>
           </div>
+
+          <!-- GGD HERO BANNER -->
+          <div class="ggd-hero-banner" style="background: linear-gradient(135deg, rgba(15,10,28,0.85) 0%, rgba(30,27,46,0.9) 100%), url('images/ggd_grammar_banner.png') center/cover no-repeat;">
+            <div class="ggd-hero-content">
+              <span class="ggd-badge-pill">🛸 GOOSE GOOSE DUCK • GRAMMAR ACADEMY</span>
+              <h1>ENGLISH 10 GRAMMAR MISSIONS</h1>
+              <p>Mỗi phòng trên Trụ Sở Space Station đại diện cho 1 Chuyên Đề Ngữ Pháp. Hoàn thành bài tập ở Level hiện tại để nhận Gold, EXP và MỞ KHÓA Level tiếp theo!</p>
+            </div>
+          </div>
+
+          <!-- GGD MAP GRID (14 LEVELS) -->
+          <div class="ggd-grid" id="ggd-levels-grid">
+            <!-- Rendered by JS -->
+          </div>
         </section>
+
+        <!-- GGD TASK PLAY MODAL -->
+        <div id="ggd-task-modal" class="ggd-modal-overlay">
+          <div class="ggd-modal-box">
+            <!-- Modal Header -->
+            <div class="ggd-modal-header">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <span class="ggd-modal-icon" id="ggd-modal-room-icon">🧭</span>
+                <div>
+                  <div class="ggd-modal-level-tag" id="ggd-modal-level-tag">LEVEL 1 • NAVIGATION ROOM</div>
+                  <h3 class="ggd-modal-title" id="ggd-modal-title">Parts of Speech</h3>
+                </div>
+              </div>
+              <button class="ggd-modal-close" onclick="closeGgdTaskModal()">✖</button>
+            </div>
+
+            <!-- Modal Task HUD (Progress & Lives) -->
+            <div class="ggd-task-hud">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <span class="ggd-lives" id="ggd-task-lives">🪿🪿🪿</span>
+                <span style="font-family: 'Press Start 2P', cursive; font-size: 11px; color: #a5b4fc;" id="ggd-task-step-counter">TASK 1 / 5</span>
+              </div>
+              <div class="ggd-task-progress-mini">
+                <div class="ggd-task-progress-mini-fill" id="ggd-task-mini-fill" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <!-- Theory Collapsible Dossier -->
+            <details class="ggd-dossier" id="ggd-dossier-details" open>
+              <summary class="ggd-dossier-summary">
+                📜 HỒ SƠ MẬT NGỮ PHÁP (GOOSE INTELLIGENCE FILE) <span style="font-size: 0.78rem; color: #facc15; font-weight: normal; margin-left: 8px;">[Bấm để ẩn/hiện lý thuyết]</span>
+              </summary>
+              <div class="ggd-dossier-body" id="ggd-modal-theory">
+                <!-- Theory text -->
+              </div>
+            </details>
+
+            <!-- Question Task Card -->
+            <div class="ggd-question-card" id="ggd-question-container">
+              <div class="ggd-question-text" id="ggd-q-text">Loading question...</div>
+              <div class="ggd-options-grid" id="ggd-q-options"></div>
+              
+              <!-- Instant Feedback Box -->
+              <div class="ggd-feedback-box" id="ggd-q-feedback" style="display: none;">
+                <div id="ggd-feedback-title" style="font-weight: 800; font-family: 'Press Start 2P', cursive; font-size: 11px; margin-bottom: 6px;"></div>
+                <div id="ggd-feedback-explain" style="font-size: 0.9rem; line-height: 1.5;"></div>
+              </div>
+            </div>
+
+            <!-- Modal Footer Controls -->
+            <div class="ggd-modal-footer">
+              <button class="ggd-btn secondary" onclick="closeGgdTaskModal()">Rút Lui 🚶</button>
+              <button class="ggd-btn primary" id="ggd-next-btn" onclick="nextGgdQuestion()" style="display: none;">Nhiệm Vụ Tiếp Theo ➔</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- GGD VICTORY / RESULT MODAL -->
+        <div id="ggd-result-modal" class="ggd-modal-overlay">
+          <div class="ggd-modal-box result-box">
+            <div style="font-size: 3.5rem; text-align: center; margin-bottom: 10px;" id="ggd-result-icon">🎉</div>
+            <h2 class="ggd-result-heading" id="ggd-result-heading">SECTOR CLEARED!</h2>
+            <p style="text-align: center; color: #cbd5e1; font-size: 0.95rem; margin-bottom: 16px;" id="ggd-result-sub">Bạn đã hoàn thành xuất sắc nhiệm vụ và phát hiện Imposter!</p>
+
+            <div class="ggd-stars-row" id="ggd-result-stars">⭐ ⭐ ⭐</div>
+
+            <div class="ggd-result-stats-card">
+              <div class="stat-item"><span class="label">🎯 Kết quả nhiệm vụ:</span> <span class="val" id="ggd-res-score">5 / 5 (100%)</span></div>
+              <div class="stat-item"><span class="label">⚡ EXP thưởng:</span> <span class="val" id="ggd-res-exp">+150 EXP</span></div>
+              <div class="stat-item"><span class="label">🪙 Gold thưởng:</span> <span class="val" id="ggd-res-gold">+75 Gold</span></div>
+              <div class="stat-item"><span class="label">🔓 Mở khóa Level:</span> <span class="val highlight" id="ggd-res-unlock-status">Đã mở khóa Level 2!</span></div>
+            </div>
+
+            <div style="display: flex; gap: 12px; justify-content: center; margin-top: 20px; flex-wrap: wrap;">
+              <button class="ggd-btn secondary" onclick="closeGgdResultModal()">Về Trạm Vũ Trụ 🏠</button>
+              <button class="ggd-btn primary" id="ggd-next-level-btn" onclick="openNextLevelFromResult()">Sang Level Tiếp Theo 🚀</button>
+            </div>
+          </div>
+        </div>
 
         <!-- ==================== VIEW 8: SUBTASK - VOCAB 10 ==================== -->
         <section id="task-e10-vocab" class="view-panel task-view">
@@ -2725,6 +3394,858 @@
         }
       }
       syncDolocHeroName();
+
+      // =====================================================================
+      // GOOSE GOOSE DUCK GRAMMAR HTML GAME ENGINE & DATASET (14 LEVELS)
+      // =====================================================================
+      const GGD_STORAGE_KEY = 'ggd_grammar_save_v2';
+
+      const ggdLevels = [
+        {
+          id: 1,
+          name: "Parts of Speech",
+          room: "Navigation Deck 🧭",
+          icon: "🧭",
+          avatar: "🪿",
+          role: "Cadet Goose",
+          theory: `
+            <p><strong>🎯 CHUYÊN ĐỀ 1: TỪ LOẠI (PARTS OF SPEECH)</strong></p>
+            <p>Trong tiếng Anh có 8 từ loại cơ bản:</p>
+            <ul>
+              <li><strong>Noun (Danh từ - N):</strong> Chỉ người, vật, nơi chốn (<em>goose, spaceship, courage, water</em>).</li>
+              <li><strong>Verb (Động từ - V):</strong> Chỉ hành động, trạng thái (<em>fly, inspect, exist, run</em>).</li>
+              <li><strong>Adjective (Tính từ - Adj):</strong> Bổ nghĩa cho danh từ (<em>brave, dangerous, rapid</em>).</li>
+              <li><strong>Adverb (Trạng từ - Adv):</strong> Bổ nghĩa cho động từ, tính từ hoặc trạng từ khác (<em>swiftly, carefully, extremely</em>).</li>
+              <li><strong>Pronoun (Đại từ - Pron):</strong> Thay thế cho danh từ (<em>he, she, it, they, someone</em>).</li>
+              <li><strong>Preposition (Giới từ - Prep):</strong> Chỉ vị trí, thời gian (<em>in, on, under, behind, during</em>).</li>
+              <li><strong>Conjunction (Liên từ - Conj):</strong> Nối từ hoặc mệnh đề (<em>and, but, although, because, so</em>).</li>
+              <li><strong>Interjection (Thán từ - Inj):</strong> Thể hiện cảm xúc (<em>Quack!, Wow!, Oh!</em>).</li>
+            </ul>
+          `,
+          questions: [
+            { q: "Identify the part of speech of the underlined word: 'She sang <u>beautifully</u> at the academy concert.'", opts: ["A. Adjective", "B. Adverb", "C. Verb", "D. Noun"], ans: 1, exp: "'Beautifully' bổ nghĩa cho động từ 'sang' -> Trạng từ (Adverb)." },
+            { q: "What part of speech is 'courage' in: 'Her <u>courage</u> saved the entire spaceship crew.'?", opts: ["A. Abstract Noun", "B. Adjective", "C. Verb", "D. Preposition"], ans: 0, exp: "'Courage' (lòng dũng cảm) là danh từ trừu tượng (Abstract Noun)." },
+            { q: "Identify the function of 'although': 'We completed the task <u>although</u> the power was flickering.'", opts: ["A. Preposition", "B. Conjunction", "C. Adverb", "D. Pronoun"], ans: 1, exp: "'Although' nối 2 mệnh đề -> Liên từ (Conjunction)." },
+            { q: "Choose the preposition in: 'The detective goose hid <u>under</u> the control desk.'", opts: ["A. detective", "B. hid", "C. under", "D. desk"], ans: 2, exp: "'Under' chỉ vị trí bên dưới -> Giới từ (Preposition)." },
+            { q: "Identify the part of speech of 'enthusiastic': 'The crew members are <u>enthusiastic</u> about the mission.'", opts: ["A. Noun", "B. Adjective", "C. Adverb", "D. Verb"], ans: 1, exp: "'Enthusiastic' bổ nghĩa cho chủ ngữ 'crew members' đứng sau động từ to be -> Tính từ (Adjective)." }
+          ]
+        },
+        {
+          id: 2,
+          name: "Phrases",
+          room: "Communications Array 📡",
+          icon: "📡",
+          avatar: "🕵️",
+          role: "Detective Goose",
+          theory: `
+            <p><strong>🎯 CHUYÊN ĐỀ 2: CÁC LOẠI CỤM TỪ (PHRASES)</strong></p>
+            <p>Cụm từ là nhóm từ đi liền nhau nhưng không chứa đủ cặp Chủ ngữ - Động từ chia hoàn chỉnh:</p>
+            <ul>
+              <li><strong>Noun Phrase (Cụm danh từ):</strong> Đóng vai trò danh từ (<em>the brave space cadet, a mysterious clue</em>).</li>
+              <li><strong>Verb Phrase (Cụm động từ):</strong> Gồm trợ động từ + động từ chính (<em>has been investigating, will launch</em>).</li>
+              <li><strong>Adjective Phrase (Cụm tính từ):</strong> Đứng đầu là tính từ (<em>extremely proud of the results</em>).</li>
+              <li><strong>Prepositional Phrase (Cụm giới từ):</strong> Giới từ + Danh từ (<em>in the oxygen tank room, on the radar</em>).</li>
+              <li><strong>Participial Phrase (Cụm phân từ):</strong> Bắt đầu bằng V-ing hoặc V-ed (<em>Walking past the airlock, Alarm sounded by the captain</em>).</li>
+            </ul>
+          `,
+          questions: [
+            { q: "What type of phrase is 'The tall girl with glasses' in: '<u>The tall girl with glasses</u> is our chief engineer.'?", opts: ["A. Noun Phrase", "B. Verb Phrase", "C. Prepositional Phrase", "D. Adjective Phrase"], ans: 0, exp: "Cụm danh từ (Noun Phrase) đóng vai trò chủ ngữ trong câu." },
+            { q: "Identify the verb phrase: 'The security team <u>has been investigating</u> the suspicious duck.'", opts: ["A. The security team", "B. has been investigating", "C. the suspicious duck", "D. investigating the suspicious"], ans: 1, exp: "'has been investigating' gồm trợ động từ + V-ing -> Cụm động từ (Verb Phrase)." },
+            { q: "What phrase is underlined: 'He felt <u>extremely proud of his achievements</u>.'?", opts: ["A. Noun Phrase", "B. Adjective Phrase", "C. Adverb Phrase", "D. Verb Phrase"], ans: 1, exp: "'Extremely proud of...' bổ nghĩa cho 'He' -> Cụm tính từ (Adjective Phrase)." },
+            { q: "Identify the participial phrase: '<u>Walking near the electrical bay</u>, the goose spotted an imposter.'", opts: ["A. Noun Phrase", "B. Participial Phrase", "C. Prepositional Phrase", "D. Infinitive Phrase"], ans: 1, exp: "Cụm từ bắt đầu bằng V-ing 'Walking...' bổ nghĩa cho mệnh đề chính -> Participial Phrase." },
+            { q: "What function does 'In the middle of the night' serve in: 'The alarm sounded <u>in the middle of the night</u>.'?", opts: ["A. Prepositional Phrase acting as Adverb of Time", "B. Noun Phrase acting as Subject", "C. Verb Phrase", "D. Adjective Phrase"], ans: 0, exp: "Cụm giới từ chỉ thời gian bổ nghĩa cho hành động 'sounded'." }
+          ]
+        },
+        {
+          id: 3,
+          name: "Sentences",
+          room: "Reactor Core ⚡",
+          icon: "⚡",
+          avatar: "👨‍🔧",
+          role: "Engineer Goose",
+          theory: `
+            <p><strong>🎯 CHUYÊN ĐỀ 3: CẤU TRÚC CÂU & MỆNH ĐỀ (SENTENCES & CLAUSES)</strong></p>
+            <ul>
+              <li><strong>Simple Sentence (Câu đơn):</strong> 1 Mệnh đề độc lập (<em>The goose fixed the wiring.</em>).</li>
+              <li><strong>Compound Sentence (Câu ghép):</strong> 2 Mệnh đề độc lập nối bằng <em>FANBOYS (For, And, Nor, But, Or, Yet, So)</em> (<em>The captain warned the crew, <strong>but</strong> the imposter escaped.</em>).</li>
+              <li><strong>Complex Sentence (Câu phức):</strong> 1 Mệnh đề độc lập + ít nhất 1 Mệnh đề phụ thuộc (<em><strong>Although</strong> he was tired, he kept working.</em>).</li>
+              <li><strong>Compound-Complex Sentence (Câu ghép-phức):</strong> Ít nhất 2 Mệnh đề độc lập + 1 Mệnh đề phụ thuộc.</li>
+            </ul>
+          `,
+          questions: [
+            { q: "Identify the sentence type: 'She loves reading sci-fi novels, but her brother prefers playing pixel games.'", opts: ["A. Simple Sentence", "B. Compound Sentence", "C. Complex Sentence", "D. Compound-Complex Sentence"], ans: 1, exp: "2 Mệnh đề độc lập nối bằng liên từ 'but' -> Câu ghép (Compound Sentence)." },
+            { q: "Identify the sentence type: 'Although the space station lost power, the emergency generator kicked in immediately.'", opts: ["A. Simple Sentence", "B. Compound Sentence", "C. Complex Sentence", "D. Phrase"], ans: 2, exp: "1 Mệnh đề phụ thuộc 'Although...' + 1 Mệnh đề chính -> Câu phức (Complex Sentence)." },
+            { q: "Which of the following is a Simple Sentence?", opts: ["A. The sun sets in the west.", "B. The sun set, and the stars appeared.", "C. When the sun set, stars appeared.", "D. While the sun was setting, we watched."], ans: 0, exp: "'The sun sets in the west.' chỉ gồm 1 S + V hoàn chỉnh -> Câu đơn (Simple Sentence)." },
+            { q: "Identify sentence type: 'While Sarah was fixing the reactor, Tom monitored the oxygen levels, and their captain reported to HQ.'", opts: ["A. Complex Sentence", "B. Compound Sentence", "C. Compound-Complex Sentence", "D. Simple Sentence"], ans: 2, exp: "Gồm 1 MĐ phụ thuộc ('While...') + 2 MĐ độc lập nối bằng 'and' -> Compound-Complex Sentence." },
+            { q: "What clause type is underlined: 'This is the control room <u>where the imposter sabotaged the lights</u>.'?", opts: ["A. Independent Clause", "B. Relative / Dependent Adjective Clause", "C. Main Clause", "D. Noun Clause"], ans: 1, exp: "Mệnh đề quan hệ bổ nghĩa cho 'control room' -> Mệnh đề phụ thuộc (Dependent Adjective Clause)." }
+          ]
+        },
+        {
+          id: 4,
+          name: "Passive Voice",
+          room: "Electrical Bay ⚡",
+          icon: "🔧",
+          avatar: "⚡",
+          role: "Electrician Goose",
+          theory: `
+            <p><strong>🎯 CHUYÊN ĐỀ 4: CÂU BỊ ĐỘNG (PASSIVE VOICE)</strong></p>
+            <p>Cấu trúc tổng quát: <code>Subject + Be + V(3/ed) + (by Agent)</code></p>
+            <ul>
+              <li><strong>Present Simple:</strong> am / is / are + V3 (<em>The ship is cleaned daily.</em>)</li>
+              <li><strong>Present Continuous:</strong> am / is / are + being + V3 (<em>The wires are being repaired.</em>)</li>
+              <li><strong>Past Simple:</strong> was / were + V3 (<em>The alarm was triggered by the Dodo.</em>)</li>
+              <li><strong>Modal Verbs:</strong> modal (can/must/should) + be + V3 (<em>The red button must be protected.</em>)</li>
+            </ul>
+          `,
+          questions: [
+            { q: "Change to Passive: 'Engineers build new spaceship engines every year.'", opts: ["A. New spaceship engines are built every year by engineers.", "B. New spaceship engines were built every year.", "C. New spaceship engines are building by engineers.", "D. Engineers are built by new spaceship engines."], ans: 0, exp: "Thì Hiện tại đơn bị động: S + am/is/are + V3 ('are built')." },
+            { q: "Change to Passive: 'The chef is preparing the space feast right now.'", opts: ["A. The space feast is prepared right now.", "B. The space feast is being prepared right now by the chef.", "C. The space feast was being prepared.", "D. The space feast has been prepared."], ans: 1, exp: "Hiện tại tiếp diễn bị động: S + is/am/are + being + V3 ('is being prepared')." },
+            { q: "Choose the correct passive form: 'All space cadets ________ to wear helmets during takeoff.'", opts: ["A. are required", "B. require", "C. requiring", "D. are require"], ans: 0, exp: "Bị động hiện tại đơn: 'are required' (được yêu cầu)." },
+            { q: "Choose the correct modal passive: 'The emergency emergency doors ________ at all times.'", opts: ["A. must check", "B. must be checked", "C. must being checked", "D. must to be checked"], ans: 1, exp: "Động từ khuyết thiếu bị động: modal + be + V3 ('must be checked')." },
+            { q: "Identify the error in passive voice: 'The confidential report will sent to headquarters tomorrow.'", opts: ["A. Confidential", "B. will sent (Should be 'will be sent')", "C. to headquarters", "D. tomorrow"], ans: 1, exp: "Tương lai đơn bị động phải có 'be': 'will be sent'." }
+          ]
+        },
+        {
+          id: 5,
+          name: "Present Simple vs. Present Continuous",
+          room: "Shield Generator 🛡️",
+          icon: "🛡️",
+          avatar: "🛡️",
+          role: "Guardian Goose",
+          theory: `
+            <p><strong>🎯 CHUYÊN ĐỀ 5: HIỆN TẠI ĐƠN VS HIỆN TẠI TIẾP DIỄN</strong></p>
+            <ul>
+              <li><strong>Present Simple (S + V/V-es):</strong> Sự thật hiển nhiên, thói quen, lịch trình fixed.<br><em>Dấu hiệu: always, usually, often, every day, on Mondays.</em></li>
+              <li><strong>Present Continuous (S + am/is/are + V-ing):</strong> Hành động đang diễn ra ngay lúc nói, sự việc tạm thời.<br><em>Dấu hiệu: now, right now, at the moment, Look!, Listen!</em></li>
+              <li><strong>Lưu ý Stative Verbs (Động từ chỉ trạng thái):</strong> Không chia ở dạng tiếp diễn: <em>know, love, understand, believe, want, need.</em></li>
+            </ul>
+          `,
+          questions: [
+            { q: "Complete the sentence: 'Look! The Goose Captain ________ across the command bridge!'", opts: ["A. flies", "B. is flying", "C. flew", "D. has flown"], ans: 1, exp: "Có từ cảm thán 'Look!' -> Chia Hiện tại tiếp diễn ('is flying')." },
+            { q: "Choose the correct form: 'Water ________ at 100 degrees Celsius.'", opts: ["A. is boiling", "B. boils", "C. boil", "D. boiled"], ans: 1, exp: "Sự thật khoa học/hiển nhiên -> Chia Hiện tại đơn ('boils')." },
+            { q: "Complete: 'My father usually ________ coffee in the morning, but today he ________ green tea.'", opts: ["A. drinks / is drinking", "B. is drinking / drinks", "C. drink / drink", "D. drank / is drinking"], ans: 0, exp: "'usually' -> Hiện tại đơn ('drinks'); 'today' (sự việc tạm thời) -> Hiện tại tiếp diễn ('is drinking')." },
+            { q: "Which sentence correctly uses a stative verb?", opts: ["A. I am knowing the answer now.", "B. I know the answer now.", "C. I knowing the answer now.", "D. I am know the answer."], ans: 1, exp: "'Know' là động từ trạng thái (stative verb), không chia dạng V-ing." },
+            { q: "Complete: 'She ________ her grandparents in the countryside every weekend.'", opts: ["A. is visiting", "B. visits", "C. visit", "D. visited"], ans: 1, exp: "Hành động lặp đi lặp lại 'every weekend' -> Hiện tại đơn ('visits')." }
+          ]
+        },
+        {
+          id: 6,
+          name: "Will vs. Be Going To",
+          room: "Launch Pad 🚀",
+          icon: "🚀",
+          avatar: "👨‍🚀",
+          role: "Astro Goose",
+          theory: `
+            <p><strong>🎯 CHUYÊN ĐỀ 6: WILL VS BE GOING TO (THÌ TƯƠNG LAI)</strong></p>
+            <ul>
+              <li><strong>WILL + V0:</strong>
+                <ul>
+                  <li>Quyết định bộc phát ngay tại thời điểm nói (<em>"I'll open the door."</em>).</li>
+                  <li>Dự đoán theo quan điểm cá nhân (<em>"I think it will rain."</em>).</li>
+                  <li>Lời hứa, yêu cầu, đe dọa (<em>"I promise I will help you."</em>).</li>
+                </ul>
+              </li>
+              <li><strong>BE GOING TO + V0:</strong>
+                <ul>
+                  <li>Kế hoạch, dự định đã được chuẩn bị từ trước (<em>"We are going to buy a rocket next week."</em>).</li>
+                  <li>Dự đoán có căn cứ/bằng chứng rõ ràng ở hiện tại (<em>"Look at those dark clouds! It is going to rain."</em>).</li>
+                </ul>
+              </li>
+            </ul>
+          `,
+          questions: [
+            { q: "Complete the dialogue: '- We ran out of fuel! <br>- Oh, don't worry. I ________ get some from the supply depot right now.'", opts: ["A. am going to", "B. will", "C. am getting", "D. would"], ans: 1, exp: "Quyết định tức thì ngay khi biết tin -> Dùng 'will'." },
+            { q: "Choose the correct form: 'Look at those pitch-black storm clouds! It ________ rain heavily.'", opts: ["A. will", "B. is going to", "C. shall", "D. is raining"], ans: 1, exp: "Dự đoán dựa trên bằng chứng nhìn thấy ở hiện tại ('dark clouds') -> Dùng 'is going to'." },
+            { q: "Complete: 'We ________ visit the Moon Space Base next month. We already booked the shuttle tickets.'", opts: ["A. will", "B. are going to", "C. would", "D. might"], ans: 1, exp: "Dự định đã có kế hoạch & mua vé từ trước -> Dùng 'are going to'." },
+            { q: "Complete the promise: 'I promise I ________ reveal your secret role to the Imposters.'", opts: ["A. am not going to", "B. won't", "C. don't", "D. haven't"], ans: 1, exp: "Lời hứa (Promise) -> Dùng 'won't' (will not)." },
+            { q: "Expressing personal prediction: 'In my opinion, humans ________ colonize Mars by 2050.'", opts: ["A. are going to", "B. will", "C. are colonizing", "D. shall"], ans: 1, exp: "Dự đoán dựa trên quan điểm cá nhân ('In my opinion') -> Dùng 'will'." }
+          ]
+        },
+        {
+          id: 7,
+          name: "Past Simple vs. Past Continuous",
+          room: "Time Warp Chamber ⏳",
+          icon: "⏳",
+          avatar: "🧙",
+          role: "Time Lord Goose",
+          theory: `
+            <p><strong>🎯 CHUYÊN ĐỀ 7: QUÁ KHỨ ĐƠN VS QUÁ KHỨ TIẾP DIỄN</strong></p>
+            <ul>
+              <li><strong>Past Simple (S + V2/ed):</strong> Hành động đã xảy ra và kết thúc hoàn toàn trong quá khứ.</li>
+              <li><strong>Past Continuous (S + was/were + V-ing):</strong> Hành động đang diễn ra tại một thời điểm xác định trong quá khứ.</li>
+              <li><strong>Sự kết hợp giữa 2 thì:</strong>
+                <ul>
+                  <li><code>WHEN + Past Simple, Past Continuous:</code> Hành động ngắn chen ngang khi hành động dài đang diễn ra (<em>When the alarm rang, I was sleeping.</em>).</li>
+                  <li><code>WHILE + Past Continuous, Past Continuous:</code> 2 hành động song song cùng diễn ra (<em>While Mom was cooking, Dad was reading.</em>).</li>
+                </ul>
+              </li>
+            </ul>
+          `,
+          questions: [
+            { q: "Complete: 'While I ________ the oxygen pipes, the alarm suddenly ________.'", opts: ["A. repaired / was sounding", "B. was repairing / sounded", "C. repaired / sounded", "D. was repairing / was sounding"], ans: 1, exp: "Hành động dài đang diễn ra ('was repairing') bị hành động ngắn chen ngang ('sounded')." },
+            { q: "Complete: 'At 8 PM last night, the crew ________ a space movie in the lounge.'", opts: ["A. watched", "B. were watching", "C. have watched", "D. are watching"], ans: 1, exp: "Thời điểm xác định trong quá khứ ('At 8 PM last night') -> Quá khứ tiếp diễn ('were watching')." },
+            { q: "Choose the correct forms: 'While Captain Goose ________ food, Detective Goose ________ the security cameras.'", opts: ["A. was preparing / was checking", "B. prepared / checked", "C. is preparing / checks", "D. was preparing / checked"], ans: 0, exp: "2 hành động song song xảy ra cùng lúc trong quá khứ -> Đều chia Quá khứ tiếp diễn." },
+            { q: "Complete the completed series of past events: 'He ________ up, ________ his spacesuit, and ________ out.'", opts: ["A. was waking / put / went", "B. woke / put / went", "C. woke / was putting / went", "D. has woken / put / left"], ans: 1, exp: "Chuỗi các hành động liên tiếp kết thúc trong quá khứ -> Chia Quá khứ đơn." },
+            { q: "Select the correct connector: 'She was walking back to the ship ________ she spotted the imposter.'", opts: ["A. while", "B. when", "C. during", "D. as long as"], ans: 1, exp: "Sau 'when' là hành động ngắn chen ngang ở Quá khứ đơn ('when she spotted')." }
+          ]
+        },
+        {
+          id: 8,
+          name: "Infinitives",
+          room: "Weapons Arsenal ⚔️",
+          icon: "⚔️",
+          avatar: "🦅",
+          role: "Falcon Goose",
+          theory: `
+            <p><strong>🎯 CHUYÊN ĐỀ 8: ĐỘNG TỪ NGUYÊN MẪU (INFINITIVES)</strong></p>
+            <ul>
+              <li><strong>To-Infinitive (to + V0):</strong>
+                <ul>
+                  <li>Chỉ mục đích (<em>He study hard <strong>to pass</strong> the exam.</em>).</li>
+                  <li>Sau tính từ (<em>It is important <strong>to practice</strong>.</em>).</li>
+                  <li>Sau các động từ: <em>agree, decide, hope, promise, refuse, want, offer, plan.</em></li>
+                </ul>
+              </li>
+              <li><strong>Bare Infinitive (V0 không to):</strong>
+                <ul>
+                  <li>Sau Động từ khuyết thiếu (modals): <em>can, must, should, may, will.</em></li>
+                  <li>Sau <em>let, make, see, hear</em> + O (<em>The teacher made us <strong>rewrite</strong> the essay.</em>).</li>
+                </ul>
+              </li>
+            </ul>
+          `,
+          questions: [
+            { q: "Choose the correct form for purpose: 'He saved credits ________ a new laser sword.'", opts: ["A. buying", "B. to buy", "C. buy", "D. for buying"], ans: 1, exp: "Chỉ mục đích hành động -> Dùng To-infinitive ('to buy')." },
+            { q: "Choose correct form after modal: 'All space travelers must ________ their safety belts.'", opts: ["A. to fasten", "B. fasten", "C. fastening", "D. fastened"], ans: 1, exp: "Sau động từ khuyết thiếu 'must' dùng Bare Infinitive ('fasten')." },
+            { q: "Choose form after 'make': 'The commander made the dodo ________ the entire deck.'", opts: ["A. clean", "B. to clean", "C. cleaning", "D. cleaned"], ans: 0, exp: "Cấu trúc: make + O + V0 -> 'clean'." },
+            { q: "Choose correct form after 'decide': 'They decided ________ a rescue mission immediately.'", opts: ["A. launching", "B. to launch", "C. launch", "D. launched"], ans: 1, exp: "Động từ 'decide' đi với To-Infinitive ('to launch')." },
+            { q: "Complete: 'It is essential for space cadets ________ grammar rules daily.'", opts: ["A. learning", "B. to learn", "C. learn", "D. learned"], ans: 1, exp: "Cấu trúc: It is + Adj + for sb + to V0 -> 'to learn'." }
+          ]
+        },
+        {
+          id: 9,
+          name: "Present Perfect",
+          room: "Storage Vault 📦",
+          icon: "📦",
+          avatar: "🦤",
+          role: "Pelican Goose",
+          theory: `
+            <p><strong>🎯 CHUYÊN ĐỀ 9: THÌ HIỆN TẠI HOÀN THÀNH (PRESENT PERFECT)</strong></p>
+            <p>Cấu trúc: <code>Subject + have/has + V(3/ed)</code></p>
+            <ul>
+              <li><strong>Kinh nghiệm, trải nghiệm:</strong> <em>ever, never</em> (Have you ever visited Mars?).</li>
+              <li><strong>Khoảng thời gian / Mốc thời gian:</strong> <em>for + khoảng thời gian</em> (for 5 years), <em>since + mốc thời gian</em> (since 2020).</li>
+              <li><strong>Hành động vừa mới xảy ra:</strong> <em>just, already, yet</em> (I have just submitted the task.).</li>
+              <li><strong>Phân biệt với Past Simple:</strong> Present Perfect có liên quan/kết quả ở hiện tại; Past Simple xảy ra tại thời điểm xác định và đã chấm dứt hoàn toàn ở quá khứ.</li>
+            </ul>
+          `,
+          questions: [
+            { q: "Complete: 'Have you ever ________ a suspicious duck sneaking near the reactor?'", opts: ["A. see", "B. saw", "C. seen", "D. seeing"], ans: 2, exp: "Thì Hiện tại hoàn thành: Have + S + ever + V3 ('seen')." },
+            { q: "Choose the correct time word: 'Dr. Goose has worked in this laboratory ________ 10 years.'", opts: ["A. since", "B. for", "C. ago", "D. during"], ans: 1, exp: "'10 years' là khoảng thời gian -> Dùng 'for'." },
+            { q: "Present Perfect vs. Past Simple: 'I ________ my report yet, but I ________ the introduction yesterday.'", opts: ["A. haven't finished / completed", "B. didn't finish / completed", "C. haven't finished / have completed", "D. don't finish / completed"], ans: 0, exp: "'yet' dùng ở Hiện tại hoàn thành ('haven't finished'); 'yesterday' dùng ở Quá khứ đơn ('completed')." },
+            { q: "Choose position of 'just': 'The supply ship has ________ arrived at the space station.'", opts: ["A. just", "B. yet", "C. ever", "D. since"], ans: 0, exp: "'just' đứng giữa have/has và V3 để chỉ hành động vừa mới xảy ra." },
+            { q: "Complete: 'We ________ in this space colony since 2018.'", opts: ["A. live", "B. lived", "C. have lived", "D. are living"], ans: 2, exp: "'since 2018' (từ mốc thời gian 2018 đến nay) -> Hiện tại hoàn thành ('have lived')." }
+          ]
+        },
+        {
+          id: 10,
+          name: "Gerunds and To-Infinitives",
+          room: "Oxygen Support 🫁",
+          icon: "🫁",
+          avatar: "🇨🇦",
+          role: "Canadian Goose",
+          theory: `
+            <p><strong>🎯 CHUYÊN ĐỀ 10: DANH ĐỘNG TỪ (V-ING) & TO-INFINITIVE</strong></p>
+            <ul>
+              <li><strong>Verb + V-ing (Gerund):</strong> <em>enjoy, avoid, mind, suggest, practice, consider, postpone, admit, deny.</em></li>
+              <li><strong>Verb + To-V:</strong> <em>want, decide, hope, refuse, offer, plan, agree, promise, manage.</em></li>
+              <li><strong>Nhóm động từ đổi nghĩa theo V-ing / To-V:</strong>
+                <ul>
+                  <li><code>remember / forget + V-ing:</code> Nhớ/Quên việc ĐÃ làm trong quá khứ.</li>
+                  <li><code>remember / forget + To-V:</code> Nhớ/Quên PHẢI làm việc gì đó ở hiện tại/tương lai.</li>
+                  <li><code>stop + V-ing:</code> Dừng hẳn hành động đang làm.</li>
+                  <li><code>stop + To-V:</code> Dừng lại ĐỂ làm hành động khác.</li>
+                </ul>
+              </li>
+            </ul>
+          `,
+          questions: [
+            { q: "Choose correct verb form after 'mind': 'Would you mind ________ the oxygen valve for a second?'", opts: ["A. to turn", "B. turning", "C. turn", "D. turned"], ans: 1, exp: "Sau 'mind' dùng V-ing -> 'turning'." },
+            { q: "Choose form after 'avoid': 'The imposter avoided ________ questions from Detective Goose.'", opts: ["A. answering", "B. to answer", "C. answer", "D. answered"], ans: 0, exp: "Sau 'avoid' dùng V-ing -> 'answering'." },
+            { q: "Context change for 'stop': 'He stopped ________ because he was out of breath.'", opts: ["A. to run", "B. running", "C. run", "D. ran"], ans: 1, exp: "Dừng hẳn hành động đang chạy -> stop + V-ing ('running')." },
+            { q: "Context change for 'remember': 'Please remember ________ off the main engine before leaving.'", opts: ["A. switching", "B. to switch", "C. switch", "D. switched"], ans: 1, exp: "Nhớ PHẢI làm việc gì trong tương lai -> remember + To-V ('to switch')." },
+            { q: "Choose form after 'refuse': 'The suspect refused ________ any statement without a lawyer.'", opts: ["A. making", "B. to make", "C. make", "D. made"], ans: 1, exp: "Sau 'refuse' dùng To-Infinitive -> 'to make'." }
+          ]
+        },
+        {
+          id: 11,
+          name: "Comparative and Superlative Adjectives",
+          room: "Observation Deck 🔭",
+          icon: "🔭",
+          avatar: "🦩",
+          role: "Flamingo Goose",
+          theory: `
+            <p><strong>🎯 CHUYÊN ĐỀ 11: CÂU SO SÁNH TÍNH TỪ (COMPARATIVES & SUPERLATIVES)</strong></p>
+            <ul>
+              <li><strong>So sánh hơn (Comparative):</strong>
+                <ul>
+                  <li>Tính từ ngắn: <code>Adj-er + than</code> (<em>faster than, older than</em>).</li>
+                  <li>Tính từ dài: <code>more + Adj + than</code> (<em>more dangerous than</em>).</li>
+                </ul>
+              </li>
+              <li><strong>So sánh nhất (Superlative):</strong>
+                <ul>
+                  <li>Tính từ ngắn: <code>the + Adj-est</code> (<em>the fastest, the oldest</em>).</li>
+                  <li>Tính từ dài: <code>the most + Adj</code> (<em>the most intelligent</em>).</li>
+                </ul>
+              </li>
+              <li><strong>Bất quy tắc:</strong> <em>good $\to$ better $\to$ the best | bad $\to$ worse $\to$ the worst | far $\to$ farther/further $\to$ the farthest.</em></li>
+              <li><strong>So sánh bằng:</strong> <code>as + Adj + as</code> (<em>as brave as</em>).</li>
+            </ul>
+          `,
+          questions: [
+            { q: "Short adjective comparative: 'Jupiter is much ________ than planet Earth.'", opts: ["A. more large", "B. larger", "C. largest", "D. as large"], ans: 1, exp: "Large là tính từ ngắn -> Comparative: 'larger than'." },
+            { q: "Long adjective superlative: 'This is the ________ mission in our space academy history.'", opts: ["A. most difficult", "B. more difficult", "C. difficultest", "D. as difficult"], ans: 0, exp: "Difficult là tính từ dài -> Superlative: 'the most difficult'." },
+            { q: "Irregular forms: 'His test score was ________ than mine, but Tom got the ________ result.'", opts: ["A. badder / baddest", "B. worse / worst", "C. more bad / most bad", "D. worse / most worst"], ans: 1, exp: "Bất quy tắc: bad -> worse (so sánh hơn) -> worst (so sánh nhất)." },
+            { q: "Equality comparison: 'This new space helmet is just ________ reliable ________ the old one.'", opts: ["A. so / as", "B. as / as", "C. more / than", "D. as / than"], ans: 1, exp: "So sánh bằng: as + Adj + as." },
+            { q: "Long adjective comparative: 'Space exploration is ________ expensive than deep ocean research.'", opts: ["A. more", "B. most", "C. -er", "D. as"], ans: 0, exp: "Tính từ dài 'expensive' ở so sánh hơn -> 'more expensive than'." }
+          ]
+        },
+        {
+          id: 12,
+          name: "Relative Clauses",
+          room: "Command Bridge 🛸",
+          icon: "🛸",
+          avatar: "👑",
+          role: "Golden Goose",
+          theory: `
+            <p><strong>🎯 CHUYÊN ĐỀ 12: MỆNH ĐỀ QUAN HỆ (RELATIVE CLAUSES)</strong></p>
+            <ul>
+              <li><strong>WHO:</strong> Thay cho danh từ chỉ người (Chủ ngữ/Tân ngữ) (<em>The cadet <strong>who</strong> fixed the engine.</em>).</li>
+              <li><strong>WHOM:</strong> Thay cho danh từ chỉ người (Tân ngữ).</li>
+              <li><strong>WHICH:</strong> Thay cho danh từ chỉ vật, sự việc (<em>The rocket <strong>which</strong> launched yesterday.</em>).</li>
+              <li><strong>THAT:</strong> Thay cho who/whom/which trong Mệnh đề xác định. (Không dùng sau dấu phẩy).</li>
+              <li><strong>WHOSE:</strong> Chỉ sở hữu (<em>The scientist <strong>whose</strong> invention won...</em>).</li>
+              <li><strong>WHERE / WHEN / WHY:</strong> Chỉ nơi chốn / thời gian / lý do.</li>
+              <li><strong>Non-defining clause (Mệnh đề không xác định):</strong> Có dấu phẩy hai đầu, bổ nghĩa cho danh từ riêng hoặc danh từ đã xác định rõ.</li>
+            </ul>
+          `,
+          questions: [
+            { q: "Choose relative pronoun for person subject: 'The astronaut ________ repaired the solar panel was awarded a medal.'", opts: ["A. which", "B. who", "C. whose", "D. where"], ans: 1, exp: "Thay thế cho danh từ chỉ người 'The astronaut' đóng vai trò chủ ngữ -> dùng 'who'." },
+            { q: "Choose relative pronoun for thing: 'The spaceship ________ was built in 2024 has reached Saturn.'", opts: ["A. who", "B. which", "C. whom", "D. whose"], ans: 1, exp: "Thay thế cho vật 'The spaceship' -> dùng 'which'." },
+            { q: "Choose possession pronoun: 'I spoke to the engineer ________ spaceship design won first prize.'", opts: ["A. who", "B. whom", "C. whose", "D. which"], ans: 2, exp: "Chỉ sở hữu 'spaceship design' thuộc về 'the engineer' -> dùng 'whose'." },
+            { q: "Choose relative adverb of place: 'This is the laboratory ________ scientists test anti-gravity gear.'", opts: ["A. when", "B. where", "C. which", "D. that"], ans: 1, exp: "Chỉ nơi chốn 'the laboratory' -> dùng 'where'." },
+            { q: "Choose correct form in Non-defining clause: 'Dr. Ben, ________ is an expert in astrophysics, gave a speech.'", opts: ["A. that", "B. who", "C. which", "D. whom"], ans: 1, exp: "Mệnh đề không xác định có dấu phẩy KHÔNG được dùng 'that', thay người -> dùng 'who'." }
+          ]
+        },
+        {
+          id: 13,
+          name: "Reported Speech",
+          room: "Security Eavesdropping Lab 🛰️",
+          icon: "🛰️",
+          avatar: "🕵️",
+          role: "Spy Goose",
+          theory: `
+            <p><strong>🎯 CHUYÊN ĐỀ 13: CÂU TƯỜNG THUẬT (REPORTED SPEECH)</strong></p>
+            <p>Khi tường thuật lại lời nói của ai đó, ta cần lùi thì và đổi đại từ, từ chỉ thời gian/nơi chốn:</p>
+            <ul>
+              <li><strong>Lùi thì (Backshift):</strong>
+                <ul>
+                  <li>Present Simple $\to$ Past Simple</li>
+                  <li>Present Continuous $\to$ Past Continuous</li>
+                  <li>Present Perfect / Past Simple $\to$ Past Perfect</li>
+                  <li>Will $\to$ Would | Can $\to$ Could | Must $\to$ Had to</li>
+                </ul>
+              </li>
+              <li><strong>Đổi từ chỉ thời gian/nơi chốn:</strong> <em>now $\to$ then, today $\to$ that day, tomorrow $\to$ the next day / the following day, yesterday $\to$ the day before, here $\to$ there.</em></li>
+              <li><strong>Câu hỏi tường thuật:</strong> Dùng <em>if/whether</em> cho câu hỏi Yes/No; giữ từ hỏi <em>Wh-</em> cho câu hỏi Wh-, chuyển cấu trúc về dạng trần thuật (S + V).</li>
+            </ul>
+          `,
+          questions: [
+            { q: "Backshift tense: Direct: 'I am repairing the radar,' Jack said. -> Jack said that he ________ the radar.", opts: ["A. is repairing", "B. was repairing", "C. had repaired", "D. will repair"], ans: 1, exp: "Lùi thì: Present Continuous ('am repairing') -> Past Continuous ('was repairing')." },
+            { q: "Change time expression: Direct: 'We will launch tomorrow,' she said. -> She said they would launch ________.", opts: ["A. tomorrow", "B. the following day", "C. yesterday", "D. that day"], ans: 1, exp: "'tomorrow' đổi thành 'the following day' hoặc 'the next day'." },
+            { q: "Reported Yes/No Question: Direct: 'Do you have the security key?' he asked. -> He asked me ________ I had the security key.", opts: ["A. if", "B. that", "C. what", "D. where"], ans: 0, exp: "Tường thuật câu hỏi Yes/No dùng 'if' hoặc 'whether'." },
+            { q: "Reported Wh- Question: Direct: 'Where are you going?' she asked. -> She asked me where I ________.", opts: ["A. am going", "B. was going", "C. go", "D. had gone"], ans: 1, exp: "Tường thuật câu hỏi Wh-: Giữ từ hỏi + S + V lùi thì ('where I was going')." },
+            { q: "Reported Command: Direct: 'Don't press the red button!' the captain yelled. -> The captain told us ________ the red button.", opts: ["A. to not press", "B. not to press", "C. don't press", "D. no press"], ans: 1, exp: "Tường thuật câu mệnh lệnh phủ định: tell + O + not + to V ('not to press')." }
+          ]
+        },
+        {
+          id: 14,
+          name: "Conditional Sentences",
+          room: "Escape Pod & Imposter Showdown 🛸💥",
+          icon: "🛸",
+          avatar: "🦆",
+          role: "Imposter Duck Boss",
+          theory: `
+            <p><strong>🎯 CHUYÊN ĐỀ 14: CÂU ĐIỀU KIỆN (CONDITIONAL SENTENCES)</strong></p>
+            <ul>
+              <li><strong>Type 0 (Sự thật hiển nhiên):</strong> <code>If + Present Simple, Present Simple</code><br><em>(If you heat ice, it melts.)</em></li>
+              <li><strong>Type 1 (Có thể xảy ra ở hiện tại/tương lai):</strong> <code>If + Present Simple, S + will + V0</code><br><em>(If we fix the engine, the shuttle will launch.)</em></li>
+              <li><strong>Type 2 (Giả thiết không có thật ở hiện tại):</strong> <code>If + Past Simple (to be: were), S + would + V0</code><br><em>(If I were the captain, I would open the airlock.)</em></li>
+              <li><strong>Type 3 (Giả thiết không có thật ở quá khứ):</strong> <code>If + Past Perfect (had + V3), S + would have + V3</code><br><em>(If we had detected the leak, we would have saved the oxygen.)</em></li>
+              <li><strong>UNLESS = IF NOT:</strong> <em>Unless you wear a helmet = If you do not wear a helmet.</em></li>
+            </ul>
+          `,
+          questions: [
+            { q: "Type 1 Conditional: 'If we ________ the reactor core in time, the spaceship ________ safely.'", opts: ["A. repair / will launch", "B. repaired / will launch", "C. repair / launched", "D. would repair / launches"], ans: 0, exp: "Loại 1: If + Present Simple ('repair'), S + will + V0 ('will launch')." },
+            { q: "Type 2 Conditional: 'If I ________ the commander of this base, I ________ lower the oxygen levels.'", opts: ["A. am / won't", "B. were / wouldn't", "C. had been / wouldn't have", "D. was / don't"], ans: 1, exp: "Loại 2 (Trái với hiện tại): If + were, S + would/could + V0 ('wouldn't')." },
+            { q: "Type 3 Conditional: 'If the security team ________ the warning alarm, they ________ the sabotage.'", opts: ["A. heard / avoided", "B. had heard / would have avoided", "C. hear / will avoid", "D. would hear / had avoided"], ans: 1, exp: "Loại 3 (Trái với quá khứ): If + had + V3 ('had heard'), S + would have + V3 ('would have avoided')." },
+            { q: "Unless meaning: '________ you wear your spacesuit, you cannot enter the vacuum chamber.'", opts: ["A. If", "B. Unless", "C. Although", "D. Because"], ans: 1, exp: "'Unless' = If not (Nếu bạn không mặc bộ đồ vũ trụ, bạn không thể vào...)." },
+            { q: "Type 0 (Scientific Fact): 'If you ________ water to 100°C under normal atmospheric pressure, it ________.'", opts: ["A. heat / boils", "B. heated / boiled", "C. will heat / boils", "D. heat / will boil"], ans: 0, exp: "Loại 0 (Sự thật khoa học): Cả 2 mệnh đề đều chia Present Simple ('heat / boils')." }
+          ]
+        }
+      ];
+
+      // GGD AUDIO SYNTHESIZER
+      let ggdSfxEnabled = true;
+
+      function playGgdAudio(type) {
+        if (!ggdSfxEnabled) return;
+        try {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          if (!AudioContext) return;
+          const ctx = new AudioContext();
+
+          if (type === 'quack') {
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.type = 'sawtooth';
+            osc.frequency.setValueAtTime(320, ctx.currentTime);
+            osc.frequency.exponentialRampToValueAtTime(130, ctx.currentTime + 0.18);
+            gain.gain.setValueAtTime(0.3, ctx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.18);
+            osc.connect(gain); gain.connect(ctx.destination);
+            osc.start(); osc.stop(ctx.currentTime + 0.18);
+          } else if (type === 'correct') {
+            const notes = [523.25, 659.25, 783.99];
+            notes.forEach((freq, idx) => {
+              const osc = ctx.createOscillator();
+              const gain = ctx.createGain();
+              osc.type = 'sine';
+              osc.frequency.setValueAtTime(freq, ctx.currentTime + idx * 0.08);
+              gain.gain.setValueAtTime(0.2, ctx.currentTime + idx * 0.08);
+              gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + idx * 0.08 + 0.2);
+              osc.connect(gain); gain.connect(ctx.destination);
+              osc.start(ctx.currentTime + idx * 0.08);
+              osc.stop(ctx.currentTime + idx * 0.08 + 0.2);
+            });
+          } else if (type === 'wrong') {
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.type = 'square';
+            osc.frequency.setValueAtTime(190, ctx.currentTime);
+            osc.frequency.setValueAtTime(130, ctx.currentTime + 0.12);
+            gain.gain.setValueAtTime(0.2, ctx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.25);
+            osc.connect(gain); gain.connect(ctx.destination);
+            osc.start(); osc.stop(ctx.currentTime + 0.25);
+          } else if (type === 'victory') {
+            const fanfare = [523.25, 659.25, 783.99, 1046.50];
+            fanfare.forEach((freq, idx) => {
+              const osc = ctx.createOscillator();
+              const gain = ctx.createGain();
+              osc.type = 'triangle';
+              osc.frequency.setValueAtTime(freq, ctx.currentTime + idx * 0.12);
+              gain.gain.setValueAtTime(0.25, ctx.currentTime + idx * 0.12);
+              gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + idx * 0.12 + 0.35);
+              osc.connect(gain); gain.connect(ctx.destination);
+              osc.start(ctx.currentTime + idx * 0.12);
+              osc.stop(ctx.currentTime + idx * 0.12 + 0.35);
+            });
+          } else if (type === 'click') {
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(750, ctx.currentTime);
+            gain.gain.setValueAtTime(0.1, ctx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.05);
+            osc.connect(gain); gain.connect(ctx.destination);
+            osc.start(); osc.stop(ctx.currentTime + 0.05);
+          }
+        } catch (e) {}
+      }
+
+      window.toggleGgdSfx = function() {
+        ggdSfxEnabled = !ggdSfxEnabled;
+        const btn = document.getElementById("ggd-sfx-toggle");
+        if (btn) btn.textContent = ggdSfxEnabled ? "🔊 SFX" : "🔇 SFX";
+        playGgdAudio('click');
+      };
+
+      // LOCAL STORAGE & STATE MANAGEMENT
+      function getGgdState() {
+        try {
+          const raw = localStorage.getItem(GGD_STORAGE_KEY);
+          if (raw) return JSON.parse(raw);
+        } catch(e) {}
+        return {
+          unlockedMax: 1,
+          unlockAllMode: false,
+          gold: 0,
+          exp: 0,
+          completed: {}
+        };
+      }
+
+      function saveGgdState(state) {
+        try {
+          localStorage.setItem(GGD_STORAGE_KEY, JSON.stringify(state));
+        } catch(e) {}
+      }
+
+      window.resetGgdProgress = function() {
+        if (confirm("⚠️ BẠN CÓ CHẮC CHẮN MUỐN RESET TOÀN BỘ TIẾN TRÌNH GAME NGỮ PHÁP VỀ LEVEL 1 KHÔNG?")) {
+          const newState = {
+            unlockedMax: 1,
+            unlockAllMode: false,
+            gold: 0,
+            exp: 0,
+            completed: {}
+          };
+          saveGgdState(newState);
+          renderGgdHUD();
+          renderGgdGrid();
+          playGgdAudio('quack');
+          alert("🔄 Tiến trình đã được reset về Level 1 thành công!");
+        }
+      };
+
+      window.toggleUnlockAllGgd = function() {
+        const state = getGgdState();
+        state.unlockAllMode = !state.unlockAllMode;
+        saveGgdState(state);
+        renderGgdHUD();
+        renderGgdGrid();
+        playGgdAudio('click');
+        const btn = document.getElementById("ggd-unlock-all-btn");
+        alert(state.unlockAllMode ? "🔓 Đã bật chế độ Teacher: MỞ KHÓA TẤT CẢ LEVEL!" : "🔒 Đã tắt chế độ Teacher: Trở về mở khóa nối tiếp!");
+      };
+
+      // RENDERERS
+      function renderGgdHUD() {
+        const state = getGgdState();
+        const studentName = getStudentName() || "STUDENT";
+        
+        const nameEl = document.getElementById("ggd-player-name");
+        const rankEl = document.getElementById("ggd-player-rank");
+        const goldEl = document.getElementById("ggd-gold-val");
+        const expEl = document.getElementById("ggd-exp-val");
+        const overallFill = document.getElementById("ggd-overall-fill");
+        const overallPercent = document.getElementById("ggd-overall-percent");
+
+        if (nameEl) nameEl.textContent = studentName.toUpperCase();
+        
+        const clearedCount = Object.keys(state.completed).filter(k => state.completed[k] && state.completed[k].passed).length;
+        const percent = Math.round((clearedCount / ggdLevels.length) * 100);
+
+        let rankTitle = "CADET GOOSE";
+        if (clearedCount >= 14) rankTitle = "👑 GOOSE MASTER COMMANDER";
+        else if (clearedCount >= 10) rankTitle = "🕵️ DETECTIVE GOOSE";
+        else if (clearedCount >= 5) rankTitle = "👨‍🚀 ASTRO OFFICER GOOSE";
+        else if (clearedCount >= 2) rankTitle = "⚡ ELECTRICIAN GOOSE";
+
+        if (rankEl) rankEl.textContent = rankTitle;
+        if (goldEl) goldEl.textContent = state.gold || 0;
+        if (expEl) expEl.textContent = state.exp || 0;
+        if (overallFill) overallFill.style.width = `${percent}%`;
+        if (overallPercent) overallPercent.textContent = `${percent}% (${clearedCount}/${ggdLevels.length})`;
+      }
+
+      function renderGgdGrid() {
+        const gridEl = document.getElementById("ggd-levels-grid");
+        if (!gridEl) return;
+
+        const state = getGgdState();
+        gridEl.innerHTML = "";
+
+        ggdLevels.forEach(lvl => {
+          const isUnlocked = state.unlockAllMode || lvl.id <= state.unlockedMax;
+          const compInfo = state.completed[lvl.id] || null;
+          const isCleared = compInfo && compInfo.passed;
+
+          let statusClass = "locked";
+          let statusLabel = "🔒 LOCKED";
+          if (isCleared) {
+            statusClass = "cleared";
+            statusLabel = "✅ CLEARED";
+          } else if (isUnlocked) {
+            statusClass = "unlocked";
+            statusLabel = "🔓 PLAY TASK";
+          }
+
+          let starsHTML = "";
+          if (compInfo && compInfo.stars) {
+            starsHTML = "⭐".repeat(compInfo.stars);
+          }
+
+          const card = document.createElement("div");
+          card.className = `ggd-card ${statusClass}`;
+          if (isUnlocked) {
+            card.onclick = () => openGgdLevel(lvl.id);
+          } else {
+            card.onclick = () => {
+              playGgdAudio('wrong');
+              alert(`🔒 SECTOR LOCKED!\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nBạn cần hoàn thành Level ${lvl.id - 1} để mở khóa phòng này!`);
+            };
+          }
+
+          card.innerHTML = `
+            <div class="ggd-card-top">
+              <span class="ggd-level-badge">LEVEL ${lvl.id}</span>
+              <div class="ggd-room-icon">${lvl.icon}</div>
+            </div>
+            <div>
+              <div class="ggd-card-title">${lvl.name}</div>
+              <div class="ggd-room-name">${lvl.room} • ${lvl.role}</div>
+            </div>
+            <div class="ggd-card-footer">
+              <span class="ggd-status-tag ${statusClass}">${statusLabel}</span>
+              <span class="ggd-star-rating">${starsHTML}</span>
+            </div>
+          `;
+
+          gridEl.appendChild(card);
+        });
+      }
+
+      // LEVEL PLAY ENGINE
+      let currentActiveLvl = null;
+      let currentQIndex = 0;
+      let currentScore = 0;
+      let currentLives = 3;
+      let currentAnswered = false;
+
+      function openGgdLevel(lvlId) {
+        const lvl = ggdLevels.find(l => l.id === lvlId);
+        if (!lvl) return;
+
+        currentActiveLvl = lvl;
+        currentQIndex = 0;
+        currentScore = 0;
+        currentLives = 3;
+        currentAnswered = false;
+
+        document.getElementById("ggd-modal-room-icon").textContent = lvl.icon;
+        document.getElementById("ggd-modal-level-tag").textContent = `LEVEL ${lvl.id} • ${lvl.room.toUpperCase()}`;
+        document.getElementById("ggd-modal-title").textContent = `${lvl.name} (${lvl.role})`;
+        document.getElementById("ggd-modal-theory").innerHTML = lvl.theory;
+
+        // Reset details state
+        const details = document.getElementById("ggd-dossier-details");
+        if (details) details.open = true;
+
+        renderCurrentQuestion();
+        
+        const modal = document.getElementById("ggd-task-modal");
+        if (modal) modal.classList.add("active");
+        playGgdAudio('quack');
+      }
+
+      window.closeGgdTaskModal = function() {
+        const modal = document.getElementById("ggd-task-modal");
+        if (modal) modal.classList.remove("active");
+        playGgdAudio('click');
+      };
+
+      function renderCurrentQuestion() {
+        if (!currentActiveLvl) return;
+        const qList = currentActiveLvl.questions;
+        const qData = qList[currentQIndex];
+        currentAnswered = false;
+
+        // Update step counter & mini fill
+        const counterEl = document.getElementById("ggd-task-step-counter");
+        const miniFill = document.getElementById("ggd-task-mini-fill");
+        const livesEl = document.getElementById("ggd-task-lives");
+        const nextBtn = document.getElementById("ggd-next-btn");
+        const feedbackBox = document.getElementById("ggd-q-feedback");
+
+        if (counterEl) counterEl.textContent = `TASK ${currentQIndex + 1} / ${qList.length}`;
+        if (miniFill) miniFill.style.width = `${Math.round(((currentQIndex) / qList.length) * 100)}%`;
+        if (livesEl) livesEl.textContent = "🪿".repeat(Math.max(0, currentLives));
+        if (nextBtn) nextBtn.style.display = "none";
+        if (feedbackBox) feedbackBox.style.display = "none";
+
+        const qTextEl = document.getElementById("ggd-q-text");
+        const qOptsEl = document.getElementById("ggd-q-options");
+
+        if (qTextEl) qTextEl.innerHTML = `<b>Task ${currentQIndex + 1}:</b> ${qData.q}`;
+        if (qOptsEl) {
+          qOptsEl.innerHTML = "";
+          qData.opts.forEach((opt, idx) => {
+            const btn = document.createElement("button");
+            btn.className = "ggd-opt-btn";
+            btn.textContent = opt;
+            btn.onclick = () => selectGgdAnswer(idx);
+            qOptsEl.appendChild(btn);
+          });
+        }
+      }
+
+      function selectGgdAnswer(optIdx) {
+        if (currentAnswered || !currentActiveLvl) return;
+        currentAnswered = true;
+
+        const qData = currentActiveLvl.questions[currentQIndex];
+        const optsContainer = document.getElementById("ggd-q-options");
+        const btns = optsContainer.getElementsByClassName("ggd-opt-btn");
+        const feedbackBox = document.getElementById("ggd-q-feedback");
+        const feedbackTitle = document.getElementById("ggd-feedback-title");
+        const feedbackExplain = document.getElementById("ggd-feedback-explain");
+        const nextBtn = document.getElementById("ggd-next-btn");
+
+        if (optIdx === qData.ans) {
+          currentScore++;
+          playGgdAudio('correct');
+          if (btns[optIdx]) btns[optIdx].classList.add("correct");
+          if (feedbackTitle) {
+            feedbackTitle.style.color = "#4ade80";
+            feedbackTitle.textContent = "🪿 QUACK! CHÍNH XÁC - NHIỆM VỤ THÀNH CÔNG!";
+          }
+        } else {
+          currentLives = Math.max(0, currentLives - 1);
+          playGgdAudio('wrong');
+          if (btns[optIdx]) btns[optIdx].classList.add("wrong");
+          if (btns[qData.ans]) btns[qData.ans].classList.add("correct");
+          if (feedbackTitle) {
+            feedbackTitle.style.color = "#fca5a5";
+            feedbackTitle.textContent = "🦆 IMPOSTER PHÁ HOẠI! ĐÁP ÁN CHƯA ĐÚNG!";
+          }
+        }
+
+        const livesEl = document.getElementById("ggd-task-lives");
+        if (livesEl) livesEl.textContent = "🪿".repeat(currentLives);
+
+        if (feedbackExplain) feedbackExplain.innerHTML = `<b>💡 Giải thích chi tiết:</b> ${qData.exp}`;
+        if (feedbackBox) feedbackBox.style.display = "block";
+        if (nextBtn) nextBtn.style.display = "inline-block";
+      }
+
+      window.nextGgdQuestion = function() {
+        playGgdAudio('click');
+        if (!currentActiveLvl) return;
+        currentQIndex++;
+
+        if (currentQIndex < currentActiveLvl.questions.length) {
+          renderCurrentQuestion();
+        } else {
+          finishGgdLevel();
+        }
+      };
+
+      function finishGgdLevel() {
+        closeGgdTaskModal();
+        if (!currentActiveLvl) return;
+
+        const totalQ = currentActiveLvl.questions.length;
+        const scorePercent = Math.round((currentScore / totalQ) * 100);
+        const passed = scorePercent >= 70;
+
+        let stars = 1;
+        if (scorePercent === 100) stars = 3;
+        else if (scorePercent >= 85) stars = 2;
+
+        const state = getGgdState();
+
+        // Update level completion record
+        if (!state.completed[currentActiveLvl.id] || scorePercent > (state.completed[currentActiveLvl.id].percent || 0)) {
+          state.completed[currentActiveLvl.id] = {
+            passed: passed,
+            percent: scorePercent,
+            score: currentScore,
+            total: totalQ,
+            stars: stars
+          };
+        }
+
+        let unlockedNext = false;
+        if (passed) {
+          const expGain = currentScore * 30;
+          const goldGain = currentScore * 15;
+          state.exp = (state.exp || 0) + expGain;
+          state.gold = (state.gold || 0) + goldGain;
+
+          if (currentActiveLvl.id === state.unlockedMax && state.unlockedMax < ggdLevels.length) {
+            state.unlockedMax += 1;
+            unlockedNext = true;
+          }
+        }
+
+        saveGgdState(state);
+        renderGgdHUD();
+        renderGgdGrid();
+
+        // Render Result Modal
+        const resIcon = document.getElementById("ggd-result-icon");
+        const resHeading = document.getElementById("ggd-result-heading");
+        const resSub = document.getElementById("ggd-result-sub");
+        const resStars = document.getElementById("ggd-result-stars");
+        const resScore = document.getElementById("ggd-res-score");
+        const resExp = document.getElementById("ggd-res-exp");
+        const resGold = document.getElementById("ggd-res-gold");
+        const resUnlock = document.getElementById("ggd-res-unlock-status");
+        const nextLvlBtn = document.getElementById("ggd-next-level-btn");
+
+        if (passed) {
+          playGgdAudio('victory');
+          if (resIcon) resIcon.textContent = "🎉";
+          if (resHeading) resHeading.textContent = "SECTOR CLEARED!";
+          if (resSub) resSub.textContent = `Chúc mừng bạn đã xuất sắc vượt qua chuyên đề ${currentActiveLvl.name}!`;
+          if (resStars) resStars.textContent = "⭐".repeat(stars);
+          if (resScore) resScore.textContent = `${currentScore} / ${totalQ} câu (${scorePercent}%)`;
+          if (resExp) resExp.textContent = `+${currentScore * 30} EXP`;
+          if (resGold) resGold.textContent = `+${currentScore * 15} Gold`;
+          
+          if (unlockedNext) {
+            if (resUnlock) resUnlock.textContent = `🔓 Đã mở khóa Level ${state.unlockedMax}!`;
+          } else {
+            if (resUnlock) resUnlock.textContent = `✅ Level ${currentActiveLvl.id} đã hoàn thành!`;
+          }
+
+          if (nextLvlBtn) {
+            if (currentActiveLvl.id < ggdLevels.length) {
+              nextLvlBtn.style.display = "inline-block";
+            } else {
+              nextLvlBtn.style.display = "none";
+            }
+          }
+        } else {
+          playGgdAudio('wrong');
+          if (resIcon) resIcon.textContent = "🦆";
+          if (resHeading) resHeading.textContent = "TASK FAILED!";
+          if (resSub) resSub.textContent = `Cần đạt tối thiểu 70% điểm để mở khóa level tiếp theo. Hãy đọc kĩ Hồ Sơ Mật và thử lại nhé!`;
+          if (resStars) resStars.textContent = "❌";
+          if (resScore) resScore.textContent = `${currentScore} / ${totalQ} câu (${scorePercent}%)`;
+          if (resExp) resExp.textContent = `+0 EXP`;
+          if (resGold) resGold.textContent = `+0 Gold`;
+          if (resUnlock) resUnlock.textContent = `🔒 Cần đạt $\\ge$ 70% để unlock Level ${currentActiveLvl.id + 1}`;
+          if (nextLvlBtn) nextLvlBtn.style.display = "none";
+        }
+
+        const resModal = document.getElementById("ggd-result-modal");
+        if (resModal) resModal.classList.add("active");
+      }
+
+      window.closeGgdResultModal = function() {
+        const resModal = document.getElementById("ggd-result-modal");
+        if (resModal) resModal.classList.remove("active");
+        playGgdAudio('click');
+      };
+
+      window.openNextLevelFromResult = function() {
+        closeGgdResultModal();
+        if (currentActiveLvl && currentActiveLvl.id < ggdLevels.length) {
+          openGgdLevel(currentActiveLvl.id + 1);
+        }
+      };
+
+      // INIT GGD GAME ENGINE
+      function initGgdGameEngine() {
+        renderGgdHUD();
+        renderGgdGrid();
+      }
+
+      initGgdGameEngine();
 
     });
   </script>
