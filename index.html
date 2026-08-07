@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>English Insiders Learning Portal | HSG 12 & Tiếng Anh 10</title>
-  <meta name="description" content="Hệ thống kho học liệu Tiếng Anh chuyên sâu - Chuyên đề Đội tuyển HSG 12 & Chương trình Tiếng Anh 10 toàn diện.">
-  <meta name="keywords" content="English Insiders, HSG 12 Tiếng Anh, VSTEP, Cambridge C1, Tiếng Anh 10, Reading, Listening, Vocabulary">
+  <title>English Insiders Learning Portal | HSG 12 & English 10</title>
+  <meta name="description" content="English Insiders Learning Portal - HSG 12 & English 10.">
+  <meta name="keywords" content="English Insiders, HSG 12, English 10, Reading, Listening, Vocabulary">
   <meta name="author" content="English Insiders Team">
   <meta property="og:title" content="English Insiders Learning Portal">
-  <meta property="og:description" content="Kho học liệu Tiếng Anh chuyên sâu chuyên đề HSG 12 & Tiếng Anh 10.">
+  <meta property="og:description" content="English Insiders Learning Portal.">
   <meta property="og:image" content="images/English_Insider_Logo.svg">
   <meta property="og:type" content="website">
 
@@ -17,13 +17,12 @@
 
   <style>
     /* ==========================================================================
-       1. CẤU HÌNH BIẾN MÀU GỐC & FONT CHỮ - LIGHT THEME WITH NAVY TEXT #283567
+       1. COLOR SYSTEM & SANS-SERIF TYPOGRAPHY (NO GRADIENTS, NAVY #283567)
        ========================================================================== */
     :root {
       --color-bg-main: #f8fafc;
       --color-primary-navy: #283567;
       --color-primary-blue: #2563eb;
-      --color-primary-dark: #1d4ed8;
       --color-accent-green: #059669;
       --color-text-dark: #283567;
       --color-text-muted: #475569;
@@ -46,7 +45,7 @@
       overflow: hidden;
     }
 
-    /* ẨN THANH ĐIỀU HƯỚNG BÊN TRÁI Theo Yêu Cầu */
+    /* ẨN THANH ĐIỀU HƯỚNG BÊN TRÁI */
     .sidebar {
       display: none !important;
     }
@@ -175,7 +174,7 @@
       opacity: 1;
     }
 
-    /* HERO BANNER */
+    /* HERO BANNER (SOLID CREAM BACKGROUND, SOLID NAVY TEXT) */
     .hero-banner {
       background: #F7EBE1;
       color: var(--color-primary-navy);
@@ -212,15 +211,8 @@
       font-size: 1.85rem;
       font-weight: 800;
       color: var(--color-primary-navy);
-      margin: 4px 0 6px 0;
+      margin: 4px 0 0 0;
       letter-spacing: -0.5px;
-    }
-
-    .hero-banner p {
-      color: var(--color-primary-navy);
-      opacity: 0.9;
-      font-size: 0.95rem;
-      line-height: 1.5;
     }
 
     /* QUICK SEARCH BAR */
@@ -283,7 +275,7 @@
       font-weight: 600;
     }
 
-    /* CATEGORY CARDS GRID */
+    /* CATEGORY CARDS GRID (SOLID NAVY #283567, NO GRADIENTS) */
     .category-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -300,6 +292,7 @@
       box-shadow: 0 10px 30px rgba(40, 53, 103, 0.12);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
       cursor: pointer;
+      background: #283567; /* Solid Navy Blue #283567, NO Gradients */
     }
 
     .category-card:hover {
@@ -307,18 +300,10 @@
       box-shadow: 0 14px 36px rgba(40, 53, 103, 0.18);
     }
 
-    .card-hsg12 {
-      background: #283567; /* Deep Navy Blue */
-    }
-
-    .card-english10 {
-      background: #52639B; /* Muted Slate Blue */
-    }
-
     .card-top {
       display: flex;
       gap: 20px;
-      align-items: flex-start;
+      align-items: center;
       margin-bottom: 20px;
     }
 
@@ -352,13 +337,7 @@
       font-size: 1.75rem;
       font-weight: 800;
       color: #ffffff;
-      margin: 0 0 8px 0;
-    }
-
-    .card-desc {
-      font-size: 0.86rem;
-      line-height: 1.5;
-      color: rgba(255, 255, 255, 0.92);
+      margin: 0;
     }
 
     .category-tags {
@@ -389,7 +368,7 @@
     }
 
     .category-action-btn {
-      background: #F7EBE1; /* Matching warm cream tone */
+      background: #F7EBE1;
       color: var(--color-primary-navy);
       border: none;
       border-radius: 9999px;
@@ -409,7 +388,7 @@
     }
 
     /* ==========================================================================
-       4. SUB-FOLDER GRID STYLING (THƯ MỤC CON)
+       4. SUB-FOLDER GRID STYLING
        ========================================================================== */
     .folder-grid {
       display: grid;
@@ -453,14 +432,7 @@
       font-size: 0.78rem;
       font-weight: 700;
       color: #2563eb;
-      margin-bottom: 12px;
-    }
-
-    .folder-desc {
-      font-size: 0.88rem;
-      color: var(--color-text-muted);
-      line-height: 1.5;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
 
     .folder-meta {
@@ -487,7 +459,7 @@
       gap: 4px;
     }
 
-    /* SUB-TABS AND TASK DETAILS */
+    /* TASK DETAILS */
     .task-header {
       margin-bottom: 24px;
       background: #ffffff;
@@ -512,13 +484,7 @@
       font-size: 1.65rem;
       font-weight: 800;
       color: var(--color-primary-navy);
-      margin: 4px 0 6px 0;
-    }
-
-    .task-header p {
-      color: var(--color-primary-navy);
-      opacity: 0.85;
-      font-size: 0.95rem;
+      margin: 4px 0 0 0;
     }
 
     .task-body {
@@ -545,15 +511,7 @@
       font-size: 1.15rem;
       font-weight: 800;
       color: var(--color-primary-navy);
-      margin-bottom: 8px;
-    }
-
-    .skill-card p {
-      color: var(--color-primary-navy);
-      opacity: 0.88;
-      font-size: 0.92rem;
-      margin-bottom: 14px;
-      line-height: 1.5;
+      margin-bottom: 10px;
     }
 
     .meta-info {
@@ -575,33 +533,33 @@
     <!-- TOP HEADER & BREADCRUMB -->
     <header class="top-header">
       <div class="header-left">
-        <!-- LOGO & TIÊU ĐỀ TRÊN TOPBAR -->
+        <!-- LOGO & BRAND TITLE -->
         <div class="brand-top" id="brand-home-btn" data-target="overview-view">
           <img src="images/English_Insider_Logo.svg" alt="English Insiders Logo">
           <span>English<strong>Insiders</strong></span>
         </div>
 
-        <!-- NÚT QUAY LẠI TỰ ĐỘNG HIỆN KHI VÀO THƯ MỤC -->
-        <button id="back-to-home-btn" class="back-btn hidden" aria-label="Quay lại">
-          ← Quay lại
+        <!-- BACK BUTTON -->
+        <button id="back-to-home-btn" class="back-btn hidden" aria-label="Back">
+          ← Back
         </button>
         
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <span class="crumb-home" id="crumb-home-btn" data-target="overview-view">Home</span>
           <span class="separator">/</span>
-          <span id="crumb-path"><span class="crumb-current">Tổng quan</span></span>
+          <span id="crumb-path"><span class="crumb-current">Overview</span></span>
         </nav>
       </div>
       <div class="header-right">
-        <span class="user-badge" style="font-size: 0.9rem; font-weight: 600; color: #283567;">👤 Giáo viên / Học sinh</span>
+        <span class="user-badge" style="font-size: 0.9rem; font-weight: 600; color: #283567;">👤 Teacher / Student</span>
       </div>
     </header>
 
-    <!-- CONTENT AREA (SINGLE TASK FOCUS WORKSPACE) -->
+    <!-- CONTENT AREA -->
     <main class="content-area">
       <div class="content-container">
 
-        <!-- ==================== VIEW 1: TRANG CHỦ TỔNG QUAN ==================== -->
+        <!-- ==================== VIEW 1: OVERVIEW PAGE ==================== -->
         <section id="overview-view" class="view-panel active">
           
           <!-- HERO BANNER -->
@@ -610,7 +568,6 @@
             <div>
               <span class="subtitle">ENGLISH INSIDERS HUB</span>
               <h1>English Insiders Learning Portal</h1>
-              <p>Hệ thống kho học liệu Tiếng Anh chuyên sâu - Chuyên đề Đội tuyển HSG 12 & Chương trình Tiếng Anh 10.</p>
             </div>
           </article>
 
@@ -618,26 +575,25 @@
           <div class="search-bar-container">
             <div class="search-input-wrapper">
               <span class="search-icon">🔍</span>
-              <input type="text" id="quickSearchInput" placeholder="Tìm kiếm nhanh học liệu, chuyên đề, từ vựng...">
+              <input type="text" id="quickSearchInput" placeholder="Quick search resources, topics, vocabulary...">
             </div>
           </div>
 
           <!-- SECTION TITLE -->
           <div class="section-header">
-            <h2>✨ Danh Mục Học Liệu Chính</h2>
+            <h2>✨ Main Categories</h2>
           </div>
 
-          <!-- GRID DANH MỤC CÁC MỤC MẸ -->
+          <!-- CATEGORY CARDS GRID -->
           <div class="category-grid">
             
             <!-- CARD 1: HSG 12 -->
-            <article class="category-card card-hsg12" data-target="category-hsg12-view" data-label="HSG 12">
+            <article class="category-card" data-target="category-hsg12-view" data-label="HSG 12">
               <div class="card-top">
                 <img src="images/HSG12_logo.svg" alt="HSG 12 Logo" class="card-banner-img">
                 <div class="card-info">
-                  <span class="card-badge">CHUYÊN ĐỀ ĐỘI TUYỂN</span>
+                  <span class="card-badge">ADVANCED COURSE</span>
                   <h2 class="card-title">HSG 12</h2>
-                  <p class="card-desc">Kho học liệu chuyên sâu dành cho đội tuyển HSG 12. Bao gồm 3 chuyên đề cốt lõi: Reading Comprehension, Listening Skills và Vocabulary.</p>
                 </div>
               </div>
 
@@ -654,18 +610,17 @@
               </div>
 
               <button class="category-action-btn" data-target="category-hsg12-view" data-label="HSG 12">
-                Truy cập HSG 12 →
+                Open HSG 12 →
               </button>
             </article>
 
             <!-- CARD 2: ENGLISH 10 -->
-            <article class="category-card card-english10" data-target="category-english10-view" data-label="ENGLISH 10">
+            <article class="category-card" data-target="category-english10-view" data-label="ENGLISH 10">
               <div class="card-top">
                 <img src="images/English10_logo.svg" alt="ENGLISH 10 Logo" class="card-banner-img">
                 <div class="card-info">
-                  <span class="card-badge">CHƯƠNG TRÌNH LỚP 10</span>
+                  <span class="card-badge">GRADE 10 CURRICULUM</span>
                   <h2 class="card-title">ENGLISH 10</h2>
-                  <p class="card-desc">Chương trình bài học & luyện tập toàn diện Tiếng Anh 10. Bao gồm 3 phân môn: Grammar, Vocabulary và Practice Test.</p>
                 </div>
               </div>
 
@@ -682,33 +637,32 @@
               </div>
 
               <button class="category-action-btn" data-target="category-english10-view" data-label="ENGLISH 10">
-                Truy cập ENGLISH 10 →
+                Open ENGLISH 10 →
               </button>
             </article>
 
           </div>
         </section>
 
-        <!-- ==================== VIEW 2: THƯ MỤC MẸ HSG 12 ==================== -->
+        <!-- ==================== VIEW 2: HSG 12 CATEGORY VIEW ==================== -->
         <section id="category-hsg12-view" class="view-panel">
           <!-- Featured Banner for HSG 12 -->
-          <article class="category-card card-hsg12" style="margin-bottom: 2rem; cursor: default;">
+          <article class="category-card" style="margin-bottom: 2rem; cursor: default;">
             <div class="card-top">
               <img src="images/HSG12_logo.svg" alt="HSG 12 Logo" class="card-banner-img" style="width: 140px; height: 100px;">
               <div class="card-info">
-                <span class="card-badge">CHUYÊN ĐỀ ĐỘI TUYỂN</span>
+                <span class="card-badge">ADVANCED COURSE</span>
                 <h1 class="card-title" style="font-size: 2rem;">HSG 12</h1>
-                <p class="card-desc">Kho học liệu chuyên sâu dành cho đội tuyển HSG 12. Chọn 1 trong 3 thư mục con bên dưới để bắt đầu học tập và làm bài tập thực hành.</p>
               </div>
             </div>
           </article>
 
           <div class="section-header">
-            <h2>📁 3 Thư Mục Con Thuộc HSG 12</h2>
-            <span class="count">3 thư mục</span>
+            <h2>📁 3 Subfolders in HSG 12</h2>
+            <span class="count">3 items</span>
           </div>
 
-          <!-- Grid 3 thư mục con của HSG 12 -->
+          <!-- Grid 3 Subfolders in HSG 12 -->
           <div class="folder-grid">
             
             <!-- Sub-folder 1: Reading Comprehension -->
@@ -717,11 +671,10 @@
                 <div class="folder-icon">📖</div>
                 <div class="folder-name">Reading Comprehension</div>
                 <div class="folder-path">📌 HSG 12 / Reading Comprehension</div>
-                <div class="folder-desc">Chuyên đề Đọc hiểu chuyên sâu VSTEP B1-C1 & Cambridge CAE. Kỹ năng Skimming, Scanning, Suy luận & Từ vựng.</div>
               </div>
               <div class="folder-meta">
                 <span class="type-badge">HSG 12</span>
-                <span class="arrow-text">Mở học liệu →</span>
+                <span class="arrow-text">Open →</span>
               </div>
             </article>
 
@@ -731,11 +684,10 @@
                 <div class="folder-icon">🎧</div>
                 <div class="folder-name">Listening Skills</div>
                 <div class="folder-path">📌 HSG 12 / Listening Skills</div>
-                <div class="folder-desc">Luyện nghe học thuật chuẩn Cambridge CAE & Contemporary Topics với Audio player tương tác chuyên sâu.</div>
               </div>
               <div class="folder-meta">
                 <span class="type-badge">HSG 12</span>
-                <span class="arrow-text">Mở học liệu →</span>
+                <span class="arrow-text">Open →</span>
               </div>
             </article>
 
@@ -745,37 +697,35 @@
                 <div class="folder-icon">📘</div>
                 <div class="folder-name">Vocabulary</div>
                 <div class="folder-path">📌 HSG 12 / Vocabulary</div>
-                <div class="folder-desc">Từ vựng học thuật chuyên sâu (CEFR B1-C2) từ bộ sách Focus on Vocabulary 1 & 2 & 2,600+ Collocations.</div>
               </div>
               <div class="folder-meta">
                 <span class="type-badge">HSG 12</span>
-                <span class="arrow-text">Mở học liệu →</span>
+                <span class="arrow-text">Open →</span>
               </div>
             </article>
 
           </div>
         </section>
 
-        <!-- ==================== VIEW 3: THƯ MỤC MẸ ENGLISH 10 ==================== -->
+        <!-- ==================== VIEW 3: ENGLISH 10 CATEGORY VIEW ==================== -->
         <section id="category-english10-view" class="view-panel">
           <!-- Featured Banner for ENGLISH 10 -->
-          <article class="category-card card-english10" style="margin-bottom: 2rem; cursor: default;">
+          <article class="category-card" style="margin-bottom: 2rem; cursor: default;">
             <div class="card-top">
               <img src="images/English10_logo.svg" alt="ENGLISH 10 Logo" class="card-banner-img" style="width: 140px; height: 100px;">
               <div class="card-info">
-                <span class="card-badge">CHƯƠNG TRÌNH LỚP 10</span>
+                <span class="card-badge">GRADE 10 CURRICULUM</span>
                 <h1 class="card-title" style="font-size: 2rem;">ENGLISH 10</h1>
-                <p class="card-desc">Chương trình bài học & luyện tập toàn diện Tiếng Anh 10. Chọn 1 trong 3 phân môn bên dưới để bắt đầu học tập.</p>
               </div>
             </div>
           </article>
 
           <div class="section-header">
-            <h2>📁 3 Thư Mục Con Thuộc ENGLISH 10</h2>
-            <span class="count">3 thư mục</span>
+            <h2>📁 3 Subfolders in ENGLISH 10</h2>
+            <span class="count">3 items</span>
           </div>
 
-          <!-- Grid 3 thư mục con của ENGLISH 10 -->
+          <!-- Grid 3 Subfolders in ENGLISH 10 -->
           <div class="folder-grid">
             
             <!-- Sub-folder 1: Grammar -->
@@ -784,11 +734,10 @@
                 <div class="folder-icon">📝</div>
                 <div class="folder-name">Grammar</div>
                 <div class="folder-path">📌 ENGLISH 10 / Grammar</div>
-                <div class="folder-desc">Hệ thống lý thuyết & bài tập ngữ pháp chuyên sâu Tiếng Anh 10 theo chủ đề bài học chuẩn.</div>
               </div>
               <div class="folder-meta">
                 <span class="type-badge">ENGLISH 10</span>
-                <span class="arrow-text">Mở học liệu →</span>
+                <span class="arrow-text">Open →</span>
               </div>
             </article>
 
@@ -798,11 +747,10 @@
                 <div class="folder-icon">🔤</div>
                 <div class="folder-name">Vocabulary</div>
                 <div class="folder-path">📌 ENGLISH 10 / Vocabulary</div>
-                <div class="folder-desc">Kho từ vựng & Collocations Tiếng Anh 10 kèm Gamification Quiz Arena & Flashcards 3D.</div>
               </div>
               <div class="folder-meta">
                 <span class="type-badge">ENGLISH 10</span>
-                <span class="arrow-text">Mở học liệu →</span>
+                <span class="arrow-text">Open →</span>
               </div>
             </article>
 
@@ -812,134 +760,117 @@
                 <div class="folder-icon">⏱️</div>
                 <div class="folder-name">Practice Test</div>
                 <div class="folder-path">📌 ENGLISH 10 / Practice Test</div>
-                <div class="folder-desc">Bộ đề kiểm tra luyện tập định kỳ Tiếng Anh 10 đầy đủ các dạng bài thi kèm chấm điểm tự động.</div>
               </div>
               <div class="folder-meta">
                 <span class="type-badge">ENGLISH 10</span>
-                <span class="arrow-text">Mở học liệu →</span>
+                <span class="arrow-text">Open →</span>
               </div>
             </article>
 
           </div>
         </section>
 
-        <!-- ==================== VIEW 4: TÁC VỤ CON - READING COMPREHENSION ==================== -->
+        <!-- ==================== VIEW 4: SUBTASK - READING COMPREHENSION ==================== -->
         <section id="task-hsg12-reading" class="view-panel task-view">
           <header class="task-header">
             <span class="task-tag">HSG 12 / READING</span>
             <h2>📖 Reading Comprehension Skills & Practice</h2>
-            <p>Nội dung bài học và thực hành đọc hiểu chuyên sâu VSTEP B1-C1 & Cambridge Advanced C1.</p>
           </header>
 
           <div class="task-body">
             <div class="skill-card">
               <h3>🎯 Main Idea & Subject Identification</h3>
-              <p>Xác định ý chính, chủ đề bao quát và tiêu đề phù hợp nhất cho đoạn văn mà không rơi vào bẫy quá hẹp (Too Narrow) hoặc quá rộng.</p>
               <div class="meta-info">📄 2 Passages | ❓ 4 Practice Questions</div>
             </div>
             <div class="skill-card">
               <h3>🔤 Vocabulary & Pronoun Reference</h3>
-              <p>Đoán nghĩa từ vựng trong ngữ cảnh học thuật và quy chiếu đại từ chính xác trong văn bản.</p>
               <div class="meta-info">📄 2 Passages | ❓ 4 Practice Questions</div>
             </div>
             <div class="skill-card">
               <h3>⚡ Fact & Negative Fact Questions</h3>
-              <p>Phân tích câu hỏi thông tin chi tiết (According to the passage) và câu hỏi phủ định (EXCEPT / NOT mentioned).</p>
               <div class="meta-info">📄 3 Passages | ❓ 6 Practice Questions</div>
             </div>
           </div>
         </section>
 
-        <!-- ==================== VIEW 5: TÁC VỤ CON - LISTENING SKILLS ==================== -->
+        <!-- ==================== VIEW 5: SUBTASK - LISTENING SKILLS ==================== -->
         <section id="task-hsg12-listening" class="view-panel task-view">
           <header class="task-header">
             <span class="task-tag">HSG 12 / LISTENING</span>
             <h2>🎧 Academic Listening Strategy & Practice</h2>
-            <p>Hệ thống chiến lược xử lý bài Listening Multiple Choice theo giáo trình Contemporary Topics & Cambridge C1.</p>
           </header>
 
           <div class="task-body">
             <div class="skill-card">
-              <h3>📝 Kỹ năng Note-taking & Ghi chú nhanh</h3>
-              <p>Quy trình 3 giai đoạn xử lý bài nghe độ dài lớn và phân tích bẫy logic trong bài thi Cambridge CAE.</p>
+              <h3>📝 Note-taking Strategy & Skill</h3>
               <div class="meta-info">🎧 1 Audio Interview | ❓ 5 Practice Questions</div>
             </div>
             <div class="skill-card">
               <h3>🎙️ CAE C1 Radio Interview with Lenny Henry</h3>
-              <p>Luyện tập bài nghe phỏng vấn đài phát thanh thực tế chọn đáp án Multiple Choice chính xác.</p>
               <div class="meta-info">🎧 Audio Player Ready | ❓ 6 Practice Questions</div>
             </div>
           </div>
         </section>
 
-        <!-- ==================== VIEW 6: TÁC VỤ CON - VOCABULARY HSG 12 ==================== -->
+        <!-- ==================== VIEW 6: SUBTASK - VOCABULARY HSG 12 ==================== -->
         <section id="task-hsg12-vocab" class="view-panel task-view">
           <header class="task-header">
             <span class="task-tag">HSG 12 / VOCABULARY</span>
             <h2>📘 Focus on Vocabulary & Academic Collocations</h2>
-            <p>Hệ thống kho từ vựng học thuật CEFR B1-C2 và 2,600+ Collocations chuyên đề HSG 12.</p>
           </header>
 
           <div class="task-body">
             <div class="skill-card">
               <h3>📚 Academic Word List (AWL) & Collocations</h3>
-              <p>Tra cứu và ôn luyện nhóm từ vựng học thuật theo chuyên đề khoa học, xã hội, môi trường và công nghệ.</p>
               <div class="meta-info">📖 2,600+ Collocations | ⚡ Flashcards & Quiz</div>
             </div>
           </div>
         </section>
 
-        <!-- ==================== VIEW 7: TÁC VỤ CON - GRAMMAR 10 ==================== -->
+        <!-- ==================== VIEW 7: SUBTASK - GRAMMAR 10 ==================== -->
         <section id="task-e10-grammar" class="view-panel task-view">
           <header class="task-header">
             <span class="task-tag">ENGLISH 10 / GRAMMAR</span>
             <h2>📝 English 10 Grammar Topics & Exercises</h2>
-            <p>Hệ thống lý thuyết và bài tập ngữ pháp trọng tâm chương trình Tiếng Anh 10.</p>
           </header>
 
           <div class="task-body">
             <div class="skill-card">
               <h3>⏳ Unit 1: Present Simple & Present Continuous</h3>
-              <p>Phân biệt thì Hiện tại đơn và Hiện tại tiếp diễn trong giao tiếp và văn học thuật.</p>
               <div class="meta-info">📘 Grammar Theory | ❓ 15 Practice Questions</div>
             </div>
             <div class="skill-card">
               <h3>🔄 Unit 2: Passive Voice with Modals</h3>
-              <p>Câu bị động với động từ khuyết thiếu (can, must, should, may) trong bài tập viết lại câu.</p>
               <div class="meta-info">📘 Grammar Theory | ❓ 15 Practice Questions</div>
             </div>
           </div>
         </section>
 
-        <!-- ==================== VIEW 8: TÁC VỤ CON - VOCAB 10 ==================== -->
+        <!-- ==================== VIEW 8: SUBTASK - VOCAB 10 ==================== -->
         <section id="task-e10-vocab" class="view-panel task-view">
           <header class="task-header">
             <span class="task-tag">ENGLISH 10 / VOCABULARY</span>
             <h2>🔤 English 10 Vocabulary Units & Collocations</h2>
-            <p>Kho từ vựng theo từng bài học Tiếng Anh 10 kèm phát âm và bài tập tương tác.</p>
           </header>
 
           <div class="task-body">
             <div class="skill-card">
               <h3>🏠 Unit 1: Family Life Vocabulary</h3>
-              <p>Bộ từ vựng chủ đề Đời sống Gia đình, Phân công việc nhà & Mối quan hệ gia đình.</p>
               <div class="meta-info">🔤 30 Word Items | ⚡ Practice Arena</div>
             </div>
           </div>
         </section>
 
-        <!-- ==================== VIEW 9: TÁC VỤ CON - PRACTICE TEST 10 ==================== -->
+        <!-- ==================== VIEW 9: SUBTASK - PRACTICE TEST 10 ==================== -->
         <section id="task-e10-test" class="view-panel task-view">
           <header class="task-header">
             <span class="task-tag">ENGLISH 10 / PRACTICE TEST</span>
             <h2>⏱️ English 10 Semester & Midterm Practice Tests</h2>
-            <p>Bộ đề kiểm tra luyện tập Tiếng Anh 10 đầy đủ các dạng bài thi kèm đáp án giải thích chi tiết.</p>
           </header>
 
           <div class="task-body">
             <div class="skill-card">
               <h3>📝 Midterm 1 Practice Test (Standard 60 Mins)</h3>
-              <p>Đề thi giữa kỳ 1 Tiếng Anh 10 bao gồm Nghe, Phát âm, Ngữ pháp, Đọc hiểu và Viết.</p>
               <div class="meta-info">⏱️ 40 Questions | 🏆 Automatic Scoring</div>
             </div>
           </div>
@@ -949,7 +880,7 @@
     </main>
   </div>
 
-  <!-- JAVASCRIPT XỬ LÝ FOCUS TÁC VỤ TỰ ĐỘNG VÀ ĐIỀU HƯỚNG THƯ MỤC KHÔNG BỊ ẨN -->
+  <!-- JAVASCRIPT FOR MULTI-TIER ROUTING -->
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const views = document.querySelectorAll(".view-panel");
@@ -958,7 +889,6 @@
       const crumbHomeBtn = document.getElementById("crumb-home-btn");
       const crumbPath = document.getElementById("crumb-path");
 
-      // Cấu hình danh mục cha / tên hiển thị
       const parentViewMap = {
         "overview-view": null,
         "category-hsg12-view": { parent: "overview-view", label: "HSG 12" },
@@ -973,7 +903,6 @@
 
       let currentActiveViewId = "overview-view";
 
-      // Hàm chuyển View chính
       function switchFocusView(targetId, customName) {
         if (!targetId || !document.getElementById(targetId)) return;
 
@@ -983,39 +912,36 @@
 
         currentActiveViewId = targetId;
 
-        // Cập nhật Breadcrumb & Nút Quay lại
         if (targetId === "overview-view") {
           backBtn.classList.add("hidden");
-          crumbPath.innerHTML = '<span class="crumb-current">Tổng quan</span>';
+          crumbPath.innerHTML = '<span class="crumb-current">Overview</span>';
         } else {
           backBtn.classList.remove("hidden");
           const viewMeta = parentViewMap[targetId];
 
           if (viewMeta && viewMeta.parent === "category-hsg12-view") {
-            backBtn.textContent = "← Quay lại HSG 12";
+            backBtn.textContent = "← Back to HSG 12";
             crumbPath.innerHTML = `
               <span class="crumb-link" data-target="category-hsg12-view">HSG 12</span>
               <span class="separator">/</span>
-              <span class="crumb-current">${customName ? customName.replace("HSG 12 /", "").trim() : "Tác vụ"}</span>
+              <span class="crumb-current">${customName ? customName.replace("HSG 12 /", "").trim() : "Task"}</span>
             `;
           } else if (viewMeta && viewMeta.parent === "category-english10-view") {
-            backBtn.textContent = "← Quay lại ENGLISH 10";
+            backBtn.textContent = "← Back to ENGLISH 10";
             crumbPath.innerHTML = `
               <span class="crumb-link" data-target="category-english10-view">ENGLISH 10</span>
               <span class="separator">/</span>
-              <span class="crumb-current">${customName ? customName.replace("ENGLISH 10 /", "").trim() : "Tác vụ"}</span>
+              <span class="crumb-current">${customName ? customName.replace("ENGLISH 10 /", "").trim() : "Task"}</span>
             `;
           } else {
-            backBtn.textContent = "← Quay lại Tổng quan";
-            crumbPath.innerHTML = `<span class="crumb-current">${customName || (viewMeta ? viewMeta.label : "Tác vụ")}</span>`;
+            backBtn.textContent = "← Back to Overview";
+            crumbPath.innerHTML = `<span class="crumb-current">${customName || (viewMeta ? viewMeta.label : "Task")}</span>`;
           }
         }
 
-        // Cuộn lên đầu trang làm việc
         document.querySelector('.content-area').scrollTop = 0;
       }
 
-      // Xử lý sự kiện click cho tất cả phần tử có data-target
       document.addEventListener("click", (e) => {
         const targetBtn = e.target.closest("[data-target]");
         if (targetBtn) {
@@ -1026,22 +952,20 @@
         }
       });
 
-      // Bấm Logo topbar hoặc Home link để về Tổng quan
       if (brandHomeBtn) {
-        brandHomeBtn.addEventListener("click", () => switchFocusView("overview-view", "Tổng quan"));
+        brandHomeBtn.addEventListener("click", () => switchFocusView("overview-view", "Overview"));
       }
       if (crumbHomeBtn) {
-        crumbHomeBtn.addEventListener("click", () => switchFocusView("overview-view", "Tổng quan"));
+        crumbHomeBtn.addEventListener("click", () => switchFocusView("overview-view", "Overview"));
       }
 
-      // Nút quay lại thông minh
       if (backBtn) {
         backBtn.addEventListener("click", () => {
           const currentMeta = parentViewMap[currentActiveViewId];
           if (currentMeta && currentMeta.parent) {
             switchFocusView(currentMeta.parent);
           } else {
-            switchFocusView("overview-view", "Tổng quan");
+            switchFocusView("overview-view", "Overview");
           }
         });
       }
