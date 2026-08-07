@@ -289,9 +289,9 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #7288AE;
 }
 
-/* Category 2: ENGLISH 10 Card (#4B5694 & #7288AE Theme) */
+/* Category 2: ENGLISH 10 Card (#4B5694 & #7288AE Theme with Background_1.svg) */
 .card-english10 {
-  background: linear-gradient(135deg, #232c66 0%, #4B5694 50%, #7288AE 100%);
+  background: linear-gradient(135deg, rgba(17, 24, 68, 0.7) 0%, rgba(35, 44, 102, 0.75) 50%, rgba(75, 86, 148, 0.8) 100%), url('images/Background_1.svg') center/cover no-repeat;
   border: 2px solid #EAE0CF;
 }
 
