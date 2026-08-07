@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENGLISH 10 - English Insiders</title>
+  <meta name="description" content="Chương trình bài học Tiếng Anh 10 - Grammar, Vocabulary, Practice Test.">
+  
+  <!-- Google Analytics 4 (GA4) Integration -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6MZ872R2DE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-6MZ872R2DE');
+    if (typeof gtag === 'function') {
+      gtag('event', 'select_category', { category_id: 'ENGLISH_10', category_name: 'English 10' });
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Chart.js CDN for Learning Dashboard -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="styles.css?v=3.0">
+</head>
+<body>
+
+  <!-- ====== MAIN CONTENT ====== -->
+  <div class="main-content">
+
+    <!-- Topbar -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <!-- Nút HOME dạng <a> chuyển hướng trực tiếp 100% -->
+        <a href="index.html" class="btn-home" style="text-decoration: none;">🏠 Home</a>
+        
+        <!-- Breadcrumb -->
+        <div class="breadcrumb" id="breadcrumb">
+          <a href="index.html" style="color: inherit; text-decoration: none;">Home</a>
+          <span class="separator">›</span>
+          <span class="current">ENGLISH 10</span>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <span class="badge">📖 ENGLISH 10 Category</span>
+      </div>
+    </header>
+
+    <!-- Content Area -->
+    <main class="content-area">
+
+      <!-- Featured Banner for ENGLISH 10 -->
+      <div class="category-banner-card card-english10" style="margin-bottom: 2rem; cursor: default;">
+        <div class="card-avatar-wrapper">
+          <img src="images/English10_logo.svg" alt="ENGLISH 10 Logo" class="category-avatar-img">
+        </div>
+        <div class="card-info">
+          <span class="category-badge english10-badge">Chương Trình Lớp 10</span>
+          <h1 class="category-title" style="font-size: 2rem;">ENGLISH 10</h1>
+          <p class="category-desc">Chương trình bài học & luyện tập toàn diện Tiếng Anh 10. Lựa chọn 1 trong 3 phân môn dưới đây để bắt đầu học.</p>
+        </div>
+      </div>
+
+      <div class="content-header">
+        <h2>📁 3 Thư Mục Con Thuộc ENGLISH 10</h2>
+        <span class="count">3 thư mục</span>
+      </div>
+
+      <!-- Grid 3 thư mục con của ENGLISH 10 -->
+      <div class="folder-grid" style="display: grid; margin-bottom: 3rem;">
+        
+        <!-- Sub-folder 1: Grammar -->
+        <div class="folder-card" onclick="openSkillTab('english10-grammar', 'eng10-gram-overview')">
+          <div class="folder-icon">📝</div>
+          <div class="folder-name">Grammar</div>
+          <div class="folder-path">📌 ENGLISH 10 / Grammar</div>
+          <div class="folder-desc">Hệ thống lý thuyết & bài tập ngữ pháp chuyên sâu Tiếng Anh 10 theo chủ đề bài học chuẩn.</div>
+          <div class="folder-meta">
+            <span class="type-badge">ENGLISH 10</span>
+            <span class="arrow">Mở học liệu →</span>
+          </div>
+        </div>
+
+        <!-- Sub-folder 2: Vocabulary -->
+        <div class="folder-card" onclick="openSkillTab('trang-anh-collocations', 'ta-quiz')">
+          <div class="folder-icon">🔤</div>
+          <div class="folder-name">Vocabulary</div>
+          <div class="folder-path">📌 ENGLISH 10 / Vocabulary</div>
+          <div class="folder-desc">Kho từ vựng & Collocations Tiếng Anh 10 kèm Gamification Quiz Arena & Flashcards 3D.</div>
+          <div class="folder-meta">
+            <span class="type-badge">ENGLISH 10</span>
+            <span class="arrow">Mở học liệu →</span>
+          </div>
+        </div>
+
+        <!-- Sub-folder 3: Practice Test -->
+        <div class="folder-card" onclick="openSkillTab('english10-test', 'eng10-test-quiz')">
+          <div class="folder-icon">⏱️</div>
+          <div class="folder-name">Practice Test</div>
+          <div class="folder-path">📌 ENGLISH 10 / Practice Test</div>
+          <div class="folder-desc">Bộ đề kiểm tra luyện tập định kỳ Tiếng Anh 10 đầy đủ các dạng bài thi kèm chấm điểm tự động.</div>
+          <div class="folder-meta">
+            <span class="type-badge">ENGLISH 10</span>
+            <span class="arrow">Mở học liệu →</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Skill Section Contents for English 10 -->
+      <section id="english10-grammar" class="tab-content">
+        <div class="reading-box-container">
+          <div class="reading-box-header">
+            <a href="english10.html" class="btn-home" style="display:inline-flex; text-decoration:none; margin-bottom:1rem;">← Quay về ENGLISH 10</a>
+            <div class="reading-box-badge">📝 GRAMMAR</div>
+            <h2 class="reading-box-title">English 10 Grammar Practice</h2>
+            <p class="reading-box-desc">Lý thuyết & Bài tập thực hành ngữ pháp Tiếng Anh 10.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="trang-anh-collocations" class="tab-content">
+        <div class="reading-box-container">
+          <div class="reading-box-header">
+            <a href="english10.html" class="btn-home" style="display:inline-flex; text-decoration:none; margin-bottom:1rem;">← Quay về ENGLISH 10</a>
+            <div class="reading-box-badge">🔤 VOCABULARY ARENA</div>
+            <h2 class="reading-box-title">English Collocations & Vocabulary Arena</h2>
+            <p class="reading-box-desc">Đấu trí Quiz Arena & Flashcards 3D Tiếng Anh 10.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="english10-test" class="tab-content">
+        <div class="reading-box-container">
+          <div class="reading-box-header">
+            <a href="english10.html" class="btn-home" style="display:inline-flex; text-decoration:none; margin-bottom:1rem;">← Quay về ENGLISH 10</a>
+            <div class="reading-box-badge">⏱️ PRACTICE TEST</div>
+            <h2 class="reading-box-title">English 10 Practice Test</h2>
+            <p class="reading-box-desc">Đề kiểm tra luyện tập tổng hợp Tiếng Anh 10.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="collocations_data.js"></script>
+  <script src="trang_anh_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

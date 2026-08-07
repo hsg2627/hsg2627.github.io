@@ -87,12 +87,12 @@
     <!-- Topbar -->
     <header class="topbar">
       <div class="topbar-left">
-        <!-- Nút HOME cứng -->
-        <button class="btn-home" onclick="goHome()">🏠 Home</button>
+        <!-- Nút HOME cứng dạng thẻ <a> trực tiếp -->
+        <a href="index.html" class="btn-home" style="text-decoration: none;">🏠 Home</a>
         
         <!-- Breadcrumb -->
         <div class="breadcrumb" id="breadcrumb">
-          <span onclick="goHome()">Home</span>
+          <a href="index.html" style="color: inherit; text-decoration: none;">Home</a>
           <span class="separator">›</span>
           <span class="current" id="currentPath">Kho học liệu</span>
         </div>
@@ -117,13 +117,13 @@
           </div>
         </div>
 
-        <!-- Featured Category Cards Grid (Flowchart Optimization) -->
+        <!-- Featured Category Cards Grid (Standalone Page Routing) -->
         <div class="main-categories-section">
           <h3 class="categories-section-title">✨ Danh Mục Học Liệu Chính</h3>
           <div class="category-banner-grid">
             
             <!-- Category 1: HSG 12 -->
-            <div class="category-banner-card card-hsg12" onclick="navigateTo('HSG 12')">
+            <div class="category-banner-card card-hsg12" onclick="window.location.href='hsg12.html'">
               <div class="card-avatar-wrapper">
                 <img src="images/HSG12_logo.svg" alt="HSG 12 Logo" class="category-avatar-img">
               </div>
@@ -132,16 +132,16 @@
                 <h2 class="category-title">HSG 12</h2>
                 <p class="category-desc">Kho học liệu chuyên sâu dành cho đội tuyển HSG 12. Bao gồm 3 chuyên đề cốt lõi: Reading Comprehension, Listening Skills và Vocabulary.</p>
                 <div class="category-tags">
-                  <span onclick="event.stopPropagation(); navigateTo('Reading Comprehension')">📖 Reading Comprehension</span>
-                  <span onclick="event.stopPropagation(); navigateTo('Academic Listening Practice')">🎧 Listening Skills</span>
-                  <span onclick="event.stopPropagation(); navigateTo('Focus on Vocabulary')">📘 Vocabulary</span>
+                  <a href="hsg12.html#reading" onclick="event.stopPropagation()" style="color:inherit; text-decoration:none;"><span>📖 Reading Comprehension</span></a>
+                  <a href="hsg12.html#listening" onclick="event.stopPropagation()" style="color:inherit; text-decoration:none;"><span>🎧 Listening Skills</span></a>
+                  <a href="hsg12.html#vocab" onclick="event.stopPropagation()" style="color:inherit; text-decoration:none;"><span>📘 Vocabulary</span></a>
                 </div>
-                <button class="category-action-btn btn-hsg12">Truy cập HSG 12 →</button>
+                <a href="hsg12.html" class="category-action-btn btn-hsg12" style="text-decoration: none; display: inline-block;">Truy cập HSG 12 →</a>
               </div>
             </div>
 
             <!-- Category 2: ENGLISH 10 -->
-            <div class="category-banner-card card-english10" onclick="navigateTo('ENGLISH 10')">
+            <div class="category-banner-card card-english10" onclick="window.location.href='english10.html'">
               <div class="card-avatar-wrapper">
                 <img src="images/English10_logo.svg" alt="ENGLISH 10 Logo" class="category-avatar-img">
               </div>
@@ -150,11 +150,11 @@
                 <h2 class="category-title">ENGLISH 10</h2>
                 <p class="category-desc">Chương trình bài học & luyện tập toàn diện Tiếng Anh 10. Bao gồm 3 phân môn: Grammar, Vocabulary và Practice Test.</p>
                 <div class="category-tags">
-                  <span onclick="event.stopPropagation(); navigateTo('English 10 Grammar')">📝 Grammar</span>
-                  <span onclick="event.stopPropagation(); navigateTo('English Collocations Quiz Arena')">🔤 Vocabulary</span>
-                  <span onclick="event.stopPropagation(); navigateTo('English 10 Practice Test')">⏱️ Practice Test</span>
+                  <a href="english10.html#grammar" onclick="event.stopPropagation()" style="color:inherit; text-decoration:none;"><span>📝 Grammar</span></a>
+                  <a href="english10.html#vocabulary" onclick="event.stopPropagation()" style="color:inherit; text-decoration:none;"><span>🔤 Vocabulary</span></a>
+                  <a href="english10.html#test" onclick="event.stopPropagation()" style="color:inherit; text-decoration:none;"><span>⏱️ Practice Test</span></a>
                 </div>
-                <button class="category-action-btn btn-english10">Truy cập ENGLISH 10 →</button>
+                <a href="english10.html" class="category-action-btn btn-english10" style="text-decoration: none; display: inline-block;">Truy cập ENGLISH 10 →</a>
               </div>
             </div>
 
@@ -162,7 +162,7 @@
         </div>
 
         <div class="content-header" style="margin-top: 32px;">
-          <h2 id="folderTitle">📁 Danh Sách Học Liệu</h2>
+          <h2 id="folderTitle">📁 Danh Sách Tất Cả Học Liệu</h2>
           <span class="count" id="itemCount">6 thư mục</span>
         </div>
 
