@@ -566,7 +566,29 @@
         <button id="nav-dashboard-btn" data-target="dashboard-view" data-label="Learning Dashboard" style="background: #283567; color: #ffffff; border: none; padding: 7px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(40,53,103,0.15); transition: all 0.2s ease;">
           📊 Dashboard
         </button>
-        <span class="user-badge" style="font-size: 0.9rem; font-weight: 600; color: #283567;">👤 Teacher / Student</span>
+
+        <!-- STUDENT NAME INPUT / DISPLAY -->
+        <div id="student-name-area" style="display: flex; align-items: center; gap: 8px;">
+          <!-- Trạng thái 1: Chưa nhập tên → Hiện ô input -->
+          <div id="student-name-form" style="display: flex; align-items: center; gap: 6px;">
+            <span style="font-size: 1rem;">👤</span>
+            <input id="student-name-input" type="text" placeholder="Nhập tên của bạn..." maxlength="30"
+              style="border: 1.5px solid #283567; border-radius: 8px; padding: 6px 12px; font-size: 0.85rem; font-weight: 600; color: #283567; width: 160px; outline: none; background: #FAF7BB; transition: border-color 0.2s;">
+            <button id="student-name-save-btn"
+              style="background: #059669; color: #ffffff; border: none; padding: 6px 14px; border-radius: 8px; font-weight: 700; font-size: 0.82rem; cursor: pointer; white-space: nowrap; transition: all 0.2s;">
+              Lưu ✓
+            </button>
+          </div>
+          <!-- Trạng thái 2: Đã nhập tên → Hiện tên + nút đổi -->
+          <div id="student-name-display" style="display: none; align-items: center; gap: 8px;">
+            <span style="font-size: 1rem;">👤</span>
+            <span id="student-name-text" style="font-size: 0.9rem; font-weight: 700; color: #283567; max-width: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"></span>
+            <button id="student-name-change-btn"
+              style="background: transparent; color: #2563eb; border: 1px solid #2563eb; padding: 3px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 700; cursor: pointer; transition: all 0.2s;">
+              Đổi
+            </button>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -1313,6 +1335,136 @@
           alert("📥 Đã xuất báo cáo dữ liệu học tập 2 thư mục mẹ (HSG 12 & ENGLISH 10) thành công!");
         });
       }
+
+      // =====================================================================
+      // STUDENT NAME MANAGEMENT (localStorage + UI)
+      // =====================================================================
+      const nameForm = document.getElementById("student-name-form");
+      const nameDisplay = document.getElementById("student-name-display");
+      const nameInput = document.getElementById("student-name-input");
+      const nameSaveBtn = document.getElementById("student-name-save-btn");
+      const nameText = document.getElementById("student-name-text");
+      const nameChangeBtn = document.getElementById("student-name-change-btn");
+
+      function getStudentName() {
+        return localStorage.getItem("ei_student_name") || "";
+      }
+
+      function setStudentName(name) {
+        localStorage.setItem("ei_student_name", name);
+      }
+
+      function showNameDisplay(name) {
+        nameForm.style.display = "none";
+        nameDisplay.style.display = "flex";
+        nameText.textContent = name;
+      }
+
+      function showNameForm() {
+        nameDisplay.style.display = "none";
+        nameForm.style.display = "flex";
+        nameInput.value = getStudentName();
+        nameInput.focus();
+      }
+
+      // Khởi tạo: kiểm tra localStorage
+      const savedName = getStudentName();
+      if (savedName) {
+        showNameDisplay(savedName);
+      }
+
+      // Lưu tên
+      if (nameSaveBtn) {
+        nameSaveBtn.addEventListener("click", () => {
+          const name = nameInput.value.trim();
+          if (!name) {
+            nameInput.style.borderColor = "#dc2626";
+            nameInput.placeholder = "⚠️ Vui lòng nhập tên!";
+            return;
+          }
+          setStudentName(name);
+          showNameDisplay(name);
+        });
+      }
+
+      // Enter để lưu
+      if (nameInput) {
+        nameInput.addEventListener("keydown", (e) => {
+          if (e.key === "Enter") {
+            nameSaveBtn.click();
+          }
+        });
+        nameInput.addEventListener("focus", () => {
+          nameInput.style.borderColor = "#2563eb";
+        });
+        nameInput.addEventListener("blur", () => {
+          nameInput.style.borderColor = "#283567";
+        });
+      }
+
+      // Đổi tên
+      if (nameChangeBtn) {
+        nameChangeBtn.addEventListener("click", () => {
+          showNameForm();
+        });
+      }
+
+      // =====================================================================
+      // GOOGLE SHEETS INTEGRATION
+      // =====================================================================
+      // ⚠️ HƯỚNG DẪN: Sau khi tạo Google Apps Script Web App,
+      //    thay thế URL bên dưới bằng URL thật của bạn.
+      const GOOGLE_SCRIPT_URL = "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE";
+
+      /**
+       * Gửi dữ liệu học tập lên Google Sheets
+       * @param {string} parentFolder - "HSG 12" hoặc "ENGLISH 10"
+       * @param {string} subFolder - Tên phân môn con
+       * @param {string} activityType - "Quiz" | "Flashcard" | "Exercise"
+       * @param {number} score - Điểm số (0-100)
+       * @param {string} note - Ghi chú thêm (tùy chọn)
+       */
+      async function submitToGoogleSheets(parentFolder, subFolder, activityType, score, note = "") {
+        const studentName = getStudentName();
+        if (!studentName) {
+          alert("⚠️ Vui lòng nhập tên của bạn trước khi nộp bài!");
+          showNameForm();
+          return false;
+        }
+
+        if (GOOGLE_SCRIPT_URL === "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE") {
+          console.log("📊 [Demo] Dữ liệu sẽ được gửi khi cấu hình Google Apps Script URL:", {
+            studentName, parentFolder, subFolder, activityType, score, note
+          });
+          return true;
+        }
+
+        try {
+          await fetch(GOOGLE_SCRIPT_URL, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              studentName,
+              parentFolder,
+              subFolder,
+              activityType,
+              score,
+              note
+            })
+          });
+          console.log("✅ Đã gửi dữ liệu lên Google Sheets thành công!");
+          return true;
+        } catch (err) {
+          console.error("❌ Lỗi gửi dữ liệu:", err);
+          return false;
+        }
+      }
+
+      // Đăng ký hàm toàn cục để các module quiz/flashcard khác có thể gọi
+      window.submitToGoogleSheets = submitToGoogleSheets;
+      window.getStudentName = getStudentName;
+
     });
   </script>
 </body>
