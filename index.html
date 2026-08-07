@@ -2545,7 +2545,10 @@
           }
       ];
 
+      const userAnswers = {};
       let userGameXP = 0;
+      let currentStreak = 0;
+      let maxStreak = 0;
 
       function updateGameHUD() {
         const answeredCount = Object.keys(userAnswers).length;
@@ -2554,12 +2557,12 @@
         const progressFill = document.getElementById("game-progress-fill");
         const progressText = document.getElementById("game-progress-text");
         const xpText = document.getElementById("game-xp-display");
+        const streakText = document.getElementById("game-streak-display");
 
         if (progressFill) progressFill.style.width = `${progressPercent}%`;
         if (progressText) progressText.textContent = `${answeredCount} / ${quizData.length}`;
-        
-        userGameXP = answeredCount * 100;
         if (xpText) xpText.textContent = userGameXP;
+        if (streakText) streakText.textContent = maxStreak;
       }
 
       function renderQuiz() {
@@ -2590,56 +2593,69 @@
           updateGameHUD();
       }
 
-      const userAnswers = {};
-
       window.selectOption = function(qId, optIdx) {
+          if (userAnswers[qId] !== undefined) return;
+
+          const q = quizData.find(item => item.id === qId);
+          if (!q) return;
+
           userAnswers[qId] = optIdx;
           const optionsContainer = document.getElementById(`options-${qId}`);
           if (!optionsContainer) return;
+
           const buttons = optionsContainer.getElementsByClassName('pixel-opt-btn');
-          
+          const explainBox = document.getElementById(`explain-${qId}`);
+
+          // Hiện giải thích chi tiết ngay khi chọn
+          if (explainBox) explainBox.style.display = 'block';
+
+          // Đánh giá Đúng / Sai ngay lập tức
+          if (optIdx === q.answer) {
+              userGameXP += 100;
+              currentStreak++;
+              if (currentStreak > maxStreak) maxStreak = currentStreak;
+              if (buttons[optIdx]) {
+                  buttons[optIdx].classList.add('correct');
+              }
+          } else {
+              currentStreak = 0;
+              if (buttons[optIdx]) {
+                  buttons[optIdx].classList.add('wrong');
+              }
+              if (buttons[q.answer]) {
+                  buttons[q.answer].classList.add('correct');
+              }
+          }
+
+          // Khóa trạng thái nút chọn
           for (let i = 0; i < buttons.length; i++) {
-              buttons[i].classList.remove('selected');
+              buttons[i].style.cursor = 'default';
           }
-          if (buttons[optIdx]) {
-              buttons[optIdx].classList.add('selected');
-          }
+
           updateGameHUD();
       };
 
       window.checkAnswers = async function() {
           let score = 0;
-          let currentStreak = 0;
-          let maxStreak = 0;
 
           quizData.forEach(q => {
               const selectedOpt = userAnswers[q.id];
-              const optionsContainer = document.getElementById(`options-${q.id}`);
-              if (!optionsContainer) return;
-              const buttons = optionsContainer.getElementsByClassName('pixel-opt-btn');
               const explainBox = document.getElementById(`explain-${q.id}`);
+              const optionsContainer = document.getElementById(`options-${q.id}`);
 
               if (explainBox) explainBox.style.display = 'block';
 
-              if (selectedOpt !== undefined) {
-                  if (selectedOpt === q.answer) {
-                      score++;
-                      currentStreak++;
-                      if (currentStreak > maxStreak) maxStreak = currentStreak;
-                      if (buttons[selectedOpt]) buttons[selectedOpt].classList.add('correct');
-                  } else {
-                      currentStreak = 0;
-                      if (buttons[selectedOpt]) buttons[selectedOpt].classList.add('wrong');
-                      if (buttons[q.answer]) buttons[q.answer].classList.add('correct');
+              if (optionsContainer) {
+                  const buttons = optionsContainer.getElementsByClassName('pixel-opt-btn');
+                  if (selectedOpt === undefined && buttons[q.answer]) {
+                      buttons[q.answer].classList.add('correct');
                   }
-              } else {
-                  currentStreak = 0;
-                  if (buttons[q.answer]) buttons[q.answer].classList.add('correct');
+              }
+
+              if (selectedOpt === q.answer) {
+                  score++;
               }
           });
-
-          const streakText = document.getElementById("game-streak-display");
-          if (streakText) streakText.textContent = maxStreak;
 
           const scoreText = `ĐIỂM: ${score} / ${quizData.length}`;
           document.getElementById('scoreDisplay').innerText = scoreText;
@@ -2658,13 +2674,13 @@
             "Practice Test",
             "Full Test",
             scorePercent,
-            `Doloc Town Quest Unit 1: ${score}/${quizData.length} câu (${scorePercent}%), XP: ${score * 100}, Max Streak: ${maxStreak}`
+            `Doloc Town Quest Unit 1: ${score}/${quizData.length} câu (${scorePercent}%), XP: ${userGameXP}, Max Streak: ${maxStreak}`
           );
 
           if (name) {
-            alert(`🏰 CHÚC MỪNG DŨNG SĨ ${name.toUpperCase()} HOÀN THÀNH QUEST!\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🏅 Danh hiệu: ${rankTitle}\n🎯 Điểm số: ${score} / ${quizData.length} câu (${scorePercent}%)\n⚡ EXP nhận được: +${score * 150} EXP\n🪙 Vàng nhận được: +${score * 25} Gold\n🔥 Chuỗi Streak: ${maxStreak}\n\nDữ liệu thành tích đã được ghi danh vào Bảng Vàng Thị trấn Doloc!`);
+            alert(`🏰 CHÚC MỪNG DŨNG SĨ ${name.toUpperCase()} HOÀN THÀNH QUEST!\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🏅 Danh hiệu: ${rankTitle}\n🎯 Điểm số: ${score} / ${quizData.length} câu (${scorePercent}%)\n⚡ EXP nhận được: +${userGameXP} EXP\n🪙 Vàng nhận được: +${score * 25} Gold\n🔥 Chuỗi Streak cao nhất: ${maxStreak}\n\nDữ liệu thành tích đã được ghi danh vào Bảng Vàng Thị trấn Doloc!`);
           } else {
-            alert(`🏰 BẠN ĐÃ HOÀN THÀNH QUEST DOLOC TOWN!\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🏅 Danh hiệu: ${rankTitle}\n🎯 Điểm số: ${score} / ${quizData.length} câu (${scorePercent}%)\n⚡ EXP nhận được: +${score * 150} EXP\n🪙 Vàng nhận được: +${score * 25} Gold\n🔥 Chuỗi Streak: ${maxStreak}\n\n💡 Nhập tên dũng sĩ ở góc trên để ghi tên lên Bảng Vàng nhé!`);
+            alert(`🏰 BẠN ĐÃ HOÀN THÀNH QUEST DOLOC TOWN!\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🏅 Danh hiệu: ${rankTitle}\n🎯 Điểm số: ${score} / ${quizData.length} câu (${scorePercent}%)\n⚡ EXP nhận được: +${userGameXP} EXP\n🪙 Vàng nhận được: +${score * 25} Gold\n🔥 Chuỗi Streak cao nhất: ${maxStreak}\n\n💡 Nhập tên dũng sĩ ở góc trên để ghi tên lên Bảng Vàng nhé!`);
           }
       };
 
