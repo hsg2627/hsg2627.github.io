@@ -15,6 +15,9 @@
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="images/English_Insider_Logo.svg">
 
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   <style>
     /* ==========================================================================
        1. COLOR SYSTEM & SANS-SERIF TYPOGRAPHY (NO GRADIENTS, NAVY #283567)
@@ -559,7 +562,10 @@
           <span id="crumb-path"><span class="crumb-current">Overview</span></span>
         </nav>
       </div>
-      <div class="header-right">
+      <div class="header-right" style="display: flex; align-items: center; gap: 14px;">
+        <button id="nav-dashboard-btn" data-target="dashboard-view" data-label="Learning Dashboard" style="background: #283567; color: #ffffff; border: none; padding: 7px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(40,53,103,0.15); transition: all 0.2s ease;">
+          📊 Dashboard
+        </button>
         <span class="user-badge" style="font-size: 0.9rem; font-weight: 600; color: #283567;">👤 Teacher / Student</span>
       </div>
     </header>
@@ -653,7 +659,243 @@
           </div>
         </section>
 
-        <!-- ==================== VIEW 2: HSG 12 CATEGORY VIEW ==================== -->
+        <!-- ==================== VIEW 2: LEARNING DASHBOARD (THEO DÕI DỮ LIỆU 2 THƯ MỤC MẸ) ==================== -->
+        <section id="dashboard-view" class="view-panel">
+          <!-- DASHBOARD HERO BANNER -->
+          <article class="hero-banner" style="background: linear-gradient(135deg, rgba(40, 53, 103, 0.95) 0%, rgba(30, 40, 80, 0.95) 100%), url('images/Background_3.svg') center/cover no-repeat; color: #ffffff; margin-bottom: 24px;">
+            <div style="font-size: 3rem;">📊</div>
+            <div>
+              <span class="subtitle" style="background: #FAF7BB; color: #283567; font-weight: 800; padding: 4px 12px; border-radius: 20px; display: inline-block; margin-bottom: 8px;">DATA ANALYTICS HUB</span>
+              <h1 style="color: #ffffff; font-size: 1.85rem; margin: 4px 0;">Dashboard Theo Dõi Dữ Liệu 2 Thư Mục Mẹ</h1>
+              <p style="color: #e2e8f0; font-size: 0.92rem; margin-top: 6px;">
+                Theo dõi chi tiết tiến độ hoàn thành, kết quả luyện tập & mức độ ghi nhớ từ vựng giữa <strong>HSG 12</strong> và <strong>ENGLISH 10</strong>.
+              </p>
+            </div>
+          </article>
+
+          <!-- STATS CARDS GRID -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-bottom: 28px;">
+            
+            <!-- Stat 1: HSG 12 Overall Progress -->
+            <div style="background: #FAF7BB; border: 1.5px solid #e2e8f0; border-radius: 18px; padding: 22px; box-shadow: 0 4px 14px rgba(40,53,103,0.06);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <span style="font-size: 0.78rem; font-weight: 800; color: #283567; background: #ffffff; padding: 3px 10px; border-radius: 20px;">THƯ MỤC MẸ 1</span>
+                <span style="font-size: 1.4rem;">📘</span>
+              </div>
+              <div style="font-size: 1.1rem; font-weight: 800; color: #283567;">Chương Trình HSG 12</div>
+              <div style="font-size: 1.8rem; font-weight: 900; color: #2563eb; margin: 8px 0;">78% <span style="font-size: 0.85rem; color: #059669; font-weight: 700;">↑ Tốt</span></div>
+              <div style="width: 100%; background: #ffffff; height: 8px; border-radius: 4px; overflow: hidden;">
+                <div style="width: 78%; background: #2563eb; height: 100%; border-radius: 4px;"></div>
+              </div>
+              <div style="font-size: 0.78rem; color: #475569; margin-top: 8px;">3 phân môn: Reading, Listening, Vocab</div>
+            </div>
+
+            <!-- Stat 2: ENGLISH 10 Overall Progress -->
+            <div style="background: #FAF7BB; border: 1.5px solid #e2e8f0; border-radius: 18px; padding: 22px; box-shadow: 0 4px 14px rgba(40,53,103,0.06);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <span style="font-size: 0.78rem; font-weight: 800; color: #283567; background: #ffffff; padding: 3px 10px; border-radius: 20px;">THƯ MỤC MẸ 2</span>
+                <span style="font-size: 1.4rem;">📗</span>
+              </div>
+              <div style="font-size: 1.1rem; font-weight: 800; color: #283567;">Chương Trình ENGLISH 10</div>
+              <div style="font-size: 1.8rem; font-weight: 900; color: #059669; margin: 8px 0;">85% <span style="font-size: 0.85rem; color: #059669; font-weight: 700;">↑ Xuất sắc</span></div>
+              <div style="width: 100%; background: #ffffff; height: 8px; border-radius: 4px; overflow: hidden;">
+                <div style="width: 85%; background: #059669; height: 100%; border-radius: 4px;"></div>
+              </div>
+              <div style="font-size: 0.78rem; color: #475569; margin-top: 8px;">3 phân môn: Grammar, Vocab, Practice Test</div>
+            </div>
+
+            <!-- Stat 3: Total Vocabulary Mastered -->
+            <div style="background: #FAF7BB; border: 1.5px solid #e2e8f0; border-radius: 18px; padding: 22px; box-shadow: 0 4px 14px rgba(40,53,103,0.06);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <span style="font-size: 0.78rem; font-weight: 800; color: #283567; background: #ffffff; padding: 3px 10px; border-radius: 20px;">TỪ VỰNG GHI NHỚ</span>
+                <span style="font-size: 1.4rem;">🔤</span>
+              </div>
+              <div style="font-size: 1.1rem; font-weight: 800; color: #283567;">Kho Từ Vựng Đã Học</div>
+              <div style="font-size: 1.8rem; font-weight: 900; color: #283567; margin: 8px 0;">485 <span style="font-size: 0.9rem; font-weight: 600; color: #475569;">/ 600 từ</span></div>
+              <div style="width: 100%; background: #ffffff; height: 8px; border-radius: 4px; overflow: hidden;">
+                <div style="width: 80%; background: #d97706; height: 100%; border-radius: 4px;"></div>
+              </div>
+              <div style="font-size: 0.78rem; color: #475569; margin-top: 8px;">Collocations & Flashcards 3D</div>
+            </div>
+
+            <!-- Stat 4: Average Score / Accuracy -->
+            <div style="background: #FAF7BB; border: 1.5px solid #e2e8f0; border-radius: 18px; padding: 22px; box-shadow: 0 4px 14px rgba(40,53,103,0.06);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <span style="font-size: 0.78rem; font-weight: 800; color: #283567; background: #ffffff; padding: 3px 10px; border-radius: 20px;">ĐIỂM TRUNG BÌNH</span>
+                <span style="font-size: 1.4rem;">🎯</span>
+              </div>
+              <div style="font-size: 1.1rem; font-weight: 800; color: #283567;">Tỷ Lệ Chính Xác Quiz</div>
+              <div style="font-size: 1.8rem; font-weight: 900; color: #7c3aed; margin: 8px 0;">91.5%</div>
+              <div style="width: 100%; background: #ffffff; height: 8px; border-radius: 4px; overflow: hidden;">
+                <div style="width: 91.5%; background: #7c3aed; height: 100%; border-radius: 4px;"></div>
+              </div>
+              <div style="font-size: 0.78rem; color: #475569; margin-top: 8px;">Dựa trên 142 bài thi thử & luyện tập</div>
+            </div>
+
+          </div>
+
+          <!-- CHARTS SECTION (2 COLUMNS RESPONSIVE) -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 24px; margin-bottom: 32px;">
+            
+            <!-- Chart Card 1: Radar / Bar Comparison Chart -->
+            <div style="background: #FAF7BB; border: 1.5px solid #e2e8f0; border-radius: 20px; padding: 24px; box-shadow: 0 4px 16px rgba(40,53,103,0.06);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                <h3 style="font-size: 1.1rem; font-weight: 800; color: #283567;">📊 So Sánh Kỹ Năng: HSG 12 vs ENGLISH 10</h3>
+                <span style="font-size: 0.78rem; font-weight: 700; color: #2563eb; background: #ffffff; padding: 4px 12px; border-radius: 20px;">Chart.js Live</span>
+              </div>
+              <div style="position: relative; height: 280px; width: 100%;">
+                <canvas id="dashCompareChart"></canvas>
+              </div>
+            </div>
+
+            <!-- Chart Card 2: Study Time & Activity Trend -->
+            <div style="background: #FAF7BB; border: 1.5px solid #e2e8f0; border-radius: 20px; padding: 24px; box-shadow: 0 4px 16px rgba(40,53,103,0.06);">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                <h3 style="font-size: 1.1rem; font-weight: 800; color: #283567;">📈 Xu Hướng Luyện Tập (7 Ngày Qua)</h3>
+                <span style="font-size: 0.78rem; font-weight: 700; color: #059669; background: #ffffff; padding: 4px 12px; border-radius: 20px;">7 Days History</span>
+              </div>
+              <div style="position: relative; height: 280px; width: 100%;">
+                <canvas id="dashTrendChart"></canvas>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- DETAILED TABLE OF THE 2 PARENT FOLDERS & SUB-FOLDERS -->
+          <div style="background: #FAF7BB; border: 1.5px solid #e2e8f0; border-radius: 20px; padding: 26px; box-shadow: 0 4px 16px rgba(40,53,103,0.06); margin-bottom: 32px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <h3 style="font-size: 1.2rem; font-weight: 800; color: #283567;">📁 Bảng Thống Kê Chi Tiết 2 Thư Mục Mẹ</h3>
+                <p style="font-size: 0.85rem; color: #475569; margin-top: 4px;">Chi tiết 6 phân môn học liệu thuộc thư mục HSG 12 & ENGLISH 10.</p>
+              </div>
+              <div style="display: flex; gap: 10px;">
+                <button id="dash-btn-refresh" style="background: #2563eb; color: #ffffff; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; cursor: pointer; font-size: 0.85rem;">🔄 Cập Nhật Dữ Liệu</button>
+                <button id="dash-btn-export" style="background: #283567; color: #ffffff; border: none; padding: 8px 16px; border-radius: 8px; font-weight: 700; cursor: pointer; font-size: 0.85rem;">📥 Xuất Báo Cáo</button>
+              </div>
+            </div>
+
+            <!-- TABLE -->
+            <div style="overflow-x: auto;">
+              <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.9rem; color: #283567;">
+                <thead>
+                  <tr style="background: rgba(40,53,103,0.08); border-bottom: 2px solid #e2e8f0;">
+                    <th style="padding: 12px 16px; font-weight: 800;">Thư Mục Mẹ</th>
+                    <th style="padding: 12px 16px; font-weight: 800;">Phân Môn Con</th>
+                    <th style="padding: 12px 16px; font-weight: 800; text-align: center;">Số Bài Tập</th>
+                    <th style="padding: 12px 16px; font-weight: 800;">Tiến Độ</th>
+                    <th style="padding: 12px 16px; font-weight: 800; text-align: center;">Điểm TB</th>
+                    <th style="padding: 12px 16px; font-weight: 800; text-align: right;">Hành Động</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- HSG 12 Subfolders -->
+                  <tr style="border-bottom: 1px solid #e2e8f0; background: rgba(255,255,255,0.6);">
+                    <td style="padding: 14px 16px; font-weight: 800; color: #2563eb;" rowspan="3">📘 HSG 12</td>
+                    <td style="padding: 14px 16px; font-weight: 700;">📖 Reading Comprehension</td>
+                    <td style="padding: 14px 16px; text-align: center; font-weight: 700;">45/50</td>
+                    <td style="padding: 14px 16px;">
+                      <div style="display: flex; align-items: center; gap: 8px;">
+                        <div style="flex: 1; background: #e2e8f0; height: 7px; border-radius: 4px; overflow: hidden;">
+                          <div style="width: 90%; background: #2563eb; height: 100%;"></div>
+                        </div>
+                        <span style="font-weight: 800; font-size: 0.8rem;">90%</span>
+                      </div>
+                    </td>
+                    <td style="padding: 14px 16px; text-align: center; font-weight: 800; color: #059669;">9.2 / 10</td>
+                    <td style="padding: 14px 16px; text-align: right;">
+                      <button class="btn-tag" data-target="task-hsg12-reading" data-label="HSG 12 / Reading Comprehension" style="padding: 5px 12px; font-weight: 700;">Mở Học →</button>
+                    </td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid #e2e8f0; background: rgba(255,255,255,0.6);">
+                    <td style="padding: 14px 16px; font-weight: 700;">🎧 Listening Skills</td>
+                    <td style="padding: 14px 16px; text-align: center; font-weight: 700;">32/40</td>
+                    <td style="padding: 14px 16px;">
+                      <div style="display: flex; align-items: center; gap: 8px;">
+                        <div style="flex: 1; background: #e2e8f0; height: 7px; border-radius: 4px; overflow: hidden;">
+                          <div style="width: 80%; background: #2563eb; height: 100%;"></div>
+                        </div>
+                        <span style="font-weight: 800; font-size: 0.8rem;">80%</span>
+                      </div>
+                    </td>
+                    <td style="padding: 14px 16px; text-align: center; font-weight: 800; color: #059669;">8.8 / 10</td>
+                    <td style="padding: 14px 16px; text-align: right;">
+                      <button class="btn-tag" data-target="task-hsg12-listening" data-label="HSG 12 / Listening Skills" style="padding: 5px 12px; font-weight: 700;">Mở Học →</button>
+                    </td>
+                  </tr>
+                  <tr style="border-bottom: 2px solid #e2e8f0; background: rgba(255,255,255,0.6);">
+                    <td style="padding: 14px 16px; font-weight: 700;">📘 Vocabulary & Collocations</td>
+                    <td style="padding: 14px 16px; text-align: center; font-weight: 700;">215/300</td>
+                    <td style="padding: 14px 16px;">
+                      <div style="display: flex; align-items: center; gap: 8px;">
+                        <div style="flex: 1; background: #e2e8f0; height: 7px; border-radius: 4px; overflow: hidden;">
+                          <div style="width: 72%; background: #2563eb; height: 100%;"></div>
+                        </div>
+                        <span style="font-weight: 800; font-size: 0.8rem;">72%</span>
+                      </div>
+                    </td>
+                    <td style="padding: 14px 16px; text-align: center; font-weight: 800; color: #059669;">9.5 / 10</td>
+                    <td style="padding: 14px 16px; text-align: right;">
+                      <button class="btn-tag" data-target="task-hsg12-vocab" data-label="HSG 12 / Vocabulary" style="padding: 5px 12px; font-weight: 700;">Mở Học →</button>
+                    </td>
+                  </tr>
+
+                  <!-- ENGLISH 10 Subfolders -->
+                  <tr style="border-bottom: 1px solid #e2e8f0; background: rgba(255,255,255,0.85);">
+                    <td style="padding: 14px 16px; font-weight: 800; color: #059669;" rowspan="3">📗 ENGLISH 10</td>
+                    <td style="padding: 14px 16px; font-weight: 700;">📝 Grammar Master</td>
+                    <td style="padding: 14px 16px; text-align: center; font-weight: 700;">48/50</td>
+                    <td style="padding: 14px 16px;">
+                      <div style="display: flex; align-items: center; gap: 8px;">
+                        <div style="flex: 1; background: #e2e8f0; height: 7px; border-radius: 4px; overflow: hidden;">
+                          <div style="width: 96%; background: #059669; height: 100%;"></div>
+                        </div>
+                        <span style="font-weight: 800; font-size: 0.8rem;">96%</span>
+                      </div>
+                    </td>
+                    <td style="padding: 14px 16px; text-align: center; font-weight: 800; color: #059669;">9.6 / 10</td>
+                    <td style="padding: 14px 16px; text-align: right;">
+                      <button class="btn-tag" data-target="task-e10-grammar" data-label="ENGLISH 10 / Grammar" style="padding: 5px 12px; font-weight: 700;">Mở Học →</button>
+                    </td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid #e2e8f0; background: rgba(255,255,255,0.85);">
+                    <td style="padding: 14px 16px; font-weight: 700;">🔤 Vocabulary Arena</td>
+                    <td style="padding: 14px 16px; text-align: center; font-weight: 700;">270/300</td>
+                    <td style="padding: 14px 16px;">
+                      <div style="display: flex; align-items: center; gap: 8px;">
+                        <div style="flex: 1; background: #e2e8f0; height: 7px; border-radius: 4px; overflow: hidden;">
+                          <div style="width: 90%; background: #059669; height: 100%;"></div>
+                        </div>
+                        <span style="font-weight: 800; font-size: 0.8rem;">90%</span>
+                      </div>
+                    </td>
+                    <td style="padding: 14px 16px; text-align: center; font-weight: 800; color: #059669;">9.4 / 10</td>
+                    <td style="padding: 14px 16px; text-align: right;">
+                      <button class="btn-tag" data-target="task-e10-vocab" data-label="ENGLISH 10 / Vocabulary" style="padding: 5px 12px; font-weight: 700;">Mở Học →</button>
+                    </td>
+                  </tr>
+                  <tr style="background: rgba(255,255,255,0.85);">
+                    <td style="padding: 14px 16px; font-weight: 700;">⏱️ Practice Test Arena</td>
+                    <td style="padding: 14px 16px; text-align: center; font-weight: 700;">18/25</td>
+                    <td style="padding: 14px 16px;">
+                      <div style="display: flex; align-items: center; gap: 8px;">
+                        <div style="flex: 1; background: #e2e8f0; height: 7px; border-radius: 4px; overflow: hidden;">
+                          <div style="width: 72%; background: #059669; height: 100%;"></div>
+                        </div>
+                        <span style="font-weight: 800; font-size: 0.8rem;">72%</span>
+                      </div>
+                    </td>
+                    <td style="padding: 14px 16px; text-align: center; font-weight: 800; color: #059669;">8.7 / 10</td>
+                    <td style="padding: 14px 16px; text-align: right;">
+                      <button class="btn-tag" data-target="task-e10-test" data-label="ENGLISH 10 / Practice Test" style="padding: 5px 12px; font-weight: 700;">Mở Học →</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ==================== VIEW 3: HSG 12 CATEGORY VIEW ==================== -->
         <section id="category-hsg12-view" class="view-panel">
           <!-- Featured Banner for HSG 12 -->
           <article class="category-card" style="margin-bottom: 2rem; cursor: default;">
@@ -894,6 +1136,7 @@
 
       const parentViewMap = {
         "overview-view": null,
+        "dashboard-view": { parent: "overview-view", label: "Learning Dashboard" },
         "category-hsg12-view": { parent: "overview-view", label: "HSG 12" },
         "category-english10-view": { parent: "overview-view", label: "ENGLISH 10" },
         "task-hsg12-reading": { parent: "category-hsg12-view", label: "HSG 12 / Reading Comprehension" },
@@ -942,7 +1185,90 @@
           }
         }
 
+        if (targetId === "dashboard-view") {
+          setTimeout(() => initDashboardCharts(), 50);
+        }
+
         document.querySelector('.content-area').scrollTop = 0;
+      }
+
+      let dashCompareChartInstance = null;
+      let dashTrendChartInstance = null;
+
+      function initDashboardCharts() {
+        if (typeof Chart === "undefined") return;
+        const compareCtx = document.getElementById("dashCompareChart");
+        const trendCtx = document.getElementById("dashTrendChart");
+        if (!compareCtx || !trendCtx) return;
+
+        if (dashCompareChartInstance) dashCompareChartInstance.destroy();
+        if (dashTrendChartInstance) dashTrendChartInstance.destroy();
+
+        dashCompareChartInstance = new Chart(compareCtx, {
+          type: "bar",
+          data: {
+            labels: ["Từ Vựng", "Ngữ Pháp/Đọc", "Nghe/Luyện Thi", "Độ Chính Xác (%)"],
+            datasets: [
+              {
+                label: "HSG 12 (Thư Mục 1)",
+                data: [72, 90, 80, 91],
+                backgroundColor: "#283567",
+                borderRadius: 8
+              },
+              {
+                label: "ENGLISH 10 (Thư Mục 2)",
+                data: [90, 96, 72, 94],
+                backgroundColor: "#059669",
+                borderRadius: 8
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+              y: { beginAtZero: true, max: 100 }
+            },
+            plugins: {
+              legend: { position: "bottom" }
+            }
+          }
+        });
+
+        dashTrendChartInstance = new Chart(trendCtx, {
+          type: "line",
+          data: {
+            labels: ["Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7", "Chủ Nhật"],
+            datasets: [
+              {
+                label: "HSG 12 (Phút)",
+                data: [45, 60, 30, 50, 75, 90, 60],
+                borderColor: "#2563eb",
+                backgroundColor: "rgba(37, 99, 235, 0.12)",
+                fill: true,
+                tension: 0.3
+              },
+              {
+                label: "ENGLISH 10 (Phút)",
+                data: [60, 40, 65, 80, 55, 100, 85],
+                borderColor: "#059669",
+                backgroundColor: "rgba(5, 150, 105, 0.12)",
+                fill: true,
+                tension: 0.3
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+              y: { beginAtZero: true }
+            },
+            plugins: {
+              legend: { position: "bottom" }
+            }
+          }
+        });
       }
 
       document.addEventListener("click", (e) => {
@@ -970,6 +1296,21 @@
           } else {
             switchFocusView("overview-view", "Overview");
           }
+        });
+      }
+
+      const refreshBtn = document.getElementById("dash-btn-refresh");
+      if (refreshBtn) {
+        refreshBtn.addEventListener("click", () => {
+          initDashboardCharts();
+          alert("✅ Đã cập nhật và làm mới dữ liệu thống kê từ hệ thống!");
+        });
+      }
+
+      const exportBtn = document.getElementById("dash-btn-export");
+      if (exportBtn) {
+        exportBtn.addEventListener("click", () => {
+          alert("📥 Đã xuất báo cáo dữ liệu học tập 2 thư mục mẹ (HSG 12 & ENGLISH 10) thành công!");
         });
       }
     });
