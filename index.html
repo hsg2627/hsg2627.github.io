@@ -30,7 +30,8 @@
   <!-- ====== SIDEBAR ====== -->
   <aside class="sidebar">
     <div class="sidebar-logo" onclick="goHome()">
-      📘 English<span>Insiders</span>
+      <img src="images/English_Insider_Logo.svg" alt="English Insiders Logo" class="sidebar-brand-img">
+      English<span>Insiders</span>
     </div>
 
     <div class="sidebar-section">
@@ -41,8 +42,8 @@
       <div class="sidebar-item" data-nav="HSG 12" onclick="navigateTo('HSG 12')">
         <span class="icon">📚</span> HSG 12
       </div>
-      <div class="sidebar-item" data-nav="HSG 11" onclick="navigateTo('HSG 11')">
-        <span class="icon">📖</span> HSG 11
+      <div class="sidebar-item" data-nav="ENGLISH 10" onclick="navigateTo('ENGLISH 10')">
+        <span class="icon">📖</span> ENGLISH 10
       </div>
       <div class="sidebar-item" data-nav="Academic" onclick="navigateTo('Academic')">
         <span class="icon">🎓</span> Academic (B2-C2)
@@ -53,10 +54,10 @@
 
     <div class="sidebar-section">
       <div class="sidebar-section-title">⚡ Tiện ích</div>
-      <div class="sidebar-item" data-nav="Vocabulary in Use" onclick="navigateTo('2,600+ Collocations')">
+      <div class="sidebar-item" data-nav="Vocabulary in Use" onclick="navigateTo('Vocabulary')">
         <span class="icon">📝</span> Vocabulary in Use
       </div>
-      <div class="sidebar-item" data-nav="Listening Practice" onclick="navigateTo('Academic Listening Practice')">
+      <div class="sidebar-item" data-nav="Listening Practice" onclick="navigateTo('Listening Skills')">
         <span class="icon">🎧</span> Listening Practice
       </div>
       <div class="sidebar-item" data-nav="Dashboard" onclick="navigateTo('Learning Analytics & Dashboard')">
@@ -106,8 +107,62 @@
 
       <!-- ==================== HOME TAB ==================== -->
       <section id="home" class="tab-content active">
-        <div class="content-header">
-          <h2 id="folderTitle">📁 Thư mục học liệu</h2>
+
+        <!-- Quick Search Bar -->
+        <div class="search-bar-container">
+          <div class="search-input-wrapper">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="quickSearchInput" placeholder="Tìm kiếm nhanh học liệu, chuyên đề, từ vựng..." oninput="handleQuickSearch(this.value)">
+            <button class="clear-search-btn" id="clearSearchBtn" onclick="clearQuickSearch()">✕</button>
+          </div>
+        </div>
+
+        <!-- Featured Category Cards Grid (Flowchart Optimization) -->
+        <div class="main-categories-section">
+          <h3 class="categories-section-title">✨ Danh Mục Học Liệu Chính</h3>
+          <div class="category-banner-grid">
+            
+            <!-- Category 1: HSG 12 -->
+            <div class="category-banner-card card-hsg12" onclick="navigateTo('HSG 12')">
+              <div class="card-avatar-wrapper">
+                <img src="images/HSG12_logo.svg" alt="HSG 12 Logo" class="category-avatar-img">
+              </div>
+              <div class="card-info">
+                <span class="category-badge hsg12-badge">Chuyên Đề Đội Tuyển</span>
+                <h2 class="category-title">HSG 12</h2>
+                <p class="category-desc">Kho học liệu chuyên sâu dành cho đội tuyển HSG 12. Bao gồm 3 chuyên đề cốt lõi: Reading Comprehension, Listening Skills và Vocabulary.</p>
+                <div class="category-tags">
+                  <span>📖 Reading Comprehension</span>
+                  <span>🎧 Listening Skills</span>
+                  <span>📘 Vocabulary</span>
+                </div>
+                <button class="category-action-btn btn-hsg12">Truy cập HSG 12 →</button>
+              </div>
+            </div>
+
+            <!-- Category 2: ENGLISH 10 -->
+            <div class="category-banner-card card-english10" onclick="navigateTo('ENGLISH 10')">
+              <div class="card-avatar-wrapper">
+                <img src="images/English10_logo.svg" alt="ENGLISH 10 Logo" class="category-avatar-img">
+              </div>
+              <div class="card-info">
+                <span class="category-badge english10-badge">Chương Trình Lớp 10</span>
+                <h2 class="category-title">ENGLISH 10</h2>
+                <p class="category-desc">Chương trình bài học & luyện tập toàn diện Tiếng Anh 10. Bao gồm 3 phân môn: Grammar, Vocabulary và Practice Test.</p>
+                <div class="category-tags">
+                  <span>📝 Grammar</span>
+                  <span>🔤 Vocabulary</span>
+                  <span>⏱️ Practice Test</span>
+                </div>
+                <button class="category-action-btn btn-english10">Truy cập ENGLISH 10 →</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="content-header" style="margin-top: 32px;">
+          <h2 id="folderTitle">📁 Danh Sách Học Liệu</h2>
           <span class="count" id="itemCount">6 thư mục</span>
         </div>
 

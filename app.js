@@ -520,20 +520,22 @@ function parseAndLoadHashRoute() {
 }
 
 // ====== DỮ LIỆU THƯ MỤC (FOLDER SYSTEM) ======
+// ====== DỮ LIỆU THƯ MỤC (FOLDER SYSTEM) ======
 const folderData = [
+  // --- HSG 12 Category Sub-folders ---
   {
-    id: 'folder1',
+    id: 'folder-hsg12-rc',
     name: 'Reading Comprehension',
     path: 'HSG 12 / Reading Comprehension',
-    icon: '📚',
-    desc: 'Nội dung bài học và thực hành đọc hiểu chuyên sâu VSTEP B1-C1 (HSG 12). Bao gồm tổng quan kỹ năng, chiến thuật & quiz.',
+    icon: '📖',
+    desc: 'Chuyên đề Đọc hiểu chuyên sâu VSTEP B1-C1 & Cambridge CAE (HSG 12). Skimming, Scanning & Vocabulary.',
     type: 'HSG 12',
     fullPath: 'Reading Comprehension',
     targetTab: 'reading-comprehension',
     targetSubTab: 'rc-overview'
   },
   {
-    id: 'folder2',
+    id: 'folder-hsg12-ls',
     name: 'Listening Skills',
     path: 'HSG 12 / Listening Skills',
     icon: '🎧',
@@ -544,61 +546,70 @@ const folderData = [
     targetSubTab: 'ls-practice'
   },
   {
-    id: 'folder3',
-    name: '2,600+ Collocations',
-    path: 'HSG 12 / Collocations',
-    icon: '🔗',
-    desc: 'Bộ sưu tập hơn 2.600 cụm từ thông dụng (HSG 12), phân loại theo chủ đề.',
-    type: 'HSG 12',
-    fullPath: '2,600+ Collocations',
-    targetTab: 'collocations',
-    targetSubTab: null
-  },
-  {
-    id: 'folder4',
-    name: 'English Collocations (Quiz Arena)',
-    path: 'HSG 12 / English Collocations',
-    icon: '🎮',
-    desc: 'Đấu trí Quiz Arena, Nối cặp Siêu tốc, Thử thách Scramble, Flashcards 3D & Bảng Vinh danh XP.',
-    type: 'HSG 12',
-    fullPath: 'English Collocations Quiz Arena',
-    targetTab: 'trang-anh-collocations',
-    targetSubTab: null
-  },
-  {
-    id: 'folder5',
-    name: 'Focus on Vocabulary',
-    path: 'HSG 12 / Focus on Vocabulary',
-    icon: '🔤',
-    desc: 'Từ vựng chuyên sâu (CEFR B1-C2 Academic) từ bộ sách Focus on Vocabulary 1 & 2 & C-Test Memory Lab.',
+    id: 'folder-hsg12-voc',
+    name: 'Vocabulary',
+    path: 'HSG 12 / Vocabulary',
+    icon: '📘',
+    desc: 'Từ vựng học thuật chuyên sâu (CEFR B1-C2) từ bộ sách Focus on Vocabulary 1 & 2 & 2,600+ Collocations.',
     type: 'HSG 12',
     fullPath: 'Focus on Vocabulary',
     targetTab: 'focus-on-vocabulary',
     targetSubTab: 'fov-overview'
   },
+
+  // --- ENGLISH 10 Category Sub-folders ---
   {
-    id: 'folder6',
-    name: 'HSG 11 - Reading',
-    path: 'HSG 11 / Reading',
-    icon: '📖',
-    desc: 'Chuyên đề đọc hiểu, phân tích đoạn văn và câu hỏi suy luận dành cho HSG 11.',
-    type: 'HSG 11',
-    fullPath: 'HSG 11 - English 11 - Reading',
-    targetTab: 'reading-comprehension',
-    targetSubTab: 'rc-quiz'
-  },
-  {
-    id: 'folder7',
-    name: 'VSTEP Practice - B1-C1',
-    path: 'VSTEP / Practice',
-    icon: '🎯',
-    desc: 'Bộ đề thi thử VSTEP đầy đủ 4 kỹ năng, cập nhật cấu trúc mới.',
-    type: 'VSTEP',
-    fullPath: 'VSTEP Practice - B1-C1',
+    id: 'folder-eng10-gram',
+    name: 'Grammar',
+    path: 'ENGLISH 10 / Grammar',
+    icon: '📝',
+    desc: 'Hệ thống lý thuyết & bài tập ngữ pháp chuyên sâu Tiếng Anh 10 theo chủ đề bài học chuẩn.',
+    type: 'ENGLISH 10',
+    fullPath: 'English 10 Grammar',
     targetTab: 'reading-comprehension',
     targetSubTab: 'rc-strategies'
+  },
+  {
+    id: 'folder-eng10-voc',
+    name: 'Vocabulary',
+    path: 'ENGLISH 10 / Vocabulary',
+    icon: '🔤',
+    desc: 'Kho từ vựng & Collocations Tiếng Anh 10 kèm Gamification Quiz Arena & Flashcards 3D.',
+    type: 'ENGLISH 10',
+    fullPath: 'English Collocations Quiz Arena',
+    targetTab: 'trang-anh-collocations',
+    targetSubTab: null
+  },
+  {
+    id: 'folder-eng10-test',
+    name: 'Practice Test',
+    path: 'ENGLISH 10 / Practice Test',
+    icon: '⏱️',
+    desc: 'Bộ đề kiểm tra luyện tập định kỳ Tiếng Anh 10 đầy đủ các dạng bài thi kèm chấm điểm tự động.',
+    type: 'ENGLISH 10',
+    fullPath: 'English 10 Practice Test',
+    targetTab: 'reading-comprehension',
+    targetSubTab: 'rc-quiz'
   }
 ];
+
+function handleQuickSearch(query) {
+  const cleanQuery = query.trim().toLowerCase();
+  const clearBtn = document.getElementById('clearSearchBtn');
+  if (clearBtn) {
+    clearBtn.style.display = cleanQuery ? 'block' : 'none';
+  }
+  openSkillTab('home');
+  renderFolders(cleanQuery || 'all');
+}
+
+function clearQuickSearch() {
+  const input = document.getElementById('quickSearchInput');
+  if (input) input.value = '';
+  const clearBtn = document.getElementById('clearSearchBtn');
+  if (clearBtn) clearBtn.style.display = 'none';
+  renderFolders('all');
+}
 
 function renderFolders(filter = 'all') {
   const grid = document.getElementById('folderGrid');
@@ -663,13 +674,20 @@ function navigateTo(path) {
     return;
   }
 
+  // Google Analytics Event Tracking according to flowchart design
+  if (path === 'HSG 12') {
+    trackGAEvent('select_category', { category_id: 'HSG_12', category_name: 'HSG 12' });
+  } else if (path === 'ENGLISH 10') {
+    trackGAEvent('select_category', { category_id: 'ENGLISH_10', category_name: 'English 10' });
+  }
+
   const sidebarItem = document.querySelector(`.sidebar-item[data-nav="${path}"]`);
   document.querySelectorAll('.sidebar-item').forEach(el => el.classList.remove('active'));
   if (sidebarItem) {
     sidebarItem.classList.add('active');
   }
 
-  const item = folderData.find(f => f.fullPath === path || f.name === path);
+  const item = folderData.find(f => f.fullPath === path || f.name === path || f.path === path);
   if (item && item.targetTab) {
     openSkillTab(item.targetTab, item.targetSubTab);
     updateBreadcrumb(item.path);
