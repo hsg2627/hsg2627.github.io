@@ -1230,9 +1230,27 @@
         "task-e10-test": { parent: "category-english10-view", label: "ENGLISH 10 / Practice Test" }
       };
 
+      const hashMap = {
+        "overview": "overview-view",
+        "home": "overview-view",
+        "dashboard": "dashboard-view",
+        "hsg12": "category-hsg12-view",
+        "english10": "category-english10-view",
+        "hsg12-reading": "task-hsg12-reading",
+        "hsg12-listening": "task-hsg12-listening",
+        "hsg12-vocab": "task-hsg12-vocab",
+        "english10-grammar": "task-e10-grammar",
+        "english10-vocab": "task-e10-vocab",
+        "english10-test": "task-e10-test"
+      };
+
+      const viewToHashMap = Object.fromEntries(
+        Object.entries(hashMap).map(([hash, viewId]) => [viewId, hash])
+      );
+
       let currentActiveViewId = "overview-view";
 
-      function switchFocusView(targetId, customName) {
+      function switchFocusView(targetId, customName, updateHash = true) {
         if (!targetId || !document.getElementById(targetId)) return;
 
         views.forEach(view => view.classList.remove("active"));
@@ -1240,6 +1258,14 @@
         activeTarget.classList.add("active");
 
         currentActiveViewId = targetId;
+
+        // Cập nhật thanh địa chỉ URL Hash
+        if (updateHash) {
+          const targetHash = viewToHashMap[targetId] || "overview";
+          if (window.location.hash !== "#" + targetHash) {
+            history.pushState(null, "", "#" + targetHash);
+          }
+        }
 
         if (targetId === "overview-view") {
           backBtn.classList.add("hidden");
@@ -1274,6 +1300,18 @@
 
         document.querySelector('.content-area').scrollTop = 0;
       }
+
+      function handleHashChange() {
+        const hash = window.location.hash.replace("#", "").toLowerCase();
+        if (hash && hashMap[hash]) {
+          switchFocusView(hashMap[hash], null, false);
+        } else if (!hash) {
+          switchFocusView("overview-view", null, false);
+        }
+      }
+
+      window.addEventListener("hashchange", handleHashChange);
+      handleHashChange();
 
       let dashCompareChartInstance = null;
       let dashTrendChartInstance = null;
