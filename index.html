@@ -921,9 +921,12 @@
           <span id="crumb-path"><span class="crumb-current">Overview</span></span>
         </nav>
       </div>
-      <div class="header-right" style="display: flex; align-items: center; gap: 14px;">
-        <button id="nav-dashboard-btn" data-target="dashboard-view" data-label="Learning Dashboard" style="background: #283567; color: #ffffff; border: none; padding: 7px 16px; border-radius: 8px; font-weight: 700; font-size: 0.85rem; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(40,53,103,0.15); transition: all 0.2s ease;">
+      <div class="header-right" style="display: flex; align-items: center; gap: 10px;">
+        <button id="nav-dashboard-btn" data-target="dashboard-view" data-label="Learning Dashboard" style="background: #283567; color: #ffffff; border: none; padding: 7px 14px; border-radius: 8px; font-weight: 700; font-size: 0.82rem; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(40,53,103,0.15); transition: all 0.2s ease;">
           📊 Dashboard
+        </button>
+        <button id="nav-doloc-btn" data-target="doloc-town-view" data-label="Doloc Town RPG" style="background: linear-gradient(135deg, #7c3aed 0%, #4c1d95 100%); color: #facc15; border: 2px solid #000; padding: 6px 14px; border-radius: 8px; font-family: 'Press Start 2P', cursive; font-size: 0.65rem; cursor: pointer; display: flex; align-items: center; gap: 6px; box-shadow: 2px 2px 0 #000; text-shadow: 1px 1px #000; transition: all 0.2s ease;">
+          🎮 Doloc Town
         </button>
 
         <!-- STUDENT NAME INPUT / DISPLAY -->
@@ -1621,6 +1624,162 @@
               </div>
             </form>
           </div>
+        <!-- ==================== VIEW 10: DOLOC TOWN PIXEL GRAPHIC RPG ==================== -->
+        <section id="doloc-town-view" class="view-panel">
+          <!-- PIXEL HUD TOP STATUS BAR -->
+          <div class="pixel-hud-bar">
+            <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+              <span class="pixel-tag" style="background: #facc15; color: #000;">🏰 TOWN: DOLOC TOWN</span>
+              <span class="pixel-tag" style="background: #ef4444; color: #fff;">💖 HP: ♥♥♥</span>
+              <span class="pixel-tag" style="background: #eab308; color: #000;">🪙 GOLD: <span id="pixel-gold-val">1,250</span> G</span>
+              <span class="pixel-tag" style="background: #3b82f6; color: #fff;">⚡ EXP: <span id="pixel-exp-val">3,450</span> / 5,000</span>
+            </div>
+            <div style="font-family: 'Press Start 2P', cursive; font-size: 10px; color: #4ade80;">
+              HERO: <span id="pixel-hero-name" style="color: #facc15;">STUDENT</span> (LVL 10)
+            </div>
+          </div>
+
+          <!-- DOLOC TOWN BANNER HERO WITH GENERATED PIXEL ART -->
+          <div class="pixel-town-hero" style="background: linear-gradient(to bottom, rgba(30,20,53,0.35), rgba(30,20,53,0.9)), url('images/doloc_town_bg.png') center/cover no-repeat; border: 4px solid #1a1a1a; box-shadow: inset -4px -4px 0 #000, inset 4px 4px 0 #fff; border-radius: 14px; padding: 36px 28px; color: #ffffff; margin-bottom: 24px; position: relative;">
+            <div style="max-width: 620px;">
+              <span style="font-family: 'Press Start 2P', cursive; font-size: 10px; background: #3b82f6; color: #fff; padding: 4px 10px; border: 2px solid #000; display: inline-block; margin-bottom: 12px; box-shadow: 2px 2px 0 #000;">RETRO 16-BIT RPG TOWN</span>
+              <h1 style="font-family: 'Press Start 2P', cursive; font-size: 1.5rem; color: #facc15; text-shadow: 3px 3px #000; line-height: 1.6; margin-bottom: 14px;">
+                DOLOC TOWN ACADEMY
+              </h1>
+              <p style="font-family: 'Silkscreen', cursive; font-size: 0.95rem; color: #f1f5f9; text-shadow: 2px 2px #000; line-height: 1.7; margin-bottom: 18px;">
+                Chào mừng Dũng sĩ đến với Thị trấn Doloc! Hãy khám phá Học viện, thực hiện nhiệm vụ hàng ngày và tích lũy Vàng & EXP để thăng cấp.
+              </p>
+            </div>
+
+            <!-- PIXEL NPC ELDER BEN DIALOGUE BOX -->
+            <div class="pixel-npc-dialog" style="background: #1e1435; border: 3px solid #000; box-shadow: inset -3px -3px 0 #110b21, inset 3px 3px 0 #4c3977, 4px 4px 0 #000; border-radius: 8px; padding: 16px 20px; display: flex; gap: 16px; align-items: center; margin-top: 10px;">
+              <div style="font-size: 2.4rem; background: #312154; border: 2px solid #facc15; padding: 6px 10px; border-radius: 8px; image-rendering: pixelated;">👴</div>
+              <div style="flex: 1;">
+                <div style="font-family: 'Press Start 2P', cursive; font-size: 9px; color: #facc15; margin-bottom: 6px;">ELDER BEN (DOLOC TOWN ELDER):</div>
+                <div id="npc-text-bubble" style="font-family: 'Silkscreen', cursive; font-size: 0.88rem; color: #ffffff; line-height: 1.5;">
+                  "Xin chào! Cậu có muốn thử thách bản thân với Bài Thi Luyện Tập ở Học Viện hay nhận Nhiệm Vụ hôm nay không?"
+                </div>
+              </div>
+              <button onclick="interactNpcElder()" class="pixel-btn" style="padding: 8px 14px;">
+                TALK 💬
+              </button>
+            </div>
+          </div>
+
+          <!-- DOLOC TOWN LOCATIONS GRID (4 BUILDINGS) -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-bottom: 28px;">
+            
+            <!-- Location 1: Doloc Academy -->
+            <div class="pixel-card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <span class="pixel-tag" style="background: #3b82f6; color: #fff;">LOCATION 01</span>
+                <span style="font-size: 2rem;">🏫</span>
+              </div>
+              <h3 class="pixel-card-title">DOLOC ACADEMY</h3>
+              <p class="pixel-card-desc">Học viện Đào tạo Tiếng Anh 10 & HSG 12 với các bài tập & Đấu trường Game Luyện thi.</p>
+              <div style="display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap;">
+                <button class="pixel-btn" data-target="category-english10-view" data-label="ENGLISH 10">
+                  ENGLISH 10 →
+                </button>
+                <button class="pixel-btn" data-target="category-hsg12-view" data-label="HSG 12" style="background: #a855f7; border-color: #000;">
+                  HSG 12 →
+                </button>
+              </div>
+            </div>
+
+            <!-- Location 2: Quest Board -->
+            <div class="pixel-card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <span class="pixel-tag" style="background: #10b981; color: #fff;">LOCATION 02</span>
+                <span style="font-size: 2rem;">📜</span>
+              </div>
+              <h3 class="pixel-card-title">QUEST BOARD</h3>
+              <p class="pixel-card-desc">Bảng nhiệm vụ hàng ngày. Hoàn thành bài tập để nhận thưởng Vàng & Huy hiệu Rồng!</p>
+              <button onclick="openQuestBoardModal()" class="pixel-btn" style="background: #f59e0b; margin-top: 14px; width: 100%;">
+                XEM NHIỆM VỤ (4/6) ⚔️
+              </button>
+            </div>
+
+            <!-- Location 3: Item Shop & Inn -->
+            <div class="pixel-card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <span class="pixel-tag" style="background: #ec4899; color: #fff;">LOCATION 03</span>
+                <span style="font-size: 2rem;">🏪</span>
+              </div>
+              <h3 class="pixel-card-title">ITEM SHOP & INN</h3>
+              <p class="pixel-card-desc">Cửa hàng trang bị vật phẩm, khung Avatar Pixel và bình Năng lượng nhân đôi EXP!</p>
+              <button onclick="openItemShopModal()" class="pixel-btn" style="background: #ec4899; margin-top: 14px; width: 100%;">
+                MỞ TIỆM ĐỒ DÙNG 🛍️
+              </button>
+            </div>
+
+            <!-- Location 4: Hall of Fame -->
+            <div class="pixel-card">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+                <span class="pixel-tag" style="background: #eab308; color: #000;">LOCATION 04</span>
+                <span style="font-size: 2rem;">🏆</span>
+              </div>
+              <h3 class="pixel-card-title">HALL OF FAME</h3>
+              <p class="pixel-card-desc">Bảng vinh danh các Dũng sĩ có điểm số Quiz và số Vàng tích lũy cao nhất thị trấn.</p>
+              <button onclick="openHallOfFameModal()" class="pixel-btn" style="background: #eab308; color: #000; margin-top: 14px; width: 100%;">
+                BẢNG VÀNG THỊ TRẤN 🥇
+              </button>
+            </div>
+
+          </div>
+
+          <!-- DOLOC TOWN DAILY QUESTS PREVIEW TABLE -->
+          <div class="pixel-box" style="padding: 20px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+              <h3 style="font-family: 'Press Start 2P', cursive; font-size: 0.88rem; color: #facc15; margin: 0; text-shadow: 2px 2px #000;">
+                📜 NHIỆM VỤ THỊ TRẤN HÔM NAY
+              </h3>
+              <span style="font-family: 'Silkscreen', cursive; font-size: 0.85rem; color: #4ade80;">Tự động làm mới sau 24h</span>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              
+              <div style="background: #1a1228; border: 2px solid #3e2e5c; padding: 12px 16px; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span style="font-size: 1.4rem;">🎯</span>
+                  <div>
+                    <div style="font-family: 'Press Start 2P', cursive; font-size: 9px; color: #ffffff;">Hoàn thành Bài Luyện Thi Unit 1 Family</div>
+                    <div style="font-family: 'Silkscreen', cursive; font-size: 0.8rem; color: #94a3b8; margin-top: 4px;">Thưởng: +300 Vàng | +200 EXP</div>
+                  </div>
+                </div>
+                <button class="pixel-btn" data-target="task-e10-test" data-label="ENGLISH 10 / Practice Test" style="padding: 6px 12px;">
+                  LÀM NGAY →
+                </button>
+              </div>
+
+              <div style="background: #1a1228; border: 2px solid #3e2e5c; padding: 12px 16px; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span style="font-size: 1.4rem;">📖</span>
+                  <div>
+                    <div style="font-family: 'Press Start 2P', cursive; font-size: 9px; color: #ffffff;">Đọc bài Reading Comprehension HSG 12</div>
+                    <div style="font-family: 'Silkscreen', cursive; font-size: 0.8rem; color: #94a3b8; margin-top: 4px;">Thưởng: +250 Vàng | +150 EXP</div>
+                  </div>
+                </div>
+                <button class="pixel-btn" data-target="task-hsg12-reading" data-label="HSG 12 / Reading Comprehension" style="padding: 6px 12px; background: #a855f7;">
+                  LÀM NGAY →
+                </button>
+              </div>
+
+              <div style="background: #1a1228; border: 2px solid #3e2e5c; padding: 12px 16px; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                  <span style="font-size: 1.4rem;">🔤</span>
+                  <div>
+                    <div style="font-family: 'Press Start 2P', cursive; font-size: 9px; color: #ffffff;">Ôn tập 30 từ vựng Unit 1 ENGLISH 10</div>
+                    <div style="font-family: 'Silkscreen', cursive; font-size: 0.8rem; color: #94a3b8; margin-top: 4px;">Thưởng: +200 Vàng | +100 EXP</div>
+                  </div>
+                </div>
+                <button class="pixel-btn" data-target="task-e10-vocab" data-label="ENGLISH 10 / Vocabulary" style="padding: 6px 12px; background: #3b82f6;">
+                  LÀM NGAY →
+                </button>
+              </div>
+
+            </div>
+          </div>
         </section>
 
       </div>
@@ -1639,6 +1798,7 @@
       const parentViewMap = {
         "overview-view": null,
         "dashboard-view": { parent: "overview-view", label: "Learning Dashboard" },
+        "doloc-town-view": { parent: "overview-view", label: "Doloc Town RPG" },
         "category-hsg12-view": { parent: "overview-view", label: "HSG 12" },
         "category-english10-view": { parent: "overview-view", label: "ENGLISH 10" },
         "task-hsg12-reading": { parent: "category-hsg12-view", label: "HSG 12 / Reading Comprehension" },
@@ -1653,6 +1813,8 @@
         "overview": "overview-view",
         "home": "overview-view",
         "dashboard": "dashboard-view",
+        "doloc-town": "doloc-town-view",
+        "doloctown": "doloc-town-view",
         "hsg12": "category-hsg12-view",
         "english10": "category-english10-view",
         "hsg12-reading": "task-hsg12-reading",
@@ -2345,6 +2507,46 @@
       };
 
       renderQuiz();
+
+      // =====================================================================
+      // DOLOC TOWN PIXEL GAME SYSTEM
+      // =====================================================================
+      const npcDialogueLines = [
+        "\"Chào cậu! Ta là Trưởng lão Ben của Thị trấn Doloc. Hãy hoàn thành các Nhiệm vụ bài học ở Học Viện để nhận Vàng và EXP nhé!\"",
+        "\"Cậu có biết? Hoàn thành Bài thi Luyện tập Unit 1 Family sẽ giúp cậu nhận tới +300 Vàng và +200 EXP!\"",
+        "\"Cố gắng luyện tập mỗi ngày để tăng cấp và mở khóa các danh hiệu cao quý nhất thị trấn!\""
+      ];
+      let currentNpcLineIdx = 0;
+
+      window.interactNpcElder = function() {
+        currentNpcLineIdx = (currentNpcLineIdx + 1) % npcDialogueLines.length;
+        const textBubble = document.getElementById("npc-text-bubble");
+        if (textBubble) {
+          textBubble.textContent = npcDialogueLines[currentNpcLineIdx];
+        }
+      };
+
+      window.openQuestBoardModal = function() {
+        alert("📜 BẢNG NHIỆM VỤ THỊ TRẤN DOLOC\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n1. 🎯 Bài thi Luyện tập Unit 1 Family (+300 Vàng) [Chưa xong]\n2. 📖 Đọc bài Reading HSG 12 (+250 Vàng) [Chưa xong]\n3. 🔤 Học 30 từ vựng Unit 1 ENGLISH 10 (+200 Vàng) [Chưa xong]\n4. 🏆 Đạt 90% chính xác trong 1 bài Quiz (+500 Vàng) [Chưa xong]\n\n💡 Hãy bấm 'LÀM NGAY' ở danh sách nhiệm vụ phía dưới để bắt đầu!");
+      };
+
+      window.openItemShopModal = function() {
+        const name = getStudentName() || "Dũng sĩ";
+        alert(`🏪 TIỆM ĐỒ DÙNG THỊ TRẤN DOLOC\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n👤 Khách hàng: ${name}\n🪙 Số Vàng hiện có: 1,250 G\n\n1. 🛡️ Khung Avatar Rồng Vàng (Giá: 1,000 G)\n2. 🧪 Bình Thuốc Nhân Đôi EXP 24h (Giá: 500 G)\n3. 👑 Danh hiệu 'Huyền Thoại Doloc' (Giá: 2,500 G)\n\n💡 Làm thêm các bài thi để tích lũy đủ Vàng nhé!`);
+      };
+
+      window.openHallOfFameModal = function() {
+        alert("🏆 BẢNG VÀNG DANH VỌNG THỊ TRẤN DOLOC\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🥇 HẠNG 1: Minh Trí (LVL 15 - 12,400 G)\n🥈 HẠNG 2: Phương Anh (LVL 14 - 10,800 G)\n🥉 HẠNG 3: Anh Thư (LVL 12 - 9,500 G)\n4️⃣ HẠNG 4: Tuấn Kiệt (LVL 11 - 8,200 G)\n5️⃣ HẠNG 5: Bạn (LVL 10 - 1,250 G)\n\n🔥 Tiếp tục hoàn thành các bài thi để vươn lên Hạng 1!");
+      };
+
+      function syncDolocHeroName() {
+        const heroNameElem = document.getElementById("pixel-hero-name");
+        if (heroNameElem) {
+          const name = getStudentName();
+          heroNameElem.textContent = name ? name.toUpperCase() : "STUDENT";
+        }
+      }
+      syncDolocHeroName();
 
     });
   </script>
