@@ -1381,34 +1381,41 @@
 
     /* GGD SIDE-BY-SIDE SPLIT MODAL STYLES */
     .ggd-modal-box.ggd-split-modal {
-      max-width: 1300px;
-      width: 95vw;
-      height: 88vh;
-      max-height: 900px;
+      max-width: 1450px;
+      width: 96vw;
+      height: 90vh;
+      max-height: 920px;
       display: flex;
       flex-direction: column;
-      padding: 20px 24px;
+      padding: 22px 26px;
       overflow: hidden;
     }
 
     .ggd-split-container {
       display: grid;
-      grid-template-columns: 1fr 1fr; /* 50% Left Theory, 50% Right Task */
-      gap: 20px;
+      grid-template-columns: 1.28fr 0.72fr; /* 64% Theory Dossier, 36% Task Panel - expands dossier frame */
+      gap: 22px;
       flex: 1;
       min-height: 0; /* Critical for inner scrolling */
       margin-top: 10px;
     }
 
-    @media (max-width: 960px) {
-      .ggd-split-container {
-        grid-template-columns: 1fr;
-        overflow-y: auto;
-      }
-      .ggd-modal-box.ggd-split-modal {
-        height: 92vh;
-        overflow-y: auto;
-      }
+    /* Mobile Segmented Tab Switcher bar (Hidden on Desktop) */
+    .ggd-mobile-tab-nav {
+      display: none;
+    }
+
+    .ggd-role-chip {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      padding: 2px 10px;
+      border-radius: 20px;
+      margin-left: 8px;
+      vertical-align: middle;
     }
 
     .ggd-split-left-panel {
@@ -1435,9 +1442,9 @@
     .ggd-panel-header {
       background: linear-gradient(90deg, #1b1233 0%, #2b1d4e 100%);
       border-bottom: 2px solid #facc15;
-      padding: 10px 16px;
+      padding: 12px 18px;
       font-family: 'Press Start 2P', cursive;
-      font-size: 9px;
+      font-size: 11px;
       color: #facc15;
       display: flex;
       align-items: center;
@@ -1452,10 +1459,10 @@
     .ggd-dossier-body-scroll {
       flex: 1;
       overflow-y: auto;
-      padding: 18px;
+      padding: 20px;
       color: #e2e8f0;
-      font-size: 0.9rem;
-      line-height: 1.65;
+      font-size: 16px; /* Main Body: 16px - 18px */
+      line-height: 1.7;
     }
 
     .ggd-split-right-content {
@@ -1479,7 +1486,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       padding-bottom: 14px;
       border-bottom: 2px solid #291e45;
     }
@@ -1502,29 +1509,139 @@
 
     .ggd-modal-title {
       font-weight: 800;
-      font-size: 34px; /* Main Heading H1: 32px - 40px */
+      font-size: 26px; /* Optimized desktop heading */
       color: #ffffff;
+      line-height: 1.3;
     }
 
-    .ggd-panel-header {
-      background: linear-gradient(90deg, #1b1233 0%, #2b1d4e 100%);
-      border-bottom: 2px solid #facc15;
-      padding: 12px 18px;
-      font-family: 'Press Start 2P', cursive;
-      font-size: 12px;
-      color: #facc15;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+    /* MOBILE / SMALL SCREEN OVERRIDES (MUST COME AT THE END) */
+    @media (max-width: 960px) {
+      .ggd-modal-box.ggd-split-modal {
+        width: 98vw;
+        height: 95vh;
+        max-height: none;
+        padding: 12px 14px;
+        border-radius: 16px;
+      }
+      
+      .ggd-modal-header {
+        margin-bottom: 8px;
+        padding-bottom: 8px;
+      }
 
-    .ggd-dossier-body-scroll {
-      flex: 1;
-      overflow-y: auto;
-      padding: 20px;
-      color: #e2e8f0;
-      font-size: 16px; /* Main Body: 16px - 18px */
-      line-height: 1.7;
+      .ggd-modal-icon {
+        font-size: 1.3rem;
+        padding: 3px 6px;
+        border-radius: 8px;
+      }
+
+      .ggd-modal-level-tag {
+        font-size: 7.5px;
+        margin-bottom: 2px;
+      }
+
+      .ggd-modal-title {
+        font-size: 15px !important; /* Compact title on mobile */
+        line-height: 1.25;
+      }
+
+      .ggd-role-chip {
+        font-size: 10px;
+        padding: 1px 6px;
+        margin-left: 4px;
+        display: inline-block;
+      }
+
+      .ggd-task-hud {
+        margin-bottom: 8px;
+        padding: 6px 10px;
+        gap: 8px;
+      }
+
+      .ggd-task-hud span {
+        font-size: 9px !important;
+      }
+
+      /* Mobile Segmented Tab Switcher */
+      .ggd-mobile-tab-nav {
+        display: flex;
+        gap: 6px;
+        margin-bottom: 8px;
+        background: #140b28;
+        padding: 4px;
+        border-radius: 10px;
+        border: 1px solid #312154;
+      }
+
+      .ggd-mobile-tab-btn {
+        flex: 1;
+        padding: 8px 10px;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 8.5px;
+        background: transparent;
+        color: #94a3b8;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        text-align: center;
+      }
+
+      .ggd-mobile-tab-btn.active {
+        background: #2b1d4e;
+        color: #facc15;
+        border: 1px solid #facc15;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+      }
+
+      .ggd-split-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-height: 0;
+        gap: 10px;
+        margin-top: 0;
+      }
+
+      .ggd-split-left-panel, .ggd-split-right-panel {
+        flex: 1;
+        min-height: 0;
+        height: 100%;
+      }
+
+      /* Tab active switching rules for mobile */
+      .ggd-split-container.tab-theory .ggd-split-right-panel {
+        display: none !important;
+      }
+      .ggd-split-container.tab-task .ggd-split-left-panel {
+        display: none !important;
+      }
+
+      .ggd-dossier-wrapper h3 {
+        font-size: 18px !important;
+        line-height: 1.3 !important;
+      }
+      .ggd-dossier-sec-title {
+        font-size: 16px !important;
+      }
+      .ggd-pos-mini-title {
+        font-size: 15px !important;
+      }
+      .ggd-dossier-body-scroll {
+        padding: 12px;
+        font-size: 14px;
+      }
+      .ggd-question-card {
+        padding: 14px;
+      }
+      .ggd-question-text {
+        font-size: 15px;
+        margin-bottom: 12px;
+      }
+      .ggd-opt-btn {
+        padding: 10px 12px;
+        font-size: 14px;
+      }
     }
 
     .ggd-dossier-body p { margin-bottom: 10px; font-size: 16px; }
@@ -2460,11 +2577,11 @@
           <div class="ggd-modal-box ggd-split-modal">
             <!-- Modal Header -->
             <div class="ggd-modal-header">
-              <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="display: flex; align-items: center; gap: 10px; min-width: 0;">
                 <span class="ggd-modal-icon" id="ggd-modal-room-icon">🧭</span>
-                <div>
+                <div style="min-width: 0;">
                   <div class="ggd-modal-level-tag" id="ggd-modal-level-tag">LEVEL 1 • NAVIGATION ROOM</div>
-                  <h3 class="ggd-modal-title" id="ggd-modal-title">Parts of Speech (Cadet Goose)</h3>
+                  <h3 class="ggd-modal-title" id="ggd-modal-title">Parts of Speech <span class="ggd-role-chip" id="ggd-modal-role-chip">Cadet Goose</span></h3>
                 </div>
               </div>
               <button class="ggd-modal-close" onclick="closeGgdTaskModal()">✖</button>
@@ -2484,8 +2601,14 @@
               </div>
             </div>
 
-            <!-- SPLIT PANEL CONTAINER (SIDE-BY-SIDE) -->
-            <div class="ggd-split-container">
+            <!-- MOBILE SEGMENTED TAB SWITCHER (VISIBLE ONLY ON MOBILE) -->
+            <div class="ggd-mobile-tab-nav">
+              <button class="ggd-mobile-tab-btn active" id="ggd-tab-btn-theory" onclick="switchGgdMobileTab('theory')">📜 HỒ SƠ LÝ THUYẾT</button>
+              <button class="ggd-mobile-tab-btn" id="ggd-tab-btn-task" onclick="switchGgdMobileTab('task')">🎯 NHIỆM VỤ BÀI TẬP</button>
+            </div>
+
+            <!-- SPLIT PANEL CONTAINER (SIDE-BY-SIDE OR TABBED ON MOBILE) -->
+            <div class="ggd-split-container tab-theory" id="ggd-split-container">
               <!-- LEFT PANEL: THEORY DOSSIER -->
               <div class="ggd-split-left-panel">
                 <div class="ggd-panel-header">
@@ -3886,77 +4009,701 @@
         },
         {
           id: 2,
-          name: "Phrases",
+          name: "Phrases & Clause Structures",
           room: "Communications Array 📡",
           icon: "📡",
           avatar: "🕵️",
           role: "Detective Goose",
           theory: `
-            <p><strong>🎯 CHUYÊN ĐỀ 2: CÁC LOẠI CỤM TỪ (PHRASES)</strong></p>
-            <p>Cụm từ là nhóm từ đi liền nhau nhưng không chứa đủ cặp Chủ ngữ - Động từ chia hoàn chỉnh:</p>
-            <ul>
-              <li><strong>Noun Phrase (Cụm danh từ):</strong> Đóng vai trò danh từ (<em>the brave space cadet, a mysterious clue</em>).</li>
-              <li><strong>Verb Phrase (Cụm động từ):</strong> Gồm trợ động từ + động từ chính (<em>has been investigating, will launch</em>).</li>
-              <li><strong>Adjective Phrase (Cụm tính từ):</strong> Đứng đầu là tính từ (<em>extremely proud of the results</em>).</li>
-              <li><strong>Prepositional Phrase (Cụm giới từ):</strong> Giới từ + Danh từ (<em>in the oxygen tank room, on the radar</em>).</li>
-              <li><strong>Participial Phrase (Cụm phân từ):</strong> Bắt đầu bằng V-ing hoặc V-ed (<em>Walking past the airlock, Alarm sounded by the captain</em>).</li>
-            </ul>
+            <div class="ggd-dossier-wrapper">
+              <div style="background: linear-gradient(135deg, #1e1338 0%, #110924 100%); border: 2px solid #38bdf8; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;">
+                <h3 style="color: #38bdf8; font-size: 28px; font-weight: 900; margin-bottom: 8px;">🎯 UNIT 2: TYPES OF PHRASES & CLAUSE STRUCTURES</h3>
+                <p style="color: #94a3b8; font-size: 15px;">Goose Intelligence Dossier for Detective Goose at Communications Array 📡</p>
+                <div style="margin-top: 10px; background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; padding: 10px 14px; border-radius: 6px; text-align: left; font-size: 15px; color: #cbd5e1;">
+                  📌 <strong>Nguyên tắc cốt lõi:</strong> Cụm từ (Phrase) là nhóm từ liên kết không chứa đủ cặp Subject-Verb chia thì. Việc làm chủ 5 loại cụm từ chính (Noun, Verb, Adjective, Prepositional, Participial Phrases) là chiếc cầu nối quyết định giúp xây dựng câu phức & viết bài luận học thuật chính xác.
+                </div>
+              </div>
+
+              <!-- 0. BẢNG TỔNG QUAN HỒ SƠ NỘI DUNG -->
+              <div style="margin-bottom: 20px;">
+                <h4 style="color: #facc15; font-size: 20px; font-weight: 800; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">📊 0. TỔNG QUAN HỒ SƠ BÀI GIẢNG (LESSON OVERVIEW)</h4>
+                <div class="ggd-pos-grid-table">
+                  <div class="ggd-pos-mini-card" style="--pos-color: #00e5ff;">
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">Phần 1</span><span class="ggd-badge badge-noun">5 Phrase Types</span></div>
+                    <p style="font-size: 14px; color: #cbd5e1;">5 Loại cụm từ cốt lõi: Noun, Verb, Adjective, Prepositional & Participial Phrases.</p>
+                  </div>
+                  <div class="ggd-pos-mini-card" style="--pos-color: #00e676;">
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">Phần 2</span><span class="ggd-badge badge-adj">Phrase vs Clause</span></div>
+                    <p style="font-size: 14px; color: #cbd5e1;">Ranh giới Cụm từ vs Mệnh đề, Lỗi thiếu thành phần Sentence Fragment.</p>
+                  </div>
+                  <div class="ggd-pos-mini-card" style="--pos-color: #facc15;">
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">Phần 3</span><span class="ggd-badge badge-pronoun">Elements & Patterns</span></div>
+                    <p style="font-size: 14px; color: #cbd5e1;">5 Thành phần câu (S, V, O, C, A) & Mẫu câu đơn cốt lõi (Clause Patterns).</p>
+                  </div>
+                  <div class="ggd-pos-mini-card" style="--pos-color: #7c4dff;">
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">Phần 4</span><span class="ggd-badge badge-adv">Academic Uses</span></div>
+                    <p style="font-size: 14px; color: #cbd5e1;">Danh từ hóa (Nominalization), Bị động học thuật & Rút gọn mệnh đề quan hệ.</p>
+                  </div>
+                  <div class="ggd-pos-mini-card" style="--pos-color: #ff5252;">
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">Phần 5</span><span class="ggd-badge badge-verb">Flow & Order</span></div>
+                    <p style="font-size: 14px; color: #cbd5e1;">Sắp xếp luồng thông tin "Old-before-New" & Kỹ thuật chuyển đổi cụm từ trong văn viết.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PHẦN I — 5 LOẠI CỤM TỪ CƠ BẢN -->
+              <div class="ggd-dossier-sec">
+                <div class="ggd-dossier-sec-title">📦 PHẦN 1: CÁC LOẠI CỤM TỪ CƠ BẢN (5 CORE PHRASE TYPES)</div>
+                <p style="font-size: 15px; color: #cbd5e1;">Cụm từ (Phrase) là một nhóm từ liên kết về ngữ nghĩa nhưng <em>không có đủ cặp Chủ ngữ và Động từ chia thì (S-V)</em>.</p>
+                
+                <div style="margin-top: 10px;">
+                  <h5 style="color: #00e5ff; font-size: 16px; font-weight: 700; margin-bottom: 6px;">1. Noun Phrase (Cụm danh từ - NP)</h5>
+                  <p style="font-size: 15px; color: #cbd5e1;">Có danh từ làm từ trung tâm (Head Noun), đóng vai trò Chủ ngữ, Tân ngữ hoặc Bổ ngữ trong câu.</p>
+                  <div class="ggd-example-box" style="margin-top: 6px;">
+                    <span style="color: #00e5ff; font-weight: 600;"><u>The tall girl with glasses</u> is our chief engineer.</span><br>
+                    <span style="color: #94a3b8; font-size: 14px; font-style: italic;">➔ Cấu trúc: Determiner (The) + Pre-modifier (tall) + HEAD (girl) + Post-modifier (with glasses).</span>
+                  </div>
+                </div>
+
+                <div style="margin-top: 12px;">
+                  <h5 style="color: #ff5252; font-size: 16px; font-weight: 700; margin-bottom: 6px;">2. Verb Phrase (Cụm động từ - VP)</h5>
+                  <p style="font-size: 15px; color: #cbd5e1;">Bao gồm động từ chính kết hợp với một hoặc nhiều trợ động từ (Auxiliary verbs).</p>
+                  <div class="ggd-example-box" style="margin-top: 6px;">
+                    <span style="color: #ff5252; font-weight: 600;">The security team <u>has been investigating</u> the suspicious duck.</span><br>
+                    <span style="color: #94a3b8; font-size: 14px; font-style: italic;">➔ Trợ động từ (has been) + Động từ chính chia V-ing (investigating).</span>
+                  </div>
+                </div>
+
+                <div style="margin-top: 12px;">
+                  <h5 style="color: #00e676; font-size: 16px; font-weight: 700; margin-bottom: 6px;">3. Adjective Phrase (Cụm tính từ - AdjP)</h5>
+                  <p style="font-size: 15px; color: #cbd5e1;">Có tính từ làm trung tâm, dùng để bổ nghĩa cho danh từ hoặc chủ ngữ.</p>
+                  <div class="ggd-example-box" style="margin-top: 6px;">
+                    <span style="color: #00e676; font-weight: 600;">He felt <u>extremely proud of his achievements</u>.</span><br>
+                    <span style="color: #94a3b8; font-size: 14px; font-style: italic;">➔ Trạng từ (extremely) + Tính từ chính (proud) + Cụm giới từ bổ ngữ (of his achievements).</span>
+                  </div>
+                </div>
+
+                <div style="margin-top: 12px;">
+                  <h5 style="color: #ff80ab; font-size: 16px; font-weight: 700; margin-bottom: 6px;">4. Prepositional Phrase (Cụm giới từ - PP)</h5>
+                  <p style="font-size: 15px; color: #cbd5e1;">Bắt đầu bằng một Giới từ + Tân ngữ của giới từ (Noun Phrase). Thường đóng vai trò Trạng ngữ (Adverbial) hoặc Bổ nghĩa danh từ (Adjective).</p>
+                  <div class="ggd-example-box" style="margin-top: 6px;">
+                    <span style="color: #ff80ab; font-weight: 600;">The alarm sounded <u>in the middle of the night</u>.</span><br>
+                    <span style="color: #94a3b8; font-size: 14px; font-style: italic;">➔ Cụm giới từ đóng vai trò Trạng ngữ chỉ thời gian (Adverbial of Time) bổ nghĩa cho "sounded".</span>
+                  </div>
+                </div>
+
+                <div style="margin-top: 12px;">
+                  <h5 style="color: #7c4dff; font-size: 16px; font-weight: 700; margin-bottom: 6px;">5. Participial Phrase (Cụm phân từ - PartP)</h5>
+                  <p style="font-size: 15px; color: #cbd5e1;">Bắt đầu bằng Hiện tại phân từ (V-ing) hoặc Quá khứ phân từ (V3/ed), đóng vai trò như tính từ bổ nghĩa cho chủ ngữ.</p>
+                  <div class="ggd-example-box" style="margin-top: 6px;">
+                    <span style="color: #7c4dff; font-weight: 600;"><u>Walking near the electrical bay</u>, the goose spotted an imposter.</span><br>
+                    <span style="color: #94a3b8; font-size: 14px; font-style: italic;">➔ Cụm phân từ V-ing "Walking..." bổ nghĩa trực tiếp cho chủ ngữ "the goose".</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PHẦN II — PHÂN BIỆT CỤM TỪ VÀ MỆNH ĐỀ -->
+              <div class="ggd-dossier-sec">
+                <div class="ggd-dossier-sec-title">⚖️ PHẦN 2: PHÂN BIỆT CỤM TỪ (PHRASE) VÀ MỆNH ĐỀ (CLAUSE)</div>
+                <p style="font-size: 15px; color: #cbd5e1;">Việc phân biệt ranh giới giữa Cụm từ và Mệnh đề là nền tảng để tránh các lỗi cấu trúc trong bài luận học thuật.</p>
+                <div style="overflow-x: auto; margin-top: 10px; margin-bottom: 12px;">
+                  <table style="width: 100%; border-collapse: collapse; background: #120b24; border: 1px solid rgba(255,255,255,0.1); font-size: 14px;">
+                    <thead>
+                      <tr style="background: #1e1338; color: #facc15; text-align: left;">
+                        <th style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Tiêu chí</th>
+                        <th style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Cụm từ (Phrase)</th>
+                        <th style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Mệnh đề (Clause)</th>
+                      </tr>
+                    </thead>
+                    <tbody style="color: #cbd5e1;">
+                      <tr>
+                        <td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #38bdf8;">Cấu trúc S-V</td>
+                        <td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); color: #fca5a5;">❌ Không chứa đủ cặp S - V chia thì</td>
+                        <td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); color: #4ade80;">✅ Bắt buộc chứa cặp S - V chia thì</td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #38bdf8;">Đứng độc lập</td>
+                        <td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Không bao giờ đứng một mình làm câu complete.</td>
+                        <td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Main clause có thể đứng độc lập thành 1 câu đơn.</td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #38bdf8;">Ví dụ</td>
+                        <td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); font-style: italic;">"in a quiet residential area"</td>
+                        <td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); font-style: italic;">"The residents protested angrily."</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div style="margin-top: 10px; background: rgba(239, 68, 68, 0.15); border-left: 4px solid #ef4444; padding: 10px 14px; border-radius: 6px; font-size: 14px; color: #fca5a5;">
+                  ⚠️ <strong>Cảnh báo lỗi: Sentence Fragment (Câu thiếu thành phần)</strong><br>
+                  Nếu bạn chấm câu một cụm từ hoặc mệnh đề phụ thuộc đứng trơ trọi mà không kết nối với mệnh đề chính, câu sẽ vi phạm lỗi <strong>Sentence Fragment</strong>.<br>
+                  ❌ <em>In a quiet residential area.</em> (Fragment - chỉ là cụm giới từ)<br>
+                  ✅ <em>The hotel was located <u>in a quiet residential area</u>.</em> (Complete Sentence)
+                </div>
+              </div>
+
+              <!-- PHẦN III — THÀNH PHẦN CÂU & MẪU CÂU -->
+              <div class="ggd-dossier-sec">
+                <div class="ggd-dossier-sec-title">🧩 PHẦN 3: 5 THÀNH PHẦN CÂU & CÁC MẪU CÂU ĐƠN (SENTENCE ELEMENTS & PATTERNS)</div>
+                <p style="font-size: 15px; color: #cbd5e1;">Mỗi câu đơn tiêu chuẩn được lắp ghép từ 5 thành phần cơ bản (S, V, O, C, A) theo các quy tắc nghiêm ngặt:</p>
+                <ul style="margin-left: 20px; font-size: 15px; color: #cbd5e1;">
+                  <li><strong>S (Subject):</strong> Cụm danh từ / đại từ làm chủ thể hành động. (e.g. <em>"Our flight time"</em>)</li>
+                  <li><strong>V (Verb):</strong> Cụm động từ chia thì giữ vai trò trung tâm. (e.g. <em>"will be"</em>, <em>"arrested"</em>)</li>
+                  <li><strong>O (Object):</strong> Cụm danh từ chịu tác động của động từ. (e.g. <em>"the thief"</em>)</li>
+                  <li><strong>C (Complement):</strong> Bổ nghĩa cho Chủ ngữ (SC) hoặc Tân ngữ (OC). (e.g. <em>"quiet"</em>, <em>"tired"</em>)</li>
+                  <li><strong>A (Adverbial):</strong> Trạng từ hoặc cụm giới từ bổ sung thông tin thời gian, nơi chốn... (e.g. <em>"over his arm"</em>)</li>
+                </ul>
+
+                <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-top: 12px; margin-bottom: 8px;">Các Mẫu Câu Đơn Cốt Lõi (Core Clause Patterns):</h5>
+                <div class="ggd-example-box" style="margin-bottom: 8px;">
+                  <span style="color: #38bdf8; font-weight: bold;">• S + V (Intransitive):</span> <em>I'm thinking.</em> / <em>A coach stopped.</em>
+                </div>
+                <div class="ggd-example-box" style="margin-bottom: 8px;">
+                  <span style="color: #38bdf8; font-weight: bold;">• S + V (Transitive) + O:</span> <em>The detective arrested the thief.</em>
+                </div>
+                <div class="ggd-example-box" style="margin-bottom: 8px;">
+                  <span style="color: #38bdf8; font-weight: bold;">• S + V (Linking) + C:</span> <em>The hotel was quiet.</em> / <em>The thief was rather unlucky.</em>
+                </div>
+                <div class="ggd-example-box" style="margin-bottom: 8px;">
+                  <span style="color: #38bdf8; font-weight: bold;">• S + V (Dative) + IO + DO:</span> <em>The thief gave the inspector his coat.</em>
+                </div>
+                <div class="ggd-example-box" style="margin-bottom: 8px;">
+                  <span style="color: #38bdf8; font-weight: bold;">• S + V (Complex Transitive) + O + OC:</span> <em>The journey made the driver tired.</em>
+                </div>
+              </div>
+
+              <!-- PHẦN IV — ỨNG DỤNG HỌC THUẬT -->
+              <div class="ggd-dossier-sec">
+                <div class="ggd-dossier-sec-title">🎓 PHẦN 4: CÁC CẤU TRÚC NÂNG CAO CHO VIẾT HỌC THUẬT (ADVANCED ACADEMIC ELEMENTS)</div>
+                
+                <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-top: 10px; margin-bottom: 6px;">1. Danh từ hóa bằng Cụm danh từ (Nominalization via Noun Phrases)</h5>
+                <p style="font-size: 15px; color: #cbd5e1;">Biến đổi mệnh đề động từ / tính từ thành Cụm danh từ giúp câu văn học thuật cô đọng, trang trọng và khách quan hơn.</p>
+                <div class="ggd-example-box" style="margin-top: 6px;">
+                  ❌ <em>Spoken / Informal:</em> The residents protested angrily.<br>
+                  ✅ <em>Academic Nominalization:</em> <strong>The residents' angry protests</strong> were ignored.
+                </div>
+                <div class="ggd-example-box" style="margin-top: 6px;">
+                  ❌ <em>Spoken / Informal:</em> The landscape is amazingly beautiful.<br>
+                  ✅ <em>Academic Nominalization:</em> Discover <strong>the amazing beauty of the landscape</strong>.
+                </div>
+
+                <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-top: 14px; margin-bottom: 6px;">2. Thể bị động học thuật (Academic Passive Voice)</h5>
+                <p style="font-size: 15px; color: #cbd5e1;">Ẩn tác nhân (Agentless Passive) để giữ giọng văn trung lập, khách quan trong báo cáo khoa học:</p>
+                <ul style="margin-left: 20px; font-size: 15px; color: #cbd5e1;">
+                  <li><code>It + passive verb of reporting + that-clause</code> (e.g. <em>"It is now thought that Stonehenge dates from about 1900 BC."</em>)</li>
+                  <li><code>S + passive verb of reporting + to-infinitive</code> (e.g. <em>"Stonehenge is thought to date from about 1900 BC."</em>)</li>
+                </ul>
+              </div>
+
+              <!-- PHẦN V — LUỒNG THÔNG TIN & TRẬT TỰ CỤM TỪ -->
+              <div class="ggd-dossier-sec">
+                <div class="ggd-dossier-sec-title">🌊 PHẦN 5: LUỒNG THÔNG TIN & TRẬT TỰ CỤM TỪ (INFORMATION FLOW)</div>
+                <p style="font-size: 15px; color: #cbd5e1;">Áp dụng nguyên lý <strong>"Old-before-New"</strong>: Sử dụng Cụm danh từ chứa thông tin cũ (Known Information) làm Chủ ngữ đứng đầu câu để tạo cầu nối mạch lạc trước khi giới thiệu thông tin mới ở cuối câu.</p>
+                <div class="ggd-example-box" style="margin-top: 8px;">
+                  <em>"...and later built the <u>Royal Pavilion</u>. <strong style="color: #facc15;">This elegant building</strong> was designed by John Nash."</em><br>
+                  <span style="color: #94a3b8; font-size: 14px; font-style: italic;">➔ Cụm danh từ "This elegant building" đóng vai trò Thông tin Cũ liên kết chặt chẽ với "Royal Pavilion" ở câu trước.</span>
+                </div>
+              </div>
+            </div>
           `,
           questions: [
-            { q: "What type of phrase is 'The tall girl with glasses' in: '<u>The tall girl with glasses</u> is our chief engineer.'?", opts: ["A. Noun Phrase", "B. Verb Phrase", "C. Prepositional Phrase", "D. Adjective Phrase"], ans: 0, exp: "Cụm danh từ (Noun Phrase) đóng vai trò chủ ngữ trong câu." },
-            { q: "Identify the verb phrase: 'The security team <u>has been investigating</u> the suspicious duck.'", opts: ["A. The security team", "B. has been investigating", "C. the suspicious duck", "D. investigating the suspicious"], ans: 1, exp: "'has been investigating' gồm trợ động từ + V-ing -> Cụm động từ (Verb Phrase)." },
-            { q: "What phrase is underlined: 'He felt <u>extremely proud of his achievements</u>.'?", opts: ["A. Noun Phrase", "B. Adjective Phrase", "C. Adverb Phrase", "D. Verb Phrase"], ans: 1, exp: "'Extremely proud of...' bổ nghĩa cho 'He' -> Cụm tính từ (Adjective Phrase)." },
-            { q: "Identify the participial phrase: '<u>Walking near the electrical bay</u>, the goose spotted an imposter.'", opts: ["A. Noun Phrase", "B. Participial Phrase", "C. Prepositional Phrase", "D. Infinitive Phrase"], ans: 1, exp: "Cụm từ bắt đầu bằng V-ing 'Walking...' bổ nghĩa cho mệnh đề chính -> Participial Phrase." },
-            { q: "What function does 'In the middle of the night' serve in: 'The alarm sounded <u>in the middle of the night</u>.'?", opts: ["A. Prepositional Phrase acting as Adverb of Time", "B. Noun Phrase acting as Subject", "C. Verb Phrase", "D. Adjective Phrase"], ans: 0, exp: "Cụm giới từ chỉ thời gian bổ nghĩa cho hành động 'sounded'." }
+            { q: "Xác định loại cụm từ được gạch chân trong câu: <i>'<u>The tall girl with glasses</u> is our chief engineer.'</i>", opts: ["A. Noun Phrase (Cụm danh từ)", "B. Verb Phrase (Cụm động từ)", "C. Prepositional Phrase (Cụm giới từ)", "D. Adjective Phrase (Cụm tính từ)"], ans: 0, exp: "'The tall girl with glasses' đóng vai trò Chủ ngữ (Subject) làm trung tâm mệnh đề -> Cụm danh từ (Noun Phrase)." },
+            { q: "Xác định Cụm động từ (Verb Phrase) trong câu: <i>'The security team <u>has been investigating</u> the suspicious duck.'</i>", opts: ["A. The security team", "B. has been investigating", "C. the suspicious duck", "D. investigating the suspicious"], ans: 1, exp: "'has been investigating' bao gồm các trợ động từ (has been) kết hợp với động từ chính chia V-ing (investigating) -> Cụm động từ (Verb Phrase)." },
+            { q: "Cụm từ gạch chân đóng vai trò gì trong câu: <i>'He felt <u>extremely proud of his achievements</u>.'</i>?", opts: ["A. Noun Phrase", "B. Adjective Phrase (Cụm tính từ)", "C. Adverb Phrase", "D. Verb Phrase"], ans: 1, exp: "'Extremely proud of his achievements' có tính từ chính 'proud' đi kèm trạng từ bổ nghĩa 'extremely' và giới từ bổ ngữ 'of...' -> Cụm tính từ (Adjective Phrase) bổ nghĩa cho chủ ngữ 'He'." },
+            { q: "Xác định Cụm phân từ (Participial Phrase) trong câu: <i>'<u>Walking near the electrical bay</u>, the goose spotted an imposter.'</i>", opts: ["A. Noun Phrase", "B. Participial Phrase (Cụm phân từ)", "C. Prepositional Phrase", "D. Infinitive Phrase"], ans: 1, exp: "Cụm từ bắt đầu bằng hiện tại phân từ V-ing 'Walking near the electrical bay' đứng đầu câu bổ nghĩa cho mệnh đề chính -> Participial Phrase." },
+            { q: "Cụm giới từ <i>'in the middle of the night'</i> thực hiện chức năng gì trong câu: <i>'The alarm sounded <u>in the middle of the night</u>.'</i>?", opts: ["A. Prepositional Phrase acting as Adverb of Time", "B. Noun Phrase acting as Subject", "C. Verb Phrase acting as Predicate", "D. Adjective Phrase modifying the alarm"], ans: 0, exp: "Cụm giới từ bắt đầu bằng 'in' chỉ thời gian bổ nghĩa cho động từ 'sounded' đóng vai trò là Trạng ngữ chỉ thời gian (Adverbial of Time)." },
+            { q: "Nhóm từ nào dưới đây là một <b>Mệnh đề (Clause)</b> hoàn chỉnh chứ không phải là Cụm từ (Phrase)?", opts: ["A. In a quiet residential area", "B. The residents protested angrily", "C. Extremely beautiful landscape", "D. After the change in the law"], ans: 1, exp: "'The residents protested angrily' có đầy đủ Chủ ngữ ('The residents') và Động từ chia thì ('protested') -> Mệnh đề (Clause). Các phương án còn lại chỉ là Cụm từ (Phrase)." },
+            { q: "Câu nào dưới đây mắc lỗi <b>Sentence Fragment (Câu thiếu thành phần chia thì)</b>?", opts: ["A. The report was typed yesterday.", "B. In a quiet residential area.", "C. Shakespeare wrote famous plays.", "D. The detective arrested the thief."], ans: 1, exp: "'In a quiet residential area.' chỉ là một cụm giới từ đứng trơ trọi mà không chứa Chủ ngữ - Động từ chia thì -> Lỗi Sentence Fragment." },
+            { q: "Khi chuyển từ câu <i>'The landscape is amazingly beautiful'</i> sang dạng Danh từ hóa học thuật <i>'Discover <u>the amazing beauty of the landscape</u>'</i>, cụm được gạch chân thuộc loại gì?", opts: ["A. Prepositional Phrase", "B. Noun Phrase (Cụm danh từ)", "C. Verb Phrase", "D. Adverb Phrase"], ans: 1, exp: "'the amazing beauty of the landscape' có danh từ chính là 'beauty' với tính từ bổ nghĩa 'amazing' và cụm giới từ post-modifier 'of the landscape' -> Cụm danh từ (Noun Phrase)." }
           ]
         },
         {
           id: 3,
-          name: "Sentences",
+          name: "Sentences in Academic Writing",
           room: "Reactor Core ⚡",
           icon: "⚡",
           avatar: "👨‍🔧",
           role: "Engineer Goose",
           theory: `
-            <p><strong>🎯 CHUYÊN ĐỀ 3: CẤU TRÚC CÂU & MỆNH ĐỀ (SENTENCES & CLAUSES)</strong></p>
-            <ul>
-              <li><strong>Simple Sentence (Câu đơn):</strong> 1 Mệnh đề độc lập (<em>The goose fixed the wiring.</em>).</li>
-              <li><strong>Compound Sentence (Câu ghép):</strong> 2 Mệnh đề độc lập nối bằng <em>FANBOYS (For, And, Nor, But, Or, Yet, So)</em> (<em>The captain warned the crew, <strong>but</strong> the imposter escaped.</em>).</li>
-              <li><strong>Complex Sentence (Câu phức):</strong> 1 Mệnh đề độc lập + ít nhất 1 Mệnh đề phụ thuộc (<em><strong>Although</strong> he was tired, he kept working.</em>).</li>
-              <li><strong>Compound-Complex Sentence (Câu ghép-phức):</strong> Ít nhất 2 Mệnh đề độc lập + 1 Mệnh đề phụ thuộc.</li>
-            </ul>
+            <div class="ggd-dossier-wrapper">
+              <div style="background: linear-gradient(135deg, #1e1338 0%, #110924 100%); border: 2px solid #facc15; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;">
+                <h3 style="color: #facc15; font-size: 28px; font-weight: 900; margin-bottom: 8px;">🎯 UNIT 3: SENTENCES IN ACADEMIC WRITING</h3>
+                <p style="color: #94a3b8; font-size: 15px;">Goose Intelligence Dossier for Engineer Goose at Reactor Core ⚡</p>
+                <div style="margin-top: 10px; background: rgba(250, 204, 21, 0.1); border-left: 4px solid #facc15; padding: 10px 14px; border-radius: 6px; text-align: left; font-size: 15px; color: #cbd5e1;">
+                  📌 <strong>Nguyên tắc cốt lõi:</strong> Một câu (sentence) trong văn viết học thuật diễn đạt một ý trọn vẹn (complete thought), được xây dựng từ 5 thành phần (S, V, O, C, A) theo trật tự nghiêm ngặt, áp dụng các kỹ thuật nâng cao như <strong>Nominalization</strong>, <strong>Academic Passive Voice</strong> và tuân thủ nguyên lý luồng thông tin <strong>"Old-before-New"</strong>.
+                </div>
+              </div>
+
+              <!-- 0. BẢNG TỔNG QUAN HỒ SƠ NỘI DUNG -->
+              <div style="margin-bottom: 20px;">
+                <h4 style="color: #38bdf8; font-size: 20px; font-weight: 800; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">📊 0. TỔNG QUAN HỒ SƠ BÀI GIẢNG (LESSON OVERVIEW)</h4>
+                <div class="ggd-pos-grid-table">
+                  <div class="ggd-pos-mini-card" style="--pos-color: #38bdf8;">
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">Phần 1</span><span class="ggd-badge badge-noun">Basics</span></div>
+                    <p style="font-size: 14px; color: #cbd5e1;">Định nghĩa Câu, Chủ ngữ & Vị ngữ, Phân biệt Cụm từ (Phrase) vs Mệnh đề (Clause), Lỗi Sentence Fragment.</p>
+                  </div>
+                  <div class="ggd-pos-mini-card" style="--pos-color: #00e676;">
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">Phần 2</span><span class="ggd-badge badge-adj">Patterns</span></div>
+                    <p style="font-size: 14px; color: #cbd5e1;">5 Thành phần cơ bản (S, V, O, C, A) & 7 Mẫu câu đơn cốt lõi (Core Clause Patterns).</p>
+                  </div>
+                  <div class="ggd-pos-mini-card" style="--pos-color: #facc15;">
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">Phần 3</span><span class="ggd-badge badge-pronoun">Compound & Complex</span></div>
+                    <p style="font-size: 14px; color: #cbd5e1;">Câu ghép (FANBOYS, Semi-colon), Comma Splice & Run-on, Câu phức & Quy tắc dấu phẩy.</p>
+                  </div>
+                  <div class="ggd-pos-mini-card" style="--pos-color: #7c4dff;">
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">Phần 4</span><span class="ggd-badge badge-adv">Academic Elements</span></div>
+                    <p style="font-size: 14px; color: #cbd5e1;">Danh từ hóa (Nominalization), Bị động học thuật (Agentless & Reporting Passive), Mệnh đề quan hệ & Rút gọn.</p>
+                  </div>
+                  <div class="ggd-pos-mini-card" style="--pos-color: #ff5252;">
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">Phần 5</span><span class="ggd-badge badge-verb">Flow & Order</span></div>
+                    <p style="font-size: 14px; color: #cbd5e1;">Nguyên lý "Old-before-New", Kỹ thuật Fronting, Đảo ngữ học thuật (Academic Inversion) & Bài tập thực hành.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PHẦN I — KHÁI NIỆM CÂU CƠ BẢN -->
+              <div class="ggd-dossier-sec">
+                <div class="ggd-dossier-sec-title">📖 PHẦN 1: KHÁI NIỆM CÂU CƠ BẢN (SENTENCE BASICS)</div>
+                <p style="font-size: 15px; color: #cbd5e1;">Trong ngữ pháp học thuật, việc hiểu tường tận về bản chất của một câu sẽ giúp bạn tránh được các lỗi cấu trúc phổ biến làm giảm uy tín của bài viết luận.</p>
+                
+                <div style="margin-top: 10px;">
+                  <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-bottom: 6px;">1. Định nghĩa về Câu (Sentence Definition)</h5>
+                  <p style="font-size: 15px; color: #cbd5e1;">Một câu (sentence) là một đơn vị ngữ pháp tối thiểu diễn đạt một ý trọn vẹn (complete thought) <span class="cite" title="Sentences - Grammar - Cambridge Dictionary">980</span>. Thông thường trong văn viết, một câu bắt đầu bằng một chữ viết hoa và kết thúc bằng một dấu chấm câu thích hợp (như dấu chấm tròn - full stop) <span class="cite" title="Oxford Guide, Section 2">12, 980</span>.</p>
+                </div>
+
+                <div style="margin-top: 12px;">
+                  <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-bottom: 6px;">2. Chủ ngữ và Vị ngữ (Subject and Predicate)</h5>
+                  <p style="font-size: 15px; color: #cbd5e1;">Mỗi câu đơn tiêu chuẩn tối thiểu phải bao gồm hai thành phần cốt lõi: <strong>Chủ ngữ (Subject)</strong> và <strong>Vị ngữ (Predicate)</strong> <span class="cite" title="Oxford Guide, Section 2">11</span>.</p>
+                  <ul style="margin-left: 20px; font-size: 15px; color: #cbd5e1;">
+                    <li><strong>Chủ ngữ (S):</strong> Thường là một cụm danh từ (noun phrase) chỉ đối tượng thực hiện hành động, trạng thái hoặc là trung tâm thông tin của mệnh đề.</li>
+                    <li><strong>Vị ngữ (Predicate):</strong> Là phần chứa cụm động từ (verb phrase) chỉ ra hành động, trạng thái hoặc cung cấp thông tin liên quan đến Chủ ngữ.</li>
+                  </ul>
+                  <div class="ggd-example-box" style="margin-top: 8px;">
+                    <span style="color: #facc15; font-weight: 600;"><u>Our flight time</u> <span style="color: #38bdf8;">will be approximately forty-five minutes</span>.</span><br>
+                    <span style="color: #94a3b8; font-size: 14px; font-style: italic;">➔ S = "Our flight time" | Predicate = "will be approximately forty-five minutes" (chứa động từ nối "will be" và bổ ngữ)</span>
+                  </div>
+                </div>
+
+                <div style="margin-top: 12px;">
+                  <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-bottom: 6px;">3. Phân biệt Cụm từ (Phrase) và Mệnh đề (Clause)</h5>
+                  <ul style="margin-left: 20px; font-size: 15px; color: #cbd5e1;">
+                    <li><strong>Cụm từ (Phrase):</strong> Nhóm từ liên kết với nhau nhưng <em>không</em> chứa đủ cấu trúc Chủ ngữ - Động từ chia thì (S - V). Ví dụ: <em>"in a quiet residential area"</em> (cụm giới từ).</li>
+                    <li><strong>Mệnh đề (Clause):</strong> Nhóm từ <em>phải chứa</em> một cấu trúc Chủ ngữ và Động từ chia thì. Có thể là Mệnh đề độc lập (Main Clause) hoặc Mệnh đề phụ thuộc (Subordinate Clause).</li>
+                  </ul>
+                  <div style="margin-top: 10px; background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; padding: 10px 14px; border-radius: 6px; font-size: 14px; color: #cbd5e1;">
+                    📌 <strong>Academic Application:</strong> Nếu viết một cụm từ mà chấm câu như một câu đơn, bạn mắc phải lỗi nghiêm trọng gọi là <strong>Sentence Fragment (Câu thiếu thành phần)</strong>.
+                  </div>
+                </div>
+              </div>
+
+              <!-- PHẦN II — 5 THÀNH PHẦN CÂU & 7 MẪU CÂU ĐƠN CỐT LÕI -->
+              <div class="ggd-dossier-sec">
+                <div class="ggd-dossier-sec-title">🧩 PHẦN 2: 5 THÀNH PHẦN CÂU & CÁC MẪU CÂU ĐƠN (SENTENCE ELEMENTS & PATTERNS)</div>
+                <p style="font-size: 15px; color: #cbd5e1;">Mỗi câu trong tiếng Anh học thuật được dựng nên từ 5 thành phần cơ bản xếp theo trật tự nghiêm ngặt <span class="cite" title="Oxford Guide, Section 1">10</span>.</p>
+
+                <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-top: 10px; margin-bottom: 8px;">1. 5 Thành phần cơ bản của Câu</h5>
+                <div style="overflow-x: auto; margin-bottom: 14px;">
+                  <table style="width: 100%; border-collapse: collapse; background: #120b24; border: 1px solid rgba(255,255,255,0.1); font-size: 14px;">
+                    <thead>
+                      <tr style="background: #1e1338; color: #facc15; text-align: left;">
+                        <th style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Ký hiệu</th>
+                        <th style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Thành phần</th>
+                        <th style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Bản chất ngữ pháp và chức năng</th>
+                      </tr>
+                    </thead>
+                    <tbody style="color: #cbd5e1;">
+                      <tr><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); color: #38bdf8; font-weight: bold;">S</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Subject (Chủ ngữ)</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Cụm danh từ hoặc đại từ làm chủ thể hành động.</td></tr>
+                      <tr><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); color: #ff5252; font-weight: bold;">V</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Verb (Động từ)</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Động từ chia thì, giữ vai trò trung tâm liên kết.</td></tr>
+                      <tr><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); color: #00e5ff; font-weight: bold;">O</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Object (Tân ngữ)</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Cụm danh từ chịu sự tác động trực tiếp/gián tiếp.</td></tr>
+                      <tr><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); color: #00e676; font-weight: bold;">C</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Complement (Bổ ngữ)</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Bổ nghĩa cho Chủ ngữ (Subject Complement) hoặc Tân ngữ (Object Complement).</td></tr>
+                      <tr><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); color: #7c4dff; font-weight: bold;">A</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Adverbial (Trạng ngữ)</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Bổ sung thông tin thời gian, địa điểm, cách thức, mục đích...</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-bottom: 8px;">2. 7 Mẫu câu đơn cốt lõi (The 7 Core Clause Patterns)</h5>
+                <div class="ggd-example-box" style="margin-bottom: 10px;">
+                  <div style="font-family: monospace; background: #0b0717; color: #38bdf8; padding: 4px 10px; border-radius: 6px; display: inline-block; font-weight: 700; margin-bottom: 6px;">1. S + V (Intransitive)</div><br>
+                  <span style="color: #e2e8f0; font-weight: 600;">A coach stopped.</span><br>
+                  <span style="color: #94a3b8; font-size: 14px; font-style: italic;">➔ Động từ nội động (Intransitive) không cần tân ngữ đi kèm để hoàn thành nghĩa.</span>
+                </div>
+                <div class="ggd-example-box" style="margin-bottom: 10px;">
+                  <div style="font-family: monospace; background: #0b0717; color: #38bdf8; padding: 4px 10px; border-radius: 6px; display: inline-block; font-weight: 700; margin-bottom: 6px;">2. S + V (Transitive) + O</div><br>
+                  <span style="color: #e2e8f0; font-weight: 600;">The detective arrested the thief.</span><br>
+                  <span style="color: #94a3b8; font-size: 14px; font-style: italic;">➔ Động từ ngoại động bắt buộc có Tân ngữ trực tiếp (Direct Object).</span>
+                </div>
+                <div class="ggd-example-box" style="margin-bottom: 10px;">
+                  <div style="font-family: monospace; background: #0b0717; color: #38bdf8; padding: 4px 10px; border-radius: 6px; display: inline-block; font-weight: 700; margin-bottom: 6px;">3. S + V (Linking) + Subject Complement (C)</div><br>
+                  <span style="color: #e2e8f0; font-weight: 600;">The thief was rather unlucky.</span><br>
+                  <span style="color: #94a3b8; font-size: 14px; font-style: italic;">➔ Động từ nối (be, seem, become) liên kết chủ ngữ với tính từ/danh từ bổ ngữ.</span>
+                </div>
+                <div class="ggd-example-box" style="margin-bottom: 10px;">
+                  <div style="font-family: monospace; background: #0b0717; color: #38bdf8; padding: 4px 10px; border-radius: 6px; display: inline-block; font-weight: 700; margin-bottom: 6px;">4. S + V (Linking) + Adverbial (A)</div><br>
+                  <span style="color: #e2e8f0; font-weight: 600;">The coat was over his arm.</span><br>
+                  <span style="color: #94a3b8; font-size: 14px; font-style: italic;">➔ Trạng ngữ chỉ vị trí/thời gian là thành phần bắt buộc để đủ nghĩa.</span>
+                </div>
+                <div class="ggd-example-box" style="margin-bottom: 10px;">
+                  <div style="font-family: monospace; background: #0b0717; color: #38bdf8; padding: 4px 10px; border-radius: 6px; display: inline-block; font-weight: 700; margin-bottom: 6px;">5. S + V (Dative) + Indirect Object (IO) + Direct Object (DO)</div><br>
+                  <span style="color: #e2e8f0; font-weight: 600;">The thief gave the inspector his coat.</span><br>
+                  <span style="color: #94a3b8; font-size: 14px; font-style: italic;">➔ Dùng với động từ cho/gửi (give, send, award...). Có thể đổi trật tự thành: "give the coat to the inspector".</span>
+                </div>
+                <div class="ggd-example-box" style="margin-bottom: 10px;">
+                  <div style="font-family: monospace; background: #0b0717; color: #38bdf8; padding: 4px 10px; border-radius: 6px; display: inline-block; font-weight: 700; margin-bottom: 6px;">6. S + V (Complex Transitive) + Object + Object Complement (OC)</div><br>
+                  <span style="color: #e2e8f0; font-weight: 600;">The journey made the driver tired.</span><br>
+                  <span style="color: #94a3b8; font-size: 14px; font-style: italic;">➔ Bổ ngữ "tired" mô tả trạng thái của tân ngữ "the driver". (make, call, consider, elect, find).</span>
+                </div>
+                <div class="ggd-example-box" style="margin-bottom: 10px;">
+                  <div style="font-family: monospace; background: #0b0717; color: #38bdf8; padding: 4px 10px; border-radius: 6px; display: inline-block; font-weight: 700; margin-bottom: 6px;">7. S + V (Complex Transitive) + Object + Adverbial (A)</div><br>
+                  <span style="color: #e2e8f0; font-weight: 600;">He put the coat over his arm.</span><br>
+                  <span style="color: #94a3b8; font-size: 14px; font-style: italic;">➔ Trạng ngữ bắt buộc đi sau tân ngữ để làm rõ nghĩa cho động từ "put".</span>
+                </div>
+              </div>
+
+              <!-- PHẦN III — CÂU GHÉP VÀ CÂU PHỨC -->
+              <div class="ggd-dossier-sec">
+                <div class="ggd-dossier-sec-title">🔗 PHẦN 3: CÂU GHÉP VÀ CÂU PHỨC (COMPOUND & COMPLEX SENTENCES)</div>
+                
+                <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-top: 10px; margin-bottom: 6px;">1. Câu ghép (Compound Sentences)</h5>
+                <p style="font-size: 15px; color: #cbd5e1;">Chứa 2 hoặc nhiều mệnh đề độc lập ngang hàng, được liên kết bằng:</p>
+                <ul style="margin-left: 20px; font-size: 15px; color: #cbd5e1;">
+                  <li><strong>Coordinating Conjunctions (FANBOYS):</strong> <em>for, and, nor, but, or, yet, so</em>. Phải có dấu phẩy trước liên từ khi nối 2 mệnh đề chính.</li>
+                  <li><strong>Dấu chấm phẩy (Semi-colon ;):</strong> Dùng khi 2 mệnh đề liên kết rất chặt chẽ về ngữ nghĩa mà không dùng liên từ.</li>
+                </ul>
+                <div class="ggd-example-box" style="margin-top: 8px;">
+                  <span style="color: #4ade80;">Shakespeare wrote plays, and he also acted on the stage.</span>
+                </div>
+                <div style="margin-top: 10px; background: rgba(239, 68, 68, 0.15); border-left: 4px solid #ef4444; padding: 10px 14px; border-radius: 6px; font-size: 14px; color: #fca5a5;">
+                  ⚠️ <strong>Cảnh báo lỗi: Comma Splice & Run-on Sentence</strong><br>
+                  Nối 2 mệnh đề chính bằng một dấu phẩy mà không có liên từ FANBOYS sẽ phạm lỗi <strong>Comma Splice</strong>.<br>
+                  ❌ <em>He wrote plays, he also acted on the stage.</em><br>
+                  ✅ <em>He wrote plays; he also acted on the stage.</em> (Dùng dấu chấm phẩy) hoặc ✅ <em>He wrote plays, and he also acted on the stage.</em>
+                </div>
+
+                <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-top: 14px; margin-bottom: 6px;">2. Câu phức (Complex Sentences)</h5>
+                <p style="font-size: 15px; color: #cbd5e1;">Bao gồm 1 mệnh đề độc lập chính và ít nhất 1 mệnh đề phụ thuộc (Subordinate Clause) giới thiệu bởi liên từ phụ thuộc (<em>because, although, if, while...</em>).</p>
+                <div class="ggd-example-box" style="margin-top: 8px;">
+                  <span style="color: #facc15;">Although it hurt when she bent her wrist, she could still move her fingers.</span>
+                </div>
+                <div style="margin-top: 10px; background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; padding: 10px 14px; border-radius: 6px; font-size: 14px; color: #cbd5e1;">
+                  💡 <strong>Quy tắc dấu phẩy:</strong> Nếu mệnh đề phụ trạng ngữ đứng <em>đầu câu</em>, bắt buộc có dấu phẩy sau nó. Ngược lại, nếu nó đứng <em>sau</em> mệnh đề chính, thường không cần dấu phẩy.
+                </div>
+              </div>
+
+              <!-- PHẦN IV — CÁC CẤU TRÚC CÂU NÂNG CAO CHO VIẾT HỌC THUẬT -->
+              <div class="ggd-dossier-sec">
+                <div class="ggd-dossier-sec-title">🎓 PHẦN 4: CÁC CẤU TRÚC CÂU NÂNG CAO CHO VIẾT HỌC THUẬT (ADVANCED ACADEMIC ELEMENTS)</div>
+                <p style="font-size: 15px; color: #cbd5e1;">Văn viết học thuật yêu cầu tính <strong>khách quan (objective)</strong>, <strong>cô đọng (concise)</strong> và <strong>trang trọng (formal)</strong>.</p>
+
+                <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-top: 10px; margin-bottom: 6px;">1. Kỹ thuật Danh từ hóa (Nominalization)</h5>
+                <p style="font-size: 15px; color: #cbd5e1;">Quá trình chuyển đổi mệnh đề/động từ/tính từ thành cụm danh từ tương ứng. Đây là nét đặc trưng số 1 của văn phong học thuật.</p>
+                <div style="overflow-x: auto; margin-top: 8px; margin-bottom: 12px;">
+                  <table style="width: 100%; border-collapse: collapse; background: #120b24; border: 1px solid rgba(255,255,255,0.1); font-size: 13px;">
+                    <thead>
+                      <tr style="background: #1e1338; color: #facc15; text-align: left;">
+                        <th style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Spoken / Informal Style</th>
+                        <th style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Academic Written Style (Nominalization)</th>
+                      </tr>
+                    </thead>
+                    <tbody style="color: #cbd5e1;">
+                      <tr>
+                        <td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">The residents protested angrily because the law was changed.</td>
+                        <td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); color: #00e676;">The residents' angry protests were ignored after the change in the law.</td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">We succeeded because we planned carefully.</td>
+                        <td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); color: #00e676;">Our meticulous planning contributed to our ultimate success.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-top: 12px; margin-bottom: 6px;">2. Thể bị động học thuật (Academic Passive Voice)</h5>
+                <ul style="margin-left: 20px; font-size: 15px; color: #cbd5e1;">
+                  <li><strong>Agentless Passive (Bị động ẩn tác nhân):</strong> Bỏ hẳn "by agent" để giữ giọng văn trung lập. (e.g. <em>"The report was typed"</em>; <em>"A new policy was implemented"</em>).</li>
+                  <li><strong>Passive of Reporting Verbs (Bị động với động từ báo cáo):</strong>
+                    <br>• Pattern 1: <code>It + passive verb of reporting + that-clause</code> (e.g. <em>"It is now thought that Stonehenge dates from about 1900 BC."</em>)
+                    <br>• Pattern 2: <code>S + passive verb of reporting + to-infinitive</code> (e.g. <em>"Stonehenge is thought to date from about 1900 BC."</em>)
+                  </li>
+                </ul>
+
+                <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-top: 12px; margin-bottom: 6px;">3. Mệnh đề quan hệ & Rút gọn (Relative Clauses & Participles)</h5>
+                <ul style="margin-left: 20px; font-size: 15px; color: #cbd5e1;">
+                  <li><strong>Identifying (MĐ xác định):</strong> Không có dấu phẩy, bắt buộc có để đủ nghĩa. (<em>People who write plays sometimes act in them too.</em>)</li>
+                  <li><strong>Non-identifying (MĐ không xác định):</strong> Có dấu phẩy, bổ sung thông tin cho danh từ đã rõ. Không dùng "that". (<em>Shakespeare, who wrote many famous plays, also acted on the stage.</em>)</li>
+                  <li><strong>Rút gọn bằng Phân từ (Participle Relative Clauses):</strong>
+                    <br>• Chủ động dùng <strong>V-ing</strong>: <em>Those people taking photos over there come from Sweden.</em> (gốc: <em>...who are taking...</em>)
+                    <br>• Bị động dùng <strong>V3/ed</strong>: <em>Industrial training is the subject being discussed in Parliament this afternoon.</em> (gốc: <em>...which is being discussed...</em>)
+                  </li>
+                </ul>
+              </div>
+
+              <!-- PHẦN V — LUỒNG THÔNG TIN & TRẬT TỰ TỪ -->
+              <div class="ggd-dossier-sec">
+                <div class="ggd-dossier-sec-title">🌊 PHẦN 5: LUỒNG THÔNG TIN & TRẬT TỰ TỪ (INFORMATION FLOW & WORD ORDER)</div>
+                
+                <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-top: 10px; margin-bottom: 6px;">1. Nguyên lý "Old-before-New"</h5>
+                <p style="font-size: 15px; color: #cbd5e1;">Luôn mở đầu câu bằng những thông tin đã được nhắc tới (old/known info) và kết thúc bằng thông tin mới (new info/point of interest).</p>
+                <div class="ggd-example-box" style="margin-top: 8px;">
+                  <em>"Brighton became famous after 1784 when the Prince of Wales went there regularly, and later built the <u>Royal Pavilion</u>. <strong style="color: #facc15;">This elegant building</strong> was designed by John Nash."</em><br>
+                  <span style="color: #94a3b8; font-size: 14px; font-style: italic;">➔ "This elegant building" là Thông tin Cũ (Old Info) tạo cầu nối mượt mà trước khi giới thiệu người thiết kế "John Nash" (New Info) ở cuối câu.</span>
+                </div>
+
+                <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-top: 12px; margin-bottom: 6px;">2. Kỹ thuật Đưa cụm từ lên đầu (Fronting)</h5>
+                <p style="font-size: 15px; color: #cbd5e1;">Đưa Trạng từ hoặc cụm Giới từ lên đầu câu để liên kết mượt mà: <em>"In the afternoon, they resumed their journey south."</em></p>
+
+                <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-top: 12px; margin-bottom: 6px;">3. Đảo ngữ học thuật (Academic Inversion)</h5>
+                <ul style="margin-left: 20px; font-size: 15px; color: #cbd5e1;">
+                  <li>Trạng từ chỉ vị trí đứng đầu câu: <em>"On the doorstep stood an old man."</em></li>
+                  <li>Cụm từ phủ định đứng đầu câu (mượn trợ động từ đảo lên trước chủ ngữ): <em>"No sooner had Martin sat down than the phone rang."</em></li>
+                </ul>
+
+                <div style="margin-top: 14px; background: rgba(16, 185, 129, 0.15); border-left: 4px solid #10b981; padding: 12px 14px; border-radius: 6px; font-size: 14px; color: #6ee7b7;">
+                  📝 <strong>Thực hành Ứng dụng Sư phạm (Spoken ➔ Academic Rewrite):</strong><br>
+                  • <strong>Đoạn gốc (Spoken):</strong> <em>Scientists tested the new drug many times. They finally proved that the drug can cure the disease. Everyone was very happy because they discovered this.</em><br>
+                  • <strong>Viết lại (Academic Style):</strong> <em>Following rigorous clinical trials of the new drug, its therapeutic efficacy was conclusively proven. The discovery generated widespread optimism within the medical community.</em>
+                </div>
+              </div>
+            </div>
           `,
           questions: [
-            { q: "Identify the sentence type: 'She loves reading sci-fi novels, but her brother prefers playing pixel games.'", opts: ["A. Simple Sentence", "B. Compound Sentence", "C. Complex Sentence", "D. Compound-Complex Sentence"], ans: 1, exp: "2 Mệnh đề độc lập nối bằng liên từ 'but' -> Câu ghép (Compound Sentence)." },
-            { q: "Identify the sentence type: 'Although the space station lost power, the emergency generator kicked in immediately.'", opts: ["A. Simple Sentence", "B. Compound Sentence", "C. Complex Sentence", "D. Phrase"], ans: 2, exp: "1 Mệnh đề phụ thuộc 'Although...' + 1 Mệnh đề chính -> Câu phức (Complex Sentence)." },
-            { q: "Which of the following is a Simple Sentence?", opts: ["A. The sun sets in the west.", "B. The sun set, and the stars appeared.", "C. When the sun set, stars appeared.", "D. While the sun was setting, we watched."], ans: 0, exp: "'The sun sets in the west.' chỉ gồm 1 S + V hoàn chỉnh -> Câu đơn (Simple Sentence)." },
-            { q: "Identify sentence type: 'While Sarah was fixing the reactor, Tom monitored the oxygen levels, and their captain reported to HQ.'", opts: ["A. Complex Sentence", "B. Compound Sentence", "C. Compound-Complex Sentence", "D. Simple Sentence"], ans: 2, exp: "Gồm 1 MĐ phụ thuộc ('While...') + 2 MĐ độc lập nối bằng 'and' -> Compound-Complex Sentence." },
-            { q: "What clause type is underlined: 'This is the control room <u>where the imposter sabotaged the lights</u>.'?", opts: ["A. Independent Clause", "B. Relative / Dependent Adjective Clause", "C. Main Clause", "D. Noun Clause"], ans: 1, exp: "Mệnh đề quan hệ bổ nghĩa cho 'control room' -> Mệnh đề phụ thuộc (Dependent Adjective Clause)." }
+            { q: "Xác định cấu trúc ngữ pháp (Clause Pattern) của câu sau: <i>'The journey made the driver tired.'</i>", opts: ["A. S + V + O + A (Subject - Verb - Object - Adverbial)", "B. S + V + O + C (Subject - Verb - Object - Object Complement)", "C. S + V + IO + DO (Subject - Verb - Indirect Object - Direct Object)", "D. S + V + C (Subject - Verb - Subject Complement)"], ans: 1, exp: "Tính từ 'tired' đóng vai trò làm Bổ ngữ cho Tân ngữ (Object Complement - OC) nhằm mô tả trạng thái của Tân ngữ 'the driver' sau hành động 'made'." },
+            { q: "Phát hiện câu mắc lỗi diễn đạt nghiêm trọng <b>Comma Splice</b> (lỗi ghép câu bằng dấu phẩy không liên từ) trong các câu dưới đây:", opts: ["A. Shakespeare wrote plays, and he also acted on the stage.", "B. Shakespeare wrote plays, he also acted on the stage.", "C. Shakespeare wrote plays; he also acted on the stage.", "D. Although Shakespeare wrote plays, he also acted on the stage."], ans: 1, exp: "Khi nối hai mệnh đề chính (main clauses) mà không dùng liên từ kết hợp (FANBOYS), bạn không được phép dùng mỗi dấu phẩy (gây ra lỗi Comma Splice). Bắt buộc phải dùng dấu chấm phẩy (;) hoặc thêm liên từ kết hợp (and, but...)." },
+            { q: "Đâu là phương án sử dụng kỹ thuật <b>Danh từ hóa (Nominalization)</b> để viết lại câu <i>'The residents protested angrily because the law was changed'</i> sang văn phong viết học thuật trang trọng?", opts: ["A. The residents' angry protests were ignored after the change in the law.", "B. The residents protested angrily after they changed the law.", "C. Angry residents made protests as the law had changes.", "D. Because of changing the law, residents protested very angrily."], ans: 0, exp: "Phương án A đã danh từ hóa mệnh đề 'protested angrily' thành cụm danh từ 'residents' angry protests' và 'the law was changed' thành cụm danh từ 'the change in the law', giúp câu trở nên hàn lâm, súc tích và khách quan." },
+            { q: "Cấu trúc <b>bị động khách quan với động từ báo cáo (Passive of Reporting Verbs)</b> nào dưới đây <b>SAI</b> ngữ pháp học thuật?", opts: ["A. It is now thought that Stonehenge dates from about 1900 BC.", "B. Stonehenge is thought to date from about 1900 BC.", "C. Stonehenge is thought that dates from about 1900 BC.", "D. It was believed that the ancient city had been destroyed."], ans: 2, exp: "Câu C sai cấu trúc ngữ pháp. Ta chỉ có 2 mẫu chuẩn: Pattern 1 dùng chủ ngữ giả 'It + passive verb + that + S + V' hoặc Pattern 2 dùng 'S + passive verb + to-infinitive'." },
+            { q: "Dựa trên nguyên lý <b>'Old-before-New'</b>, hãy chọn cụm từ thích hợp nhất để điền vào chỗ trống nhằm tối ưu hóa tính mạch lạc: <br><i>'Brighton became famous after 1784 when the Prince of Wales went there regularly, and later built the Royal Pavilion. __________ was designed by John Nash.'</i>", opts: ["A. John Nash designed it", "B. This elegant building", "C. A famous architect", "D. An impressive structure in Britain"], ans: 1, exp: "'This elegant building' đóng vai trò là Thông tin Cũ (Old Information) ám chỉ 'Royal Pavilion' ở câu trước, đặt làm Chủ ngữ tạo cầu nối thông tin vững chắc trước khi giới thiệu thông tin mới (John Nash) ở cuối câu." },
+            { q: "Chọn dạng <b>rút gọn mệnh đề quan hệ bằng phân từ (Participle Relative Clause)</b> đúng cho câu: <i>'Industrial training is the subject which is being discussed in Parliament this afternoon.'</i>", opts: ["A. Industrial training is the subject discuss in Parliament this afternoon.", "B. Industrial training is the subject being discussed in Parliament this afternoon.", "C. Industrial training is the subject to discuss in Parliament this afternoon.", "D. Industrial training is the subject discussed being in Parliament this afternoon."], ans: 1, exp: "Rút gọn mệnh đề quan hệ bị động ở thì tiếp diễn giữ nguyên dạng 'being + V3' ('being discussed'), giúp câu gọn gàng và tự nhiên hơn." },
+            { q: "Xác định câu sử dụng cấu trúc <b>Đảo ngữ học thuật (Academic Inversion)</b> chính xác sau từ phủ định đứng đầu câu:", opts: ["A. No sooner Martin had sat down than the phone rang.", "B. On the doorstep an old man stood.", "C. No sooner had Martin sat down than the phone rang.", "D. Seldom he has seen such an impressive academic performance."], ans: 2, exp: "Đảo ngữ với cụm từ phủ định 'No sooner...' bắt buộc mượn trợ động từ mượn đưa lên trước chủ ngữ ('No sooner had Martin sat down than...')." },
+            { q: "Mẫu câu <i>'The thief gave the inspector his coat'</i> thuộc cấu trúc ngữ pháp nào trong 7 mẫu câu đơn cốt lõi?", opts: ["A. S + V + Direct Object + Object Complement", "B. S + V + Indirect Object + Direct Object", "C. S + V + Adverbial + Object", "D. S + V + Subject Complement + Adverbial"], ans: 1, exp: "'the inspector' là Tân ngữ gián tiếp (Indirect Object - IO) và 'his coat' là Tân ngữ trực tiếp (Direct Object - DO) -> Mẫu S + V + IO + DO." }
           ]
         },
         {
           id: 4,
-          name: "Passive Voice",
+          name: "Passive Voice in Academic Writing",
           room: "Electrical Bay ⚡",
           icon: "🔧",
           avatar: "⚡",
           role: "Electrician Goose",
           theory: `
-            <p><strong>🎯 CHUYÊN ĐỀ 4: CÂU BỊ ĐỘNG (PASSIVE VOICE)</strong></p>
-            <p>Cấu trúc tổng quát: <code>Subject + Be + V(3/ed) + (by Agent)</code></p>
-            <ul>
-              <li><strong>Present Simple:</strong> am / is / are + V3 (<em>The ship is cleaned daily.</em>)</li>
-              <li><strong>Present Continuous:</strong> am / is / are + being + V3 (<em>The wires are being repaired.</em>)</li>
-              <li><strong>Past Simple:</strong> was / were + V3 (<em>The alarm was triggered by the Dodo.</em>)</li>
-              <li><strong>Modal Verbs:</strong> modal (can/must/should) + be + V3 (<em>The red button must be protected.</em>)</li>
-            </ul>
+            <div class="ggd-dossier-wrapper">
+              <div style="background: linear-gradient(135deg, #1e1338 0%, #110924 100%); border: 2px solid #0f766e; border-radius: 14px; padding: 18px; margin-bottom: 20px; text-align: center;">
+                <h3 style="color: #14b8a6; font-size: 28px; font-weight: 900; margin-bottom: 8px;">🎯 UNIT 4: PASSIVE VOICE IN ACADEMIC WRITING</h3>
+                <p style="color: #94a3b8; font-size: 15px;">Goose Intelligence Dossier for Electrician Goose at Electrical Bay ⚡</p>
+                <div style="margin-top: 10px; background: rgba(20, 184, 166, 0.1); border-left: 4px solid #14b8a6; padding: 10px 14px; border-radius: 6px; text-align: left; font-size: 15px; color: #cbd5e1;">
+                  📌 <strong>Nguyên tắc cốt lõi:</strong> Chuyên đề Thể bị động chuyên sâu dành cho học sinh viết học thuật. Khai thác cấu trúc nội bộ của cụm động từ và nguyên lý tổ chức luồng thông tin <strong>"Old-before-New"</strong> giúp xây dựng tư duy ngữ pháp chuẩn xác, trang trọng và khách quan.
+                </div>
+              </div>
+
+              <!-- 0. BẢNG TỔNG QUAN HỒ SƠ NỘI DUNG -->
+              <div style="margin-bottom: 20px;">
+                <h4 style="color: #38bdf8; font-size: 20px; font-weight: 800; margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">📊 0. TỔNG QUAN HỒ SƠ BÀI GIẢNG (LESSON OVERVIEW)</h4>
+                <div class="ggd-pos-grid-table">
+                  <div class="ggd-pos-mini-card" style="--pos-color: #00e5ff;">
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">Phần 1</span><span class="ggd-badge badge-noun">Bản chất</span></div>
+                    <p style="font-size: 14px; color: #cbd5e1;">Bản chất Thể bị động (Active vs. Passive Voice), vai trò của Chủ ngữ và Tác nhân.</p>
+                  </div>
+                  <div class="ggd-pos-mini-card" style="--pos-color: #ff5252;">
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">Phần 2</span><span class="ggd-badge badge-verb">Cụm động từ</span></div>
+                    <p style="font-size: 14px; color: #cbd5e1;">Cấu trúc Cụm động từ bị động (be + V3/ed) & Bảng chia thì chi tiết.</p>
+                  </div>
+                  <div class="ggd-pos-mini-card" style="--pos-color: #ef4444;">
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">Phần 3</span><span class="ggd-badge badge-adj">Điều kiện V</span></div>
+                    <p style="font-size: 14px; color: #cbd5e1;">Phân biệt Ngoại động từ vs Nội động từ & Cảnh báo lỗi sai máy móc.</p>
+                  </div>
+                  <div class="ggd-pos-mini-card" style="--pos-color: #7c4dff;">
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">Phần 4</span><span class="ggd-badge badge-adv">Nâng cao</span></div>
+                    <p style="font-size: 14px; color: #cbd5e1;">Cấu trúc nâng cao: 2 Tân ngữ, Bare to To-inf & Bị động với Động từ báo cáo.</p>
+                  </div>
+                  <div class="ggd-pos-mini-card" style="--pos-color: #00e676;">
+                    <div class="ggd-pos-mini-head"><span class="ggd-pos-mini-title">Phần 5</span><span class="ggd-badge badge-pronoun">Viết học thuật</span></div>
+                    <p style="font-size: 14px; color: #cbd5e1;">Thể bị động trong Viết học thuật: Nguyên lý "Old-before-New" & Agentless Passive.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PHẦN I — BẢN CHẤT CỦA THỂ BỊ ĐỘNG -->
+              <div class="ggd-dossier-sec">
+                <div class="ggd-dossier-sec-title">📖 1. BẢN CHẤT CỦA THỂ BỊ ĐỘNG (CONCEPT OF VOICE)</div>
+                <p style="font-size: 15px; color: #cbd5e1;">Khi viết một câu, chúng ta luôn có sự lựa chọn giữa hai cách diễn đạt (Voices):</p>
+                <ul style="margin-left: 20px; font-size: 15px; color: #cbd5e1;">
+                  <li><strong>Thể chủ động (Active Voice):</strong> Được dùng khi Chủ ngữ của câu là tác nhân chính thực hiện hành động (agent).
+                    <div class="ggd-example-box" style="margin-top: 6px;">
+                      <span style="color: #38bdf8; font-weight: 600;">The secretary typed the report. <span class="cite" title="Cite 138">138</span></span><br>
+                      <span style="color: #94a3b8; font-size: 14px; font-style: italic;">➔ "The secretary" (Chủ ngữ - Người thực hiện hành động) đứng đầu câu.</span>
+                    </div>
+                  </li>
+                  <li style="margin-top: 10px;"><strong>Thể bị động (Passive Voice):</strong> Được dùng khi Chủ ngữ của câu là đối tượng chịu tác động hoặc chịu ảnh hưởng trực tiếp của hành động.
+                    <div class="ggd-example-box" style="margin-top: 6px;">
+                      <span style="color: #14b8a6; font-weight: 600;">The report was typed by the secretary. <span class="cite" title="Cite 138">138</span></span><br>
+                      <span style="color: #94a3b8; font-size: 14px; font-style: italic;">➔ "The report" (Đối tượng chịu tác động) nhảy lên làm Chủ ngữ mới.</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- PHẦN II — CẤU TRÚC CỤM ĐỘNG TỪ BỊ ĐỘNG -->
+              <div class="ggd-dossier-sec">
+                <div class="ggd-dossier-sec-title">⚡ 2. CẤU TRÚC CỤM ĐỘNG TỪ BỊ ĐỘNG (PASSIVE VERB PHRASE STRUCTURE)</div>
+                <p style="font-size: 15px; color: #cbd5e1;">Một câu bị động được thành lập dựa trên việc biến đổi cấu trúc nội bộ của <strong>Cụm động từ (Verb Phrase)</strong>.</p>
+                
+                <div style="margin-top: 10px; background: rgba(20, 184, 166, 0.15); border-left: 4px solid #14b8a6; padding: 12px 14px; border-radius: 6px; font-size: 15px; color: #cbd5e1;">
+                  📋 <strong>Công thức tổng quát của Cụm động từ bị động:</strong><br>
+                  <div style="font-family: monospace; background: #0f172a; color: #38bdf8; padding: 6px 12px; border-radius: 6px; display: inline-block; font-weight: 700; margin: 8px 0;">
+                    Passive VP = be (Auxiliary) + Past Participle / V-ed/en (Lexical Head)
+                  </div>
+                  <p style="margin-top: 6px; font-size: 14px; color: #94a3b8;">Trợ động từ <strong>be</strong> đứng trước sẽ gánh toàn bộ vai trò chia Thì (Tense) và Khía cạnh (Aspect), trong khi động từ chính (Lexical Head) mang ý nghĩa từ vựng cốt lõi luôn ở dạng Phân từ hai (P2).</p>
+                </div>
+
+                <h5 style="color: #14b8a6; font-size: 16px; font-weight: 700; margin-top: 14px; margin-bottom: 8px;">Bảng chia thì của cụm động từ bị động:</h5>
+                <div style="overflow-x: auto; margin-bottom: 12px;">
+                  <table style="width: 100%; border-collapse: collapse; background: #120b24; border: 1px solid rgba(255,255,255,0.1); font-size: 14px;">
+                    <thead>
+                      <tr style="background: #1e1338; color: #14b8a6; text-align: left;">
+                        <th style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Thì / Khía cạnh</th>
+                        <th style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Công thức của "be"</th>
+                        <th style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">Ví dụ thực tế</th>
+                      </tr>
+                    </thead>
+                    <tbody style="color: #cbd5e1;">
+                      <tr><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #38bdf8;">Present Simple</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">am / is / are</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">The match <u>is played</u>. <span class="cite" title="Cite 164">164</span></td></tr>
+                      <tr><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #38bdf8;">Present Continuous</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">am / is / are + being</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">The match <u>is being played</u>. <span class="cite" title="Cite 164">164</span></td></tr>
+                      <tr><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #38bdf8;">Present Perfect</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">has / have + been</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">The match <u>has been played</u>. <span class="cite" title="Cite 164">164</span></td></tr>
+                      <tr><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #38bdf8;">Past Simple</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">was / were</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">The match <u>was played</u>. <span class="cite" title="Cite 164">164</span></td></tr>
+                      <tr><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #38bdf8;">Past Continuous</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">was / were + being</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">The match <u>was being played</u>. <span class="cite" title="Cite 164">164</span></td></tr>
+                      <tr><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #38bdf8;">Future (will)</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">will + be</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">The match <u>will be played</u>. <span class="cite" title="Cite 164">164</span></td></tr>
+                      <tr><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1); font-weight: bold; color: #38bdf8;">Modal Verbs</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">modal + be</td><td style="padding: 8px 12px; border: 1px solid rgba(255,255,255,0.1);">The match <u>should be played</u>. <span class="cite" title="Cite 164">164</span></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- PHẦN III — ĐIỀU KIỆN CỦA ĐỘNG TỪ -->
+              <div class="ggd-dossier-sec">
+                <div class="ggd-dossier-sec-title">⚠️ 3. ĐIỀU KIỆN CỦA ĐỘNG TỪ (VERB CONDITIONS FOR PASSIVE VOICE)</div>
+                <p style="font-size: 15px; color: #cbd5e1;">Học sinh cần đặc biệt lưu ý không phải mọi động từ đều có thể viết ở thể bị động. Việc này bị chi phối bởi bản chất từ loại của động từ đó:</p>
+                
+                <div style="margin-top: 10px;">
+                  <h5 style="color: #14b8a6; font-size: 16px; font-weight: 700; margin-bottom: 6px;">1. Ngoại động từ (Transitive Verbs)</h5>
+                  <p style="font-size: 15px; color: #cbd5e1;">Là các động từ bắt buộc phải có Tân ngữ đứng sau để chịu tác động trực tiếp. <strong>Chỉ có Ngoại động từ mới có thể chia bị động</strong> vì ta cần Tân ngữ của câu chủ động để đưa lên làm Chủ ngữ mới của câu bị động.</p>
+                  <div class="ggd-example-box" style="margin-top: 6px;">
+                    <span style="color: #cbd5e1;">Active: <em>They built a new bridge.</em> ➔ Passive: <strong style="color: #14b8a6;">A new bridge was built.</strong> <span class="cite" title="Cite 178">178</span></span>
+                  </div>
+                </div>
+
+                <div style="margin-top: 12px;">
+                  <h5 style="color: #ef4444; font-size: 16px; font-weight: 700; margin-bottom: 6px;">2. Nội động từ (Intransitive Verbs)</h5>
+                  <p style="font-size: 15px; color: #cbd5e1;">Là các động từ không cần tân ngữ đi kèm để đủ nghĩa. <strong>Nội động từ tuyệt đối không bao giờ được dùng ở thể bị động</strong>.</p>
+                </div>
+
+                <div style="margin-top: 12px; background: rgba(239, 68, 68, 0.15); border-left: 4px solid #ef4444; padding: 12px 14px; border-radius: 6px; font-size: 14px; color: #fca5a5;">
+                  ⚠️ <strong>Lỗi nghiêm trọng của học sinh: Chia bị động cho Nội động từ</strong><br>
+                  Một số nội động từ như <em>happen, exist, disappear, rise</em> thường bị học sinh viết sai thành cấu trúc bị động một cách máy móc.<br>
+                  ❌ <strong>Sai:</strong> <em>An accident was happened yesterday.</em><br>
+                  ✅ <strong>Sửa lại đúng:</strong> <em>An accident happened yesterday.</em> <span class="cite" title="Cite 183">183</span>
+                </div>
+              </div>
+
+              <!-- PHẦN IV — CÁC CẤU TRÚC BỊ ĐỘNG NÂNG CAO -->
+              <div class="ggd-dossier-sec">
+                <div class="ggd-dossier-sec-title">🧩 4. CÁC CẤU TRÚC BỊ ĐỘNG NÂNG CAO (ADVANCED PASSIVE PATTERNS)</div>
+                <p style="font-size: 15px; color: #cbd5e1;">Khi cấu trúc câu phức tạp hơn, thể bị động cũng biến đổi theo các quy tắc nghiêm ngặt:</p>
+
+                <div style="margin-top: 10px;">
+                  <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-bottom: 6px;">1. Động từ có hai tân ngữ (S + V + Oi + Od)</h5>
+                  <p style="font-size: 15px; color: #cbd5e1;">Với các động từ như <em>give, send, offer, award, pay</em>, ta có hai tân ngữ: Tân ngữ gián tiếp (Oi - thường chỉ người) và Tân ngữ trực tiếp (Od - thường chỉ vật).</p>
+                  <div class="ggd-example-box" style="margin-top: 6px;">
+                    <p style="color: #cbd5e1; margin-bottom: 6px;">Câu chủ động: <em>The nurse gives the patient a sleeping pill.</em> <span class="cite" title="Cite 153">153</span></p>
+                    <ul style="margin-left: 20px; color: #cbd5e1; font-size: 14px;">
+                      <li><strong>Cách 1 (Bổ ngữ trực tiếp lên trước):</strong> <br><span style="color: #38bdf8;">A sleeping pill is given to the patient. <span class="cite" title="Cite 153">153</span></span></li>
+                      <li style="margin-top: 4px;"><strong>Cách 2 (Bổ ngữ gián tiếp lên trước - Khuyên dùng):</strong> <br><span style="color: #14b8a6; font-weight: 600;">The patient is given a sleeping pill. <span class="cite" title="Cite 153">153</span></span> <br><em>Trong tiếng Anh học thuật, việc đưa đối tượng nhận (con người) lên làm Chủ ngữ bị động là cách viết tự nhiên và phổ biến hơn rất nhiều.</em></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div style="margin-top: 14px;">
+                  <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-bottom: 6px;">2. Đổi dạng từ Động từ nguyên thể không to (Bare infinitive) sang To-infinitive</h5>
+                  <p style="font-size: 15px; color: #cbd5e1;">Trong cấu trúc câu chủ động phức hợp với động từ <em>make</em>, ta dùng động từ nguyên thể không "to". Nhưng <strong>khi chuyển sang bị động, bắt buộc phải biến đổi thành động từ nguyên thể có "to" (To-infinitive)</strong>.</p>
+                  <div class="ggd-example-box" style="margin-top: 6px;">
+                    <span style="color: #cbd5e1;">Active: The terrorists made the hostages <u>lie</u> down. <span class="cite" title="Cite 158">158</span></span><br>
+                    <span style="color: #14b8a6; font-weight: 600;">Passive: The hostages were made <u>to lie</u> down. <span class="cite" title="Cite 158">158</span></span>
+                  </div>
+                </div>
+
+                <div style="margin-top: 14px;">
+                  <h5 style="color: #38bdf8; font-size: 16px; font-weight: 700; margin-bottom: 6px;">3. Bị động khách quan với động từ báo cáo (Passive of Reporting Verbs)</h5>
+                  <p style="font-size: 15px; color: #cbd5e1;">Sử dụng với các động từ truyền đạt, báo cáo như <em>think, believe, say, report</em> để làm tăng tính trung lập và tính hàn lâm cho câu viết:</p>
+                  <ul style="margin-left: 20px; color: #cbd5e1; font-size: 14px;">
+                    <li><strong>Cấu trúc 1 (Chủ ngữ giả "It"):</strong> <br><span style="color: #38bdf8;">It is now thought that Stonehenge dates from about 1900 BC. <span class="cite" title="Cite 155">155</span></span></li>
+                    <li style="margin-top: 6px;"><strong>Cấu trúc 2 (Đảo chủ ngữ của mệnh đề phụ lên làm chủ ngữ chính):</strong> <br><span style="color: #14b8a6; font-weight: 600;">Stonehenge is popularly believed to be a Druid temple. <span class="cite" title="Cite 155">155</span></span></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- PHẦN V — THỂ BỊ ĐỘNG TRONG VIẾT HỌC THUẬT -->
+              <div class="ggd-dossier-sec">
+                <div class="ggd-dossier-sec-title">🎓 5. THỂ BỊ ĐỘNG TRONG VIẾT HỌC THUẬT (IMPERSONAL ACADEMIC STYLE)</div>
+                <p style="font-size: 15px; color: #cbd5e1;">Tại sao văn phong viết luận hàn lâm (Academic Essays/Reports) lại ưu ái sử dụng thể bị động nhiều đến thế? Đằng sau đó là các lý do sư phạm và ngôn ngữ học cực kỳ rõ ràng:</p>
+
+                <div style="margin-top: 10px;">
+                  <h5 style="color: #14b8a6; font-size: 16px; font-weight: 700; margin-bottom: 6px;">1. Nguyên lý "Old-before-New" (Luồng thông tin)</h5>
+                  <p style="font-size: 15px; color: #cbd5e1;">Người bản xứ luôn ưu tiên đặt thông tin cũ/đã biết (old/known information) lên làm Chủ ngữ ở đầu câu để làm cầu nối liên kết, và đẩy thông tin mới (new information) ra cuối câu. Việc chọn Active hay Passive thực chất chính là quyết định xem thông tin nào xứng đáng làm Topic đứng đầu câu.</p>
+                  <div class="ggd-example-box" style="margin-top: 6px;">
+                    <p style="color: #cbd5e1; margin-bottom: 6px;">Hãy xem hai cách viết đoạn văn sau:</p>
+                    <p style="color: #cbd5e1;"><strong>Đoạn A (Nhấn mạnh nhà khoa học):</strong> Thomson was a British physicist. He discovered the electron. <span class="cite" title="Cite 140, 141">140, 141</span> <br><span style="color: #94a3b8; font-size: 13px; font-style: italic;">➔ Mạch thông tin mượt vì câu sau tiếp tục nói về "He" (Thomson).</span></p>
+                    <p style="color: #cbd5e1; margin-top: 6px;"><strong>Đoạn B (Nhấn mạnh hạt electron):</strong> The electron is a subatomic particle. The electron was discovered by Thomson. <span class="cite" title="Cite 140, 141">140, 141</span> <br><span style="color: #94a3b8; font-size: 13px; font-style: italic;">➔ Bắt buộc dùng bị động "The electron was discovered by..." để giữ cho chủ đề "electron" được nhất quán làm đầu cầu nối thông tin.</span></p>
+                  </div>
+                </div>
+
+                <div style="margin-top: 14px;">
+                  <h5 style="color: #14b8a6; font-size: 16px; font-weight: 700; margin-bottom: 6px;">2. Khuyết tác nhân để giữ tính khách quan (Agentless Passive)</h5>
+                  <p style="font-size: 15px; color: #cbd5e1;">Trong nghiên cứu khoa học, ta không đề cao vai trò cá nhân của người viết (như tránh dùng từ <em>I, We</em>). Ta khuyết tác nhân hành động (bỏ <em>by agent</em>) vì:</p>
+                  <ul style="margin-left: 20px; color: #cbd5e1; font-size: 14px;">
+                    <li>Tác nhân là hiển nhiên, không quan trọng: <em>"The school playground is cleaned up every day."</em></li>
+                    <li>Hành động, quy trình thực nghiệm mới là trọng tâm: <em>"The report was typed."</em> hoặc <em>"The ore is usually dug out of the ground."</em></li>
+                    <li>Tránh né quy trách nhiệm chủ quan: <em>"Mistakes have been made."</em> thay vì nói <em>"We made mistakes."</em></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- INLINE PRACTICE CHECK -->
+              <div class="ggd-inline-quiz-box">
+                <div style="font-weight: 800; color: #4ade80; font-size: 22px; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                  🎯 INLINE PRACTICE CHECK (THỰC HÀNH TẠI CHỖ)
+                </div>
+                <p style="font-size: 16px; color: #94a3b8; margin-bottom: 14px;">Bấm chọn đáp án để kiểm tra mức độ ghi nhớ lý thuyết!</p>
+
+                <!-- Inline Q1 -->
+                <div class="ggd-inline-q-item">
+                  <div style="font-weight: 700; color: #fff; font-size: 17px; margin-bottom: 8px;">1. Động từ nào dưới đây là Nội động từ (Intransitive) KHÔNG ĐƯỢC dùng ở dạng Bị động?</div>
+                  <div>
+                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, false, '❌ Incorrect! Build là Ngoại động từ (They built a bridge -> A bridge was built).')">A. build</button>
+                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, true, '🪿 QUACK! CORRECT! Happen là Nội động từ, tuyệt đối không chia bị động (was happened là SAI).')">B. happen</button>
+                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, false, '❌ Incorrect! Give là Ngoại động từ 2 tân ngữ.')">C. give</button>
+                  </div>
+                  <div class="ggd-inline-feedback" style="font-size: 16px;"></div>
+                </div>
+
+                <!-- Inline Q2 -->
+                <div class="ggd-inline-q-item">
+                  <div style="font-weight: 700; color: #fff; font-size: 17px; margin-bottom: 8px;">2. Trong câu bị động với 'make', động từ theo sau phải ở dạng nào?</div>
+                  <div>
+                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, false, '❌ Incorrect! Bare infinitive chỉ dùng ở câu chủ động (make someone do).')">A. Bare infinitive (V0)</button>
+                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, true, '🪿 QUACK! CORRECT! Khi chuyển sang bị động với make, bắt buộc dùng To-infinitive (were made to do).')">B. To-infinitive (to V0)</button>
+                    <button class="ggd-inline-opt-btn" onclick="checkGgdInlineTheoryPractice(this, false, '❌ Incorrect! V-ing không dùng cho cấu trúc này.')">C. V-ing</button>
+                  </div>
+                  <div class="ggd-inline-feedback" style="font-size: 16px;"></div>
+                </div>
+              </div>
+            </div>
           `,
           questions: [
-            { q: "Change to Passive: 'Engineers build new spaceship engines every year.'", opts: ["A. New spaceship engines are built every year by engineers.", "B. New spaceship engines were built every year.", "C. New spaceship engines are building by engineers.", "D. Engineers are built by new spaceship engines."], ans: 0, exp: "Thì Hiện tại đơn bị động: S + am/is/are + V3 ('are built')." },
-            { q: "Change to Passive: 'The chef is preparing the space feast right now.'", opts: ["A. The space feast is prepared right now.", "B. The space feast is being prepared right now by the chef.", "C. The space feast was being prepared.", "D. The space feast has been prepared."], ans: 1, exp: "Hiện tại tiếp diễn bị động: S + is/am/are + being + V3 ('is being prepared')." },
-            { q: "Choose the correct passive form: 'All space cadets ________ to wear helmets during takeoff.'", opts: ["A. are required", "B. require", "C. requiring", "D. are require"], ans: 0, exp: "Bị động hiện tại đơn: 'are required' (được yêu cầu)." },
-            { q: "Choose the correct modal passive: 'The emergency emergency doors ________ at all times.'", opts: ["A. must check", "B. must be checked", "C. must being checked", "D. must to be checked"], ans: 1, exp: "Động từ khuyết thiếu bị động: modal + be + V3 ('must be checked')." },
-            { q: "Identify the error in passive voice: 'The confidential report will sent to headquarters tomorrow.'", opts: ["A. Confidential", "B. will sent (Should be 'will be sent')", "C. to headquarters", "D. tomorrow"], ans: 1, exp: "Tương lai đơn bị động phải có 'be': 'will be sent'." }
+            { q: "Câu 1: Câu nào dưới đây mắc lỗi chia thể bị động sai quy tắc cho Nội động từ (Intransitive Verb)?", opts: ["A. A terrible car accident was happened on the highway yesterday.", "B. A terrible car accident happened on the highway yesterday.", "C. The highway was closed due to a terrible car accident."], ans: 0, exp: "'happen' là một nội động từ (Intransitive verb), do đó nó không bao giờ được phép dùng ở dạng bị động 'was happened'." },
+            { q: "Câu 2: Đâu là dạng biến đổi bị động tự nhiên, chuẩn văn phong tiếng Anh nhất cho câu: 'The committee offered her a prestigious scholarship.'?", opts: ["A. A prestigious scholarship was offered her by the committee.", "B. She was offered a prestigious scholarship by the committee.", "C. A prestigious scholarship was offered to her by the committee."], ans: 1, exp: "Với động từ có hai tân ngữ (SVOO), mặc dù cả B và C đều đúng ngữ pháp, nhưng trong tiếng Anh, việc chọn người nhận (Oi) lên làm Chủ ngữ bị động là cách viết tự nhiên và phổ biến hơn cả." },
+            { q: "Câu 3: Khi chuyển câu 'The supervisor made the research assistants work overtime' sang dạng bị động, cụm từ 'work' biến đổi như thế nào?", opts: ["A. ...were made work overtime...", "B. ...were made to work overtime...", "C. ...were made working overtime..."], ans: 1, exp: "Ở câu chủ động, sau 'make' ta dùng động từ nguyên thể không 'to'. Tuy nhiên khi chuyển sang dạng bị động, cấu trúc bắt buộc phải đổi sang dạng 'to-infinitive'." },
+            { q: "Câu 4: Cấu trúc bị động khách quan (Passive of reporting verbs) nào dưới đây bị viết SAI ngữ pháp học thuật?", opts: ["A. Stonehenge is popularly believed to be a Druid temple.", "B. It is popularly believed that Stonehenge is a Druid temple.", "C. Stonehenge is popularly believed that is a Druid temple."], ans: 2, exp: "Câu C sai cấu trúc. Đối với bị động của động từ báo cáo, ta chỉ có 2 pattern đúng: (1) It + passive verb + that-clause hoặc (2) S + passive verb + to-infinitive." },
+            { q: "Câu 5: Trong một báo cáo khoa học khách quan mô tả một quy trình thí nghiệm hóa học, câu nào dưới đây có cách hành văn phù hợp nhất?", opts: ["A. We then pumped the paint into a large tank to thin it.", "B. The paint is then pumped into a large tank, where it is thinned.", "C. They then pumped the paint into a large tank, thinned by themselves."], ans: 1, exp: "Trong văn phong mô tả các quy trình công nghiệp và khoa học học thuật, thể bị động khuyết tác nhân (Agentless passive) luôn được ưu tiên hàng đầu để tập trung hoàn toàn vào vật chất và thí nghiệm thay vì người thực hiện hành động." },
+            { q: "Câu 6: Xác định dạng chia đúng của Cụm động từ bị động ở thì Hiện tại tiếp diễn trong câu: <i>'The spaceship engines ________ by the electrician team right now.'</i>", opts: ["A. are repaired", "B. are being repaired", "C. have been repaired", "D. were repaired"], ans: 1, exp: "Thì Hiện tại tiếp diễn bị động có công thức: am/is/are + being + V3/ed ('are being repaired')." },
+            { q: "Câu 7: Chọn dạng bị động đúng cho Động từ khuyết thiếu (Modal Verb): <i>'The emergency override doors ________ at all times during flight.'</i>", opts: ["A. must check", "B. must be checked", "C. must being checked", "D. must to be checked"], ans: 1, exp: "Bị động với động từ khuyết thiếu: modal + be + V3/ed ('must be checked')." },
+            { q: "Câu 8: Dựa trên nguyên lý 'Old-before-New' trong viết học thuật, tại sao câu <i>'The electron was discovered by Thomson'</i> lại được ưu tiên dùng sau câu <i>'The electron is a subatomic particle'</i>?", opts: ["A. Vì câu chủ động quá dài và phức tạp.", "B. Để giữ cho chủ đề 'The electron' (thông tin cũ/đã biết) tiếp tục đứng đầu làm cầu nối thông tin mượt mà.", "C. Vì Thomson không phải là nhà vật lý nổi tiếng.", "D. Để tránh dùng đại từ nhân xưng."], ans: 1, exp: "Nguyên lý 'Old-before-New' ưu tiên đưa thông tin cũ/đã biết ('The electron') lên làm Chủ ngữ ở đầu câu để tạo mạch liên kết nhất quán với câu trước." }
           ]
         },
         {
@@ -4491,6 +5238,22 @@
         });
       }
 
+      window.switchGgdMobileTab = function(tabName) {
+        const container = document.getElementById("ggd-split-container");
+        const btnTheory = document.getElementById("ggd-tab-btn-theory");
+        const btnTask = document.getElementById("ggd-tab-btn-task");
+
+        if (container) {
+          container.classList.remove("tab-theory", "tab-task");
+          container.classList.add("tab-" + tabName);
+        }
+        if (btnTheory && btnTask) {
+          btnTheory.classList.toggle("active", tabName === "theory");
+          btnTask.classList.toggle("active", tabName === "task");
+        }
+        playGgdAudio('click');
+      };
+
       // LEVEL PLAY ENGINE
       let currentActiveLvl = null;
       let currentQIndex = 0;
@@ -4510,8 +5273,25 @@
 
         document.getElementById("ggd-modal-room-icon").textContent = lvl.icon;
         document.getElementById("ggd-modal-level-tag").textContent = `LEVEL ${lvl.id} • ${lvl.room.toUpperCase()}`;
-        document.getElementById("ggd-modal-title").textContent = `${lvl.name} (${lvl.role})`;
+        
+        const titleEl = document.getElementById("ggd-modal-title");
+        if (titleEl) {
+          titleEl.innerHTML = `${lvl.name} <span class="ggd-role-chip" id="ggd-modal-role-chip">${lvl.role}</span>`;
+        }
+
         document.getElementById("ggd-modal-theory").innerHTML = lvl.theory;
+
+        const container = document.getElementById("ggd-split-container");
+        if (container) {
+          container.classList.remove("tab-theory", "tab-task");
+          container.classList.add("tab-theory");
+        }
+        const btnTheory = document.getElementById("ggd-tab-btn-theory");
+        const btnTask = document.getElementById("ggd-tab-btn-task");
+        if (btnTheory && btnTask) {
+          btnTheory.classList.add("active");
+          btnTask.classList.remove("active");
+        }
 
         renderCurrentQuestion();
         
