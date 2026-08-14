@@ -1923,7 +1923,23 @@
     .stat-item .label { color: #94a3b8; font-weight: 600; }
     .stat-item .val { color: #ffffff; font-weight: 800; }
     .stat-item .val.highlight { color: #4ade80; font-family: 'Press Start 2P', cursive; font-size: 9px; }
-  </style>
+  
+    /* Full-screen immersion for CGEL Stardew Academy */
+    #task-hsg12-cgel.active {
+      width: 100%;
+      height: 100%;
+    }
+    @media (max-width: 900px) {
+      body:has(#task-hsg12-cgel.active) .top-header,
+      .task-view#task-hsg12-cgel ~ .top-header {
+        display: none !important;
+      }
+      .content-area {
+        padding: 8px 10px !important;
+      }
+    }
+
+    </style>
 </head>
 <body>
 
@@ -2376,6 +2392,19 @@
               </div>
             </article>
 
+            <!-- Sub-folder 4: Comprehensive Grammar (CGEL Academy) -->
+            <article class="folder-card" data-target="task-hsg12-cgel" data-label="HSG 12 / Comprehensive Grammar">
+              <div>
+                <div class="folder-icon">📚</div>
+                <div class="folder-name">Comprehensive Grammar</div>
+                <div class="folder-path">📂 HSG 12 / CGEL Academic Grammar</div>
+              </div>
+              <div class="folder-meta">
+                <span class="type-badge">HSG 12</span>
+                <span class="arrow-text">Vào học →</span>
+              </div>
+            </article>
+
           </div>
         </section>
 
@@ -2513,7 +2542,6 @@
             <h2>📘 Focus on Vocabulary & Academic Collocations</h2>
           </header>
 
-          <div class="task-body">
             <div class="skill-card" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
               <div>
                 <h3 style="margin-bottom: 4px;">📚 Academic Word List (AWL) & Collocations</h3>
@@ -2523,6 +2551,2046 @@
                 📝 Nộp Điểm Bài Làm →
               </button>
             </div>
+          </div>
+        </section>
+
+        <!-- ==================== VIEW 6B: SUBTASK - COMPREHENSIVE GRAMMAR (CGEL ACADEMIC EDITION) ==================== -->
+        <section id="task-hsg12-cgel" class="view-panel task-view" style="padding: 0; margin: 0; width: 100%; max-width: 100%;">
+          <div id="cgel-academic-root">
+            <style>
+              @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap');
+
+              #cgel-academic-root {
+                --acad-bg-dark: #080614;
+                --acad-bg-gradient: linear-gradient(145deg, #09071a 0%, #110d29 35%, #1d133b 70%, #2b1442 100%);
+                --acad-glass-bg: rgba(18, 14, 38, 0.85);
+                --acad-glass-border: rgba(167, 139, 250, 0.28);
+                --acad-accent-cyan: #38bdf8;
+                --acad-accent-pink: #f472b6;
+                --acad-accent-gold: #fbbf24;
+                --acad-accent-purple: #c084fc;
+                --acad-accent-green: #4ade80;
+                --acad-text-light: #f8fafc;
+                --acad-text-muted: #cbd5e1;
+                --acad-text-dim: #94a3b8;
+                --acad-card-active: linear-gradient(135deg, rgba(168, 85, 247, 0.25) 0%, rgba(56, 189, 248, 0.18) 100%);
+                font-family: 'Plus Jakarta Sans', 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+                color: var(--acad-text-light);
+                width: 100%;
+                box-sizing: border-box;
+                position: relative;
+                overflow: hidden;
+                border-radius: 16px;
+                font-size: 1.12rem;
+                line-height: 1.7;
+              }
+
+              #cgel-academic-root * {
+                box-sizing: border-box;
+              }
+
+              /* Container & Background */
+              #cgel-academic-root .acad-canvas-container {
+                width: 100%;
+                min-height: calc(100vh - 100px);
+                background: var(--acad-bg-gradient);
+                border: 1px solid var(--acad-glass-border);
+                box-shadow: 0 16px 45px rgba(0, 0, 0, 0.65), 0 0 50px rgba(124, 58, 237, 0.15);
+                border-radius: 14px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                margin-bottom: 24px;
+              }
+
+              /* Night Sky Layer */
+              #cgel-academic-root .acad-sky-layer {
+                position: absolute;
+                inset: 0;
+                pointer-events: none;
+                background-image: 
+                  radial-gradient(1.5px 1.5px at 30px 40px, #ffffff, rgba(0,0,0,0)),
+                  radial-gradient(1.5px 1.5px at 120px 80px, #fbcfe8, rgba(0,0,0,0)),
+                  radial-gradient(2px 2px at 240px 180px, #38bdf8, rgba(0,0,0,0)),
+                  radial-gradient(2px 2px at 360px 100px, #fef08a, rgba(0,0,0,0)),
+                  radial-gradient(1.5px 1.5px at 480px 220px, #c084fc, rgba(0,0,0,0));
+                background-size: 550px 350px;
+                opacity: 0.5;
+              }
+
+              /* Header Bar */
+              #cgel-academic-root .acad-top-bar {
+                background: rgba(10, 7, 24, 0.88);
+                backdrop-filter: blur(16px);
+                padding: 12px 22px;
+                border-bottom: 1px solid var(--acad-glass-border);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 12px;
+                z-index: 10;
+              }
+
+              #cgel-academic-root .acad-brand-group {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                flex-wrap: wrap;
+              }
+
+              #cgel-academic-root .acad-game-title {
+                margin: 0;
+                font-size: 1.3rem;
+                font-weight: 800;
+                background: linear-gradient(135deg, #ffffff 0%, #fbcfe8 50%, #c084fc 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+              }
+
+              #cgel-academic-root .acad-title-badge {
+                font-size: 0.82rem;
+                background: rgba(168, 85, 247, 0.25);
+                border: 1px solid rgba(168, 85, 247, 0.5);
+                color: #fbcfe8;
+                padding: 3px 10px;
+                border-radius: 12px;
+                font-weight: 700;
+              }
+
+              #cgel-academic-root .acad-nav-btn {
+                background: rgba(255, 255, 255, 0.08);
+                color: #ffffff;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                padding: 7px 14px;
+                font-weight: 600;
+                font-size: 0.92rem;
+                cursor: pointer;
+                border-radius: 20px;
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                transition: all 0.2s;
+                text-decoration: none;
+              }
+
+              #cgel-academic-root .acad-nav-btn:hover {
+                background: rgba(168, 85, 247, 0.3);
+                border-color: var(--acad-accent-purple);
+                transform: translateY(-1px);
+              }
+
+              /* HUD Progress */
+              #cgel-academic-root .acad-hud-panel {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                background: rgba(15, 11, 32, 0.8);
+                padding: 6px 16px;
+                border-radius: 24px;
+                border: 1px solid var(--acad-glass-border);
+                flex-wrap: wrap;
+              }
+
+              #cgel-academic-root .acad-hud-item {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                font-size: 0.95rem;
+                font-weight: 700;
+                color: var(--acad-text-light);
+              }
+
+              /* Main Grid Layout */
+              #cgel-academic-root .acad-layout-grid {
+                display: grid;
+                grid-template-columns: 310px 1fr;
+                flex: 1;
+                min-height: 700px;
+                position: relative;
+                z-index: 1;
+              }
+
+              /* Left Sidebar: Module Index */
+              #cgel-academic-root .acad-sidebar {
+                background: rgba(13, 9, 30, 0.85);
+                backdrop-filter: blur(14px);
+                border-right: 1px solid var(--acad-glass-border);
+                padding: 16px 14px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                overflow-y: auto;
+              }
+
+              #cgel-academic-root .acad-sidebar-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 8px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                margin-bottom: 4px;
+              }
+
+              #cgel-academic-root .acad-sidebar-title {
+                color: #e2e8f0;
+                font-size: 0.9rem;
+                font-weight: 800;
+                letter-spacing: 0.8px;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+              }
+
+              /* Module Sidebar Cards */
+              #cgel-academic-root .acad-module-card {
+                background: rgba(255, 255, 255, 0.04);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 12px;
+                padding: 12px 14px;
+                cursor: pointer;
+                transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+                position: relative;
+              }
+
+              #cgel-academic-root .acad-module-card:hover:not(.acad-locked) {
+                background: rgba(255, 255, 255, 0.08);
+                border-color: var(--acad-accent-purple);
+                transform: translateX(3px);
+              }
+
+              #cgel-academic-root .acad-module-card.acad-active {
+                background: var(--acad-card-active);
+                border: 1.5px solid var(--acad-accent-purple);
+                box-shadow: 0 0 20px rgba(168, 85, 247, 0.35);
+              }
+
+              #cgel-academic-root .acad-module-card.acad-locked {
+                opacity: 0.55;
+                cursor: not-allowed;
+                background: rgba(0, 0, 0, 0.3);
+              }
+
+              #cgel-academic-root .acad-card-name {
+                font-weight: 700;
+                font-size: 0.96rem;
+                color: #ffffff;
+                line-height: 1.35;
+              }
+
+              #cgel-academic-root .acad-card-progress {
+                font-size: 0.82rem;
+                color: var(--acad-accent-cyan);
+                margin-top: 4px;
+                font-weight: 600;
+              }
+
+              /* Right Content Pane */
+              #cgel-academic-root .acad-content-pane {
+                background: rgba(10, 7, 24, 0.55);
+                backdrop-filter: blur(10px);
+                padding: 24px 28px;
+                overflow-y: auto;
+                max-height: calc(100vh - 160px);
+              }
+
+              /* Hero Banner */
+              #cgel-academic-root .acad-hero-banner {
+                background: linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(56, 189, 248, 0.14) 100%);
+                border: 1.5px solid var(--acad-glass-border);
+                border-radius: 14px;
+                padding: 18px 22px;
+                margin-bottom: 22px;
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+              }
+
+              #cgel-academic-root .acad-hero-banner h1 {
+                margin: 0 0 6px 0;
+                font-size: 1.45rem;
+                font-weight: 800;
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+              }
+
+              #cgel-academic-root .acad-hero-banner p {
+                margin: 0;
+                color: var(--acad-text-muted);
+                font-size: 1.05rem;
+              }
+
+              /* Topic Card */
+              #cgel-academic-root .acad-topic-card {
+                background: rgba(18, 14, 38, 0.85);
+                backdrop-filter: blur(16px);
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                border-radius: 16px;
+                padding: 22px 24px;
+                margin-bottom: 26px;
+                box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+              }
+
+              #cgel-academic-root .acad-topic-title {
+                color: #ffffff;
+                font-size: 1.25rem;
+                font-weight: 800;
+                margin-top: 0;
+                margin-bottom: 14px;
+                border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
+                padding-bottom: 10px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+              }
+
+              /* ================= AUTHENTIC VISUAL BRANCHING MINDMAP (NOTEBOOK STUDIO STYLE) ================= */
+              #cgel-academic-root .mindmap-canvas {
+                background: linear-gradient(145deg, rgba(16, 12, 34, 0.95) 0%, rgba(9, 7, 22, 0.98) 100%);
+                border: 1.5px solid rgba(167, 139, 250, 0.32);
+                border-radius: 16px;
+                padding: 20px;
+                margin: 18px 0;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+                position: relative;
+                overflow-x: auto;
+              }
+
+              #cgel-academic-root .mindmap-toolbar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+                padding-bottom: 12px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                margin-bottom: 16px;
+              }
+
+              #cgel-academic-root .mindmap-title-tag {
+                font-size: 0.95rem;
+                font-weight: 800;
+                color: var(--acad-accent-gold);
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+              }
+
+              #cgel-academic-root .mindmap-controls {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+              }
+
+              #cgel-academic-root .mindmap-btn {
+                background: rgba(255, 255, 255, 0.08);
+                color: #e2e8f0;
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                padding: 4px 12px;
+                border-radius: 8px;
+                font-size: 0.82rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.2s;
+              }
+
+              #cgel-academic-root .mindmap-btn:hover {
+                background: rgba(168, 85, 247, 0.3);
+                border-color: var(--acad-accent-purple);
+                color: #ffffff;
+              }
+
+              /* Authentic Visual Tree Container */
+              #cgel-academic-root .mindmap-tree-wrapper {
+                min-width: 650px;
+                padding: 10px 4px 20px 4px;
+                display: flex;
+                align-items: center;
+                gap: 32px;
+                position: relative;
+                transition: transform 0.25s ease;
+                transform-origin: left center;
+              }
+
+              /* Central Root Node */
+              #cgel-academic-root .mm-root-node {
+                background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
+                color: #ffffff;
+                padding: 12px 20px;
+                border-radius: 28px;
+                font-size: 1.05rem;
+                font-weight: 800;
+                box-shadow: 0 0 24px rgba(124, 58, 237, 0.5);
+                border: 2px solid rgba(255, 255, 255, 0.25);
+                white-space: nowrap;
+                flex-shrink: 0;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+              }
+
+              /* Level 1 Branches Container */
+              #cgel-academic-root .mm-branches-col {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                position: relative;
+                padding-left: 28px;
+                border-left: 2px solid rgba(167, 139, 250, 0.45);
+              }
+
+              /* Branch Item */
+              #cgel-academic-root .mm-branch-item {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                position: relative;
+              }
+
+              #cgel-academic-root .mm-branch-item::before {
+                content: '';
+                position: absolute;
+                left: -28px;
+                top: 50%;
+                width: 28px;
+                height: 2px;
+                background: rgba(167, 139, 250, 0.45);
+              }
+
+              /* Branch Main Pill Node */
+              #cgel-academic-root .mm-branch-pill {
+                background: rgba(26, 19, 54, 0.95);
+                border: 1.5px solid var(--b-color, #38bdf8);
+                border-radius: 12px;
+                padding: 10px 16px;
+                color: #ffffff;
+                font-size: 0.96rem;
+                font-weight: 700;
+                cursor: pointer;
+                box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+                transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+                white-space: nowrap;
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                z-index: 1;
+                flex-shrink: 0;
+              }
+
+              #cgel-academic-root .mm-branch-pill:hover {
+                transform: translateX(4px) scale(1.02);
+                box-shadow: 0 0 20px var(--b-color, #38bdf8);
+                border-color: #ffffff;
+              }
+
+              #cgel-academic-root .mm-branch-pill.pill-active {
+                background: linear-gradient(135deg, rgba(168, 85, 247, 0.35) 0%, rgba(56, 189, 248, 0.3) 100%);
+                border-color: #fbcfe8;
+                box-shadow: 0 0 24px rgba(168, 85, 247, 0.6);
+              }
+
+              /* Sub-branches / Leaves Container */
+              #cgel-academic-root .mm-leaves-col {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                padding-left: 24px;
+                border-left: 2px dashed rgba(255, 255, 255, 0.25);
+                position: relative;
+              }
+
+              /* Leaf Node Item */
+              #cgel-academic-root .mm-leaf-item {
+                display: flex;
+                align-items: center;
+                position: relative;
+              }
+
+              #cgel-academic-root .mm-leaf-item::before {
+                content: '';
+                position: absolute;
+                left: -24px;
+                top: 50%;
+                width: 24px;
+                height: 2px;
+                background: rgba(255, 255, 255, 0.25);
+              }
+
+              #cgel-academic-root .mm-leaf-pill {
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.16);
+                border-radius: 10px;
+                padding: 6px 14px;
+                color: var(--acad-text-muted);
+                font-size: 0.88rem;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.2s;
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                white-space: nowrap;
+              }
+
+              #cgel-academic-root .mm-leaf-pill:hover {
+                background: rgba(168, 85, 247, 0.22);
+                border-color: var(--acad-accent-purple);
+                color: #ffffff;
+                transform: translateX(3px);
+              }
+
+              #cgel-academic-root .mm-leaf-pill.leaf-active {
+                background: rgba(168, 85, 247, 0.3);
+                border-color: #f472b6;
+                color: #ffffff;
+                font-weight: 700;
+              }
+
+              /* Notebook Studio Detail Inspector Card */
+              #cgel-academic-root .mindmap-inspector-card {
+                background: rgba(10, 7, 24, 0.95);
+                border: 1.5px solid var(--acad-accent-purple);
+                border-radius: 14px;
+                padding: 16px 20px;
+                margin-top: 14px;
+                box-shadow: 0 8px 24px rgba(124, 58, 237, 0.3);
+                display: none;
+                animation: mindmapFadeIn 0.25s ease-out forwards;
+              }
+
+              @keyframes mindmapFadeIn {
+                from { opacity: 0; transform: translateY(-6px); }
+                to { opacity: 1; transform: translateY(0); }
+              }
+
+              #cgel-academic-root .mindmap-inspector-head {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                padding-bottom: 8px;
+                margin-bottom: 10px;
+              }
+
+              #cgel-academic-root .mindmap-inspector-title {
+                font-size: 1.1rem;
+                font-weight: 800;
+                color: var(--acad-accent-gold);
+                display: flex;
+                align-items: center;
+                gap: 8px;
+              }
+
+              #cgel-academic-root .mindmap-inspector-close {
+                background: none;
+                border: none;
+                color: #94a3b8;
+                font-size: 1.2rem;
+                cursor: pointer;
+                padding: 0 4px;
+              }
+
+              #cgel-academic-root .mindmap-inspector-close:hover {
+                color: #ffffff;
+              }
+
+              #cgel-academic-root .mindmap-inspector-body {
+                font-size: 1.02rem;
+                line-height: 1.65;
+                color: #f1f5f9;
+              }
+
+              /* Vietnamese Academic Explanation Section */
+              #cgel-academic-root .acad-vn-explanation {
+                background: rgba(30, 22, 60, 0.4);
+                border-radius: 12px;
+                padding: 14px 18px;
+                margin: 16px 0;
+                border-left: 4px solid var(--acad-accent-purple);
+                font-size: 1.05rem;
+                line-height: 1.7;
+                color: #f1f5f9;
+              }
+
+              /* Pedagogical & Caution Boxes */
+              #cgel-academic-root .acad-insight-box {
+                background: rgba(56, 189, 248, 0.09);
+                border: 1px solid rgba(56, 189, 248, 0.3);
+                border-left: 4px solid var(--acad-accent-cyan);
+                border-radius: 10px;
+                padding: 14px 18px;
+                margin: 16px 0;
+                color: #e0f2fe;
+                font-size: 1.05rem;
+              }
+
+              #cgel-academic-root .acad-insight-box h4 {
+                margin: 0 0 6px 0;
+                color: var(--acad-accent-cyan);
+                font-size: 1.1rem;
+                font-weight: 800;
+              }
+
+              #cgel-academic-root .acad-caution-box {
+                background: rgba(244, 114, 182, 0.09);
+                border: 1px solid rgba(244, 114, 182, 0.3);
+                border-left: 4px solid var(--acad-accent-pink);
+                border-radius: 10px;
+                padding: 14px 18px;
+                margin: 16px 0;
+                color: #ffe4e6;
+                font-size: 1.05rem;
+              }
+
+              #cgel-academic-root .acad-caution-box h4 {
+                margin: 0 0 6px 0;
+                color: var(--acad-accent-pink);
+                font-size: 1.1rem;
+                font-weight: 800;
+              }
+
+              /* Tables */
+              #cgel-academic-root .acad-table-wrapper {
+                width: 100%;
+                overflow-x: auto;
+                margin: 16px 0;
+                border-radius: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.12);
+              }
+
+              #cgel-academic-root table {
+                width: 100%;
+                border-collapse: collapse;
+                background: rgba(15, 11, 32, 0.7);
+                font-size: 1.02rem;
+              }
+
+              #cgel-academic-root th {
+                background: rgba(36, 24, 72, 0.9);
+                color: #fbcfe8;
+                padding: 10px 14px;
+                text-align: left;
+                font-weight: 800;
+                border-bottom: 1.5px solid rgba(255, 255, 255, 0.12);
+              }
+
+              #cgel-academic-root td {
+                padding: 10px 14px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+                color: var(--acad-text-light);
+              }
+
+              #cgel-academic-root tr:nth-child(even) td {
+                background: rgba(255, 255, 255, 0.03);
+              }
+
+              /* Action Buttons */
+              #cgel-academic-root .acad-action-btn {
+                background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
+                color: #ffffff;
+                border: none;
+                padding: 10px 22px;
+                font-family: inherit;
+                font-size: 1.02rem;
+                font-weight: 700;
+                cursor: pointer;
+                border-radius: 24px;
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                box-shadow: 0 4px 16px rgba(124, 58, 237, 0.4);
+                transition: all 0.2s;
+                margin-top: 10px;
+              }
+
+              #cgel-academic-root .acad-action-btn:hover {
+                transform: translateY(-1px);
+                box-shadow: 0 6px 20px rgba(124, 58, 237, 0.6);
+              }
+
+              #cgel-academic-root .acad-done-badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                padding: 6px 14px;
+                border-radius: 20px;
+                background: rgba(34, 197, 94, 0.2);
+                border: 1px solid rgba(34, 197, 94, 0.4);
+                color: #86efac;
+                font-size: 0.95rem;
+                font-weight: 700;
+                margin-top: 10px;
+              }
+
+              /* Quiz Component */
+              #cgel-academic-root .acad-quiz-container {
+                background: linear-gradient(145deg, rgba(29, 19, 59, 0.9) 0%, rgba(17, 13, 41, 0.98) 100%);
+                border: 1.5px solid var(--acad-accent-purple);
+                border-radius: 16px;
+                padding: 22px 24px;
+                margin-top: 28px;
+                box-shadow: 0 8px 28px rgba(147, 51, 234, 0.25);
+              }
+
+              #cgel-academic-root .acad-quiz-title {
+                color: var(--acad-accent-gold);
+                font-size: 1.25rem;
+                font-weight: 800;
+                margin-top: 0;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+              }
+
+              #cgel-academic-root .acad-quiz-option {
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                border-radius: 12px;
+                padding: 12px 16px;
+                margin: 10px 0;
+                cursor: pointer;
+                font-size: 1.02rem;
+                color: var(--acad-text-light);
+                transition: all 0.2s;
+                display: flex;
+                align-items: center;
+              }
+
+              #cgel-academic-root .acad-quiz-option:hover {
+                background: rgba(168, 85, 247, 0.22);
+                border-color: var(--acad-accent-purple);
+                transform: translateX(4px);
+              }
+
+              #cgel-academic-root .acad-quiz-option.acad-correct {
+                background: rgba(34, 197, 94, 0.3) !important;
+                border-color: #22c55e !important;
+                color: #bbf7d0 !important;
+                font-weight: 700;
+              }
+
+              #cgel-academic-root .acad-quiz-option.acad-wrong {
+                background: rgba(239, 68, 68, 0.3) !important;
+                border-color: #ef4444 !important;
+                color: #fecaca !important;
+              }
+
+              @media (max-width: 900px) {
+                #cgel-academic-root .acad-layout-grid {
+                  grid-template-columns: 1fr;
+                }
+                #cgel-academic-root .acad-sidebar {
+                  flex-direction: row;
+                  overflow-x: auto;
+                  padding: 10px;
+                  border-right: none;
+                  border-bottom: 1px solid var(--acad-glass-border);
+                  gap: 8px;
+                }
+                #cgel-academic-root .acad-module-card {
+                  flex: 0 0 200px;
+                  min-width: 200px;
+                }
+                #cgel-academic-root .acad-content-pane {
+                  padding: 16px;
+                  max-height: none;
+                }
+              }
+            </style>
+
+            <div class="acad-canvas-container" id="cgel-fullscreen-container">
+              <div class="acad-sky-layer"></div>
+
+              <!-- Top Bar -->
+              <div class="acad-top-bar">
+                <div class="acad-brand-group">
+                  <button type="button" class="acad-nav-btn" data-target="overview-view" data-label="Trang chủ">
+                    🏠 Trang Chủ
+                  </button>
+                  <button type="button" class="acad-nav-btn" data-target="category-hsg12-view" data-label="HSG 12">
+                    ← HSG 12
+                  </button>
+                  <button type="button" class="acad-nav-btn" onclick="cgelToggleFullscreen()">
+                    ⛶ Toàn màn hình
+                  </button>
+                  <h2 class="acad-game-title">
+                    📚 CGEL GRAMMAR ACADEMY <span class="acad-title-badge">CHUYÊN SÂU HSG</span>
+                  </h2>
+                </div>
+
+                <div class="acad-hud-panel">
+                  <div class="acad-hud-item" style="color: var(--acad-accent-gold)">
+                    ⭐ Điểm Tích Lũy: <span id="cgel-xp-value">0</span> XP
+                  </div>
+                  <div class="acad-hud-item" style="color: var(--acad-accent-cyan)">
+                    📊 Trạng Thái: <span id="cgel-status-val">Đang học Module 1</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Main Grid -->
+              <div class="acad-layout-grid">
+                <!-- Sidebar -->
+                <div class="acad-sidebar">
+                  <div class="acad-sidebar-header">
+                    <span class="acad-sidebar-title">📂 MỤC LỤC MÔ-ĐUN</span>
+                    <span style="font-size: 0.8rem; color: var(--acad-accent-pink); font-weight:700;">5 Modules</span>
+                  </div>
+
+                  <div class="acad-module-card acad-active" id="cgel-f-mod1" onclick="cgelSwitchModule(1)">
+                    <div class="acad-card-name">Module 01: The Clause & Noun Phrase</div>
+                    <div class="acad-card-progress" id="cgel-progress-mod1">0/5 Chuyên đề</div>
+                  </div>
+
+                  <div class="acad-module-card acad-locked" id="cgel-f-mod2" onclick="cgelSwitchModule(2)">
+                    <div class="acad-card-name">Module 02: The Verb Phrase & Modality</div>
+                    <div class="acad-card-progress" id="cgel-progress-mod2">🔒 Đang khóa</div>
+                  </div>
+
+                  <div class="acad-module-card acad-locked" id="cgel-f-mod3" onclick="cgelSwitchModule(3)">
+                    <div class="acad-card-name">Module 03: Modifiers, Prepositions & Adverbials</div>
+                    <div class="acad-card-progress" id="cgel-progress-mod3">🔒 Đang khóa</div>
+                  </div>
+
+                  <div class="acad-module-card acad-locked" id="cgel-f-mod4" onclick="cgelSwitchModule(4)">
+                    <div class="acad-card-name">Module 04: Sentence Architecture & Reduction</div>
+                    <div class="acad-card-progress" id="cgel-progress-mod4">🔒 Đang khóa</div>
+                  </div>
+
+                  <div class="acad-module-card acad-locked" id="cgel-f-mod5" onclick="cgelSwitchModule(5)">
+                    <div class="acad-card-name">Module 05: Information Flow & Discourse</div>
+                    <div class="acad-card-progress" id="cgel-progress-mod5">🔒 Đang khóa</div>
+                  </div>
+
+                  <div class="acad-sidebar-header" style="margin-top: 10px;">
+                    <span class="acad-sidebar-title">📝 BÀI TẬP TỔNG HỢP</span>
+                  </div>
+                  <div class="acad-module-card" id="cgel-f-quests" style="background: rgba(244, 114, 182, 0.12); border-color: rgba(244, 114, 182, 0.3);" onclick="cgelShowQuestBoard()">
+                    <div class="acad-card-name">Chuyên đề Phân tích Cú pháp Nâng cao</div>
+                    <div class="acad-card-progress" id="cgel-progress-quests" style="color: var(--acad-accent-pink);">3 Bài tập phân tích</div>
+                  </div>
+                </div>
+
+                <!-- Content Area -->
+                <div class="acad-content-pane" id="cgel-content-display">
+                  <!-- Rendered dynamically -->
+                </div>
+              </div>
+            </div>
+
+            <script>
+              (function() {
+                window.cgelToggleFullscreen = function() {
+                  const elem = document.getElementById('cgel-fullscreen-container') || document.documentElement;
+                  if (!document.fullscreenElement) {
+                    if (elem.requestFullscreen) elem.requestFullscreen().catch(err => console.log(err));
+                    else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen();
+                  } else {
+                    if (document.exitFullscreen) document.exitFullscreen();
+                  }
+                };
+
+                const gameState = {
+                  xp: 0,
+                  activeModule: 1,
+                  completed: {
+                    m1: { topics: [false, false, false, false, false], quiz: false },
+                    m2: { topics: [false, false, false, false, false], quiz: false },
+                    m3: { topics: [false, false, false, false], quiz: false },
+                    m4: { topics: [false, false, false, false], quiz: false },
+                    m5: { topics: [false, false], quiz: false },
+                    quests: [false, false, false]
+                  },
+                  unlocked: { 1: true, 2: false, 3: false, 4: false, 5: false }
+                };
+
+                // Mindmap Zoom Handler
+                window.cgelZoomMindmap = function(mindmapId, factor) {
+                  const tree = document.getElementById('tree-' + mindmapId);
+                  if (!tree) return;
+                  let curScale = parseFloat(tree.getAttribute('data-scale') || '1');
+                  curScale = Math.max(0.7, Math.min(1.4, curScale + factor));
+                  tree.style.transform = 'scale(' + curScale + ')';
+                  tree.setAttribute('data-scale', curScale);
+                };
+
+                window.cgelResetMindmap = function(mindmapId) {
+                  const tree = document.getElementById('tree-' + mindmapId);
+                  if (!tree) return;
+                  tree.style.transform = 'scale(1)';
+                  tree.setAttribute('data-scale', '1');
+                };
+
+                // Interactive Inspector Handler
+                window.cgelInspectNode = function(mindmapId, nodeKey) {
+                  const inspector = document.getElementById('inspector-' + mindmapId);
+                  const titleEl = document.getElementById('insp-title-' + mindmapId);
+                  const bodyEl = document.getElementById('insp-body-' + mindmapId);
+                  
+                  // Clear active states in this mindmap
+                  const pills = document.querySelectorAll('#canvas-' + mindmapId + ' .mm-branch-pill, #canvas-' + mindmapId + ' .mm-leaf-pill');
+                  pills.forEach(p => p.classList.remove('pill-active', 'leaf-active'));
+                  
+                  const targetPill = document.getElementById('pill-' + mindmapId + '-' + nodeKey);
+                  if (targetPill) targetPill.classList.add(targetPill.classList.contains('mm-branch-pill') ? 'pill-active' : 'leaf-active');
+
+                  if (nodeDetailsRegistry[nodeKey]) {
+                    const data = nodeDetailsRegistry[nodeKey];
+                    titleEl.innerHTML = data.title;
+                    bodyEl.innerHTML = data.content;
+                    inspector.style.display = 'block';
+                    inspector.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                  }
+                };
+
+                window.cgelCloseInspector = function(mindmapId) {
+                  const inspector = document.getElementById('inspector-' + mindmapId);
+                  if (inspector) inspector.style.display = 'none';
+                  const pills = document.querySelectorAll('#canvas-' + mindmapId + ' .mm-branch-pill, #canvas-' + mindmapId + ' .mm-leaf-pill');
+                  pills.forEach(p => p.classList.remove('pill-active', 'leaf-active'));
+                };
+
+                const nodeDetailsRegistry = {
+                  // Module 1
+                  'sv_intrans': {
+                    title: '🔬 Nhóm Nội động từ (SV & SVA Patterns)',
+                    content: '<strong>Cấu trúc cú pháp:</strong> S + V (Intransitive) hoặc S + V + A (Obligatory Adverbial).<br><strong>Ví dụ:</strong> <em>"The sun shone."</em> (SV) | <em>"The ancient pagoda stands atop the hill."</em> (SVA).<br><strong>Điểm nhấn HSG:</strong> Trong SVA, trạng ngữ vị trí là bắt buộc (obligatory) để câu hoàn chỉnh cú pháp, không phải trạng ngữ phụ thêm.'
+                  },
+                  'svc_copular': {
+                    title: '🔬 Nhóm Động từ Hệ từ (SVC Pattern)',
+                    content: '<strong>Cấu trúc cú pháp:</strong> S + V (Copular) + Subject Complement (Cs).<br><strong>Ví dụ:</strong> <em>"The air turned cold."</em> | <em>"She became an astronomer."</em><br><strong>Điểm nhấn HSG:</strong> Bổ ngữ chủ ngữ (Cs) có thể là Tính từ (Adjective) hoặc Cụm danh từ (NP) đồng chỉ vị trí với Chủ ngữ.'
+                  },
+                  'svo_trans': {
+                    title: '🔬 Nhóm Ngoại động từ (SVO & SVOO Patterns)',
+                    content: '<strong>Cấu trúc cú pháp:</strong> S + V + Od (SVO) hoặc S + V + Oi + Od (SVOO).<br><strong>Ví dụ:</strong> <em>"The scholar analyzed the manuscript."</em> (SVO) | <em>"He gave her an explanation."</em> (SVOO).<br><strong>Điểm nhấn HSG:</strong> SVOO có thể chuyển đổi tương đương với cấu trúc giới từ: <em>He gave an explanation to her</em>.'
+                  },
+                  'svoc_complex': {
+                    title: '🔬 Nhóm Ngoại động từ Phức (SVOC & SVOA Patterns)',
+                    content: '<strong>Cấu trúc cú pháp:</strong> S + V + Od + Co (SVOC) hoặc S + V + Od + A (SVOA).<br><strong>Ví dụ:</strong> <em>"They elected him president."</em> (SVOC) | <em>"She placed the scroll inside the box."</em> (SVOA).<br><strong>Điểm nhấn HSG:</strong> Trong SVOC, Co bổ nghĩa trực tiếp cho Tân ngữ Od, thiết lập quan hệ vị ngữ ngầm (He is president).'
+                  },
+                  'count_gradient': {
+                    title: '🔬 Dải Tính Đếm Được (Countability Gradient)',
+                    content: '<strong>Nguyên lý:</strong> Tính đếm được là một dải liên tục (Gradient), không phải nhị phân cứng nhắc.<br><strong>Dual Membership:</strong> Danh từ biến chuyển nghĩa theo ngữ cảnh (a tea: tách trà vs. tea: chất trà; a marble: viên bi vs. marble: cẩm thạch).'
+                  },
+                  'nominal_scale': {
+                    title: '🔬 Cấp độ Danh từ hóa (Nominalization Scale)',
+                    content: '<strong>Cấp độ:</strong> Từ Verbal Gerund (<em>planting trees quickly</em>) đến Full Deverbal Noun (<em>The quick planting of trees</em>).<br><strong>Ứng dụng:</strong> Giúp tăng mật độ từ vựng (Lexical Density) trong văn viết học thuật C1-C2.'
+                  },
+                  'det_matrix': {
+                    title: '🔬 Ma trận 3 Vị trí Hạn định từ (Determiners)',
+                    content: '<strong>Trật tự bắt buộc:</strong> Predeterminer (all, both, double) + Central Determiner (the, this, possessives) + Postdeterminer (three, second, many).<br><strong>Ví dụ:</strong> <em>All the three ancient lanterns</em>.<br><strong>Lưu ý:</strong> 2 từ cùng nhóm Central không đứng cạnh nhau (*the my book ❌).'
+                  },
+                  'sv_concord': {
+                    title: '🔬 3 Nguyên lý Hòa hợp Chủ - Vị (Concord)',
+                    content: '<strong>1. Grammatical Concord:</strong> Theo hình thức số ít/nhiều.<br><strong>2. Notional Concord:</strong> Theo ý niệm số lượng thực tế (The committee have decided).<br><strong>3. Proximity:</strong> Theo danh từ đứng sát động từ (Either the teacher or the students are).'
+                  },
+                  'np_arch': {
+                    title: '🔬 Cấu trúc Đệ quy Cụm danh từ (Complex NP Architecture)',
+                    content: '<strong>Mô hình:</strong> Premodification + Head Noun + Recursive Postmodification.<br><strong>Hậu bổ ngữ đệ quy:</strong> <em>"The ancient book [on the shelf] [that was written in 1600]."</em> (Lồng ghép PP và Relative Clause).'
+                  },
+
+                  // Module 2
+                  'nice_prop': {
+                    title: '🔬 Toán tử Cú pháp & 4 Đặc tính NICE',
+                    content: '<strong>Operator:</strong> Trợ động từ đầu tiên trong cụm động từ.<br><strong>NICE:</strong> <strong>[N]</strong>egation (not), <strong>[I]</strong>nversion (Had we known), <strong>[C]</strong>ode (I will [code]), <strong>[E]</strong>mphasis (We DID arrive).<br><strong>Do-support:</strong> Động từ thường cần mượn Do để thực thi NICE.'
+                  },
+                  'aspect_shift': {
+                    title: '🔬 Chuyển dịch Ngữ nghĩa Thể (Stative-Dynamic Shift)',
+                    content: '<strong>Hiện tượng Aspectual Coercion:</strong> Khi động từ tĩnh đưa vào tiếp diễn, nó diễn tả hành vi tạm thời.<br><em>"He is silly"</em> (Bản tính) $\\rightarrow$ <em>"He is being silly"</em> (Đang làm trò ngớ ngẩn tạm thời).'
+                  },
+                  'modality_dual': {
+                    title: '🔬 Phổ Tính thái Nội tại & Ngoại tại',
+                    content: '<strong>Intrinsic (Deontic):</strong> Ý chí, nghĩa vụ, mệnh lệnh (You must go).<br><strong>Extrinsic (Epistemic):</strong> Suy đoán logic, tất yếu khách quan (They must be home).<br><strong>Lưu ý:</strong> Bổn phận quá khứ dùng <em>had to</em>, không dùng <em>must have done</em>.'
+                  },
+                  'subjunctive_3': {
+                    title: '🔬 3 Dạng thức Giả định (Subjunctive Mood)',
+                    content: '<strong>1. Mandative:</strong> Động từ nguyên mẫu (demanded that he <em>resign</em>).<br><strong>2. Formulaic:</strong> Thành ngữ cổ (Come what <em>may</em>).<br><strong>3. Were-Subjunctive:</strong> Giả định phi thực tế (If I <em>were</em> you).'
+                  },
+                  'passive_gradient': {
+                    title: '🔬 Thang độ Thể Bị động (Passive Gradient)',
+                    content: '<strong>1. Central Passive:</strong> Động từ thuần túy, có câu chủ động đối ứng.<br><strong>2. Semi-Passive:</strong> Phân từ mang tính tính từ (very interested).<br><strong>3. Pseudo-Passive:</strong> Miêu tả trạng thái tĩnh đã xong (The door was locked).'
+                  },
+
+                  // Module 3
+                  'adj_slots': {
+                    title: '🔬 Phân bổ Vị trí Tính từ (Attributive vs. Predicative)',
+                    content: '<strong>Attributive-Only:</strong> Nhấn mạnh (utter fool, sheer luck).<br><strong>Predicative-Only:</strong> Nhóm chữ a- (afraid, asleep, alive, alone). Không nói *an afraid child ❌.'
+                  },
+                  'prep_stranded': {
+                    title: '🔬 Giới từ Tách rời (Stranded Prepositions)',
+                    content: '<strong>Fronted:</strong> <em>The topic on which we focused</em>.<br><strong>Stranded:</strong> <em>The topic which we focused on</em>.<br><strong>Bị động bắt buộc:</strong> <em>The proposal was agreed to</em>.'
+                  },
+                  'adv_adjuncts': {
+                    title: '🔬 Trạng ngữ Nội biên: Adjuncts & Subjuncts',
+                    content: '<strong>Adjuncts:</strong> Không gian, Thời gian, Thể thức. Vượt qua kiểm tra câu chẻ (It was in the park that...).<br><strong>Subjuncts:</strong> Bổ trợ mức độ hoặc tiêu điểm (Only, Visually, Merely).'
+                  },
+                  'adv_disjuncts': {
+                    title: '🔬 Trạng ngữ Ngoại biên: Disjuncts & Conjuncts',
+                    content: '<strong>Disjuncts:</strong> Đánh giá quan điểm (Frankly, Fortunately).<br><strong>Conjuncts:</strong> Nối logic mệnh đề (However, Consequently, On the contrary).'
+                  },
+
+                  // Module 4
+                  'neg_scope': {
+                    title: '🔬 Phạm vi & Tiêu điểm Phủ định (Negation Scope)',
+                    content: '<strong>Scope Ambiguity:</strong> <em>"I did not call him because I was angry"</em> (Có gọi nhưng không phải vì giận VS Vì giận nên không gọi).<br><strong>Local Negation:</strong> Phủ định một bộ phận nhỏ, câu vẫn mang tính khẳng định.'
+                  },
+                  'coord_parallel': {
+                    title: '🔬 Đẳng lập & Song hành Cú pháp (Parallelism)',
+                    content: '<strong>Coordinators:</strong> and, but, or.<br><strong>Correlatives:</strong> not only... but also đòi hỏi hình thức cú pháp cân bằng đối xứng tuyệt đối (VP // VP, Adj // Adj).'
+                  },
+                  'subord_reduced': {
+                    title: '🔬 Mệnh đề Phụ thuộc Rút gọn & Phân từ Treo',
+                    content: '<strong>Non-finite & Verbless:</strong> Although exhausted, he continued.<br><strong>Dangling Modifier:</strong> Chủ ngữ ngầm định của V-ing/V-ed phải trùng với chủ ngữ chính.'
+                  },
+                  'struct_reduction': {
+                    title: '🔬 Giảm tải Thông tin Thừa (Pro-forms & Ellipsis)',
+                    content: '<strong>Pro-forms:</strong> do so (hành động chủ ý), one/ones (danh từ), so/not (mệnh đề).<br><strong>Ellipsis:</strong> Lược vị ngữ chung (Gapping: John bought books, and Mary, pens).'
+                  },
+
+                  // Module 5
+                  'info_flow': {
+                    title: '🔬 Tổ chức Dòng chảy Thông tin & Cấu trúc Tiêu điểm',
+                    content: '<strong>Theme-Rheme:</strong> Given information đứng đầu, New focus đứng cuối.<br><strong>End-Weight:</strong> Đưa mệnh đề nặng về cuối qua Extraposition (It is vital that...).<br><strong>Cleft Sentences:</strong> It-cleft, Wh-cleft để nhấn mạnh tiêu điểm.'
+                  },
+                  'text_linguistics': {
+                    title: '🔬 Ngữ pháp Văn bản: Cohesion & Coherence',
+                    content: '<strong>Cohesion:</strong> Liên kết hình thức (Tham chiếu Anaphoric/Cataphoric, Thay thế, Tỉnh lược, Nối logic).<br><strong>Coherence:</strong> Mạch lạc ý niệm và tính liên tục tư duy sâu sắc.'
+                  }
+                };
+
+                const modulesData = {
+                  1: {
+                    title: "Module 01: The Clause & Noun Phrase",
+                    desc: "Khảo sát toàn diện cấu trúc mệnh đề căn bản, 7 mô hình câu cốt lõi và kiến trúc phân tầng phức tạp của Cụm danh từ (NP).",
+                    topics: [
+                      {
+                        title: "Topic 1: 7 Core Clause Types (S, V, O, C, A mapping)",
+                        mindmapId: "m1t1",
+                        mindmap: {
+                          root: "🧠 7 Core Clause Types (CGEL)",
+                          branches: [
+                            { 
+                              key: "sv_intrans", 
+                              label: "1. Nhóm Nội động từ (Intransitive)", 
+                              color: "#38bdf8",
+                              leaves: [
+                                { key: "sv_intrans", text: "SV: The sun shone" },
+                                { key: "sv_intrans", text: "SVA: The temple stands on the hill" }
+                              ]
+                            },
+                            { 
+                              key: "svc_copular", 
+                              label: "2. Nhóm Động từ Hệ từ (Copular)", 
+                              color: "#c084fc",
+                              leaves: [
+                                { key: "svc_copular", text: "SVC: The sky looks serene" },
+                                { key: "svc_copular", text: "SVC: He became mayor" }
+                              ]
+                            },
+                            { 
+                              key: "svo_trans", 
+                              label: "3. Nhóm Ngoại động từ (Transitive)", 
+                              color: "#f472b6",
+                              leaves: [
+                                { key: "svo_trans", text: "SVO: Built a house" },
+                                { key: "svo_trans", text: "SVOO: Gave her a gift" }
+                              ]
+                            },
+                            { 
+                              key: "svoc_complex", 
+                              label: "4. Nhóm Ngoại động từ Phức", 
+                              color: "#fbbf24",
+                              leaves: [
+                                { key: "svoc_complex", text: "SVOC: Called him leader" },
+                                { key: "svoc_complex", text: "SVOA: Put scroll in the box" }
+                              ]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-vn-explanation">
+                            <strong>📖 Giải thích Ngôn ngữ học & Cơ chế Cú pháp:</strong><br>
+                            Toàn bộ câu tiếng Anh được cấu thành từ 5 thành tố chức năng: <strong>S</strong> (Chủ ngữ), <strong>V</strong> (Vị ngữ), <strong>O</strong> (Tân ngữ), <strong>C</strong> (Bổ ngữ), và <strong>A</strong> (Trạng ngữ bắt buộc).
+                          </div>
+                          <div class="acad-insight-box">
+                            <h4>💡 Phân tích Chuyên sâu: Trạng ngữ Bắt buộc (Obligatory Adverbial)</h4>
+                            <p>Trong cấu trúc <strong>SVA</strong> và <strong>SVOA</strong>, trạng ngữ là thành tố bắt buộc không thể lược bỏ (*"The temple stands"* ❌).</p>
+                          </div>
+                        `
+                      },
+                      {
+                        title: "Topic 2: Countability Gradient & Nominalization",
+                        mindmapId: "m1t2",
+                        mindmap: {
+                          root: "🧠 Countability & Nominalization",
+                          branches: [
+                            { 
+                              key: "count_gradient", 
+                              label: "1. Dải Tính Đếm Được (Gradient)", 
+                              color: "#38bdf8",
+                              leaves: [
+                                { key: "count_gradient", text: "Strict Count (a book, a cat)" },
+                                { key: "count_gradient", text: "Dual Membership (a coffee vs. coffee)" }
+                              ]
+                            },
+                            { 
+                              key: "nominal_scale", 
+                              label: "2. Cấp độ Danh từ hóa (Scale)", 
+                              color: "#c084fc",
+                              leaves: [
+                                { key: "nominal_scale", text: "Verbal Gerund: planting trees quickly" },
+                                { key: "nominal_scale", text: "Full Deverbal Noun: The planting of trees" }
+                              ]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-vn-explanation">
+                            <strong>📖 Bản chất Danh từ hóa:</strong> Chuyển đổi động từ/mệnh đề thành Cụm danh từ (NP) giúp tối đa hóa Mật độ Từ vựng (Lexical Density) trong văn phong học thuật.
+                          </div>
+                        `
+                      },
+                      {
+                        title: "Topic 3: 3-Position Determiner Matrix (Pre, Central, Post)",
+                        mindmapId: "m1t3",
+                        mindmap: {
+                          root: "🧠 Determiner Matrix (3 Vị Trí)",
+                          branches: [
+                            { 
+                              key: "det_matrix", 
+                              label: "Vị trí 1: Predeterminers", 
+                              color: "#f472b6",
+                              leaves: [
+                                { key: "det_matrix", text: "all, both, half, double, twice, such" }
+                              ]
+                            },
+                            { 
+                              key: "det_matrix", 
+                              label: "Vị trí 2: Central Determiners", 
+                              color: "#38bdf8",
+                              leaves: [
+                                { key: "det_matrix", text: "the, a/an, this/that, my/her, each, every, no" }
+                              ]
+                            },
+                            { 
+                              key: "det_matrix", 
+                              label: "Vị trí 3: Postdeterminers", 
+                              color: "#fbbf24",
+                              leaves: [
+                                { key: "det_matrix", text: "cardinals (one, two), ordinals (first), many, few" }
+                              ]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-caution-box">
+                            <h4>⚠️ Lưu ý Trọng tâm: Xung đột Cùng Nhóm</h4>
+                            <p>Không bao giờ đặt 2 hạn định từ cùng nhóm Central cạnh nhau (*the my car* ❌ $\\rightarrow$ *that car of mine* ✔️).</p>
+                          </div>
+                        `
+                      },
+                      {
+                        title: "Topic 4: Advanced S-V Concord (Grammatical, Notional, Proximity)",
+                        mindmapId: "m1t4",
+                        mindmap: {
+                          root: "🧠 3 Nguyên lý Hòa hợp S-V",
+                          branches: [
+                            { 
+                              key: "sv_concord", 
+                              label: "1. Grammatical Concord", 
+                              color: "#4ade80",
+                              leaves: [
+                                { key: "sv_concord", text: "Chia khớp theo hình thái số ít / số nhiều" }
+                              ]
+                            },
+                            { 
+                              key: "sv_concord", 
+                              label: "2. Notional Concord", 
+                              color: "#c084fc",
+                              leaves: [
+                                { key: "sv_concord", text: "Theo ý niệm số lượng (The committee have decided)" }
+                              ]
+                            },
+                            { 
+                              key: "sv_concord", 
+                              label: "3. Proximity Principle", 
+                              color: "#fbbf24",
+                              leaves: [
+                                { key: "sv_concord", text: "Theo danh từ cận kề (Either the teacher or students are)" }
+                              ]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-vn-explanation">
+                            <strong>📖 Quy tắc Cận kề:</strong> Với liên từ <em>either... or</em> / <em>neither... nor</em>, động từ chia theo danh từ đứng sát nó nhất.
+                          </div>
+                        `
+                      },
+                      {
+                        title: "Topic 5: Complex NP Architecture (Recursive Postmodification)",
+                        mindmapId: "m1t5",
+                        mindmap: {
+                          root: "🧠 Cấu trúc Đệ quy Noun Phrase",
+                          branches: [
+                            { 
+                              key: "np_arch", 
+                              label: "Tiền Bổ Ngữ (Premodification)", 
+                              color: "#f472b6",
+                              leaves: [
+                                { key: "np_arch", text: "Trật tự tính từ OSASCOMP & Noun adjuncts" }
+                              ]
+                            },
+                            { 
+                              key: "np_arch", 
+                              label: "Danh Từ Trung Tâm (Head Noun)", 
+                              color: "#38bdf8",
+                              leaves: [
+                                { key: "np_arch", text: "Lõi ngữ nghĩa quyết định toàn cụm" }
+                              ]
+                            },
+                            { 
+                              key: "np_arch", 
+                              label: "Hậu Bổ Ngữ Đệ Quy (Postmodification)", 
+                              color: "#c084fc",
+                              leaves: [
+                                { key: "np_arch", text: "Cụm PP lồng ghép & Mệnh đề quan hệ" }
+                              ]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-vn-explanation">
+                            <strong>📖 Cấu trúc Đệ quy:</strong> Hậu bổ ngữ có thể lồng nhiều tầng: <em>The road [to the city [near the coast]]</em>.
+                          </div>
+                        `
+                      }
+                    ],
+                    quiz: {
+                      question: "Phân tích câu: 'The abbot placed the ancient scroll inside the wooden altar.' Cấu trúc câu này thuộc mô hình căn bản nào theo Randolph Quirk?",
+                      options: [
+                        { text: "A. SVO (Subject + Verb + Object)", correct: false },
+                        { text: "B. SVOC (Subject + Verb + Object + Complement)", correct: false },
+                        { text: "C. SVOA (Subject + Verb + Object + Obligatory Adverbial)", correct: true },
+                        { text: "D. SVA (Subject + Verb + Obligatory Adverbial)", correct: false }
+                      ]
+                    }
+                  },
+                  2: {
+                    title: "Module 02: The Verb Phrase & Modality",
+                    desc: "Đi sâu vào Toán tử Cú pháp (The Operator), 4 đặc tính NICE, Ngữ nghĩa Thì - Thể, Phổ tính thái và Thang độ Thể Bị động.",
+                    topics: [
+                      {
+                        title: "Topic 6: The Operator & NICE Properties (Do-support mechanics)",
+                        mindmapId: "m2t1",
+                        mindmap: {
+                          root: "🧠 Operator & 4 Đặc tính NICE",
+                          branches: [
+                            { 
+                              key: "nice_prop", 
+                              label: "[N]egation (Phủ định)", 
+                              color: "#f472b6",
+                              leaves: [{ key: "nice_prop", text: "Gắn not/n't sau toán tử (has not gone)" }]
+                            },
+                            { 
+                              key: "nice_prop", 
+                              label: "[I]nversion (Đảo ngữ)", 
+                              color: "#38bdf8",
+                              leaves: [{ key: "nice_prop", text: "Đảo toán tử lên trước chủ ngữ (Had we known)" }]
+                            },
+                            { 
+                              key: "nice_prop", 
+                              label: "[C]ode (Từ thế)", 
+                              color: "#c084fc",
+                              leaves: [{ key: "nice_prop", text: "Đại diện cho vị ngữ rút gọn (I will [code])" }]
+                            },
+                            { 
+                              key: "nice_prop", 
+                              label: "[E]mphasis (Nhấn mạnh)", 
+                              color: "#fbbf24",
+                              leaves: [{ key: "nice_prop", text: "Khẳng định chân giá trị (We DID arrive!)" }]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-vn-explanation">
+                            <strong>📖 Toán tử (Operator):</strong> Là trợ động từ đầu tiên trong cụm vị ngữ; chịu trách nhiệm thực thi các phép biến đổi phủ định, đảo ngữ, rút gọn và nhấn mạnh.
+                          </div>
+                        `
+                      },
+                      {
+                        title: "Topic 7: Aspectual Semantics (Stative-Dynamic Shift)",
+                        mindmapId: "m2t2",
+                        mindmap: {
+                          root: "🧠 Ngữ nghĩa Thể & Ép đổi Nghĩa",
+                          branches: [
+                            { 
+                              key: "aspect_shift", 
+                              label: "Động từ Tĩnh (Stative)", 
+                              color: "#38bdf8",
+                              leaves: [{ key: "aspect_shift", text: "Bản tính / Nhận thức cố định (He is foolish)" }]
+                            },
+                            { 
+                              key: "aspect_shift", 
+                              label: "Ép Thể Tiếp diễn (Coercion)", 
+                              color: "#f472b6",
+                              leaves: [{ key: "aspect_shift", text: "Hành vi tạm thời cố ý (He is being foolish)" }]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-vn-explanation">
+                            <strong>📖 Thể tiếp diễn:</strong> Khi ép động từ tĩnh vào thể tiếp diễn (<em>He is being silly</em>), câu diễn tả hành vi nhất thời chứ không phải bản tính.
+                          </div>
+                        `
+                      },
+                      {
+                        title: "Topic 8: Modality Spectrum (Intrinsic vs. Extrinsic Dualism)",
+                        mindmapId: "m2t3",
+                        mindmap: {
+                          root: "🧠 Trục Đối Lập Tính Thái",
+                          branches: [
+                            { 
+                              key: "modality_dual", 
+                              label: "Intrinsic (Deontic Modality)", 
+                              color: "#c084fc",
+                              leaves: [{ key: "modality_dual", text: "Ý chí, mệnh lệnh, bổn phận (You must go)" }]
+                            },
+                            { 
+                              key: "modality_dual", 
+                              label: "Extrinsic (Epistemic Modality)", 
+                              color: "#fbbf24",
+                              leaves: [{ key: "modality_dual", text: "Suy đoán logic khách quan (They must be home)" }]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-caution-box">
+                            <h4>⚠️ Lưu ý Bẫy thi cử: Nghĩa vụ trong Quá khứ</h4>
+                            <p>Không dùng *must have done* cho nghĩa vụ quá khứ. Bắt buộc dùng <strong>had to</strong> (*We had to finish the report yesterday*).</p>
+                          </div>
+                        `
+                      },
+                      {
+                        title: "Topic 9: The Subjunctive Mood (Mandative, Formulaic, Were-Subjunctive)",
+                        mindmapId: "m2t4",
+                        mindmap: {
+                          root: "🧠 3 Dạng thức Thức Giả định",
+                          branches: [
+                            { 
+                              key: "subjunctive_3", 
+                              label: "1. Mandative Subjunctive", 
+                              color: "#38bdf8",
+                              leaves: [{ key: "subjunctive_3", text: "Bare infinitive: demanded that he resign" }]
+                            },
+                            { 
+                              key: "subjunctive_3", 
+                              label: "2. Formulaic Subjunctive", 
+                              color: "#f472b6",
+                              leaves: [{ key: "subjunctive_3", text: "Thành ngữ cổ: Come what may, God save" }]
+                            },
+                            { 
+                              key: "subjunctive_3", 
+                              label: "3. Were-Subjunctive", 
+                              color: "#c084fc",
+                              leaves: [{ key: "subjunctive_3", text: "Phi thực tế: If I were you" }]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-vn-explanation">
+                            <strong>📖 Mandative Subjunctive:</strong> Dùng động từ nguyên mẫu không chia cho mọi ngôi: <em>The board insisted that he be present</em>.
+                          </div>
+                        `
+                      },
+                      {
+                        title: "Topic 10: The Passive Gradient (Central, Semi, and Pseudo-Passives)",
+                        mindmapId: "m2t5",
+                        mindmap: {
+                          root: "🧠 Thang độ Thể Bị động (CGEL)",
+                          branches: [
+                            { 
+                              key: "passive_gradient", 
+                              label: "1. Central Passive (Thuần túy)", 
+                              color: "#4ade80",
+                              leaves: [{ key: "passive_gradient", text: "Có câu chủ động đối ứng & Tác nhân rõ rệt" }]
+                            },
+                            { 
+                              key: "passive_gradient", 
+                              label: "2. Semi-Passive (Bán bị động)", 
+                              color: "#fbbf24",
+                              leaves: [{ key: "passive_gradient", text: "Phân từ mang tính tính từ (very interested)" }]
+                            },
+                            { 
+                              key: "passive_gradient", 
+                              label: "3. Pseudo-Passive (Trạng thái)", 
+                              color: "#f472b6",
+                              leaves: [{ key: "passive_gradient", text: "Mô tả trạng thái kết quả tĩnh (The door was locked)" }]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-vn-explanation">
+                            <strong>📖 Pseudo-Passives:</strong> Diễn tả trạng thái tĩnh đã hoàn tất: <em>The door was locked</em>.
+                          </div>
+                        `
+                      }
+                    ],
+                    quiz: {
+                      question: "Chọn câu diễn đạt chuẩn xác tính thái nghĩa vụ trong quá khứ theo đúng ngữ pháp học thuật:",
+                      options: [
+                        { text: "A. To enter the laboratory, the researchers must have shown their ID cards yesterday.", correct: false },
+                        { text: "B. To enter the laboratory, the researchers had to show their ID cards yesterday.", correct: true },
+                        { text: "C. The director demanded that the scientist should leaves immediately.", correct: false },
+                        { text: "D. The door was locked by 8 PM, which was a central active process.", correct: false }
+                      ]
+                    }
+                  },
+                  3: {
+                    title: "Module 03: Modifiers, Prepositions & Adverbials",
+                    desc: "Làm chủ hệ thống phân loại trạng ngữ 4 nhóm kinh điển của Randolph Quirk, phân định vị trí tính từ và hiện tượng Stranded Prepositions.",
+                    topics: [
+                      {
+                        title: "Topic 11: Adjectives & Adverbs (Attributive-Only vs. Predicative-Only)",
+                        mindmapId: "m3t1",
+                        mindmap: {
+                          root: "🧠 Vị trí Phân bổ Tính từ",
+                          branches: [
+                            { 
+                              key: "adj_slots", 
+                              label: "Attributive-Only (Trước Noun)", 
+                              color: "#38bdf8",
+                              leaves: [{ key: "adj_slots", text: "an utter fool, sheer luck, the sole survivor" }]
+                            },
+                            { 
+                              key: "adj_slots", 
+                              label: "Predicative-Only (Sau Hệ từ)", 
+                              color: "#f472b6",
+                              leaves: [{ key: "adj_slots", text: "afraid, asleep, alive, alone (a- adjectives)" }]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-vn-explanation">
+                            <strong>📖 Predicative-Only:</strong> Nhóm tính từ tiền tố *a-* (*afraid, asleep, alive, alone*). Dùng *a frightened child*, không dùng *an afraid child*.
+                          </div>
+                        `
+                      },
+                      {
+                        title: "Topic 12: Prepositions & Stranded Preposition Mechanics",
+                        mindmapId: "m3t2",
+                        mindmap: {
+                          root: "🧠 Giới từ Tách rời (Stranded)",
+                          branches: [
+                            { 
+                              key: "prep_stranded", 
+                              label: "Fronted (Trang trọng)", 
+                              color: "#c084fc",
+                              leaves: [{ key: "prep_stranded", text: "The topic on which we focused..." }]
+                            },
+                            { 
+                              key: "prep_stranded", 
+                              label: "Stranded (Tiêu chuẩn)", 
+                              color: "#fbbf24",
+                              leaves: [{ key: "prep_stranded", text: "The topic which we focused on..." }]
+                            },
+                            { 
+                              key: "prep_stranded", 
+                              label: "Prepositional Passive", 
+                              color: "#4ade80",
+                              leaves: [{ key: "prep_stranded", text: "The proposal was agreed to (Bắt buộc)" }]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-vn-explanation">
+                            <strong>📖 Prepositional Passive:</strong> Giới từ bắt buộc nằm lại cuối câu: <em>The matter was looked into</em>.
+                          </div>
+                        `
+                      },
+                      {
+                        title: "Topic 13: Adverbials I: Adjuncts vs. Subjuncts",
+                        mindmapId: "m3t3",
+                        mindmap: {
+                          root: "🧠 Trạng từ Nội biên (Quirk)",
+                          branches: [
+                            { 
+                              key: "adv_adjuncts", 
+                              label: "Adjuncts (Tình huống)", 
+                              color: "#38bdf8",
+                              leaves: [{ key: "adv_adjuncts", text: "Không gian, Thời gian, Thể thức (Vượt qua câu chẻ)" }]
+                            },
+                            { 
+                              key: "adv_adjuncts", 
+                              label: "Subjuncts (Bổ trợ/Tiêu điểm)", 
+                              color: "#f472b6",
+                              leaves: [{ key: "adv_adjuncts", text: "Hạn định góc nhìn / mức độ (Only, Visually, Merely)" }]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-vn-explanation">
+                            <strong>📖 Adjuncts:</strong> Bổ sung Không gian, Thời gian, Thể thức. Có thể nhấn mạnh trong câu chẻ: <em>It was quickly that he ran</em>.
+                          </div>
+                        `
+                      },
+                      {
+                        title: "Topic 14: Adverbials II: Disjuncts vs. Conjuncts",
+                        mindmapId: "m3t4",
+                        mindmap: {
+                          root: "🧠 Trạng từ Ngoại biên (Quirk)",
+                          branches: [
+                            { 
+                              key: "adv_disjuncts", 
+                              label: "Disjuncts (Quan điểm/Đánh giá)", 
+                              color: "#c084fc",
+                              leaves: [{ key: "adv_disjuncts", text: "Frankly, Fortunately, Strictly speaking" }]
+                            },
+                            { 
+                              key: "adv_disjuncts", 
+                              label: "Conjuncts (Nối Logic Mệnh đề)", 
+                              color: "#fbbf24",
+                              leaves: [{ key: "adv_disjuncts", text: "However, Consequently, On the contrary" }]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-caution-box">
+                            <h4>⚠️ Phân biệt Cốt lõi: 'On the contrary' vs. 'On the other hand'</h4>
+                            <p>• <strong>On the contrary:</strong> Bác bỏ phủ định vừa nêu trước đó.<br>• <strong>On the other hand:</strong> Cân bằng 2 mặt đối lập.</p>
+                          </div>
+                        `
+                      }
+                    ],
+                    quiz: {
+                      question: "Chọn câu sử dụng chính xác trạng từ liên kết đối lập theo đúng chuẩn ngữ pháp CGEL:",
+                      options: [
+                        { text: "A. He loves physics. On the contrary, his brother prefers biology.", correct: false },
+                        { text: "B. The institution is not underfunded. On the contrary, it receives extensive grants.", correct: true },
+                        { text: "C. We saw an asleep bird resting on the roof.", correct: false },
+                        { text: "D. The ancient library which they walked into it was magnificent.", correct: false }
+                      ]
+                    }
+                  },
+                  4: {
+                    title: "Module 04: Sentence Architecture & Reduction",
+                    desc: "Xây dựng các câu phức nhiều tầng bậc, hiểu sâu cơ chế rút gọn phân từ, bẫy Dangling Modifiers, Pro-forms và Tỉnh lược.",
+                    topics: [
+                      {
+                        title: "Topic 15: Advanced Negation (Scope, Focus, and Local Negation)",
+                        mindmapId: "m4t1",
+                        mindmap: {
+                          root: "🧠 Cấu trúc Phủ định Nâng cao",
+                          branches: [
+                            { 
+                              key: "neg_scope", 
+                              label: "Clause Negation (Toàn câu)", 
+                              color: "#f472b6",
+                              leaves: [{ key: "neg_scope", text: "Đổi chân giá trị mệnh đề & Sinh tag question khẳng định" }]
+                            },
+                            { 
+                              key: "neg_scope", 
+                              label: "Local Negation (Cục bộ)", 
+                              color: "#38bdf8",
+                              leaves: [{ key: "neg_scope", text: "Chỉ phủ định một cụm từ, câu vẫn khẳng định" }]
+                            },
+                            { 
+                              key: "neg_scope", 
+                              label: "Scope & Focus Ambiguity", 
+                              color: "#fbbf24",
+                              leaves: [{ key: "neg_scope", text: "Đa nghĩa phạm vi trạng ngữ nguyên nhân" }]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-vn-explanation">
+                            <strong>📖 Scope of Negation:</strong> Trạng từ chỉ nguyên nhân đứng sau mệnh đề phủ định có thể tạo 2 tầng nghĩa khác nhau tùy vào điểm ngắt ngữ điệu.
+                          </div>
+                        `
+                      },
+                      {
+                        title: "Topic 16: Coordination & Parallelism (Strict Syntactic Tests)",
+                        mindmapId: "m4t2",
+                        mindmap: {
+                          root: "🧠 Đẳng Lập & Song Hành Cú Pháp",
+                          branches: [
+                            { 
+                              key: "coord_parallel", 
+                              label: "Coordinators Chuẩn", 
+                              color: "#c084fc",
+                              leaves: [{ key: "coord_parallel", text: "and, but, or (Nối thành tố đồng đẳng)" }]
+                            },
+                            { 
+                              key: "coord_parallel", 
+                              label: "Correlatives Đối Xứng", 
+                              color: "#4ade80",
+                              leaves: [{ key: "coord_parallel", text: "not only... but also (VP // VP, Adj // Adj)" }]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-vn-explanation">
+                            <strong>📖 Song hành Cú pháp:</strong> Cặp liên từ tương quan bắt buộc phải nối 2 thành phần đồng dạng hình thức (V-ing // V-ing).
+                          </div>
+                        `
+                      },
+                      {
+                        title: "Topic 17: Complex Sentence Subordination (Non-finite & Verbless Clauses)",
+                        mindmapId: "m4t3",
+                        mindmap: {
+                          root: "🧠 Mệnh đề Phụ thuộc Rút gọn",
+                          branches: [
+                            { 
+                              key: "subord_reduced", 
+                              label: "Non-finite (Không chia)", 
+                              color: "#38bdf8",
+                              leaves: [{ key: "subord_reduced", text: "To-V, Present Participle V-ing, Past Participle V-ed" }]
+                            },
+                            { 
+                              key: "subord_reduced", 
+                              label: "Verbless (Phi động từ)", 
+                              color: "#f472b6",
+                              leaves: [{ key: "subord_reduced", text: "Although exhausted, he continued writing" }]
+                            },
+                            { 
+                              key: "subord_reduced", 
+                              label: "Dangling Modifier Trap", 
+                              color: "#fbbf24",
+                              leaves: [{ key: "subord_reduced", text: "Chủ ngữ ngầm định phải trùng chủ ngữ chính" }]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-caution-box">
+                            <h4>⚠️ Bẫy Phân từ Treo (Dangling Modifier)</h4>
+                            <p>Chủ ngữ ngầm của phân từ rút gọn bắt buộc phải là chủ ngữ của mệnh đề chính (*Walking through the forest, a strange sound surprised him* ❌).</p>
+                          </div>
+                        `
+                      },
+                      {
+                        title: "Topic 18: Structural Reduction (Pro-forms and Strict Ellipsis)",
+                        mindmapId: "m4t4",
+                        mindmap: {
+                          root: "🧠 Giảm Tải Thông Tin Thừa",
+                          branches: [
+                            { 
+                              key: "struct_reduction", 
+                              label: "Từ thế (Pro-forms)", 
+                              color: "#fbbf24",
+                              leaves: [{ key: "struct_reduction", text: "do so (hành động), one/ones (danh từ), so/not (mệnh đề)" }]
+                            },
+                            { 
+                              key: "struct_reduction", 
+                              label: "Tỉnh lược (Ellipsis)", 
+                              color: "#c084fc",
+                              leaves: [{ key: "struct_reduction", text: "Gapping: Lược vị ngữ chung (John bought books, and Mary, pens)" }]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-vn-explanation">
+                            <strong>📖 Pro-form 'do so':</strong> Chỉ thay thế cho động từ chỉ hành động chủ ý (Dynamic), không dùng cho động từ tĩnh.
+                          </div>
+                        `
+                      }
+                    ],
+                    quiz: {
+                      question: "Xác định câu tránh được hoàn toàn lỗi Phân từ treo (Dangling Modifier) theo đúng chuẩn học thuật:",
+                      options: [
+                        { text: "A. While analyzing the ancient manuscript, the candle flickered out.", correct: false },
+                        { text: "B. While analyzing the ancient manuscript, the scholar was interrupted by the sudden storm.", correct: true },
+                        { text: "C. Although exhausted from the long ascent, the summit view amazed the researchers.", correct: false },
+                        { text: "D. The professor loved literature and his assistant did so too.", correct: false }
+                      ]
+                    }
+                  },
+                  5: {
+                    title: "Module 05: Information Flow & Discourse",
+                    desc: "Tổ chức dòng chảy thông tin, nguyên lý Sức nặng Cuối (End-Weight), các cấu trúc biến đổi tiêu điểm (Clefting, Fronting) và 5 phương tiện liên kết văn bản.",
+                    topics: [
+                      {
+                        title: "Topic 19: Information Processing (Given/New, End-Weight, Clefting)",
+                        mindmapId: "m5t1",
+                        mindmap: {
+                          root: "🧠 Dòng Chảy Thông Tin (Discourse)",
+                          branches: [
+                            { 
+                              key: "info_flow", 
+                              label: "Theme - Rheme (Given/New)", 
+                              color: "#38bdf8",
+                              leaves: [{ key: "info_flow", text: "Given info ở đầu neo ý, New focus ở cuối" }]
+                            },
+                            { 
+                              key: "info_flow", 
+                              label: "End-Weight Principle", 
+                              color: "#fbbf24",
+                              leaves: [{ key: "info_flow", text: "Extraposition: It is vital that we verify sources" }]
+                            },
+                            { 
+                              key: "info_flow", 
+                              label: "Focus-Shifting Clefts", 
+                              color: "#f472b6",
+                              leaves: [{ key: "info_flow", text: "It-cleft & Wh-cleft (What we need is evidence)" }]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-vn-explanation">
+                            <strong>📖 End-Weight Principle:</strong> Đẩy mệnh đề dài, nặng về cuối câu bằng cấu trúc Extraposition: <em>It is vital that we verify all data</em>.
+                          </div>
+                        `
+                      },
+                      {
+                        title: "Topic 20: Text Linguistics (Anaphoric/Cataphoric, Cohesion vs. Coherence)",
+                        mindmapId: "m5t2",
+                        mindmap: {
+                          root: "🧠 Ngữ Pháp Văn Bản (Halliday)",
+                          branches: [
+                            { 
+                              key: "text_linguistics", 
+                              label: "Cohesion (Liên kết Bề mặt)", 
+                              color: "#c084fc",
+                              leaves: [{ key: "text_linguistics", text: "Reference (Anaphoric/Cataphoric), Substitution, Ellipsis, Conjunction" }]
+                            },
+                            { 
+                              key: "text_linguistics", 
+                              label: "Coherence (Mạch lạc Sâu sắc)", 
+                              color: "#4ade80",
+                              leaves: [{ key: "text_linguistics", text: "Tính liên tục của chuỗi ý niệm trong tâm trí người đọc" }]
+                            }
+                          ]
+                        },
+                        content: `
+                          <div class="acad-vn-explanation">
+                            <strong>📖 Cohesion vs. Coherence:</strong> Cohesion là phương tiện liên kết ngữ pháp từ vựng bề mặt; Coherence là tính mạch lạc tư duy logic của người đọc.
+                          </div>
+                        `
+                      }
+                    ],
+                    quiz: {
+                      question: "Cơ chế cú pháp nào được vận dụng trực tiếp để thỏa mãn Nguyên lý Sức nặng Cuối (End-Weight Principle) trong câu: 'It surprised the scholars that the manuscript was authentic'?",
+                      options: [
+                        { text: "A. Pseudo-clefting", correct: false },
+                        { text: "B. Stylistic Fronting", correct: false },
+                        { text: "C. Extraposition with dummy 'It'", correct: true },
+                        { text: "D. Cataphoric Reference", correct: false }
+                      ]
+                    }
+                  }
+                };
+
+                const questsData = [
+                  {
+                    title: "Bài tập 1: Phân tích Phạm vi Phủ định (Scope of Negation)",
+                    desc: "Phân tích câu phủ định: <br><em>'The professor did not publish the research paper because he wanted fame.'</em>",
+                    q: "Theo CGEL, tại sao câu văn trên lại bị đa nghĩa ngữ dụng?",
+                    options: [
+                      { text: "A. Vì 'because' là liên từ đẳng lập.", correct: false },
+                      { text: "B. Vì mệnh đề trạng ngữ chỉ nguyên nhân có thể rơi vào BÊN TRONG hoặc BÊN NGOÀI Phạm vi Phủ định (Scope of Negation), làm thay đổi việc ông ấy có thực sự xuất bản bài báo hay không.", correct: true },
+                      { text: "C. Vì 'the research paper' là phân từ treo.", correct: false }
+                    ],
+                    reward: "+200 XP"
+                  },
+                  {
+                    title: "Bài tập 2: Hiệu chỉnh Thức Giả định Quá khứ",
+                    desc: "Xét câu văn trong bản thảo: <br><em>'If the comet were being visible yesterday, the astronomical chart would be complete.'</em>",
+                    q: "Lỗi sai ngữ pháp trong câu văn trên là gì?",
+                    options: [
+                      { text: "A. Câu sử dụng 'were being' thay vì dạng hoàn thành 'had been' để diễn tả điều kiện trái thực tế trong quá khứ.", correct: true },
+                      { text: "B. Thiếu trợ động từ putative 'should'.", correct: false },
+                      { text: "C. 'were' bắt buộc phải đổi thành 'was' trong văn phong học thuật.", correct: false }
+                    ],
+                    reward: "+200 XP"
+                  },
+                  {
+                    title: "Bài tập 3: Tối ưu hóa Tính Song hành Cú pháp",
+                    desc: "Xét câu văn: <br><em>'Scientific mastery requires observing phenomena, formulating hypotheses, and to conduct rigorous experiments.'</em>",
+                    q: "Cần hiệu chỉnh câu như thế nào để đạt tính song hành tuyệt đối (Strict Parallelism)?",
+                    options: [
+                      { text: "A. 'observing phenomena, formulating hypotheses, and rigorous experimentation.'", correct: false },
+                      { text: "B. 'observing phenomena, formulating hypotheses, and conducting rigorous experiments.' (Song hành đồng dạng V-ing)", correct: true },
+                      { text: "C. 'to observe phenomena, to formulate hypotheses, and conducting experiments.'", correct: false }
+                    ],
+                    reward: "+200 XP"
+                  }
+                ];
+
+                window.cgelSwitchModule = function(modId) {
+                  if (!gameState.unlocked[modId]) {
+                    alert("🔒 Mô-đun này đang bị khóa! Vui lòng hoàn thành Bài kiểm tra đánh giá ở mô-đun trước để mở khóa.");
+                    return;
+                  }
+                  gameState.activeModule = modId;
+                  for (let i = 1; i <= 5; i++) {
+                    const el = document.getElementById('cgel-f-mod' + i);
+                    if (el) el.classList.remove('acad-active');
+                  }
+                  document.getElementById('cgel-f-mod' + modId).classList.add('acad-active');
+                  loadContent(modId);
+                };
+
+                function loadContent(modId) {
+                  const pane = document.getElementById('cgel-content-display');
+                  const data = modulesData[modId];
+                  document.getElementById('cgel-status-val').innerText = "Đang học Module " + modId;
+                  
+                  let html = `
+                    <div class="acad-hero-banner">
+                      <h1>📖 ${data.title}</h1>
+                      <p>${data.desc}</p>
+                    </div>
+                  `;
+
+                  if (gameState.completed['m' + modId].quiz) {
+                    html += `<div class="acad-done-badge" style="margin-bottom: 20px;">⭐ MÔ-ĐUN ĐÃ HOÀN THÀNH TOÀN DIỆN</div>`;
+                  }
+
+                  data.topics.forEach((topic, idx) => {
+                    const isRead = gameState.completed['m' + modId].topics[idx];
+                    const mm = topic.mindmap;
+                    const mmId = topic.mindmapId;
+
+                    html += `
+                      <div class="acad-topic-card">
+                        <div class="acad-topic-title">
+                          <span>📌</span> ${topic.title}
+                        </div>
+
+                        <!-- Authentic Visual Branching Tree Mindmap -->
+                        <div class="mindmap-canvas" id="canvas-${mmId}">
+                          <div class="mindmap-toolbar">
+                            <div class="mindmap-title-tag">
+                              <span>🌳</span> Sơ đồ Tư duy Phân nhánh (Tree Mindmap)
+                            </div>
+                            <div class="mindmap-controls">
+                              <button class="mindmap-btn" onclick="cgelZoomMindmap('${mmId}', 0.1)" title="Phóng to">🔍 +</button>
+                              <button class="mindmap-btn" onclick="cgelZoomMindmap('${mmId}', -0.1)" title="Thu nhỏ">🔍 -</button>
+                              <button class="mindmap-btn" onclick="cgelResetMindmap('${mmId}')" title="Đặt lại kích thước">🔄 Reset</button>
+                            </div>
+                          </div>
+
+                          <div class="mindmap-tree-wrapper" id="tree-${mmId}" data-scale="1">
+                            <!-- Root Node -->
+                            <div class="mm-root-node">${mm.root}</div>
+
+                            <!-- Branches Column with Visible Tree Connectors -->
+                            <div class="mm-branches-col">
+                              ${mm.branches.map(b => `
+                                <div class="mm-branch-item">
+                                  <!-- Level 1 Branch Node -->
+                                  <div class="mm-branch-pill" style="--b-color: ${b.color};" id="pill-${mmId}-${b.key}" onclick="cgelInspectNode('${mmId}', '${b.key}')">
+                                    <span>🌿</span> ${b.label}
+                                  </div>
+
+                                  <!-- Level 2 Sub-branches / Leaves -->
+                                  <div class="mm-leaves-col">
+                                    ${b.leaves.map(l => `
+                                      <div class="mm-leaf-item">
+                                        <div class="mm-leaf-pill" id="pill-${mmId}-${l.key}" onclick="cgelInspectNode('${mmId}', '${l.key}')">
+                                          <span>🍃</span> ${l.text}
+                                        </div>
+                                      </div>
+                                    `).join('')}
+                                  </div>
+                                </div>
+                              `).join('')}
+                            </div>
+                          </div>
+
+                          <!-- Dynamic Inspector Panel -->
+                          <div class="mindmap-inspector-card" id="inspector-${mmId}">
+                            <div class="mindmap-inspector-head">
+                              <div class="mindmap-inspector-title" id="insp-title-${mmId}">Phân tích Chi tiết</div>
+                              <button class="mindmap-inspector-close" onclick="cgelCloseInspector('${mmId}')">✕</button>
+                            </div>
+                            <div class="mindmap-inspector-body" id="insp-body-${mmId}"></div>
+                          </div>
+                        </div>
+
+                        ${topic.content}
+
+                        ${isRead ? 
+                          `<div class="acad-done-badge">✔️ Đã hoàn thành Chuyên đề này (+50 XP)</div>` : 
+                          `<button class="acad-action-btn" onclick="cgelGainTopicProgress(${modId}, ${idx})">✔️ Đánh dấu Đã học & Tiếp tục (+50 XP)</button>`
+                        }
+                      </div>
+                    `;
+                  });
+
+                  const isQuizDone = gameState.completed['m' + modId].quiz;
+                  if (!isQuizDone) {
+                    html += `
+                      <div class="acad-quiz-container" id="quiz-block-${modId}">
+                        <div class="acad-quiz-title">📝 Bài Kiểm tra Đánh giá Năng lực Module 0${modId}</div>
+                        <p style="margin: 10px 0 14px 0; color: #f8fafc; font-size: 1.05rem;"><strong>Câu hỏi:</strong> ${data.quiz.question}</p>
+                        ${data.quiz.options.map((opt, oIdx) => `
+                          <div class="acad-quiz-option" onclick="cgelCheckGatekeeperAnswer(this, ${modId}, ${opt.correct})">${opt.text}</div>
+                        `).join('')}
+                      </div>
+                    `;
+                  } else {
+                    html += `
+                      <div class="acad-quiz-container">
+                        <div class="acad-quiz-title" style="color: #86efac;">✔️ Đã vượt qua Bài Kiểm tra Đánh giá Module 0${modId}!</div>
+                        <p style="color: #cbd5e1; margin: 6px 0 0 0; font-size: 1.02rem;">Bạn đã nắm vững toàn bộ kiến thức và mở khóa thành công mô-đun tiếp theo.</p>
+                      </div>
+                    `;
+                  }
+
+                  pane.innerHTML = html;
+                }
+
+                window.cgelGainTopicProgress = function(modId, topicIdx) {
+                  if (gameState.completed['m' + modId].topics[topicIdx]) return;
+                  gameState.completed['m' + modId].topics[topicIdx] = true;
+                  gameState.xp += 50;
+                  
+                  updateHUD();
+                  updateFolderProgress(modId);
+                  loadContent(modId);
+                };
+
+                window.cgelCheckGatekeeperAnswer = function(optionEl, modId, isCorrect) {
+                  if (isCorrect) {
+                    optionEl.classList.add('acad-correct');
+                    optionEl.innerHTML += " ✔️ Đúng (+100 XP!)";
+                    
+                    gameState.completed['m' + modId].quiz = true;
+                    gameState.xp += 100;
+                    
+                    const nextMod = modId + 1;
+                    if (nextMod <= 5) {
+                      gameState.unlocked[nextMod] = true;
+                      const folder = document.getElementById('cgel-f-mod' + nextMod);
+                      if (folder) {
+                        folder.classList.remove('acad-locked');
+                        const prog = document.getElementById('cgel-progress-mod' + nextMod);
+                        if (prog) prog.innerHTML = "0/4 Chuyên đề";
+                      }
+                    }
+                    
+                    setTimeout(() => {
+                      updateHUD();
+                      updateFolderProgress(modId);
+                      if (modId < 5) {
+                        alert("🎉 Chúc mừng! Bạn đã hoàn thành xuất sắc Module 0" + modId + " và mở khóa Module 0" + nextMod + "!");
+                        cgelSwitchModule(nextMod);
+                      } else {
+                        alert("🏆 XUẤT SẮC! Bạn đã hoàn thành toàn bộ 5 Mô-đun Ngữ pháp Tiếng Anh Chuyên sâu!");
+                        loadContent(modId);
+                      }
+                    }, 1000);
+                  } else {
+                    optionEl.classList.add('acad-wrong');
+                    optionEl.innerHTML += " ❌ (Chưa chính xác, vui lòng xem lại lý thuyết!)";
+                  }
+                };
+
+                window.cgelShowQuestBoard = function() {
+                  for (let i = 1; i <= 5; i++) {
+                    const el = document.getElementById('cgel-f-mod' + i);
+                    if (el) el.classList.remove('acad-active');
+                  }
+                  document.getElementById('cgel-f-quests').classList.add('acad-active');
+
+                  const pane = document.getElementById('cgel-content-display');
+                  let html = `
+                    <div class="acad-hero-banner" style="background: linear-gradient(135deg, rgba(244, 114, 182, 0.22) 0%, rgba(168, 85, 247, 0.2) 100%);">
+                      <h1>📝 Chuyên đề Phân tích Cú pháp Nâng cao</h1>
+                      <p>Các dạng bài tập thực hành phân tích sâu cấu trúc ngữ pháp học thuật phục vụ kỳ thi HSG và C1-C2.</p>
+                    </div>
+                  `;
+                  
+                  questsData.forEach((quest, idx) => {
+                    const isDone = gameState.completed.quests[idx];
+                    html += `
+                      <div class="acad-topic-card">
+                        <div class="acad-topic-title" style="color: var(--acad-accent-pink);">
+                          <span>📝</span> ${quest.title}
+                        </div>
+                        <p style="margin-bottom: 12px;">${quest.desc}</p>
+                        <div class="acad-insight-box" style="border-color: rgba(244, 114, 182, 0.4); background: rgba(244, 114, 182, 0.08);">
+                          <strong style="color: #fbcfe8;">Yêu cầu phân tích:</strong> ${quest.q}
+                          ${isDone ? `
+                            <div style="color: #86efac; font-weight: 700; margin-top: 10px; font-size: 1.05rem;">
+                              ✔️ Đã giải bài tập hoàn tất (+200 XP)
+                            </div>
+                          ` : `
+                            <div style="margin-top: 12px;">
+                              ${quest.options.map((opt, oIdx) => `
+                                <div class="acad-quiz-option" onclick="cgelCheckQuestAnswer(this, ${idx}, ${opt.correct})">${opt.text}</div>
+                              `).join('')}
+                            </div>
+                          `}
+                        </div>
+                      </div>
+                    `;
+                  });
+                  
+                  pane.innerHTML = html;
+                };
+
+                window.cgelCheckQuestAnswer = function(optionEl, questIdx, isCorrect) {
+                  if (isCorrect) {
+                    optionEl.classList.add('acad-correct');
+                    optionEl.innerHTML += " ✔️ Chính xác (+200 XP)";
+                    
+                    gameState.completed.quests[questIdx] = true;
+                    gameState.xp += 200;
+                    
+                    setTimeout(() => {
+                      updateHUD();
+                      cgelShowQuestBoard();
+                    }, 1000);
+                  } else {
+                    optionEl.classList.add('acad-wrong');
+                    optionEl.innerHTML += " ❌ Chưa chính xác, hãy thử lại!";
+                  }
+                };
+
+                function updateHUD() {
+                  document.getElementById('cgel-xp-value').innerText = gameState.xp;
+                }
+
+                function updateFolderProgress(modId) {
+                  const mod = gameState.completed['m' + modId];
+                  let total = mod.topics.length;
+                  let done = 0;
+                  mod.topics.forEach(t => { if(t) done++; });
+                  document.getElementById('cgel-progress-mod' + modId).innerText = done + "/" + total + " Chuyên đề";
+                }
+
+                updateHUD();
+                loadContent(1);
+              })();
+            </script>
+          </div>
+        </section>focus to 100%...");
+                    gameState.energy = 100;
+                    document.getElementById('cgel-energy-bar').style.width = "100%";
+                  }
+                }
+
+                function updateFolderProgress(modId) {
+                  const mod = gameState.completed['m' + modId];
+                  let total = mod.topics.length;
+                  let done = 0;
+                  mod.topics.forEach(t => { if(t) done++; });
+                  document.getElementById('cgel-progress-mod' + modId).innerText = "✨ " + done + "/" + total + " Stars";
+                }
+
+                updateHUD();
+                loadContent(1);
+              })();
+            </script>
           </div>
         </section>
 
@@ -2958,6 +5026,7 @@
         "task-hsg12-reading": { parent: "category-hsg12-view", label: "HSG 12 / Reading Comprehension" },
         "task-hsg12-listening": { parent: "category-hsg12-view", label: "HSG 12 / Listening Skills" },
         "task-hsg12-vocab": { parent: "category-hsg12-view", label: "HSG 12 / Vocabulary" },
+        "task-hsg12-cgel": { parent: "category-hsg12-view", label: "HSG 12 / Comprehensive Grammar" },
         "task-e10-grammar": { parent: "category-english10-view", label: "ENGLISH 10 / Grammar" },
         "task-e10-vocab": { parent: "category-english10-view", label: "ENGLISH 10 / Vocabulary" },
         "task-e10-test": { parent: "category-english10-view", label: "ENGLISH 10 / Practice Test" }
@@ -2974,6 +5043,8 @@
         "hsg12-reading": "task-hsg12-reading",
         "hsg12-listening": "task-hsg12-listening",
         "hsg12-vocab": "task-hsg12-vocab",
+        "hsg12-cgel": "task-hsg12-cgel",
+        "hsg12-grammar": "task-hsg12-cgel",
         "english10-grammar": "task-e10-grammar",
         "english10-vocab": "task-e10-vocab",
         "english10-test": "task-e10-test"
