@@ -2575,6 +2575,22 @@
               </div>
             </article>
 
+            <!-- Subfolder 2: Lexicode - Monsterest Inn & Guild -->
+            <article class="folder-card" onclick="window.location.href='Lexicode/index.html'" data-label="HSG 12 / Vocabulary / Lexicode" style="border-left: 6px solid #F5B041; cursor: pointer;">
+              <div>
+                <div class="folder-icon" style="background: #2D1F2D; color: #F5B041; border-radius: 12px; padding: 4px 8px; display: inline-block;">🏰</div>
+                <div class="folder-name">Lexicode: Monsterest Inn & Guild</div>
+                <div class="folder-path">📌 HSG 12 / Vocabulary / Lexicode</div>
+                <p style="font-size: 13px; color: #64748B; margin: 8px 0 0 0; line-height: 1.4;">
+                  108 Advanced Lexicode Words across 5 Wings with Cozy Monsterest RPG Innkeeper Gamification (3D Grimoire, Monster Trial Arena, Tavern Quest).
+                </p>
+              </div>
+              <div class="folder-meta" style="margin-top: 14px;">
+                <span class="type-badge" style="background: #FEF3C7; color: #92400E;">5 Wings / 108 Words</span>
+                <a href="Lexicode/index.html" class="arrow-text" style="color: #D97706; font-weight: 700; text-decoration: none;">Open Game →</a>
+              </div>
+            </article>
+
           </div>
         </section>
 
@@ -11075,6 +11091,10 @@
 
       function handleHashChange() {
         const hash = window.location.hash.replace("#", "").toLowerCase();
+        if (hash === "lexicode" || hash === "hsg12-lexicode") {
+          window.location.href = "Lexicode/index.html";
+          return;
+        }
         if (hash && hashMap[hash]) {
           switchFocusView(hashMap[hash], null, false);
         } else if (!hash) {
