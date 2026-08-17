@@ -8354,14 +8354,14 @@
                   const btn = document.createElement('button');
                   btn.className = 'opt-btn';
                   btn.innerText = (['A', 'B', 'C', 'D'][idx]) + ". " + opt;
-                  btn.onclick = () => selectOption(idx, btn, q);
+                  btn.onclick = () => selectQuestOption(idx, btn, q);
                   optContainer.appendChild(btn);
                 });
 
                 document.getElementById('quest-modal').classList.add('active');
               }
 
-              function selectOption(idx, btn, q) {
+              function selectQuestOption(idx, btn, q) {
                 const optButtons = document.querySelectorAll('#neko-michi-vocab-root .opt-btn');
                 optButtons.forEach(b => b.disabled = true);
 
