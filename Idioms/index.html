@@ -1,0 +1,4441 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arcane Idiom Sanctuary 🔮 Destination C1 & C2 Idioms Mastery</title>
+  <!-- Google Fonts: Cinzel (Arcane Title), Plus Jakarta Sans (Sleek UI), VT323 (Pixel Stats) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=VT323&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-dark: #0b0f19;
+      --bg-surface: #121827;
+      --panel-bg: #1a2236;
+      --panel-card: #222d47;
+      --panel-border: #38486e;
+      --panel-border-glow: #6366f1;
+      
+      --accent-gold: #f59e0b;
+      --accent-amber: #d97706;
+      --accent-cyan: #38bdf8;
+      --accent-purple: #a855f7;
+      --accent-emerald: #10b981;
+      --accent-rose: #f43f5e;
+      --accent-blue: #3b82f6;
+      
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      
+      --font-title: 'Cinzel', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-pixel: 'VT323', monospace;
+      
+      --border-game: 3px solid #0f172a;
+      --box-shadow-game: 4px 4px 0px #090d16;
+      --box-shadow-glow: 0 0 20px rgba(99, 102, 241, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background: var(--bg-dark);
+      background-image: 
+        radial-gradient(circle at 50% 10%, rgba(99, 102, 241, 0.15) 0%, transparent 60%),
+        radial-gradient(circle at 10% 90%, rgba(245, 158, 11, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
+        linear-gradient(rgba(11, 15, 25, 0.96), rgba(11, 15, 25, 0.96));
+      color: var(--text-main);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 16px;
+      overflow-x: hidden;
+    }
+
+    /* Layout Container */
+    .app-container {
+      width: 100%;
+      max-width: 1020px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Sanctuary Top Header Bar */
+    header.sanctuary-header {
+      background: var(--panel-bg);
+      border: var(--border-game);
+      box-shadow: var(--box-shadow-game);
+      border-radius: 12px;
+      padding: 16px 22px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      position: relative;
+      background-image: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, transparent 100%);
+    }
+
+    .sanctuary-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .sanctuary-logo {
+      font-size: 2.6rem;
+      line-height: 1;
+      filter: drop-shadow(0 0 12px rgba(168, 85, 247, 0.6));
+      animation: float-orb 3.5s ease-in-out infinite;
+    }
+
+    @keyframes float-orb {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-5px) rotate(4deg); }
+    }
+
+    .sanctuary-title h1 {
+      font-family: var(--font-title);
+      font-size: 1.45rem;
+      font-weight: 900;
+      color: var(--accent-gold);
+      letter-spacing: 0.5px;
+      text-shadow: 2px 2px 0px #000;
+    }
+
+    .sanctuary-title p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* Stat Badges */
+    .sanctuary-stats {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .stat-badge {
+      background: var(--panel-card);
+      border: 2px solid var(--panel-border);
+      border-radius: 8px;
+      padding: 6px 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      box-shadow: 2px 2px 0px #000;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+
+    .stat-badge:hover {
+      border-color: var(--accent-cyan);
+      transform: translateY(-1px);
+    }
+
+    .stat-badge span.icon {
+      font-size: 1.15rem;
+    }
+
+    .stat-badge span.val {
+      color: var(--accent-gold);
+      font-family: var(--font-pixel);
+      font-size: 1.45rem;
+      line-height: 1;
+    }
+
+    /* Action Buttons */
+    .game-btn {
+      background: linear-gradient(180deg, #f59e0b, #d97706);
+      color: #0b0f19;
+      border: var(--border-game);
+      box-shadow: var(--box-shadow-game);
+      font-family: var(--font-body);
+      font-weight: 800;
+      font-size: 0.9rem;
+      padding: 9px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.12s ease-in-out;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+    }
+
+    .game-btn:hover {
+      filter: brightness(1.15);
+      transform: translate(-1px, -1px);
+      box-shadow: 5px 5px 0px #090d16;
+    }
+
+    .game-btn:active {
+      transform: translate(2px, 2px);
+      box-shadow: 1px 1px 0px #090d16;
+    }
+
+    .game-btn.secondary {
+      background: var(--panel-card);
+      border-color: var(--panel-border);
+      color: var(--text-main);
+    }
+
+    .game-btn.secondary:hover {
+      background: #2b3859;
+      border-color: var(--accent-cyan);
+    }
+
+    .game-btn.emerald {
+      background: linear-gradient(180deg, #10b981, #059669);
+      color: #fff;
+    }
+
+    .game-btn.purple {
+      background: linear-gradient(180deg, #a855f7, #7e22ce);
+      color: #fff;
+    }
+
+    .game-btn.cyan {
+      background: linear-gradient(180deg, #38bdf8, #0284c7);
+      color: #0b0f19;
+    }
+
+    .game-btn.rose {
+      background: linear-gradient(180deg, #f43f5e, #be123c);
+      color: #fff;
+    }
+
+    /* View Navigation */
+    .view-section {
+      display: none;
+      animation: fadeInView 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .view-section.active {
+      display: block;
+    }
+
+    @keyframes fadeInView {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Section Bar */
+    .section-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .section-bar h2 {
+      font-family: var(--font-title);
+      font-size: 1.3rem;
+      color: var(--accent-gold);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Unit Realm Cards Grid */
+    .units-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 16px;
+    }
+
+    .unit-card {
+      background: var(--panel-bg);
+      border: var(--border-game);
+      box-shadow: var(--box-shadow-game);
+      border-radius: 12px;
+      padding: 20px;
+      cursor: pointer;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .unit-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 4px;
+      background: var(--unit-color, var(--accent-gold));
+    }
+
+    .unit-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--unit-color, var(--accent-gold));
+      box-shadow: 6px 6px 0px #090d16;
+    }
+
+    .unit-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .unit-guardian-icon {
+      font-size: 2.2rem;
+      background: var(--panel-card);
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: 2px solid var(--panel-border);
+      box-shadow: 2px 2px 0px #000;
+    }
+
+    .unit-badge {
+      background: rgba(99, 102, 241, 0.18);
+      border: 1px solid var(--panel-border-glow);
+      color: var(--accent-cyan);
+      font-size: 0.76rem;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+
+    .unit-info h3 {
+      font-family: var(--font-title);
+      font-size: 1.15rem;
+      color: var(--accent-gold);
+      margin-bottom: 5px;
+    }
+
+    .unit-info p {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    .unit-progress-container {
+      width: 100%;
+      height: 10px;
+      background: #090d16;
+      border-radius: 5px;
+      overflow: hidden;
+      border: 1px solid var(--panel-border);
+    }
+
+    .unit-progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-amber), var(--accent-gold));
+      width: 0%;
+      transition: width 0.4s ease;
+    }
+
+    .unit-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      font-weight: 700;
+    }
+
+    /* All Units Realm Banner Card */
+    .grand-realm-card {
+      grid-column: 1 / -1;
+      background: linear-gradient(135deg, #1e1b4b 0%, #1a2236 100%);
+      border: 3px solid #818cf8;
+      border-radius: 12px;
+      box-shadow: var(--box-shadow-game), 0 0 25px rgba(99, 102, 241, 0.25);
+      padding: 22px 26px;
+      cursor: pointer;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      transition: transform 0.2s;
+    }
+
+    .grand-realm-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent-gold);
+    }
+
+    /* Mode Selection Grid */
+    .modes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 15px;
+    }
+
+    .mode-card {
+      background: var(--panel-bg);
+      border: var(--border-game);
+      box-shadow: var(--box-shadow-game);
+      border-radius: 12px;
+      padding: 22px 18px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 12px;
+      transition: transform 0.2s, border-color 0.2s, background 0.2s;
+    }
+
+    .mode-card:hover {
+      transform: translateY(-4px);
+      background: var(--panel-card);
+      border-color: var(--accent-gold);
+      box-shadow: 6px 6px 0px #090d16;
+    }
+
+    .mode-icon {
+      font-size: 3.2rem;
+      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
+    }
+
+    .mode-card h3 {
+      font-family: var(--font-title);
+      font-size: 1.15rem;
+      color: var(--accent-gold);
+    }
+
+    .mode-card p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* 3D FLASHCARD STYLES */
+    .flashcard-wrapper {
+      perspective: 1200px;
+      width: 100%;
+      max-width: 620px;
+      height: 400px;
+      margin: 20px auto;
+      cursor: pointer;
+    }
+
+    .flashcard-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+      border-radius: 14px;
+    }
+
+    .flashcard-inner.is-flipped {
+      transform: rotateY(180deg);
+    }
+
+    .flashcard-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border: var(--border-game);
+      box-shadow: var(--box-shadow-game), 0 10px 30px rgba(0,0,0,0.5);
+      border-radius: 14px;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: var(--panel-bg);
+      background-image: radial-gradient(circle at 50% 30%, rgba(99, 102, 241, 0.15) 0%, transparent 80%);
+    }
+
+    .flashcard-back {
+      transform: rotateY(180deg);
+      background: #192033;
+      border-color: var(--accent-gold);
+      background-image: radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.12) 0%, transparent 80%);
+    }
+
+    .card-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .card-unit-badge {
+      background: var(--panel-card);
+      border: 1px solid var(--panel-border);
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+    }
+
+    .card-audio-btn {
+      background: var(--panel-card);
+      border: 2px solid var(--panel-border);
+      color: #fff;
+      font-size: 1.3rem;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.15s, border-color 0.15s;
+    }
+
+    .card-audio-btn:hover {
+      transform: scale(1.15);
+      border-color: var(--accent-gold);
+    }
+
+    .card-main-content {
+      text-align: center;
+      margin: auto 0;
+    }
+
+    .card-idiom-title {
+      font-family: var(--font-title);
+      font-size: 2.1rem;
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 8px;
+      text-shadow: 2px 2px 0px #000;
+      line-height: 1.25;
+    }
+
+    .card-meaning-vi-box {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      margin-bottom: 10px;
+    }
+
+    .card-def-en-box {
+      font-size: 0.92rem;
+      color: #e2e8f0;
+      line-height: 1.45;
+      margin-bottom: 12px;
+    }
+
+    .card-example-quote {
+      background: rgba(0,0,0,0.35);
+      border-left: 3px solid var(--accent-gold);
+      padding: 10px 14px;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      text-align: left;
+      line-height: 1.4;
+    }
+
+    .card-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    /* QUIZ & QUEST ARENA STYLES */
+    .arena-card {
+      background: var(--panel-bg);
+      border: var(--border-game);
+      box-shadow: var(--box-shadow-game);
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .arena-guardian-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--panel-card);
+      border: 2px solid var(--panel-border);
+      border-radius: 10px;
+      padding: 14px 18px;
+    }
+
+    .guardian-profile {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .guardian-avatar {
+      font-size: 2.2rem;
+      animation: guardian-hover 2s ease-in-out infinite;
+    }
+
+    @keyframes guardian-hover {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    .guardian-hp-track {
+      width: 150px;
+      height: 14px;
+      background: #090d16;
+      border-radius: 7px;
+      border: 1px solid var(--panel-border);
+      overflow: hidden;
+    }
+
+    .guardian-hp-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-rose), var(--accent-emerald));
+      width: 100%;
+      transition: width 0.35s ease;
+    }
+
+    .question-prompt-box {
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .question-instruction {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    .question-headline {
+      font-family: var(--font-title);
+      font-size: 1.8rem;
+      color: var(--accent-gold);
+      line-height: 1.3;
+    }
+
+    .question-sentence-box {
+      font-size: 1.15rem;
+      color: #fff;
+      font-weight: 600;
+      line-height: 1.55;
+      background: rgba(0,0,0,0.3);
+      padding: 16px 20px;
+      border-radius: 8px;
+      border-left: 4px solid var(--accent-cyan);
+    }
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    @media (min-width: 640px) {
+      .options-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .option-btn {
+      background: var(--panel-card);
+      border: 2px solid var(--panel-border);
+      color: var(--text-main);
+      padding: 14px 18px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 2px 2px 0px #000;
+      line-height: 1.4;
+    }
+
+    .option-btn:hover:not(:disabled) {
+      background: #2c3a5c;
+      border-color: var(--accent-gold);
+      transform: translate(-1px, -1px);
+    }
+
+    .option-btn.correct {
+      background: rgba(16, 185, 129, 0.25) !important;
+      border-color: var(--accent-emerald) !important;
+      color: #34d399 !important;
+      box-shadow: 0 0 15px rgba(16, 185, 129, 0.3) !important;
+    }
+
+    .option-btn.wrong {
+      background: rgba(244, 63, 94, 0.25) !important;
+      border-color: var(--accent-rose) !important;
+      color: #fb7185 !important;
+    }
+
+    .explanation-card {
+      display: none;
+      background: rgba(15, 23, 42, 0.85);
+      border: 2px solid var(--panel-border-glow);
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 0.92rem;
+      line-height: 1.5;
+      animation: fadeInView 0.2s ease;
+    }
+
+    /* RUNE MATCH MEMORY ARENA */
+    .rune-arena {
+      background: var(--panel-bg);
+      border: var(--border-game);
+      box-shadow: var(--box-shadow-game);
+      border-radius: 12px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .rune-stats-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      background: var(--panel-card);
+      border: 2px solid var(--panel-border);
+      border-radius: 8px;
+      padding: 10px 16px;
+    }
+
+    .rune-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .rune-tile {
+      aspect-ratio: 1.3 / 1;
+      background: var(--panel-card);
+      border: 2px solid var(--panel-border);
+      border-radius: 8px;
+      padding: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--text-main);
+      box-shadow: 2px 2px 0px #000;
+      transition: all 0.2s ease;
+      user-select: none;
+      line-height: 1.3;
+    }
+
+    .rune-tile:hover:not(.matched):not(.selected) {
+      border-color: var(--accent-cyan);
+      transform: translateY(-2px);
+    }
+
+    .rune-tile.selected {
+      background: rgba(99, 102, 241, 0.35);
+      border-color: var(--accent-cyan);
+      color: #fff;
+      transform: scale(1.03);
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+    }
+
+    .rune-tile.matched {
+      background: rgba(16, 185, 129, 0.2);
+      border-color: var(--accent-emerald);
+      color: #a7f3d0;
+      cursor: default;
+      opacity: 0.85;
+      transform: scale(0.98);
+    }
+
+    /* WORD SCRAMBLE MATRIX */
+    .scramble-arena {
+      background: var(--panel-bg);
+      border: var(--border-game);
+      box-shadow: var(--box-shadow-game);
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      text-align: center;
+    }
+
+    .scramble-slots-tray {
+      min-height: 60px;
+      width: 100%;
+      max-width: 640px;
+      background: #090d16;
+      border: 2px dashed var(--panel-border);
+      border-radius: 10px;
+      padding: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .scramble-pool-tray {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      max-width: 640px;
+    }
+
+    .word-tile {
+      background: var(--panel-card);
+      border: 2px solid var(--panel-border);
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+      cursor: pointer;
+      box-shadow: 2px 2px 0px #000;
+      transition: all 0.12s ease;
+    }
+
+    .word-tile:hover {
+      border-color: var(--accent-gold);
+      transform: translateY(-2px);
+    }
+
+    .word-tile.placed {
+      background: rgba(245, 158, 11, 0.2);
+      border-color: var(--accent-gold);
+      color: var(--accent-gold);
+    }
+
+    /* GRAND CODEX DICTIONARY */
+    .codex-card {
+      background: var(--panel-bg);
+      border: var(--border-game);
+      box-shadow: var(--box-shadow-game);
+      border-radius: 12px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .codex-search-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .search-input {
+      flex: 1;
+      min-width: 240px;
+      background: var(--panel-card);
+      border: 2px solid var(--panel-border);
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-family: var(--font-body);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent-gold);
+    }
+
+    .codex-items-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 14px;
+      max-height: 600px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+
+    .codex-item {
+      background: var(--panel-card);
+      border: 2px solid var(--panel-border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: border-color 0.15s;
+    }
+
+    .codex-item:hover {
+      border-color: var(--accent-cyan);
+    }
+
+    .codex-item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .codex-item-title {
+      font-family: var(--font-title);
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--accent-gold);
+    }
+
+    /* VICTORY & SUMMARY MODAL */
+    .summary-card {
+      background: var(--panel-bg);
+      border: var(--border-game);
+      box-shadow: var(--box-shadow-game), 0 0 40px rgba(245, 158, 11, 0.2);
+      border-radius: 14px;
+      padding: 32px 24px;
+      text-align: center;
+      max-width: 520px;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .victory-orb {
+      font-size: 4.2rem;
+      animation: victory-pulse 1.2s ease-in-out infinite alternate;
+    }
+
+    @keyframes victory-pulse {
+      from { transform: scale(0.95); filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.4)); }
+      to { transform: scale(1.08); filter: drop-shadow(0 0 25px rgba(245, 158, 11, 0.8)); }
+    }
+
+    .summary-score-grid {
+      display: flex;
+      gap: 14px;
+      margin: 10px 0;
+    }
+
+    .summary-stat-box {
+      background: var(--panel-card);
+      border: 2px solid var(--panel-border);
+      padding: 12px 18px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      box-shadow: 2px 2px 0px #000;
+    }
+
+    .summary-stat-box .num {
+      font-family: var(--font-pixel);
+      font-size: 2rem;
+      color: var(--accent-gold);
+      line-height: 1;
+    }
+
+    .summary-stat-box .lbl {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    /* Confetti Canvas */
+    #confetti-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 99999;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .flashcard-wrapper {
+        height: 440px;
+      }
+      .sanctuary-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <div class="app-container">
+    
+    <!-- TOP SANCTUARY GUILD HEADER -->
+    <header class="sanctuary-header">
+      <div class="sanctuary-brand">
+        <a href="../index.html#hsg12-vocab" class="game-btn secondary" style="padding: 6px 12px; font-size: 0.8rem;" title="Quay lại English Insiders Portal">⬅️ Portal</a>
+        <div class="sanctuary-logo">🔮</div>
+        <div class="sanctuary-title">
+          <h1>Arcane Idiom Sanctuary</h1>
+          <p>Master 122 Destination C1 & C2 Idioms across 11 Epic Units</p>
+        </div>
+      </div>
+      <div class="sanctuary-stats">
+        <button id="btn-sound-toggle" class="stat-badge" onclick="app.toggleSound()" style="cursor: pointer;" title="Bật/Tắt âm thanh SFX">
+          <span class="icon" id="sound-icon">🔊</span>
+          <span class="val" style="font-size: 0.9rem; font-family: var(--font-body);">SFX</span>
+        </button>
+        <div class="stat-badge" title="Arcane Gold Coins">
+          <span class="icon">🪙</span>
+          <span class="val" id="stat-gold">0</span>
+        </div>
+        <div class="stat-badge" title="Mana & EXP">
+          <span class="icon">💖</span>
+          <span class="val" id="stat-mana">0</span>
+        </div>
+        <div class="stat-badge" title="Mastered Idioms">
+          <span class="icon">📜</span>
+          <span class="val" id="stat-mastered">0/122</span>
+        </div>
+        <div class="stat-badge" title="Daily Streak">
+          <span class="icon">🔥</span>
+          <span class="val" id="stat-streak">1</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- VIEW 1: HOME - UNIT REALM SELECTION -->
+    <section id="view-home" class="view-section active">
+      <div class="section-bar">
+        <h2><span>🗺️</span> Choose Your Idiom Realm (11 Units / 122 Idioms)</h2>
+        <button class="game-btn purple" onclick="app.showCodex()">🔍 Grand Codex Reference</button>
+      </div>
+
+      <div class="units-grid" id="units-container">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+    <!-- VIEW 2: MODE SELECTION -->
+    <section id="view-mode-select" class="view-section">
+      <div class="section-bar">
+        <h2><span id="current-unit-icon">🦉</span> <span id="current-unit-title">Unit 2: Thinking & Learning</span></h2>
+        <button class="game-btn secondary" onclick="app.showHome()">⬅️ Change Realm</button>
+      </div>
+      <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 15px;">
+        Choose your training trial alongside the Sanctuary Guardians:
+      </p>
+
+      <div class="modes-grid">
+        <div class="mode-card" onclick="app.startFlashcards()">
+          <div class="mode-icon">📇</div>
+          <h3>3D Arcane Grimoire</h3>
+          <p>Flip 3D spellcards, listen to native speech, review English definitions, Vietnamese meanings, and exam examples.</p>
+          <button class="game-btn" style="margin-top:auto;">Explore Grimoire</button>
+        </div>
+
+        <div class="mode-card" onclick="app.startQuizMode()">
+          <div class="mode-icon">⚔️</div>
+          <h3>Guardian Trial Arena</h3>
+          <p>Defeat guardian monsters in intense multiple-choice battles by matching idioms with exact definitions.</p>
+          <button class="game-btn" style="margin-top:auto;">Enter Trial</button>
+        </div>
+
+        <div class="mode-card" onclick="app.startQuestMode()">
+          <div class="mode-icon">📜</div>
+          <h3>Codex Context Quest</h3>
+          <p>Complete official Destination C1 & C2 gap-fill exam sentences (A, B, C, D) to uncover ancient wisdom.</p>
+          <button class="game-btn" style="margin-top:auto;">Accept Quest</button>
+        </div>
+
+        <div class="mode-card" onclick="app.startRuneMatch()">
+          <div class="mode-icon">🔮</div>
+          <h3>Rune Match Memory</h3>
+          <p>Match Idiom runes with their respective meanings against time to rack up massive combo multipliers.</p>
+          <button class="game-btn emerald" style="margin-top:auto;">Match Runes</button>
+        </div>
+
+        <div class="mode-card" onclick="app.startScrambleMode()">
+          <div class="mode-icon">🧩</div>
+          <h3>Word Matrix Scramble</h3>
+          <p>Reassemble shattered word tiles into the complete idiom phrase under timed pressure.</p>
+          <button class="game-btn purple" style="margin-top:auto;">Solve Puzzle</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 3: 3D FLASHCARD -->
+    <section id="view-flashcard" class="view-section">
+      <div class="section-bar">
+        <h2><span>📇</span> Arcane Grimoire (<span id="fc-index">1</span>/<span id="fc-total">12</span>)</h2>
+        <button class="game-btn secondary" onclick="app.showModeSelect()">⬅️ Mode Menu</button>
+      </div>
+
+      <div class="flashcard-wrapper" onclick="app.flipCard()">
+        <div class="flashcard-inner" id="flashcard-card">
+          <!-- Front Face -->
+          <div class="flashcard-face flashcard-front">
+            <div class="card-top-bar">
+              <span class="card-unit-badge" id="fc-unit-tag">Unit 2: Thinking & Learning</span>
+              <button class="card-audio-btn" onclick="event.stopPropagation(); app.speakCurrentIdiom();" title="Nghe phát âm Idiom">🔊</button>
+            </div>
+            <div class="card-main-content">
+              <h2 class="card-idiom-title" id="fc-idiom">go to sb's head</h2>
+              <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 10px;">💡 Click or Press <strong style="color: var(--accent-gold);">Space</strong> to reveal meaning</p>
+            </div>
+            <div class="card-top-bar">
+              <span style="font-size: 0.85rem; color: var(--text-dim);" id="fc-guardian-name">🦉 Athena Owl</span>
+              <span style="font-size: 0.85rem; color: var(--accent-cyan);">Front Rune 🔄</span>
+            </div>
+          </div>
+          <!-- Back Face -->
+          <div class="flashcard-face flashcard-back">
+            <div class="card-top-bar">
+              <span class="card-unit-badge" style="background: rgba(245,158,11,0.2); color: var(--accent-gold);">Meaning & Context</span>
+              <button class="card-audio-btn" onclick="event.stopPropagation(); app.speakCurrentIdiom();" title="Nghe phát âm Idiom">🔊</button>
+            </div>
+            <div class="card-main-content" style="text-align: left;">
+              <div class="card-meaning-vi-box" id="fc-meaning-vi">khiến chúng ta quá đề cao bản thân và trở nên hống hách</div>
+              <div class="card-def-en-box" id="fc-meaning-en">if success goes to sb's head, it makes them think that they are very important</div>
+              <div class="card-example-quote" id="fc-example">Don't let all this sudden fame go to your head; stay humble and keep working hard.</div>
+            </div>
+            <div class="card-top-bar">
+              <span style="font-size: 0.85rem; color: var(--text-dim);" id="fc-unit-name-back">Unit 2</span>
+              <span style="font-size: 0.85rem; color: var(--accent-gold);">🔄 Flip Back</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-controls">
+        <button class="game-btn secondary" onclick="app.prevCard()">⬅️ Previous</button>
+        <button class="game-btn emerald" id="btn-master-card" onclick="app.toggleMasterCurrent()">⭐ Master Idiom (+15 🪙)</button>
+        <button class="game-btn" onclick="app.nextCard()">Next Idiom ➡️</button>
+      </div>
+    </section>
+
+    <!-- VIEW 4: QUIZ TRIAL & QUEST ARENA -->
+    <section id="view-quiz" class="view-section">
+      <div class="section-bar">
+        <h2><span id="quiz-mode-icon">⚔️</span> <span id="quiz-mode-title">Guardian Trial Arena</span></h2>
+        <div style="font-family: var(--font-pixel); font-size: 1.5rem; color: var(--accent-gold);" id="quiz-progress-text">Trial 1/10</div>
+      </div>
+
+      <div class="arena-card">
+        <div class="arena-guardian-bar">
+          <div class="guardian-profile">
+            <div class="guardian-avatar" id="quiz-guardian-avatar">🦉</div>
+            <div>
+              <div style="font-weight: 800; font-size: 0.96rem; color: var(--accent-gold);" id="quiz-guardian-name">Athena Owl of Wisdom</div>
+              <div style="font-size: 0.78rem; color: var(--text-muted);">Sanctuary Guardian Challenge</div>
+            </div>
+          </div>
+          <div>
+            <div style="font-size: 0.75rem; color: var(--text-dim); margin-bottom: 4px; text-align: right;">Guardian HP</div>
+            <div class="guardian-hp-track">
+              <div class="guardian-hp-fill" id="quiz-hp-bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="question-prompt-box">
+          <p class="question-instruction" id="quiz-instruction-text">Select the correct definition or Vietnamese meaning for the idiom:</p>
+          <h2 class="question-headline" id="quiz-question-main">go to sb's head</h2>
+        </div>
+
+        <div class="options-grid" id="quiz-options-container">
+          <!-- Rendered by JS -->
+        </div>
+
+        <div class="explanation-card" id="quiz-explanation">
+          <div style="font-weight: 800; color: var(--accent-gold); margin-bottom: 6px;">📖 Sanctuary Codex Breakdown:</div>
+          <div id="quiz-explanation-text">...</div>
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; margin-top: 10px;">
+          <button class="game-btn" id="btn-quiz-next" style="display: none;" onclick="app.nextQuizQuestion()">Continue ➡️</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 5: RUNE MATCH MEMORY ARENA -->
+    <section id="view-rune-match" class="view-section">
+      <div class="section-bar">
+        <h2><span>🔮</span> Rune Match Memory</h2>
+        <button class="game-btn secondary" onclick="app.showModeSelect()">⬅️ Mode Menu</button>
+      </div>
+
+      <div class="rune-arena">
+        <div class="rune-stats-bar">
+          <div>⏳ Time: <span id="rune-timer" style="font-family: var(--font-pixel); font-size: 1.3rem; color: var(--accent-gold);">0s</span></div>
+          <div>🔄 Moves: <span id="rune-moves" style="font-family: var(--font-pixel); font-size: 1.3rem; color: var(--accent-cyan);">0</span></div>
+          <div>🔥 Combo: <span id="rune-combo" style="font-family: var(--font-pixel); font-size: 1.3rem; color: var(--accent-emerald);">x1</span></div>
+          <div>📜 Matched: <span id="rune-matched-count" style="font-family: var(--font-pixel); font-size: 1.3rem; color: var(--accent-gold);">0/6</span></div>
+        </div>
+
+        <p style="font-size: 0.88rem; color: var(--text-muted); text-align: center;">
+          Click an <strong>Idiom Rune</strong> and match it with its corresponding <strong>Meaning Rune</strong>!
+        </p>
+
+        <div class="rune-grid" id="rune-grid-container">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 6: WORD SCRAMBLE MATRIX -->
+    <section id="view-scramble" class="view-section">
+      <div class="section-bar">
+        <h2><span>🧩</span> Word Matrix Scramble (<span id="scramble-idx">1</span>/<span id="scramble-total">5</span>)</h2>
+        <button class="game-btn secondary" onclick="app.showModeSelect()">⬅️ Mode Menu</button>
+      </div>
+
+      <div class="scramble-arena">
+        <div>
+          <span class="card-unit-badge" id="scramble-unit-badge">Unit 2</span>
+          <h3 style="font-size: 1.15rem; color: var(--accent-gold); margin-top: 10px;" id="scramble-prompt-meaning">khiến ai đó trở nên hống hách</h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted);" id="scramble-def-en">if success goes to sb's head...</p>
+        </div>
+
+        <div>
+          <div style="font-size: 0.8rem; color: var(--text-dim); margin-bottom: 6px;">Constructed Idiom:</div>
+          <div class="scramble-slots-tray" id="scramble-slots"></div>
+        </div>
+
+        <div>
+          <div style="font-size: 0.8rem; color: var(--text-dim); margin-bottom: 6px;">Available Word Runes:</div>
+          <div class="scramble-pool-tray" id="scramble-pool"></div>
+        </div>
+
+        <div style="display: flex; gap: 12px; margin-top: 10px;">
+          <button class="game-btn secondary" onclick="app.resetScrambleTiles()">🔄 Clear</button>
+          <button class="game-btn emerald" onclick="app.checkScrambleAnswer()">✨ Check Idiom</button>
+          <button class="game-btn" id="btn-scramble-next" style="display: none;" onclick="app.nextScrambleQuestion()">Next ➡️</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 7: GRAND CODEX DICTIONARY -->
+    <section id="view-codex" class="view-section">
+      <div class="section-bar">
+        <h2><span>🔍</span> Grand Codex Reference (122 Destination Idioms)</h2>
+        <button class="game-btn secondary" onclick="app.showHome()">⬅️ Back to Realms</button>
+      </div>
+
+      <div class="codex-card">
+        <div class="codex-search-row">
+          <input type="text" id="codex-search-input" class="search-input" placeholder="Search idioms, English meaning, Vietnamese keywords..." oninput="app.filterCodex()">
+          <select id="codex-unit-filter" class="search-input" style="max-width: 260px;" onchange="app.filterCodex()">
+            <option value="all">🌟 All Units (122 Idioms)</option>
+            <option value="2">Unit 2: Thinking & Learning</option>
+            <option value="4">Unit 4: Change & Tech</option>
+            <option value="6">Unit 6: Time & Work</option>
+            <option value="8">Unit 8: Movement & Transport</option>
+            <option value="10">Unit 10: Communication & Media</option>
+            <option value="12">Unit 12: Chance & Nature</option>
+            <option value="14">Unit 14: Quantity & Money</option>
+            <option value="16">Unit 16: Materials & Built Env</option>
+            <option value="18">Unit 18: Reactions & Health</option>
+            <option value="20">Unit 20: Power & Social Issues</option>
+            <option value="22">Unit 22: Quality & The Arts</option>
+          </select>
+        </div>
+
+        <div class="codex-items-list" id="codex-list-container">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 8: SUMMARY & REWARD MODAL -->
+    <section id="view-summary" class="view-section">
+      <div class="summary-card">
+        <div class="victory-orb">🏆</div>
+        <h2 style="font-family: var(--font-title); color: var(--accent-gold); font-size: 1.7rem;">Trial Mastered!</h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem;" id="summary-msg">
+          The Sanctuary Guardians bestow their arcane blessings upon your lexical prowess!
+        </p>
+
+        <div class="summary-score-grid">
+          <div class="summary-stat-box">
+            <span class="num" id="sum-correct">10/10</span>
+            <span class="lbl">Accuracy</span>
+          </div>
+          <div class="summary-stat-box">
+            <span class="num" id="sum-gold">+100</span>
+            <span class="lbl">Gold Coins</span>
+          </div>
+          <div class="summary-stat-box">
+            <span class="num" id="sum-mana">+50</span>
+            <span class="lbl">Mana EXP</span>
+          </div>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 10px;">
+          <button class="game-btn" onclick="app.restartCurrentMode()">🔄 Replay Trial</button>
+          <button class="game-btn purple" onclick="app.showModeSelect()">📜 Choose Mode</button>
+          <button class="game-btn secondary" onclick="app.showHome()">🏠 Realms Hub</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- SOUND SYNTHESIZER & SCRIPT ENGINE -->
+  <script>
+    const RAW_IDIOMS = [
+  {
+    "id": 1,
+    "unit": 2,
+    "unit_title": "Unit 2: Thinking and Learning",
+    "guardian": "🦉 Athena Owl of Wisdom",
+    "idiom": "go to sb's head",
+    "clean_phrase": "go to one's head",
+    "meaning_en": "if success goes to sb's head, it makes them think that they are very important and makes them a less pleasant person",
+    "meaning_vi": "khiến chúng ta quá đề cao bản thân và trở nên hống hách",
+    "example": "Don't let all this sudden fame go to your head; stay humble and keep working hard.",
+    "cloze_sentence": "Don't let all this sudden fame _____ your head; stay humble and keep working hard.",
+    "cloze_options": [
+      "go to",
+      "come to",
+      "fall into",
+      "turn into"
+    ]
+  },
+  {
+    "id": 2,
+    "unit": 2,
+    "unit_title": "Unit 2: Thinking and Learning",
+    "guardian": "🦉 Athena Owl of Wisdom",
+    "idiom": "have/keep your wits about you",
+    "clean_phrase": "keep your wits about you",
+    "meaning_en": "be able to think quickly and make sensible decisions/ being constantly alert",
+    "meaning_vi": "có khả năng xử lý và đưa ra những phản hồi nhanh nhẹn/ luôn cảnh giác",
+    "example": "In a sudden crisis or emergency, you must always keep your wits about you.",
+    "cloze_sentence": "In a sudden crisis or emergency, you must always _____ your wits about you.",
+    "cloze_options": [
+      "keep",
+      "hold",
+      "throw",
+      "lose"
+    ]
+  },
+  {
+    "id": 3,
+    "unit": 2,
+    "unit_title": "Unit 2: Thinking and Learning",
+    "guardian": "🦉 Athena Owl of Wisdom",
+    "idiom": "in the dark (about)",
+    "clean_phrase": "in the dark about",
+    "meaning_en": "not knowing very much about sth, because other people are keeping it secret from you",
+    "meaning_vi": "không biết nhiều về một thứ gì đó, thứ mà được người khác giữ bí mật",
+    "example": "The employees were completely kept in the dark about the upcoming corporate merger.",
+    "cloze_sentence": "The employees were completely kept in the _____ about the upcoming corporate merger.",
+    "cloze_options": [
+      "dark",
+      "shade",
+      "shadow",
+      "fog"
+    ]
+  },
+  {
+    "id": 4,
+    "unit": 2,
+    "unit_title": "Unit 2: Thinking and Learning",
+    "guardian": "🦉 Athena Owl of Wisdom",
+    "idiom": "know what's what",
+    "clean_phrase": "know what's what",
+    "meaning_en": "if you know what's what, you have a lot of experience and can judge people and situations well",
+    "meaning_vi": "biết rõ về một thứ gì đó (có kinh nghiệm, am hiểu sự tình)",
+    "example": "Ask Uncle David for legal advice; he's been in the business for forty years and really knows what's what.",
+    "cloze_sentence": "Ask David for advice; he has twenty years of experience and really knows _____.",
+    "cloze_options": [
+      "what's what",
+      "which is which",
+      "who's who",
+      "where's where"
+    ]
+  },
+  {
+    "id": 5,
+    "unit": 2,
+    "unit_title": "Unit 2: Thinking and Learning",
+    "guardian": "🦉 Athena Owl of Wisdom",
+    "idiom": "not have a leg to stand on",
+    "clean_phrase": "not have a leg to stand on",
+    "meaning_en": "not have any way of proving that you are right about sth",
+    "meaning_vi": "không có luận cứ để chứng minh bản thân đúng ở một việc gì đó",
+    "example": "Without tangible evidence or signed receipts, you don't have a leg to stand on in court.",
+    "cloze_sentence": "Without any physical evidence, the prosecutor didn't have a _____ to stand on.",
+    "cloze_options": [
+      "leg",
+      "foot",
+      "base",
+      "ground"
+    ]
+  },
+  {
+    "id": 6,
+    "unit": 2,
+    "unit_title": "Unit 2: Thinking and Learning",
+    "guardian": "🦉 Athena Owl of Wisdom",
+    "idiom": "not see the wood for the trees",
+    "clean_phrase": "not see the wood for the trees",
+    "meaning_en": "be unable to get a general understanding of a situation because you are too worried about the details",
+    "meaning_vi": "không thể nhìn nhận ra tổng thể vấn đề vì quá để ý vào những chi tiết lặt vặt",
+    "example": "He was obsessing over tiny formatting errors and failed to see the wood for the trees.",
+    "cloze_sentence": "He was obsessing over tiny errors and couldn't see the _____ for the trees.",
+    "cloze_options": [
+      "wood",
+      "forest",
+      "leaves",
+      "branches"
+    ]
+  },
+  {
+    "id": 7,
+    "unit": 2,
+    "unit_title": "Unit 2: Thinking and Learning",
+    "guardian": "🦉 Athena Owl of Wisdom",
+    "idiom": "put two and two together",
+    "clean_phrase": "put two and two together",
+    "meaning_en": "guess the truth about a situation from what you have seen or heard",
+    "meaning_vi": "suy ra một điều gì đó từ một việc mình được thấy hoặc nghe",
+    "example": "Seeing them arriving in the same car, I quickly put two and two together and guessed they were dating.",
+    "cloze_sentence": "Seeing them holding hands, she put _____ together and realized they were a couple.",
+    "cloze_options": [
+      "two and two",
+      "one and one",
+      "heads",
+      "facts"
+    ]
+  },
+  {
+    "id": 8,
+    "unit": 2,
+    "unit_title": "Unit 2: Thinking and Learning",
+    "guardian": "🦉 Athena Owl of Wisdom",
+    "idiom": "quick/slow on the uptake",
+    "clean_phrase": "quick/slow on the uptake",
+    "meaning_en": "taking a very short/long time to understand or realize sth",
+    "meaning_vi": "nhanh/chậm trong việc tiếp thu một vấn đề nào đó",
+    "example": "He's exceptionally quick on the uptake, mastering advanced calculus within a few lessons.",
+    "cloze_sentence": "She understood the complex instructions immediately because she is so quick on the _____.",
+    "cloze_options": [
+      "uptake",
+      "takeoff",
+      "insight",
+      "intake"
+    ]
+  },
+  {
+    "id": 9,
+    "unit": 2,
+    "unit_title": "Unit 2: Thinking and Learning",
+    "guardian": "🦉 Athena Owl of Wisdom",
+    "idiom": "ring a bell (with sb)",
+    "clean_phrase": "ring a bell",
+    "meaning_en": "sound familiar",
+    "meaning_vi": "gợi lên cảm giác quen thuộc",
+    "example": "His name rings a bell, but I cannot recall where we first met.",
+    "cloze_sentence": "Does the name Professor Sterling _____ a bell with you?",
+    "cloze_options": [
+      "ring",
+      "strike",
+      "sound",
+      "toll"
+    ]
+  },
+  {
+    "id": 10,
+    "unit": 2,
+    "unit_title": "Unit 2: Thinking and Learning",
+    "guardian": "🦉 Athena Owl of Wisdom",
+    "idiom": "round/around the bend",
+    "clean_phrase": "round the bend",
+    "meaning_en": "be/become mentally confused or unable to act in a reasonable way",
+    "meaning_vi": "trở nên mất kiểm soát / phát điên",
+    "example": "The constant drilling noise from the construction site is driving me round the bend!",
+    "cloze_sentence": "The non-stop loud music is driving all the neighbors _____ the bend.",
+    "cloze_options": [
+      "round",
+      "over",
+      "across",
+      "along"
+    ]
+  },
+  {
+    "id": 11,
+    "unit": 2,
+    "unit_title": "Unit 2: Thinking and Learning",
+    "guardian": "🦉 Athena Owl of Wisdom",
+    "idiom": "split hairs",
+    "clean_phrase": "split hairs",
+    "meaning_en": "argue about small details of sth",
+    "meaning_vi": "cãi vã về những vấn đề nhỏ nhặt",
+    "example": "Whether we arrive at 7:02 or 7:05 is just splitting hairs; we are on time!",
+    "cloze_sentence": "Stop splitting _____ over minor details and let's focus on the big picture.",
+    "cloze_options": [
+      "hairs",
+      "threads",
+      "straws",
+      "atoms"
+    ]
+  },
+  {
+    "id": 12,
+    "unit": 2,
+    "unit_title": "Unit 2: Thinking and Learning",
+    "guardian": "🦉 Athena Owl of Wisdom",
+    "idiom": "take stock (of)",
+    "clean_phrase": "take stock of",
+    "meaning_en": "spend some time thinking about the situation you are in before you decide what to do next",
+    "meaning_vi": "dành thời gian suy nghĩ/ đắn đo một việc gì đó của bản thân trước khi quyết định sẽ làm gì tiếp theo",
+    "example": "After a grueling semester, it was time to rest and take stock of our academic progress.",
+    "cloze_sentence": "Before launching a new campaign, the director paused to take _____ of the current market.",
+    "cloze_options": [
+      "stock",
+      "care",
+      "count",
+      "note"
+    ]
+  },
+  {
+    "id": 13,
+    "unit": 4,
+    "unit_title": "Unit 4: Change and Technology",
+    "guardian": "⚡ Cyber Phoenix of Innovation",
+    "idiom": "a leopard can't change its spots",
+    "clean_phrase": "a leopard can't change its spots",
+    "meaning_en": "used for saying that sb will never change their behavior or character",
+    "meaning_vi": "ý nói không thể thay đổi bản chất của một người",
+    "example": "He promised he would stop lying, but a leopard can't change its spots.",
+    "cloze_sentence": "He returned to his old deceitful habits; a leopard can't change its _____.",
+    "cloze_options": [
+      "spots",
+      "stripes",
+      "skin",
+      "claws"
+    ]
+  },
+  {
+    "id": 14,
+    "unit": 4,
+    "unit_title": "Unit 4: Change and Technology",
+    "guardian": "⚡ Cyber Phoenix of Innovation",
+    "idiom": "all mod cons",
+    "clean_phrase": "all mod cons",
+    "meaning_en": "all modern conveniences, the machines and devices, such as washing machines and fridges, which make the ordinary jobs in a home easier",
+    "meaning_vi": "những công nghệ hiện đại khiến công việc trong cuộc sống thường ngày dễ dàng hơn (tủ lạnh, máy rửa chén,...)",
+    "example": "The luxury penthouse is fully furnished and equipped with all mod cons.",
+    "cloze_sentence": "Their newly renovated smart apartment comes fitted with all _____ cons.",
+    "cloze_options": [
+      "mod",
+      "tech",
+      "smart",
+      "pro"
+    ]
+  },
+  {
+    "id": 15,
+    "unit": 4,
+    "unit_title": "Unit 4: Change and Technology",
+    "guardian": "⚡ Cyber Phoenix of Innovation",
+    "idiom": "break the mould",
+    "clean_phrase": "break the mould",
+    "meaning_en": "change a situation by doing sth that is very different from what most people usually do or have done in the past",
+    "meaning_vi": "thay đổi tình thế bằng việc thực hiện một điều mới lạ so với tiêu chuẩn trước đây",
+    "example": "Her revolutionary design broke the mould of traditional eco-friendly architecture.",
+    "cloze_sentence": "His unorthodox teaching approach completely broke the _____ of traditional education.",
+    "cloze_options": [
+      "mould",
+      "glass",
+      "frame",
+      "cycle"
+    ]
+  },
+  {
+    "id": 16,
+    "unit": 4,
+    "unit_title": "Unit 4: Change and Technology",
+    "guardian": "⚡ Cyber Phoenix of Innovation",
+    "idiom": "change your tune",
+    "clean_phrase": "change your tune",
+    "meaning_en": "change your opinion or attitude",
+    "meaning_vi": "thay đổi thái độ và ý kiến",
+    "example": "He used to criticize electric vehicles, but he changed his tune after test-driving one.",
+    "cloze_sentence": "Once he saw how profitable the venture was, he quickly changed his _____.",
+    "cloze_options": [
+      "tune",
+      "song",
+      "voice",
+      "melody"
+    ]
+  },
+  {
+    "id": 17,
+    "unit": 4,
+    "unit_title": "Unit 4: Change and Technology",
+    "guardian": "⚡ Cyber Phoenix of Innovation",
+    "idiom": "have a change of heart",
+    "clean_phrase": "have a change of heart",
+    "meaning_en": "change your opinion about sth or decide not to do sth you were planning to do",
+    "meaning_vi": "thay đổi quan điểm về một việc gì đó và dừng lại việc đang làm",
+    "example": "She had planned to resign, but had a change of heart after being offered a promotion.",
+    "cloze_sentence": "The CEO had a change of _____ and decided not to cancel the AI scholarship program.",
+    "cloze_options": [
+      "heart",
+      "mind",
+      "mood",
+      "soul"
+    ]
+  },
+  {
+    "id": 18,
+    "unit": 4,
+    "unit_title": "Unit 4: Change and Technology",
+    "guardian": "⚡ Cyber Phoenix of Innovation",
+    "idiom": "know sth inside out",
+    "clean_phrase": "know sth inside out",
+    "meaning_en": "know everything about a subject",
+    "meaning_vi": "biết \"tất tần tật\" về những thứ liên quan đến một thứ gì đó",
+    "example": "As the lead software architect, she knows the entire codebase inside out.",
+    "cloze_sentence": "He has been coding for ten years and knows the operating system inside _____.",
+    "cloze_options": [
+      "out",
+      "in",
+      "up",
+      "through"
+    ]
+  },
+  {
+    "id": 19,
+    "unit": 4,
+    "unit_title": "Unit 4: Change and Technology",
+    "guardian": "⚡ Cyber Phoenix of Innovation",
+    "idiom": "reinvent the wheel",
+    "clean_phrase": "reinvent the wheel",
+    "meaning_en": "waste time trying to create sth that sb else has already created",
+    "meaning_vi": "lãng phí thời gian tạo dựng một thứ gì đó mà người khác đã làm trước đây",
+    "example": "We don't need to reinvent the wheel; just import the standard open-source library.",
+    "cloze_sentence": "There's no point in trying to reinvent the _____ when established methods work perfectly.",
+    "cloze_options": [
+      "wheel",
+      "engine",
+      "gear",
+      "circle"
+    ]
+  },
+  {
+    "id": 20,
+    "unit": 4,
+    "unit_title": "Unit 4: Change and Technology",
+    "guardian": "⚡ Cyber Phoenix of Innovation",
+    "idiom": "stick to sb's guns (on sth)",
+    "clean_phrase": "stick to one's guns",
+    "meaning_en": "refuse to change what you are saying or doing despite the opposition or criticism of other people",
+    "meaning_vi": "giữ vững lập trường mặc cho sự chỉ trích và chống đối",
+    "example": "Despite severe backlash from the board, the inventor stuck to his guns regarding data privacy.",
+    "cloze_sentence": "Despite immense public pressure, the senator stuck to his _____.",
+    "cloze_options": [
+      "guns",
+      "swords",
+      "shields",
+      "arms"
+    ]
+  },
+  {
+    "id": 21,
+    "unit": 4,
+    "unit_title": "Unit 4: Change and Technology",
+    "guardian": "⚡ Cyber Phoenix of Innovation",
+    "idiom": "the tools of the trade",
+    "clean_phrase": "tools of the trade",
+    "meaning_en": "the skills and equipment that you need in order to do your job",
+    "meaning_vi": "kỹ năng và dụng cụ cần thiết cho một công việc",
+    "example": "A high-end drawing tablet and stylus are essential tools of the trade for digital illustrators.",
+    "cloze_sentence": "A fast computer and debugger software are the vital tools of the _____ for programmers.",
+    "cloze_options": [
+      "trade",
+      "craft",
+      "job",
+      "work"
+    ]
+  },
+  {
+    "id": 22,
+    "unit": 4,
+    "unit_title": "Unit 4: Change and Technology",
+    "guardian": "⚡ Cyber Phoenix of Innovation",
+    "idiom": "turn over a new leaf",
+    "clean_phrase": "turn over a new leaf",
+    "meaning_en": "change your life by starting to be a better person or stopping a bad habit",
+    "meaning_vi": "thay đổi cuộc sống sang một chương mới bằng cách trở thành một người tốt hơn",
+    "example": "After his recovery, he turned over a new leaf and dedicated his time to charity.",
+    "cloze_sentence": "Starting this New Year, she decided to turn over a new _____ and exercise daily.",
+    "cloze_options": [
+      "leaf",
+      "page",
+      "chapter",
+      "book"
+    ]
+  },
+  {
+    "id": 23,
+    "unit": 6,
+    "unit_title": "Unit 6: Time and Work",
+    "guardian": "⏳ Chrono Sphinx of Timeless Realms",
+    "idiom": "a stitch in time (saves nine)",
+    "clean_phrase": "a stitch in time saves nine",
+    "meaning_en": "used for saying that it is better to solve a problem now, rather than leave it until later when it may be more difficult to deal with",
+    "meaning_vi": "được sử dụng để nói rằng mình nên ngay lập tức làm một việc gì đó trước khi để nó trở nên khó khăn hơn trong tương lai",
+    "example": "Fix the leaking pipe today; remember that a stitch in time saves nine!",
+    "cloze_sentence": "Patch up the small roof leak now; remember, a _____ in time saves nine.",
+    "cloze_options": [
+      "stitch",
+      "thread",
+      "patch",
+      "knot"
+    ]
+  },
+  {
+    "id": 24,
+    "unit": 6,
+    "unit_title": "Unit 6: Time and Work",
+    "guardian": "⏳ Chrono Sphinx of Timeless Realms",
+    "idiom": "all in good time",
+    "clean_phrase": "all in good time",
+    "meaning_en": "used to tell sb to be patient because the thing they are eager for will happen when the time is right",
+    "meaning_vi": "sử dụng để nói rằng mọi thứ sẽ xảy ra vào đúng thời điểm của nó",
+    "example": "Be patient with your exam results; you will hear from the admission committee all in good time.",
+    "cloze_sentence": "Don't rush the publishing process; your debut novel will be released all in _____ time.",
+    "cloze_options": [
+      "good",
+      "due",
+      "best",
+      "right"
+    ]
+  },
+  {
+    "id": 25,
+    "unit": 6,
+    "unit_title": "Unit 6: Time and Work",
+    "guardian": "⏳ Chrono Sphinx of Timeless Realms",
+    "idiom": "at the drop of a hat",
+    "clean_phrase": "at the drop of a hat",
+    "meaning_en": "immediately, without hesitating",
+    "meaning_vi": "ngay lập tức",
+    "example": "He is so spontaneous that he would pack his bags and travel across the continent at the drop of a hat.",
+    "cloze_sentence": "If you need emergency assistance, she will drive over at the drop of a _____.",
+    "cloze_options": [
+      "hat",
+      "coin",
+      "pin",
+      "glove"
+    ]
+  },
+  {
+    "id": 26,
+    "unit": 6,
+    "unit_title": "Unit 6: Time and Work",
+    "guardian": "⏳ Chrono Sphinx of Timeless Realms",
+    "idiom": "before sb's time",
+    "clean_phrase": "before one's time",
+    "meaning_en": "used for saying that sth happened or existed before you were born or before you lived or worked swh",
+    "meaning_vi": "trước thời của ai đó",
+    "example": "Floppy disks and dial-up internet were way before my time.",
+    "cloze_sentence": "I know very little about 1960s vinyl records because that era was before my _____.",
+    "cloze_options": [
+      "time",
+      "era",
+      "age",
+      "day"
+    ]
+  },
+  {
+    "id": 27,
+    "unit": 6,
+    "unit_title": "Unit 6: Time and Work",
+    "guardian": "⏳ Chrono Sphinx of Timeless Realms",
+    "idiom": "for good",
+    "clean_phrase": "for good",
+    "meaning_en": "permanently, without the possibility of change in the future",
+    "meaning_vi": "mãi mãi và không quay lại",
+    "example": "After thirty years in London, she moved back to her coastal hometown for good.",
+    "cloze_sentence": "He decided to shut down his social media accounts for _____.",
+    "cloze_options": [
+      "good",
+      "ever",
+      "all",
+      "once"
+    ]
+  },
+  {
+    "id": 28,
+    "unit": 6,
+    "unit_title": "Unit 6: Time and Work",
+    "guardian": "⏳ Chrono Sphinx of Timeless Realms",
+    "idiom": "for the time being",
+    "clean_phrase": "for the time being",
+    "meaning_en": "for now, at the present",
+    "meaning_vi": "ngay bây giờ, hiện tại",
+    "example": "We are renting a temporary flat for the time being until our new house is ready.",
+    "cloze_sentence": "You can use my laptop for the time _____ while yours is in repair.",
+    "cloze_options": [
+      "being",
+      "now",
+      "present",
+      "moment"
+    ]
+  },
+  {
+    "id": 29,
+    "unit": 6,
+    "unit_title": "Unit 6: Time and Work",
+    "guardian": "⏳ Chrono Sphinx of Timeless Realms",
+    "idiom": "from time to time",
+    "clean_phrase": "from time to time",
+    "meaning_en": "sometimes, but not often",
+    "meaning_vi": "đôi khi, thỉnh thoảng",
+    "example": "We still meet up for a cup of coffee from time to time.",
+    "cloze_sentence": "I still receive letters from my childhood pen pal from time to _____.",
+    "cloze_options": [
+      "time",
+      "day",
+      "now",
+      "then"
+    ]
+  },
+  {
+    "id": 30,
+    "unit": 6,
+    "unit_title": "Unit 6: Time and Work",
+    "guardian": "⏳ Chrono Sphinx of Timeless Realms",
+    "idiom": "in/for donkey's years",
+    "clean_phrase": "for donkey's years",
+    "meaning_en": "for a very long time",
+    "meaning_vi": "một khoảng thời gian rất lâu",
+    "example": "I haven't visited my grandparents' farm in donkey's years!",
+    "cloze_sentence": "We haven't seen each other for _____ years; you look fantastic!",
+    "cloze_options": [
+      "donkey's",
+      "horse's",
+      "camel's",
+      "dog's"
+    ]
+  },
+  {
+    "id": 31,
+    "unit": 6,
+    "unit_title": "Unit 6: Time and Work",
+    "guardian": "⏳ Chrono Sphinx of Timeless Realms",
+    "idiom": "in the nick of time",
+    "clean_phrase": "in the nick of time",
+    "meaning_en": "at the last possible moment",
+    "meaning_vi": "ngay những giây phút cuối",
+    "example": "The firefighters arrived in the nick of time and rescued everyone trapped on the top floor.",
+    "cloze_sentence": "He submitted his university assignment online in the _____ of time, just seconds before midnight.",
+    "cloze_options": [
+      "nick",
+      "edge",
+      "notch",
+      "brink"
+    ]
+  },
+  {
+    "id": 32,
+    "unit": 6,
+    "unit_title": "Unit 6: Time and Work",
+    "guardian": "⏳ Chrono Sphinx of Timeless Realms",
+    "idiom": "once in a blue moon",
+    "clean_phrase": "once in a blue moon",
+    "meaning_en": "very rarely",
+    "meaning_vi": "rất hiếm, rất lâu mới xảy ra một lần",
+    "example": "My brother lives abroad, so we only get to see him once in a blue moon.",
+    "cloze_sentence": "Living in the sunny tropics, we experience snowfall only once in a _____ moon.",
+    "cloze_options": [
+      "blue",
+      "red",
+      "full",
+      "silver"
+    ]
+  },
+  {
+    "id": 33,
+    "unit": 6,
+    "unit_title": "Unit 6: Time and Work",
+    "guardian": "⏳ Chrono Sphinx of Timeless Realms",
+    "idiom": "on the spur of the moment",
+    "clean_phrase": "on the spur of the moment",
+    "meaning_en": "abrupt, describe a decision, action, etc that is sudden and done without any planning",
+    "meaning_vi": "ngay lập tức mà không quan tâm đến việc lên kế hoạch",
+    "example": "We booked the flight tickets to Tokyo on the spur of the moment without any prior itinerary.",
+    "cloze_sentence": "She bought that expensive designer coat on the _____ of the moment.",
+    "cloze_options": [
+      "spur",
+      "spark",
+      "rush",
+      "flash"
+    ]
+  },
+  {
+    "id": 34,
+    "unit": 6,
+    "unit_title": "Unit 6: Time and Work",
+    "guardian": "⏳ Chrono Sphinx of Timeless Realms",
+    "idiom": "the other day",
+    "clean_phrase": "the other day",
+    "meaning_en": "recently",
+    "meaning_vi": "dạo gần đây, một vài ngày trước",
+    "example": "I ran into our former high school English teacher at the bookstore the other day.",
+    "cloze_sentence": "I was browsing through old photo albums the _____ day and found our graduation picture.",
+    "cloze_options": [
+      "other",
+      "next",
+      "last",
+      "past"
+    ]
+  },
+  {
+    "id": 35,
+    "unit": 8,
+    "unit_title": "Unit 8: Movement and Transport",
+    "guardian": "🦅 Zephyr Falcon of Swift Horizons",
+    "idiom": "a stone's throw (away/from)",
+    "clean_phrase": "a stone's throw",
+    "meaning_en": "very close (to), a very short distance",
+    "meaning_vi": "rất gần một cái gì đó",
+    "example": "Our new boutique hotel is just a stone's throw away from the golden sandy beach.",
+    "cloze_sentence": "The train station is just a _____ throw away from our office.",
+    "cloze_options": [
+      "stone's",
+      "rock's",
+      "pebble's",
+      "dart's"
+    ]
+  },
+  {
+    "id": 36,
+    "unit": 8,
+    "unit_title": "Unit 8: Movement and Transport",
+    "guardian": "🦅 Zephyr Falcon of Swift Horizons",
+    "idiom": "as the crow flies",
+    "clean_phrase": "as the crow flies",
+    "meaning_en": "in a straight line (used for measuring distance)",
+    "meaning_vi": "đường chim bay/ đường thẳng nối giữa 2 điểm mà không quan tâm vật cản",
+    "example": "The distance between the two villages is only five miles as the crow flies, though the winding road takes twenty.",
+    "cloze_sentence": "It is ten miles from here to the castle as the _____ flies.",
+    "cloze_options": [
+      "crow",
+      "eagle",
+      "dove",
+      "hawk"
+    ]
+  },
+  {
+    "id": 37,
+    "unit": 8,
+    "unit_title": "Unit 8: Movement and Transport",
+    "guardian": "🦅 Zephyr Falcon of Swift Horizons",
+    "idiom": "follow your nose",
+    "clean_phrase": "follow your nose",
+    "meaning_en": "go in a straight line / trust your own feelings rather than obeying rules or allowing yourself to be influenced by other people's opinion",
+    "meaning_vi": "đi thẳng / tin tưởng vào bản năng, cảm tính của bản thân",
+    "example": "To reach the ancient temple, just follow your nose along this paved path.",
+    "cloze_sentence": "When you come to the crossroads in the forest, simply follow your _____.",
+    "cloze_options": [
+      "nose",
+      "heart",
+      "eyes",
+      "instinct"
+    ]
+  },
+  {
+    "id": 38,
+    "unit": 8,
+    "unit_title": "Unit 8: Movement and Transport",
+    "guardian": "🦅 Zephyr Falcon of Swift Horizons",
+    "idiom": "in the middle of nowhere",
+    "clean_phrase": "in the middle of nowhere",
+    "meaning_en": "describe a place far away from any towns or cities",
+    "meaning_vi": "ở xa thành phố/đô thị lớn (nơi hẻo lánh, đồng không mông quạnh)",
+    "example": "Our rental car broke down on a deserted dirt road right in the middle of nowhere.",
+    "cloze_sentence": "They bought a serene cabin located right in the middle of _____.",
+    "cloze_options": [
+      "nowhere",
+      "nothing",
+      "wild",
+      "forest"
+    ]
+  },
+  {
+    "id": 39,
+    "unit": 8,
+    "unit_title": "Unit 8: Movement and Transport",
+    "guardian": "🦅 Zephyr Falcon of Swift Horizons",
+    "idiom": "lose your bearings",
+    "clean_phrase": "lose one's bearings",
+    "meaning_en": "if you lose your bearings, you do not know where you are",
+    "meaning_vi": "không biết mình đang ở đâu, không xác định được vị trí của bản thân (mất phương hướng)",
+    "example": "In the dense fog on the mountain summit, the hikers easily lost their bearings.",
+    "cloze_sentence": "Without a compass or GPS signal in the blizzard, it is easy to lose your _____.",
+    "cloze_options": [
+      "bearings",
+      "directions",
+      "tracks",
+      "headings"
+    ]
+  },
+  {
+    "id": 40,
+    "unit": 8,
+    "unit_title": "Unit 8: Movement and Transport",
+    "guardian": "🦅 Zephyr Falcon of Swift Horizons",
+    "idiom": "make a beeline for",
+    "clean_phrase": "make a beeline for",
+    "meaning_en": "go directly and quickly towards sb or sth",
+    "meaning_vi": "đi nhanh và trực tiếp đến một thứ gì đó hoặc một người khác",
+    "example": "As soon as the school bell rang, the kids made a beeline for the ice cream truck.",
+    "cloze_sentence": "Exhausted after the long flight, she made a _____ for the hotel bed.",
+    "cloze_options": [
+      "beeline",
+      "pathway",
+      "flight",
+      "dash"
+    ]
+  },
+  {
+    "id": 41,
+    "unit": 8,
+    "unit_title": "Unit 8: Movement and Transport",
+    "guardian": "🦅 Zephyr Falcon of Swift Horizons",
+    "idiom": "off the beaten track/path",
+    "clean_phrase": "off the beaten track",
+    "meaning_en": "in a place where few people go, far from any main roads and towns/in or into an isolated place",
+    "meaning_vi": "hẻo lánh, xa những thành phố và ít người biết tới",
+    "example": "We love backpacking in secluded places that are off the beaten track.",
+    "cloze_sentence": "We discovered a charming seafood restaurant tucked away off the beaten _____.",
+    "cloze_options": [
+      "track",
+      "route",
+      "highway",
+      "trail"
+    ]
+  },
+  {
+    "id": 42,
+    "unit": 8,
+    "unit_title": "Unit 8: Movement and Transport",
+    "guardian": "🦅 Zephyr Falcon of Swift Horizons",
+    "idiom": "stop dead in sb's tracks",
+    "clean_phrase": "stop dead in one's tracks",
+    "meaning_en": "suddenly stop, for example because you are surprised or alarmed",
+    "meaning_vi": "đột nhiên dừng lại (sững sờ, đứng hình)",
+    "example": "When she heard the sudden sound of shattering glass, she stopped dead in her tracks.",
+    "cloze_sentence": "The unexpected roar from behind made him stop dead in his _____.",
+    "cloze_options": [
+      "tracks",
+      "steps",
+      "feet",
+      "shoes"
+    ]
+  },
+  {
+    "id": 43,
+    "unit": 8,
+    "unit_title": "Unit 8: Movement and Transport",
+    "guardian": "🦅 Zephyr Falcon of Swift Horizons",
+    "idiom": "take a short cut to",
+    "clean_phrase": "take a short cut",
+    "meaning_en": "follow a path that is quicker and shorter than the usual way",
+    "meaning_vi": "đi đường tắt thay vì đường bình thường",
+    "example": "If we take a short cut through the park, we'll reach the station ten minutes earlier.",
+    "cloze_sentence": "We managed to avoid the traffic gridlock by taking a short _____ through the alleyways.",
+    "cloze_options": [
+      "cut",
+      "way",
+      "pass",
+      "line"
+    ]
+  },
+  {
+    "id": 44,
+    "unit": 8,
+    "unit_title": "Unit 8: Movement and Transport",
+    "guardian": "🦅 Zephyr Falcon of Swift Horizons",
+    "idiom": "take the scenic route",
+    "clean_phrase": "take the scenic route",
+    "meaning_en": "follow a longer path than the usual one because it is more attractive",
+    "meaning_vi": "đi một đoạn đường dài hơn (đi đường vòng) vì cảnh đẹp hơn",
+    "example": "Instead of speeding down the highway, let's take the scenic route along the coastline.",
+    "cloze_sentence": "Since we have all afternoon, let's take the _____ route through the mountain valley.",
+    "cloze_options": [
+      "scenic",
+      "pretty",
+      "view",
+      "nature"
+    ]
+  },
+  {
+    "id": 45,
+    "unit": 10,
+    "unit_title": "Unit 10: Communication and the Media",
+    "guardian": "📜 Whispering Pixie of Truth",
+    "idiom": "big mouth",
+    "clean_phrase": "big mouth",
+    "meaning_en": "used as a criticism of sb when they say things they should not",
+    "meaning_vi": "sử dụng để chỉ trích ai đó khi họ nói những điều mà họ không nên (kẻ nhiều chuyện, bép xép)",
+    "example": "Don't tell Mark about the surprise party; he has such a big mouth!",
+    "cloze_sentence": "Never share your confidential secrets with her because she has a _____ mouth.",
+    "cloze_options": [
+      "big",
+      "loud",
+      "wide",
+      "tall"
+    ]
+  },
+  {
+    "id": 46,
+    "unit": 10,
+    "unit_title": "Unit 10: Communication and the Media",
+    "guardian": "📜 Whispering Pixie of Truth",
+    "idiom": "come clean (about sth)",
+    "clean_phrase": "come clean",
+    "meaning_en": "tell the truth about sth that you have kept secret",
+    "meaning_vi": "nói ra sự thật mà bản thân đã giữ bí mật (thú nhận)",
+    "example": "The politician finally came clean about the undisclosed campaign funding.",
+    "cloze_sentence": "It is always better to come _____ and confess than to keep covering up your mistakes.",
+    "cloze_options": [
+      "clean",
+      "clear",
+      "pure",
+      "true"
+    ]
+  },
+  {
+    "id": 47,
+    "unit": 10,
+    "unit_title": "Unit 10: Communication and the Media",
+    "guardian": "📜 Whispering Pixie of Truth",
+    "idiom": "get/catch sb's drift",
+    "clean_phrase": "catch someone's drift",
+    "meaning_en": "understand the general meaning of what sb is saying",
+    "meaning_vi": "hiểu được khái quát về thứ mà ai đó đang nói/giảng",
+    "example": "I'm not saying he stole the files, but you catch my drift, don't you?",
+    "cloze_sentence": "He hinted at budget cuts without naming numbers, but everyone caught his _____.",
+    "cloze_options": [
+      "drift",
+      "tide",
+      "flow",
+      "wind"
+    ]
+  },
+  {
+    "id": 48,
+    "unit": 10,
+    "unit_title": "Unit 10: Communication and the Media",
+    "guardian": "📜 Whispering Pixie of Truth",
+    "idiom": "get sth off sb's chest",
+    "clean_phrase": "get sth off one's chest",
+    "meaning_en": "tell sb about sth has been worrying you or making you feel guilty for a long time",
+    "meaning_vi": "trải lòng/ chia sẻ với ai đó về điều đã khiến bản thân lo lắng hay cảm thấy hối hận trong một thời gian dài",
+    "example": "She felt a tremendous sense of relief after getting the truth off her chest.",
+    "cloze_sentence": "You look troubled; talk to a trusted friend and get it off your _____.",
+    "cloze_options": [
+      "chest",
+      "heart",
+      "mind",
+      "head"
+    ]
+  },
+  {
+    "id": 49,
+    "unit": 10,
+    "unit_title": "Unit 10: Communication and the Media",
+    "guardian": "📜 Whispering Pixie of Truth",
+    "idiom": "get the wrong end of the stick",
+    "clean_phrase": "get the wrong end of the stick",
+    "meaning_en": "misunderstand sth, understand sth completely wrongly",
+    "meaning_vi": "không hiểu hoàn toàn bản chất của vấn đề/ hiểu lệch hoàn toàn một thứ gì đó",
+    "example": "You've got the wrong end of the stick; I wasn't criticizing your project, I was praising it!",
+    "cloze_sentence": "She got the wrong end of the _____ and assumed she was fired when she was actually promoted.",
+    "cloze_options": [
+      "stick",
+      "rope",
+      "pole",
+      "wire"
+    ]
+  },
+  {
+    "id": 50,
+    "unit": 10,
+    "unit_title": "Unit 10: Communication and the Media",
+    "guardian": "📜 Whispering Pixie of Truth",
+    "idiom": "give (sb) your word",
+    "clean_phrase": "give someone your word",
+    "meaning_en": "promise to do sth",
+    "meaning_vi": "hứa với ai đó",
+    "example": "I give you my word that the project will be delivered before Friday afternoon.",
+    "cloze_sentence": "He gave us his _____ that all client information would remain strictly confidential.",
+    "cloze_options": [
+      "word",
+      "voice",
+      "pledge",
+      "hand"
+    ]
+  },
+  {
+    "id": 51,
+    "unit": 10,
+    "unit_title": "Unit 10: Communication and the Media",
+    "guardian": "📜 Whispering Pixie of Truth",
+    "idiom": "(hear sth) on/through the grapevine",
+    "clean_phrase": "hear on the grapevine",
+    "meaning_en": "hear news from sb who heard the news from sb else (informal rumor or gossip)",
+    "meaning_vi": "nghe được tin tức lan truyền từ người này sang người kia (nghe đồn)",
+    "example": "I heard through the grapevine that our manager is moving to the Paris branch.",
+    "cloze_sentence": "We heard on the _____ that a new product launch is scheduled for next quarter.",
+    "cloze_options": [
+      "grapevine",
+      "pipeline",
+      "wireline",
+      "headline"
+    ]
+  },
+  {
+    "id": 52,
+    "unit": 10,
+    "unit_title": "Unit 10: Communication and the Media",
+    "guardian": "📜 Whispering Pixie of Truth",
+    "idiom": "keep sb posted (on sth)",
+    "clean_phrase": "keep sb posted",
+    "meaning_en": "make sure that sb always knows what is happening",
+    "meaning_vi": "giúp ai đó nắm bắt chuyện gì đang xảy ra (cập nhật tình hình thường xuyên)",
+    "example": "Please keep me posted on any developments regarding the negotiation.",
+    "cloze_sentence": "I'll be traveling next week, so keep me _____ on the lab experiment results via email.",
+    "cloze_options": [
+      "posted",
+      "mailed",
+      "noted",
+      "tracked"
+    ]
+  },
+  {
+    "id": 53,
+    "unit": 10,
+    "unit_title": "Unit 10: Communication and the Media",
+    "guardian": "📜 Whispering Pixie of Truth",
+    "idiom": "keep sth under sb's hat",
+    "clean_phrase": "keep sth under one's hat",
+    "meaning_en": "keep sth secret",
+    "meaning_vi": "giữ bí mật",
+    "example": "We are launching a groundbreaking app next month, but keep it under your hat for now.",
+    "cloze_sentence": "I'll share this confidential insight with you, provided you keep it under your _____.",
+    "cloze_options": [
+      "hat",
+      "cap",
+      "hood",
+      "cloak"
+    ]
+  },
+  {
+    "id": 54,
+    "unit": 10,
+    "unit_title": "Unit 10: Communication and the Media",
+    "guardian": "📜 Whispering Pixie of Truth",
+    "idiom": "lay/put sb's cards on the table",
+    "clean_phrase": "put one's cards on the table",
+    "meaning_en": "be honest about your feelings and intentions",
+    "meaning_vi": "trở nên trung thực về ý định và cảm xúc (ngửa bài, thẳng thắn)",
+    "example": "Let's put our cards on the table and discuss what each party truly expects from this partnership.",
+    "cloze_sentence": "It is time to put our _____ on the table and negotiate with complete transparency.",
+    "cloze_options": [
+      "cards",
+      "coins",
+      "hands",
+      "chips"
+    ]
+  },
+  {
+    "id": 55,
+    "unit": 10,
+    "unit_title": "Unit 10: Communication and the Media",
+    "guardian": "📜 Whispering Pixie of Truth",
+    "idiom": "speak volumes",
+    "clean_phrase": "speak volumes",
+    "meaning_en": "if sth speaks volumes, it makes an opinion, characteristic, or situation very clear without using the use of words",
+    "meaning_vi": "nói ra được ý định nhưng không thông qua ngôn ngữ / ngụ ý (nói lên rất nhiều điều)",
+    "example": "Her sudden silence and warm smile spoke volumes about her genuine feelings.",
+    "cloze_sentence": "His outstanding commitment and punctuality speak _____ for his professional work ethic.",
+    "cloze_options": [
+      "volumes",
+      "novels",
+      "words",
+      "echoes"
+    ]
+  },
+  {
+    "id": 56,
+    "unit": 10,
+    "unit_title": "Unit 10: Communication and the Media",
+    "guardian": "📜 Whispering Pixie of Truth",
+    "idiom": "tell tales",
+    "clean_phrase": "tell tales",
+    "meaning_en": "tell sb in authority about bad things that else has done, because you want them to be punished",
+    "meaning_vi": "mách lẻo, để lộ ra điều xấu mà ai đó hoặc có thể đã làm",
+    "example": "Stop telling tales about your classmates to the teacher; solve your disputes maturely.",
+    "cloze_sentence": "Children are often reprimanded if they constantly tell _____ out of school.",
+    "cloze_options": [
+      "tales",
+      "stories",
+      "fables",
+      "myths"
+    ]
+  },
+  {
+    "id": 57,
+    "unit": 12,
+    "unit_title": "Unit 12: Chance and Nature",
+    "guardian": "🍀 Gaia Forest Nymph of Destiny",
+    "idiom": "an act of God",
+    "clean_phrase": "an act of God",
+    "meaning_en": "a natural event that cannot be controlled or prevented by humans, especially one that causes a lot of damage, such as an earthquake or a flood",
+    "meaning_vi": "hiện tượng thiên nhiên mà con người không thể kiểm soát (thiên tai bất khả kháng)",
+    "example": "The insurance policy covered fire and theft, but excluded damage caused by an act of God.",
+    "cloze_sentence": "The flash flood was deemed an act of _____ by the insurance evaluators.",
+    "cloze_options": [
+      "God",
+      "Nature",
+      "Fate",
+      "Earth"
+    ]
+  },
+  {
+    "id": 58,
+    "unit": 12,
+    "unit_title": "Unit 12: Chance and Nature",
+    "guardian": "🍀 Gaia Forest Nymph of Destiny",
+    "idiom": "come rain or shine",
+    "clean_phrase": "come rain or shine",
+    "meaning_en": "whatever happens",
+    "meaning_vi": "dù cho có chuyện gì xảy ra đi chăng nữa (bất kể mưa nắng)",
+    "example": "I will be there at the finish line to cheer for you, come rain or shine!",
+    "cloze_sentence": "The outdoor charity marathon will proceed as scheduled, come rain or _____.",
+    "cloze_options": [
+      "shine",
+      "sun",
+      "storm",
+      "snow"
+    ]
+  },
+  {
+    "id": 59,
+    "unit": 12,
+    "unit_title": "Unit 12: Chance and Nature",
+    "guardian": "🍀 Gaia Forest Nymph of Destiny",
+    "idiom": "down on your luck",
+    "clean_phrase": "down on one's luck",
+    "meaning_en": "having a long period of difficulty finding work and earning money",
+    "meaning_vi": "trải qua thời kỳ khó khăn, thiếu thốn tiền bạc, công việc không ổn định (gặp vận rủi)",
+    "example": "The community shelter provides warm meals and shelter for people down on their luck.",
+    "cloze_sentence": "He was down on his _____ after losing his job, but never lost his optimism.",
+    "cloze_options": [
+      "luck",
+      "fate",
+      "chance",
+      "money"
+    ]
+  },
+  {
+    "id": 60,
+    "unit": 12,
+    "unit_title": "Unit 12: Chance and Nature",
+    "guardian": "🍀 Gaia Forest Nymph of Destiny",
+    "idiom": "draw the short straw",
+    "clean_phrase": "draw the short straw",
+    "meaning_en": "be chosen to do sth unpleasant",
+    "meaning_vi": "được chọn để làm những việc khó khăn, gây khó chịu (bốc phải lá thăm xấu)",
+    "example": "I drew the short straw and had to clean up the science laboratory after everyone left.",
+    "cloze_sentence": "Someone has to work the midnight shift this weekend, and poor Leo drew the short _____.",
+    "cloze_options": [
+      "straw",
+      "stick",
+      "card",
+      "leaf"
+    ]
+  },
+  {
+    "id": 61,
+    "unit": 12,
+    "unit_title": "Unit 12: Chance and Nature",
+    "guardian": "🍀 Gaia Forest Nymph of Destiny",
+    "idiom": "have green fingers",
+    "clean_phrase": "have green fingers",
+    "meaning_en": "be good at growing plants",
+    "meaning_vi": "có khả năng trồng / nuôi dưỡng cây cối tốt (mát tay trồng trọt)",
+    "example": "Her balcony is filled with blossoming roses and lush orchids because she has green fingers.",
+    "cloze_sentence": "Everything in Grandma's botanical garden thrives because she really has _____ fingers.",
+    "cloze_options": [
+      "green",
+      "gold",
+      "floral",
+      "leafy"
+    ]
+  },
+  {
+    "id": 62,
+    "unit": 12,
+    "unit_title": "Unit 12: Chance and Nature",
+    "guardian": "🍀 Gaia Forest Nymph of Destiny",
+    "idiom": "let nature take its course",
+    "clean_phrase": "let nature take its course",
+    "meaning_en": "allow sb or sth to live or develop naturally without human interference",
+    "meaning_vi": "để một vật hoặc ai đó tồn tại một cách tự nhiên, không có sự tác động đáng kể của con người (thuốc,...)",
+    "example": "Rather than performing invasive surgery, the doctors decided to let nature take its course.",
+    "cloze_sentence": "The vet advised us to keep the puppy warm and let nature take its _____.",
+    "cloze_options": [
+      "course",
+      "path",
+      "way",
+      "flow"
+    ]
+  },
+  {
+    "id": 63,
+    "unit": 12,
+    "unit_title": "Unit 12: Chance and Nature",
+    "guardian": "🍀 Gaia Forest Nymph of Destiny",
+    "idiom": "no/without rhyme or reason (to sth)",
+    "clean_phrase": "without rhyme or reason",
+    "meaning_en": "be without any obvious reasonable explanation",
+    "meaning_vi": "không có lời giải thích rõ ràng nào cho một việc gì đó (không có lý do xác đáng)",
+    "example": "The bus schedule was cancelled suddenly without rhyme or reason.",
+    "cloze_sentence": "He suddenly resigned from his executive post without _____ or reason.",
+    "cloze_options": [
+      "rhyme",
+      "tune",
+      "sound",
+      "word"
+    ]
+  },
+  {
+    "id": 64,
+    "unit": 12,
+    "unit_title": "Unit 12: Chance and Nature",
+    "guardian": "🍀 Gaia Forest Nymph of Destiny",
+    "idiom": "out of the blue",
+    "clean_phrase": "out of the blue",
+    "meaning_en": "if sth happens out of the blue, it is completely unexpected",
+    "meaning_vi": "không lường trước (bất thình lình, từ trên trời rơi xuống)",
+    "example": "Out of the blue, my childhood friend called me after ten years of silence.",
+    "cloze_sentence": "The job offer came completely out of the _____, leaving him thrilled.",
+    "cloze_options": [
+      "blue",
+      "sky",
+      "cloud",
+      "air"
+    ]
+  },
+  {
+    "id": 65,
+    "unit": 12,
+    "unit_title": "Unit 12: Chance and Nature",
+    "guardian": "🍀 Gaia Forest Nymph of Destiny",
+    "idiom": "be the luck of the draw",
+    "clean_phrase": "luck of the draw",
+    "meaning_en": "be the result of chance and sth that you have no control over",
+    "meaning_vi": "là kết quả tình cờ mà bản thân không thể kiểm soát hay tính toán trước được (do may rủi)",
+    "example": "Which dorm room you get assigned is purely the luck of the draw.",
+    "cloze_sentence": "You cannot pick your seat partners on the charter flight; it's the luck of the _____.",
+    "cloze_options": [
+      "draw",
+      "game",
+      "card",
+      "play"
+    ]
+  },
+  {
+    "id": 66,
+    "unit": 12,
+    "unit_title": "Unit 12: Chance and Nature",
+    "guardian": "🍀 Gaia Forest Nymph of Destiny",
+    "idiom": "touch wood/knock on wood",
+    "clean_phrase": "touch wood",
+    "meaning_en": "said after a confident or positive statement, express a hope for sb's good luck to continue",
+    "meaning_vi": "được sử dụng để cầu may mắn, và mong muốn may mắn đó sẽ tiếp diễn (trộm vía)",
+    "example": "We haven't had any engine trouble on this road trip yet, touch wood!",
+    "cloze_sentence": "The flight has been on schedule so far, _____ wood!",
+    "cloze_options": [
+      "touch",
+      "hit",
+      "strike",
+      "tap"
+    ]
+  },
+  {
+    "id": 67,
+    "unit": 14,
+    "unit_title": "Unit 14: Quantity and Money",
+    "guardian": "💰 Midas Dragon of Wealth",
+    "idiom": "a drop in the ocean",
+    "clean_phrase": "a drop in the ocean",
+    "meaning_en": "a very small amount compared to the amount needed",
+    "meaning_vi": "chỉ một lượng nhỏ so với tổng số lượng cần (hạt muối bỏ biển)",
+    "example": "A thousand dollars is just a drop in the ocean compared to the millions required for hospital renovation.",
+    "cloze_sentence": "Their small donation is wonderful, but it is just a drop in the _____ compared to the total debt.",
+    "cloze_options": [
+      "ocean",
+      "sea",
+      "river",
+      "lake"
+    ]
+  },
+  {
+    "id": 68,
+    "unit": 14,
+    "unit_title": "Unit 14: Quantity and Money",
+    "guardian": "💰 Midas Dragon of Wealth",
+    "idiom": "break even",
+    "clean_phrase": "break even",
+    "meaning_en": "have no profit or loss at the end of a business activity",
+    "meaning_vi": "không có doanh thu hay thua lỗ sau một thời gian của một tổ chức/doanh nghiệp (hòa vốn)",
+    "example": "In its first year of operation, the café managed to break even despite tough competition.",
+    "cloze_sentence": "We hope to sell at least 500 tickets just to break _____ on the venue rental costs.",
+    "cloze_options": [
+      "even",
+      "equal",
+      "flat",
+      "fair"
+    ]
+  },
+  {
+    "id": 69,
+    "unit": 14,
+    "unit_title": "Unit 14: Quantity and Money",
+    "guardian": "💰 Midas Dragon of Wealth",
+    "idiom": "fall short (of sth)",
+    "clean_phrase": "fall short of",
+    "meaning_en": "fail to reach an amount or standard that was expected or hoped for, causing disappointment",
+    "meaning_vi": "không thể đạt được tiêu chuẩn/ số lượng được mong đợi, gây ra sự thất vọng",
+    "example": "The quarterly sales figures fell short of our initial targets.",
+    "cloze_sentence": "The sequel movie fell _____ of the fans' high expectations.",
+    "cloze_options": [
+      "short",
+      "low",
+      "down",
+      "small"
+    ]
+  },
+  {
+    "id": 70,
+    "unit": 14,
+    "unit_title": "Unit 14: Quantity and Money",
+    "guardian": "💰 Midas Dragon of Wealth",
+    "idiom": "fifty-fifty",
+    "clean_phrase": "fifty-fifty",
+    "meaning_en": "equal, or into two equal parts",
+    "meaning_vi": "hai phần bằng nhau/chia đôi (năm mươi năm mươi)",
+    "example": "They agreed to split the profits fifty-fifty between both business partners.",
+    "cloze_sentence": "There is a _____ chance of rain this afternoon.",
+    "cloze_options": [
+      "fifty-fifty",
+      "half-half",
+      "twin-twin",
+      "even-even"
+    ]
+  },
+  {
+    "id": 71,
+    "unit": 14,
+    "unit_title": "Unit 14: Quantity and Money",
+    "guardian": "💰 Midas Dragon of Wealth",
+    "idiom": "go halves",
+    "clean_phrase": "go halves",
+    "meaning_en": "share the cost of sth with sb so that you each pay 50%",
+    "meaning_vi": "chia tiền cần thanh toán ra một nửa để cả hai cùng trả",
+    "example": "The gourmet pizza was huge, so my friend and I decided to go halves on it.",
+    "cloze_sentence": "Do you want to go _____ on a taxi to the airport?",
+    "cloze_options": [
+      "halves",
+      "splits",
+      "shares",
+      "parts"
+    ]
+  },
+  {
+    "id": 72,
+    "unit": 14,
+    "unit_title": "Unit 14: Quantity and Money",
+    "guardian": "💰 Midas Dragon of Wealth",
+    "idiom": "it's as broad as it's long",
+    "clean_phrase": "as broad as it is long",
+    "meaning_en": "used for saying that you cannot choose between two things or actions because they are equal",
+    "meaning_vi": "sử dụng để nói rằng bản thân không thể lựa chọn 1 trong 2 điều gì đó vì chúng bằng nhau (đằng nào cũng thế, kẻ tám lạng người nửa cân)",
+    "example": "Whether we drive through the highway toll or take the bypass, it's as broad as it's long.",
+    "cloze_sentence": "Taking the train or the express bus costs the same; it's as _____ as it's long.",
+    "cloze_options": [
+      "broad",
+      "wide",
+      "deep",
+      "tall"
+    ]
+  },
+  {
+    "id": 73,
+    "unit": 14,
+    "unit_title": "Unit 14: Quantity and Money",
+    "guardian": "💰 Midas Dragon of Wealth",
+    "idiom": "keep up with the Joneses",
+    "clean_phrase": "keep up with the Joneses",
+    "meaning_en": "try to be as rich, successful, etc as your neighbors or friends",
+    "meaning_vi": "cố gắng đua theo để trở nên giàu có và thành công,... như những người bạn hay những người xung quanh (chạy theo trào lưu, đua đòi)",
+    "example": "They bought a luxury sports car they couldn't afford just to keep up with the Joneses.",
+    "cloze_sentence": "Stop trying to keep up with the _____ and live within your own financial means.",
+    "cloze_options": [
+      "Joneses",
+      "Smiths",
+      "Neighbors",
+      "Crowds"
+    ]
+  },
+  {
+    "id": 74,
+    "unit": 14,
+    "unit_title": "Unit 14: Quantity and Money",
+    "guardian": "💰 Midas Dragon of Wealth",
+    "idiom": "knee-high to a grasshopper",
+    "clean_phrase": "knee-high to a grasshopper",
+    "meaning_en": "very small, because you were very young",
+    "meaning_vi": "rất nhỏ con (do nhỏ tuổi) hoặc rất trẻ",
+    "example": "I haven't seen Emily since she was knee-high to a grasshopper; now she is graduating college!",
+    "cloze_sentence": "I used to fish by this river when I was knee-high to a _____.",
+    "cloze_options": [
+      "grasshopper",
+      "cricket",
+      "beetle",
+      "frog"
+    ]
+  },
+  {
+    "id": 75,
+    "unit": 14,
+    "unit_title": "Unit 14: Quantity and Money",
+    "guardian": "💰 Midas Dragon of Wealth",
+    "idiom": "line your pocket(s)",
+    "clean_phrase": "line one's pockets",
+    "meaning_en": "obtain money, especially by acting dishonestly",
+    "meaning_vi": "thu/nhận tiền một cách bất hợp pháp (đút lót, tham nhũng, bỏ túi riêng)",
+    "example": "Corrupt city officials were accused of lining their pockets with public infrastructure funds.",
+    "cloze_sentence": "He abused his government position to line his _____ with illegal bribes.",
+    "cloze_options": [
+      "pockets",
+      "wallets",
+      "purses",
+      "bags"
+    ]
+  },
+  {
+    "id": 76,
+    "unit": 14,
+    "unit_title": "Unit 14: Quantity and Money",
+    "guardian": "💰 Midas Dragon of Wealth",
+    "idiom": "lock, stock and barrel",
+    "clean_phrase": "lock, stock and barrel",
+    "meaning_en": "including every part of a particular thing, situation, place, etc",
+    "meaning_vi": "tất cả mọi thứ của một vật gì đó (toàn bộ, tất tần tật)",
+    "example": "The family sold their antique estate lock, stock and barrel before moving abroad.",
+    "cloze_sentence": "The investor bought the entire software company _____, stock and barrel.",
+    "cloze_options": [
+      "lock",
+      "key",
+      "bolt",
+      "safe"
+    ]
+  },
+  {
+    "id": 77,
+    "unit": 14,
+    "unit_title": "Unit 14: Quantity and Money",
+    "guardian": "💰 Midas Dragon of Wealth",
+    "idiom": "six of one (and) half a dozen of the other",
+    "clean_phrase": "six of one and half a dozen of the other",
+    "meaning_en": "used for saying that two things are equally good or bad",
+    "meaning_vi": "sử dụng để nói rằng cả hai điều đều có 2 mặt tốt và xấu gần như tương tự nhau (như nhau cả thôi)",
+    "example": "Whether we take the morning flight or the afternoon train is six of one and half a dozen of the other.",
+    "cloze_sentence": "Buying online or at the boutique is six of one and half a _____ of the other.",
+    "cloze_options": [
+      "dozen",
+      "score",
+      "couple",
+      "bunch"
+    ]
+  },
+  {
+    "id": 78,
+    "unit": 14,
+    "unit_title": "Unit 14: Quantity and Money",
+    "guardian": "💰 Midas Dragon of Wealth",
+    "idiom": "tidy sum/amount",
+    "clean_phrase": "tidy sum",
+    "meaning_en": "large sum/amount of money",
+    "meaning_vi": "một khoảng lớn (số tiền kha khá, món tiền lớn)",
+    "example": "Selling his early tech stock earned him a very tidy sum.",
+    "cloze_sentence": "She inherited a _____ sum of money from her late aunt's estate.",
+    "cloze_options": [
+      "tidy",
+      "clean",
+      "neat",
+      "trim"
+    ]
+  },
+  {
+    "id": 79,
+    "unit": 16,
+    "unit_title": "Unit 16: Materials & Built Environment",
+    "guardian": "🏰 Stone Mason Griffin",
+    "idiom": "a home from home",
+    "clean_phrase": "a home from home",
+    "meaning_en": "if you refer swh as 'home from home', you mean that this is the place that you feel just as comfortable as your own house",
+    "meaning_vi": "cảm giác thoải mái như ở nhà",
+    "example": "The quaint bed-and-breakfast in the countryside was a real home from home.",
+    "cloze_sentence": "With its welcoming staff and cozy fireplace, the inn felt like a home from _____.",
+    "cloze_options": [
+      "home",
+      "house",
+      "nest",
+      "room"
+    ]
+  },
+  {
+    "id": 80,
+    "unit": 16,
+    "unit_title": "Unit 16: Materials & Built Environment",
+    "guardian": "🏰 Stone Mason Griffin",
+    "idiom": "blot on the landscape",
+    "clean_phrase": "blot on the landscape",
+    "meaning_en": "sth such as an ugly building that spoils a pleasant view",
+    "meaning_vi": "một thứ gì đó xấu xí làm ảnh hưởng một khung cảnh đẹp (vết nhơ cảnh quan)",
+    "example": "That derelict concrete warehouse is a terrible blot on the coastal landscape.",
+    "cloze_sentence": "The towering rusty chimney was considered an eyesore and a blot on the _____.",
+    "cloze_options": [
+      "landscape",
+      "scenery",
+      "view",
+      "horizon"
+    ]
+  },
+  {
+    "id": 81,
+    "unit": 16,
+    "unit_title": "Unit 16: Materials & Built Environment",
+    "guardian": "🏰 Stone Mason Griffin",
+    "idiom": "commuter belt",
+    "clean_phrase": "commuter belt",
+    "meaning_en": "an area around the city where many people who work in the city live",
+    "meaning_vi": "ở phía rìa thành phố nơi mà có nhiều người làm việc ở thành phố sống ở đó (vành đai đi làm ngoại ô)",
+    "example": "Housing prices in London's commuter belt have risen sharply over the past decade.",
+    "cloze_sentence": "Many young professionals choose to reside in the suburban _____ belt to avoid inner-city rents.",
+    "cloze_options": [
+      "commuter",
+      "traveler",
+      "worker",
+      "passenger"
+    ]
+  },
+  {
+    "id": 82,
+    "unit": 16,
+    "unit_title": "Unit 16: Materials & Built Environment",
+    "guardian": "🏰 Stone Mason Griffin",
+    "idiom": "concrete jungle",
+    "clean_phrase": "concrete jungle",
+    "meaning_en": "city or urban area with high-density modern buildings that feels harsh, ugly, or devoid of nature",
+    "meaning_vi": "những khu vực (dãy nhà cao tầng) ngột ngạt trong thành phố và thiếu đi tính thiên nhiên của chúng (rừng bê tông)",
+    "example": "After living in the concrete jungle of Manhattan for five years, he craved fresh mountain air.",
+    "cloze_sentence": "Urban planners are adding rooftop gardens to make the concrete _____ greener.",
+    "cloze_options": [
+      "jungle",
+      "forest",
+      "woods",
+      "desert"
+    ]
+  },
+  {
+    "id": 83,
+    "unit": 16,
+    "unit_title": "Unit 16: Materials & Built Environment",
+    "guardian": "🏰 Stone Mason Griffin",
+    "idiom": "home sweet home",
+    "clean_phrase": "home sweet home",
+    "meaning_en": "used as an expression of one's pleasure or relief at being in or returning to one's own home",
+    "meaning_vi": "sử dụng để bày tỏ sự giải tỏa hoặc vui sướng khi về đến nhà",
+    "example": "After a grueling 14-hour flight and customs delays, we stepped inside and sighed: 'Home sweet home!'",
+    "cloze_sentence": "Nothing beats resting on your own sofa after a long expedition: home _____ home!",
+    "cloze_options": [
+      "sweet",
+      "dear",
+      "warm",
+      "good"
+    ]
+  },
+  {
+    "id": 84,
+    "unit": 16,
+    "unit_title": "Unit 16: Materials & Built Environment",
+    "guardian": "🏰 Stone Mason Griffin",
+    "idiom": "in the sticks",
+    "clean_phrase": "in the sticks",
+    "meaning_en": "a long way from a town or city in an isolated rural area",
+    "meaning_vi": "cách xa thành thị (nơi hẻo lánh, miền quê xa xôi)",
+    "example": "They bought a rustic farm out in the sticks with no cellular reception.",
+    "cloze_sentence": "Living out in the _____ means you have to drive twenty miles to buy groceries.",
+    "cloze_options": [
+      "sticks",
+      "woods",
+      "twigs",
+      "bushes"
+    ]
+  },
+  {
+    "id": 85,
+    "unit": 16,
+    "unit_title": "Unit 16: Materials & Built Environment",
+    "guardian": "🏰 Stone Mason Griffin",
+    "idiom": "make oneself at home",
+    "clean_phrase": "make oneself at home",
+    "meaning_en": "act and do things just as normally and comfortably as what you do at home",
+    "meaning_vi": "hành xử tự nhiên như đang ở nhà",
+    "example": "Please sit down, grab a drink, and make yourself at home!",
+    "cloze_sentence": "Help yourself to tea and biscuits, and make _____ at home.",
+    "cloze_options": [
+      "yourself",
+      "oneself",
+      "themselves",
+      "yours"
+    ]
+  },
+  {
+    "id": 86,
+    "unit": 16,
+    "unit_title": "Unit 16: Materials & Built Environment",
+    "guardian": "🏰 Stone Mason Griffin",
+    "idiom": "on the street(s)",
+    "clean_phrase": "on the streets",
+    "meaning_en": "without a home; homeless",
+    "meaning_vi": "không có nhà ở (vô gia cư, sống lang thang ngoài đường)",
+    "example": "The winter charity drive provided warm blankets and soup for people living on the streets.",
+    "cloze_sentence": "Rising rent costs have forced dozens of low-income families onto the _____.",
+    "cloze_options": [
+      "streets",
+      "roads",
+      "avenues",
+      "pavements"
+    ]
+  },
+  {
+    "id": 87,
+    "unit": 16,
+    "unit_title": "Unit 16: Materials & Built Environment",
+    "guardian": "🏰 Stone Mason Griffin",
+    "idiom": "on the town",
+    "clean_phrase": "on the town",
+    "meaning_en": "enjoying yourself by going to places of entertainment in a town or city (night out)",
+    "meaning_vi": "tận hưởng khi đi chơi phố (đi quẩy, đi chơi đêm)",
+    "example": "To celebrate her promotion, they went for dinner and cocktails on the town.",
+    "cloze_sentence": "We dressed up in our finest evening wear for a fabulous night on the _____.",
+    "cloze_options": [
+      "town",
+      "city",
+      "street",
+      "club"
+    ]
+  },
+  {
+    "id": 88,
+    "unit": 16,
+    "unit_title": "Unit 16: Materials & Built Environment",
+    "guardian": "🏰 Stone Mason Griffin",
+    "idiom": "satellite town/city",
+    "clean_phrase": "satellite town",
+    "meaning_en": "an urban entity developed as a separate metropolitan area near to, and largely dependent on a larger central city",
+    "meaning_vi": "là đô thị nằm trong một vùng đô thị nào đó và chịu ảnh hưởng trực tiếp bởi thành phố trung tâm (đô thị vệ tinh)",
+    "example": "Several satellite towns have emerged around the capital to alleviate urban congestion.",
+    "cloze_sentence": "High-speed rail links the capital with surrounding _____ cities.",
+    "cloze_options": [
+      "satellite",
+      "orbital",
+      "neighbor",
+      "sub"
+    ]
+  },
+  {
+    "id": 89,
+    "unit": 18,
+    "unit_title": "Unit 18: Reactions and Health",
+    "guardian": "🔥 Crimson Berserker Chimera",
+    "idiom": "cry over spilt milk",
+    "clean_phrase": "cry over spilt milk",
+    "meaning_en": "waste time feeling upset about sth bad that has happened and cannot be changed",
+    "meaning_vi": "tiếc rẻ con gà quạ tha, tốn thời gian tiếc rẻ thứ gì đó đã mất trong quá khứ và không thể lấy lại được",
+    "example": "You didn't pass the driving test this time, but it's no use crying over spilt milk; practice more and retake it!",
+    "cloze_sentence": "The vase is broken and cannot be glued; there is no point crying over spilt _____.",
+    "cloze_options": [
+      "milk",
+      "water",
+      "tea",
+      "juice"
+    ]
+  },
+  {
+    "id": 90,
+    "unit": 18,
+    "unit_title": "Unit 18: Reactions and Health",
+    "guardian": "🔥 Crimson Berserker Chimera",
+    "idiom": "fly off the handle",
+    "clean_phrase": "fly off the handle",
+    "meaning_en": "suddenly become extremely angry without a good reason",
+    "meaning_vi": "đột ngột giận dữ mà không có lý do (nổi trận lôi đình, mất bình tĩnh)",
+    "example": "He tends to fly off the handle whenever his computer freezes during a video conference.",
+    "cloze_sentence": "Take a deep breath and calm down; there's no reason to fly off the _____.",
+    "cloze_options": [
+      "handle",
+      "wheel",
+      "lever",
+      "door"
+    ]
+  },
+  {
+    "id": 91,
+    "unit": 18,
+    "unit_title": "Unit 18: Reactions and Health",
+    "guardian": "🔥 Crimson Berserker Chimera",
+    "idiom": "give sb a taste/dose of their own medicine",
+    "clean_phrase": "give someone a taste of their own medicine",
+    "meaning_en": "treat sb in the same bad way they treat other people",
+    "meaning_vi": "làm ai đó có cảm giác khó chịu như cách họ làm với bạn (gậy ông đập lưng ông)",
+    "example": "He constantly mocked others, so his classmates gave him a dose of his own medicine.",
+    "cloze_sentence": "She arrived late intentionally to give her tardy boyfriend a taste of his own _____.",
+    "cloze_options": [
+      "medicine",
+      "remedy",
+      "pill",
+      "syrup"
+    ]
+  },
+  {
+    "id": 92,
+    "unit": 18,
+    "unit_title": "Unit 18: Reactions and Health",
+    "guardian": "🔥 Crimson Berserker Chimera",
+    "idiom": "give sth a miss",
+    "clean_phrase": "give sth a miss",
+    "meaning_en": "decide not to do or attend sth that you usually do",
+    "meaning_vi": "quyết định không làm chuyện gì (công việc nào đó mà bạn làm thường xuyên) (bỏ qua, không tham gia)",
+    "example": "I'm nursing a headache tonight, so I think I'll give the party a miss.",
+    "cloze_sentence": "I'm feeling under the weather, so I'll give yoga class a _____ this evening.",
+    "cloze_options": [
+      "miss",
+      "skip",
+      "pass",
+      "drop"
+    ]
+  },
+  {
+    "id": 93,
+    "unit": 18,
+    "unit_title": "Unit 18: Reactions and Health",
+    "guardian": "🔥 Crimson Berserker Chimera",
+    "idiom": "grin and bear it",
+    "clean_phrase": "grin and bear it",
+    "meaning_en": "accept a difficult situation without complaining or showing how you feel",
+    "meaning_vi": "mỉm cười chịu đựng, chấp nhận số phận (ngậm đắng nuốt cay)",
+    "example": "We had to hike in the torrential rain, so we just had to grin and bear it.",
+    "cloze_sentence": "The dental procedure was uncomfortable, but he decided to grin and _____ it.",
+    "cloze_options": [
+      "bear",
+      "wear",
+      "take",
+      "hold"
+    ]
+  },
+  {
+    "id": 94,
+    "unit": 18,
+    "unit_title": "Unit 18: Reactions and Health",
+    "guardian": "🔥 Crimson Berserker Chimera",
+    "idiom": "keep a straight face",
+    "clean_phrase": "keep a straight face",
+    "meaning_en": "remain serious and not laugh despite finding sth funny",
+    "meaning_vi": "kiềm chế để giữ bộ mặt bình thản, nghiêm túc (nhịn cười)",
+    "example": "It was impossible to keep a straight face when the magician's rabbit escaped into the audience.",
+    "cloze_sentence": "During the solemn ceremony, Jack struggled to keep a _____ face when his phone chirped.",
+    "cloze_options": [
+      "straight",
+      "plain",
+      "still",
+      "flat"
+    ]
+  },
+  {
+    "id": 95,
+    "unit": 18,
+    "unit_title": "Unit 18: Reactions and Health",
+    "guardian": "🔥 Crimson Berserker Chimera",
+    "idiom": "keep your hair on",
+    "clean_phrase": "keep your hair on",
+    "meaning_en": "used for telling sb not to get angry or upset; calm down",
+    "meaning_vi": "dùng để bảo ai đó bình tĩnh, không tức giận (hạ hỏa)",
+    "example": "Keep your hair on! I'll finish loading the dishwasher in just two minutes.",
+    "cloze_sentence": "Keep your _____ on! We're not going to miss the train.",
+    "cloze_options": [
+      "hair",
+      "hat",
+      "head",
+      "cap"
+    ]
+  },
+  {
+    "id": 96,
+    "unit": 18,
+    "unit_title": "Unit 18: Reactions and Health",
+    "guardian": "🔥 Crimson Berserker Chimera",
+    "idiom": "kick yourself",
+    "clean_phrase": "kick yourself",
+    "meaning_en": "be very annoyed because you have made a mistake, missed an opportunity, etc",
+    "meaning_vi": "bạn cảm thấy khó chịu, ấm ức vì đã làm điều gì ngu ngốc, hay bỏ lỡ một cơ hội nào đó (tự trách bản thân)",
+    "example": "I kicked myself when I realized I left the flight tickets on the dining table.",
+    "cloze_sentence": "You will kick _____ later if you pass up this once-in-a-lifetime scholarship opportunity.",
+    "cloze_options": [
+      "yourself",
+      "oneself",
+      "myself",
+      "himself"
+    ]
+  },
+  {
+    "id": 97,
+    "unit": 18,
+    "unit_title": "Unit 18: Reactions and Health",
+    "guardian": "🔥 Crimson Berserker Chimera",
+    "idiom": "let off steam",
+    "clean_phrase": "let off steam",
+    "meaning_en": "shout or do sth energetic that allows you to get rid of anger or stress",
+    "meaning_vi": "xả hơi, làm gì đó để hết bực dọc, khó chịu",
+    "example": "After a stressful week of exams, the students played soccer to let off steam.",
+    "cloze_sentence": "Going for a vigorous jog helps him let off _____ after tense client meetings.",
+    "cloze_options": [
+      "steam",
+      "smoke",
+      "gas",
+      "heat"
+    ]
+  },
+  {
+    "id": 98,
+    "unit": 18,
+    "unit_title": "Unit 18: Reactions and Health",
+    "guardian": "🔥 Crimson Berserker Chimera",
+    "idiom": "let sleeping dogs lie",
+    "clean_phrase": "let sleeping dogs lie",
+    "meaning_en": "leave a person or situation alone if they might cause you trouble; avoid stirring up old disputes",
+    "meaning_vi": "chuyện đã qua hãy để cho nó qua (đừng khơi lại chuyện cũ rắc rối)",
+    "example": "They resolved that argument months ago, so let sleeping dogs lie.",
+    "cloze_sentence": "Don't bring up the past financial dispute again; let sleeping dogs _____.",
+    "cloze_options": [
+      "lie",
+      "sleep",
+      "rest",
+      "stay"
+    ]
+  },
+  {
+    "id": 99,
+    "unit": 18,
+    "unit_title": "Unit 18: Reactions and Health",
+    "guardian": "🔥 Crimson Berserker Chimera",
+    "idiom": "never/don't look a gift horse in the mouth",
+    "clean_phrase": "don't look a gift horse in the mouth",
+    "meaning_en": "if you are given sth good, you should not complain about it or try to find things that are wrong with it",
+    "meaning_vi": "đừng săm soi quà tặng của người khác dành cho mình (được voi đòi tiên, chê quà)",
+    "example": "The free laptop might be an older model, but never look a gift horse in the mouth!",
+    "cloze_sentence": "He gave you free concert passes; don't look a gift _____ in the mouth.",
+    "cloze_options": [
+      "horse",
+      "mule",
+      "camel",
+      "pony"
+    ]
+  },
+  {
+    "id": 100,
+    "unit": 18,
+    "unit_title": "Unit 18: Reactions and Health",
+    "guardian": "🔥 Crimson Berserker Chimera",
+    "idiom": "up in arms about",
+    "clean_phrase": "up in arms about",
+    "meaning_en": "angry and complaining vigorously about sth",
+    "meaning_vi": "giận dữ, tức giận và phàn nàn về chuyện gì (kịch liệt phản đối)",
+    "example": "Local residents were up in arms about the proposed highway through the nature reserve.",
+    "cloze_sentence": "Parents were up in _____ about the unexpected hike in tuition fees.",
+    "cloze_options": [
+      "arms",
+      "hands",
+      "fists",
+      "swords"
+    ]
+  },
+  {
+    "id": 101,
+    "unit": 20,
+    "unit_title": "Unit 20: Power & Social Issues",
+    "guardian": "⚖️ Archon of Law & Dominion",
+    "idiom": "bury/have your head in the sand",
+    "clean_phrase": "bury one's head in the sand",
+    "meaning_en": "to refuse to think about unpleasant facts, although they will have an influence on your situation",
+    "meaning_vi": "từ chối nghĩ về điều gì đó (phần lớn là sự thật, nghĩa vụ, nguy hiểm tiềm tàng) và vờ như chúng không hiện hữu (trốn tránh thực tế / đà điểu giấu đầu vào cát)",
+    "example": "Ignoring climate change is just burying your head in the sand.",
+    "cloze_sentence": "You cannot solve debt problems by burying your head in the _____.",
+    "cloze_options": [
+      "sand",
+      "ground",
+      "dirt",
+      "mud"
+    ]
+  },
+  {
+    "id": 102,
+    "unit": 20,
+    "unit_title": "Unit 20: Power & Social Issues",
+    "guardian": "⚖️ Archon of Law & Dominion",
+    "idiom": "gain/get/have/take the upper hand",
+    "clean_phrase": "have the upper hand",
+    "meaning_en": "if you have the upper hand, you have more power than anyone else and so have control",
+    "meaning_vi": "có quyền lực lớn hơn cả (chiếm thế thượng phong, nắm quyền kiểm soát)",
+    "example": "After intense contract negotiations, the workers' union gained the upper hand.",
+    "cloze_sentence": "With superior strategic positioning, their army took the _____ hand in battle.",
+    "cloze_options": [
+      "upper",
+      "top",
+      "higher",
+      "first"
+    ]
+  },
+  {
+    "id": 103,
+    "unit": 20,
+    "unit_title": "Unit 20: Power & Social Issues",
+    "guardian": "⚖️ Archon of Law & Dominion",
+    "idiom": "get/have one's own way",
+    "clean_phrase": "get one's own way",
+    "meaning_en": "get or do what one wants despite opposition",
+    "meaning_vi": "làm việc gì đó mà bản thân hoặc ai đó muốn bất chấp sự phản đối (làm theo ý mình)",
+    "example": "He threw a childish tantrum until he finally got his own way.",
+    "cloze_sentence": "She is stubborn and always insists on getting her own _____.",
+    "cloze_options": [
+      "way",
+      "will",
+      "mind",
+      "rule"
+    ]
+  },
+  {
+    "id": 104,
+    "unit": 20,
+    "unit_title": "Unit 20: Power & Social Issues",
+    "guardian": "⚖️ Archon of Law & Dominion",
+    "idiom": "live and let live",
+    "clean_phrase": "live and let live",
+    "meaning_en": "said to mean that people should accept the way other people live and behave, especially if they do things differently",
+    "meaning_vi": "sử dụng để khuyên người khác nên chấp nhận cách sống và hành xử khác biệt của mỗi người (dĩ hòa vi quý, sống và để người khác sống)",
+    "example": "I might not agree with his eccentric hobbies, but my philosophy is live and let live.",
+    "cloze_sentence": "In a diverse cosmopolitan society, we must learn to live and let _____.",
+    "cloze_options": [
+      "live",
+      "be",
+      "grow",
+      "stay"
+    ]
+  },
+  {
+    "id": 105,
+    "unit": 20,
+    "unit_title": "Unit 20: Power & Social Issues",
+    "guardian": "⚖️ Archon of Law & Dominion",
+    "idiom": "pull (a few) strings",
+    "clean_phrase": "pull strings",
+    "meaning_en": "to be in control of an organization or situation secretly / use confidential influence to gain an advantage",
+    "meaning_vi": "bí mật nắm giữ, điều khiển một tổ chức, vụ việc nào đó (giật dây, dùng quan hệ ngầm)",
+    "example": "His uncle pulled a few strings at the embassy to expedite his visa application.",
+    "cloze_sentence": "She managed to secure an audition by having an industry friend pull _____.",
+    "cloze_options": [
+      "strings",
+      "ropes",
+      "wires",
+      "threads"
+    ]
+  },
+  {
+    "id": 106,
+    "unit": 20,
+    "unit_title": "Unit 20: Power & Social Issues",
+    "guardian": "⚖️ Archon of Law & Dominion",
+    "idiom": "red tape",
+    "clean_phrase": "red tape",
+    "meaning_en": "official rules and processes that seem unnecessary and cause delays",
+    "meaning_vi": "quy định, quy tắc, thủ tục không cần thiết và gây ra sự chậm trễ (nạn quan liêu, thủ tục rườm rà)",
+    "example": "Starting a small business was hindered by endless government red tape.",
+    "cloze_sentence": "The humanitarian aid was delayed for weeks by bureaucratic _____ tape.",
+    "cloze_options": [
+      "red",
+      "blue",
+      "thick",
+      "black"
+    ]
+  },
+  {
+    "id": 107,
+    "unit": 20,
+    "unit_title": "Unit 20: Power & Social Issues",
+    "guardian": "⚖️ Archon of Law & Dominion",
+    "idiom": "take the law into sb's own hands",
+    "clean_phrase": "take the law into one's own hands",
+    "meaning_en": "to try to punish sb for breaking a law even though one does not have the legal right to do that",
+    "meaning_vi": "cố gắng để trừng trị ai đó bằng chính bản thân vì biết rằng pháp luật sẽ không trừng trị thích đáng (tự xử, tự hành quyết ngoài vòng pháp luật)",
+    "example": "Vigilante citizens took the law into their own hands and captured the notorious burglar.",
+    "cloze_sentence": "Citizens should call the police rather than taking the law into their own _____.",
+    "cloze_options": [
+      "hands",
+      "arms",
+      "care",
+      "control"
+    ]
+  },
+  {
+    "id": 108,
+    "unit": 20,
+    "unit_title": "Unit 20: Power & Social Issues",
+    "guardian": "⚖️ Archon of Law & Dominion",
+    "idiom": "the powers that be",
+    "clean_phrase": "the powers that be",
+    "meaning_en": "important people who have the authority over others; establishment in power",
+    "meaning_vi": "những người quan trọng và có tầm ảnh hưởng lên người khác (giới cầm quyền, người có thẩm quyền)",
+    "example": "The proposal was vetoed by the powers that be in the central administration.",
+    "cloze_sentence": "We are awaiting final budget approval from the powers that _____.",
+    "cloze_options": [
+      "be",
+      "are",
+      "reign",
+      "rule"
+    ]
+  },
+  {
+    "id": 109,
+    "unit": 20,
+    "unit_title": "Unit 20: Power & Social Issues",
+    "guardian": "⚖️ Archon of Law & Dominion",
+    "idiom": "throw the book at sb",
+    "clean_phrase": "throw the book at someone",
+    "meaning_en": "to punish sb as severely as possible under the law",
+    "meaning_vi": "trừng trị ai đó một cách khắt khe nhất có thể (xử phạt kịch khung)",
+    "example": "The judge decided to throw the book at the repeat offender, sentencing him to maximum prison time.",
+    "cloze_sentence": "The court decided to throw the _____ at the corporate fraudsters.",
+    "cloze_options": [
+      "book",
+      "gavel",
+      "code",
+      "rule"
+    ]
+  },
+  {
+    "id": 110,
+    "unit": 20,
+    "unit_title": "Unit 20: Power & Social Issues",
+    "guardian": "⚖️ Archon of Law & Dominion",
+    "idiom": "to be under sb's thumb",
+    "clean_phrase": "under someone's thumb",
+    "meaning_en": "to be under one's complete control and influence",
+    "meaning_vi": "dưới sự kiểm soát và ảnh hưởng hoàn toàn của ai đó (bị đè đầu cưỡi cổ, dưới quyền)",
+    "example": "He has no freedom in the company; he is completely under his manager's thumb.",
+    "cloze_sentence": "The assistant was terrified of speaking out because she was under the director's _____.",
+    "cloze_options": [
+      "thumb",
+      "finger",
+      "palm",
+      "fist"
+    ]
+  },
+  {
+    "id": 111,
+    "unit": 22,
+    "unit_title": "Unit 22: Quality and the Arts",
+    "guardian": "🎨 Luminary Muse of Masterpieces",
+    "idiom": "a sight for sore eyes",
+    "clean_phrase": "a sight for sore eyes",
+    "meaning_en": "a person or thing that one is extremely pleased and delighted to see",
+    "meaning_vi": "một người hoặc khung cảnh tuyệt đẹp (cảnh tượng làm dịu mắt, vui mừng khi gặp lại)",
+    "example": "After three months lost in the wilderness, the rescue helicopter was a sight for sore eyes.",
+    "cloze_sentence": "Seeing your warm smile after this dreadful week is a sight for _____ eyes.",
+    "cloze_options": [
+      "sore",
+      "tired",
+      "dim",
+      "blind"
+    ]
+  },
+  {
+    "id": 112,
+    "unit": 22,
+    "unit_title": "Unit 22: Quality and the Arts",
+    "guardian": "🎨 Luminary Muse of Masterpieces",
+    "idiom": "achilles' heel",
+    "clean_phrase": "Achilles' heel",
+    "meaning_en": "your weakness or vulnerable point",
+    "meaning_vi": "điểm yếu, khuyết điểm (gót chân Asin)",
+    "example": "Spelling has always been his Achilles' heel in English competitive examinations.",
+    "cloze_sentence": "Poor defensive coordination proved to be the team's Achilles' _____.",
+    "cloze_options": [
+      "heel",
+      "foot",
+      "toe",
+      "ankle"
+    ]
+  },
+  {
+    "id": 113,
+    "unit": 22,
+    "unit_title": "Unit 22: Quality and the Arts",
+    "guardian": "🎨 Luminary Muse of Masterpieces",
+    "idiom": "add fuel to the fire",
+    "clean_phrase": "add fuel to the fire",
+    "meaning_en": "escalate / worsen a conflict or tense situation",
+    "meaning_vi": "gây căng thẳng hơn một sự việc nào đó/ tạo ra sự kích động để một sự xung đột nào đó xảy ra (thêm dầu vào lửa)",
+    "example": "Publishing the controversial editorial only added fuel to the fire.",
+    "cloze_sentence": "His sarcastic remarks during the board dispute only added fuel to the _____.",
+    "cloze_options": [
+      "fire",
+      "flame",
+      "blaze",
+      "smoke"
+    ]
+  },
+  {
+    "id": 114,
+    "unit": 22,
+    "unit_title": "Unit 22: Quality and the Arts",
+    "guardian": "🎨 Luminary Muse of Masterpieces",
+    "idiom": "below/under par",
+    "clean_phrase": "below par",
+    "meaning_en": "ill/ worse than the usual or expected standard",
+    "meaning_vi": "bị bệnh/ dưới tiêu chuẩn trung bình được mong đợi",
+    "example": "I felt a bit below par yesterday, so I rested in bed with hot ginger tea.",
+    "cloze_sentence": "The star player's performance was noticeably below _____ due to a slight fever.",
+    "cloze_options": [
+      "par",
+      "score",
+      "mark",
+      "grade"
+    ]
+  },
+  {
+    "id": 115,
+    "unit": 22,
+    "unit_title": "Unit 22: Quality and the Arts",
+    "guardian": "🎨 Luminary Muse of Masterpieces",
+    "idiom": "clean as a whistle",
+    "clean_phrase": "clean as a whistle",
+    "meaning_en": "extremely clean or clear/ if a place is clean as a whistle, it has no incriminating evidence when the police come in",
+    "meaning_vi": "chỉ một hiện trường 'sạch sẽ', không có bất cứ chứng cứ phạm tội nào (sạch bóng, không tì vết)",
+    "example": "The forensic detectives inspected the suspect's apartment, but it was clean as a whistle.",
+    "cloze_sentence": "After scrubbing all morning, the kitchen counters were as clean as a _____.",
+    "cloze_options": [
+      "whistle",
+      "bell",
+      "mirror",
+      "pin"
+    ]
+  },
+  {
+    "id": 116,
+    "unit": 22,
+    "unit_title": "Unit 22: Quality and the Arts",
+    "guardian": "🎨 Luminary Muse of Masterpieces",
+    "idiom": "draw the line (at)",
+    "clean_phrase": "draw the line at",
+    "meaning_en": "set a limit on what one is willing to do or accept, beyond which one will not go",
+    "meaning_vi": "đặt ra giới hạn khi ai đó đang làm gì (vạch ra ranh giới)",
+    "example": "I don't mind working overtime occasionally, but I draw the line at working on Sundays.",
+    "cloze_sentence": "I enjoy playing practical jokes, but I draw the _____ at causing physical harm.",
+    "cloze_options": [
+      "line",
+      "boundary",
+      "mark",
+      "border"
+    ]
+  },
+  {
+    "id": 117,
+    "unit": 22,
+    "unit_title": "Unit 22: Quality and the Arts",
+    "guardian": "🎨 Luminary Muse of Masterpieces",
+    "idiom": "last word in sth",
+    "clean_phrase": "the last word in",
+    "meaning_en": "the best or most modern example of sth (cutting-edge / pinnacle)",
+    "meaning_vi": "là thứ tốt nhất và hiện đại nhất của một mảng/điều gì đó (đỉnh cao mới nhất, chuẩn mực tối tân)",
+    "example": "This new hybrid hypercar is the last word in automotive safety and luxury.",
+    "cloze_sentence": "Their newly unveiled flagship smartphone is the last _____ in mobile photography.",
+    "cloze_options": [
+      "word",
+      "voice",
+      "step",
+      "page"
+    ]
+  },
+  {
+    "id": 118,
+    "unit": 22,
+    "unit_title": "Unit 22: Quality and the Arts",
+    "guardian": "🎨 Luminary Muse of Masterpieces",
+    "idiom": "out of this world",
+    "clean_phrase": "out of this world",
+    "meaning_en": "extremely good, wonderful, or extraordinary",
+    "meaning_vi": "cực kì tốt (tuyệt vời, không chê vào đâu được)",
+    "example": "The chef's signature truffle pasta was simply out of this world!",
+    "cloze_sentence": "The visual effects in that sci-fi blockbuster were out of this _____.",
+    "cloze_options": [
+      "world",
+      "earth",
+      "space",
+      "sky"
+    ]
+  },
+  {
+    "id": 119,
+    "unit": 22,
+    "unit_title": "Unit 22: Quality and the Arts",
+    "guardian": "🎨 Luminary Muse of Masterpieces",
+    "idiom": "over the top",
+    "clean_phrase": "over the top",
+    "meaning_en": "too extreme and not suitable, or demanding too much attention or effort, especially in an uncontrolled way",
+    "meaning_vi": "không phù hợp, đòi hỏi quá nhiều sự chú ý hoặc công sức (quá trớn, quá đà, làm quá)",
+    "example": "Her glittering costume was a bit over the top for a casual garden party.",
+    "cloze_sentence": "The decorations for a simple birthday celebration were completely over the _____.",
+    "cloze_options": [
+      "top",
+      "roof",
+      "peak",
+      "edge"
+    ]
+  },
+  {
+    "id": 120,
+    "unit": 22,
+    "unit_title": "Unit 22: Quality and the Arts",
+    "guardian": "🎨 Luminary Muse of Masterpieces",
+    "idiom": "have/take pride of place",
+    "clean_phrase": "pride of place",
+    "meaning_en": "to have the most important position in a group or display",
+    "meaning_vi": "có vị trí và tầm ảnh hưởng quan trọng nhất trong một nhóm hoặc tổ chức (chiếm vị trí trang trọng nhất)",
+    "example": "The championship trophy took pride of place in the school's central showcase.",
+    "cloze_sentence": "Grandfather's vintage oil portrait takes _____ of place above the fireplace.",
+    "cloze_options": [
+      "pride",
+      "glory",
+      "honor",
+      "seat"
+    ]
+  },
+  {
+    "id": 121,
+    "unit": 22,
+    "unit_title": "Unit 22: Quality and the Arts",
+    "guardian": "🎨 Luminary Muse of Masterpieces",
+    "idiom": "steal the show/scene",
+    "clean_phrase": "steal the show",
+    "meaning_en": "to be the most remarkable or popular in an event or situation",
+    "meaning_vi": "trở thành thứ nổi bật nhất trong một vụ việc hoặc sự kiện (chiếm trọn spotlight)",
+    "example": "The five-year-old violin prodigy completely stole the show with his heartfelt solo.",
+    "cloze_sentence": "The hilarious supporting actor stole the _____ from the lead superstar.",
+    "cloze_options": [
+      "show",
+      "play",
+      "stage",
+      "act"
+    ]
+  },
+  {
+    "id": 122,
+    "unit": 22,
+    "unit_title": "Unit 22: Quality and the Arts",
+    "guardian": "🎨 Luminary Muse of Masterpieces",
+    "idiom": "have the edge over/on sb/sth",
+    "clean_phrase": "have the edge over",
+    "meaning_en": "to be slightly better than sb or sth else",
+    "meaning_vi": "tốt hơn một chút so với thứ gì/ ai đó (có lợi thế hơn một chút)",
+    "example": "With her fluency in three foreign languages, she has the edge over the other job applicants.",
+    "cloze_sentence": "Their product has the _____ over competitors thanks to its superior battery life.",
+    "cloze_options": [
+      "edge",
+      "blade",
+      "tip",
+      "peak"
+    ]
+  }
+];
+    const UNITS_META = [
+  {
+    "id": 2,
+    "title": "Unit 2: Thinking & Learning",
+    "desc": "12 Thành ngữ về tư duy, quan sát, phán đoán và tiếp thu kiến thức.",
+    "guardian": "🦉 Athena Owl of Wisdom",
+    "icon": "🦉",
+    "theme_color": "#38bdf8",
+    "range": [
+      1,
+      12
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Unit 4: Change & Technology",
+    "desc": "10 Thành ngữ về sự chuyển biến, đổi mới công nghệ và thái độ sống.",
+    "guardian": "⚡ Cyber Phoenix of Innovation",
+    "icon": "⚡",
+    "theme_color": "#f59e0b",
+    "range": [
+      13,
+      22
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Unit 6: Time & Work",
+    "desc": "12 Thành ngữ về thời gian, cơ hội, tính kiên nhẫn và tác phong.",
+    "guardian": "⏳ Chrono Sphinx of Timeless",
+    "icon": "⏳",
+    "theme_color": "#10b981",
+    "range": [
+      23,
+      34
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Unit 8: Movement & Transport",
+    "desc": "10 Thành ngữ về phương hướng, hành trình di chuyển và khám phá.",
+    "guardian": "🦅 Zephyr Falcon of Swift Horizons",
+    "icon": "🦅",
+    "theme_color": "#ec4899",
+    "range": [
+      35,
+      44
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Unit 10: Communication & Media",
+    "desc": "12 Thành ngữ về giao tiếp, tin đồn, chia sẻ bí mật và độ chân thực.",
+    "guardian": "📜 Whispering Pixie of Truth",
+    "icon": "📜",
+    "theme_color": "#a855f7",
+    "range": [
+      45,
+      56
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Unit 12: Chance & Nature",
+    "desc": "10 Thành ngữ về thiên nhiên, may rủi, số phận và sự can thiệp tự nhiên.",
+    "guardian": "🍀 Gaia Forest Nymph of Destiny",
+    "icon": "🍀",
+    "theme_color": "#22c55e",
+    "range": [
+      57,
+      66
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Unit 14: Quantity & Money",
+    "desc": "12 Thành ngữ về tiền tài, số lượng, lợi nhuận, chia sẻ và tham nhũng.",
+    "guardian": "💰 Midas Dragon of Wealth",
+    "icon": "💰",
+    "theme_color": "#eab308",
+    "range": [
+      67,
+      78
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Unit 16: Materials & Built Environment",
+    "desc": "10 Thành ngữ về nhà cửa, không gian đô thị, rừng bê tông và ngoại ô.",
+    "guardian": "🏰 Stone Mason Griffin",
+    "icon": "🏰",
+    "theme_color": "#06b6d4",
+    "range": [
+      79,
+      88
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Unit 18: Reactions & Health",
+    "desc": "12 Thành ngữ về cảm xúc, tức giận, xả stress, nhẫn nhịn và phản ứng.",
+    "guardian": "🔥 Crimson Berserker Chimera",
+    "icon": "🔥",
+    "theme_color": "#f43f5e",
+    "range": [
+      89,
+      100
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Unit 20: Power & Social Issues",
+    "desc": "10 Thành ngữ về quyền lực, pháp luật, thủ tục quan liêu và kiểm soát.",
+    "guardian": "⚖️ Archon of Law & Dominion",
+    "icon": "⚖️",
+    "theme_color": "#6366f1",
+    "range": [
+      101,
+      110
+    ]
+  },
+  {
+    "id": 22,
+    "title": "Unit 22: Quality & The Arts",
+    "desc": "12 Thành ngữ về nghệ thuật, chuẩn mực chất lượng đỉnh cao và spotlight.",
+    "guardian": "🎨 Luminary Muse of Masterpieces",
+    "icon": "🎨",
+    "theme_color": "#d946ef",
+    "range": [
+      111,
+      122
+    ]
+  }
+];
+
+    class RetroAudio {
+      constructor() {
+        this.ctx = null;
+        this.enabled = true;
+      }
+
+      init() {
+        if (!this.ctx) {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          if (AudioContext) this.ctx = new AudioContext();
+        }
+      }
+
+      playTone(freq, type, duration, delay = 0) {
+        if (!this.enabled) return;
+        this.init();
+        if (!this.ctx) return;
+        setTimeout(() => {
+          if (!this.enabled) return;
+          try {
+            const osc = this.ctx.createOscillator();
+            const gain = this.ctx.createGain();
+            osc.type = type;
+            osc.frequency.setValueAtTime(freq, this.ctx.currentTime);
+            gain.gain.setValueAtTime(0.12, this.ctx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, this.ctx.currentTime + duration);
+            osc.connect(gain);
+            gain.connect(this.ctx.destination);
+            osc.start();
+            osc.stop(this.ctx.currentTime + duration);
+          } catch(e) {}
+        }, delay * 1000);
+      }
+
+      flip() { this.playTone(450, 'sine', 0.08); }
+      correct() {
+        this.playTone(523.25, 'triangle', 0.1, 0);
+        this.playTone(659.25, 'triangle', 0.1, 0.08);
+        this.playTone(783.99, 'triangle', 0.2, 0.16);
+      }
+      wrong() {
+        this.playTone(220, 'sawtooth', 0.15, 0);
+        this.playTone(180, 'sawtooth', 0.25, 0.1);
+      }
+      coin() {
+        this.playTone(987.77, 'square', 0.08, 0);
+        this.playTone(1318.51, 'square', 0.25, 0.08);
+      }
+      match() {
+        this.playTone(587.33, 'triangle', 0.1, 0);
+        this.playTone(880.00, 'triangle', 0.18, 0.08);
+      }
+      fanfare() {
+        const notes = [523.25, 659.25, 783.99, 1046.50];
+        notes.forEach((f, i) => this.playTone(f, 'triangle', 0.2, i * 0.12));
+      }
+    }
+
+    class ArcaneIdiomsApp {
+      constructor() {
+        this.idioms = RAW_IDIOMS;
+        this.units = UNITS_META;
+        this.audio = new RetroAudio();
+        
+        this.currentUnitId = 'all';
+        this.currentMode = null;
+        this.currentCardIdx = 0;
+        this.filteredIdioms = [];
+        
+        // Quiz state
+        this.quizQueue = [];
+        this.quizIdx = 0;
+        this.quizScore = 0;
+        
+        // Rune Match state
+        this.runeTimer = null;
+        this.runeSeconds = 0;
+        this.runeMoves = 0;
+        this.runeCombo = 1;
+        this.runeSelected = [];
+        this.runeMatchedCount = 0;
+        this.runeTotalPairs = 0;
+
+        // Scramble state
+        this.scrambleQueue = [];
+        this.scrambleIdx = 0;
+        this.placedWords = [];
+        this.poolWords = [];
+
+        this.loadStorage();
+        this.initDOM();
+        this.renderUnits();
+        this.updateStatsDisplay();
+      }
+
+      loadStorage() {
+        const saved = localStorage.getItem('arcane_idioms_save');
+        if (saved) {
+          try {
+            this.state = JSON.parse(saved);
+          } catch(e) {
+            this.state = this.getDefaultState();
+          }
+        } else {
+          this.state = this.getDefaultState();
+        }
+      }
+
+      getDefaultState() {
+        return {
+          gold: 0,
+          mana: 0,
+          masteredIdiomIds: [],
+          streak: 1,
+          lastPlayedDate: new Date().toDateString()
+        };
+      }
+
+      saveStorage() {
+        localStorage.setItem('arcane_idioms_save', JSON.stringify(this.state));
+        this.updateStatsDisplay();
+      }
+
+      updateStatsDisplay() {
+        document.getElementById('stat-gold').textContent = this.state.gold;
+        document.getElementById('stat-mana').textContent = this.state.mana;
+        document.getElementById('stat-mastered').textContent = `${this.state.masteredIdiomIds.length}/${this.idioms.length}`;
+        document.getElementById('stat-streak').textContent = this.state.streak;
+      }
+
+      initDOM() {
+        window.addEventListener('keydown', (e) => {
+          if (document.getElementById('view-flashcard').classList.contains('active')) {
+            if (e.code === 'Space') {
+              e.preventDefault();
+              this.flipCard();
+            } else if (e.code === 'ArrowRight') {
+              this.nextCard();
+            } else if (e.code === 'ArrowLeft') {
+              this.prevCard();
+            }
+          }
+        });
+      }
+
+      switchView(viewId) {
+        document.querySelectorAll('.view-section').forEach(el => el.classList.remove('active'));
+        const target = document.getElementById(viewId);
+        if (target) target.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      showHome() {
+        this.renderUnits();
+        this.switchView('view-home');
+      }
+
+      showModeSelect() {
+        let title = "🌟 Grand Master Realm (All 122 Idioms)";
+        let icon = "🔮";
+        if (this.currentUnitId !== 'all') {
+          const u = this.units.find(item => item.id === this.currentUnitId);
+          if (u) {
+            title = u.title;
+            icon = u.icon;
+          }
+        }
+        document.getElementById('current-unit-icon').textContent = icon;
+        document.getElementById('current-unit-title').textContent = title;
+        this.switchView('view-mode-select');
+      }
+
+      selectUnit(unitId) {
+        this.currentUnitId = unitId;
+        if (unitId === 'all') {
+          this.filteredIdioms = [...this.idioms];
+        } else {
+          this.filteredIdioms = this.idioms.filter(w => w.unit === unitId);
+        }
+        this.showModeSelect();
+      }
+
+      renderUnits() {
+        const container = document.getElementById('units-container');
+        container.innerHTML = '';
+
+        // 1. Grand Master Realm Banner
+        const allMastered = this.idioms.filter(w => this.state.masteredIdiomIds.includes(w.id)).length;
+        const allPct = Math.round((allMastered / this.idioms.length) * 100);
+
+        const banner = document.createElement('div');
+        banner.className = 'grand-realm-card';
+        banner.onclick = () => this.selectUnit('all');
+        banner.innerHTML = `
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <div style="font-size: 2.8rem; background: rgba(99,102,241,0.25); padding: 10px 14px; border-radius: 12px; border: 2px solid #818cf8;">🌟</div>
+            <div>
+              <h3 style="font-family: var(--font-title); font-size: 1.35rem; color: var(--accent-gold);">Grand Master Sanctuary</h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">Train across all 122 Idioms from Destination C1 & C2 (Units 2 through 22).</p>
+            </div>
+          </div>
+          <div style="min-width: 180px;">
+            <div class="unit-progress-container">
+              <div class="unit-progress-fill" style="width: ${allPct}%;"></div>
+            </div>
+            <div class="unit-meta" style="margin-top: 6px; color: #cbd5e1;">
+              <span>Progress: ${allPct}%</span>
+              <span>${allMastered}/${this.idioms.length} Idioms</span>
+            </div>
+          </div>
+        `;
+        container.appendChild(banner);
+
+        // 2. Individual Units
+        this.units.forEach(u => {
+          const uWords = this.idioms.filter(w => w.unit === u.id);
+          const masteredCount = uWords.filter(w => this.state.masteredIdiomIds.includes(w.id)).length;
+          const pct = Math.round((masteredCount / uWords.length) * 100);
+
+          const card = document.createElement('div');
+          card.className = 'unit-card';
+          card.style.setProperty('--unit-color', u.theme_color);
+          card.onclick = () => this.selectUnit(u.id);
+          card.innerHTML = `
+            <div class="unit-card-header">
+              <div class="unit-guardian-icon">${u.icon}</div>
+              <span class="unit-badge">${u.guardian}</span>
+            </div>
+            <div class="unit-info">
+              <h3>${u.title}</h3>
+              <p>${u.desc}</p>
+            </div>
+            <div>
+              <div class="unit-progress-container">
+                <div class="unit-progress-fill" style="width: ${pct}%;"></div>
+              </div>
+              <div class="unit-meta" style="margin-top: 6px;">
+                <span>Progress: ${pct}%</span>
+                <span>${masteredCount}/${uWords.length} Idioms</span>
+              </div>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      }
+
+      /* =================== 3D FLASHCARD =================== */
+      startFlashcards() {
+        this.currentMode = 'flashcard';
+        this.currentCardIdx = 0;
+        this.renderCard();
+        this.switchView('view-flashcard');
+      }
+
+      renderCard() {
+        const item = this.filteredIdioms[this.currentCardIdx];
+        if (!item) return;
+
+        document.getElementById('flashcard-card').classList.remove('is-flipped');
+
+        document.getElementById('fc-index').textContent = this.currentCardIdx + 1;
+        document.getElementById('fc-total').textContent = this.filteredIdioms.length;
+        document.getElementById('fc-unit-tag').textContent = item.unit_title;
+        document.getElementById('fc-idiom').textContent = item.idiom;
+        document.getElementById('fc-guardian-name').textContent = item.guardian;
+
+        document.getElementById('fc-meaning-vi').textContent = item.meaning_vi;
+        document.getElementById('fc-meaning-en').textContent = item.meaning_en;
+        document.getElementById('fc-example').textContent = item.example;
+        document.getElementById('fc-unit-name-back').textContent = item.unit_title;
+
+        const btnMaster = document.getElementById('btn-master-card');
+        const isMastered = this.state.masteredIdiomIds.includes(item.id);
+        if (isMastered) {
+          btnMaster.className = 'game-btn emerald';
+          btnMaster.textContent = '⭐ Mastered';
+        } else {
+          btnMaster.className = 'game-btn secondary';
+          btnMaster.textContent = '☆ Master Idiom (+15 🪙)';
+        }
+      }
+
+      flipCard() {
+        this.audio.flip();
+        document.getElementById('flashcard-card').classList.toggle('is-flipped');
+      }
+
+      nextCard() {
+        if (this.currentCardIdx < this.filteredIdioms.length - 1) {
+          this.currentCardIdx++;
+          this.renderCard();
+        }
+      }
+
+      prevCard() {
+        if (this.currentCardIdx > 0) {
+          this.currentCardIdx--;
+          this.renderCard();
+        }
+      }
+
+      toggleMasterCurrent() {
+        const item = this.filteredIdioms[this.currentCardIdx];
+        const idx = this.state.masteredIdiomIds.indexOf(item.id);
+        if (idx > -1) {
+          this.state.masteredIdiomIds.splice(idx, 1);
+        } else {
+          this.state.masteredIdiomIds.push(item.id);
+          this.state.gold += 15;
+          this.state.mana += 5;
+          this.audio.coin();
+        }
+        this.saveStorage();
+        this.renderCard();
+      }
+
+      speakCurrentIdiom() {
+        const item = this.filteredIdioms[this.currentCardIdx];
+        if (!item) return;
+        if ('speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+          const phrase = item.clean_phrase || item.idiom;
+          const u = new SpeechSynthesisUtterance(phrase);
+          u.lang = 'en-US';
+          u.rate = 0.9;
+          window.speechSynthesis.speak(u);
+        }
+      }
+
+      /* =================== QUIZ & QUEST TRIAL =================== */
+      startQuizMode() {
+        this.currentMode = 'quiz';
+        this.setupQuestions(10, 'meaning');
+        this.switchView('view-quiz');
+      }
+
+      startQuestMode() {
+        this.currentMode = 'quest';
+        this.setupQuestions(10, 'sentence');
+        this.switchView('view-quiz');
+      }
+
+      setupQuestions(count, type) {
+        document.getElementById('quiz-mode-icon').textContent = type === 'meaning' ? '⚔️' : '📜';
+        document.getElementById('quiz-mode-title').textContent = type === 'meaning' ? 'Guardian Trial Arena' : 'Codex Context Quest';
+
+        const pool = [...this.filteredIdioms].sort(() => 0.5 - Math.random());
+        const chosen = pool.slice(0, Math.min(count, pool.length));
+
+        this.quizQueue = chosen.map(item => {
+          const distractors = this.idioms
+            .filter(w => w.id !== item.id)
+            .sort(() => 0.5 - Math.random())
+            .slice(0, 3);
+
+          let options = [];
+          if (type === 'meaning') {
+            options = [
+              { text: item.meaning_vi + ' (' + item.meaning_en.split('/')[0].slice(0, 65) + '...)', correct: true },
+              ...distractors.map(d => ({ text: d.meaning_vi + ' (' + d.meaning_en.split('/')[0].slice(0, 65) + '...)', correct: false }))
+            ];
+          } else {
+            if (item.cloze_options && item.cloze_options.length === 4) {
+              options = item.cloze_options.map((opt, idx) => ({ text: opt, correct: idx === 0 }));
+            } else {
+              options = [
+                { text: item.clean_phrase || item.idiom, correct: true },
+                ...distractors.map(d => ({ text: d.clean_phrase || d.idiom, correct: false }))
+              ];
+            }
+          }
+          options.sort(() => 0.5 - Math.random());
+
+          return {
+            idiom: item,
+            type: type,
+            options: options
+          };
+        });
+
+        this.quizIdx = 0;
+        this.quizScore = 0;
+        this.renderQuizQuestion();
+      }
+
+      renderQuizQuestion() {
+        const q = this.quizQueue[this.quizIdx];
+        if (!q) return;
+
+        document.getElementById('btn-quiz-next').style.display = 'none';
+        document.getElementById('quiz-explanation').style.display = 'none';
+
+        const totalQ = this.quizQueue.length;
+        document.getElementById('quiz-progress-text').textContent = `Trial ${this.quizIdx + 1}/${totalQ}`;
+
+        document.getElementById('quiz-guardian-avatar').textContent = q.idiom.guardian.split(' ')[0];
+        document.getElementById('quiz-guardian-name').textContent = q.idiom.guardian;
+
+        const hpPct = Math.max(10, Math.round(((totalQ - this.quizIdx) / totalQ) * 100));
+        document.getElementById('quiz-hp-bar').style.width = `${hpPct}%`;
+
+        if (q.type === 'meaning') {
+          document.getElementById('quiz-instruction-text').textContent = "Select the exact definition and Vietnamese translation for the target idiom:";
+          document.getElementById('quiz-question-main').className = "question-headline";
+          document.getElementById('quiz-question-main').textContent = q.idiom.idiom;
+        } else {
+          document.getElementById('quiz-instruction-text').textContent = "Select the correct word or phrase to complete the exam context sentence:";
+          document.getElementById('quiz-question-main').className = "question-sentence-box";
+          document.getElementById('quiz-question-main').textContent = q.idiom.cloze_sentence || q.idiom.example.replace(q.idiom.idiom, '_____');
+        }
+
+        const container = document.getElementById('quiz-options-container');
+        container.innerHTML = '';
+        q.options.forEach((opt, oIdx) => {
+          const btn = document.createElement('button');
+          btn.className = 'option-btn';
+          const letter = ['A','B','C','D'][oIdx];
+          btn.innerHTML = `<span style="color:var(--accent-gold); font-family:var(--font-pixel); font-size:1.3rem;">${letter}.</span> <span>${opt.text}</span>`;
+          btn.onclick = () => this.handleOptionSelect(btn, opt.correct, q);
+          container.appendChild(btn);
+        });
+      }
+
+      handleOptionSelect(btn, isCorrect, q) {
+        const allBtns = document.querySelectorAll('.option-btn');
+        allBtns.forEach(b => b.disabled = true);
+
+        if (isCorrect) {
+          btn.classList.add('correct');
+          this.audio.correct();
+          this.quizScore++;
+          this.state.gold += 10;
+          this.state.mana += 5;
+          if (!this.state.masteredIdiomIds.includes(q.idiom.id)) {
+            this.state.masteredIdiomIds.push(q.idiom.id);
+          }
+        } else {
+          btn.classList.add('wrong');
+          this.audio.wrong();
+          allBtns.forEach((b, idx) => {
+            if (q.options[idx].correct) b.classList.add('correct');
+          });
+        }
+
+        this.saveStorage();
+
+        const expPanel = document.getElementById('quiz-explanation');
+        const expText = document.getElementById('quiz-explanation-text');
+        expText.innerHTML = `
+          <strong>${q.idiom.idiom}</strong>: ${q.idiom.meaning_vi}<br>
+          <span style="color:#cbd5e1;">EN Definition:</span> ${q.idiom.meaning_en}<br>
+          <em style="color:#fde68a;">Example: "${q.idiom.example}"</em>
+        `;
+        expPanel.style.display = 'block';
+
+        document.getElementById('btn-quiz-next').style.display = 'inline-flex';
+      }
+
+      nextQuizQuestion() {
+        this.quizIdx++;
+        if (this.quizIdx < this.quizQueue.length) {
+          this.renderQuizQuestion();
+        } else {
+          this.showSummary();
+        }
+      }
+
+      /* =================== RUNE MATCH MEMORY =================== */
+      startRuneMatch() {
+        this.currentMode = 'match';
+        this.switchView('view-rune-match');
+
+        const pool = [...this.filteredIdioms].sort(() => 0.5 - Math.random());
+        const pairCount = Math.min(6, pool.length);
+        const selectedIdioms = pool.slice(0, pairCount);
+        this.runeTotalPairs = pairCount;
+
+        const cards = [];
+        selectedIdioms.forEach(item => {
+          cards.push({ id: item.id, type: 'idiom', text: item.idiom });
+          cards.push({ id: item.id, type: 'meaning', text: item.meaning_vi });
+        });
+
+        cards.sort(() => 0.5 - Math.random());
+
+        this.runeMoves = 0;
+        this.runeCombo = 1;
+        this.runeMatchedCount = 0;
+        this.runeSelected = [];
+        this.runeSeconds = 0;
+
+        if (this.runeTimer) clearInterval(this.runeTimer);
+        this.runeTimer = setInterval(() => {
+          this.runeSeconds++;
+          document.getElementById('rune-timer').textContent = `${this.runeSeconds}s`;
+        }, 1000);
+
+        this.updateRuneStats();
+
+        const grid = document.getElementById('rune-grid-container');
+        grid.innerHTML = '';
+        cards.forEach(card => {
+          const tile = document.createElement('div');
+          tile.className = 'rune-tile';
+          tile.textContent = card.text;
+          tile.onclick = () => this.handleRuneClick(tile, card);
+          grid.appendChild(tile);
+        });
+      }
+
+      updateRuneStats() {
+        document.getElementById('rune-moves').textContent = this.runeMoves;
+        document.getElementById('rune-combo').textContent = `x${this.runeCombo}`;
+        document.getElementById('rune-matched-count').textContent = `${this.runeMatchedCount}/${this.runeTotalPairs}`;
+      }
+
+      handleRuneClick(tile, card) {
+        if (tile.classList.contains('matched') || tile.classList.contains('selected')) return;
+        if (this.runeSelected.length >= 2) return;
+
+        tile.classList.add('selected');
+        this.audio.flip();
+        this.runeSelected.push({ tile, card });
+
+        if (this.runeSelected.length === 2) {
+          this.runeMoves++;
+          const [first, second] = this.runeSelected;
+
+          if (first.card.id === second.card.id && first.card.type !== second.card.type) {
+            // MATCH!
+            setTimeout(() => {
+              first.tile.classList.remove('selected');
+              second.tile.classList.remove('selected');
+              first.tile.classList.add('matched');
+              second.tile.classList.add('matched');
+              this.audio.match();
+              this.runeMatchedCount++;
+              this.runeCombo++;
+              this.state.gold += 5 * this.runeCombo;
+              this.state.mana += 2;
+              this.saveStorage();
+              this.updateRuneStats();
+              this.runeSelected = [];
+
+              if (this.runeMatchedCount === this.runeTotalPairs) {
+                clearInterval(this.runeTimer);
+                setTimeout(() => this.showSummary(), 600);
+              }
+            }, 300);
+          } else {
+            // WRONG!
+            this.runeCombo = 1;
+            this.updateRuneStats();
+            setTimeout(() => {
+              first.tile.classList.remove('selected');
+              second.tile.classList.remove('selected');
+              this.audio.wrong();
+              this.runeSelected = [];
+            }, 700);
+          }
+        }
+      }
+
+      /* =================== WORD SCRAMBLE MATRIX =================== */
+      startScrambleMode() {
+        this.currentMode = 'scramble';
+        this.switchView('view-scramble');
+
+        const pool = [...this.filteredIdioms].sort(() => 0.5 - Math.random());
+        this.scrambleQueue = pool.slice(0, Math.min(5, pool.length));
+        this.scrambleIdx = 0;
+        this.renderScrambleQuestion();
+      }
+
+      renderScrambleQuestion() {
+        const item = this.scrambleQueue[this.scrambleIdx];
+        if (!item) return;
+
+        document.getElementById('btn-scramble-next').style.display = 'none';
+        document.getElementById('scramble-idx').textContent = this.scrambleIdx + 1;
+        document.getElementById('scramble-total').textContent = this.scrambleQueue.length;
+        document.getElementById('scramble-unit-badge').textContent = item.unit_title;
+        document.getElementById('scramble-prompt-meaning').textContent = item.meaning_vi;
+        document.getElementById('scramble-def-en').textContent = item.meaning_en;
+
+        const clean = item.clean_phrase || item.idiom;
+        const words = clean.split(/\s+/);
+        this.placedWords = [];
+        this.poolWords = words.map((w, idx) => ({ id: idx, word: w })).sort(() => 0.5 - Math.random());
+
+        this.renderScrambleTrays();
+      }
+
+      renderScrambleTrays() {
+        const slotsTray = document.getElementById('scramble-slots');
+        const poolTray = document.getElementById('scramble-pool');
+
+        slotsTray.innerHTML = '';
+        poolTray.innerHTML = '';
+
+        this.placedWords.forEach((pw, idx) => {
+          const t = document.createElement('div');
+          t.className = 'word-tile placed';
+          t.textContent = pw.word;
+          t.onclick = () => {
+            this.placedWords.splice(idx, 1);
+            this.poolWords.push(pw);
+            this.audio.flip();
+            this.renderScrambleTrays();
+          };
+          slotsTray.appendChild(t);
+        });
+
+        this.poolWords.forEach((pw, idx) => {
+          const t = document.createElement('div');
+          t.className = 'word-tile';
+          t.textContent = pw.word;
+          t.onclick = () => {
+            this.poolWords.splice(idx, 1);
+            this.placedWords.push(pw);
+            this.audio.flip();
+            this.renderScrambleTrays();
+          };
+          poolTray.appendChild(t);
+        });
+      }
+
+      resetScrambleTiles() {
+        const item = this.scrambleQueue[this.scrambleIdx];
+        const clean = item.clean_phrase || item.idiom;
+        const words = clean.split(/\s+/);
+        this.placedWords = [];
+        this.poolWords = words.map((w, idx) => ({ id: idx, word: w })).sort(() => 0.5 - Math.random());
+        this.renderScrambleTrays();
+      }
+
+      checkScrambleAnswer() {
+        const item = this.scrambleQueue[this.scrambleIdx];
+        const clean = item.clean_phrase || item.idiom;
+        const targetStr = clean.toLowerCase().trim();
+        const userStr = this.placedWords.map(p => p.word).join(' ').toLowerCase().trim();
+
+        if (userStr === targetStr) {
+          this.audio.correct();
+          this.state.gold += 12;
+          this.state.mana += 6;
+          if (!this.state.masteredIdiomIds.includes(item.id)) {
+            this.state.masteredIdiomIds.push(item.id);
+          }
+          this.saveStorage();
+          document.getElementById('btn-scramble-next').style.display = 'inline-flex';
+        } else {
+          this.audio.wrong();
+        }
+      }
+
+      nextScrambleQuestion() {
+        this.scrambleIdx++;
+        if (this.scrambleIdx < this.scrambleQueue.length) {
+          this.renderScrambleQuestion();
+        } else {
+          this.showSummary();
+        }
+      }
+
+      /* =================== GRAND CODEX DICTIONARY =================== */
+      showCodex() {
+        this.switchView('view-codex');
+        this.filterCodex();
+      }
+
+      filterCodex() {
+        const query = document.getElementById('codex-search-input').value.toLowerCase().trim();
+        const unitVal = document.getElementById('codex-unit-filter').value;
+
+        const list = document.getElementById('codex-list-container');
+        list.innerHTML = '';
+
+        const results = this.idioms.filter(item => {
+          const matchUnit = unitVal === 'all' || item.unit.toString() === unitVal;
+          const matchQuery = !query || 
+            item.idiom.toLowerCase().includes(query) ||
+            item.meaning_vi.toLowerCase().includes(query) ||
+            item.meaning_en.toLowerCase().includes(query);
+          return matchUnit && matchQuery;
+        });
+
+        results.forEach(item => {
+          const card = document.createElement('div');
+          card.className = 'codex-item';
+          card.innerHTML = `
+            <div class="codex-item-top">
+              <div>
+                <span class="card-unit-badge" style="font-size: 0.72rem; padding: 2px 8px;">${item.unit_title}</span>
+                <div class="codex-item-title" style="margin-top: 4px;">${item.idiom}</div>
+              </div>
+              <button class="card-audio-btn" style="width: 34px; height: 34px; font-size: 1rem;" onclick="app.speakIdiomText('${item.clean_phrase || item.idiom}')">🔊</button>
+            </div>
+            <div style="font-size: 0.9rem; font-weight: 700; color: var(--accent-gold);">${item.meaning_vi}</div>
+            <div style="font-size: 0.84rem; color: #cbd5e1; line-height: 1.4;">${item.meaning_en}</div>
+            <div style="font-size: 0.8rem; color: #94a3b8; font-style: italic; border-left: 2px solid var(--accent-cyan); padding-left: 8px;">
+              "${item.example}"
+            </div>
+          `;
+          list.appendChild(card);
+        });
+      }
+
+      speakIdiomText(text) {
+        if ('speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+          const u = new SpeechSynthesisUtterance(text);
+          u.lang = 'en-US';
+          u.rate = 0.9;
+          window.speechSynthesis.speak(u);
+        }
+      }
+
+      /* =================== SUMMARY & REWARD =================== */
+      showSummary() {
+        this.audio.fanfare();
+        this.fireConfetti();
+
+        let correctText = "Complete!";
+        let goldGain = 60;
+        let manaGain = 30;
+
+        if (this.currentMode === 'quiz' || this.currentMode === 'quest') {
+          correctText = `${this.quizScore}/${this.quizQueue.length}`;
+          goldGain = this.quizScore * 10;
+          manaGain = this.quizScore * 5;
+        } else if (this.currentMode === 'match') {
+          correctText = `${this.runeMatchedCount} Pairs`;
+          goldGain = Math.max(20, 80 - this.runeSeconds * 2);
+          manaGain = 35;
+        }
+
+        document.getElementById('sum-correct').textContent = correctText;
+        document.getElementById('sum-gold').textContent = `+${goldGain}`;
+        document.getElementById('sum-mana').textContent = `+${manaGain}`;
+
+        this.switchView('view-summary');
+      }
+
+      restartCurrentMode() {
+        if (this.currentMode === 'quiz') this.startQuizMode();
+        else if (this.currentMode === 'quest') this.startQuestMode();
+        else if (this.currentMode === 'match') this.startRuneMatch();
+        else if (this.currentMode === 'scramble') this.startScrambleMode();
+        else this.startFlashcards();
+      }
+
+      fireConfetti() {
+        const canvas = document.getElementById('confetti-canvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const pieces = [];
+        const colors = ['#f59e0b', '#38bdf8', '#10b981', '#a855f7', '#f43f5e', '#ec4899'];
+        for (let i = 0; i < 80; i++) {
+          pieces.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height - canvas.height,
+            size: Math.random() * 8 + 4,
+            color: colors[Math.floor(Math.random() * colors.length)],
+            speed: Math.random() * 4 + 2,
+            angle: Math.random() * 360
+          });
+        }
+
+        let frame = 0;
+        function render() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          pieces.forEach(p => {
+            p.y += p.speed;
+            p.angle += 3;
+            ctx.fillStyle = p.color;
+            ctx.fillRect(p.x, p.y, p.size, p.size);
+          });
+          frame++;
+          if (frame < 130) requestAnimationFrame(render);
+          else ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+        render();
+      }
+
+      toggleSound() {
+        if (this.audio) {
+          this.audio.enabled = !this.audio.enabled;
+          const icon = document.getElementById('sound-icon');
+          if (icon) icon.textContent = this.audio.enabled ? '🔊' : '🔇';
+        }
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      window.app = new ArcaneIdiomsApp();
+    });
+  </script>
+</body>
+</html>

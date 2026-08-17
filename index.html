@@ -2591,6 +2591,22 @@
               </div>
             </article>
 
+            <!-- Subfolder 3: Arcane Idiom Sanctuary (Destination C1 & C2) -->
+            <article class="folder-card" onclick="window.location.href='Idioms/index.html'" data-label="HSG 12 / Vocabulary / Idioms" style="border-left: 6px solid #8B5CF6; cursor: pointer;">
+              <div>
+                <div class="folder-icon" style="background: #1E1B4B; color: #A855F7; border-radius: 12px; padding: 4px 8px; display: inline-block;">🔮</div>
+                <div class="folder-name">Arcane Idiom Sanctuary</div>
+                <div class="folder-path">📌 HSG 12 / Vocabulary / Idioms</div>
+                <p style="font-size: 13px; color: #64748B; margin: 8px 0 0 0; line-height: 1.4;">
+                  122 Destination C1 & C2 Idioms across 11 Realms with Arcane Guild Gamification (3D Grimoire, Guardian Arena, Context Quest, Rune Match, Word Matrix).
+                </p>
+              </div>
+              <div class="folder-meta" style="margin-top: 14px;">
+                <span class="type-badge" style="background: #EDE9FE; color: #6D28D9;">11 Units / 122 Idioms</span>
+                <a href="Idioms/index.html" class="arrow-text" style="color: #7C3AED; font-weight: 700; text-decoration: none;">Open Game →</a>
+              </div>
+            </article>
+
           </div>
         </section>
 
@@ -11093,6 +11109,10 @@
         const hash = window.location.hash.replace("#", "").toLowerCase();
         if (hash === "lexicode" || hash === "hsg12-lexicode") {
           window.location.href = "Lexicode/index.html";
+          return;
+        }
+        if (hash === "idioms" || hash === "hsg12-idioms") {
+          window.location.href = "Idioms/index.html";
           return;
         }
         if (hash && hashMap[hash]) {
