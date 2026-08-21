@@ -1,0 +1,277 @@
+{
+  "curriculum": "Grade 10 English — MoET Curriculum 2018 (Circular 32/2018/TT-BGDĐT)",
+  "listening": [
+    {
+      "id": "LIS-U6",
+      "unit": 6,
+      "topic": "Gender Equality in Modern Careers",
+      "level": "B1-B2",
+      "wordCount": 192,
+      "audioTitle": "Interview with a Female Airline Pilot",
+      "transcript": "Good morning and welcome to Career Focus. Today, we are speaking with Captain Linh, one of the youngest female commercial airline pilots in the region. Many people still believe that flying heavy aircraft is exclusively a career for men, but modern aviation relies on critical decision-making, technical discipline, and calm leadership rather than physical strength. In our airline, every pilot undergoes rigorous simulator assessments and emergency training regardless of their gender. When women are given equal educational opportunities and family support, they excel in complex technical environments. Captain Linh encourages young female high school students to pursue STEM subjects such as physics and computer science without fear of traditional stereotypes. Over the past decade, international aviation organisations have launched mentorship programs to recruit more women into aviation and engineering fields. Equal career opportunities not only empower individuals but also foster a diverse and innovative workforce for the nation's future development.",
+      "questions": [
+        {
+          "id": "LIS-U6-Q1",
+          "q": "What is the primary message Captain Linh conveys about aviation careers?",
+          "opts": [
+            "Aviation solely demands superior physical strength.",
+            "Flying requires technical discipline and decision-making regardless of gender.",
+            "Women should only choose administrative roles in airlines.",
+            "Simulators are only required for junior male recruits."
+          ],
+          "ans": 1,
+          "explEn": "Captain Linh states that modern aviation relies on critical decision-making, technical discipline, and calm leadership rather than physical strength.",
+          "explVn": "Cơ trưởng Linh nhấn mạnh rằng hàng không hiện đại dựa vào tư duy ra quyết định và kỷ luật kỹ thuật chứ không phải sức mạnh thể chất."
+        },
+        {
+          "id": "LIS-U6-Q2",
+          "q": "Which school subjects does Captain Linh advise high school students to focus on?",
+          "opts": [
+            "Ancient history and literature",
+            "STEM subjects like physics and computer science",
+            "Art history and culinary arts",
+            "Fashion design and tailoring"
+          ],
+          "ans": 1,
+          "explEn": "She specifically advises young students to pursue STEM subjects like physics and computer science.",
+          "explVn": "Cô khuyên học sinh nên theo đuổi các môn STEM như vật lý và khoa học máy tính."
+        }
+      ]
+    },
+    {
+      "id": "LIS-U7",
+      "unit": 7,
+      "topic": "Viet Nam and International Organisations",
+      "level": "B1-B2",
+      "wordCount": 188,
+      "audioTitle": "Youth Ambassador Report on UNICEF Programs in Viet Nam",
+      "transcript": "Since officially joining the United Nations in 1977, Viet Nam has transformed from a recipient of humanitarian relief into an active partner contributing to global sustainability. Organisations such as UNICEF and UNDP work closely with Vietnamese educational authorities to improve classroom infrastructure, digital literacy, and clean water access in mountainous provinces. In recent years, Vietnamese peacekeepers and technical specialists have successfully participated in international peacekeeping missions and disaster response operations. Furthermore, as an essential member of ASEAN, Viet Nam actively promotes regional economic integration, environmental protection, and cultural exchange among Southeast Asian nations. High school students across the country are encouraged to participate in Model United Nations conferences to develop public speaking, diplomatic negotiation, and cross-cultural communication skills. By engaging in international projects, Vietnamese youth contribute to solving global challenges such as climate change and poverty reduction, while proudly showcasing the rich cultural heritage and hospitality of their homeland to the world.",
+      "questions": [
+        {
+          "id": "LIS-U7-Q1",
+          "q": "How has Viet Nam's role in the United Nations evolved since 1977?",
+          "opts": [
+            "From an active contributor to an isolated nation",
+            "From a relief recipient into an active contributing partner",
+            "Viet Nam has withdrawn from UN development programs",
+            "Viet Nam only participates in economic trade pacts"
+          ],
+          "ans": 1,
+          "explEn": "Viet Nam transformed from a recipient of humanitarian relief into an active partner contributing to global sustainability.",
+          "explVn": "Việt Nam đã chuyển biến từ một nước nhận cứu trợ nhân đạo thành đối tác tích cực đóng góp cho sự phát triển bền vững toàn cầu."
+        },
+        {
+          "id": "LIS-U7-Q2",
+          "q": "What skill can students develop by joining Model United Nations conferences?",
+          "opts": [
+            "Aviation piloting skills",
+            "Public speaking, diplomatic negotiation, and global awareness",
+            "Mechanical repair skills",
+            "Computer gaming strategies"
+          ],
+          "ans": 1,
+          "explEn": "The passage highlights public speaking, diplomatic negotiation, and cross-cultural communication skills.",
+          "explVn": "Học sinh rèn luyện kỹ năng thuyết trình trước công chúng, đàm phán ngoại giao và giao tiếp liên văn hoá."
+        }
+      ]
+    },
+    {
+      "id": "LIS-U8",
+      "unit": 8,
+      "topic": "Digital Technologies and Smart Learning",
+      "level": "B1-B2",
+      "wordCount": 195,
+      "audioTitle": "Podcast on Blended Learning and Educational Apps",
+      "transcript": "Welcome to EdTech Insights. Today we examine how blended learning and mobile software are reshaping the secondary school experience. Blended learning combines face-to-face classroom instruction with online digital resources, allowing students to learn at their individual pace. Instead of passively listening to lectures, students can review interactive grammar modules, complete automated self-quizzes, and collaborate on shared projects from home. Educational apps also provide instant feedback, helping learners identify their strengths and rectify common misconceptions without feeling stressed. However, educational experts warn that digital learning requires self-discipline and digital safety awareness. Excessive screen time and social media notifications can cause significant distractions during independent study sessions. To maximize the benefits of educational technology, teachers recommend establishing clear study routines, setting daily completion goals, and taking regular eye breaks. When utilized purposefully, digital tools empower high school students to become autonomous, lifelong learners prepared for university and modern digital careers.",
+      "questions": [
+        {
+          "id": "LIS-U8-Q1",
+          "q": "What is the primary feature of blended learning according to the speaker?",
+          "opts": [
+            "Replacing all human teachers with AI robots",
+            "Combining face-to-face instruction with online digital resources",
+            "Eliminating homework and practical tests completely",
+            "Studying only through social media video clips"
+          ],
+          "ans": 1,
+          "explEn": "Blended learning combines face-to-face classroom instruction with online digital resources.",
+          "explVn": "Học tập kết hợp (blended learning) là sự kết hợp giữa giảng dạy trực tiếp trên lớp và tài nguyên số trực tuyến."
+        },
+        {
+          "id": "LIS-U8-Q2",
+          "q": "What advice do experts offer to avoid digital distractions during home study?",
+          "opts": [
+            "Turn off the computer during the entire semester",
+            "Establish clear study routines, set daily goals, and take regular breaks",
+            "Study continuously without taking any breaks",
+            "Play video games while listening to audio lectures"
+          ],
+          "ans": 1,
+          "explEn": "Teachers recommend establishing clear study routines, setting daily completion goals, and taking regular breaks.",
+          "explVn": "Các chuyên gia khuyên nên xây dựng thời gian biểu rõ ràng, đặt mục tiêu mỗi ngày và nghỉ giải lao điều độ."
+        }
+      ]
+    },
+    {
+      "id": "LIS-U9",
+      "unit": 9,
+      "topic": "Protecting Endangered Species and Ecosystems",
+      "level": "B1-B2",
+      "wordCount": 190,
+      "audioTitle": "Field Report from Cuc Phuong National Park",
+      "transcript": "Biodiversity conservation has become an urgent priority across Southeast Asia. In Viet Nam, national parks such as Cuc Phuong, Cat Tien, and Phong Nha-Ke Bang provide vital sanctuaries for rare fauna, including the Delacour's langur, the saola, and various endangered pangolin species. Habitat destruction caused by illegal logging, agricultural expansion, and poaching continues to threaten these fragile ecosystems. In response, wildlife rescue centres have initiated comprehensive rehabilitation programs where confiscated animals receive medical treatment before being reintroduced into protected wilderness zones. Local communities living near nature reserves are increasingly involved in community-based conservation, working as forest rangers and eco-guides rather than exploiting natural timber resources. Educational outreach campaigns in surrounding schools also teach students the value of native biodiversity and the devastating impact of the illegal wildlife trade. Protecting our natural heritage ensures that critical watershed forests and unique species will be preserved for future generations to cherish.",
+      "questions": [
+        {
+          "id": "LIS-U9-Q1",
+          "q": "What major threats to wildlife habitats are mentioned in the report?",
+          "opts": [
+            "Solar energy farms and wind turbines",
+            "Illegal logging, agricultural expansion, and poaching",
+            "Excessive rainfall and forest growth",
+            "Scientific wildlife research expeditions"
+          ],
+          "ans": 1,
+          "explEn": "The report identifies illegal logging, agricultural expansion, and poaching as key threats.",
+          "explVn": "Bản báo cáo nêu rõ khai thác gỗ trái phép, mở rộng đất nông nghiệp và săn trộm là các mối đe doạ lớn."
+        },
+        {
+          "id": "LIS-U9-Q2",
+          "q": "How are local residents participating in conservation efforts?",
+          "opts": [
+            "By clearing forests for large shopping centres",
+            "By working as forest rangers and eco-guides",
+            "By building timber manufacturing factories",
+            "By keeping endangered animals as domestic pets"
+          ],
+          "ans": 1,
+          "explEn": "Local communities work as forest rangers and eco-guides rather than exploiting timber resources.",
+          "explVn": "Người dân địa phương tham gia làm kiểm lâm viên và hướng dẫn viên sinh thái thay vì chặt phá rừng."
+        }
+      ]
+    },
+    {
+      "id": "LIS-U10",
+      "unit": 10,
+      "topic": "Sustainable Ecotourism Practices",
+      "level": "B1-B2",
+      "wordCount": 196,
+      "audioTitle": "Guide to Responsible Travel in the Mekong Delta",
+      "transcript": "Ecotourism offers an enriching alternative to conventional mass tourism by emphasizing environmental responsibility and cultural respect. When visiting fragile destinations such as the Mekong Delta mangrove reserves or the Cham Islands marine park, travelers should strictly adhere to the principle of leaving no trace. Responsible tourists minimize plastic waste by carrying reusable water bottles, using biodegradable hygiene products, and avoiding disposable single-use utensils. Additionally, authentic ecotourism directly benefits indigenous communities. Travelers are encouraged to stay in locally operated homestays, purchase handmade handicrafts, and dine at family-run eateries rather than multinational luxury resorts. Guided nature trails led by knowledgeable local experts educate visitors on delicate coastal flora and migratory bird nesting habits without disturbing natural wildlife. By respecting local traditions and supporting sustainable green businesses, travelers ensure that tourism revenue fosters long-term conservation rather than cultural erosion. Sustainable travel reminds us that our choices as visitors directly shape the environmental health and economic resilience of the host communities.",
+      "questions": [
+        {
+          "id": "LIS-U10-Q1",
+          "q": "What is a key principle of responsible ecotourism highlighted in the talk?",
+          "opts": [
+            "Staying exclusively in large luxury hotel chains",
+            "Adhering to the principle of leaving no trace and minimizing waste",
+            "Collecting rare wildlife specimens as holiday souvenirs",
+            "Driving motor vehicles through protected mangrove forests"
+          ],
+          "ans": 1,
+          "explEn": "Responsible tourists strictly adhere to the principle of leaving no trace and minimizing waste.",
+          "explVn": "Du khách có trách nhiệm tuân thủ nguyên tắc không để lại rác thải và giảm thiểu tối đa đồ dùng một lần."
+        },
+        {
+          "id": "LIS-U10-Q2",
+          "q": "How does authentic ecotourism support local host communities?",
+          "opts": [
+            "By patronizing local homestays, handicrafts, and family eateries",
+            "By replacing local traditions with modern foreign customs",
+            "By importing all foods from abroad",
+            "By closing down all local family businesses"
+          ],
+          "ans": 0,
+          "explEn": "Travelers stay in locally operated homestays, buy local handicrafts, and eat at family-run diners.",
+          "explVn": "Du khách ở tại các homestay bản địa, mua sắm đồ thủ công và ăn uống tại các quán ăn gia đình địa phương."
+        }
+      ]
+    }
+  ],
+  "writing": [
+    {
+      "id": "WRT-U6",
+      "unit": 6,
+      "topic": "Gender Equality in Career Choices",
+      "wordLimit": "120-150 words",
+      "taskPrompt": "Write an opinion paragraph (120-150 words) discussing why equal career opportunities should be provided for both men and women in technical professions.",
+      "scaffold": {
+        "topicSentence": "In modern society, equal career opportunities in technical fields should be accessible to both men and women without gender bias.",
+        "supportingPoints": [
+          "First, professional capability depends on intellectual competence and training rather than physical gender.",
+          "Second, diverse engineering and tech teams produce more innovative solutions and boost economic productivity."
+        ],
+        "conclusion": "In conclusion, fostering gender equality in STEM careers creates a fairer society and accelerates national development."
+      },
+      "modelEssay": "In modern society, equal career opportunities in technical fields should be accessible to both men and women without gender bias. First, professional excellence depends on intellectual competence, technical training, and problem-solving skills rather than gender stereotypes. When women are encouraged to study science and engineering, they demonstrate outstanding leadership and analytical ability in complex projects. Second, workplace diversity significantly enhances creativity and team performance. Having both male and female perspectives in technology companies leads to more comprehensive software design and balanced decision-making. Furthermore, excluding capable individuals based on traditional biases limits economic growth and wastes valuable human potential. In conclusion, ensuring equal professional opportunities in STEM disciplines not only upholds social justice but also empowers our nation to build a competitive and sustainable digital economy.",
+      "keyVocabulary": ["professional competence", "gender stereotypes", "workplace diversity", "analytical ability", "human potential"]
+    },
+    {
+      "id": "WRT-U7",
+      "unit": 7,
+      "topic": "Viet Nam's Contributions to International Organisations",
+      "wordLimit": "120-150 words",
+      "taskPrompt": "Write a paragraph (120-150 words) describing how Viet Nam benefits from and contributes to international organisations such as the United Nations or ASEAN.",
+      "scaffold": {
+        "topicSentence": "Active participation in international organisations has brought significant developmental benefits to Viet Nam while elevating its global standing.",
+        "supportingPoints": [
+          "Partnerships with UN agencies like UNICEF and UNESCO provide crucial financial and technical aid for education and cultural preservation.",
+          "Viet Nam actively contributes to regional peacekeeping missions and international disaster relief efforts."
+        ],
+        "conclusion": "In conclusion, deeper global integration allows Viet Nam to prosper economically while acting as a responsible global partner."
+      },
+      "modelEssay": "Active participation in international organisations has brought significant developmental benefits to Viet Nam while elevating its global standing. First, collaborating with United Nations agencies such as UNICEF and UNDP provides essential funding, technical expertise, and modern equipment to improve rural education and healthcare infrastructure. These partnerships have substantially enhanced the living standards of millions of Vietnamese citizens. In return, Viet Nam has transformed into an active and responsible contributor on the world stage. Our military medical units and peacekeepers participate successfully in UN peacekeeping missions in Africa, while our diplomats foster regional solidarity and free trade within ASEAN. In conclusion, active engagement in global governance not only accelerates Viet Nam's socioeconomic development but also demonstrates our firm commitment to international peace and sustainable development.",
+      "keyVocabulary": ["socioeconomic development", "technical expertise", "peacekeeping missions", "regional solidarity", "global governance"]
+    },
+    {
+      "id": "WRT-U8",
+      "unit": 8,
+      "topic": "The Advantages of Blended Learning for High School Students",
+      "wordLimit": "120-150 words",
+      "taskPrompt": "Write a paragraph (120-150 words) highlighting the main benefits of blended learning for Grade 10 students.",
+      "scaffold": {
+        "topicSentence": "Blended learning has become an effective educational approach that greatly enhances high school students' academic performance and autonomy.",
+        "supportingPoints": [
+          "Students can review interactive online lessons at their own pace and practice with instant feedback.",
+          "Classroom time can be dedicated to collaborative discussions, debates, and critical thinking exercises."
+        ],
+        "conclusion": "Overall, integrating digital platforms with traditional teaching equips learners with indispensable digital competence for the future."
+      },
+      "modelEssay": "Blended learning has become an effective educational model that significantly enhances high school students' academic performance and learning autonomy. First, digital learning platforms enable students to review theoretical lessons, complete automated practice quizzes, and access multimedia resources at their own pace. This flexibility allows learners to master difficult grammar points and vocabulary without feeling pressured. Second, combining digital materials with classroom lessons frees up valuable class time for interactive discussions, group presentations, and critical debates guided by the teacher. As a result, students develop strong collaborative skills and higher-order thinking abilities rather than relying on passive memorization. In conclusion, by combining digital convenience with teacher-led instruction, blended learning equips high school students with the essential digital competencies and self-discipline required for university success.",
+      "keyVocabulary": ["blended learning", "learning autonomy", "multimedia resources", "collaborative skills", "digital competencies"]
+    },
+    {
+      "id": "WRT-U9",
+      "unit": 9,
+      "topic": "Actions to Protect Endangered Local Wildlife",
+      "wordLimit": "120-150 words",
+      "taskPrompt": "Write a paragraph (120-150 words) suggesting practical actions that high school students can take to protect native wildlife and biodiversity.",
+      "scaffold": {
+        "topicSentence": "High school students can play a crucial role in safeguarding native biodiversity and protecting endangered wildlife through practical daily actions.",
+        "supportingPoints": [
+          "Refusing to purchase or consume products made from endangered animals, such as ivory or pangolin scales.",
+          "Raising community awareness through school environment clubs and digital media campaigns."
+        ],
+        "conclusion": "Collective youth efforts will help preserve our natural heritage for generations to come."
+      },
+      "modelEssay": "High school students can play a crucial role in safeguarding native biodiversity and protecting endangered wildlife through practical daily actions. First, students should strictly refuse to buy or consume products derived from wild animals, including illegal meat, decorative ivory, or endangered traditional remedies. By reducing consumer demand, young people help dismantle the illegal wildlife trade. Second, students can organize school environmental clubs to launch informative digital campaigns and poster exhibitions that highlight local conservation projects in national parks. Educating peers and family members about the ecological value of apex predators and pollinators fosters widespread community support for conservation laws. In conclusion, individual commitment and collective student advocacy will ensure that Viet Nam's rich natural fauna is preserved and protected for future generations to enjoy.",
+      "keyVocabulary": ["native biodiversity", "endangered wildlife", "illegal wildlife trade", "conservation projects", "ecological value"]
+    },
+    {
+      "id": "WRT-U10",
+      "unit": 10,
+      "topic": "Guidelines for a Responsible Eco-Tour",
+      "wordLimit": "120-150 words",
+      "taskPrompt": "Write a paragraph (120-150 words) advising tourists on how to travel responsibly when visiting a national park or marine sanctuary.",
+      "scaffold": {
+        "topicSentence": "Practicing responsible ecotourism is essential to protect delicate ecosystems and support local indigenous communities during wilderness travels.",
+        "supportingPoints": [
+          "Follow the 'Leave No Trace' rule by carrying reusable water bottles and avoiding littering in nature reserves.",
+          "Respect wildlife by staying on marked trails, keeping noise levels low, and supporting local community businesses."
+        ],
+        "conclusion": "Responsible travel ensures that beautiful destinations remain pristine and vibrant for future travelers."
+      },
+      "modelEssay": "Practicing responsible ecotourism is essential to preserve delicate ecosystems and support local communities when exploring protected nature reserves. First, travelers must strictly observe the 'Leave No Trace' principle by carrying reusable water containers, collecting all personal litter, and avoiding single-use plastics. Discarded plastic waste severely damages aquatic life and contaminates forest soils. Second, visitors should stay on designated walking trails to prevent soil erosion and avoid disturbing nesting birds or rare mammals. Keeping noise levels low allows other tourists to enjoy nature and prevents wildlife from abandoning their natural habitats. Additionally, purchasing local handicrafts and dining at community-operated eateries ensures that tourism revenue directly benefits local residents. In conclusion, being an eco-conscious traveler protects our planet's natural beauty and fosters sustainable prosperity for host communities.",
+      "keyVocabulary": ["responsible ecotourism", "delicate ecosystems", "Leave No Trace", "designated trails", "eco-conscious traveler"]
+    }
+  ]
+}

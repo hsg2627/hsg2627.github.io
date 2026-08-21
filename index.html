@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>English Insiders Learning Portal · Tiếng Anh 10 — CT GDPT 2018</title>
-  <meta name="description" content="Học liệu số Tiếng Anh 10 theo Chương trình GDPT 2018 (Thông tư 32/2018/TT-BGDĐT) và công cụ thu dữ liệu năng lực số Miền 1 & Miền 6.">
-  <meta name="keywords" content="English Insiders Learning Portal, Tiếng Anh 10, CT GDPT 2018, Doloc Town, AI Evaluation">
+  <meta name="description" content="Digital learning repository for Grade 10 English aligned with MoET Curriculum 2018 (Circular 32/2018/TT-BGDĐT) and digital competence evaluation (Domains 1 & 6, Circular 02/2025/TT-BGDĐT).">
+  <meta name="keywords" content="English Insiders Learning Portal, Grade 10 English, MoET Curriculum 2018, Grammar, Vocabulary, Listening, Writing, AI Error Log, Doloc Town">
   <meta name="author" content="English Insiders">
 
   <!-- Open Graph & Meta -->
   <meta property="og:title" content="English Insiders Learning Portal · Tiếng Anh 10">
-  <meta property="og:description" content="Học liệu số Tiếng Anh 10 theo Chương trình GDPT 2018 (Thông tư 32/2018/TT-BGDĐT).">
+  <meta property="og:description" content="Academic digital learning repository for Grade 10 English (MoET Curriculum 2018).">
   <meta property="og:image" content="images/English_Insider_Logo.svg">
   <meta property="og:type" content="website">
 
@@ -44,7 +44,7 @@
       </div>
 
       <nav class="sidebar__nav" aria-label="Main Navigation">
-        <div class="nav-section-label">Tổng quan</div>
+        <div class="nav-section-label">Overview</div>
         <div class="nav-item active" data-view="overview-view" onclick="window.location.hash='#home'">
           <span class="nav-item__icon">🏠</span>
           <span>Home</span>
@@ -52,11 +52,11 @@
         <div class="nav-item" data-view="dashboard-view" onclick="window.location.hash='#dashboard'">
           <span class="nav-item__icon">📊</span>
           <span>Dashboard</span>
-          <span class="nav-item__badge">Stats</span>
+          <span class="nav-item__badge">Analytics</span>
         </div>
 
-        <div class="nav-section-label">Học liệu & Đánh giá</div>
-        <div class="nav-item" data-view="category-english10-view" onclick="window.location.hash='#english10'">
+        <div class="nav-section-label">Core Curriculum</div>
+        <div class="nav-item" data-view="grammar-view" onclick="window.location.hash='#grammar'">
           <span class="nav-item__icon">📘</span>
           <span>Grammar</span>
         </div>
@@ -65,17 +65,25 @@
           <span>Vocabulary</span>
           <span class="nav-item__badge" style="background:#fef3c7; color:#b45309;">550 Words</span>
         </div>
-        <div class="nav-item" data-view="ai-eval-view" onclick="window.location.hash='#ai-eval'">
-          <span class="nav-item__icon">🤖</span>
-          <span>Xưởng Đánh Giá AI</span>
-          <span class="nav-item__badge" style="background:#e0e7ff; color:#4338ca;">Miền 6</span>
+        <div class="nav-item" data-view="listening-view" onclick="window.location.hash='#listening'">
+          <span class="nav-item__icon">🎧</span>
+          <span>Listening</span>
+        </div>
+        <div class="nav-item" data-view="writing-view" onclick="window.location.hash='#writing'">
+          <span class="nav-item__icon">✍️</span>
+          <span>Writing</span>
         </div>
         <div class="nav-item" data-view="quiz-hub-view" onclick="window.location.hash='#quiz'">
           <span class="nav-item__icon">📝</span>
           <span>Practice Tests</span>
         </div>
+        <div class="nav-item" data-view="ai-error-log-view" onclick="window.location.hash='#ai-error-log'">
+          <span class="nav-item__icon">🤖</span>
+          <span>AI Error Log</span>
+          <span class="nav-item__badge" style="background:#e0e7ff; color:#4338ca;">Domain 6</span>
+        </div>
 
-        <div class="nav-section-label">Trò chơi hoá (Doloc Town)</div>
+        <div class="nav-section-label">Gamified Arena</div>
         <a href="lexicode.html" class="nav-item" target="_self">
           <span class="nav-item__icon">🎮</span>
           <span>Lexicode Matrix</span>
@@ -85,7 +93,7 @@
       <div class="sidebar__footer">
         <div class="user-quick-stat" id="sidebar-student-info">
           <span class="streak-flame">👤</span>
-          <span>Mã: <strong id="sidebar-student-id">Chưa đăng nhập</strong></span>
+          <span>Student ID: <strong id="sidebar-student-id">Guest</strong></span>
         </div>
         <div class="user-quick-stat" style="margin-top: 6px;">
           <span class="streak-flame">🔥</span>
@@ -137,130 +145,154 @@
 
           <!-- Hero Banner -->
           <div class="hero-card">
-            <span class="hero-card__badge">📘 Tiếng Anh 10 — CT GDPT 2018</span>
+            <span class="hero-card__badge">📘 Grade 10 English · MoET Curriculum 2018</span>
             <h1 class="hero-card__title">English Insiders Learning Portal</h1>
             <p class="hero-card__subtitle">
-              Hệ thống học liệu số tự học môn Tiếng Anh 10 bám sát Chương trình GDPT 2018 (Thông tư 32/2018/TT-BGDĐT), tích hợp đo năng lực số Miền 1 và Miền 6 (Thông tư 02/2025/TT-BGDĐT). Góp phần vào lộ trình đạt Bậc 3 khi kết thúc THPT.
+              Digital autonomous learning repository for Grade 10 English (Circular 32/2018/TT-BGDĐT), integrating research instruments for digital competence measurement (Domains 1 & 6, Circular 02/2025/TT-BGDĐT). Contributing to the Level 3 (B1) proficiency pathway upon high school completion.
             </p>
             <div class="hero-card__actions">
-              <button class="btn btn--primary" onclick="window.location.hash='#english10'">Học Tiếng Anh 10 &rarr;</button>
-              <button class="btn btn--secondary" onclick="window.location.hash='#ai-eval'">🤖 Xưởng Đánh Giá AI</button>
-              <a href="lexicode.html" class="btn btn--accent" style="text-decoration:none;">🎮 Doloc Town Lexicode</a>
-              <button class="btn btn--secondary" onclick="window.location.hash='#dashboard'">📊 Dashboard</button>
+              <button class="btn btn--primary" onclick="window.location.hash='#grammar'">Explore Grammar &rarr;</button>
+              <button class="btn btn--secondary" onclick="window.location.hash='#vocab'">💎 Vocabulary Studio</button>
+              <button class="btn btn--secondary" onclick="window.location.hash='#listening'">🎧 Listening Lab</button>
+              <button class="btn btn--secondary" onclick="window.location.hash='#writing'">✍️ Writing Studio</button>
+              <button class="btn btn--secondary" onclick="window.location.hash='#ai-error-log'">🤖 AI Error Log</button>
             </div>
             
             <div class="hero-search-wrapper">
               <span class="hero-search-icon">🔍</span>
-              <input type="text" class="hero-search-input" placeholder="Tìm kiếm điểm ngữ pháp, bài tập, hoặc từ vựng..." onfocus="PortalSearch.openSearchModal()">
+              <input type="text" class="hero-search-input" placeholder="Search grammar rules, vocabulary terms, audio lessons, or writing tasks..." onfocus="PortalSearch.openSearchModal()">
             </div>
           </div>
 
           <!-- Section: Core Learning Modules -->
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px;">
-            <h2>Khối Học Liệu & Công Cụ Học Tập</h2>
-            <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Chuẩn CT 2018</span>
+            <h2>Core Curriculum Modules</h2>
+            <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">6 Structured Tracks</span>
           </div>
 
           <div class="card-grid">
-            <!-- Card 1: English 10 Grammar -->
-            <div class="portal-card portal-card--e10" onclick="window.location.hash='#english10'">
+            <!-- Card 1: Grammar -->
+            <div class="portal-card portal-card--e10" onclick="window.location.hash='#grammar'">
               <div class="portal-card__header">
                 <div class="portal-card__icon-box">📘</div>
-                <span class="badge badge--e10">Lớp 10</span>
+                <span class="badge badge--e10">14 Levels</span>
               </div>
               <div class="portal-card__title">Grammar</div>
               <div class="portal-card__desc">
-                14 Chuyên đề ngữ pháp cốt lõi và bài tập trắc nghiệm giải thích song ngữ (Anh - Việt).
+                14 Comprehensive syntactic grammar units and interactive multiple-choice exercises with dual English and Vietnamese explanations.
               </div>
               <div class="portal-card__tags">
-                <span class="portal-card__tag">14 Grammar Levels</span>
-                <span class="portal-card__tag">Song ngữ EN/VN</span>
-                <span class="portal-card__tag">Interactive Quiz</span>
+                <span class="portal-card__tag">Tenses & Voice</span>
+                <span class="portal-card__tag">Relative Clauses</span>
+                <span class="portal-card__tag">Conditionals</span>
               </div>
               <div class="portal-card__footer">
-                <span>Học Grammar</span>
+                <span>Start Grammar Modules</span>
                 <span>&rarr;</span>
               </div>
             </div>
+
             <!-- Card 2: Vocabulary Studio -->
             <div class="portal-card portal-card--vocab" onclick="window.location.hash='#vocab'">
               <div class="portal-card__header">
                 <div class="portal-card__icon-box">💎</div>
-                <span class="badge badge--vocab">550 Từ Vựng</span>
+                <span class="badge badge--vocab">550 Terms</span>
               </div>
-              <div class="portal-card__title">Vocabulary Studio</div>
+              <div class="portal-card__title">Vocabulary</div>
               <div class="portal-card__desc">
-                Cơ sở dữ liệu 550 mục từ học thuật, cụm động từ, collocations và idioms chuẩn Global Success 10 kèm 3D Flashcards và bài trắc nghiệm.
+                550 Academic terms, phrasal verbs, collocations, and idioms mapped across all 10 Global Success units with 3D flashcards and audio speech synthesis.
               </div>
               <div class="portal-card__tags">
                 <span class="portal-card__tag">10 Units</span>
                 <span class="portal-card__tag">3D Flashcards</span>
-                <span class="portal-card__tag">Collocations & Idioms</span>
+                <span class="portal-card__tag">Audio Pronunciation</span>
               </div>
               <div class="portal-card__footer">
-                <span>Vào Vocabulary Studio</span>
-                <span>&rarr;</span>
-              </div>
-            </div>
-            <!-- Card 3: AI Evaluation Studio -->
-            <div class="portal-card portal-card--cgel" onclick="window.location.hash='#ai-eval'">
-              <div class="portal-card__header">
-                <div class="portal-card__icon-box">🤖</div>
-                <span class="badge badge--cgel">Miền 6 (TT 02/2025)</span>
-              </div>
-              <div class="portal-card__title">Xưởng Đánh Giá Ngữ Liệu AI</div>
-              <div class="portal-card__desc">
-                Thử thách phê phán và phát hiện lỗi sai trong văn bản do AI sinh theo 7 nhóm lỗi chương trình, rèn luyện tư duy phản biện số.
-              </div>
-              <div class="portal-card__tags">
-                <span class="portal-card__tag">Spot the Error</span>
-                <span class="portal-card__tag">7 Nhóm lỗi CT 2018</span>
-                <span class="portal-card__tag">Tư duy phê phán AI</span>
-              </div>
-              <div class="portal-card__footer">
-                <span>Khám phá Xưởng AI</span>
+                <span>Open Vocabulary Studio</span>
                 <span>&rarr;</span>
               </div>
             </div>
 
-            <!-- Card 3: Lexicode Matrix (Doloc Town) -->
-            <a href="lexicode.html" class="portal-card" style="text-decoration: none;">
+            <!-- Card 3: Listening Audio Lab -->
+            <div class="portal-card" onclick="window.location.hash='#listening'">
               <div class="portal-card__header">
-                <div class="portal-card__icon-box">🎮</div>
-                <span class="badge badge--hsg">Doloc Town</span>
+                <div class="portal-card__icon-box">🎧</div>
+                <span class="badge badge--e10">Audio Lab</span>
               </div>
-              <div class="portal-card__title">Lexicode Matrix · Monsterest Inn</div>
+              <div class="portal-card__title">Listening</div>
               <div class="portal-card__desc">
-                Đấu trường từ vựng phong cách Pixel RPG với 5 Chapter bao quát từ vựng 10 Unit Tiếng Anh 10 (Bậc 3), kết hợp âm thanh 8-bit và 3D Grimoire.
+                Grade 10 Semester 2 audio lab (180–200 words) featuring speech synthesis playback, variable playback speed, transcripts, and comprehension quizzes.
               </div>
               <div class="portal-card__tags">
-                <span class="portal-card__tag">50 Grade 10 Terms</span>
-                <span class="portal-card__tag">3D Flashcards</span>
-                <span class="portal-card__tag">Boss Battles</span>
+                <span class="portal-card__tag">Audio Player</span>
+                <span class="portal-card__tag">Interactive Transcripts</span>
+                <span class="portal-card__tag">Comprehension Checks</span>
               </div>
               <div class="portal-card__footer">
-                <span>Chơi Lexicode Matrix</span>
+                <span>Enter Listening Lab</span>
                 <span>&rarr;</span>
               </div>
-            </a>
+            </div>
 
-            <!-- Card 4: Practice Tests -->
+            <!-- Card 4: Writing Studio -->
+            <div class="portal-card" onclick="window.location.hash='#writing'">
+              <div class="portal-card__header">
+                <div class="portal-card__icon-box">✍️</div>
+                <span class="badge badge--e10">Writing Lab</span>
+              </div>
+              <div class="portal-card__title">Writing</div>
+              <div class="portal-card__desc">
+                Guided academic paragraph writing (120–150 words) with structured topic scaffolds, sentence builders, model essays, and word counter.
+              </div>
+              <div class="portal-card__tags">
+                <span class="portal-card__tag">Scaffolded Outlines</span>
+                <span class="portal-card__tag">Model Essays</span>
+                <span class="portal-card__tag">Writing Canvas</span>
+              </div>
+              <div class="portal-card__footer">
+                <span>Open Writing Studio</span>
+                <span>&rarr;</span>
+              </div>
+            </div>
+
+            <!-- Card 5: Practice Tests -->
             <div class="portal-card" onclick="window.location.hash='#quiz'">
               <div class="portal-card__header">
                 <div class="portal-card__icon-box">📝</div>
-                <span class="badge badge--e10">Đề Luyện Tập</span>
+                <span class="badge badge--e10">Exam Hub</span>
               </div>
-              <div class="portal-card__title">Practice Tests & Mock Exam Hub</div>
+              <div class="portal-card__title">Practice Tests</div>
               <div class="portal-card__desc">
-                Đề kiểm tra định kỳ và bài ôn tập ngữ pháp bám sát danh mục 15 cấu trúc ngữ pháp Tiếng Anh 10 có chấm điểm tức thì.
+                Periodic semester mock examinations and unit review tests strictly covering the 15 Grade 10 grammatical structures with immediate scoring.
               </div>
               <div class="portal-card__tags">
-                <span class="portal-card__tag">Đề Kiểm tra Lớp 10</span>
-                <span class="portal-card__tag">Chấm điểm tức thì</span>
-                <span class="portal-card__tag">Giải thích chi tiết</span>
+                <span class="portal-card__tag">Semester 1 & 2</span>
+                <span class="portal-card__tag">Instant Feedback</span>
+                <span class="portal-card__tag">Detailed Analytics</span>
               </div>
               <div class="portal-card__footer">
-                <span>Làm bài kiểm tra</span>
+                <span>Take Practice Tests</span>
+                <span>&rarr;</span>
+              </div>
+            </div>
+
+            <!-- Card 6: AI Error Log -->
+            <div class="portal-card portal-card--cgel" onclick="window.location.hash='#ai-error-log'">
+              <div class="portal-card__header">
+                <div class="portal-card__icon-box">🤖</div>
+                <span class="badge badge--cgel">Domain 6</span>
+              </div>
+              <div class="portal-card__title">AI Error Log</div>
+              <div class="portal-card__desc">
+                Critical AI evaluation task studio. Detect, span-select, and analyze linguistic inaccuracies generated by Large Language Models across 7 error categories.
+              </div>
+              <div class="portal-card__tags">
+                <span class="portal-card__tag">Spot the Error</span>
+                <span class="portal-card__tag">7 Error Categories</span>
+                <span class="portal-card__tag">Critical AI Judgment</span>
+              </div>
+              <div class="portal-card__footer">
+                <span>Launch AI Error Log</span>
                 <span>&rarr;</span>
               </div>
             </div>
@@ -271,7 +303,7 @@
         <section id="dashboard-view" class="view-panel">
           <div style="margin-bottom: 24px;">
             <h2>Learning Analytics & Mastery</h2>
-            <p>Thống kê tiến độ tự học, độ chính xác và quản lý dữ liệu cá nhân theo cam kết bảo mật.</p>
+            <p>Track your autonomous learning progress, accuracy rate, and manage your private learning data.</p>
           </div>
 
           <!-- Stats Grid -->
@@ -280,7 +312,7 @@
               <div class="stat-card__icon stat-card__icon--blue">📝</div>
               <div>
                 <div class="stat-card__value" id="stat-total-answered">0</div>
-                <div class="stat-card__label">Câu đã hoàn thành</div>
+                <div class="stat-card__label">Exercises Completed</div>
               </div>
             </div>
 
@@ -288,7 +320,7 @@
               <div class="stat-card__icon stat-card__icon--green">🎯</div>
               <div>
                 <div class="stat-card__value" id="stat-accuracy-rate">0%</div>
-                <div class="stat-card__label">Tỉ lệ chính xác</div>
+                <div class="stat-card__label">Accuracy Rate</div>
               </div>
             </div>
 
@@ -296,7 +328,7 @@
               <div class="stat-card__icon stat-card__icon--amber">🔥</div>
               <div>
                 <div class="stat-card__value" id="stat-streak-days">1 Day</div>
-                <div class="stat-card__label">Chuỗi ngày học liên tục</div>
+                <div class="stat-card__label">Active Learning Streak</div>
               </div>
             </div>
           </div>
@@ -305,8 +337,8 @@
           <div class="charts-grid">
             <div class="chart-card">
               <div class="chart-card__title">
-                <span>Phân Bổ Kỹ Năng & Ngữ Pháp</span>
-                <span class="badge badge--e10">Radar</span>
+                <span>Grammar & Competence Distribution</span>
+                <span class="badge badge--e10">Radar Analysis</span>
               </div>
               <div style="position: relative; height: 280px;">
                 <canvas id="chart-skills-radar"></canvas>
@@ -315,7 +347,7 @@
 
             <div class="chart-card">
               <div class="chart-card__title">
-                <span>Tiến Độ Theo Chuyên Đề</span>
+                <span>Module Completion Progress</span>
                 <span class="badge badge--e10">Breakdown</span>
               </div>
               <div style="position: relative; height: 280px;">
@@ -328,43 +360,43 @@
           <div class="data-mgmt-card">
             <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; flex-wrap: wrap; gap: 10px;">
               <div>
-                <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--navy-900);">🔐 Quản Lý Quyền Riêng Tư & Dữ Liệu Học Tập</h3>
+                <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--navy-900);">🔐 Learning Data & Privacy Management</h3>
                 <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px;">
-                  Hệ thống cam kết giả danh hoá ngay tại thời điểm thu thập (pseudonymised at collection). Không lưu họ tên thật, email hay số điện thoại.
+                  All learning telemetry is strictly pseudonymised at collection. No real names, emails, or phone numbers are ever recorded.
                 </p>
               </div>
               <div style="display: flex; gap: 10px;">
-                <button class="btn btn--secondary btn--sm" onclick="SpineHelper.exportData()">📥 Xuất Dữ Liệu Của Tôi</button>
-                <button class="btn btn--sm" style="background:#fee2e2; color:#b91c1c; border:1px solid #fca5a5;" onclick="SpineHelper.deleteData()">🗑️ Xoá Dữ Liệu Học Tập Của Tôi</button>
+                <button class="btn btn--secondary btn--sm" onclick="SpineHelper.exportData()">📥 Export My Learning Data</button>
+                <button class="btn btn--sm" style="background:#fee2e2; color:#b91c1c; border:1px solid #fca5a5;" onclick="SpineHelper.deleteData()">🗑️ Delete My Learning Data</button>
               </div>
             </div>
             <div style="background: #f8fafc; border-radius: 8px; padding: 12px 16px; font-size: 0.82rem; color: #64748b; line-height: 1.5;">
-              💡 <em>Lưu ý: Nút "Xoá dữ liệu học tập của tôi" sẽ xoá sạch mã định danh, tiến độ học và lịch sử câu trả lời đã lưu trên trình duyệt của thiết bị này.</em>
+              💡 <em>Note: The "Delete My Learning Data" action will erase your pseudonym student code, module progress, and quiz history stored locally on this browser.</em>
             </div>
           </div>
         </section>
 
         <!-- ================= VIEW 3: GRAMMAR HUB ================= -->
-        <section id="category-english10-view" class="view-panel">
+        <section id="grammar-view" class="view-panel">
           <div style="margin-bottom: 24px;">
-            <h2>Grammar</h2>
-            <p>Lý thuyết tương tác và bài tập trắc nghiệm theo 14 chuyên đề ngữ pháp cốt lõi.</p>
+            <h2>Grammar Modules (Grade 10 · MoET Curriculum 2018)</h2>
+            <p>Interactive grammatical theory and multiple-choice practice spanning the 14 core syllabus topics.</p>
           </div>
           <div id="english10-levels-container"></div>
           <div id="e10-level-interactive-area" style="margin-top: 24px;"></div>
         </section>
 
-        <!-- ================= VIEW 3B: VOCABULARY STUDIO ================= -->
+        <!-- ================= VIEW 4: VOCABULARY STUDIO ================= -->
         <section id="vocab-view" class="view-panel">
           <div style="margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
             <div>
               <h2>Vocabulary Studio (Global Success 10)</h2>
-              <p>550 Từ vựng học thuật, cụm động từ, collocations và idioms bám sát 10 Unit CT GDPT 2018.</p>
+              <p>550 Academic terms, phrasal verbs, collocations, and idioms mapped across all 10 Grade 10 units.</p>
             </div>
             <div style="display: flex; gap: 6px;">
               <button class="btn btn--secondary btn--sm active" id="btn-vocab-mode-cards" onclick="setVocabDisplayMode('cards')">📇 3D Flashcards</button>
-              <button class="btn btn--secondary btn--sm" id="btn-vocab-mode-table" onclick="setVocabDisplayMode('table')">📋 Bảng Tra Cứu</button>
-              <button class="btn btn--secondary btn--sm" id="btn-vocab-mode-quiz" onclick="setVocabDisplayMode('quiz')">📝 Trắc Nghiệm</button>
+              <button class="btn btn--secondary btn--sm" id="btn-vocab-mode-table" onclick="setVocabDisplayMode('table')">📋 Word Explorer</button>
+              <button class="btn btn--secondary btn--sm" id="btn-vocab-mode-quiz" onclick="setVocabDisplayMode('quiz')">📝 Mastery Quiz</button>
             </div>
           </div>
 
@@ -374,15 +406,15 @@
           <!-- Category & Level Filters -->
           <div class="vocab-filters-row">
             <div class="vocab-filter-group" id="vocab-category-filters">
-              <button class="vocab-filter-btn active" data-cat="all" onclick="filterVocabCategory('all')">Tất cả (55)</button>
-              <button class="vocab-filter-btn" data-cat="academic" onclick="filterVocabCategory('academic')">Academic (25)</button>
+              <button class="vocab-filter-btn active" data-cat="all" onclick="filterVocabCategory('all')">All Terms (55)</button>
+              <button class="vocab-filter-btn" data-cat="academic" onclick="filterVocabCategory('academic')">Academic Words (25)</button>
               <button class="vocab-filter-btn" data-cat="phrasal" onclick="filterVocabCategory('phrasal')">Phrasal Verbs (10)</button>
               <button class="vocab-filter-btn" data-cat="collocations" onclick="filterVocabCategory('collocations')">Collocations (15)</button>
               <button class="vocab-filter-btn" data-cat="idioms" onclick="filterVocabCategory('idioms')">Idioms (5)</button>
             </div>
             <div class="vocab-filter-group" id="vocab-level-filters">
               <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); align-self: center;">CEFR:</span>
-              <button class="vocab-filter-btn active" data-lvl="all" onclick="filterVocabLevel('all')">Tất cả</button>
+              <button class="vocab-filter-btn active" data-lvl="all" onclick="filterVocabLevel('all')">All</button>
               <button class="vocab-filter-btn" data-lvl="B1" onclick="filterVocabLevel('B1')">B1</button>
               <button class="vocab-filter-btn" data-lvl="B2" onclick="filterVocabLevel('B2')">B2</button>
               <button class="vocab-filter-btn" data-lvl="C1" onclick="filterVocabLevel('C1')">C1</button>
@@ -394,15 +426,82 @@
           <div id="vocab-interactive-container"></div>
         </section>
 
-        <!-- ================= VIEW 4: AI EVALUATION STUDIO ================= -->
-        <section id="ai-eval-view" class="view-panel">
+        <!-- ================= VIEW 5: LISTENING AUDIO LAB ================= -->
+        <section id="listening-view" class="view-panel">
+          <div style="margin-bottom: 24px;">
+            <h2>Listening Audio Lab (Grade 10 Semester 2)</h2>
+            <p>180–200 word academic audio passages with interactive speech playback, transcripts, and comprehension quizzes.</p>
+          </div>
+
+          <!-- Unit Selector -->
+          <div class="vocab-unit-bar" id="listening-unit-bar"></div>
+
+          <!-- Interactive Listening Player Area -->
+          <div id="listening-interactive-container"></div>
+        </section>
+
+        <!-- ================= VIEW 6: WRITING STUDIO ================= -->
+        <section id="writing-view" class="view-panel">
+          <div style="margin-bottom: 24px;">
+            <h2>Writing Studio (Grade 10 Semester 2)</h2>
+            <p>Structured academic paragraph writing (120–150 words) with topic scaffolding, model essays, and real-time word counting.</p>
+          </div>
+
+          <!-- Unit Selector -->
+          <div class="vocab-unit-bar" id="writing-unit-bar"></div>
+
+          <!-- Interactive Writing Canvas Area -->
+          <div id="writing-interactive-container"></div>
+        </section>
+
+        <!-- ================= VIEW 7: PRACTICE TESTS ================= -->
+        <section id="quiz-hub-view" class="view-panel">
+          <div style="margin-bottom: 24px;">
+            <h2>Practice Tests & Mock Exam Hub</h2>
+            <p>Timed practice examinations strictly covering the Grade 10 curriculum with instant scoring and explanations.</p>
+          </div>
+          <div class="card-grid">
+            <div class="portal-card portal-card--e10" onclick="window.location.hash='#grammar'">
+              <div class="portal-card__header">
+                <div class="portal-card__icon-box">📘</div>
+                <span class="badge badge--e10">Semester 1</span>
+              </div>
+              <div class="portal-card__title">Semester 1 Comprehensive Review (Units 1–5)</div>
+              <div class="portal-card__desc">Review present and future tenses, infinitives, gerunds, and passive voice structures.</div>
+              <div class="portal-card__footer"><span>Start Semester 1 Test &rarr;</span></div>
+            </div>
+
+            <div class="portal-card portal-card--e10" onclick="window.location.hash='#grammar'">
+              <div class="portal-card__header">
+                <div class="portal-card__icon-box">📘</div>
+                <span class="badge badge--e10">Semester 2</span>
+              </div>
+              <div class="portal-card__title">Semester 2 Comprehensive Review (Units 6–10)</div>
+              <div class="portal-card__desc">Review relative clauses, conditional sentences, adjective comparisons, and reported speech.</div>
+              <div class="portal-card__footer"><span>Start Semester 2 Test &rarr;</span></div>
+            </div>
+
+            <div class="portal-card portal-card--cgel" onclick="window.location.hash='#ai-error-log'">
+              <div class="portal-card__header">
+                <div class="portal-card__icon-box">🤖</div>
+                <span class="badge badge--cgel">AI Evaluation</span>
+              </div>
+              <div class="portal-card__title">AI Linguistic Error Assessment</div>
+              <div class="portal-card__desc">Evaluate 7 core grammatical and lexical error categories in synthetic AI outputs.</div>
+              <div class="portal-card__footer"><span>Take AI Evaluation Test &rarr;</span></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================= VIEW 8: AI ERROR LOG STUDIO ================= -->
+        <section id="ai-error-log-view" class="view-panel">
           <div style="margin-bottom: 24px;">
             <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
               <div>
-                <h2>🤖 Xưởng Đánh Giá Ngữ Liệu AI (Spot the Error)</h2>
-                <p>Thực hành phát hiện và phê phán các lỗi do AI sinh theo 7 nhóm lỗi CT 2018 (Miền 6 - Thông tư 02/2025/TT-BGDĐT).</p>
+                <h2>🤖 AI Error Log Studio (Spot the Error)</h2>
+                <p>Detect, select, and critically analyze linguistic inaccuracies in synthetic AI text across 7 curriculum error categories (Domain 6, Circular 02/2025/TT-BGDĐT).</p>
               </div>
-              <span class="item-ai-tag">🤖 AI Intervention Study</span>
+              <span class="item-ai-tag">🤖 Domain 6 Research Instrument</span>
             </div>
           </div>
           
@@ -410,7 +509,7 @@
             <div class="ai-disclosure-banner__icon">💡</div>
             <div class="ai-disclosure-banner__content">
               <div class="ai-disclosure-banner__text">
-                <strong>Hướng dẫn:</strong> Đọc kỹ từng câu văn do AI tạo ra bên dưới. Nhấp vào đoạn văn bản mà em cho là <strong>chứa lỗi sai</strong>, hoặc bấm chọn <strong>"✅ Câu này hoàn toàn chính xác (Không có lỗi)"</strong> nếu câu không mắc lỗi.
+                <strong>Instructions:</strong> Carefully read each AI-generated sentence below. Click on the text segment that you believe contains an <strong>error</strong>, or select <strong>"✅ Clean Text (No Error Found)"</strong> if the output is completely accurate.
               </div>
             </div>
           </div>
@@ -420,50 +519,11 @@
           </div>
         </section>
 
-        <!-- ================= VIEW 5: PRACTICE TESTS & QUIZ HUB ================= -->
-        <section id="quiz-hub-view" class="view-panel">
-          <div style="margin-bottom: 24px;">
-            <h2>Practice Tests & Mock Quiz Hub (Tiếng Anh 10)</h2>
-            <p>Kiểm tra kiến thức ngữ pháp và từ vựng lớp 10 có chấm điểm tức thì và phân tích chi tiết.</p>
-          </div>
-          <div class="card-grid">
-            <div class="portal-card portal-card--e10" onclick="window.location.hash='#english10'">
-              <div class="portal-card__header">
-                <div class="portal-card__icon-box">📘</div>
-                <span class="badge badge--e10">Học Kỳ 1</span>
-              </div>
-              <div class="portal-card__title">Đề Ôn Tập Học Kỳ 1 (Units 1 - 5)</div>
-              <div class="portal-card__desc">Kiểm tra tổng hợp các thì hiện tại, tương lai, động từ nguyên thể và câu bị động.</div>
-              <div class="portal-card__footer"><span>Bắt đầu ôn tập &rarr;</span></div>
-            </div>
-
-            <div class="portal-card portal-card--e10" onclick="window.location.hash='#english10'">
-              <div class="portal-card__header">
-                <div class="portal-card__icon-box">📘</div>
-                <span class="badge badge--e10">Học Kỳ 2</span>
-              </div>
-              <div class="portal-card__title">Đề Ôn Tập Học Kỳ 2 (Units 6 - 10)</div>
-              <div class="portal-card__desc">Kiểm tra tổng hợp mệnh đề quan hệ, câu điều kiện, so sánh tính từ và câu tường thuật.</div>
-              <div class="portal-card__footer"><span>Bắt đầu ôn tập &rarr;</span></div>
-            </div>
-
-            <div class="portal-card portal-card--cgel" onclick="window.location.hash='#ai-eval'">
-              <div class="portal-card__header">
-                <div class="portal-card__icon-box">🤖</div>
-                <span class="badge badge--cgel">Đánh giá AI</span>
-              </div>
-              <div class="portal-card__title">Bài Kiểm Tra Phê Phán AI</div>
-              <div class="portal-card__desc">Thử thách 7 nhóm lỗi phát hiện sai sót của mô hình ngôn ngữ lớn.</div>
-              <div class="portal-card__footer"><span>Làm bài kiểm tra &rarr;</span></div>
-            </div>
-          </div>
-        </section>
-
       </main>
 
       <!-- 3. FOOTER -->
       <footer class="app-footer">
-        <p>&copy; 2026 <strong>English Insiders Learning Portal</strong>. Nền tảng học liệu số Tiếng Anh 10 theo CT GDPT 2018 (Thông tư 32/2018/TT-BGDĐT). Góp phần vào lộ trình đạt Bậc 3 khi kết thúc THPT.</p>
+        <p>&copy; 2026 <strong>English Insiders Learning Portal</strong>. Grade 10 English Digital Learning Repository (MoET Curriculum 2018 / Circular 32/2018/TT-BGDĐT). Contributing to the Level 3 (B1) proficiency pathway upon high school completion.</p>
       </footer>
 
       <!-- 4. MOBILE BOTTOM NAVIGATION (<= 640px) -->
@@ -472,7 +532,7 @@
           <span class="bottom-nav-item__icon">🏠</span>
           <span>Home</span>
         </div>
-        <div class="bottom-nav-item" data-view="category-english10-view" onclick="window.location.hash='#english10'">
+        <div class="bottom-nav-item" data-view="grammar-view" onclick="window.location.hash='#grammar'">
           <span class="bottom-nav-item__icon">📘</span>
           <span>Grammar</span>
         </div>
@@ -480,14 +540,18 @@
           <span class="bottom-nav-item__icon">💎</span>
           <span>Vocab</span>
         </div>
-        <div class="bottom-nav-item" data-view="ai-eval-view" onclick="window.location.hash='#ai-eval'">
-          <span class="bottom-nav-item__icon">🤖</span>
-          <span>Xưởng AI</span>
+        <div class="bottom-nav-item" data-view="listening-view" onclick="window.location.hash='#listening'">
+          <span class="bottom-nav-item__icon">🎧</span>
+          <span>Listen</span>
         </div>
-        <a href="lexicode.html" class="bottom-nav-item" style="text-decoration:none; color:inherit;">
-          <span class="bottom-nav-item__icon">🎮</span>
-          <span>Lexicode</span>
-        </a>
+        <div class="bottom-nav-item" data-view="writing-view" onclick="window.location.hash='#writing'">
+          <span class="bottom-nav-item__icon">✍️</span>
+          <span>Write</span>
+        </div>
+        <div class="bottom-nav-item" data-view="ai-error-log-view" onclick="window.location.hash='#ai-error-log'">
+          <span class="bottom-nav-item__icon">🤖</span>
+          <span>AI Log</span>
+        </div>
         <div class="bottom-nav-item" data-view="dashboard-view" onclick="window.location.hash='#dashboard'">
           <span class="bottom-nav-item__icon">📊</span>
           <span>Stats</span>
@@ -500,14 +564,14 @@
   <div class="identity-modal-backdrop" id="identity-modal" style="display: none;">
     <div class="identity-modal-container">
       <div class="identity-modal__icon">🎓</div>
-      <h2 class="identity-modal__title">Nhập Mã Học Tập</h2>
+      <h2 class="identity-modal__title">Enter Student Access Code</h2>
       <p class="identity-modal__desc">
-        Vui lòng nhập <strong>mã định danh</strong> trên phiếu in được phát (ví dụ: <code>NK1009-07</code> hoặc <code>NK1010-42</code>) để bắt đầu. Hệ thống tuyệt đối không yêu cầu họ tên thật.
+        Please enter the <strong>pseudonym code</strong> from your printed slip (e.g., <code>NK1009-07</code> or <code>NK1010-42</code>) to begin. No real names, emails, or personal identifiers are collected.
       </p>
       <input type="text" id="identity-input-field" class="identity-modal__input" placeholder="NK1009-07" maxlength="12" autocomplete="off">
       <div class="identity-modal__error" id="identity-error-msg"></div>
       <button class="btn btn--primary" style="width: 100%; justify-content: center; padding: 14px;" onclick="SpineHelper.submitIdentity()">
-        Xác Nhận & Bắt Đầu Học
+        Confirm & Start Learning
       </button>
     </div>
   </div>
@@ -517,7 +581,7 @@
     <div class="search-modal-container">
       <div class="search-modal__header">
         <span style="font-size: 1.2rem; color: var(--indigo-600);">🔍</span>
-        <input type="text" id="search-modal-input" class="search-modal__input" placeholder="Tìm kiếm bài học Tiếng Anh 10, bài tập, từ vựng..." oninput="PortalSearch.renderResults(PortalSearch.search(this.value))">
+        <input type="text" id="search-modal-input" class="search-modal__input" placeholder="Search grammar rules, vocabulary terms, audio lessons, writing prompts..." oninput="PortalSearch.renderResults(PortalSearch.search(this.value))">
         <button class="search-modal__close-btn" onclick="PortalSearch.closeSearchModal()">✕</button>
       </div>
       <div class="search-results-list" id="search-results-list">

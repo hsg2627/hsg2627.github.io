@@ -22,25 +22,25 @@ window.PortalSearch = (function() {
             category: 'Grammar',
             badgeClass: 'badge--e10',
             snippet: g.theory ? g.theory.replace(/<[^>]*>/g, ' ').substring(0, 110) + '...' : 'Grammar Practice (English 10)',
-            hash: '#english10',
+            hash: '#grammar',
             subId: g.id
           });
         });
       }
 
-      // 2. Fetch AI Evaluation Spot Error Tasks
+      // 2. Fetch AI Error Log Tasks
       const resAiEval = await fetch('data/ai-eval-bank.json').then(r => r.json()).catch(() => null);
       if (resAiEval && Array.isArray(resAiEval.items)) {
         resAiEval.items.forEach(item => {
           const cat = (resAiEval.categories || []).find(c => c.id === (item.error.category || item.error.probe_category));
-          const catName = cat ? cat.name : 'Đánh giá AI';
+          const catName = cat ? cat.nameEn : 'AI Evaluation';
           const fullSentence = (item.spans || []).map(s => s.text).join('');
           searchIndex.push({
-            title: `🤖 AI Eval: ${item.id} (${catName})`,
-            category: 'AI Evaluation',
+            title: `🤖 AI Error Log: ${item.id} (${catName})`,
+            category: 'AI Error Log',
             badgeClass: 'badge--cgel',
             snippet: fullSentence.substring(0, 110) + '...',
-            hash: '#ai-eval',
+            hash: '#ai-error-log',
             subId: item.id
           });
         });
@@ -55,19 +55,52 @@ window.PortalSearch = (function() {
               title: `${w.term} (${w.pos}) - [${w.level}]`,
               category: `Vocab Unit ${u.unit}`,
               badgeClass: 'badge--vocab',
-              snippet: `${w.meaningVn} — Ví dụ: "${w.example}"`,
-              hash: `#vocab?unit=${u.unit}&word=${w.id}`,
+              snippet: `${w.meaningVn} — Context: "${w.example}"`,
+              hash: `#vocab?unit=${u.unit}`,
               subId: w.id
             });
           });
         });
       }
 
-      // 4. Default quick links
+      // 4. Fetch Listening & Writing Skills
+      const resSkills = await fetch('data/listening-writing-eng10.json').then(r => r.json()).catch(() => null);
+      if (resSkills) {
+        if (Array.isArray(resSkills.listening)) {
+          resSkills.listening.forEach(l => {
+            searchIndex.push({
+              title: `Listening Unit ${l.unit}: ${l.audioTitle}`,
+              category: 'Listening',
+              badgeClass: 'badge--hsg',
+              snippet: l.transcript.substring(0, 110) + '...',
+              hash: `#listening?unit=${l.unit}`,
+              subId: l.id
+            });
+          });
+        }
+        if (Array.isArray(resSkills.writing)) {
+          resSkills.writing.forEach(w => {
+            searchIndex.push({
+              title: `Writing Unit ${w.unit}: ${w.topic}`,
+              category: 'Writing',
+              badgeClass: 'badge--e10',
+              snippet: w.taskPrompt.substring(0, 110) + '...',
+              hash: `#writing?unit=${w.unit}`,
+              subId: w.id
+            });
+          });
+        }
+      }
+
+      // 5. Default quick links
       searchIndex.push(
+        { title: 'Grammar Modules (14 Levels)', category: 'Grammar', badgeClass: 'badge--e10', snippet: 'Grade 10 English Essential Grammar Practice', hash: '#grammar' },
         { title: 'Vocabulary Studio (550 Terms)', category: 'Vocabulary', badgeClass: 'badge--vocab', snippet: 'Interactive 3D Flashcards & Quizzes for Global Success 10', hash: '#vocab' },
-        { title: 'Doloc Town · Lexicode Matrix', category: 'Vocabulary', badgeClass: 'badge--vocab', snippet: 'Gamified Grade 10 Vocabulary & Collocation Trainer (CT GDPT 2018)', hash: 'lexicode.html', isExternal: true },
+        { title: 'Listening Audio Lab (Semester 2)', category: 'Listening', badgeClass: 'badge--hsg', snippet: 'Interactive Speech Synthesis Audio Passages & Comprehension Quizzes', hash: '#listening' },
+        { title: 'Writing Studio (Semester 2)', category: 'Writing', badgeClass: 'badge--e10', snippet: 'Guided Academic Paragraph Writing & Model Essays', hash: '#writing' },
         { title: 'Practice Tests & Mock Quizzes', category: 'Practice Tests', badgeClass: 'badge--e10', snippet: 'Grade 10 Unit Grammar and Practice Tests', hash: '#quiz' },
+        { title: 'AI Error Log Studio (Domain 6)', category: 'AI Error Log', badgeClass: 'badge--cgel', snippet: 'Spot the Error Critical Evaluation of Synthetic AI Texts', hash: '#ai-error-log' },
+        { title: 'Doloc Town · Lexicode Matrix', category: 'Vocabulary', badgeClass: 'badge--vocab', snippet: 'Gamified Grade 10 Vocabulary & Collocation Trainer (CT GDPT 2018)', hash: 'lexicode.html', isExternal: true },
         { title: 'Learning Analytics & Dashboard', category: 'Dashboard', badgeClass: 'badge--neutral', snippet: 'Personal learning statistics and data management', hash: '#dashboard' }
       );
 
