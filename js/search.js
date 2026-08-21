@@ -13,100 +13,44 @@ window.PortalSearch = (function() {
     if (isInitialized) return;
 
     try {
-      // 1. Fetch HSG 12 topics
-      const resHsg12 = await fetch('data/hsg12-topics.json').then(r => r.json()).catch(() => null);
-      if (resHsg12) {
-        // Reading passages
-        if (Array.isArray(resHsg12.reading)) {
-          resHsg12.reading.forEach(p => {
-            searchIndex.push({
-              title: p.title,
-              category: 'Reading',
-              badgeClass: 'badge--hsg',
-              snippet: p.text ? p.text.substring(0, 110) + '...' : 'VSTEP / HSG Reading Passage',
-              hash: '#hsg12-reading',
-              subId: p.id
-            });
-          });
-        }
-        // Listening questions
-        if (Array.isArray(resHsg12.listening)) {
-          resHsg12.listening.forEach(l => {
-            searchIndex.push({
-              title: `Listening Q${l.qNum || ''}: ${(l.question || '').substring(0, 50)}...`,
-              category: 'Listening',
-              badgeClass: 'badge--hsg',
-              snippet: l.question || '',
-              hash: '#hsg12-listening',
-              subId: l.id
-            });
-          });
-        }
-        // CGEL Grammar modules
-        if (resHsg12.cgel_modules) {
-          Object.entries(resHsg12.cgel_modules).forEach(([k, m]) => {
-            searchIndex.push({
-              title: m.title,
-              category: 'CGEL Grammar',
-              badgeClass: 'badge--cgel',
-              snippet: m.desc || 'Comprehensive Grammar of the English Language',
-              hash: '#hsg12-cgel',
-              subId: k
-            });
-          });
-        }
-      }
-
-      // 2. Fetch English 10 units
+      // 1. Fetch English 10 units & grammar levels
       const resE10 = await fetch('data/eng10-units.json').then(r => r.json()).catch(() => null);
       if (resE10 && Array.isArray(resE10.grammar_levels)) {
         resE10.grammar_levels.forEach(g => {
           searchIndex.push({
-            title: `English 10: ${g.name || 'Level ' + g.id}`,
-            category: 'English 10',
+            title: `Grammar: ${g.name || 'Level ' + g.id}`,
+            category: 'Grammar',
             badgeClass: 'badge--e10',
-            snippet: g.theory ? g.theory.substring(0, 110) + '...' : 'English 10 Essential Grammar Practice',
+            snippet: g.theory ? g.theory.replace(/<[^>]*>/g, ' ').substring(0, 110) + '...' : 'Grammar Practice (English 10)',
             hash: '#english10',
             subId: g.id
           });
         });
       }
 
-      // 3. Fetch Destination C1/C2 Vocab
-      const resVocab = await fetch('data/vocab-c1c2.json').then(r => r.json()).catch(() => null);
-      if (resVocab && Array.isArray(resVocab.units)) {
-        const seenUnits = new Set();
-        resVocab.units.forEach(u => {
-          const unitKey = u.unit;
-          if (!seenUnits.has(unitKey)) {
-            seenUnits.add(unitKey);
-            searchIndex.push({
-              title: u.unitTitle || `Unit ${u.unit}`,
-              category: 'Vocabulary',
-              badgeClass: 'badge--vocab',
-              snippet: `Academy: ${u.shop || 'Scholar Hall'} - Target C1/C2 Vocabulary Mastery`,
-              hash: '#hsg12-vocab',
-              subId: u.unit
-            });
-          }
-          if (u.verb) {
-            searchIndex.push({
-              title: `Word: ${u.verb} (Unit ${u.unit})`,
-              category: 'Vocabulary',
-              badgeClass: 'badge--vocab',
-              snippet: `${u.meaningEn || ''} - ${u.meaningVn || ''}`,
-              hash: '#hsg12-vocab',
-              subId: u.unit
-            });
-          }
+      // 2. Fetch AI Evaluation Spot Error Tasks
+      const resAiEval = await fetch('data/ai-eval-bank.json').then(r => r.json()).catch(() => null);
+      if (resAiEval && Array.isArray(resAiEval.items)) {
+        resAiEval.items.forEach(item => {
+          const cat = (resAiEval.categories || []).find(c => c.id === (item.error.category || item.error.probe_category));
+          const catName = cat ? cat.name : 'Đánh giá AI';
+          const fullSentence = (item.spans || []).map(s => s.text).join('');
+          searchIndex.push({
+            title: `🤖 AI Eval: ${item.id} (${catName})`,
+            category: 'AI Evaluation',
+            badgeClass: 'badge--cgel',
+            snippet: fullSentence.substring(0, 110) + '...',
+            hash: '#ai-eval',
+            subId: item.id
+          });
         });
       }
 
-      // 4. Default quick links
+      // 3. Default quick links
       searchIndex.push(
-        { title: 'Arcane Idiom Sanctuary', category: 'Idioms', badgeClass: 'badge--vocab', snippet: 'Destination C1 & C2 Idioms Mastery Guide', hash: 'idioms.html', isExternal: true },
-        { title: 'Monsterest Inn & Guild', category: 'Collocations', badgeClass: 'badge--hsg', snippet: 'Interactive Collocations & Lexicode Matrix', hash: 'lexicode.html', isExternal: true },
-        { title: 'Learning Dashboard', category: 'Dashboard', badgeClass: 'badge--neutral', snippet: 'Personal learning statistics and mastery progress', hash: '#dashboard' }
+        { title: 'Doloc Town · Lexicode Matrix', category: 'Vocabulary', badgeClass: 'badge--vocab', snippet: 'Gamified Grade 10 Vocabulary & Collocation Trainer (CT GDPT 2018)', hash: 'lexicode.html', isExternal: true },
+        { title: 'Practice Tests & Mock Quizzes', category: 'Practice Tests', badgeClass: 'badge--e10', snippet: 'Grade 10 Unit Grammar and Practice Tests', hash: '#quiz' },
+        { title: 'Learning Analytics & Dashboard', category: 'Dashboard', badgeClass: 'badge--neutral', snippet: 'Personal learning statistics and data management', hash: '#dashboard' }
       );
 
       // Initialize Fuse.js if available, or fallback to robust regex fuzzy search

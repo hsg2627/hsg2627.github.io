@@ -927,3 +927,222 @@
   font-size: 0.82rem;
   color: var(--text-muted);
 }
+
+/* ==========================================================================
+   AI DISCLOSURE BANNER & ITEM BADGES
+   ========================================================================== */
+.ai-disclosure-banner {
+  background: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-left: 5px solid #4f46e5;
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  box-shadow: var(--shadow-sm);
+}
+
+.ai-disclosure-banner__icon {
+  font-size: 1.6rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.ai-disclosure-banner__content {
+  flex: 1;
+}
+
+.ai-disclosure-banner__title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #1e293b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.ai-disclosure-banner__text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.45;
+}
+
+.item-ai-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #4f46e5;
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+/* ==========================================================================
+   STUDENT IDENTITY MODAL
+   ========================================================================== */
+.identity-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.identity-modal-container {
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  padding: 32px;
+  max-width: 460px;
+  width: 100%;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--border-subtle);
+  text-align: center;
+}
+
+.identity-modal__icon {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.identity-modal__title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--navy-900);
+  margin-bottom: 8px;
+}
+
+.identity-modal__desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.identity-modal__input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  margin-bottom: 10px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.identity-modal__input:focus {
+  border-color: var(--indigo-600);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.identity-modal__error {
+  font-size: 0.85rem;
+  color: #dc2626;
+  font-weight: 600;
+  margin-bottom: 14px;
+  min-height: 20px;
+}
+
+/* ==========================================================================
+   AI EVALUATION STUDIO (SPOT ERROR INTERACTIVE SPANS)
+   ========================================================================== */
+.ai-eval-container {
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 20px;
+}
+
+.ai-eval-sentence-box {
+  background: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  margin: 18px 0;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.ai-eval-span {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.ai-eval-span:hover {
+  background: #e0e7ff;
+  border-bottom-color: #4f46e5;
+}
+
+.ai-eval-span.selected {
+  background: #fee2e2;
+  border-bottom: 2px solid #ef4444;
+  color: #b91c1c;
+  font-weight: 700;
+}
+
+.ai-eval-span.correct {
+  background: #dcfce7 !important;
+  border-bottom: 2px solid #10b981 !important;
+  color: #047857 !important;
+}
+
+.ai-eval-span.wrong {
+  background: #fee2e2 !important;
+  border-bottom: 2px solid #ef4444 !important;
+  color: #b91c1c !important;
+}
+
+.ai-eval-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.ai-eval-feedback {
+  background: #f1f5f9;
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin-top: 14px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  display: none;
+}
+
+.ai-eval-feedback.active {
+  display: block;
+}
+
+/* ==========================================================================
+   DATA MANAGEMENT
+   ========================================================================== */
+.data-mgmt-card {
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  margin-top: 24px;
+}
