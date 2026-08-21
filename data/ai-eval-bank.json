@@ -1,12 +1,68 @@
 {
   "categories": [
-    { "id": 1, "name": "Thì và thể", "nameEn": "Tenses & Aspects", "grammar": [1, 2, 3, 4] },
-    { "id": 2, "name": "Dạng động từ", "nameEn": "Verb Forms", "grammar": [5, 6] },
-    { "id": 3, "name": "Câu bị động", "nameEn": "Passive Voice", "grammar": [7] },
-    { "id": 4, "name": "Mệnh đề & câu điều kiện", "nameEn": "Clauses & Conditionals", "grammar": [8, 9, 10, 11, 12] },
-    { "id": 5, "name": "Mạo từ và danh từ", "nameEn": "Articles & Nouns", "grammar": [15] },
-    { "id": 6, "name": "Tính từ & so sánh", "nameEn": "Adjectives & Comparisons", "grammar": [13, 14] },
-    { "id": 7, "name": "Từ vựng & kết hợp từ", "nameEn": "Vocabulary & Collocations", "grammar": [] }
+    {
+      "id": 1,
+      "name": "Thì và thể",
+      "nameEn": "Tenses & Aspects",
+      "grammar": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Dạng động từ",
+      "nameEn": "Verb Forms",
+      "grammar": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Câu bị động",
+      "nameEn": "Passive Voice",
+      "grammar": [
+        7
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Mệnh đề & câu điều kiện",
+      "nameEn": "Clauses & Conditionals",
+      "grammar": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Mạo từ và danh từ",
+      "nameEn": "Articles & Nouns",
+      "grammar": [
+        15
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Tính từ & so sánh",
+      "nameEn": "Adjectives & Comparisons",
+      "grammar": [
+        13,
+        14
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Từ vựng & kết hợp từ",
+      "nameEn": "Vocabulary & Collocations",
+      "grammar": []
+    }
   ],
   "items": [
     {
@@ -14,12 +70,32 @@
       "type": "ai_eval",
       "kind": "spot_error",
       "ai_generated": true,
-      "curriculum": { "topic": 8, "grammar": [1, 2], "semester": "HK2", "skill": "reading" },
+      "curriculum": {
+        "topic": 8,
+        "grammar": [
+          1,
+          2
+        ],
+        "semester": "HK2",
+        "skill": "reading"
+      },
       "spans": [
-        { "id": "s1", "text": "At present, my brother " },
-        { "id": "s2", "text": "is knowing all the details " },
-        { "id": "s3", "text": "about the new project " },
-        { "id": "s4", "text": "in our community." }
+        {
+          "id": "s1",
+          "text": "At present, my brother "
+        },
+        {
+          "id": "s2",
+          "text": "is knowing all the details "
+        },
+        {
+          "id": "s3",
+          "text": "about the new project "
+        },
+        {
+          "id": "s4",
+          "text": "in our community."
+        }
       ],
       "error": {
         "present": true,
@@ -28,19 +104,45 @@
         "correction": "knows all the details",
         "explanation": "Động từ chỉ trạng thái (stative verb) 'know' không chia ở thì tiếp diễn. Dùng 'knows'."
       },
-      "provenance": { "generator": "gemini-2.5-pro", "validation": { "status": "approved", "reviewer": "R1" } }
+      "provenance": {
+        "generator": "gpt-4o",
+        "validation": {
+          "status": "approved",
+          "reviewer": "R1",
+          "prompt_id": "PT-AE-01"
+        }
+      }
     },
     {
       "id": "AE-HK2-002",
       "type": "ai_eval",
       "kind": "spot_error",
       "ai_generated": true,
-      "curriculum": { "topic": 6, "grammar": [4], "semester": "HK2", "skill": "reading" },
+      "curriculum": {
+        "topic": 6,
+        "grammar": [
+          4
+        ],
+        "semester": "HK2",
+        "skill": "reading"
+      },
       "spans": [
-        { "id": "s1", "text": "While my sister " },
-        { "id": "s2", "text": "watched television in the room, " },
-        { "id": "s3", "text": "the lights suddenly " },
-        { "id": "s4", "text": "went out completely." }
+        {
+          "id": "s1",
+          "text": "While my sister "
+        },
+        {
+          "id": "s2",
+          "text": "watched television in the room, "
+        },
+        {
+          "id": "s3",
+          "text": "the lights suddenly "
+        },
+        {
+          "id": "s4",
+          "text": "went out completely."
+        }
       ],
       "error": {
         "present": true,
@@ -49,38 +151,90 @@
         "correction": "was watching television in the room,",
         "explanation": "Hành động đang diễn ra trong quá khứ đi với 'while' cần chia Quá khứ tiếp diễn (was watching)."
       },
-      "provenance": { "generator": "gemini-2.5-pro", "validation": { "status": "approved", "reviewer": "R1" } }
+      "provenance": {
+        "generator": "claude-3.5-sonnet",
+        "validation": {
+          "status": "approved",
+          "reviewer": "R2",
+          "prompt_id": "PT-AE-02"
+        }
+      }
     },
     {
       "id": "AE-HK2-003",
       "type": "ai_eval",
       "kind": "spot_error",
       "ai_generated": true,
-      "curriculum": { "topic": 7, "grammar": [1], "semester": "HK2", "skill": "reading" },
+      "curriculum": {
+        "topic": 7,
+        "grammar": [
+          1
+        ],
+        "semester": "HK2",
+        "skill": "reading"
+      },
       "spans": [
-        { "id": "s1", "text": "Vietnam has joined " },
-        { "id": "s2", "text": "several international organisations " },
-        { "id": "s3", "text": "and built strong partnerships " },
-        { "id": "s4", "text": "around the globe." }
+        {
+          "id": "s1",
+          "text": "Vietnam has joined "
+        },
+        {
+          "id": "s2",
+          "text": "several international organisations "
+        },
+        {
+          "id": "s3",
+          "text": "and built strong partnerships "
+        },
+        {
+          "id": "s4",
+          "text": "around the globe."
+        }
       ],
       "error": {
         "present": false,
         "probe_category": 1,
         "explanation": "Câu này hoàn toàn chính xác về ngữ pháp thì hiện tại hoàn thành và từ vựng."
       },
-      "provenance": { "generator": "gemini-2.5-pro", "validation": { "status": "approved", "reviewer": "R1" } }
+      "provenance": {
+        "generator": "gemini-2.5-pro",
+        "validation": {
+          "status": "approved",
+          "reviewer": "R3",
+          "prompt_id": "PT-AE-03"
+        }
+      }
     },
     {
       "id": "AE-HK2-004",
       "type": "ai_eval",
       "kind": "spot_error",
       "ai_generated": true,
-      "curriculum": { "topic": 5, "grammar": [6], "semester": "HK2", "skill": "reading" },
+      "curriculum": {
+        "topic": 5,
+        "grammar": [
+          6
+        ],
+        "semester": "HK2",
+        "skill": "reading"
+      },
       "spans": [
-        { "id": "s1", "text": "Many students enjoy " },
-        { "id": "s2", "text": "to create robotic models " },
-        { "id": "s3", "text": "during their practical " },
-        { "id": "s4", "text": "science workshops." }
+        {
+          "id": "s1",
+          "text": "Many students enjoy "
+        },
+        {
+          "id": "s2",
+          "text": "to create robotic models "
+        },
+        {
+          "id": "s3",
+          "text": "during their practical "
+        },
+        {
+          "id": "s4",
+          "text": "science workshops."
+        }
       ],
       "error": {
         "present": true,
@@ -89,19 +243,45 @@
         "correction": "creating robotic models",
         "explanation": "Sau động từ 'enjoy' ta dùng danh động từ (V-ing): 'creating', không dùng 'to create'."
       },
-      "provenance": { "generator": "gemini-2.5-pro", "validation": { "status": "approved", "reviewer": "R1" } }
+      "provenance": {
+        "generator": "llama-3.3-70b",
+        "validation": {
+          "status": "approved",
+          "reviewer": "R1",
+          "prompt_id": "PT-AE-04"
+        }
+      }
     },
     {
       "id": "AE-HK2-005",
       "type": "ai_eval",
       "kind": "spot_error",
       "ai_generated": true,
-      "curriculum": { "topic": 8, "grammar": [5], "semester": "HK2", "skill": "reading" },
+      "curriculum": {
+        "topic": 8,
+        "grammar": [
+          5
+        ],
+        "semester": "HK2",
+        "skill": "reading"
+      },
       "spans": [
-        { "id": "s1", "text": "The teacher made " },
-        { "id": "s2", "text": "the entire class to rewrite " },
-        { "id": "s3", "text": "their summary paragraphs " },
-        { "id": "s4", "text": "before submission." }
+        {
+          "id": "s1",
+          "text": "The teacher made "
+        },
+        {
+          "id": "s2",
+          "text": "the entire class to rewrite "
+        },
+        {
+          "id": "s3",
+          "text": "their summary paragraphs "
+        },
+        {
+          "id": "s4",
+          "text": "before submission."
+        }
       ],
       "error": {
         "present": true,
@@ -110,38 +290,90 @@
         "correction": "the entire class rewrite",
         "explanation": "Cấu trúc sai khiến chủ động: 'make someone do something' (động từ nguyên thể không to: rewrite)."
       },
-      "provenance": { "generator": "gemini-2.5-pro", "validation": { "status": "approved", "reviewer": "R1" } }
+      "provenance": {
+        "generator": "gemini-1.5-flash",
+        "validation": {
+          "status": "approved",
+          "reviewer": "R2",
+          "prompt_id": "PT-AE-05"
+        }
+      }
     },
     {
       "id": "AE-HK2-006",
       "type": "ai_eval",
       "kind": "spot_error",
       "ai_generated": true,
-      "curriculum": { "topic": 4, "grammar": [6], "semester": "HK2", "skill": "reading" },
+      "curriculum": {
+        "topic": 4,
+        "grammar": [
+          6
+        ],
+        "semester": "HK2",
+        "skill": "reading"
+      },
       "spans": [
-        { "id": "s1", "text": "Volunteering in remote areas " },
-        { "id": "s2", "text": "helps teenagers gain " },
-        { "id": "s3", "text": "valuable social experience " },
-        { "id": "s4", "text": "and develop life skills." }
+        {
+          "id": "s1",
+          "text": "Volunteering in remote areas "
+        },
+        {
+          "id": "s2",
+          "text": "helps teenagers gain "
+        },
+        {
+          "id": "s3",
+          "text": "valuable social experience "
+        },
+        {
+          "id": "s4",
+          "text": "and develop life skills."
+        }
       ],
       "error": {
         "present": false,
         "probe_category": 2,
         "explanation": "Câu hoàn toàn chuẩn xác. Danh động từ làm chủ ngữ 'Volunteering...' hòa hợp động từ số ít 'helps'."
       },
-      "provenance": { "generator": "gemini-2.5-pro", "validation": { "status": "approved", "reviewer": "R1" } }
+      "provenance": {
+        "generator": "gpt-4o-mini",
+        "validation": {
+          "status": "approved",
+          "reviewer": "R3",
+          "prompt_id": "PT-AE-06"
+        }
+      }
     },
     {
       "id": "AE-HK2-007",
       "type": "ai_eval",
       "kind": "spot_error",
       "ai_generated": true,
-      "curriculum": { "topic": 9, "grammar": [7], "semester": "HK2", "skill": "reading" },
+      "curriculum": {
+        "topic": 9,
+        "grammar": [
+          7
+        ],
+        "semester": "HK2",
+        "skill": "reading"
+      },
       "spans": [
-        { "id": "s1", "text": "Solar energy systems " },
-        { "id": "s2", "text": "must be install " },
-        { "id": "s3", "text": "by certified technicians " },
-        { "id": "s4", "text": "to guarantee safety." }
+        {
+          "id": "s1",
+          "text": "Solar energy systems "
+        },
+        {
+          "id": "s2",
+          "text": "must be install "
+        },
+        {
+          "id": "s3",
+          "text": "by certified technicians "
+        },
+        {
+          "id": "s4",
+          "text": "to guarantee safety."
+        }
       ],
       "error": {
         "present": true,
@@ -150,38 +382,90 @@
         "correction": "must be installed",
         "explanation": "Bị động với động từ khiếm khuyết: 'must be + V3/ed' -> 'must be installed'."
       },
-      "provenance": { "generator": "gemini-2.5-pro", "validation": { "status": "approved", "reviewer": "R1" } }
+      "provenance": {
+        "generator": "gpt-4o",
+        "validation": {
+          "status": "approved",
+          "reviewer": "R1",
+          "prompt_id": "PT-AE-07"
+        }
+      }
     },
     {
       "id": "AE-HK2-008",
       "type": "ai_eval",
       "kind": "spot_error",
       "ai_generated": true,
-      "curriculum": { "topic": 2, "grammar": [7], "semester": "HK2", "skill": "reading" },
+      "curriculum": {
+        "topic": 2,
+        "grammar": [
+          7
+        ],
+        "semester": "HK2",
+        "skill": "reading"
+      },
       "spans": [
-        { "id": "s1", "text": "A large amount " },
-        { "id": "s2", "text": "of plastic waste " },
-        { "id": "s3", "text": "was collected on the beach " },
-        { "id": "s4", "text": "by local volunteers yesterday." }
+        {
+          "id": "s1",
+          "text": "A large amount "
+        },
+        {
+          "id": "s2",
+          "text": "of plastic waste "
+        },
+        {
+          "id": "s3",
+          "text": "was collected on the beach "
+        },
+        {
+          "id": "s4",
+          "text": "by local volunteers yesterday."
+        }
       ],
       "error": {
         "present": false,
         "probe_category": 3,
         "explanation": "Câu bị động ở thì quá khứ đơn 'was collected' hoàn toàn chính xác."
       },
-      "provenance": { "generator": "gemini-2.5-pro", "validation": { "status": "approved", "reviewer": "R1" } }
+      "provenance": {
+        "generator": "claude-3.5-sonnet",
+        "validation": {
+          "status": "approved",
+          "reviewer": "R2",
+          "prompt_id": "PT-AE-08"
+        }
+      }
     },
     {
       "id": "AE-HK2-009",
       "type": "ai_eval",
       "kind": "spot_error",
       "ai_generated": true,
-      "curriculum": { "topic": 10, "grammar": [10], "semester": "HK2", "skill": "reading" },
+      "curriculum": {
+        "topic": 10,
+        "grammar": [
+          10
+        ],
+        "semester": "HK2",
+        "skill": "reading"
+      },
       "spans": [
-        { "id": "s1", "text": "If local communities " },
-        { "id": "s2", "text": "will protect the national park, " },
-        { "id": "s3", "text": "ecotourism will generate " },
-        { "id": "s4", "text": "sustainable income for residents." }
+        {
+          "id": "s1",
+          "text": "If local communities "
+        },
+        {
+          "id": "s2",
+          "text": "will protect the national park, "
+        },
+        {
+          "id": "s3",
+          "text": "ecotourism will generate "
+        },
+        {
+          "id": "s4",
+          "text": "sustainable income for residents."
+        }
       ],
       "error": {
         "present": true,
@@ -190,19 +474,45 @@
         "correction": "protect the national park,",
         "explanation": "Trong mệnh đề If của câu điều kiện loại 1, dùng thì Hiện tại đơn (protect), không dùng 'will protect'."
       },
-      "provenance": { "generator": "gemini-2.5-pro", "validation": { "status": "approved", "reviewer": "R1" } }
+      "provenance": {
+        "generator": "gemini-2.5-pro",
+        "validation": {
+          "status": "approved",
+          "reviewer": "R3",
+          "prompt_id": "PT-AE-09"
+        }
+      }
     },
     {
       "id": "AE-HK2-010",
       "type": "ai_eval",
       "kind": "spot_error",
       "ai_generated": true,
-      "curriculum": { "topic": 6, "grammar": [9], "semester": "HK2", "skill": "reading" },
+      "curriculum": {
+        "topic": 6,
+        "grammar": [
+          9
+        ],
+        "semester": "HK2",
+        "skill": "reading"
+      },
       "spans": [
-        { "id": "s1", "text": "The female scientist " },
-        { "id": "s2", "text": "which received the international award " },
-        { "id": "s3", "text": "has inspired thousands " },
-        { "id": "s4", "text": "of young female students." }
+        {
+          "id": "s1",
+          "text": "The female scientist "
+        },
+        {
+          "id": "s2",
+          "text": "which received the international award "
+        },
+        {
+          "id": "s3",
+          "text": "has inspired thousands "
+        },
+        {
+          "id": "s4",
+          "text": "of young female students."
+        }
       ],
       "error": {
         "present": true,
@@ -211,19 +521,45 @@
         "correction": "who received the international award",
         "explanation": "Đại từ quan hệ chỉ người làm chủ ngữ dùng 'who' (hoặc 'that'), không dùng 'which'."
       },
-      "provenance": { "generator": "gemini-2.5-pro", "validation": { "status": "approved", "reviewer": "R1" } }
+      "provenance": {
+        "generator": "llama-3.3-70b",
+        "validation": {
+          "status": "approved",
+          "reviewer": "R1",
+          "prompt_id": "PT-AE-10"
+        }
+      }
     },
     {
       "id": "AE-HK2-011",
       "type": "ai_eval",
       "kind": "spot_error",
       "ai_generated": true,
-      "curriculum": { "topic": 8, "grammar": [15], "semester": "HK2", "skill": "reading" },
+      "curriculum": {
+        "topic": 8,
+        "grammar": [
+          15
+        ],
+        "semester": "HK2",
+        "skill": "reading"
+      },
       "spans": [
-        { "id": "s1", "text": "Many students today " },
-        { "id": "s2", "text": "prefer to learn online " },
-        { "id": "s3", "text": "because internet " },
-        { "id": "s4", "text": "gives them access to free courses." }
+        {
+          "id": "s1",
+          "text": "Many students today "
+        },
+        {
+          "id": "s2",
+          "text": "prefer to learn online "
+        },
+        {
+          "id": "s3",
+          "text": "because internet "
+        },
+        {
+          "id": "s4",
+          "text": "gives them access to free courses."
+        }
       ],
       "error": {
         "present": true,
@@ -232,19 +568,45 @@
         "correction": "because the internet",
         "explanation": "Danh từ duy nhất 'internet' bắt buộc đi kèm mạo từ xác định 'the' ('the internet')."
       },
-      "provenance": { "generator": "gemini-2.5-pro", "validation": { "status": "approved", "reviewer": "R1" } }
+      "provenance": {
+        "generator": "gemini-1.5-flash",
+        "validation": {
+          "status": "approved",
+          "reviewer": "R2",
+          "prompt_id": "PT-AE-11"
+        }
+      }
     },
     {
       "id": "AE-HK2-012",
       "type": "ai_eval",
       "kind": "spot_error",
       "ai_generated": true,
-      "curriculum": { "topic": 1, "grammar": [15], "semester": "HK1", "skill": "reading" },
+      "curriculum": {
+        "topic": 1,
+        "grammar": [
+          15
+        ],
+        "semester": "HK1",
+        "skill": "reading"
+      },
       "spans": [
-        { "id": "s1", "text": "My father gave me " },
-        { "id": "s2", "text": "a useful advice " },
-        { "id": "s3", "text": "about balancing study " },
-        { "id": "s4", "text": "and household chores." }
+        {
+          "id": "s1",
+          "text": "My father gave me "
+        },
+        {
+          "id": "s2",
+          "text": "a useful advice "
+        },
+        {
+          "id": "s3",
+          "text": "about balancing study "
+        },
+        {
+          "id": "s4",
+          "text": "and household chores."
+        }
       ],
       "error": {
         "present": true,
@@ -253,38 +615,90 @@
         "correction": "a piece of useful advice (hoặc useful advice)",
         "explanation": "'Advice' là danh từ không đếm được, không đi trực tiếp với mạo từ 'a'. Dùng 'useful advice' hoặc 'a piece of useful advice'."
       },
-      "provenance": { "generator": "gemini-2.5-pro", "validation": { "status": "approved", "reviewer": "R1" } }
+      "provenance": {
+        "generator": "gpt-4o-mini",
+        "validation": {
+          "status": "approved",
+          "reviewer": "R3",
+          "prompt_id": "PT-AE-12"
+        }
+      }
     },
     {
       "id": "AE-HK2-013",
       "type": "ai_eval",
       "kind": "spot_error",
       "ai_generated": true,
-      "curriculum": { "topic": 3, "grammar": [15], "semester": "HK1", "skill": "reading" },
+      "curriculum": {
+        "topic": 3,
+        "grammar": [
+          15
+        ],
+        "semester": "HK1",
+        "skill": "reading"
+      },
       "spans": [
-        { "id": "s1", "text": "Music plays an important role " },
-        { "id": "s2", "text": "in the daily life " },
-        { "id": "s3", "text": "of people in our country " },
-        { "id": "s4", "text": "and across the world." }
+        {
+          "id": "s1",
+          "text": "Music plays an important role "
+        },
+        {
+          "id": "s2",
+          "text": "in the daily life "
+        },
+        {
+          "id": "s3",
+          "text": "of people in our country "
+        },
+        {
+          "id": "s4",
+          "text": "and across the world."
+        }
       ],
       "error": {
         "present": false,
         "probe_category": 5,
         "explanation": "Câu hoàn toàn chuẩn xác về mạo từ (an important role, the daily life, the world)."
       },
-      "provenance": { "generator": "gemini-2.5-pro", "validation": { "status": "approved", "reviewer": "R1" } }
+      "provenance": {
+        "generator": "gpt-4o",
+        "validation": {
+          "status": "approved",
+          "reviewer": "R1",
+          "prompt_id": "PT-AE-13"
+        }
+      }
     },
     {
       "id": "AE-HK2-014",
       "type": "ai_eval",
       "kind": "spot_error",
       "ai_generated": true,
-      "curriculum": { "topic": 8, "grammar": [13], "semester": "HK2", "skill": "reading" },
+      "curriculum": {
+        "topic": 8,
+        "grammar": [
+          13
+        ],
+        "semester": "HK2",
+        "skill": "reading"
+      },
       "spans": [
-        { "id": "s1", "text": "Digital textbooks are " },
-        { "id": "s2", "text": "more better for students " },
-        { "id": "s3", "text": "because they are easy " },
-        { "id": "s4", "text": "to carry to school." }
+        {
+          "id": "s1",
+          "text": "Digital textbooks are "
+        },
+        {
+          "id": "s2",
+          "text": "more better for students "
+        },
+        {
+          "id": "s3",
+          "text": "because they are easy "
+        },
+        {
+          "id": "s4",
+          "text": "to carry to school."
+        }
       ],
       "error": {
         "present": true,
@@ -293,19 +707,45 @@
         "correction": "better for students (hoặc much better)",
         "explanation": "'Better' đã là dạng so sánh hơn của 'good', không dùng kép 'more better'. Dùng 'better' hoặc 'much better'."
       },
-      "provenance": { "generator": "gemini-2.5-pro", "validation": { "status": "approved", "reviewer": "R1" } }
+      "provenance": {
+        "generator": "claude-3.5-sonnet",
+        "validation": {
+          "status": "approved",
+          "reviewer": "R2",
+          "prompt_id": "PT-AE-14"
+        }
+      }
     },
     {
       "id": "AE-HK2-015",
       "type": "ai_eval",
       "kind": "spot_error",
       "ai_generated": true,
-      "curriculum": { "topic": 3, "grammar": [14], "semester": "HK1", "skill": "reading" },
+      "curriculum": {
+        "topic": 3,
+        "grammar": [
+          14
+        ],
+        "semester": "HK1",
+        "skill": "reading"
+      },
       "spans": [
-        { "id": "s1", "text": "The traditional concert was " },
-        { "id": "s2", "text": "so bored that " },
-        { "id": "s3", "text": "many audience members left " },
-        { "id": "s4", "text": "before the final song." }
+        {
+          "id": "s1",
+          "text": "The traditional concert was "
+        },
+        {
+          "id": "s2",
+          "text": "so bored that "
+        },
+        {
+          "id": "s3",
+          "text": "many audience members left "
+        },
+        {
+          "id": "s4",
+          "text": "before the final song."
+        }
       ],
       "error": {
         "present": true,
@@ -314,38 +754,88 @@
         "correction": "so boring that",
         "explanation": "Tính từ miêu tả tính chất của sự vật/sự kiện 'the concert' dùng đuôi -ing ('boring'). Đuôi -ed ('bored') chỉ cảm xúc của con người."
       },
-      "provenance": { "generator": "gemini-2.5-pro", "validation": { "status": "approved", "reviewer": "R1" } }
+      "provenance": {
+        "generator": "gemini-2.5-pro",
+        "validation": {
+          "status": "approved",
+          "reviewer": "R3",
+          "prompt_id": "PT-AE-15"
+        }
+      }
     },
     {
       "id": "AE-HK2-016",
       "type": "ai_eval",
       "kind": "spot_error",
       "ai_generated": true,
-      "curriculum": { "topic": 10, "grammar": [13], "semester": "HK2", "skill": "reading" },
+      "curriculum": {
+        "topic": 10,
+        "grammar": [
+          13
+        ],
+        "semester": "HK2",
+        "skill": "reading"
+      },
       "spans": [
-        { "id": "s1", "text": "This eco-lodge is " },
-        { "id": "s2", "text": "the most environmentally friendly option " },
-        { "id": "s3", "text": "available for tourists " },
-        { "id": "s4", "text": "visiting the national park." }
+        {
+          "id": "s1",
+          "text": "This eco-lodge is "
+        },
+        {
+          "id": "s2",
+          "text": "the most environmentally friendly option "
+        },
+        {
+          "id": "s3",
+          "text": "available for tourists "
+        },
+        {
+          "id": "s4",
+          "text": "visiting the national park."
+        }
       ],
       "error": {
         "present": false,
         "probe_category": 6,
         "explanation": "Cấu trúc so sánh nhất với trạng từ/tính từ dài 'the most environmentally friendly' hoàn toàn chính xác."
       },
-      "provenance": { "generator": "gemini-2.5-pro", "validation": { "status": "approved", "reviewer": "R1" } }
+      "provenance": {
+        "generator": "llama-3.3-70b",
+        "validation": {
+          "status": "approved",
+          "reviewer": "R1",
+          "prompt_id": "PT-AE-16"
+        }
+      }
     },
     {
       "id": "AE-HK2-017",
       "type": "ai_eval",
       "kind": "spot_error",
       "ai_generated": true,
-      "curriculum": { "topic": 1, "grammar": [], "semester": "HK1", "skill": "reading" },
+      "curriculum": {
+        "topic": 1,
+        "grammar": [],
+        "semester": "HK1",
+        "skill": "reading"
+      },
       "spans": [
-        { "id": "s1", "text": "Family members should " },
-        { "id": "s2", "text": "make household chores together " },
-        { "id": "s3", "text": "to build closer bonds " },
-        { "id": "s4", "text": "and support each other." }
+        {
+          "id": "s1",
+          "text": "Family members should "
+        },
+        {
+          "id": "s2",
+          "text": "make household chores together "
+        },
+        {
+          "id": "s3",
+          "text": "to build closer bonds "
+        },
+        {
+          "id": "s4",
+          "text": "and support each other."
+        }
       ],
       "error": {
         "present": true,
@@ -354,26 +844,57 @@
         "correction": "do household chores together",
         "explanation": "Kết hợp từ chuẩn (collocation) với công việc nhà là 'do household chores' (hoặc 'do housework'), không dùng 'make'."
       },
-      "provenance": { "generator": "gemini-2.5-pro", "validation": { "status": "approved", "reviewer": "R1" } }
+      "provenance": {
+        "generator": "gemini-1.5-flash",
+        "validation": {
+          "status": "approved",
+          "reviewer": "R2",
+          "prompt_id": "PT-AE-17"
+        }
+      }
     },
     {
       "id": "AE-HK2-018",
       "type": "ai_eval",
       "kind": "spot_error",
       "ai_generated": true,
-      "curriculum": { "topic": 2, "grammar": [], "semester": "HK1", "skill": "reading" },
+      "curriculum": {
+        "topic": 2,
+        "grammar": [],
+        "semester": "HK1",
+        "skill": "reading"
+      },
       "spans": [
-        { "id": "s1", "text": "Adopting a green lifestyle " },
-        { "id": "s2", "text": "helps reduce the carbon footprint " },
-        { "id": "s3", "text": "of every household " },
-        { "id": "s4", "text": "in our community." }
+        {
+          "id": "s1",
+          "text": "Adopting a green lifestyle "
+        },
+        {
+          "id": "s2",
+          "text": "helps reduce the carbon footprint "
+        },
+        {
+          "id": "s3",
+          "text": "of every household "
+        },
+        {
+          "id": "s4",
+          "text": "in our community."
+        }
       ],
       "error": {
         "present": false,
         "probe_category": 7,
         "explanation": "Kết hợp từ 'carbon footprint' và 'green lifestyle' hoàn toàn chuẩn xác theo chủ đề Unit 2 lớp 10."
       },
-      "provenance": { "generator": "gemini-2.5-pro", "validation": { "status": "approved", "reviewer": "R1" } }
+      "provenance": {
+        "generator": "gpt-4o-mini",
+        "validation": {
+          "status": "approved",
+          "reviewer": "R3",
+          "prompt_id": "PT-AE-18"
+        }
+      }
     }
   ]
 }
