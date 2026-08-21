@@ -1,0 +1,1465 @@
+{
+  "reading": [
+    {
+      "id": "test1_main_idea",
+      "title": "Passage 1: Minerals & Relative Hardness",
+      "category": "Main Idea",
+      "tag": "Ý CHÍNH",
+      "text": "One identifying characteristic of minerals is their relative hardness, which can be determined by scratching one mineral with another. In this type of test, a harder mineral can scratch a softer one, but a softer mineral is unable to scratch the harder one. The Mohs' hardness scale is used to rank minerals according to hardness. Ten minerals are listed in this scale, ranging from talc with a hardness of 1 to diamond with a hardness of 10. On this scale, quartz (number 7) is harder than feldspar (number 6) and is therefore able to scratch it; however, feldspar is unable to make a mark on quartz.",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Which of the following best states the subject of this passage?",
+          "options": [
+            "A. The hardness of diamonds",
+            "B. Identifying minerals by means of a scratch test",
+            "C. Feldspar on the Mohs' scale",
+            "D. Recognizing minerals in their natural state"
+          ],
+          "correct": 1,
+          "explanation": "Text evidence: 'One identifying characteristic of minerals is their relative hardness, which can be determined by scratching one mineral with another.' Diamond and feldspar are specific supporting examples, not the overall subject.",
+          "explanationVn": "Giải thích: Câu đầu tiên nêu rõ chủ đề chính là việc xác định khoáng vật dựa trên phương pháp cọ xát (scratch test). Diamond và Feldspar chỉ là các ví dụ minh họa."
+        },
+        {
+          "id": "q2",
+          "question": "The main idea of this passage is that",
+          "options": [
+            "A. the hardness of a mineral can be determined by its ability to make a mark on other minerals",
+            "B. diamonds, with a hardness of 10 on the Mohs' scale, can scratch all other minerals",
+            "C. a softer mineral cannot be scratched by a harder mineral",
+            "D. talc is the first mineral listed on the Mohs' scale"
+          ],
+          "correct": 0,
+          "explanation": "The main idea generalizes the overall paragraph logic: a mineral's relative hardness is identified by whether it can scratch/make a mark on another mineral.",
+          "explanationVn": "Giải thích: Ý chính bao quát cả đoạn là độ cứng khoáng vật được xác định thông qua khả năng làm trầy xước bề mặt các khoáng vật khác."
+        }
+      ]
+    },
+    {
+      "id": "test2_hurricanes",
+      "title": "Passage 2: Hurricanes in the North Atlantic",
+      "category": "Main Idea",
+      "tag": "Ý CHÍNH",
+      "text": "Hurricanes generally occur in the North Atlantic from May through November, with the peak of the hurricane season in September; only rarely will they occur from December through April in that part of the ocean. The main reason for the occurrence of hurricanes during this period is that the temperature on the water’s surface is at its warmest and the humidity of the air is at its highest.\n\nOf the tropical storms that occur each year in the North Atlantic, only about five, on the average are powerful enough to be called hurricanes. To be classified as a hurricane, a tropical storm must have winds reaching speeds of at least 117 kilometers per hour, but the winds are often much higher than that; the winds of intense hurricanes can easily surpass 240 kilometers per hour.",
+      "questions": [
+        {
+          "id": "q3",
+          "question": "The passage mainly discusses",
+          "options": [
+            "A. How many hurricanes occur each year",
+            "B. The strength of hurricanes",
+            "C. The weather in the North Atlantic",
+            "D. Hurricanes in one part of the world"
+          ],
+          "correct": 3,
+          "explanation": "The passage focuses specifically on hurricanes in the North Atlantic ('one part of the world'), discussing when and why they form there, as well as their wind speeds.",
+          "explanationVn": "Giải thích: Toàn bộ bài đọc tập trung nói về bão lốc ở khu vực Bắc Đại Tây Dương (một khu vực cụ thể trên thế giới)."
+        },
+        {
+          "id": "q4",
+          "question": "The best title for this passage would be",
+          "options": [
+            "A. The North Atlantic Ocean",
+            "B. Storms of the Northern Atlantic",
+            "C. Hurricanes: The Damage and Destruction",
+            "D. What happens from May through November"
+          ],
+          "correct": 1,
+          "explanation": "Option B ('Storms of the Northern Atlantic') correctly incorporates both the geographic location (North Atlantic) and the topic (Hurricanes/Storms).",
+          "explanationVn": "Giải thích: Tiêu đề phù hợp nhất cần thể hiện được cả hai yếu tố: loại hình thời tiết (bão/hurricanes) và vị trí địa lý cụ thể (Bắc Đại Tây Dương)."
+        }
+      ]
+    },
+    {
+      "id": "test1_smog_vocab",
+      "title": "Passage 3: Photochemical Smog Formation",
+      "category": "Vocabulary",
+      "tag": "TỪ VỰNG",
+      "text": "The oxidation of exhaust gases is one of the primary sources of the world’s pollution. The brown haze that is poised over some of the world’s largest cities is properly called photochemical smog; it results from chemical reactions that take place in the air, using the energy of sunlight. The production of smog begins when gases are created in the cylinders of vehicle engines. It is there that oxygen and nitrogen gas combine as the fuel burns to form nitric oxide (NO), a colorless gas. The nitric oxide is forced out into the air through the vehicle tailpipe along with other gases.\n\nWhen the gas reaches the air, it comes into contact with available oxygen from the atmosphere and combines with the oxygen to produce nitrogen dioxide (NO2), which is a gas with a brownish hue. This nitrogen dioxide plays a role in the formation of acid rain in wetter or more humid climates and tends to decompose back into nitric oxide as it releases an oxygen atom...",
+      "questions": [
+        {
+          "id": "q5",
+          "question": "The word 'poised' in paragraph 1 is closest in meaning to",
+          "options": [
+            "A. interacting",
+            "B. sitting",
+            "C. blowing",
+            "D. poisoning"
+          ],
+          "correct": 1,
+          "explanation": "'Poised over' in this context means hovering or sitting suspended above the cities.",
+          "explanationVn": "Giải thích: 'Poised' là tính từ chỉ trạng thái đứng yên/lơ lửng trên bầu trời thành phố, đồng nghĩa với 'sitting'."
+        },
+        {
+          "id": "q6",
+          "question": "The phrase 'take place' in paragraph 1 is closest in meaning to",
+          "options": [
+            "A. position themselves",
+            "B. put",
+            "C. are seated",
+            "D. occur"
+          ],
+          "correct": 3,
+          "explanation": "'Take place' is an idiom meaning to happen or occur.",
+          "explanationVn": "Giải thích: Cụm từ 'take place' có nghĩa là diễn ra/xảy ra, đồng nghĩa với 'occur'."
+        },
+        {
+          "id": "q7",
+          "question": "The word 'forced' in paragraph 1 is closest in meaning to",
+          "options": [
+            "A. obliged",
+            "B. required",
+            "C. pushed",
+            "D. commanded"
+          ],
+          "correct": 2,
+          "explanation": "Gas being 'forced out' refers to physical expulsion or pushing out through the exhaust pipe.",
+          "explanationVn": "Giải thích: Trong ngữ cảnh khí thải bị đẩy ra từ ống bô xe, 'forced' mang nghĩa bị đẩy ra ngoài ('pushed')."
+        },
+        {
+          "id": "q8",
+          "question": "The word 'hue' in paragraph 2 could best be replaced by",
+          "options": [
+            "A. color",
+            "B. odor",
+            "C. thickness",
+            "D. smoke"
+          ],
+          "correct": 0,
+          "explanation": "'Hue' refers to color or shade ('brownish hue' = brownish color).",
+          "explanationVn": "Giải thích: 'Hue' có nghĩa là màu sắc hoặc sắc thái màu, đồng nghĩa với 'color'."
+        }
+      ]
+    },
+    {
+      "id": "test5_pronouns",
+      "title": "Passage 4: Animal Congregation & Survival",
+      "category": "Vocabulary",
+      "tag": "ĐẠI TỪ",
+      "text": "Many types of animals combine the advantages of family association with those conferred by membership in still larger groups. Bees congregate in hives; some fish move in schools; ants gather in mounds; wolves live in packs; deer associate in herds. The main advantage of membership in a mass community is the safety that it provides. A large group of prey may be easier for a predator to find at any given point than is a small one, and a predator may think twice before taking on such a group; if a predator does decide to challenge a large group, it may merely encounter a confusing mass of moving bodies and possibly may not succeed in its primary goal.",
+      "questions": [
+        {
+          "id": "q10",
+          "question": "The word 'those' in the passage refers to",
+          "options": [
+            "A. types",
+            "B. animals",
+            "C. advantages",
+            "D. groups"
+          ],
+          "correct": 2,
+          "explanation": "Parallel comparison: 'combine the advantages [A] of family association with those [advantages B] conferred by membership in larger groups.'",
+          "explanationVn": "Giải thích: Từ 'those' ở đây thay thế cho danh từ số nhiều 'advantages' để tránh lặp từ trong phép so sánh song song."
+        },
+        {
+          "id": "q11",
+          "question": "The word 'it' in line 4 refers to",
+          "options": [
+            "A. advantage",
+            "B. membership",
+            "C. community",
+            "D. safety"
+          ],
+          "correct": 1,
+          "explanation": "'Membership in a mass community' is the subject that provides safety ('the safety that it provides').",
+          "explanationVn": "Giải thích: Từ 'it' thay thế cho việc trở thành thành viên trong cộng đồng ('membership')."
+        },
+        {
+          "id": "q12",
+          "question": "The word 'one' in the passage refers to",
+          "options": [
+            "A. group",
+            "B. prey",
+            "C. predator",
+            "D. point"
+          ],
+          "correct": 0,
+          "explanation": "Contrasts a 'large group of prey' with a 'small one [group]'.",
+          "explanationVn": "Giải thích: Từ 'one' ở đây dùng để thay thế cho danh từ 'group' (nhóm con mồi nhỏ so với nhóm lớn)."
+        }
+      ]
+    },
+    {
+      "id": "test1_baikal_detail",
+      "title": "Passage 5: Lake Baikal",
+      "category": "Detail",
+      "tag": "THÔNG TIN CHI TIẾT",
+      "text": "Crescent-shaped Lake Baikal, in Siberia, is only the ninth largest lake in area at 385 miles (620 km) in length and 46 miles (74 km) in width, yet it is easily the largest body of fresh water in the world. It holds one-fifth of the world’s total fresh water, which is more than the total of all the water in the five Great Lakes; it holds so much fresh water in spite of its less-than-impressive area because it is by far the world's deepest lake. The average depth of the lake is 1,312 feet (400 meters) below sea level, and the Olkhon Crevice, the lowest known point, is more than 5,250 feet (1,600 meters) deep.",
+      "questions": [
+        {
+          "id": "q14",
+          "question": "What is stated in paragraph 1 about the shape of Lake Baikal?",
+          "options": [
+            "A. It is wider than it is long.",
+            "B. It is circular in shape.",
+            "C. Its width is one-half of its length.",
+            "D. It is shaped like a new moon."
+          ],
+          "correct": 3,
+          "explanation": "Text evidence: 'Crescent-shaped Lake Baikal...' Crescent refers to the shape of a new moon.",
+          "explanationVn": "Giải thích: 'Crescent-shaped' nghĩa là hình trăng khuyết/trăng non ('shaped like a new moon')."
+        },
+        {
+          "id": "q15",
+          "question": "According to paragraph 1, Lake Baikal",
+          "options": [
+            "A. holds one-fifth of the world’s water",
+            "B. holds five times the water of the Great Lakes",
+            "C. holds one-ninth of the world’s water",
+            "D. holds 20 percent of the world’s fresh water"
+          ],
+          "correct": 3,
+          "explanation": "Text evidence: 'holds one-fifth of the world’s total fresh water...' One-fifth (1/5) = 20 percent.",
+          "explanationVn": "Giải thích: 1/5 lượng nước ngọt (one-fifth of fresh water) tương đương với 20%."
+        }
+      ]
+    },
+    {
+      "id": "test1_moths_inference",
+      "title": "Passage 6: Defense Mechanism of Tiger Moths",
+      "category": "Inference",
+      "tag": "SUY RA & MỤC ĐÍCH",
+      "text": "One of the most beautiful of the more than 100,000 known species in the order Lepidoptera are the tiger moths, moths known for the striking appeal of their distinctive coloration. This type of moth is covered with highly conspicuous orange-and-black or yellow-and-black patterns of spots and stripes. Such boldly patterned color combinations are commonplace in the animal world, serving the function of forewarning potential predators of unpleasant tastes and smells. This is unquestionably the function served by the striking coloration of the garden tiger moth, which is quite visually attractive but is also poisonous to predators. Certain glands in the garden tiger moth produce strong toxins that circulate throughout the insect’s bloodstream, while other glands secrete bubbles that produce a noxious warning smell. The tiger moth, indeed, is a clear example of a concept that many predators intuitively understand, that creatures with the brightest coloration are often the least suitable to eat.",
+      "questions": [
+        {
+          "id": "q19",
+          "question": "It is implied in the passage about the order Lepidoptera that",
+          "options": [
+            "A. all members of the order are moths",
+            "B. there may be more than 100,000 species in this order",
+            "C. all members of the order are brightly colored",
+            "D. there are most likely fewer than 100,000 species in this order"
+          ],
+          "correct": 1,
+          "explanation": "The text mentions 'more than 100,000 known species', implying that undiscovered species exist, making the total potentially higher than 100,000.",
+          "explanationVn": "Giải thích: Bài đọc ghi 'hơn 100.000 loài đã biết' (known species), suy ra tổng số loài trong bộ này có thể còn nhiều hơn 100.000."
+        },
+        {
+          "id": "q21",
+          "question": "What would most likely happen to a predator that wanted to eat a tiger moth?",
+          "options": [
+            "A. The predator would be unable to catch it.",
+            "B. The predator would capture it by poisoning it.",
+            "C. The predator would be unable to find it.",
+            "D. The predator would back away from it."
+          ],
+          "correct": 3,
+          "explanation": "Text evidence: Bright colors warn predators of poison/smell, and predators intuitively understand to avoid such colorful creatures, so they back away.",
+          "explanationVn": "Giải thích: Màu sắc sặc sỡ đóng vai trò cảnh báo độc tố/mùi hôi, nên kẻ săn mồi sẽ chủ động tránh xa ('back away from it')."
+        }
+      ]
+    },
+    {
+      "id": "test1_camouflage_paraphrase",
+      "title": "Passage 7: Arctic Camouflage Strategies",
+      "category": "Paraphrase",
+      "tag": "CÁC DẠNG KHÁC",
+      "text": "Camouflage is one of the most effective ways for animals to avoid attack in the treeless Arctic. However, the summer and winter landscapes there are so diverse that a single protective coloring scheme would, of course, prove ineffective in one season or the other. Thus, many of the inhabitants of the Arctic tundra change their camouflage twice a year. The arctic fox is a clear-cut example of this phenomenon; it sports a brownish-gray coat in the summer which then turns white as cold weather sets in...",
+      "questions": [
+        {
+          "id": "q24",
+          "question": "What best paraphrases the sentence: 'However, the summer and winter landscapes there are so diverse that a single protective coloring scheme would, of course, prove ineffective in one season or the other.'?",
+          "options": [
+            "A. Opposite conditions in summer and in winter necessitate different protective coloration for Arctic animals.",
+            "B. The coloration of the summer and winter landscapes in the Arctic fails to protect the Arctic tundra.",
+            "C. In a single season, protective colouring schemes are ineffective in the treeless Arctic.",
+            "D. For many animals, a single protective coloring scheme effectively protects them during summer and winter months."
+          ],
+          "correct": 0,
+          "explanation": "Option A retains both cause ('diverse landscapes' = 'opposite conditions') and effect ('single scheme ineffective' = 'necessitates different coloration').",
+          "explanationVn": "Giải thích: Đáp án A diễn đạt lại chính xác nhất: điều kiện thiên nhiên trái ngược vào mùa hè và mùa đông đòi hỏi động vật phải có các màu sắc tự vệ khác nhau."
+        }
+      ]
+    }
+  ],
+  "listening": [
+    {
+      "id": "ls_q15",
+      "qNum": 15,
+      "question": "15. Why did Lenny decide to do a degree?",
+      "options": [
+        "A. He was self-conscious because he didn't have one.",
+        "B. Other actors persuaded him that it was a good idea.",
+        "C. He needed one to further his acting career.",
+        "D. He was impressed by other actors who had been to university."
+      ],
+      "correct": 0,
+      "explanation": "Lenny explains that he felt self-conscious/insecure around colleagues who had university degrees, which motivated him to enroll in an Open University degree course.",
+      "explanationVn": "Giải thích: Lenny chia sẻ rằng ông cảm thấy tự ti/e ngại khi thấy nhiều đồng nghiệp xung quanh có bằng đại học, điều này thôi thúc ông quyết định đăng ký học bằng đại học."
+    },
+    {
+      "id": "ls_q16",
+      "qNum": 16,
+      "question": "16. What effect has studying for a degree had on Lenny?",
+      "options": [
+        "A. It has developed his ability to think more clearly about his work in general.",
+        "B. It has made him think more seriously about his career.",
+        "C. It has given him the confidence to try for more challenging acting roles.",
+        "D. It causes him a lot of stress when he has to write an essay."
+      ],
+      "correct": 0,
+      "explanation": "Studying for a degree taught him how to structure his thoughts logically and think much more clearly and analytically about his comedy and projects.",
+      "explanationVn": "Giải thích: Việc học đại học giúp ông rèn luyện tư duy logic, sắp xếp ý tưởng và suy nghĩ mạch lạc, rõ ràng hơn về toàn bộ công việc và dự án hài của mình."
+    },
+    {
+      "id": "ls_q17",
+      "qNum": 17,
+      "question": "17. According to Lenny, how does comedy affect the way people feel?",
+      "options": [
+        "A. It hinders their appreciation of the seriousness of a situation.",
+        "B. It helps them deal with disturbing images.",
+        "C. It makes people more sensitive.",
+        "D. It enables them to laugh at heartbreaking stories."
+      ],
+      "correct": 1,
+      "explanation": "Lenny states that comedy provides an emotional release, acting as a coping mechanism that helps people deal with disturbing images or tragic situations.",
+      "explanationVn": "Giải thích: Hài hước đóng vai trò như một cơ chế giúp giải tỏa cảm xúc, giúp người xem dễ dàng xử lý và tiếp nhận những hình ảnh đau thương, gây chấn động."
+    },
+    {
+      "id": "ls_q18",
+      "qNum": 18,
+      "question": "18. What does Lenny say about the work of Comic Relief in Africa?",
+      "options": [
+        "A. People in Africa now have new ways of raising money for themselves.",
+        "B. The task they are facing is too big for them to make a real difference.",
+        "C. People aren't committed enough yet to the cause.",
+        "D. It should be a steady process to help the local communities."
+      ],
+      "correct": 3,
+      "explanation": "He emphasizes that relief work shouldn't be a quick temporary fix, but a steady, continuous process aimed at empowering local communities step by step.",
+      "explanationVn": "Giải thích: Ông nhấn mạnh rằng hoạt động cứu trợ không nên chỉ mang tính thời điểm mà phải là một quá trình bền vững, từng bước giúp đỡ các cộng đồng địa phương."
+    },
+    {
+      "id": "ls_q19",
+      "qNum": 19,
+      "question": "19. What does Lenny say about his visit to Debre Zeit?",
+      "options": [
+        "A. He enjoyed working as a care worker for a while.",
+        "B. He was impressed by Fanti's bravery despite his illness.",
+        "C. He was moved by the way the people there handled their situation.",
+        "D. He was impressed by the way Fanti praised comic Relief."
+      ],
+      "correct": 2,
+      "explanation": "Lenny describes being deeply touched and moved by the incredible resilience, dignity, and spirit of the local people in handling their dire circumstances.",
+      "explanationVn": "Giải thích: Lenny bị xúc động sâu sắc trước tinh thần kiên cường, phẩm giá và cách người dân địa phương đối mặt và vượt qua hoàn cảnh khó khăn."
+    },
+    {
+      "id": "ls_q20",
+      "qNum": 20,
+      "question": "20. What does Lenny say about writing comedy?",
+      "options": [
+        "A. He hopes that he will soon be a more self-confident writer.",
+        "B. He finds it really easy since starting his degree.",
+        "C. He doesn't think he'll ever have the confidence to write something on his own.",
+        "D. He no longer likes working with other writers."
+      ],
+      "correct": 2,
+      "explanation": "Lenny confesses that writing solo requires an extreme level of self-belief, and he doesn't think he will ever have enough confidence to write an entire project completely alone without collaborators.",
+      "explanationVn": "Giải thích: Ông thừa nhận việc viết hài một mình đòi hỏi sự tự tin rất lớn và ông nghĩ mình khó có thể đủ tự tin để độc lập viết hoàn chỉnh một kịch bản mà không có sự hợp tác."
+    }
+  ],
+  "cgel_modules": {
+    "1": {
+      "title": "Module 01: The Clause & Noun Phrase",
+      "desc": "Khảo sát toàn diện cấu trúc mệnh đề căn bản, 7 mô hình câu cốt lõi và kiến trúc phân tầng phức tạp của Cụm danh từ (NP).",
+      "topics": [
+        {
+          "title": "Topic 1: 7 Core Clause Types (S, V, O, C, A mapping)",
+          "mindmapId": "m1t1",
+          "mindmap": {
+            "root": "🧠 7 Core Clause Types (CGEL)",
+            "branches": [
+              {
+                "key": "sv_intrans",
+                "label": "1. Nhóm Nội động từ (Intransitive)",
+                "color": "#38bdf8",
+                "leaves": [
+                  {
+                    "key": "sv_intrans",
+                    "text": "SV: The sun shone"
+                  },
+                  {
+                    "key": "sv_intrans",
+                    "text": "SVA: The temple stands on the hill"
+                  }
+                ]
+              },
+              {
+                "key": "svc_copular",
+                "label": "2. Nhóm Động từ Hệ từ (Copular)",
+                "color": "#c084fc",
+                "leaves": [
+                  {
+                    "key": "svc_copular",
+                    "text": "SVC: The sky looks serene"
+                  },
+                  {
+                    "key": "svc_copular",
+                    "text": "SVC: He became mayor"
+                  }
+                ]
+              },
+              {
+                "key": "svo_trans",
+                "label": "3. Nhóm Ngoại động từ (Transitive)",
+                "color": "#f472b6",
+                "leaves": [
+                  {
+                    "key": "svo_trans",
+                    "text": "SVO: Built a house"
+                  },
+                  {
+                    "key": "svo_trans",
+                    "text": "SVOO: Gave her a gift"
+                  }
+                ]
+              },
+              {
+                "key": "svoc_complex",
+                "label": "4. Nhóm Ngoại động từ Phức",
+                "color": "#fbbf24",
+                "leaves": [
+                  {
+                    "key": "svoc_complex",
+                    "text": "SVOC: Called him leader"
+                  },
+                  {
+                    "key": "svoc_complex",
+                    "text": "SVOA: Put scroll in the box"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-vn-explanation\">\n                            <strong>📖 Giải thích Ngôn ngữ học & Cơ chế Cú pháp:</strong><br>\n                            Toàn bộ câu tiếng Anh được cấu thành từ 5 thành tố chức năng: <strong>S</strong> (Chủ ngữ), <strong>V</strong> (Vị ngữ), <strong>O</strong> (Tân ngữ), <strong>C</strong> (Bổ ngữ), và <strong>A</strong> (Trạng ngữ bắt buộc).\n                          </div>\n                          <div class=\"acad-insight-box\">\n                            <h4>💡 Phân tích Chuyên sâu: Trạng ngữ Bắt buộc (Obligatory Adverbial)</h4>\n                            <p>Trong cấu trúc <strong>SVA</strong> và <strong>SVOA</strong>, trạng ngữ là thành tố bắt buộc không thể lược bỏ (*\"The temple stands\"* ❌).</p>\n                          </div>\n                        "
+        },
+        {
+          "title": "Topic 2: Countability Gradient & Nominalization",
+          "mindmapId": "m1t2",
+          "mindmap": {
+            "root": "🧠 Countability & Nominalization",
+            "branches": [
+              {
+                "key": "count_gradient",
+                "label": "1. Dải Tính Đếm Được (Gradient)",
+                "color": "#38bdf8",
+                "leaves": [
+                  {
+                    "key": "count_gradient",
+                    "text": "Strict Count (a book, a cat)"
+                  },
+                  {
+                    "key": "count_gradient",
+                    "text": "Dual Membership (a coffee vs. coffee)"
+                  }
+                ]
+              },
+              {
+                "key": "nominal_scale",
+                "label": "2. Cấp độ Danh từ hóa (Scale)",
+                "color": "#c084fc",
+                "leaves": [
+                  {
+                    "key": "nominal_scale",
+                    "text": "Verbal Gerund: planting trees quickly"
+                  },
+                  {
+                    "key": "nominal_scale",
+                    "text": "Full Deverbal Noun: The planting of trees"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-vn-explanation\">\n                            <strong>📖 Bản chất Danh từ hóa:</strong> Chuyển đổi động từ/mệnh đề thành Cụm danh từ (NP) giúp tối đa hóa Mật độ Từ vựng (Lexical Density) trong văn phong học thuật.\n                          </div>\n                        "
+        },
+        {
+          "title": "Topic 3: 3-Position Determiner Matrix (Pre, Central, Post)",
+          "mindmapId": "m1t3",
+          "mindmap": {
+            "root": "🧠 Determiner Matrix (3 Vị Trí)",
+            "branches": [
+              {
+                "key": "det_matrix",
+                "label": "Vị trí 1: Predeterminers",
+                "color": "#f472b6",
+                "leaves": [
+                  {
+                    "key": "det_matrix",
+                    "text": "all, both, half, double, twice, such"
+                  }
+                ]
+              },
+              {
+                "key": "det_matrix",
+                "label": "Vị trí 2: Central Determiners",
+                "color": "#38bdf8",
+                "leaves": [
+                  {
+                    "key": "det_matrix",
+                    "text": "the, a/an, this/that, my/her, each, every, no"
+                  }
+                ]
+              },
+              {
+                "key": "det_matrix",
+                "label": "Vị trí 3: Postdeterminers",
+                "color": "#fbbf24",
+                "leaves": [
+                  {
+                    "key": "det_matrix",
+                    "text": "cardinals (one, two), ordinals (first), many, few"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-caution-box\">\n                            <h4>⚠️ Lưu ý Trọng tâm: Xung đột Cùng Nhóm</h4>\n                            <p>Không bao giờ đặt 2 hạn định từ cùng nhóm Central cạnh nhau (*the my car* ❌ $\\rightarrow$ *that car of mine* ✔️).</p>\n                          </div>\n                        "
+        },
+        {
+          "title": "Topic 4: Advanced S-V Concord (Grammatical, Notional, Proximity)",
+          "mindmapId": "m1t4",
+          "mindmap": {
+            "root": "🧠 3 Nguyên lý Hòa hợp S-V",
+            "branches": [
+              {
+                "key": "sv_concord",
+                "label": "1. Grammatical Concord",
+                "color": "#4ade80",
+                "leaves": [
+                  {
+                    "key": "sv_concord",
+                    "text": "Chia khớp theo hình thái số ít / số nhiều"
+                  }
+                ]
+              },
+              {
+                "key": "sv_concord",
+                "label": "2. Notional Concord",
+                "color": "#c084fc",
+                "leaves": [
+                  {
+                    "key": "sv_concord",
+                    "text": "Theo ý niệm số lượng (The committee have decided)"
+                  }
+                ]
+              },
+              {
+                "key": "sv_concord",
+                "label": "3. Proximity Principle",
+                "color": "#fbbf24",
+                "leaves": [
+                  {
+                    "key": "sv_concord",
+                    "text": "Theo danh từ cận kề (Either the teacher or students are)"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-vn-explanation\">\n                            <strong>📖 Quy tắc Cận kề:</strong> Với liên từ <em>either... or</em> / <em>neither... nor</em>, động từ chia theo danh từ đứng sát nó nhất.\n                          </div>\n                        "
+        },
+        {
+          "title": "Topic 5: Complex NP Architecture (Recursive Postmodification)",
+          "mindmapId": "m1t5",
+          "mindmap": {
+            "root": "🧠 Cấu trúc Đệ quy Noun Phrase",
+            "branches": [
+              {
+                "key": "np_arch",
+                "label": "Tiền Bổ Ngữ (Premodification)",
+                "color": "#f472b6",
+                "leaves": [
+                  {
+                    "key": "np_arch",
+                    "text": "Trật tự tính từ OSASCOMP & Noun adjuncts"
+                  }
+                ]
+              },
+              {
+                "key": "np_arch",
+                "label": "Danh Từ Trung Tâm (Head Noun)",
+                "color": "#38bdf8",
+                "leaves": [
+                  {
+                    "key": "np_arch",
+                    "text": "Lõi ngữ nghĩa quyết định toàn cụm"
+                  }
+                ]
+              },
+              {
+                "key": "np_arch",
+                "label": "Hậu Bổ Ngữ Đệ Quy (Postmodification)",
+                "color": "#c084fc",
+                "leaves": [
+                  {
+                    "key": "np_arch",
+                    "text": "Cụm PP lồng ghép & Mệnh đề quan hệ"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-vn-explanation\">\n                            <strong>📖 Cấu trúc Đệ quy:</strong> Hậu bổ ngữ có thể lồng nhiều tầng: <em>The road [to the city [near the coast]]</em>.\n                          </div>\n                        "
+        }
+      ],
+      "quiz": {
+        "question": "Phân tích câu: 'The abbot placed the ancient scroll inside the wooden altar.' Cấu trúc câu này thuộc mô hình căn bản nào theo Randolph Quirk?",
+        "options": [
+          {
+            "text": "A. SVO (Subject + Verb + Object)",
+            "correct": false
+          },
+          {
+            "text": "B. SVOC (Subject + Verb + Object + Complement)",
+            "correct": false
+          },
+          {
+            "text": "C. SVOA (Subject + Verb + Object + Obligatory Adverbial)",
+            "correct": true
+          },
+          {
+            "text": "D. SVA (Subject + Verb + Obligatory Adverbial)",
+            "correct": false
+          }
+        ]
+      }
+    },
+    "2": {
+      "title": "Module 02: The Verb Phrase & Modality",
+      "desc": "Đi sâu vào Toán tử Cú pháp (The Operator), 4 đặc tính NICE, Ngữ nghĩa Thì - Thể, Phổ tính thái và Thang độ Thể Bị động.",
+      "topics": [
+        {
+          "title": "Topic 6: The Operator & NICE Properties (Do-support mechanics)",
+          "mindmapId": "m2t1",
+          "mindmap": {
+            "root": "🧠 Operator & 4 Đặc tính NICE",
+            "branches": [
+              {
+                "key": "nice_prop",
+                "label": "[N]egation (Phủ định)",
+                "color": "#f472b6",
+                "leaves": [
+                  {
+                    "key": "nice_prop",
+                    "text": "Gắn not/n't sau toán tử (has not gone)"
+                  }
+                ]
+              },
+              {
+                "key": "nice_prop",
+                "label": "[I]nversion (Đảo ngữ)",
+                "color": "#38bdf8",
+                "leaves": [
+                  {
+                    "key": "nice_prop",
+                    "text": "Đảo toán tử lên trước chủ ngữ (Had we known)"
+                  }
+                ]
+              },
+              {
+                "key": "nice_prop",
+                "label": "[C]ode (Từ thế)",
+                "color": "#c084fc",
+                "leaves": [
+                  {
+                    "key": "nice_prop",
+                    "text": "Đại diện cho vị ngữ rút gọn (I will [code])"
+                  }
+                ]
+              },
+              {
+                "key": "nice_prop",
+                "label": "[E]mphasis (Nhấn mạnh)",
+                "color": "#fbbf24",
+                "leaves": [
+                  {
+                    "key": "nice_prop",
+                    "text": "Khẳng định chân giá trị (We DID arrive!)"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-vn-explanation\">\n                            <strong>📖 Toán tử (Operator):</strong> Là trợ động từ đầu tiên trong cụm vị ngữ; chịu trách nhiệm thực thi các phép biến đổi phủ định, đảo ngữ, rút gọn và nhấn mạnh.\n                          </div>\n                        "
+        },
+        {
+          "title": "Topic 7: Aspectual Semantics (Stative-Dynamic Shift)",
+          "mindmapId": "m2t2",
+          "mindmap": {
+            "root": "🧠 Ngữ nghĩa Thể & Ép đổi Nghĩa",
+            "branches": [
+              {
+                "key": "aspect_shift",
+                "label": "Động từ Tĩnh (Stative)",
+                "color": "#38bdf8",
+                "leaves": [
+                  {
+                    "key": "aspect_shift",
+                    "text": "Bản tính / Nhận thức cố định (He is foolish)"
+                  }
+                ]
+              },
+              {
+                "key": "aspect_shift",
+                "label": "Ép Thể Tiếp diễn (Coercion)",
+                "color": "#f472b6",
+                "leaves": [
+                  {
+                    "key": "aspect_shift",
+                    "text": "Hành vi tạm thời cố ý (He is being foolish)"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-vn-explanation\">\n                            <strong>📖 Thể tiếp diễn:</strong> Khi ép động từ tĩnh vào thể tiếp diễn (<em>He is being silly</em>), câu diễn tả hành vi nhất thời chứ không phải bản tính.\n                          </div>\n                        "
+        },
+        {
+          "title": "Topic 8: Modality Spectrum (Intrinsic vs. Extrinsic Dualism)",
+          "mindmapId": "m2t3",
+          "mindmap": {
+            "root": "🧠 Trục Đối Lập Tính Thái",
+            "branches": [
+              {
+                "key": "modality_dual",
+                "label": "Intrinsic (Deontic Modality)",
+                "color": "#c084fc",
+                "leaves": [
+                  {
+                    "key": "modality_dual",
+                    "text": "Ý chí, mệnh lệnh, bổn phận (You must go)"
+                  }
+                ]
+              },
+              {
+                "key": "modality_dual",
+                "label": "Extrinsic (Epistemic Modality)",
+                "color": "#fbbf24",
+                "leaves": [
+                  {
+                    "key": "modality_dual",
+                    "text": "Suy đoán logic khách quan (They must be home)"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-caution-box\">\n                            <h4>⚠️ Lưu ý Bẫy thi cử: Nghĩa vụ trong Quá khứ</h4>\n                            <p>Không dùng *must have done* cho nghĩa vụ quá khứ. Bắt buộc dùng <strong>had to</strong> (*We had to finish the report yesterday*).</p>\n                          </div>\n                        "
+        },
+        {
+          "title": "Topic 9: The Subjunctive Mood (Mandative, Formulaic, Were-Subjunctive)",
+          "mindmapId": "m2t4",
+          "mindmap": {
+            "root": "🧠 3 Dạng thức Thức Giả định",
+            "branches": [
+              {
+                "key": "subjunctive_3",
+                "label": "1. Mandative Subjunctive",
+                "color": "#38bdf8",
+                "leaves": [
+                  {
+                    "key": "subjunctive_3",
+                    "text": "Bare infinitive: demanded that he resign"
+                  }
+                ]
+              },
+              {
+                "key": "subjunctive_3",
+                "label": "2. Formulaic Subjunctive",
+                "color": "#f472b6",
+                "leaves": [
+                  {
+                    "key": "subjunctive_3",
+                    "text": "Thành ngữ cổ: Come what may, God save"
+                  }
+                ]
+              },
+              {
+                "key": "subjunctive_3",
+                "label": "3. Were-Subjunctive",
+                "color": "#c084fc",
+                "leaves": [
+                  {
+                    "key": "subjunctive_3",
+                    "text": "Phi thực tế: If I were you"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-vn-explanation\">\n                            <strong>📖 Mandative Subjunctive:</strong> Dùng động từ nguyên mẫu không chia cho mọi ngôi: <em>The board insisted that he be present</em>.\n                          </div>\n                        "
+        },
+        {
+          "title": "Topic 10: The Passive Gradient (Central, Semi, and Pseudo-Passives)",
+          "mindmapId": "m2t5",
+          "mindmap": {
+            "root": "🧠 Thang độ Thể Bị động (CGEL)",
+            "branches": [
+              {
+                "key": "passive_gradient",
+                "label": "1. Central Passive (Thuần túy)",
+                "color": "#4ade80",
+                "leaves": [
+                  {
+                    "key": "passive_gradient",
+                    "text": "Có câu chủ động đối ứng & Tác nhân rõ rệt"
+                  }
+                ]
+              },
+              {
+                "key": "passive_gradient",
+                "label": "2. Semi-Passive (Bán bị động)",
+                "color": "#fbbf24",
+                "leaves": [
+                  {
+                    "key": "passive_gradient",
+                    "text": "Phân từ mang tính tính từ (very interested)"
+                  }
+                ]
+              },
+              {
+                "key": "passive_gradient",
+                "label": "3. Pseudo-Passive (Trạng thái)",
+                "color": "#f472b6",
+                "leaves": [
+                  {
+                    "key": "passive_gradient",
+                    "text": "Mô tả trạng thái kết quả tĩnh (The door was locked)"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-vn-explanation\">\n                            <strong>📖 Pseudo-Passives:</strong> Diễn tả trạng thái tĩnh đã hoàn tất: <em>The door was locked</em>.\n                          </div>\n                        "
+        }
+      ],
+      "quiz": {
+        "question": "Chọn câu diễn đạt chuẩn xác tính thái nghĩa vụ trong quá khứ theo đúng ngữ pháp học thuật:",
+        "options": [
+          {
+            "text": "A. To enter the laboratory, the researchers must have shown their ID cards yesterday.",
+            "correct": false
+          },
+          {
+            "text": "B. To enter the laboratory, the researchers had to show their ID cards yesterday.",
+            "correct": true
+          },
+          {
+            "text": "C. The director demanded that the scientist should leaves immediately.",
+            "correct": false
+          },
+          {
+            "text": "D. The door was locked by 8 PM, which was a central active process.",
+            "correct": false
+          }
+        ]
+      }
+    },
+    "3": {
+      "title": "Module 03: Modifiers, Prepositions & Adverbials",
+      "desc": "Làm chủ hệ thống phân loại trạng ngữ 4 nhóm kinh điển của Randolph Quirk, phân định vị trí tính từ và hiện tượng Stranded Prepositions.",
+      "topics": [
+        {
+          "title": "Topic 11: Adjectives & Adverbs (Attributive-Only vs. Predicative-Only)",
+          "mindmapId": "m3t1",
+          "mindmap": {
+            "root": "🧠 Vị trí Phân bổ Tính từ",
+            "branches": [
+              {
+                "key": "adj_slots",
+                "label": "Attributive-Only (Trước Noun)",
+                "color": "#38bdf8",
+                "leaves": [
+                  {
+                    "key": "adj_slots",
+                    "text": "an utter fool, sheer luck, the sole survivor"
+                  }
+                ]
+              },
+              {
+                "key": "adj_slots",
+                "label": "Predicative-Only (Sau Hệ từ)",
+                "color": "#f472b6",
+                "leaves": [
+                  {
+                    "key": "adj_slots",
+                    "text": "afraid, asleep, alive, alone (a- adjectives)"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-vn-explanation\">\n                            <strong>📖 Predicative-Only:</strong> Nhóm tính từ tiền tố *a-* (*afraid, asleep, alive, alone*). Dùng *a frightened child*, không dùng *an afraid child*.\n                          </div>\n                        "
+        },
+        {
+          "title": "Topic 12: Prepositions & Stranded Preposition Mechanics",
+          "mindmapId": "m3t2",
+          "mindmap": {
+            "root": "🧠 Giới từ Tách rời (Stranded)",
+            "branches": [
+              {
+                "key": "prep_stranded",
+                "label": "Fronted (Trang trọng)",
+                "color": "#c084fc",
+                "leaves": [
+                  {
+                    "key": "prep_stranded",
+                    "text": "The topic on which we focused..."
+                  }
+                ]
+              },
+              {
+                "key": "prep_stranded",
+                "label": "Stranded (Tiêu chuẩn)",
+                "color": "#fbbf24",
+                "leaves": [
+                  {
+                    "key": "prep_stranded",
+                    "text": "The topic which we focused on..."
+                  }
+                ]
+              },
+              {
+                "key": "prep_stranded",
+                "label": "Prepositional Passive",
+                "color": "#4ade80",
+                "leaves": [
+                  {
+                    "key": "prep_stranded",
+                    "text": "The proposal was agreed to (Bắt buộc)"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-vn-explanation\">\n                            <strong>📖 Prepositional Passive:</strong> Giới từ bắt buộc nằm lại cuối câu: <em>The matter was looked into</em>.\n                          </div>\n                        "
+        },
+        {
+          "title": "Topic 13: Adverbials I: Adjuncts vs. Subjuncts",
+          "mindmapId": "m3t3",
+          "mindmap": {
+            "root": "🧠 Trạng từ Nội biên (Quirk)",
+            "branches": [
+              {
+                "key": "adv_adjuncts",
+                "label": "Adjuncts (Tình huống)",
+                "color": "#38bdf8",
+                "leaves": [
+                  {
+                    "key": "adv_adjuncts",
+                    "text": "Không gian, Thời gian, Thể thức (Vượt qua câu chẻ)"
+                  }
+                ]
+              },
+              {
+                "key": "adv_adjuncts",
+                "label": "Subjuncts (Bổ trợ/Tiêu điểm)",
+                "color": "#f472b6",
+                "leaves": [
+                  {
+                    "key": "adv_adjuncts",
+                    "text": "Hạn định góc nhìn / mức độ (Only, Visually, Merely)"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-vn-explanation\">\n                            <strong>📖 Adjuncts:</strong> Bổ sung Không gian, Thời gian, Thể thức. Có thể nhấn mạnh trong câu chẻ: <em>It was quickly that he ran</em>.\n                          </div>\n                        "
+        },
+        {
+          "title": "Topic 14: Adverbials II: Disjuncts vs. Conjuncts",
+          "mindmapId": "m3t4",
+          "mindmap": {
+            "root": "🧠 Trạng từ Ngoại biên (Quirk)",
+            "branches": [
+              {
+                "key": "adv_disjuncts",
+                "label": "Disjuncts (Quan điểm/Đánh giá)",
+                "color": "#c084fc",
+                "leaves": [
+                  {
+                    "key": "adv_disjuncts",
+                    "text": "Frankly, Fortunately, Strictly speaking"
+                  }
+                ]
+              },
+              {
+                "key": "adv_disjuncts",
+                "label": "Conjuncts (Nối Logic Mệnh đề)",
+                "color": "#fbbf24",
+                "leaves": [
+                  {
+                    "key": "adv_disjuncts",
+                    "text": "However, Consequently, On the contrary"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-caution-box\">\n                            <h4>⚠️ Phân biệt Cốt lõi: 'On the contrary' vs. 'On the other hand'</h4>\n                            <p>• <strong>On the contrary:</strong> Bác bỏ phủ định vừa nêu trước đó.<br>• <strong>On the other hand:</strong> Cân bằng 2 mặt đối lập.</p>\n                          </div>\n                        "
+        }
+      ],
+      "quiz": {
+        "question": "Chọn câu sử dụng chính xác trạng từ liên kết đối lập theo đúng chuẩn ngữ pháp CGEL:",
+        "options": [
+          {
+            "text": "A. He loves physics. On the contrary, his brother prefers biology.",
+            "correct": false
+          },
+          {
+            "text": "B. The institution is not underfunded. On the contrary, it receives extensive grants.",
+            "correct": true
+          },
+          {
+            "text": "C. We saw an asleep bird resting on the roof.",
+            "correct": false
+          },
+          {
+            "text": "D. The ancient library which they walked into it was magnificent.",
+            "correct": false
+          }
+        ]
+      }
+    },
+    "4": {
+      "title": "Module 04: Sentence Architecture & Reduction",
+      "desc": "Xây dựng các câu phức nhiều tầng bậc, hiểu sâu cơ chế rút gọn phân từ, bẫy Dangling Modifiers, Pro-forms và Tỉnh lược.",
+      "topics": [
+        {
+          "title": "Topic 15: Advanced Negation (Scope, Focus, and Local Negation)",
+          "mindmapId": "m4t1",
+          "mindmap": {
+            "root": "🧠 Cấu trúc Phủ định Nâng cao",
+            "branches": [
+              {
+                "key": "neg_scope",
+                "label": "Clause Negation (Toàn câu)",
+                "color": "#f472b6",
+                "leaves": [
+                  {
+                    "key": "neg_scope",
+                    "text": "Đổi chân giá trị mệnh đề & Sinh tag question khẳng định"
+                  }
+                ]
+              },
+              {
+                "key": "neg_scope",
+                "label": "Local Negation (Cục bộ)",
+                "color": "#38bdf8",
+                "leaves": [
+                  {
+                    "key": "neg_scope",
+                    "text": "Chỉ phủ định một cụm từ, câu vẫn khẳng định"
+                  }
+                ]
+              },
+              {
+                "key": "neg_scope",
+                "label": "Scope & Focus Ambiguity",
+                "color": "#fbbf24",
+                "leaves": [
+                  {
+                    "key": "neg_scope",
+                    "text": "Đa nghĩa phạm vi trạng ngữ nguyên nhân"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-vn-explanation\">\n                            <strong>📖 Scope of Negation:</strong> Trạng từ chỉ nguyên nhân đứng sau mệnh đề phủ định có thể tạo 2 tầng nghĩa khác nhau tùy vào điểm ngắt ngữ điệu.\n                          </div>\n                        "
+        },
+        {
+          "title": "Topic 16: Coordination & Parallelism (Strict Syntactic Tests)",
+          "mindmapId": "m4t2",
+          "mindmap": {
+            "root": "🧠 Đẳng Lập & Song Hành Cú Pháp",
+            "branches": [
+              {
+                "key": "coord_parallel",
+                "label": "Coordinators Chuẩn",
+                "color": "#c084fc",
+                "leaves": [
+                  {
+                    "key": "coord_parallel",
+                    "text": "and, but, or (Nối thành tố đồng đẳng)"
+                  }
+                ]
+              },
+              {
+                "key": "coord_parallel",
+                "label": "Correlatives Đối Xứng",
+                "color": "#4ade80",
+                "leaves": [
+                  {
+                    "key": "coord_parallel",
+                    "text": "not only... but also (VP // VP, Adj // Adj)"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-vn-explanation\">\n                            <strong>📖 Song hành Cú pháp:</strong> Cặp liên từ tương quan bắt buộc phải nối 2 thành phần đồng dạng hình thức (V-ing // V-ing).\n                          </div>\n                        "
+        },
+        {
+          "title": "Topic 17: Complex Sentence Subordination (Non-finite & Verbless Clauses)",
+          "mindmapId": "m4t3",
+          "mindmap": {
+            "root": "🧠 Mệnh đề Phụ thuộc Rút gọn",
+            "branches": [
+              {
+                "key": "subord_reduced",
+                "label": "Non-finite (Không chia)",
+                "color": "#38bdf8",
+                "leaves": [
+                  {
+                    "key": "subord_reduced",
+                    "text": "To-V, Present Participle V-ing, Past Participle V-ed"
+                  }
+                ]
+              },
+              {
+                "key": "subord_reduced",
+                "label": "Verbless (Phi động từ)",
+                "color": "#f472b6",
+                "leaves": [
+                  {
+                    "key": "subord_reduced",
+                    "text": "Although exhausted, he continued writing"
+                  }
+                ]
+              },
+              {
+                "key": "subord_reduced",
+                "label": "Dangling Modifier Trap",
+                "color": "#fbbf24",
+                "leaves": [
+                  {
+                    "key": "subord_reduced",
+                    "text": "Chủ ngữ ngầm định phải trùng chủ ngữ chính"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-caution-box\">\n                            <h4>⚠️ Bẫy Phân từ Treo (Dangling Modifier)</h4>\n                            <p>Chủ ngữ ngầm của phân từ rút gọn bắt buộc phải là chủ ngữ của mệnh đề chính (*Walking through the forest, a strange sound surprised him* ❌).</p>\n                          </div>\n                        "
+        },
+        {
+          "title": "Topic 18: Structural Reduction (Pro-forms and Strict Ellipsis)",
+          "mindmapId": "m4t4",
+          "mindmap": {
+            "root": "🧠 Giảm Tải Thông Tin Thừa",
+            "branches": [
+              {
+                "key": "struct_reduction",
+                "label": "Từ thế (Pro-forms)",
+                "color": "#fbbf24",
+                "leaves": [
+                  {
+                    "key": "struct_reduction",
+                    "text": "do so (hành động), one/ones (danh từ), so/not (mệnh đề)"
+                  }
+                ]
+              },
+              {
+                "key": "struct_reduction",
+                "label": "Tỉnh lược (Ellipsis)",
+                "color": "#c084fc",
+                "leaves": [
+                  {
+                    "key": "struct_reduction",
+                    "text": "Gapping: Lược vị ngữ chung (John bought books, and Mary, pens)"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-vn-explanation\">\n                            <strong>📖 Pro-form 'do so':</strong> Chỉ thay thế cho động từ chỉ hành động chủ ý (Dynamic), không dùng cho động từ tĩnh.\n                          </div>\n                        "
+        }
+      ],
+      "quiz": {
+        "question": "Xác định câu tránh được hoàn toàn lỗi Phân từ treo (Dangling Modifier) theo đúng chuẩn học thuật:",
+        "options": [
+          {
+            "text": "A. While analyzing the ancient manuscript, the candle flickered out.",
+            "correct": false
+          },
+          {
+            "text": "B. While analyzing the ancient manuscript, the scholar was interrupted by the sudden storm.",
+            "correct": true
+          },
+          {
+            "text": "C. Although exhausted from the long ascent, the summit view amazed the researchers.",
+            "correct": false
+          },
+          {
+            "text": "D. The professor loved literature and his assistant did so too.",
+            "correct": false
+          }
+        ]
+      }
+    },
+    "5": {
+      "title": "Module 05: Information Flow & Discourse",
+      "desc": "Tổ chức dòng chảy thông tin, nguyên lý Sức nặng Cuối (End-Weight), các cấu trúc biến đổi tiêu điểm (Clefting, Fronting) và 5 phương tiện liên kết văn bản.",
+      "topics": [
+        {
+          "title": "Topic 19: Information Processing (Given/New, End-Weight, Clefting)",
+          "mindmapId": "m5t1",
+          "mindmap": {
+            "root": "🧠 Dòng Chảy Thông Tin (Discourse)",
+            "branches": [
+              {
+                "key": "info_flow",
+                "label": "Theme - Rheme (Given/New)",
+                "color": "#38bdf8",
+                "leaves": [
+                  {
+                    "key": "info_flow",
+                    "text": "Given info ở đầu neo ý, New focus ở cuối"
+                  }
+                ]
+              },
+              {
+                "key": "info_flow",
+                "label": "End-Weight Principle",
+                "color": "#fbbf24",
+                "leaves": [
+                  {
+                    "key": "info_flow",
+                    "text": "Extraposition: It is vital that we verify sources"
+                  }
+                ]
+              },
+              {
+                "key": "info_flow",
+                "label": "Focus-Shifting Clefts",
+                "color": "#f472b6",
+                "leaves": [
+                  {
+                    "key": "info_flow",
+                    "text": "It-cleft & Wh-cleft (What we need is evidence)"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-vn-explanation\">\n                            <strong>📖 End-Weight Principle:</strong> Đẩy mệnh đề dài, nặng về cuối câu bằng cấu trúc Extraposition: <em>It is vital that we verify all data</em>.\n                          </div>\n                        "
+        },
+        {
+          "title": "Topic 20: Text Linguistics (Anaphoric/Cataphoric, Cohesion vs. Coherence)",
+          "mindmapId": "m5t2",
+          "mindmap": {
+            "root": "🧠 Ngữ Pháp Văn Bản (Halliday)",
+            "branches": [
+              {
+                "key": "text_linguistics",
+                "label": "Cohesion (Liên kết Bề mặt)",
+                "color": "#c084fc",
+                "leaves": [
+                  {
+                    "key": "text_linguistics",
+                    "text": "Reference (Anaphoric/Cataphoric), Substitution, Ellipsis, Conjunction"
+                  }
+                ]
+              },
+              {
+                "key": "text_linguistics",
+                "label": "Coherence (Mạch lạc Sâu sắc)",
+                "color": "#4ade80",
+                "leaves": [
+                  {
+                    "key": "text_linguistics",
+                    "text": "Tính liên tục của chuỗi ý niệm trong tâm trí người đọc"
+                  }
+                ]
+              }
+            ]
+          },
+          "content": "\n                          <div class=\"acad-vn-explanation\">\n                            <strong>📖 Cohesion vs. Coherence:</strong> Cohesion là phương tiện liên kết ngữ pháp từ vựng bề mặt; Coherence là tính mạch lạc tư duy logic của người đọc.\n                          </div>\n                        "
+        }
+      ],
+      "quiz": {
+        "question": "Cơ chế cú pháp nào được vận dụng trực tiếp để thỏa mãn Nguyên lý Sức nặng Cuối (End-Weight Principle) trong câu: 'It surprised the scholars that the manuscript was authentic'?",
+        "options": [
+          {
+            "text": "A. Pseudo-clefting",
+            "correct": false
+          },
+          {
+            "text": "B. Stylistic Fronting",
+            "correct": false
+          },
+          {
+            "text": "C. Extraposition with dummy 'It'",
+            "correct": true
+          },
+          {
+            "text": "D. Cataphoric Reference",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  "cgel_nodes": {
+    "sv_intrans": {
+      "title": "🔬 Nhóm Nội động từ (SV & SVA Patterns)",
+      "content": "<strong>Cấu trúc cú pháp:</strong> S + V (Intransitive) hoặc S + V + A (Obligatory Adverbial).<br><strong>Ví dụ:</strong> <em>\"The sun shone.\"</em> (SV) | <em>\"The ancient pagoda stands atop the hill.\"</em> (SVA).<br><strong>Điểm nhấn HSG:</strong> Trong SVA, trạng ngữ vị trí là bắt buộc (obligatory) để câu hoàn chỉnh cú pháp, không phải trạng ngữ phụ thêm."
+    },
+    "svc_copular": {
+      "title": "🔬 Nhóm Động từ Hệ từ (SVC Pattern)",
+      "content": "<strong>Cấu trúc cú pháp:</strong> S + V (Copular) + Subject Complement (Cs).<br><strong>Ví dụ:</strong> <em>\"The air turned cold.\"</em> | <em>\"She became an astronomer.\"</em><br><strong>Điểm nhấn HSG:</strong> Bổ ngữ chủ ngữ (Cs) có thể là Tính từ (Adjective) hoặc Cụm danh từ (NP) đồng chỉ vị trí với Chủ ngữ."
+    },
+    "svo_trans": {
+      "title": "🔬 Nhóm Ngoại động từ (SVO & SVOO Patterns)",
+      "content": "<strong>Cấu trúc cú pháp:</strong> S + V + Od (SVO) hoặc S + V + Oi + Od (SVOO).<br><strong>Ví dụ:</strong> <em>\"The scholar analyzed the manuscript.\"</em> (SVO) | <em>\"He gave her an explanation.\"</em> (SVOO).<br><strong>Điểm nhấn HSG:</strong> SVOO có thể chuyển đổi tương đương với cấu trúc giới từ: <em>He gave an explanation to her</em>."
+    },
+    "svoc_complex": {
+      "title": "🔬 Nhóm Ngoại động từ Phức (SVOC & SVOA Patterns)",
+      "content": "<strong>Cấu trúc cú pháp:</strong> S + V + Od + Co (SVOC) hoặc S + V + Od + A (SVOA).<br><strong>Ví dụ:</strong> <em>\"They elected him president.\"</em> (SVOC) | <em>\"She placed the scroll inside the box.\"</em> (SVOA).<br><strong>Điểm nhấn HSG:</strong> Trong SVOC, Co bổ nghĩa trực tiếp cho Tân ngữ Od, thiết lập quan hệ vị ngữ ngầm (He is president)."
+    },
+    "count_gradient": {
+      "title": "🔬 Dải Tính Đếm Được (Countability Gradient)",
+      "content": "<strong>Nguyên lý:</strong> Tính đếm được là một dải liên tục (Gradient), không phải nhị phân cứng nhắc.<br><strong>Dual Membership:</strong> Danh từ biến chuyển nghĩa theo ngữ cảnh (a tea: tách trà vs. tea: chất trà; a marble: viên bi vs. marble: cẩm thạch)."
+    },
+    "nominal_scale": {
+      "title": "🔬 Cấp độ Danh từ hóa (Nominalization Scale)",
+      "content": "<strong>Cấp độ:</strong> Từ Verbal Gerund (<em>planting trees quickly</em>) đến Full Deverbal Noun (<em>The quick planting of trees</em>).<br><strong>Ứng dụng:</strong> Giúp tăng mật độ từ vựng (Lexical Density) trong văn viết học thuật C1-C2."
+    },
+    "det_matrix": {
+      "title": "🔬 Ma trận 3 Vị trí Hạn định từ (Determiners)",
+      "content": "<strong>Trật tự bắt buộc:</strong> Predeterminer (all, both, double) + Central Determiner (the, this, possessives) + Postdeterminer (three, second, many).<br><strong>Ví dụ:</strong> <em>All the three ancient lanterns</em>.<br><strong>Lưu ý:</strong> 2 từ cùng nhóm Central không đứng cạnh nhau (*the my book ❌)."
+    },
+    "sv_concord": {
+      "title": "🔬 3 Nguyên lý Hòa hợp Chủ - Vị (Concord)",
+      "content": "<strong>1. Grammatical Concord:</strong> Theo hình thức số ít/nhiều.<br><strong>2. Notional Concord:</strong> Theo ý niệm số lượng thực tế (The committee have decided).<br><strong>3. Proximity:</strong> Theo danh từ đứng sát động từ (Either the teacher or the students are)."
+    },
+    "np_arch": {
+      "title": "🔬 Cấu trúc Đệ quy Cụm danh từ (Complex NP Architecture)",
+      "content": "<strong>Mô hình:</strong> Premodification + Head Noun + Recursive Postmodification.<br><strong>Hậu bổ ngữ đệ quy:</strong> <em>\"The ancient book [on the shelf] [that was written in 1600].\"</em> (Lồng ghép PP và Relative Clause)."
+    },
+    "nice_prop": {
+      "title": "🔬 Toán tử Cú pháp & 4 Đặc tính NICE",
+      "content": "<strong>Operator:</strong> Trợ động từ đầu tiên trong cụm động từ.<br><strong>NICE:</strong> <strong>[N]</strong>egation (not), <strong>[I]</strong>nversion (Had we known), <strong>[C]</strong>ode (I will [code]), <strong>[E]</strong>mphasis (We DID arrive).<br><strong>Do-support:</strong> Động từ thường cần mượn Do để thực thi NICE."
+    },
+    "aspect_shift": {
+      "title": "🔬 Chuyển dịch Ngữ nghĩa Thể (Stative-Dynamic Shift)",
+      "content": "<strong>Hiện tượng Aspectual Coercion:</strong> Khi động từ tĩnh đưa vào tiếp diễn, nó diễn tả hành vi tạm thời.<br><em>\"He is silly\"</em> (Bản tính) $\\rightarrow$ <em>\"He is being silly\"</em> (Đang làm trò ngớ ngẩn tạm thời)."
+    },
+    "modality_dual": {
+      "title": "🔬 Phổ Tính thái Nội tại & Ngoại tại",
+      "content": "<strong>Intrinsic (Deontic):</strong> Ý chí, nghĩa vụ, mệnh lệnh (You must go).<br><strong>Extrinsic (Epistemic):</strong> Suy đoán logic, tất yếu khách quan (They must be home).<br><strong>Lưu ý:</strong> Bổn phận quá khứ dùng <em>had to</em>, không dùng <em>must have done</em>."
+    },
+    "subjunctive_3": {
+      "title": "🔬 3 Dạng thức Giả định (Subjunctive Mood)",
+      "content": "<strong>1. Mandative:</strong> Động từ nguyên mẫu (demanded that he <em>resign</em>).<br><strong>2. Formulaic:</strong> Thành ngữ cổ (Come what <em>may</em>).<br><strong>3. Were-Subjunctive:</strong> Giả định phi thực tế (If I <em>were</em> you)."
+    },
+    "passive_gradient": {
+      "title": "🔬 Thang độ Thể Bị động (Passive Gradient)",
+      "content": "<strong>1. Central Passive:</strong> Động từ thuần túy, có câu chủ động đối ứng.<br><strong>2. Semi-Passive:</strong> Phân từ mang tính tính từ (very interested).<br><strong>3. Pseudo-Passive:</strong> Miêu tả trạng thái tĩnh đã xong (The door was locked)."
+    },
+    "adj_slots": {
+      "title": "🔬 Phân bổ Vị trí Tính từ (Attributive vs. Predicative)",
+      "content": "<strong>Attributive-Only:</strong> Nhấn mạnh (utter fool, sheer luck).<br><strong>Predicative-Only:</strong> Nhóm chữ a- (afraid, asleep, alive, alone). Không nói *an afraid child ❌."
+    },
+    "prep_stranded": {
+      "title": "🔬 Giới từ Tách rời (Stranded Prepositions)",
+      "content": "<strong>Fronted:</strong> <em>The topic on which we focused</em>.<br><strong>Stranded:</strong> <em>The topic which we focused on</em>.<br><strong>Bị động bắt buộc:</strong> <em>The proposal was agreed to</em>."
+    },
+    "adv_adjuncts": {
+      "title": "🔬 Trạng ngữ Nội biên: Adjuncts & Subjuncts",
+      "content": "<strong>Adjuncts:</strong> Không gian, Thời gian, Thể thức. Vượt qua kiểm tra câu chẻ (It was in the park that...).<br><strong>Subjuncts:</strong> Bổ trợ mức độ hoặc tiêu điểm (Only, Visually, Merely)."
+    },
+    "adv_disjuncts": {
+      "title": "🔬 Trạng ngữ Ngoại biên: Disjuncts & Conjuncts",
+      "content": "<strong>Disjuncts:</strong> Đánh giá quan điểm (Frankly, Fortunately).<br><strong>Conjuncts:</strong> Nối logic mệnh đề (However, Consequently, On the contrary)."
+    },
+    "neg_scope": {
+      "title": "🔬 Phạm vi & Tiêu điểm Phủ định (Negation Scope)",
+      "content": "<strong>Scope Ambiguity:</strong> <em>\"I did not call him because I was angry\"</em> (Có gọi nhưng không phải vì giận VS Vì giận nên không gọi).<br><strong>Local Negation:</strong> Phủ định một bộ phận nhỏ, câu vẫn mang tính khẳng định."
+    },
+    "coord_parallel": {
+      "title": "🔬 Đẳng lập & Song hành Cú pháp (Parallelism)",
+      "content": "<strong>Coordinators:</strong> and, but, or.<br><strong>Correlatives:</strong> not only... but also đòi hỏi hình thức cú pháp cân bằng đối xứng tuyệt đối (VP // VP, Adj // Adj)."
+    },
+    "subord_reduced": {
+      "title": "🔬 Mệnh đề Phụ thuộc Rút gọn & Phân từ Treo",
+      "content": "<strong>Non-finite & Verbless:</strong> Although exhausted, he continued.<br><strong>Dangling Modifier:</strong> Chủ ngữ ngầm định của V-ing/V-ed phải trùng với chủ ngữ chính."
+    },
+    "struct_reduction": {
+      "title": "🔬 Giảm tải Thông tin Thừa (Pro-forms & Ellipsis)",
+      "content": "<strong>Pro-forms:</strong> do so (hành động chủ ý), one/ones (danh từ), so/not (mệnh đề).<br><strong>Ellipsis:</strong> Lược vị ngữ chung (Gapping: John bought books, and Mary, pens)."
+    },
+    "info_flow": {
+      "title": "🔬 Tổ chức Dòng chảy Thông tin & Cấu trúc Tiêu điểm",
+      "content": "<strong>Theme-Rheme:</strong> Given information đứng đầu, New focus đứng cuối.<br><strong>End-Weight:</strong> Đưa mệnh đề nặng về cuối qua Extraposition (It is vital that...).<br><strong>Cleft Sentences:</strong> It-cleft, Wh-cleft để nhấn mạnh tiêu điểm."
+    },
+    "text_linguistics": {
+      "title": "🔬 Ngữ pháp Văn bản: Cohesion & Coherence",
+      "content": "<strong>Cohesion:</strong> Liên kết hình thức (Tham chiếu Anaphoric/Cataphoric, Thay thế, Tỉnh lược, Nối logic).<br><strong>Coherence:</strong> Mạch lạc ý niệm và tính liên tục tư duy sâu sắc."
+    }
+  },
+  "cgel_quests": [
+    {
+      "title": "Bài tập 1: Phân tích Phạm vi Phủ định (Scope of Negation)",
+      "desc": "Phân tích câu phủ định: <br><em>'The professor did not publish the research paper because he wanted fame.'</em>",
+      "q": "Theo CGEL, tại sao câu văn trên lại bị đa nghĩa ngữ dụng?",
+      "options": [
+        {
+          "text": "A. Vì 'because' là liên từ đẳng lập.",
+          "correct": false
+        },
+        {
+          "text": "B. Vì mệnh đề trạng ngữ chỉ nguyên nhân có thể rơi vào BÊN TRONG hoặc BÊN NGOÀI Phạm vi Phủ định (Scope of Negation), làm thay đổi việc ông ấy có thực sự xuất bản bài báo hay không.",
+          "correct": true
+        },
+        {
+          "text": "C. Vì 'the research paper' là phân từ treo.",
+          "correct": false
+        }
+      ],
+      "reward": "+200 XP"
+    },
+    {
+      "title": "Bài tập 2: Hiệu chỉnh Thức Giả định Quá khứ",
+      "desc": "Xét câu văn trong bản thảo: <br><em>'If the comet were being visible yesterday, the astronomical chart would be complete.'</em>",
+      "q": "Lỗi sai ngữ pháp trong câu văn trên là gì?",
+      "options": [
+        {
+          "text": "A. Câu sử dụng 'were being' thay vì dạng hoàn thành 'had been' để diễn tả điều kiện trái thực tế trong quá khứ.",
+          "correct": true
+        },
+        {
+          "text": "B. Thiếu trợ động từ putative 'should'.",
+          "correct": false
+        },
+        {
+          "text": "C. 'were' bắt buộc phải đổi thành 'was' trong văn phong học thuật.",
+          "correct": false
+        }
+      ],
+      "reward": "+200 XP"
+    },
+    {
+      "title": "Bài tập 3: Tối ưu hóa Tính Song hành Cú pháp",
+      "desc": "Xét câu văn: <br><em>'Scientific mastery requires observing phenomena, formulating hypotheses, and to conduct rigorous experiments.'</em>",
+      "q": "Cần hiệu chỉnh câu như thế nào để đạt tính song hành tuyệt đối (Strict Parallelism)?",
+      "options": [
+        {
+          "text": "A. 'observing phenomena, formulating hypotheses, and rigorous experimentation.'",
+          "correct": false
+        },
+        {
+          "text": "B. 'observing phenomena, formulating hypotheses, and conducting rigorous experiments.' (Song hành đồng dạng V-ing)",
+          "correct": true
+        },
+        {
+          "text": "C. 'to observe phenomena, to formulate hypotheses, and conducting experiments.'",
+          "correct": false
+        }
+      ],
+      "reward": "+200 XP"
+    }
+  ]
+}

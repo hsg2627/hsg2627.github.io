@@ -1,0 +1,95 @@
+/* ==========================================================================
+   GAME-PIXEL.CSS - Isolated Retro / Pixel Game Theme
+   Scoped strictly to .game-arena and Doloc Town mini-games
+   ========================================================================== */
+
+.game-arena {
+  background-color: #16121e;
+  color: #f1f5f9;
+  border-radius: var(--radius-xl);
+  padding: 24px;
+  border: 3px solid #3d2b63;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  font-family: inherit;
+}
+
+.game-arena * {
+  box-sizing: border-box;
+}
+
+.game-hud {
+  background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border: 2px solid #4338ca;
+}
+
+.game-hud__stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.game-card {
+  background: #1f1a2e;
+  border: 2px solid #4a3875;
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  margin-bottom: 20px;
+}
+
+.game-card__title {
+  color: #facc15;
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.game-opt-btn {
+  background: #2a203f;
+  border: 2px solid #5b428d;
+  border-bottom: 4px solid #3d2b63;
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.game-opt-btn:hover {
+  background: #3b2c58;
+  border-color: #818cf8;
+  transform: translateY(-2px);
+}
+
+.game-opt-btn.correct {
+  background: #065f46 !important;
+  border-color: #10b981 !important;
+  color: #ecfdf5 !important;
+}
+
+.game-opt-btn.wrong {
+  background: #991b1b !important;
+  border-color: #ef4444 !important;
+  color: #fee2e2 !important;
+}
