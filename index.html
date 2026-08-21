@@ -60,6 +60,11 @@
           <span class="nav-item__icon">📘</span>
           <span>Grammar</span>
         </div>
+        <div class="nav-item" data-view="vocab-view" onclick="window.location.hash='#vocab'">
+          <span class="nav-item__icon">💎</span>
+          <span>Vocabulary</span>
+          <span class="nav-item__badge" style="background:#fef3c7; color:#b45309;">550 Words</span>
+        </div>
         <div class="nav-item" data-view="ai-eval-view" onclick="window.location.hash='#ai-eval'">
           <span class="nav-item__icon">🤖</span>
           <span>Xưởng Đánh Giá AI</span>
@@ -177,8 +182,27 @@
                 <span>&rarr;</span>
               </div>
             </div>
-
-            <!-- Card 2: AI Evaluation Studio -->
+            <!-- Card 2: Vocabulary Studio -->
+            <div class="portal-card portal-card--vocab" onclick="window.location.hash='#vocab'">
+              <div class="portal-card__header">
+                <div class="portal-card__icon-box">💎</div>
+                <span class="badge badge--vocab">550 Từ Vựng</span>
+              </div>
+              <div class="portal-card__title">Vocabulary Studio</div>
+              <div class="portal-card__desc">
+                Cơ sở dữ liệu 550 mục từ học thuật, cụm động từ, collocations và idioms chuẩn Global Success 10 kèm 3D Flashcards và bài trắc nghiệm.
+              </div>
+              <div class="portal-card__tags">
+                <span class="portal-card__tag">10 Units</span>
+                <span class="portal-card__tag">3D Flashcards</span>
+                <span class="portal-card__tag">Collocations & Idioms</span>
+              </div>
+              <div class="portal-card__footer">
+                <span>Vào Vocabulary Studio</span>
+                <span>&rarr;</span>
+              </div>
+            </div>
+            <!-- Card 3: AI Evaluation Studio -->
             <div class="portal-card portal-card--cgel" onclick="window.location.hash='#ai-eval'">
               <div class="portal-card__header">
                 <div class="portal-card__icon-box">🤖</div>
@@ -330,6 +354,46 @@
           <div id="e10-level-interactive-area" style="margin-top: 24px;"></div>
         </section>
 
+        <!-- ================= VIEW 3B: VOCABULARY STUDIO ================= -->
+        <section id="vocab-view" class="view-panel">
+          <div style="margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+            <div>
+              <h2>Vocabulary Studio (Global Success 10)</h2>
+              <p>550 Từ vựng học thuật, cụm động từ, collocations và idioms bám sát 10 Unit CT GDPT 2018.</p>
+            </div>
+            <div style="display: flex; gap: 6px;">
+              <button class="btn btn--secondary btn--sm active" id="btn-vocab-mode-cards" onclick="setVocabDisplayMode('cards')">📇 3D Flashcards</button>
+              <button class="btn btn--secondary btn--sm" id="btn-vocab-mode-table" onclick="setVocabDisplayMode('table')">📋 Bảng Tra Cứu</button>
+              <button class="btn btn--secondary btn--sm" id="btn-vocab-mode-quiz" onclick="setVocabDisplayMode('quiz')">📝 Trắc Nghiệm</button>
+            </div>
+          </div>
+
+          <!-- Unit Selector Bar (Units 1 - 10) -->
+          <div class="vocab-unit-bar" id="vocab-unit-bar"></div>
+
+          <!-- Category & Level Filters -->
+          <div class="vocab-filters-row">
+            <div class="vocab-filter-group" id="vocab-category-filters">
+              <button class="vocab-filter-btn active" data-cat="all" onclick="filterVocabCategory('all')">Tất cả (55)</button>
+              <button class="vocab-filter-btn" data-cat="academic" onclick="filterVocabCategory('academic')">Academic (25)</button>
+              <button class="vocab-filter-btn" data-cat="phrasal" onclick="filterVocabCategory('phrasal')">Phrasal Verbs (10)</button>
+              <button class="vocab-filter-btn" data-cat="collocations" onclick="filterVocabCategory('collocations')">Collocations (15)</button>
+              <button class="vocab-filter-btn" data-cat="idioms" onclick="filterVocabCategory('idioms')">Idioms (5)</button>
+            </div>
+            <div class="vocab-filter-group" id="vocab-level-filters">
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); align-self: center;">CEFR:</span>
+              <button class="vocab-filter-btn active" data-lvl="all" onclick="filterVocabLevel('all')">Tất cả</button>
+              <button class="vocab-filter-btn" data-lvl="B1" onclick="filterVocabLevel('B1')">B1</button>
+              <button class="vocab-filter-btn" data-lvl="B2" onclick="filterVocabLevel('B2')">B2</button>
+              <button class="vocab-filter-btn" data-lvl="C1" onclick="filterVocabLevel('C1')">C1</button>
+              <button class="vocab-filter-btn" data-lvl="C2" onclick="filterVocabLevel('C2')">C2</button>
+            </div>
+          </div>
+
+          <!-- Main Interactive Container -->
+          <div id="vocab-interactive-container"></div>
+        </section>
+
         <!-- ================= VIEW 4: AI EVALUATION STUDIO ================= -->
         <section id="ai-eval-view" class="view-panel">
           <div style="margin-bottom: 24px;">
@@ -411,6 +475,10 @@
         <div class="bottom-nav-item" data-view="category-english10-view" onclick="window.location.hash='#english10'">
           <span class="bottom-nav-item__icon">📘</span>
           <span>Grammar</span>
+        </div>
+        <div class="bottom-nav-item" data-view="vocab-view" onclick="window.location.hash='#vocab'">
+          <span class="bottom-nav-item__icon">💎</span>
+          <span>Vocab</span>
         </div>
         <div class="bottom-nav-item" data-view="ai-eval-view" onclick="window.location.hash='#ai-eval'">
           <span class="bottom-nav-item__icon">🤖</span>

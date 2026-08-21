@@ -46,8 +46,26 @@ window.PortalSearch = (function() {
         });
       }
 
-      // 3. Default quick links
+      // 3. Fetch Vocabulary Database (Global Success 10 - 550 words)
+      const resVocab = await fetch('data/vocab-eng10.json').then(r => r.json()).catch(() => null);
+      if (resVocab && Array.isArray(resVocab.units)) {
+        resVocab.units.forEach(u => {
+          (u.wordList || []).forEach(w => {
+            searchIndex.push({
+              title: `${w.term} (${w.pos}) - [${w.level}]`,
+              category: `Vocab Unit ${u.unit}`,
+              badgeClass: 'badge--vocab',
+              snippet: `${w.meaningVn} — Ví dụ: "${w.example}"`,
+              hash: `#vocab?unit=${u.unit}&word=${w.id}`,
+              subId: w.id
+            });
+          });
+        });
+      }
+
+      // 4. Default quick links
       searchIndex.push(
+        { title: 'Vocabulary Studio (550 Terms)', category: 'Vocabulary', badgeClass: 'badge--vocab', snippet: 'Interactive 3D Flashcards & Quizzes for Global Success 10', hash: '#vocab' },
         { title: 'Doloc Town · Lexicode Matrix', category: 'Vocabulary', badgeClass: 'badge--vocab', snippet: 'Gamified Grade 10 Vocabulary & Collocation Trainer (CT GDPT 2018)', hash: 'lexicode.html', isExternal: true },
         { title: 'Practice Tests & Mock Quizzes', category: 'Practice Tests', badgeClass: 'badge--e10', snippet: 'Grade 10 Unit Grammar and Practice Tests', hash: '#quiz' },
         { title: 'Learning Analytics & Dashboard', category: 'Dashboard', badgeClass: 'badge--neutral', snippet: 'Personal learning statistics and data management', hash: '#dashboard' }

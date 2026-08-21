@@ -1,6 +1,6 @@
 /**
  * APP.JS - English Insiders Learning Portal Core Application Controller
- * ES Module with Spine Data Backbone, SPA Hash Router & AI Evaluation Engine
+ * ES Module with Spine Data Backbone, SPA Hash Router, Vocabulary Studio & AI Evaluation Engine
  */
 
 import { Spine } from '../core/spine.js';
@@ -8,8 +8,17 @@ import { Spine } from '../core/spine.js';
 // Global Data Holders
 let globalEng10Data = null;
 let globalAiEvalData = null;
+let globalVocabData = null;
 let skillsChart = null;
 let progressChart = null;
+
+// Vocabulary Studio State
+let currentVocabUnit = 1;
+let currentVocabMode = 'cards'; // 'cards' | 'table' | 'quiz'
+let currentVocabCategory = 'all'; // 'all' | 'academic' | 'phrasal' | 'collocations' | 'idioms'
+let currentVocabLevel = 'all'; // 'all' | 'B1' | 'B2' | 'C1' | 'C2'
+let currentCardIndex = 0;
+let activeWordDeck = [];
 
 // Expose Spine Helper to Window for UI button handlers
 window.SpineHelper = {
@@ -57,42 +66,407 @@ function updateStudentDisplay() {
   }
 }
 
-// Global Practice Theory Inline Check
-window.checkGgdInlineTheoryPractice = function(btn, isCorrect, feedbackMsg) {
-  const container = btn.closest('.ggd-inline-quiz-box') || btn.parentElement.parentElement;
-  if (!container) return;
-  const feedbackEl = container.querySelector('.ggd-inline-feedback');
-  const allBtns = container.querySelectorAll('.ggd-inline-opt-btn');
+// Global Text-to-Speech Pronunciation Helper
+window.speakVocabWord = function(text, event) {
+  if (event) event.stopPropagation();
+  if (!('speechSynthesis' in window)) {
+    console.warn('Speech synthesis not supported on this device.');
+    return;
+  }
+  window.speechSynthesis.cancel();
+  const clean = text.replace(/[\(\)\/\*]/g, '').trim();
+  const utter = new SpeechSynthesisUtterance(clean);
+  utter.lang = 'en-US';
+  utter.rate = 0.9;
+  window.speechSynthesis.speak(utter);
+};
 
-  allBtns.forEach(b => {
-    b.disabled = true;
-    b.style.opacity = '0.7';
+// ==========================================================================
+// VOCABULARY STUDIO (GLOBAL SUCCESS 10)
+// ==========================================================================
+
+function getFilteredVocabWords() {
+  if (!globalVocabData || !Array.isArray(globalVocabData.units)) return [];
+  const unitObj = globalVocabData.units.find(u => u.unit === currentVocabUnit);
+  if (!unitObj) return [];
+
+  return (unitObj.wordList || []).filter(w => {
+    // Filter Category
+    if (currentVocabCategory !== 'all' && w.categoryKey !== currentVocabCategory) {
+      return false;
+    }
+    // Filter Level
+    if (currentVocabLevel !== 'all' && w.level !== currentVocabLevel) {
+      return false;
+    }
+    return true;
   });
+}
 
-  if (isCorrect) {
-    btn.style.background = '#dcfce7';
-    btn.style.borderColor = '#10b981';
-    btn.style.color = '#047857';
-    btn.style.opacity = '1';
-    if (feedbackEl) {
-      feedbackEl.style.color = '#047857';
-      feedbackEl.style.marginTop = '10px';
-      feedbackEl.innerHTML = feedbackMsg;
+window.setVocabUnit = function(unitNum) {
+  currentVocabUnit = parseInt(unitNum, 10) || 1;
+  currentCardIndex = 0;
+  Spine.openModule('vocab', currentVocabUnit);
+  renderVocabStudio();
+};
+
+window.setVocabDisplayMode = function(mode) {
+  currentVocabMode = mode;
+  ['cards', 'table', 'quiz'].forEach(m => {
+    const btn = document.getElementById(`btn-vocab-mode-${m}`);
+    if (btn) {
+      if (m === mode) btn.classList.add('active');
+      else btn.classList.remove('active');
     }
-  } else {
-    btn.style.background = '#fee2e2';
-    btn.style.borderColor = '#ef4444';
-    btn.style.color = '#b91c1c';
-    btn.style.opacity = '1';
-    if (feedbackEl) {
-      feedbackEl.style.color = '#b91c1c';
-      feedbackEl.style.marginTop = '10px';
-      feedbackEl.innerHTML = feedbackMsg;
-    }
+  });
+  renderVocabActiveMode();
+};
+
+window.filterVocabCategory = function(cat) {
+  currentVocabCategory = cat;
+  currentCardIndex = 0;
+  document.querySelectorAll('#vocab-category-filters .vocab-filter-btn').forEach(b => {
+    if (b.dataset.cat === cat) b.classList.add('active');
+    else b.classList.remove('active');
+  });
+  renderVocabActiveMode();
+};
+
+window.filterVocabLevel = function(level) {
+  currentVocabLevel = level;
+  currentCardIndex = 0;
+  document.querySelectorAll('#vocab-level-filters .vocab-filter-btn').forEach(b => {
+    if (b.dataset.lvl === level) b.classList.add('active');
+    else b.classList.remove('active');
+  });
+  renderVocabActiveMode();
+};
+
+window.flipVocabCard = function() {
+  const cardEl = document.getElementById('active-3d-card');
+  if (cardEl) {
+    cardEl.classList.toggle('is-flipped');
   }
 };
 
-// Open English 10 Interactive Level
+window.nextVocabCard = function() {
+  if (activeWordDeck.length === 0) return;
+  currentCardIndex = (currentCardIndex + 1) % activeWordDeck.length;
+  renderFlashcardDeck();
+};
+
+window.prevVocabCard = function() {
+  if (activeWordDeck.length === 0) return;
+  currentCardIndex = (currentCardIndex - 1 + activeWordDeck.length) % activeWordDeck.length;
+  renderFlashcardDeck();
+};
+
+window.shuffleVocabCards = function() {
+  for (let i = activeWordDeck.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [activeWordDeck[i], activeWordDeck[j]] = [activeWordDeck[j], activeWordDeck[i]];
+  }
+  currentCardIndex = 0;
+  renderFlashcardDeck();
+};
+
+function renderVocabStudio() {
+  if (!globalVocabData || !Array.isArray(globalVocabData.units)) return;
+
+  // 1. Render Unit Selector Bar
+  const unitBar = document.getElementById('vocab-unit-bar');
+  if (unitBar) {
+    unitBar.innerHTML = globalVocabData.units.map(u => `
+      <button class="vocab-unit-pill ${u.unit === currentVocabUnit ? 'active' : ''}" onclick="setVocabUnit(${u.unit})">
+        <span>Unit ${u.unit}: ${u.title}</span>
+      </button>
+    `).join('');
+  }
+
+  renderVocabActiveMode();
+}
+
+function renderVocabActiveMode() {
+  activeWordDeck = getFilteredVocabWords();
+  const container = document.getElementById('vocab-interactive-container');
+  if (!container) return;
+
+  if (currentVocabMode === 'cards') {
+    renderFlashcardDeck();
+  } else if (currentVocabMode === 'table') {
+    renderWordTable();
+  } else if (currentVocabMode === 'quiz') {
+    renderVocabQuiz();
+  }
+}
+
+function renderFlashcardDeck() {
+  const container = document.getElementById('vocab-interactive-container');
+  if (!container) return;
+
+  if (activeWordDeck.length === 0) {
+    container.innerHTML = `
+      <div style="text-align: center; padding: 48px; background: #fff; border-radius: var(--radius-xl); border: 1px solid var(--border-subtle);">
+        <span style="font-size: 2.5rem;">🔍</span>
+        <h3 style="margin-top: 12px; color: var(--navy-900);">Không có từ vựng phù hợp bộ lọc</h3>
+        <p style="color: var(--text-secondary); margin-top: 4px;">Vui lòng chọn bộ lọc khác để hiển thị từ vựng.</p>
+      </div>
+    `;
+    return;
+  }
+
+  if (currentCardIndex >= activeWordDeck.length) currentCardIndex = 0;
+  const word = activeWordDeck[currentCardIndex];
+
+  // Telemetry: View Item
+  Spine.viewItem(word.id, { module: 'vocab', unit: currentVocabUnit });
+
+  container.innerHTML = `
+    <div class="vocab-flashcard-stage">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-weight: 700; font-size: 0.88rem; color: var(--text-secondary);">
+        <span>Unit ${currentVocabUnit} · ${word.section}</span>
+        <span>Thẻ ${currentCardIndex + 1} / ${activeWordDeck.length}</span>
+      </div>
+
+      <div class="vocab-card-3d" id="active-3d-card" onclick="flipVocabCard()">
+        <!-- FRONT FACE -->
+        <div class="vocab-card-face vocab-card-face--front">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+              <span class="vocab-badge-cefr cefr-${word.level.toLowerCase()}">CEFR ${word.level}</span>
+              <button class="vocab-card-speaker" onclick="speakVocabWord('${word.term.replace(/'/g, "\\'")}', event)" title="Nghe phát âm">
+                🔊
+              </button>
+            </div>
+            <div class="vocab-card-word">${word.term}</div>
+            <div style="font-size: 1.05rem; color: var(--text-secondary); font-style: italic; margin-bottom: 18px;">
+              (${word.pos})
+            </div>
+          </div>
+          <div>
+            <div class="vocab-card-example">
+              "${word.example}"
+            </div>
+            <div style="text-align: center; margin-top: 16px; font-size: 0.82rem; color: var(--text-muted); font-weight: 600;">
+              👆 Nhấp vào thẻ để lật xem nghĩa tiếng Việt & phân tích
+            </div>
+          </div>
+        </div>
+
+        <!-- BACK FACE -->
+        <div class="vocab-card-face vocab-card-face--back">
+          <div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+              <span class="vocab-badge-cefr cefr-${word.level.toLowerCase()}" style="border: 1px solid rgba(255,255,255,0.4);">CEFR ${word.level}</span>
+              <button class="vocab-card-speaker" style="background: rgba(255,255,255,0.15); color: #fff; border-color: rgba(255,255,255,0.3);" onclick="speakVocabWord('${word.term.replace(/'/g, "\\'")}', event)" title="Nghe phát âm">
+                🔊
+              </button>
+            </div>
+            <div style="font-size: 1.4rem; font-weight: 800; color: #818cf8; margin-bottom: 4px;">
+              ${word.term} <span style="font-size: 0.95rem; color: #cbd5e1; font-weight: 500;">(${word.pos})</span>
+            </div>
+            <div style="font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 16px; line-height: 1.4;">
+              ${word.meaningVn}
+            </div>
+          </div>
+          <div>
+            <div class="vocab-card-example">
+              "${word.example}"
+            </div>
+            <div style="text-align: center; margin-top: 16px; font-size: 0.82rem; color: #94a3b8; font-weight: 600;">
+              Chủ đề: ${word.section} · ID: ${word.id}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <div class="vocab-deck-controls">
+        <button class="btn btn--secondary" onclick="prevVocabCard()">⬅️ Thẻ Trước</button>
+        <button class="btn btn--primary" onclick="flipVocabCard()">🔄 Lật Thẻ</button>
+        <button class="btn btn--secondary" onclick="nextVocabCard()">Thẻ Sau ➡️</button>
+        <button class="btn btn--secondary btn--sm" onclick="shuffleVocabCards()" title="Trộn ngẫu nhiên">🔀 Trộn Thẻ</button>
+      </div>
+    </div>
+  `;
+}
+
+function renderWordTable() {
+  const container = document.getElementById('vocab-interactive-container');
+  if (!container) return;
+
+  container.innerHTML = `
+    <div style="margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+      <div style="font-size: 0.92rem; font-weight: 700; color: var(--navy-900);">
+        Danh Sách Từ Vựng Unit ${currentVocabUnit} (${activeWordDeck.length} mục từ)
+      </div>
+      <input type="text" id="vocab-table-search-input" placeholder="🔍 Lọc nhanh từ vựng hoặc nghĩa..." style="padding: 8px 14px; border: 1.5px solid var(--border-subtle); border-radius: var(--radius-md); font-size: 0.88rem; outline: none; width: 280px;" oninput="filterVocabTableSearch(this.value)">
+    </div>
+    <div class="vocab-table-container">
+      <table class="vocab-table">
+        <thead>
+          <tr>
+            <th style="width: 50px;">STT</th>
+            <th style="width: 220px;">Từ Vựng / Cụm Từ</th>
+            <th style="width: 80px;">Loại Từ</th>
+            <th style="width: 70px;">CEFR</th>
+            <th style="width: 240px;">Nghĩa Tiếng Việt</th>
+            <th>Ví Dụ Ngữ Cảnh Thực Tế</th>
+          </tr>
+        </thead>
+        <tbody id="vocab-table-tbody">
+          ${activeWordDeck.map((w, idx) => `
+            <tr>
+              <td style="font-weight: 700; color: var(--text-muted);">${idx + 1}</td>
+              <td>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <strong style="color: var(--navy-900); font-size: 0.95rem;">${w.term}</strong>
+                  <button class="vocab-card-speaker" style="width: 28px; height: 28px; font-size: 0.85rem;" onclick="speakVocabWord('${w.term.replace(/'/g, "\\'")}', event)">🔊</button>
+                </div>
+              </td>
+              <td><span style="font-style: italic; color: var(--text-secondary);">${w.pos}</span></td>
+              <td><span class="vocab-badge-cefr cefr-${w.level.toLowerCase()}">${w.level}</span></td>
+              <td style="font-weight: 600; color: #1e293b;">${w.meaningVn}</td>
+              <td style="font-style: italic; color: #475569; line-height: 1.4;">"${w.example}"</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+window.filterVocabTableSearch = function(query) {
+  const q = (query || '').toLowerCase().trim();
+  const tbody = document.getElementById('vocab-table-tbody');
+  if (!tbody) return;
+
+  const filtered = activeWordDeck.filter(w => {
+    return w.term.toLowerCase().includes(q) || w.meaningVn.toLowerCase().includes(q) || w.example.toLowerCase().includes(q);
+  });
+
+  tbody.innerHTML = filtered.map((w, idx) => `
+    <tr>
+      <td style="font-weight: 700; color: var(--text-muted);">${idx + 1}</td>
+      <td>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <strong style="color: var(--navy-900); font-size: 0.95rem;">${w.term}</strong>
+          <button class="vocab-card-speaker" style="width: 28px; height: 28px; font-size: 0.85rem;" onclick="speakVocabWord('${w.term.replace(/'/g, "\\'")}', event)">🔊</button>
+        </div>
+      </td>
+      <td><span style="font-style: italic; color: var(--text-secondary);">${w.pos}</span></td>
+      <td><span class="vocab-badge-cefr cefr-${w.level.toLowerCase()}">${w.level}</span></td>
+      <td style="font-weight: 600; color: #1e293b;">${w.meaningVn}</td>
+      <td style="font-style: italic; color: #475569; line-height: 1.4;">"${w.example}"</td>
+    </tr>
+  `).join('');
+};
+
+function renderVocabQuiz() {
+  const container = document.getElementById('vocab-interactive-container');
+  if (!container) return;
+
+  if (activeWordDeck.length < 4) {
+    container.innerHTML = `<p>Cần ít nhất 4 từ vựng để tạo bài trắc nghiệm.</p>`;
+    return;
+  }
+
+  // Generate 8 quiz questions from activeWordDeck
+  const shuffledDeck = [...activeWordDeck].sort(() => 0.5 - Math.random());
+  const quizItems = shuffledDeck.slice(0, 8);
+
+  container.innerHTML = `
+    <div class="quiz-container">
+      <div class="quiz-header">
+        <div>
+          <span class="badge badge--vocab" style="margin-bottom: 6px;">Unit ${currentVocabUnit} Mastery Quiz</span>
+          <h2 class="quiz-header__title">Trắc Nghiệm Nhanh Từ Vựng</h2>
+        </div>
+        <button class="btn btn--secondary btn--sm" onclick="renderVocabQuiz()">🔄 Đổi Đề Khác</button>
+      </div>
+      <div class="questions-list">
+        ${quizItems.map((targetWord, idx) => {
+          // 3 distractors
+          const distractors = activeWordDeck.filter(w => w.id !== targetWord.id).sort(() => 0.5 - Math.random()).slice(0, 3);
+          const options = [targetWord, ...distractors].sort(() => 0.5 - Math.random());
+          const correctIndex = options.findIndex(o => o.id === targetWord.id);
+          const qId = `VOC-Q-${targetWord.id}`;
+
+          return `
+            <div class="question-card" id="card-${qId}" data-qid="${qId}">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span class="item-ai-tag">💎 Vocab Mastery Check</span>
+                <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Câu ${idx + 1}/8</span>
+              </div>
+              <div class="question-prompt">
+                Từ/Cụm từ nào mang nghĩa: <strong>"${targetWord.meaningVn}"</strong> (${targetWord.pos})?
+              </div>
+              <div class="options-grid">
+                ${options.map((opt, optIdx) => `
+                  <button class="opt-btn" onclick="handleVocabQuizAnswer(this, '${targetWord.id}', '${qId}', ${optIdx}, ${correctIndex}, '${targetWord.term.replace(/'/g, "\\'")}', '${targetWord.meaningVn.replace(/'/g, "\\'")}', '${targetWord.example.replace(/'/g, "\\'")}')">
+                    ${opt.term}
+                  </button>
+                `).join('')}
+              </div>
+              <div class="explanation-box" id="expl-box-${qId}">
+                <div class="expl-content"></div>
+              </div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    </div>
+  `;
+}
+
+window.handleVocabQuizAnswer = function(btn, wordId, qId, chosenIdx, correctIdx, term, meaning, example) {
+  const parentCard = btn.closest('.question-card');
+  if (!parentCard || parentCard.dataset.answered === 'true') return;
+  parentCard.dataset.answered = 'true';
+
+  const isCorrect = (chosenIdx === correctIdx);
+  const allBtns = parentCard.querySelectorAll('.opt-btn');
+
+  if (isCorrect) {
+    btn.classList.add('opt-btn--correct');
+  } else {
+    btn.classList.add('opt-btn--wrong');
+    if (allBtns[correctIdx]) {
+      allBtns[correctIdx].classList.add('opt-btn--correct');
+    }
+  }
+
+  // Spine Logging
+  Spine.answerItem(wordId, {
+    module: 'vocab',
+    unit: currentVocabUnit,
+    response: String(chosenIdx),
+    correct: isCorrect
+  });
+
+  // Show explanation
+  const explBox = parentCard.querySelector('.explanation-box');
+  if (explBox) {
+    explBox.classList.add('active');
+    const contentEl = explBox.querySelector('.expl-content');
+    if (contentEl) {
+      contentEl.innerHTML = `
+        <div style="color: #0f172a; line-height: 1.5; padding: 12px; background: #f8fafc; border-radius: 6px;">
+          <strong>Đáp án đúng:</strong> <span style="color: #047857; font-weight: 700;">${term}</span><br>
+          <strong>Nghĩa:</strong> ${meaning}<br>
+          <strong>Ví dụ:</strong> <em>"${example}"</em>
+        </div>
+      `;
+    }
+  }
+
+  updateStudentDisplay();
+};
+
+// ==========================================================================
+// ENGLISH 10 (GRAMMAR)
+// ==========================================================================
+
 window.openE10LevelModal = function(levelId) {
   if (!globalEng10Data || !Array.isArray(globalEng10Data.grammar_levels)) return;
   const lvl = globalEng10Data.grammar_levels.find(l => String(l.id) === String(levelId));
@@ -195,7 +569,10 @@ window.handleE10OptionAnswer = function(btn, questionId, levelId, optionIndex, c
   updateStudentDisplay();
 };
 
-// Render AI Evaluation Studio View
+// ==========================================================================
+// AI EVALUATION STUDIO
+// ==========================================================================
+
 function renderAiEvalTasks() {
   const container = document.getElementById('ai-eval-tasks-container');
   if (!container || !globalAiEvalData || !Array.isArray(globalAiEvalData.items)) return;
@@ -205,7 +582,6 @@ function renderAiEvalTasks() {
   container.innerHTML = globalAiEvalData.items.map((item, idx) => {
     const cat = (globalAiEvalData.categories || []).find(c => c.id === (item.error.category || item.error.probe_category));
     const catName = cat ? `${cat.name} (${cat.nameEn})` : 'Ngữ pháp tổng quát';
-    const hasError = item.error.present;
 
     return `
       <div class="ai-eval-container" id="ai-task-card-${item.id}" data-task-id="${item.id}">
@@ -247,13 +623,11 @@ function renderAiEvalTasks() {
     `;
   }).join('');
 
-  // Start timer / view items
   globalAiEvalData.items.forEach(item => {
     Spine.aiEvalOpen(item.id, { kind: item.kind, hasError: item.error.present });
   });
 }
 
-// Span selection helper
 const selectedAiSpans = {};
 
 window.selectAiEvalSpan = function(itemId, spanId) {
@@ -300,7 +674,6 @@ window.submitAiEvalAnswer = function(itemId) {
   const feedbackEl = document.getElementById(`feedback-${itemId}`);
   const statusEl = document.getElementById(`ai-eval-status-${itemId}`);
 
-  // Highlight spans
   if (hasError) {
     const errorSpanEl = document.getElementById(`span-${itemId}-${item.error.span}`);
     if (errorSpanEl) errorSpanEl.classList.add('correct');
@@ -340,7 +713,6 @@ window.submitAiEvalAnswer = function(itemId) {
     }
   }
 
-  // Spine aiEvalAnswer log
   Spine.aiEvalAnswer(itemId, {
     kind: item.kind,
     hasError: hasError,
@@ -353,7 +725,10 @@ window.submitAiEvalAnswer = function(itemId) {
   updateStudentDisplay();
 };
 
-// Render Dashboard
+// ==========================================================================
+// DASHBOARD
+// ==========================================================================
+
 function renderDashboard() {
   const metrics = Spine.metrics;
   const totalAnsweredEl = document.getElementById('stat-total-answered');
@@ -364,7 +739,6 @@ function renderDashboard() {
   if (accuracyRateEl) accuracyRateEl.textContent = `${metrics.accuracy || 0}%`;
   if (streakDaysEl) streakDaysEl.textContent = `${metrics.streak || 1} Ngày`;
 
-  // Render Radar & Progress Charts
   const radarCtx = document.getElementById('chart-skills-radar');
   const barCtx = document.getElementById('chart-progress-bars');
 
@@ -423,7 +797,10 @@ function renderDashboard() {
   }
 }
 
-// Main Application Initialization
+// ==========================================================================
+// APPLICATION LIFECYCLE & ROUTING
+// ==========================================================================
+
 document.addEventListener('DOMContentLoaded', async () => {
   // 1. Initialize Spine
   const spineInit = await Spine.init();
@@ -435,12 +812,14 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // 2. Fetch Datasets
   try {
-    const [e10Res, aiEvalRes] = await Promise.all([
+    const [e10Res, aiEvalRes, vocabRes] = await Promise.all([
       fetch('data/eng10-units.json').then(r => r.json()).catch(() => null),
-      fetch('data/ai-eval-bank.json').then(r => r.json()).catch(() => null)
+      fetch('data/ai-eval-bank.json').then(r => r.json()).catch(() => null),
+      fetch('data/vocab-eng10.json').then(r => r.json()).catch(() => null)
     ]);
     globalEng10Data = e10Res;
     globalAiEvalData = aiEvalRes;
+    globalVocabData = vocabRes;
   } catch (e) {
     console.warn('Error loading datasets:', e);
   }
@@ -475,12 +854,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 5. Render AI Evaluation Tasks
   renderAiEvalTasks();
 
-  // 6. Router & View Switching
+  // 6. Render Vocabulary Studio
+  renderVocabStudio();
+
+  // 7. Router & View Switching
   const viewMap = {
     'home': 'overview-view',
     'overview': 'overview-view',
     'dashboard': 'dashboard-view',
     'english10': 'category-english10-view',
+    'vocab': 'vocab-view',
     'ai-eval': 'ai-eval-view',
     'quiz': 'quiz-hub-view'
   };
@@ -489,6 +872,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     'overview-view': ['Portal Home'],
     'dashboard-view': ['Portal Home', 'Dashboard & Progress'],
     'category-english10-view': ['Portal Home', 'Grammar'],
+    'vocab-view': ['Portal Home', 'Vocabulary Studio (Global Success 10)'],
     'ai-eval-view': ['Portal Home', 'Xưởng Đánh Giá AI (Miền 6)'],
     'quiz-hub-view': ['Portal Home', 'Practice Tests & Quizzes']
   };
@@ -536,17 +920,48 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     if (viewId === 'dashboard-view') {
       renderDashboard();
+    } else if (viewId === 'vocab-view') {
+      renderVocabStudio();
     }
   }
 
   function handleHashChange() {
-    const hash = window.location.hash.replace('#', '').toLowerCase();
+    const rawHash = window.location.hash.replace('#', '');
+    const [pathPart, queryPart] = rawHash.split('?');
+    const hash = (pathPart || 'home').toLowerCase();
+
+    // Check query params
+    if (queryPart) {
+      const params = new URLSearchParams(queryPart);
+      if (params.has('unit')) {
+        currentVocabUnit = parseInt(params.get('unit'), 10) || 1;
+      }
+    }
+
     const targetViewId = viewMap[hash] || 'overview-view';
     switchView(targetViewId);
   }
 
   window.addEventListener('hashchange', handleHashChange);
   handleHashChange();
+
+  // Keyboard navigation for Flashcard Deck
+  window.addEventListener('keydown', (e) => {
+    const vocabPanel = document.getElementById('vocab-view');
+    if (!vocabPanel || !vocabPanel.classList.contains('active')) return;
+    if (currentVocabMode !== 'cards') return;
+
+    if (e.code === 'Space') {
+      e.preventDefault();
+      flipVocabCard();
+    } else if (e.code === 'ArrowRight') {
+      e.preventDefault();
+      nextVocabCard();
+    } else if (e.code === 'ArrowLeft') {
+      e.preventDefault();
+      prevVocabCard();
+    }
+  });
 
   // Mobile Drawer
   const hamburgerBtn = document.getElementById('header-hamburger-btn');
