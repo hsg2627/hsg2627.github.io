@@ -14,8 +14,10 @@ async function sha256(s) {
 }
 
 function lockScreen() {
-  const root = document.getElementById('gs10-app-root');
-  if (root) {
+  return new Promise((resolve) => {
+    const root = document.getElementById('gs10-app-root');
+    if (!root) return resolve(false);
+
     root.innerHTML = `
       <div style="max-width:540px; margin:40px auto; background:#FFFFFF; padding:32px 24px; border-radius:12px; text-align:center; box-shadow:0 4px 20px rgba(0,0,0,0.08); font-family:system-ui, sans-serif;">
         <div style="font-size:42px; margin-bottom:12px;">🔒</div>
@@ -28,10 +30,19 @@ function lockScreen() {
           <a href="/practice/" style="padding:10px 18px; background:#283567; color:#fff; text-decoration:none; border-radius:8px; font-weight:600;">📖 Luyện tập →</a>
           <a href="/ai-logs/" style="padding:10px 18px; background:#8A6A1C; color:#fff; text-decoration:none; border-radius:8px; font-weight:600;">🤖 Xưởng AI →</a>
         </div>
+        <div style="margin-top:24px; border-top:1px solid #ECEAE5; padding-top:16px;">
+          <button id="btn-unlock-teacher" style="background:none; border:none; color:#5C6079; text-decoration:underline; font-size:13.5px; cursor:pointer;">
+            🔑 Tôi là giáo viên (Mở khóa bài giảng)
+          </button>
+        </div>
       </div>
     `;
-  }
-  return false;
+
+    document.getElementById('btn-unlock-teacher')?.addEventListener('click', async () => {
+      const ok = await askPassword();
+      resolve(ok);
+    });
+  });
 }
 
 function askPassword() {
