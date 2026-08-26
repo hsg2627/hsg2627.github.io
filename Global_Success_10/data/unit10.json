@@ -1,0 +1,876 @@
+{
+  "unit_id": 10,
+  "unit_code": "UNIT 10",
+  "title": "Ecotourism",
+  "semester": "Semester 2",
+  "theme_color": "#c05621",
+  "icon": "📷",
+  "subtitle": "Sustainable travel, national parks, eco-destinations & cultural respect",
+  "theme_image": "assets/images/unit10/theme_illustration.png",
+  "fallback_image": "assets/images/ui/Codex Image Aug 26, 2026, 04_02_06 PM.png",
+  "lessons": [
+    {
+      "lesson_id": 1,
+      "lesson_code": "01",
+      "lesson_type": "GETTING STARTED",
+      "title": "Getting started – An eco-friendly fieldtrip to Phong Nha Cave",
+      "short_title": "An eco-friendly fieldtrip to Phong Nha Cave",
+      "icon": "🚀",
+      "objectives": [
+        "Vocabulary: Understand the meaning of the key words or word collocations below: stalactite, fieldtrip, packaging",
+        "Pronunciation: Pronounce the following words, words clusters correctly:",
+        "Grammar: Understand and use the future simple tense.",
+        "Competencies: a. General competencies:",
+        "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, collaboration b. Specific competencies:"
+      ],
+      "media": {
+        "audio": "assets/audio/unit10/lesson01_audio.mp3",
+        "video": "assets/videos/unit10/lesson01_video.mp4",
+        "images": [
+          "assets/images/unit10/lesson01_img1.png",
+          "assets/images/unit10/lesson01_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: Understand the meaning of the key words or word collocations below: stalactite, fieldtrip, packaging",
+            "Pronunciation: Pronounce the following words, words clusters correctly:",
+            "Grammar: Understand and use the future simple tense.",
+            "Competencies: a. General competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_getting_started",
+          "section_title": "📖 1. Listen & Read: Introductory Dialogue",
+          "content_type": "dialogue_activity",
+          "instruction": "Listen to the conversation and read along. Pay attention to key topic expressions.",
+          "dialogue": [
+            {
+              "speaker": "Speaker A",
+              "text": "Welcome to our study of Unit 10: Ecotourism! Let's explore the key ideas together."
+            },
+            {
+              "speaker": "Speaker B",
+              "text": "Yes! We will discover practical vocabulary and real-world skills related to Sustainable travel, national parks, eco-destinations & cultural respect."
+            }
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10 C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Getting started in Unit 10?",
+              "options": [
+                "To master core vocabulary and language skills related to Ecotourism",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 10 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "lesson_code": "02",
+      "lesson_type": "LANGUAGE",
+      "title": "Language – Intonation in questions & Conditional sentences Type 1 and Type 2",
+      "short_title": "Intonation in questions & Conditional sentences Type 1 and Type 2",
+      "icon": "💬",
+      "objectives": [
+        "Vocabulary: Use the lexical items related to the topic ecotourism",
+        "Pronunciation: Identify intonation patterns and use appropriate intonation (i.e. rising or falling tone)",
+        "Grammar: Use conditional sentences Type 1 and Type 2 correctly.",
+        "Competencies: a. General competencies:",
+        "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, collaboration b. Specific competencies:"
+      ],
+      "media": {
+        "audio": "assets/audio/unit10/lesson02_audio.mp3",
+        "video": "assets/videos/unit10/lesson02_video.mp4",
+        "images": [
+          "assets/images/unit10/lesson02_img1.png",
+          "assets/images/unit10/lesson02_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: Use the lexical items related to the topic ecotourism",
+            "Pronunciation: Identify intonation patterns and use appropriate intonation (i.e. rising or falling tone)",
+            "Grammar: Use conditional sentences Type 1 and Type 2 correctly.",
+            "Competencies: a. General competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_language_focus",
+          "section_title": "🔍 1. Pronunciation & Grammar Focus",
+          "content_type": "grammar_rule",
+          "grammar_title": "Intonation in questions & Conditional sentences Type 1 and Type 2",
+          "rule_summary": "Master the pronunciation rules and grammatical structures required for Unit 10 under MoET 2018.",
+          "examples": [
+            "Example 1: In everyday communication, accuracy in pronunciation ensures clear understanding.",
+            "Example 2: Contextual practice helps automate grammar usage naturally."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10 C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Language in Unit 10?",
+              "options": [
+                "To master core vocabulary and language skills related to Ecotourism",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 10 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "lesson_code": "03",
+      "lesson_type": "READING",
+      "title": "Reading – Ecotour brochures & national park guidelines",
+      "short_title": "Ecotour brochures & national park guidelines",
+      "icon": "📖",
+      "objectives": [
+        "Vocabulary: Understand the meaning of the key words or word collocations below: Protect, souvenir, explore",
+        "Pronunciation: Pronounce the following words, words clusters correctly: protect, souvenir, explore",
+        "Grammar: review",
+        "Competencies: a. General competencies:",
+        "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, collaboration b. Specific competencies:"
+      ],
+      "media": {
+        "audio": "assets/audio/unit10/lesson03_audio.mp3",
+        "video": "assets/videos/unit10/lesson03_video.mp4",
+        "images": [
+          "assets/images/unit10/lesson03_img1.png",
+          "assets/images/unit10/lesson03_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: Understand the meaning of the key words or word collocations below: Protect, souvenir, explore",
+            "Pronunciation: Pronounce the following words, words clusters correctly: protect, souvenir, explore",
+            "Grammar: review",
+            "Competencies: a. General competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_reading_passage",
+          "section_title": "📚 1. Reading Passage",
+          "content_type": "reading_text",
+          "passage_title": "Ecotour brochures & national park guidelines",
+          "paragraphs": [
+            "Ecotourism plays an essential role in contemporary society. Engaging with this topic encourages high school students to reflect on their daily habits and global responsibilities.",
+            "Through systematic inquiry into Sustainable travel, national parks, eco-destinations & cultural respect, learners cultivate critical thinking, broaden their vocabulary, and prepare for academic communication."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10 C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Reading in Unit 10?",
+              "options": [
+                "To master core vocabulary and language skills related to Ecotourism",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 10 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "lesson_code": "04",
+      "lesson_type": "SPEAKING",
+      "title": "Speaking – How to become a responsible ecotourist",
+      "short_title": "How to become a responsible ecotourist",
+      "icon": "👥",
+      "objectives": [
+        "Vocabulary: Vocabulary related to the ecotourism",
+        "Pronunciation: Pronounce the words, words clusters correctly",
+        "Grammar: Giving suggestions",
+        "Competencies: a. General competencies:",
+        "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, collaboration b. Specific competencies:"
+      ],
+      "media": {
+        "audio": "assets/audio/unit10/lesson04_audio.mp3",
+        "video": "assets/videos/unit10/lesson04_video.mp4",
+        "images": [
+          "assets/images/unit10/lesson04_img1.png",
+          "assets/images/unit10/lesson04_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: Vocabulary related to the ecotourism",
+            "Pronunciation: Pronounce the words, words clusters correctly",
+            "Grammar: Giving suggestions",
+            "Competencies: a. General competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_speaking_tasks",
+          "section_title": "🗣️ 1. Guided Discussion & Roleplay",
+          "content_type": "speaking_prompts",
+          "prompt_title": "Topic for Pair Discussion",
+          "guiding_questions": [
+            "What are the main aspects of Ecotourism that relate to your daily life?",
+            "How can young people in Viet Nam contribute positively to this area?",
+            "What advice would you give to your peers?"
+          ],
+          "useful_expressions": [
+            "In my opinion...",
+            "From my perspective...",
+            "I strongly believe that...",
+            "We should consider that..."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10 C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Speaking in Unit 10?",
+              "options": [
+                "To master core vocabulary and language skills related to Ecotourism",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 10 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 5,
+      "lesson_code": "05",
+      "lesson_type": "LISTENING",
+      "title": "Listening – An ecotour in the Mekong Delta",
+      "short_title": "An ecotour in the Mekong Delta",
+      "icon": "🎧",
+      "objectives": [
+        "Vocabulary: Vocabulary related to the ecotourism",
+        "Pronunciation: Pronounce the words, words clusters correctly",
+        "Competencies: a. General competencies:",
+        "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, collaboration b. Specific competencies:"
+      ],
+      "media": {
+        "audio": "assets/audio/unit10/lesson05_audio.mp3",
+        "video": "assets/videos/unit10/lesson05_video.mp4",
+        "images": [
+          "assets/images/unit10/lesson05_img1.png",
+          "assets/images/unit10/lesson05_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: Vocabulary related to the ecotourism",
+            "Pronunciation: Pronounce the words, words clusters correctly",
+            "Competencies: a. General competencies:",
+            "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, collaboration b. Specific competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_listening_lab",
+          "section_title": "🎧 1. Listening Lab & Audio Track",
+          "content_type": "listening_activity",
+          "audio_title": "An ecotour in the Mekong Delta",
+          "transcript": "Audio track for Grade 10 - Unit 10 (Ecotourism). Listen carefully to the details and answer the comprehension questions below.",
+          "word_count": "180-200 words"
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10 C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Listening in Unit 10?",
+              "options": [
+                "To master core vocabulary and language skills related to Ecotourism",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 10 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 6,
+      "lesson_code": "06",
+      "lesson_type": "WRITING",
+      "title": "Writing – A travel guide / itinerary for an ecotour",
+      "short_title": "A travel guide / itinerary for an ecotour",
+      "icon": "✏️",
+      "objectives": [
+        "Vocabulary: Vocabulary related to the ecotourism",
+        "Pronunciation: Pronounce the words, words clusters correctly",
+        "Grammar: Write a website advertisement for an ecotour",
+        "Competencies: a. General competencies:",
+        "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, collaboration b. Specific competencies:"
+      ],
+      "media": {
+        "audio": "assets/audio/unit10/lesson06_audio.mp3",
+        "video": "assets/videos/unit10/lesson06_video.mp4",
+        "images": [
+          "assets/images/unit10/lesson06_img1.png",
+          "assets/images/unit10/lesson06_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: Vocabulary related to the ecotourism",
+            "Pronunciation: Pronounce the words, words clusters correctly",
+            "Grammar: Write a website advertisement for an ecotour",
+            "Competencies: a. General competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_writing_studio",
+          "section_title": "✍️ 1. Guided Writing Canvas",
+          "content_type": "writing_scaffold",
+          "task_prompt": "Write an academic paragraph (120–150 words) about: A travel guide / itinerary for an ecotour.",
+          "scaffold": {
+            "topic_sentence": "State the main purpose or central claim regarding Ecotourism.",
+            "supporting_points": [
+              "First point with supporting evidence or example.",
+              "Second point with analysis."
+            ],
+            "concluding_sentence": "Summarize the significance and provide a forward-looking thought."
+          },
+          "model_text": "Engaging actively with ecotourism is vital for high school students. Firstly, it builds essential life skills and responsibility. Secondly, it fosters teamwork and positive habits. In conclusion, developing conscious practices in this area prepares teenagers for future independence."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10 C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Writing in Unit 10?",
+              "options": [
+                "To master core vocabulary and language skills related to Ecotourism",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 10 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 7,
+      "lesson_code": "07",
+      "lesson_type": "COMMUNICATION AND CULTURE / CLIL",
+      "title": "Communication and Culture / CLIL – Sustainable tourism in Costa Rica and Viet Nam",
+      "short_title": "Sustainable tourism in Costa Rica and Viet Nam",
+      "icon": "🌐",
+      "objectives": [
+        "Vocabulary: Vocabulary related to the ecotourism",
+        "Pronunciation: Pronounce the words, words clusters correctly",
+        "Grammar: Ask for and give advice",
+        "Competencies: a. General competencies:",
+        "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, collaboration b. Specific competencies:",
+        "Develop communication skills and awareness of tourism and their impact on the environment",
+        "Be collaborative and supportive in pair work and teamwork",
+        "Actively join in class activities.",
+        "Develop a sense of being an ecotourist",
+        "Be aware of tourism and their impact on the environment",
+        "Digital Competences (Năng lực số):",
+        "1NC1a: Identify information needs",
+        "find data, information, and content in a digital environment (through observing images/slides on the projector).",
+        "2NC1b: Analyze, compare, and evaluate the reliability and validity of data sources, information, and digital content (when comparing different types of tourism presented digitally).",
+        "3NC1a: Use digital tools and technologies to create knowledge, innovate processes, and products (using online dictionaries or search engines for homework/project preparation)."
+      ],
+      "media": {
+        "audio": "assets/audio/unit10/lesson07_audio.mp3",
+        "video": "assets/videos/unit10/lesson07_video.mp4",
+        "images": [
+          "assets/images/unit10/lesson07_img1.png",
+          "assets/images/unit10/lesson07_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: Vocabulary related to the ecotourism",
+            "Pronunciation: Pronounce the words, words clusters correctly",
+            "Grammar: Ask for and give advice",
+            "Competencies: a. General competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_clil_culture",
+          "section_title": "🌐 1. Culture & Interdisciplinary Learning",
+          "content_type": "culture_article",
+          "topic": "Sustainable tourism in Costa Rica and Viet Nam",
+          "content": "Discover how ecotourism is approached across different countries and in Vietnamese society, highlighting intercultural awareness and sustainable development."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10 C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Communication and Culture / CLIL in Unit 10?",
+              "options": [
+                "To master core vocabulary and language skills related to Ecotourism",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 10 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 8,
+      "lesson_code": "08",
+      "lesson_type": "LOOKING BACK & PROJECT",
+      "title": "Looking back & Project – Designing an eco-friendly holiday tour",
+      "short_title": "Designing an eco-friendly holiday tour",
+      "icon": "🧩",
+      "objectives": [
+        "Vocabulary: review",
+        "Pronunciation: review",
+        "Grammar: review",
+        "Competencies: a. General competencies:",
+        "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, collaboration b. Specific competencies:",
+        "Teacher: posters, handouts, computer connected to the internet, Projector/ TV/ pictures",
+        "Students: blank paper, pen I"
+      ],
+      "media": {
+        "audio": "assets/audio/unit10/lesson08_audio.mp3",
+        "video": "assets/videos/unit10/lesson08_video.mp4",
+        "images": [
+          "assets/images/unit10/lesson08_img1.png",
+          "assets/images/unit10/lesson08_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: review",
+            "Pronunciation: review",
+            "Grammar: review",
+            "Competencies: a. General competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_project_guidelines",
+          "section_title": "🧩 1. Unit Synthesis & Collaborative Project",
+          "content_type": "project_guide",
+          "project_name": "Designing an eco-friendly holiday tour",
+          "steps": [
+            "Step 1: Form a team of 4-5 students and choose a specific focus area.",
+            "Step 2: Collect data, photos, or digital resources.",
+            "Step 3: Prepare a poster or digital slide presentation.",
+            "Step 4: Present your project in front of the class."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "stalactite (n)",
+              "pos_ipa": "/ˈstæləktaɪt/",
+              "meaning_vi": "nhũ đá, thạch nhũ, vú đá"
+            },
+            {
+              "word": "fieldtrip (n)",
+              "pos_ipa": "/ˈfiːld ˌtrɪp/",
+              "meaning_vi": "chuyến tham quan"
+            },
+            {
+              "word": "packaging (n)",
+              "pos_ipa": "/ˈpæk.ɪ.dʒɪŋ/",
+              "meaning_vi": "bao bì, giấy gói hàng"
+            },
+            {
+              "word": "protect (v)",
+              "pos_ipa": "/prəˈtekt/",
+              "meaning_vi": "bảo vệ"
+            },
+            {
+              "word": "souvenir (n)",
+              "pos_ipa": "/ˌsuː.vənˈɪər/",
+              "meaning_vi": "quà lưu niệm"
+            },
+            {
+              "word": "explore (v)",
+              "pos_ipa": "/ɪkˈsplɔːr/",
+              "meaning_vi": "khám phá"
+            },
+            {
+              "word": "WARM – UP (5’ – PW/GW):Aims: - To get Ss interested in the topic           - To activate Ss’ knowledge of the lesson- [NLS 1.1NC1a: Teacher projects the digital images on the screen/TV , Students observe content in a digital environment].MATCHING GAMEMatch each verb on the left with a phrase on the right. use the pictures to help you. (p. 114)* Teacher puts students work in groups of four. Each group will have to match a verb with the appropriate phrase. The fastest groups with the correct answers will be the winner.** Students work in groups.*** Students give comments to other groups.**** Teacher confirms the answers.1. litter2. avoid3. hunt4. follow5. waste                            6. buyKey:1. c (on the beach or the street)2. d (crowded places)3. a (walking paths and trails)4. b (wild animals)5. f (water and electricity)6. e (locally made souvenirs)",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "1. litter",
+              "pos_ipa": "2. avoid",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Looking back & Project in Unit 10?",
+              "options": [
+                "To master core vocabulary and language skills related to Ecotourism",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 10 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+[
+  {
+    "review_id": 1,
+    "code": "REVIEW 1",
+    "title": "Units 1 - 2 - 3 Revision",
+    "scope": "Family life, Humans and the environment, Music",
+    "icon": "📋",
+    "theme_color": "#1b4332",
+    "sections": [
+      {
+        "title": "Language Revision",
+        "items": [
+          "Pronunciation: Consonant blends /tr/, /br/, /kr/, /cl/, /pl/, /gr/, /pr/ and 2-syllable word stress",
+          "Grammar: Present simple vs. Present continuous, Future with will / be going to, Compound sentences & Infinitives",
+          "Vocabulary: 150+ Key lexical items from Units 1, 2, and 3"
+        ]
+      },
+      {
+        "title": "Skills Consolidation",
+        "items": [
+          "Listening: Identifying main ideas and specific details in conversations",
+          "Reading: Synthesizing facts from expository and cultural texts",
+          "Writing: Writing cohesive paragraphs (120-150 words) with linking words",
+          "Speaking: Presenting opinions on green habits and musical events"
+        ]
+      }
+    ]
+  },
+  {
+    "review_id": 2,
+    "code": "REVIEW 2",
+    "title": "Units 4 - 5 Revision & Term 1 Consolidation",
+    "scope": "For a better community, Inventions",
+    "icon": "📋",
+    "theme_color": "#1b4332",
+    "sections": [
+      {
+        "title": "Language Revision",
+        "items": [
+          "Pronunciation: Stress in suffixed words (-ed, -ing, -ful, -less) and 3-syllable nouns",
+          "Grammar: Past simple vs. Past continuous with when/while, Present perfect tense, Gerunds & To-infinitives",
+          "Vocabulary: Community development, volunteering & technological innovations"
+        ]
+      },
+      {
+        "title": "Skills Consolidation",
+        "items": [
+          "Reading & Writing: Volunteer application letters and descriptive technology paragraphs",
+          "Listening & Speaking: Community announcements and technology presentations"
+        ]
+      }
+    ]
+  },
+  {
+    "review_id": 3,
+    "code": "REVIEW 3",
+    "title": "Units 6 - 7 - 8 Revision",
+    "scope": "Gender equality, Viet Nam & International organisations, New ways to learn",
+    "icon": "📋",
+    "theme_color": "#1b4332",
+    "sections": [
+      {
+        "title": "Language Revision",
+        "items": [
+          "Pronunciation: Stress in 2-syllable words, multisyllabic words and words with -ic, -sion, -tion",
+          "Grammar: Passive voice with modal verbs, Comparatives & Superlatives, Defining relative clauses",
+          "Vocabulary: Gender parity, global diplomatic bodies (UN, UNICEF, WTO) and digital education"
+        ]
+      },
+      {
+        "title": "Skills Consolidation",
+        "items": [
+          "Reading & Writing: Analytical essays on educational technology and international partnerships",
+          "Listening & Speaking: Debating career equality and modern learning strategies"
+        ]
+      }
+    ]
+  },
+  {
+    "review_id": 4,
+    "code": "REVIEW 4",
+    "title": "Units 9 - 10 Revision & End-of-Year Synthesis",
+    "scope": "Protecting the environment, Ecotourism",
+    "icon": "📋",
+    "theme_color": "#1b4332",
+    "sections": [
+      {
+        "title": "Language Revision",
+        "items": [
+          "Pronunciation: Sentence rhythm, intonation patterns in questions and statements",
+          "Grammar: Reported speech (statements, wh-questions, yes/no questions), Conditionals Type 1 and Type 2",
+          "Vocabulary: Environmental conservation, wildlife habitats and sustainable ecotourism"
+        ]
+      },
+      {
+        "title": "Skills Consolidation",
+        "items": [
+          "Reading & Writing: Ecotour travel guides and letters of environmental advice",
+          "Listening & Speaking: Ecotourism interviews and sustainable lifestyle presentations"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,891 @@
+{
+  "unit_id": 9,
+  "unit_code": "UNIT 09",
+  "title": "Protecting the environment",
+  "semester": "Semester 2",
+  "theme_color": "#276749",
+  "icon": "🍃",
+  "subtitle": "Combating deforestation, pollution, global warming & biodiversity loss",
+  "theme_image": "assets/images/unit09/theme_illustration.png",
+  "fallback_image": "assets/images/ui/Codex Image Aug 26, 2026, 04_02_06 PM.png",
+  "lessons": [
+    {
+      "lesson_id": 1,
+      "lesson_code": "01",
+      "lesson_type": "GETTING STARTED",
+      "title": "Getting started – Environmental threats & actions",
+      "short_title": "Environmental threats & actions",
+      "icon": "🚀",
+      "objectives": [
+        "Vocabulary: Understand the meaning of the key words or word collocations related to the environment and ways to protect it : do some research, come up with, global warming, deforestation, endangered animals, follow one’s advice…",
+        "Pronunciation: Pronounce the following words, words clusters correctly: do some research, come up with, global warming, deforestation, endangered animals, follow one’s advice…",
+        "Grammar: Understand and use the reported speech with statements and questions",
+        "Competencies: a. General competencies:",
+        "Improve competencies: teamwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability. b. Specific competencies:",
+        "Teacher: Grade 10 textbook, Unit 9, Getting started;Computer connected to the Internet;Projector/ TV/",
+        "Students: Grade 10 textbook,pictures and cards… I"
+      ],
+      "media": {
+        "audio": "assets/audio/unit09/lesson01_audio.mp3",
+        "video": "assets/videos/unit09/lesson01_video.mp4",
+        "images": [
+          "assets/images/unit09/lesson01_img1.png",
+          "assets/images/unit09/lesson01_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: Understand the meaning of the key words or word collocations related to the environment and ways to protect it : do some research, come up with, global warming, deforestation, endangered animals, follow one’s advice…",
+            "Pronunciation: Pronounce the following words, words clusters correctly: do some research, come up with, global warming, deforestation, endangered animals, follow one’s advice…",
+            "Grammar: Understand and use the reported speech with statements and questions",
+            "Competencies: a. General competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_getting_started",
+          "section_title": "📖 1. Listen & Read: Introductory Dialogue",
+          "content_type": "dialogue_activity",
+          "instruction": "Listen to the conversation and read along. Pay attention to key topic expressions.",
+          "dialogue": [
+            {
+              "speaker": "Speaker A",
+              "text": "Welcome to our study of Unit 9: Protecting the environment! Let's explore the key ideas together."
+            },
+            {
+              "speaker": "Speaker B",
+              "text": "Yes! We will discover practical vocabulary and real-world skills related to Combating deforestation, pollution, global warming & biodiversity loss."
+            }
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10 C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Getting started in Unit 9?",
+              "options": [
+                "To master core vocabulary and language skills related to Protecting the environment",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 9 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "lesson_code": "02",
+      "lesson_type": "LANGUAGE",
+      "title": "Language – Rhythm in sentences & Reported speech (statements & questions)",
+      "short_title": "Rhythm in sentences & Reported speech (statements & questions)",
+      "icon": "💬",
+      "objectives": [
+        "Vocabulary: Understand and put words/ phrases related to the environment to good use : biodiversity, habitat, ecosystem, wildlife, climate change",
+        "Teacher: Grade 10 textbook, Unit 9, Language;Computer connected to the Internet;Projector/ TV/",
+        "Students: Grade 10 textbook,pictures and cards… I"
+      ],
+      "media": {
+        "audio": "assets/audio/unit09/lesson02_audio.mp3",
+        "video": "assets/videos/unit09/lesson02_video.mp4",
+        "images": [
+          "assets/images/unit09/lesson02_img1.png",
+          "assets/images/unit09/lesson02_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: Understand and put words/ phrases related to the environment to good use : biodiversity, habitat, ecosystem, wildlife, climate change",
+            "Teacher: Grade 10 textbook, Unit 9, Language;Computer connected to the Internet;Projector/ TV/",
+            "Students: Grade 10 textbook,pictures and cards… I"
+          ]
+        },
+        {
+          "section_id": "sec_language_focus",
+          "section_title": "🔍 1. Pronunciation & Grammar Focus",
+          "content_type": "grammar_rule",
+          "grammar_title": "Rhythm in sentences & Reported speech (statements & questions)",
+          "rule_summary": "Master the pronunciation rules and grammatical structures required for Unit 9 under MoET 2018.",
+          "examples": [
+            "Example 1: In everyday communication, accuracy in pronunciation ensures clear understanding.",
+            "Example 2: Contextual practice helps automate grammar usage naturally."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10 C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Language in Unit 9?",
+              "options": [
+                "To master core vocabulary and language skills related to Protecting the environment",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 9 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "lesson_code": "03",
+      "lesson_type": "READING",
+      "title": "Reading – The impacts of global warming and climate change",
+      "short_title": "The impacts of global warming and climate change",
+      "icon": "📖",
+      "objectives": [
+        "Vocabulary: Understand and put words/ phrases related to the environmental problems to good use : consequence, rising sea levels, polar ice melting, extreme weather events, flood ,heatwave, put s.t/s.b in danger, climate change, respiratory diseases…",
+        "Pronunciation: Pronounce the following words, words clusters correctly",
+        "Revise the reported speech",
+        "Competencies: a. General competencies:",
+        "Improve competencies: teamwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability. b. Specific competencies:",
+        "Practise reading for the main idea and specific information in a text about Environmental problems",
+        "Understand more about benefits of protecting the environment and raise Ss’ awareness of taking part in environmental activities",
+        "Digital Competences (Năng lực số):",
+        "1NC1a: Identify information needs",
+        "find data, information, and content in a digital environment (through observing digital images/slides).",
+        "2NC1b: Analyze, compare, and evaluate the reliability and validity of data sources, information, and digital content (when connecting reading content with real-world environmental news).",
+        "3NC1a: Use digital tools and technologies to create knowledge, innovate processes, and products (using online dictionaries/sachmem.vn)."
+      ],
+      "media": {
+        "audio": "assets/audio/unit09/lesson03_audio.mp3",
+        "video": "assets/videos/unit09/lesson03_video.mp4",
+        "images": [
+          "assets/images/unit09/lesson03_img1.png",
+          "assets/images/unit09/lesson03_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: Understand and put words/ phrases related to the environmental problems to good use : consequence, rising sea levels, polar ice melting, extreme weather events, flood ,heatwave, put s.t/s.b in danger, climate change, respiratory diseases…",
+            "Pronunciation: Pronounce the following words, words clusters correctly",
+            "Revise the reported speech",
+            "Competencies: a. General competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_reading_passage",
+          "section_title": "📚 1. Reading Passage",
+          "content_type": "reading_text",
+          "passage_title": "The impacts of global warming and climate change",
+          "paragraphs": [
+            "Protecting the environment plays an essential role in contemporary society. Engaging with this topic encourages high school students to reflect on their daily habits and global responsibilities.",
+            "Through systematic inquiry into Combating deforestation, pollution, global warming & biodiversity loss, learners cultivate critical thinking, broaden their vocabulary, and prepare for academic communication."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10 C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Reading in Unit 9?",
+              "options": [
+                "To master core vocabulary and language skills related to Protecting the environment",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 9 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "lesson_code": "04",
+      "lesson_type": "SPEAKING",
+      "title": "Speaking – Giving practical advice on saving energy and reducing waste",
+      "short_title": "Giving practical advice on saving energy and reducing waste",
+      "icon": "👥",
+      "objectives": [
+        "Vocabulary: Understand and put words/ phrases related to the environmental problems to good use : recycle, illegal, emission",
+        "Pronunciation: Pronounce the following words, words clusters correctly",
+        "Revise the reported speech",
+        "Competencies: a. General competencies:",
+        "Improve competencies: teamwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability. b. Specific competencies:",
+        "Identify environmental problems and relevant solutions",
+        "Gain an overview about the outline and useful expressions for making oral presentations on solutions to an environmental problem.",
+        "Understand more about benefits of protecting the environment and raise Ss’ awareness of taking part in environmental activities",
+        "Digital Competences (Năng lực số):",
+        "1NC1a: Identify information needs",
+        "find data, information, and content in a digital environment (through interacting with the digital game \"Lucky Wheel\" and viewing projected images).",
+        "2NC1b: Analyze, compare, and evaluate the reliability and validity of data sources, information, and digital content (when comparing visual data on slides with textbook information).",
+        "3NC1a: Use digital tools and technologies to create knowledge, innovate processes, and products (using software like PowerPoint, Canva, or digital mind-mapping tools to design the presentation)."
+      ],
+      "media": {
+        "audio": "assets/audio/unit09/lesson04_audio.mp3",
+        "video": "assets/videos/unit09/lesson04_video.mp4",
+        "images": [
+          "assets/images/unit09/lesson04_img1.png",
+          "assets/images/unit09/lesson04_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: Understand and put words/ phrases related to the environmental problems to good use : recycle, illegal, emission",
+            "Pronunciation: Pronounce the following words, words clusters correctly",
+            "Revise the reported speech",
+            "Competencies: a. General competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_speaking_tasks",
+          "section_title": "🗣️ 1. Guided Discussion & Roleplay",
+          "content_type": "speaking_prompts",
+          "prompt_title": "Topic for Pair Discussion",
+          "guiding_questions": [
+            "What are the main aspects of Protecting the environment that relate to your daily life?",
+            "How can young people in Viet Nam contribute positively to this area?",
+            "What advice would you give to your peers?"
+          ],
+          "useful_expressions": [
+            "In my opinion...",
+            "From my perspective...",
+            "I strongly believe that...",
+            "We should consider that..."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10 C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Speaking in Unit 9?",
+              "options": [
+                "To master core vocabulary and language skills related to Protecting the environment",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 9 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 5,
+      "lesson_code": "05",
+      "lesson_type": "LISTENING",
+      "title": "Listening – A speech on wildlife conservation and endangered species",
+      "short_title": "A speech on wildlife conservation and endangered species",
+      "icon": "🎧",
+      "objectives": [
+        "Vocabulary: Understand and put words/ phrases related to the environmental problems to good use : Suffering, ban",
+        "Pronunciation: Pronounce the following words, words clusters correctly",
+        "Revise the reported speech",
+        "Competencies: a. General competencies:",
+        "Improve competencies: teamwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability. b. Specific competencies:",
+        "Be well aware of saving endangered animals",
+        "Be encouraged to attend activities organized to protect endangered animals.",
+        "Understand more about benefits of protecting the environment and raise Ss’ awareness of taking part in environmental activities",
+        "Digital Competences (Năng lực số):",
+        "1NC1a: Identify information needs",
+        "find data, information, and content in a digital environment (through watching digital images and questions on the screen).",
+        "2NC1b: Analyze, compare, and evaluate the reliability and validity of data sources, information, and digital content (comparing students' predictions with the audio information from the digital courseware).",
+        "3NC1a: Use digital tools and technologies to create knowledge, innovate processes, and products (using online search engines to find more ways to save animals for the discussion/homework)."
+      ],
+      "media": {
+        "audio": "assets/audio/unit09/lesson05_audio.mp3",
+        "video": "assets/videos/unit09/lesson05_video.mp4",
+        "images": [
+          "assets/images/unit09/lesson05_img1.png",
+          "assets/images/unit09/lesson05_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: Understand and put words/ phrases related to the environmental problems to good use : Suffering, ban",
+            "Pronunciation: Pronounce the following words, words clusters correctly",
+            "Revise the reported speech",
+            "Competencies: a. General competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_listening_lab",
+          "section_title": "🎧 1. Listening Lab & Audio Track",
+          "content_type": "listening_activity",
+          "audio_title": "A speech on wildlife conservation and endangered species",
+          "transcript": "Audio track for Grade 10 - Unit 9 (Protecting the environment). Listen carefully to the details and answer the comprehension questions below.",
+          "word_count": "180-200 words"
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10 C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Listening in Unit 9?",
+              "options": [
+                "To master core vocabulary and language skills related to Protecting the environment",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 9 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 6,
+      "lesson_code": "06",
+      "lesson_type": "WRITING",
+      "title": "Writing – A letter of advice on protecting local habitats",
+      "short_title": "A letter of advice on protecting local habitats",
+      "icon": "✏️",
+      "objectives": [
+        "Vocabulary: Understand and put words/ phrases related to the environmental problems to good use : originally, non-governmental, organization",
+        "Pronunciation: Pronounce the following words, words clusters correctly",
+        "Revise the reported speech",
+        "Competencies: a. General competencies:",
+        "Improve competencies: teamwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability. b. Specific competencies:",
+        "Write about a wildlife organization..",
+        "Understand more about benefits of protecting the environment and raise Ss’ awareness of taking part in environmental activities",
+        "Digital Competences (Năng lực số):",
+        "1NC1a: Identify information needs",
+        "find data, information, and content in a digital environment (through observing visual clues on the screen).",
+        "2NC1b: Analyze, compare, and evaluate the reliability and validity of data sources, information, and digital content (analyzing the model text structure).",
+        "1NC1a: Create and edit digital content in various formats (if students type their paragraph or present it on a digital platform).",
+        "3NC1a: Use digital tools and technologies to create knowledge, innovate processes, and products (using online dictionaries/references to support writing)."
+      ],
+      "media": {
+        "audio": "assets/audio/unit09/lesson06_audio.mp3",
+        "video": "assets/videos/unit09/lesson06_video.mp4",
+        "images": [
+          "assets/images/unit09/lesson06_img1.png",
+          "assets/images/unit09/lesson06_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: Understand and put words/ phrases related to the environmental problems to good use : originally, non-governmental, organization",
+            "Pronunciation: Pronounce the following words, words clusters correctly",
+            "Revise the reported speech",
+            "Competencies: a. General competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_writing_studio",
+          "section_title": "✍️ 1. Guided Writing Canvas",
+          "content_type": "writing_scaffold",
+          "task_prompt": "Write an academic paragraph (120–150 words) about: A letter of advice on protecting local habitats.",
+          "scaffold": {
+            "topic_sentence": "State the main purpose or central claim regarding Protecting the environment.",
+            "supporting_points": [
+              "First point with supporting evidence or example.",
+              "Second point with analysis."
+            ],
+            "concluding_sentence": "Summarize the significance and provide a forward-looking thought."
+          },
+          "model_text": "Engaging actively with protecting the environment is vital for high school students. Firstly, it builds essential life skills and responsibility. Secondly, it fosters teamwork and positive habits. In conclusion, developing conscious practices in this area prepares teenagers for future independence."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10 C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Writing in Unit 9?",
+              "options": [
+                "To master core vocabulary and language skills related to Protecting the environment",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 9 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 7,
+      "lesson_code": "07",
+      "lesson_type": "COMMUNICATION AND CULTURE / CLIL",
+      "title": "Communication and Culture / CLIL – Earth Hour and global climate summits",
+      "short_title": "Earth Hour and global climate summits",
+      "icon": "🌐",
+      "objectives": [
+        "Vocabulary: Understand and put words/ phrases related to the environmental problems to good use : backup, territory, device",
+        "Pronunciation: Pronounce the following words, words clusters correctly",
+        "Revise the reported speech",
+        "Competencies: a. General competencies:",
+        "Improve competencies: teamwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability. b. Specific competencies:",
+        "Know how to make and respond to apologies",
+        "Know what Earth Hour is and what people do in that hour.",
+        "Be ready to make and respond to apologies",
+        "Understand more about Earth Hour and actively take part in this lights-out event in Vietnam",
+        "Digital Competences (Năng lực số):",
+        "1NC1a: Identify information needs",
+        "find data, information, and content in a digital environment (through watching online videos about apologies and Earth Hour).",
+        "2NC1b: Analyze, compare, and evaluate the reliability and validity of data sources, information, and digital content (when cross-checking facts about Earth Hour between the text and the video).",
+        "3NC1a: Use digital tools and technologies to create knowledge, innovate processes, and products (using sachmem.vn or online resources to support learning)."
+      ],
+      "media": {
+        "audio": "assets/audio/unit09/lesson07_audio.mp3",
+        "video": "assets/videos/unit09/lesson07_video.mp4",
+        "images": [
+          "assets/images/unit09/lesson07_img1.png",
+          "assets/images/unit09/lesson07_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: Understand and put words/ phrases related to the environmental problems to good use : backup, territory, device",
+            "Pronunciation: Pronounce the following words, words clusters correctly",
+            "Revise the reported speech",
+            "Competencies: a. General competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_clil_culture",
+          "section_title": "🌐 1. Culture & Interdisciplinary Learning",
+          "content_type": "culture_article",
+          "topic": "Earth Hour and global climate summits",
+          "content": "Discover how protecting the environment is approached across different countries and in Vietnamese society, highlighting intercultural awareness and sustainable development."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10 C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Communication and Culture / CLIL in Unit 9?",
+              "options": [
+                "To master core vocabulary and language skills related to Protecting the environment",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 9 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 8,
+      "lesson_code": "08",
+      "lesson_type": "LOOKING BACK & PROJECT",
+      "title": "Looking back & Project – School Clean-up Campaign",
+      "short_title": "School Clean-up Campaign",
+      "icon": "🧩",
+      "objectives": [
+        "Review the vocabulary and grammar of Unit 9",
+        "Apply what they have learnt (vocabulary and grammar) into practice through a project.",
+        "Competencies: a. General competencies:",
+        "Improve competencies: teamwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability. b. Specific competencies:",
+        "Develop critical thinking skills",
+        "Be more creative when doing the project",
+        "Develop self-study skills.",
+        "Digital Competences (Năng lực số):Students are able to:",
+        "1NC1a: Determine information needs",
+        "find data, information, and content in a digital environment (through watching the video in Warm-up).",
+        "1NC1b: Create and edit digital content in different formats to express oneself (creating slides/posters for the Project).",
+        "2NC1c: Share data, information, and digital content with others through appropriate digital technologies (presenting the project)."
+      ],
+      "media": {
+        "audio": "assets/audio/unit09/lesson08_audio.mp3",
+        "video": "assets/videos/unit09/lesson08_video.mp4",
+        "images": [
+          "assets/images/unit09/lesson08_img1.png",
+          "assets/images/unit09/lesson08_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Review the vocabulary and grammar of Unit 9",
+            "Apply what they have learnt (vocabulary and grammar) into practice through a project.",
+            "Competencies: a. General competencies:",
+            "Improve competencies: teamwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability. b. Specific competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_project_guidelines",
+          "section_title": "🧩 1. Unit Synthesis & Collaborative Project",
+          "content_type": "project_guide",
+          "project_name": "School Clean-up Campaign",
+          "steps": [
+            "Step 1: Form a team of 4-5 students and choose a specific focus area.",
+            "Step 2: Collect data, photos, or digital resources.",
+            "Step 3: Prepare a poster or digital slide presentation.",
+            "Step 4: Present your project in front of the class."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10 C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10 C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Looking back & Project in Unit 9?",
+              "options": [
+                "To master core vocabulary and language skills related to Protecting the environment",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 9 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

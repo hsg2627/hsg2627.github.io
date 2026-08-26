@@ -1,0 +1,1049 @@
+{
+  "unit_id": 1,
+  "unit_code": "UNIT 01",
+  "title": "Family life",
+  "semester": "Semester 1",
+  "theme_color": "#f26b7a",
+  "icon": "🏠",
+  "subtitle": "Household chores, family values & sharing responsibilities",
+  "theme_image": "assets/images/unit01/theme_illustration.png",
+  "fallback_image": "assets/images/ui/Codex Image Aug 26, 2026, 06_53_09 PM.png",
+  "lessons": [
+    {
+      "lesson_id": 1,
+      "lesson_code": "01",
+      "lesson_type": "GETTING STARTED",
+      "title": "Getting started – Household chores",
+      "short_title": "Household chores",
+      "icon": "🚀",
+      "objectives": [
+        "Gain an overview of the topic 'Family life';",
+        "Understand and use vocabulary to talk about household chores;",
+        "Identify the present simple and present continuous tenses in context.",
+        "Core Competences:",
+        "Develop communication skills and creativity;",
+        "Be collaborative and supportive in pair work and teamwork;",
+        "Actively join in class activities.",
+        "Personal Qualities:",
+        "Be aware of personal responsibilities towards family life;",
+        "Cultivate self-study habits.",
+        "Digital & AI Competences:",
+        "3: Use AI tools to generate ideas or search for vocabulary and images related to family life and domestic duties.",
+        "2: Maintain human oversight and critical control when evaluating AI-generated family roles and chore descriptions."
+      ],
+      "media": {
+        "audio": "assets/audio/unit01/lesson01_audio.mp3",
+        "video": "assets/videos/unit01/lesson01_video.mp4",
+        "images": [
+          "assets/images/unit01/lesson01_img1.png",
+          "assets/images/unit01/lesson01_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Gain an overview of the topic 'Family life';",
+            "Understand and use vocabulary to talk about household chores;",
+            "Identify the present simple and present continuous tenses in context.",
+            "Core Competences:"
+          ]
+        },
+        {
+          "section_id": "sec_getting_started",
+          "section_title": "📖 1. Listen & Read: Introductory Dialogue",
+          "content_type": "dialogue_activity",
+          "instruction": "Listen to the conversation and read along. Pay attention to key topic expressions.",
+          "dialogue": [
+            {
+              "speaker": "Speaker A",
+              "text": "Welcome to our study of Unit 1: Family life! Let's explore the key ideas together."
+            },
+            {
+              "speaker": "Speaker B",
+              "text": "Yes! We will discover practical vocabulary and real-world skills related to Household chores, family values & sharing responsibilities."
+            }
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "household (adj)",
+              "pos_ipa": "/ˈhaʊshəʊld/",
+              "meaning_vi": "thuộc gia đình, dùng trong gia đình"
+            },
+            {
+              "word": "chore (n)",
+              "pos_ipa": "/tʃɔː(r)/",
+              "meaning_vi": "việc vặt, việc nhà thường nhật"
+            },
+            {
+              "word": "rubbish (n)",
+              "pos_ipa": "/ˈrʌbɪʃ/",
+              "meaning_vi": "rác thải"
+            },
+            {
+              "word": "laundry (n)",
+              "pos_ipa": "/ˈlɔːndri/",
+              "meaning_vi": "quần áo giặt, việc giặt giũ"
+            },
+            {
+              "word": "groceries (n.pl)",
+              "pos_ipa": "/ˈɡrəʊsəriz/",
+              "meaning_vi": "hàng tạp hóa, thực phẩm"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Divides class into 4 groups.- Plays short video clip of household activities.- Sets 2-minute board race to write down chores.",
+              "pos_ipa": "- Watch video in teams.- Write names of chores on the board (mop the floor, do the laundry, wash dishes, vacuum).",
+              "meaning_vi": "Household Chores:- Mop the floor- Do the laundry / Wash clothes- Do the washing-up- Clean the house- Vacuum the carpet"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Getting started in Unit 1?",
+              "options": [
+                "To master core vocabulary and language skills related to Family life",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 1 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "lesson_code": "02",
+      "lesson_type": "LANGUAGE",
+      "title": "Language – Pronunciation /tr/, /br/, /kr/ & Present simple vs. Present continuous",
+      "short_title": "Pronunciation /tr/, /br/, /kr/ & Present simple vs. Present continuous",
+      "icon": "💬",
+      "objectives": [
+        "Pronounce the consonant blends /br/, /kr/, and /tr/ correctly in isolated words and in connected sentences;",
+        "Understand and use lexical items related to family roles and household duties;",
+        "Distinguish and correctly use the Present Simple and Present Continuous tenses.",
+        "Core Competences:",
+        "Develop phonetic discrimination, grammatical precision, and communicative fluency;",
+        "Work collaboratively in pairs and groups.",
+        "Personal Qualities:",
+        "Appreciate the value of sharing housework and supporting family members;",
+        "Foster independent study habits.",
+        "Digital & AI Competences:",
+        "3: Use AI tools, digital dictionaries, and pronunciation applications to look up word definitions and phonetic blends.",
+        "2: Practice structuring simple prompts to query grammar rules and verify tense usage examples."
+      ],
+      "media": {
+        "audio": "assets/audio/unit01/lesson02_audio.mp3",
+        "video": "assets/videos/unit01/lesson02_video.mp4",
+        "images": [
+          "assets/images/unit01/lesson02_img1.png",
+          "assets/images/unit01/lesson02_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Pronounce the consonant blends /br/, /kr/, and /tr/ correctly in isolated words and in connected sentences;",
+            "Understand and use lexical items related to family roles and household duties;",
+            "Distinguish and correctly use the Present Simple and Present Continuous tenses.",
+            "Core Competences:"
+          ]
+        },
+        {
+          "section_id": "sec_language_focus",
+          "section_title": "🔍 1. Pronunciation & Grammar Focus",
+          "content_type": "grammar_rule",
+          "grammar_title": "Pronunciation /tr/, /br/, /kr/ & Present simple vs. Present continuous",
+          "rule_summary": "Master the pronunciation rules and grammatical structures required for Unit 1 under MoET 2018.",
+          "examples": [
+            "Example 1: In everyday communication, accuracy in pronunciation ensures clear understanding.",
+            "Example 2: Contextual practice helps automate grammar usage naturally."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "breadwinner (n)",
+              "pos_ipa": "/ˈbredwɪnə(r)/",
+              "meaning_vi": "trụ cột gia đình (người kiếm tiền chính)"
+            },
+            {
+              "word": "homemaker (n)",
+              "pos_ipa": "/ˈhəʊmmeɪkə(r)/",
+              "meaning_vi": "người nội trợ"
+            },
+            {
+              "word": "heavy lifting (np)",
+              "pos_ipa": "/ˌhevi ˈlɪftɪŋ/",
+              "meaning_vi": "công việc nặng nhọc, mang vác nặng"
+            },
+            {
+              "word": "split (v)",
+              "pos_ipa": "/splɪt/",
+              "meaning_vi": "phân chia, chia nhỏ"
+            },
+            {
+              "word": "housework (n)",
+              "pos_ipa": "/ˈhaʊswɜːk/",
+              "meaning_vi": "công việc nhà"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Language in Unit 1?",
+              "options": [
+                "To master core vocabulary and language skills related to Family life",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 1 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "lesson_code": "03",
+      "lesson_type": "READING",
+      "title": "Reading – Benefits of doing housework",
+      "short_title": "Benefits of doing housework",
+      "icon": "📖",
+      "objectives": [
+        "Develop reading comprehension skills for specific information in a text about the benefits of doing housework for children;",
+        "Understand and use lexical items related to character development, gratitude, and family bonds.",
+        "Core Competences:",
+        "Develop scanning, skimming, contextual vocabulary deduction, and mind-mapping skills;",
+        "Work collaboratively in pairs and groups.",
+        "Personal Qualities:",
+        "Recognize the importance of contributing to household chores and expressing gratitude to parents.",
+        "Digital & AI Competences:",
+        "3: Use AI tools to search for and synthesize additional research on the developmental benefits of chores for teenagers.",
+        "2: Evaluate AI-generated summaries against textbook facts to ensure information reliability."
+      ],
+      "media": {
+        "audio": "assets/audio/unit01/lesson03_audio.mp3",
+        "video": "assets/videos/unit01/lesson03_video.mp4",
+        "images": [
+          "assets/images/unit01/lesson03_img1.png",
+          "assets/images/unit01/lesson03_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Develop reading comprehension skills for specific information in a text about the benefits of doing housework for children;",
+            "Understand and use lexical items related to character development, gratitude, and family bonds.",
+            "Core Competences:",
+            "Develop scanning, skimming, contextual vocabulary deduction, and mind-mapping skills;"
+          ]
+        },
+        {
+          "section_id": "sec_reading_passage",
+          "section_title": "📚 1. Reading Passage",
+          "content_type": "reading_text",
+          "passage_title": "Benefits of doing housework",
+          "paragraphs": [
+            "Family life plays an essential role in contemporary society. Engaging with this topic encourages high school students to reflect on their daily habits and global responsibilities.",
+            "Through systematic inquiry into Household chores, family values & sharing responsibilities, learners cultivate critical thinking, broaden their vocabulary, and prepare for academic communication."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "responsibility (n)",
+              "pos_ipa": "/rɪˌspɒnsəˈbɪləti/",
+              "meaning_vi": "trách nhiệm, bổn phận"
+            },
+            {
+              "word": "gratitude (n)",
+              "pos_ipa": "/ˈɡrætɪtjuːd/",
+              "meaning_vi": "lòng biết ơn"
+            },
+            {
+              "word": "strengthen (v)",
+              "pos_ipa": "/ˈstreŋθn/",
+              "meaning_vi": "củng cố, tăng cường"
+            },
+            {
+              "word": "bond (n)",
+              "pos_ipa": "/bɒnd/",
+              "meaning_vi": "mối gắn kết, tình cảm gắn bó"
+            },
+            {
+              "word": "character (n)",
+              "pos_ipa": "/ˈkærəktə(r)/",
+              "meaning_vi": "tính cách, nhân cách"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Divides class into groups of 4; 3-minute listing race for Mom, Dad, and Kids.",
+              "pos_ipa": "- Write chore lists on the board in teams.",
+              "meaning_vi": "Chore Distribution:- Mom: Cook, do laundry, wash dishes- Dad: Heavy lifting, fix appliances, clean yard- Kids: Take out rubbish, tidy bedroom, lay the table"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Reading in Unit 1?",
+              "options": [
+                "To master core vocabulary and language skills related to Family life",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 1 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "lesson_code": "04",
+      "lesson_type": "SPEAKING",
+      "title": "Speaking – Why should/shouldn't children do housework?",
+      "short_title": "Why should/shouldn't children do housework?",
+      "icon": "👥",
+      "objectives": [
+        "Explain why children should or shouldn't do housework;",
+        "Express opinions, agreement, and disagreement in structured conversations about family chores.",
+        "Core Competences:",
+        "Develop oral argumentation, role-play dialogue, and critical thinking skills;",
+        "Collaborate in pairs and groups.",
+        "Personal Qualities:",
+        "Form balanced viewpoints on balancing study, play, and family responsibilities.",
+        "Digital & AI Competences:",
+        "2: Practice using AI conversational prompts to simulate dialogue partner responses.",
+        "1: Analyze the social implications of chore division between genders and age groups."
+      ],
+      "media": {
+        "audio": "assets/audio/unit01/lesson04_audio.mp3",
+        "video": "assets/videos/unit01/lesson04_video.mp4",
+        "images": [
+          "assets/images/unit01/lesson04_img1.png",
+          "assets/images/unit01/lesson04_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Explain why children should or shouldn't do housework;",
+            "Express opinions, agreement, and disagreement in structured conversations about family chores.",
+            "Core Competences:",
+            "Develop oral argumentation, role-play dialogue, and critical thinking skills;"
+          ]
+        },
+        {
+          "section_id": "sec_speaking_tasks",
+          "section_title": "🗣️ 1. Guided Discussion & Roleplay",
+          "content_type": "speaking_prompts",
+          "prompt_title": "Topic for Pair Discussion",
+          "guiding_questions": [
+            "What are the main aspects of Family life that relate to your daily life?",
+            "How can young people in Viet Nam contribute positively to this area?",
+            "What advice would you give to your peers?"
+          ],
+          "useful_expressions": [
+            "In my opinion...",
+            "From my perspective...",
+            "I strongly believe that...",
+            "We should consider that..."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "take responsibility (vp)",
+              "pos_ipa": "/teɪk rɪˌspɒnsəˈbɪləti/",
+              "meaning_vi": "chịu trách nhiệm, gánh vác trách nhiệm"
+            },
+            {
+              "word": "life skills (np)",
+              "pos_ipa": "/ˈlaɪf skɪlz/",
+              "meaning_vi": "kỹ năng sống"
+            },
+            {
+              "word": "damage (v/n)",
+              "pos_ipa": "/ˈdæmɪdʒ/",
+              "meaning_vi": "làm hỏng, gây thiệt hại"
+            },
+            {
+              "word": "necessary (adj)",
+              "pos_ipa": "/ˈnesəsəri/",
+              "meaning_vi": "cần thiết, thiết yếu"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Displays 10 chore pictures.- Facilitates rapid matching game.",
+              "pos_ipa": "- Match pictures with action phrases in teams.",
+              "meaning_vi": "Matching Key: 1-cook, 2-do laundry, 3-washing-up, 4-heavy lifting, 5-shop groceries, 6-feed pets, 7-water plants, 8-clean bathroom, 9-clean house, 10-put out rubbish"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "Task 1 (10 mins): Guides sorting reasons 1-6 into SHOULD and SHOULDN'T.Task 2 (15 mins): Plays audio; checks dialogue completion.",
+              "pos_ipa": "- Classify reasons in Task 1.- Listen and fill in dialogue gaps in Task 2.",
+              "meaning_vi": "Task 1 Key:- SHOULD: 1 (develops life skills), 2 (teaches responsibility), 5 (strengthens family bonds)- SHOULDN'T: 3 (need playtime), 4 (may break things), 6 (need study time)Task 2 Key: 1. Doing housework helps them develop life skills, 2. They should be given plenty of playtime"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Speaking in Unit 1?",
+              "options": [
+                "To master core vocabulary and language skills related to Family life",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 1 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 5,
+      "lesson_code": "05",
+      "lesson_type": "LISTENING",
+      "title": "Listening – Family support & sharing the chores",
+      "short_title": "Family support & sharing the chores",
+      "icon": "🎧",
+      "objectives": [
+        "Knowledge:\\n",
+        "Develop listening comprehension skills for main ideas and specific details in a talk show interview about family support;\\n",
+        "Understand and use vocabulary related to academic success, family encouragement, and daily routines.\\n",
+        "Core Competences:\\n",
+        "Develop prediction verification, detail note-taking, and critical discussion skills;\\n",
+        "Work collaboratively.\\n",
+        "Personal Qualities:\\n",
+        "Recognize and appreciate the vital role of family support in achieving academic and personal success.\\n",
+        "Digital & AI Competences:\\n",
+        "3: Use digital tools to search for effective parental encouragement strategies.\\n",
+        "2: Cross-check listening advice with personal family experiences."
+      ],
+      "media": {
+        "audio": "assets/audio/unit01/lesson05_audio.mp3",
+        "video": "assets/videos/unit01/lesson05_video.mp4",
+        "images": [
+          "assets/images/unit01/lesson05_img1.png",
+          "assets/images/unit01/lesson05_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Knowledge:\\n",
+            "Develop listening comprehension skills for main ideas and specific details in a talk show interview about family support;\\n",
+            "Understand and use vocabulary related to academic success, family encouragement, and daily routines.\\n",
+            "Core Competences:\\n"
+          ]
+        },
+        {
+          "section_id": "sec_listening_lab",
+          "section_title": "🎧 1. Listening Lab & Audio Track",
+          "content_type": "listening_activity",
+          "audio_title": "Family support & sharing the chores",
+          "transcript": "Audio track for Grade 10 - Unit 1 (Family life). Listen carefully to the details and answer the comprehension questions below.",
+          "word_count": "180-200 words"
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "achieve success (vp)",
+              "pos_ipa": "/əˈtʃiːv səkˈses/",
+              "meaning_vi": "đạt được thành công"
+            },
+            {
+              "word": "encouragement (n)",
+              "pos_ipa": "/ɪnˈkʌrɪdʒmənt/",
+              "meaning_vi": "sự động viên, khích lệ"
+            },
+            {
+              "word": "overcome difficulties (vp)",
+              "pos_ipa": "/ˌəʊvəˈkʌm ˈdɪfɪkəltiz/",
+              "meaning_vi": "vượt qua khó khăn"
+            },
+            {
+              "word": "routine (n)",
+              "pos_ipa": "/ruːˈtiːn/",
+              "meaning_vi": "thói quen, nề nếp sinh hoạt"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Displays web chart; elicits family roles.",
+              "pos_ipa": "- Complete web branches (earn money, care for family, do chores, protect family).",
+              "meaning_vi": "Family Roles: Earning money, caring for children, doing chores, supporting education"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Listening in Unit 1?",
+              "options": [
+                "To master core vocabulary and language skills related to Family life",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 1 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 6,
+      "lesson_code": "06",
+      "lesson_type": "WRITING",
+      "title": "Writing – Writing about family routines & chores",
+      "short_title": "Writing about family routines & chores",
+      "icon": "✏️",
+      "objectives": [
+        "Knowledge:\\n",
+        "Understand the structure and language of an email describing family routines;\\n",
+        "Write a structured 120–150 word body paragraph of an email describing family routines using transition linkers (First, Second, Third, Finally).\\n",
+        "Core Competences:\\n",
+        "Develop paragraph organization, idea sequencing, and peer-review skills;\\n",
+        "Work collaboratively.\\n",
+        "Personal Qualities:\\n",
+        "Value meaningful family traditions and maintain academic integrity.\\n",
+        "Digital & AI Competences:\\n",
+        "3: Use AI writing assistants to explore transitional phrases and paragraph coherence models.\\n",
+        "1: Maintain authentic personal family voice, avoid over-reliance on AI, and complete the Student AI Declaration Form."
+      ],
+      "media": {
+        "audio": "assets/audio/unit01/lesson06_audio.mp3",
+        "video": "assets/videos/unit01/lesson06_video.mp4",
+        "images": [
+          "assets/images/unit01/lesson06_img1.png",
+          "assets/images/unit01/lesson06_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Knowledge:\\n",
+            "Understand the structure and language of an email describing family routines;\\n",
+            "Write a structured 120–150 word body paragraph of an email describing family routines using transition linkers (First, Second, Third, Finally).\\n",
+            "Core Competences:\\n"
+          ]
+        },
+        {
+          "section_id": "sec_writing_studio",
+          "section_title": "✍️ 1. Guided Writing Canvas",
+          "content_type": "writing_scaffold",
+          "task_prompt": "Write an academic paragraph (120–150 words) about: Writing about family routines & chores.",
+          "scaffold": {
+            "topic_sentence": "State the main purpose or central claim regarding Family life.",
+            "supporting_points": [
+              "First point with supporting evidence or example.",
+              "Second point with analysis."
+            ],
+            "concluding_sentence": "Summarize the significance and provide a forward-looking thought."
+          },
+          "model_text": "Engaging actively with family life is vital for high school students. Firstly, it builds essential life skills and responsibility. Secondly, it fosters teamwork and positive habits. In conclusion, developing conscious practices in this area prepares teenagers for future independence."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "family routine (np)",
+              "pos_ipa": "/ˈfæməli ruːˈtiːn/",
+              "meaning_vi": "nề nếp, thói quen sinh hoạt gia đình"
+            },
+            {
+              "word": "family bond (np)",
+              "pos_ipa": "/ˈfæməli bɒnd/",
+              "meaning_vi": "tình cảm gắn kết gia đình"
+            },
+            {
+              "word": "exchange opinions (vp)",
+              "pos_ipa": "/ɪksˈtʃeɪndʒ əˈpɪnjənz/",
+              "meaning_vi": "trao đổi ý kiến, chia sẻ quan điểm"
+            },
+            {
+              "word": "defend ideas (vp)",
+              "pos_ipa": "/dɪˈfend aɪˈdɪəz/",
+              "meaning_vi": "bảo vệ quan điểm, giải thích ý kiến"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Displays 6 pictures; elicits routine activities (eating dinner together, watching films, weekend visits).",
+              "pos_ipa": "- Identify routine activities and share how often they do them.",
+              "meaning_vi": "Family Routines: Having dinner together, watching TV game shows, weekend cleaning"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Guides Task 2 table completion.\\n- Reviews paragraph structure (Topic sentence -> Supporting points with linkers -> Concluding sentence).",
+              "pos_ipa": "- Read email and complete table in Task 2.\\n- Review transition words (First, Second, Finally).",
+              "meaning_vi": "Task 2 Table Key:1. Dinner together (every day) -> share daily experiences2. Watch game show (Friday evening) -> discuss quiz questions3. Clean house (every 2 weeks, Saturday) -> list chores and choose tasks"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Writing in Unit 1?",
+              "options": [
+                "To master core vocabulary and language skills related to Family life",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 1 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 7,
+      "lesson_code": "07",
+      "lesson_type": "COMMUNICATION AND CULTURE / CLIL",
+      "title": "Communication and Culture / CLIL – Family life in different cultures",
+      "short_title": "Family life in different cultures",
+      "icon": "🌐",
+      "objectives": [
+        "Knowledge:\\n",
+        "Express strong and neutral opinions about whether family members should spend time together;\\n",
+        "Understand British family values in the 21st century and compare them with Vietnamese family values.\\n",
+        "Core Competences:\\n",
+        "Develop opinion-exchanging dialogue, cross-cultural comparison, and presentation skills;\\n",
+        "Work in pairs and groups.\\n",
+        "Personal Qualities:\\n",
+        "Respect cultural diversity and embrace positive Vietnamese and British family values.\\n",
+        "Digital & AI Competences:\\n",
+        "3: Use digital tools to search for and verify traditional British family traditions.\\n",
+        "1: Promote cross-cultural understanding and family solidarity through digital discussions."
+      ],
+      "media": {
+        "audio": "assets/audio/unit01/lesson07_audio.mp3",
+        "video": "assets/videos/unit01/lesson07_video.mp4",
+        "images": [
+          "assets/images/unit01/lesson07_img1.png",
+          "assets/images/unit01/lesson07_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Knowledge:\\n",
+            "Express strong and neutral opinions about whether family members should spend time together;\\n",
+            "Understand British family values in the 21st century and compare them with Vietnamese family values.\\n",
+            "Core Competences:\\n"
+          ]
+        },
+        {
+          "section_id": "sec_clil_culture",
+          "section_title": "🌐 1. Culture & Interdisciplinary Learning",
+          "content_type": "culture_article",
+          "topic": "Family life in different cultures",
+          "content": "Discover how family life is approached across different countries and in Vietnamese society, highlighting intercultural awareness and sustainable development."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "pass on (phr.v)",
+              "pos_ipa": "/pɑːs ɒn/",
+              "meaning_vi": "truyền lại, để lại cho thế hệ sau"
+            },
+            {
+              "word": "truthful (adj)",
+              "pos_ipa": "/ˈtruːθfl/",
+              "meaning_vi": "trung thực, chân thật"
+            },
+            {
+              "word": "respectively (adv)",
+              "pos_ipa": "/rɪˈspektɪvli/",
+              "meaning_vi": "tương ứng, lần lượt"
+            },
+            {
+              "word": "table manners (n.pl)",
+              "pos_ipa": "/ˈteɪbl ˈmænəz/",
+              "meaning_vi": "phép tắc ứng xử trên bàn ăn"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- 2 teams; rapid board race listing housework benefits.",
+              "pos_ipa": "- Write benefits on board.",
+              "meaning_vi": "Benefits: Better bonding, life skills, sharing pressure, happiness"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Communication and Culture / CLIL in Unit 1?",
+              "options": [
+                "To master core vocabulary and language skills related to Family life",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 1 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 8,
+      "lesson_code": "08",
+      "lesson_type": "LOOKING BACK & PROJECT",
+      "title": "Looking back & Project – Setting up a Family Day",
+      "short_title": "Setting up a Family Day",
+      "icon": "🧩",
+      "objectives": [
+        "Knowledge:\\n",
+        "Review consonant blends (/br/, /kr/, /tr/), family vocabulary, and present tenses of Unit 1;\\n",
+        "Apply knowledge to research and present a group project on 'Happy Family Day'.\\n",
+        "Core Competences:\\n",
+        "Develop project management, presentation, and peer assessment skills;\\n",
+        "Foster creative teamwork.\\n",
+        "Personal Qualities:\\n",
+        "Cherish family bonds and practice academic integrity in group products.\\n",
+        "Digital & AI Competences:\\n",
+        "3: Use AI tools to explore Family Day celebrations around the world and organize presentation slides.\\n",
+        "1: Ensure authentic cultural representation and submit the Student AI Declaration Form."
+      ],
+      "media": {
+        "audio": "assets/audio/unit01/lesson08_audio.mp3",
+        "video": "assets/videos/unit01/lesson08_video.mp4",
+        "images": [
+          "assets/images/unit01/lesson08_img1.png",
+          "assets/images/unit01/lesson08_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Knowledge:\\n",
+            "Review consonant blends (/br/, /kr/, /tr/), family vocabulary, and present tenses of Unit 1;\\n",
+            "Apply knowledge to research and present a group project on 'Happy Family Day'.\\n",
+            "Core Competences:\\n"
+          ]
+        },
+        {
+          "section_id": "sec_project_guidelines",
+          "section_title": "🧩 1. Unit Synthesis & Collaborative Project",
+          "content_type": "project_guide",
+          "project_name": "Setting up a Family Day",
+          "steps": [
+            "Step 1: Form a team of 4-5 students and choose a specific focus area.",
+            "Step 2: Collect data, photos, or digital resources.",
+            "Step 3: Prepare a poster or digital slide presentation.",
+            "Step 4: Present your project in front of the class."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "family day (np)",
+              "pos_ipa": "/ˈfæməli deɪ/",
+              "meaning_vi": "ngày gia đình"
+            },
+            {
+              "word": "breadwinner (n)",
+              "pos_ipa": "/ˈbredwɪnə(r)/",
+              "meaning_vi": "trụ cột gia đình"
+            },
+            {
+              "word": "homemaker (n)",
+              "pos_ipa": "/ˈhəʊmmeɪkə(r)/",
+              "meaning_vi": "người nội trợ"
+            },
+            {
+              "word": "heavy lifting (np)",
+              "pos_ipa": "/ˌhevi ˈlɪftɪŋ/",
+              "meaning_vi": "công việc mang vác nặng"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Looking back & Project in Unit 1?",
+              "options": [
+                "To master core vocabulary and language skills related to Family life",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 1 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

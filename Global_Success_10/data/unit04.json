@@ -1,0 +1,1049 @@
+{
+  "unit_id": 4,
+  "unit_code": "UNIT 04",
+  "title": "For a better community",
+  "semester": "Semester 1",
+  "theme_color": "#3182ce",
+  "icon": "👥",
+  "subtitle": "Volunteering, community development & youth initiatives",
+  "theme_image": "assets/images/unit04/theme_illustration.png",
+  "fallback_image": "assets/images/ui/Codex Image Aug 26, 2026, 04_02_06 PM.png",
+  "lessons": [
+    {
+      "lesson_id": 1,
+      "lesson_code": "01",
+      "lesson_type": "GETTING STARTED",
+      "title": "Getting started – Volunteering in the community",
+      "short_title": "Volunteering in the community",
+      "icon": "🚀",
+      "objectives": [
+        "Gain an overview of the topic 'For a better community' and key vocabulary related to voluntary work;",
+        "Understand and use words to talk about community volunteer activities;",
+        "Identify adjectives with suffixes (-ed, -ing, -ful, -less) and the past simple vs. past continuous in context.",
+        "Core Competences:",
+        "Develop communicative fluency, active listening, and pair/teamwork collaboration;",
+        "Actively join in class activities.",
+        "Personal Qualities:",
+        "Develop a spirit of community service, compassion, and civic responsibility toward the disadvantaged.",
+        "Digital & AI Competences:",
+        "1: Use AI tools and online search engines to brainstorm ideas and gather data on community service projects.",
+        "1: Identify specific community issues that can be addressed through technology-supported volunteering initiatives."
+      ],
+      "media": {
+        "audio": "assets/audio/unit04/lesson01_audio.mp3",
+        "video": "assets/videos/unit04/lesson01_video.mp4",
+        "images": [
+          "assets/images/unit04/lesson01_img1.png",
+          "assets/images/unit04/lesson01_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Gain an overview of the topic 'For a better community' and key vocabulary related to voluntary work;",
+            "Understand and use words to talk about community volunteer activities;",
+            "Identify adjectives with suffixes (-ed, -ing, -ful, -less) and the past simple vs. past continuous in context.",
+            "Core Competences:"
+          ]
+        },
+        {
+          "section_id": "sec_getting_started",
+          "section_title": "📖 1. Listen & Read: Introductory Dialogue",
+          "content_type": "dialogue_activity",
+          "instruction": "Listen to the conversation and read along. Pay attention to key topic expressions.",
+          "dialogue": [
+            {
+              "speaker": "Speaker A",
+              "text": "Welcome to our study of Unit 4: For a better community! Let's explore the key ideas together."
+            },
+            {
+              "speaker": "Speaker B",
+              "text": "Yes! We will discover practical vocabulary and real-world skills related to Volunteering, community development & youth initiatives."
+            }
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "volunteer (n/v)",
+              "pos_ipa": "/ˌvɒlənˈtɪə(r)/",
+              "meaning_vi": "tình nguyện viên / làm tình nguyện"
+            },
+            {
+              "word": "advertisement (n)",
+              "pos_ipa": "/ədˈvɜːtɪsmənt/",
+              "meaning_vi": "mục quảng cáo, thông báo tuyển dụng"
+            },
+            {
+              "word": "community (n)",
+              "pos_ipa": "/kəˈmjuːnəti/",
+              "meaning_vi": "cộng đồng, tập thể"
+            },
+            {
+              "word": "boost (v)",
+              "pos_ipa": "/buːst/",
+              "meaning_vi": "thúc đẩy, nâng cao, tăng cường"
+            },
+            {
+              "word": "orphanage (n)",
+              "pos_ipa": "/ˈɔːfənɪdʒ/",
+              "meaning_vi": "trại trẻ mồ côi"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Plays short video clip about volunteering in the community.- Sets 2-minute board race to write down noted voluntary activities.",
+              "pos_ipa": "- Watch video in teams.- Write noted phrases on the board (e.g., reading books for orphans, visiting sick people, helping in remote areas).",
+              "meaning_vi": "Suggested Voluntary Activities:- Reading books to children in orphanages- Visiting lonely elderly people- Teaching children in remote or mountainous areas- Cleaning up local parks and public places"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Getting started in Unit 4?",
+              "options": [
+                "To master core vocabulary and language skills related to For a better community",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 4 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "lesson_code": "02",
+      "lesson_type": "LANGUAGE",
+      "title": "Language – Stress in words ending in -ed, -ing, -ful, -less & Past simple vs. Past continuous",
+      "short_title": "Stress in words ending in -ed, -ing, -ful, -less & Past simple vs. Past continuous",
+      "icon": "💬",
+      "objectives": [
+        "Pronounce two-syllable words with the same spelling with correct stress patterns (nouns vs. verbs);",
+        "Understand and use lexical items related to community development and adjective suffixes (-ed, -ing, -ful, -less);",
+        "Use the past simple and past continuous with when and while correctly.",
+        "Core Competences:",
+        "Develop phonetic discrimination, grammatical transformation, and communicative fluency;",
+        "Work collaboratively in pairs and groups.",
+        "Personal Qualities:",
+        "Cultivate empathy and commitment toward voluntary and charitable actions.",
+        "Digital & AI Competences:",
+        "3: Use AI tools, digital dictionaries, and pronunciation applications to verify stress shifts in homographs.",
+        "MR2: Practice using educational digital tools to drill past tense clause combinations with when/while."
+      ],
+      "media": {
+        "audio": "assets/audio/unit04/lesson02_audio.mp3",
+        "video": "assets/videos/unit04/lesson02_video.mp4",
+        "images": [
+          "assets/images/unit04/lesson02_img1.png",
+          "assets/images/unit04/lesson02_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Pronounce two-syllable words with the same spelling with correct stress patterns (nouns vs. verbs);",
+            "Understand and use lexical items related to community development and adjective suffixes (-ed, -ing, -ful, -less);",
+            "Use the past simple and past continuous with when and while correctly.",
+            "Core Competences:"
+          ]
+        },
+        {
+          "section_id": "sec_language_focus",
+          "section_title": "🔍 1. Pronunciation & Grammar Focus",
+          "content_type": "grammar_rule",
+          "grammar_title": "Stress in words ending in -ed, -ing, -ful, -less & Past simple vs. Past continuous",
+          "rule_summary": "Master the pronunciation rules and grammatical structures required for Unit 4 under MoET 2018.",
+          "examples": [
+            "Example 1: In everyday communication, accuracy in pronunciation ensures clear understanding.",
+            "Example 2: Contextual practice helps automate grammar usage naturally."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "generous (adj)",
+              "pos_ipa": "/ˈdʒenərəs/",
+              "meaning_vi": "hào phóng, rộng lượng"
+            },
+            {
+              "word": "remote (adj)",
+              "pos_ipa": "/rɪˈməʊt/",
+              "meaning_vi": "xa xôi, hẻo lánh"
+            },
+            {
+              "word": "donate (v)",
+              "pos_ipa": "/dəʊˈneɪt/",
+              "meaning_vi": "quyên góp, ủng hộ"
+            },
+            {
+              "word": "benefit (n/v)",
+              "pos_ipa": "/ˈbenɪfɪt/",
+              "meaning_vi": "lợi ích / hưởng lợi"
+            },
+            {
+              "word": "hopeless (adj)",
+              "pos_ipa": "/ˈhəʊpləs/",
+              "meaning_vi": "vô vọng, không có hy vọng"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Divides class into 2 teams; takes turns naming community service actions.",
+              "pos_ipa": "- Call out voluntary activities in teams.",
+              "meaning_vi": "Actions: Donating books, cooking meals for the poor, cleaning streets, teaching orphans"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Language in Unit 4?",
+              "options": [
+                "To master core vocabulary and language skills related to For a better community",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 4 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "lesson_code": "03",
+      "lesson_type": "READING",
+      "title": "Reading – Teenagers and voluntary work",
+      "short_title": "Teenagers and voluntary work",
+      "icon": "📖",
+      "objectives": [
+        "Read for main ideas and specific information in an article about high school volunteer clubs;",
+        "Deduce contextual meanings of vocabulary related to charity, donations, and community support;",
+        "Discuss practical ways students can contribute to volunteer clubs.",
+        "Core Competences:",
+        "Develop skimming, scanning, multiple-choice deduction, and collaborative discussion skills;",
+        "Work in pairs and groups.",
+        "Personal Qualities:",
+        "Develop empathy, social engagement, and civic mindfulness.",
+        "Digital & AI Competences:",
+        "1: Use AI tools to search for and summarize successful student-led community volunteer projects.",
+        "2: Evaluate the authenticity and reliability of online information sources about charitable organizations."
+      ],
+      "media": {
+        "audio": "assets/audio/unit04/lesson03_audio.mp3",
+        "video": "assets/videos/unit04/lesson03_video.mp4",
+        "images": [
+          "assets/images/unit04/lesson03_img1.png",
+          "assets/images/unit04/lesson03_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Read for main ideas and specific information in an article about high school volunteer clubs;",
+            "Deduce contextual meanings of vocabulary related to charity, donations, and community support;",
+            "Discuss practical ways students can contribute to volunteer clubs.",
+            "Core Competences:"
+          ]
+        },
+        {
+          "section_id": "sec_reading_passage",
+          "section_title": "📚 1. Reading Passage",
+          "content_type": "reading_text",
+          "passage_title": "Teenagers and voluntary work",
+          "paragraphs": [
+            "For a better community plays an essential role in contemporary society. Engaging with this topic encourages high school students to reflect on their daily habits and global responsibilities.",
+            "Through systematic inquiry into Volunteering, community development & youth initiatives, learners cultivate critical thinking, broaden their vocabulary, and prepare for academic communication."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "donation (n)",
+              "pos_ipa": "/dəʊˈneɪʃn/",
+              "meaning_vi": "khoản quyên góp, vật phẩm ủng hộ"
+            },
+            {
+              "word": "deliver (v)",
+              "pos_ipa": "/dɪˈlɪvə(r)/",
+              "meaning_vi": "phân phát, giao hàng/bữa ăn"
+            },
+            {
+              "word": "hardship (n)",
+              "pos_ipa": "/ˈhɑːdʃɪp/",
+              "meaning_vi": "sự gian khổ, hoàn cảnh khó khăn"
+            },
+            {
+              "word": "set up (phr.v)",
+              "pos_ipa": "/set ʌp/",
+              "meaning_vi": "thành lập, thiết lập"
+            },
+            {
+              "word": "disadvantaged (adj)",
+              "pos_ipa": "/ˌdɪsədˈvɑːntɪdʒd/",
+              "meaning_vi": "thiệt thòi, có hoàn cảnh khó khăn"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- 2 teams; facilitates Lucky Number quiz game.",
+              "pos_ipa": "- Select numbers and answer questions in teams.",
+              "meaning_vi": "Quiz Questions: Past simple vs. continuous rules, signal words, voluntary activities"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Reading in Unit 4?",
+              "options": [
+                "To master core vocabulary and language skills related to For a better community",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 4 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "lesson_code": "04",
+      "lesson_type": "SPEAKING",
+      "title": "Speaking – Benefits of volunteering activities",
+      "short_title": "Benefits of volunteering activities",
+      "icon": "👥",
+      "objectives": [
+        "Identify and explain the main benefits of volunteering activities for teenagers;",
+        "Use ordering expressions (First of all, Second, Third, Finally) and example phrases (For example, For instance, such as) to structure a presentation.",
+        "Core Competences:",
+        "Develop oral presentation, diagram structuring, and public speaking skills;",
+        "Work collaboratively in pairs and groups.",
+        "Personal Qualities:",
+        "Appreciate the personal growth, life skills, and social connections gained through voluntary work.",
+        "Digital & AI Competences:",
+        "MR2: Use digital presentation tools or AI visual diagramming assistants to create visual aids for presentations.",
+        "1: Propose and explore digital platforms (online donation websites, crowdfunding apps, volunteering portals) for social participation."
+      ],
+      "media": {
+        "audio": "assets/audio/unit04/lesson04_audio.mp3",
+        "video": "assets/videos/unit04/lesson04_video.mp4",
+        "images": [
+          "assets/images/unit04/lesson04_img1.png",
+          "assets/images/unit04/lesson04_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Identify and explain the main benefits of volunteering activities for teenagers;",
+            "Use ordering expressions (First of all, Second, Third, Finally) and example phrases (For example, For instance, such as) to structure a presentation.",
+            "Core Competences:",
+            "Develop oral presentation, diagram structuring, and public speaking skills;"
+          ]
+        },
+        {
+          "section_id": "sec_speaking_tasks",
+          "section_title": "🗣️ 1. Guided Discussion & Roleplay",
+          "content_type": "speaking_prompts",
+          "prompt_title": "Topic for Pair Discussion",
+          "guiding_questions": [
+            "What are the main aspects of For a better community that relate to your daily life?",
+            "How can young people in Viet Nam contribute positively to this area?",
+            "What advice would you give to your peers?"
+          ],
+          "useful_expressions": [
+            "In my opinion...",
+            "From my perspective...",
+            "I strongly believe that...",
+            "We should consider that..."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "essential life skills (np)",
+              "pos_ipa": "/ɪˈsenʃl laɪf skɪlz/",
+              "meaning_vi": "kỹ năng sống thiết yếu"
+            },
+            {
+              "word": "time management (np)",
+              "pos_ipa": "/taɪm ˈmænɪdʒmənt/",
+              "meaning_vi": "quản lý thời gian"
+            },
+            {
+              "word": "sense of purpose (np)",
+              "pos_ipa": "/sens əv ˈpɜːpəs/",
+              "meaning_vi": "ý thức về mục đích sống"
+            },
+            {
+              "word": "first of all / finally (exp)",
+              "pos_ipa": "/fɜːst əv ɔːl / ˈfaɪnəli/",
+              "meaning_vi": "trước hết / cuối cùng"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "Task 1 (10 mins): Elicits benefit list; directs Ss to choose 3 most important benefits.Task 2 (10 mins): Guides completing explanatory diagrams with sub-points.",
+              "pos_ipa": "- Select top 3 benefits in Task 1.- Complete diagram branches in Task 2.",
+              "meaning_vi": "Diagram Content (Task 2):1. Coming into contact with like-minded teens -> sharing interests, becoming confident, learning from each other2. Improving essential life skills -> time management, communication, group working3. Gaining life experiences -> helping different people, visiting places, dealing with diverse situationsBenefit 1: Social ConnectionsBenefit 2: Life SkillsBenefit 3: Life Experiences"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Speaking in Unit 4?",
+              "options": [
+                "To master core vocabulary and language skills related to For a better community",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 4 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 5,
+      "lesson_code": "05",
+      "lesson_type": "LISTENING",
+      "title": "Listening – An announcement for community volunteers",
+      "short_title": "An announcement for community volunteers",
+      "icon": "🎧",
+      "objectives": [
+        "Listen for specific information in an announcement recruiting volunteers for a community development centre;",
+        "Understand and use vocabulary related to job adverts, applicant qualifications, and volunteer duties;",
+        "Discuss activities for local community development.",
+        "Core Competences:",
+        "Develop job advert analysis, multiple-choice listening, and detail verification skills;",
+        "Work in pairs and groups.",
+        "Personal Qualities:",
+        "Demonstrate readiness to participate in community development projects.",
+        "Digital & AI Competences:",
+        "3: Use digital devices to organize, record, and store key information heard from audio announcements.",
+        "2: Evaluate recruitment criteria and job duties against trustworthy community organization standards."
+      ],
+      "media": {
+        "audio": "assets/audio/unit04/lesson05_audio.mp3",
+        "video": "assets/videos/unit04/lesson05_video.mp4",
+        "images": [
+          "assets/images/unit04/lesson05_img1.png",
+          "assets/images/unit04/lesson05_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Listen for specific information in an announcement recruiting volunteers for a community development centre;",
+            "Understand and use vocabulary related to job adverts, applicant qualifications, and volunteer duties;",
+            "Discuss activities for local community development.",
+            "Core Competences:"
+          ]
+        },
+        {
+          "section_id": "sec_listening_lab",
+          "section_title": "🎧 1. Listening Lab & Audio Track",
+          "content_type": "listening_activity",
+          "audio_title": "An announcement for community volunteers",
+          "transcript": "Audio track for Grade 10 - Unit 4 (For a better community). Listen carefully to the details and answer the comprehension questions below.",
+          "word_count": "180-200 words"
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "job advert (np)",
+              "pos_ipa": "/dʒɒb ˈædvɜːt/",
+              "meaning_vi": "mục quảng cáo tuyển dụng"
+            },
+            {
+              "word": "community development (np)",
+              "pos_ipa": "/kəˈmjuːnəti dɪˈveləpmənt/",
+              "meaning_vi": "phát triển cộng đồng"
+            },
+            {
+              "word": "facility (n)",
+              "pos_ipa": "/fəˈsɪləti/",
+              "meaning_vi": "cơ sở vật chất, tiện ích"
+            },
+            {
+              "word": "application deadline (np)",
+              "pos_ipa": "/ˌæplɪˈkeɪʃn ˈdedlaɪn/",
+              "meaning_vi": "hạn chót nộp hồ sơ"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Asks lead-in questions about job advertisements.",
+              "pos_ipa": "- Answer questions in whole-class discussion.",
+              "meaning_vi": "Job Advert Components: Recruiter name, Job description, Requirements, Working hours, Application deadline"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Guides Task 1 questions (Who needs volunteers? Who can apply?).- Elicits key details.",
+              "pos_ipa": "- Read advert and answer questions in pairs.",
+              "meaning_vi": "Task 1 Key:1. The City Centre for Community Development needs volunteers.2. People who are interested in community projects and have a couple of hours to spare on weekends can apply."
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Listening in Unit 4?",
+              "options": [
+                "To master core vocabulary and language skills related to For a better community",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 4 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 6,
+      "lesson_code": "06",
+      "lesson_type": "WRITING",
+      "title": "Writing – An application letter for volunteer work",
+      "short_title": "An application letter for volunteer work",
+      "icon": "✏️",
+      "objectives": [
+        "Understand the formal structure, format, and layout of a volunteer job application letter;",
+        "Write a coherent 120-150 word formal application letter applying for a volunteer position.",
+        "Core Competences:",
+        "Develop formal letter writing, personal qualification pitching, and peer assessment skills;",
+        "Work collaboratively.",
+        "Personal Qualities:",
+        "Demonstrate honesty, politeness, and civic responsibility in formal correspondence.",
+        "Digital & AI Competences:",
+        "1: Comply with school academic integrity regulations and intellectual property standards when using digital word processors.",
+        "1: Maintain human authorship in personal application letters, avoid full AI generation, and complete the Student AI Declaration Form."
+      ],
+      "media": {
+        "audio": "assets/audio/unit04/lesson06_audio.mp3",
+        "video": "assets/videos/unit04/lesson06_video.mp4",
+        "images": [
+          "assets/images/unit04/lesson06_img1.png",
+          "assets/images/unit04/lesson06_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Understand the formal structure, format, and layout of a volunteer job application letter;",
+            "Write a coherent 120-150 word formal application letter applying for a volunteer position.",
+            "Core Competences:",
+            "Develop formal letter writing, personal qualification pitching, and peer assessment skills;"
+          ]
+        },
+        {
+          "section_id": "sec_writing_studio",
+          "section_title": "✍️ 1. Guided Writing Canvas",
+          "content_type": "writing_scaffold",
+          "task_prompt": "Write an academic paragraph (120–150 words) about: An application letter for volunteer work.",
+          "scaffold": {
+            "topic_sentence": "State the main purpose or central claim regarding For a better community.",
+            "supporting_points": [
+              "First point with supporting evidence or example.",
+              "Second point with analysis."
+            ],
+            "concluding_sentence": "Summarize the significance and provide a forward-looking thought."
+          },
+          "model_text": "Engaging actively with for a better community is vital for high school students. Firstly, it builds essential life skills and responsibility. Secondly, it fosters teamwork and positive habits. In conclusion, developing conscious practices in this area prepares teenagers for future independence."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "apply for (v)",
+              "pos_ipa": "/əˈplaɪ fə(r)/",
+              "meaning_vi": "nộp đơn ứng tuyển"
+            },
+            {
+              "word": "people skills (np)",
+              "pos_ipa": "/ˈpiːpl skɪlz/",
+              "meaning_vi": "kỹ năng giao tiếp và ứng xử"
+            },
+            {
+              "word": "available (adj)",
+              "pos_ipa": "/əˈveɪləbl/",
+              "meaning_vi": "có thời gian rảnh, sẵn sàng"
+            },
+            {
+              "word": "look forward to (phr.v)",
+              "pos_ipa": "/lʊk ˈfɔːwəd tuː/",
+              "meaning_vi": "trông mong, mong đợi"
+            },
+            {
+              "word": "yours faithfully (exp)",
+              "pos_ipa": "/jɔːz ˈfeɪθfəli/",
+              "meaning_vi": "kính thư (khi không biết tên người nhận)"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- 2 teams; facilitates Hangman guessing game.",
+              "pos_ipa": "- Guess letters and discover the target genre.",
+              "meaning_vi": "Target Genre: APPLICATION LETTER"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Writing in Unit 4?",
+              "options": [
+                "To master core vocabulary and language skills related to For a better community",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 4 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 7,
+      "lesson_code": "07",
+      "lesson_type": "COMMUNICATION AND CULTURE / CLIL",
+      "title": "Communication and Culture / CLIL – Community service programs worldwide",
+      "short_title": "Community service programs worldwide",
+      "icon": "🌐",
+      "objectives": [
+        "Express personal feelings about volunteer experiences using appropriate adjectives and expressions;",
+        "Understand facts about the Save the Children organisation and its humanitarian contributions to Viet Nam.",
+        "Core Competences:",
+        "Develop dialogue role-play, diagram completion, and presentation skills;",
+        "Work in pairs and groups.",
+        "Personal Qualities:",
+        "Value child welfare, educational equity, and international humanitarian cooperation.",
+        "Digital & AI Competences:",
+        "3: Use digital search engines and AI tools to explore online volunteer campaigns of international NGOs.",
+        "1: Practice responsible digital citizenship when navigating official NGO portals and volunteer portals."
+      ],
+      "media": {
+        "audio": "assets/audio/unit04/lesson07_audio.mp3",
+        "video": "assets/videos/unit04/lesson07_video.mp4",
+        "images": [
+          "assets/images/unit04/lesson07_img1.png",
+          "assets/images/unit04/lesson07_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Express personal feelings about volunteer experiences using appropriate adjectives and expressions;",
+            "Understand facts about the Save the Children organisation and its humanitarian contributions to Viet Nam.",
+            "Core Competences:",
+            "Develop dialogue role-play, diagram completion, and presentation skills;"
+          ]
+        },
+        {
+          "section_id": "sec_clil_culture",
+          "section_title": "🌐 1. Culture & Interdisciplinary Learning",
+          "content_type": "culture_article",
+          "topic": "Community service programs worldwide",
+          "content": "Discover how for a better community is approached across different countries and in Vietnamese society, highlighting intercultural awareness and sustainable development."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "humanitarian (adj)",
+              "pos_ipa": "/hjuːˌmænɪˈteəriən/",
+              "meaning_vi": "nhân đạo, cứu trợ nhân đạo"
+            },
+            {
+              "word": "life-saving skills (np)",
+              "pos_ipa": "/ˈlaɪf seɪvɪŋ skɪlz/",
+              "meaning_vi": "kỹ năng sinh tồn, kỹ năng cứu sinh"
+            },
+            {
+              "word": "non-governmental (adj)",
+              "pos_ipa": "/ˌnɒn ˌɡʌvnˈmentl/",
+              "meaning_vi": "phi chính phủ (NGO)"
+            },
+            {
+              "word": "cheerful (adj)",
+              "pos_ipa": "/ˈtʃɪəfl/",
+              "meaning_vi": "vui tươi, phấn khởi"
+            },
+            {
+              "word": "confused (adj)",
+              "pos_ipa": "/kənˈfjuːzd/",
+              "meaning_vi": "bối rối, lúng túng"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Plays video; asks teams to note principles and locations.",
+              "pos_ipa": "- Watch and write down answers in teams.",
+              "meaning_vi": "Principles: Free will, Not paid, Making a differenceLocations: Hospitals, schools, orphanages, remote villages, beaches"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Communication and Culture / CLIL in Unit 4?",
+              "options": [
+                "To master core vocabulary and language skills related to For a better community",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 4 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 8,
+      "lesson_code": "08",
+      "lesson_type": "LOOKING BACK & PROJECT",
+      "title": "Looking back & Project – Planning a community support project",
+      "short_title": "Planning a community support project",
+      "icon": "🧩",
+      "objectives": [
+        "Review homograph stress, community vocabulary, adjective suffixes, and past simple vs. past continuous with when/while;",
+        "Apply knowledge to research, plan, and deliver a group oral presentation on 'A Volunteer Project'.",
+        "Core Competences:",
+        "Develop project management, presentation, and peer assessment skills;",
+        "Foster creative teamwork.",
+        "Personal Qualities:",
+        "Demonstrate proactive community leadership and uphold academic integrity.",
+        "Digital & AI Competences:",
+        "1: Use AI tools to brainstorm project frameworks, solve community problems, and design presentation slides.",
+        "1: Comply with digital copyright, respect community privacy, and submit the Student AI Declaration Form."
+      ],
+      "media": {
+        "audio": "assets/audio/unit04/lesson08_audio.mp3",
+        "video": "assets/videos/unit04/lesson08_video.mp4",
+        "images": [
+          "assets/images/unit04/lesson08_img1.png",
+          "assets/images/unit04/lesson08_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Review homograph stress, community vocabulary, adjective suffixes, and past simple vs. past continuous with when/while;",
+            "Apply knowledge to research, plan, and deliver a group oral presentation on 'A Volunteer Project'.",
+            "Core Competences:",
+            "Develop project management, presentation, and peer assessment skills;"
+          ]
+        },
+        {
+          "section_id": "sec_project_guidelines",
+          "section_title": "🧩 1. Unit Synthesis & Collaborative Project",
+          "content_type": "project_guide",
+          "project_name": "Planning a community support project",
+          "steps": [
+            "Step 1: Form a team of 4-5 students and choose a specific focus area.",
+            "Step 2: Collect data, photos, or digital resources.",
+            "Step 3: Prepare a poster or digital slide presentation.",
+            "Step 4: Present your project in front of the class."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "volunteer project (np)",
+              "pos_ipa": "/ˌvɒlənˈtɪə ˈprɒdʒekt/",
+              "meaning_vi": "dự án tình nguyện"
+            },
+            {
+              "word": "community service (np)",
+              "pos_ipa": "/kəˈmjuːnəti ˈsɜːvɪs/",
+              "meaning_vi": "hoạt động phục vụ cộng đồng"
+            },
+            {
+              "word": "charitable fund (np)",
+              "pos_ipa": "/ˈtʃærɪtəbl fʌnd/",
+              "meaning_vi": "quỹ từ thiện"
+            },
+            {
+              "word": "peer assessment (np)",
+              "pos_ipa": "/pɪə(r) əˈsesmənt/",
+              "meaning_vi": "đánh giá đồng đẳng"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- 2 teams; 2-minute homograph board race.",
+              "pos_ipa": "- Write homographs on board.",
+              "meaning_vi": "Homographs: increase, record, present, import, rebel, project"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Looking back & Project in Unit 4?",
+              "options": [
+                "To master core vocabulary and language skills related to For a better community",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 4 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

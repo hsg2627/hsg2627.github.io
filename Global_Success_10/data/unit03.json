@@ -1,0 +1,1041 @@
+{
+  "unit_id": 3,
+  "unit_code": "UNIT 03",
+  "title": "Music",
+  "semester": "Semester 1",
+  "theme_color": "#805ad5",
+  "icon": "🎵",
+  "subtitle": "Musical genres, talented artists & national music competitions",
+  "theme_image": "assets/images/unit03/theme_illustration.png",
+  "fallback_image": "assets/images/ui/Codex Image Aug 26, 2026, 04_02_06 PM.png",
+  "lessons": [
+    {
+      "lesson_id": 1,
+      "lesson_code": "01",
+      "lesson_type": "GETTING STARTED",
+      "title": "Getting started – A talented artist",
+      "short_title": "A talented artist",
+      "icon": "🚀",
+      "objectives": [
+        "Gain an overview of the topic 'Music' and key vocabulary related to musical talents and instruments;",
+        "Understand and use vocabulary to talk about musical idols;",
+        "Identify compound sentences, to-infinitives, and bare infinitives in context.",
+        "Core Competences:",
+        "Develop communicative fluency and active listening;",
+        "Be collaborative and supportive in pair work and teamwork;",
+        "Actively join in class activities.",
+        "Personal Qualities:",
+        "Develop a positive attitude toward diverse music genres;",
+        "Appreciate the inspiring role of music in daily life.",
+        "Digital & AI Competences:",
+        "3: Use AI tools and streaming platforms to search for artist profiles, song catalogs, and musical genres.",
+        "1: Demonstrate responsible digital citizenship by accessing music through legitimate platforms and citing online sources properly."
+      ],
+      "media": {
+        "audio": "assets/audio/unit03/lesson01_audio.mp3",
+        "video": "assets/videos/unit03/lesson01_video.mp4",
+        "images": [
+          "assets/images/unit03/lesson01_img1.png",
+          "assets/images/unit03/lesson01_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Gain an overview of the topic 'Music' and key vocabulary related to musical talents and instruments;",
+            "Understand and use vocabulary to talk about musical idols;",
+            "Identify compound sentences, to-infinitives, and bare infinitives in context.",
+            "Core Competences:"
+          ]
+        },
+        {
+          "section_id": "sec_getting_started",
+          "section_title": "📖 1. Listen & Read: Introductory Dialogue",
+          "content_type": "dialogue_activity",
+          "instruction": "Listen to the conversation and read along. Pay attention to key topic expressions.",
+          "dialogue": [
+            {
+              "speaker": "Speaker A",
+              "text": "Welcome to our study of Unit 3: Music! Let's explore the key ideas together."
+            },
+            {
+              "speaker": "Speaker B",
+              "text": "Yes! We will discover practical vocabulary and real-world skills related to Musical genres, talented artists & national music competitions."
+            }
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "talented (adj)",
+              "pos_ipa": "/ˈtæləntɪd/",
+              "meaning_vi": "có tài năng, có năng khiếu"
+            },
+            {
+              "word": "musical instrument (np)",
+              "pos_ipa": "/ˌmjuːzɪkl ˈɪnstrəmənt/",
+              "meaning_vi": "nhạc cụ"
+            },
+            {
+              "word": "trumpet (n)",
+              "pos_ipa": "/ˈtrʌmpɪt/",
+              "meaning_vi": "kèn trumpet"
+            },
+            {
+              "word": "cover song (np)",
+              "pos_ipa": "/ˈkʌvə(r) sɒŋ/",
+              "meaning_vi": "bài hát hát lại (bản cover)"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Plays short audio clips of 5 popular songs.- Asks: Whose songs are these? Is he a talented artist?- Confirms answers and introduces unit theme.",
+              "pos_ipa": "- Listen to clips in teams and guess song names.- Answer lead-in questions.",
+              "meaning_vi": "Song List:1. Love Yourself2. Sorry3. What Do You Mean?4. Where Are You Now?5. Stuck In The Moment-> Artist: Justin Bieber"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Getting started in Unit 3?",
+              "options": [
+                "To master core vocabulary and language skills related to Music",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 3 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "lesson_code": "02",
+      "lesson_type": "LANGUAGE",
+      "title": "Language – Stress in two-syllable words & Compound sentences, To-infinitive / Bare infinitive",
+      "short_title": "Stress in two-syllable words & Compound sentences, To-infinitive / Bare infinitive",
+      "icon": "💬",
+      "objectives": [
+        "Pronounce two-syllable words with correct stress patterns (nouns/adjectives vs. verbs);",
+        "Understand and use lexical items related to music and live shows;",
+        "Use coordinating conjunctions (and, but, or, so) to form compound sentences;",
+        "Use to-infinitives and bare infinitives correctly after specific verbs.",
+        "Core Competences:",
+        "Develop word stress discrimination, sentence combining accuracy, and grammatical precision;",
+        "Work in pairs and groups.",
+        "Personal Qualities:",
+        "Appreciate music's cultural role and cultivate independent study habits.",
+        "Digital & AI Competences:",
+        "3: Use AI tools, digital dictionaries, and pronunciation applications to verify stress patterns in two-syllable words.",
+        "MR2: Practice using educational AI tools to generate compound sentences and verify verb-infinitive patterns."
+      ],
+      "media": {
+        "audio": "assets/audio/unit03/lesson02_audio.mp3",
+        "video": "assets/videos/unit03/lesson02_video.mp4",
+        "images": [
+          "assets/images/unit03/lesson02_img1.png",
+          "assets/images/unit03/lesson02_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Pronounce two-syllable words with correct stress patterns (nouns/adjectives vs. verbs);",
+            "Understand and use lexical items related to music and live shows;",
+            "Use coordinating conjunctions (and, but, or, so) to form compound sentences;",
+            "Use to-infinitives and bare infinitives correctly after specific verbs."
+          ]
+        },
+        {
+          "section_id": "sec_language_focus",
+          "section_title": "🔍 1. Pronunciation & Grammar Focus",
+          "content_type": "grammar_rule",
+          "grammar_title": "Stress in two-syllable words & Compound sentences, To-infinitive / Bare infinitive",
+          "rule_summary": "Master the pronunciation rules and grammatical structures required for Unit 3 under MoET 2018.",
+          "examples": [
+            "Example 1: In everyday communication, accuracy in pronunciation ensures clear understanding.",
+            "Example 2: Contextual practice helps automate grammar usage naturally."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "audience (n)",
+              "pos_ipa": "/ˈɔːdiəns/",
+              "meaning_vi": "khán giả, thính giả"
+            },
+            {
+              "word": "judge (n/v)",
+              "pos_ipa": "/dʒʌdʒ/",
+              "meaning_vi": "giám khảo / đánh giá, chấm điểm"
+            },
+            {
+              "word": "single (n)",
+              "pos_ipa": "/ˈsɪŋɡl/",
+              "meaning_vi": "đĩa đơn, bài hát đơn phát hành"
+            },
+            {
+              "word": "contestant (n)",
+              "pos_ipa": "/kənˈtestənt/",
+              "meaning_vi": "thí sinh tham gia cuộc thi"
+            },
+            {
+              "word": "relax (v)",
+              "pos_ipa": "/rɪˈlæks/",
+              "meaning_vi": "thư giãn, giải trí"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Language in Unit 3?",
+              "options": [
+                "To master core vocabulary and language skills related to Music",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 3 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "lesson_code": "03",
+      "lesson_type": "READING",
+      "title": "Reading – A famous TV music show",
+      "short_title": "A famous TV music show",
+      "icon": "📖",
+      "objectives": [
+        "Read for specific information in an article about famous TV singing competitions (American Idol, Vietnam Idol);",
+        "Understand and use lexical items related to reality TV, competition stages, and audience voting;",
+        "Express opinions about participating in music talent competitions.",
+        "Core Competences:",
+        "Develop scanning, multiple-choice detail deduction, and argumentative discussion skills;",
+        "Work collaboratively.",
+        "Personal Qualities:",
+        "Appreciate musical talent and understand the perseverance required for artistic success.",
+        "Digital & AI Competences:",
+        "3: Use AI tools and online resources to search for and verify facts about international and Vietnamese TV music shows.",
+        "2: Critically evaluate the accuracy of online information about reality show rules and voting systems."
+      ],
+      "media": {
+        "audio": "assets/audio/unit03/lesson03_audio.mp3",
+        "video": "assets/videos/unit03/lesson03_video.mp4",
+        "images": [
+          "assets/images/unit03/lesson03_img1.png",
+          "assets/images/unit03/lesson03_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Read for specific information in an article about famous TV singing competitions (American Idol, Vietnam Idol);",
+            "Understand and use lexical items related to reality TV, competition stages, and audience voting;",
+            "Express opinions about participating in music talent competitions.",
+            "Core Competences:"
+          ]
+        },
+        {
+          "section_id": "sec_reading_passage",
+          "section_title": "📚 1. Reading Passage",
+          "content_type": "reading_text",
+          "passage_title": "A famous TV music show",
+          "paragraphs": [
+            "Music plays an essential role in contemporary society. Engaging with this topic encourages high school students to reflect on their daily habits and global responsibilities.",
+            "Through systematic inquiry into Musical genres, talented artists & national music competitions, learners cultivate critical thinking, broaden their vocabulary, and prepare for academic communication."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "reality TV show (np)",
+              "pos_ipa": "/riˈæləti ˌtiː ˈviː ʃəʊ/",
+              "meaning_vi": "chương trình truyền hình thực tế"
+            },
+            {
+              "word": "stage (n)",
+              "pos_ipa": "/steɪdʒ/",
+              "meaning_vi": "giai đoạn, chặng thi"
+            },
+            {
+              "word": "semi-final (n)",
+              "pos_ipa": "/ˌsemi ˈfaɪnl/",
+              "meaning_vi": "vòng bán kết"
+            },
+            {
+              "word": "play a role in (idiom)",
+              "pos_ipa": "/pleɪ ə rəʊl ɪn/",
+              "meaning_vi": "đóng vai trò trong"
+            },
+            {
+              "word": "ordinary (adj)",
+              "pos_ipa": "/ˈɔːdnri/",
+              "meaning_vi": "bình thường, đời thường"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Reading in Unit 3?",
+              "options": [
+                "To master core vocabulary and language skills related to Music",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 3 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "lesson_code": "04",
+      "lesson_type": "SPEAKING",
+      "title": "Speaking – Talking about a music show or concert",
+      "short_title": "Talking about a music show or concert",
+      "icon": "👥",
+      "objectives": [
+        "Read and extract key organizational features of a TV music show (I know your face);",
+        "Brainstorm, structure, and present a creative concept for a new TV music show.",
+        "Core Competences:",
+        "Develop creative concept pitching, collaborative negotiation, and public speaking skills;",
+        "Work in pairs and groups.",
+        "Personal Qualities:",
+        "Be creative, imaginative, and supportive of peers' artistic ideas.",
+        "Digital & AI Competences:",
+        "MR2: Use digital presentation tools or AI brainstorming assistants to design visual pitches for music shows.",
+        "1: Collaborate in groups using shared digital tools to structure and present the music show proposal."
+      ],
+      "media": {
+        "audio": "assets/audio/unit03/lesson04_audio.mp3",
+        "video": "assets/videos/unit03/lesson04_video.mp4",
+        "images": [
+          "assets/images/unit03/lesson04_img1.png",
+          "assets/images/unit03/lesson04_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Read and extract key organizational features of a TV music show (I know your face);",
+            "Brainstorm, structure, and present a creative concept for a new TV music show.",
+            "Core Competences:",
+            "Develop creative concept pitching, collaborative negotiation, and public speaking skills;"
+          ]
+        },
+        {
+          "section_id": "sec_speaking_tasks",
+          "section_title": "🗣️ 1. Guided Discussion & Roleplay",
+          "content_type": "speaking_prompts",
+          "prompt_title": "Topic for Pair Discussion",
+          "guiding_questions": [
+            "What are the main aspects of Music that relate to your daily life?",
+            "How can young people in Viet Nam contribute positively to this area?",
+            "What advice would you give to your peers?"
+          ],
+          "useful_expressions": [
+            "In my opinion...",
+            "From my perspective...",
+            "I strongly believe that...",
+            "We should consider that..."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "dress up (phr.v)",
+              "pos_ipa": "/dres ʌp/",
+              "meaning_vi": "hóa trang, ăn mặc đẹp/lịch sự"
+            },
+            {
+              "word": "runner-up (n)",
+              "pos_ipa": "/ˌrʌnər ˈʌp/",
+              "meaning_vi": "á quân, người về nhì"
+            },
+            {
+              "word": "cash (n)",
+              "pos_ipa": "/kæʃ/",
+              "meaning_vi": "tiền mặt"
+            },
+            {
+              "word": "come up with (phr.v)",
+              "pos_ipa": "/kʌm ʌp wɪð/",
+              "meaning_vi": "nảy ra, nghĩ ra (ý tưởng, kế hoạch)"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Plays video clip; elicits show names.",
+              "pos_ipa": "- Watch video and call out show titles.",
+              "meaning_vi": "TV Shows: America's Got Talent, Pop Idol, Vietnam's Got Talent, The X Factor, Cover Star"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Speaking in Unit 3?",
+              "options": [
+                "To master core vocabulary and language skills related to Music",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 3 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 5,
+      "lesson_code": "05",
+      "lesson_type": "LISTENING",
+      "title": "Listening – An international youth music festival",
+      "short_title": "An international youth music festival",
+      "icon": "🎧",
+      "objectives": [
+        "Listen for gist and specific details in an interview about preparations for an International Youth Music Festival;",
+        "Understand and use vocabulary related to festival stages, sound equipment, advance ticketing, and crowd management.",
+        "Core Competences:",
+        "Develop gist extraction, detailed True/False verification, and critical discussion skills;",
+        "Work in pairs and groups.",
+        "Personal Qualities:",
+        "Develop appreciation for live music events and cultural festivals.",
+        "Digital & AI Competences:",
+        "3: Formulate online search queries to retrieve information about global music festival venues and logistics.",
+        "2: Evaluate the accuracy and reliability of digital audio information against written statements."
+      ],
+      "media": {
+        "audio": "assets/audio/unit03/lesson05_audio.mp3",
+        "video": "assets/videos/unit03/lesson05_video.mp4",
+        "images": [
+          "assets/images/unit03/lesson05_img1.png",
+          "assets/images/unit03/lesson05_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Listen for gist and specific details in an interview about preparations for an International Youth Music Festival;",
+            "Understand and use vocabulary related to festival stages, sound equipment, advance ticketing, and crowd management.",
+            "Core Competences:",
+            "Develop gist extraction, detailed True/False verification, and critical discussion skills;"
+          ]
+        },
+        {
+          "section_id": "sec_listening_lab",
+          "section_title": "🎧 1. Listening Lab & Audio Track",
+          "content_type": "listening_activity",
+          "audio_title": "An international youth music festival",
+          "transcript": "Audio track for Grade 10 - Unit 3 (Music). Listen carefully to the details and answer the comprehension questions below.",
+          "word_count": "180-200 words"
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "background (n)",
+              "pos_ipa": "/ˈbækɡraʊnd/",
+              "meaning_vi": "âm thanh hậu cảnh, nền"
+            },
+            {
+              "word": "stage (n)",
+              "pos_ipa": "/steɪdʒ/",
+              "meaning_vi": "sân khấu biểu diễn"
+            },
+            {
+              "word": "free of charge (adv)",
+              "pos_ipa": "/ˌfriː əv ˈtʃɑːdʒ/",
+              "meaning_vi": "miễn phí, không tính tiền"
+            },
+            {
+              "word": "overcrowding (n/adj)",
+              "pos_ipa": "/ˌəʊvəˈkraʊdɪŋ/",
+              "meaning_vi": "tình trạng quá đông đúc"
+            },
+            {
+              "word": "in advance (idiom)",
+              "pos_ipa": "/ɪn ədˈvɑːns/",
+              "meaning_vi": "trước, làm trước thời hạn"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Plays video; asks students if they know these outdoor festivals.",
+              "pos_ipa": "- Watch video and share impressions.",
+              "meaning_vi": "Festivals: Monsoon Music Festival (Viet Nam), Coachella (USA), Tomorrowland (Belgium)"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Listening in Unit 3?",
+              "options": [
+                "To master core vocabulary and language skills related to Music",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 3 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 6,
+      "lesson_code": "06",
+      "lesson_type": "WRITING",
+      "title": "Writing – A blog post about an experience at a music event",
+      "short_title": "A blog post about an experience at a music event",
+      "icon": "✏️",
+      "objectives": [
+        "Understand the informal structure, tone, and descriptive vocabulary of a music event blog post;",
+        "Write a structured 120-word personal blog post sharing experiences at a music festival or live concert.",
+        "Core Competences:",
+        "Develop descriptive writing, chronological narrative structuring, and peer editing skills;",
+        "Work collaboratively.",
+        "Personal Qualities:",
+        "Cultivate creative expression and uphold academic honesty.",
+        "Digital & AI Competences:",
+        "1: Apply copyright regulations and ethical attribution when using music, images, or AI text assistants in blog drafting.",
+        "2: Maintain personal voice, declare AI assistance transparently, and submit the Student AI Declaration Form."
+      ],
+      "media": {
+        "audio": "assets/audio/unit03/lesson06_audio.mp3",
+        "video": "assets/videos/unit03/lesson06_video.mp4",
+        "images": [
+          "assets/images/unit03/lesson06_img1.png",
+          "assets/images/unit03/lesson06_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Understand the informal structure, tone, and descriptive vocabulary of a music event blog post;",
+            "Write a structured 120-word personal blog post sharing experiences at a music festival or live concert.",
+            "Core Competences:",
+            "Develop descriptive writing, chronological narrative structuring, and peer editing skills;"
+          ]
+        },
+        {
+          "section_id": "sec_writing_studio",
+          "section_title": "✍️ 1. Guided Writing Canvas",
+          "content_type": "writing_scaffold",
+          "task_prompt": "Write an academic paragraph (120–150 words) about: A blog post about an experience at a music event.",
+          "scaffold": {
+            "topic_sentence": "State the main purpose or central claim regarding Music.",
+            "supporting_points": [
+              "First point with supporting evidence or example.",
+              "Second point with analysis."
+            ],
+            "concluding_sentence": "Summarize the significance and provide a forward-looking thought."
+          },
+          "model_text": "Engaging actively with music is vital for high school students. Firstly, it builds essential life skills and responsibility. Secondly, it fosters teamwork and positive habits. In conclusion, developing conscious practices in this area prepares teenagers for future independence."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "hit (n)",
+              "pos_ipa": "/hɪt/",
+              "meaning_vi": "bài hát ăn khách, bài hát nổi tiếng"
+            },
+            {
+              "word": "take place (phr.v)",
+              "pos_ipa": "/teɪk pleɪs/",
+              "meaning_vi": "diễn ra, được tổ chức"
+            },
+            {
+              "word": "art exhibition (np)",
+              "pos_ipa": "/ˈɑːt ˌeksɪˈbɪʃn/",
+              "meaning_vi": "triển lãm nghệ thuật"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Shows compound picture pairs; elicits terms.",
+              "pos_ipa": "- Guess compound phrases in teams.",
+              "meaning_vi": "Mystery Phrases: come back, music event, blog writing, experience sharing, music website"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Writing in Unit 3?",
+              "options": [
+                "To master core vocabulary and language skills related to Music",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 3 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 7,
+      "lesson_code": "07",
+      "lesson_type": "COMMUNICATION AND CULTURE / CLIL",
+      "title": "Communication and Culture / CLIL – Traditional musical forms (Quan Ho, Chau Van)",
+      "short_title": "Traditional musical forms (Quan Ho, Chau Van)",
+      "icon": "🌐",
+      "objectives": [
+        "Make and respond to suggestions about attending a music show;",
+        "Understand the origins, performance forms, instruments, and costumes of Chau Van singing (Vietnamese spiritual folk art).",
+        "Core Competences:",
+        "Develop dialogue role-play, mind map completion, and presentation skills;",
+        "Work in pairs and groups.",
+        "Personal Qualities:",
+        "Take pride in traditional Vietnamese musical heritage and promote folk arts.",
+        "Digital & AI Competences:",
+        "3: Use AI tools and multimedia archives to research traditional Vietnamese folk genres (Chau van, Ca tru, Quan ho).",
+        "1: Explore responsible digital identity management when creating cultural promotion profiles on social music platforms."
+      ],
+      "media": {
+        "audio": "assets/audio/unit03/lesson07_audio.mp3",
+        "video": "assets/videos/unit03/lesson07_video.mp4",
+        "images": [
+          "assets/images/unit03/lesson07_img1.png",
+          "assets/images/unit03/lesson07_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Make and respond to suggestions about attending a music show;",
+            "Understand the origins, performance forms, instruments, and costumes of Chau Van singing (Vietnamese spiritual folk art).",
+            "Core Competences:",
+            "Develop dialogue role-play, mind map completion, and presentation skills;"
+          ]
+        },
+        {
+          "section_id": "sec_clil_culture",
+          "section_title": "🌐 1. Culture & Interdisciplinary Learning",
+          "content_type": "culture_article",
+          "topic": "Traditional musical forms (Quan Ho, Chau Van)",
+          "content": "Discover how music is approached across different countries and in Vietnamese society, highlighting intercultural awareness and sustainable development."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "praise (v)",
+              "pos_ipa": "/preɪz/",
+              "meaning_vi": "ca ngợi, tán dương"
+            },
+            {
+              "word": "chanting (n)",
+              "pos_ipa": "/ˈtʃɑːntɪŋ/",
+              "meaning_vi": "sự tụng kinh, vịnh xướng"
+            },
+            {
+              "word": "psychic (n)",
+              "pos_ipa": "/ˈsaɪkɪk/",
+              "meaning_vi": "ông đồng, bà đồng"
+            },
+            {
+              "word": "saint (n)",
+              "pos_ipa": "/seɪnt/",
+              "meaning_vi": "vị thánh, vị thần linh"
+            },
+            {
+              "word": "moon-shaped lute (np)",
+              "pos_ipa": "/muːn ʃeɪpt luːt/",
+              "meaning_vi": "đàn nguyệt"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Plays video; asks students to name traditional Vietnamese music genres.",
+              "pos_ipa": "- Watch video and identify folk genres.",
+              "meaning_vi": "Traditional Genres: Tuong, Cai luong, Cheo, Ca tru, Xam, Quan ho, Chau van"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Communication and Culture / CLIL in Unit 3?",
+              "options": [
+                "To master core vocabulary and language skills related to Music",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 3 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 8,
+      "lesson_code": "08",
+      "lesson_type": "LOOKING BACK & PROJECT",
+      "title": "Looking back & Project – Organizing a school talent show",
+      "short_title": "Organizing a school talent show",
+      "icon": "🧩",
+      "objectives": [
+        "Review stress in two-syllable words, music vocabulary, compound sentences, and to-infinitives / bare infinitives of Unit 3;",
+        "Apply knowledge to research and deliver a group presentation on 'A Form of Traditional Music'.",
+        "Core Competences:",
+        "Develop project management, presentation, and peer assessment skills;",
+        "Foster creative teamwork.",
+        "Personal Qualities:",
+        "Cherish traditional music heritage and maintain academic integrity.",
+        "Digital & AI Competences:",
+        "3: Use AI tools and multimedia software to gather research and design presentation slides/posters.",
+        "1: Adhere strictly to music and image copyright laws, properly cite sources, and submit the Student AI Declaration Form."
+      ],
+      "media": {
+        "audio": "assets/audio/unit03/lesson08_audio.mp3",
+        "video": "assets/videos/unit03/lesson08_video.mp4",
+        "images": [
+          "assets/images/unit03/lesson08_img1.png",
+          "assets/images/unit03/lesson08_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Review stress in two-syllable words, music vocabulary, compound sentences, and to-infinitives / bare infinitives of Unit 3;",
+            "Apply knowledge to research and deliver a group presentation on 'A Form of Traditional Music'.",
+            "Core Competences:",
+            "Develop project management, presentation, and peer assessment skills;"
+          ]
+        },
+        {
+          "section_id": "sec_project_guidelines",
+          "section_title": "🧩 1. Unit Synthesis & Collaborative Project",
+          "content_type": "project_guide",
+          "project_name": "Organizing a school talent show",
+          "steps": [
+            "Step 1: Form a team of 4-5 students and choose a specific focus area.",
+            "Step 2: Collect data, photos, or digital resources.",
+            "Step 3: Prepare a poster or digital slide presentation.",
+            "Step 4: Present your project in front of the class."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "traditional music (np)",
+              "pos_ipa": "/trəˈdɪʃənl ˈmjuːzɪk/",
+              "meaning_vi": "âm nhạc truyền thống"
+            },
+            {
+              "word": "folk art (np)",
+              "pos_ipa": "/fəʊk ɑːt/",
+              "meaning_vi": "nghệ thuật dân gian"
+            },
+            {
+              "word": "costume (n)",
+              "pos_ipa": "/ˈkɒstjuːm/",
+              "meaning_vi": "trang phục biểu diễn"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Looking back & Project in Unit 3?",
+              "options": [
+                "To master core vocabulary and language skills related to Music",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 3 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

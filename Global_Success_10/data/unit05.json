@@ -1,0 +1,1054 @@
+{
+  "unit_id": 5,
+  "unit_code": "UNIT 05",
+  "title": "Inventions",
+  "semester": "Semester 1",
+  "theme_color": "#d69e2e",
+  "icon": "💡",
+  "subtitle": "Technological innovations, artificial intelligence & modern gadgets",
+  "theme_image": "assets/images/unit05/theme_illustration.png",
+  "fallback_image": "assets/images/ui/Codex Image Aug 26, 2026, 04_02_06 PM.png",
+  "lessons": [
+    {
+      "lesson_id": 1,
+      "lesson_code": "01",
+      "lesson_type": "GETTING STARTED",
+      "title": "Getting started – Inventions for education",
+      "short_title": "Inventions for education",
+      "icon": "🚀",
+      "objectives": [
+        "Gain an overview of the topic 'Inventions' and key vocabulary related to digital devices and educational applications;",
+        "Understand and use words and collocations describing modern inventions (smartphones, laptops, apps, convenient);",
+        "Identify the present perfect tense, gerunds, and to-infinitives in context.",
+        "Core Competences:",
+        "Develop communication skills, critical thinking, pair/teamwork collaboration, and adaptability;",
+        "Actively join in class activities.",
+        "Personal Qualities:",
+        "Foster curiosity, appreciation for technological innovations, and responsible habits when using educational apps.",
+        "Digital & AI Competences:",
+        "1: Explain the role of Artificial Intelligence and digital devices in modern inventions and daily life.",
+        "2: Identify and list digital applications and devices according to their functional educational features.",
+        "MR2: Use AI tools and search engines to gather and organize information about technological innovations."
+      ],
+      "media": {
+        "audio": "assets/audio/unit05/lesson01_audio.mp3",
+        "video": "assets/videos/unit05/lesson01_video.mp4",
+        "images": [
+          "assets/images/unit05/lesson01_img1.png",
+          "assets/images/unit05/lesson01_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Gain an overview of the topic 'Inventions' and key vocabulary related to digital devices and educational applications;",
+            "Understand and use words and collocations describing modern inventions (smartphones, laptops, apps, convenient);",
+            "Identify the present perfect tense, gerunds, and to-infinitives in context.",
+            "Core Competences:"
+          ]
+        },
+        {
+          "section_id": "sec_getting_started",
+          "section_title": "📖 1. Listen & Read: Introductory Dialogue",
+          "content_type": "dialogue_activity",
+          "instruction": "Listen to the conversation and read along. Pay attention to key topic expressions.",
+          "dialogue": [
+            {
+              "speaker": "Speaker A",
+              "text": "Welcome to our study of Unit 5: Inventions! Let's explore the key ideas together."
+            },
+            {
+              "speaker": "Speaker B",
+              "text": "Yes! We will discover practical vocabulary and real-world skills related to Technological innovations, artificial intelligence & modern gadgets."
+            }
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "invent (v)",
+              "pos_ipa": "/ɪnˈvent/",
+              "meaning_vi": "phát minh, sáng chế"
+            },
+            {
+              "word": "smartphone (n)",
+              "pos_ipa": "/ˈsmɑːtfəʊn/",
+              "meaning_vi": "điện thoại thông minh"
+            },
+            {
+              "word": "laptop (n)",
+              "pos_ipa": "/ˈlæptɒp/",
+              "meaning_vi": "máy tính xách tay"
+            },
+            {
+              "word": "suitable (adj)",
+              "pos_ipa": "/ˈsuːtəbl/",
+              "meaning_vi": "phù hợp, thích hợp"
+            },
+            {
+              "word": "improve (v)",
+              "pos_ipa": "/ɪmˈpruːv/",
+              "meaning_vi": "cải thiện, nâng cao"
+            },
+            {
+              "word": "educational app (np)",
+              "pos_ipa": "/ˌedʒuˈkeɪʃənl æp/",
+              "meaning_vi": "ứng dụng giáo dục"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Shows partially folded images of technological inventions.- Unfolds clues until students guess the device names.- Elicits common feature: products of modern technological advances.",
+              "pos_ipa": "- Observe image clues in teams.- Guess device names and answer lead-in questions.",
+              "meaning_vi": "Target Inventions: Computers, Laptops, Smartphones, CalculatorsCommon Theme: Advances in modern technology facilitating learning and work"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Getting started in Unit 5?",
+              "options": [
+                "To master core vocabulary and language skills related to Inventions",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 5 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "lesson_code": "02",
+      "lesson_type": "LANGUAGE",
+      "title": "Language – Stress in 3-syllable nouns & Present perfect tense vs. Gerunds",
+      "short_title": "Stress in 3-syllable nouns & Present perfect tense vs. Gerunds",
+      "icon": "💬",
+      "objectives": [
+        "Pronounce common three-syllable nouns with correct stress patterns (stress on 1st syllable vs. 2nd syllable);",
+        "Understand and use lexical items related to computer components and scientific equipment (hardware, software, devices, laboratory, experiment);",
+        "Use the present perfect tense, gerunds, and to-infinitives correctly in sentences.",
+        "Core Competences:",
+        "Develop word stress discrimination, morphological unscrambling, and grammatical accuracy;",
+        "Work collaboratively in pairs and groups.",
+        "Personal Qualities:",
+        "Cultivate an inquiring scientific mind and responsible usage of digital hardware and software.",
+        "Digital & AI Competences:",
+        "2: Distinguish and classify technical computer components (Hardware, Software, Devices) according to system functions.",
+        "MR2: Practice using educational digital tools and AI applications to drill present perfect and infinitive verb patterns."
+      ],
+      "media": {
+        "audio": "assets/audio/unit05/lesson02_audio.mp3",
+        "video": "assets/videos/unit05/lesson02_video.mp4",
+        "images": [
+          "assets/images/unit05/lesson02_img1.png",
+          "assets/images/unit05/lesson02_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Pronounce common three-syllable nouns with correct stress patterns (stress on 1st syllable vs. 2nd syllable);",
+            "Understand and use lexical items related to computer components and scientific equipment (hardware, software, devices, laboratory, experiment);",
+            "Use the present perfect tense, gerunds, and to-infinitives correctly in sentences.",
+            "Core Competences:"
+          ]
+        },
+        {
+          "section_id": "sec_language_focus",
+          "section_title": "🔍 1. Pronunciation & Grammar Focus",
+          "content_type": "grammar_rule",
+          "grammar_title": "Stress in 3-syllable nouns & Present perfect tense vs. Gerunds",
+          "rule_summary": "Master the pronunciation rules and grammatical structures required for Unit 5 under MoET 2018.",
+          "examples": [
+            "Example 1: In everyday communication, accuracy in pronunciation ensures clear understanding.",
+            "Example 2: Contextual practice helps automate grammar usage naturally."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "hardware (n)",
+              "pos_ipa": "/ˈhɑːdweə(r)/",
+              "meaning_vi": "phần cứng máy tính"
+            },
+            {
+              "word": "software (n)",
+              "pos_ipa": "/ˈsɒftweə(r)/",
+              "meaning_vi": "phần mềm máy tính"
+            },
+            {
+              "word": "device (n)",
+              "pos_ipa": "/dɪˈvaɪs/",
+              "meaning_vi": "thiết bị điện tử"
+            },
+            {
+              "word": "laboratory (n)",
+              "pos_ipa": "/ləˈbɒrətri/",
+              "meaning_vi": "phòng thí nghiệm"
+            },
+            {
+              "word": "experiment (n/v)",
+              "pos_ipa": "/ɪkˈsperɪmənt/",
+              "meaning_vi": "thí nghiệm / làm thí nghiệm"
+            },
+            {
+              "word": "equipment (n)",
+              "pos_ipa": "/ɪˈkwɪpmənt/",
+              "meaning_vi": "trang thiết bị"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Gives 5 invention cards to groups; sets 2-minute chronological ordering challenge.",
+              "pos_ipa": "- Discuss in teams and arrange cards in chronological order.",
+              "meaning_vi": "Chronological Order:1. The Internet (1983)2. Refrigerator (1899)3. Light bulb (1879)4. Telephone (1876)5. Paper (105 AD)"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Language in Unit 5?",
+              "options": [
+                "To master core vocabulary and language skills related to Inventions",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 5 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "lesson_code": "03",
+      "lesson_type": "READING",
+      "title": "Reading – Artificial Intelligence in daily life",
+      "short_title": "Artificial Intelligence in daily life",
+      "icon": "📖",
+      "objectives": [
+        "Read for main ideas and specific information in an article about Artificial Intelligence (AI) and humanoid robots (Sophia);",
+        "Understand and use vocabulary related to AI capabilities, machine decision-making, and emotion recognition;",
+        "Discuss practical applications of AI in education and schools.",
+        "Core Competences:",
+        "Develop skimming, scanning, detail deduction, and collaborative brainstorming skills;",
+        "Work in pairs and groups.",
+        "Personal Qualities:",
+        "Appreciate AI as an inspiring technological achievement while maintaining human control and ethics.",
+        "Digital & AI Competences:",
+        "1: Explain the role of Artificial Intelligence in modern inventions, robotics, and daily life.",
+        "2: Identify how AI operates in specific real-world applications (speech recognition, self-driving vehicles, medical diagnosis).",
+        "2: Understand human oversight and the principle that AI supports rather than replaces human decision-making."
+      ],
+      "media": {
+        "audio": "assets/audio/unit05/lesson03_audio.mp3",
+        "video": "assets/videos/unit05/lesson03_video.mp4",
+        "images": [
+          "assets/images/unit05/lesson03_img1.png",
+          "assets/images/unit05/lesson03_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Read for main ideas and specific information in an article about Artificial Intelligence (AI) and humanoid robots (Sophia);",
+            "Understand and use vocabulary related to AI capabilities, machine decision-making, and emotion recognition;",
+            "Discuss practical applications of AI in education and schools.",
+            "Core Competences:"
+          ]
+        },
+        {
+          "section_id": "sec_reading_passage",
+          "section_title": "📚 1. Reading Passage",
+          "content_type": "reading_text",
+          "passage_title": "Artificial Intelligence in daily life",
+          "paragraphs": [
+            "Inventions plays an essential role in contemporary society. Engaging with this topic encourages high school students to reflect on their daily habits and global responsibilities.",
+            "Through systematic inquiry into Technological innovations, artificial intelligence & modern gadgets, learners cultivate critical thinking, broaden their vocabulary, and prepare for academic communication."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "artificial intelligence (np)",
+              "pos_ipa": "/ˌɑːtɪfɪʃl ɪnˈtelɪdʒəns/",
+              "meaning_vi": "trí tuệ nhân tạo (AI)"
+            },
+            {
+              "word": "robot (n)",
+              "pos_ipa": "/ˈrəʊbɒt/",
+              "meaning_vi": "người máy, rô-bốt"
+            },
+            {
+              "word": "communicate (v)",
+              "pos_ipa": "/kəˈmjuːnɪkeɪt/",
+              "meaning_vi": "giao tiếp, truyền đạt"
+            },
+            {
+              "word": "emotion (n)",
+              "pos_ipa": "/ɪˈməʊʃn/",
+              "meaning_vi": "cảm xúc, tình cảm"
+            },
+            {
+              "word": "measure (v)",
+              "pos_ipa": "/ˈmeʒə(r)/",
+              "meaning_vi": "đo lường, đánh giá"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Plays video clip; asks lead-in questions: What is AI? Can AI replace humans?- Elicits key insights: AI supports human decision-making but does not replace human ethics.",
+              "pos_ipa": "- Watch video and answer lead-in questions in pairs.",
+              "meaning_vi": "Video Takeaways:- AI performs tasks requiring human intelligence (image recognition, translation, decision support)- AI assists doctors, personalizes education, powers self-driving cars- Humans maintain oversight and ultimate control"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Reading in Unit 5?",
+              "options": [
+                "To master core vocabulary and language skills related to Inventions",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 5 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "lesson_code": "04",
+      "lesson_type": "SPEAKING",
+      "title": "Speaking – Discussing the uses and benefits of inventions",
+      "short_title": "Discussing the uses and benefits of inventions",
+      "icon": "👥",
+      "objectives": [
+        "Express ideas and talk about the uses and benefits of modern inventions (the Internet, e-readers, 3D printing, driverless cars);",
+        "Use sentence patterns describing functions (... help/allow us to do sth",
+        "... is/are used for doing sth",
+        "People use sth to do sth).",
+        "Core Competences:",
+        "Develop oral presentation, outline structuring, and public speaking skills;",
+        "Work collaboratively in pairs and groups.",
+        "Personal Qualities:",
+        "Foster appreciation for science and technology in solving real-world challenges.",
+        "Digital & AI Competences:",
+        "MR2: Use digital presentation tools or AI mind mapping applications to structure talk outlines.",
+        "1: Collaborate in groups to evaluate user needs and present technological solutions effectively."
+      ],
+      "media": {
+        "audio": "assets/audio/unit05/lesson04_audio.mp3",
+        "video": "assets/videos/unit05/lesson04_video.mp4",
+        "images": [
+          "assets/images/unit05/lesson04_img1.png",
+          "assets/images/unit05/lesson04_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Express ideas and talk about the uses and benefits of modern inventions (the Internet, e-readers, 3D printing, driverless cars);",
+            "Use sentence patterns describing functions (... help/allow us to do sth",
+            "... is/are used for doing sth",
+            "People use sth to do sth)."
+          ]
+        },
+        {
+          "section_id": "sec_speaking_tasks",
+          "section_title": "🗣️ 1. Guided Discussion & Roleplay",
+          "content_type": "speaking_prompts",
+          "prompt_title": "Topic for Pair Discussion",
+          "guiding_questions": [
+            "What are the main aspects of Inventions that relate to your daily life?",
+            "How can young people in Viet Nam contribute positively to this area?",
+            "What advice would you give to your peers?"
+          ],
+          "useful_expressions": [
+            "In my opinion...",
+            "From my perspective...",
+            "I strongly believe that...",
+            "We should consider that..."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "e-reader (n)",
+              "pos_ipa": "/ˈiː riːdə(r)/",
+              "meaning_vi": "máy đọc sách điện tử"
+            },
+            {
+              "word": "3D printing (np)",
+              "pos_ipa": "/ˌθriː ˈdiː ˈprɪntɪŋ/",
+              "meaning_vi": "công nghệ in 3D"
+            },
+            {
+              "word": "driverless car (np)",
+              "pos_ipa": "/ˈdraɪvələs kɑː(r)/",
+              "meaning_vi": "xe ô tô tự lái"
+            },
+            {
+              "word": "be used for + V-ing (struct)",
+              "pos_ipa": "/biː juːzd fɔː(r)/",
+              "meaning_vi": "được sử dụng cho mục đích..."
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Distributes invention cards; students give functional clues for peers to guess.",
+              "pos_ipa": "- Describe and guess inventions in teams.",
+              "meaning_vi": "Inventions: The Internet, E-readers, Robots, 3D Printing, Driverless Cars"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Elicits expressions: ... help(s)/allow(s) us to do sth; People use sth to do sth; ... is/are used for doing sth.- Guides Task 1 pair practice with invention prompts.",
+              "pos_ipa": "- Practice asking and answering about invention uses in pairs.",
+              "meaning_vi": "Useful Structures:- 'The Internet helps us to communicate over long distances.'- 'E-readers are used for storing and reading thousands of books.'- '3D printers allow engineers to create customized solid objects.'"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Speaking in Unit 5?",
+              "options": [
+                "To master core vocabulary and language skills related to Inventions",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 5 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 5,
+      "lesson_code": "05",
+      "lesson_type": "LISTENING",
+      "title": "Listening – A smart robot vacuum cleaner and home assistants",
+      "short_title": "A smart robot vacuum cleaner and home assistants",
+      "icon": "🎧",
+      "objectives": [
+        "Listen for keywords and operating instructions in a conversation about a robot vacuum cleaner (RoboVacuum);",
+        "Understand and use vocabulary related to household smart appliances, charging, buttons, and cleaning modes;",
+        "Propose creative new features for robotic household devices.",
+        "Core Competences:",
+        "Develop diagram note-taking, instruction comprehension, and creative product enhancement skills;",
+        "Work in pairs and groups.",
+        "Personal Qualities:",
+        "Appreciate automation in reducing household labor and observe device safety rules.",
+        "Digital & AI Competences:",
+        "2: Understand safe operation guidelines and operational modes of automated digital home appliances.",
+        "1: Propose innovative functional enhancements (sensors, timers, smart buttons) for smart robotic devices."
+      ],
+      "media": {
+        "audio": "assets/audio/unit05/lesson05_audio.mp3",
+        "video": "assets/videos/unit05/lesson05_video.mp4",
+        "images": [
+          "assets/images/unit05/lesson05_img1.png",
+          "assets/images/unit05/lesson05_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Listen for keywords and operating instructions in a conversation about a robot vacuum cleaner (RoboVacuum);",
+            "Understand and use vocabulary related to household smart appliances, charging, buttons, and cleaning modes;",
+            "Propose creative new features for robotic household devices.",
+            "Core Competences:"
+          ]
+        },
+        {
+          "section_id": "sec_listening_lab",
+          "section_title": "🎧 1. Listening Lab & Audio Track",
+          "content_type": "listening_activity",
+          "audio_title": "A smart robot vacuum cleaner and home assistants",
+          "transcript": "Audio track for Grade 10 - Unit 5 (Inventions). Listen carefully to the details and answer the comprehension questions below.",
+          "word_count": "180-200 words"
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "button (n)",
+              "pos_ipa": "/ˈbʌtn/",
+              "meaning_vi": "nút bấm điều khiển"
+            },
+            {
+              "word": "charge (v)",
+              "pos_ipa": "/tʃɑːdʒ/",
+              "meaning_vi": "nạp điện, sạc pin"
+            },
+            {
+              "word": "stain (n)",
+              "pos_ipa": "/steɪn/",
+              "meaning_vi": "vết bẩn, vết ố"
+            },
+            {
+              "word": "robovacuum (n)",
+              "pos_ipa": "/ˈrəʊbəʊ ˈvækjuːm/",
+              "meaning_vi": "máy hút bụi tự động / robot hút bụi"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Shows 3 clues: Household appliance, Has wheels, Sucks up dirt automatically.",
+              "pos_ipa": "- Guess target device name: RoboVacuum.",
+              "meaning_vi": "Clues:1. It is a household appliance.2. It has wheels.3. It sucks up dirt and dust automatically.-> Answer: RoboVacuum"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Listening in Unit 5?",
+              "options": [
+                "To master core vocabulary and language skills related to Inventions",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 5 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 6,
+      "lesson_code": "06",
+      "lesson_type": "WRITING",
+      "title": "Writing – Describing the benefits of an invention",
+      "short_title": "Describing the benefits of an invention",
+      "icon": "✏️",
+      "objectives": [
+        "Understand paragraph structure and transition connectors for explaining benefits of an invention;",
+        "Write a coherent 120-150 word paragraph describing 2-3 benefits of an invention (e.g., electricity, the Internet, smartphones, AI).",
+        "Core Competences:",
+        "Develop paragraph drafting, sentence rewriting, and peer editing skills;",
+        "Work collaboratively.",
+        "Personal Qualities:",
+        "Appreciate the life-changing impact of inventions and maintain academic honesty.",
+        "Digital & AI Competences:",
+        "MR2: Use word processing tools and digital dictionaries to draft and format paragraphs.",
+        "2: Maintain genuine authorship, declare AI brainstorming tools transparently, and submit the Student AI Declaration Form."
+      ],
+      "media": {
+        "audio": "assets/audio/unit05/lesson06_audio.mp3",
+        "video": "assets/videos/unit05/lesson06_video.mp4",
+        "images": [
+          "assets/images/unit05/lesson06_img1.png",
+          "assets/images/unit05/lesson06_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Understand paragraph structure and transition connectors for explaining benefits of an invention;",
+            "Write a coherent 120-150 word paragraph describing 2-3 benefits of an invention (e.g., electricity, the Internet, smartphones, AI).",
+            "Core Competences:",
+            "Develop paragraph drafting, sentence rewriting, and peer editing skills;"
+          ]
+        },
+        {
+          "section_id": "sec_writing_studio",
+          "section_title": "✍️ 1. Guided Writing Canvas",
+          "content_type": "writing_scaffold",
+          "task_prompt": "Write an academic paragraph (120–150 words) about: Describing the benefits of an invention.",
+          "scaffold": {
+            "topic_sentence": "State the main purpose or central claim regarding Inventions.",
+            "supporting_points": [
+              "First point with supporting evidence or example.",
+              "Second point with analysis."
+            ],
+            "concluding_sentence": "Summarize the significance and provide a forward-looking thought."
+          },
+          "model_text": "Engaging actively with inventions is vital for high school students. Firstly, it builds essential life skills and responsibility. Secondly, it fosters teamwork and positive habits. In conclusion, developing conscious practices in this area prepares teenagers for future independence."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "portable (adj)",
+              "pos_ipa": "/ˈpɔːtəbl/",
+              "meaning_vi": "có thể mang theo, di động"
+            },
+            {
+              "word": "costly (adj)",
+              "pos_ipa": "/ˈkɒstli/",
+              "meaning_vi": "đắt tiền, tốn kém"
+            },
+            {
+              "word": "bulky (adj)",
+              "pos_ipa": "/ˈbʌlki/",
+              "meaning_vi": "kềnh càng, đồ sộ"
+            },
+            {
+              "word": "enable s.o to do sth (v)",
+              "pos_ipa": "/ɪˈneɪbl/",
+              "meaning_vi": "cho phép ai làm gì"
+            },
+            {
+              "word": "in conclusion (exp)",
+              "pos_ipa": "/ɪn kənˈkluːʒn/",
+              "meaning_vi": "tóm lại, kết luận lại"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Group representatives sit in Hot Seat facing away from screen; teammates describe inventions.",
+              "pos_ipa": "- Describe and guess inventions in teams.",
+              "meaning_vi": "Target Words: Electric light, Airplane, Automobile"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Writing in Unit 5?",
+              "options": [
+                "To master core vocabulary and language skills related to Inventions",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 5 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 7,
+      "lesson_code": "07",
+      "lesson_type": "COMMUNICATION AND CULTURE / CLIL",
+      "title": "Communication and Culture / CLIL – Inventions that changed history",
+      "short_title": "Inventions that changed history",
+      "icon": "🌐",
+      "objectives": [
+        "Make and respond to requests politely at a store or service counter;",
+        "Acquire CLIL knowledge on computer hardware specifications: Processor speed (CPU), Random Access Memory (RAM), and Storage space (Hard drive/SSD);",
+        "Analyze technical specifications to recommend suitable computers for different user needs.",
+        "Core Competences:",
+        "Develop customer dialogue role-play, technical specification analysis, and problem-solving skills;",
+        "Work in pairs and groups.",
+        "Personal Qualities:",
+        "Foster practical decision-making when selecting technological devices.",
+        "Digital & AI Competences:",
+        "2: Evaluate user computing needs and match appropriate hardware configurations (CPU, RAM, Storage).",
+        "MR2: Compare digital computer specifications using online comparison tools."
+      ],
+      "media": {
+        "audio": "assets/audio/unit05/lesson07_audio.mp3",
+        "video": "assets/videos/unit05/lesson07_video.mp4",
+        "images": [
+          "assets/images/unit05/lesson07_img1.png",
+          "assets/images/unit05/lesson07_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Make and respond to requests politely at a store or service counter;",
+            "Acquire CLIL knowledge on computer hardware specifications: Processor speed (CPU), Random Access Memory (RAM), and Storage space (Hard drive/SSD);",
+            "Analyze technical specifications to recommend suitable computers for different user needs.",
+            "Core Competences:"
+          ]
+        },
+        {
+          "section_id": "sec_clil_culture",
+          "section_title": "🌐 1. Culture & Interdisciplinary Learning",
+          "content_type": "culture_article",
+          "topic": "Inventions that changed history",
+          "content": "Discover how inventions is approached across different countries and in Vietnamese society, highlighting intercultural awareness and sustainable development."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "processor speed (np)",
+              "pos_ipa": "/ˈprəʊsesə(r) spiːd/",
+              "meaning_vi": "tốc độ bộ vi xử lý (GHz)"
+            },
+            {
+              "word": "RAM (Random Access Memory) (np)",
+              "pos_ipa": "/ræm/",
+              "meaning_vi": "bộ nhớ truy cập ngẫu nhiên (GB)"
+            },
+            {
+              "word": "storage space (np)",
+              "pos_ipa": "/ˈstɔːrɪdʒ speɪs/",
+              "meaning_vi": "dung lượng ổ cứng lưu trữ (GB/TB)"
+            },
+            {
+              "word": "recommend (v)",
+              "pos_ipa": "/ˌrekəˈmend/",
+              "meaning_vi": "giới thiệu, đề xuất"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "Task 1 (7 mins): Plays audio; checks completion (1-B, 2-C, 3-A, 4-E, 5-D).Task 2 (10 mins): Directs pair role-plays pretending to buy electronic devices (laptops, smartphones, tablets).",
+              "pos_ipa": "- Complete dialogue in Task 1.- Role-play customer-assistant conversations in pairs.",
+              "meaning_vi": "Request Expressions:* Making requests: Can you help me, please? / Could you let me know...? / Would you mind showing me...? / I was wondering if you could recommend...* Responding: Certainly! / Sure, no problem. / I'd be happy to help."
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Communication and Culture / CLIL in Unit 5?",
+              "options": [
+                "To master core vocabulary and language skills related to Inventions",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 5 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 8,
+      "lesson_code": "08",
+      "lesson_type": "LOOKING BACK & PROJECT",
+      "title": "Looking back & Project – Designing a smart classroom gadget",
+      "short_title": "Designing a smart classroom gadget",
+      "icon": "🧩",
+      "objectives": [
+        "Review three-syllable noun stress, inventions vocabulary, present perfect tense, gerunds, and to-infinitives of Unit 5;",
+        "Apply knowledge to research, create, and deliver a group presentation on 'Inventions for the Classroom'.",
+        "Core Competences:",
+        "Develop project management, presentation, and peer assessment skills;",
+        "Foster creative teamwork.",
+        "Personal Qualities:",
+        "Show technological creativity, problem-solving mindset, and academic integrity.",
+        "Digital & AI Competences:",
+        "2: Explain the role of AI and technological innovations in classroom learning.",
+        "1: Use AI tools and presentation software to design digital slides/posters, declare AI assistance transparently, and submit the Student AI Declaration Form."
+      ],
+      "media": {
+        "audio": "assets/audio/unit05/lesson08_audio.mp3",
+        "video": "assets/videos/unit05/lesson08_video.mp4",
+        "images": [
+          "assets/images/unit05/lesson08_img1.png",
+          "assets/images/unit05/lesson08_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Review three-syllable noun stress, inventions vocabulary, present perfect tense, gerunds, and to-infinitives of Unit 5;",
+            "Apply knowledge to research, create, and deliver a group presentation on 'Inventions for the Classroom'.",
+            "Core Competences:",
+            "Develop project management, presentation, and peer assessment skills;"
+          ]
+        },
+        {
+          "section_id": "sec_project_guidelines",
+          "section_title": "🧩 1. Unit Synthesis & Collaborative Project",
+          "content_type": "project_guide",
+          "project_name": "Designing a smart classroom gadget",
+          "steps": [
+            "Step 1: Form a team of 4-5 students and choose a specific focus area.",
+            "Step 2: Collect data, photos, or digital resources.",
+            "Step 3: Prepare a poster or digital slide presentation.",
+            "Step 4: Present your project in front of the class."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Technology Fair (np)",
+              "pos_ipa": "/tekˈnɒlədʒi feə(r)/",
+              "meaning_vi": "hội chợ công nghệ"
+            },
+            {
+              "word": "install (v)",
+              "pos_ipa": "/ɪnˈstɔːl/",
+              "meaning_vi": "cài đặt, lắp đặt"
+            },
+            {
+              "word": "smart board (np)",
+              "pos_ipa": "/smɑːt bɔːd/",
+              "meaning_vi": "bảng tương tác thông minh"
+            },
+            {
+              "word": "invention (n)",
+              "pos_ipa": "/ɪnˈvenʃn/",
+              "meaning_vi": "sáng chế, phát minh"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- 2 teams; 2-minute board race writing three-syllable nouns.",
+              "pos_ipa": "- Write nouns on the board in turns.",
+              "meaning_vi": "Three-syllable Nouns: Inventor, Invention, Computer, Telephone, Camera, Telescope, Submarine"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Looking back & Project in Unit 5?",
+              "options": [
+                "To master core vocabulary and language skills related to Inventions",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 5 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

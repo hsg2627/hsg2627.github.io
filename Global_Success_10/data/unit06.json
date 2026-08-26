@@ -1,0 +1,862 @@
+{
+  "unit_id": 6,
+  "unit_code": "UNIT 06",
+  "title": "Gender equality",
+  "semester": "Semester 2",
+  "theme_color": "#e53e3e",
+  "icon": "⚧️",
+  "subtitle": "Equal job opportunities, eliminating gender bias & women empowerment",
+  "theme_image": "assets/images/unit06/theme_illustration.png",
+  "fallback_image": "assets/images/ui/Codex Image Aug 26, 2026, 04_02_06 PM.png",
+  "lessons": [
+    {
+      "lesson_id": 1,
+      "lesson_code": "01",
+      "lesson_type": "GETTING STARTED",
+      "title": "Getting started – Equal job opportunities",
+      "short_title": "Equal job opportunities",
+      "icon": "🚀",
+      "objectives": [
+        "Vocabulary: Understand the meaning of the key words or word collocations below:",
+        "Gender equality (n):",
+        "surgeon (n) /ˈsɜː(r)dʒən/:",
+        "medical school (n) / ˈmedɪkl skuːl/",
+        "kindergarten (n) /ˈkɪndəɡɑː(r)tn/",
+        "adorable (a)",
+        "Pronunciation: Pronounce the following words, words clusters correctly: kindergarten, surgeon, medical school, adorable",
+        "Grammar: Understand and use thee passive voice with modal",
+        "Competencies: a. General competencies: Develop communication skills and problem-solving skills",
+        "critical thinking, interpersonal skill, , self-study skill. b. Specific competencies:",
+        "Be collaborative and supportive in pair work and teamwork",
+        "Actively join in class activities.",
+        "Develop an awareness of gender equality in job choices and opportunities",
+        "Be respectful towards all genders.",
+        "Digital Competencies (NLS Integration) [",
+        "1NC1a]: Determine information needs",
+        "find data, information, and content in digital environments (e.g., listening to digital audio, looking up vocabulary). [",
+        "2NC1a]: Evaluate needs and identify, select, and use digital tools (e.g., using online dictionaries or translation apps to check pronunciation/meaning)."
+      ],
+      "media": {
+        "audio": "assets/audio/unit06/lesson01_audio.mp3",
+        "video": "assets/videos/unit06/lesson01_video.mp4",
+        "images": [
+          "assets/images/unit06/lesson01_img1.png",
+          "assets/images/unit06/lesson01_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: Understand the meaning of the key words or word collocations below:",
+            "Gender equality (n):",
+            "surgeon (n) /ˈsɜː(r)dʒən/:",
+            "medical school (n) / ˈmedɪkl skuːl/"
+          ]
+        },
+        {
+          "section_id": "sec_getting_started",
+          "section_title": "📖 1. Listen & Read: Introductory Dialogue",
+          "content_type": "dialogue_activity",
+          "instruction": "Listen to the conversation and read along. Pay attention to key topic expressions.",
+          "dialogue": [
+            {
+              "speaker": "Speaker A",
+              "text": "Welcome to our study of Unit 6: Gender equality! Let's explore the key ideas together."
+            },
+            {
+              "speaker": "Speaker B",
+              "text": "Yes! We will discover practical vocabulary and real-world skills related to Equal job opportunities, eliminating gender bias & women empowerment."
+            }
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "16/1/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "19/1/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "16/1/2026",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Getting started in Unit 6?",
+              "options": [
+                "To master core vocabulary and language skills related to Gender equality",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 6 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "lesson_code": "02",
+      "lesson_type": "LANGUAGE",
+      "title": "Language – Stress in two-syllable words & Passive voice with modals",
+      "short_title": "Stress in two-syllable words & Passive voice with modals",
+      "icon": "💬",
+      "objectives": [
+        "Vocabulary:",
+        "Use lexical items related to the topic Gender Equality: treat, gender, behave, operation,",
+        "Pronunciation:",
+        "Pronounce three-syllable adjectives and verbs with correct stress",
+        "Use the passive voice with modals.",
+        "Competencies: a. General competencies:",
+        "Access and consolidate information from a variety of sources",
+        "b. Specific competencies:",
+        "Be collaborative and supportive in pair work and teamwork",
+        "Actively join in class activities.",
+        "Develop an awareness of gender equality",
+        "Be respectful towards all genders.",
+        "Digital Competencies (NLS Integration): [",
+        "1NC1a]: Determine information needs",
+        "find data, information, and content in digital environments (using online dictionaries/glossaries). [",
+        "2NC1a]: Evaluate needs and identify, select, and use digital tools (using dictionary apps for pronunciation checks). [",
+        "4NC1a]: Use digital tools and technologies for collaborative processes (optional: using shared digital boards for group work)."
+      ],
+      "media": {
+        "audio": "assets/audio/unit06/lesson02_audio.mp3",
+        "video": "assets/videos/unit06/lesson02_video.mp4",
+        "images": [
+          "assets/images/unit06/lesson02_img1.png",
+          "assets/images/unit06/lesson02_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary:",
+            "Use lexical items related to the topic Gender Equality: treat, gender, behave, operation,",
+            "Pronunciation:",
+            "Pronounce three-syllable adjectives and verbs with correct stress"
+          ]
+        },
+        {
+          "section_id": "sec_language_focus",
+          "section_title": "🔍 1. Pronunciation & Grammar Focus",
+          "content_type": "grammar_rule",
+          "grammar_title": "Stress in two-syllable words & Passive voice with modals",
+          "rule_summary": "Master the pronunciation rules and grammatical structures required for Unit 6 under MoET 2018.",
+          "examples": [
+            "Example 1: In everyday communication, accuracy in pronunciation ensures clear understanding.",
+            "Example 2: Contextual practice helps automate grammar usage naturally."
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Language in Unit 6?",
+              "options": [
+                "To master core vocabulary and language skills related to Gender equality",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 6 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "lesson_code": "03",
+      "lesson_type": "READING",
+      "title": "Reading – Gender equality in the workplace",
+      "short_title": "Gender equality in the workplace",
+      "icon": "📖",
+      "objectives": [
+        "Knowledge Read for specific information about gender equality in employment."
+      ],
+      "media": {
+        "audio": "assets/audio/unit06/lesson03_audio.mp3",
+        "video": "assets/videos/unit06/lesson03_video.mp4",
+        "images": [
+          "assets/images/unit06/lesson03_img1.png",
+          "assets/images/unit06/lesson03_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Knowledge Read for specific information about gender equality in employment."
+          ]
+        },
+        {
+          "section_id": "sec_reading_passage",
+          "section_title": "📚 1. Reading Passage",
+          "content_type": "reading_text",
+          "passage_title": "Gender equality in the workplace",
+          "paragraphs": [
+            "Gender equality plays an essential role in contemporary society. Engaging with this topic encourages high school students to reflect on their daily habits and global responsibilities.",
+            "Through systematic inquiry into Equal job opportunities, eliminating gender bias & women empowerment, learners cultivate critical thinking, broaden their vocabulary, and prepare for academic communication."
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Reading in Unit 6?",
+              "options": [
+                "To master core vocabulary and language skills related to Gender equality",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 6 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "lesson_code": "04",
+      "lesson_type": "SPEAKING",
+      "title": "Speaking – Career choices for men and women",
+      "short_title": "Career choices for men and women",
+      "icon": "👥",
+      "objectives": [
+        "Vocabulary:  Understand how to express opinions",
+        "I think, I believe, there are…..",
+        "Pronunciation: Pronounce the following words, words clusters correctly: surgeons, assistants, firefighter, kindergarten, secretary..",
+        "Apply useful expressions to talk about career choices.",
+        "Competencies: a. General competencies:",
+        "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, colaboration b. Specific competencies:"
+      ],
+      "media": {
+        "audio": "assets/audio/unit06/lesson04_audio.mp3",
+        "video": "assets/videos/unit06/lesson04_video.mp4",
+        "images": [
+          "assets/images/unit06/lesson04_img1.png",
+          "assets/images/unit06/lesson04_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary:  Understand how to express opinions",
+            "I think, I believe, there are…..",
+            "Pronunciation: Pronounce the following words, words clusters correctly: surgeons, assistants, firefighter, kindergarten, secretary..",
+            "Apply useful expressions to talk about career choices."
+          ]
+        },
+        {
+          "section_id": "sec_speaking_tasks",
+          "section_title": "🗣️ 1. Guided Discussion & Roleplay",
+          "content_type": "speaking_prompts",
+          "prompt_title": "Topic for Pair Discussion",
+          "guiding_questions": [
+            "What are the main aspects of Gender equality that relate to your daily life?",
+            "How can young people in Viet Nam contribute positively to this area?",
+            "What advice would you give to your peers?"
+          ],
+          "useful_expressions": [
+            "In my opinion...",
+            "From my perspective...",
+            "I strongly believe that...",
+            "We should consider that..."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Speaking in Unit 6?",
+              "options": [
+                "To master core vocabulary and language skills related to Gender equality",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 6 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 5,
+      "lesson_code": "05",
+      "lesson_type": "LISTENING",
+      "title": "Listening – Success stories of female leaders",
+      "short_title": "Success stories of female leaders",
+      "icon": "🎧",
+      "objectives": [
+        "Listen for specific information in a talk about the first woman in space",
+        "Identify and use lexical items related to gender equality.",
+        "Vocabulary: Understand the meaning of the key words or word collocations below: cosmonaut, space, parachutist, instructor, technical sciences…",
+        "Pronunciation: Pronounce the following words, words clusters correctly: cosmonaut, space, parachutist, instructor, technical sciences",
+        "Competencies: a. General competencies:",
+        "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, colaboration b. Specific competencies:"
+      ],
+      "media": {
+        "audio": "assets/audio/unit06/lesson05_audio.mp3",
+        "video": "assets/videos/unit06/lesson05_video.mp4",
+        "images": [
+          "assets/images/unit06/lesson05_img1.png",
+          "assets/images/unit06/lesson05_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Listen for specific information in a talk about the first woman in space",
+            "Identify and use lexical items related to gender equality.",
+            "Vocabulary: Understand the meaning of the key words or word collocations below: cosmonaut, space, parachutist, instructor, technical sciences…",
+            "Pronunciation: Pronounce the following words, words clusters correctly: cosmonaut, space, parachutist, instructor, technical sciences"
+          ]
+        },
+        {
+          "section_id": "sec_listening_lab",
+          "section_title": "🎧 1. Listening Lab & Audio Track",
+          "content_type": "listening_activity",
+          "audio_title": "Success stories of female leaders",
+          "transcript": "Audio track for Grade 10 - Unit 6 (Gender equality). Listen carefully to the details and answer the comprehension questions below.",
+          "word_count": "180-200 words"
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Listening in Unit 6?",
+              "options": [
+                "To master core vocabulary and language skills related to Gender equality",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 6 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 6,
+      "lesson_code": "06",
+      "lesson_type": "WRITING",
+      "title": "Writing – An essay on gender equality in education",
+      "short_title": "An essay on gender equality in education",
+      "icon": "✏️",
+      "objectives": [
+        "Vocabulary: Understand the meaning of the key words or word collocations below: make decision, responsibilities, qualities, persuasion, operations, communication, perform...",
+        "Pronunciation: Pronounce the following words, words clusters correctly: decision, responsibilities, qualities, persuasion, operations, communication, perform",
+        "Grammar: Understand and use Modal Verbs and Passive Voice with Modals Verbs.  Write about jobs for men and women.",
+        "Competencies: a. General competencies:",
+        "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, colaboration b. Specific competencies:",
+        "Access and consolidate information from a variety of sources",
+        "Be collaborative and supportive in pair work and teamwork",
+        "Actively join in class activities.",
+        "Develop an awareness of gender equality in the workforce",
+        "Be respectful towards all genders.",
+        "Digital Competencies (NLS Integration): [",
+        "1NC1a]: Determine information needs",
+        "find data, information, and content in digital environments (video analysis, vocabulary lookup). [",
+        "1NC1a]: Create and edit digital content in various formats (typing the paragraph on devices). [",
+        "4NC1a]: Use digital tools and technologies for collaborative processes (sharing drafts/homework coordination). [",
+        "2NC1a]: Evaluate needs and identify, select, and use digital tools (selecting appropriate dictionary apps/search engines)."
+      ],
+      "media": {
+        "audio": "assets/audio/unit06/lesson06_audio.mp3",
+        "video": "assets/videos/unit06/lesson06_video.mp4",
+        "images": [
+          "assets/images/unit06/lesson06_img1.png",
+          "assets/images/unit06/lesson06_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: Understand the meaning of the key words or word collocations below: make decision, responsibilities, qualities, persuasion, operations, communication, perform...",
+            "Pronunciation: Pronounce the following words, words clusters correctly: decision, responsibilities, qualities, persuasion, operations, communication, perform",
+            "Grammar: Understand and use Modal Verbs and Passive Voice with Modals Verbs.  Write about jobs for men and women.",
+            "Competencies: a. General competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_writing_studio",
+          "section_title": "✍️ 1. Guided Writing Canvas",
+          "content_type": "writing_scaffold",
+          "task_prompt": "Write an academic paragraph (120–150 words) about: An essay on gender equality in education.",
+          "scaffold": {
+            "topic_sentence": "State the main purpose or central claim regarding Gender equality.",
+            "supporting_points": [
+              "First point with supporting evidence or example.",
+              "Second point with analysis."
+            ],
+            "concluding_sentence": "Summarize the significance and provide a forward-looking thought."
+          },
+          "model_text": "Engaging actively with gender equality is vital for high school students. Firstly, it builds essential life skills and responsibility. Secondly, it fosters teamwork and positive habits. In conclusion, developing conscious practices in this area prepares teenagers for future independence."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Writing in Unit 6?",
+              "options": [
+                "To master core vocabulary and language skills related to Gender equality",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 6 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 7,
+      "lesson_code": "07",
+      "lesson_type": "COMMUNICATION AND CULTURE / CLIL",
+      "title": "Communication and Culture / CLIL – International Women's Day & global gender parity",
+      "short_title": "International Women's Day & global gender parity",
+      "icon": "🌐",
+      "objectives": [
+        "Vocabulary:",
+        "Use lexical items related to the topic Gender equality",
+        "Express agreement and disagreement",
+        "Learn about women's football.",
+        "Pronunciation:",
+        "Competencies: a. General competencies:",
+        "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, colaboration b. Specific competencies:",
+        "Develop communication skills and creativity",
+        "Be collaborative and supportive in pair work and team work",
+        "Develop presentation skills.",
+        "Understand more about the gender equality in sports",
+        "Be respectful towards all genders and cultures.",
+        "Digital Competencies (NLS Integration): [",
+        "1NC1a]: Determine information needs",
+        "find data, information, and content in digital environments (searching for history of women's football). [",
+        "4NC1a]: Use digital tools and technologies for collaborative processes (creating mind maps or presentations). [",
+        "1NC1a]: Develop digital content in various formats (digital timeline/mind map). [",
+        "2NC1b]: Evaluate the credibility and reliability of data sources (when researching football history)."
+      ],
+      "media": {
+        "audio": "assets/audio/unit06/lesson07_audio.mp3",
+        "video": "assets/videos/unit06/lesson07_video.mp4",
+        "images": [
+          "assets/images/unit06/lesson07_img1.png",
+          "assets/images/unit06/lesson07_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary:",
+            "Use lexical items related to the topic Gender equality",
+            "Express agreement and disagreement",
+            "Learn about women's football."
+          ]
+        },
+        {
+          "section_id": "sec_clil_culture",
+          "section_title": "🌐 1. Culture & Interdisciplinary Learning",
+          "content_type": "culture_article",
+          "topic": "International Women's Day & global gender parity",
+          "content": "Discover how gender equality is approached across different countries and in Vietnamese society, highlighting intercultural awareness and sustainable development."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "WRAPPING – UP: (4’ – PW)Aim: To review how to express agree or disagree: * T gives some statements and asks Ss work in pairs to gives their opinion for each statement.** Ss discuss with their partners and present.*** T calls some pairs to go to the board and present.**** Ss give feed back and T gives the comments. Let’s practice:OPINION 1: Ladies first, dogs second. Person #1 – AgreesI agree.You’re right.Absolutely.Person #2 – DisagreesI disagree.I don’t think so.No way!OPINION 2: I don’t like garlic.Person #1 – AgreesI also don’t like it.Person #1 – DisagreesReally? Why not?Person #1 – DisagreesI disagree.That’s wrong.I don’t think so.Person #2 – DisagreesReally? I love it!Person #2 – ALSO DisagreesYeah! Why not?Person #2 – ALSO DisagreesI also disagree.I don’t think so, either.OPINION 3: Soccer is the greatest game in the world.Ss1 – AgreesI agree.You’re right.Absolutely.Ss1 – DisagreesI disagree.You’re wrong.No way!Ss2 – DisagreesI disagree.You’re wrong.No way!Ss2 – ALSO DisagreesI don’t think so, either.Not at all!That’s just your opinion.",
+              "pos_ipa": "Person #1 – AgreesI agree.You’re right.Absolutely.",
+              "meaning_vi": "Person #2 – DisagreesI disagree.I don’t think so.No way!"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Communication and Culture / CLIL in Unit 6?",
+              "options": [
+                "To master core vocabulary and language skills related to Gender equality",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 6 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 8,
+      "lesson_code": "08",
+      "lesson_type": "LOOKING BACK & PROJECT",
+      "title": "Looking back & Project – Surveying gender roles in the community",
+      "short_title": "Surveying gender roles in the community",
+      "icon": "🧩",
+      "objectives": [
+        "Vocabulary:",
+        "Review the vocabulary",
+        "Pronunciation:",
+        "Grammar: grammar of Unit 6",
+        "Competencies: a. General competencies:",
+        "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, colaboration b. Specific competencies: [",
+        "1NC1b]: Create and edit digital content to express oneself (designing charts/graphs for the project report)."
+      ],
+      "media": {
+        "audio": "assets/audio/unit06/lesson08_audio.mp3",
+        "video": "assets/videos/unit06/lesson08_video.mp4",
+        "images": [
+          "assets/images/unit06/lesson08_img1.png",
+          "assets/images/unit06/lesson08_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary:",
+            "Review the vocabulary",
+            "Pronunciation:",
+            "Grammar: grammar of Unit 6"
+          ]
+        },
+        {
+          "section_id": "sec_project_guidelines",
+          "section_title": "🧩 1. Unit Synthesis & Collaborative Project",
+          "content_type": "project_guide",
+          "project_name": "Surveying gender roles in the community",
+          "steps": [
+            "Step 1: Form a team of 4-5 students and choose a specific focus area.",
+            "Step 2: Collect data, photos, or digital resources.",
+            "Step 3: Prepare a poster or digital slide presentation.",
+            "Step 4: Present your project in front of the class."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "27/1/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "27/1/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "27/1/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "GRAMMARTASK 1 (6ms)- To have Ss revise the passive voice with modal verbs- To help Ss understand the use of the passive voice with modal verbs- [NLS Integration 1.1NC1a]: T asks Ss to use their smartphones to quickly search for one real-world headline or news title that uses Passive Voice with Modals to share with their partner.CHOOSE THE BEST ANSWERS.* T has Ss recall the passive voice from Unit 2: Elicit when we use it, e.g. when we do not want to indicate the person who does the action. - We can also use the passive voice with modal verbs (with examples in the conversation in Getting Started.)- T elicits the meanings of the modal verbs in the Remember! box, e.g. to express ability, advice, duty, permission, possibility, prohibition or request. - T reminds Ss that modal verbs are special auxiliary verbs that behave differently from other verbs and are usually used with other verbs.abilitycan, couldadvice or dutyshould, ought todutymustpermissioncan, could, maypossibilitycan, could, may, mightprohibitioncan’t, mustn’t, may notrequestmay, will, would- T focuses Ss’ attention on the structures and examples in Remember! box and gives more examples if necessary.** Ss study the sentences individually or in pairs. - T explains that some sentences are in active voice, some in passive voice. T asks Ss to pay attention to who does the action in each sentence.*** T encourages Ss to choose the answers and compare their answers with a partner.**** T checks answers with the class. T invites individual Ss to read the sentences aloud. Key:1. shouldn’t be allowed 2. can work 3. may be offered4. could join 5. must be prepared",
+              "pos_ipa": "ability",
+              "meaning_vi": "can, could"
+            },
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "30/1/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "2/2/2026",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Looking back & Project in Unit 6?",
+              "options": [
+                "To master core vocabulary and language skills related to Gender equality",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 6 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

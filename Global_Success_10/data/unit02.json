@@ -1,0 +1,1048 @@
+{
+  "unit_id": 2,
+  "unit_code": "UNIT 02",
+  "title": "Humans and the environment",
+  "semester": "Semester 1",
+  "theme_color": "#38a169",
+  "icon": "🌱",
+  "subtitle": "Eco-friendly lifestyle, carbon footprint & protecting nature",
+  "theme_image": "assets/images/unit02/theme_illustration.png",
+  "fallback_image": "assets/images/ui/Codex Image Aug 26, 2026, 04_02_06 PM.png",
+  "lessons": [
+    {
+      "lesson_id": 1,
+      "lesson_code": "01",
+      "lesson_type": "GETTING STARTED",
+      "title": "Getting started – Go Green Club",
+      "short_title": "Go Green Club",
+      "icon": "🚀",
+      "objectives": [
+        "Gain an overview of the topic 'Humans and the environment';",
+        "Understand and use vocabulary to talk about activities to adopt a greener lifestyle;",
+        "Identify the use of future forms (will vs. be going to) and the passive voice in context.",
+        "Core Competences:",
+        "Develop communication skills and environmental awareness;",
+        "Be collaborative and supportive in pair work and teamwork;",
+        "Actively join in class activities.",
+        "Personal Qualities:",
+        "Develop a greener lifestyle and active awareness of environmental issues;",
+        "Demonstrate responsibility toward the community and the natural environment.",
+        "Digital & AI Competences:",
+        "3: Use AI tools and search engines to collect and summarize information about Go Green Club activities and eco-friendly practices.",
+        "2: Maintain human oversight and critical verification when evaluating digital environmental data from online sources."
+      ],
+      "media": {
+        "audio": "assets/audio/unit02/lesson01_audio.mp3",
+        "video": "assets/videos/unit02/lesson01_video.mp4",
+        "images": [
+          "assets/images/unit02/lesson01_img1.png",
+          "assets/images/unit02/lesson01_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Gain an overview of the topic 'Humans and the environment';",
+            "Understand and use vocabulary to talk about activities to adopt a greener lifestyle;",
+            "Identify the use of future forms (will vs. be going to) and the passive voice in context.",
+            "Core Competences:"
+          ]
+        },
+        {
+          "section_id": "sec_getting_started",
+          "section_title": "📖 1. Listen & Read: Introductory Dialogue",
+          "content_type": "dialogue_activity",
+          "instruction": "Listen to the conversation and read along. Pay attention to key topic expressions.",
+          "dialogue": [
+            {
+              "speaker": "Speaker A",
+              "text": "Welcome to our study of Unit 2: Humans and the environment! Let's explore the key ideas together."
+            },
+            {
+              "speaker": "Speaker B",
+              "text": "Yes! We will discover practical vocabulary and real-world skills related to Eco-friendly lifestyle, carbon footprint & protecting nature."
+            }
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "adopt (v)",
+              "pos_ipa": "/əˈdɒpt/",
+              "meaning_vi": "áp dụng, bắt đầu thực hiện (lối sống, phương pháp)"
+            },
+            {
+              "word": "awareness (of) (n)",
+              "pos_ipa": "/əˈweənəs/",
+              "meaning_vi": "sự nhận thức, hiểu biết"
+            },
+            {
+              "word": "carbon footprint (np)",
+              "pos_ipa": "/ˌkɑːbən ˈfʊtprɪnt/",
+              "meaning_vi": "dấu chân các-bon, lượng khí thải các-bon"
+            },
+            {
+              "word": "raise awareness (vp)",
+              "pos_ipa": "/reɪz əˈweənəs/",
+              "meaning_vi": "nâng cao nhận thức"
+            },
+            {
+              "word": "clean up (phr.v)",
+              "pos_ipa": "/kliːn ʌp/",
+              "meaning_vi": "dọn dẹp, làm vệ sinh"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Divides class into 4 groups.- Plays short video clip of environmental protection actions.- Sets 2-minute board race to write down noted actions.",
+              "pos_ipa": "- Watch video in teams.- Write down noted phrases on the board.",
+              "meaning_vi": "Video Focus: Environmental degradation and simple green actions (joining Go Green clubs, picking up litter, planting trees)."
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Getting started in Unit 2?",
+              "options": [
+                "To master core vocabulary and language skills related to Humans and the environment",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 2 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "lesson_code": "02",
+      "lesson_type": "LANGUAGE",
+      "title": "Language – Pronunciation /cl/, /pl/, /gr/, /pr/ & Future with will vs. be going to",
+      "short_title": "Pronunciation /cl/, /pl/, /gr/, /pr/ & Future with will vs. be going to",
+      "icon": "💬",
+      "objectives": [
+        "Pronounce consonant blends /kl/, /pl/, /gr/, and /pr/ correctly in isolation and in connected sentences;",
+        "Understand and use lexical items related to humans and the environment;",
+        "Distinguish and use will and be going to to talk about the future;",
+        "Form and use the passive voice correctly.",
+        "Core Competences:",
+        "Develop phonetic discrimination, grammatical precision, and communicative fluency;",
+        "Work collaboratively in pairs and groups.",
+        "Personal Qualities:",
+        "Foster a green mindset and responsibility for environmental protection;",
+        "Cultivate self-study habits.",
+        "Digital & AI Competences:",
+        "3: Use AI tools, digital dictionaries, and pronunciation applications to look up word definitions and phonetic blends.",
+        "MR2: Practice using educational AI tools to verify and drill pronunciation of consonant blends."
+      ],
+      "media": {
+        "audio": "assets/audio/unit02/lesson02_audio.mp3",
+        "video": "assets/videos/unit02/lesson02_video.mp4",
+        "images": [
+          "assets/images/unit02/lesson02_img1.png",
+          "assets/images/unit02/lesson02_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Pronounce consonant blends /kl/, /pl/, /gr/, and /pr/ correctly in isolation and in connected sentences;",
+            "Understand and use lexical items related to humans and the environment;",
+            "Distinguish and use will and be going to to talk about the future;",
+            "Form and use the passive voice correctly."
+          ]
+        },
+        {
+          "section_id": "sec_language_focus",
+          "section_title": "🔍 1. Pronunciation & Grammar Focus",
+          "content_type": "grammar_rule",
+          "grammar_title": "Pronunciation /cl/, /pl/, /gr/, /pr/ & Future with will vs. be going to",
+          "rule_summary": "Master the pronunciation rules and grammatical structures required for Unit 2 under MoET 2018.",
+          "examples": [
+            "Example 1: In everyday communication, accuracy in pronunciation ensures clear understanding.",
+            "Example 2: Contextual practice helps automate grammar usage naturally."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "household appliances (np)",
+              "pos_ipa": "/ˈhaʊshəʊld əˈplaɪənsɪz/",
+              "meaning_vi": "thiết bị gia dụng"
+            },
+            {
+              "word": "energy (n)",
+              "pos_ipa": "/ˈenədʒi/",
+              "meaning_vi": "năng lượng"
+            },
+            {
+              "word": "carbon footprint (np)",
+              "pos_ipa": "/ˌkɑːbən ˈfʊtprɪnt/",
+              "meaning_vi": "lượng phát thải các-bon"
+            },
+            {
+              "word": "litter (n/v)",
+              "pos_ipa": "/ˈlɪtə(r)/",
+              "meaning_vi": "rác xả bừa bãi / xả rác"
+            },
+            {
+              "word": "eco-friendly (adj)",
+              "pos_ipa": "/ˌiːkəʊ ˈfrendli/",
+              "meaning_vi": "thân thiện với môi trường"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Draws lines/shapes step-by-step on screen.- Teams guess using 'be going to'.",
+              "pos_ipa": "- Guess vehicle drawings and discuss environmental impacts.",
+              "meaning_vi": "Drawings: Bicycle, Electric bus, Solar car -> Eco-friendly transport"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Language in Unit 2?",
+              "options": [
+                "To master core vocabulary and language skills related to Humans and the environment",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 2 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "lesson_code": "03",
+      "lesson_type": "READING",
+      "title": "Reading – An eco-friendly lifestyle",
+      "short_title": "An eco-friendly lifestyle",
+      "icon": "📖",
+      "objectives": [
+        "Read for main ideas and specific information in an article about green living;",
+        "Guess word meanings from context",
+        "discuss practical ways to adopt a green lifestyle.",
+        "Core Competences:",
+        "Develop skimming, scanning, and contextual guessing skills;",
+        "Work collaboratively in pairs and groups.",
+        "Personal Qualities:",
+        "Recognize eco-friendly habits and commit to protecting the natural environment.",
+        "Digital & AI Competences:",
+        "3: Use AI tools to search for and summarize articles on sustainable living practices.",
+        "2: Evaluate the accuracy and reliability of AI-generated environmental recommendations."
+      ],
+      "media": {
+        "audio": "assets/audio/unit02/lesson03_audio.mp3",
+        "video": "assets/videos/unit02/lesson03_video.mp4",
+        "images": [
+          "assets/images/unit02/lesson03_img1.png",
+          "assets/images/unit02/lesson03_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Read for main ideas and specific information in an article about green living;",
+            "Guess word meanings from context",
+            "discuss practical ways to adopt a green lifestyle.",
+            "Core Competences:"
+          ]
+        },
+        {
+          "section_id": "sec_reading_passage",
+          "section_title": "📚 1. Reading Passage",
+          "content_type": "reading_text",
+          "passage_title": "An eco-friendly lifestyle",
+          "paragraphs": [
+            "Humans and the environment plays an essential role in contemporary society. Engaging with this topic encourages high school students to reflect on their daily habits and global responsibilities.",
+            "Through systematic inquiry into Eco-friendly lifestyle, carbon footprint & protecting nature, learners cultivate critical thinking, broaden their vocabulary, and prepare for academic communication."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "explosion (n)",
+              "pos_ipa": "/ɪkˈspləʊʒn/",
+              "meaning_vi": "vụ nổ, sự bùng nổ"
+            },
+            {
+              "word": "method (n)",
+              "pos_ipa": "/ˈmeθəd/",
+              "meaning_vi": "phương pháp, cách thức"
+            },
+            {
+              "word": "refillable (adj)",
+              "pos_ipa": "/ˌriːˈfɪləbl/",
+              "meaning_vi": "có thể làm đầy lại, tái sử dụng"
+            },
+            {
+              "word": "raw material (np)",
+              "pos_ipa": "/ˌrɑː məˈtɪəriəl/",
+              "meaning_vi": "nguyên liệu thô"
+            },
+            {
+              "word": "sort (v)",
+              "pos_ipa": "/sɔːt/",
+              "meaning_vi": "phân loại, sắp xếp"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Reading in Unit 2?",
+              "options": [
+                "To master core vocabulary and language skills related to Humans and the environment",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 2 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "lesson_code": "04",
+      "lesson_type": "SPEAKING",
+      "title": "Speaking – Ways to live green & reduce carbon footprint",
+      "short_title": "Ways to live green & reduce carbon footprint",
+      "icon": "👥",
+      "objectives": [
+        "Express ideas and talk about things teenagers should and shouldn't do to live green;",
+        "Use reason connectors (because, since, as, due to) to justify green habits.",
+        "Core Competences:",
+        "Develop oral presentation, logical argumentation, and critical thinking skills;",
+        "Collaborate in pairs and groups.",
+        "Personal Qualities:",
+        "Form proactive environmental habits and encourage peers to adopt green lifestyles.",
+        "Digital & AI Competences:",
+        "MR2: Use digital presentation tools and AI design tools to create visual aids for green living talks.",
+        "1: Organize and present environmental ideas collaboratively using digital tools."
+      ],
+      "media": {
+        "audio": "assets/audio/unit02/lesson04_audio.mp3",
+        "video": "assets/videos/unit02/lesson04_video.mp4",
+        "images": [
+          "assets/images/unit02/lesson04_img1.png",
+          "assets/images/unit02/lesson04_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Express ideas and talk about things teenagers should and shouldn't do to live green;",
+            "Use reason connectors (because, since, as, due to) to justify green habits.",
+            "Core Competences:",
+            "Develop oral presentation, logical argumentation, and critical thinking skills;"
+          ]
+        },
+        {
+          "section_id": "sec_speaking_tasks",
+          "section_title": "🗣️ 1. Guided Discussion & Roleplay",
+          "content_type": "speaking_prompts",
+          "prompt_title": "Topic for Pair Discussion",
+          "guiding_questions": [
+            "What are the main aspects of Humans and the environment that relate to your daily life?",
+            "How can young people in Viet Nam contribute positively to this area?",
+            "What advice would you give to your peers?"
+          ],
+          "useful_expressions": [
+            "In my opinion...",
+            "From my perspective...",
+            "I strongly believe that...",
+            "We should consider that..."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "leave st on (vp)",
+              "pos_ipa": "/liːv ... ɒn/",
+              "meaning_vi": "để thiết bị hoạt động, không tắt"
+            },
+            {
+              "word": "chemical (n)",
+              "pos_ipa": "/ˈkemɪkl/",
+              "meaning_vi": "hóa chất"
+            },
+            {
+              "word": "shade (n)",
+              "pos_ipa": "/ʃeɪd/",
+              "meaning_vi": "bóng râm, bóng mát"
+            },
+            {
+              "word": "waste electricity (vp)",
+              "pos_ipa": "/weɪst ɪˌlekˈtrɪsəti/",
+              "meaning_vi": "lãng phí điện năng"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Puts Ss in groups to structure presentations.- [10.C2.MR2, 10.D2.1] Directs groups to organize structured digital outlines.- Facilitates 'Passing the Ball' presentation game.",
+              "pos_ipa": "- Discuss in groups and prepare presentations.- [10.D2.1] Deliver oral presentations to class with visual slides.",
+              "meaning_vi": "Sample Presentation:'There are many practical actions we should and shouldn't do to live green. We should recycle used items since this conserves natural resources. On the other hand, we shouldn't leave appliances on when not in use because this wastes electricity and increases our carbon footprint.'"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Speaking in Unit 2?",
+              "options": [
+                "To master core vocabulary and language skills related to Humans and the environment",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 2 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 5,
+      "lesson_code": "05",
+      "lesson_type": "LISTENING",
+      "title": "Listening – Go Green Weekend activities",
+      "short_title": "Go Green Weekend activities",
+      "icon": "🎧",
+      "objectives": [
+        "Listen for specific information in an announcement about a Go Green Weekend event;",
+        "Understand and use vocabulary related to schedules, donations, and clean-up logistics;",
+        "Talk about a plan to organize a green event in the local area.",
+        "Core Competences:",
+        "Develop active note-taking, prediction checking, and collaborative event planning skills;",
+        "Work in pairs and groups.",
+        "Personal Qualities:",
+        "Demonstrate proactive responsibility in organizing local environmental initiatives.",
+        "Digital & AI Competences:",
+        "3: Formulate digital search strategies using AI engines to find supplementary community environmental guidelines.",
+        "2: Verify online event planning data to ensure safe, feasible community green campaigns."
+      ],
+      "media": {
+        "audio": "assets/audio/unit02/lesson05_audio.mp3",
+        "video": "assets/videos/unit02/lesson05_video.mp4",
+        "images": [
+          "assets/images/unit02/lesson05_img1.png",
+          "assets/images/unit02/lesson05_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Listen for specific information in an announcement about a Go Green Weekend event;",
+            "Understand and use vocabulary related to schedules, donations, and clean-up logistics;",
+            "Talk about a plan to organize a green event in the local area.",
+            "Core Competences:"
+          ]
+        },
+        {
+          "section_id": "sec_listening_lab",
+          "section_title": "🎧 1. Listening Lab & Audio Track",
+          "content_type": "listening_activity",
+          "audio_title": "Go Green Weekend activities",
+          "transcript": "Audio track for Grade 10 - Unit 2 (Humans and the environment). Listen carefully to the details and answer the comprehension questions below.",
+          "word_count": "180-200 words"
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "schedule (n)",
+              "pos_ipa": "/ˈʃedjuːl/",
+              "meaning_vi": "thời gian biểu, lịch trình"
+            },
+            {
+              "word": "specific (adj)",
+              "pos_ipa": "/spəˈsɪfɪk/",
+              "meaning_vi": "cụ thể, chi tiết"
+            },
+            {
+              "word": "donation (n)",
+              "pos_ipa": "/dəʊˈneɪʃn/",
+              "meaning_vi": "đồ quyên góp, khoản ủng hộ"
+            },
+            {
+              "word": "delivery (n)",
+              "pos_ipa": "/dɪˈlɪvəri/",
+              "meaning_vi": "sự giao hàng, phân phối"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Listening in Unit 2?",
+              "options": [
+                "To master core vocabulary and language skills related to Humans and the environment",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 2 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 6,
+      "lesson_code": "06",
+      "lesson_type": "WRITING",
+      "title": "Writing – Ways to improve the local environment",
+      "short_title": "Ways to improve the local environment",
+      "icon": "✏️",
+      "objectives": [
+        "Use vocabulary related to environmental solutions;",
+        "Structure and write a coherent 120–150 word paragraph suggesting ways to improve the local/school environment using connectors (First, Second, For example, In conclusion).",
+        "Core Competences:",
+        "Develop paragraph organization, idea development, and peer correction skills;",
+        "Work collaboratively.",
+        "Personal Qualities:",
+        "Cultivate personal responsibility and civic action for a cleaner environment.",
+        "Digital & AI Competences:",
+        "1: Comply with copyright regulations and intellectual property rules when citing digital environmental sources.",
+        "2: Maintain human critical oversight, avoid over-relying on automated AI writing tools, and complete the Student AI Declaration Form."
+      ],
+      "media": {
+        "audio": "assets/audio/unit02/lesson06_audio.mp3",
+        "video": "assets/videos/unit02/lesson06_video.mp4",
+        "images": [
+          "assets/images/unit02/lesson06_img1.png",
+          "assets/images/unit02/lesson06_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Use vocabulary related to environmental solutions;",
+            "Structure and write a coherent 120–150 word paragraph suggesting ways to improve the local/school environment using connectors (First, Second, For example, In conclusion).",
+            "Core Competences:",
+            "Develop paragraph organization, idea development, and peer correction skills;"
+          ]
+        },
+        {
+          "section_id": "sec_writing_studio",
+          "section_title": "✍️ 1. Guided Writing Canvas",
+          "content_type": "writing_scaffold",
+          "task_prompt": "Write an academic paragraph (120–150 words) about: Ways to improve the local environment.",
+          "scaffold": {
+            "topic_sentence": "State the main purpose or central claim regarding Humans and the environment.",
+            "supporting_points": [
+              "First point with supporting evidence or example.",
+              "Second point with analysis."
+            ],
+            "concluding_sentence": "Summarize the significance and provide a forward-looking thought."
+          },
+          "model_text": "Engaging actively with humans and the environment is vital for high school students. Firstly, it builds essential life skills and responsibility. Secondly, it fosters teamwork and positive habits. In conclusion, developing conscious practices in this area prepares teenagers for future independence."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "improve the environment (vp)",
+              "pos_ipa": "/ɪmˈpruːv ði ɪnˈvaɪrənmənt/",
+              "meaning_vi": "cải thiện môi trường"
+            },
+            {
+              "word": "plant trees (vp)",
+              "pos_ipa": "/plɑːnt triːz/",
+              "meaning_vi": "trồng cây xanh"
+            },
+            {
+              "word": "set up rubbish bins (vp)",
+              "pos_ipa": "/set ʌp ˈrʌbɪʃ bɪnz/",
+              "meaning_vi": "lắp đặt thêm thùng rác"
+            },
+            {
+              "word": "in conclusion (exp)",
+              "pos_ipa": "/ɪn kənˈkluːʒn/",
+              "meaning_vi": "tóm lại, kết luận lại"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "Task 1 (6 mins): Guides matching (1-c, 2-a, 3-b).Task 2 (8 mins): Explains paragraph architecture (Topic sentence -> Details -> Concluding sentence) and checks gap-fill (1. First, 2. For example, 3. In conclusion).",
+              "pos_ipa": "- Match items in Task 1.- Fill in connectors in Task 2.",
+              "meaning_vi": "Task 1 Key: 1. c (cleaning day), 2. a (plant trees), 3. b (set up bins)Task 2 Key: 1. First, 2. For example, 3. In conclusionModel Paragraph Structure (p.25)"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Writing in Unit 2?",
+              "options": [
+                "To master core vocabulary and language skills related to Humans and the environment",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 2 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 7,
+      "lesson_code": "07",
+      "lesson_type": "COMMUNICATION AND CULTURE / CLIL",
+      "title": "Communication and Culture / CLIL – World Environment Day & green schools",
+      "short_title": "World Environment Day & green schools",
+      "icon": "🌐",
+      "objectives": [
+        "Ask for and give advice about green living in spoken interaction;",
+        "Understand what a carbon footprint is and acquire CLIL knowledge on carbon emissions and reduction measures.",
+        "Core Competences:",
+        "Develop conversational advice-giving fluency, scientific reading comprehension, and presentation skills;",
+        "Work in pairs and groups.",
+        "Personal Qualities:",
+        "Be willing to take practical actions to reduce personal and family carbon emissions.",
+        "Digital & AI Competences:",
+        "3: Use AI tools and search engines to research global and national carbon footprint benchmarks.",
+        "2: Apply digital communication strategies when asking for and giving environmental advice online."
+      ],
+      "media": {
+        "audio": "assets/audio/unit02/lesson07_audio.mp3",
+        "video": "assets/videos/unit02/lesson07_video.mp4",
+        "images": [
+          "assets/images/unit02/lesson07_img1.png",
+          "assets/images/unit02/lesson07_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Ask for and give advice about green living in spoken interaction;",
+            "Understand what a carbon footprint is and acquire CLIL knowledge on carbon emissions and reduction measures.",
+            "Core Competences:",
+            "Develop conversational advice-giving fluency, scientific reading comprehension, and presentation skills;"
+          ]
+        },
+        {
+          "section_id": "sec_clil_culture",
+          "section_title": "🌐 1. Culture & Interdisciplinary Learning",
+          "content_type": "culture_article",
+          "topic": "World Environment Day & green schools",
+          "content": "Discover how humans and the environment is approached across different countries and in Vietnamese society, highlighting intercultural awareness and sustainable development."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "emission (n)",
+              "pos_ipa": "/ɪˈmɪʃn/",
+              "meaning_vi": "khí thải, sự phát thải"
+            },
+            {
+              "word": "estimate (v)",
+              "pos_ipa": "/ˈestɪmeɪt/",
+              "meaning_vi": "ước tính, đánh giá xấp xỉ"
+            },
+            {
+              "word": "average (adj/n)",
+              "pos_ipa": "/ˈævərɪdʒ/",
+              "meaning_vi": "trung bình, mức trung bình"
+            },
+            {
+              "word": "atmosphere (n)",
+              "pos_ipa": "/ˈætməsfɪə(r)/",
+              "meaning_vi": "bầu khí quyển"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "- Plays short video clip; asks lead-in questions about carbon emissions.",
+              "pos_ipa": "- Watch video and answer questions.",
+              "meaning_vi": "Video Focus: Carbon emissions from energy use, transport, food production"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "Task 1 (7 mins): Plays audio; checks answers (1-B, 2-A, 3-D, 4-C).Task 2 (8 mins): Directs pair role-plays for green living situations.- [10.C3.2] Directs Ss to simulate asking for and giving advice via online forums/apps.",
+              "pos_ipa": "- Complete dialogue in Task 1.- [10.C3.2] Role-play advice conversations in pairs.",
+              "meaning_vi": "Advice Expressions:* Asking for Advice: What should I do? / Can you give me some advice about...? / What do you advise me to do?* Giving Advice: You should / ought to... / I advise you to... / How about...?"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Communication and Culture / CLIL in Unit 2?",
+              "options": [
+                "To master core vocabulary and language skills related to Humans and the environment",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 2 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 8,
+      "lesson_code": "08",
+      "lesson_type": "LOOKING BACK & PROJECT",
+      "title": "Looking back & Project – Green Living Exhibition",
+      "short_title": "Green Living Exhibition",
+      "icon": "🧩",
+      "objectives": [
+        "Review consonant blends (/kl/, /pl/, /gr/, /pr/), environmental vocabulary, will/be going to, and passive voice of Unit 2;",
+        "Apply knowledge to research, plan, and present a group project on 'Go Green Weekend'.",
+        "Core Competences:",
+        "Develop project management, presentation, and peer assessment skills;",
+        "Foster creative teamwork.",
+        "Personal Qualities:",
+        "Demonstrate proactive environmental leadership and academic honesty.",
+        "Digital & AI Competences:",
+        "1: Use digital presentation tools and AI applications to collaborate, design slides/posters, and present project products.",
+        "1: Maintain academic integrity, verify information, and submit the Student AI Declaration Form."
+      ],
+      "media": {
+        "audio": "assets/audio/unit02/lesson08_audio.mp3",
+        "video": "assets/videos/unit02/lesson08_video.mp4",
+        "images": [
+          "assets/images/unit02/lesson08_img1.png",
+          "assets/images/unit02/lesson08_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Review consonant blends (/kl/, /pl/, /gr/, /pr/), environmental vocabulary, will/be going to, and passive voice of Unit 2;",
+            "Apply knowledge to research, plan, and present a group project on 'Go Green Weekend'.",
+            "Core Competences:",
+            "Develop project management, presentation, and peer assessment skills;"
+          ]
+        },
+        {
+          "section_id": "sec_project_guidelines",
+          "section_title": "🧩 1. Unit Synthesis & Collaborative Project",
+          "content_type": "project_guide",
+          "project_name": "Green Living Exhibition",
+          "steps": [
+            "Step 1: Form a team of 4-5 students and choose a specific focus area.",
+            "Step 2: Collect data, photos, or digital resources.",
+            "Step 3: Prepare a poster or digital slide presentation.",
+            "Step 4: Present your project in front of the class."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "green lifestyle (np)",
+              "pos_ipa": "/ɡriːn ˈlaɪfstaɪl/",
+              "meaning_vi": "lối sống xanh, thân thiện môi trường"
+            },
+            {
+              "word": "carbon footprint (np)",
+              "pos_ipa": "/ˌkɑːbən ˈfʊtprɪnt/",
+              "meaning_vi": "lượng khí thải các-bon"
+            },
+            {
+              "word": "eco-friendly (adj)",
+              "pos_ipa": "/ˌiːkəʊ ˈfrendli/",
+              "meaning_vi": "thân thiện với môi trường"
+            },
+            {
+              "word": "appliances (n.pl)",
+              "pos_ipa": "/əˈplaɪənsɪz/",
+              "meaning_vi": "thiết bị gia dụng"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            },
+            {
+              "word": "TEACHER’S ACTIVITIES",
+              "pos_ipa": "STUDENTS’ ACTIVITIES",
+              "meaning_vi": "CONTENTS"
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Looking back & Project in Unit 2?",
+              "options": [
+                "To master core vocabulary and language skills related to Humans and the environment",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 2 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

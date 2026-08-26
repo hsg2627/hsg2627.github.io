@@ -1,0 +1,866 @@
+{
+  "unit_id": 7,
+  "unit_code": "UNIT 07",
+  "title": "Viet Nam and international organisations",
+  "semester": "Semester 2",
+  "theme_color": "#007791",
+  "icon": "🌐",
+  "subtitle": "UN, UNICEF, WTO, UNDP & Viet Nam's global integration",
+  "theme_image": "assets/images/unit07/theme_illustration.png",
+  "fallback_image": "assets/images/ui/Codex Image Aug 26, 2026, 04_02_06 PM.png",
+  "lessons": [
+    {
+      "lesson_id": 1,
+      "lesson_code": "01",
+      "lesson_type": "GETTING STARTED",
+      "title": "Getting started – Viet Nam and international organisations",
+      "short_title": "Viet Nam and international organisations",
+      "icon": "🚀",
+      "objectives": [
+        "Gain an overview of the topic Viet Nam and international organisations",
+        "Vocabulary: Identify and use words and phrases related to the topic Viet Nam and international organisations: peacekeeping (adj) ,harm (n) , expert (adj), investor (n)",
+        "Pronunciation: Pronounce the following words correctly: peacekeeping (adj) ,harm (n) , expert (adj), investor (n)",
+        "Grammar: Identify and use comparative and superlative adjectives.",
+        "Competences a. General competencies:"
+      ],
+      "media": {
+        "audio": "assets/audio/unit07/lesson01_audio.mp3",
+        "video": "assets/videos/unit07/lesson01_video.mp4",
+        "images": [
+          "assets/images/unit07/lesson01_img1.png",
+          "assets/images/unit07/lesson01_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Gain an overview of the topic Viet Nam and international organisations",
+            "Vocabulary: Identify and use words and phrases related to the topic Viet Nam and international organisations: peacekeeping (adj) ,harm (n) , expert (adj), investor (n)",
+            "Pronunciation: Pronounce the following words correctly: peacekeeping (adj) ,harm (n) , expert (adj), investor (n)",
+            "Grammar: Identify and use comparative and superlative adjectives."
+          ]
+        },
+        {
+          "section_id": "sec_getting_started",
+          "section_title": "📖 1. Listen & Read: Introductory Dialogue",
+          "content_type": "dialogue_activity",
+          "instruction": "Listen to the conversation and read along. Pay attention to key topic expressions.",
+          "dialogue": [
+            {
+              "speaker": "Speaker A",
+              "text": "Welcome to our study of Unit 7: Viet Nam and international organisations! Let's explore the key ideas together."
+            },
+            {
+              "speaker": "Speaker B",
+              "text": "Yes! We will discover practical vocabulary and real-world skills related to UN, UNICEF, WTO, UNDP & Viet Nam's global integration."
+            }
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "13/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "16/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "13/2/2026",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Getting started in Unit 7?",
+              "options": [
+                "To master core vocabulary and language skills related to Viet Nam and international organisations",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 7 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "lesson_code": "02",
+      "lesson_type": "LANGUAGE",
+      "title": "Language – Stress in words with more than 3 syllables & Comparative and superlative adjectives",
+      "short_title": "Stress in words with more than 3 syllables & Comparative and superlative adjectives",
+      "icon": "💬",
+      "objectives": [
+        "Pronunciation: Pronounce words with more than three syllables with correct stress",
+        "Vocabulary: Understand and use words and phrases related to international organisations: promote, welcomes, commit, aims, enter",
+        "Grammar: Use comparative and superlative adjectives",
+        "Competences a. General Competences:",
+        "Be collaborative and supportive in pair work and teamwork",
+        "Actively join in class activities b. Specific Competences:",
+        "Access and consolidate information from a variety of sources",
+        "Develop an awareness of international organisations",
+        "Be respectful towards all nations",
+        "[NLS Integration]: [",
+        "1NC1a]: Determine information needs",
+        "find data, information, and content in digital environments (e.g., searching for multisyllabic words and stress patterns online). [",
+        "2NC1a]: Evaluate needs and identify, select, and use digital tools (e.g., using online dictionaries or pronunciation apps)."
+      ],
+      "media": {
+        "audio": "assets/audio/unit07/lesson02_audio.mp3",
+        "video": "assets/videos/unit07/lesson02_video.mp4",
+        "images": [
+          "assets/images/unit07/lesson02_img1.png",
+          "assets/images/unit07/lesson02_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Pronunciation: Pronounce words with more than three syllables with correct stress",
+            "Vocabulary: Understand and use words and phrases related to international organisations: promote, welcomes, commit, aims, enter",
+            "Grammar: Use comparative and superlative adjectives",
+            "Competences a. General Competences:"
+          ]
+        },
+        {
+          "section_id": "sec_language_focus",
+          "section_title": "🔍 1. Pronunciation & Grammar Focus",
+          "content_type": "grammar_rule",
+          "grammar_title": "Stress in words with more than 3 syllables & Comparative and superlative adjectives",
+          "rule_summary": "Master the pronunciation rules and grammatical structures required for Unit 7 under MoET 2018.",
+          "examples": [
+            "Example 1: In everyday communication, accuracy in pronunciation ensures clear understanding.",
+            "Example 2: Contextual practice helps automate grammar usage naturally."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "14/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "17/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "16/2/2026",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Language in Unit 7?",
+              "options": [
+                "To master core vocabulary and language skills related to Viet Nam and international organisations",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 7 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "lesson_code": "03",
+      "lesson_type": "READING",
+      "title": "Reading – UNICEF's support for Viet Nam's education",
+      "short_title": "UNICEF's support for Viet Nam's education",
+      "icon": "📖",
+      "objectives": [
+        "Vocabulary: -Apply reading strategies to guess the meanings of words from context create (v), essential (adj), respect (v/n), practical (adj)",
+        "Pronunciation: Pronounce the following words correctly: create (v), essential (adj), respect (v/n), practical (adj)",
+        "Competences a. General competences:"
+      ],
+      "media": {
+        "audio": "assets/audio/unit07/lesson03_audio.mp3",
+        "video": "assets/videos/unit07/lesson03_video.mp4",
+        "images": [
+          "assets/images/unit07/lesson03_img1.png",
+          "assets/images/unit07/lesson03_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: -Apply reading strategies to guess the meanings of words from context create (v), essential (adj), respect (v/n), practical (adj)",
+            "Pronunciation: Pronounce the following words correctly: create (v), essential (adj), respect (v/n), practical (adj)",
+            "Competences a. General competences:"
+          ]
+        },
+        {
+          "section_id": "sec_reading_passage",
+          "section_title": "📚 1. Reading Passage",
+          "content_type": "reading_text",
+          "passage_title": "UNICEF's support for Viet Nam's education",
+          "paragraphs": [
+            "Viet Nam and international organisations plays an essential role in contemporary society. Engaging with this topic encourages high school students to reflect on their daily habits and global responsibilities.",
+            "Through systematic inquiry into UN, UNICEF, WTO, UNDP & Viet Nam's global integration, learners cultivate critical thinking, broaden their vocabulary, and prepare for academic communication."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "17/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "20/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "17/2/2026",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Reading in Unit 7?",
+              "options": [
+                "To master core vocabulary and language skills related to Viet Nam and international organisations",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 7 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "lesson_code": "04",
+      "lesson_type": "SPEAKING",
+      "title": "Speaking – Discussing the role of international bodies",
+      "short_title": "Discussing the role of international bodies",
+      "icon": "👥",
+      "objectives": [
+        "Vocabulary: Understand how to express opinions",
+        "Pronunciation:",
+        "Discuss and express opinions about a project or a programme that can benefit their local area fluently.",
+        "Competences a. General competences:"
+      ],
+      "media": {
+        "audio": "assets/audio/unit07/lesson04_audio.mp3",
+        "video": "assets/videos/unit07/lesson04_video.mp4",
+        "images": [
+          "assets/images/unit07/lesson04_img1.png",
+          "assets/images/unit07/lesson04_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: Understand how to express opinions",
+            "Pronunciation:",
+            "Discuss and express opinions about a project or a programme that can benefit their local area fluently.",
+            "Competences a. General competences:"
+          ]
+        },
+        {
+          "section_id": "sec_speaking_tasks",
+          "section_title": "🗣️ 1. Guided Discussion & Roleplay",
+          "content_type": "speaking_prompts",
+          "prompt_title": "Topic for Pair Discussion",
+          "guiding_questions": [
+            "What are the main aspects of Viet Nam and international organisations that relate to your daily life?",
+            "How can young people in Viet Nam contribute positively to this area?",
+            "What advice would you give to your peers?"
+          ],
+          "useful_expressions": [
+            "In my opinion...",
+            "From my perspective...",
+            "I strongly believe that...",
+            "We should consider that..."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Speaking in Unit 7?",
+              "options": [
+                "To master core vocabulary and language skills related to Viet Nam and international organisations",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 7 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 5,
+      "lesson_code": "05",
+      "lesson_type": "LISTENING",
+      "title": "Listening – An interview about Viet Nam joining the UN",
+      "short_title": "An interview about Viet Nam joining the UN",
+      "icon": "🎧",
+      "objectives": [
+        "Vocabulary:  Identify and use lexical items related to international relations",
+        "Pronunciation: Pronounce the lexical items related to international relations correctly",
+        "Competence a. General competences"
+      ],
+      "media": {
+        "audio": "assets/audio/unit07/lesson05_audio.mp3",
+        "video": "assets/videos/unit07/lesson05_video.mp4",
+        "images": [
+          "assets/images/unit07/lesson05_img1.png",
+          "assets/images/unit07/lesson05_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary:  Identify and use lexical items related to international relations",
+            "Pronunciation: Pronounce the lexical items related to international relations correctly",
+            "Competence a. General competences"
+          ]
+        },
+        {
+          "section_id": "sec_listening_lab",
+          "section_title": "🎧 1. Listening Lab & Audio Track",
+          "content_type": "listening_activity",
+          "audio_title": "An interview about Viet Nam joining the UN",
+          "transcript": "Audio track for Grade 10 - Unit 7 (Viet Nam and international organisations). Listen carefully to the details and answer the comprehension questions below.",
+          "word_count": "180-200 words"
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Listening in Unit 7?",
+              "options": [
+                "To master core vocabulary and language skills related to Viet Nam and international organisations",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 7 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 6,
+      "lesson_code": "06",
+      "lesson_type": "WRITING",
+      "title": "Writing – A paragraph about an international organisation in Viet Nam",
+      "short_title": "A paragraph about an international organisation in Viet Nam",
+      "icon": "✏️",
+      "objectives": [
+        "Use lexical items related to the topic International organisations",
+        "Write a paragraph about the benefits for Viet Nam as a member of international organisations.",
+        "Competences a. General competences",
+        "Access and consolidate information from a variety of sources",
+        "Be collaborative and supportive in pair work and teamwork",
+        "Actively join in class activities. b. Specific competences",
+        "Complete the sentences.",
+        "Complete the diagram.",
+        "Write about the benefits for Viet Nam as a member of international organizations.",
+        "Develop an awareness of Viet Nam's participation in international organisations",
+        "Be respectful towards all international organisations.",
+        "Digital Competences (NLS Integration) [",
+        "1NC1b]: Identify information needs",
+        "find data, information, and content in a digital environment (watching video/looking up words). [",
+        "1NC1a]: Create and edit digital content in different formats (if drafting on devices). [",
+        "2NC1a]: Evaluate needs and identify, select, and use digital tools (using dictionaries/apps)."
+      ],
+      "media": {
+        "audio": "assets/audio/unit07/lesson06_audio.mp3",
+        "video": "assets/videos/unit07/lesson06_video.mp4",
+        "images": [
+          "assets/images/unit07/lesson06_img1.png",
+          "assets/images/unit07/lesson06_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Use lexical items related to the topic International organisations",
+            "Write a paragraph about the benefits for Viet Nam as a member of international organisations.",
+            "Competences a. General competences",
+            "Access and consolidate information from a variety of sources"
+          ]
+        },
+        {
+          "section_id": "sec_writing_studio",
+          "section_title": "✍️ 1. Guided Writing Canvas",
+          "content_type": "writing_scaffold",
+          "task_prompt": "Write an academic paragraph (120–150 words) about: A paragraph about an international organisation in Viet Nam.",
+          "scaffold": {
+            "topic_sentence": "State the main purpose or central claim regarding Viet Nam and international organisations.",
+            "supporting_points": [
+              "First point with supporting evidence or example.",
+              "Second point with analysis."
+            ],
+            "concluding_sentence": "Summarize the significance and provide a forward-looking thought."
+          },
+          "model_text": "Engaging actively with viet nam and international organisations is vital for high school students. Firstly, it builds essential life skills and responsibility. Secondly, it fosters teamwork and positive habits. In conclusion, developing conscious practices in this area prepares teenagers for future independence."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Writing in Unit 7?",
+              "options": [
+                "To master core vocabulary and language skills related to Viet Nam and international organisations",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 7 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 7,
+      "lesson_code": "07",
+      "lesson_type": "COMMUNICATION AND CULTURE / CLIL",
+      "title": "Communication and Culture / CLIL – Viet Nam's contributions to UN peacekeeping",
+      "short_title": "Viet Nam's contributions to UN peacekeeping",
+      "icon": "🌐",
+      "objectives": [
+        "Make and respond to invitations",
+        "Learn about FAO and its activities to support Viet Nam.",
+        "Competence a. General competences",
+        "Develop communication skills and creativity",
+        "Be collaborative and supportive in pair work and team work",
+        "Develop presentation skills. b. Specific competences",
+        "Complete the conversations.",
+        "Make similar conversations.",
+        "Complete the diagram.",
+        "Talk about FAO.",
+        "Understand more about the relationship between Viet Nam and FAO",
+        "Be respectful towards all international organisations.",
+        "Digital Competencies (NLS): [",
+        "1NC1a]: Determine information needs",
+        "find data, information, and content in digital environments (viewing digital images, searching for FAO info). [",
+        "2NC1a]: Evaluate needs and identify, select, and use digital tools (using online dictionaries, digital calendars). [",
+        "1NC1a]: Create and edit digital content in various formats (optional: creating digital invitations)."
+      ],
+      "media": {
+        "audio": "assets/audio/unit07/lesson07_audio.mp3",
+        "video": "assets/videos/unit07/lesson07_video.mp4",
+        "images": [
+          "assets/images/unit07/lesson07_img1.png",
+          "assets/images/unit07/lesson07_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Make and respond to invitations",
+            "Learn about FAO and its activities to support Viet Nam.",
+            "Competence a. General competences",
+            "Develop communication skills and creativity"
+          ]
+        },
+        {
+          "section_id": "sec_clil_culture",
+          "section_title": "🌐 1. Culture & Interdisciplinary Learning",
+          "content_type": "culture_article",
+          "topic": "Viet Nam's contributions to UN peacekeeping",
+          "content": "Discover how viet nam and international organisations is approached across different countries and in Vietnamese society, highlighting intercultural awareness and sustainable development."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Communication and Culture / CLIL in Unit 7?",
+              "options": [
+                "To master core vocabulary and language skills related to Viet Nam and international organisations",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 7 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 8,
+      "lesson_code": "08",
+      "lesson_type": "LOOKING BACK & PROJECT",
+      "title": "Looking back & Project – Model United Nations mini-debate",
+      "short_title": "Model United Nations mini-debate",
+      "icon": "🧩",
+      "objectives": [
+        "Review the vocabulary and grammar of Unit 7",
+        "Apply what they have learnt (vocabulary and grammar) into practice through a project.",
+        "Competence a. General competences"
+      ],
+      "media": {
+        "audio": "assets/audio/unit07/lesson08_audio.mp3",
+        "video": "assets/videos/unit07/lesson08_video.mp4",
+        "images": [
+          "assets/images/unit07/lesson08_img1.png",
+          "assets/images/unit07/lesson08_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Review the vocabulary and grammar of Unit 7",
+            "Apply what they have learnt (vocabulary and grammar) into practice through a project.",
+            "Competence a. General competences"
+          ]
+        },
+        {
+          "section_id": "sec_project_guidelines",
+          "section_title": "🧩 1. Unit Synthesis & Collaborative Project",
+          "content_type": "project_guide",
+          "project_name": "Model United Nations mini-debate",
+          "steps": [
+            "Step 1: Form a team of 4-5 students and choose a specific focus area.",
+            "Step 2: Collect data, photos, or digital resources.",
+            "Step 3: Prepare a poster or digital slide presentation.",
+            "Step 4: Present your project in front of the class."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "/2/2026",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Looking back & Project in Unit 7?",
+              "options": [
+                "To master core vocabulary and language skills related to Viet Nam and international organisations",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 7 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

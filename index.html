@@ -56,6 +56,11 @@
         </div>
 
         <div class="nav-section-label">Core Curriculum</div>
+        <div class="nav-item" data-view="gs10-view" onclick="window.location.hash='#gs10'">
+          <span class="nav-item__icon">🌟</span>
+          <span>Global Success 10</span>
+          <span class="nav-item__badge" style="background:#fde8eb; color:#d94f60; font-weight:800;">10 Units</span>
+        </div>
         <div class="nav-item" data-view="grammar-view" onclick="window.location.hash='#grammar'">
           <span class="nav-item__icon">📘</span>
           <span>Grammar</span>
@@ -151,7 +156,8 @@
               Digital autonomous learning repository for Grade 10 English (Circular 32/2018/TT-BGDĐT), integrating research instruments for digital competence measurement (Domains 1 & 6, Circular 02/2025/TT-BGDĐT). Contributing to the Level 3 (B1) proficiency pathway upon high school completion.
             </p>
             <div class="hero-card__actions">
-              <button class="btn btn--primary" onclick="window.location.hash='#grammar'">Explore Grammar &rarr;</button>
+              <button class="btn btn--primary" style="background: linear-gradient(135deg, #f26b7a 0%, #d94f60 100%); border-color:#f26b7a;" onclick="window.location.hash='#gs10'">🌟 Global Success 10 (10 Units) &rarr;</button>
+              <button class="btn btn--secondary" onclick="window.location.hash='#grammar'">Explore Grammar</button>
               <button class="btn btn--secondary" onclick="window.location.hash='#vocab'">💎 Vocabulary Studio</button>
               <button class="btn btn--secondary" onclick="window.location.hash='#listening'">🎧 Listening Lab</button>
               <button class="btn btn--secondary" onclick="window.location.hash='#writing'">✍️ Writing Studio</button>
@@ -167,10 +173,31 @@
           <!-- Section: Core Learning Modules -->
           <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px;">
             <h2>Core Curriculum Modules</h2>
-            <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">6 Structured Tracks</span>
+            <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">7 Structured Tracks</span>
           </div>
 
           <div class="card-grid">
+            <!-- Card 0: Global Success 10 Interactive Courseware -->
+            <div class="portal-card" style="border: 2px solid #f26b7a; background: linear-gradient(135deg, #ffffff 0%, #fff6f7 100%);" onclick="window.location.hash='#gs10'">
+              <div class="portal-card__header">
+                <div class="portal-card__icon-box" style="background:#fde8eb; color:#d94f60;">🌟</div>
+                <span class="badge" style="background:#fde8eb; color:#d94f60; font-weight:800;">10 Units · 80 Lessons</span>
+              </div>
+              <div class="portal-card__title" style="color:#1b4332;">Global Success 10</div>
+              <div class="portal-card__desc">
+                Interactive digital courseware for all 10 Global Success units (8 lessons/unit) & 4 reviews. Audio, video, pronunciation IPA, dialogue reader, grammar & interactive quiz.
+              </div>
+              <div class="portal-card__tags">
+                <span class="portal-card__tag" style="background:#fff; border:1px solid #f3d5d9;">10 Units & 8 Lessons</span>
+                <span class="portal-card__tag" style="background:#fff; border:1px solid #f3d5d9;">Media Slots & Audio</span>
+                <span class="portal-card__tag" style="background:#fff; border:1px solid #f3d5d9;">Looking Back & Project</span>
+              </div>
+              <div class="portal-card__footer" style="color:#d94f60; font-weight:800;">
+                <span>Launch Interactive Lessons</span>
+                <span>&rarr;</span>
+              </div>
+            </div>
+
             <!-- Card 1: Grammar -->
             <div class="portal-card portal-card--e10" onclick="window.location.hash='#grammar'">
               <div class="portal-card__header">
@@ -516,6 +543,23 @@
 
           <div id="ai-eval-tasks-container">
             <!-- Dynamically populated by app.js -->
+          </div>
+        </section>
+
+        <!-- ================= VIEW 8: GLOBAL SUCCESS 10 INTERACTIVE SUITE ================= -->
+        <section id="gs10-view" class="view-panel">
+          <div class="view-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 16px;">
+            <div>
+              <h2 style="color: #1b4332; margin: 0 0 4px 0;">🌟 Global Success 10 · Interactive Courseware</h2>
+              <p style="margin: 0; color: var(--text-muted);">Khung bài giảng số tương tác 10 Units, 80 bài học & 4 Review (CT GDPT 2018)</p>
+            </div>
+            <a href="Global_Success_10/index.html" target="_blank" class="btn btn--secondary" style="display:flex; align-items:center; gap:6px; font-size:0.85rem;">
+              <span>↗️ Open Fullscreen Mode</span>
+            </a>
+          </div>
+
+          <div style="background:#ffffff; border-radius: 16px; border: 1px solid #f3d5d9; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.06); height: 860px;">
+            <iframe src="Global_Success_10/index.html" style="width: 100%; height: 100%; border: none;" title="Global Success 10 Interactive Courseware"></iframe>
           </div>
         </section>
 

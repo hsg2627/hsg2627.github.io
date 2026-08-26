@@ -1,0 +1,881 @@
+{
+  "unit_id": 8,
+  "unit_code": "UNIT 08",
+  "title": "New ways to learn",
+  "semester": "Semester 2",
+  "theme_color": "#4a5568",
+  "icon": "🎓",
+  "subtitle": "Digital learning, electronic devices & modern classroom methods",
+  "theme_image": "assets/images/unit08/theme_illustration.png",
+  "fallback_image": "assets/images/ui/Codex Image Aug 26, 2026, 04_02_06 PM.png",
+  "lessons": [
+    {
+      "lesson_id": 1,
+      "lesson_code": "01",
+      "lesson_type": "GETTING STARTED",
+      "title": "Getting started – New learning activities",
+      "short_title": "New learning activities",
+      "icon": "🚀",
+      "objectives": [
+        "Vocabulary: Understand the meaning of the key words or word collocations below:",
+        "upload a video (v):"
+      ],
+      "media": {
+        "audio": "assets/audio/unit08/lesson01_audio.mp3",
+        "video": "assets/videos/unit08/lesson01_video.mp4",
+        "images": [
+          "assets/images/unit08/lesson01_img1.png",
+          "assets/images/unit08/lesson01_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: Understand the meaning of the key words or word collocations below:",
+            "upload a video (v):"
+          ]
+        },
+        {
+          "section_id": "sec_getting_started",
+          "section_title": "📖 1. Listen & Read: Introductory Dialogue",
+          "content_type": "dialogue_activity",
+          "instruction": "Listen to the conversation and read along. Pay attention to key topic expressions.",
+          "dialogue": [
+            {
+              "speaker": "Speaker A",
+              "text": "Welcome to our study of Unit 8: New ways to learn! Let's explore the key ideas together."
+            },
+            {
+              "speaker": "Speaker B",
+              "text": "Yes! We will discover practical vocabulary and real-world skills related to Digital learning, electronic devices & modern classroom methods."
+            }
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Getting started in Unit 8?",
+              "options": [
+                "To master core vocabulary and language skills related to New ways to learn",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 8 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 2,
+      "lesson_code": "02",
+      "lesson_type": "LANGUAGE",
+      "title": "Language – Stress in words ending in -ic, -sion, -tion & Relative clauses (who, which, that)",
+      "short_title": "Stress in words ending in -ic, -sion, -tion & Relative clauses (who, which, that)",
+      "icon": "💬",
+      "objectives": [
+        "Vocabulary:",
+        "Use lexical items related to the topic New ways to learn:",
+        "face to face (adj)",
+        "prepare (v)",
+        "strategy (n)",
+        "blended learning (n)",
+        "Pronunciation:  sentence stress",
+        "Grammar: Use relative clauses.",
+        "Competencies: a. General competencies: Access and consolidate information from a variety of sources",
+        "b. Specific competencies:",
+        "Be collaborative and supportive in pair work and teamwork",
+        "Actively join in class activities.",
+        "Be ready to use different ways to study",
+        "Develop self-study skills.",
+        "Digital Competencies (NLS Integration): [",
+        "1NC1a]: Determine information needs",
+        "find data, information, and content in digital environments (specifically through accessing audio for pronunciation and looking up vocabulary). [",
+        "2NC1a]: Evaluate needs and identify, select, and use digital tools (using online dictionaries/apps to check stress and meaning)."
+      ],
+      "media": {
+        "audio": "assets/audio/unit08/lesson02_audio.mp3",
+        "video": "assets/videos/unit08/lesson02_video.mp4",
+        "images": [
+          "assets/images/unit08/lesson02_img1.png",
+          "assets/images/unit08/lesson02_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary:",
+            "Use lexical items related to the topic New ways to learn:",
+            "face to face (adj)",
+            "prepare (v)"
+          ]
+        },
+        {
+          "section_id": "sec_language_focus",
+          "section_title": "🔍 1. Pronunciation & Grammar Focus",
+          "content_type": "grammar_rule",
+          "grammar_title": "Stress in words ending in -ic, -sion, -tion & Relative clauses (who, which, that)",
+          "rule_summary": "Master the pronunciation rules and grammatical structures required for Unit 8 under MoET 2018.",
+          "examples": [
+            "Example 1: In everyday communication, accuracy in pronunciation ensures clear understanding.",
+            "Example 2: Contextual practice helps automate grammar usage naturally."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Language in Unit 8?",
+              "options": [
+                "To master core vocabulary and language skills related to New ways to learn",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 8 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 3,
+      "lesson_code": "03",
+      "lesson_type": "READING",
+      "title": "Reading – Digital classrooms and electronic devices",
+      "short_title": "Digital classrooms and electronic devices",
+      "icon": "📖",
+      "objectives": [
+        "Vocabulary:",
+        "Use lexical items related to the topic New ways to learn:",
+        "distraction (n)",
+        "(to) exchange (v)",
+        "Pronunciation:  Pronounce the following words correctly: distraction, exchange",
+        "Competencies:"
+      ],
+      "media": {
+        "audio": "assets/audio/unit08/lesson03_audio.mp3",
+        "video": "assets/videos/unit08/lesson03_video.mp4",
+        "images": [
+          "assets/images/unit08/lesson03_img1.png",
+          "assets/images/unit08/lesson03_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary:",
+            "Use lexical items related to the topic New ways to learn:",
+            "distraction (n)",
+            "(to) exchange (v)"
+          ]
+        },
+        {
+          "section_id": "sec_reading_passage",
+          "section_title": "📚 1. Reading Passage",
+          "content_type": "reading_text",
+          "passage_title": "Digital classrooms and electronic devices",
+          "paragraphs": [
+            "New ways to learn plays an essential role in contemporary society. Engaging with this topic encourages high school students to reflect on their daily habits and global responsibilities.",
+            "Through systematic inquiry into Digital learning, electronic devices & modern classroom methods, learners cultivate critical thinking, broaden their vocabulary, and prepare for academic communication."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Reading in Unit 8?",
+              "options": [
+                "To master core vocabulary and language skills related to New ways to learn",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 8 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 4,
+      "lesson_code": "04",
+      "lesson_type": "SPEAKING",
+      "title": "Speaking – Advantages and disadvantages of online learning",
+      "short_title": "Advantages and disadvantages of online learning",
+      "icon": "👥",
+      "objectives": [
+        "Vocabulary: revise vocabulary",
+        "Pronunciation:  revision",
+        "Grammar: Apply useful expressions to talk about the online learning way",
+        "Competences a. General competencies:",
+        "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, colaboration b. Specific competencies:"
+      ],
+      "media": {
+        "audio": "assets/audio/unit08/lesson04_audio.mp3",
+        "video": "assets/videos/unit08/lesson04_video.mp4",
+        "images": [
+          "assets/images/unit08/lesson04_img1.png",
+          "assets/images/unit08/lesson04_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: revise vocabulary",
+            "Pronunciation:  revision",
+            "Grammar: Apply useful expressions to talk about the online learning way",
+            "Competences a. General competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_speaking_tasks",
+          "section_title": "🗣️ 1. Guided Discussion & Roleplay",
+          "content_type": "speaking_prompts",
+          "prompt_title": "Topic for Pair Discussion",
+          "guiding_questions": [
+            "What are the main aspects of New ways to learn that relate to your daily life?",
+            "How can young people in Viet Nam contribute positively to this area?",
+            "What advice would you give to your peers?"
+          ],
+          "useful_expressions": [
+            "In my opinion...",
+            "From my perspective...",
+            "I strongly believe that...",
+            "We should consider that..."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Speaking in Unit 8?",
+              "options": [
+                "To master core vocabulary and language skills related to New ways to learn",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 8 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 5,
+      "lesson_code": "05",
+      "lesson_type": "LISTENING",
+      "title": "Listening – Educational apps and online platforms",
+      "short_title": "Educational apps and online platforms",
+      "icon": "🎧",
+      "objectives": [
+        "Listen for specific information in a talk about blended learning",
+        "Identify and use lexical items related to online learning.",
+        "Vocabulary: Understand the meaning of the key words or word collocations below: upload (v), e-class (n), folder (n), take notes, population growth (np), log in (v)  >< log out (v)",
+        "Pronunciation: Pronounce the following words correctly: upload (v), e-class (n), folder (n), take notes, population growth (np), log in (v)  >< log out (v)",
+        "Grammar: revision",
+        "Competencies: a. General competencies:",
+        "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, colaboration b. Specific competencies:"
+      ],
+      "media": {
+        "audio": "assets/audio/unit08/lesson05_audio.mp3",
+        "video": "assets/videos/unit08/lesson05_video.mp4",
+        "images": [
+          "assets/images/unit08/lesson05_img1.png",
+          "assets/images/unit08/lesson05_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Listen for specific information in a talk about blended learning",
+            "Identify and use lexical items related to online learning.",
+            "Vocabulary: Understand the meaning of the key words or word collocations below: upload (v), e-class (n), folder (n), take notes, population growth (np), log in (v)  >< log out (v)",
+            "Pronunciation: Pronounce the following words correctly: upload (v), e-class (n), folder (n), take notes, population growth (np), log in (v)  >< log out (v)"
+          ]
+        },
+        {
+          "section_id": "sec_listening_lab",
+          "section_title": "🎧 1. Listening Lab & Audio Track",
+          "content_type": "listening_activity",
+          "audio_title": "Educational apps and online platforms",
+          "transcript": "Audio track for Grade 10 - Unit 8 (New ways to learn). Listen carefully to the details and answer the comprehension questions below.",
+          "word_count": "180-200 words"
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Listening in Unit 8?",
+              "options": [
+                "To master core vocabulary and language skills related to New ways to learn",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 8 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 6,
+      "lesson_code": "06",
+      "lesson_type": "WRITING",
+      "title": "Writing – An essay discussing online vs. offline learning",
+      "short_title": "An essay discussing online vs. offline learning",
+      "icon": "✏️",
+      "objectives": [
+        "Vocabulary: revision",
+        "Pronunciation: revision",
+        "Grammar: revision",
+        "Competencies: a. General competencies:",
+        "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, collaboration b. Specific competencies:",
+        "Access and consolidate information from a variety of sources",
+        "Be collaborative and supportive in pair work and teamwork",
+        "Actively join in class activities.",
+        "Recognize the benefits of blended learning so that students can make use of their time in class to study better",
+        "Be more active in blended learning classrooms."
+      ],
+      "media": {
+        "audio": "assets/audio/unit08/lesson06_audio.mp3",
+        "video": "assets/videos/unit08/lesson06_video.mp4",
+        "images": [
+          "assets/images/unit08/lesson06_img1.png",
+          "assets/images/unit08/lesson06_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: revision",
+            "Pronunciation: revision",
+            "Grammar: revision",
+            "Competencies: a. General competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_writing_studio",
+          "section_title": "✍️ 1. Guided Writing Canvas",
+          "content_type": "writing_scaffold",
+          "task_prompt": "Write an academic paragraph (120–150 words) about: An essay discussing online vs. offline learning.",
+          "scaffold": {
+            "topic_sentence": "State the main purpose or central claim regarding New ways to learn.",
+            "supporting_points": [
+              "First point with supporting evidence or example.",
+              "Second point with analysis."
+            ],
+            "concluding_sentence": "Summarize the significance and provide a forward-looking thought."
+          },
+          "model_text": "Engaging actively with new ways to learn is vital for high school students. Firstly, it builds essential life skills and responsibility. Secondly, it fosters teamwork and positive habits. In conclusion, developing conscious practices in this area prepares teenagers for future independence."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Writing in Unit 8?",
+              "options": [
+                "To master core vocabulary and language skills related to New ways to learn",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 8 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 7,
+      "lesson_code": "07",
+      "lesson_type": "COMMUNICATION AND CULTURE / CLIL",
+      "title": "Communication and Culture / CLIL – Blended learning around the world",
+      "short_title": "Blended learning around the world",
+      "icon": "🌐",
+      "objectives": [
+        "Vocabulary: revision",
+        "Pronunciation: revision",
+        "Grammar: revision",
+        "Competencies: a. General competencies:",
+        "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, collaboration b. Specific competencies:",
+        "Give instructions to download a learning app into their smartphone",
+        "Be collaborative and supportive in pair work and teamwork",
+        "Actively join in class activities.",
+        "Be ready to give instructions and share opinions",
+        "Understand the main features of modern schools",
+        "Be more active in blended learning classrooms.",
+        "Digital Competencies (NLS Integration): [",
+        "1NC1a]: Interact through digital technologies (using Kahoot! and Mentimeter). [",
+        "2NC1b]: Guide others in acting as intermediaries to share data/information (instructing how to install apps). [",
+        "2NC1a]: Evaluate needs and identify, select, and use digital tools (selecting appropriate learning apps)."
+      ],
+      "media": {
+        "audio": "assets/audio/unit08/lesson07_audio.mp3",
+        "video": "assets/videos/unit08/lesson07_video.mp4",
+        "images": [
+          "assets/images/unit08/lesson07_img1.png",
+          "assets/images/unit08/lesson07_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: revision",
+            "Pronunciation: revision",
+            "Grammar: revision",
+            "Competencies: a. General competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_clil_culture",
+          "section_title": "🌐 1. Culture & Interdisciplinary Learning",
+          "content_type": "culture_article",
+          "topic": "Blended learning around the world",
+          "content": "Discover how new ways to learn is approached across different countries and in Vietnamese society, highlighting intercultural awareness and sustainable development."
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Communication and Culture / CLIL in Unit 8?",
+              "options": [
+                "To master core vocabulary and language skills related to New ways to learn",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 8 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "lesson_id": 8,
+      "lesson_code": "08",
+      "lesson_type": "LOOKING BACK & PROJECT",
+      "title": "Looking back & Project – Creating a study plan with digital tools",
+      "short_title": "Creating a study plan with digital tools",
+      "icon": "🧩",
+      "objectives": [
+        "Vocabulary: revision",
+        "Pronunciation: revision",
+        "Grammar: revision",
+        "Competencies: a. General competencies:",
+        "Improve competencies: pairwork, critical thinking, interpersonal skill, problem-solving skill, self-study skill, creativeness and adaptability, collaboration b. Specific competencies:",
+        "Be collaborative and supportive in pair work and teamwork",
+        "Actively join in class activities.",
+        "Be more creative when doing the project",
+        "Develop self-study skills.",
+        "Digital Competencies (NLS Integration): [",
+        "1NC1a]: Determine information needs",
+        "find data, information, and content in digital environments (checking vocabulary/grammar online). [",
+        "4NC1a]: Use digital tools and technologies for collaborative processes (using chat groups or shared documents for the project). [",
+        "1NC1a]: Create and edit digital content in different formats (creating online survey forms or digital posters/slides). [",
+        "2NC1a]: Evaluate needs and identify, select, and use digital tools (choosing the right app for the survey or presentation)."
+      ],
+      "media": {
+        "audio": "assets/audio/unit08/lesson08_audio.mp3",
+        "video": "assets/videos/unit08/lesson08_video.mp4",
+        "images": [
+          "assets/images/unit08/lesson08_img1.png",
+          "assets/images/unit08/lesson08_img2.png"
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "sec_obj",
+          "section_title": "🎯 Lesson Objectives & Overview",
+          "content_type": "objectives",
+          "items": [
+            "Vocabulary: revision",
+            "Pronunciation: revision",
+            "Grammar: revision",
+            "Competencies: a. General competencies:"
+          ]
+        },
+        {
+          "section_id": "sec_project_guidelines",
+          "section_title": "🧩 1. Unit Synthesis & Collaborative Project",
+          "content_type": "project_guide",
+          "project_name": "Creating a study plan with digital tools",
+          "steps": [
+            "Step 1: Form a team of 4-5 students and choose a specific focus area.",
+            "Step 2: Collect data, photos, or digital resources.",
+            "Step 3: Prepare a poster or digital slide presentation.",
+            "Step 4: Present your project in front of the class."
+          ]
+        },
+        {
+          "section_id": "sec_vocab_bank",
+          "section_title": "💎 Key Vocabulary Bank",
+          "content_type": "vocab_list",
+          "items": [
+            {
+              "word": "Class",
+              "pos_ipa": "Date of teaching",
+              "meaning_vi": "Attendance"
+            },
+            {
+              "word": "10C6",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C7",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            },
+            {
+              "word": "10C9",
+              "pos_ipa": "",
+              "meaning_vi": ""
+            }
+          ]
+        },
+        {
+          "section_id": "sec_practice_quiz",
+          "section_title": "📝 Interactive Check & Practice",
+          "content_type": "interactive_quiz",
+          "questions": [
+            {
+              "question": "What is the main objective of Looking back & Project in Unit 8?",
+              "options": [
+                "To master core vocabulary and language skills related to New ways to learn",
+                "To memorize grammar rules without applying them in context",
+                "To translate every single word into Vietnamese literally",
+                "To skip communicative interaction"
+              ],
+              "correct": 0,
+              "explanation": "According to the 2018 MoET Curriculum, Unit 8 develops communicative competence and practical application."
+            },
+            {
+              "question": "Which skill or competency is highlighted in this lesson?",
+              "options": [
+                "Passive rote memorization",
+                "Autonomous digital competence, critical thinking, and communication",
+                "Translating whole texts with automatic online tools without review",
+                "Ignoring teacher feedback"
+              ],
+              "correct": 1,
+              "explanation": "Modern English 10 emphasizes learner autonomy, critical thinking, and digital competence."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

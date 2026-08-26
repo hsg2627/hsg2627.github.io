@@ -1154,10 +1154,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   renderListeningLab();
   renderWritingStudio();
 
-  // 8. Router & View Switching (Exact 6-Tab Architecture)
+  // 8. Router & View Switching
   const viewMap = {
     'home': 'overview-view',
     'overview': 'overview-view',
+    'gs10': 'gs10-view',
+    'global-success-10': 'gs10-view',
     'dashboard': 'dashboard-view',
     'grammar': 'grammar-view',
     'english10': 'grammar-view',
@@ -1171,6 +1173,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const breadcrumbMap = {
     'overview-view': ['Portal Home'],
+    'gs10-view': ['Portal Home', 'Global Success 10 (10 Units & 80 Lessons)'],
     'dashboard-view': ['Portal Home', 'Dashboard & Analytics'],
     'grammar-view': ['Portal Home', 'Grammar'],
     'vocab-view': ['Portal Home', 'Vocabulary Studio (Global Success 10)'],
