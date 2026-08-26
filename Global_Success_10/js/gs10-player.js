@@ -64,22 +64,11 @@ const GS10 = {
   },
 
   bindEvents() {
-    window.addEventListener('hashchange', () => this.handleRoute());
+    // Events bound directly to DOM elements
   },
 
   handleRoute() {
-    const hash = window.location.hash || '';
-    if (hash.startsWith('#unit-')) {
-      const parts = hash.replace('#unit-', '').split('-lesson-');
-      const uId = parseInt(parts[0], 10) || 1;
-      const lId = parts[1] ? parseInt(parts[1], 10) : null;
-      this.openUnit(uId, lId);
-    } else if (hash.startsWith('#review-')) {
-      const rId = parseInt(hash.replace('#review-', ''), 10) || 1;
-      this.openReviewModal(rId);
-    } else {
-      this.renderOverview();
-    }
+    this.renderOverview();
   },
 
   // =========================================================================
@@ -196,7 +185,7 @@ const GS10 = {
   },
 
   navigateToUnit(unitId) {
-    window.location.hash = `#unit-${unitId}`;
+    this.openUnit(unitId);
   },
 
   // =========================================================================
@@ -229,7 +218,7 @@ const GS10 = {
       <div class="gs10-unit-view">
         <!-- Top Unit Header (Mockup 1 Exact Match) -->
         <div class="gs10-unit-header-bar">
-          <button class="gs10-back-btn" onclick="window.location.hash=''" title="Back to All Units">
+          <button class="gs10-back-btn" onclick="GS10.renderOverview()" title="Back to All Units">
             &larr;
           </button>
           
@@ -282,8 +271,7 @@ const GS10 = {
     const activeRow = document.getElementById(`lesson-nav-row-${lessonId}`);
     if (activeRow) activeRow.classList.add('active');
 
-    // Update URL hash quietly
-    window.location.hash = `#unit-${this.state.selectedUnitId}-lesson-${lessonId}`;
+    // Update state quietly
     this.renderLessonContent();
   },
 
@@ -679,8 +667,4 @@ const GS10 = {
 };
 
 window.GS10 = GS10;
-document.addEventListener('DOMContentLoaded', () => {
-  if (document.getElementById('gs10-app-root')) {
-    GS10.init();
-  }
-});
+

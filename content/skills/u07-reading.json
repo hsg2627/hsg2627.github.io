@@ -1,0 +1,45 @@
+{
+  "id": "u07-reading",
+  "unit": 7,
+  "title": "Viet Nam and the United Nations: A Fruitful Partnership",
+  "word_count": 122,
+  "passage": "Since officially joining the United Nations (UN) in September 1977, Viet Nam has transformed from a war-torn nation receiving humanitarian assistance into an active, responsible member contributing to global peace and development. Viet Nam has successfully served twice as a non-permanent member of the UN Security Council, gaining immense international respect.\n\nThrough close collaboration with UN agencies such as UNICEF and UNDP, Viet Nam has achieved remarkable milestones in poverty reduction, universal primary education, and maternal healthcare. Vietnamese military medical personnel and engineering units have also participated proudly in UN peacekeeping missions in Africa.\n\nLooking ahead, Viet Nam and the UN continue to cooperate on sustainable green growth, digital transformation, and climate change adaptation, especially in vulnerable regions like the Mekong Delta.",
+  "questions": [
+    {
+      "id": "u07_rq01",
+      "prompt": "When did Viet Nam officially become a member of the United Nations?",
+      "options": [
+        "A. In 1945",
+        "B. In 1977",
+        "C. In 1995",
+        "D. In 2007"
+      ],
+      "answer": 1,
+      "explanation": "Dòng đầu nêu rõ 'joining the United Nations (UN) in September 1977'."
+    },
+    {
+      "id": "u07_rq02",
+      "prompt": "In what overseas missions have Vietnamese personnel participated?",
+      "options": [
+        "A. Space exploration projects",
+        "B. UN peacekeeping operations in Africa",
+        "C. Agricultural trade disputes",
+        "D. Nuclear energy development"
+      ],
+      "answer": 1,
+      "explanation": "Đoạn 2 nêu 'participated proudly in UN peacekeeping missions in Africa'."
+    },
+    {
+      "id": "u07_rq03",
+      "prompt": "Which area is mentioned as a focus for future Viet Nam - UN cooperation?",
+      "options": [
+        "A. Heavy industrial manufacturing",
+        "B. Climate change adaptation and green growth",
+        "C. Commercial tourism advertising",
+        "D. Weapons manufacturing"
+      ],
+      "answer": 1,
+      "explanation": "Đoạn 3 nêu 'green growth, digital transformation, and climate change adaptation'."
+    }
+  ]
+}

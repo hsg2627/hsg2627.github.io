@@ -1,0 +1,145 @@
+{
+  "id": "hk1-01",
+  "title": "Đề ôn tập tổng hợp Học kỳ 1",
+  "semester": "HK1",
+  "curriculum": {
+    "topics": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "grammar": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      15
+    ]
+  },
+  "items": [
+    {
+      "id": "hk1_01",
+      "prompt": "My sister usually _____ the washing-up after our family dinner.",
+      "options": [
+        "A. does",
+        "B. is doing",
+        "C. did",
+        "D. has done"
+      ],
+      "answer": 0,
+      "explanation": "Diễn tả thói quen lặp lại ở hiện tại -> dùng Hiện tại đơn 'does'."
+    },
+    {
+      "id": "hk1_02",
+      "prompt": "Lan _____ in Hanoi since she was six years old.",
+      "options": [
+        "A. lives",
+        "B. has lived",
+        "C. is living",
+        "D. lived"
+      ],
+      "answer": 1,
+      "explanation": "'since + mốc thời gian' -> thì Hiện tại hoàn thành 'has lived'."
+    },
+    {
+      "id": "hk1_03",
+      "prompt": "Look at those dark clouds in the sky! It _____ very heavily.",
+      "options": [
+        "A. will rain",
+        "B. is going to rain",
+        "C. rained",
+        "D. rains"
+      ],
+      "answer": 1,
+      "explanation": "Dự đoán có căn cứ dấu hiệu hiện tại -> 'is going to rain'."
+    },
+    {
+      "id": "hk1_04",
+      "prompt": "While we were planting trees in the park, it suddenly _____ to rain.",
+      "options": [
+        "A. starts",
+        "B. started",
+        "C. was starting",
+        "D. has started"
+      ],
+      "answer": 1,
+      "explanation": "Hành động xen vào hành động đang diễn ra trong quá khứ -> Quá khứ đơn 'started'."
+    },
+    {
+      "id": "hk1_05",
+      "prompt": "The teacher made all students _____ the vocabulary test carefully.",
+      "options": [
+        "A. to complete",
+        "B. complete",
+        "C. completing",
+        "D. completed"
+      ],
+      "answer": 1,
+      "explanation": "'make + O + bare infinitive' -> chọn 'complete'."
+    },
+    {
+      "id": "hk1_06",
+      "prompt": "Nam avoids _____ fast food and sugary drinks to stay healthy.",
+      "options": [
+        "A. eat",
+        "B. eating",
+        "C. to eat",
+        "D. ate"
+      ],
+      "answer": 1,
+      "explanation": "'avoid + V-ing' -> 'eating'."
+    },
+    {
+      "id": "hk1_07",
+      "prompt": "Nam studied hard for the semester exam, _____ he achieved excellent marks.",
+      "options": [
+        "A. so",
+        "B. but",
+        "C. or",
+        "D. nor"
+      ],
+      "answer": 0,
+      "explanation": "Liên từ chỉ kết quả 'so'."
+    },
+    {
+      "id": "hk1_08",
+      "prompt": "UNICEF is _____ international humanitarian organization.",
+      "options": [
+        "A. a",
+        "B. an",
+        "C. the",
+        "D. ∅"
+      ],
+      "answer": 1,
+      "explanation": "'international' bắt đầu bằng nguyên âm -> dùng mạo từ 'an'."
+    },
+    {
+      "id": "hk1_09",
+      "prompt": "Thousands of plastic bottles _____ by volunteers every weekend.",
+      "options": [
+        "A. are collected",
+        "B. collect",
+        "C. collected",
+        "D. are collecting"
+      ],
+      "answer": 0,
+      "explanation": "Câu bị động Hiện tại đơn 'are collected'."
+    },
+    {
+      "id": "hk1_10",
+      "prompt": "My parents decided _____ a digital tablet for my English studies.",
+      "options": [
+        "A. buy",
+        "B. to buy",
+        "C. buying",
+        "D. bought"
+      ],
+      "answer": 1,
+      "explanation": "'decide + to-infinitive' -> 'to buy'."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "u08-reading",
+  "unit": 8,
+  "title": "Blended Learning: Transforming Education in the Digital Era",
+  "word_count": 116,
+  "passage": "Blended learning, which strategically combines traditional classroom teaching with digital online resources, is revolutionizing secondary education globally. Instead of passively listening to lectures, students can now watch instructional videos at their own pace at home and use classroom time for collaborative problem-solving and discussions.\n\nThis modern pedagogical model offers multiple advantages. Digital learning software provides immediate feedback on interactive quizzes, allowing students to identify knowledge gaps instantly. Furthermore, online platforms grant equal access to vast digital libraries and multimedia learning materials for learners in remote areas.\n\nHowever, successful blended learning requires reliable high-speed internet connections and adequate digital literacy from both educators and students. When implemented thoughtfully, blended learning empowers students to become autonomous, lifelong learners.",
+  "questions": [
+    {
+      "id": "u08_rq01",
+      "prompt": "What is blended learning as defined in the text?",
+      "options": [
+        "A. Studying only through smartphones",
+        "B. Combining traditional classroom instruction with online learning",
+        "C. Learning without teacher supervision",
+        "D. Playing educational video games"
+      ],
+      "answer": 1,
+      "explanation": "Đoạn 1 nêu 'combines traditional classroom teaching with digital online resources'."
+    },
+    {
+      "id": "u08_rq02",
+      "prompt": "What is one major benefit of digital learning software?",
+      "options": [
+        "A. It replaces the need for exams",
+        "B. It gives immediate feedback on interactive quizzes",
+        "C. It allows students to skip classes",
+        "D. It decreases student motivation"
+      ],
+      "answer": 1,
+      "explanation": "Đoạn 2 nêu 'provides immediate feedback on interactive quizzes'."
+    },
+    {
+      "id": "u08_rq03",
+      "prompt": "What is required for blended learning to succeed effectively?",
+      "options": [
+        "A. Expensive gaming computers",
+        "B. Reliable internet access and digital literacy",
+        "C. Longer school hours every day",
+        "D. Banning paper textbooks completely"
+      ],
+      "answer": 1,
+      "explanation": "Đoạn 3 nêu 'requires reliable high-speed internet connections and adequate digital literacy'."
+    }
+  ]
+}

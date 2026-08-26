@@ -1,0 +1,78 @@
+{
+  "id": "g11",
+  "title": "Câu điều kiện loại 2 (Conditional Type 2)",
+  "curriculum": {
+    "grammar": [
+      11
+    ],
+    "error_category": 4
+  },
+  "theory": "\n            <p><strong>🎯 CHUYÊN ĐỀ 14: CÂU ĐIỀU KIỆN (CONDITIONAL SENTENCES)</strong></p>\n            <ul>\n              <li><strong>Type 0 (Sự thật hiển nhiên):</strong> <code>If + Present Simple, Present Simple</code><br><em>(If you heat ice, it melts.)</em></li>\n              <li><strong>Type 1 (Có thể xảy ra ở hiện tại/tương lai):</strong> <code>If + Present Simple, S + will + V0</code><br><em>(If we fix the engine, the shuttle will launch.)</em></li>\n              <li><strong>Type 2 (Giả thiết không có thật ở hiện tại):</strong> <code>If + Past Simple (to be: were), S + would + V0</code><br><em>(If I were the captain, I would open the airlock.)</em></li>\n              <li><strong>Type 3 (Giả thiết không có thật ở quá khứ):</strong> <code>If + Past Perfect (had + V3), S + would have + V3</code><br><em>(If we had detected the leak, we would have saved the oxygen.)</em></li>\n              <li><strong>UNLESS = IF NOT:</strong> <em>Unless you wear a helmet = If you do not wear a helmet.</em></li>\n            </ul>\n          ",
+  "items": [
+    {
+      "id": "g11_01",
+      "ai_generated": true,
+      "prompt": "If I _____ the president, I would invest more in green energy.",
+      "options": [
+        "A. am",
+        "B. was",
+        "C. were",
+        "D. will be"
+      ],
+      "answer": 2,
+      "explanation": "Câu điều kiện loại 2 (giả định trái với hiện tại), động từ to be trong mệnh đề If dùng 'were' cho mọi ngôi."
+    },
+    {
+      "id": "g11_02",
+      "ai_generated": true,
+      "prompt": "If we had more free time, we _____ join the international volunteer club.",
+      "options": [
+        "A. will",
+        "B. would",
+        "C. can",
+        "D. shall"
+      ],
+      "answer": 1,
+      "explanation": "Mệnh đề chính câu điều kiện loại 2: 'would + V' (would join)."
+    },
+    {
+      "id": "g11_03",
+      "ai_generated": true,
+      "prompt": "What _____ you do if you saw someone dumping chemicals into the river?",
+      "options": [
+        "A. will",
+        "B. would",
+        "C. do",
+        "D. did"
+      ],
+      "answer": 1,
+      "explanation": "Câu hỏi điều kiện loại 2: 'What would you do if + S + V2/ed?'."
+    },
+    {
+      "id": "g11_04",
+      "ai_generated": true,
+      "prompt": "If my smartphone _____ broken, I would submit the online assignment right now.",
+      "options": [
+        "A. isn't",
+        "B. weren't",
+        "C. hadn't been",
+        "D. won't be"
+      ],
+      "answer": 1,
+      "explanation": "Điều kiện loại 2 phủ định: 'weren't broken'."
+    },
+    {
+      "id": "g11_05",
+      "ai_generated": true,
+      "prompt": "If they lived closer to the school, they _____ to walk every morning.",
+      "options": [
+        "A. would be able",
+        "B. will be able",
+        "C. are able",
+        "D. can"
+      ],
+      "answer": 0,
+      "explanation": "Mệnh đề chính điều kiện loại 2: 'would be able'."
+    }
+  ]
+}

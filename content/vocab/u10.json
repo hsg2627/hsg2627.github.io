@@ -1,0 +1,581 @@
+{
+  "id": "u10",
+  "unit": 10,
+  "title": "Ecotourism",
+  "topic": 8,
+  "total_words": 55,
+  "words": [
+    {
+      "id": "u10_w01",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The local cave is highly famous for its ancient, majestic stalactites."
+    },
+    {
+      "id": "u10_w02",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Ecotourism supports indigenous communities by generating profit directly for them."
+    },
+    {
+      "id": "u10_w03",
+      "word": "",
+      "ipa": "",
+      "pos": "v",
+      "meaning": "",
+      "example": "The host community managed to retain their traditional festivals despite modernization."
+    },
+    {
+      "id": "u10_w04",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Mass tourism causes serious damage to the natural environment and local infrastructure."
+    },
+    {
+      "id": "u10_w05",
+      "word": "",
+      "ipa": "",
+      "pos": "n.phr",
+      "meaning": "",
+      "example": "Ecotourism must align with the goals of sustainable development."
+    },
+    {
+      "id": "u10_w06",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Travelers must be highly aware of their impact on local wildlife."
+    },
+    {
+      "id": "u10_w07",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The travel agency handed out brochures about pristine ecotourism destinations."
+    },
+    {
+      "id": "u10_w08",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Buying handmade crafts directly supports the host community."
+    },
+    {
+      "id": "u10_w09",
+      "word": "",
+      "ipa": "",
+      "pos": "v/n",
+      "meaning": "",
+      "example": "Thousands of mass tourists crowd the small beach town every summer."
+    },
+    {
+      "id": "u10_w10",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Respecting local culture is a fundamental rule for responsible travelers."
+    },
+    {
+      "id": "u10_w11",
+      "word": "",
+      "ipa": "",
+      "pos": "v/n",
+      "meaning": "",
+      "example": "Littering can severely damage the aesthetic value of scenic landscapes."
+    },
+    {
+      "id": "u10_w12",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Ecotourism offers opportunities to explore nature while protecting it."
+    },
+    {
+      "id": "u10_w13",
+      "word": "",
+      "ipa": "",
+      "pos": "v",
+      "meaning": "",
+      "example": "The national park allows visitors to explore ancient caves and dense jungles."
+    },
+    {
+      "id": "u10_w14",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Visiting a floating market in the Mekong Delta is a unique experience."
+    },
+    {
+      "id": "u10_w15",
+      "word": "",
+      "ipa": "",
+      "pos": "v",
+      "meaning": "",
+      "example": "Tourists must strictly follow the trail to avoid disrupting natural habitats."
+    },
+    {
+      "id": "u10_w16",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Homestay visitors should respect the customs of their local hosts."
+    },
+    {
+      "id": "u10_w17",
+      "word": "",
+      "ipa": "",
+      "pos": "v",
+      "meaning": "",
+      "example": "Poachers are caught trying to hunt endangered animals in the national park."
+    },
+    {
+      "id": "u10_w18",
+      "word": "",
+      "ipa": "",
+      "pos": "n/v",
+      "meaning": "",
+      "example": "Mass tourism has a highly negative impact on the local environment."
+    },
+    {
+      "id": "u10_w19",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Buying local products is an excellent way to support the host economy."
+    },
+    {
+      "id": "u10_w20",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Mass production of souvenirs often exploits indigenous designs."
+    },
+    {
+      "id": "u10_w21",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Please stay on the walking path to protect rare plants from being crushed."
+    },
+    {
+      "id": "u10_w22",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Part of the tourism profit should be reinvested in environmental protection."
+    },
+    {
+      "id": "u10_w23",
+      "word": "",
+      "ipa": "",
+      "pos": "v",
+      "meaning": "",
+      "example": "We must protect the pristine beauty of our national heritages."
+    },
+    {
+      "id": "u10_w24",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Responsible tourists always minimize their waste and respect local culture."
+    },
+    {
+      "id": "u10_w25",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "She bought a handmade scarf as a souvenir from her trip to Mai Chau."
+    },
+    {
+      "id": "u10_w26",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Many tourists go to remote mountainous areas to get away from noisy city life."
+    },
+    {
+      "id": "u10_w27",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "They spent the afternoon looking around the ancient local village."
+    },
+    {
+      "id": "u10_w28",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "We arrived at the eco-homestay and checked in at 2 PM."
+    },
+    {
+      "id": "u10_w29",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "The ecotour group set off early in the morning to watch wild birds."
+    },
+    {
+      "id": "u10_w30",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "The tour bus dropped us off right at the entrance of the national park."
+    },
+    {
+      "id": "u10_w31",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "The heavy rain held up our boat trip along the floating market."
+    },
+    {
+      "id": "u10_w32",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Ecotourists always pick up any rubbish they see on the trails."
+    },
+    {
+      "id": "u10_w33",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Ecotourism is really taking off in several northern provinces of Vietnam."
+    },
+    {
+      "id": "u10_w34",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "The local tour guide pointed out several rare medicinal plants along the path."
+    },
+    {
+      "id": "u10_w35",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "You can find out about the local culture by talking directly to residents."
+    },
+    {
+      "id": "u10_w36",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "The main aim of ecotourism is to reduce the negative impact of tourism on wildlife."
+    },
+    {
+      "id": "u10_w37",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Travelers must respect local culture and buy handmade crafts to support residents."
+    },
+    {
+      "id": "u10_w38",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Successful ecotourism programs must generate profit directly for the host community."
+    },
+    {
+      "id": "u10_w39",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Ecotourism aligns perfectly with global sustainable development goals."
+    },
+    {
+      "id": "u10_w40",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Mai Chau is highly famous as a pristine ecotourism destination in Vietnam."
+    },
+    {
+      "id": "u10_w41",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Visiting a floating market is a highly popular activity in the Mekong Delta."
+    },
+    {
+      "id": "u10_w42",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Ecotourists are encouraged to buy unique handmade crafts as souvenirs."
+    },
+    {
+      "id": "u10_w43",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Eating at local family restaurants helps support the local economy."
+    },
+    {
+      "id": "u10_w44",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "The knowledgeable tour guide explained the history of the ancient caves."
+    },
+    {
+      "id": "u10_w45",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "The government must take protective measures to preserve coral reefs."
+    },
+    {
+      "id": "u10_w46",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "The island is highly famous for its extremely unique indigenous flora and fauna."
+    },
+    {
+      "id": "u10_w47",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Responsible ecotours always teach travelers how to minimize waste generation."
+    },
+    {
+      "id": "u10_w48",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Many airlines offer options for travelers to offset their carbon footprint."
+    },
+    {
+      "id": "u10_w49",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "The waterfall has become a highly popular scenic tourist attraction."
+    },
+    {
+      "id": "u10_w50",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "She read the travel brochure to find out about local homestay rules."
+    },
+    {
+      "id": "u10_w51",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "My brother prefers ecotourism because he loves exploring places off the beaten track."
+    },
+    {
+      "id": "u10_w52",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "The sun is rising; it is time for our tour group to hit the road."
+    },
+    {
+      "id": "u10_w53",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "To hike along the steep mountain trails, you must travel light."
+    },
+    {
+      "id": "u10_w54",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "As an international tour guide, she spent the whole year living out of a suitcase."
+    },
+    {
+      "id": "u10_w55",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "After three days of trekking in the jungle, the group returned safe and sound."
+    }
+  ],
+  "items": [
+    {
+      "id": "u10_q01",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____l_____o_____c_____a_____l_____ _____c_____a_____v_____e_____ _____i_____s_____ _____h_____i_____g_____h_____l_____y_____ _____f_____a_____m_____o_____u_____s_____ _____f_____o_____r_____ _____i_____t_____s_____ _____a_____n_____c_____i_____e_____n_____t_____,_____ _____m_____a_____j_____e_____s_____t_____i_____c_____ _____s_____t_____a_____l_____a_____c_____t_____i_____t_____e_____s_____._____\"",
+      "options": [
+        "A. community",
+        "B. environment",
+        "C. volunteer",
+        "D. "
+      ],
+      "answer": 3,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u10_q02",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____E_____c_____o_____t_____o_____u_____r_____i_____s_____m_____ _____s_____u_____p_____p_____o_____r_____t_____s_____ _____i_____n_____d_____i_____g_____e_____n_____o_____u_____s_____ _____c_____o_____m_____m_____u_____n_____i_____t_____i_____e_____s_____ _____b_____y_____ _____g_____e_____n_____e_____r_____a_____t_____i_____n_____g_____ _____p_____r_____o_____f_____i_____t_____ _____d_____i_____r_____e_____c_____t_____l_____y_____ _____f_____o_____r_____ _____t_____h_____e_____m_____._____\"",
+      "options": [
+        "A. community",
+        "B. ",
+        "C. environment",
+        "D. volunteer"
+      ],
+      "answer": 1,
+      "explanation": "'' (adj) nghĩa là: ."
+    },
+    {
+      "id": "u10_q03",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____h_____o_____s_____t_____ _____c_____o_____m_____m_____u_____n_____i_____t_____y_____ _____m_____a_____n_____a_____g_____e_____d_____ _____t_____o_____ _____r_____e_____t_____a_____i_____n_____ _____t_____h_____e_____i_____r_____ _____t_____r_____a_____d_____i_____t_____i_____o_____n_____a_____l_____ _____f_____e_____s_____t_____i_____v_____a_____l_____s_____ _____d_____e_____s_____p_____i_____t_____e_____ _____m_____o_____d_____e_____r_____n_____i_____z_____a_____t_____i_____o_____n_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. environment",
+        "C. community",
+        "D. "
+      ],
+      "answer": 3,
+      "explanation": "'' (v) nghĩa là: ."
+    },
+    {
+      "id": "u10_q04",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____M_____a_____s_____s_____ _____t_____o_____u_____r_____i_____s_____m_____ _____c_____a_____u_____s_____e_____s_____ _____s_____e_____r_____i_____o_____u_____s_____ _____d_____a_____m_____a_____g_____e_____ _____t_____o_____ _____t_____h_____e_____ _____n_____a_____t_____u_____r_____a_____l_____ _____e_____n_____v_____i_____r_____o_____n_____m_____e_____n_____t_____ _____a_____n_____d_____ _____l_____o_____c_____a_____l_____ _____i_____n_____f_____r_____a_____s_____t_____r_____u_____c_____t_____u_____r_____e_____._____\"",
+      "options": [
+        "A. environment",
+        "B. ",
+        "C. volunteer",
+        "D. community"
+      ],
+      "answer": 1,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u10_q05",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____E_____c_____o_____t_____o_____u_____r_____i_____s_____m_____ _____m_____u_____s_____t_____ _____a_____l_____i_____g_____n_____ _____w_____i_____t_____h_____ _____t_____h_____e_____ _____g_____o_____a_____l_____s_____ _____o_____f_____ _____s_____u_____s_____t_____a_____i_____n_____a_____b_____l_____e_____ _____d_____e_____v_____e_____l_____o_____p_____m_____e_____n_____t_____._____\"",
+      "options": [
+        "A. ",
+        "B. community",
+        "C. volunteer",
+        "D. environment"
+      ],
+      "answer": 0,
+      "explanation": "'' (n.phr) nghĩa là: ."
+    },
+    {
+      "id": "u10_q06",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____r_____a_____v_____e_____l_____e_____r_____s_____ _____m_____u_____s_____t_____ _____b_____e_____ _____h_____i_____g_____h_____l_____y_____ _____a_____w_____a_____r_____e_____ _____o_____f_____ _____t_____h_____e_____i_____r_____ _____i_____m_____p_____a_____c_____t_____ _____o_____n_____ _____l_____o_____c_____a_____l_____ _____w_____i_____l_____d_____l_____i_____f_____e_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. ",
+        "C. environment",
+        "D. community"
+      ],
+      "answer": 1,
+      "explanation": "'' (adj) nghĩa là: ."
+    },
+    {
+      "id": "u10_q07",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____t_____r_____a_____v_____e_____l_____ _____a_____g_____e_____n_____c_____y_____ _____h_____a_____n_____d_____e_____d_____ _____o_____u_____t_____ _____b_____r_____o_____c_____h_____u_____r_____e_____s_____ _____a_____b_____o_____u_____t_____ _____p_____r_____i_____s_____t_____i_____n_____e_____ _____e_____c_____o_____t_____o_____u_____r_____i_____s_____m_____ _____d_____e_____s_____t_____i_____n_____a_____t_____i_____o_____n_____s_____._____\"",
+      "options": [
+        "A. community",
+        "B. ",
+        "C. environment",
+        "D. volunteer"
+      ],
+      "answer": 1,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u10_q08",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____B_____u_____y_____i_____n_____g_____ _____h_____a_____n_____d_____m_____a_____d_____e_____ _____c_____r_____a_____f_____t_____s_____ _____d_____i_____r_____e_____c_____t_____l_____y_____ _____s_____u_____p_____p_____o_____r_____t_____s_____ _____t_____h_____e_____ _____h_____o_____s_____t_____ _____c_____o_____m_____m_____u_____n_____i_____t_____y_____._____\"",
+      "options": [
+        "A. community",
+        "B. volunteer",
+        "C. environment",
+        "D. "
+      ],
+      "answer": 3,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u10_q09",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____o_____u_____s_____a_____n_____d_____s_____ _____o_____f_____ _____m_____a_____s_____s_____ _____t_____o_____u_____r_____i_____s_____t_____s_____ _____c_____r_____o_____w_____d_____ _____t_____h_____e_____ _____s_____m_____a_____l_____l_____ _____b_____e_____a_____c_____h_____ _____t_____o_____w_____n_____ _____e_____v_____e_____r_____y_____ _____s_____u_____m_____m_____e_____r_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. ",
+        "C. community",
+        "D. environment"
+      ],
+      "answer": 1,
+      "explanation": "'' (v/n) nghĩa là: ."
+    },
+    {
+      "id": "u10_q10",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____R_____e_____s_____p_____e_____c_____t_____i_____n_____g_____ _____l_____o_____c_____a_____l_____ _____c_____u_____l_____t_____u_____r_____e_____ _____i_____s_____ _____a_____ _____f_____u_____n_____d_____a_____m_____e_____n_____t_____a_____l_____ _____r_____u_____l_____e_____ _____f_____o_____r_____ _____r_____e_____s_____p_____o_____n_____s_____i_____b_____l_____e_____ _____t_____r_____a_____v_____e_____l_____e_____r_____s_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. ",
+        "C. community",
+        "D. environment"
+      ],
+      "answer": 1,
+      "explanation": "'' (n) nghĩa là: ."
+    }
+  ]
+}

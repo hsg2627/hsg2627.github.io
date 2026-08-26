@@ -1,0 +1,45 @@
+{
+  "id": "u09-reading",
+  "unit": 9,
+  "title": "Protecting Biodiversity: Preserving Earth's Living Heritage",
+  "word_count": 112,
+  "passage": "Biodiversity encompasses the immense variety of life on Earth, from tiny microorganisms to vast tropical rainforests and marine coral reefs. Healthy ecosystems purify our air, provide clean freshwater, pollinate agricultural crops, and supply ingredients for modern medical treatments.\n\nRegrettably, human activities such as deforestation, illegal wildlife hunting, and plastic pollution have accelerated species extinction rates dramatically. When a single species disappears, it triggers a chain reaction that destabilizes the entire ecological food web.\n\nConserving biodiversity demands concerted global action. Establishing protected nature reserves, restoring degraded mangroves, and enforcing strict penalties against wildlife trafficking are vital steps. Individual citizens can also contribute by adopting eco-friendly daily habits, recycling waste, and reducing single-use plastics.",
+  "questions": [
+    {
+      "id": "u09_rq01",
+      "prompt": "Why are healthy ecosystems crucial according to paragraph 1?",
+      "options": [
+        "A. They increase industrial manufacturing",
+        "B. They purify air, provide freshwater and medical resources",
+        "C. They allow unrestricted urban expansion",
+        "D. They eliminate all natural predators"
+      ],
+      "answer": 1,
+      "explanation": "Đoạn 1 nêu 'purify our air, provide clean freshwater... and supply ingredients for medical treatments'."
+    },
+    {
+      "id": "u09_rq02",
+      "prompt": "The word 'accelerated' in paragraph 2 is closest in meaning to:",
+      "options": [
+        "A. slowed down",
+        "B. sped up / quickened",
+        "C. stopped",
+        "D. protected"
+      ],
+      "answer": 1,
+      "explanation": "'accelerate' có nghĩa là thúc đẩy nhanh hơn (sped up/quickened)."
+    },
+    {
+      "id": "u09_rq03",
+      "prompt": "How can ordinary citizens contribute to biodiversity conservation?",
+      "options": [
+        "A. By purchasing endangered wildlife pets",
+        "B. By cutting down old trees in parks",
+        "C. By adopting eco-friendly habits and reducing plastic waste",
+        "D. By moving away from coastal towns"
+      ],
+      "answer": 2,
+      "explanation": "Đoạn cuối nêu 'adopting eco-friendly daily habits, recycling waste, and reducing single-use plastics'."
+    }
+  ]
+}

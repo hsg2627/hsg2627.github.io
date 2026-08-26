@@ -1,0 +1,78 @@
+{
+  "id": "g05",
+  "title": "Động từ nguyên thể có 'to' và không 'to' (Infinitives)",
+  "curriculum": {
+    "grammar": [
+      5
+    ],
+    "error_category": 2
+  },
+  "theory": "\n            <p><strong>🎯 CHUYÊN ĐỀ 8: ĐỘNG TỪ NGUYÊN MẪU (INFINITIVES)</strong></p>\n            <ul>\n              <li><strong>To-Infinitive (to + V0):</strong>\n                <ul>\n                  <li>Chỉ mục đích (<em>He study hard <strong>to pass</strong> the exam.</em>).</li>\n                  <li>Sau tính từ (<em>It is important <strong>to practice</strong>.</em>).</li>\n                  <li>Sau các động từ: <em>agree, decide, hope, promise, refuse, want, offer, plan.</em></li>\n                </ul>\n              </li>\n              <li><strong>Bare Infinitive (V0 không to):</strong>\n                <ul>\n                  <li>Sau Động từ khuyết thiếu (modals): <em>can, must, should, may, will.</em></li>\n                  <li>Sau <em>let, make, see, hear</em> + O (<em>The teacher made us <strong>rewrite</strong> the essay.</em>).</li>\n                </ul>\n              </li>\n            </ul>\n          ",
+  "items": [
+    {
+      "id": "g05_01",
+      "ai_generated": true,
+      "prompt": "The teacher made all students _____ the vocabulary test again.",
+      "options": [
+        "A. to do",
+        "B. do",
+        "C. doing",
+        "D. done"
+      ],
+      "answer": 1,
+      "explanation": "Cấu trúc 'make + O + bare infinitive' (bắt/khiến ai làm gì) -> chọn 'do'."
+    },
+    {
+      "id": "g05_02",
+      "ai_generated": true,
+      "prompt": "My parents decided _____ a new laptop for my online studies.",
+      "options": [
+        "A. to buy",
+        "B. buy",
+        "C. buying",
+        "D. bought"
+      ],
+      "answer": 0,
+      "explanation": "Cấu trúc 'decide + to-infinitive' (quyết định làm gì) -> chọn 'to buy'."
+    },
+    {
+      "id": "g05_03",
+      "ai_generated": true,
+      "prompt": "They let the volunteers _____ the tree-planting location.",
+      "options": [
+        "A. to choose",
+        "B. choose",
+        "C. choosing",
+        "D. chosen"
+      ],
+      "answer": 1,
+      "explanation": "Cấu trúc 'let + O + bare infinitive' (cho phép ai làm gì) -> chọn 'choose'."
+    },
+    {
+      "id": "g05_04",
+      "ai_generated": true,
+      "prompt": "It is necessary for us _____ our environment clean and green.",
+      "options": [
+        "A. keep",
+        "B. to keep",
+        "C. keeping",
+        "D. kept"
+      ],
+      "answer": 1,
+      "explanation": "Cấu trúc tính từ: 'It is + adj + for someone + to-infinitive' -> chọn 'to keep'."
+    },
+    {
+      "id": "g05_05",
+      "ai_generated": true,
+      "prompt": "You should _____ more water every day.",
+      "options": [
+        "A. to drink",
+        "B. drink",
+        "C. drinking",
+        "D. drank"
+      ],
+      "answer": 1,
+      "explanation": "Sau động từ khuyết thiếu (modal verbs) như 'should' dùng động từ nguyên thể không to (bare infinitive)."
+    }
+  ]
+}

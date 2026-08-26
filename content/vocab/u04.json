@@ -1,0 +1,581 @@
+{
+  "id": "u04",
+  "unit": 4,
+  "title": "For A Better Community",
+  "topic": 4,
+  "total_words": 55,
+  "words": [
+    {
+      "id": "u04_w01",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Volunteering is a noble act of pure altruism."
+    },
+    {
+      "id": "u04_w02",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The billionaire decided to dedicate his wealth to philanthropy and education."
+    },
+    {
+      "id": "u04_w03",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "We organized a fundraiser to support underprivileged students in mountainous areas."
+    },
+    {
+      "id": "u04_w04",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Non-profit organizations must be fully transparent about their financial transactions."
+    },
+    {
+      "id": "u04_w05",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Many young volunteers work in remote areas despite facing extreme hardships."
+    },
+    {
+      "id": "u04_w06",
+      "word": "",
+      "ipa": "",
+      "pos": "n.phr",
+      "meaning": "",
+      "example": "Vietnamese soldiers worked tirelessly to coordinate disaster relief after the landslide."
+    },
+    {
+      "id": "u04_w07",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "She gained practical experience by working with an international non-governmental organization."
+    },
+    {
+      "id": "u04_w08",
+      "word": "",
+      "ipa": "",
+      "pos": "n/v",
+      "meaning": "",
+      "example": "Improving infrastructure helps remote villages gain access to health services."
+    },
+    {
+      "id": "u04_w09",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The school made an announcement about the upcoming volunteer trip."
+    },
+    {
+      "id": "u04_w10",
+      "word": "",
+      "ipa": "",
+      "pos": "v",
+      "meaning": "",
+      "example": "Helping others can significantly boost your mood and self-confidence."
+    },
+    {
+      "id": "u04_w11",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "The cheerful volunteers handed out warm meals to the homeless."
+    },
+    {
+      "id": "u04_w12",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "A healthy community is built on mutual support and cooperation."
+    },
+    {
+      "id": "u04_w13",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Public speaking at community centers helped her build immense confidence."
+    },
+    {
+      "id": "u04_w14",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "The instructions for the project were unclear, leaving many volunteers confused."
+    },
+    {
+      "id": "u04_w15",
+      "word": "",
+      "ipa": "",
+      "pos": "v",
+      "meaning": "",
+      "example": "We delivered food packages directly to families affected by the flood."
+    },
+    {
+      "id": "u04_w16",
+      "word": "",
+      "ipa": "",
+      "pos": "v",
+      "meaning": "",
+      "example": "Many students donated old books and warm clothes to the charity drive."
+    },
+    {
+      "id": "u04_w17",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The orphanage received generous donations from local businesses."
+    },
+    {
+      "id": "u04_w18",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "She is extremely generous, always donating half of her pocket money."
+    },
+    {
+      "id": "u04_w19",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "More and more teenagers are getting involved in community service nowadays."
+    },
+    {
+      "id": "u04_w20",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "The medical group travelled to remote mountainous areas to vaccinate children."
+    },
+    {
+      "id": "u04_w21",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "We organized various activities, such as tutoring and sorting donations."
+    },
+    {
+      "id": "u04_w22",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "They spend their weekends playing with children at the local orphanage."
+    },
+    {
+      "id": "u04_w23",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "The University supports several charitable projects for public benefit."
+    },
+    {
+      "id": "u04_w24",
+      "word": "",
+      "ipa": "",
+      "pos": "v",
+      "meaning": "",
+      "example": "Many poor children suffer from a lack of proper educational resources."
+    },
+    {
+      "id": "u04_w25",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The main aim of the project is to reduce poverty in rural areas."
+    },
+    {
+      "id": "u04_w26",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Local residents stepped up to help flood victims rebuild their homes."
+    },
+    {
+      "id": "u04_w27",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Giving back to the community provides a lasting sense of meaningfulness."
+    },
+    {
+      "id": "u04_w28",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "The youth union carried out several community development projects this summer."
+    },
+    {
+      "id": "u04_w29",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Whenever we need volunteers, Tuan is always ready to help out."
+    },
+    {
+      "id": "u04_w30",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "We look forward to collaborating with your organization next year."
+    },
+    {
+      "id": "u04_w31",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Many university students signed up for the free teaching program."
+    },
+    {
+      "id": "u04_w32",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Please fill in this application form if you want to join our club."
+    },
+    {
+      "id": "u04_w33",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "They handed out warm meals and blankets to homeless people."
+    },
+    {
+      "id": "u04_w34",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Lan loves to take part in green campaigns in her school."
+    },
+    {
+      "id": "u04_w35",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "We need all sectors to join hands to combat local plastic pollution."
+    },
+    {
+      "id": "u04_w36",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Joining charity campaigns is a great way for teenagers to gain practical experience."
+    },
+    {
+      "id": "u04_w37",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Volunteering allows students to come into contact with people from different backgrounds."
+    },
+    {
+      "id": "u04_w38",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "The students set up a fundraiser to raise money for local orphanages."
+    },
+    {
+      "id": "u04_w39",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Even small daily contributions can make a significant difference in saving raw materials."
+    },
+    {
+      "id": "u04_w40",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Public speaking at community centers helps boost students' self-confidence."
+    },
+    {
+      "id": "u04_w41",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Investing in local education is a catalyst for community development."
+    },
+    {
+      "id": "u04_w42",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "A helicopter airlifted tons of emergency supplies to the isolated village."
+    },
+    {
+      "id": "u04_w43",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "She works as a volunteer for an international non-profit organisation."
+    },
+    {
+      "id": "u04_w44",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "The youth union launched a new volunteer project to clean up local rivers."
+    },
+    {
+      "id": "u04_w45",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Volunteers are trained in basic life-saving skills like first aid."
+    },
+    {
+      "id": "u04_w46",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Doing volunteer work helps young people become more empathetic."
+    },
+    {
+      "id": "u04_w47",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "We distributed food and bottled water to flood victims yesterday."
+    },
+    {
+      "id": "u04_w48",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "The charity raises funds to build warm classrooms in remote areas."
+    },
+    {
+      "id": "u04_w49",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "I met my old school friend by chance during the charity event."
+    },
+    {
+      "id": "u04_w50",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "He accidentally donated his active keys by mistake."
+    },
+    {
+      "id": "u04_w51",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "The campaign attracted volunteers from all walks of life."
+    },
+    {
+      "id": "u04_w52",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "A simple act of kindness can create a powerful ripple effect across the community."
+    },
+    {
+      "id": "u04_w53",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "If someone helps you, remember to pay it forward by helping another person in need."
+    },
+    {
+      "id": "u04_w54",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "We should always be ready to lend a helping hand to those in hardship."
+    },
+    {
+      "id": "u04_w55",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "Our grandmother has a heart of gold, always feeding stray cats."
+    }
+  ],
+  "items": [
+    {
+      "id": "u04_q01",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____V_____o_____l_____u_____n_____t_____e_____e_____r_____i_____n_____g_____ _____i_____s_____ _____a_____ _____n_____o_____b_____l_____e_____ _____a_____c_____t_____ _____o_____f_____ _____p_____u_____r_____e_____ _____a_____l_____t_____r_____u_____i_____s_____m_____._____\"",
+      "options": [
+        "A. community",
+        "B. environment",
+        "C. volunteer",
+        "D. "
+      ],
+      "answer": 3,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u04_q02",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____b_____i_____l_____l_____i_____o_____n_____a_____i_____r_____e_____ _____d_____e_____c_____i_____d_____e_____d_____ _____t_____o_____ _____d_____e_____d_____i_____c_____a_____t_____e_____ _____h_____i_____s_____ _____w_____e_____a_____l_____t_____h_____ _____t_____o_____ _____p_____h_____i_____l_____a_____n_____t_____h_____r_____o_____p_____y_____ _____a_____n_____d_____ _____e_____d_____u_____c_____a_____t_____i_____o_____n_____._____\"",
+      "options": [
+        "A. environment",
+        "B. volunteer",
+        "C. ",
+        "D. community"
+      ],
+      "answer": 2,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u04_q03",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____W_____e_____ _____o_____r_____g_____a_____n_____i_____z_____e_____d_____ _____a_____ _____f_____u_____n_____d_____r_____a_____i_____s_____e_____r_____ _____t_____o_____ _____s_____u_____p_____p_____o_____r_____t_____ _____u_____n_____d_____e_____r_____p_____r_____i_____v_____i_____l_____e_____g_____e_____d_____ _____s_____t_____u_____d_____e_____n_____t_____s_____ _____i_____n_____ _____m_____o_____u_____n_____t_____a_____i_____n_____o_____u_____s_____ _____a_____r_____e_____a_____s_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. community",
+        "C. ",
+        "D. environment"
+      ],
+      "answer": 2,
+      "explanation": "'' (adj) nghĩa là: ."
+    },
+    {
+      "id": "u04_q04",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____N_____o_____n_____-_____p_____r_____o_____f_____i_____t_____ _____o_____r_____g_____a_____n_____i_____z_____a_____t_____i_____o_____n_____s_____ _____m_____u_____s_____t_____ _____b_____e_____ _____f_____u_____l_____l_____y_____ _____t_____r_____a_____n_____s_____p_____a_____r_____e_____n_____t_____ _____a_____b_____o_____u_____t_____ _____t_____h_____e_____i_____r_____ _____f_____i_____n_____a_____n_____c_____i_____a_____l_____ _____t_____r_____a_____n_____s_____a_____c_____t_____i_____o_____n_____s_____._____\"",
+      "options": [
+        "A. ",
+        "B. community",
+        "C. volunteer",
+        "D. environment"
+      ],
+      "answer": 0,
+      "explanation": "'' (adj) nghĩa là: ."
+    },
+    {
+      "id": "u04_q05",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____M_____a_____n_____y_____ _____y_____o_____u_____n_____g_____ _____v_____o_____l_____u_____n_____t_____e_____e_____r_____s_____ _____w_____o_____r_____k_____ _____i_____n_____ _____r_____e_____m_____o_____t_____e_____ _____a_____r_____e_____a_____s_____ _____d_____e_____s_____p_____i_____t_____e_____ _____f_____a_____c_____i_____n_____g_____ _____e_____x_____t_____r_____e_____m_____e_____ _____h_____a_____r_____d_____s_____h_____i_____p_____s_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. environment",
+        "C. community",
+        "D. "
+      ],
+      "answer": 3,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u04_q06",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____V_____i_____e_____t_____n_____a_____m_____e_____s_____e_____ _____s_____o_____l_____d_____i_____e_____r_____s_____ _____w_____o_____r_____k_____e_____d_____ _____t_____i_____r_____e_____l_____e_____s_____s_____l_____y_____ _____t_____o_____ _____c_____o_____o_____r_____d_____i_____n_____a_____t_____e_____ _____d_____i_____s_____a_____s_____t_____e_____r_____ _____r_____e_____l_____i_____e_____f_____ _____a_____f_____t_____e_____r_____ _____t_____h_____e_____ _____l_____a_____n_____d_____s_____l_____i_____d_____e_____._____\"",
+      "options": [
+        "A. ",
+        "B. community",
+        "C. environment",
+        "D. volunteer"
+      ],
+      "answer": 0,
+      "explanation": "'' (n.phr) nghĩa là: ."
+    },
+    {
+      "id": "u04_q07",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____S_____h_____e_____ _____g_____a_____i_____n_____e_____d_____ _____p_____r_____a_____c_____t_____i_____c_____a_____l_____ _____e_____x_____p_____e_____r_____i_____e_____n_____c_____e_____ _____b_____y_____ _____w_____o_____r_____k_____i_____n_____g_____ _____w_____i_____t_____h_____ _____a_____n_____ _____i_____n_____t_____e_____r_____n_____a_____t_____i_____o_____n_____a_____l_____ _____n_____o_____n_____-_____g_____o_____v_____e_____r_____n_____m_____e_____n_____t_____a_____l_____ _____o_____r_____g_____a_____n_____i_____z_____a_____t_____i_____o_____n_____._____\"",
+      "options": [
+        "A. ",
+        "B. volunteer",
+        "C. community",
+        "D. environment"
+      ],
+      "answer": 0,
+      "explanation": "'' (adj) nghĩa là: ."
+    },
+    {
+      "id": "u04_q08",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____I_____m_____p_____r_____o_____v_____i_____n_____g_____ _____i_____n_____f_____r_____a_____s_____t_____r_____u_____c_____t_____u_____r_____e_____ _____h_____e_____l_____p_____s_____ _____r_____e_____m_____o_____t_____e_____ _____v_____i_____l_____l_____a_____g_____e_____s_____ _____g_____a_____i_____n_____ _____a_____c_____c_____e_____s_____s_____ _____t_____o_____ _____h_____e_____a_____l_____t_____h_____ _____s_____e_____r_____v_____i_____c_____e_____s_____._____\"",
+      "options": [
+        "A. environment",
+        "B. volunteer",
+        "C. ",
+        "D. community"
+      ],
+      "answer": 2,
+      "explanation": "'' (n/v) nghĩa là: ."
+    },
+    {
+      "id": "u04_q09",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____s_____c_____h_____o_____o_____l_____ _____m_____a_____d_____e_____ _____a_____n_____ _____a_____n_____n_____o_____u_____n_____c_____e_____m_____e_____n_____t_____ _____a_____b_____o_____u_____t_____ _____t_____h_____e_____ _____u_____p_____c_____o_____m_____i_____n_____g_____ _____v_____o_____l_____u_____n_____t_____e_____e_____r_____ _____t_____r_____i_____p_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. ",
+        "C. community",
+        "D. environment"
+      ],
+      "answer": 1,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u04_q10",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____H_____e_____l_____p_____i_____n_____g_____ _____o_____t_____h_____e_____r_____s_____ _____c_____a_____n_____ _____s_____i_____g_____n_____i_____f_____i_____c_____a_____n_____t_____l_____y_____ _____b_____o_____o_____s_____t_____ _____y_____o_____u_____r_____ _____m_____o_____o_____d_____ _____a_____n_____d_____ _____s_____e_____l_____f_____-_____c_____o_____n_____f_____i_____d_____e_____n_____c_____e_____._____\"",
+      "options": [
+        "A. ",
+        "B. volunteer",
+        "C. community",
+        "D. environment"
+      ],
+      "answer": 0,
+      "explanation": "'' (v) nghĩa là: ."
+    }
+  ]
+}

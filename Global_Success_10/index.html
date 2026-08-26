@@ -3,22 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Global Success 10 · Interactive Courseware — English Insiders</title>
-  <meta name="description" content="Khung bài giảng số tương tác 10 Units và 80 Lessons môn Tiếng Anh 10 Global Success theo Chương trình GDPT 2018 (TT 32/2018/TT-BGDĐT) và Năng lực số (TT 02/2025/TT-BGDĐT).">
-  
-  <!-- Typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="../images/English_Insider_Logo.svg">
+  <title>Global Success 10 · Bài giảng trình chiếu — English Insiders</title>
+  <meta name="description" content="Khung bài giảng số tương tác 10 Units và 80 Lessons môn Tiếng Anh 10 Global Success dành cho giáo viên trình chiếu trên lớp.">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/English_Insider_Logo.svg">
 
   <!-- Global Success 10 Custom Styling -->
   <link rel="stylesheet" href="css/gs10.css">
   
   <style>
-    /* Mandatory permanent AI disclosure banner from AGENTS.md */
+    /* Mandatory permanent AI disclosure banner from AGENTS.md §6 */
     .ai-banner-strip {
       background: #fef2f2;
       border-bottom: 1px solid #fee2e2;
@@ -46,33 +39,48 @@
 
   <!-- TOP HEADER -->
   <header class="gs10-header">
-    <div class="gs10-header__brand" onclick="window.location.hash=''">
+    <div class="gs10-header__brand" onclick="window.location.href='/Global_Success_10/'">
       <div class="gs10-header__logo-badge">GS 10</div>
       <div class="gs10-header__title-group">
         <h1>Global Success 10 · Interactive Courseware</h1>
-        <p>Tiếng Anh 10 — Chương trình GDPT 2018</p>
+        <p>Khu vực giáo viên · Bài giảng trình chiếu trên lớp</p>
       </div>
     </div>
 
     <div class="gs10-header__actions">
-      <a href="../index.html" class="gs10-btn gs10-btn--secondary">
+      <a href="/" class="gs10-btn gs10-btn--secondary">
         🏠 English Insiders Home
       </a>
-      <a href="../index.html#dashboard" class="gs10-btn gs10-btn--secondary">
-        📊 Dashboard
+      <a href="/me/" class="gs10-btn gs10-btn--secondary">
+        👤 Dữ liệu
       </a>
     </div>
   </header>
 
   <!-- MAIN INTERACTIVE MOUNT ROOT -->
   <main id="gs10-app-root">
-    <!-- Rendered dynamically by GS10 engine -->
+    <!-- Rendered dynamically by GS10 engine after passing gate -->
   </main>
 
   <!-- DECORATIVE LANDSCAPE FOOTER -->
   <div class="gs10-bg-landscape"></div>
 
-  <!-- APPLICATION SCRIPT -->
-  <script src="js/gs10-player.js"></script>
+  <!-- GATEKEEPER & APPLICATION SCRIPT -->
+  <script type="module">
+    import { openGate } from '/Global_Success_10/js/gs10-gate.js';
+    
+    // Check gatekeeper before loading unit data
+    const allowed = await openGate();
+    if (allowed) {
+      const s = document.createElement('script');
+      s.src = 'js/gs10-player.js';
+      s.onload = () => {
+        if (window.GS10) {
+          window.GS10.init();
+        }
+      };
+      document.body.appendChild(s);
+    }
+  </script>
 </body>
 </html>

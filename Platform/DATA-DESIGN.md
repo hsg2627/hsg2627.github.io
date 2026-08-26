@@ -36,6 +36,7 @@ Platform/
 │  ├─ grammar/           g01.json … g14.json
 │  ├─ vocab/             u01.json … u10.json
 │  ├─ skills/            u06-reading.json, u06-listening.json, u06-writing.json …
+│  ├─ exams/             hk1-01.json, hk2-01.json …
 │  └─ ai-eval/           ae-hk1.json, ae-hk2.json
 ├─ media/audio/          chỉ khi làm Listening
 └─ screens/
@@ -43,23 +44,18 @@ Platform/
 
 ---
 
-## 3. Hai chỗ phải sửa trong `core/` trước
+## 3. Chỗ cấu hình trong `core/`
 
-**`config.js` — mở khoá tiền tố trường.** Hiện tại:
-
-```js
-ID_PATTERN: /^NK(1[0-2][A-Z]\d?)-(\d{2})$/i,
-```
-
-Chỉ nhận `NK`. Học sinh trường thứ hai không vào được. Sửa thành:
+**`config.js` & `identity.js` — Mã định danh.** Chuẩn cập nhật theo `AGENTS.md` §4:
 
 ```js
-SCHOOLS: { NK: 'Nguyễn Khuyến', TP: '<trường thứ hai>' },
-ID_PATTERN: /^(NK|TP)(1[0-2][A-Z]\d?)-(\d{2})$/i,
+SCHOOLS: { NK: 'Nguyễn Khuyến' },
+CLASSES: ['1009', '1010'],
+ID_PATTERN: /^(NK)(1[0-2])(\d{2})-(\d{2})$/i,
+ID_EXAMPLE: 'NK1009-07',
 ```
 
-`identity.js` phải tách thêm `school_id` từ nhóm bắt thứ nhất và đưa vào mọi
-dòng log — nếu không, lúc phân tích không tách được hai trường.
+`identity.js` trả về `{ ok: true, pseudo_id: s, class_id: m[2] + m[3], seat: m[4] }`.
 
 **Thêm `CONTENT_VERSION`.** Mọi dòng log đã mang `APP_VERSION` và
 `SCHEMA_VERSION`. Thêm một hằng nữa và đóng băng cùng lúc:
@@ -96,9 +92,9 @@ trong tệp JSON đúng phiên bản.
     {
       "id": "g07",
       "kind": "grammar",
-      "title": "Past Simple vs Past Continuous",
-      "grammar": [4],
-      "semester": "both",
+      "title": "Passive Voice",
+      "grammar": [7],
+      "semester": "HK2",
       "parts": { "items": "grammar/g07.json" }
     },
     {

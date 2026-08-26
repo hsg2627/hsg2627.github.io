@@ -1,0 +1,45 @@
+{
+  "id": "u06-reading",
+  "unit": 6,
+  "title": "Gender Equality in the 21st Century Workplace",
+  "word_count": 149,
+  "passage": "Over the past few decades, gender equality has made significant progress across global workplaces. In many countries, women now hold crucial leadership positions in education, healthcare, science, and governance. Governments have enacted laws to ensure equal pay for equal work and to provide maternity and paternity benefits.\n\nHowever, challenges remain in achieving full equality. In some industries such as engineering and heavy construction, female representation is still low due to persistent cultural stereotypes. Additionally, women often carry a disproportionate burden of unpaid family responsibilities, including childcare and domestic chores, which limits their career progression.\n\nTo bridge this gap, modern corporations are introducing flexible working arrangements and targeted mentorship programs. Schools and universities are also encouraging young girls to pursue STEM subjects early in their academic journey. Promoting gender equality is not only a matter of fundamental justice, but also an essential driver of sustainable economic development and innovation worldwide.",
+  "questions": [
+    {
+      "id": "u06_rq01",
+      "prompt": "What is the main topic of the passage?",
+      "options": [
+        "A. The history of female education",
+        "B. Progress and remaining challenges in workplace gender equality",
+        "C. Why women earn more than men",
+        "D. Technology development in schools"
+      ],
+      "answer": 1,
+      "explanation": "Toàn bài nói về những tiến bộ và thách thức còn tồn tại đối với bình đẳng giới trong công việc."
+    },
+    {
+      "id": "u06_rq02",
+      "prompt": "According to paragraph 2, what is one reason women face career limitations?",
+      "options": [
+        "A. Lack of university degrees",
+        "B. The burden of unpaid domestic chores and family duties",
+        "C. Laws preventing them from working",
+        "D. Reluctance to learn modern technology"
+      ],
+      "answer": 1,
+      "explanation": "Đoạn 2 nêu rõ 'women often carry a disproportionate burden of unpaid family responsibilities'."
+    },
+    {
+      "id": "u06_rq03",
+      "prompt": "The word 'bridge' in the last paragraph is closest in meaning to:",
+      "options": [
+        "A. build",
+        "B. narrow / reduce",
+        "C. create",
+        "D. destroy"
+      ],
+      "answer": 1,
+      "explanation": "'bridge the gap' nghĩa là thu hẹp khoảng cách (narrow/reduce)."
+    }
+  ]
+}

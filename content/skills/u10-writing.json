@@ -1,0 +1,22 @@
+{
+  "id": "u10-writing",
+  "unit": 10,
+  "topic": "Guidelines for a Responsible Eco-Tour",
+  "word_limit": "120-150 words",
+  "prompt": "Write a paragraph (120-150 words) advising tourists on how to travel responsibly when visiting a national park or marine sanctuary.",
+  "checklist": [
+    "Đoạn văn có câu chủ đề (Topic Sentence) rõ ràng",
+    "Độ dài đạt yêu cầu 120 - 150 từ",
+    "Có ít nhất 2 luận điểm bổ trợ kèm ví dụ hoặc giải thích",
+    "Sử dụng đúng thì và các liên từ nối ý (Furthermore, However, In addition...)",
+    "Không mắc lỗi chính tả hay dấu câu cơ bản"
+  ],
+  "model_essay": "Practicing responsible ecotourism is essential to preserve delicate ecosystems and support local communities when exploring protected nature reserves. First, travelers must strictly observe the 'Leave No Trace' principle by carrying reusable water containers, collecting all personal litter, and avoiding single-use plastics. Discarded plastic waste severely damages aquatic life and contaminates forest soils. Second, visitors should stay on designated walking trails to prevent soil erosion and avoid disturbing nesting birds or rare mammals. Keeping noise levels low allows other tourists to enjoy nature and prevents wildlife from abandoning their natural habitats. Additionally, purchasing local handicrafts and dining at community-operated eateries ensures that tourism revenue directly benefits local residents. In conclusion, being an eco-conscious traveler protects our planet's natural beauty and fosters sustainable prosperity for host communities.",
+  "key_vocab": [
+    "responsible ecotourism",
+    "delicate ecosystems",
+    "Leave No Trace",
+    "designated trails",
+    "eco-conscious traveler"
+  ]
+}

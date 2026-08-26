@@ -1,0 +1,22 @@
+{
+  "id": "u09-writing",
+  "unit": 9,
+  "topic": "Actions to Protect Endangered Local Wildlife",
+  "word_limit": "120-150 words",
+  "prompt": "Write a paragraph (120-150 words) suggesting practical actions that high school students can take to protect native wildlife and biodiversity.",
+  "checklist": [
+    "Đoạn văn có câu chủ đề (Topic Sentence) rõ ràng",
+    "Độ dài đạt yêu cầu 120 - 150 từ",
+    "Có ít nhất 2 luận điểm bổ trợ kèm ví dụ hoặc giải thích",
+    "Sử dụng đúng thì và các liên từ nối ý (Furthermore, However, In addition...)",
+    "Không mắc lỗi chính tả hay dấu câu cơ bản"
+  ],
+  "model_essay": "High school students can play a crucial role in safeguarding native biodiversity and protecting endangered wildlife through practical daily actions. First, students should strictly refuse to buy or consume products derived from wild animals, including illegal meat, decorative ivory, or endangered traditional remedies. By reducing consumer demand, young people help dismantle the illegal wildlife trade. Second, students can organize school environmental clubs to launch informative digital campaigns and poster exhibitions that highlight local conservation projects in national parks. Educating peers and family members about the ecological value of apex predators and pollinators fosters widespread community support for conservation laws. In conclusion, individual commitment and collective student advocacy will ensure that Viet Nam's rich natural fauna is preserved and protected for future generations to enjoy.",
+  "key_vocab": [
+    "native biodiversity",
+    "endangered wildlife",
+    "illegal wildlife trade",
+    "conservation projects",
+    "ecological value"
+  ]
+}

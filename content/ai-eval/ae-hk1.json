@@ -1,0 +1,702 @@
+{
+  "id": "ae-hk1",
+  "title": "Xưởng AI · Học kỳ 1",
+  "semester": "HK1",
+  "categories": [
+    {
+      "id": 1,
+      "name": "Thì và thể",
+      "nameEn": "Tenses & Aspects"
+    },
+    {
+      "id": 2,
+      "name": "Dạng động từ",
+      "nameEn": "Verb Forms"
+    },
+    {
+      "id": 3,
+      "name": "Câu bị động",
+      "nameEn": "Passive Voice"
+    },
+    {
+      "id": 4,
+      "name": "Mệnh đề & câu điều kiện",
+      "nameEn": "Clauses & Conditionals"
+    },
+    {
+      "id": 5,
+      "name": "Mạo từ và danh từ",
+      "nameEn": "Articles & Nouns"
+    },
+    {
+      "id": 6,
+      "name": "Tính từ & so sánh",
+      "nameEn": "Adjectives & Comparisons"
+    },
+    {
+      "id": 7,
+      "name": "Giới từ & kết hợp từ",
+      "nameEn": "Prepositions & Collocations"
+    }
+  ],
+  "items": [
+    {
+      "id": "ae_hk1_01",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          1
+        ],
+        "topic": 1
+      },
+      "spans": [
+        "Lan lives in this neighborhood",
+        "since she was five years old,",
+        "and she knows everyone."
+      ],
+      "error": {
+        "present": true,
+        "category": 1,
+        "span": "Lan lives in this neighborhood",
+        "correction": "Lan has lived in this neighborhood",
+        "explanation": "Có 'since she was five' diễn tả hành động kéo dài từ quá khứ đến nay -> dùng thì Hiện tại hoàn thành (has lived)."
+      }
+    },
+    {
+      "id": "ae_hk1_02",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          2
+        ],
+        "topic": 2
+      },
+      "spans": [
+        "Look at the garden!",
+        "The volunteers plant flowers",
+        "and watering the small trees."
+      ],
+      "error": {
+        "present": true,
+        "category": 1,
+        "span": "The volunteers plant flowers",
+        "correction": "The volunteers are planting flowers",
+        "explanation": "Dấu hiệu 'Look!' chỉ hành động đang diễn ra -> dùng Hiện tại tiếp diễn (are planting)."
+      }
+    },
+    {
+      "id": "ae_hk1_03",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          4
+        ],
+        "topic": 3
+      },
+      "spans": [
+        "While the audience listened to the concert,",
+        "the main singer suddenly was falling down",
+        "on the large stage."
+      ],
+      "error": {
+        "present": true,
+        "category": 1,
+        "span": "the main singer suddenly was falling down",
+        "correction": "the main singer suddenly fell down",
+        "explanation": "Hành động bất chợt xen vào (ngã xuống) dùng Quá khứ đơn (fell down), không dùng tiếp diễn."
+      }
+    },
+    {
+      "id": "ae_hk1_04",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          1
+        ],
+        "topic": 4
+      },
+      "spans": [
+        "Our charity club has organized",
+        "three fundraising events this month,",
+        "helping many poor children."
+      ],
+      "error": {
+        "present": false,
+        "probe_category": 1,
+        "explanation": "Đoạn văn hoàn toàn chính xác về việc dùng thì Hiện tại hoàn thành với 'this month'."
+      }
+    },
+    {
+      "id": "ae_hk1_05",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          5
+        ],
+        "topic": 1
+      },
+      "spans": [
+        "My parents made me to clean",
+        "my bedroom and fold the laundry",
+        "before going out with friends."
+      ],
+      "error": {
+        "present": true,
+        "category": 2,
+        "span": "My parents made me to clean",
+        "correction": "My parents made me clean",
+        "explanation": "Cấu trúc 'make + O + bare infinitive' (không có 'to')."
+      }
+    },
+    {
+      "id": "ae_hk1_06",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          6
+        ],
+        "topic": 2
+      },
+      "spans": [
+        "Eco-friendly citizens avoid to use",
+        "single-use plastic containers",
+        "when shopping at supermarkets."
+      ],
+      "error": {
+        "present": true,
+        "category": 2,
+        "span": "Eco-friendly citizens avoid to use",
+        "correction": "Eco-friendly citizens avoid using",
+        "explanation": "Động từ 'avoid' luôn theo sau bởi danh động từ V-ing (avoid using)."
+      }
+    },
+    {
+      "id": "ae_hk1_07",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          5
+        ],
+        "topic": 3
+      },
+      "spans": [
+        "The music teacher let all students",
+        "to choose their favourite songs",
+        "for the year-end performance."
+      ],
+      "error": {
+        "present": true,
+        "category": 2,
+        "span": "to choose their favourite songs",
+        "correction": "choose their favourite songs",
+        "explanation": "Cấu trúc 'let + O + bare infinitive' (choose, không có to)."
+      }
+    },
+    {
+      "id": "ae_hk1_08",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          6
+        ],
+        "topic": 4
+      },
+      "spans": [
+        "Joining volunteer campaigns helps teenagers",
+        "develop valuable teamwork skills",
+        "and build self-confidence."
+      ],
+      "error": {
+        "present": false,
+        "probe_category": 2,
+        "explanation": "Đoạn văn dùng đúng danh động từ 'Joining' làm chủ ngữ và bare infinitive sau 'help'."
+      }
+    },
+    {
+      "id": "ae_hk1_09",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          7
+        ],
+        "topic": 2
+      },
+      "spans": [
+        "Thousands of old plastic bottles",
+        "collected by students every Friday",
+        "for the school recycling program."
+      ],
+      "error": {
+        "present": true,
+        "category": 3,
+        "span": "collected by students every Friday",
+        "correction": "are collected by students every Friday",
+        "explanation": "Câu bị động thiếu to be 'are' trước V3/ed 'collected'."
+      }
+    },
+    {
+      "id": "ae_hk1_10",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          7
+        ],
+        "topic": 3
+      },
+      "spans": [
+        "This famous traditional song",
+        "was write by a talented composer",
+        "over fifty years ago."
+      ],
+      "error": {
+        "present": true,
+        "category": 3,
+        "span": "was write by a talented composer",
+        "correction": "was written by a talented composer",
+        "explanation": "Câu bị động phải dùng phân từ hai V3 (written), không dùng dạng nguyên thể 'write'."
+      }
+    },
+    {
+      "id": "ae_hk1_11",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          7
+        ],
+        "topic": 4
+      },
+      "spans": [
+        "Community centers should build",
+        "in rural villages",
+        "to support underprivileged children."
+      ],
+      "error": {
+        "present": true,
+        "category": 3,
+        "span": "Community centers should build",
+        "correction": "Community centers should be built",
+        "explanation": "Chủ ngữ là vật 'Community centers' nên phải dùng bị động 'should be built'."
+      }
+    },
+    {
+      "id": "ae_hk1_12",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          7
+        ],
+        "topic": 1
+      },
+      "spans": [
+        "Household chores are shared equally",
+        "among all family members",
+        "to create a happy home."
+      ],
+      "error": {
+        "present": false,
+        "probe_category": 3,
+        "explanation": "Đoạn văn dùng đúng cấu trúc bị động Hiện tại đơn 'are shared'."
+      }
+    },
+    {
+      "id": "ae_hk1_13",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          8
+        ],
+        "topic": 1
+      },
+      "spans": [
+        "My father likes cooking dinner,",
+        "so he is very busy with office work",
+        "every weekday."
+      ],
+      "error": {
+        "present": true,
+        "category": 4,
+        "span": "so he is very busy with office work",
+        "correction": "but he is very busy with office work",
+        "explanation": "Hai vế có ý nghĩa tương phản (thích nấu ăn nhưng lại bận rộn) -> dùng 'but' thay vì 'so'."
+      }
+    },
+    {
+      "id": "ae_hk1_14",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          9
+        ],
+        "topic": 3
+      },
+      "spans": [
+        "The guitarist which performed last night",
+        "received a standing ovation",
+        "from thousands of fans."
+      ],
+      "error": {
+        "present": true,
+        "category": 4,
+        "span": "The guitarist which performed last night",
+        "correction": "The guitarist who performed last night",
+        "explanation": "'The guitarist' là danh từ chỉ người -> dùng đại từ quan hệ 'who', không dùng 'which'."
+      }
+    },
+    {
+      "id": "ae_hk1_15",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          10
+        ],
+        "topic": 2
+      },
+      "spans": [
+        "If we will plant more trees in our school,",
+        "the air will become much fresher",
+        "and cleaner."
+      ],
+      "error": {
+        "present": true,
+        "category": 4,
+        "span": "If we will plant more trees in our school",
+        "correction": "If we plant more trees in our school",
+        "explanation": "Mệnh đề If của câu điều kiện loại 1 dùng thì Hiện tại đơn (plant), không dùng 'will'."
+      }
+    },
+    {
+      "id": "ae_hk1_16",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          8
+        ],
+        "topic": 4
+      },
+      "spans": [
+        "Nam joined the youth volunteer club,",
+        "and he made many lifelong friends",
+        "during the summer campaign."
+      ],
+      "error": {
+        "present": false,
+        "probe_category": 4,
+        "explanation": "Đoạn văn dùng đúng liên từ đẳng lập 'and' để nối hai mệnh đề cùng hướng."
+      }
+    },
+    {
+      "id": "ae_hk1_17",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          15
+        ],
+        "topic": 1
+      },
+      "spans": [
+        "My teacher gave me an useful advice",
+        "about organizing daily household chores",
+        "and study schedules."
+      ],
+      "error": {
+        "present": true,
+        "category": 5,
+        "span": "an useful advice",
+        "correction": "useful advice",
+        "explanation": "'Advice' là danh từ không đếm được nên không dùng 'an', và 'useful' bắt đầu bằng bán nguyên âm /j/."
+      }
+    },
+    {
+      "id": "ae_hk1_18",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          15
+        ],
+        "topic": 2
+      },
+      "spans": [
+        "Moon orbits around the Earth",
+        "and reflects light from the Sun",
+        "during the night."
+      ],
+      "error": {
+        "present": true,
+        "category": 5,
+        "span": "Moon orbits around the Earth",
+        "correction": "The Moon orbits around the Earth",
+        "explanation": "Thiên thể duy nhất phải dùng mạo từ xác định 'The Moon'."
+      }
+    },
+    {
+      "id": "ae_hk1_19",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          15
+        ],
+        "topic": 5
+      },
+      "spans": [
+        "He works as an engineer in a factory",
+        "that produces many electronic furnitures",
+        "for export."
+      ],
+      "error": {
+        "present": true,
+        "category": 5,
+        "span": "many electronic furnitures",
+        "correction": "much electronic furniture",
+        "explanation": "'Furniture' là danh từ không đếm được, không có dạng số nhiều thêm 's'."
+      }
+    },
+    {
+      "id": "ae_hk1_20",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          15
+        ],
+        "topic": 3
+      },
+      "spans": [
+        "She bought an electric guitar yesterday",
+        "and the guitar sounds fantastic",
+        "in her studio."
+      ],
+      "error": {
+        "present": false,
+        "probe_category": 5,
+        "explanation": "Đoạn văn dùng đúng mạo từ 'an' lần đầu và 'the' khi danh từ được nhắc lại lần 2."
+      }
+    },
+    {
+      "id": "ae_hk1_21",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          13
+        ],
+        "topic": 3
+      },
+      "spans": [
+        "The music show was so interested",
+        "that all teenagers stayed",
+        "until midnight."
+      ],
+      "error": {
+        "present": true,
+        "category": 6,
+        "span": "The music show was so interested",
+        "correction": "The music show was so interesting",
+        "explanation": "Tính từ miêu tả tính chất của chương trình âm nhạc dùng đuôi '-ing' (interesting), không dùng '-ed'."
+      }
+    },
+    {
+      "id": "ae_hk1_22",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          13
+        ],
+        "topic": 2
+      },
+      "spans": [
+        "Solar energy is much more cleaner",
+        "than energy generated from coal",
+        "and fossil fuels."
+      ],
+      "error": {
+        "present": true,
+        "category": 6,
+        "span": "Solar energy is much more cleaner",
+        "correction": "Solar energy is much cleaner",
+        "explanation": "'Clean' là tính từ ngắn nên so sánh hơn là 'cleaner', không dùng 'more cleaner'."
+      }
+    },
+    {
+      "id": "ae_hk1_23",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          13
+        ],
+        "topic": 5
+      },
+      "spans": [
+        "Smartphones have become the most usefulest devices",
+        "for online communication",
+        "in modern times."
+      ],
+      "error": {
+        "present": true,
+        "category": 6,
+        "span": "the most usefulest devices",
+        "correction": "the most useful devices",
+        "explanation": "'Useful' là tính từ dài, so sánh nhất là 'the most useful'."
+      }
+    },
+    {
+      "id": "ae_hk1_24",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          14
+        ],
+        "topic": 4
+      },
+      "spans": [
+        "All club members felt excited",
+        "when receiving the voluntary certificate",
+        "from the local government."
+      ],
+      "error": {
+        "present": false,
+        "probe_category": 6,
+        "explanation": "Đoạn văn dùng đúng tính từ đuôi '-ed' (felt excited) miêu tả cảm xúc con người."
+      }
+    },
+    {
+      "id": "ae_hk1_25",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          7
+        ],
+        "topic": 1
+      },
+      "spans": [
+        "In my family, my father is responsible",
+        "to doing the heavy lifting",
+        "and fixing broken appliances."
+      ],
+      "error": {
+        "present": true,
+        "category": 7,
+        "span": "to doing the heavy lifting",
+        "correction": "for doing the heavy lifting",
+        "explanation": "Cụm tính từ đi với giới từ: 'responsible for + V-ing' (chịu trách nhiệm về việc gì)."
+      }
+    },
+    {
+      "id": "ae_hk1_26",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          7
+        ],
+        "topic": 2
+      },
+      "spans": [
+        "The campaign aims to raise awareness",
+        "about protecting rare species",
+        "which are on danger of extinction."
+      ],
+      "error": {
+        "present": true,
+        "category": 7,
+        "span": "which are on danger of extinction.",
+        "correction": "which are in danger of extinction.",
+        "explanation": "Cụm cố định (collocation): 'in danger of extinction' (có nguy cơ tuyệt chủng)."
+      }
+    },
+    {
+      "id": "ae_hk1_27",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          7
+        ],
+        "topic": 4
+      },
+      "spans": [
+        "The volunteers made a donation of books",
+        "and clothes to poor children",
+        "who were in need of help."
+      ],
+      "error": {
+        "present": false,
+        "probe_category": 7,
+        "explanation": "Đoạn văn dùng đúng các kết hợp từ 'make a donation of' và 'in need of'."
+      }
+    },
+    {
+      "id": "ae_hk1_28",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          7
+        ],
+        "topic": 3
+      },
+      "spans": [
+        "The young musician succeeded on winning",
+        "the national talent competition",
+        "thanks to his creative performance."
+      ],
+      "error": {
+        "present": true,
+        "category": 7,
+        "span": "succeeded on winning",
+        "correction": "succeeded in winning",
+        "explanation": "Động từ 'succeed' đi với giới từ 'in': 'succeed in doing something'."
+      }
+    }
+  ]
+}

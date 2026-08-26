@@ -1,0 +1,581 @@
+{
+  "id": "u02",
+  "unit": 2,
+  "title": "Humans And The Environment",
+  "topic": 2,
+  "total_words": 55,
+  "words": [
+    {
+      "id": "u02_w01",
+      "word": "",
+      "ipa": "",
+      "pos": "v",
+      "meaning": "",
+      "example": "More people are adopting an eco-friendly lifestyle to protect nature."
+    },
+    {
+      "id": "u02_w02",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Sustainability has become a key target for modern urban planning."
+    },
+    {
+      "id": "u02_w03",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Carbon emissions cause global temperatures to rise."
+    },
+    {
+      "id": "u02_w04",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Turning off electrical appliances when not in use helps reduce your carbon footprint."
+    },
+    {
+      "id": "u02_w05",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Switching to eco-friendly raw materials is highly beneficial."
+    },
+    {
+      "id": "u02_w06",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The local government is promoting the conservation of wild animals."
+    },
+    {
+      "id": "u02_w07",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Modern household appliances consume much less electricity than older models."
+    },
+    {
+      "id": "u02_w08",
+      "word": "",
+      "ipa": "",
+      "pos": "n.phr",
+      "meaning": "",
+      "example": "Global warming leads to extreme weather events like heatwaves."
+    },
+    {
+      "id": "u02_w09",
+      "word": "",
+      "ipa": "",
+      "pos": "n/v",
+      "meaning": "",
+      "example": "Please do not litter in public parks and school yards."
+    },
+    {
+      "id": "u02_w10",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Organic vegetables are safer for our health and the environment."
+    },
+    {
+      "id": "u02_w11",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Bringing a refillable water bottle helps cut down on plastic waste."
+    },
+    {
+      "id": "u02_w12",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "We are rapidly running out of precious natural resources like fossil fuels."
+    },
+    {
+      "id": "u02_w13",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Protecting the Earth from pollution is a collective responsibility."
+    },
+    {
+      "id": "u02_w14",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "We need to find sustainable solutions to solve water shortages."
+    },
+    {
+      "id": "u02_w15",
+      "word": "",
+      "ipa": "",
+      "pos": "n.phr",
+      "meaning": "",
+      "example": "Our company only uses organic raw materials to manufacture clothes."
+    },
+    {
+      "id": "u02_w16",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Deforestation has severe consequences for the local climate."
+    },
+    {
+      "id": "u02_w17",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Chemical waste poses a serious health hazard to local communities."
+    },
+    {
+      "id": "u02_w18",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The preservation of forests is crucial for ecological balance."
+    },
+    {
+      "id": "u02_w19",
+      "word": "",
+      "ipa": "",
+      "pos": "v",
+      "meaning": "",
+      "example": "Modern smart devices consume very little electrical energy."
+    },
+    {
+      "id": "u02_w20",
+      "word": "",
+      "ipa": "",
+      "pos": "n.phr",
+      "meaning": "",
+      "example": "Green living is becoming highly popular among urban youth."
+    },
+    {
+      "id": "u02_w21",
+      "word": "",
+      "ipa": "",
+      "pos": "adj/n",
+      "meaning": "",
+      "example": "Solar power is an excellent alternative energy source."
+    },
+    {
+      "id": "u02_w22",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "We should transition from fossil fuels to renewable energy."
+    },
+    {
+      "id": "u02_w23",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Factories must be penalized for releasing toxic chemicals into rivers."
+    },
+    {
+      "id": "u02_w24",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Using too much chemical pesticide damages local biodiversity."
+    },
+    {
+      "id": "u02_w25",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Air pollution in big cities has reached an alarming level."
+    },
+    {
+      "id": "u02_w26",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "We must cut down on energy bills by using less electricity."
+    },
+    {
+      "id": "u02_w27",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "The students organized a weekend campaign to clean up the school yard."
+    },
+    {
+      "id": "u02_w28",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Remember to turn off all electrical appliances before leaving the room."
+    },
+    {
+      "id": "u02_w29",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Do not throw away plastic bags; try to reuse them if possible."
+    },
+    {
+      "id": "u02_w30",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "If we don't reduce consumption, we will soon run out of fossil fuels."
+    },
+    {
+      "id": "u02_w31",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "We have used up almost all our non-renewable energy resources."
+    },
+    {
+      "id": "u02_w32",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "The government plans to phase out single-use plastics by 2030."
+    },
+    {
+      "id": "u02_w33",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Many households are switching to solar panels to save money."
+    },
+    {
+      "id": "u02_w34",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Plug in your laptop only when the battery is low to extend its lifespan."
+    },
+    {
+      "id": "u02_w35",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "The old factory was pulled down to make space for a green park."
+    },
+    {
+      "id": "u02_w36",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "The club was set up to raise local people’s awareness of environmental issues."
+    },
+    {
+      "id": "u02_w37",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Choosing public transport is a simple way to adopt a greener lifestyle."
+    },
+    {
+      "id": "u02_w38",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Extreme weather conditions can cause severe damage to agricultural lands."
+    },
+    {
+      "id": "u02_w39",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Installing solar panels is a great way to reduce energy bills."
+    },
+    {
+      "id": "u02_w40",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Using public transport helps decrease carbon emissions in big cities."
+    },
+    {
+      "id": "u02_w41",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "The rise in global temperatures causes arctic ice melting."
+    },
+    {
+      "id": "u02_w42",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "We need a more efficient waste collection system in our neighborhood."
+    },
+    {
+      "id": "u02_w43",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Choosing low-energy devices is highly practical for saving energy."
+    },
+    {
+      "id": "u02_w44",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Even small daily habits can make a significant difference to our planet."
+    },
+    {
+      "id": "u02_w45",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Wind and solar power are excellent examples of renewable energy."
+    },
+    {
+      "id": "u02_w46",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Eco-friendly car models always attract great attention at exhibitions."
+    },
+    {
+      "id": "u02_w47",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Nam is preparing to give a presentation on climate change tomorrow."
+    },
+    {
+      "id": "u02_w48",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Governments must take immediate action to protect marine life."
+    },
+    {
+      "id": "u02_w49",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "The Youth Union decided to set up a school environmental club."
+    },
+    {
+      "id": "u02_w50",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "We must protect our natural resources for future generations."
+    },
+    {
+      "id": "u02_w51",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "Our donation is just a drop in the ocean, but every little helps."
+    },
+    {
+      "id": "u02_w52",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "After cleaning up the school yard for five hours, we decided to call it a day."
+    },
+    {
+      "id": "u02_w53",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "His ideas for environmental protection are highly practical and down to earth."
+    },
+    {
+      "id": "u02_w54",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "Stop beating around the bush and tell me what the environmental problem is."
+    },
+    {
+      "id": "u02_w55",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "Many businesses are trying to go green by reducing packaging waste."
+    }
+  ],
+  "items": [
+    {
+      "id": "u02_q01",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____M_____o_____r_____e_____ _____p_____e_____o_____p_____l_____e_____ _____a_____r_____e_____ _____a_____d_____o_____p_____t_____i_____n_____g_____ _____a_____n_____ _____e_____c_____o_____-_____f_____r_____i_____e_____n_____d_____l_____y_____ _____l_____i_____f_____e_____s_____t_____y_____l_____e_____ _____t_____o_____ _____p_____r_____o_____t_____e_____c_____t_____ _____n_____a_____t_____u_____r_____e_____._____\"",
+      "options": [
+        "A. community",
+        "B. environment",
+        "C. ",
+        "D. volunteer"
+      ],
+      "answer": 2,
+      "explanation": "'' (v) nghĩa là: ."
+    },
+    {
+      "id": "u02_q02",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____S_____u_____s_____t_____a_____i_____n_____a_____b_____i_____l_____i_____t_____y_____ _____h_____a_____s_____ _____b_____e_____c_____o_____m_____e_____ _____a_____ _____k_____e_____y_____ _____t_____a_____r_____g_____e_____t_____ _____f_____o_____r_____ _____m_____o_____d_____e_____r_____n_____ _____u_____r_____b_____a_____n_____ _____p_____l_____a_____n_____n_____i_____n_____g_____._____\"",
+      "options": [
+        "A. community",
+        "B. environment",
+        "C. volunteer",
+        "D. "
+      ],
+      "answer": 3,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u02_q03",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____C_____a_____r_____b_____o_____n_____ _____e_____m_____i_____s_____s_____i_____o_____n_____s_____ _____c_____a_____u_____s_____e_____ _____g_____l_____o_____b_____a_____l_____ _____t_____e_____m_____p_____e_____r_____a_____t_____u_____r_____e_____s_____ _____t_____o_____ _____r_____i_____s_____e_____._____\"",
+      "options": [
+        "A. ",
+        "B. volunteer",
+        "C. community",
+        "D. environment"
+      ],
+      "answer": 0,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u02_q04",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____u_____r_____n_____i_____n_____g_____ _____o_____f_____f_____ _____e_____l_____e_____c_____t_____r_____i_____c_____a_____l_____ _____a_____p_____p_____l_____i_____a_____n_____c_____e_____s_____ _____w_____h_____e_____n_____ _____n_____o_____t_____ _____i_____n_____ _____u_____s_____e_____ _____h_____e_____l_____p_____s_____ _____r_____e_____d_____u_____c_____e_____ _____y_____o_____u_____r_____ _____c_____a_____r_____b_____o_____n_____ _____f_____o_____o_____t_____p_____r_____i_____n_____t_____._____\"",
+      "options": [
+        "A. environment",
+        "B. ",
+        "C. community",
+        "D. volunteer"
+      ],
+      "answer": 1,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u02_q05",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____S_____w_____i_____t_____c_____h_____i_____n_____g_____ _____t_____o_____ _____e_____c_____o_____-_____f_____r_____i_____e_____n_____d_____l_____y_____ _____r_____a_____w_____ _____m_____a_____t_____e_____r_____i_____a_____l_____s_____ _____i_____s_____ _____h_____i_____g_____h_____l_____y_____ _____b_____e_____n_____e_____f_____i_____c_____i_____a_____l_____._____\"",
+      "options": [
+        "A. ",
+        "B. environment",
+        "C. community",
+        "D. volunteer"
+      ],
+      "answer": 0,
+      "explanation": "'' (adj) nghĩa là: ."
+    },
+    {
+      "id": "u02_q06",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____l_____o_____c_____a_____l_____ _____g_____o_____v_____e_____r_____n_____m_____e_____n_____t_____ _____i_____s_____ _____p_____r_____o_____m_____o_____t_____i_____n_____g_____ _____t_____h_____e_____ _____c_____o_____n_____s_____e_____r_____v_____a_____t_____i_____o_____n_____ _____o_____f_____ _____w_____i_____l_____d_____ _____a_____n_____i_____m_____a_____l_____s_____._____\"",
+      "options": [
+        "A. ",
+        "B. environment",
+        "C. volunteer",
+        "D. community"
+      ],
+      "answer": 0,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u02_q07",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____M_____o_____d_____e_____r_____n_____ _____h_____o_____u_____s_____e_____h_____o_____l_____d_____ _____a_____p_____p_____l_____i_____a_____n_____c_____e_____s_____ _____c_____o_____n_____s_____u_____m_____e_____ _____m_____u_____c_____h_____ _____l_____e_____s_____s_____ _____e_____l_____e_____c_____t_____r_____i_____c_____i_____t_____y_____ _____t_____h_____a_____n_____ _____o_____l_____d_____e_____r_____ _____m_____o_____d_____e_____l_____s_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. community",
+        "C. ",
+        "D. environment"
+      ],
+      "answer": 2,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u02_q08",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____G_____l_____o_____b_____a_____l_____ _____w_____a_____r_____m_____i_____n_____g_____ _____l_____e_____a_____d_____s_____ _____t_____o_____ _____e_____x_____t_____r_____e_____m_____e_____ _____w_____e_____a_____t_____h_____e_____r_____ _____e_____v_____e_____n_____t_____s_____ _____l_____i_____k_____e_____ _____h_____e_____a_____t_____w_____a_____v_____e_____s_____._____\"",
+      "options": [
+        "A. environment",
+        "B. community",
+        "C. volunteer",
+        "D. "
+      ],
+      "answer": 3,
+      "explanation": "'' (n.phr) nghĩa là: ."
+    },
+    {
+      "id": "u02_q09",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____P_____l_____e_____a_____s_____e_____ _____d_____o_____ _____n_____o_____t_____ _____l_____i_____t_____t_____e_____r_____ _____i_____n_____ _____p_____u_____b_____l_____i_____c_____ _____p_____a_____r_____k_____s_____ _____a_____n_____d_____ _____s_____c_____h_____o_____o_____l_____ _____y_____a_____r_____d_____s_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. community",
+        "C. ",
+        "D. environment"
+      ],
+      "answer": 2,
+      "explanation": "'' (n/v) nghĩa là: ."
+    },
+    {
+      "id": "u02_q10",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____O_____r_____g_____a_____n_____i_____c_____ _____v_____e_____g_____e_____t_____a_____b_____l_____e_____s_____ _____a_____r_____e_____ _____s_____a_____f_____e_____r_____ _____f_____o_____r_____ _____o_____u_____r_____ _____h_____e_____a_____l_____t_____h_____ _____a_____n_____d_____ _____t_____h_____e_____ _____e_____n_____v_____i_____r_____o_____n_____m_____e_____n_____t_____._____\"",
+      "options": [
+        "A. environment",
+        "B. ",
+        "C. community",
+        "D. volunteer"
+      ],
+      "answer": 1,
+      "explanation": "'' (adj) nghĩa là: ."
+    }
+  ]
+}

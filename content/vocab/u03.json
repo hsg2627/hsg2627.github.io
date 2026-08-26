@@ -1,0 +1,581 @@
+{
+  "id": "u03",
+  "unit": 3,
+  "title": "Music",
+  "topic": 3,
+  "total_words": 55,
+  "words": [
+    {
+      "id": "u03_w01",
+      "word": "",
+      "ipa": "",
+      "pos": "v",
+      "meaning": "",
+      "example": "He was eliminated in the semi-final of the national music competition."
+    },
+    {
+      "id": "u03_w02",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The young pop singer has become a global musical phenomenon."
+    },
+    {
+      "id": "u03_w03",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Her style of music is considered revolutionary for her generation."
+    },
+    {
+      "id": "u03_w04",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Many Vietnamese composers wrote patriotic songs to motivate the public."
+    },
+    {
+      "id": "u03_w05",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "The folk melody features intricate rhythms played by the percussion section."
+    },
+    {
+      "id": "u03_w06",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Art and music play a profound role in shaping a country's historical narratives."
+    },
+    {
+      "id": "u03_w07",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Music should be fully integrated into the school curriculum."
+    },
+    {
+      "id": "u03_w08",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The judges were looking for original talent during the auditions."
+    },
+    {
+      "id": "u03_w09",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The piano is a very versatile musical instrument."
+    },
+    {
+      "id": "u03_w10",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Thousands of fans attended the outdoor rock concert last night."
+    },
+    {
+      "id": "u03_w11",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The famous composer was invited to be a judge on the music show."
+    },
+    {
+      "id": "u03_w12",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The iconic opera house is a popular location for musical performances."
+    },
+    {
+      "id": "u03_w13",
+      "word": "",
+      "ipa": "",
+      "pos": "n.phr",
+      "meaning": "",
+      "example": "The artist played a traditional melody on the moon-shaped lute."
+    },
+    {
+      "id": "u03_w14",
+      "word": "",
+      "ipa": "",
+      "pos": "n.phr",
+      "meaning": "",
+      "example": "Bamboo clapper is a key percussion instrument in Vietnamese folk music."
+    },
+    {
+      "id": "u03_w15",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The participants in the competition showed incredible musicality."
+    },
+    {
+      "id": "u03_w16",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The singer gave an outstanding live performance that moved the audience."
+    },
+    {
+      "id": "u03_w17",
+      "word": "",
+      "ipa": "",
+      "pos": "v",
+      "meaning": "",
+      "example": "The music video managed to reach one million views in just one day."
+    },
+    {
+      "id": "u03_w18",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "She released her debut single last month and it immediately became a hit."
+    },
+    {
+      "id": "u03_w19",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "He plays the trumpet beautifully in the school jazz band."
+    },
+    {
+      "id": "u03_w20",
+      "word": "",
+      "ipa": "",
+      "pos": "v",
+      "meaning": "",
+      "example": "My brother uploaded his cover song to YouTube to share with friends."
+    },
+    {
+      "id": "u03_w21",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The audience clapped enthusiastically at the end of the show."
+    },
+    {
+      "id": "u03_w22",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The football stadium was packed with excited spectators."
+    },
+    {
+      "id": "u03_w23",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "A crowd of onlookers gathered to watch the street performance."
+    },
+    {
+      "id": "u03_w24",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "I bought a high-quality recording of the live concert."
+    },
+    {
+      "id": "u03_w25",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Her natural musicality was clear from the way she played the piano."
+    },
+    {
+      "id": "u03_w26",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "She came up with a brilliant idea for an interactive music show."
+    },
+    {
+      "id": "u03_w27",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Could you turn up the music? This is my favorite song!"
+    },
+    {
+      "id": "u03_w28",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Please turn down the TV; I am trying to focus on my studies."
+    },
+    {
+      "id": "u03_w29",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Performers love to dress up in traditional costumes for the festival."
+    },
+    {
+      "id": "u03_w30",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "The entire audience started singing along with the main singer."
+    },
+    {
+      "id": "u03_w31",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Ad pop-ups are highly annoying when watching music videos online."
+    },
+    {
+      "id": "u03_w32",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "The research team carried out a survey on teenagers' music tastes."
+    },
+    {
+      "id": "u03_w33",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "He signed up for the audition of the national music competition."
+    },
+    {
+      "id": "u03_w34",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "The young artist set out to create a new style of modern folk music."
+    },
+    {
+      "id": "u03_w35",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "My friends always back me up whenever I feel discouraged."
+    },
+    {
+      "id": "u03_w36",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Music plays an important role in preserving cultural identity."
+    },
+    {
+      "id": "u03_w37",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "The audience can easily identify with ordinary participants in reality shows."
+    },
+    {
+      "id": "u03_w38",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "The latest hit single broke a national streaming record."
+    },
+    {
+      "id": "u03_w39",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Soundtracks must convey the appropriate mood and tone of the film."
+    },
+    {
+      "id": "u03_w40",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Singing together in a choir helps children create a sense of belonging."
+    },
+    {
+      "id": "u03_w41",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Her hit single remained at the top of the music charts for weeks."
+    },
+    {
+      "id": "u03_w42",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Artists use social media to interact directly with their fans."
+    },
+    {
+      "id": "u03_w43",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "The winner of the music competition received a large cash prize."
+    },
+    {
+      "id": "u03_w44",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Though he was only the runner-up, he received great praise from judges."
+    },
+    {
+      "id": "u03_w45",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "My brother collects traditional musical instruments like the gong."
+    },
+    {
+      "id": "u03_w46",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Chau van singing is used to worship national heroes in Vietnam."
+    },
+    {
+      "id": "u03_w47",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "The rock concert had an incredibly energetic party atmosphere."
+    },
+    {
+      "id": "u03_w48",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "The local museum is hosting an art exhibition this weekend."
+    },
+    {
+      "id": "u03_w49",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Folk music is gaining great popularity among the younger generation."
+    },
+    {
+      "id": "u03_w50",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "We had to do extensive research on chau van singing for our presentation."
+    },
+    {
+      "id": "u03_w51",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "Classical music is excellent for getting your creative juices flowing while writing."
+    },
+    {
+      "id": "u03_w52",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "Her emotional speech hit the right note with the audience."
+    },
+    {
+      "id": "u03_w53",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "Hearing that she won the scholarship was absolute music to my ears."
+    },
+    {
+      "id": "u03_w54",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "He is highly talented, but he never blows his own trumpet."
+    },
+    {
+      "id": "u03_w55",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "After skipping the rehearsals, she had to face the music from the conductor."
+    }
+  ],
+  "items": [
+    {
+      "id": "u03_q01",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____H_____e_____ _____w_____a_____s_____ _____e_____l_____i_____m_____i_____n_____a_____t_____e_____d_____ _____i_____n_____ _____t_____h_____e_____ _____s_____e_____m_____i_____-_____f_____i_____n_____a_____l_____ _____o_____f_____ _____t_____h_____e_____ _____n_____a_____t_____i_____o_____n_____a_____l_____ _____m_____u_____s_____i_____c_____ _____c_____o_____m_____p_____e_____t_____i_____t_____i_____o_____n_____._____\"",
+      "options": [
+        "A. community",
+        "B. environment",
+        "C. volunteer",
+        "D. "
+      ],
+      "answer": 3,
+      "explanation": "'' (v) nghĩa là: ."
+    },
+    {
+      "id": "u03_q02",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____y_____o_____u_____n_____g_____ _____p_____o_____p_____ _____s_____i_____n_____g_____e_____r_____ _____h_____a_____s_____ _____b_____e_____c_____o_____m_____e_____ _____a_____ _____g_____l_____o_____b_____a_____l_____ _____m_____u_____s_____i_____c_____a_____l_____ _____p_____h_____e_____n_____o_____m_____e_____n_____o_____n_____._____\"",
+      "options": [
+        "A. community",
+        "B. ",
+        "C. volunteer",
+        "D. environment"
+      ],
+      "answer": 1,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u03_q03",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____H_____e_____r_____ _____s_____t_____y_____l_____e_____ _____o_____f_____ _____m_____u_____s_____i_____c_____ _____i_____s_____ _____c_____o_____n_____s_____i_____d_____e_____r_____e_____d_____ _____r_____e_____v_____o_____l_____u_____t_____i_____o_____n_____a_____r_____y_____ _____f_____o_____r_____ _____h_____e_____r_____ _____g_____e_____n_____e_____r_____a_____t_____i_____o_____n_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. ",
+        "C. environment",
+        "D. community"
+      ],
+      "answer": 1,
+      "explanation": "'' (adj) nghĩa là: ."
+    },
+    {
+      "id": "u03_q04",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____M_____a_____n_____y_____ _____V_____i_____e_____t_____n_____a_____m_____e_____s_____e_____ _____c_____o_____m_____p_____o_____s_____e_____r_____s_____ _____w_____r_____o_____t_____e_____ _____p_____a_____t_____r_____i_____o_____t_____i_____c_____ _____s_____o_____n_____g_____s_____ _____t_____o_____ _____m_____o_____t_____i_____v_____a_____t_____e_____ _____t_____h_____e_____ _____p_____u_____b_____l_____i_____c_____._____\"",
+      "options": [
+        "A. community",
+        "B. ",
+        "C. volunteer",
+        "D. environment"
+      ],
+      "answer": 1,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u03_q05",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____f_____o_____l_____k_____ _____m_____e_____l_____o_____d_____y_____ _____f_____e_____a_____t_____u_____r_____e_____s_____ _____i_____n_____t_____r_____i_____c_____a_____t_____e_____ _____r_____h_____y_____t_____h_____m_____s_____ _____p_____l_____a_____y_____e_____d_____ _____b_____y_____ _____t_____h_____e_____ _____p_____e_____r_____c_____u_____s_____s_____i_____o_____n_____ _____s_____e_____c_____t_____i_____o_____n_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. environment",
+        "C. ",
+        "D. community"
+      ],
+      "answer": 2,
+      "explanation": "'' (adj) nghĩa là: ."
+    },
+    {
+      "id": "u03_q06",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____A_____r_____t_____ _____a_____n_____d_____ _____m_____u_____s_____i_____c_____ _____p_____l_____a_____y_____ _____a_____ _____p_____r_____o_____f_____o_____u_____n_____d_____ _____r_____o_____l_____e_____ _____i_____n_____ _____s_____h_____a_____p_____i_____n_____g_____ _____a_____ _____c_____o_____u_____n_____t_____r_____y_____'_____s_____ _____h_____i_____s_____t_____o_____r_____i_____c_____a_____l_____ _____n_____a_____r_____r_____a_____t_____i_____v_____e_____s_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. ",
+        "C. community",
+        "D. environment"
+      ],
+      "answer": 1,
+      "explanation": "'' (adj) nghĩa là: ."
+    },
+    {
+      "id": "u03_q07",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____M_____u_____s_____i_____c_____ _____s_____h_____o_____u_____l_____d_____ _____b_____e_____ _____f_____u_____l_____l_____y_____ _____i_____n_____t_____e_____g_____r_____a_____t_____e_____d_____ _____i_____n_____t_____o_____ _____t_____h_____e_____ _____s_____c_____h_____o_____o_____l_____ _____c_____u_____r_____r_____i_____c_____u_____l_____u_____m_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. ",
+        "C. environment",
+        "D. community"
+      ],
+      "answer": 1,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u03_q08",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____j_____u_____d_____g_____e_____s_____ _____w_____e_____r_____e_____ _____l_____o_____o_____k_____i_____n_____g_____ _____f_____o_____r_____ _____o_____r_____i_____g_____i_____n_____a_____l_____ _____t_____a_____l_____e_____n_____t_____ _____d_____u_____r_____i_____n_____g_____ _____t_____h_____e_____ _____a_____u_____d_____i_____t_____i_____o_____n_____s_____._____\"",
+      "options": [
+        "A. ",
+        "B. volunteer",
+        "C. environment",
+        "D. community"
+      ],
+      "answer": 0,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u03_q09",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____p_____i_____a_____n_____o_____ _____i_____s_____ _____a_____ _____v_____e_____r_____y_____ _____v_____e_____r_____s_____a_____t_____i_____l_____e_____ _____m_____u_____s_____i_____c_____a_____l_____ _____i_____n_____s_____t_____r_____u_____m_____e_____n_____t_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. ",
+        "C. environment",
+        "D. community"
+      ],
+      "answer": 1,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u03_q10",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____o_____u_____s_____a_____n_____d_____s_____ _____o_____f_____ _____f_____a_____n_____s_____ _____a_____t_____t_____e_____n_____d_____e_____d_____ _____t_____h_____e_____ _____o_____u_____t_____d_____o_____o_____r_____ _____r_____o_____c_____k_____ _____c_____o_____n_____c_____e_____r_____t_____ _____l_____a_____s_____t_____ _____n_____i_____g_____h_____t_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. community",
+        "C. environment",
+        "D. "
+      ],
+      "answer": 3,
+      "explanation": "'' (n) nghĩa là: ."
+    }
+  ]
+}

@@ -30,7 +30,7 @@ const COLS = [
   'event_type', 'module', 'unit', 'item_id',
   'response', 'correct', 'latency_ms', 'attempt_no',
   'xp_delta', 'gold_delta', 'streak_after',
-  'device', 'app_version', 'schema_version', 'extra',
+  'device', 'app_version', 'schema_version', 'content_version', 'extra',
 ];
 
 const VALID_EVENT_TYPES = {

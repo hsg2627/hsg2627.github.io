@@ -1,0 +1,78 @@
+{
+  "id": "g01",
+  "title": "Thì hiện tại hoàn thành (Present Perfect)",
+  "curriculum": {
+    "grammar": [
+      1
+    ],
+    "error_category": 1
+  },
+  "theory": "\n            <p><strong>🎯 CHUYÊN ĐỀ 9: THÌ HIỆN TẠI HOÀN THÀNH (PRESENT PERFECT)</strong></p>\n            <p>Cấu trúc: <code>Subject + have/has + V(3/ed)</code></p>\n            <ul>\n              <li><strong>Kinh nghiệm, trải nghiệm:</strong> <em>ever, never</em> (Have you ever visited Mars?).</li>\n              <li><strong>Khoảng thời gian / Mốc thời gian:</strong> <em>for + khoảng thời gian</em> (for 5 years), <em>since + mốc thời gian</em> (since 2020).</li>\n              <li><strong>Hành động vừa mới xảy ra:</strong> <em>just, already, yet</em> (I have just submitted the task.).</li>\n              <li><strong>Phân biệt với Past Simple:</strong> Present Perfect có liên quan/kết quả ở hiện tại; Past Simple xảy ra tại thời điểm xác định và đã chấm dứt hoàn toàn ở quá khứ.</li>\n            </ul>\n          ",
+  "items": [
+    {
+      "id": "g01_01",
+      "ai_generated": true,
+      "prompt": "Lan _____ in Hanoi since she was ten years old.",
+      "options": [
+        "A. lives",
+        "B. has lived",
+        "C. is living",
+        "D. lived"
+      ],
+      "answer": 1,
+      "explanation": "Dấu hiệu 'since + mốc thời gian' diễn tả hành động bắt đầu trong quá khứ và tiếp diễn đến hiện tại -> dùng thì Hiện tại hoàn thành (has lived)."
+    },
+    {
+      "id": "g01_02",
+      "ai_generated": true,
+      "prompt": "They _____ their English homework yet.",
+      "options": [
+        "A. haven't finished",
+        "B. didn't finish",
+        "C. don't finish",
+        "D. aren't finishing"
+      ],
+      "answer": 0,
+      "explanation": "Dấu hiệu 'yet' trong câu phủ định dùng với thì Hiện tại hoàn thành -> 'haven't finished'."
+    },
+    {
+      "id": "g01_03",
+      "ai_generated": true,
+      "prompt": "Have you ever _____ to an eco-tour in Phong Nha?",
+      "options": [
+        "A. go",
+        "B. went",
+        "C. been",
+        "D. being"
+      ],
+      "answer": 2,
+      "explanation": "Cấu trúc 'Have you ever been to...' dùng để hỏi về trải nghiệm."
+    },
+    {
+      "id": "g01_04",
+      "ai_generated": true,
+      "prompt": "We have participated in community projects _____ two years.",
+      "options": [
+        "A. since",
+        "B. for",
+        "C. in",
+        "D. at"
+      ],
+      "answer": 1,
+      "explanation": "'For + khoảng thời gian' (for two years) dùng với thì Hiện tại hoàn thành."
+    },
+    {
+      "id": "g01_05",
+      "ai_generated": true,
+      "prompt": "Minh _____ already _____ three plastic bottles to recycle.",
+      "options": [
+        "A. has / collected",
+        "B. is / collecting",
+        "C. have / collected",
+        "D. did / collect"
+      ],
+      "answer": 0,
+      "explanation": "Chủ ngữ ngôi thứ ba số ít 'Minh' đi với trợ động từ 'has' + V3/ed 'collected'."
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "content_version": "c1.0.0",
+  "modules": [
+    {
+      "id": "u01",
+      "kind": "unit",
+      "title": "Family Life",
+      "topic": 1,
+      "gs_unit": 1,
+      "semester": "HK1",
+      "parts": {
+        "vocab": "vocab/u01.json"
+      }
+    },
+    {
+      "id": "u02",
+      "kind": "unit",
+      "title": "Humans and the Environment",
+      "topic": 2,
+      "gs_unit": 2,
+      "semester": "HK1",
+      "parts": {
+        "vocab": "vocab/u02.json"
+      }
+    },
+    {
+      "id": "u03",
+      "kind": "unit",
+      "title": "Music",
+      "topic": 3,
+      "gs_unit": 3,
+      "semester": "HK1",
+      "parts": {
+        "vocab": "vocab/u03.json"
+      }
+    },
+    {
+      "id": "u04",
+      "kind": "unit",
+      "title": "For a Better Community",
+      "topic": 4,
+      "gs_unit": 4,
+      "semester": "HK1",
+      "parts": {
+        "vocab": "vocab/u04.json"
+      }
+    },
+    {
+      "id": "u05",
+      "kind": "unit",
+      "title": "Inventions",
+      "topic": 4,
+      "gs_unit": 5,
+      "semester": "HK1",
+      "parts": {
+        "vocab": "vocab/u05.json"
+      }
+    },
+    {
+      "id": "u06",
+      "kind": "unit",
+      "title": "Gender Equality",
+      "topic": 5,
+      "gs_unit": 6,
+      "semester": "HK2",
+      "parts": {
+        "vocab": "vocab/u06.json",
+        "reading": "skills/u06-reading.json",
+        "listening": "skills/u06-listening.json",
+        "writing": "skills/u06-writing.json"
+      }
+    },
+    {
+      "id": "u07",
+      "kind": "unit",
+      "title": "Viet Nam and International Organisations",
+      "topic": 6,
+      "gs_unit": 7,
+      "semester": "HK2",
+      "parts": {
+        "vocab": "vocab/u07.json",
+        "reading": "skills/u07-reading.json",
+        "listening": "skills/u07-listening.json",
+        "writing": "skills/u07-writing.json"
+      }
+    },
+    {
+      "id": "u08",
+      "kind": "unit",
+      "title": "New Ways to Learn",
+      "topic": 7,
+      "gs_unit": 8,
+      "semester": "HK2",
+      "parts": {
+        "vocab": "vocab/u08.json",
+        "reading": "skills/u08-reading.json",
+        "listening": "skills/u08-listening.json",
+        "writing": "skills/u08-writing.json"
+      }
+    },
+    {
+      "id": "u09",
+      "kind": "unit",
+      "title": "Protecting the Environment",
+      "topic": 8,
+      "gs_unit": 9,
+      "semester": "HK2",
+      "parts": {
+        "vocab": "vocab/u09.json",
+        "reading": "skills/u09-reading.json",
+        "listening": "skills/u09-listening.json",
+        "writing": "skills/u09-writing.json"
+      }
+    },
+    {
+      "id": "u10",
+      "kind": "unit",
+      "title": "Ecotourism",
+      "topic": 8,
+      "gs_unit": 10,
+      "semester": "HK2",
+      "parts": {
+        "vocab": "vocab/u10.json",
+        "reading": "skills/u10-reading.json",
+        "listening": "skills/u10-listening.json",
+        "writing": "skills/u10-writing.json"
+      }
+    },
+    {
+      "id": "g01",
+      "kind": "grammar",
+      "title": "Thì hiện tại hoàn thành (Present Perfect)",
+      "grammar": [1],
+      "semester": "HK1",
+      "parts": { "items": "grammar/g01.json" }
+    },
+    {
+      "id": "g02",
+      "kind": "grammar",
+      "title": "Hiện tại đơn và hiện tại tiếp diễn (Present Simple vs Continuous)",
+      "grammar": [2],
+      "semester": "HK1",
+      "parts": { "items": "grammar/g02.json" }
+    },
+    {
+      "id": "g03",
+      "kind": "grammar",
+      "title": "Tương lai đơn và Be Going To (Will vs Be Going To)",
+      "grammar": [3],
+      "semester": "HK1",
+      "parts": { "items": "grammar/g03.json" }
+    },
+    {
+      "id": "g04",
+      "kind": "grammar",
+      "title": "Quá khứ đơn và quá khứ tiếp diễn (Past Simple vs Continuous)",
+      "grammar": [4],
+      "semester": "HK1",
+      "parts": { "items": "grammar/g04.json" }
+    },
+    {
+      "id": "g05",
+      "kind": "grammar",
+      "title": "Động từ nguyên thể có 'to' và không 'to' (Infinitives)",
+      "grammar": [5],
+      "semester": "HK1",
+      "parts": { "items": "grammar/g05.json" }
+    },
+    {
+      "id": "g06",
+      "kind": "grammar",
+      "title": "Danh động từ và động từ nguyên thể (Gerunds & To-Infinitives)",
+      "grammar": [6],
+      "semester": "HK1",
+      "parts": { "items": "grammar/g06.json" }
+    },
+    {
+      "id": "g07",
+      "kind": "grammar",
+      "title": "Câu bị động (Passive Voice)",
+      "grammar": [7],
+      "semester": "HK2",
+      "parts": { "items": "grammar/g07.json" }
+    },
+    {
+      "id": "g08",
+      "kind": "grammar",
+      "title": "Câu ghép và liên từ (Compound Sentences & Conjunctions)",
+      "grammar": [8],
+      "semester": "HK1",
+      "parts": { "items": "grammar/g08.json" }
+    },
+    {
+      "id": "g09",
+      "kind": "grammar",
+      "title": "Mệnh đề quan hệ (Relative Clauses)",
+      "grammar": [9],
+      "semester": "HK2",
+      "parts": { "items": "grammar/g09.json" }
+    },
+    {
+      "id": "g10",
+      "kind": "grammar",
+      "title": "Câu điều kiện loại 1 (Conditional Type 1)",
+      "grammar": [10],
+      "semester": "HK2",
+      "parts": { "items": "grammar/g10.json" }
+    },
+    {
+      "id": "g11",
+      "kind": "grammar",
+      "title": "Câu điều kiện loại 2 (Conditional Type 2)",
+      "grammar": [11],
+      "semester": "HK2",
+      "parts": { "items": "grammar/g11.json" }
+    },
+    {
+      "id": "g12",
+      "kind": "grammar",
+      "title": "Câu tường thuật (Reported Speech)",
+      "grammar": [12],
+      "semester": "HK2",
+      "parts": { "items": "grammar/g12.json" }
+    },
+    {
+      "id": "g13",
+      "kind": "grammar",
+      "title": "Tính từ và so sánh (Adjectives & Comparisons)",
+      "grammar": [13, 14],
+      "semester": "HK2",
+      "parts": { "items": "grammar/g13.json" }
+    },
+    {
+      "id": "g14",
+      "kind": "grammar",
+      "title": "Mạo từ (Articles)",
+      "grammar": [15],
+      "semester": "HK1",
+      "parts": { "items": "grammar/g14.json" }
+    },
+    {
+      "id": "ae-hk1",
+      "kind": "ai_eval",
+      "title": "Xưởng AI · Học kỳ 1",
+      "semester": "HK1",
+      "parts": { "items": "ai-eval/ae-hk1.json" }
+    },
+    {
+      "id": "ae-hk2",
+      "kind": "ai_eval",
+      "title": "Xưởng AI · Học kỳ 2",
+      "semester": "HK2",
+      "parts": { "items": "ai-eval/ae-hk2.json" }
+    },
+    {
+      "id": "hk1-01",
+      "kind": "exam",
+      "title": "Đề ôn tập tổng hợp Học kỳ 1",
+      "semester": "HK1",
+      "parts": { "items": "exams/hk1-01.json" }
+    },
+    {
+      "id": "hk2-01",
+      "kind": "exam",
+      "title": "Đề ôn tập tổng hợp Học kỳ 2",
+      "semester": "HK2",
+      "parts": { "items": "exams/hk2-01.json" }
+    }
+  ]
+}

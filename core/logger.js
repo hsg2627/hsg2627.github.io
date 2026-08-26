@@ -64,6 +64,7 @@ function emit(type, fields = {}, forcedSession = null) {
     device: deviceTag(),
     app_version: CONFIG.APP_VERSION,
     schema_version: CONFIG.SCHEMA_VERSION,
+    content_version: CONFIG.CONTENT_VERSION,
     // Mọi trường riêng của từng dạng bài đi vào đây dưới dạng JSON.
     // Nhờ vậy thêm dạng bài mới KHÔNG cần đổi lược đồ Sheet.
     extra: fields.extra ? JSON.stringify(fields.extra) : '',

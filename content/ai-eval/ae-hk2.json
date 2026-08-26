@@ -1,0 +1,702 @@
+{
+  "id": "ae-hk2",
+  "title": "Xưởng AI · Học kỳ 2",
+  "semester": "HK2",
+  "categories": [
+    {
+      "id": 1,
+      "name": "Thì và thể",
+      "nameEn": "Tenses & Aspects"
+    },
+    {
+      "id": 2,
+      "name": "Dạng động từ",
+      "nameEn": "Verb Forms"
+    },
+    {
+      "id": 3,
+      "name": "Câu bị động",
+      "nameEn": "Passive Voice"
+    },
+    {
+      "id": 4,
+      "name": "Mệnh đề & câu điều kiện",
+      "nameEn": "Clauses & Conditionals"
+    },
+    {
+      "id": 5,
+      "name": "Mạo từ và danh từ",
+      "nameEn": "Articles & Nouns"
+    },
+    {
+      "id": 6,
+      "name": "Tính từ & so sánh",
+      "nameEn": "Adjectives & Comparisons"
+    },
+    {
+      "id": 7,
+      "name": "Giới từ & kết hợp từ",
+      "nameEn": "Prepositions & Collocations"
+    }
+  ],
+  "items": [
+    {
+      "id": "ae_hk2_01",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          3
+        ],
+        "topic": 5
+      },
+      "spans": [
+        "Look at those dark storm clouds!",
+        "It will rain heavily",
+        "in just a few minutes."
+      ],
+      "error": {
+        "present": true,
+        "category": 1,
+        "span": "It will rain heavily",
+        "correction": "It is going to rain heavily",
+        "explanation": "Có dấu hiệu bằng chứng ở hiện tại (mây đen) -> phải dùng 'is going to rain' thay vì 'will rain'."
+      }
+    },
+    {
+      "id": "ae_hk2_02",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          4
+        ],
+        "topic": 7
+      },
+      "spans": [
+        "Yesterday at 8 PM,",
+        "we discussed international projects",
+        "when the internet disconnected."
+      ],
+      "error": {
+        "present": true,
+        "category": 1,
+        "span": "we discussed international projects",
+        "correction": "we were discussing international projects",
+        "explanation": "Hành động đang diễn ra tại thời điểm xác định trong quá khứ -> dùng Quá khứ tiếp diễn (were discussing)."
+      }
+    },
+    {
+      "id": "ae_hk2_03",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          2
+        ],
+        "topic": 8
+      },
+      "spans": [
+        "Many students are believing that",
+        "online learning platforms save time",
+        "and provide flexibility."
+      ],
+      "error": {
+        "present": true,
+        "category": 1,
+        "span": "Many students are believing that",
+        "correction": "Many students believe that",
+        "explanation": "Động từ trạng thái 'believe' không dùng ở thì tiếp diễn."
+      }
+    },
+    {
+      "id": "ae_hk2_04",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          3
+        ],
+        "topic": 9
+      },
+      "spans": [
+        "Scientists predict that global temperatures",
+        "will continue to rise",
+        "over the next two decades."
+      ],
+      "error": {
+        "present": false,
+        "probe_category": 1,
+        "explanation": "Đoạn văn dùng đúng thì Tương lai đơn 'will continue' cho dự báo tương lai."
+      }
+    },
+    {
+      "id": "ae_hk2_05",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          5
+        ],
+        "topic": 6
+      },
+      "spans": [
+        "It is essential for developing countries",
+        "protecting natural habitats",
+        "and supporting ecotourism."
+      ],
+      "error": {
+        "present": true,
+        "category": 2,
+        "span": "protecting natural habitats",
+        "correction": "to protect natural habitats",
+        "explanation": "Cấu trúc 'It is + adj + for O + to-infinitive' -> dùng 'to protect'."
+      }
+    },
+    {
+      "id": "ae_hk2_06",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          6
+        ],
+        "topic": 8
+      },
+      "spans": [
+        "Students should practice to speak English",
+        "with foreign tourists",
+        "in famous cultural destinations."
+      ],
+      "error": {
+        "present": true,
+        "category": 2,
+        "span": "practice to speak English",
+        "correction": "practice speaking English",
+        "explanation": "Động từ 'practice' đi với V-ing (practice speaking)."
+      }
+    },
+    {
+      "id": "ae_hk2_07",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          5
+        ],
+        "topic": 5
+      },
+      "spans": [
+        "The school decided purchasing new 3D printers",
+        "to facilitate student innovation",
+        "in science competitions."
+      ],
+      "error": {
+        "present": true,
+        "category": 2,
+        "span": "decided purchasing new 3D printers",
+        "correction": "decided to purchase new 3D printers",
+        "explanation": "Động từ 'decide' đi cùng to-infinitive (decided to purchase)."
+      }
+    },
+    {
+      "id": "ae_hk2_08",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          6
+        ],
+        "topic": 10
+      },
+      "spans": [
+        "Ecotourists enjoy exploring pristine caves",
+        "and learning about local traditions",
+        "without harming nature."
+      ],
+      "error": {
+        "present": false,
+        "probe_category": 2,
+        "explanation": "Đoạn văn dùng đúng danh động từ sau 'enjoy' và sau giới từ 'without'."
+      }
+    },
+    {
+      "id": "ae_hk2_09",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          7
+        ],
+        "topic": 6
+      },
+      "spans": [
+        "Equal educational rights must granted",
+        "to women in every region",
+        "to eliminate gender disparity."
+      ],
+      "error": {
+        "present": true,
+        "category": 3,
+        "span": "Equal educational rights must granted",
+        "correction": "Equal educational rights must be granted",
+        "explanation": "Bị động với modal verb 'must' cần có 'be': 'must be granted'."
+      }
+    },
+    {
+      "id": "ae_hk2_10",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          7
+        ],
+        "topic": 9
+      },
+      "spans": [
+        "Valuable wildlife species are protecting",
+        "in national parks across Viet Nam",
+        "by dedicated rangers."
+      ],
+      "error": {
+        "present": true,
+        "category": 3,
+        "span": "are protecting",
+        "correction": "are protected",
+        "explanation": "Chủ ngữ chịu tác động 'wildlife species' phải dùng bị động 'are protected'."
+      }
+    },
+    {
+      "id": "ae_hk2_11",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          7
+        ],
+        "topic": 5
+      },
+      "spans": [
+        "The artificial intelligence software",
+        "is develop by a group of engineers",
+        "to diagnose illnesses."
+      ],
+      "error": {
+        "present": true,
+        "category": 3,
+        "span": "is develop by a group of engineers",
+        "correction": "is developed by a group of engineers",
+        "explanation": "Bị động cần dùng phân từ hai V3/ed 'developed'."
+      }
+    },
+    {
+      "id": "ae_hk2_12",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          7
+        ],
+        "topic": 7
+      },
+      "spans": [
+        "Viet Nam was officially admitted",
+        "to the World Trade Organization",
+        "in early 2007."
+      ],
+      "error": {
+        "present": false,
+        "probe_category": 3,
+        "explanation": "Đoạn văn dùng đúng cấu trúc bị động Quá khứ đơn 'was officially admitted'."
+      }
+    },
+    {
+      "id": "ae_hk2_13",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          11
+        ],
+        "topic": 9
+      },
+      "spans": [
+        "If humans stopped burning fossil fuels,",
+        "global warming will slow down",
+        "significantly."
+      ],
+      "error": {
+        "present": true,
+        "category": 4,
+        "span": "global warming will slow down",
+        "correction": "global warming would slow down",
+        "explanation": "Câu điều kiện loại 2 (mệnh đề If dùng 'stopped') -> mệnh đề chính phải dùng 'would + V'."
+      }
+    },
+    {
+      "id": "ae_hk2_14",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          12
+        ],
+        "topic": 8
+      },
+      "spans": [
+        "The teacher told that we should prepare",
+        "our digital presentations carefully",
+        "before the seminar."
+      ],
+      "error": {
+        "present": true,
+        "category": 4,
+        "span": "The teacher told that we should prepare",
+        "correction": "The teacher told us that we should prepare",
+        "explanation": "Động từ 'tell' trong câu tường thuật cần có tân ngữ chỉ người nghe (told us / said that)."
+      }
+    },
+    {
+      "id": "ae_hk2_15",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          9
+        ],
+        "topic": 6
+      },
+      "spans": [
+        "Dr. Lan, that is a leading expert on gender issues,",
+        "delivered an inspiring lecture",
+        "at the university yesterday."
+      ],
+      "error": {
+        "present": true,
+        "category": 4,
+        "span": "Dr. Lan, that is a leading expert on gender issues,",
+        "correction": "Dr. Lan, who is a leading expert on gender issues,",
+        "explanation": "Trong mệnh đề quan hệ không xác định (có dấu phẩy), không được dùng đại từ quan hệ 'that'."
+      }
+    },
+    {
+      "id": "ae_hk2_16",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          11
+        ],
+        "topic": 10
+      },
+      "spans": [
+        "If I were an ecotour guide in Cat Tien,",
+        "I would introduce rare flora and fauna",
+        "to international visitors."
+      ],
+      "error": {
+        "present": false,
+        "probe_category": 4,
+        "explanation": "Đoạn văn dùng đúng cấu trúc câu điều kiện loại 2 giả định 'were' và 'would introduce'."
+      }
+    },
+    {
+      "id": "ae_hk2_17",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          15
+        ],
+        "topic": 7
+      },
+      "spans": [
+        "Viet Nam has actively joined",
+        "the United Nations and an WTO",
+        "to foster economic cooperation."
+      ],
+      "error": {
+        "present": true,
+        "category": 5,
+        "span": "and an WTO",
+        "correction": "and the WTO",
+        "explanation": "Tên tổ chức quốc tế xác định dùng mạo từ 'the WTO'."
+      }
+    },
+    {
+      "id": "ae_hk2_18",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          15
+        ],
+        "topic": 8
+      },
+      "spans": [
+        "The internet provides students with",
+        "a lot of useful informations",
+        "for their homework assignments."
+      ],
+      "error": {
+        "present": true,
+        "category": 5,
+        "span": "a lot of useful informations",
+        "correction": "a lot of useful information",
+        "explanation": "'Information' là danh từ không đếm được, không thêm đuôi số nhiều '-s'."
+      }
+    },
+    {
+      "id": "ae_hk2_19",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          15
+        ],
+        "topic": 10
+      },
+      "spans": [
+        "We spent our holiday visiting",
+        "the Ha Long Bay and Cat Ba Island",
+        "on a traditional wooden boat."
+      ],
+      "error": {
+        "present": true,
+        "category": 5,
+        "span": "the Ha Long Bay",
+        "correction": "Ha Long Bay",
+        "explanation": "Tên riêng vịnh 'Ha Long Bay' không dùng mạo từ 'the'."
+      }
+    },
+    {
+      "id": "ae_hk2_20",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          15
+        ],
+        "topic": 6
+      },
+      "spans": [
+        "Equal opportunities give both men and women",
+        "a fair chance to succeed",
+        "in modern society."
+      ],
+      "error": {
+        "present": false,
+        "probe_category": 5,
+        "explanation": "Đoạn văn dùng đúng mạo từ 'a fair chance' và danh từ không mạo từ chỉ chung 'modern society'."
+      }
+    },
+    {
+      "id": "ae_hk2_21",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          13
+        ],
+        "topic": 10
+      },
+      "spans": [
+        "Son Doong is one of",
+        "the larger caves in the world,",
+        "attracting adventurous explorers."
+      ],
+      "error": {
+        "present": true,
+        "category": 6,
+        "span": "the larger caves in the world,",
+        "correction": "the largest caves in the world,",
+        "explanation": "Cấu trúc 'one of the + so sánh nhất': 'the largest caves'."
+      }
+    },
+    {
+      "id": "ae_hk2_22",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          14
+        ],
+        "topic": 9
+      },
+      "spans": [
+        "The continuous plastic pollution",
+        "is extremely worried for marine biologists",
+        "studying coral reefs."
+      ],
+      "error": {
+        "present": true,
+        "category": 6,
+        "span": "is extremely worried for marine biologists",
+        "correction": "is extremely worrying for marine biologists",
+        "explanation": "Chủ ngữ là sự việc 'plastic pollution' nên tính từ phải là đuôi '-ing' (worrying / alarming)."
+      }
+    },
+    {
+      "id": "ae_hk2_23",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          13
+        ],
+        "topic": 8
+      },
+      "spans": [
+        "Online searching tools are gooder",
+        "than traditional paper encyclopedias",
+        "at finding quick facts."
+      ],
+      "error": {
+        "present": true,
+        "category": 6,
+        "span": "are gooder",
+        "correction": "are better",
+        "explanation": "So sánh hơn của tính từ bất quy tắc 'good' là 'better', không có 'gooder'."
+      }
+    },
+    {
+      "id": "ae_hk2_24",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          13
+        ],
+        "topic": 6
+      },
+      "spans": [
+        "Women are increasingly taking on",
+        "more important leadership roles",
+        "in major multinational corporations."
+      ],
+      "error": {
+        "present": false,
+        "probe_category": 6,
+        "explanation": "Đoạn văn dùng đúng dạng so sánh hơn tính từ dài 'more important'."
+      }
+    },
+    {
+      "id": "ae_hk2_25",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          7
+        ],
+        "topic": 7
+      },
+      "spans": [
+        "Viet Nam actively participates at",
+        "various peacekeeping missions",
+        "organized by the United Nations."
+      ],
+      "error": {
+        "present": true,
+        "category": 7,
+        "span": "actively participates at",
+        "correction": "actively participates in",
+        "explanation": "Động từ 'participate' đi với giới từ 'in' (tham gia vào)."
+      }
+    },
+    {
+      "id": "ae_hk2_26",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          7
+        ],
+        "topic": 9
+      },
+      "spans": [
+        "Deforestation has a serious impact in",
+        "the natural ecosystems and climate",
+        "of Southeast Asia."
+      ],
+      "error": {
+        "present": true,
+        "category": 7,
+        "span": "has a serious impact in",
+        "correction": "has a serious impact on",
+        "explanation": "Kết hợp từ: 'have an impact on something' (có ảnh hưởng tới)."
+      }
+    },
+    {
+      "id": "ae_hk2_27",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          7
+        ],
+        "topic": 10
+      },
+      "spans": [
+        "Ecotourists should show respect for",
+        "local customs and culture",
+        "when visiting ethnic villages."
+      ],
+      "error": {
+        "present": false,
+        "probe_category": 7,
+        "explanation": "Đoạn văn dùng đúng kết hợp từ 'show respect for' (tôn trọng cái gì)."
+      }
+    },
+    {
+      "id": "ae_hk2_28",
+      "type": "ai_eval",
+      "kind": "error_detection",
+      "ai_generated": true,
+      "curriculum": {
+        "grammar": [
+          7
+        ],
+        "topic": 8
+      },
+      "spans": [
+        "Modern education relies with digital devices",
+        "to provide students with access",
+        "to global learning resources."
+      ],
+      "error": {
+        "present": true,
+        "category": 7,
+        "span": "relies with digital devices",
+        "correction": "relies on digital devices",
+        "explanation": "Động từ 'rely' đi với giới từ 'on' (dựa vào / phụ thuộc vào)."
+      }
+    }
+  ]
+}

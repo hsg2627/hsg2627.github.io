@@ -1,0 +1,78 @@
+{
+  "id": "g04",
+  "title": "Quá khứ đơn và quá khứ tiếp diễn (Past Simple vs Continuous)",
+  "curriculum": {
+    "grammar": [
+      4
+    ],
+    "error_category": 1
+  },
+  "theory": "\n            <p><strong>🎯 CHUYÊN ĐỀ 7: QUÁ KHỨ ĐƠN VS QUÁ KHỨ TIẾP DIỄN</strong></p>\n            <ul>\n              <li><strong>Past Simple (S + V2/ed):</strong> Hành động đã xảy ra và kết thúc hoàn toàn trong quá khứ.</li>\n              <li><strong>Past Continuous (S + was/were + V-ing):</strong> Hành động đang diễn ra tại một thời điểm xác định trong quá khứ.</li>\n              <li><strong>Sự kết hợp giữa 2 thì:</strong>\n                <ul>\n                  <li><code>WHEN + Past Simple, Past Continuous:</code> Hành động ngắn chen ngang khi hành động dài đang diễn ra (<em>When the alarm rang, I was sleeping.</em>).</li>\n                  <li><code>WHILE + Past Continuous, Past Continuous:</code> 2 hành động song song cùng diễn ra (<em>While Mom was cooking, Dad was reading.</em>).</li>\n                </ul>\n              </li>\n            </ul>\n          ",
+  "items": [
+    {
+      "id": "g04_01",
+      "ai_generated": true,
+      "prompt": "While we _____ in the park, it suddenly started to rain.",
+      "options": [
+        "A. walked",
+        "B. were walking",
+        "C. are walking",
+        "D. have walked"
+      ],
+      "answer": 1,
+      "explanation": "Hành động đang diễn ra trong quá khứ (were walking) thì có hành động khác xen vào (started)."
+    },
+    {
+      "id": "g04_02",
+      "ai_generated": true,
+      "prompt": "When the teacher came into the classroom, the students _____ loudly.",
+      "options": [
+        "A. talked",
+        "B. were talking",
+        "C. are talking",
+        "D. talk"
+      ],
+      "answer": 1,
+      "explanation": "Hành động học sinh đang nói chuyện (were talking) bị ngắt bởi hành động giáo viên bước vào (came)."
+    },
+    {
+      "id": "g04_03",
+      "ai_generated": true,
+      "prompt": "Yesterday, Nam _____ an interesting article about invention of the 3D printer.",
+      "options": [
+        "A. read",
+        "B. was reading",
+        "C. has read",
+        "D. is reading"
+      ],
+      "answer": 0,
+      "explanation": "'Yesterday' kết thúc trọn vẹn trong quá khứ -> dùng Quá khứ đơn (read /red/)."
+    },
+    {
+      "id": "g04_04",
+      "ai_generated": true,
+      "prompt": "What _____ you _____ at 8 PM last night?",
+      "options": [
+        "A. did / do",
+        "B. were / doing",
+        "C. are / doing",
+        "D. have / done"
+      ],
+      "answer": 1,
+      "explanation": "Hành động đang diễn ra tại một thời điểm xác định trong quá khứ ('at 8 PM last night') -> 'were you doing'."
+    },
+    {
+      "id": "g04_05",
+      "ai_generated": true,
+      "prompt": "She was writing an essay when the power _____ out.",
+      "options": [
+        "A. goes",
+        "B. went",
+        "C. was going",
+        "D. has gone"
+      ],
+      "answer": 1,
+      "explanation": "Hành động cắt điện xen vào hành động đang viết bài -> dùng Quá khứ đơn (went)."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "u10-reading",
+  "unit": 10,
+  "title": "Ecotourism: Responsible Travel for Sustainable Communities",
+  "word_count": 113,
+  "passage": "Ecotourism is responsible travel to natural destinations that conserves the local environment, sustains the well-being of indigenous populations, and involves interpretation and education. Unlike mass commercial tourism, which often results in environmental degradation and overcrowding, ecotourism prioritizes ecological preservation and cultural integrity.\n\nIn Viet Nam, destinations such as Phong Nha - Ke Bang, Cat Tien National Park, and Can Gio Mangrove Biosphere Reserve have developed successful community-based ecotours. Tourists participate in guided nature walks, bird watching, and traditional craft making, with tourism revenues flowing directly to local families and conservation efforts.\n\nPracticing responsible ecotourism requires mindfulness from visitors. Travelers should avoid leaving litter on trails, respect local customs, and choose accredited eco-friendly accommodations.",
+  "questions": [
+    {
+      "id": "u10_rq01",
+      "prompt": "What distinguishes ecotourism from mass commercial tourism?",
+      "options": [
+        "A. Ecotourism is always more expensive",
+        "B. It prioritizes environmental preservation and cultural respect",
+        "C. It allows travelers to collect wild animal souvenirs",
+        "D. It only takes place in snowy regions"
+      ],
+      "answer": 1,
+      "explanation": "Đoạn 1 nêu 'ecotourism prioritizes ecological preservation and cultural integrity'."
+    },
+    {
+      "id": "u10_rq02",
+      "prompt": "How do local communities in Phong Nha or Cat Tien benefit from ecotours?",
+      "options": [
+        "A. They receive free airline tickets",
+        "B. Tourism revenues flow directly to local families and conservation",
+        "C. They can build high-rise hotels in the core zone",
+        "D. They no longer need to work"
+      ],
+      "answer": 1,
+      "explanation": "Đoạn 2 nêu 'tourism revenues flowing directly to local families and conservation efforts'."
+    },
+    {
+      "id": "u10_rq03",
+      "prompt": "What should travelers avoid doing when taking part in ecotours?",
+      "options": [
+        "A. Walking on designated nature trails",
+        "B. Leaving litter on trails and disturbing wildlife",
+        "C. Learning about local traditions",
+        "D. Choosing eco-friendly homestays"
+      ],
+      "answer": 1,
+      "explanation": "Đoạn cuối khuyên 'avoid leaving litter on trails, respect local customs'."
+    }
+  ]
+}

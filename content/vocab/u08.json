@@ -1,0 +1,581 @@
+{
+  "id": "u08",
+  "unit": 8,
+  "title": "New Ways To Learn",
+  "topic": 7,
+  "total_words": 55,
+  "words": [
+    {
+      "id": "u08_w01",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Blended learning is highly effective as it combines face-to-face classes with digital resources."
+    },
+    {
+      "id": "u08_w02",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Noise from construction sites was a major distraction during the lecture."
+    },
+    {
+      "id": "u08_w03",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Students need to develop a solid study strategy to pass the final exam."
+    },
+    {
+      "id": "u08_w04",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "The teacher gave real-world examples to explain the complex scientific theory."
+    },
+    {
+      "id": "u08_w05",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Digital technology offers interactive ways for children to explore science."
+    },
+    {
+      "id": "u08_w06",
+      "word": "",
+      "ipa": "",
+      "pos": "v",
+      "meaning": "",
+      "example": "Online platforms enable students to communicate with experts worldwide."
+    },
+    {
+      "id": "u08_w07",
+      "word": "",
+      "ipa": "",
+      "pos": "v/n",
+      "meaning": "",
+      "example": "Self-study requires students to have great control over their learning schedule."
+    },
+    {
+      "id": "u08_w08",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "The digital age has brought about a revolution in classroom resources."
+    },
+    {
+      "id": "u08_w09",
+      "word": "",
+      "ipa": "",
+      "pos": "v/n",
+      "meaning": "",
+      "example": "Students can easily exchange study materials through local forums."
+    },
+    {
+      "id": "u08_w10",
+      "word": "",
+      "ipa": "",
+      "pos": "adj/adv",
+      "meaning": "",
+      "example": "Face-to-face interaction helps teachers understand their students' feelings better."
+    },
+    {
+      "id": "u08_w11",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Using a flow chart is an excellent way to visualize a complex process."
+    },
+    {
+      "id": "u08_w12",
+      "word": "",
+      "ipa": "",
+      "pos": "v/n",
+      "meaning": "",
+      "example": "It is hard to focus on the lecture when you have online notifications popping up."
+    },
+    {
+      "id": "u08_w13",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Rural classrooms need high-speed internet to gain access to online lectures."
+    },
+    {
+      "id": "u08_w14",
+      "word": "",
+      "ipa": "",
+      "pos": "adv",
+      "meaning": "",
+      "example": "With smart devices, you can look up new words immediately."
+    },
+    {
+      "id": "u08_w15",
+      "word": "",
+      "ipa": "",
+      "pos": "v",
+      "meaning": "",
+      "example": "You should install an interactive dictionary on your smartphone."
+    },
+    {
+      "id": "u08_w16",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Online learning offers great flexibility for busy homemakers."
+    },
+    {
+      "id": "u08_w17",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "The student’s project was highly praised for its original design."
+    },
+    {
+      "id": "u08_w18",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The school provides extensive digital resources, including e-books and videos."
+    },
+    {
+      "id": "u08_w19",
+      "word": "",
+      "ipa": "",
+      "pos": "n/v",
+      "meaning": "",
+      "example": "An organized study schedule keeps students focused on their daily tasks."
+    },
+    {
+      "id": "u08_w20",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Classroom projects are highly beneficial for developing teamwork skills."
+    },
+    {
+      "id": "u08_w21",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "I used my voice recorder to save the lecture for review at home."
+    },
+    {
+      "id": "u08_w22",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Electronic dictionaries have completely replaced thick paper books."
+    },
+    {
+      "id": "u08_w23",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Constructive feedback from teachers is essential for student improvement."
+    },
+    {
+      "id": "u08_w24",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Group presentations facilitate collaborative learning in the classroom."
+    },
+    {
+      "id": "u08_w25",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Writing essays is a crucial part of university academic requirements."
+    },
+    {
+      "id": "u08_w26",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "She is looking for a quiet study space in the local library."
+    },
+    {
+      "id": "u08_w27",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "You can look up advanced vocabulary easily on online platforms."
+    },
+    {
+      "id": "u08_w28",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Remember to note down the main ideas of the presentation."
+    },
+    {
+      "id": "u08_w29",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "You must register with a password before you can log in to the site."
+    },
+    {
+      "id": "u08_w30",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Always log out of public computers to protect your personal data."
+    },
+    {
+      "id": "u08_w31",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Plug in your voice recorder before the class starts."
+    },
+    {
+      "id": "u08_w32",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "The teacher reminded us to hand in our assignments by Friday."
+    },
+    {
+      "id": "u08_w33",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Students are required to turn off their mobile phones during exams."
+    },
+    {
+      "id": "u08_w34",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "I printed out the flow chart to explain it to my team members."
+    },
+    {
+      "id": "u08_w35",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Using digital tools helps slow learners keep up with the class."
+    },
+    {
+      "id": "u08_w36",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Excessive screen time has a negative impact on children's eyesight."
+    },
+    {
+      "id": "u08_w37",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "An organized study schedule keeps students focused on their daily tasks."
+    },
+    {
+      "id": "u08_w38",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "High-speed internet enables rural schools to gain access to global educational resources."
+    },
+    {
+      "id": "u08_w39",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Smart devices facilitate active learning in modern classrooms."
+    },
+    {
+      "id": "u08_w40",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Many universities are adopting the blended learning method for economics courses."
+    },
+    {
+      "id": "u08_w41",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Digital technology has completely revolutionized our work and studies."
+    },
+    {
+      "id": "u08_w42",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Online classrooms require a stable high-speed internet connection."
+    },
+    {
+      "id": "u08_w43",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Top students usually develop highly effective learning strategies."
+    },
+    {
+      "id": "u08_w44",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Teachers should provide constructive feedback to improve students' writing."
+    },
+    {
+      "id": "u08_w45",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Self-study and discipline are key to improving academic performance."
+    },
+    {
+      "id": "u08_w46",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Our school utilizes advanced digital learning platforms for homework submission."
+    },
+    {
+      "id": "u08_w47",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Every student has their own personal device for blended learning."
+    },
+    {
+      "id": "u08_w48",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Turning off phones is crucial to eliminate classroom distractions."
+    },
+    {
+      "id": "u08_w49",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Interactive games foster active participation among young learners."
+    },
+    {
+      "id": "u08_w50",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Forums allow students to exchange academic information easily."
+    },
+    {
+      "id": "u08_w51",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "She had to burn the midnight oil for weeks to prepare for the final exam."
+    },
+    {
+      "id": "u08_w52",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "The mid-term exams are next week, so it is time to hit the books."
+    },
+    {
+      "id": "u08_w53",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "Thanks to her hard work, she passed the IELTS exam with flying colors."
+    },
+    {
+      "id": "u08_w54",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "He had to learn the entire list of phrasal verbs by heart."
+    },
+    {
+      "id": "u08_w55",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "My grandfather is seventy, but he learned to use a tablet; you can teach an old dog new tricks!"
+    }
+  ],
+  "items": [
+    {
+      "id": "u08_q01",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____B_____l_____e_____n_____d_____e_____d_____ _____l_____e_____a_____r_____n_____i_____n_____g_____ _____i_____s_____ _____h_____i_____g_____h_____l_____y_____ _____e_____f_____f_____e_____c_____t_____i_____v_____e_____ _____a_____s_____ _____i_____t_____ _____c_____o_____m_____b_____i_____n_____e_____s_____ _____f_____a_____c_____e_____-_____t_____o_____-_____f_____a_____c_____e_____ _____c_____l_____a_____s_____s_____e_____s_____ _____w_____i_____t_____h_____ _____d_____i_____g_____i_____t_____a_____l_____ _____r_____e_____s_____o_____u_____r_____c_____e_____s_____._____\"",
+      "options": [
+        "A. environment",
+        "B. community",
+        "C. volunteer",
+        "D. "
+      ],
+      "answer": 3,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u08_q02",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____N_____o_____i_____s_____e_____ _____f_____r_____o_____m_____ _____c_____o_____n_____s_____t_____r_____u_____c_____t_____i_____o_____n_____ _____s_____i_____t_____e_____s_____ _____w_____a_____s_____ _____a_____ _____m_____a_____j_____o_____r_____ _____d_____i_____s_____t_____r_____a_____c_____t_____i_____o_____n_____ _____d_____u_____r_____i_____n_____g_____ _____t_____h_____e_____ _____l_____e_____c_____t_____u_____r_____e_____._____\"",
+      "options": [
+        "A. ",
+        "B. community",
+        "C. volunteer",
+        "D. environment"
+      ],
+      "answer": 0,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u08_q03",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____S_____t_____u_____d_____e_____n_____t_____s_____ _____n_____e_____e_____d_____ _____t_____o_____ _____d_____e_____v_____e_____l_____o_____p_____ _____a_____ _____s_____o_____l_____i_____d_____ _____s_____t_____u_____d_____y_____ _____s_____t_____r_____a_____t_____e_____g_____y_____ _____t_____o_____ _____p_____a_____s_____s_____ _____t_____h_____e_____ _____f_____i_____n_____a_____l_____ _____e_____x_____a_____m_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. ",
+        "C. community",
+        "D. environment"
+      ],
+      "answer": 1,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u08_q04",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____t_____e_____a_____c_____h_____e_____r_____ _____g_____a_____v_____e_____ _____r_____e_____a_____l_____-_____w_____o_____r_____l_____d_____ _____e_____x_____a_____m_____p_____l_____e_____s_____ _____t_____o_____ _____e_____x_____p_____l_____a_____i_____n_____ _____t_____h_____e_____ _____c_____o_____m_____p_____l_____e_____x_____ _____s_____c_____i_____e_____n_____t_____i_____f_____i_____c_____ _____t_____h_____e_____o_____r_____y_____._____\"",
+      "options": [
+        "A. ",
+        "B. environment",
+        "C. volunteer",
+        "D. community"
+      ],
+      "answer": 0,
+      "explanation": "'' (adj) nghĩa là: ."
+    },
+    {
+      "id": "u08_q05",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____D_____i_____g_____i_____t_____a_____l_____ _____t_____e_____c_____h_____n_____o_____l_____o_____g_____y_____ _____o_____f_____f_____e_____r_____s_____ _____i_____n_____t_____e_____r_____a_____c_____t_____i_____v_____e_____ _____w_____a_____y_____s_____ _____f_____o_____r_____ _____c_____h_____i_____l_____d_____r_____e_____n_____ _____t_____o_____ _____e_____x_____p_____l_____o_____r_____e_____ _____s_____c_____i_____e_____n_____c_____e_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. community",
+        "C. environment",
+        "D. "
+      ],
+      "answer": 3,
+      "explanation": "'' (adj) nghĩa là: ."
+    },
+    {
+      "id": "u08_q06",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____O_____n_____l_____i_____n_____e_____ _____p_____l_____a_____t_____f_____o_____r_____m_____s_____ _____e_____n_____a_____b_____l_____e_____ _____s_____t_____u_____d_____e_____n_____t_____s_____ _____t_____o_____ _____c_____o_____m_____m_____u_____n_____i_____c_____a_____t_____e_____ _____w_____i_____t_____h_____ _____e_____x_____p_____e_____r_____t_____s_____ _____w_____o_____r_____l_____d_____w_____i_____d_____e_____._____\"",
+      "options": [
+        "A. ",
+        "B. volunteer",
+        "C. environment",
+        "D. community"
+      ],
+      "answer": 0,
+      "explanation": "'' (v) nghĩa là: ."
+    },
+    {
+      "id": "u08_q07",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____S_____e_____l_____f_____-_____s_____t_____u_____d_____y_____ _____r_____e_____q_____u_____i_____r_____e_____s_____ _____s_____t_____u_____d_____e_____n_____t_____s_____ _____t_____o_____ _____h_____a_____v_____e_____ _____g_____r_____e_____a_____t_____ _____c_____o_____n_____t_____r_____o_____l_____ _____o_____v_____e_____r_____ _____t_____h_____e_____i_____r_____ _____l_____e_____a_____r_____n_____i_____n_____g_____ _____s_____c_____h_____e_____d_____u_____l_____e_____._____\"",
+      "options": [
+        "A. ",
+        "B. community",
+        "C. volunteer",
+        "D. environment"
+      ],
+      "answer": 0,
+      "explanation": "'' (v/n) nghĩa là: ."
+    },
+    {
+      "id": "u08_q08",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____d_____i_____g_____i_____t_____a_____l_____ _____a_____g_____e_____ _____h_____a_____s_____ _____b_____r_____o_____u_____g_____h_____t_____ _____a_____b_____o_____u_____t_____ _____a_____ _____r_____e_____v_____o_____l_____u_____t_____i_____o_____n_____ _____i_____n_____ _____c_____l_____a_____s_____s_____r_____o_____o_____m_____ _____r_____e_____s_____o_____u_____r_____c_____e_____s_____._____\"",
+      "options": [
+        "A. community",
+        "B. environment",
+        "C. ",
+        "D. volunteer"
+      ],
+      "answer": 2,
+      "explanation": "'' (adj) nghĩa là: ."
+    },
+    {
+      "id": "u08_q09",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____S_____t_____u_____d_____e_____n_____t_____s_____ _____c_____a_____n_____ _____e_____a_____s_____i_____l_____y_____ _____e_____x_____c_____h_____a_____n_____g_____e_____ _____s_____t_____u_____d_____y_____ _____m_____a_____t_____e_____r_____i_____a_____l_____s_____ _____t_____h_____r_____o_____u_____g_____h_____ _____l_____o_____c_____a_____l_____ _____f_____o_____r_____u_____m_____s_____._____\"",
+      "options": [
+        "A. environment",
+        "B. volunteer",
+        "C. community",
+        "D. "
+      ],
+      "answer": 3,
+      "explanation": "'' (v/n) nghĩa là: ."
+    },
+    {
+      "id": "u08_q10",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____F_____a_____c_____e_____-_____t_____o_____-_____f_____a_____c_____e_____ _____i_____n_____t_____e_____r_____a_____c_____t_____i_____o_____n_____ _____h_____e_____l_____p_____s_____ _____t_____e_____a_____c_____h_____e_____r_____s_____ _____u_____n_____d_____e_____r_____s_____t_____a_____n_____d_____ _____t_____h_____e_____i_____r_____ _____s_____t_____u_____d_____e_____n_____t_____s_____'_____ _____f_____e_____e_____l_____i_____n_____g_____s_____ _____b_____e_____t_____t_____e_____r_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. environment",
+        "C. ",
+        "D. community"
+      ],
+      "answer": 2,
+      "explanation": "'' (adj/adv) nghĩa là: ."
+    }
+  ]
+}

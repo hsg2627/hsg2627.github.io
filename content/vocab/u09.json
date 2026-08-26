@@ -1,0 +1,581 @@
+{
+  "id": "u09",
+  "unit": 9,
+  "title": "Protecting The Environment",
+  "topic": 8,
+  "total_words": 55,
+  "words": [
+    {
+      "id": "u09_w01",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Burning fossil fuels harms ecosystems and leads to a loss of biodiversity."
+    },
+    {
+      "id": "u09_w02",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Deforestation is a primary cause of global warming and climate change."
+    },
+    {
+      "id": "u09_w03",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Industrial waste can destroy marine ecosystems and harm wildlife."
+    },
+    {
+      "id": "u09_w04",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Fine dust from factories causes severe respiratory illnesses in children."
+    },
+    {
+      "id": "u09_w05",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Rising global temperatures are a direct consequence of greenhouse gas emissions."
+    },
+    {
+      "id": "u09_w06",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Commercial hunting upsets the natural balance of forest ecosystems."
+    },
+    {
+      "id": "u09_w07",
+      "word": "",
+      "ipa": "",
+      "pos": "n.phr",
+      "meaning": "",
+      "example": "Deforestation is accelerating global warming and climate change."
+    },
+    {
+      "id": "u09_w08",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "The government has established national parks to protect endangered species."
+    },
+    {
+      "id": "u09_w09",
+      "word": "",
+      "ipa": "",
+      "pos": "n.phr",
+      "meaning": "",
+      "example": "Young people play a key role in raising awareness of environmental protection."
+    },
+    {
+      "id": "u09_w10",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Global warming is causing extreme weather events like floods and heatwaves."
+    },
+    {
+      "id": "u09_w11",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "The giant panda is one of the most famous endangered animals."
+    },
+    {
+      "id": "u09_w12",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Mountain gorillas are threatened by habitat loss and illegal hunting."
+    },
+    {
+      "id": "u09_w13",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Deforestation destroys the natural habitat of wild animals."
+    },
+    {
+      "id": "u09_w14",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The intense heatwave caused serious forest fires in several regions."
+    },
+    {
+      "id": "u09_w15",
+      "word": "",
+      "ipa": "",
+      "pos": "n.phr",
+      "meaning": "",
+      "example": "Ice melting at the polar caps leads to rising sea levels worldwide."
+    },
+    {
+      "id": "u09_w16",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Pollution is a pressing issue that requires multilateral cooperation."
+    },
+    {
+      "id": "u09_w17",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Panda conservation programs have successfully increased their population."
+    },
+    {
+      "id": "u09_w18",
+      "word": "",
+      "ipa": "",
+      "pos": "adj",
+      "meaning": "",
+      "example": "Choosing reusable shopping bags is a highly practical way to reduce waste."
+    },
+    {
+      "id": "u09_w19",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The giant tortoise is a protected species on the remote island."
+    },
+    {
+      "id": "u09_w20",
+      "word": "",
+      "ipa": "",
+      "pos": "n/v",
+      "meaning": "",
+      "example": "The illegal trade in wild animal parts must be completely banned."
+    },
+    {
+      "id": "u09_w21",
+      "word": "",
+      "ipa": "",
+      "pos": "v",
+      "meaning": "",
+      "example": "Releasing toxic chemicals into rivers can upset the local marine balance."
+    },
+    {
+      "id": "u09_w22",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "The national park aims to preserve wildlife and their natural habitats."
+    },
+    {
+      "id": "u09_w23",
+      "word": "",
+      "ipa": "",
+      "pos": "n.phr",
+      "meaning": "",
+      "example": "We must transition from fossil fuels to renewable alternative energy."
+    },
+    {
+      "id": "u09_w24",
+      "word": "",
+      "ipa": "",
+      "pos": "n.phr",
+      "meaning": "",
+      "example": "Carbon dioxide is one of the major greenhouse gases warming the planet."
+    },
+    {
+      "id": "u09_w25",
+      "word": "",
+      "ipa": "",
+      "pos": "n",
+      "meaning": "",
+      "example": "Wildlife conservation is essential for maintaining biodiversity."
+    },
+    {
+      "id": "u09_w26",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "If we don't reduce consumption, we will soon run out of fossil fuels."
+    },
+    {
+      "id": "u09_w27",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Humans are using up precious natural resources faster than the Earth can supply."
+    },
+    {
+      "id": "u09_w28",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Factories must cut down on carbon emissions to protect the atmosphere."
+    },
+    {
+      "id": "u09_w29",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Many endangered species are in danger of dying out due to habitat loss."
+    },
+    {
+      "id": "u09_w30",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Large forest lands are cleared out to build commercial highways."
+    },
+    {
+      "id": "u09_w31",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "National park rangers are responsible for looking after wild animals."
+    },
+    {
+      "id": "u09_w32",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "The green club carried out a major tree-planting event last weekend."
+    },
+    {
+      "id": "u09_w33",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Never throw away single-use bottles; recycle them instead."
+    },
+    {
+      "id": "u09_w34",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Toxic chemicals build up in marine animals, harming the entire food chain."
+    },
+    {
+      "id": "u09_w35",
+      "word": "",
+      "ipa": "",
+      "pos": "phr.v",
+      "meaning": "",
+      "example": "Wearing masks helps protect children from air pollution in big cities."
+    },
+    {
+      "id": "u09_w36",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Commercial hunting can upset the natural balance of forest ecosystems."
+    },
+    {
+      "id": "u09_w37",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "International organizations work collaboratively to save endangered pandas from extinction."
+    },
+    {
+      "id": "u09_w38",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Building new highways can disrupt the natural habitats of local wildlife."
+    },
+    {
+      "id": "u09_w39",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Reducing greenhouse gas emissions is the main target of the agreement."
+    },
+    {
+      "id": "u09_w40",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Deforestation is a major barrier to global climate change mitigation."
+    },
+    {
+      "id": "u09_w41",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Air pollution causes severe respiratory illnesses in crowded urban areas."
+    },
+    {
+      "id": "u09_w42",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Plastic waste dumped into the ocean causes immense harm to marine ecosystems."
+    },
+    {
+      "id": "u09_w43",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Global warming leads to more frequent extreme weather events like heatwaves."
+    },
+    {
+      "id": "u09_w44",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "The air pollution level in the city center has reached an alarming stage."
+    },
+    {
+      "id": "u09_w45",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Burning fossil fuels to generate electricity releases massive greenhouse gases."
+    },
+    {
+      "id": "u09_w46",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Deforestation on mountain slopes leads to landslide and severe soil erosion."
+    },
+    {
+      "id": "u09_w47",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Every species plays a unique role in maintaining the ecological balance."
+    },
+    {
+      "id": "u09_w48",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Ice melting is one of the most visible global warming effects."
+    },
+    {
+      "id": "u09_w49",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Carbon dioxide traps heat in the atmosphere, causing the greenhouse effect."
+    },
+    {
+      "id": "u09_w50",
+      "word": "",
+      "ipa": "",
+      "pos": "colloc",
+      "meaning": "",
+      "example": "Schools should organize environmental conservation campaigns for students."
+    },
+    {
+      "id": "u09_w51",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "These dead fish are just the tip of the iceberg; the entire river is heavily polluted."
+    },
+    {
+      "id": "u09_w52",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "Without government penalties, environmentalists are fighting a losing battle against toxic dumpers."
+    },
+    {
+      "id": "u09_w53",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "Ignoring carbon emissions is playing with fire; we are risking our future."
+    },
+    {
+      "id": "u09_w54",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "Although the panda population has increased, they are not yet out of the woods."
+    },
+    {
+      "id": "u09_w55",
+      "word": "",
+      "ipa": "",
+      "pos": "idiom",
+      "meaning": "",
+      "example": "Ecotourists love to go back to nature by staying in wooden homestays."
+    }
+  ],
+  "items": [
+    {
+      "id": "u09_q01",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____B_____u_____r_____n_____i_____n_____g_____ _____f_____o_____s_____s_____i_____l_____ _____f_____u_____e_____l_____s_____ _____h_____a_____r_____m_____s_____ _____e_____c_____o_____s_____y_____s_____t_____e_____m_____s_____ _____a_____n_____d_____ _____l_____e_____a_____d_____s_____ _____t_____o_____ _____a_____ _____l_____o_____s_____s_____ _____o_____f_____ _____b_____i_____o_____d_____i_____v_____e_____r_____s_____i_____t_____y_____._____\"",
+      "options": [
+        "A. community",
+        "B. volunteer",
+        "C. environment",
+        "D. "
+      ],
+      "answer": 3,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u09_q02",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____D_____e_____f_____o_____r_____e_____s_____t_____a_____t_____i_____o_____n_____ _____i_____s_____ _____a_____ _____p_____r_____i_____m_____a_____r_____y_____ _____c_____a_____u_____s_____e_____ _____o_____f_____ _____g_____l_____o_____b_____a_____l_____ _____w_____a_____r_____m_____i_____n_____g_____ _____a_____n_____d_____ _____c_____l_____i_____m_____a_____t_____e_____ _____c_____h_____a_____n_____g_____e_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. environment",
+        "C. ",
+        "D. community"
+      ],
+      "answer": 2,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u09_q03",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____I_____n_____d_____u_____s_____t_____r_____i_____a_____l_____ _____w_____a_____s_____t_____e_____ _____c_____a_____n_____ _____d_____e_____s_____t_____r_____o_____y_____ _____m_____a_____r_____i_____n_____e_____ _____e_____c_____o_____s_____y_____s_____t_____e_____m_____s_____ _____a_____n_____d_____ _____h_____a_____r_____m_____ _____w_____i_____l_____d_____l_____i_____f_____e_____._____\"",
+      "options": [
+        "A. environment",
+        "B. volunteer",
+        "C. ",
+        "D. community"
+      ],
+      "answer": 2,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u09_q04",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____F_____i_____n_____e_____ _____d_____u_____s_____t_____ _____f_____r_____o_____m_____ _____f_____a_____c_____t_____o_____r_____i_____e_____s_____ _____c_____a_____u_____s_____e_____s_____ _____s_____e_____v_____e_____r_____e_____ _____r_____e_____s_____p_____i_____r_____a_____t_____o_____r_____y_____ _____i_____l_____l_____n_____e_____s_____s_____e_____s_____ _____i_____n_____ _____c_____h_____i_____l_____d_____r_____e_____n_____._____\"",
+      "options": [
+        "A. volunteer",
+        "B. ",
+        "C. community",
+        "D. environment"
+      ],
+      "answer": 1,
+      "explanation": "'' (adj) nghĩa là: ."
+    },
+    {
+      "id": "u09_q05",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____R_____i_____s_____i_____n_____g_____ _____g_____l_____o_____b_____a_____l_____ _____t_____e_____m_____p_____e_____r_____a_____t_____u_____r_____e_____s_____ _____a_____r_____e_____ _____a_____ _____d_____i_____r_____e_____c_____t_____ _____c_____o_____n_____s_____e_____q_____u_____e_____n_____c_____e_____ _____o_____f_____ _____g_____r_____e_____e_____n_____h_____o_____u_____s_____e_____ _____g_____a_____s_____ _____e_____m_____i_____s_____s_____i_____o_____n_____s_____._____\"",
+      "options": [
+        "A. environment",
+        "B. volunteer",
+        "C. ",
+        "D. community"
+      ],
+      "answer": 2,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u09_q06",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____C_____o_____m_____m_____e_____r_____c_____i_____a_____l_____ _____h_____u_____n_____t_____i_____n_____g_____ _____u_____p_____s_____e_____t_____s_____ _____t_____h_____e_____ _____n_____a_____t_____u_____r_____a_____l_____ _____b_____a_____l_____a_____n_____c_____e_____ _____o_____f_____ _____f_____o_____r_____e_____s_____t_____ _____e_____c_____o_____s_____y_____s_____t_____e_____m_____s_____._____\"",
+      "options": [
+        "A. ",
+        "B. volunteer",
+        "C. environment",
+        "D. community"
+      ],
+      "answer": 0,
+      "explanation": "'' (n) nghĩa là: ."
+    },
+    {
+      "id": "u09_q07",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____D_____e_____f_____o_____r_____e_____s_____t_____a_____t_____i_____o_____n_____ _____i_____s_____ _____a_____c_____c_____e_____l_____e_____r_____a_____t_____i_____n_____g_____ _____g_____l_____o_____b_____a_____l_____ _____w_____a_____r_____m_____i_____n_____g_____ _____a_____n_____d_____ _____c_____l_____i_____m_____a_____t_____e_____ _____c_____h_____a_____n_____g_____e_____._____\"",
+      "options": [
+        "A. ",
+        "B. environment",
+        "C. community",
+        "D. volunteer"
+      ],
+      "answer": 0,
+      "explanation": "'' (n.phr) nghĩa là: ."
+    },
+    {
+      "id": "u09_q08",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____g_____o_____v_____e_____r_____n_____m_____e_____n_____t_____ _____h_____a_____s_____ _____e_____s_____t_____a_____b_____l_____i_____s_____h_____e_____d_____ _____n_____a_____t_____i_____o_____n_____a_____l_____ _____p_____a_____r_____k_____s_____ _____t_____o_____ _____p_____r_____o_____t_____e_____c_____t_____ _____e_____n_____d_____a_____n_____g_____e_____r_____e_____d_____ _____s_____p_____e_____c_____i_____e_____s_____._____\"",
+      "options": [
+        "A. environment",
+        "B. ",
+        "C. volunteer",
+        "D. community"
+      ],
+      "answer": 1,
+      "explanation": "'' (adj) nghĩa là: ."
+    },
+    {
+      "id": "u09_q09",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____Y_____o_____u_____n_____g_____ _____p_____e_____o_____p_____l_____e_____ _____p_____l_____a_____y_____ _____a_____ _____k_____e_____y_____ _____r_____o_____l_____e_____ _____i_____n_____ _____r_____a_____i_____s_____i_____n_____g_____ _____a_____w_____a_____r_____e_____n_____e_____s_____s_____ _____o_____f_____ _____e_____n_____v_____i_____r_____o_____n_____m_____e_____n_____t_____a_____l_____ _____p_____r_____o_____t_____e_____c_____t_____i_____o_____n_____._____\"",
+      "options": [
+        "A. ",
+        "B. community",
+        "C. volunteer",
+        "D. environment"
+      ],
+      "answer": 0,
+      "explanation": "'' (n.phr) nghĩa là: ."
+    },
+    {
+      "id": "u09_q10",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____G_____l_____o_____b_____a_____l_____ _____w_____a_____r_____m_____i_____n_____g_____ _____i_____s_____ _____c_____a_____u_____s_____i_____n_____g_____ _____e_____x_____t_____r_____e_____m_____e_____ _____w_____e_____a_____t_____h_____e_____r_____ _____e_____v_____e_____n_____t_____s_____ _____l_____i_____k_____e_____ _____f_____l_____o_____o_____d_____s_____ _____a_____n_____d_____ _____h_____e_____a_____t_____w_____a_____v_____e_____s_____._____\"",
+      "options": [
+        "A. environment",
+        "B. volunteer",
+        "C. ",
+        "D. community"
+      ],
+      "answer": 2,
+      "explanation": "'' (adj) nghĩa là: ."
+    }
+  ]
+}

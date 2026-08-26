@@ -1,0 +1,144 @@
+{
+  "id": "hk2-01",
+  "title": "Đề ôn tập tổng hợp Học kỳ 2",
+  "semester": "HK2",
+  "curriculum": {
+    "topics": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "grammar": [
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ]
+  },
+  "items": [
+    {
+      "id": "hk2_01",
+      "prompt": "Equal employment opportunities must _____ to all candidates regardless of gender.",
+      "options": [
+        "A. offer",
+        "B. be offered",
+        "C. offering",
+        "D. offered"
+      ],
+      "answer": 1,
+      "explanation": "Câu bị động với modal verb 'must be offered'."
+    },
+    {
+      "id": "hk2_02",
+      "prompt": "The scientist _____ designed this innovative solar device won an award.",
+      "options": [
+        "A. which",
+        "B. who",
+        "C. whom",
+        "D. whose"
+      ],
+      "answer": 1,
+      "explanation": "'The scientist' chỉ người làm chủ ngữ -> dùng 'who'."
+    },
+    {
+      "id": "hk2_03",
+      "prompt": "If people stop cutting down tropical forests, biodiversity _____ preserved.",
+      "options": [
+        "A. will be",
+        "B. would be",
+        "C. is",
+        "D. was"
+      ],
+      "answer": 0,
+      "explanation": "Câu điều kiện loại 1: 'If + Present Simple, will + V'."
+    },
+    {
+      "id": "hk2_04",
+      "prompt": "If I were the director of the national park, I _____ ecotourism strictly.",
+      "options": [
+        "A. will regulate",
+        "B. would regulate",
+        "C. regulate",
+        "D. regulated"
+      ],
+      "answer": 1,
+      "explanation": "Câu điều kiện loại 2: 'would + V'."
+    },
+    {
+      "id": "hk2_05",
+      "prompt": "She told us that she _____ on a presentation about international organisations.",
+      "options": [
+        "A. is working",
+        "B. was working",
+        "C. worked",
+        "D. has worked"
+      ],
+      "answer": 1,
+      "explanation": "Câu tường thuật lùi thì về Quá khứ tiếp diễn 'was working'."
+    },
+    {
+      "id": "hk2_06",
+      "prompt": "Electric vehicles are considered _____ for city air than traditional petrol cars.",
+      "options": [
+        "A. good",
+        "B. better",
+        "C. best",
+        "D. well"
+      ],
+      "answer": 1,
+      "explanation": "So sánh hơn của 'good' là 'better'."
+    },
+    {
+      "id": "hk2_07",
+      "prompt": "Son Doong is the _____ cave passage discovered in the world.",
+      "options": [
+        "A. large",
+        "B. larger",
+        "C. largest",
+        "D. most large"
+      ],
+      "answer": 2,
+      "explanation": "So sánh nhất tính từ ngắn 'the largest'."
+    },
+    {
+      "id": "hk2_08",
+      "prompt": "The documentary on marine conservation was so _____ that nobody left early.",
+      "options": [
+        "A. interested",
+        "B. interesting",
+        "C. interest",
+        "D. interestingly"
+      ],
+      "answer": 1,
+      "explanation": "Tính từ miêu tả đặc điểm của sự vật dùng đuôi '-ing' (interesting)."
+    },
+    {
+      "id": "hk2_09",
+      "prompt": "Viet Nam actively participates _____ peacekeeping missions organized by the UN.",
+      "options": [
+        "A. on",
+        "B. at",
+        "C. in",
+        "D. with"
+      ],
+      "answer": 2,
+      "explanation": "'participate in' (tham gia vào)."
+    },
+    {
+      "id": "hk2_10",
+      "prompt": "Modern educational institutions rely heavily _____ digital learning platforms.",
+      "options": [
+        "A. on",
+        "B. with",
+        "C. of",
+        "D. for"
+      ],
+      "answer": 0,
+      "explanation": "'rely on' (phụ thuộc / dựa vào)."
+    }
+  ]
+}
