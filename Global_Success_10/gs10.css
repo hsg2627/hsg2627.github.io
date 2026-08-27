@@ -512,6 +512,13 @@ body[data-unit="10"]{ --accent:#33691E; --accent-2:#00695C; --accent-soft:#EDF3E
 }
 .colloc .v{ text-align:right; font-weight:700; color:var(--accent); }
 .colloc .n{ padding-left:.7em; border-left:3px solid var(--rule); }
+/* Bảng ghép từ 5–6 dòng ở màn thấp (1280×720) hay tràn. Thu lề ở mức denser
+   thay vì thu chữ nhỏ thêm — hàng ghế cuối vẫn phải đọc được. */
+.slide.dense  .colloc{ gap:.38em; }
+.slide.denser .colloc{ gap:.30em; }
+.slide.denser .colloc li{ padding:.34em .62em; }
+.slide.denser .tf li{ padding:.4em .62em; margin-bottom:.34em; }
+
 .colloc .blank{
   display:inline-block; min-width:5.5em;
   border-bottom:3px dotted var(--muted);
