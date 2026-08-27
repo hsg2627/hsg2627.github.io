@@ -147,6 +147,61 @@ Hai lớp phụ khi cần: `class="slide bare"` bỏ hẳn màn lọc (slide tra
 Slide bìa (`.cover`) và slide phân đoạn (`.phase`) tự có nền đặc nên không bị
 ảnh nền đè lên — cố ý để giữ nhịp thị giác giữa các phần.
 
+## Theme "Family Time" — theo template Canva
+
+Bật bằng một class trên `<body>`:
+
+```html
+<body data-unit="1" class="tpl-family">
+```
+
+Unit 1 đã bật sẵn cho cả 8 tiết.
+
+### Lấy gì từ template
+
+| | |
+|---|---|
+| Nền kem | `#FFFAE8` — đo từ chính hai ảnh nền |
+| Chữ tiêu đề | nâu `#7A4636`, serif **nghiêng** |
+| Ảnh bìa | `assets/tpl-family-cover.webp` — cả nhà trên sofa |
+| Ảnh phân đoạn | `assets/tpl-family-content.webp` — hai mẹ con đánh răng |
+
+**Chữ thân bài giữ sans**, không nghiêng. Nghiêng cả trang chiếu lên tường thì
+mỏi mắt; template cũng chỉ nghiêng phần tiêu đề.
+
+### Chữ không được đè vào hình
+
+Đo từ chính ảnh nền, không đoán:
+
+| Ảnh | Hình bắt đầu ở | `padding-right` |
+|---|---|---|
+| bìa | **40%** bề rộng | 59% |
+| phân đoạn | **73%** | 29% |
+
+Đổi ảnh nền thì **đo lại**: lọc pixel lệch khỏi màu nền `#FFFAE8`, lấy cột trái
+nhất có hơn 1% chiều cao là mép hình.
+
+### Màu đã chỉnh cho đủ tương phản
+
+Trên nền kem, ngưỡng WCAG AA là 4,5. Hai màu lấy thẳng từ template không đạt:
+
+| | template | đã chỉnh | tương phản |
+|---|---|---|---|
+| xanh sofa | `#5E8C6A` (3,70 ✗) | `#4E7C5A` | **4,61** |
+| chữ phụ | `#8A6F5E` (4,45 ✗) | `#886D5C` | **4,58** |
+
+Bốn màu còn lại giữ nguyên: chữ chính 11,3 · nâu tiêu đề 7,3 · đúng 5,9 · sai 5,9.
+
+### Font: chưa giống hệt
+
+Template dùng một serif tương phản cao (kiểu Playfair Display). Module **cấm tải
+font ngoài** (§2.4) nên đang dùng **Palatino Linotype** — serif có sẵn trên
+Windows, gần nhất về độ ấm và độ tương phản.
+
+Muốn giống hệt: gửi tệp `.woff2` của font đó, bỏ vào `assets/fonts/` và khai
+`@font-face`. Vẫn chạy offline. Nhiều font Canva dùng có giấy phép OFL nên nhúng
+là hợp lệ — kiểm giấy phép trước khi nhúng.
+
 ## Bộ khung viết slide
 
 | Dùng để | Markup |
