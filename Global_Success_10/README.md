@@ -239,6 +239,27 @@ dưới ngưỡng. Sau khi chỉnh, **12/12 cặp màu đều đạt AA** (thấ
 Khung nội dung của template nhỏ hơn slide tràn viền, nên `.cards` và `.words` ở
 theme này có lề chặt hơn mặc định. **Thu lề, không thu chữ.**
 
+## Hai luật về chữ trên slide
+
+**1. Ảnh bìa nào đã in sẵn tên unit thì đừng chèn chữ lên.**
+Template Unit 2 đã có "UNIT 2: HUMANS & THE ENVIRONMENT" in trong ảnh — chèn
+thêm tiêu đề là đè chồng. Theme `tpl-env` ẩn toàn bộ nội dung `.slide.cover`
+bằng kiểu *visually hidden*, nên trình đọc màn hình vẫn đọc được tiêu đề.
+
+Template Unit 1 thì ngược lại — ảnh không có chữ, nên `.slide.cover` vẫn hiện
+tiêu đề bình thường. **Xem ảnh trước khi quyết.**
+
+**2. Mọi câu lệnh hướng dẫn trên slide phải là tiếng Anh.**
+Nút lật, lời dẫn nhiệm vụ, ghi chú cho giáo viên, bài về nhà — tất cả tiếng Anh.
+
+*Ngoại lệ, giữ tiếng Việt:*
+
+- **Nghĩa từ vựng** trong `<li class="word">` — đó là nội dung bài, không phải câu lệnh.
+- **Thuật ngữ văn hoá Việt** chú giải cho tiếng Anh (*filial piety — hiếu thảo*).
+
+Nhãn nút thống nhất: `Answer` · `Hint` · `Meaning` · `Example` · `Show` ·
+`Take a guess` · `Teacher note`.
+
 ## Bộ khung viết slide
 
 | Dùng để | Markup |

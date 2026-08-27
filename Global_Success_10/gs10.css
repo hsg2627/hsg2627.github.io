@@ -859,6 +859,15 @@ body.tpl-env .slide.cover{
   background:url(assets/tpl-env-cover.webp) center/cover no-repeat;
   color:#22282B;
 }
+/* Ảnh bìa của template ĐÃ CÓ SẴN tên unit in trong ảnh. Chèn thêm chữ lên
+   là đè chồng lên nhau. Nên ẩn toàn bộ nội dung slide bìa — nhưng ẩn theo
+   kiểu "visually hidden" để trình đọc màn hình vẫn đọc được tiêu đề. */
+body.tpl-env .slide.cover > *{
+  position:absolute; width:1px; height:1px;
+  margin:-1px; padding:0; overflow:hidden;
+  clip:rect(0 0 0 0); white-space:nowrap; border:0;
+}
+
 body.tpl-env .slide.cover.is-current{
   display:grid; place-content:center; text-align:center;
   /* Khung trắng ở x 18.5–78.9%, y 31.3–68.6%.
