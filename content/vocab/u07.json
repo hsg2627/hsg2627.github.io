@@ -507,12 +507,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Vietnam is ______ted to supporting peacekeeping forces globally.\"",
       "options": [
-        "A. peacekeeping",
-        "B. promote",
-        "C. commit",
-        "D. bilateral"
+        "A. stand for",
+        "B. enter",
+        "C. eliminate trade barriers",
+        "D. commit"
       ],
-      "answer": 2,
+      "answer": 3,
       "explanation": "'commit' (v) nghĩa là: cam kết, giao phó trách nhiệm."
     },
     {
@@ -520,12 +520,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Vietnam has participated in international ______ activities since 2014.\"",
       "options": [
-        "A. commit",
-        "B. peacekeeping",
-        "C. poverty",
-        "D. regional"
+        "A. peacekeeping",
+        "B. competitive",
+        "C. technical experts",
+        "D. bilateral"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "'peacekeeping' (adj/n) nghĩa là: thuộc về gìn giữ hòa bình."
     },
     {
@@ -533,12 +533,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"The organization sent technical ______s to assist with local health programs.\"",
       "options": [
-        "A. expert",
-        "B. multilateral",
-        "C. poverty",
-        "D. commit"
+        "A. stand for",
+        "B. play ball",
+        "C. commit",
+        "D. expert"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'expert' (n) nghĩa là: chuyên gia chuyên sâu."
     },
     {
@@ -546,12 +546,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"International trade is ______ for boosting national economic growth.\"",
       "options": [
-        "A. respect",
-        "B. essential",
-        "C. regional",
-        "D. multilateral"
+        "A. essential",
+        "B. join in",
+        "C. respect",
+        "D. cooperation"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "'essential' (adj) nghĩa là: cốt yếu, thiết yếu."
     },
     {
@@ -559,12 +559,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"ASEAN aims to ______ regional cooperation and cultural exchange.\"",
       "options": [
-        "A. expert",
-        "B. relation",
-        "C. foster",
-        "D. welcome"
+        "A. partnership",
+        "B. play ball",
+        "C. eliminate trade barriers",
+        "D. foster"
       ],
-      "answer": 2,
+      "answer": 3,
       "explanation": "'foster' (v) nghĩa là: nuôi dưỡng, bồi đắp, thúc đẩy."
     },
     {
@@ -572,12 +572,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"The main ______ of UNICEF is to protect children’s rights worldwide.\"",
       "options": [
-        "A. promote",
-        "B. aim",
-        "C. expert",
-        "D. welcome"
+        "A. aim",
+        "B. essential",
+        "C. multilateral",
+        "D. peacekeeping"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "'aim' (n/v) nghĩa là: mục tiêu / đặt ra mục tiêu."
     },
     {
@@ -585,12 +585,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Domestic businesses must become more ______ in the global market.\"",
       "options": [
-        "A. promote",
-        "B. aim",
-        "C. bilateral",
-        "D. competitive"
+        "A. competitive",
+        "B. clear the way (for sth)",
+        "C. win-win partnership",
+        "D. bilateral"
       ],
-      "answer": 3,
+      "answer": 0,
       "explanation": "'competitive' (adj) nghĩa là: mang tính cạnh tranh."
     },
     {
@@ -598,12 +598,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"The bilateral agreement has brought immense ______ benefits to both nations.\"",
       "options": [
-        "A. essential",
-        "B. economic",
-        "C. welcome",
-        "D. invest"
+        "A. welcome",
+        "B. peacekeeping",
+        "C. count on",
+        "D. economic"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "'economic' (adj) nghĩa là: thuộc về kinh tế."
     },
     {
@@ -611,12 +611,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Vietnam has a rapidly growing market ______.\"",
       "options": [
-        "A. multilateral",
-        "B. cooperation",
-        "C. enter",
-        "D. economy"
+        "A. enter into",
+        "B. economy",
+        "C. build up",
+        "D. welcome"
       ],
-      "answer": 3,
+      "answer": 1,
       "explanation": "'economy' (n) nghĩa là: nền kinh tế."
     },
     {
@@ -624,13 +624,663 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"______ing the World Trade Organization was a historic milestone for Vietnam.\"",
       "options": [
-        "A. welcome",
+        "A. go the extra mile",
+        "B. commit",
+        "C. form relations with",
+        "D. enter"
+      ],
+      "answer": 3,
+      "explanation": "'enter' (v) nghĩa là: gia nhập, bước vào."
+    },
+    {
+      "id": "u07_q11",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The international fund plans to ______ millions of dollars in clean energy.\"",
+      "options": [
+        "A. foster diplomatic relations",
         "B. expert",
-        "C. enter",
-        "D. economy"
+        "C. multilateral",
+        "D. invest"
+      ],
+      "answer": 3,
+      "explanation": "'invest' (v) nghĩa là: đầu tư."
+    },
+    {
+      "id": "u07_q12",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Many global programs focus on reducing ______ in developing countries.\"",
+      "options": [
+        "A. cooperation",
+        "B. expert",
+        "C. poverty",
+        "D. member state"
       ],
       "answer": 2,
-      "explanation": "'enter' (v) nghĩa là: gia nhập, bước vào."
+      "explanation": "'poverty' (n) nghĩa là: sự nghèo đói, đói nghèo."
+    },
+    {
+      "id": "u07_q13",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"UNESCO works to ______ and protect cultural heritage sites.\"",
+      "options": [
+        "A. promote",
+        "B. go the extra mile",
+        "C. stand for",
+        "D. count on"
+      ],
+      "answer": 0,
+      "explanation": "'promote' (v) nghĩa là: thúc đẩy, quảng bá."
+    },
+    {
+      "id": "u07_q14",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Improving educational ______ is essential for sustainable development.\"",
+      "options": [
+        "A. regional",
+        "B. quality",
+        "C. partnership",
+        "D. read between the lines"
+      ],
+      "answer": 1,
+      "explanation": "'quality' (n) nghĩa là: chất lượng, phẩm chất."
+    },
+    {
+      "id": "u07_q15",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Member states work closely to solve common ______ issues.\"",
+      "options": [
+        "A. regional",
+        "B. poverty",
+        "C. partnership",
+        "D. cooperation"
+      ],
+      "answer": 0,
+      "explanation": "'regional' (adj) nghĩa là: thuộc về khu vực."
+    },
+    {
+      "id": "u07_q16",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Vietnam has formed diplomatic ______s with almost all countries.\"",
+      "options": [
+        "A. technical",
+        "B. maintain regional peace",
+        "C. relation",
+        "D. on the same page"
+      ],
+      "answer": 2,
+      "explanation": "'relation' (n) nghĩa là: mối quan hệ ngoại giao."
+    },
+    {
+      "id": "u07_q17",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"International agreements must be ______ed by all signatory parties.\"",
+      "options": [
+        "A. go the extra mile",
+        "B. respect",
+        "C. count on",
+        "D. multilateral cooperation"
+      ],
+      "answer": 1,
+      "explanation": "'respect' (v/n) nghĩa là: tôn trọng / sự tôn trọng."
+    },
+    {
+      "id": "u07_q18",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The project received ______ support from international experts.\"",
+      "options": [
+        "A. technical",
+        "B. expert",
+        "C. competitive",
+        "D. economic"
+      ],
+      "answer": 0,
+      "explanation": "'technical' (adj) nghĩa là: thuộc về kỹ thuật, chuyên môn."
+    },
+    {
+      "id": "u07_q19",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Free ______ helps lower the prices of imported goods for consumers.\"",
+      "options": [
+        "A. win-win partnership",
+        "B. trade",
+        "C. economic",
+        "D. join in"
+      ],
+      "answer": 1,
+      "explanation": "'trade' (n/v) nghĩa là: thương mại, buôn bán."
+    },
+    {
+      "id": "u07_q20",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"UNICEF has helped ______ millions of children in poor rural areas.\"",
+      "options": [
+        "A. count on",
+        "B. vaccinate",
+        "C. look forward to",
+        "D. join in"
+      ],
+      "answer": 1,
+      "explanation": "'vaccinate' (v) nghĩa là: tiêm vắc-xin, chủng ngừa."
+    },
+    {
+      "id": "u07_q21",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"hoan nghênh, chào đón\"?",
+      "options": [
+        "A. peacekeeping",
+        "B. eliminate trade barriers",
+        "C. welcome",
+        "D. relation"
+      ],
+      "answer": 2,
+      "explanation": "'welcome' (v) nghĩa là: hoan nghênh, chào đón."
+    },
+    {
+      "id": "u07_q22",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"sự hợp tác\"?",
+      "options": [
+        "A. quality",
+        "B. cooperation",
+        "C. carry out",
+        "D. commit"
+      ],
+      "answer": 1,
+      "explanation": "'cooperation' (n) nghĩa là: sự hợp tác."
+    },
+    {
+      "id": "u07_q23",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"quan hệ đối tác\"?",
+      "options": [
+        "A. play ball",
+        "B. read between the lines",
+        "C. peacekeeping",
+        "D. partnership"
+      ],
+      "answer": 3,
+      "explanation": "'partnership' (n) nghĩa là: quan hệ đối tác."
+    },
+    {
+      "id": "u07_q24",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"song phương, hai bên\"?",
+      "options": [
+        "A. regional",
+        "B. member state",
+        "C. clear the way (for sth)",
+        "D. bilateral"
+      ],
+      "answer": 3,
+      "explanation": "'bilateral' (adj) nghĩa là: song phương, hai bên."
+    },
+    {
+      "id": "u07_q25",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"đa phương, nhiều bên\"?",
+      "options": [
+        "A. multilateral",
+        "B. read between the lines",
+        "C. commit",
+        "D. respect"
+      ],
+      "answer": 0,
+      "explanation": "'multilateral' (adj) nghĩa là: đa phương, nhiều bên."
+    },
+    {
+      "id": "u07_q26",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tham gia vào hoạt động gì\"?",
+      "options": [
+        "A. expert",
+        "B. provide technical support",
+        "C. open up",
+        "D. take part in / participate in"
+      ],
+      "answer": 3,
+      "explanation": "'take part in / participate in' (phr.v) nghĩa là: tham gia vào hoạt động gì."
+    },
+    {
+      "id": "u07_q27",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"xây dựng, củng cố dần lên\"?",
+      "options": [
+        "A. expert",
+        "B. eliminate trade barriers",
+        "C. build up",
+        "D. foster"
+      ],
+      "answer": 2,
+      "explanation": "'build up' (phr.v) nghĩa là: xây dựng, củng cố dần lên."
+    },
+    {
+      "id": "u07_q28",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tin tưởng, dựa dẫm vào ai\"?",
+      "options": [
+        "A. promote",
+        "B. respect",
+        "C. count on",
+        "D. bilateral relations"
+      ],
+      "answer": 2,
+      "explanation": "'count on' (phr.v) nghĩa là: tin tưởng, dựa dẫm vào ai."
+    },
+    {
+      "id": "u07_q29",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"thực hiện nghĩa vụ, dự án\"?",
+      "options": [
+        "A. international organisation",
+        "B. gain economic benefits",
+        "C. poverty",
+        "D. carry out"
+      ],
+      "answer": 3,
+      "explanation": "'carry out' (phr.v) nghĩa là: thực hiện nghĩa vụ, dự án."
+    },
+    {
+      "id": "u07_q30",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"chính thức ký kết, bắt đầu\"?",
+      "options": [
+        "A. look forward to",
+        "B. trade",
+        "C. enter into",
+        "D. welcome"
+      ],
+      "answer": 2,
+      "explanation": "'enter into' (phr.v) nghĩa là: chính thức ký kết, bắt đầu."
+    },
+    {
+      "id": "u07_q31",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"mở ra (cơ hội, thị trường)\"?",
+      "options": [
+        "A. win-win partnership",
+        "B. open up",
+        "C. on the same page",
+        "D. look forward to"
+      ],
+      "answer": 1,
+      "explanation": "'open up' (phr.v) nghĩa là: mở ra (cơ hội, thị trường)."
+    },
+    {
+      "id": "u07_q32",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tham gia, hòa mình vào\"?",
+      "options": [
+        "A. multilateral cooperation",
+        "B. economy",
+        "C. join in",
+        "D. respect"
+      ],
+      "answer": 2,
+      "explanation": "'join in' (phr.v) nghĩa là: tham gia, hòa mình vào."
+    },
+    {
+      "id": "u07_q33",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"viết tắt của, đại diện cho\"?",
+      "options": [
+        "A. stand for",
+        "B. go the extra mile",
+        "C. join in",
+        "D. enter into"
+      ],
+      "answer": 0,
+      "explanation": "'stand for' (phr.v) nghĩa là: viết tắt của, đại diện cho."
+    },
+    {
+      "id": "u07_q34",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"mong chờ sự hợp tác\"?",
+      "options": [
+        "A. maintain regional peace",
+        "B. regional",
+        "C. technical experts",
+        "D. look forward to"
+      ],
+      "answer": 3,
+      "explanation": "'look forward to' (phr.v) nghĩa là: mong chờ sự hợp tác."
+    },
+    {
+      "id": "u07_q35",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"dẫn tới (kết quả, thành tựu)\"?",
+      "options": [
+        "A. lead to",
+        "B. clear the way (for sth)",
+        "C. enter",
+        "D. economic"
+      ],
+      "answer": 0,
+      "explanation": "'lead to' (phr.v) nghĩa là: dẫn tới (kết quả, thành tựu)."
+    },
+    {
+      "id": "u07_q36",
+      "ai_generated": true,
+      "prompt": "\"invest\" (v) có nghĩa là gì?",
+      "options": [
+        "A. hoan nghênh, chào đón",
+        "B. đầu tư",
+        "C. tham gia, hòa mình vào",
+        "D. tham gia vào hoạt động gì"
+      ],
+      "answer": 1,
+      "explanation": "'invest' (v) nghĩa là: đầu tư."
+    },
+    {
+      "id": "u07_q37",
+      "ai_generated": true,
+      "prompt": "\"poverty\" (n) có nghĩa là gì?",
+      "options": [
+        "A. sự nghèo đói, đói nghèo",
+        "B. đầu tư",
+        "C. thúc đẩy, quảng bá",
+        "D. xây dựng, củng cố dần lên"
+      ],
+      "answer": 0,
+      "explanation": "'poverty' (n) nghĩa là: sự nghèo đói, đói nghèo."
+    },
+    {
+      "id": "u07_q38",
+      "ai_generated": true,
+      "prompt": "\"promote\" (v) có nghĩa là gì?",
+      "options": [
+        "A. xóa bỏ rào cản thương mại",
+        "B. cốt yếu, thiết yếu",
+        "C. thúc đẩy, quảng bá",
+        "D. gia nhập, bước vào"
+      ],
+      "answer": 2,
+      "explanation": "'promote' (v) nghĩa là: thúc đẩy, quảng bá."
+    },
+    {
+      "id": "u07_q39",
+      "ai_generated": true,
+      "prompt": "\"quality\" (n) có nghĩa là gì?",
+      "options": [
+        "A. đa phương, nhiều bên",
+        "B. thuộc về khu vực",
+        "C. chất lượng, phẩm chất",
+        "D. vun đắp quan hệ ngoại giao"
+      ],
+      "answer": 2,
+      "explanation": "'quality' (n) nghĩa là: chất lượng, phẩm chất."
+    },
+    {
+      "id": "u07_q40",
+      "ai_generated": true,
+      "prompt": "\"regional\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. chuyên gia kỹ thuật",
+        "B. thuộc về gìn giữ hòa bình",
+        "C. hợp tác, chịu làm việc chung",
+        "D. thuộc về khu vực"
+      ],
+      "answer": 3,
+      "explanation": "'regional' (adj) nghĩa là: thuộc về khu vực."
+    },
+    {
+      "id": "u07_q41",
+      "ai_generated": true,
+      "prompt": "\"relation\" (n) có nghĩa là gì?",
+      "options": [
+        "A. viết tắt của, đại diện cho",
+        "B. chuyên gia kỹ thuật",
+        "C. vun đắp quan hệ ngoại giao",
+        "D. mối quan hệ ngoại giao"
+      ],
+      "answer": 3,
+      "explanation": "'relation' (n) nghĩa là: mối quan hệ ngoại giao."
+    },
+    {
+      "id": "u07_q42",
+      "ai_generated": true,
+      "prompt": "\"respect\" (v/n) có nghĩa là gì?",
+      "options": [
+        "A. tôn trọng / sự tôn trọng",
+        "B. mong chờ sự hợp tác",
+        "C. thúc đẩy, quảng bá",
+        "D. tham gia, hòa mình vào"
+      ],
+      "answer": 0,
+      "explanation": "'respect' (v/n) nghĩa là: tôn trọng / sự tôn trọng."
+    },
+    {
+      "id": "u07_q43",
+      "ai_generated": true,
+      "prompt": "\"technical\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. thuộc về kỹ thuật, chuyên môn",
+        "B. mối quan hệ hợp tác đôi bên cùng có lợi",
+        "C. mối quan hệ ngoại giao",
+        "D. sẵn sàng nỗ lực vượt bậc để giúp đỡ"
+      ],
+      "answer": 0,
+      "explanation": "'technical' (adj) nghĩa là: thuộc về kỹ thuật, chuyên môn."
+    },
+    {
+      "id": "u07_q44",
+      "ai_generated": true,
+      "prompt": "\"trade\" (n/v) có nghĩa là gì?",
+      "options": [
+        "A. thương mại, buôn bán",
+        "B. chính thức ký kết, bắt đầu",
+        "C. thuộc về kỹ thuật, chuyên môn",
+        "D. thuộc về kinh tế"
+      ],
+      "answer": 0,
+      "explanation": "'trade' (n/v) nghĩa là: thương mại, buôn bán."
+    },
+    {
+      "id": "u07_q45",
+      "ai_generated": true,
+      "prompt": "\"vaccinate\" (v) có nghĩa là gì?",
+      "options": [
+        "A. quan hệ đối tác",
+        "B. mong chờ sự hợp tác",
+        "C. tiêm vắc-xin, chủng ngừa",
+        "D. giữ vững hòa bình khu vực"
+      ],
+      "answer": 2,
+      "explanation": "'vaccinate' (v) nghĩa là: tiêm vắc-xin, chủng ngừa."
+    },
+    {
+      "id": "u07_q46",
+      "ai_generated": true,
+      "prompt": "\"welcome\" (v) có nghĩa là gì?",
+      "options": [
+        "A. hoan nghênh, chào đón",
+        "B. hợp tác, chịu làm việc chung",
+        "C. xây dựng, củng cố dần lên",
+        "D. tôn trọng / sự tôn trọng"
+      ],
+      "answer": 0,
+      "explanation": "'welcome' (v) nghĩa là: hoan nghênh, chào đón."
+    },
+    {
+      "id": "u07_q47",
+      "ai_generated": true,
+      "prompt": "\"cooperation\" (n) có nghĩa là gì?",
+      "options": [
+        "A. sự hợp tác",
+        "B. vun đắp quan hệ ngoại giao",
+        "C. mang tính cạnh tranh",
+        "D. cung cấp hỗ trợ kỹ thuật"
+      ],
+      "answer": 0,
+      "explanation": "'cooperation' (n) nghĩa là: sự hợp tác."
+    },
+    {
+      "id": "u07_q48",
+      "ai_generated": true,
+      "prompt": "\"partnership\" (n) có nghĩa là gì?",
+      "options": [
+        "A. thuộc về kỹ thuật, chuyên môn",
+        "B. hoan nghênh, chào đón",
+        "C. quan hệ đối tác",
+        "D. nuôi dưỡng, bồi đắp, thúc đẩy"
+      ],
+      "answer": 2,
+      "explanation": "'partnership' (n) nghĩa là: quan hệ đối tác."
+    },
+    {
+      "id": "u07_q49",
+      "ai_generated": true,
+      "prompt": "\"bilateral\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. tiêm vắc-xin, chủng ngừa",
+        "B. quan hệ song phương",
+        "C. đa phương, nhiều bên",
+        "D. song phương, hai bên"
+      ],
+      "answer": 3,
+      "explanation": "'bilateral' (adj) nghĩa là: song phương, hai bên."
+    },
+    {
+      "id": "u07_q50",
+      "ai_generated": true,
+      "prompt": "\"multilateral\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. tiêm vắc-xin, chủng ngừa",
+        "B. cung cấp hỗ trợ kỹ thuật",
+        "C. đa phương, nhiều bên",
+        "D. tham gia, hòa mình vào"
+      ],
+      "answer": 2,
+      "explanation": "'multilateral' (adj) nghĩa là: đa phương, nhiều bên."
+    },
+    {
+      "id": "u07_q51",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The country has gained great economic benefits since joining international trade organizations.\"?",
+      "options": [
+        "A. aim",
+        "B. competitive",
+        "C. gain economic benefits",
+        "D. clear the way (for sth)"
+      ],
+      "answer": 2,
+      "explanation": "'gain economic benefits' (colloc) nghĩa là: gặt hái các lợi ích kinh tế lớn lao."
+    },
+    {
+      "id": "u07_q52",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Vietnam actively seeks to form cooperative relations with countries all over the world.\"?",
+      "options": [
+        "A. form relations with",
+        "B. quality",
+        "C. take part in / participate in",
+        "D. on the same page"
+      ],
+      "answer": 0,
+      "explanation": "'form relations with' (colloc) nghĩa là: thiết lập mối quan hệ với."
+    },
+    {
+      "id": "u07_q53",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The bilateral agreement establishes a stable ______.\"?",
+      "options": [
+        "A. multilateral",
+        "B. vaccinate",
+        "C. win-win partnership",
+        "D. go the extra mile"
+      ],
+      "answer": 2,
+      "explanation": "'win-win partnership' (colloc) nghĩa là: mối quan hệ hợp tác đôi bên cùng có lợi."
+    },
+    {
+      "id": "u07_q54",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Member states work together to ______ and stability.\"?",
+      "options": [
+        "A. technical",
+        "B. multilateral",
+        "C. foster economic growth",
+        "D. maintain regional peace"
+      ],
+      "answer": 3,
+      "explanation": "'maintain regional peace' (colloc) nghĩa là: giữ vững hòa bình khu vực."
+    },
+    {
+      "id": "u07_q55",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Vietnam has been an active ______ of the United Nations since 1977.\"?",
+      "options": [
+        "A. vaccinate",
+        "B. bilateral",
+        "C. peacekeeping",
+        "D. member state"
+      ],
+      "answer": 3,
+      "explanation": "'member state' (colloc) nghĩa là: quốc gia thành viên."
+    },
+    {
+      "id": "u07_q56",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"UNICEF is a highly respected ______ supporting children.\"?",
+      "options": [
+        "A. form relations with",
+        "B. international organisation",
+        "C. vaccinate",
+        "D. foster"
+      ],
+      "answer": 1,
+      "explanation": "'international organisation' (colloc) nghĩa là: tổ chức quốc tế."
+    },
+    {
+      "id": "u07_q57",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Vietnamese military doctors participated in UN ______.\"?",
+      "options": [
+        "A. peacekeeping activities",
+        "B. technical experts",
+        "C. partnership",
+        "D. lead to"
+      ],
+      "answer": 0,
+      "explanation": "'peacekeeping activities' (colloc) nghĩa là: các hoạt động gìn giữ hòa bình."
+    },
+    {
+      "id": "u07_q58",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The WHO sent ______ to assist with disease prevention.\"?",
+      "options": [
+        "A. technical experts",
+        "B. provide technical support",
+        "C. lead to",
+        "D. peacekeeping activities"
+      ],
+      "answer": 0,
+      "explanation": "'technical experts' (colloc) nghĩa là: chuyên gia kỹ thuật."
+    },
+    {
+      "id": "u07_q59",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"International agencies ______ to modernize rural farms.\"?",
+      "options": [
+        "A. international organisation",
+        "B. bilateral relations",
+        "C. technical experts",
+        "D. provide technical support"
+      ],
+      "answer": 3,
+      "explanation": "'provide technical support' (colloc) nghĩa là: cung cấp hỗ trợ kỹ thuật."
+    },
+    {
+      "id": "u07_q60",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Free trade agreements aim to ______ among nations.\"?",
+      "options": [
+        "A. competitive",
+        "B. partnership",
+        "C. build up",
+        "D. eliminate trade barriers"
+      ],
+      "answer": 3,
+      "explanation": "'eliminate trade barriers' (colloc) nghĩa là: xóa bỏ rào cản thương mại."
     }
   ]
 }

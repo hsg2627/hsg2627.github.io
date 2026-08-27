@@ -36,16 +36,32 @@ async function renderList() {
     const container = document.getElementById('vocab-list-container');
     if (!container) return;
 
-    container.innerHTML = unitModules.map(m => `
-      <a class="card" href="/practice/vocabulary/?unit=${m.gs_unit}">
-        <span class="ico">📖</span>
-        <h3>Unit ${m.gs_unit}: ${m.title}</h3>
-        <div class="meta">
-          <span>Học kỳ: <strong>${m.semester}</strong></span>
-          <span>Chủ đề: <strong>Topic ${m.topic}</strong></span>
-        </div>
-      </a>
-    `).join('');
+    // Get progress from Spine state
+    const spineState = Portal.spine.state;
+
+    container.innerHTML = unitModules.map(m => {
+      // Count how many quiz items the student has answered for this unit's vocab
+      const unitKey = String(m.gs_unit);
+      const unitPad = String(m.gs_unit).padStart(2, '0');
+      const answeredCount = Object.keys(spineState.items || {}).filter(
+        k => k.startsWith(`u${unitPad}_q`)
+      ).length;
+
+      const progressText = answeredCount > 0
+        ? `<span style="color:var(--ok);">✓ ${answeredCount}/60 câu</span>`
+        : `<span>60 câu luyện tập</span>`;
+
+      return `
+        <a class="card" href="/practice/vocabulary/?unit=${m.gs_unit}">
+          <span class="ico">📖</span>
+          <h3>Unit ${m.gs_unit}: ${m.title}</h3>
+          <div class="meta">
+            <span>Học kỳ: <strong>${m.semester}</strong></span>
+            ${progressText}
+          </div>
+        </a>
+      `;
+    }).join('');
   } catch (err) {
     const container = document.getElementById('vocab-list-container');
     if (container) {
@@ -73,19 +89,55 @@ async function renderUnit(unitNum) {
 
     let activeTab = 'flashcard'; // 'flashcard' | 'quiz'
     let flashcardIndex = 0;
-    let quizIndex = 0;
     let selectedOptionIndex = null;
     let isAnswered = false;
 
+    // ── Progress tracking via Spine state ──
+    const spineState = Portal.spine.state;
+
+    // Find first unanswered item to resume
+    function getQuizIndex() {
+      if (!data.items || data.items.length === 0) return 0;
+      for (let i = 0; i < data.items.length; i++) {
+        const itemState = spineState.items[data.items[i].id];
+        if (!itemState || itemState.attempts === 0) return i;
+      }
+      return data.items.length; // all done
+    }
+
+    let quizIndex = getQuizIndex();
+
+    function countAnswered() {
+      if (!data.items) return 0;
+      return data.items.filter(it => {
+        const s = spineState.items[it.id];
+        return s && s.attempts > 0;
+      }).length;
+    }
+
     function renderView() {
+      const answered = countAnswered();
+      const total = data.items ? data.items.length : 0;
+      const pct = total ? Math.round((answered / total) * 100) : 0;
+
       container.innerHTML = `
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px;">
           <h2 style="margin:0;">Unit ${data.unit}: ${data.title}</h2>
           <div style="display:flex; gap:6px;">
             <button id="tab-btn-flashcard" class="btn ${activeTab === 'flashcard' ? '' : 'ghost'}" style="min-height:36px; padding:6px 12px; font-size:13.5px;">🗂️ Thẻ từ (${data.words.length})</button>
-            <button id="tab-btn-quiz" class="btn ${activeTab === 'quiz' ? '' : 'ghost'}" style="min-height:36px; padding:6px 12px; font-size:13.5px;">📝 Luyện tập (${data.items.length})</button>
+            <button id="tab-btn-quiz" class="btn ${activeTab === 'quiz' ? '' : 'ghost'}" style="min-height:36px; padding:6px 12px; font-size:13.5px;">📝 Luyện tập (${answered}/${total})</button>
           </div>
         </div>
+
+        ${activeTab === 'quiz' ? `
+          <div class="progress-bar-wrap" style="margin-bottom:16px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+              <span style="font-size:13px; color:var(--muted);">Tiến độ: <strong>${answered}/${total}</strong> câu</span>
+              <span style="font-size:13px; color:var(--muted);">${pct}%</span>
+            </div>
+            <div class="bar" style="height:8px; border-radius:4px; background:var(--surface2, #e8e8e8);"><i style="width:${pct}%; background:var(--ok, #34a853); height:100%; display:block; border-radius:4px; transition:width 0.3s ease;"></i></div>
+          </div>
+        ` : ''}
 
         <div id="tab-content"></div>
       `;
@@ -179,19 +231,54 @@ async function renderUnit(unitNum) {
         return;
       }
 
+      const answered = countAnswered();
+      const total = data.items.length;
+
       if (quizIndex >= data.items.length) {
+        // All done — show completion screen
+        const correctCount = data.items.filter(it => {
+          const s = spineState.items[it.id];
+          return s && s.correct > 0;
+        }).length;
+        const accuracy = total ? Math.round((correctCount / total) * 100) : 0;
+
         tabContent.innerHTML = `
           <div class="panel" style="text-align:center; padding:32px 16px;">
             <div style="font-size:42px; margin-bottom:12px;">🎉</div>
             <h2 style="color:var(--navy); margin-top:0;">Hoàn thành bài tập từ vựng!</h2>
-            <p style="color:var(--muted);">Em đã hoàn thành tất cả câu hỏi của Unit ${data.unit}.</p>
+            <p style="color:var(--muted);">Em đã hoàn thành tất cả ${total} câu hỏi của Unit ${data.unit}.</p>
+            <div style="display:flex; justify-content:center; gap:20px; margin:16px 0;">
+              <div style="text-align:center;">
+                <div style="font-size:24px; font-weight:700; color:var(--ok);">${correctCount}</div>
+                <div style="font-size:12px; color:var(--muted);">Đúng</div>
+              </div>
+              <div style="text-align:center;">
+                <div style="font-size:24px; font-weight:700; color:var(--crit);">${total - correctCount}</div>
+                <div style="font-size:12px; color:var(--muted);">Sai</div>
+              </div>
+              <div style="text-align:center;">
+                <div style="font-size:24px; font-weight:700; color:var(--navy);">${accuracy}%</div>
+                <div style="font-size:12px; color:var(--muted);">Chính xác</div>
+              </div>
+            </div>
             <div class="btn-row" style="justify-content:center; margin-top:20px;">
-              <button id="btn-restart-quiz" class="btn ghost">Làm lại</button>
+              <button id="btn-review-wrong" class="btn ghost">Ôn lại câu sai</button>
               <a href="/practice/vocabulary/" class="btn">Chủ đề khác →</a>
             </div>
           </div>
         `;
-        document.getElementById('btn-restart-quiz')?.addEventListener('click', () => {
+
+        document.getElementById('btn-review-wrong')?.addEventListener('click', () => {
+          // Jump to the first wrong/unanswered item
+          for (let i = 0; i < data.items.length; i++) {
+            const s = spineState.items[data.items[i].id];
+            if (!s || s.correct === 0) {
+              quizIndex = i;
+              renderQuizTab(tabContent);
+              return;
+            }
+          }
+          // All correct — restart
           quizIndex = 0;
           renderQuizTab(tabContent);
         });
@@ -199,15 +286,26 @@ async function renderUnit(unitNum) {
       }
 
       const item = data.items[quizIndex];
+      const alreadyDone = spineState.items[item.id] && spineState.items[item.id].attempts > 0;
       selectedOptionIndex = null;
       isAnswered = false;
 
       Portal.spine.viewItem(item.id, { module: 'vocab', unit: String(unitNum) });
 
+      // Determine question type label
+      let typeLabel = '';
+      if (item.prompt.startsWith('Điền từ')) typeLabel = '📝 Điền từ';
+      else if (item.prompt.startsWith('Từ/cụm từ tiếng Anh')) typeLabel = '🇻🇳→🇬🇧 Nghĩa → Từ';
+      else if (item.prompt.includes('có nghĩa là gì')) typeLabel = '🇬🇧→🇻🇳 Từ → Nghĩa';
+      else if (item.prompt.startsWith('Từ/cụm từ nào phù hợp')) typeLabel = '📖 Ngữ cảnh';
+
       tabContent.innerHTML = `
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:6px;">
           <span style="font-size:13.5px; font-weight:700; color:var(--muted);">Câu ${quizIndex + 1}/${data.items.length}</span>
-          ${item.ai_generated ? `<div class="chip-ai" style="margin:0;">🤖 AI-Generated</div>` : ''}
+          <div style="display:flex; gap:6px; align-items:center;">
+            ${typeLabel ? `<span style="font-size:11px; padding:2px 8px; background:var(--surface2, #f0f0f0); border-radius:10px; color:var(--muted);">${typeLabel}</span>` : ''}
+            ${item.ai_generated ? `<div class="chip-ai" style="margin:0;">🤖 AI-Generated</div>` : ''}
+          </div>
         </div>
 
         <div class="panel">
@@ -224,12 +322,45 @@ async function renderUnit(unitNum) {
 
           <div id="feedback-area"></div>
 
-          <div class="btn-row" style="margin-top:16px;">
+          <div class="btn-row" style="margin-top:16px; flex-wrap:wrap; gap:8px;">
             <button id="btn-check" class="btn btn-wide" disabled>Kiểm tra</button>
             <button id="btn-next" class="btn btn-wide" style="display:none;">Câu tiếp theo →</button>
+            <button id="btn-skip" class="btn ghost" style="font-size:13px;">Bỏ qua →</button>
           </div>
         </div>
+
+        <div style="margin-top:12px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap;">
+          <button id="btn-jump-start" class="btn ghost" style="font-size:12px; padding:4px 10px;">⏮ Câu 1</button>
+          <button id="btn-jump-next-unanswered" class="btn ghost" style="font-size:12px; padding:4px 10px;">⏭ Câu chưa làm</button>
+        </div>
       `;
+
+      // Jump buttons
+      document.getElementById('btn-jump-start')?.addEventListener('click', () => {
+        quizIndex = 0;
+        renderQuizTab(tabContent);
+      });
+
+      document.getElementById('btn-jump-next-unanswered')?.addEventListener('click', () => {
+        for (let i = 0; i < data.items.length; i++) {
+          const s = spineState.items[data.items[i].id];
+          if (!s || s.attempts === 0) {
+            quizIndex = i;
+            renderQuizTab(tabContent);
+            return;
+          }
+        }
+        // All answered
+        quizIndex = data.items.length;
+        renderQuizTab(tabContent);
+      });
+
+      // Skip button
+      document.getElementById('btn-skip')?.addEventListener('click', () => {
+        quizIndex++;
+        renderQuizTab(tabContent);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
 
       const optButtons = tabContent.querySelectorAll('.opt');
       optButtons.forEach(btn => {
@@ -245,12 +376,14 @@ async function renderUnit(unitNum) {
 
       const checkBtn = document.getElementById('btn-check');
       const nextBtn = document.getElementById('btn-next');
+      const skipBtn = document.getElementById('btn-skip');
       const feedbackArea = document.getElementById('feedback-area');
 
       checkBtn.addEventListener('click', () => {
         if (selectedOptionIndex === null || isAnswered) return;
         isAnswered = true;
         checkBtn.style.display = 'none';
+        skipBtn.style.display = 'none';
 
         const isCorrect = (selectedOptionIndex === item.answer);
         const correctOptIdx = item.answer;
@@ -291,6 +424,7 @@ async function renderUnit(unitNum) {
       nextBtn.addEventListener('click', () => {
         quizIndex++;
         renderQuizTab(tabContent);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     }
 

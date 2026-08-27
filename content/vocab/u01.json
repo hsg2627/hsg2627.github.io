@@ -507,12 +507,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Parents should ______ their children's life skills from an early age.\"",
       "options": [
-        "A. household",
-        "B. multigenerational",
-        "C. nurture",
-        "D. bond"
+        "A. minor",
+        "B. nurture",
+        "C. make a decision",
+        "D. pass down / pass on"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "'nurture' (v) nghĩa là: nuôi dưỡng, bồi đắp (tình cảm, kỹ năng)."
     },
     {
@@ -520,10 +520,10 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"She expressed her deep ______ to her parents for their endless support.\"",
       "options": [
-        "A. harmony",
-        "B. connection",
+        "A. rough patches",
+        "B. background",
         "C. gratitude",
-        "D. background"
+        "D. stay up late"
       ],
       "answer": 2,
       "explanation": "'gratitude' (n) nghĩa là: lòng biết ơn sâu sắc."
@@ -533,12 +533,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Single-parent families often show remarkable ______.\"",
       "options": [
-        "A. resilience",
-        "B. nurture",
-        "C. background",
-        "D. household"
+        "A. work out",
+        "B. gratitude",
+        "C. build strong family bonds",
+        "D. resilience"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'resilience' (n) nghĩa là: sự kiên cường, khả năng tự phục hồi."
     },
     {
@@ -546,12 +546,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Sharing chores helps family members live in perfect ______.\"",
       "options": [
-        "A. appreciate",
-        "B. harmony",
-        "C. characteristic",
-        "D. gratitude"
+        "A. tidy up",
+        "B. mature",
+        "C. chip off the old block",
+        "D. harmony"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "'harmony' (n) nghĩa là: sự hòa thuận, hài hòa."
     },
     {
@@ -559,12 +559,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Minors are often the most ______ members of a family during rough patches.\"",
       "options": [
-        "A. vulnerable",
-        "B. characteristic",
-        "C. homemaker",
-        "D. nurture"
+        "A. multigenerational",
+        "B. do the laundry",
+        "C. duty",
+        "D. vulnerable"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'vulnerable' (adj) nghĩa là: dễ bị tổn thương."
     },
     {
@@ -572,10 +572,10 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"He deeply ______s his mother’s daily efforts to take care of the family.\"",
       "options": [
-        "A. harmony",
+        "A. routine",
         "B. appreciate",
-        "C. homemaker",
-        "D. characteristic"
+        "C. do the laundry",
+        "D. stay up late"
       ],
       "answer": 1,
       "explanation": "'appreciate' (v) nghĩa là: trân trọng, đánh giá cao."
@@ -585,12 +585,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Living in a ______ household requires mutual respect and cooperation.\"",
       "options": [
-        "A. multigenerational",
-        "B. household",
-        "C. vulnerable",
-        "D. gratitude"
+        "A. characteristic",
+        "B. make a decision",
+        "C. look after",
+        "D. multigenerational"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'multigenerational' (adj) nghĩa là: thuộc về nhiều thế hệ, đa thế hệ."
     },
     {
@@ -598,9 +598,9 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Traditionally, the father was seen as the sole ______ of the family.\"",
       "options": [
-        "A. nurture",
-        "B. mature",
-        "C. characteristic",
+        "A. share household chores",
+        "B. lose one's temper",
+        "C. tidy up",
         "D. breadwinner"
       ],
       "answer": 3,
@@ -611,10 +611,10 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"My mother chose to be a ______ to spend more time with us.\"",
       "options": [
-        "A. vulnerable",
+        "A. build strong family bonds",
         "B. homemaker",
-        "C. appreciate",
-        "D. relationship"
+        "C. background",
+        "D. rough patches"
       ],
       "answer": 1,
       "explanation": "'homemaker' (n) nghĩa là: người nội trợ."
@@ -624,13 +624,663 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"A supportive ______ between siblings fosters a warm home atmosphere.\"",
       "options": [
-        "A. resilience",
-        "B. minor",
-        "C. relationship",
-        "D. harmony"
+        "A. discipline",
+        "B. relationship",
+        "C. background",
+        "D. appreciate"
+      ],
+      "answer": 1,
+      "explanation": "'relationship' (n) nghĩa là: mối quan hệ."
+    },
+    {
+      "id": "u01_q11",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Generosity is a wonderful ______ of my grandmother.\"",
+      "options": [
+        "A. rough patches",
+        "B. characteristic",
+        "C. pass down / pass on",
+        "D. minor"
+      ],
+      "answer": 1,
+      "explanation": "'characteristic' (n) nghĩa là: tính cách đặc trưng, đặc điểm."
+    },
+    {
+      "id": "u01_q12",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Our family ______ includes having dinner together every evening.\"",
+      "options": [
+        "A. routine",
+        "B. nurture",
+        "C. assurance",
+        "D. rough patches"
+      ],
+      "answer": 0,
+      "explanation": "'routine' (n) nghĩa là: thói quen, hoạt động thường nhật."
+    },
+    {
+      "id": "u01_q13",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"A stable family background makes children feel ______.\"",
+      "options": [
+        "A. lose one's temper",
+        "B. homemaker",
+        "C. look after",
+        "D. secure"
+      ],
+      "answer": 3,
+      "explanation": "'secure' (adj) nghĩa là: an toàn, chắc chắn."
+    },
+    {
+      "id": "u01_q14",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"He comes from a very respectful and educated family ______.\"",
+      "options": [
+        "A. background",
+        "B. routine",
+        "C. assurance",
+        "D. vulnerable"
+      ],
+      "answer": 0,
+      "explanation": "'background' (n) nghĩa là: hoàn cảnh gia đình, nền tảng."
+    },
+    {
+      "id": "u01_q15",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Helping with chores helps children become more ______ and responsible.\"",
+      "options": [
+        "A. discipline",
+        "B. relationship",
+        "C. mature",
+        "D. connection"
       ],
       "answer": 2,
-      "explanation": "'relationship' (n) nghĩa là: mối quan hệ."
+      "explanation": "'mature' (adj) nghĩa là: trưởng thành, chín chắn."
+    },
+    {
+      "id": "u01_q16",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The family provides a safe ______ for everyone during difficult times.\"",
+      "options": [
+        "A. do the heavy lifting",
+        "B. make a decision",
+        "C. relationship",
+        "D. shelter"
+      ],
+      "answer": 3,
+      "explanation": "'shelter' (n/v) nghĩa là: nơi nương tựa, bảo chở, che chở."
+    },
+    {
+      "id": "u01_q17",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Managing ______ finance requires careful planning by both parents.\"",
+      "options": [
+        "A. household",
+        "B. pass down / pass on",
+        "C. chip off the old block",
+        "D. mature"
+      ],
+      "answer": 0,
+      "explanation": "'household' (n/adj) nghĩa là: hộ gia đình, thuộc gia đình."
+    },
+    {
+      "id": "u01_q18",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"______s must be protected from domestic violence and neglect.\"",
+      "options": [
+        "A. minor",
+        "B. vulnerable",
+        "C. multigenerational",
+        "D. assurance"
+      ],
+      "answer": 0,
+      "explanation": "'minor' (n) nghĩa là: người vị thành niên, trẻ nhỏ."
+    },
+    {
+      "id": "u01_q19",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"His parents' trust and ______ give him strength to carry on.\"",
+      "options": [
+        "A. secure",
+        "B. emotional support",
+        "C. assurance",
+        "D. guidance"
+      ],
+      "answer": 2,
+      "explanation": "'assurance' (n) nghĩa là: sự đảm bảo, chắc chắn, tự tin."
+    },
+    {
+      "id": "u01_q20",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Doing activities together strengthens the emotional ______ among family members.\"",
+      "options": [
+        "A. stay up late",
+        "B. mature",
+        "C. pass down / pass on",
+        "D. bond"
+      ],
+      "answer": 3,
+      "explanation": "'bond' (n) nghĩa là: sự gắn kết, mối liên kết."
+    },
+    {
+      "id": "u01_q21",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"sự hướng dẫn, chỉ bảo\"?",
+      "options": [
+        "A. mature",
+        "B. guidance",
+        "C. share / divide household responsibilities",
+        "D. shape character"
+      ],
+      "answer": 1,
+      "explanation": "'guidance' (n) nghĩa là: sự hướng dẫn, chỉ bảo."
+    },
+    {
+      "id": "u01_q22",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"kỷ luật, rèn luyện nhân cách\"?",
+      "options": [
+        "A. discipline",
+        "B. chip off the old block",
+        "C. shelter",
+        "D. pass down / pass on"
+      ],
+      "answer": 0,
+      "explanation": "'discipline' (n) nghĩa là: kỷ luật, rèn luyện nhân cách."
+    },
+    {
+      "id": "u01_q23",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"mối kết nối\"?",
+      "options": [
+        "A. secure",
+        "B. connection",
+        "C. resilience",
+        "D. relationship"
+      ],
+      "answer": 1,
+      "explanation": "'connection' (n) nghĩa là: mối kết nối."
+    },
+    {
+      "id": "u01_q24",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"nhiệm vụ, nghĩa vụ\"?",
+      "options": [
+        "A. multigenerational",
+        "B. characteristic",
+        "C. duty",
+        "D. cheer up"
+      ],
+      "answer": 2,
+      "explanation": "'duty' (n) nghĩa là: nhiệm vụ, nghĩa vụ."
+    },
+    {
+      "id": "u01_q25",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tôn trọng, kính trọng\"?",
+      "options": [
+        "A. daily routines",
+        "B. multigenerational",
+        "C. respect",
+        "D. work out"
+      ],
+      "answer": 2,
+      "explanation": "'respect' (n/v) nghĩa là: tôn trọng, kính trọng."
+    },
+    {
+      "id": "u01_q26",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"truyền lại qua các thế hệ\"?",
+      "options": [
+        "A. multigenerational",
+        "B. pass down / pass on",
+        "C. breadwinner",
+        "D. discipline"
+      ],
+      "answer": 1,
+      "explanation": "'pass down / pass on' (phr.v) nghĩa là: truyền lại qua các thế hệ."
+    },
+    {
+      "id": "u01_q27",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"làm vui lên, cổ vũ tinh thần\"?",
+      "options": [
+        "A. connection",
+        "B. shelter",
+        "C. cheer up",
+        "D. background"
+      ],
+      "answer": 2,
+      "explanation": "'cheer up' (phr.v) nghĩa là: làm vui lên, cổ vũ tinh thần."
+    },
+    {
+      "id": "u01_q28",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"thức khuya\"?",
+      "options": [
+        "A. stay up late",
+        "B. spick and span",
+        "C. do the laundry",
+        "D. share / divide household responsibilities"
+      ],
+      "answer": 0,
+      "explanation": "'stay up late' (phr.v) nghĩa là: thức khuya."
+    },
+    {
+      "id": "u01_q29",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"dọn dẹp ngăn nắp\"?",
+      "options": [
+        "A. share household chores",
+        "B. lose one's temper",
+        "C. flesh and blood",
+        "D. tidy up"
+      ],
+      "answer": 3,
+      "explanation": "'tidy up' (phr.v) nghĩa là: dọn dẹp ngăn nắp."
+    },
+    {
+      "id": "u01_q30",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tiếp tục gánh vác, thực hiện\"?",
+      "options": [
+        "A. chip off the old block",
+        "B. carry on",
+        "C. resilience",
+        "D. share / divide household responsibilities"
+      ],
+      "answer": 1,
+      "explanation": "'carry on' (phr.v) nghĩa là: tiếp tục gánh vác, thực hiện."
+    },
+    {
+      "id": "u01_q31",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"nuôi nấng, dạy dỗ\"?",
+      "options": [
+        "A. harmony",
+        "B. respect",
+        "C. bring up",
+        "D. spick and span"
+      ],
+      "answer": 2,
+      "explanation": "'bring up' (phr.v) nghĩa là: nuôi nấng, dạy dỗ."
+    },
+    {
+      "id": "u01_q32",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"chăm sóc, trông nom\"?",
+      "options": [
+        "A. relationship",
+        "B. look after",
+        "C. share / divide household responsibilities",
+        "D. nurture"
+      ],
+      "answer": 1,
+      "explanation": "'look after' (phr.v) nghĩa là: chăm sóc, trông nom."
+    },
+    {
+      "id": "u01_q33",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tìm đến ai để xin lời khuyên/giúp đỡ\"?",
+      "options": [
+        "A. shelter",
+        "B. appreciate",
+        "C. turn to",
+        "D. background"
+      ],
+      "answer": 2,
+      "explanation": "'turn to' (phr.v) nghĩa là: tìm đến ai để xin lời khuyên/giúp đỡ."
+    },
+    {
+      "id": "u01_q34",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"lớn lên, trưởng thành\"?",
+      "options": [
+        "A. bring up",
+        "B. discipline",
+        "C. grow up",
+        "D. multigenerational"
+      ],
+      "answer": 2,
+      "explanation": "'grow up' (phr.v) nghĩa là: lớn lên, trưởng thành."
+    },
+    {
+      "id": "u01_q35",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"giải quyết ổn thỏa, tìm ra giải pháp\"?",
+      "options": [
+        "A. harmony",
+        "B. mature",
+        "C. work out",
+        "D. homemaker"
+      ],
+      "answer": 2,
+      "explanation": "'work out' (phr.v) nghĩa là: giải quyết ổn thỏa, tìm ra giải pháp."
+    },
+    {
+      "id": "u01_q36",
+      "ai_generated": true,
+      "prompt": "\"characteristic\" (n) có nghĩa là gì?",
+      "options": [
+        "A. tính cách đặc trưng, đặc điểm",
+        "B. giặt giũ",
+        "C. trưởng thành, chín chắn",
+        "D. sự hướng dẫn, chỉ bảo"
+      ],
+      "answer": 0,
+      "explanation": "'characteristic' (n) nghĩa là: tính cách đặc trưng, đặc điểm."
+    },
+    {
+      "id": "u01_q37",
+      "ai_generated": true,
+      "prompt": "\"routine\" (n) có nghĩa là gì?",
+      "options": [
+        "A. kỷ luật, rèn luyện nhân cách",
+        "B. thói quen, hoạt động thường nhật",
+        "C. sự hướng dẫn, chỉ bảo",
+        "D. nuôi nấng, dạy dỗ"
+      ],
+      "answer": 1,
+      "explanation": "'routine' (n) nghĩa là: thói quen, hoạt động thường nhật."
+    },
+    {
+      "id": "u01_q38",
+      "ai_generated": true,
+      "prompt": "\"secure\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. dọn dẹp ngăn nắp",
+        "B. an toàn, chắc chắn",
+        "C. mối quan hệ",
+        "D. dễ bị tổn thương"
+      ],
+      "answer": 1,
+      "explanation": "'secure' (adj) nghĩa là: an toàn, chắc chắn."
+    },
+    {
+      "id": "u01_q39",
+      "ai_generated": true,
+      "prompt": "\"background\" (n) có nghĩa là gì?",
+      "options": [
+        "A. giải quyết ổn thỏa, tìm ra giải pháp",
+        "B. thuộc về nhiều thế hệ, đa thế hệ",
+        "C. hoàn cảnh gia đình, nền tảng",
+        "D. chăm sóc, trông nom"
+      ],
+      "answer": 2,
+      "explanation": "'background' (n) nghĩa là: hoàn cảnh gia đình, nền tảng."
+    },
+    {
+      "id": "u01_q40",
+      "ai_generated": true,
+      "prompt": "\"mature\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. trưởng thành, chín chắn",
+        "B. thói quen, hoạt động thường nhật",
+        "C. thức khuya",
+        "D. nhiệm vụ, nghĩa vụ"
+      ],
+      "answer": 0,
+      "explanation": "'mature' (adj) nghĩa là: trưởng thành, chín chắn."
+    },
+    {
+      "id": "u01_q41",
+      "ai_generated": true,
+      "prompt": "\"shelter\" (n/v) có nghĩa là gì?",
+      "options": [
+        "A. giải quyết ổn thỏa, tìm ra giải pháp",
+        "B. chăm sóc, trông nom",
+        "C. nơi nương tựa, bảo chở, che chở",
+        "D. sự hướng dẫn, chỉ bảo"
+      ],
+      "answer": 2,
+      "explanation": "'shelter' (n/v) nghĩa là: nơi nương tựa, bảo chở, che chở."
+    },
+    {
+      "id": "u01_q42",
+      "ai_generated": true,
+      "prompt": "\"household\" (n/adj) có nghĩa là gì?",
+      "options": [
+        "A. hộ gia đình, thuộc gia đình",
+        "B. mối kết nối",
+        "C. thức khuya",
+        "D. giống hệt bố/mẹ (về tính cách/ngoại hình)"
+      ],
+      "answer": 0,
+      "explanation": "'household' (n/adj) nghĩa là: hộ gia đình, thuộc gia đình."
+    },
+    {
+      "id": "u01_q43",
+      "ai_generated": true,
+      "prompt": "\"minor\" (n) có nghĩa là gì?",
+      "options": [
+        "A. chia đều việc nhà",
+        "B. tìm đến ai để xin lời khuyên/giúp đỡ",
+        "C. kẻ lập dị, khác biệt trong gia đình",
+        "D. người vị thành niên, trẻ nhỏ"
+      ],
+      "answer": 3,
+      "explanation": "'minor' (n) nghĩa là: người vị thành niên, trẻ nhỏ."
+    },
+    {
+      "id": "u01_q44",
+      "ai_generated": true,
+      "prompt": "\"assurance\" (n) có nghĩa là gì?",
+      "options": [
+        "A. sự đảm bảo, chắc chắn, tự tin",
+        "B. làm vui lên, cổ vũ tinh thần",
+        "C. dễ bị tổn thương",
+        "D. kẻ lập dị, khác biệt trong gia đình"
+      ],
+      "answer": 0,
+      "explanation": "'assurance' (n) nghĩa là: sự đảm bảo, chắc chắn, tự tin."
+    },
+    {
+      "id": "u01_q45",
+      "ai_generated": true,
+      "prompt": "\"bond\" (n) có nghĩa là gì?",
+      "options": [
+        "A. những giai đoạn sóng gió, khó khăn trong cuộc sống",
+        "B. tính cách đặc trưng, đặc điểm",
+        "C. sự gắn kết, mối liên kết",
+        "D. nhiệm vụ, nghĩa vụ"
+      ],
+      "answer": 2,
+      "explanation": "'bond' (n) nghĩa là: sự gắn kết, mối liên kết."
+    },
+    {
+      "id": "u01_q46",
+      "ai_generated": true,
+      "prompt": "\"guidance\" (n) có nghĩa là gì?",
+      "options": [
+        "A. tìm đến ai để xin lời khuyên/giúp đỡ",
+        "B. sự hướng dẫn, chỉ bảo",
+        "C. lớn lên, trưởng thành",
+        "D. sạch sẽ ngăn nắp, không một tì vết"
+      ],
+      "answer": 1,
+      "explanation": "'guidance' (n) nghĩa là: sự hướng dẫn, chỉ bảo."
+    },
+    {
+      "id": "u01_q47",
+      "ai_generated": true,
+      "prompt": "\"discipline\" (n) có nghĩa là gì?",
+      "options": [
+        "A. thức khuya",
+        "B. mang lại sự yên tâm, bình thản",
+        "C. giặt giũ",
+        "D. kỷ luật, rèn luyện nhân cách"
+      ],
+      "answer": 3,
+      "explanation": "'discipline' (n) nghĩa là: kỷ luật, rèn luyện nhân cách."
+    },
+    {
+      "id": "u01_q48",
+      "ai_generated": true,
+      "prompt": "\"connection\" (n) có nghĩa là gì?",
+      "options": [
+        "A. chia đều việc nhà",
+        "B. mối kết nối",
+        "C. định hình nhân cách, tính cách",
+        "D. nuôi nấng, dạy dỗ"
+      ],
+      "answer": 1,
+      "explanation": "'connection' (n) nghĩa là: mối kết nối."
+    },
+    {
+      "id": "u01_q49",
+      "ai_generated": true,
+      "prompt": "\"duty\" (n) có nghĩa là gì?",
+      "options": [
+        "A. bày tỏ lòng biết ơn",
+        "B. tôn trọng, kính trọng",
+        "C. kỷ luật, rèn luyện nhân cách",
+        "D. nhiệm vụ, nghĩa vụ"
+      ],
+      "answer": 3,
+      "explanation": "'duty' (n) nghĩa là: nhiệm vụ, nghĩa vụ."
+    },
+    {
+      "id": "u01_q50",
+      "ai_generated": true,
+      "prompt": "\"respect\" (n/v) có nghĩa là gì?",
+      "options": [
+        "A. chia sẻ công việc nhà",
+        "B. máu mủ ruột rà, người cùng gia đình",
+        "C. tôn trọng, kính trọng",
+        "D. dễ bị tổn thương"
+      ],
+      "answer": 2,
+      "explanation": "'respect' (n/v) nghĩa là: tôn trọng, kính trọng."
+    },
+    {
+      "id": "u01_q51",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"My father usually does the heavy lifting in our household.\"?",
+      "options": [
+        "A. multigenerational",
+        "B. do the heavy lifting",
+        "C. minor",
+        "D. stay up late"
+      ],
+      "answer": 1,
+      "explanation": "'do the heavy lifting' (colloc) nghĩa là: mang vác nặng, làm việc nặng nhọc."
+    },
+    {
+      "id": "u01_q52",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Sharing household chores equally helps ______.\"?",
+      "options": [
+        "A. do the laundry",
+        "B. respect",
+        "C. build strong family bonds",
+        "D. cheer up"
+      ],
+      "answer": 2,
+      "explanation": "'build strong family bonds' (colloc) nghĩa là: xây dựng mối gắn kết gia đình bền chặt."
+    },
+    {
+      "id": "u01_q53",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Professional cleaning services ______ for busy parents.\"?",
+      "options": [
+        "A. provide peace of mind",
+        "B. multigenerational",
+        "C. respect",
+        "D. cheer up"
+      ],
+      "answer": 0,
+      "explanation": "'provide peace of mind' (colloc) nghĩa là: mang lại sự yên tâm, bình thản."
+    },
+    {
+      "id": "u01_q54",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Modern families tend to divide household responsibilities more fairly.\"?",
+      "options": [
+        "A. stay up late",
+        "B. rough patches",
+        "C. discipline",
+        "D. share / divide household responsibilities"
+      ],
+      "answer": 3,
+      "explanation": "'share / divide household responsibilities' (colloc) nghĩa là: phân chia trách nhiệm làm việc nhà."
+    },
+    {
+      "id": "u01_q55",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Parents should avoid losing their temper in front of their children.\"?",
+      "options": [
+        "A. nurture",
+        "B. do the laundry",
+        "C. lose one's temper",
+        "D. cheer up"
+      ],
+      "answer": 2,
+      "explanation": "'lose one's temper' (colloc) nghĩa là: mất bình tĩnh, nổi giận."
+    },
+    {
+      "id": "u01_q56",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Both parents work hard to ______.\"?",
+      "options": [
+        "A. harmony",
+        "B. earn money to support the family",
+        "C. emotional support",
+        "D. appreciate"
+      ],
+      "answer": 1,
+      "explanation": "'earn money to support the family' (colloc) nghĩa là: kiếm tiền nuôi gia đình."
+    },
+    {
+      "id": "u01_q57",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"In my family, my sister usually does the cooking after school.\"?",
+      "options": [
+        "A. do the cooking",
+        "B. lose one's temper",
+        "C. mature",
+        "D. stay up late"
+      ],
+      "answer": 0,
+      "explanation": "'do the cooking' (colloc) nghĩa là: nấu nướng."
+    },
+    {
+      "id": "u01_q58",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Using a modern washing machine makes doing the laundry much easier.\"?",
+      "options": [
+        "A. shape character",
+        "B. emotional support",
+        "C. homemaker",
+        "D. do the laundry"
+      ],
+      "answer": 3,
+      "explanation": "'do the laundry' (colloc) nghĩa là: giặt giũ."
+    },
+    {
+      "id": "u01_q59",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"We ______ among all family members.\"?",
+      "options": [
+        "A. relationship",
+        "B. discipline",
+        "C. divide housework equally",
+        "D. secure"
+      ],
+      "answer": 2,
+      "explanation": "'divide housework equally' (colloc) nghĩa là: chia đều việc nhà."
+    },
+    {
+      "id": "u01_q60",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Sharing household chores teaches children teamwork and responsibility.\"?",
+      "options": [
+        "A. stay up late",
+        "B. relationship",
+        "C. express gratitude",
+        "D. share household chores"
+      ],
+      "answer": 3,
+      "explanation": "'share household chores' (colloc) nghĩa là: chia sẻ công việc nhà."
     }
   ]
 }

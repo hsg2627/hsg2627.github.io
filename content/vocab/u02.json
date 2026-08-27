@@ -507,10 +507,10 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"More people are ______ing an eco-friendly lifestyle to protect nature.\"",
       "options": [
-        "A. toxic",
+        "A. reduce energy bills",
         "B. adopt",
-        "C. alternative",
-        "D. green living"
+        "C. eco-friendly",
+        "D. global warming"
       ],
       "answer": 1,
       "explanation": "'adopt' (v) nghĩa là: chọn theo, bắt đầu áp dụng (lối sống, phương pháp)."
@@ -520,12 +520,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"______ has become a key target for modern urban planning.\"",
       "options": [
-        "A. sustainability",
-        "B. raw material",
-        "C. resource",
-        "D. litter"
+        "A. beat around the bush",
+        "B. sustainability",
+        "C. adopt a greener lifestyle",
+        "D. phase out"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'sustainability' (n) nghĩa là: tính bền vững, khả năng duy trì lâu dài."
     },
     {
@@ -534,11 +534,11 @@
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Carbon ______s cause global temperatures to rise.\"",
       "options": [
         "A. responsibility",
-        "B. resource",
-        "C. preservation",
-        "D. emission"
+        "B. emission",
+        "C. a drop in the ocean",
+        "D. down to earth"
       ],
-      "answer": 3,
+      "answer": 1,
       "explanation": "'emission' (n) nghĩa là: khí thải, sự phát thải."
     },
     {
@@ -546,12 +546,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Turning off electrical appliances when not in use helps reduce your ______.\"",
       "options": [
-        "A. carbon footprint",
-        "B. global warming",
-        "C. pollution",
-        "D. eco-friendly"
+        "A. run out of",
+        "B. alternative",
+        "C. carbon footprint",
+        "D. a drop in the ocean"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'carbon footprint' (n) nghĩa là: dấu chân carbon."
     },
     {
@@ -559,12 +559,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Switching to ______ raw materials is highly beneficial.\"",
       "options": [
-        "A. appliance",
-        "B. consume",
-        "C. refillable",
-        "D. eco-friendly"
+        "A. carbon footprint",
+        "B. take immediate action",
+        "C. eco-friendly",
+        "D. global temperatures"
       ],
-      "answer": 3,
+      "answer": 2,
       "explanation": "'eco-friendly' (adj) nghĩa là: thân thiện với môi trường."
     },
     {
@@ -572,12 +572,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"The local government is promoting the ______ of wild animals.\"",
       "options": [
-        "A. resource",
-        "B. conservation",
-        "C. responsibility",
-        "D. sustainability"
+        "A. conservation",
+        "B. make a difference",
+        "C. pesticide",
+        "D. consume"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "'conservation' (n) nghĩa là: sự bảo tồn (thiên nhiên, năng lượng)."
     },
     {
@@ -585,9 +585,9 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Modern household ______s consume much less electricity than older models.\"",
       "options": [
-        "A. carbon footprint",
-        "B. emission",
-        "C. green living",
+        "A. switch to",
+        "B. cause damage to sth",
+        "C. renewable energy",
         "D. appliance"
       ],
       "answer": 3,
@@ -598,12 +598,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"______ leads to extreme weather events like heatwaves.\"",
       "options": [
-        "A. adopt",
-        "B. pesticide",
-        "C. responsibility",
-        "D. global warming"
+        "A. litter",
+        "B. global warming",
+        "C. throw away",
+        "D. beat around the bush"
       ],
-      "answer": 3,
+      "answer": 1,
       "explanation": "'global warming' (n.phr) nghĩa là: hiện tượng nóng lên toàn cầu."
     },
     {
@@ -611,12 +611,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Please do not ______ in public parks and school yards.\"",
       "options": [
-        "A. raw material",
-        "B. preservation",
-        "C. toxic",
-        "D. litter"
+        "A. call it a day",
+        "B. use up",
+        "C. litter",
+        "D. run out of"
       ],
-      "answer": 3,
+      "answer": 2,
       "explanation": "'litter' (n/v) nghĩa là: rác thải / xả rác bừa bãi."
     },
     {
@@ -624,13 +624,663 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"______ vegetables are safer for our health and the environment.\"",
       "options": [
-        "A. toxic",
-        "B. eco-friendly",
-        "C. pesticide",
-        "D. organic"
+        "A. raise one's awareness of / about sth",
+        "B. organic",
+        "C. consume",
+        "D. pollution"
+      ],
+      "answer": 1,
+      "explanation": "'organic' (adj) nghĩa là: hữu cơ (thực phẩm, trồng trọt không hóa chất)."
+    },
+    {
+      "id": "u02_q11",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Bringing a ______ water bottle helps cut down on plastic waste.\"",
+      "options": [
+        "A. call it a day",
+        "B. hazard",
+        "C. eco-friendly",
+        "D. refillable"
       ],
       "answer": 3,
-      "explanation": "'organic' (adj) nghĩa là: hữu cơ (thực phẩm, trồng trọt không hóa chất)."
+      "explanation": "'refillable' (adj) nghĩa là: có thể đổ đầy lại, tái sử dụng."
+    },
+    {
+      "id": "u02_q12",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"We are rapidly running out of precious natural ______s like fossil fuels.\"",
+      "options": [
+        "A. responsibility",
+        "B. hazard",
+        "C. resource",
+        "D. beat around the bush"
+      ],
+      "answer": 2,
+      "explanation": "'resource' (n) nghĩa là: tài nguyên (thiên nhiên, học tập)."
+    },
+    {
+      "id": "u02_q13",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Protecting the Earth from pollution is a collective ______.\"",
+      "options": [
+        "A. run out of",
+        "B. natural resources",
+        "C. responsibility",
+        "D. use up"
+      ],
+      "answer": 2,
+      "explanation": "'responsibility' (n) nghĩa là: trách nhiệm."
+    },
+    {
+      "id": "u02_q14",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"We need to find ______ solutions to solve water shortages.\"",
+      "options": [
+        "A. sustainable",
+        "B. conservation",
+        "C. public transport",
+        "D. responsibility"
+      ],
+      "answer": 0,
+      "explanation": "'sustainable' (adj) nghĩa là: bền vững, lâu dài."
+    },
+    {
+      "id": "u02_q15",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Our company only uses organic ______s to manufacture clothes.\"",
+      "options": [
+        "A. raw material",
+        "B. raise one's awareness of / about sth",
+        "C. renewable",
+        "D. plug in"
+      ],
+      "answer": 0,
+      "explanation": "'raw material' (n.phr) nghĩa là: nguyên liệu thô."
+    },
+    {
+      "id": "u02_q16",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Deforestation has severe ______s for the local climate.\"",
+      "options": [
+        "A. give a presentation on sth",
+        "B. consequence",
+        "C. green living",
+        "D. hazard"
+      ],
+      "answer": 1,
+      "explanation": "'consequence' (n) nghĩa là: hậu quả, hệ quả."
+    },
+    {
+      "id": "u02_q17",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Chemical waste poses a serious health ______ to local communities.\"",
+      "options": [
+        "A. hazard",
+        "B. give a presentation on sth",
+        "C. a drop in the ocean",
+        "D. renewable"
+      ],
+      "answer": 0,
+      "explanation": "'hazard' (n) nghĩa là: mối nguy hại, rủi ro."
+    },
+    {
+      "id": "u02_q18",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The ______ of forests is crucial for ecological balance.\"",
+      "options": [
+        "A. go green",
+        "B. preservation",
+        "C. consequence",
+        "D. green living"
+      ],
+      "answer": 1,
+      "explanation": "'preservation' (n) nghĩa là: sự bảo tồn, giữ gìn."
+    },
+    {
+      "id": "u02_q19",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Modern smart devices ______ very little electrical energy.\"",
+      "options": [
+        "A. pollution",
+        "B. consume",
+        "C. green living",
+        "D. turn off"
+      ],
+      "answer": 1,
+      "explanation": "'consume' (v) nghĩa là: tiêu thụ, tiêu dùng."
+    },
+    {
+      "id": "u02_q20",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ is becoming highly popular among urban youth.\"",
+      "options": [
+        "A. set up a club",
+        "B. green living",
+        "C. appliance",
+        "D. pollution"
+      ],
+      "answer": 1,
+      "explanation": "'green living' (n.phr) nghĩa là: lối sống xanh."
+    },
+    {
+      "id": "u02_q21",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"thay thế, lựa chọn khác\"?",
+      "options": [
+        "A. emission",
+        "B. refillable",
+        "C. run out of",
+        "D. alternative"
+      ],
+      "answer": 3,
+      "explanation": "'alternative' (adj/n) nghĩa là: thay thế, lựa chọn khác."
+    },
+    {
+      "id": "u02_q22",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"có thể tái tạo\"?",
+      "options": [
+        "A. conservation",
+        "B. sustainable",
+        "C. renewable",
+        "D. give a presentation on sth"
+      ],
+      "answer": 2,
+      "explanation": "'renewable' (adj) nghĩa là: có thể tái tạo."
+    },
+    {
+      "id": "u02_q23",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"độc hại\"?",
+      "options": [
+        "A. organic",
+        "B. preservation",
+        "C. emission",
+        "D. toxic"
+      ],
+      "answer": 3,
+      "explanation": "'toxic' (adj) nghĩa là: độc hại."
+    },
+    {
+      "id": "u02_q24",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"thuốc trừ sâu\"?",
+      "options": [
+        "A. consequence",
+        "B. pesticide",
+        "C. throw away",
+        "D. take immediate action"
+      ],
+      "answer": 1,
+      "explanation": "'pesticide' (n) nghĩa là: thuốc trừ sâu."
+    },
+    {
+      "id": "u02_q25",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"sự ô nhiễm\"?",
+      "options": [
+        "A. pollution",
+        "B. consume",
+        "C. resource",
+        "D. switch to"
+      ],
+      "answer": 0,
+      "explanation": "'pollution' (n) nghĩa là: sự ô nhiễm."
+    },
+    {
+      "id": "u02_q26",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"chủ động cắt giảm (tiêu thụ, xả thải)\"?",
+      "options": [
+        "A. natural resources",
+        "B. cut down on",
+        "C. responsibility",
+        "D. pollution"
+      ],
+      "answer": 1,
+      "explanation": "'cut down on' (phr.v) nghĩa là: chủ động cắt giảm (tiêu thụ, xả thải)."
+    },
+    {
+      "id": "u02_q27",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"dọn dẹp vệ sinh sạch sẽ\"?",
+      "options": [
+        "A. go green",
+        "B. clean up",
+        "C. cause damage to sth",
+        "D. sustainable"
+      ],
+      "answer": 1,
+      "explanation": "'clean up' (phr.v) nghĩa là: dọn dẹp vệ sinh sạch sẽ."
+    },
+    {
+      "id": "u02_q28",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tắt thiết bị điện\"?",
+      "options": [
+        "A. switch to",
+        "B. turn off",
+        "C. waste collection",
+        "D. pollution"
+      ],
+      "answer": 1,
+      "explanation": "'turn off' (phr.v) nghĩa là: tắt thiết bị điện."
+    },
+    {
+      "id": "u02_q29",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"vứt bỏ đi\"?",
+      "options": [
+        "A. appliance",
+        "B. clean up",
+        "C. throw away",
+        "D. cause damage to sth"
+      ],
+      "answer": 2,
+      "explanation": "'throw away' (phr.v) nghĩa là: vứt bỏ đi."
+    },
+    {
+      "id": "u02_q30",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"cạn kiệt (tài nguyên, năng lượng)\"?",
+      "options": [
+        "A. beat around the bush",
+        "B. organic",
+        "C. run out of",
+        "D. phase out"
+      ],
+      "answer": 2,
+      "explanation": "'run out of' (phr.v) nghĩa là: cạn kiệt (tài nguyên, năng lượng)."
+    },
+    {
+      "id": "u02_q31",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"sử dụng hết sạch, cạn kiệt\"?",
+      "options": [
+        "A. throw away",
+        "B. use up",
+        "C. adopt a greener lifestyle",
+        "D. appliance"
+      ],
+      "answer": 1,
+      "explanation": "'use up' (phr.v) nghĩa là: sử dụng hết sạch, cạn kiệt."
+    },
+    {
+      "id": "u02_q32",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"từng bước loại bỏ hoàn toàn\"?",
+      "options": [
+        "A. run out of",
+        "B. alternative",
+        "C. phase out",
+        "D. eco-friendly"
+      ],
+      "answer": 2,
+      "explanation": "'phase out' (phr.v) nghĩa là: từng bước loại bỏ hoàn toàn."
+    },
+    {
+      "id": "u02_q33",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"chuyển sang sử dụng cái mới\"?",
+      "options": [
+        "A. eco-friendly",
+        "B. pull down",
+        "C. switch to",
+        "D. renewable energy"
+      ],
+      "answer": 2,
+      "explanation": "'switch to' (phr.v) nghĩa là: chuyển sang sử dụng cái mới."
+    },
+    {
+      "id": "u02_q34",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"cắm nguồn điện\"?",
+      "options": [
+        "A. plug in",
+        "B. hazard",
+        "C. consequence",
+        "D. organic"
+      ],
+      "answer": 0,
+      "explanation": "'plug in' (phr.v) nghĩa là: cắm nguồn điện."
+    },
+    {
+      "id": "u02_q35",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"phá dỡ (nhà cũ, công trình)\"?",
+      "options": [
+        "A. reduce energy bills",
+        "B. pull down",
+        "C. consequence",
+        "D. clean up"
+      ],
+      "answer": 1,
+      "explanation": "'pull down' (phr.v) nghĩa là: phá dỡ (nhà cũ, công trình)."
+    },
+    {
+      "id": "u02_q36",
+      "ai_generated": true,
+      "prompt": "\"refillable\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. rác thải / xả rác bừa bãi",
+        "B. sự bảo tồn, giữ gìn",
+        "C. hữu cơ (thực phẩm, trồng trọt không hóa chất)",
+        "D. có thể đổ đầy lại, tái sử dụng"
+      ],
+      "answer": 3,
+      "explanation": "'refillable' (adj) nghĩa là: có thể đổ đầy lại, tái sử dụng."
+    },
+    {
+      "id": "u02_q37",
+      "ai_generated": true,
+      "prompt": "\"resource\" (n) có nghĩa là gì?",
+      "options": [
+        "A. tài nguyên (thiên nhiên, học tập)",
+        "B. tính bền vững, khả năng duy trì lâu dài",
+        "C. sử dụng hết sạch, cạn kiệt",
+        "D. tiết kiệm năng lượng"
+      ],
+      "answer": 0,
+      "explanation": "'resource' (n) nghĩa là: tài nguyên (thiên nhiên, học tập)."
+    },
+    {
+      "id": "u02_q38",
+      "ai_generated": true,
+      "prompt": "\"responsibility\" (n) có nghĩa là gì?",
+      "options": [
+        "A. hiện tượng nóng lên toàn cầu",
+        "B. thân thiện với môi trường",
+        "C. hậu quả, hệ quả",
+        "D. trách nhiệm"
+      ],
+      "answer": 3,
+      "explanation": "'responsibility' (n) nghĩa là: trách nhiệm."
+    },
+    {
+      "id": "u02_q39",
+      "ai_generated": true,
+      "prompt": "\"sustainable\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. thân thiện với môi trường",
+        "B. bắt đầu áp dụng lối sống xanh hơn",
+        "C. bền vững, lâu dài",
+        "D. gây thiệt hại nghiêm trọng cho cái gì"
+      ],
+      "answer": 2,
+      "explanation": "'sustainable' (adj) nghĩa là: bền vững, lâu dài."
+    },
+    {
+      "id": "u02_q40",
+      "ai_generated": true,
+      "prompt": "\"raw material\" (n.phr) có nghĩa là gì?",
+      "options": [
+        "A. phá dỡ (nhà cũ, công trình)",
+        "B. thực tế, thực tiễn",
+        "C. nguyên liệu thô",
+        "D. năng lượng tái tạo"
+      ],
+      "answer": 2,
+      "explanation": "'raw material' (n.phr) nghĩa là: nguyên liệu thô."
+    },
+    {
+      "id": "u02_q41",
+      "ai_generated": true,
+      "prompt": "\"consequence\" (n) có nghĩa là gì?",
+      "options": [
+        "A. dấu chân carbon",
+        "B. sự bảo tồn (thiên nhiên, năng lượng)",
+        "C. hậu quả, hệ quả",
+        "D. nói vòng vo Tam Quốc, không trực diện"
+      ],
+      "answer": 2,
+      "explanation": "'consequence' (n) nghĩa là: hậu quả, hệ quả."
+    },
+    {
+      "id": "u02_q42",
+      "ai_generated": true,
+      "prompt": "\"hazard\" (n) có nghĩa là gì?",
+      "options": [
+        "A. tài nguyên thiên nhiên",
+        "B. mối nguy hại, rủi ro",
+        "C. hành động ngay lập tức",
+        "D. giảm hóa đơn tiền điện"
+      ],
+      "answer": 1,
+      "explanation": "'hazard' (n) nghĩa là: mối nguy hại, rủi ro."
+    },
+    {
+      "id": "u02_q43",
+      "ai_generated": true,
+      "prompt": "\"preservation\" (n) có nghĩa là gì?",
+      "options": [
+        "A. sự bảo tồn, giữ gìn",
+        "B. dừng lại, kết thúc công việc trong ngày",
+        "C. mối nguy hại, rủi ro",
+        "D. cắm nguồn điện"
+      ],
+      "answer": 0,
+      "explanation": "'preservation' (n) nghĩa là: sự bảo tồn, giữ gìn."
+    },
+    {
+      "id": "u02_q44",
+      "ai_generated": true,
+      "prompt": "\"consume\" (v) có nghĩa là gì?",
+      "options": [
+        "A. lối sống xanh",
+        "B. tiêu thụ, tiêu dùng",
+        "C. thuốc trừ sâu",
+        "D. cắm nguồn điện"
+      ],
+      "answer": 1,
+      "explanation": "'consume' (v) nghĩa là: tiêu thụ, tiêu dùng."
+    },
+    {
+      "id": "u02_q45",
+      "ai_generated": true,
+      "prompt": "\"green living\" (n.phr) có nghĩa là gì?",
+      "options": [
+        "A. tài nguyên (thiên nhiên, học tập)",
+        "B. lối sống xanh",
+        "C. tiêu thụ, tiêu dùng",
+        "D. thay thế, lựa chọn khác"
+      ],
+      "answer": 1,
+      "explanation": "'green living' (n.phr) nghĩa là: lối sống xanh."
+    },
+    {
+      "id": "u02_q46",
+      "ai_generated": true,
+      "prompt": "\"alternative\" (adj/n) có nghĩa là gì?",
+      "options": [
+        "A. chọn theo, bắt đầu áp dụng (lối sống, phương pháp)",
+        "B. muối bỏ bể, phần quá nhỏ bé",
+        "C. thay thế, lựa chọn khác",
+        "D. thu hút sự chú ý lớn"
+      ],
+      "answer": 2,
+      "explanation": "'alternative' (adj/n) nghĩa là: thay thế, lựa chọn khác."
+    },
+    {
+      "id": "u02_q47",
+      "ai_generated": true,
+      "prompt": "\"renewable\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. có thể tái tạo",
+        "B. cắm nguồn điện",
+        "C. dọn dẹp vệ sinh sạch sẽ",
+        "D. tài nguyên (thiên nhiên, học tập)"
+      ],
+      "answer": 0,
+      "explanation": "'renewable' (adj) nghĩa là: có thể tái tạo."
+    },
+    {
+      "id": "u02_q48",
+      "ai_generated": true,
+      "prompt": "\"toxic\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. tài nguyên (thiên nhiên, học tập)",
+        "B. độc hại",
+        "C. việc thu gom rác thải",
+        "D. giảm hóa đơn tiền điện"
+      ],
+      "answer": 1,
+      "explanation": "'toxic' (adj) nghĩa là: độc hại."
+    },
+    {
+      "id": "u02_q49",
+      "ai_generated": true,
+      "prompt": "\"pesticide\" (n) có nghĩa là gì?",
+      "options": [
+        "A. thân thiện với môi trường",
+        "B. gây thiệt hại nghiêm trọng cho cái gì",
+        "C. thuốc trừ sâu",
+        "D. chuyển sang sử dụng cái mới"
+      ],
+      "answer": 2,
+      "explanation": "'pesticide' (n) nghĩa là: thuốc trừ sâu."
+    },
+    {
+      "id": "u02_q50",
+      "ai_generated": true,
+      "prompt": "\"pollution\" (n) có nghĩa là gì?",
+      "options": [
+        "A. nâng cao ý thức của ai về cái gì",
+        "B. sự ô nhiễm",
+        "C. nguyên liệu thô",
+        "D. sử dụng hết sạch, cạn kiệt"
+      ],
+      "answer": 1,
+      "explanation": "'pollution' (n) nghĩa là: sự ô nhiễm."
+    },
+    {
+      "id": "u02_q51",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The club was set up to raise local people’s awareness of environmental issues.\"?",
+      "options": [
+        "A. run out of",
+        "B. take immediate action",
+        "C. down to earth",
+        "D. raise one's awareness of / about sth"
+      ],
+      "answer": 3,
+      "explanation": "'raise one's awareness of / about sth' (colloc) nghĩa là: nâng cao ý thức của ai về cái gì."
+    },
+    {
+      "id": "u02_q52",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Choosing public transport is a simple way to ______.\"?",
+      "options": [
+        "A. pesticide",
+        "B. clean up",
+        "C. adopt a greener lifestyle",
+        "D. toxic"
+      ],
+      "answer": 2,
+      "explanation": "'adopt a greener lifestyle' (colloc) nghĩa là: bắt đầu áp dụng lối sống xanh hơn."
+    },
+    {
+      "id": "u02_q53",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Extreme weather conditions can cause severe damage to agricultural lands.\"?",
+      "options": [
+        "A. consume",
+        "B. cause damage to sth",
+        "C. adopt a greener lifestyle",
+        "D. alternative"
+      ],
+      "answer": 1,
+      "explanation": "'cause damage to sth' (colloc) nghĩa là: gây thiệt hại nghiêm trọng cho cái gì."
+    },
+    {
+      "id": "u02_q54",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Installing solar panels is a great way to ______.\"?",
+      "options": [
+        "A. reduce energy bills",
+        "B. throw away",
+        "C. attract great attention",
+        "D. refillable"
+      ],
+      "answer": 0,
+      "explanation": "'reduce energy bills' (colloc) nghĩa là: giảm hóa đơn tiền điện."
+    },
+    {
+      "id": "u02_q55",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Using ______ helps decrease carbon emissions in big cities.\"?",
+      "options": [
+        "A. public transport",
+        "B. toxic",
+        "C. clean up",
+        "D. pollution"
+      ],
+      "answer": 0,
+      "explanation": "'public transport' (colloc) nghĩa là: phương tiện giao thông công cộng."
+    },
+    {
+      "id": "u02_q56",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The rise in ______ causes arctic ice melting.\"?",
+      "options": [
+        "A. eco-friendly",
+        "B. switch to",
+        "C. global temperatures",
+        "D. hazard"
+      ],
+      "answer": 2,
+      "explanation": "'global temperatures' (colloc) nghĩa là: nhiệt độ toàn cầu."
+    },
+    {
+      "id": "u02_q57",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"We need a more efficient ______ system in our neighborhood.\"?",
+      "options": [
+        "A. go green",
+        "B. consequence",
+        "C. waste collection",
+        "D. plug in"
+      ],
+      "answer": 2,
+      "explanation": "'waste collection' (colloc) nghĩa là: việc thu gom rác thải."
+    },
+    {
+      "id": "u02_q58",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Choosing low-energy devices is highly practical for saving energy.\"?",
+      "options": [
+        "A. raw material",
+        "B. conservation",
+        "C. save energy",
+        "D. call it a day"
+      ],
+      "answer": 2,
+      "explanation": "'save energy' (colloc) nghĩa là: tiết kiệm năng lượng."
+    },
+    {
+      "id": "u02_q59",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Even small daily habits can make a significant difference to our planet.\"?",
+      "options": [
+        "A. emission",
+        "B. clean up",
+        "C. make a difference",
+        "D. organic"
+      ],
+      "answer": 2,
+      "explanation": "'make a difference' (colloc) nghĩa là: tạo ra sự khác biệt, thay đổi."
+    },
+    {
+      "id": "u02_q60",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Wind and solar power are excellent examples of ______.\"?",
+      "options": [
+        "A. consume",
+        "B. sustainability",
+        "C. renewable energy",
+        "D. global warming"
+      ],
+      "answer": 2,
+      "explanation": "'renewable energy' (colloc) nghĩa là: năng lượng tái tạo."
     }
   ]
 }

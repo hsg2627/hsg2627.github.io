@@ -507,10 +507,10 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Governments must pass laws to eliminate gender ______ in the workplace.\"",
       "options": [
-        "A. bias",
+        "A. promote gender equality",
         "B. discrimination",
-        "C. pilot",
-        "D. physical"
+        "C. wear the pants",
+        "D. look after"
       ],
       "answer": 1,
       "explanation": "'discrimination' (n) nghĩa là: sự phân biệt đối xử."
@@ -521,9 +521,9 @@
       "prompt": "Điền từ thích hợp vào chỗ trống: \"We must work together for the ______ of violence against women.\"",
       "options": [
         "A. elimination",
-        "B. equal",
-        "C. domestic violence",
-        "D. cosmonaut"
+        "B. equal participation in decision-making",
+        "C. prevent child marriage",
+        "D. professional career path"
       ],
       "answer": 0,
       "explanation": "'elimination' (n) nghĩa là: sự xóa bỏ, triệt tiêu tận gốc."
@@ -533,12 +533,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"She proved that women can excel as professional ______s.\"",
       "options": [
-        "A. surgeon",
-        "B. skilful",
-        "C. discrimination",
-        "D. physical"
+        "A. parachutist",
+        "B. firefighter",
+        "C. surgeon",
+        "D. operation"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'surgeon' (n) nghĩa là: bác sĩ phẫu thuật."
     },
     {
@@ -547,9 +547,9 @@
       "prompt": "Điền từ thích hợp vào chỗ trống: \"She was chosen to be the first female ______ of her country.\"",
       "options": [
         "A. cosmonaut",
-        "B. victim",
-        "C. pilot",
-        "D. operation"
+        "B. equal participation in decision-making",
+        "C. break down",
+        "D. require immense physical strength"
       ],
       "answer": 0,
       "explanation": "'cosmonaut' (n) nghĩa là: nhà du hành vũ trụ."
@@ -559,12 +559,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Overcoming gender ______ is a long-term struggle in many modern societies.\"",
       "options": [
-        "A. bias",
-        "B. pilot",
-        "C. surgeon",
-        "D. shop assistant"
+        "A. gender wage gap",
+        "B. equal job opportunities",
+        "C. rule out",
+        "D. bias"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'bias' (n) nghĩa là: định kiến, thiên vị."
     },
     {
@@ -572,12 +572,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Gender ______ is not just a women's issue; it affects all of society.\"",
       "options": [
-        "A. domestic violence",
-        "B. operation",
-        "C. equality",
-        "D. secretary"
+        "A. break down",
+        "B. leadership positions / roles",
+        "C. promote gender equality",
+        "D. equality"
       ],
-      "answer": 2,
+      "answer": 3,
       "explanation": "'equality' (n) nghĩa là: sự bình đẳng."
     },
     {
@@ -585,12 +585,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Men and women must have ______ opportunities to pursue their careers.\"",
       "options": [
-        "A. firefighter",
-        "B. equal",
-        "C. pilot",
-        "D. victim"
+        "A. leadership positions / roles",
+        "B. equal participation in decision-making",
+        "C. equal",
+        "D. secretary"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "'equal' (adj) nghĩa là: bằng nhau, bình đẳng."
     },
     {
@@ -598,12 +598,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"The local shelter provides protection for victims of ______.\"",
       "options": [
-        "A. shop assistant",
-        "B. parachutist",
-        "C. pilot",
-        "D. domestic violence"
+        "A. officer",
+        "B. domestic violence",
+        "C. promote gender equality",
+        "D. pursue a career"
       ],
-      "answer": 3,
+      "answer": 1,
       "explanation": "'domestic violence' (n) nghĩa là: bạo lực gia đình."
     },
     {
@@ -611,12 +611,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Being a ______ is physically demanding, but women are excelling in it.\"",
       "options": [
-        "A. workforce",
-        "B. equality",
-        "C. firefighter",
-        "D. surgeon"
+        "A. bring up",
+        "B. parachutist",
+        "C. a man's world",
+        "D. firefighter"
       ],
-      "answer": 2,
+      "answer": 3,
       "explanation": "'firefighter' (n) nghĩa là: lính cứu hỏa, chữa cháy."
     },
     {
@@ -624,13 +624,663 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Many male teachers enjoy working as ______ instructors.\"",
       "options": [
-        "A. gender",
-        "B. bias",
-        "C. skilful",
-        "D. kindergarten"
+        "A. parachutist",
+        "B. wear the pants",
+        "C. kindergarten",
+        "D. promote gender equality"
+      ],
+      "answer": 2,
+      "explanation": "'kindergarten' (n) nghĩa là: trường mẫu giáo."
+    },
+    {
+      "id": "u06_q11",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Domestic abuse causes severe ______ damage to the victims.\"",
+      "options": [
+        "A. shop assistant",
+        "B. mental",
+        "C. a man's world",
+        "D. gender discrimination"
+      ],
+      "answer": 1,
+      "explanation": "'mental' (adj) nghĩa là: thuộc về tinh thần, tâm lý."
+    },
+    {
+      "id": "u06_q12",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"She has worked as a police ______ for over ten years.\"",
+      "options": [
+        "A. officer",
+        "B. a man's world",
+        "C. parachutist",
+        "D. fight back"
+      ],
+      "answer": 0,
+      "explanation": "'officer' (n) nghĩa là: sĩ quan, viên chức."
+    },
+    {
+      "id": "u06_q13",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The surgeon performed a highly complex ______ successfully.\"",
+      "options": [
+        "A. elimination",
+        "B. equality",
+        "C. operation",
+        "D. break the glass ceiling"
+      ],
+      "answer": 2,
+      "explanation": "'operation' (n) nghĩa là: cuộc phẫu thuật, vận hành."
+    },
+    {
+      "id": "u06_q14",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"She was trained to ______ from a plane at high altitudes.\"",
+      "options": [
+        "A. parachute",
+        "B. physical",
+        "C. carry on",
+        "D. elimination"
+      ],
+      "answer": 0,
+      "explanation": "'parachute' (v/n) nghĩa là: nhảy dù / cái dù."
+    },
+    {
+      "id": "u06_q15",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"As an expert ______, she completed hundreds of successful jumps.\"",
+      "options": [
+        "A. fight back",
+        "B. professional career path",
+        "C. parachutist",
+        "D. firefighter"
+      ],
+      "answer": 2,
+      "explanation": "'parachutist' (n) nghĩa là: người nhảy dù."
+    },
+    {
+      "id": "u06_q16",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The nurse took care of the elderly ______ with great patience.\"",
+      "options": [
+        "A. patient",
+        "B. uneducated",
+        "C. surgeon",
+        "D. equal"
+      ],
+      "answer": 0,
+      "explanation": "'patient' (n) nghĩa là: bệnh nhân."
+    },
+    {
+      "id": "u06_q17",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Men and women have different ______ characteristics, but equal capabilities.\"",
+      "options": [
+        "A. workforce",
+        "B. carry on",
+        "C. cosmonaut",
+        "D. physical"
       ],
       "answer": 3,
-      "explanation": "'kindergarten' (n) nghĩa là: trường mẫu giáo."
+      "explanation": "'physical' (adj) nghĩa là: thuộc về thể chất, cơ bắp."
+    },
+    {
+      "id": "u06_q18",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Becoming a commercial ______ requires rigorous training and excellent eyesight.\"",
+      "options": [
+        "A. provide sb with equal access to sth",
+        "B. operation",
+        "C. firefighter",
+        "D. pilot"
+      ],
+      "answer": 3,
+      "explanation": "'pilot' (n) nghĩa là: phi công."
+    },
+    {
+      "id": "u06_q19",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The ______ is responsible for organizing the manager's schedule.\"",
+      "options": [
+        "A. gender wage gap",
+        "B. secretary",
+        "C. kindergarten",
+        "D. treat equally"
+      ],
+      "answer": 1,
+      "explanation": "'secretary' (n) nghĩa là: thư ký."
+    },
+    {
+      "id": "u06_q20",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"She worked as a ______ to earn money for her university fees.\"",
+      "options": [
+        "A. break down",
+        "B. shop assistant",
+        "C. officer",
+        "D. fight back"
+      ],
+      "answer": 1,
+      "explanation": "'shop assistant' (n) nghĩa là: nhân viên bán hàng."
+    },
+    {
+      "id": "u06_q21",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"lành nghề, khéo léo, tinh xảo\"?",
+      "options": [
+        "A. equal job opportunities",
+        "B. fight back",
+        "C. skilful",
+        "D. bias"
+      ],
+      "answer": 2,
+      "explanation": "'skilful' (adj) nghĩa là: lành nghề, khéo léo, tinh xảo."
+    },
+    {
+      "id": "u06_q22",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"thất học, ít được giáo dục\"?",
+      "options": [
+        "A. uneducated",
+        "B. break the glass ceiling",
+        "C. surgeon",
+        "D. require immense physical strength"
+      ],
+      "answer": 0,
+      "explanation": "'uneducated' (adj) nghĩa là: thất học, ít được giáo dục."
+    },
+    {
+      "id": "u06_q23",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"nạn nhân\"?",
+      "options": [
+        "A. victim",
+        "B. gender discrimination",
+        "C. skilful",
+        "D. professional career path"
+      ],
+      "answer": 0,
+      "explanation": "'victim' (n) nghĩa là: nạn nhân."
+    },
+    {
+      "id": "u06_q24",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"giới tính\"?",
+      "options": [
+        "A. professional career path",
+        "B. kindergarten",
+        "C. gender",
+        "D. rule out"
+      ],
+      "answer": 2,
+      "explanation": "'gender' (n) nghĩa là: giới tính."
+    },
+    {
+      "id": "u06_q25",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"lực lượng lao động\"?",
+      "options": [
+        "A. treat equally",
+        "B. level playing field",
+        "C. wear the pants",
+        "D. workforce"
+      ],
+      "answer": 3,
+      "explanation": "'workforce' (n) nghĩa là: lực lượng lao động."
+    },
+    {
+      "id": "u06_q26",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"chăm sóc, trông nom\"?",
+      "options": [
+        "A. prevent child marriage",
+        "B. look after",
+        "C. leadership positions / roles",
+        "D. break traditional barriers"
+      ],
+      "answer": 1,
+      "explanation": "'look after' (phr.v) nghĩa là: chăm sóc, trông nom."
+    },
+    {
+      "id": "u06_q27",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"nuôi nấng, dạy dỗ\"?",
+      "options": [
+        "A. discrimination",
+        "B. pilot",
+        "C. equality",
+        "D. bring up"
+      ],
+      "answer": 3,
+      "explanation": "'bring up' (phr.v) nghĩa là: nuôi nấng, dạy dỗ."
+    },
+    {
+      "id": "u06_q28",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"loại trừ, bác bỏ khả năng\"?",
+      "options": [
+        "A. victim",
+        "B. bring up",
+        "C. rule out",
+        "D. shop assistant"
+      ],
+      "answer": 2,
+      "explanation": "'rule out' (phr.v) nghĩa là: loại trừ, bác bỏ khả năng."
+    },
+    {
+      "id": "u06_q29",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"đứng lên bảo vệ, đấu tranh cho\"?",
+      "options": [
+        "A. officer",
+        "B. carry on",
+        "C. gender wage gap",
+        "D. stand up for"
+      ],
+      "answer": 3,
+      "explanation": "'stand up for' (phr.v) nghĩa là: đứng lên bảo vệ, đấu tranh cho."
+    },
+    {
+      "id": "u06_q30",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"từng bước xóa bỏ\"?",
+      "options": [
+        "A. leadership positions / roles",
+        "B. phase out",
+        "C. skilful",
+        "D. require immense physical strength"
+      ],
+      "answer": 1,
+      "explanation": "'phase out' (phr.v) nghĩa là: từng bước xóa bỏ."
+    },
+    {
+      "id": "u06_q31",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tiếp tục thực hiện\"?",
+      "options": [
+        "A. leadership positions / roles",
+        "B. surgeon",
+        "C. shop assistant",
+        "D. carry on"
+      ],
+      "answer": 3,
+      "explanation": "'carry on' (phr.v) nghĩa là: tiếp tục thực hiện."
+    },
+    {
+      "id": "u06_q32",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"đấu tranh chống trả lại\"?",
+      "options": [
+        "A. a man's world",
+        "B. uneducated",
+        "C. stand up for",
+        "D. fight back"
+      ],
+      "answer": 3,
+      "explanation": "'fight back' (phr.v) nghĩa là: đấu tranh chống trả lại."
+    },
+    {
+      "id": "u06_q33",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"xây dựng, bồi đắp dần lên\"?",
+      "options": [
+        "A. stand up for",
+        "B. build up",
+        "C. uneducated",
+        "D. fundamental human rights"
+      ],
+      "answer": 1,
+      "explanation": "'build up' (phr.v) nghĩa là: xây dựng, bồi đắp dần lên."
+    },
+    {
+      "id": "u06_q34",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"phá vỡ rào cản, hỏng hóc\"?",
+      "options": [
+        "A. uneducated",
+        "B. break down",
+        "C. equality",
+        "D. gender"
+      ],
+      "answer": 1,
+      "explanation": "'break down' (phr.v) nghĩa là: phá vỡ rào cản, hỏng hóc."
+    },
+    {
+      "id": "u06_q35",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"từ bỏ, đầu hàng\"?",
+      "options": [
+        "A. give up",
+        "B. domestic violence",
+        "C. workforce",
+        "D. a man's world"
+      ],
+      "answer": 0,
+      "explanation": "'give up' (phr.v) nghĩa là: từ bỏ, đầu hàng."
+    },
+    {
+      "id": "u06_q36",
+      "ai_generated": true,
+      "prompt": "\"mental\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. vị trí, vai trò lãnh đạo",
+        "B. thuộc về tinh thần, tâm lý",
+        "C. theo đuổi sự nghiệp lâu dài",
+        "D. cuộc phẫu thuật, vận hành"
+      ],
+      "answer": 1,
+      "explanation": "'mental' (adj) nghĩa là: thuộc về tinh thần, tâm lý."
+    },
+    {
+      "id": "u06_q37",
+      "ai_generated": true,
+      "prompt": "\"officer\" (n) có nghĩa là gì?",
+      "options": [
+        "A. đòi hỏi thể chất, sức lực cực lớn",
+        "B. thư ký",
+        "C. sĩ quan, viên chức",
+        "D. bệnh nhân"
+      ],
+      "answer": 2,
+      "explanation": "'officer' (n) nghĩa là: sĩ quan, viên chức."
+    },
+    {
+      "id": "u06_q38",
+      "ai_generated": true,
+      "prompt": "\"operation\" (n) có nghĩa là gì?",
+      "options": [
+        "A. nuôi nấng, dạy dỗ",
+        "B. phi công",
+        "C. cuộc phẫu thuật, vận hành",
+        "D. lộ trình sự nghiệp chuyên nghiệp"
+      ],
+      "answer": 2,
+      "explanation": "'operation' (n) nghĩa là: cuộc phẫu thuật, vận hành."
+    },
+    {
+      "id": "u06_q39",
+      "ai_generated": true,
+      "prompt": "\"parachute\" (v/n) có nghĩa là gì?",
+      "options": [
+        "A. loại trừ, bác bỏ khả năng",
+        "B. thất học, ít được giáo dục",
+        "C. nhảy dù / cái dù",
+        "D. phá vỡ rào cản vô hình thăng tiến sự nghiệp (do định kiến giới)"
+      ],
+      "answer": 2,
+      "explanation": "'parachute' (v/n) nghĩa là: nhảy dù / cái dù."
+    },
+    {
+      "id": "u06_q40",
+      "ai_generated": true,
+      "prompt": "\"parachutist\" (n) có nghĩa là gì?",
+      "options": [
+        "A. nuôi nấng, dạy dỗ",
+        "B. đòi hỏi thể chất, sức lực cực lớn",
+        "C. phi công",
+        "D. người nhảy dù"
+      ],
+      "answer": 3,
+      "explanation": "'parachutist' (n) nghĩa là: người nhảy dù."
+    },
+    {
+      "id": "u06_q41",
+      "ai_generated": true,
+      "prompt": "\"patient\" (n) có nghĩa là gì?",
+      "options": [
+        "A. phá vỡ rào cản vô hình thăng tiến sự nghiệp (do định kiến giới)",
+        "B. bệnh nhân",
+        "C. sự phân biệt đối xử theo giới tính",
+        "D. lực lượng lao động"
+      ],
+      "answer": 1,
+      "explanation": "'patient' (n) nghĩa là: bệnh nhân."
+    },
+    {
+      "id": "u06_q42",
+      "ai_generated": true,
+      "prompt": "\"physical\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. sự bình đẳng",
+        "B. sân chơi bình đẳng, công bằng cho mọi đối tượng",
+        "C. thuộc về thể chất, cơ bắp",
+        "D. cuộc phẫu thuật, vận hành"
+      ],
+      "answer": 2,
+      "explanation": "'physical' (adj) nghĩa là: thuộc về thể chất, cơ bắp."
+    },
+    {
+      "id": "u06_q43",
+      "ai_generated": true,
+      "prompt": "\"pilot\" (n) có nghĩa là gì?",
+      "options": [
+        "A. phi công",
+        "B. quyền con người cơ bản",
+        "C. nạn nhân",
+        "D. người việc gì cũng biết làm nhưng không giỏi tinh sâu việc nào"
+      ],
+      "answer": 0,
+      "explanation": "'pilot' (n) nghĩa là: phi công."
+    },
+    {
+      "id": "u06_q44",
+      "ai_generated": true,
+      "prompt": "\"secretary\" (n) có nghĩa là gì?",
+      "options": [
+        "A. sự tham gia bình đẳng vào việc quyết định",
+        "B. từng bước xóa bỏ",
+        "C. phá vỡ rào cản, hỏng hóc",
+        "D. thư ký"
+      ],
+      "answer": 3,
+      "explanation": "'secretary' (n) nghĩa là: thư ký."
+    },
+    {
+      "id": "u06_q45",
+      "ai_generated": true,
+      "prompt": "\"shop assistant\" (n) có nghĩa là gì?",
+      "options": [
+        "A. nhân viên bán hàng",
+        "B. phá vỡ rào cản vô hình thăng tiến sự nghiệp (do định kiến giới)",
+        "C. người nhảy dù",
+        "D. lộ trình sự nghiệp chuyên nghiệp"
+      ],
+      "answer": 0,
+      "explanation": "'shop assistant' (n) nghĩa là: nhân viên bán hàng."
+    },
+    {
+      "id": "u06_q46",
+      "ai_generated": true,
+      "prompt": "\"skilful\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. thế giới của đàn ông (đặc quyền, thống trị)",
+        "B. lành nghề, khéo léo, tinh xảo",
+        "C. mang lại quyền tiếp cận bình đẳng",
+        "D. lộ trình sự nghiệp chuyên nghiệp"
+      ],
+      "answer": 1,
+      "explanation": "'skilful' (adj) nghĩa là: lành nghề, khéo léo, tinh xảo."
+    },
+    {
+      "id": "u06_q47",
+      "ai_generated": true,
+      "prompt": "\"uneducated\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. nhà du hành vũ trụ",
+        "B. thất học, ít được giáo dục",
+        "C. phá vỡ rào cản truyền thống",
+        "D. sĩ quan, viên chức"
+      ],
+      "answer": 1,
+      "explanation": "'uneducated' (adj) nghĩa là: thất học, ít được giáo dục."
+    },
+    {
+      "id": "u06_q48",
+      "ai_generated": true,
+      "prompt": "\"victim\" (n) có nghĩa là gì?",
+      "options": [
+        "A. sự tham gia bình đẳng vào việc quyết định",
+        "B. nạn nhân",
+        "C. nhảy dù / cái dù",
+        "D. người việc gì cũng biết làm nhưng không giỏi tinh sâu việc nào"
+      ],
+      "answer": 1,
+      "explanation": "'victim' (n) nghĩa là: nạn nhân."
+    },
+    {
+      "id": "u06_q49",
+      "ai_generated": true,
+      "prompt": "\"gender\" (n) có nghĩa là gì?",
+      "options": [
+        "A. người việc gì cũng biết làm nhưng không giỏi tinh sâu việc nào",
+        "B. trường mẫu giáo",
+        "C. theo đuổi sự nghiệp lâu dài",
+        "D. giới tính"
+      ],
+      "answer": 3,
+      "explanation": "'gender' (n) nghĩa là: giới tính."
+    },
+    {
+      "id": "u06_q50",
+      "ai_generated": true,
+      "prompt": "\"workforce\" (n) có nghĩa là gì?",
+      "options": [
+        "A. phá vỡ rào cản vô hình thăng tiến sự nghiệp (do định kiến giới)",
+        "B. bệnh nhân",
+        "C. vị trí, vai trò lãnh đạo",
+        "D. lực lượng lao động"
+      ],
+      "answer": 3,
+      "explanation": "'workforce' (n) nghĩa là: lực lượng lao động."
+    },
+    {
+      "id": "u06_q51",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Promoting gender equality benefits both men and women.\"?",
+      "options": [
+        "A. give up",
+        "B. promote gender equality",
+        "C. surgeon",
+        "D. parachutist"
+      ],
+      "answer": 1,
+      "explanation": "'promote gender equality' (colloc) nghĩa là: thúc đẩy bình đẳng giới."
+    },
+    {
+      "id": "u06_q52",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"She chose to ______ in aerospace engineering.\"?",
+      "options": [
+        "A. kindergarten",
+        "B. bring up",
+        "C. pursue a career",
+        "D. leadership positions / roles"
+      ],
+      "answer": 2,
+      "explanation": "'pursue a career' (colloc) nghĩa là: theo đuổi sự nghiệp lâu dài."
+    },
+    {
+      "id": "u06_q53",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The scholarship program provides underprivileged students with equal access to higher education.\"?",
+      "options": [
+        "A. provide sb with equal access to sth",
+        "B. officer",
+        "C. victim",
+        "D. shop assistant"
+      ],
+      "answer": 0,
+      "explanation": "'provide sb with equal access to sth' (colloc) nghĩa là: mang lại quyền tiếp cận bình đẳng."
+    },
+    {
+      "id": "u06_q54",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"All employees must be treated equally regardless of their gender.\"?",
+      "options": [
+        "A. treat equally",
+        "B. bring up",
+        "C. gender discrimination",
+        "D. parachute"
+      ],
+      "answer": 0,
+      "explanation": "'treat equally' (colloc) nghĩa là: đối xử bình đẳng, công bằng."
+    },
+    {
+      "id": "u06_q55",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"______ is a serious crime that must be severely punished.\"?",
+      "options": [
+        "A. jack of all trades (and master of none)",
+        "B. shop assistant",
+        "C. domestic violence",
+        "D. parachute"
+      ],
+      "answer": 2,
+      "explanation": "'domestic violence' (colloc) nghĩa là: bạo lực gia đình."
+    },
+    {
+      "id": "u06_q56",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Laws are being passed to eliminate ______ in job hiring.\"?",
+      "options": [
+        "A. gender discrimination",
+        "B. jack of all trades (and master of none)",
+        "C. firefighter",
+        "D. provide sb with equal access to sth"
+      ],
+      "answer": 0,
+      "explanation": "'gender discrimination' (colloc) nghĩa là: sự phân biệt đối xử theo giới tính."
+    },
+    {
+      "id": "u06_q57",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Both genders should have ______ in all fields.\"?",
+      "options": [
+        "A. equal job opportunities",
+        "B. parachute",
+        "C. skilful",
+        "D. build up"
+      ],
+      "answer": 0,
+      "explanation": "'equal job opportunities' (colloc) nghĩa là: cơ hội việc làm công bằng."
+    },
+    {
+      "id": "u06_q58",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Gender equality is one of the most ______.\"?",
+      "options": [
+        "A. operation",
+        "B. fundamental human rights",
+        "C. secretary",
+        "D. require immense physical strength"
+      ],
+      "answer": 1,
+      "explanation": "'fundamental human rights' (colloc) nghĩa là: quyền con người cơ bản."
+    },
+    {
+      "id": "u06_q59",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Female scientists are breaking traditional barriers in aerospace technology.\"?",
+      "options": [
+        "A. break traditional barriers",
+        "B. gender wage gap",
+        "C. carry on",
+        "D. leadership positions / roles"
+      ],
+      "answer": 0,
+      "explanation": "'break traditional barriers' (colloc) nghĩa là: phá vỡ rào cản truyền thống."
+    },
+    {
+      "id": "u06_q60",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The government is trying to narrow down the ______.\"?",
+      "options": [
+        "A. gender wage gap",
+        "B. mental",
+        "C. level playing field",
+        "D. fight back"
+      ],
+      "answer": 0,
+      "explanation": "'gender wage gap' (colloc) nghĩa là: chênh lệch mức lương theo giới."
     }
   ]
 }

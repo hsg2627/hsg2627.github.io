@@ -507,12 +507,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Burning fossil fuels harms ecosystems and leads to a loss of ______.\"",
       "options": [
-        "A. extreme",
-        "B. gorilla",
-        "C. panda",
-        "D. biodiversity"
+        "A. greenhouse effect",
+        "B. carry out",
+        "C. biodiversity",
+        "D. climate change mitigation"
       ],
-      "answer": 3,
+      "answer": 2,
       "explanation": "'biodiversity' (n) nghĩa là: đa dạng sinh học."
     },
     {
@@ -520,12 +520,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"______ is a primary cause of global warming and climate change.\"",
       "options": [
-        "A. endangered",
-        "B. deforestation",
-        "C. wildlife",
-        "D. greenhouse gases"
+        "A. deforestation",
+        "B. climate change",
+        "C. giant",
+        "D. run out of"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "'deforestation' (n) nghĩa là: nạn phá rừng quy mô lớn."
     },
     {
@@ -533,12 +533,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Industrial waste can destroy marine ______s and harm wildlife.\"",
       "options": [
-        "A. greenhouse gases",
-        "B. heatwave",
-        "C. ecosystem",
-        "D. extreme"
+        "A. environmental protection",
+        "B. conservation",
+        "C. wildlife",
+        "D. ecosystem"
       ],
-      "answer": 2,
+      "answer": 3,
       "explanation": "'ecosystem' (n) nghĩa là: hệ sinh thái."
     },
     {
@@ -546,12 +546,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Fine dust from factories causes severe ______ illnesses in children.\"",
       "options": [
-        "A. environmental protection",
-        "B. respiratory",
-        "C. wildlife",
-        "D. deforestation"
+        "A. greenhouse effect",
+        "B. fight a losing battle",
+        "C. upset",
+        "D. respiratory"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "'respiratory' (adj) nghĩa là: thuộc hệ hô hấp."
     },
     {
@@ -559,12 +559,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Rising global temperatures are a direct ______ of greenhouse gas emissions.\"",
       "options": [
-        "A. consequence",
-        "B. panda",
-        "C. fossil fuels",
-        "D. issue"
+        "A. use up",
+        "B. marine ecosystems",
+        "C. consequence",
+        "D. throw away"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'consequence' (n) nghĩa là: hậu quả, hệ quả."
     },
     {
@@ -572,12 +572,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Commercial hunting upsets the natural ______ of forest ecosystems.\"",
       "options": [
-        "A. balance",
-        "B. issue",
-        "C. environmental protection",
-        "D. deforestation"
+        "A. global warming effects",
+        "B. balance",
+        "C. look after",
+        "D. habitat"
       ],
-      "answer": 0,
+      "answer": 1,
       "explanation": "'balance' (n) nghĩa là: sự cân bằng, trạng thái ổn định."
     },
     {
@@ -585,10 +585,10 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Deforestation is accelerating global warming and ______.\"",
       "options": [
-        "A. conservation",
+        "A. burn fossil fuels",
         "B. climate change",
-        "C. habitat",
-        "D. trade"
+        "C. greenhouse gas emissions",
+        "D. carry out"
       ],
       "answer": 1,
       "explanation": "'climate change' (n.phr) nghĩa là: sự biến đổi khí hậu toàn cầu."
@@ -598,12 +598,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"The government has established national parks to protect ______ species.\"",
       "options": [
-        "A. fossil fuels",
-        "B. ice melting",
-        "C. endangered",
-        "D. respiratory"
+        "A. throw away",
+        "B. endangered",
+        "C. use up",
+        "D. disrupt natural habitats"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "'endangered' (adj) nghĩa là: bị đe dọa tuyệt chủng."
     },
     {
@@ -611,12 +611,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Young people play a key role in raising awareness of ______.\"",
       "options": [
-        "A. environmental protection",
-        "B. extreme",
-        "C. upset",
-        "D. tortoise"
+        "A. use up",
+        "B. heatwave",
+        "C. environmental protection",
+        "D. soil erosion"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'environmental protection' (n.phr) nghĩa là: sự bảo vệ môi trường."
     },
     {
@@ -625,12 +625,662 @@
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Global warming is causing ______ weather events like floods and heatwaves.\"",
       "options": [
         "A. climate change",
-        "B. extreme",
-        "C. practical",
-        "D. wildlife"
+        "B. biodiversity",
+        "C. extreme",
+        "D. use up"
+      ],
+      "answer": 2,
+      "explanation": "'extreme' (adj) nghĩa là: cực đoan, khắc nghiệt (thời tiết)."
+    },
+    {
+      "id": "u09_q11",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The ______ panda is one of the most famous endangered animals.\"",
+      "options": [
+        "A. ice melting",
+        "B. run out of",
+        "C. biodiversity",
+        "D. giant"
+      ],
+      "answer": 3,
+      "explanation": "'giant' (adj) nghĩa là: khổng lồ, to lớn."
+    },
+    {
+      "id": "u09_q12",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Mountain ______s are threatened by habitat loss and illegal hunting.\"",
+      "options": [
+        "A. respiratory illnesses / diseases",
+        "B. gorilla",
+        "C. upset the natural balance of ecosystems",
+        "D. soil erosion"
       ],
       "answer": 1,
-      "explanation": "'extreme' (adj) nghĩa là: cực đoan, khắc nghiệt (thời tiết)."
+      "explanation": "'gorilla' (n) nghĩa là: khỉ đột."
+    },
+    {
+      "id": "u09_q13",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Deforestation destroys the natural ______ of wild animals.\"",
+      "options": [
+        "A. carry out",
+        "B. gorilla",
+        "C. habitat",
+        "D. greenhouse gas emissions"
+      ],
+      "answer": 2,
+      "explanation": "'habitat' (n) nghĩa là: môi trường sống tự nhiên."
+    },
+    {
+      "id": "u09_q14",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The intense ______ caused serious forest fires in several regions.\"",
+      "options": [
+        "A. clear out",
+        "B. giant",
+        "C. trade",
+        "D. heatwave"
+      ],
+      "answer": 3,
+      "explanation": "'heatwave' (n) nghĩa là: sóng nhiệt, đợt nắng nóng khắc nghiệt."
+    },
+    {
+      "id": "u09_q15",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ at the polar caps leads to rising sea levels worldwide.\"",
+      "options": [
+        "A. cut down on",
+        "B. protect from",
+        "C. ice melting",
+        "D. fossil fuels"
+      ],
+      "answer": 2,
+      "explanation": "'ice melting' (n.phr) nghĩa là: hiện tượng tan băng ở cực."
+    },
+    {
+      "id": "u09_q16",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Pollution is a pressing ______ that requires multilateral cooperation.\"",
+      "options": [
+        "A. issue",
+        "B. upset",
+        "C. deforestation",
+        "D. practical"
+      ],
+      "answer": 0,
+      "explanation": "'issue' (n) nghĩa là: vấn đề nan giải."
+    },
+    {
+      "id": "u09_q17",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ conservation programs have successfully increased their population.\"",
+      "options": [
+        "A. giant",
+        "B. throw away",
+        "C. panda",
+        "D. environmental protection"
+      ],
+      "answer": 2,
+      "explanation": "'panda' (n) nghĩa là: gấu trúc."
+    },
+    {
+      "id": "u09_q18",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Choosing reusable shopping bags is a highly ______ way to reduce waste.\"",
+      "options": [
+        "A. protect from",
+        "B. ecological balance",
+        "C. practical",
+        "D. giant"
+      ],
+      "answer": 2,
+      "explanation": "'practical' (adj) nghĩa là: thực tế, thiết thực."
+    },
+    {
+      "id": "u09_q19",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The giant ______ is a protected species on the remote island.\"",
+      "options": [
+        "A. tortoise",
+        "B. gorilla",
+        "C. climate change",
+        "D. respiratory"
+      ],
+      "answer": 0,
+      "explanation": "'tortoise' (n) nghĩa là: rùa cạn."
+    },
+    {
+      "id": "u09_q20",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The illegal ______ in wild animal parts must be completely banned.\"",
+      "options": [
+        "A. save endangered animals from extinction",
+        "B. out of the woods",
+        "C. trade",
+        "D. air pollution level"
+      ],
+      "answer": 2,
+      "explanation": "'trade' (n/v) nghĩa là: buôn bán, thương mại."
+    },
+    {
+      "id": "u09_q21",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"làm rối loạn, đảo lộn (cân bằng)\"?",
+      "options": [
+        "A. wildlife",
+        "B. upset",
+        "C. heatwave",
+        "D. carry out"
+      ],
+      "answer": 1,
+      "explanation": "'upset' (v) nghĩa là: làm rối loạn, đảo lộn (cân bằng)."
+    },
+    {
+      "id": "u09_q22",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"động vật hoang dã\"?",
+      "options": [
+        "A. panda",
+        "B. issue",
+        "C. wildlife",
+        "D. fight a losing battle"
+      ],
+      "answer": 2,
+      "explanation": "'wildlife' (n) nghĩa là: động vật hoang dã."
+    },
+    {
+      "id": "u09_q23",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"nhiên liệu hóa thạch (than, dầu)\"?",
+      "options": [
+        "A. trade",
+        "B. clear out",
+        "C. fossil fuels",
+        "D. habitat"
+      ],
+      "answer": 2,
+      "explanation": "'fossil fuels' (n.phr) nghĩa là: nhiên liệu hóa thạch (than, dầu)."
+    },
+    {
+      "id": "u09_q24",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"khí nhà kính\"?",
+      "options": [
+        "A. conservation",
+        "B. greenhouse gases",
+        "C. issue",
+        "D. habitat"
+      ],
+      "answer": 1,
+      "explanation": "'greenhouse gases' (n.phr) nghĩa là: khí nhà kính."
+    },
+    {
+      "id": "u09_q25",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"sự bảo tồn, gìn giữ\"?",
+      "options": [
+        "A. use up",
+        "B. biodiversity",
+        "C. conservation",
+        "D. extreme"
+      ],
+      "answer": 2,
+      "explanation": "'conservation' (n) nghĩa là: sự bảo tồn, gìn giữ."
+    },
+    {
+      "id": "u09_q26",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"cạn kiệt tài nguyên\"?",
+      "options": [
+        "A. save endangered animals from extinction",
+        "B. respiratory illnesses / diseases",
+        "C. run out of",
+        "D. ecological balance"
+      ],
+      "answer": 2,
+      "explanation": "'run out of' (phr.v) nghĩa là: cạn kiệt tài nguyên."
+    },
+    {
+      "id": "u09_q27",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tiêu thụ hết sạch\"?",
+      "options": [
+        "A. trade",
+        "B. consequence",
+        "C. build up",
+        "D. use up"
+      ],
+      "answer": 3,
+      "explanation": "'use up' (phr.v) nghĩa là: tiêu thụ hết sạch."
+    },
+    {
+      "id": "u09_q28",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"cắt giảm lượng xả thải/tiêu thụ\"?",
+      "options": [
+        "A. climate change",
+        "B. respiratory",
+        "C. cut down on",
+        "D. wildlife"
+      ],
+      "answer": 2,
+      "explanation": "'cut down on' (phr.v) nghĩa là: cắt giảm lượng xả thải/tiêu thụ."
+    },
+    {
+      "id": "u09_q29",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tuyệt chủng, biến mất hoàn toàn\"?",
+      "options": [
+        "A. environmental conservation campaigns",
+        "B. biodiversity",
+        "C. die out",
+        "D. clear out"
+      ],
+      "answer": 2,
+      "explanation": "'die out' (phr.v) nghĩa là: tuyệt chủng, biến mất hoàn toàn."
+    },
+    {
+      "id": "u09_q30",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"dọn sạch, phát quang\"?",
+      "options": [
+        "A. clear out",
+        "B. soil erosion",
+        "C. ecological balance",
+        "D. the tip of the iceberg"
+      ],
+      "answer": 0,
+      "explanation": "'clear out' (phr.v) nghĩa là: dọn sạch, phát quang."
+    },
+    {
+      "id": "u09_q31",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"chăm sóc, bảo vệ\"?",
+      "options": [
+        "A. look after",
+        "B. build up",
+        "C. extreme weather events",
+        "D. practical"
+      ],
+      "answer": 0,
+      "explanation": "'look after' (phr.v) nghĩa là: chăm sóc, bảo vệ."
+    },
+    {
+      "id": "u09_q32",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tiến hành dự án/thí nghiệm\"?",
+      "options": [
+        "A. carry out",
+        "B. upset",
+        "C. fossil fuels",
+        "D. ice melting"
+      ],
+      "answer": 0,
+      "explanation": "'carry out' (phr.v) nghĩa là: tiến hành dự án/thí nghiệm."
+    },
+    {
+      "id": "u09_q33",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"vứt bỏ rác thải nhựa\"?",
+      "options": [
+        "A. endangered",
+        "B. carry out",
+        "C. throw away",
+        "D. ecological balance"
+      ],
+      "answer": 2,
+      "explanation": "'throw away' (phr.v) nghĩa là: vứt bỏ rác thải nhựa."
+    },
+    {
+      "id": "u09_q34",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tích tụ dần lên (chất độc)\"?",
+      "options": [
+        "A. build up",
+        "B. fossil fuels",
+        "C. issue",
+        "D. clear out"
+      ],
+      "answer": 0,
+      "explanation": "'build up' (phr.v) nghĩa là: tích tụ dần lên (chất độc)."
+    },
+    {
+      "id": "u09_q35",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"bảo vệ khỏi tác nhân xấu\"?",
+      "options": [
+        "A. run out of",
+        "B. protect from",
+        "C. endangered",
+        "D. balance"
+      ],
+      "answer": 1,
+      "explanation": "'protect from' (phr.v) nghĩa là: bảo vệ khỏi tác nhân xấu."
+    },
+    {
+      "id": "u09_q36",
+      "ai_generated": true,
+      "prompt": "\"giant\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. thực tế, thiết thực",
+        "B. khí nhà kính",
+        "C. chơi với lửa, hành động liều lĩnh đầy rủi ro",
+        "D. khổng lồ, to lớn"
+      ],
+      "answer": 3,
+      "explanation": "'giant' (adj) nghĩa là: khổng lồ, to lớn."
+    },
+    {
+      "id": "u09_q37",
+      "ai_generated": true,
+      "prompt": "\"gorilla\" (n) có nghĩa là gì?",
+      "options": [
+        "A. làm rối loạn, đảo lộn (cân bằng)",
+        "B. tích tụ dần lên (chất độc)",
+        "C. khỉ đột",
+        "D. buôn bán, thương mại"
+      ],
+      "answer": 2,
+      "explanation": "'gorilla' (n) nghĩa là: khỉ đột."
+    },
+    {
+      "id": "u09_q38",
+      "ai_generated": true,
+      "prompt": "\"habitat\" (n) có nghĩa là gì?",
+      "options": [
+        "A. cắt giảm lượng xả thải/tiêu thụ",
+        "B. tiến hành dự án/thí nghiệm",
+        "C. làm xáo trộn sự cân bằng tự nhiên của hệ sinh thái",
+        "D. môi trường sống tự nhiên"
+      ],
+      "answer": 3,
+      "explanation": "'habitat' (n) nghĩa là: môi trường sống tự nhiên."
+    },
+    {
+      "id": "u09_q39",
+      "ai_generated": true,
+      "prompt": "\"heatwave\" (n) có nghĩa là gì?",
+      "options": [
+        "A. dọn sạch, phát quang",
+        "B. sóng nhiệt, đợt nắng nóng khắc nghiệt",
+        "C. tiến hành dự án/thí nghiệm",
+        "D. tích tụ dần lên (chất độc)"
+      ],
+      "answer": 1,
+      "explanation": "'heatwave' (n) nghĩa là: sóng nhiệt, đợt nắng nóng khắc nghiệt."
+    },
+    {
+      "id": "u09_q40",
+      "ai_generated": true,
+      "prompt": "\"ice melting\" (n.phr) có nghĩa là gì?",
+      "options": [
+        "A. hiện tượng tan băng ở cực",
+        "B. trở về với lối sống thiên nhiên giản dị",
+        "C. thoát khỏi nguy hiểm, khó khăn",
+        "D. tiến hành dự án/thí nghiệm"
+      ],
+      "answer": 0,
+      "explanation": "'ice melting' (n.phr) nghĩa là: hiện tượng tan băng ở cực."
+    },
+    {
+      "id": "u09_q41",
+      "ai_generated": true,
+      "prompt": "\"issue\" (n) có nghĩa là gì?",
+      "options": [
+        "A. nạn phá rừng quy mô lớn",
+        "B. tiến hành dự án/thí nghiệm",
+        "C. vấn đề nan giải",
+        "D. buôn bán, thương mại"
+      ],
+      "answer": 2,
+      "explanation": "'issue' (n) nghĩa là: vấn đề nan giải."
+    },
+    {
+      "id": "u09_q42",
+      "ai_generated": true,
+      "prompt": "\"panda\" (n) có nghĩa là gì?",
+      "options": [
+        "A. rùa cạn",
+        "B. sự bảo vệ môi trường",
+        "C. gấu trúc",
+        "D. sự bảo tồn, gìn giữ"
+      ],
+      "answer": 2,
+      "explanation": "'panda' (n) nghĩa là: gấu trúc."
+    },
+    {
+      "id": "u09_q43",
+      "ai_generated": true,
+      "prompt": "\"practical\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. trở về với lối sống thiên nhiên giản dị",
+        "B. hậu quả, hệ quả",
+        "C. thực tế, thiết thực",
+        "D. phần nổi của tảng băng chìm, chỉ là bề nổi của vấn đề lớn"
+      ],
+      "answer": 2,
+      "explanation": "'practical' (adj) nghĩa là: thực tế, thiết thực."
+    },
+    {
+      "id": "u09_q44",
+      "ai_generated": true,
+      "prompt": "\"tortoise\" (n) có nghĩa là gì?",
+      "options": [
+        "A. sự xói mòn đất",
+        "B. rùa cạn",
+        "C. hệ sinh thái biển",
+        "D. thoát khỏi nguy hiểm, khó khăn"
+      ],
+      "answer": 1,
+      "explanation": "'tortoise' (n) nghĩa là: rùa cạn."
+    },
+    {
+      "id": "u09_q45",
+      "ai_generated": true,
+      "prompt": "\"trade\" (n/v) có nghĩa là gì?",
+      "options": [
+        "A. giảm nhẹ tác động của biến đổi khí hậu",
+        "B. môi trường sống tự nhiên",
+        "C. trở về với lối sống thiên nhiên giản dị",
+        "D. buôn bán, thương mại"
+      ],
+      "answer": 3,
+      "explanation": "'trade' (n/v) nghĩa là: buôn bán, thương mại."
+    },
+    {
+      "id": "u09_q46",
+      "ai_generated": true,
+      "prompt": "\"upset\" (v) có nghĩa là gì?",
+      "options": [
+        "A. vứt bỏ rác thải nhựa",
+        "B. khỉ đột",
+        "C. làm rối loạn, đảo lộn (cân bằng)",
+        "D. phá hủy/gây xáo trộn môi trường sống tự nhiên"
+      ],
+      "answer": 2,
+      "explanation": "'upset' (v) nghĩa là: làm rối loạn, đảo lộn (cân bằng)."
+    },
+    {
+      "id": "u09_q47",
+      "ai_generated": true,
+      "prompt": "\"wildlife\" (n) có nghĩa là gì?",
+      "options": [
+        "A. các bệnh đường hô hấp",
+        "B. nhiên liệu hóa thạch (than, dầu)",
+        "C. sự bảo tồn, gìn giữ",
+        "D. động vật hoang dã"
+      ],
+      "answer": 3,
+      "explanation": "'wildlife' (n) nghĩa là: động vật hoang dã."
+    },
+    {
+      "id": "u09_q48",
+      "ai_generated": true,
+      "prompt": "\"fossil fuels\" (n.phr) có nghĩa là gì?",
+      "options": [
+        "A. sự bảo tồn, gìn giữ",
+        "B. đấu tranh trong vô vọng, cầm chắc thất bại",
+        "C. nhiên liệu hóa thạch (than, dầu)",
+        "D. cực đoan, khắc nghiệt (thời tiết)"
+      ],
+      "answer": 2,
+      "explanation": "'fossil fuels' (n.phr) nghĩa là: nhiên liệu hóa thạch (than, dầu)."
+    },
+    {
+      "id": "u09_q49",
+      "ai_generated": true,
+      "prompt": "\"greenhouse gases\" (n.phr) có nghĩa là gì?",
+      "options": [
+        "A. rùa cạn",
+        "B. vấn đề nan giải",
+        "C. khí nhà kính",
+        "D. đấu tranh trong vô vọng, cầm chắc thất bại"
+      ],
+      "answer": 2,
+      "explanation": "'greenhouse gases' (n.phr) nghĩa là: khí nhà kính."
+    },
+    {
+      "id": "u09_q50",
+      "ai_generated": true,
+      "prompt": "\"conservation\" (n) có nghĩa là gì?",
+      "options": [
+        "A. sự bảo tồn, gìn giữ",
+        "B. thực tế, thiết thực",
+        "C. sự biến đổi khí hậu toàn cầu",
+        "D. các bệnh đường hô hấp"
+      ],
+      "answer": 0,
+      "explanation": "'conservation' (n) nghĩa là: sự bảo tồn, gìn giữ."
+    },
+    {
+      "id": "u09_q51",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Commercial hunting can upset the natural balance of forest ecosystems.\"?",
+      "options": [
+        "A. upset the natural balance of ecosystems",
+        "B. use up",
+        "C. fight a losing battle",
+        "D. conservation"
+      ],
+      "answer": 0,
+      "explanation": "'upset the natural balance of ecosystems' (colloc) nghĩa là: làm xáo trộn sự cân bằng tự nhiên của hệ sinh thái."
+    },
+    {
+      "id": "u09_q52",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"International organizations work collaboratively to save endangered pandas from extinction.\"?",
+      "options": [
+        "A. save endangered animals from extinction",
+        "B. environmental conservation campaigns",
+        "C. gorilla",
+        "D. biodiversity"
+      ],
+      "answer": 0,
+      "explanation": "'save endangered animals from extinction' (colloc) nghĩa là: cứu động vật nguy cấp khỏi bờ vực tuyệt chủng."
+    },
+    {
+      "id": "u09_q53",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Building new highways can disrupt the natural habitats of local wildlife.\"?",
+      "options": [
+        "A. panda",
+        "B. disrupt natural habitats",
+        "C. biodiversity",
+        "D. play with fire"
+      ],
+      "answer": 1,
+      "explanation": "'disrupt natural habitats' (colloc) nghĩa là: phá hủy/gây xáo trộn môi trường sống tự nhiên."
+    },
+    {
+      "id": "u09_q54",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Reducing ______ is the main target of the agreement.\"?",
+      "options": [
+        "A. ecosystem",
+        "B. greenhouse gas emissions",
+        "C. consequence",
+        "D. balance"
+      ],
+      "answer": 1,
+      "explanation": "'greenhouse gas emissions' (colloc) nghĩa là: sự phát thải khí nhà kính."
+    },
+    {
+      "id": "u09_q55",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Deforestation is a major barrier to global ______.\"?",
+      "options": [
+        "A. disrupt natural habitats",
+        "B. climate change mitigation",
+        "C. extreme",
+        "D. panda"
+      ],
+      "answer": 1,
+      "explanation": "'climate change mitigation' (colloc) nghĩa là: giảm nhẹ tác động của biến đổi khí hậu."
+    },
+    {
+      "id": "u09_q56",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Air pollution causes severe respiratory illnesses in crowded urban areas.\"?",
+      "options": [
+        "A. fossil fuels",
+        "B. respiratory illnesses / diseases",
+        "C. extreme weather events",
+        "D. issue"
+      ],
+      "answer": 1,
+      "explanation": "'respiratory illnesses / diseases' (colloc) nghĩa là: các bệnh đường hô hấp."
+    },
+    {
+      "id": "u09_q57",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Plastic waste dumped into the ocean causes immense harm to ______.\"?",
+      "options": [
+        "A. burn fossil fuels",
+        "B. ice melting",
+        "C. marine ecosystems",
+        "D. balance"
+      ],
+      "answer": 2,
+      "explanation": "'marine ecosystems' (colloc) nghĩa là: hệ sinh thái biển."
+    },
+    {
+      "id": "u09_q58",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Global warming leads to more frequent ______ like heatwaves.\"?",
+      "options": [
+        "A. back to nature",
+        "B. out of the woods",
+        "C. extreme weather events",
+        "D. giant"
+      ],
+      "answer": 2,
+      "explanation": "'extreme weather events' (colloc) nghĩa là: hiện tượng thời tiết cực đoan."
+    },
+    {
+      "id": "u09_q59",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The ______ in the city center has reached an alarming stage.\"?",
+      "options": [
+        "A. climate change mitigation",
+        "B. heatwave",
+        "C. air pollution level",
+        "D. greenhouse gases"
+      ],
+      "answer": 2,
+      "explanation": "'air pollution level' (colloc) nghĩa là: mức độ ô nhiễm không khí."
+    },
+    {
+      "id": "u09_q60",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Burning fossil fuels to generate electricity releases massive greenhouse gases.\"?",
+      "options": [
+        "A. soil erosion",
+        "B. deforestation",
+        "C. burn fossil fuels",
+        "D. panda"
+      ],
+      "answer": 2,
+      "explanation": "'burn fossil fuels' (colloc) nghĩa là: đốt nhiên liệu hóa thạch."
     }
   ]
 }

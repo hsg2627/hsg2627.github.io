@@ -507,12 +507,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Volunteering is a noble act of pure ______.\"",
       "options": [
-        "A. remote",
-        "B. altruism",
-        "C. disaster relief",
-        "D. orphanage"
+        "A. poverty",
+        "B. lend a helping hand",
+        "C. donation",
+        "D. altruism"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "'altruism' (n) nghĩa là: lòng vị tha, chủ nghĩa vị tha."
     },
     {
@@ -520,12 +520,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"The billionaire decided to dedicate his wealth to ______ and education.\"",
       "options": [
-        "A. philanthropy",
-        "B. generous",
-        "C. disaster relief",
-        "D. charitable"
+        "A. raise money / funds for charity",
+        "B. remote",
+        "C. philanthropy",
+        "D. involved"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'philanthropy' (n) nghĩa là: hoạt động từ thiện, lòng bác ái."
     },
     {
@@ -533,12 +533,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"We organized a fundraiser to support ______ students in mountainous areas.\"",
       "options": [
-        "A. disaster relief",
-        "B. underprivileged",
-        "C. confidence",
-        "D. hardship"
+        "A. community",
+        "B. announcement",
+        "C. suffer",
+        "D. underprivileged"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "'underprivileged' (adj) nghĩa là: bị thiệt thòi, nghèo khó, thiếu thốn."
     },
     {
@@ -546,12 +546,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Non-profit organizations must be fully ______ about their financial transactions.\"",
       "options": [
-        "A. transparent",
-        "B. various",
-        "C. deliver",
-        "D. generous"
+        "A. involved",
+        "B. lend a helping hand",
+        "C. transparent",
+        "D. boost self-confidence"
       ],
-      "answer": 0,
+      "answer": 2,
       "explanation": "'transparent' (adj) nghĩa là: minh bạch, rõ ràng (tài chính, hoạt động)."
     },
     {
@@ -559,12 +559,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Many young volunteers work in remote areas despite facing extreme ______s.\"",
       "options": [
-        "A. disaster relief",
-        "B. hardship",
-        "C. transparent",
-        "D. charitable"
+        "A. life-saving skills",
+        "B. take part in",
+        "C. confused",
+        "D. hardship"
       ],
-      "answer": 1,
+      "answer": 3,
       "explanation": "'hardship' (n) nghĩa là: sự gian khổ, khó khăn nhọc nhằn."
     },
     {
@@ -572,10 +572,10 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Vietnamese soldiers worked tirelessly to coordinate ______ after the landslide.\"",
       "options": [
-        "A. altruism",
-        "B. charitable",
+        "A. confused",
+        "B. volunteer project",
         "C. disaster relief",
-        "D. remote"
+        "D. suffer"
       ],
       "answer": 2,
       "explanation": "'disaster relief' (n.phr) nghĩa là: hoạt động cứu trợ thiên tai."
@@ -585,12 +585,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"She gained practical experience by working with an international ______ organization.\"",
       "options": [
-        "A. confused",
-        "B. suffer",
-        "C. charitable",
-        "D. non-governmental"
+        "A. look forward to",
+        "B. by mistake",
+        "C. non-governmental",
+        "D. flood victims"
       ],
-      "answer": 3,
+      "answer": 2,
       "explanation": "'non-governmental' (adj) nghĩa là: thuộc phi chính phủ (tổ chức)."
     },
     {
@@ -598,10 +598,10 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Improving infrastructure helps remote villages gain ______ to health services.\"",
       "options": [
-        "A. donate",
+        "A. non-profit organisation",
         "B. access",
-        "C. various",
-        "D. philanthropy"
+        "C. hardship",
+        "D. charitable"
       ],
       "answer": 1,
       "explanation": "'access' (n/v) nghĩa là: sự tiếp cận / tiếp cận cái gì."
@@ -611,10 +611,10 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"The school made an ______ about the upcoming volunteer trip.\"",
       "options": [
-        "A. remote",
+        "A. non-governmental",
         "B. announcement",
-        "C. confidence",
-        "D. access"
+        "C. pay it forward",
+        "D. altruism"
       ],
       "answer": 1,
       "explanation": "'announcement' (n) nghĩa là: thông báo, thông cáo chính thức."
@@ -624,13 +624,663 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Helping others can significantly ______ your mood and self-confidence.\"",
       "options": [
-        "A. community",
-        "B. disaster relief",
-        "C. poverty",
+        "A. involved",
+        "B. donation",
+        "C. announcement",
         "D. boost"
       ],
       "answer": 3,
       "explanation": "'boost' (v) nghĩa là: thúc đẩy, làm tăng thêm (năng lượng, tự tin)."
+    },
+    {
+      "id": "u04_q11",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The ______ volunteers handed out warm meals to the homeless.\"",
+      "options": [
+        "A. raise money / funds for charity",
+        "B. cheerful",
+        "C. access",
+        "D. underprivileged"
+      ],
+      "answer": 1,
+      "explanation": "'cheerful' (adj) nghĩa là: vui vẻ, hăng hái, đầy sức sống."
+    },
+    {
+      "id": "u04_q12",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"A healthy ______ is built on mutual support and cooperation.\"",
+      "options": [
+        "A. step up",
+        "B. announcement",
+        "C. generous",
+        "D. community"
+      ],
+      "answer": 3,
+      "explanation": "'community' (n) nghĩa là: cộng đồng."
+    },
+    {
+      "id": "u04_q13",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Public speaking at community centers helped her build immense ______.\"",
+      "options": [
+        "A. confidence",
+        "B. hardship",
+        "C. heart of gold",
+        "D. access"
+      ],
+      "answer": 0,
+      "explanation": "'confidence' (n) nghĩa là: sự tự tin, lòng tin cậy."
+    },
+    {
+      "id": "u04_q14",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The instructions for the project were unclear, leaving many volunteers ______.\"",
+      "options": [
+        "A. various",
+        "B. confused",
+        "C. give back",
+        "D. do volunteer work"
+      ],
+      "answer": 1,
+      "explanation": "'confused' (adj) nghĩa là: bối rối, lúng túng."
+    },
+    {
+      "id": "u04_q15",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"We ______ed food packages directly to families affected by the flood.\"",
+      "options": [
+        "A. community",
+        "B. make a significant difference",
+        "C. carry out",
+        "D. deliver"
+      ],
+      "answer": 3,
+      "explanation": "'deliver' (v) nghĩa là: giao hàng, phát quà, cứu tế."
+    },
+    {
+      "id": "u04_q16",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Many students ______d old books and warm clothes to the charity drive.\"",
+      "options": [
+        "A. donate",
+        "B. deliver",
+        "C. charitable",
+        "D. take part in"
+      ],
+      "answer": 0,
+      "explanation": "'donate' (v) nghĩa là: quyên góp, hiến tặng."
+    },
+    {
+      "id": "u04_q17",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The orphanage received generous ______s from local businesses.\"",
+      "options": [
+        "A. generous",
+        "B. disaster relief",
+        "C. donation",
+        "D. non-governmental"
+      ],
+      "answer": 2,
+      "explanation": "'donation' (n) nghĩa là: đồ quyên góp, vật phẩm quyên tặng."
+    },
+    {
+      "id": "u04_q18",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"She is extremely ______, always donating half of her pocket money.\"",
+      "options": [
+        "A. community development",
+        "B. boost",
+        "C. disaster relief",
+        "D. generous"
+      ],
+      "answer": 3,
+      "explanation": "'generous' (adj) nghĩa là: hào phóng, rộng lượng."
+    },
+    {
+      "id": "u04_q19",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"More and more teenagers are getting ______ in community service nowadays.\"",
+      "options": [
+        "A. confused",
+        "B. involved",
+        "C. access",
+        "D. by chance / by accident"
+      ],
+      "answer": 1,
+      "explanation": "'involved' (adj) nghĩa là: tham gia, dính dáng, có mặt."
+    },
+    {
+      "id": "u04_q20",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The medical group travelled to ______ mountainous areas to vaccinate children.\"",
+      "options": [
+        "A. remote areas",
+        "B. orphanage",
+        "C. remote",
+        "D. philanthropy"
+      ],
+      "answer": 2,
+      "explanation": "'remote' (adj) nghĩa là: hẻo lánh, vùng sâu vùng xa."
+    },
+    {
+      "id": "u04_q21",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"đa dạng, nhiều loại khác nhau\"?",
+      "options": [
+        "A. various",
+        "B. disaster relief",
+        "C. suffer",
+        "D. cheerful"
+      ],
+      "answer": 0,
+      "explanation": "'various' (adj) nghĩa là: đa dạng, nhiều loại khác nhau."
+    },
+    {
+      "id": "u04_q22",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"trại trẻ mồ côi\"?",
+      "options": [
+        "A. raise money / funds for charity",
+        "B. orphanage",
+        "C. announcement",
+        "D. ripple effect"
+      ],
+      "answer": 1,
+      "explanation": "'orphanage' (n) nghĩa là: trại trẻ mồ côi."
+    },
+    {
+      "id": "u04_q23",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"thuộc từ thiện, nhân đạo\"?",
+      "options": [
+        "A. non-governmental",
+        "B. charitable",
+        "C. underprivileged",
+        "D. walks of life"
+      ],
+      "answer": 1,
+      "explanation": "'charitable' (adj) nghĩa là: thuộc từ thiện, nhân đạo."
+    },
+    {
+      "id": "u04_q24",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"chịu đựng đau đớn, mất mát\"?",
+      "options": [
+        "A. suffer",
+        "B. gain practical experience",
+        "C. boost",
+        "D. underprivileged"
+      ],
+      "answer": 0,
+      "explanation": "'suffer' (v) nghĩa là: chịu đựng đau đớn, mất mát."
+    },
+    {
+      "id": "u04_q25",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"sự nghèo đói\"?",
+      "options": [
+        "A. access",
+        "B. involved",
+        "C. poverty",
+        "D. deliver"
+      ],
+      "answer": 2,
+      "explanation": "'poverty' (n) nghĩa là: sự nghèo đói."
+    },
+    {
+      "id": "u04_q26",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"chủ động gánh vác trách nhiệm, gầy dựng\"?",
+      "options": [
+        "A. altruism",
+        "B. step up",
+        "C. community",
+        "D. donate"
+      ],
+      "answer": 1,
+      "explanation": "'step up' (phr.v) nghĩa là: chủ động gánh vác trách nhiệm, gầy dựng."
+    },
+    {
+      "id": "u04_q27",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"cống hiến, đền đáp lại cho xã hội\"?",
+      "options": [
+        "A. hand out",
+        "B. disaster relief",
+        "C. non-governmental",
+        "D. give back"
+      ],
+      "answer": 3,
+      "explanation": "'give back' (phr.v) nghĩa là: cống hiến, đền đáp lại cho xã hội."
+    },
+    {
+      "id": "u04_q28",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tiến hành, thực hiện dự án\"?",
+      "options": [
+        "A. volunteer project",
+        "B. hardship",
+        "C. remote",
+        "D. carry out"
+      ],
+      "answer": 3,
+      "explanation": "'carry out' (phr.v) nghĩa là: tiến hành, thực hiện dự án."
+    },
+    {
+      "id": "u04_q29",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"giúp đỡ một tay (trong lúc khó khăn)\"?",
+      "options": [
+        "A. gain practical experience",
+        "B. help out",
+        "C. donation",
+        "D. non-governmental"
+      ],
+      "answer": 1,
+      "explanation": "'help out' (phr.v) nghĩa là: giúp đỡ một tay (trong lúc khó khăn)."
+    },
+    {
+      "id": "u04_q30",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"trông chờ, mong mỏi điều gì\"?",
+      "options": [
+        "A. orphanage",
+        "B. ripple effect",
+        "C. look forward to",
+        "D. hardship"
+      ],
+      "answer": 2,
+      "explanation": "'look forward to' (phr.v) nghĩa là: trông chờ, mong mỏi điều gì."
+    },
+    {
+      "id": "u04_q31",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"đăng ký tham gia một sự kiện\"?",
+      "options": [
+        "A. by mistake",
+        "B. transparent",
+        "C. sign up for",
+        "D. give back"
+      ],
+      "answer": 2,
+      "explanation": "'sign up for' (phr.v) nghĩa là: đăng ký tham gia một sự kiện."
+    },
+    {
+      "id": "u04_q32",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"điền thông tin (vào đơn)\"?",
+      "options": [
+        "A. community development",
+        "B. lend a helping hand",
+        "C. fill in",
+        "D. community"
+      ],
+      "answer": 2,
+      "explanation": "'fill in' (phr.v) nghĩa là: điền thông tin (vào đơn)."
+    },
+    {
+      "id": "u04_q33",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"phát quà, phân phát tài liệu\"?",
+      "options": [
+        "A. altruism",
+        "B. hand out",
+        "C. sign up for",
+        "D. flood victims"
+      ],
+      "answer": 1,
+      "explanation": "'hand out' (phr.v) nghĩa là: phát quà, phân phát tài liệu."
+    },
+    {
+      "id": "u04_q34",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tham gia vào hoạt động gì\"?",
+      "options": [
+        "A. community",
+        "B. remote",
+        "C. take part in",
+        "D. by mistake"
+      ],
+      "answer": 2,
+      "explanation": "'take part in' (phr.v) nghĩa là: tham gia vào hoạt động gì."
+    },
+    {
+      "id": "u04_q35",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"chung tay, cùng nhau hợp tác\"?",
+      "options": [
+        "A. access",
+        "B. flood victims",
+        "C. philanthropy",
+        "D. join hands"
+      ],
+      "answer": 3,
+      "explanation": "'join hands' (phr.v) nghĩa là: chung tay, cùng nhau hợp tác."
+    },
+    {
+      "id": "u04_q36",
+      "ai_generated": true,
+      "prompt": "\"cheerful\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. vui vẻ, hăng hái, đầy sức sống",
+        "B. tạo ra sự khác biệt lớn lao",
+        "C. tổ chức phi lợi nhuận",
+        "D. giúp đỡ một tay (trong lúc khó khăn)"
+      ],
+      "answer": 0,
+      "explanation": "'cheerful' (adj) nghĩa là: vui vẻ, hăng hái, đầy sức sống."
+    },
+    {
+      "id": "u04_q37",
+      "ai_generated": true,
+      "prompt": "\"community\" (n) có nghĩa là gì?",
+      "options": [
+        "A. sự tiếp cận / tiếp cận cái gì",
+        "B. gặt hái kinh nghiệm thực tế quý báu",
+        "C. cộng đồng",
+        "D. hiệu ứng gợn sóng, hiệu ứng lan tỏa"
+      ],
+      "answer": 2,
+      "explanation": "'community' (n) nghĩa là: cộng đồng."
+    },
+    {
+      "id": "u04_q38",
+      "ai_generated": true,
+      "prompt": "\"confidence\" (n) có nghĩa là gì?",
+      "options": [
+        "A. tạo ra sự khác biệt lớn lao",
+        "B. điền thông tin (vào đơn)",
+        "C. sự tự tin, lòng tin cậy",
+        "D. gặt hái kinh nghiệm thực tế quý báu"
+      ],
+      "answer": 2,
+      "explanation": "'confidence' (n) nghĩa là: sự tự tin, lòng tin cậy."
+    },
+    {
+      "id": "u04_q39",
+      "ai_generated": true,
+      "prompt": "\"confused\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. bối rối, lúng túng",
+        "B. phát quà, phân phát tài liệu",
+        "C. cộng đồng",
+        "D. giúp đỡ một tay (trong lúc khó khăn)"
+      ],
+      "answer": 0,
+      "explanation": "'confused' (adj) nghĩa là: bối rối, lúng túng."
+    },
+    {
+      "id": "u04_q40",
+      "ai_generated": true,
+      "prompt": "\"deliver\" (v) có nghĩa là gì?",
+      "options": [
+        "A. giao hàng, phát quà, cứu tế",
+        "B. hẻo lánh, vùng sâu vùng xa",
+        "C. đồ quyên góp, vật phẩm quyên tặng",
+        "D. bị thiệt thòi, nghèo khó, thiếu thốn"
+      ],
+      "answer": 0,
+      "explanation": "'deliver' (v) nghĩa là: giao hàng, phát quà, cứu tế."
+    },
+    {
+      "id": "u04_q41",
+      "ai_generated": true,
+      "prompt": "\"donate\" (v) có nghĩa là gì?",
+      "options": [
+        "A. bối rối, lúng túng",
+        "B. giúp đỡ một tay (trong lúc khó khăn)",
+        "C. đa dạng, nhiều loại khác nhau",
+        "D. quyên góp, hiến tặng"
+      ],
+      "answer": 3,
+      "explanation": "'donate' (v) nghĩa là: quyên góp, hiến tặng."
+    },
+    {
+      "id": "u04_q42",
+      "ai_generated": true,
+      "prompt": "\"donation\" (n) có nghĩa là gì?",
+      "options": [
+        "A. đồ quyên góp, vật phẩm quyên tặng",
+        "B. tham gia vào hoạt động gì",
+        "C. lòng vị tha, chủ nghĩa vị tha",
+        "D. hiệu ứng gợn sóng, hiệu ứng lan tỏa"
+      ],
+      "answer": 0,
+      "explanation": "'donation' (n) nghĩa là: đồ quyên góp, vật phẩm quyên tặng."
+    },
+    {
+      "id": "u04_q43",
+      "ai_generated": true,
+      "prompt": "\"generous\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. cống hiến, đền đáp lại cho xã hội",
+        "B. vui vẻ, hăng hái, đầy sức sống",
+        "C. nạn nhân bị lũ lụt",
+        "D. hào phóng, rộng lượng"
+      ],
+      "answer": 3,
+      "explanation": "'generous' (adj) nghĩa là: hào phóng, rộng lượng."
+    },
+    {
+      "id": "u04_q44",
+      "ai_generated": true,
+      "prompt": "\"involved\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. hoạt động cứu trợ thiên tai",
+        "B. tham gia, dính dáng, có mặt",
+        "C. tiến hành, thực hiện dự án",
+        "D. gặt hái kinh nghiệm thực tế quý báu"
+      ],
+      "answer": 1,
+      "explanation": "'involved' (adj) nghĩa là: tham gia, dính dáng, có mặt."
+    },
+    {
+      "id": "u04_q45",
+      "ai_generated": true,
+      "prompt": "\"remote\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. các tầng lớp xã hội / hoàn cảnh khác nhau",
+        "B. sự tự tin, lòng tin cậy",
+        "C. hẻo lánh, vùng sâu vùng xa",
+        "D. vui vẻ, hăng hái, đầy sức sống"
+      ],
+      "answer": 2,
+      "explanation": "'remote' (adj) nghĩa là: hẻo lánh, vùng sâu vùng xa."
+    },
+    {
+      "id": "u04_q46",
+      "ai_generated": true,
+      "prompt": "\"various\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. quyên góp tiền, gây quỹ từ thiện",
+        "B. cộng đồng",
+        "C. giúp đỡ một tay (trong lúc khó khăn)",
+        "D. đa dạng, nhiều loại khác nhau"
+      ],
+      "answer": 3,
+      "explanation": "'various' (adj) nghĩa là: đa dạng, nhiều loại khác nhau."
+    },
+    {
+      "id": "u04_q47",
+      "ai_generated": true,
+      "prompt": "\"orphanage\" (n) có nghĩa là gì?",
+      "options": [
+        "A. trông chờ, mong mỏi điều gì",
+        "B. do nhầm lẫn, sơ suất",
+        "C. tình cờ, ngẫu nhiên",
+        "D. trại trẻ mồ côi"
+      ],
+      "answer": 3,
+      "explanation": "'orphanage' (n) nghĩa là: trại trẻ mồ côi."
+    },
+    {
+      "id": "u04_q48",
+      "ai_generated": true,
+      "prompt": "\"charitable\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. hào phóng, rộng lượng",
+        "B. thuộc từ thiện, nhân đạo",
+        "C. hiệu ứng gợn sóng, hiệu ứng lan tỏa",
+        "D. minh bạch, rõ ràng (tài chính, hoạt động)"
+      ],
+      "answer": 1,
+      "explanation": "'charitable' (adj) nghĩa là: thuộc từ thiện, nhân đạo."
+    },
+    {
+      "id": "u04_q49",
+      "ai_generated": true,
+      "prompt": "\"suffer\" (v) có nghĩa là gì?",
+      "options": [
+        "A. thúc đẩy, làm tăng thêm (năng lượng, tự tin)",
+        "B. gặt hái kinh nghiệm thực tế quý báu",
+        "C. cống hiến, đền đáp lại cho xã hội",
+        "D. chịu đựng đau đớn, mất mát"
+      ],
+      "answer": 3,
+      "explanation": "'suffer' (v) nghĩa là: chịu đựng đau đớn, mất mát."
+    },
+    {
+      "id": "u04_q50",
+      "ai_generated": true,
+      "prompt": "\"poverty\" (n) có nghĩa là gì?",
+      "options": [
+        "A. sự nghèo đói",
+        "B. giúp đỡ một tay",
+        "C. lòng vị tha, chủ nghĩa vị tha",
+        "D. đồ quyên góp, vật phẩm quyên tặng"
+      ],
+      "answer": 0,
+      "explanation": "'poverty' (n) nghĩa là: sự nghèo đói."
+    },
+    {
+      "id": "u04_q51",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Joining charity campaigns is a great way for teenagers to ______.\"?",
+      "options": [
+        "A. lend a helping hand",
+        "B. flood victims",
+        "C. by chance / by accident",
+        "D. gain practical experience"
+      ],
+      "answer": 3,
+      "explanation": "'gain practical experience' (colloc) nghĩa là: gặt hái kinh nghiệm thực tế quý báu."
+    },
+    {
+      "id": "u04_q52",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Volunteering allows students to come into contact with people from different backgrounds.\"?",
+      "options": [
+        "A. cheerful",
+        "B. generous",
+        "C. deliver",
+        "D. come into contact with sb"
+      ],
+      "answer": 3,
+      "explanation": "'come into contact with sb' (colloc) nghĩa là: liên lạc, tiếp xúc với ai."
+    },
+    {
+      "id": "u04_q53",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The students set up a fundraiser to raise money for local orphanages.\"?",
+      "options": [
+        "A. walks of life",
+        "B. remote",
+        "C. raise money / funds for charity",
+        "D. transparent"
+      ],
+      "answer": 2,
+      "explanation": "'raise money / funds for charity' (colloc) nghĩa là: quyên góp tiền, gây quỹ từ thiện."
+    },
+    {
+      "id": "u04_q54",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Even small daily contributions can ______ in saving raw materials.\"?",
+      "options": [
+        "A. make a significant difference",
+        "B. access",
+        "C. poverty",
+        "D. remote areas"
+      ],
+      "answer": 0,
+      "explanation": "'make a significant difference' (colloc) nghĩa là: tạo ra sự khác biệt lớn lao."
+    },
+    {
+      "id": "u04_q55",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Public speaking at community centers helps boost students' self-confidence.\"?",
+      "options": [
+        "A. emergency supplies",
+        "B. boost self-confidence",
+        "C. help out",
+        "D. involved"
+      ],
+      "answer": 1,
+      "explanation": "'boost self-confidence' (colloc) nghĩa là: củng cố, nâng cao lòng tự tin."
+    },
+    {
+      "id": "u04_q56",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Investing in local education is a catalyst for ______.\"?",
+      "options": [
+        "A. fill in",
+        "B. philanthropy",
+        "C. deliver",
+        "D. community development"
+      ],
+      "answer": 3,
+      "explanation": "'community development' (colloc) nghĩa là: phát triển cộng đồng."
+    },
+    {
+      "id": "u04_q57",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"A helicopter airlifted tons of ______ to the isolated village.\"?",
+      "options": [
+        "A. boost",
+        "B. emergency supplies",
+        "C. life-saving skills",
+        "D. volunteer project"
+      ],
+      "answer": 1,
+      "explanation": "'emergency supplies' (colloc) nghĩa là: nhu yếu phẩm khẩn cấp."
+    },
+    {
+      "id": "u04_q58",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"She works as a volunteer for an international ______.\"?",
+      "options": [
+        "A. community",
+        "B. help out",
+        "C. non-profit organisation",
+        "D. involved"
+      ],
+      "answer": 2,
+      "explanation": "'non-profit organisation' (colloc) nghĩa là: tổ chức phi lợi nhuận."
+    },
+    {
+      "id": "u04_q59",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The youth union launched a new ______ to clean up local rivers.\"?",
+      "options": [
+        "A. come into contact with sb",
+        "B. volunteer project",
+        "C. step up",
+        "D. give back"
+      ],
+      "answer": 1,
+      "explanation": "'volunteer project' (colloc) nghĩa là: dự án tình nguyện."
+    },
+    {
+      "id": "u04_q60",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Volunteers are trained in basic ______ like first aid.\"?",
+      "options": [
+        "A. gain practical experience",
+        "B. suffer",
+        "C. sign up for",
+        "D. life-saving skills"
+      ],
+      "answer": 3,
+      "explanation": "'life-saving skills' (colloc) nghĩa là: kỹ năng cứu sinh, cứu người."
     }
   ]
 }

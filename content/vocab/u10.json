@@ -507,10 +507,10 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"The local cave is highly famous for its ancient, majestic ______s.\"",
       "options": [
-        "A. retain",
-        "B. local",
+        "A. set off",
+        "B. hunt",
         "C. stalactite",
-        "D. responsible"
+        "D. check in"
       ],
       "answer": 2,
       "explanation": "'stalactite' (n) nghĩa là: nhũ đá (trong hang động địa chất)."
@@ -520,9 +520,9 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Ecotourism supports ______ communities by generating profit directly for them.\"",
       "options": [
-        "A. craft",
-        "B. damage",
-        "C. responsible",
+        "A. aware",
+        "B. take off",
+        "C. follow",
         "D. indigenous"
       ],
       "answer": 3,
@@ -533,10 +533,10 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"The host community managed to ______ their traditional festivals despite modernization.\"",
       "options": [
-        "A. follow",
+        "A. host",
         "B. retain",
-        "C. explore",
-        "D. ecotourism"
+        "C. protect",
+        "D. reduce the negative impact of tourism"
       ],
       "answer": 1,
       "explanation": "'retain' (v) nghĩa là: bảo tồn, giữ lại (bản sắc văn hóa)."
@@ -547,9 +547,9 @@
       "prompt": "Điền từ thích hợp vào chỗ trống: \"______ causes serious damage to the natural environment and local infrastructure.\"",
       "options": [
         "A. mass tourism",
-        "B. souvenir",
-        "C. path",
-        "D. follow"
+        "B. floating market",
+        "C. hit the road",
+        "D. ecotourism"
       ],
       "answer": 0,
       "explanation": "'mass tourism' (n) nghĩa là: du lịch đại chúng, du lịch số đông."
@@ -559,10 +559,10 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Ecotourism must align with the goals of ______.\"",
       "options": [
-        "A. responsible",
+        "A. find out",
         "B. sustainable development",
-        "C. follow",
-        "D. profit"
+        "C. explore",
+        "D. responsible"
       ],
       "answer": 1,
       "explanation": "'sustainable development' (n.phr) nghĩa là: phát triển bền vững."
@@ -572,12 +572,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Travelers must be highly ______ of their impact on local wildlife.\"",
       "options": [
-        "A. hunt",
-        "B. retain",
-        "C. aware",
-        "D. indigenous"
+        "A. live out of a suitcase",
+        "B. local",
+        "C. mass tourism",
+        "D. aware"
       ],
-      "answer": 2,
+      "answer": 3,
       "explanation": "'aware' (adj) nghĩa là: có nhận thức, ý thức về việc gì."
     },
     {
@@ -585,12 +585,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"The travel agency handed out ______s about pristine ecotourism destinations.\"",
       "options": [
-        "A. host",
-        "B. brochure",
-        "C. aware",
-        "D. souvenir"
+        "A. brochure",
+        "B. safe and sound",
+        "C. protect",
+        "D. set off"
       ],
-      "answer": 1,
+      "answer": 0,
       "explanation": "'brochure' (n) nghĩa là: tờ quảng cáo, tờ gấp thông tin."
     },
     {
@@ -598,12 +598,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Buying handmade ______s directly supports the host community.\"",
       "options": [
-        "A. craft",
-        "B. profit",
-        "C. impact",
-        "D. stalactite"
+        "A. live out of a suitcase",
+        "B. culture",
+        "C. retain",
+        "D. craft"
       ],
-      "answer": 0,
+      "answer": 3,
       "explanation": "'craft' (n) nghĩa là: đồ thủ công mỹ nghệ."
     },
     {
@@ -611,12 +611,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Thousands of mass tourists ______ the small beach town every summer.\"",
       "options": [
-        "A. ecotourism",
-        "B. crowd",
-        "C. craft",
-        "D. indigenous"
+        "A. protect",
+        "B. pristine ecotourism destination",
+        "C. crowd",
+        "D. hunt"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "'crowd' (v/n) nghĩa là: đổ dồn về, tụ tập đông / đám đông."
     },
     {
@@ -624,13 +624,663 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Respecting local ______ is a fundamental rule for responsible travelers.\"",
       "options": [
-        "A. stalactite",
-        "B. mass tourism",
+        "A. explore",
+        "B. read travel brochure",
         "C. culture",
-        "D. protect"
+        "D. drop off"
       ],
       "answer": 2,
       "explanation": "'culture' (n) nghĩa là: văn hóa."
+    },
+    {
+      "id": "u10_q11",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Littering can severely ______ the aesthetic value of scenic landscapes.\"",
+      "options": [
+        "A. stalactite",
+        "B. damage",
+        "C. mass tourism",
+        "D. generate profit for local people"
+      ],
+      "answer": 1,
+      "explanation": "'damage' (v/n) nghĩa là: làm hư hại / thiệt hại."
+    },
+    {
+      "id": "u10_q12",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ offers opportunities to explore nature while protecting it.\"",
+      "options": [
+        "A. pristine ecotourism destination",
+        "B. floating market",
+        "C. sustainable development goals",
+        "D. ecotourism"
+      ],
+      "answer": 3,
+      "explanation": "'ecotourism' (n) nghĩa là: du lịch sinh thái."
+    },
+    {
+      "id": "u10_q13",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The national park allows visitors to ______ ancient caves and dense jungles.\"",
+      "options": [
+        "A. pick up",
+        "B. explore",
+        "C. sustainable development goals",
+        "D. safe and sound"
+      ],
+      "answer": 1,
+      "explanation": "'explore' (v) nghĩa là: khám phá, thám hiểm."
+    },
+    {
+      "id": "u10_q14",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Visiting a ______ in the Mekong Delta is a unique experience.\"",
+      "options": [
+        "A. pick up",
+        "B. hunt",
+        "C. host",
+        "D. floating market"
+      ],
+      "answer": 3,
+      "explanation": "'floating market' (n) nghĩa là: chợ nổi (đặc trưng miền Tây)."
+    },
+    {
+      "id": "u10_q15",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Tourists must strictly ______ the trail to avoid disrupting natural habitats.\"",
+      "options": [
+        "A. explore",
+        "B. follow",
+        "C. sustainable development goals",
+        "D. hit the road"
+      ],
+      "answer": 1,
+      "explanation": "'follow' (v) nghĩa là: đi theo, tuân thủ (quy tắc)."
+    },
+    {
+      "id": "u10_q16",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Homestay visitors should respect the customs of their local ______s.\"",
+      "options": [
+        "A. handmade crafts",
+        "B. path",
+        "C. sustainable development goals",
+        "D. host"
+      ],
+      "answer": 3,
+      "explanation": "'host' (n) nghĩa là: chủ nhà, cộng đồng bản địa."
+    },
+    {
+      "id": "u10_q17",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Poachers are caught trying to ______ endangered animals in the national park.\"",
+      "options": [
+        "A. drop off",
+        "B. respect local culture and traditions",
+        "C. support local economy",
+        "D. hunt"
+      ],
+      "answer": 3,
+      "explanation": "'hunt' (v) nghĩa là: săn bắn (trái phép)."
+    },
+    {
+      "id": "u10_q18",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Mass tourism has a highly negative ______ on the local environment.\"",
+      "options": [
+        "A. impact",
+        "B. sustainable development goals",
+        "C. knowledgeable tour guide",
+        "D. indigenous flora and fauna"
+      ],
+      "answer": 0,
+      "explanation": "'impact' (n/v) nghĩa là: sự tác động, ảnh hưởng mạnh mẽ."
+    },
+    {
+      "id": "u10_q19",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Buying ______ products is an excellent way to support the host economy.\"",
+      "options": [
+        "A. take protective measures",
+        "B. local",
+        "C. point out",
+        "D. sustainable development"
+      ],
+      "answer": 1,
+      "explanation": "'local' (adj) nghĩa là: thuộc địa phương."
+    },
+    {
+      "id": "u10_q20",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ production of souvenirs often exploits indigenous designs.\"",
+      "options": [
+        "A. host",
+        "B. get away",
+        "C. mass",
+        "D. point out"
+      ],
+      "answer": 2,
+      "explanation": "'mass' (adj) nghĩa là: đại chúng, số lượng cực lớn."
+    },
+    {
+      "id": "u10_q21",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"lối đi, đường mòn\"?",
+      "options": [
+        "A. reduce the negative impact of tourism",
+        "B. path",
+        "C. hold up",
+        "D. travel light"
+      ],
+      "answer": 1,
+      "explanation": "'path' (n) nghĩa là: lối đi, đường mòn."
+    },
+    {
+      "id": "u10_q22",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"lợi nhuận\"?",
+      "options": [
+        "A. profit",
+        "B. ecotourism",
+        "C. brochure",
+        "D. floating market"
+      ],
+      "answer": 0,
+      "explanation": "'profit' (n) nghĩa là: lợi nhuận."
+    },
+    {
+      "id": "u10_q23",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"bảo vệ, che chở\"?",
+      "options": [
+        "A. read travel brochure",
+        "B. protect",
+        "C. souvenir",
+        "D. craft"
+      ],
+      "answer": 1,
+      "explanation": "'protect' (v) nghĩa là: bảo vệ, che chở."
+    },
+    {
+      "id": "u10_q24",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"có trách nhiệm\"?",
+      "options": [
+        "A. scenic tourist attraction",
+        "B. souvenir",
+        "C. responsible",
+        "D. host"
+      ],
+      "answer": 2,
+      "explanation": "'responsible' (adj) nghĩa là: có trách nhiệm."
+    },
+    {
+      "id": "u10_q25",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"quà lưu niệm\"?",
+      "options": [
+        "A. damage",
+        "B. culture",
+        "C. set off",
+        "D. souvenir"
+      ],
+      "answer": 3,
+      "explanation": "'souvenir' (n) nghĩa là: quà lưu niệm."
+    },
+    {
+      "id": "u10_q26",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"đi nghỉ, thoát khỏi áp lực để về với thiên nhiên\"?",
+      "options": [
+        "A. get away",
+        "B. set off",
+        "C. support local economy",
+        "D. take off"
+      ],
+      "answer": 0,
+      "explanation": "'get away' (phr.v) nghĩa là: đi nghỉ, thoát khỏi áp lực để về với thiên nhiên."
+    },
+    {
+      "id": "u10_q27",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"nhìn ngắm xung quanh, đi dạo xem\"?",
+      "options": [
+        "A. indigenous flora and fauna",
+        "B. look around",
+        "C. protect",
+        "D. knowledgeable tour guide"
+      ],
+      "answer": 1,
+      "explanation": "'look around' (phr.v) nghĩa là: nhìn ngắm xung quanh, đi dạo xem."
+    },
+    {
+      "id": "u10_q28",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"làm thủ tục nhận phòng\"?",
+      "options": [
+        "A. pristine ecotourism destination",
+        "B. live out of a suitcase",
+        "C. check in",
+        "D. ecotourism"
+      ],
+      "answer": 2,
+      "explanation": "'check in' (phr.v) nghĩa là: làm thủ tục nhận phòng."
+    },
+    {
+      "id": "u10_q29",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"khởi hành một chuyến đi\"?",
+      "options": [
+        "A. set off",
+        "B. handmade crafts",
+        "C. take off",
+        "D. souvenir"
+      ],
+      "answer": 0,
+      "explanation": "'set off' (phr.v) nghĩa là: khởi hành một chuyến đi."
+    },
+    {
+      "id": "u10_q30",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"thả ai xuống xe\"?",
+      "options": [
+        "A. craft",
+        "B. hunt",
+        "C. drop off",
+        "D. respect local culture and traditions"
+      ],
+      "answer": 2,
+      "explanation": "'drop off' (phr.v) nghĩa là: thả ai xuống xe."
+    },
+    {
+      "id": "u10_q31",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"làm trì hoãn, nghẽn (giao thông)\"?",
+      "options": [
+        "A. mass",
+        "B. handmade crafts",
+        "C. hold up",
+        "D. craft"
+      ],
+      "answer": 2,
+      "explanation": "'hold up' (phr.v) nghĩa là: làm trì hoãn, nghẽn (giao thông)."
+    },
+    {
+      "id": "u10_q32",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"đón ai, nhặt rác lên\"?",
+      "options": [
+        "A. path",
+        "B. pick up",
+        "C. follow",
+        "D. get away"
+      ],
+      "answer": 1,
+      "explanation": "'pick up' (phr.v) nghĩa là: đón ai, nhặt rác lên."
+    },
+    {
+      "id": "u10_q33",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"cất cánh (máy bay), thành công nhanh\"?",
+      "options": [
+        "A. take off",
+        "B. brochure",
+        "C. check in",
+        "D. travel light"
+      ],
+      "answer": 0,
+      "explanation": "'take off' (phr.v) nghĩa là: cất cánh (máy bay), thành công nhanh."
+    },
+    {
+      "id": "u10_q34",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"chỉ ra (thông tin, đặc điểm)\"?",
+      "options": [
+        "A. hunt",
+        "B. path",
+        "C. off the beaten track",
+        "D. point out"
+      ],
+      "answer": 3,
+      "explanation": "'point out' (phr.v) nghĩa là: chỉ ra (thông tin, đặc điểm)."
+    },
+    {
+      "id": "u10_q35",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tìm hiểu, phát hiện ra thông tin\"?",
+      "options": [
+        "A. travel light",
+        "B. find out",
+        "C. hunt",
+        "D. respect local culture and traditions"
+      ],
+      "answer": 1,
+      "explanation": "'find out' (phr.v) nghĩa là: tìm hiểu, phát hiện ra thông tin."
+    },
+    {
+      "id": "u10_q36",
+      "ai_generated": true,
+      "prompt": "\"damage\" (v/n) có nghĩa là gì?",
+      "options": [
+        "A. làm hư hại / thiệt hại",
+        "B. tôn trọng văn hóa và truyền thống địa phương",
+        "C. làm trì hoãn, nghẽn (giao thông)",
+        "D. quà lưu niệm"
+      ],
+      "answer": 0,
+      "explanation": "'damage' (v/n) nghĩa là: làm hư hại / thiệt hại."
+    },
+    {
+      "id": "u10_q37",
+      "ai_generated": true,
+      "prompt": "\"ecotourism\" (n) có nghĩa là gì?",
+      "options": [
+        "A. du lịch sinh thái",
+        "B. di chuyển liên tục, sống bằng đồ trong vali",
+        "C. du lịch đại chúng, du lịch số đông",
+        "D. áp dụng các biện pháp bảo vệ"
+      ],
+      "answer": 0,
+      "explanation": "'ecotourism' (n) nghĩa là: du lịch sinh thái."
+    },
+    {
+      "id": "u10_q38",
+      "ai_generated": true,
+      "prompt": "\"explore\" (v) có nghĩa là gì?",
+      "options": [
+        "A. khám phá, thám hiểm",
+        "B. các mục tiêu phát triển bền vững",
+        "C. phát triển bền vững",
+        "D. lên đường khởi hành đi"
+      ],
+      "answer": 0,
+      "explanation": "'explore' (v) nghĩa là: khám phá, thám hiểm."
+    },
+    {
+      "id": "u10_q39",
+      "ai_generated": true,
+      "prompt": "\"floating market\" (n) có nghĩa là gì?",
+      "options": [
+        "A. các mục tiêu phát triển bền vững",
+        "B. bình an vô sự, an toàn tuyệt đối",
+        "C. du lịch sinh thái",
+        "D. chợ nổi (đặc trưng miền Tây)"
+      ],
+      "answer": 3,
+      "explanation": "'floating market' (n) nghĩa là: chợ nổi (đặc trưng miền Tây)."
+    },
+    {
+      "id": "u10_q40",
+      "ai_generated": true,
+      "prompt": "\"follow\" (v) có nghĩa là gì?",
+      "options": [
+        "A. bù đắp dấu chân carbon",
+        "B. đi theo, tuân thủ (quy tắc)",
+        "C. chợ nổi truyền thống",
+        "D. hướng dẫn viên du lịch am hiểu sâu sắc"
+      ],
+      "answer": 1,
+      "explanation": "'follow' (v) nghĩa là: đi theo, tuân thủ (quy tắc)."
+    },
+    {
+      "id": "u10_q41",
+      "ai_generated": true,
+      "prompt": "\"host\" (n) có nghĩa là gì?",
+      "options": [
+        "A. bình an vô sự, an toàn tuyệt đối",
+        "B. chủ nhà, cộng đồng bản địa",
+        "C. có nhận thức, ý thức về việc gì",
+        "D. lên đường khởi hành đi"
+      ],
+      "answer": 1,
+      "explanation": "'host' (n) nghĩa là: chủ nhà, cộng đồng bản địa."
+    },
+    {
+      "id": "u10_q42",
+      "ai_generated": true,
+      "prompt": "\"hunt\" (v) có nghĩa là gì?",
+      "options": [
+        "A. chỉ ra (thông tin, đặc điểm)",
+        "B. săn bắn (trái phép)",
+        "C. có trách nhiệm",
+        "D. văn hóa"
+      ],
+      "answer": 1,
+      "explanation": "'hunt' (v) nghĩa là: săn bắn (trái phép)."
+    },
+    {
+      "id": "u10_q43",
+      "ai_generated": true,
+      "prompt": "\"impact\" (n/v) có nghĩa là gì?",
+      "options": [
+        "A. sự tác động, ảnh hưởng mạnh mẽ",
+        "B. tìm hiểu, phát hiện ra thông tin",
+        "C. đại chúng, số lượng cực lớn",
+        "D. du lịch sinh thái"
+      ],
+      "answer": 0,
+      "explanation": "'impact' (n/v) nghĩa là: sự tác động, ảnh hưởng mạnh mẽ."
+    },
+    {
+      "id": "u10_q44",
+      "ai_generated": true,
+      "prompt": "\"local\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. cất cánh (máy bay), thành công nhanh",
+        "B. bù đắp dấu chân carbon",
+        "C. thuộc địa phương",
+        "D. bảo tồn, giữ lại (bản sắc văn hóa)"
+      ],
+      "answer": 2,
+      "explanation": "'local' (adj) nghĩa là: thuộc địa phương."
+    },
+    {
+      "id": "u10_q45",
+      "ai_generated": true,
+      "prompt": "\"mass\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. bản xứ, bản địa (văn hóa, con người)",
+        "B. lợi nhuận",
+        "C. bù đắp dấu chân carbon",
+        "D. đại chúng, số lượng cực lớn"
+      ],
+      "answer": 3,
+      "explanation": "'mass' (adj) nghĩa là: đại chúng, số lượng cực lớn."
+    },
+    {
+      "id": "u10_q46",
+      "ai_generated": true,
+      "prompt": "\"path\" (n) có nghĩa là gì?",
+      "options": [
+        "A. chỉ ra (thông tin, đặc điểm)",
+        "B. ở nơi hẻo lánh, độc đáo, chưa ai khai phá",
+        "C. thuộc địa phương",
+        "D. lối đi, đường mòn"
+      ],
+      "answer": 3,
+      "explanation": "'path' (n) nghĩa là: lối đi, đường mòn."
+    },
+    {
+      "id": "u10_q47",
+      "ai_generated": true,
+      "prompt": "\"profit\" (n) có nghĩa là gì?",
+      "options": [
+        "A. đồ thủ công mỹ nghệ",
+        "B. du lịch đại chúng, du lịch số đông",
+        "C. lợi nhuận",
+        "D. mang hành lý gọn nhẹ"
+      ],
+      "answer": 2,
+      "explanation": "'profit' (n) nghĩa là: lợi nhuận."
+    },
+    {
+      "id": "u10_q48",
+      "ai_generated": true,
+      "prompt": "\"protect\" (v) có nghĩa là gì?",
+      "options": [
+        "A. ở nơi hẻo lánh, độc đáo, chưa ai khai phá",
+        "B. có nhận thức, ý thức về việc gì",
+        "C. giảm thiểu tối đa lượng rác thải ra",
+        "D. bảo vệ, che chở"
+      ],
+      "answer": 3,
+      "explanation": "'protect' (v) nghĩa là: bảo vệ, che chở."
+    },
+    {
+      "id": "u10_q49",
+      "ai_generated": true,
+      "prompt": "\"responsible\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. bảo tồn, giữ lại (bản sắc văn hóa)",
+        "B. có trách nhiệm",
+        "C. hỗ trợ nền kinh tế địa phương",
+        "D. quà lưu niệm"
+      ],
+      "answer": 1,
+      "explanation": "'responsible' (adj) nghĩa là: có trách nhiệm."
+    },
+    {
+      "id": "u10_q50",
+      "ai_generated": true,
+      "prompt": "\"souvenir\" (n) có nghĩa là gì?",
+      "options": [
+        "A. chỉ ra (thông tin, đặc điểm)",
+        "B. lên đường khởi hành đi",
+        "C. quà lưu niệm",
+        "D. chủ nhà, cộng đồng bản địa"
+      ],
+      "answer": 2,
+      "explanation": "'souvenir' (n) nghĩa là: quà lưu niệm."
+    },
+    {
+      "id": "u10_q51",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The main aim of ecotourism is to ______ on wildlife.\"?",
+      "options": [
+        "A. reduce the negative impact of tourism",
+        "B. read travel brochure",
+        "C. travel light",
+        "D. pick up"
+      ],
+      "answer": 0,
+      "explanation": "'reduce the negative impact of tourism' (colloc) nghĩa là: giảm thiểu tác động tiêu cực của du lịch."
+    },
+    {
+      "id": "u10_q52",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Travelers must respect local culture and buy handmade crafts to support residents.\"?",
+      "options": [
+        "A. damage",
+        "B. respect local culture and traditions",
+        "C. scenic tourist attraction",
+        "D. aware"
+      ],
+      "answer": 1,
+      "explanation": "'respect local culture and traditions' (colloc) nghĩa là: tôn trọng văn hóa và truyền thống địa phương."
+    },
+    {
+      "id": "u10_q53",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Successful ecotourism programs must generate profit directly for the host community.\"?",
+      "options": [
+        "A. pristine ecotourism destination",
+        "B. generate profit for local people",
+        "C. safe and sound",
+        "D. mass"
+      ],
+      "answer": 1,
+      "explanation": "'generate profit for local people' (colloc) nghĩa là: tạo ra lợi nhuận cho người dân địa phương."
+    },
+    {
+      "id": "u10_q54",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Ecotourism aligns perfectly with global ______.\"?",
+      "options": [
+        "A. safe and sound",
+        "B. sustainable development goals",
+        "C. follow",
+        "D. knowledgeable tour guide"
+      ],
+      "answer": 1,
+      "explanation": "'sustainable development goals' (colloc) nghĩa là: các mục tiêu phát triển bền vững."
+    },
+    {
+      "id": "u10_q55",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Mai Chau is highly famous as a ______ in Vietnam.\"?",
+      "options": [
+        "A. drop off",
+        "B. floating market",
+        "C. pristine ecotourism destination",
+        "D. set off"
+      ],
+      "answer": 2,
+      "explanation": "'pristine ecotourism destination' (colloc) nghĩa là: điểm đến du lịch sinh thái nguyên sơ."
+    },
+    {
+      "id": "u10_q56",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Visiting a ______ is a highly popular activity in the Mekong Delta.\"?",
+      "options": [
+        "A. live out of a suitcase",
+        "B. reduce the negative impact of tourism",
+        "C. floating market",
+        "D. hold up"
+      ],
+      "answer": 2,
+      "explanation": "'floating market' (colloc) nghĩa là: chợ nổi truyền thống."
+    },
+    {
+      "id": "u10_q57",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Ecotourists are encouraged to buy unique ______ as souvenirs.\"?",
+      "options": [
+        "A. handmade crafts",
+        "B. respect local culture and traditions",
+        "C. read travel brochure",
+        "D. mass tourism"
+      ],
+      "answer": 0,
+      "explanation": "'handmade crafts' (colloc) nghĩa là: đồ thủ công làm bằng tay."
+    },
+    {
+      "id": "u10_q58",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Eating at local family restaurants helps support the local economy.\"?",
+      "options": [
+        "A. profit",
+        "B. knowledgeable tour guide",
+        "C. live out of a suitcase",
+        "D. support local economy"
+      ],
+      "answer": 3,
+      "explanation": "'support local economy' (colloc) nghĩa là: hỗ trợ nền kinh tế địa phương."
+    },
+    {
+      "id": "u10_q59",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The ______ explained the history of the ancient caves.\"?",
+      "options": [
+        "A. path",
+        "B. hunt",
+        "C. knowledgeable tour guide",
+        "D. protect"
+      ],
+      "answer": 2,
+      "explanation": "'knowledgeable tour guide' (colloc) nghĩa là: hướng dẫn viên du lịch am hiểu sâu sắc."
+    },
+    {
+      "id": "u10_q60",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The government must ______ to preserve coral reefs.\"?",
+      "options": [
+        "A. take protective measures",
+        "B. mass",
+        "C. stalactite",
+        "D. craft"
+      ],
+      "answer": 0,
+      "explanation": "'take protective measures' (colloc) nghĩa là: áp dụng các biện pháp bảo vệ."
     }
   ]
 }

@@ -507,12 +507,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"______ is highly effective as it combines face-to-face classes with digital resources.\"",
       "options": [
-        "A. electronic",
-        "B. blended learning",
-        "C. real-world",
-        "D. high-speed"
+        "A. look up",
+        "B. digital technology",
+        "C. blended learning",
+        "D. teach an old dog new tricks"
       ],
-      "answer": 1,
+      "answer": 2,
       "explanation": "'blended learning' (n) nghĩa là: phương pháp học tập kết hợp (trực tiếp & trực tuyến)."
     },
     {
@@ -520,12 +520,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Noise from construction sites was a major ______ during the lecture.\"",
       "options": [
-        "A. strategy",
-        "B. control",
-        "C. online learning",
-        "D. distraction"
+        "A. blended learning method",
+        "B. distraction",
+        "C. keep sb focused on sth",
+        "D. exchange academic information"
       ],
-      "answer": 3,
+      "answer": 1,
       "explanation": "'distraction' (n) nghĩa là: sự xao nhãng, mất tập trung."
     },
     {
@@ -533,12 +533,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Students need to develop a solid study ______ to pass the final exam.\"",
       "options": [
-        "A. focus",
-        "B. high-speed",
-        "C. distraction",
-        "D. strategy"
+        "A. log out / log off",
+        "B. flow chart",
+        "C. strategy",
+        "D. online learning"
       ],
-      "answer": 3,
+      "answer": 2,
       "explanation": "'strategy' (n) nghĩa là: chiến lược học tập/phát triển."
     },
     {
@@ -546,12 +546,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"The teacher gave ______ examples to explain the complex scientific theory.\"",
       "options": [
-        "A. voice recorder",
-        "B. focus",
-        "C. real-world",
-        "D. communicate"
+        "A. high-speed internet connection",
+        "B. real-world",
+        "C. communicate",
+        "D. note down"
       ],
-      "answer": 2,
+      "answer": 1,
       "explanation": "'real-world' (adj) nghĩa là: thuộc thực tế, ứng dụng đời thực."
     },
     {
@@ -559,9 +559,9 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Digital technology offers ______ ways for children to explore science.\"",
       "options": [
-        "A. original",
-        "B. focus",
-        "C. collaborative",
+        "A. keep up with",
+        "B. have a positive / negative impact on sth",
+        "C. high-speed",
         "D. interactive"
       ],
       "answer": 3,
@@ -572,12 +572,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Online platforms enable students to ______ with experts worldwide.\"",
       "options": [
-        "A. high-speed",
-        "B. blended learning",
-        "C. control",
-        "D. communicate"
+        "A. keep up with",
+        "B. original",
+        "C. communicate",
+        "D. log in / log on"
       ],
-      "answer": 3,
+      "answer": 2,
       "explanation": "'communicate' (v) nghĩa là: giao tiếp, trao đổi."
     },
     {
@@ -585,9 +585,9 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Self-study requires students to have great ______ over their learning schedule.\"",
       "options": [
-        "A. digital",
-        "B. electronic",
-        "C. communicate",
+        "A. real-world",
+        "B. communicate",
+        "C. pass with flying colors",
         "D. control"
       ],
       "answer": 3,
@@ -598,12 +598,12 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"The ______ age has brought about a revolution in classroom resources.\"",
       "options": [
-        "A. teamwork",
+        "A. digital learning platforms",
         "B. voice recorder",
-        "C. original",
-        "D. digital"
+        "C. digital",
+        "D. hit the books"
       ],
-      "answer": 3,
+      "answer": 2,
       "explanation": "'digital' (adj) nghĩa là: kỹ thuật số, thuộc về công nghệ."
     },
     {
@@ -611,26 +611,676 @@
       "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Students can easily ______ study materials through local forums.\"",
       "options": [
-        "A. voice recorder",
-        "B. original",
-        "C. control",
-        "D. exchange"
+        "A. resource",
+        "B. exchange",
+        "C. install",
+        "D. foster active participation"
       ],
-      "answer": 3,
+      "answer": 1,
       "explanation": "'exchange' (v/n) nghĩa là: trao đổi."
     },
     {
       "id": "u08_q10",
       "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ interaction helps teachers understand their students' feelings better.\"",
+      "options": [
+        "A. face-to-face",
+        "B. improve academic performance",
+        "C. high-speed internet connection",
+        "D. keep up with"
+      ],
+      "answer": 0,
+      "explanation": "'face-to-face' (adj/adv) nghĩa là: trực tiếp, mặt đối mặt."
+    },
+    {
+      "id": "u08_q11",
+      "ai_generated": true,
       "prompt": "Điền từ thích hợp vào chỗ trống: \"Using a ______ is an excellent way to visualize a complex process.\"",
       "options": [
-        "A. flow chart",
-        "B. exchange",
+        "A. provide constructive feedback",
+        "B. control",
+        "C. flow chart",
+        "D. exchange academic information"
+      ],
+      "answer": 2,
+      "explanation": "'flow chart' (n) nghĩa là: sơ đồ quy trình, lưu đồ."
+    },
+    {
+      "id": "u08_q12",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"It is hard to ______ on the lecture when you have online notifications popping up.\"",
+      "options": [
+        "A. digital learning platforms",
+        "B. focus",
+        "C. keep up with",
+        "D. burn the midnight oil"
+      ],
+      "answer": 1,
+      "explanation": "'focus' (v/n) nghĩa là: tập trung / tiêu điểm, sự tập trung."
+    },
+    {
+      "id": "u08_q13",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Rural classrooms need ______ internet to gain access to online lectures.\"",
+      "options": [
+        "A. original",
+        "B. control",
+        "C. voice recorder",
+        "D. high-speed"
+      ],
+      "answer": 3,
+      "explanation": "'high-speed' (adj) nghĩa là: tốc độ cao (internet, kết nối)."
+    },
+    {
+      "id": "u08_q14",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"With smart devices, you can look up new words ______.\"",
+      "options": [
+        "A. immediately",
+        "B. plug in",
+        "C. digital learning platforms",
+        "D. burn the midnight oil"
+      ],
+      "answer": 0,
+      "explanation": "'immediately' (adv) nghĩa là: ngay lập tức."
+    },
+    {
+      "id": "u08_q15",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"You should ______ an interactive dictionary on your smartphone.\"",
+      "options": [
+        "A. pass with flying colors",
+        "B. install",
+        "C. voice recorder",
+        "D. distraction"
+      ],
+      "answer": 1,
+      "explanation": "'install' (v) nghĩa là: cài đặt (phần mềm, ứng dụng)."
+    },
+    {
+      "id": "u08_q16",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ offers great flexibility for busy homemakers.\"",
+      "options": [
+        "A. learn by heart",
+        "B. blended learning method",
         "C. online learning",
-        "D. collaborative"
+        "D. flow chart"
+      ],
+      "answer": 2,
+      "explanation": "'online learning' (n) nghĩa là: học trực tuyến."
+    },
+    {
+      "id": "u08_q17",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The student’s project was highly praised for its ______ design.\"",
+      "options": [
+        "A. original",
+        "B. digital learning platforms",
+        "C. foster active participation",
+        "D. log in / log on"
+      ],
+      "answer": 0,
+      "explanation": "'original' (adj) nghĩa là: độc đáo, sáng tạo, nguyên bản."
+    },
+    {
+      "id": "u08_q18",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The school provides extensive digital ______s, including e-books and videos.\"",
+      "options": [
+        "A. resource",
+        "B. teamwork",
+        "C. look up",
+        "D. original"
+      ],
+      "answer": 0,
+      "explanation": "'resource' (n) nghĩa là: tài nguyên học tập, nguồn lực."
+    },
+    {
+      "id": "u08_q19",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"An organized study schedule ___s students ___ ___ their daily tasks.\"",
+      "options": [
+        "A. online learning",
+        "B. electronic",
+        "C. digital technology",
+        "D. keep sb focused on sth"
+      ],
+      "answer": 3,
+      "explanation": "'keep sb focused on sth' (n/v) nghĩa là: giữ cho ai luôn tập trung vào mục tiêu."
+    },
+    {
+      "id": "u08_q20",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Classroom projects are highly beneficial for developing ______ skills.\"",
+      "options": [
+        "A. face-to-face",
+        "B. feedback",
+        "C. teamwork",
+        "D. provide constructive feedback"
+      ],
+      "answer": 2,
+      "explanation": "'teamwork' (n) nghĩa là: làm việc nhóm, hoạt động nhóm."
+    },
+    {
+      "id": "u08_q21",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"máy ghi âm, thiết bị thu âm\"?",
+      "options": [
+        "A. eliminate classroom distractions",
+        "B. voice recorder",
+        "C. burn the midnight oil",
+        "D. log in / log on"
+      ],
+      "answer": 1,
+      "explanation": "'voice recorder' (n) nghĩa là: máy ghi âm, thiết bị thu âm."
+    },
+    {
+      "id": "u08_q22",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"thuộc về điện tử\"?",
+      "options": [
+        "A. eliminate classroom distractions",
+        "B. print out",
+        "C. electronic",
+        "D. keep sb focused on sth"
+      ],
+      "answer": 2,
+      "explanation": "'electronic' (adj) nghĩa là: thuộc về điện tử."
+    },
+    {
+      "id": "u08_q23",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"ý kiến phản hồi, nhận xét\"?",
+      "options": [
+        "A. look up",
+        "B. teach an old dog new tricks",
+        "C. collaborative",
+        "D. feedback"
+      ],
+      "answer": 3,
+      "explanation": "'feedback' (n) nghĩa là: ý kiến phản hồi, nhận xét."
+    },
+    {
+      "id": "u08_q24",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"mang tính cộng tác, phối hợp\"?",
+      "options": [
+        "A. blended learning method",
+        "B. collaborative",
+        "C. original",
+        "D. burn the midnight oil"
+      ],
+      "answer": 1,
+      "explanation": "'collaborative' (adj) nghĩa là: mang tính cộng tác, phối hợp."
+    },
+    {
+      "id": "u08_q25",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"thuộc học thuật, lý thuyết\"?",
+      "options": [
+        "A. digital learning platforms",
+        "B. flow chart",
+        "C. academic",
+        "D. face-to-face"
+      ],
+      "answer": 2,
+      "explanation": "'academic' (adj) nghĩa là: thuộc học thuật, lý thuyết."
+    },
+    {
+      "id": "u08_q26",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tìm kiếm, lục tìm\"?",
+      "options": [
+        "A. learn by heart",
+        "B. online learning",
+        "C. look for",
+        "D. plug in"
+      ],
+      "answer": 2,
+      "explanation": "'look for' (phr.v) nghĩa là: tìm kiếm, lục tìm."
+    },
+    {
+      "id": "u08_q27",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tra cứu thông tin, từ điển\"?",
+      "options": [
+        "A. digital technology",
+        "B. print out",
+        "C. exchange",
+        "D. look up"
+      ],
+      "answer": 3,
+      "explanation": "'look up' (phr.v) nghĩa là: tra cứu thông tin, từ điển."
+    },
+    {
+      "id": "u08_q28",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"ghi chép nhanh lại\"?",
+      "options": [
+        "A. note down",
+        "B. gain access to educational resources",
+        "C. distraction",
+        "D. improve academic performance"
+      ],
+      "answer": 0,
+      "explanation": "'note down' (phr.v) nghĩa là: ghi chép nhanh lại."
+    },
+    {
+      "id": "u08_q29",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"đăng nhập vào hệ thống\"?",
+      "options": [
+        "A. log in / log on",
+        "B. log out / log off",
+        "C. learn by heart",
+        "D. face-to-face"
+      ],
+      "answer": 0,
+      "explanation": "'log in / log on' (phr.v) nghĩa là: đăng nhập vào hệ thống."
+    },
+    {
+      "id": "u08_q30",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"đăng xuất khỏi hệ thống\"?",
+      "options": [
+        "A. log out / log off",
+        "B. personal computer / device",
+        "C. facilitate active learning",
+        "D. blended learning method"
+      ],
+      "answer": 0,
+      "explanation": "'log out / log off' (phr.v) nghĩa là: đăng xuất khỏi hệ thống."
+    },
+    {
+      "id": "u08_q31",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"cắm sạc, nguồn điện\"?",
+      "options": [
+        "A. original",
+        "B. plug in",
+        "C. communicate",
+        "D. immediately"
+      ],
+      "answer": 1,
+      "explanation": "'plug in' (phr.v) nghĩa là: cắm sạc, nguồn điện."
+    },
+    {
+      "id": "u08_q32",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"nộp bài tập, nộp đơn\"?",
+      "options": [
+        "A. exchange academic information",
+        "B. hand in",
+        "C. distraction",
+        "D. provide constructive feedback"
+      ],
+      "answer": 1,
+      "explanation": "'hand in' (phr.v) nghĩa là: nộp bài tập, nộp đơn."
+    },
+    {
+      "id": "u08_q33",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tắt thiết bị điện tử\"?",
+      "options": [
+        "A. turn off",
+        "B. face-to-face",
+        "C. original",
+        "D. blended learning"
+      ],
+      "answer": 0,
+      "explanation": "'turn off' (phr.v) nghĩa là: tắt thiết bị điện tử."
+    },
+    {
+      "id": "u08_q34",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"in tài liệu ra giấy\"?",
+      "options": [
+        "A. print out",
+        "B. eliminate classroom distractions",
+        "C. note down",
+        "D. real-world"
+      ],
+      "answer": 0,
+      "explanation": "'print out' (phr.v) nghĩa là: in tài liệu ra giấy."
+    },
+    {
+      "id": "u08_q35",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"bắt kịp, theo kịp tiến độ\"?",
+      "options": [
+        "A. communicate",
+        "B. improve academic performance",
+        "C. print out",
+        "D. keep up with"
+      ],
+      "answer": 3,
+      "explanation": "'keep up with' (phr.v) nghĩa là: bắt kịp, theo kịp tiến độ."
+    },
+    {
+      "id": "u08_q36",
+      "ai_generated": true,
+      "prompt": "\"flow chart\" (n) có nghĩa là gì?",
+      "options": [
+        "A. sơ đồ quy trình, lưu đồ",
+        "B. tốc độ cao (internet, kết nối)",
+        "C. tra cứu thông tin, từ điển",
+        "D. in tài liệu ra giấy"
       ],
       "answer": 0,
       "explanation": "'flow chart' (n) nghĩa là: sơ đồ quy trình, lưu đồ."
+    },
+    {
+      "id": "u08_q37",
+      "ai_generated": true,
+      "prompt": "\"focus\" (v/n) có nghĩa là gì?",
+      "options": [
+        "A. ngay lập tức",
+        "B. cài đặt (phần mềm, ứng dụng)",
+        "C. tập trung / tiêu điểm, sự tập trung",
+        "D. cung cấp ý kiến nhận xét mang tính xây dựng"
+      ],
+      "answer": 2,
+      "explanation": "'focus' (v/n) nghĩa là: tập trung / tiêu điểm, sự tập trung."
+    },
+    {
+      "id": "u08_q38",
+      "ai_generated": true,
+      "prompt": "\"high-speed\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. trao đổi thông tin học thuật",
+        "B. nâng cao kết quả học tập",
+        "C. cung cấp ý kiến nhận xét mang tính xây dựng",
+        "D. tốc độ cao (internet, kết nối)"
+      ],
+      "answer": 3,
+      "explanation": "'high-speed' (adj) nghĩa là: tốc độ cao (internet, kết nối)."
+    },
+    {
+      "id": "u08_q39",
+      "ai_generated": true,
+      "prompt": "\"immediately\" (adv) có nghĩa là gì?",
+      "options": [
+        "A. ngay lập tức",
+        "B. đăng xuất khỏi hệ thống",
+        "C. thúc đẩy sự tham gia chủ động",
+        "D. nền tảng học tập số"
+      ],
+      "answer": 0,
+      "explanation": "'immediately' (adv) nghĩa là: ngay lập tức."
+    },
+    {
+      "id": "u08_q40",
+      "ai_generated": true,
+      "prompt": "\"install\" (v) có nghĩa là gì?",
+      "options": [
+        "A. công nghệ kỹ thuật số",
+        "B. cài đặt (phần mềm, ứng dụng)",
+        "C. ý kiến phản hồi, nhận xét",
+        "D. tìm kiếm, lục tìm"
+      ],
+      "answer": 1,
+      "explanation": "'install' (v) nghĩa là: cài đặt (phần mềm, ứng dụng)."
+    },
+    {
+      "id": "u08_q41",
+      "ai_generated": true,
+      "prompt": "\"online learning\" (n) có nghĩa là gì?",
+      "options": [
+        "A. thuộc về điện tử",
+        "B. học thuộc lòng, ghi nhớ chính xác",
+        "C. học trực tuyến",
+        "D. có tác động tích cực / tiêu cực lên cái gì"
+      ],
+      "answer": 2,
+      "explanation": "'online learning' (n) nghĩa là: học trực tuyến."
+    },
+    {
+      "id": "u08_q42",
+      "ai_generated": true,
+      "prompt": "\"original\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. độc đáo, sáng tạo, nguyên bản",
+        "B. chiến lược học tập/phát triển",
+        "C. bắt kịp, theo kịp tiến độ",
+        "D. ghi chép nhanh lại"
+      ],
+      "answer": 0,
+      "explanation": "'original' (adj) nghĩa là: độc đáo, sáng tạo, nguyên bản."
+    },
+    {
+      "id": "u08_q43",
+      "ai_generated": true,
+      "prompt": "\"resource\" (n) có nghĩa là gì?",
+      "options": [
+        "A. dạy cho người già, người cũ thói quen mới",
+        "B. tiếp cận các nguồn học liệu chất lượng",
+        "C. thiết bị cá nhân",
+        "D. tài nguyên học tập, nguồn lực"
+      ],
+      "answer": 3,
+      "explanation": "'resource' (n) nghĩa là: tài nguyên học tập, nguồn lực."
+    },
+    {
+      "id": "u08_q44",
+      "ai_generated": true,
+      "prompt": "\"keep sb focused on sth\" (n/v) có nghĩa là gì?",
+      "options": [
+        "A. thiết bị cá nhân",
+        "B. sự xao nhãng, mất tập trung",
+        "C. giữ cho ai luôn tập trung vào mục tiêu",
+        "D. mang tính cộng tác, phối hợp"
+      ],
+      "answer": 2,
+      "explanation": "'keep sb focused on sth' (n/v) nghĩa là: giữ cho ai luôn tập trung vào mục tiêu."
+    },
+    {
+      "id": "u08_q45",
+      "ai_generated": true,
+      "prompt": "\"teamwork\" (n) có nghĩa là gì?",
+      "options": [
+        "A. giữ cho ai luôn tập trung vào mục tiêu",
+        "B. thức khuya để học tập/làm việc",
+        "C. làm việc nhóm, hoạt động nhóm",
+        "D. nền tảng học tập số"
+      ],
+      "answer": 2,
+      "explanation": "'teamwork' (n) nghĩa là: làm việc nhóm, hoạt động nhóm."
+    },
+    {
+      "id": "u08_q46",
+      "ai_generated": true,
+      "prompt": "\"voice recorder\" (n) có nghĩa là gì?",
+      "options": [
+        "A. công nghệ kỹ thuật số",
+        "B. máy ghi âm, thiết bị thu âm",
+        "C. độc đáo, sáng tạo, nguyên bản",
+        "D. ghi chép nhanh lại"
+      ],
+      "answer": 1,
+      "explanation": "'voice recorder' (n) nghĩa là: máy ghi âm, thiết bị thu âm."
+    },
+    {
+      "id": "u08_q47",
+      "ai_generated": true,
+      "prompt": "\"electronic\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. loại bỏ các tác nhân gây xao nhãng",
+        "B. thuộc về điện tử",
+        "C. sơ đồ quy trình, lưu đồ",
+        "D. cung cấp ý kiến nhận xét mang tính xây dựng"
+      ],
+      "answer": 1,
+      "explanation": "'electronic' (adj) nghĩa là: thuộc về điện tử."
+    },
+    {
+      "id": "u08_q48",
+      "ai_generated": true,
+      "prompt": "\"feedback\" (n) có nghĩa là gì?",
+      "options": [
+        "A. cắm sạc, nguồn điện",
+        "B. mang tính tương tác cao",
+        "C. ý kiến phản hồi, nhận xét",
+        "D. trực tiếp, mặt đối mặt"
+      ],
+      "answer": 2,
+      "explanation": "'feedback' (n) nghĩa là: ý kiến phản hồi, nhận xét."
+    },
+    {
+      "id": "u08_q49",
+      "ai_generated": true,
+      "prompt": "\"collaborative\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. mang tính cộng tác, phối hợp",
+        "B. cắm sạc, nguồn điện",
+        "C. cung cấp ý kiến nhận xét mang tính xây dựng",
+        "D. trao đổi thông tin học thuật"
+      ],
+      "answer": 0,
+      "explanation": "'collaborative' (adj) nghĩa là: mang tính cộng tác, phối hợp."
+    },
+    {
+      "id": "u08_q50",
+      "ai_generated": true,
+      "prompt": "\"academic\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. tra cứu thông tin, từ điển",
+        "B. in tài liệu ra giấy",
+        "C. có tác động tích cực / tiêu cực lên cái gì",
+        "D. thuộc học thuật, lý thuyết"
+      ],
+      "answer": 3,
+      "explanation": "'academic' (adj) nghĩa là: thuộc học thuật, lý thuyết."
+    },
+    {
+      "id": "u08_q51",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Excessive screen time has a negative impact on children's eyesight.\"?",
+      "options": [
+        "A. strategy",
+        "B. control",
+        "C. have a positive / negative impact on sth",
+        "D. focus"
+      ],
+      "answer": 2,
+      "explanation": "'have a positive / negative impact on sth' (colloc) nghĩa là: có tác động tích cực / tiêu cực lên cái gì."
+    },
+    {
+      "id": "u08_q52",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"An organized study schedule keeps students focused on their daily tasks.\"?",
+      "options": [
+        "A. digital technology",
+        "B. keep sb focused on sth",
+        "C. facilitate active learning",
+        "D. control"
+      ],
+      "answer": 1,
+      "explanation": "'keep sb focused on sth' (colloc) nghĩa là: giữ cho ai luôn tập trung vào mục tiêu."
+    },
+    {
+      "id": "u08_q53",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"High-speed internet enables rural schools to gain access to global educational resources.\"?",
+      "options": [
+        "A. teamwork",
+        "B. strategy",
+        "C. plug in",
+        "D. gain access to educational resources"
+      ],
+      "answer": 3,
+      "explanation": "'gain access to educational resources' (colloc) nghĩa là: tiếp cận các nguồn học liệu chất lượng."
+    },
+    {
+      "id": "u08_q54",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Smart devices ______ in modern classrooms.\"?",
+      "options": [
+        "A. control",
+        "B. facilitate active learning",
+        "C. log in / log on",
+        "D. gain access to educational resources"
+      ],
+      "answer": 1,
+      "explanation": "'facilitate active learning' (colloc) nghĩa là: thúc đẩy việc tự học, học chủ động."
+    },
+    {
+      "id": "u08_q55",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Many universities are adopting the ______ for economics courses.\"?",
+      "options": [
+        "A. collaborative",
+        "B. blended learning method",
+        "C. flow chart",
+        "D. digital"
+      ],
+      "answer": 1,
+      "explanation": "'blended learning method' (colloc) nghĩa là: phương pháp học kết hợp."
+    },
+    {
+      "id": "u08_q56",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"______ has completely revolutionized our work and studies.\"?",
+      "options": [
+        "A. digital technology",
+        "B. note down",
+        "C. focus",
+        "D. keep sb focused on sth"
+      ],
+      "answer": 0,
+      "explanation": "'digital technology' (colloc) nghĩa là: công nghệ kỹ thuật số."
+    },
+    {
+      "id": "u08_q57",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Online classrooms require a stable ______.\"?",
+      "options": [
+        "A. high-speed internet connection",
+        "B. plug in",
+        "C. note down",
+        "D. exchange academic information"
+      ],
+      "answer": 0,
+      "explanation": "'high-speed internet connection' (colloc) nghĩa là: kết nối internet tốc độ cao."
+    },
+    {
+      "id": "u08_q58",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Top students usually develop highly effective learning strategies.\"?",
+      "options": [
+        "A. exchange academic information",
+        "B. academic",
+        "C. teach an old dog new tricks",
+        "D. develop learning strategies"
+      ],
+      "answer": 3,
+      "explanation": "'develop learning strategies' (colloc) nghĩa là: phát triển chiến lược học tập."
+    },
+    {
+      "id": "u08_q59",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Teachers should ______ to improve students' writing.\"?",
+      "options": [
+        "A. provide constructive feedback",
+        "B. eliminate classroom distractions",
+        "C. develop learning strategies",
+        "D. plug in"
+      ],
+      "answer": 0,
+      "explanation": "'provide constructive feedback' (colloc) nghĩa là: cung cấp ý kiến nhận xét mang tính xây dựng."
+    },
+    {
+      "id": "u08_q60",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Self-study and discipline are key to improving academic performance.\"?",
+      "options": [
+        "A. improve academic performance",
+        "B. feedback",
+        "C. real-world",
+        "D. look for"
+      ],
+      "answer": 0,
+      "explanation": "'improve academic performance' (colloc) nghĩa là: nâng cao kết quả học tập."
     }
   ]
 }
