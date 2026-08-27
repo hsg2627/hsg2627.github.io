@@ -797,3 +797,185 @@ body.tpl-family .reveal{
   color:var(--accent); border-radius:999px;
 }
 body.tpl-family .reveal:hover{ background:var(--accent-soft); }
+
+/* ==========================================================================
+   THEME "POLLUTION" — template Unit 2 của cô, thêm 2026-08-27
+   --------------------------------------------------------------------------
+   Bật bằng: <body data-unit="2" class="tpl-env">
+
+   BỐN BỐ CỤC, ứng với bốn ảnh cô gửi. Vị trí khung nội dung ĐO TỪ CHÍNH ẢNH,
+   không ước lượng — chữ phải nằm gọn trong khung, không tràn ra nền.
+
+     lớp                 ảnh nền              khung nội dung
+     .slide.cover        tpl-env-cover        x 18.5–78.9%  y 31.3–68.6%
+     .slide.phase        tpl-env-phase        x 11.5–88.4%  y 17.5–82.4%
+     .slide (thường)     tpl-env-content      x  6.1–93.8%  y 10.9–89.0%
+     .slide.side         tpl-env-side         x 47.8–93.8%  y 10.9–89.0%
+
+   .side dùng cho slide ít chữ mà muốn khoe hình; khung chỉ rộng 46% nên
+   nhồi bảng vào đó là tràn.
+
+   CHỮ TRÊN NỀN TỐI: khung nội dung của template này màu #40484C, nên chữ
+   phải sáng. Toàn bộ biến màu bị đảo lại bên dưới, đã đo tương phản.
+   ========================================================================== */
+
+body.tpl-env{
+  --paper:#F9ECCF;          /* kem, đo từ ảnh */
+  --panel:#40484C;          /* khung nội dung tối */
+  --surface:#454D52;        /* thẻ nổi — #4B5459 sáng quá, ba màu chữ tụt dưới AA */
+  --sunk:#394044;
+  --ink:#F7EEDC;            /* chữ chính: kem trên nền tối */
+  --muted:#D5C6AD;         /* sáng thêm: #C3B49B chỉ đạt 3.81 trên thẻ nổi */
+  --rule:#5E686D;
+  /* Cam gốc của template là #F7931E, nhưng làm CHỮ trên khung tối thì chỉ
+     đạt 4.07 và trên thẻ nổi chỉ 3.37 — dưới ngưỡng AA. Nên tách làm hai:
+     --accent để viết chữ (đã sáng lên), --accent-fill giữ cam gốc để tô nền. */
+  --accent:#FFBA45;         /* cam sáng — dùng cho CHỮ, đạt 4.56 trên thẻ nổi */
+  --accent-fill:#F7931E;    /* cam gốc của template — chỉ dùng làm NỀN */
+  --accent-2:#EFBC73;
+  --accent-soft:#4E585D;
+  --on-accent:#2A3033;
+  --ok:#8FD0A0;             /* xanh/đỏ chỉnh sáng lên cho hợp nền tối */
+  --crit:#FEAC99;           /* sáng thêm cho đủ tương phản trên thẻ nổi */
+  --font-display:"Arial Black", "Segoe UI Black", "Segoe UI", Impact, sans-serif;
+}
+
+body.tpl-env .deck h1,
+body.tpl-env .deck h2{
+  font-family:var(--font-display);
+  font-weight:900; letter-spacing:.01em; color:var(--accent);
+}
+body.tpl-env .deck h3{ font-family:var(--font-display); font-weight:700; }
+body.tpl-env .kicker{ color:var(--accent-2); }
+body.tpl-env .bar{ background:var(--panel); border-bottom-color:var(--rule); }
+body.tpl-env .bar .brand{ color:var(--accent); font-family:var(--font-display); }
+body.tpl-env .bar a{ background:var(--sunk); color:var(--ink); border-color:var(--rule); }
+
+/* ---- Nền chung của bộ slide ---- */
+body.tpl-env .deck{ background:var(--paper); }
+
+/* ---- Bìa: nền cam + khung trắng ---- */
+body.tpl-env .slide.cover{
+  background:url(assets/tpl-env-cover.webp) center/cover no-repeat;
+  color:#22282B;
+}
+body.tpl-env .slide.cover.is-current{
+  display:grid; place-content:center; text-align:center;
+  /* Khung trắng ở x 18.5–78.9%, y 31.3–68.6%.
+     LỀ DỌC PHẢI DÙNG vh: padding % trong CSS tính theo BỀ RỘNG, nên 33%
+     trên màn 1366 thành 451px và nuốt sạch chỗ. */
+  padding:32vh 23% 31vh 20.5%;
+}
+body.tpl-env .slide.cover h1{
+  color:#1C2124; font-family:var(--font-display);
+  font-size:clamp(26px, min(3.6vw, 6.4vh), 60px); line-height:1.06;
+  text-transform:uppercase; letter-spacing:.02em;
+}
+body.tpl-env .slide.cover .sub{ color:#4A5257; font-size:var(--t-body); }
+body.tpl-env .slide.cover .kicker{ color:#6B4A1E; }
+body.tpl-env .slide.cover .unit-no{ display:none; }
+
+/* ---- Slide phân đoạn: nền tối + khung sáng + hình tròn góc dưới trái ---- */
+body.tpl-env .slide.phase{
+  background:url(assets/tpl-env-phase.webp) center/cover no-repeat;
+}
+body.tpl-env .slide.phase.is-current{
+  display:grid; place-content:center; text-align:center;
+  padding:19vh 13.5% 20vh 13.5%;         /* khung ở x 11.5–88.4%, y 17.5–82.4% */
+}
+body.tpl-env .slide.phase h1{ color:#8A4A12; }
+body.tpl-env .slide.phase .sub{ color:#5A4632; }
+body.tpl-env .slide.phase .step{ background:var(--accent-fill); color:#2A3033; }
+body.tpl-env .slide.phase .badge.time{ background:#8A4A12; color:#F9ECCF; }
+
+/* ---- Slide nội dung: khung tối gần tràn viền ---- */
+body.tpl-env .slide:not(.cover):not(.phase):not(.side){
+  background:url(assets/tpl-env-content.webp) center/cover no-repeat;
+  color:var(--ink);
+  /* Khung tối ở x 6.1–93.8%, y 10.9–89.0%. Lề dưới cộng thêm ~8vh để chừa
+     thanh điều hướng cố định ở đáy màn. */
+  padding:12vh 8.5% 19vh 8.5%;
+}
+
+/* ---- Slide "khoe hình": khung kem hẹp bên phải ---- */
+body.tpl-env .slide.side{
+  background:url(assets/tpl-env-side.webp) center/cover no-repeat;
+  color:#3A3128;
+  padding:12vh 7% 19vh 49.5%;            /* khung ở x 47.8–93.8% */
+}
+body.tpl-env .slide.side h1,
+body.tpl-env .slide.side h2{ color:#AA5305; }  /* #B35C0E chỉ đạt 4.03 trên kem */
+body.tpl-env .slide.side .kicker{ color:#7A5A2E; }
+body.tpl-env .slide.side .box,
+body.tpl-env .slide.side .card{ background:rgba(255,255,255,.62); color:#3A3128; }
+
+/* ---- Thành phần trên nền tối ---- */
+body.tpl-env .card,
+body.tpl-env .word,
+body.tpl-env .colloc li,
+body.tpl-env .tf li,
+body.tpl-env .box,
+body.tpl-env table{ background:var(--surface); color:var(--ink); }
+body.tpl-env .card{ border-color:var(--rule); border-top-color:var(--accent); }
+body.tpl-env .card.alt{ border-top-color:var(--accent-2); }
+body.tpl-env .card p{ color:var(--muted); }
+body.tpl-env .box{ border-color:var(--rule); border-left-color:var(--accent); }
+body.tpl-env .box h3{ color:var(--accent); }
+body.tpl-env .brief{
+  background:linear-gradient(135deg, var(--sunk), var(--surface));
+  border-color:var(--accent);
+}
+body.tpl-env .brief h3, body.tpl-env .brief .slogan{ color:var(--accent); }
+body.tpl-env .chips li, body.tpl-env .chip{
+  background:var(--surface); border-color:var(--rule); color:var(--ink);
+}
+body.tpl-env .chips li.hot, body.tpl-env .chip.hot{
+  background:var(--accent-fill); border-color:var(--accent-fill); color:#2A3033;
+}
+body.tpl-env .slide th{ color:var(--accent); }
+body.tpl-env .slide th, body.tpl-env .slide td{ border-bottom-color:var(--rule); }
+body.tpl-env .compare > div{ background:var(--surface); border-color:var(--rule); }
+body.tpl-env .compare > div:first-child{ border-color:var(--accent); }
+body.tpl-env .compare > div:last-child{ border-color:var(--accent-2); }
+body.tpl-env .compare .eg{ color:var(--muted); }
+body.tpl-env .bubble.l{ background:var(--surface); color:var(--ink); }
+body.tpl-env .bubble.r{ background:var(--accent-fill); color:#2A3033; }
+body.tpl-env .badge.soft{ background:var(--sunk); color:var(--accent-2); border-color:var(--rule); }
+body.tpl-env .badge.code{ background:#4A4258; color:#D9CBF2; border-color:#655C77; }
+body.tpl-env .word .ipa{ color:var(--accent-2); }
+body.tpl-env .word .w{ color:var(--accent); }
+body.tpl-env .colloc .v{ color:var(--accent); }
+body.tpl-env .colloc .n{ border-left-color:var(--rule); }
+body.tpl-env .tf li::before{ background:var(--accent-fill); color:#2A3033; }
+
+/* Nút lật và thanh điều hướng trên nền tối */
+body.tpl-env .reveal{ border-color:var(--accent-2); color:var(--accent-2); }
+body.tpl-env .reveal:hover{ background:var(--sunk); color:var(--accent); }
+body.tpl-env .reveal-all{ background:var(--sunk); color:var(--muted); border-color:var(--rule); }
+body.tpl-env .answer.is-open{ background:rgba(143,208,160,.16); }
+body.tpl-env .deck-nav{ background:var(--panel); border-top-color:var(--rule); }
+body.tpl-env .deck-nav button{ background:var(--sunk); color:var(--ink); border-color:var(--rule); }
+body.tpl-env .deck-nav .count{ color:var(--muted); }
+body.tpl-env .dots i{ background:var(--rule); }
+body.tpl-env .dots i.on{ background:var(--accent-fill); }
+
+/* Khung nội dung của template hẹp hơn slide tràn viền, nên lưới thẻ phải thu
+   lề lại. Thu LỀ chứ không thu chữ — hàng ghế cuối vẫn phải đọc được. */
+body.tpl-env .cards,
+body.tpl-env .words{ gap:clamp(8px,1vw,15px); }
+body.tpl-env .card,
+body.tpl-env .word{ padding:clamp(10px,1.1vw,17px); }
+body.tpl-env .card .ico{ font-size:1.4em; margin-bottom:.14em; }
+body.tpl-env .colloc{ gap:.28em; }
+body.tpl-env .colloc li{ padding:.32em .62em; }
+body.tpl-env .slide.denser .colloc{ gap:.22em; }
+body.tpl-env .slide.denser .colloc li{ padding:.24em .55em; }
+body.tpl-env .tf li{ padding:.4em .62em; margin-bottom:.32em; }
+
+/* In ra giấy: bỏ nền tối, đỡ tốn mực */
+@media print{
+  body.tpl-env .slide{ background:none !important; color:#1A1F35 !important; padding:0 0 24px !important; }
+  body.tpl-env .deck h1, body.tpl-env .deck h2{ color:#1A1F35 !important; }
+  body.tpl-env .card, body.tpl-env .box, body.tpl-env .word,
+  body.tpl-env .colloc li, body.tpl-env .tf li{ background:none !important; color:#1A1F35 !important; }
+}

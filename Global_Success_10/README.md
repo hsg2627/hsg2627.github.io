@@ -202,6 +202,43 @@ Muốn giống hệt: gửi tệp `.woff2` của font đó, bỏ vào `assets/fo
 `@font-face`. Vẫn chạy offline. Nhiều font Canva dùng có giấy phép OFL nên nhúng
 là hợp lệ — kiểm giấy phép trước khi nhúng.
 
+## Theme "Pollution" — template Unit 2
+
+Bật bằng: `<body data-unit="2" class="tpl-env">`
+
+**Bốn bố cục, bốn ảnh nền.** Vị trí khung nội dung đo từ chính ảnh:
+
+| Lớp | Ảnh | Khung nội dung |
+|---|---|---|
+| `.slide.cover` | `tpl-env-cover` | x 18,5–78,9% · y 31,3–68,6% |
+| `.slide.phase` | `tpl-env-phase` | x 11,5–88,4% · y 17,5–82,4% |
+| `.slide` *(mặc định)* | `tpl-env-content` | x 6,1–93,8% · y 10,9–89,0% |
+| `.slide.side` | `tpl-env-side` | x 47,8–93,8% · y 10,9–89,0% |
+
+`.side` chỉ dùng cho slide **ít chữ** — khung rộng có 46%, nhồi bảng vào là tràn.
+
+### Lề dọc phải dùng `vh`, không dùng `%`
+
+`padding: 14%` trong CSS tính theo **bề rộng** khung chứa, không phải chiều cao.
+Trên màn 1366 nó thành 191px trên và 191px dưới — nuốt sạch chỗ, 13/17 slide tràn.
+Đổi sang `vh` là hết. **Đừng đổi ngược lại.**
+
+### Cam của template không dùng làm chữ được
+
+`#F7931E` đặt trên khung tối `#40484C` chỉ đạt **4,07**, trên thẻ nổi chỉ **3,37** —
+dưới ngưỡng AA. Nên tách làm hai biến:
+
+- `--accent` `#FFBA45` — dùng cho **chữ**
+- `--accent-fill` `#F7931E` — cam gốc, chỉ dùng làm **nền**
+
+Thẻ nổi cũng phải hạ từ `#4B5459` xuống `#454D52`: ở màu cũ có ba màu chữ tụt
+dưới ngưỡng. Sau khi chỉnh, **12/12 cặp màu đều đạt AA** (thấp nhất 4,75).
+
+### Khung hẹp hơn nên lưới thẻ phải thu lề
+
+Khung nội dung của template nhỏ hơn slide tràn viền, nên `.cards` và `.words` ở
+theme này có lề chặt hơn mặc định. **Thu lề, không thu chữ.**
+
 ## Bộ khung viết slide
 
 | Dùng để | Markup |
