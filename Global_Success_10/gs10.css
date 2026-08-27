@@ -620,3 +620,72 @@ body[data-unit="10"]{ --accent:#33691E; --accent-2:#00695C; --accent-soft:#EDF3E
   .video-play{ display:none; }
   .video .s{ color:var(--muted) !important; }
 }
+
+/* ==========================================================================
+   NỀN TEMPLATE CHO SLIDE — thêm 2026-08-27
+   --------------------------------------------------------------------------
+   Khai MỘT lần ở đây, cả unit dùng chung. Không phải sửa từng tệp bài giảng.
+
+   Cách bật cho một unit:
+     1. Bỏ ảnh vào assets/bg-unitNN.webp (nén như bản đồ, xem §5 của spec).
+     2. Bỏ dấu chú thích ở dòng body[data-unit="NN"].has-bg dưới đây.
+     3. Thêm class="has-bg" vào <body> của các tệp bài giảng unit đó.
+
+   Đường dẫn url() trong tệp này tính từ CHÍNH TỆP CSS, nên viết
+   assets/bg-unitNN.webp là đúng cho mọi bài ở mọi thư mục con.
+
+   VÌ SAO CÓ MÀN LỌC (--scrim): chữ thân bài 20–34px chiếu lên tường trong
+   phòng bật đèn, đặt thẳng trên nền có hoạ tiết là mất chữ.
+
+   ĐỪNG HẠ --scrim XUỐNG DƯỚI 0.88. Đo tương phản trong trường hợp xấu nhất
+   (ảnh nền đen tuyền hoặc trắng tinh), ngưỡng WCAG AA là 4.5:
+
+     scrim   chữ chính   đáp án xanh   chữ đỏ   chữ mờ
+     0.88      11.9         4.7         5.2      4.5   ← vừa đủ, mặc định
+     0.82      10.2         4.0         4.5      3.9   ← đáp án tụt dưới ngưỡng
+     0.75       8.5         3.4         3.7      3.2
+     0.60       5.5         2.2         2.4      2.1   ← không đọc nổi
+
+   0.88 là sàn, không phải mức thận trọng. Muốn nền hiện rõ hơn thì chọn ảnh
+   nền nhạt và ít hoạ tiết, đừng hạ con số này.
+   ========================================================================== */
+
+.deck{
+  background-image: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ---- Bật nền theo unit. Bỏ chú thích dòng nào là unit đó có nền. ---- */
+/* body[data-unit="1"].has-bg  .deck{ background-image:url(assets/bg-unit01.webp); } */
+/* body[data-unit="2"].has-bg  .deck{ background-image:url(assets/bg-unit02.webp); } */
+/* body[data-unit="3"].has-bg  .deck{ background-image:url(assets/bg-unit03.webp); } */
+
+/* Nền dùng chung cho mọi unit chưa có nền riêng */
+/* body.has-bg .deck{ background-image:url(assets/bg-default.webp); } */
+
+/* ---- Màn lọc giữ chữ đọc được ---- */
+/* Slide bìa và slide phân đoạn tự có nền đặc rồi, không cần lọc. */
+body.has-bg .slide:not(.cover):not(.phase){
+  background: rgba(251, 250, 247, var(--scrim, .88));
+}
+
+/* Slide muốn khoe nguyên nền, không lọc — dùng cho màn trang trí, ít chữ. */
+body.has-bg .slide.bare{ background: transparent; }
+
+/* Hạ nhẹ màn lọc cho slide ít chữ */
+body.has-bg .slide.airy{ background: rgba(251, 250, 247, .72); }
+
+/* Khung nội dung đục hơn nền một chút để nổi khối */
+body.has-bg .box,
+body.has-bg .card,
+body.has-bg .word,
+body.has-bg .colloc li,
+body.has-bg .tf li{ background: rgba(255, 255, 255, .94); }
+
+/* In ra giấy: bỏ nền, đỡ tốn mực */
+@media print{
+  .deck{ background-image: none !important; }
+  body.has-bg .slide{ background: none !important; }
+}

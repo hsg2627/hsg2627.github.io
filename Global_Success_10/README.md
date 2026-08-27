@@ -112,6 +112,41 @@ màu báo lỗi kèm chữ**, không để lại ô đen giữa tiết.
 **Luôn viết phương án dự phòng ngay dưới clip** — một câu hỏi miệng thay thế —
 để mất mạng vẫn dạy được tiếp.
 
+## Thêm nền template cho slide
+
+Khai **một lần** trong `gs10.css`, cả unit dùng chung — không sửa từng tệp bài giảng.
+
+1. Nén ảnh nền như bản đồ (WebP q88), bỏ vào `assets/bg-unitNN.webp`.
+2. Trong `gs10.css`, mục "NỀN TEMPLATE", bỏ dấu chú thích ở dòng của unit đó.
+3. Thêm `class="has-bg"` vào `<body>` của các tệp bài giảng unit đó.
+
+```html
+<body data-unit="1" class="has-bg">
+```
+
+Đường dẫn `url()` trong CSS tính từ chính tệp CSS, nên viết
+`assets/bg-unitNN.webp` là đúng cho mọi bài ở mọi thư mục con.
+
+### Đừng hạ `--scrim` xuống dưới 0,88
+
+Màn lọc giữ chữ đọc được trên nền có hoạ tiết. Đo tương phản ở trường hợp xấu
+nhất (ảnh nền đen tuyền hoặc trắng tinh), ngưỡng WCAG AA là 4,5:
+
+| `--scrim` | chữ chính | đáp án xanh | chữ đỏ | chữ mờ |
+|---|---|---|---|---|
+| **0,88** *(mặc định)* | 11,9 | **4,7** | 5,2 | **4,5** |
+| 0,82 | 10,2 | 4,0 ✗ | 4,5 | 3,9 ✗ |
+| 0,75 | 8,5 | 3,4 ✗ | 3,7 ✗ | 3,2 ✗ |
+
+0,88 là **sàn**, không phải mức thận trọng. Muốn nền hiện rõ hơn thì **chọn ảnh
+nền nhạt và ít hoạ tiết**, đừng hạ con số này.
+
+Hai lớp phụ khi cần: `class="slide bare"` bỏ hẳn màn lọc (slide trang trí, rất
+ít chữ), `class="slide airy"` hạ xuống 0,72 (slide chỉ có tiêu đề).
+
+Slide bìa (`.cover`) và slide phân đoạn (`.phase`) tự có nền đặc nên không bị
+ảnh nền đè lên — cố ý để giữ nhịp thị giác giữa các phần.
+
 ## Bộ khung viết slide
 
 | Dùng để | Markup |
