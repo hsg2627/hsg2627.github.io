@@ -250,8 +250,12 @@ Global_Success_10/
 │   └── audio/
 │       └── u01-track02.mp3 ✅ Task 1 · 1:43 · 830 KB
 │                           ❌ các track khác chép khi dựng tới bài cần
-└── unit01/
-    ├── index.html      ✅ BẢN ĐỒ UNIT — 8 thẻ tiết trên ảnh, 1 mở được / 7 khoá
+├── unit01/
+│   ├── index.html      ✅ BẢN ĐỒ UNIT — 8 thẻ, cả 8 đã mở
+│   └── lesson1–8.html  ✅ 8 bài giảng, theme "Family Time"
+└── unit02/
+    ├── index.html      ✅ BẢN ĐỒ UNIT — 8 thẻ, cả 8 đã mở
+    └── lesson1–8.html  ✅ 8 bài giảng, theme "Pollution"
     ├── lesson1.html    ✅ ĐẦY ĐỦ — 21 slide, bám giáo án + SGK tr. 8–9
     └── lesson2–8.html  ❌ chưa dựng
 ├── unit02/ … unit10/
