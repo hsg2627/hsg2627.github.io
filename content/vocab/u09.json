@@ -7,575 +7,630 @@
   "words": [
     {
       "id": "u09_w01",
-      "word": "",
+      "word": "biodiversity",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Burning fossil fuels harms ecosystems and leads to a loss of biodiversity."
+      "meaning": "đa dạng sinh học",
+      "example": "Burning fossil fuels harms ecosystems and leads to a loss of biodiversity.",
+      "level": "C1"
     },
     {
       "id": "u09_w02",
-      "word": "",
+      "word": "deforestation",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Deforestation is a primary cause of global warming and climate change."
+      "meaning": "nạn phá rừng quy mô lớn",
+      "example": "Deforestation is a primary cause of global warming and climate change.",
+      "level": "B2"
     },
     {
       "id": "u09_w03",
-      "word": "",
+      "word": "ecosystem",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Industrial waste can destroy marine ecosystems and harm wildlife."
+      "meaning": "hệ sinh thái",
+      "example": "Industrial waste can destroy marine ecosystems and harm wildlife.",
+      "level": "B2"
     },
     {
       "id": "u09_w04",
-      "word": "",
+      "word": "respiratory",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "Fine dust from factories causes severe respiratory illnesses in children."
+      "meaning": "thuộc hệ hô hấp",
+      "example": "Fine dust from factories causes severe respiratory illnesses in children.",
+      "level": "C1"
     },
     {
       "id": "u09_w05",
-      "word": "",
+      "word": "consequence",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Rising global temperatures are a direct consequence of greenhouse gas emissions."
+      "meaning": "hậu quả, hệ quả",
+      "example": "Rising global temperatures are a direct consequence of greenhouse gas emissions.",
+      "level": "B2"
     },
     {
       "id": "u09_w06",
-      "word": "",
+      "word": "balance",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Commercial hunting upsets the natural balance of forest ecosystems."
+      "meaning": "sự cân bằng, trạng thái ổn định",
+      "example": "Commercial hunting upsets the natural balance of forest ecosystems.",
+      "level": "B1"
     },
     {
       "id": "u09_w07",
-      "word": "",
+      "word": "climate change",
       "ipa": "",
       "pos": "n.phr",
-      "meaning": "",
-      "example": "Deforestation is accelerating global warming and climate change."
+      "meaning": "sự biến đổi khí hậu toàn cầu",
+      "example": "Deforestation is accelerating global warming and climate change.",
+      "level": "B2"
     },
     {
       "id": "u09_w08",
-      "word": "",
+      "word": "endangered",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "The government has established national parks to protect endangered species."
+      "meaning": "bị đe dọa tuyệt chủng",
+      "example": "The government has established national parks to protect endangered species.",
+      "level": "B2"
     },
     {
       "id": "u09_w09",
-      "word": "",
+      "word": "environmental protection",
       "ipa": "",
       "pos": "n.phr",
-      "meaning": "",
-      "example": "Young people play a key role in raising awareness of environmental protection."
+      "meaning": "sự bảo vệ môi trường",
+      "example": "Young people play a key role in raising awareness of environmental protection.",
+      "level": "B2"
     },
     {
       "id": "u09_w10",
-      "word": "",
+      "word": "extreme",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "Global warming is causing extreme weather events like floods and heatwaves."
+      "meaning": "cực đoan, khắc nghiệt (thời tiết)",
+      "example": "Global warming is causing extreme weather events like floods and heatwaves.",
+      "level": "B2"
     },
     {
       "id": "u09_w11",
-      "word": "",
+      "word": "giant",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "The giant panda is one of the most famous endangered animals."
+      "meaning": "khổng lồ, to lớn",
+      "example": "The giant panda is one of the most famous endangered animals.",
+      "level": "B2"
     },
     {
       "id": "u09_w12",
-      "word": "",
+      "word": "gorilla",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Mountain gorillas are threatened by habitat loss and illegal hunting."
+      "meaning": "khỉ đột",
+      "example": "Mountain gorillas are threatened by habitat loss and illegal hunting.",
+      "level": "B2"
     },
     {
       "id": "u09_w13",
-      "word": "",
+      "word": "habitat",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Deforestation destroys the natural habitat of wild animals."
+      "meaning": "môi trường sống tự nhiên",
+      "example": "Deforestation destroys the natural habitat of wild animals.",
+      "level": "B2"
     },
     {
       "id": "u09_w14",
-      "word": "",
+      "word": "heatwave",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "The intense heatwave caused serious forest fires in several regions."
+      "meaning": "sóng nhiệt, đợt nắng nóng khắc nghiệt",
+      "example": "The intense heatwave caused serious forest fires in several regions.",
+      "level": "B2"
     },
     {
       "id": "u09_w15",
-      "word": "",
+      "word": "ice melting",
       "ipa": "",
       "pos": "n.phr",
-      "meaning": "",
-      "example": "Ice melting at the polar caps leads to rising sea levels worldwide."
+      "meaning": "hiện tượng tan băng ở cực",
+      "example": "Ice melting at the polar caps leads to rising sea levels worldwide.",
+      "level": "B2"
     },
     {
       "id": "u09_w16",
-      "word": "",
+      "word": "issue",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Pollution is a pressing issue that requires multilateral cooperation."
+      "meaning": "vấn đề nan giải",
+      "example": "Pollution is a pressing issue that requires multilateral cooperation.",
+      "level": "B1"
     },
     {
       "id": "u09_w17",
-      "word": "",
+      "word": "panda",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Panda conservation programs have successfully increased their population."
+      "meaning": "gấu trúc",
+      "example": "Panda conservation programs have successfully increased their population.",
+      "level": "B1"
     },
     {
       "id": "u09_w18",
-      "word": "",
+      "word": "practical",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "Choosing reusable shopping bags is a highly practical way to reduce waste."
+      "meaning": "thực tế, thiết thực",
+      "example": "Choosing reusable shopping bags is a highly practical way to reduce waste.",
+      "level": "B1"
     },
     {
       "id": "u09_w19",
-      "word": "",
+      "word": "tortoise",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "The giant tortoise is a protected species on the remote island."
+      "meaning": "rùa cạn",
+      "example": "The giant tortoise is a protected species on the remote island.",
+      "level": "B2"
     },
     {
       "id": "u09_w20",
-      "word": "",
+      "word": "trade",
       "ipa": "",
       "pos": "n/v",
-      "meaning": "",
-      "example": "The illegal trade in wild animal parts must be completely banned."
+      "meaning": "buôn bán, thương mại",
+      "example": "The illegal trade in wild animal parts must be completely banned.",
+      "level": "B1"
     },
     {
       "id": "u09_w21",
-      "word": "",
+      "word": "upset",
       "ipa": "",
       "pos": "v",
-      "meaning": "",
-      "example": "Releasing toxic chemicals into rivers can upset the local marine balance."
+      "meaning": "làm rối loạn, đảo lộn (cân bằng)",
+      "example": "Releasing toxic chemicals into rivers can upset the local marine balance.",
+      "level": "B2"
     },
     {
       "id": "u09_w22",
-      "word": "",
+      "word": "wildlife",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "The national park aims to preserve wildlife and their natural habitats."
+      "meaning": "động vật hoang dã",
+      "example": "The national park aims to preserve wildlife and their natural habitats.",
+      "level": "B1"
     },
     {
       "id": "u09_w23",
-      "word": "",
+      "word": "fossil fuels",
       "ipa": "",
       "pos": "n.phr",
-      "meaning": "",
-      "example": "We must transition from fossil fuels to renewable alternative energy."
+      "meaning": "nhiên liệu hóa thạch (than, dầu)",
+      "example": "We must transition from fossil fuels to renewable alternative energy.",
+      "level": "B2"
     },
     {
       "id": "u09_w24",
-      "word": "",
+      "word": "greenhouse gases",
       "ipa": "",
       "pos": "n.phr",
-      "meaning": "",
-      "example": "Carbon dioxide is one of the major greenhouse gases warming the planet."
+      "meaning": "khí nhà kính",
+      "example": "Carbon dioxide is one of the major greenhouse gases warming the planet.",
+      "level": "B2"
     },
     {
       "id": "u09_w25",
-      "word": "",
+      "word": "conservation",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Wildlife conservation is essential for maintaining biodiversity."
+      "meaning": "sự bảo tồn, gìn giữ",
+      "example": "Wildlife conservation is essential for maintaining biodiversity.",
+      "level": "B2"
     },
     {
       "id": "u09_w26",
-      "word": "",
+      "word": "run out of",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "If we don't reduce consumption, we will soon run out of fossil fuels."
+      "meaning": "cạn kiệt tài nguyên",
+      "example": "If we don't reduce consumption, we will soon run out of fossil fuels.",
+      "level": "B2"
     },
     {
       "id": "u09_w27",
-      "word": "",
+      "word": "use up",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Humans are using up precious natural resources faster than the Earth can supply."
+      "meaning": "tiêu thụ hết sạch",
+      "example": "Humans are using up precious natural resources faster than the Earth can supply.",
+      "level": "B2"
     },
     {
       "id": "u09_w28",
-      "word": "",
+      "word": "cut down on",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Factories must cut down on carbon emissions to protect the atmosphere."
+      "meaning": "cắt giảm lượng xả thải/tiêu thụ",
+      "example": "Factories must cut down on carbon emissions to protect the atmosphere.",
+      "level": "B2"
     },
     {
       "id": "u09_w29",
-      "word": "",
+      "word": "die out",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Many endangered species are in danger of dying out due to habitat loss."
+      "meaning": "tuyệt chủng, biến mất hoàn toàn",
+      "example": "Many endangered species are in danger of dying out due to habitat loss.",
+      "level": "B2"
     },
     {
       "id": "u09_w30",
-      "word": "",
+      "word": "clear out",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Large forest lands are cleared out to build commercial highways."
+      "meaning": "dọn sạch, phát quang",
+      "example": "Large forest lands are cleared out to build commercial highways.",
+      "level": "B2"
     },
     {
       "id": "u09_w31",
-      "word": "",
+      "word": "look after",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "National park rangers are responsible for looking after wild animals."
+      "meaning": "chăm sóc, bảo vệ",
+      "example": "National park rangers are responsible for looking after wild animals.",
+      "level": "B1"
     },
     {
       "id": "u09_w32",
-      "word": "",
+      "word": "carry out",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "The green club carried out a major tree-planting event last weekend."
+      "meaning": "tiến hành dự án/thí nghiệm",
+      "example": "The green club carried out a major tree-planting event last weekend.",
+      "level": "B2"
     },
     {
       "id": "u09_w33",
-      "word": "",
+      "word": "throw away",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Never throw away single-use bottles; recycle them instead."
+      "meaning": "vứt bỏ rác thải nhựa",
+      "example": "Never throw away single-use bottles; recycle them instead.",
+      "level": "B1"
     },
     {
       "id": "u09_w34",
-      "word": "",
+      "word": "build up",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Toxic chemicals build up in marine animals, harming the entire food chain."
+      "meaning": "tích tụ dần lên (chất độc)",
+      "example": "Toxic chemicals build up in marine animals, harming the entire food chain.",
+      "level": "B2"
     },
     {
       "id": "u09_w35",
-      "word": "",
+      "word": "protect from",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Wearing masks helps protect children from air pollution in big cities."
+      "meaning": "bảo vệ khỏi tác nhân xấu",
+      "example": "Wearing masks helps protect children from air pollution in big cities.",
+      "level": "B2"
     },
     {
       "id": "u09_w36",
-      "word": "",
+      "word": "upset the natural balance of ecosystems",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Commercial hunting can upset the natural balance of forest ecosystems."
+      "meaning": "làm xáo trộn sự cân bằng tự nhiên của hệ sinh thái",
+      "example": "Commercial hunting can upset the natural balance of forest ecosystems.",
+      "level": "C1"
     },
     {
       "id": "u09_w37",
-      "word": "",
+      "word": "save endangered animals from extinction",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "International organizations work collaboratively to save endangered pandas from extinction."
+      "meaning": "cứu động vật nguy cấp khỏi bờ vực tuyệt chủng",
+      "example": "International organizations work collaboratively to save endangered pandas from extinction.",
+      "level": "B2"
     },
     {
       "id": "u09_w38",
-      "word": "",
+      "word": "disrupt natural habitats",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Building new highways can disrupt the natural habitats of local wildlife."
+      "meaning": "phá hủy/gây xáo trộn môi trường sống tự nhiên",
+      "example": "Building new highways can disrupt the natural habitats of local wildlife.",
+      "level": "C1"
     },
     {
       "id": "u09_w39",
-      "word": "",
+      "word": "greenhouse gas emissions",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Reducing greenhouse gas emissions is the main target of the agreement."
+      "meaning": "sự phát thải khí nhà kính",
+      "example": "Reducing greenhouse gas emissions is the main target of the agreement.",
+      "level": "B2"
     },
     {
       "id": "u09_w40",
-      "word": "",
+      "word": "climate change mitigation",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Deforestation is a major barrier to global climate change mitigation."
+      "meaning": "giảm nhẹ tác động của biến đổi khí hậu",
+      "example": "Deforestation is a major barrier to global climate change mitigation.",
+      "level": "C2"
     },
     {
       "id": "u09_w41",
-      "word": "",
+      "word": "respiratory illnesses / diseases",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Air pollution causes severe respiratory illnesses in crowded urban areas."
+      "meaning": "các bệnh đường hô hấp",
+      "example": "Air pollution causes severe respiratory illnesses in crowded urban areas.",
+      "level": "C1"
     },
     {
       "id": "u09_w42",
-      "word": "",
+      "word": "marine ecosystems",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Plastic waste dumped into the ocean causes immense harm to marine ecosystems."
+      "meaning": "hệ sinh thái biển",
+      "example": "Plastic waste dumped into the ocean causes immense harm to marine ecosystems.",
+      "level": "B2"
     },
     {
       "id": "u09_w43",
-      "word": "",
+      "word": "extreme weather events",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Global warming leads to more frequent extreme weather events like heatwaves."
+      "meaning": "hiện tượng thời tiết cực đoan",
+      "example": "Global warming leads to more frequent extreme weather events like heatwaves.",
+      "level": "B2"
     },
     {
       "id": "u09_w44",
-      "word": "",
+      "word": "air pollution level",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "The air pollution level in the city center has reached an alarming stage."
+      "meaning": "mức độ ô nhiễm không khí",
+      "example": "The air pollution level in the city center has reached an alarming stage.",
+      "level": "B2"
     },
     {
       "id": "u09_w45",
-      "word": "",
+      "word": "burn fossil fuels",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Burning fossil fuels to generate electricity releases massive greenhouse gases."
+      "meaning": "đốt nhiên liệu hóa thạch",
+      "example": "Burning fossil fuels to generate electricity releases massive greenhouse gases.",
+      "level": "B2"
     },
     {
       "id": "u09_w46",
-      "word": "",
+      "word": "soil erosion",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Deforestation on mountain slopes leads to landslide and severe soil erosion."
+      "meaning": "sự xói mòn đất",
+      "example": "Deforestation on mountain slopes leads to landslide and severe soil erosion.",
+      "level": "C1"
     },
     {
       "id": "u09_w47",
-      "word": "",
+      "word": "ecological balance",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Every species plays a unique role in maintaining the ecological balance."
+      "meaning": "sự cân bằng sinh thái",
+      "example": "Every species plays a unique role in maintaining the ecological balance.",
+      "level": "C1"
     },
     {
       "id": "u09_w48",
-      "word": "",
+      "word": "global warming effects",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Ice melting is one of the most visible global warming effects."
+      "meaning": "tác động của nóng lên toàn cầu",
+      "example": "Ice melting is one of the most visible global warming effects.",
+      "level": "B2"
     },
     {
       "id": "u09_w49",
-      "word": "",
+      "word": "greenhouse effect",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Carbon dioxide traps heat in the atmosphere, causing the greenhouse effect."
+      "meaning": "hiệu ứng nhà kính",
+      "example": "Carbon dioxide traps heat in the atmosphere, causing the greenhouse effect.",
+      "level": "B2"
     },
     {
       "id": "u09_w50",
-      "word": "",
+      "word": "environmental conservation campaigns",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Schools should organize environmental conservation campaigns for students."
+      "meaning": "chiến dịch bảo tồn môi trường",
+      "example": "Schools should organize environmental conservation campaigns for students.",
+      "level": "B2"
     },
     {
       "id": "u09_w51",
-      "word": "",
+      "word": "the tip of the iceberg",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "These dead fish are just the tip of the iceberg; the entire river is heavily polluted."
+      "meaning": "phần nổi của tảng băng chìm, chỉ là bề nổi của vấn đề lớn",
+      "example": "These dead fish are just the tip of the iceberg; the entire river is heavily polluted.",
+      "level": "C1"
     },
     {
       "id": "u09_w52",
-      "word": "",
+      "word": "fight a losing battle",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "Without government penalties, environmentalists are fighting a losing battle against toxic dumpers."
+      "meaning": "đấu tranh trong vô vọng, cầm chắc thất bại",
+      "example": "Without government penalties, environmentalists are fighting a losing battle against toxic dumpers.",
+      "level": "C1"
     },
     {
       "id": "u09_w53",
-      "word": "",
+      "word": "play with fire",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "Ignoring carbon emissions is playing with fire; we are risking our future."
+      "meaning": "chơi với lửa, hành động liều lĩnh đầy rủi ro",
+      "example": "Ignoring carbon emissions is playing with fire; we are risking our future.",
+      "level": "C1"
     },
     {
       "id": "u09_w54",
-      "word": "",
+      "word": "out of the woods",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "Although the panda population has increased, they are not yet out of the woods."
+      "meaning": "thoát khỏi nguy hiểm, khó khăn",
+      "example": "Although the panda population has increased, they are not yet out of the woods.",
+      "level": "C1"
     },
     {
       "id": "u09_w55",
-      "word": "",
+      "word": "back to nature",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "Ecotourists love to go back to nature by staying in wooden homestays."
+      "meaning": "trở về với lối sống thiên nhiên giản dị",
+      "example": "Ecotourists love to go back to nature by staying in wooden homestays.",
+      "level": "B2"
     }
   ],
   "items": [
     {
       "id": "u09_q01",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____B_____u_____r_____n_____i_____n_____g_____ _____f_____o_____s_____s_____i_____l_____ _____f_____u_____e_____l_____s_____ _____h_____a_____r_____m_____s_____ _____e_____c_____o_____s_____y_____s_____t_____e_____m_____s_____ _____a_____n_____d_____ _____l_____e_____a_____d_____s_____ _____t_____o_____ _____a_____ _____l_____o_____s_____s_____ _____o_____f_____ _____b_____i_____o_____d_____i_____v_____e_____r_____s_____i_____t_____y_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Burning fossil fuels harms ecosystems and leads to a loss of ______.\"",
       "options": [
-        "A. community",
-        "B. volunteer",
-        "C. environment",
-        "D. "
+        "A. extreme",
+        "B. gorilla",
+        "C. panda",
+        "D. biodiversity"
       ],
       "answer": 3,
-      "explanation": "'' (n) nghĩa là: ."
+      "explanation": "'biodiversity' (n) nghĩa là: đa dạng sinh học."
     },
     {
       "id": "u09_q02",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____D_____e_____f_____o_____r_____e_____s_____t_____a_____t_____i_____o_____n_____ _____i_____s_____ _____a_____ _____p_____r_____i_____m_____a_____r_____y_____ _____c_____a_____u_____s_____e_____ _____o_____f_____ _____g_____l_____o_____b_____a_____l_____ _____w_____a_____r_____m_____i_____n_____g_____ _____a_____n_____d_____ _____c_____l_____i_____m_____a_____t_____e_____ _____c_____h_____a_____n_____g_____e_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ is a primary cause of global warming and climate change.\"",
       "options": [
-        "A. volunteer",
-        "B. environment",
-        "C. ",
-        "D. community"
+        "A. endangered",
+        "B. deforestation",
+        "C. wildlife",
+        "D. greenhouse gases"
       ],
-      "answer": 2,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 1,
+      "explanation": "'deforestation' (n) nghĩa là: nạn phá rừng quy mô lớn."
     },
     {
       "id": "u09_q03",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____I_____n_____d_____u_____s_____t_____r_____i_____a_____l_____ _____w_____a_____s_____t_____e_____ _____c_____a_____n_____ _____d_____e_____s_____t_____r_____o_____y_____ _____m_____a_____r_____i_____n_____e_____ _____e_____c_____o_____s_____y_____s_____t_____e_____m_____s_____ _____a_____n_____d_____ _____h_____a_____r_____m_____ _____w_____i_____l_____d_____l_____i_____f_____e_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Industrial waste can destroy marine ______s and harm wildlife.\"",
       "options": [
-        "A. environment",
-        "B. volunteer",
-        "C. ",
-        "D. community"
+        "A. greenhouse gases",
+        "B. heatwave",
+        "C. ecosystem",
+        "D. extreme"
       ],
       "answer": 2,
-      "explanation": "'' (n) nghĩa là: ."
+      "explanation": "'ecosystem' (n) nghĩa là: hệ sinh thái."
     },
     {
       "id": "u09_q04",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____F_____i_____n_____e_____ _____d_____u_____s_____t_____ _____f_____r_____o_____m_____ _____f_____a_____c_____t_____o_____r_____i_____e_____s_____ _____c_____a_____u_____s_____e_____s_____ _____s_____e_____v_____e_____r_____e_____ _____r_____e_____s_____p_____i_____r_____a_____t_____o_____r_____y_____ _____i_____l_____l_____n_____e_____s_____s_____e_____s_____ _____i_____n_____ _____c_____h_____i_____l_____d_____r_____e_____n_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Fine dust from factories causes severe ______ illnesses in children.\"",
       "options": [
-        "A. volunteer",
-        "B. ",
-        "C. community",
-        "D. environment"
+        "A. environmental protection",
+        "B. respiratory",
+        "C. wildlife",
+        "D. deforestation"
       ],
       "answer": 1,
-      "explanation": "'' (adj) nghĩa là: ."
+      "explanation": "'respiratory' (adj) nghĩa là: thuộc hệ hô hấp."
     },
     {
       "id": "u09_q05",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____R_____i_____s_____i_____n_____g_____ _____g_____l_____o_____b_____a_____l_____ _____t_____e_____m_____p_____e_____r_____a_____t_____u_____r_____e_____s_____ _____a_____r_____e_____ _____a_____ _____d_____i_____r_____e_____c_____t_____ _____c_____o_____n_____s_____e_____q_____u_____e_____n_____c_____e_____ _____o_____f_____ _____g_____r_____e_____e_____n_____h_____o_____u_____s_____e_____ _____g_____a_____s_____ _____e_____m_____i_____s_____s_____i_____o_____n_____s_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Rising global temperatures are a direct ______ of greenhouse gas emissions.\"",
       "options": [
-        "A. environment",
-        "B. volunteer",
-        "C. ",
-        "D. community"
+        "A. consequence",
+        "B. panda",
+        "C. fossil fuels",
+        "D. issue"
       ],
-      "answer": 2,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 0,
+      "explanation": "'consequence' (n) nghĩa là: hậu quả, hệ quả."
     },
     {
       "id": "u09_q06",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____C_____o_____m_____m_____e_____r_____c_____i_____a_____l_____ _____h_____u_____n_____t_____i_____n_____g_____ _____u_____p_____s_____e_____t_____s_____ _____t_____h_____e_____ _____n_____a_____t_____u_____r_____a_____l_____ _____b_____a_____l_____a_____n_____c_____e_____ _____o_____f_____ _____f_____o_____r_____e_____s_____t_____ _____e_____c_____o_____s_____y_____s_____t_____e_____m_____s_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Commercial hunting upsets the natural ______ of forest ecosystems.\"",
       "options": [
-        "A. ",
-        "B. volunteer",
-        "C. environment",
-        "D. community"
+        "A. balance",
+        "B. issue",
+        "C. environmental protection",
+        "D. deforestation"
       ],
       "answer": 0,
-      "explanation": "'' (n) nghĩa là: ."
+      "explanation": "'balance' (n) nghĩa là: sự cân bằng, trạng thái ổn định."
     },
     {
       "id": "u09_q07",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____D_____e_____f_____o_____r_____e_____s_____t_____a_____t_____i_____o_____n_____ _____i_____s_____ _____a_____c_____c_____e_____l_____e_____r_____a_____t_____i_____n_____g_____ _____g_____l_____o_____b_____a_____l_____ _____w_____a_____r_____m_____i_____n_____g_____ _____a_____n_____d_____ _____c_____l_____i_____m_____a_____t_____e_____ _____c_____h_____a_____n_____g_____e_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Deforestation is accelerating global warming and ______.\"",
       "options": [
-        "A. ",
-        "B. environment",
-        "C. community",
-        "D. volunteer"
+        "A. conservation",
+        "B. climate change",
+        "C. habitat",
+        "D. trade"
       ],
-      "answer": 0,
-      "explanation": "'' (n.phr) nghĩa là: ."
+      "answer": 1,
+      "explanation": "'climate change' (n.phr) nghĩa là: sự biến đổi khí hậu toàn cầu."
     },
     {
       "id": "u09_q08",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____g_____o_____v_____e_____r_____n_____m_____e_____n_____t_____ _____h_____a_____s_____ _____e_____s_____t_____a_____b_____l_____i_____s_____h_____e_____d_____ _____n_____a_____t_____i_____o_____n_____a_____l_____ _____p_____a_____r_____k_____s_____ _____t_____o_____ _____p_____r_____o_____t_____e_____c_____t_____ _____e_____n_____d_____a_____n_____g_____e_____r_____e_____d_____ _____s_____p_____e_____c_____i_____e_____s_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The government has established national parks to protect ______ species.\"",
       "options": [
-        "A. environment",
-        "B. ",
-        "C. volunteer",
-        "D. community"
+        "A. fossil fuels",
+        "B. ice melting",
+        "C. endangered",
+        "D. respiratory"
       ],
-      "answer": 1,
-      "explanation": "'' (adj) nghĩa là: ."
+      "answer": 2,
+      "explanation": "'endangered' (adj) nghĩa là: bị đe dọa tuyệt chủng."
     },
     {
       "id": "u09_q09",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____Y_____o_____u_____n_____g_____ _____p_____e_____o_____p_____l_____e_____ _____p_____l_____a_____y_____ _____a_____ _____k_____e_____y_____ _____r_____o_____l_____e_____ _____i_____n_____ _____r_____a_____i_____s_____i_____n_____g_____ _____a_____w_____a_____r_____e_____n_____e_____s_____s_____ _____o_____f_____ _____e_____n_____v_____i_____r_____o_____n_____m_____e_____n_____t_____a_____l_____ _____p_____r_____o_____t_____e_____c_____t_____i_____o_____n_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Young people play a key role in raising awareness of ______.\"",
       "options": [
-        "A. ",
-        "B. community",
-        "C. volunteer",
-        "D. environment"
+        "A. environmental protection",
+        "B. extreme",
+        "C. upset",
+        "D. tortoise"
       ],
       "answer": 0,
-      "explanation": "'' (n.phr) nghĩa là: ."
+      "explanation": "'environmental protection' (n.phr) nghĩa là: sự bảo vệ môi trường."
     },
     {
       "id": "u09_q10",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____G_____l_____o_____b_____a_____l_____ _____w_____a_____r_____m_____i_____n_____g_____ _____i_____s_____ _____c_____a_____u_____s_____i_____n_____g_____ _____e_____x_____t_____r_____e_____m_____e_____ _____w_____e_____a_____t_____h_____e_____r_____ _____e_____v_____e_____n_____t_____s_____ _____l_____i_____k_____e_____ _____f_____l_____o_____o_____d_____s_____ _____a_____n_____d_____ _____h_____e_____a_____t_____w_____a_____v_____e_____s_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Global warming is causing ______ weather events like floods and heatwaves.\"",
       "options": [
-        "A. environment",
-        "B. volunteer",
-        "C. ",
-        "D. community"
+        "A. climate change",
+        "B. extreme",
+        "C. practical",
+        "D. wildlife"
       ],
-      "answer": 2,
-      "explanation": "'' (adj) nghĩa là: ."
+      "answer": 1,
+      "explanation": "'extreme' (adj) nghĩa là: cực đoan, khắc nghiệt (thời tiết)."
     }
   ]
 }

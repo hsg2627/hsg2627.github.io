@@ -7,575 +7,630 @@
   "words": [
     {
       "id": "u02_w01",
-      "word": "",
+      "word": "adopt",
       "ipa": "",
       "pos": "v",
-      "meaning": "",
-      "example": "More people are adopting an eco-friendly lifestyle to protect nature."
+      "meaning": "chọn theo, bắt đầu áp dụng (lối sống, phương pháp)",
+      "example": "More people are adopting an eco-friendly lifestyle to protect nature.",
+      "level": "B2"
     },
     {
       "id": "u02_w02",
-      "word": "",
+      "word": "sustainability",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Sustainability has become a key target for modern urban planning."
+      "meaning": "tính bền vững, khả năng duy trì lâu dài",
+      "example": "Sustainability has become a key target for modern urban planning.",
+      "level": "C1"
     },
     {
       "id": "u02_w03",
-      "word": "",
+      "word": "emission",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Carbon emissions cause global temperatures to rise."
+      "meaning": "khí thải, sự phát thải",
+      "example": "Carbon emissions cause global temperatures to rise.",
+      "level": "B2"
     },
     {
       "id": "u02_w04",
-      "word": "",
+      "word": "carbon footprint",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Turning off electrical appliances when not in use helps reduce your carbon footprint."
+      "meaning": "dấu chân carbon",
+      "example": "Turning off electrical appliances when not in use helps reduce your carbon footprint.",
+      "level": "B2"
     },
     {
       "id": "u02_w05",
-      "word": "",
+      "word": "eco-friendly",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "Switching to eco-friendly raw materials is highly beneficial."
+      "meaning": "thân thiện với môi trường",
+      "example": "Switching to eco-friendly raw materials is highly beneficial.",
+      "level": "B2"
     },
     {
       "id": "u02_w06",
-      "word": "",
+      "word": "conservation",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "The local government is promoting the conservation of wild animals."
+      "meaning": "sự bảo tồn (thiên nhiên, năng lượng)",
+      "example": "The local government is promoting the conservation of wild animals.",
+      "level": "B2"
     },
     {
       "id": "u02_w07",
-      "word": "",
+      "word": "appliance",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Modern household appliances consume much less electricity than older models."
+      "meaning": "thiết bị gia dụng",
+      "example": "Modern household appliances consume much less electricity than older models.",
+      "level": "B2"
     },
     {
       "id": "u02_w08",
-      "word": "",
+      "word": "global warming",
       "ipa": "",
       "pos": "n.phr",
-      "meaning": "",
-      "example": "Global warming leads to extreme weather events like heatwaves."
+      "meaning": "hiện tượng nóng lên toàn cầu",
+      "example": "Global warming leads to extreme weather events like heatwaves.",
+      "level": "B2"
     },
     {
       "id": "u02_w09",
-      "word": "",
+      "word": "litter",
       "ipa": "",
       "pos": "n/v",
-      "meaning": "",
-      "example": "Please do not litter in public parks and school yards."
+      "meaning": "rác thải / xả rác bừa bãi",
+      "example": "Please do not litter in public parks and school yards.",
+      "level": "B1"
     },
     {
       "id": "u02_w10",
-      "word": "",
+      "word": "organic",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "Organic vegetables are safer for our health and the environment."
+      "meaning": "hữu cơ (thực phẩm, trồng trọt không hóa chất)",
+      "example": "Organic vegetables are safer for our health and the environment.",
+      "level": "B2"
     },
     {
       "id": "u02_w11",
-      "word": "",
+      "word": "refillable",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "Bringing a refillable water bottle helps cut down on plastic waste."
+      "meaning": "có thể đổ đầy lại, tái sử dụng",
+      "example": "Bringing a refillable water bottle helps cut down on plastic waste.",
+      "level": "B2"
     },
     {
       "id": "u02_w12",
-      "word": "",
+      "word": "resource",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "We are rapidly running out of precious natural resources like fossil fuels."
+      "meaning": "tài nguyên (thiên nhiên, học tập)",
+      "example": "We are rapidly running out of precious natural resources like fossil fuels.",
+      "level": "B1"
     },
     {
       "id": "u02_w13",
-      "word": "",
+      "word": "responsibility",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Protecting the Earth from pollution is a collective responsibility."
+      "meaning": "trách nhiệm",
+      "example": "Protecting the Earth from pollution is a collective responsibility.",
+      "level": "B1"
     },
     {
       "id": "u02_w14",
-      "word": "",
+      "word": "sustainable",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "We need to find sustainable solutions to solve water shortages."
+      "meaning": "bền vững, lâu dài",
+      "example": "We need to find sustainable solutions to solve water shortages.",
+      "level": "B2"
     },
     {
       "id": "u02_w15",
-      "word": "",
+      "word": "raw material",
       "ipa": "",
       "pos": "n.phr",
-      "meaning": "",
-      "example": "Our company only uses organic raw materials to manufacture clothes."
+      "meaning": "nguyên liệu thô",
+      "example": "Our company only uses organic raw materials to manufacture clothes.",
+      "level": "B2"
     },
     {
       "id": "u02_w16",
-      "word": "",
+      "word": "consequence",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Deforestation has severe consequences for the local climate."
+      "meaning": "hậu quả, hệ quả",
+      "example": "Deforestation has severe consequences for the local climate.",
+      "level": "B2"
     },
     {
       "id": "u02_w17",
-      "word": "",
+      "word": "hazard",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Chemical waste poses a serious health hazard to local communities."
+      "meaning": "mối nguy hại, rủi ro",
+      "example": "Chemical waste poses a serious health hazard to local communities.",
+      "level": "C1"
     },
     {
       "id": "u02_w18",
-      "word": "",
+      "word": "preservation",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "The preservation of forests is crucial for ecological balance."
+      "meaning": "sự bảo tồn, giữ gìn",
+      "example": "The preservation of forests is crucial for ecological balance.",
+      "level": "B2"
     },
     {
       "id": "u02_w19",
-      "word": "",
+      "word": "consume",
       "ipa": "",
       "pos": "v",
-      "meaning": "",
-      "example": "Modern smart devices consume very little electrical energy."
+      "meaning": "tiêu thụ, tiêu dùng",
+      "example": "Modern smart devices consume very little electrical energy.",
+      "level": "B2"
     },
     {
       "id": "u02_w20",
-      "word": "",
+      "word": "green living",
       "ipa": "",
       "pos": "n.phr",
-      "meaning": "",
-      "example": "Green living is becoming highly popular among urban youth."
+      "meaning": "lối sống xanh",
+      "example": "Green living is becoming highly popular among urban youth.",
+      "level": "B2"
     },
     {
       "id": "u02_w21",
-      "word": "",
+      "word": "alternative",
       "ipa": "",
       "pos": "adj/n",
-      "meaning": "",
-      "example": "Solar power is an excellent alternative energy source."
+      "meaning": "thay thế, lựa chọn khác",
+      "example": "Solar power is an excellent alternative energy source.",
+      "level": "B2"
     },
     {
       "id": "u02_w22",
-      "word": "",
+      "word": "renewable",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "We should transition from fossil fuels to renewable energy."
+      "meaning": "có thể tái tạo",
+      "example": "We should transition from fossil fuels to renewable energy.",
+      "level": "B2"
     },
     {
       "id": "u02_w23",
-      "word": "",
+      "word": "toxic",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "Factories must be penalized for releasing toxic chemicals into rivers."
+      "meaning": "độc hại",
+      "example": "Factories must be penalized for releasing toxic chemicals into rivers.",
+      "level": "C1"
     },
     {
       "id": "u02_w24",
-      "word": "",
+      "word": "pesticide",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Using too much chemical pesticide damages local biodiversity."
+      "meaning": "thuốc trừ sâu",
+      "example": "Using too much chemical pesticide damages local biodiversity.",
+      "level": "B2"
     },
     {
       "id": "u02_w25",
-      "word": "",
+      "word": "pollution",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Air pollution in big cities has reached an alarming level."
+      "meaning": "sự ô nhiễm",
+      "example": "Air pollution in big cities has reached an alarming level.",
+      "level": "B1"
     },
     {
       "id": "u02_w26",
-      "word": "",
+      "word": "cut down on",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "We must cut down on energy bills by using less electricity."
+      "meaning": "chủ động cắt giảm (tiêu thụ, xả thải)",
+      "example": "We must cut down on energy bills by using less electricity.",
+      "level": "B2"
     },
     {
       "id": "u02_w27",
-      "word": "",
+      "word": "clean up",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "The students organized a weekend campaign to clean up the school yard."
+      "meaning": "dọn dẹp vệ sinh sạch sẽ",
+      "example": "The students organized a weekend campaign to clean up the school yard.",
+      "level": "B1"
     },
     {
       "id": "u02_w28",
-      "word": "",
+      "word": "turn off",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Remember to turn off all electrical appliances before leaving the room."
+      "meaning": "tắt thiết bị điện",
+      "example": "Remember to turn off all electrical appliances before leaving the room.",
+      "level": "B1"
     },
     {
       "id": "u02_w29",
-      "word": "",
+      "word": "throw away",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Do not throw away plastic bags; try to reuse them if possible."
+      "meaning": "vứt bỏ đi",
+      "example": "Do not throw away plastic bags; try to reuse them if possible.",
+      "level": "B1"
     },
     {
       "id": "u02_w30",
-      "word": "",
+      "word": "run out of",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "If we don't reduce consumption, we will soon run out of fossil fuels."
+      "meaning": "cạn kiệt (tài nguyên, năng lượng)",
+      "example": "If we don't reduce consumption, we will soon run out of fossil fuels.",
+      "level": "B2"
     },
     {
       "id": "u02_w31",
-      "word": "",
+      "word": "use up",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "We have used up almost all our non-renewable energy resources."
+      "meaning": "sử dụng hết sạch, cạn kiệt",
+      "example": "We have used up almost all our non-renewable energy resources.",
+      "level": "B2"
     },
     {
       "id": "u02_w32",
-      "word": "",
+      "word": "phase out",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "The government plans to phase out single-use plastics by 2030."
+      "meaning": "từng bước loại bỏ hoàn toàn",
+      "example": "The government plans to phase out single-use plastics by 2030.",
+      "level": "C1"
     },
     {
       "id": "u02_w33",
-      "word": "",
+      "word": "switch to",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Many households are switching to solar panels to save money."
+      "meaning": "chuyển sang sử dụng cái mới",
+      "example": "Many households are switching to solar panels to save money.",
+      "level": "B2"
     },
     {
       "id": "u02_w34",
-      "word": "",
+      "word": "plug in",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Plug in your laptop only when the battery is low to extend its lifespan."
+      "meaning": "cắm nguồn điện",
+      "example": "Plug in your laptop only when the battery is low to extend its lifespan.",
+      "level": "B1"
     },
     {
       "id": "u02_w35",
-      "word": "",
+      "word": "pull down",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "The old factory was pulled down to make space for a green park."
+      "meaning": "phá dỡ (nhà cũ, công trình)",
+      "example": "The old factory was pulled down to make space for a green park.",
+      "level": "B2"
     },
     {
       "id": "u02_w36",
-      "word": "",
+      "word": "raise one's awareness of / about sth",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "The club was set up to raise local people’s awareness of environmental issues."
+      "meaning": "nâng cao ý thức của ai về cái gì",
+      "example": "The club was set up to raise local people’s awareness of environmental issues.",
+      "level": "B2"
     },
     {
       "id": "u02_w37",
-      "word": "",
+      "word": "adopt a greener lifestyle",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Choosing public transport is a simple way to adopt a greener lifestyle."
+      "meaning": "bắt đầu áp dụng lối sống xanh hơn",
+      "example": "Choosing public transport is a simple way to adopt a greener lifestyle.",
+      "level": "B2"
     },
     {
       "id": "u02_w38",
-      "word": "",
+      "word": "cause damage to sth",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Extreme weather conditions can cause severe damage to agricultural lands."
+      "meaning": "gây thiệt hại nghiêm trọng cho cái gì",
+      "example": "Extreme weather conditions can cause severe damage to agricultural lands.",
+      "level": "B2"
     },
     {
       "id": "u02_w39",
-      "word": "",
+      "word": "reduce energy bills",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Installing solar panels is a great way to reduce energy bills."
+      "meaning": "giảm hóa đơn tiền điện",
+      "example": "Installing solar panels is a great way to reduce energy bills.",
+      "level": "B2"
     },
     {
       "id": "u02_w40",
-      "word": "",
+      "word": "public transport",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Using public transport helps decrease carbon emissions in big cities."
+      "meaning": "phương tiện giao thông công cộng",
+      "example": "Using public transport helps decrease carbon emissions in big cities.",
+      "level": "B1"
     },
     {
       "id": "u02_w41",
-      "word": "",
+      "word": "global temperatures",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "The rise in global temperatures causes arctic ice melting."
+      "meaning": "nhiệt độ toàn cầu",
+      "example": "The rise in global temperatures causes arctic ice melting.",
+      "level": "B2"
     },
     {
       "id": "u02_w42",
-      "word": "",
+      "word": "waste collection",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "We need a more efficient waste collection system in our neighborhood."
+      "meaning": "việc thu gom rác thải",
+      "example": "We need a more efficient waste collection system in our neighborhood.",
+      "level": "B2"
     },
     {
       "id": "u02_w43",
-      "word": "",
+      "word": "save energy",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Choosing low-energy devices is highly practical for saving energy."
+      "meaning": "tiết kiệm năng lượng",
+      "example": "Choosing low-energy devices is highly practical for saving energy.",
+      "level": "B1"
     },
     {
       "id": "u02_w44",
-      "word": "",
+      "word": "make a difference",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Even small daily habits can make a significant difference to our planet."
+      "meaning": "tạo ra sự khác biệt, thay đổi",
+      "example": "Even small daily habits can make a significant difference to our planet.",
+      "level": "B2"
     },
     {
       "id": "u02_w45",
-      "word": "",
+      "word": "renewable energy",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Wind and solar power are excellent examples of renewable energy."
+      "meaning": "năng lượng tái tạo",
+      "example": "Wind and solar power are excellent examples of renewable energy.",
+      "level": "B2"
     },
     {
       "id": "u02_w46",
-      "word": "",
+      "word": "attract great attention",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Eco-friendly car models always attract great attention at exhibitions."
+      "meaning": "thu hút sự chú ý lớn",
+      "example": "Eco-friendly car models always attract great attention at exhibitions.",
+      "level": "B2"
     },
     {
       "id": "u02_w47",
-      "word": "",
+      "word": "give a presentation on sth",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Nam is preparing to give a presentation on climate change tomorrow."
+      "meaning": "thuyết trình về chủ đề gì",
+      "example": "Nam is preparing to give a presentation on climate change tomorrow.",
+      "level": "B2"
     },
     {
       "id": "u02_w48",
-      "word": "",
+      "word": "take immediate action",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Governments must take immediate action to protect marine life."
+      "meaning": "hành động ngay lập tức",
+      "example": "Governments must take immediate action to protect marine life.",
+      "level": "B2"
     },
     {
       "id": "u02_w49",
-      "word": "",
+      "word": "set up a club",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "The Youth Union decided to set up a school environmental club."
+      "meaning": "thành lập một câu lạc bộ",
+      "example": "The Youth Union decided to set up a school environmental club.",
+      "level": "B2"
     },
     {
       "id": "u02_w50",
-      "word": "",
+      "word": "natural resources",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "We must protect our natural resources for future generations."
+      "meaning": "tài nguyên thiên nhiên",
+      "example": "We must protect our natural resources for future generations.",
+      "level": "B1"
     },
     {
       "id": "u02_w51",
-      "word": "",
+      "word": "a drop in the ocean",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "Our donation is just a drop in the ocean, but every little helps."
+      "meaning": "muối bỏ bể, phần quá nhỏ bé",
+      "example": "Our donation is just a drop in the ocean, but every little helps.",
+      "level": "C1"
     },
     {
       "id": "u02_w52",
-      "word": "",
+      "word": "call it a day",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "After cleaning up the school yard for five hours, we decided to call it a day."
+      "meaning": "dừng lại, kết thúc công việc trong ngày",
+      "example": "After cleaning up the school yard for five hours, we decided to call it a day.",
+      "level": "B2"
     },
     {
       "id": "u02_w53",
-      "word": "",
+      "word": "down to earth",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "His ideas for environmental protection are highly practical and down to earth."
+      "meaning": "thực tế, thực tiễn",
+      "example": "His ideas for environmental protection are highly practical and down to earth.",
+      "level": "C1"
     },
     {
       "id": "u02_w54",
-      "word": "",
+      "word": "beat around the bush",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "Stop beating around the bush and tell me what the environmental problem is."
+      "meaning": "nói vòng vo Tam Quốc, không trực diện",
+      "example": "Stop beating around the bush and tell me what the environmental problem is.",
+      "level": "B2"
     },
     {
       "id": "u02_w55",
-      "word": "",
+      "word": "go green",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "Many businesses are trying to go green by reducing packaging waste."
+      "meaning": "bắt đầu sống thân thiện với môi trường",
+      "example": "Many businesses are trying to go green by reducing packaging waste.",
+      "level": "C1"
     }
   ],
   "items": [
     {
       "id": "u02_q01",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____M_____o_____r_____e_____ _____p_____e_____o_____p_____l_____e_____ _____a_____r_____e_____ _____a_____d_____o_____p_____t_____i_____n_____g_____ _____a_____n_____ _____e_____c_____o_____-_____f_____r_____i_____e_____n_____d_____l_____y_____ _____l_____i_____f_____e_____s_____t_____y_____l_____e_____ _____t_____o_____ _____p_____r_____o_____t_____e_____c_____t_____ _____n_____a_____t_____u_____r_____e_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"More people are ______ing an eco-friendly lifestyle to protect nature.\"",
       "options": [
-        "A. community",
-        "B. environment",
-        "C. ",
-        "D. volunteer"
+        "A. toxic",
+        "B. adopt",
+        "C. alternative",
+        "D. green living"
       ],
-      "answer": 2,
-      "explanation": "'' (v) nghĩa là: ."
+      "answer": 1,
+      "explanation": "'adopt' (v) nghĩa là: chọn theo, bắt đầu áp dụng (lối sống, phương pháp)."
     },
     {
       "id": "u02_q02",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____S_____u_____s_____t_____a_____i_____n_____a_____b_____i_____l_____i_____t_____y_____ _____h_____a_____s_____ _____b_____e_____c_____o_____m_____e_____ _____a_____ _____k_____e_____y_____ _____t_____a_____r_____g_____e_____t_____ _____f_____o_____r_____ _____m_____o_____d_____e_____r_____n_____ _____u_____r_____b_____a_____n_____ _____p_____l_____a_____n_____n_____i_____n_____g_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ has become a key target for modern urban planning.\"",
       "options": [
-        "A. community",
-        "B. environment",
-        "C. volunteer",
-        "D. "
+        "A. sustainability",
+        "B. raw material",
+        "C. resource",
+        "D. litter"
       ],
-      "answer": 3,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 0,
+      "explanation": "'sustainability' (n) nghĩa là: tính bền vững, khả năng duy trì lâu dài."
     },
     {
       "id": "u02_q03",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____C_____a_____r_____b_____o_____n_____ _____e_____m_____i_____s_____s_____i_____o_____n_____s_____ _____c_____a_____u_____s_____e_____ _____g_____l_____o_____b_____a_____l_____ _____t_____e_____m_____p_____e_____r_____a_____t_____u_____r_____e_____s_____ _____t_____o_____ _____r_____i_____s_____e_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Carbon ______s cause global temperatures to rise.\"",
       "options": [
-        "A. ",
-        "B. volunteer",
-        "C. community",
-        "D. environment"
+        "A. responsibility",
+        "B. resource",
+        "C. preservation",
+        "D. emission"
       ],
-      "answer": 0,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 3,
+      "explanation": "'emission' (n) nghĩa là: khí thải, sự phát thải."
     },
     {
       "id": "u02_q04",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____u_____r_____n_____i_____n_____g_____ _____o_____f_____f_____ _____e_____l_____e_____c_____t_____r_____i_____c_____a_____l_____ _____a_____p_____p_____l_____i_____a_____n_____c_____e_____s_____ _____w_____h_____e_____n_____ _____n_____o_____t_____ _____i_____n_____ _____u_____s_____e_____ _____h_____e_____l_____p_____s_____ _____r_____e_____d_____u_____c_____e_____ _____y_____o_____u_____r_____ _____c_____a_____r_____b_____o_____n_____ _____f_____o_____o_____t_____p_____r_____i_____n_____t_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Turning off electrical appliances when not in use helps reduce your ______.\"",
       "options": [
-        "A. environment",
-        "B. ",
-        "C. community",
-        "D. volunteer"
+        "A. carbon footprint",
+        "B. global warming",
+        "C. pollution",
+        "D. eco-friendly"
       ],
-      "answer": 1,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 0,
+      "explanation": "'carbon footprint' (n) nghĩa là: dấu chân carbon."
     },
     {
       "id": "u02_q05",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____S_____w_____i_____t_____c_____h_____i_____n_____g_____ _____t_____o_____ _____e_____c_____o_____-_____f_____r_____i_____e_____n_____d_____l_____y_____ _____r_____a_____w_____ _____m_____a_____t_____e_____r_____i_____a_____l_____s_____ _____i_____s_____ _____h_____i_____g_____h_____l_____y_____ _____b_____e_____n_____e_____f_____i_____c_____i_____a_____l_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Switching to ______ raw materials is highly beneficial.\"",
       "options": [
-        "A. ",
-        "B. environment",
-        "C. community",
-        "D. volunteer"
+        "A. appliance",
+        "B. consume",
+        "C. refillable",
+        "D. eco-friendly"
       ],
-      "answer": 0,
-      "explanation": "'' (adj) nghĩa là: ."
+      "answer": 3,
+      "explanation": "'eco-friendly' (adj) nghĩa là: thân thiện với môi trường."
     },
     {
       "id": "u02_q06",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____l_____o_____c_____a_____l_____ _____g_____o_____v_____e_____r_____n_____m_____e_____n_____t_____ _____i_____s_____ _____p_____r_____o_____m_____o_____t_____i_____n_____g_____ _____t_____h_____e_____ _____c_____o_____n_____s_____e_____r_____v_____a_____t_____i_____o_____n_____ _____o_____f_____ _____w_____i_____l_____d_____ _____a_____n_____i_____m_____a_____l_____s_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The local government is promoting the ______ of wild animals.\"",
       "options": [
-        "A. ",
-        "B. environment",
-        "C. volunteer",
-        "D. community"
+        "A. resource",
+        "B. conservation",
+        "C. responsibility",
+        "D. sustainability"
       ],
-      "answer": 0,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 1,
+      "explanation": "'conservation' (n) nghĩa là: sự bảo tồn (thiên nhiên, năng lượng)."
     },
     {
       "id": "u02_q07",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____M_____o_____d_____e_____r_____n_____ _____h_____o_____u_____s_____e_____h_____o_____l_____d_____ _____a_____p_____p_____l_____i_____a_____n_____c_____e_____s_____ _____c_____o_____n_____s_____u_____m_____e_____ _____m_____u_____c_____h_____ _____l_____e_____s_____s_____ _____e_____l_____e_____c_____t_____r_____i_____c_____i_____t_____y_____ _____t_____h_____a_____n_____ _____o_____l_____d_____e_____r_____ _____m_____o_____d_____e_____l_____s_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Modern household ______s consume much less electricity than older models.\"",
       "options": [
-        "A. volunteer",
-        "B. community",
-        "C. ",
-        "D. environment"
+        "A. carbon footprint",
+        "B. emission",
+        "C. green living",
+        "D. appliance"
       ],
-      "answer": 2,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 3,
+      "explanation": "'appliance' (n) nghĩa là: thiết bị gia dụng."
     },
     {
       "id": "u02_q08",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____G_____l_____o_____b_____a_____l_____ _____w_____a_____r_____m_____i_____n_____g_____ _____l_____e_____a_____d_____s_____ _____t_____o_____ _____e_____x_____t_____r_____e_____m_____e_____ _____w_____e_____a_____t_____h_____e_____r_____ _____e_____v_____e_____n_____t_____s_____ _____l_____i_____k_____e_____ _____h_____e_____a_____t_____w_____a_____v_____e_____s_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ leads to extreme weather events like heatwaves.\"",
       "options": [
-        "A. environment",
-        "B. community",
-        "C. volunteer",
-        "D. "
+        "A. adopt",
+        "B. pesticide",
+        "C. responsibility",
+        "D. global warming"
       ],
       "answer": 3,
-      "explanation": "'' (n.phr) nghĩa là: ."
+      "explanation": "'global warming' (n.phr) nghĩa là: hiện tượng nóng lên toàn cầu."
     },
     {
       "id": "u02_q09",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____P_____l_____e_____a_____s_____e_____ _____d_____o_____ _____n_____o_____t_____ _____l_____i_____t_____t_____e_____r_____ _____i_____n_____ _____p_____u_____b_____l_____i_____c_____ _____p_____a_____r_____k_____s_____ _____a_____n_____d_____ _____s_____c_____h_____o_____o_____l_____ _____y_____a_____r_____d_____s_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Please do not ______ in public parks and school yards.\"",
       "options": [
-        "A. volunteer",
-        "B. community",
-        "C. ",
-        "D. environment"
+        "A. raw material",
+        "B. preservation",
+        "C. toxic",
+        "D. litter"
       ],
-      "answer": 2,
-      "explanation": "'' (n/v) nghĩa là: ."
+      "answer": 3,
+      "explanation": "'litter' (n/v) nghĩa là: rác thải / xả rác bừa bãi."
     },
     {
       "id": "u02_q10",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____O_____r_____g_____a_____n_____i_____c_____ _____v_____e_____g_____e_____t_____a_____b_____l_____e_____s_____ _____a_____r_____e_____ _____s_____a_____f_____e_____r_____ _____f_____o_____r_____ _____o_____u_____r_____ _____h_____e_____a_____l_____t_____h_____ _____a_____n_____d_____ _____t_____h_____e_____ _____e_____n_____v_____i_____r_____o_____n_____m_____e_____n_____t_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ vegetables are safer for our health and the environment.\"",
       "options": [
-        "A. environment",
-        "B. ",
-        "C. community",
-        "D. volunteer"
+        "A. toxic",
+        "B. eco-friendly",
+        "C. pesticide",
+        "D. organic"
       ],
-      "answer": 1,
-      "explanation": "'' (adj) nghĩa là: ."
+      "answer": 3,
+      "explanation": "'organic' (adj) nghĩa là: hữu cơ (thực phẩm, trồng trọt không hóa chất)."
     }
   ]
 }

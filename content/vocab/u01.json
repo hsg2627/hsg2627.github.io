@@ -7,575 +7,630 @@
   "words": [
     {
       "id": "u01_w01",
-      "word": "",
+      "word": "nurture",
       "ipa": "",
       "pos": "v",
-      "meaning": "",
-      "example": "Parents should nurture their children's life skills from an early age."
+      "meaning": "nuôi dưỡng, bồi đắp (tình cảm, kỹ năng)",
+      "example": "Parents should nurture their children's life skills from an early age.",
+      "level": "B2"
     },
     {
       "id": "u01_w02",
-      "word": "",
+      "word": "gratitude",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "She expressed her deep gratitude to her parents for their endless support."
+      "meaning": "lòng biết ơn sâu sắc",
+      "example": "She expressed her deep gratitude to her parents for their endless support.",
+      "level": "B2"
     },
     {
       "id": "u01_w03",
-      "word": "",
+      "word": "resilience",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Single-parent families often show remarkable resilience."
+      "meaning": "sự kiên cường, khả năng tự phục hồi",
+      "example": "Single-parent families often show remarkable resilience.",
+      "level": "C1"
     },
     {
       "id": "u01_w04",
-      "word": "",
+      "word": "harmony",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Sharing chores helps family members live in perfect harmony."
+      "meaning": "sự hòa thuận, hài hòa",
+      "example": "Sharing chores helps family members live in perfect harmony.",
+      "level": "B2"
     },
     {
       "id": "u01_w05",
-      "word": "",
+      "word": "vulnerable",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "Minors are often the most vulnerable members of a family during rough patches."
+      "meaning": "dễ bị tổn thương",
+      "example": "Minors are often the most vulnerable members of a family during rough patches.",
+      "level": "C1"
     },
     {
       "id": "u01_w06",
-      "word": "",
+      "word": "appreciate",
       "ipa": "",
       "pos": "v",
-      "meaning": "",
-      "example": "He deeply appreciates his mother’s daily efforts to take care of the family."
+      "meaning": "trân trọng, đánh giá cao",
+      "example": "He deeply appreciates his mother’s daily efforts to take care of the family.",
+      "level": "B1"
     },
     {
       "id": "u01_w07",
-      "word": "",
+      "word": "multigenerational",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "Living in a multigenerational household requires mutual respect and cooperation."
+      "meaning": "thuộc về nhiều thế hệ, đa thế hệ",
+      "example": "Living in a multigenerational household requires mutual respect and cooperation.",
+      "level": "C1"
     },
     {
       "id": "u01_w08",
-      "word": "",
+      "word": "breadwinner",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Traditionally, the father was seen as the sole breadwinner of the family."
+      "meaning": "người trụ cột đi làm nuôi gia đình",
+      "example": "Traditionally, the father was seen as the sole breadwinner of the family.",
+      "level": "B2"
     },
     {
       "id": "u01_w09",
-      "word": "",
+      "word": "homemaker",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "My mother chose to be a homemaker to spend more time with us."
+      "meaning": "người nội trợ",
+      "example": "My mother chose to be a homemaker to spend more time with us.",
+      "level": "B2"
     },
     {
       "id": "u01_w10",
-      "word": "",
+      "word": "relationship",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "A supportive relationship between siblings fosters a warm home atmosphere."
+      "meaning": "mối quan hệ",
+      "example": "A supportive relationship between siblings fosters a warm home atmosphere.",
+      "level": "B1"
     },
     {
       "id": "u01_w11",
-      "word": "",
+      "word": "characteristic",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Generosity is a wonderful characteristic of my grandmother."
+      "meaning": "tính cách đặc trưng, đặc điểm",
+      "example": "Generosity is a wonderful characteristic of my grandmother.",
+      "level": "B2"
     },
     {
       "id": "u01_w12",
-      "word": "",
+      "word": "routine",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Our family routine includes having dinner together every evening."
+      "meaning": "thói quen, hoạt động thường nhật",
+      "example": "Our family routine includes having dinner together every evening.",
+      "level": "B1"
     },
     {
       "id": "u01_w13",
-      "word": "",
+      "word": "secure",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "A stable family background makes children feel secure."
+      "meaning": "an toàn, chắc chắn",
+      "example": "A stable family background makes children feel secure.",
+      "level": "B2"
     },
     {
       "id": "u01_w14",
-      "word": "",
+      "word": "background",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "He comes from a very respectful and educated family background."
+      "meaning": "hoàn cảnh gia đình, nền tảng",
+      "example": "He comes from a very respectful and educated family background.",
+      "level": "B2"
     },
     {
       "id": "u01_w15",
-      "word": "",
+      "word": "mature",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "Helping with chores helps children become more mature and responsible."
+      "meaning": "trưởng thành, chín chắn",
+      "example": "Helping with chores helps children become more mature and responsible.",
+      "level": "B2"
     },
     {
       "id": "u01_w16",
-      "word": "",
+      "word": "shelter",
       "ipa": "",
       "pos": "n/v",
-      "meaning": "",
-      "example": "The family provides a safe shelter for everyone during difficult times."
+      "meaning": "nơi nương tựa, bảo chở, che chở",
+      "example": "The family provides a safe shelter for everyone during difficult times.",
+      "level": "B2"
     },
     {
       "id": "u01_w17",
-      "word": "",
+      "word": "household",
       "ipa": "",
       "pos": "n/adj",
-      "meaning": "",
-      "example": "Managing household finance requires careful planning by both parents."
+      "meaning": "hộ gia đình, thuộc gia đình",
+      "example": "Managing household finance requires careful planning by both parents.",
+      "level": "B1"
     },
     {
       "id": "u01_w18",
-      "word": "",
+      "word": "minor",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Minors must be protected from domestic violence and neglect."
+      "meaning": "người vị thành niên, trẻ nhỏ",
+      "example": "Minors must be protected from domestic violence and neglect.",
+      "level": "C1"
     },
     {
       "id": "u01_w19",
-      "word": "",
+      "word": "assurance",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "His parents' trust and assurance give him strength to carry on."
+      "meaning": "sự đảm bảo, chắc chắn, tự tin",
+      "example": "His parents' trust and assurance give him strength to carry on.",
+      "level": "C1"
     },
     {
       "id": "u01_w20",
-      "word": "",
+      "word": "bond",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Doing activities together strengthens the emotional bond among family members."
+      "meaning": "sự gắn kết, mối liên kết",
+      "example": "Doing activities together strengthens the emotional bond among family members.",
+      "level": "B2"
     },
     {
       "id": "u01_w21",
-      "word": "",
+      "word": "guidance",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Children need proper guidance from their parents to navigate social media."
+      "meaning": "sự hướng dẫn, chỉ bảo",
+      "example": "Children need proper guidance from their parents to navigate social media.",
+      "level": "B2"
     },
     {
       "id": "u01_w22",
-      "word": "",
+      "word": "discipline",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Parental discipline should always be combined with love and respect."
+      "meaning": "kỷ luật, rèn luyện nhân cách",
+      "example": "Parental discipline should always be combined with love and respect.",
+      "level": "B2"
     },
     {
       "id": "u01_w23",
-      "word": "",
+      "word": "connection",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Technology can enhance connection, but face-to-face interaction is irreplaceable."
+      "meaning": "mối kết nối",
+      "example": "Technology can enhance connection, but face-to-face interaction is irreplaceable.",
+      "level": "B1"
     },
     {
       "id": "u01_w24",
-      "word": "",
+      "word": "duty",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "It is our duty to take care of our grandparents when they get old."
+      "meaning": "nhiệm vụ, nghĩa vụ",
+      "example": "It is our duty to take care of our grandparents when they get old.",
+      "level": "B1"
     },
     {
       "id": "u01_w25",
-      "word": "",
+      "word": "respect",
       "ipa": "",
       "pos": "n/v",
-      "meaning": "",
-      "example": "Mutual respect is the foundation of any healthy relationship."
+      "meaning": "tôn trọng, kính trọng",
+      "example": "Mutual respect is the foundation of any healthy relationship.",
+      "level": "B1"
     },
     {
       "id": "u01_w26",
-      "word": "",
+      "word": "pass down / pass on",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Traditional British family values are passed down from parents to children."
+      "meaning": "truyền lại qua các thế hệ",
+      "example": "Traditional British family values are passed down from parents to children.",
+      "level": "B2"
     },
     {
       "id": "u01_w27",
-      "word": "",
+      "word": "cheer up",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Hieu’s parents always try to cheer him up whenever he has problems."
+      "meaning": "làm vui lên, cổ vũ tinh thần",
+      "example": "Hieu’s parents always try to cheer him up whenever he has problems.",
+      "level": "B1"
     },
     {
       "id": "u01_w28",
-      "word": "",
+      "word": "stay up late",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Teenagers should not stay up late before important exams."
+      "meaning": "thức khuya",
+      "example": "Teenagers should not stay up late before important exams.",
+      "level": "B1"
     },
     {
       "id": "u01_w29",
-      "word": "",
+      "word": "tidy up",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "She spent the whole morning tidying up her bedroom."
+      "meaning": "dọn dẹp ngăn nắp",
+      "example": "She spent the whole morning tidying up her bedroom.",
+      "level": "B1"
     },
     {
       "id": "u01_w30",
-      "word": "",
+      "word": "carry on",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Despite the hardships, they decided to carry on their family business."
+      "meaning": "tiếp tục gánh vác, thực hiện",
+      "example": "Despite the hardships, they decided to carry on their family business.",
+      "level": "B2"
     },
     {
       "id": "u01_w31",
-      "word": "",
+      "word": "bring up",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "She was brought up by her grandparents in a quiet rural area."
+      "meaning": "nuôi nấng, dạy dỗ",
+      "example": "She was brought up by her grandparents in a quiet rural area.",
+      "level": "B2"
     },
     {
       "id": "u01_w32",
-      "word": "",
+      "word": "look after",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "My father stays at home to look after my little sister today."
+      "meaning": "chăm sóc, trông nom",
+      "example": "My father stays at home to look after my little sister today.",
+      "level": "B1"
     },
     {
       "id": "u01_w33",
-      "word": "",
+      "word": "turn to",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "I always turn to my mother whenever I feel overwhelmed."
+      "meaning": "tìm đến ai để xin lời khuyên/giúp đỡ",
+      "example": "I always turn to my mother whenever I feel overwhelmed.",
+      "level": "B2"
     },
     {
       "id": "u01_w34",
-      "word": "",
+      "word": "grow up",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Children who grow up in a loving environment tend to be more confident."
+      "meaning": "lớn lên, trưởng thành",
+      "example": "Children who grow up in a loving environment tend to be more confident.",
+      "level": "B1"
     },
     {
       "id": "u01_w35",
-      "word": "",
+      "word": "work out",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "They managed to work out their family conflicts through open discussion."
+      "meaning": "giải quyết ổn thỏa, tìm ra giải pháp",
+      "example": "They managed to work out their family conflicts through open discussion.",
+      "level": "B2"
     },
     {
       "id": "u01_w36",
-      "word": "",
+      "word": "do the heavy lifting",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "My father usually does the heavy lifting in our household."
+      "meaning": "mang vác nặng, làm việc nặng nhọc",
+      "example": "My father usually does the heavy lifting in our household.",
+      "level": "B2"
     },
     {
       "id": "u01_w37",
-      "word": "",
+      "word": "build strong family bonds",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Sharing household chores equally helps build strong family bonds."
+      "meaning": "xây dựng mối gắn kết gia đình bền chặt",
+      "example": "Sharing household chores equally helps build strong family bonds.",
+      "level": "B2"
     },
     {
       "id": "u01_w38",
-      "word": "",
+      "word": "provide peace of mind",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Professional cleaning services provide peace of mind for busy parents."
+      "meaning": "mang lại sự yên tâm, bình thản",
+      "example": "Professional cleaning services provide peace of mind for busy parents.",
+      "level": "B2"
     },
     {
       "id": "u01_w39",
-      "word": "",
+      "word": "share / divide household responsibilities",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Modern families tend to divide household responsibilities more fairly."
+      "meaning": "phân chia trách nhiệm làm việc nhà",
+      "example": "Modern families tend to divide household responsibilities more fairly.",
+      "level": "B2"
     },
     {
       "id": "u01_w40",
-      "word": "",
+      "word": "lose one's temper",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Parents should avoid losing their temper in front of their children."
+      "meaning": "mất bình tĩnh, nổi giận",
+      "example": "Parents should avoid losing their temper in front of their children.",
+      "level": "B2"
     },
     {
       "id": "u01_w41",
-      "word": "",
+      "word": "earn money to support the family",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Both parents work hard to earn money to support the family."
+      "meaning": "kiếm tiền nuôi gia đình",
+      "example": "Both parents work hard to earn money to support the family.",
+      "level": "B2"
     },
     {
       "id": "u01_w42",
-      "word": "",
+      "word": "do the cooking",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "In my family, my sister usually does the cooking after school."
+      "meaning": "nấu nướng",
+      "example": "In my family, my sister usually does the cooking after school.",
+      "level": "B1"
     },
     {
       "id": "u01_w43",
-      "word": "",
+      "word": "do the laundry",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Using a modern washing machine makes doing the laundry much easier."
+      "meaning": "giặt giũ",
+      "example": "Using a modern washing machine makes doing the laundry much easier.",
+      "level": "B1"
     },
     {
       "id": "u01_w44",
-      "word": "",
+      "word": "divide housework equally",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "We divide housework equally among all family members."
+      "meaning": "chia đều việc nhà",
+      "example": "We divide housework equally among all family members.",
+      "level": "B2"
     },
     {
       "id": "u01_w45",
-      "word": "",
+      "word": "share household chores",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Sharing household chores teaches children teamwork and responsibility."
+      "meaning": "chia sẻ công việc nhà",
+      "example": "Sharing household chores teaches children teamwork and responsibility.",
+      "level": "B1"
     },
     {
       "id": "u01_w46",
-      "word": "",
+      "word": "daily routines",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Establishing stable daily routines helps children feel more secure."
+      "meaning": "thói quen sinh hoạt hàng ngày",
+      "example": "Establishing stable daily routines helps children feel more secure.",
+      "level": "B1"
     },
     {
       "id": "u01_w47",
-      "word": "",
+      "word": "emotional support",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Family is the ultimate foundation of lifelong emotional support."
+      "meaning": "sự hỗ trợ về mặt tinh thần",
+      "example": "Family is the ultimate foundation of lifelong emotional support.",
+      "level": "B2"
     },
     {
       "id": "u01_w48",
-      "word": "",
+      "word": "express gratitude",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "We should express gratitude to our parents through small daily actions."
+      "meaning": "bày tỏ lòng biết ơn",
+      "example": "We should express gratitude to our parents through small daily actions.",
+      "level": "B2"
     },
     {
       "id": "u01_w49",
-      "word": "",
+      "word": "shape character",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Parents should shape their children’s character through discipline."
+      "meaning": "định hình nhân cách, tính cách",
+      "example": "Parents should shape their children’s character through discipline.",
+      "level": "B2"
     },
     {
       "id": "u01_w50",
-      "word": "",
+      "word": "make a decision",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Both parents should discuss together to make a major decision."
+      "meaning": "đưa ra quyết định",
+      "example": "Both parents should discuss together to make a major decision.",
+      "level": "B1"
     },
     {
       "id": "u01_w51",
-      "word": "",
+      "word": "rough patches",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "Healthy families always stick together and support each other through rough patches."
+      "meaning": "những giai đoạn sóng gió, khó khăn trong cuộc sống",
+      "example": "Healthy families always stick together and support each other through rough patches.",
+      "level": "C1"
     },
     {
       "id": "u01_w52",
-      "word": "",
+      "word": "spick and span",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "Her sister loves to keep their kitchen spick and span."
+      "meaning": "sạch sẽ ngăn nắp, không một tì vết",
+      "example": "Her sister loves to keep their kitchen spick and span.",
+      "level": "C1"
     },
     {
       "id": "u01_w53",
-      "word": "",
+      "word": "flesh and blood",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "You must help your brother; after all, he is your own flesh and blood."
+      "meaning": "máu mủ ruột rà, người cùng gia đình",
+      "example": "You must help your brother; after all, he is your own flesh and blood.",
+      "level": "C2"
     },
     {
       "id": "u01_w54",
-      "word": "",
+      "word": "black sheep",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "He is the black sheep of the family because he chose music over business."
+      "meaning": "kẻ lập dị, khác biệt trong gia đình",
+      "example": "He is the black sheep of the family because he chose music over business.",
+      "level": "C1"
     },
     {
       "id": "u01_w55",
-      "word": "",
+      "word": "chip off the old block",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "Nam loves fixing machines just like his dad; he is a chip off the old block."
+      "meaning": "giống hệt bố/mẹ (về tính cách/ngoại hình)",
+      "example": "Nam loves fixing machines just like his dad; he is a chip off the old block.",
+      "level": "C2"
     }
   ],
   "items": [
     {
       "id": "u01_q01",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____P_____a_____r_____e_____n_____t_____s_____ _____s_____h_____o_____u_____l_____d_____ _____n_____u_____r_____t_____u_____r_____e_____ _____t_____h_____e_____i_____r_____ _____c_____h_____i_____l_____d_____r_____e_____n_____'_____s_____ _____l_____i_____f_____e_____ _____s_____k_____i_____l_____l_____s_____ _____f_____r_____o_____m_____ _____a_____n_____ _____e_____a_____r_____l_____y_____ _____a_____g_____e_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Parents should ______ their children's life skills from an early age.\"",
       "options": [
-        "A. volunteer",
-        "B. environment",
-        "C. community",
-        "D. "
+        "A. household",
+        "B. multigenerational",
+        "C. nurture",
+        "D. bond"
       ],
-      "answer": 3,
-      "explanation": "'' (v) nghĩa là: ."
+      "answer": 2,
+      "explanation": "'nurture' (v) nghĩa là: nuôi dưỡng, bồi đắp (tình cảm, kỹ năng)."
     },
     {
       "id": "u01_q02",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____S_____h_____e_____ _____e_____x_____p_____r_____e_____s_____s_____e_____d_____ _____h_____e_____r_____ _____d_____e_____e_____p_____ _____g_____r_____a_____t_____i_____t_____u_____d_____e_____ _____t_____o_____ _____h_____e_____r_____ _____p_____a_____r_____e_____n_____t_____s_____ _____f_____o_____r_____ _____t_____h_____e_____i_____r_____ _____e_____n_____d_____l_____e_____s_____s_____ _____s_____u_____p_____p_____o_____r_____t_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"She expressed her deep ______ to her parents for their endless support.\"",
       "options": [
-        "A. community",
-        "B. volunteer",
-        "C. ",
-        "D. environment"
+        "A. harmony",
+        "B. connection",
+        "C. gratitude",
+        "D. background"
       ],
       "answer": 2,
-      "explanation": "'' (n) nghĩa là: ."
+      "explanation": "'gratitude' (n) nghĩa là: lòng biết ơn sâu sắc."
     },
     {
       "id": "u01_q03",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____S_____i_____n_____g_____l_____e_____-_____p_____a_____r_____e_____n_____t_____ _____f_____a_____m_____i_____l_____i_____e_____s_____ _____o_____f_____t_____e_____n_____ _____s_____h_____o_____w_____ _____r_____e_____m_____a_____r_____k_____a_____b_____l_____e_____ _____r_____e_____s_____i_____l_____i_____e_____n_____c_____e_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Single-parent families often show remarkable ______.\"",
       "options": [
-        "A. environment",
-        "B. community",
-        "C. volunteer",
-        "D. "
+        "A. resilience",
+        "B. nurture",
+        "C. background",
+        "D. household"
       ],
-      "answer": 3,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 0,
+      "explanation": "'resilience' (n) nghĩa là: sự kiên cường, khả năng tự phục hồi."
     },
     {
       "id": "u01_q04",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____S_____h_____a_____r_____i_____n_____g_____ _____c_____h_____o_____r_____e_____s_____ _____h_____e_____l_____p_____s_____ _____f_____a_____m_____i_____l_____y_____ _____m_____e_____m_____b_____e_____r_____s_____ _____l_____i_____v_____e_____ _____i_____n_____ _____p_____e_____r_____f_____e_____c_____t_____ _____h_____a_____r_____m_____o_____n_____y_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Sharing chores helps family members live in perfect ______.\"",
       "options": [
-        "A. environment",
-        "B. volunteer",
-        "C. ",
-        "D. community"
+        "A. appreciate",
+        "B. harmony",
+        "C. characteristic",
+        "D. gratitude"
       ],
-      "answer": 2,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 1,
+      "explanation": "'harmony' (n) nghĩa là: sự hòa thuận, hài hòa."
     },
     {
       "id": "u01_q05",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____M_____i_____n_____o_____r_____s_____ _____a_____r_____e_____ _____o_____f_____t_____e_____n_____ _____t_____h_____e_____ _____m_____o_____s_____t_____ _____v_____u_____l_____n_____e_____r_____a_____b_____l_____e_____ _____m_____e_____m_____b_____e_____r_____s_____ _____o_____f_____ _____a_____ _____f_____a_____m_____i_____l_____y_____ _____d_____u_____r_____i_____n_____g_____ _____r_____o_____u_____g_____h_____ _____p_____a_____t_____c_____h_____e_____s_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Minors are often the most ______ members of a family during rough patches.\"",
       "options": [
-        "A. environment",
-        "B. volunteer",
-        "C. community",
-        "D. "
+        "A. vulnerable",
+        "B. characteristic",
+        "C. homemaker",
+        "D. nurture"
       ],
-      "answer": 3,
-      "explanation": "'' (adj) nghĩa là: ."
+      "answer": 0,
+      "explanation": "'vulnerable' (adj) nghĩa là: dễ bị tổn thương."
     },
     {
       "id": "u01_q06",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____H_____e_____ _____d_____e_____e_____p_____l_____y_____ _____a_____p_____p_____r_____e_____c_____i_____a_____t_____e_____s_____ _____h_____i_____s_____ _____m_____o_____t_____h_____e_____r_____’_____s_____ _____d_____a_____i_____l_____y_____ _____e_____f_____f_____o_____r_____t_____s_____ _____t_____o_____ _____t_____a_____k_____e_____ _____c_____a_____r_____e_____ _____o_____f_____ _____t_____h_____e_____ _____f_____a_____m_____i_____l_____y_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"He deeply ______s his mother’s daily efforts to take care of the family.\"",
       "options": [
-        "A. environment",
-        "B. community",
-        "C. volunteer",
-        "D. "
+        "A. harmony",
+        "B. appreciate",
+        "C. homemaker",
+        "D. characteristic"
       ],
-      "answer": 3,
-      "explanation": "'' (v) nghĩa là: ."
+      "answer": 1,
+      "explanation": "'appreciate' (v) nghĩa là: trân trọng, đánh giá cao."
     },
     {
       "id": "u01_q07",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____L_____i_____v_____i_____n_____g_____ _____i_____n_____ _____a_____ _____m_____u_____l_____t_____i_____g_____e_____n_____e_____r_____a_____t_____i_____o_____n_____a_____l_____ _____h_____o_____u_____s_____e_____h_____o_____l_____d_____ _____r_____e_____q_____u_____i_____r_____e_____s_____ _____m_____u_____t_____u_____a_____l_____ _____r_____e_____s_____p_____e_____c_____t_____ _____a_____n_____d_____ _____c_____o_____o_____p_____e_____r_____a_____t_____i_____o_____n_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Living in a ______ household requires mutual respect and cooperation.\"",
       "options": [
-        "A. volunteer",
-        "B. environment",
-        "C. ",
-        "D. community"
+        "A. multigenerational",
+        "B. household",
+        "C. vulnerable",
+        "D. gratitude"
       ],
-      "answer": 2,
-      "explanation": "'' (adj) nghĩa là: ."
+      "answer": 0,
+      "explanation": "'multigenerational' (adj) nghĩa là: thuộc về nhiều thế hệ, đa thế hệ."
     },
     {
       "id": "u01_q08",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____r_____a_____d_____i_____t_____i_____o_____n_____a_____l_____l_____y_____,_____ _____t_____h_____e_____ _____f_____a_____t_____h_____e_____r_____ _____w_____a_____s_____ _____s_____e_____e_____n_____ _____a_____s_____ _____t_____h_____e_____ _____s_____o_____l_____e_____ _____b_____r_____e_____a_____d_____w_____i_____n_____n_____e_____r_____ _____o_____f_____ _____t_____h_____e_____ _____f_____a_____m_____i_____l_____y_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Traditionally, the father was seen as the sole ______ of the family.\"",
       "options": [
-        "A. environment",
-        "B. community",
-        "C. ",
-        "D. volunteer"
+        "A. nurture",
+        "B. mature",
+        "C. characteristic",
+        "D. breadwinner"
       ],
-      "answer": 2,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 3,
+      "explanation": "'breadwinner' (n) nghĩa là: người trụ cột đi làm nuôi gia đình."
     },
     {
       "id": "u01_q09",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____M_____y_____ _____m_____o_____t_____h_____e_____r_____ _____c_____h_____o_____s_____e_____ _____t_____o_____ _____b_____e_____ _____a_____ _____h_____o_____m_____e_____m_____a_____k_____e_____r_____ _____t_____o_____ _____s_____p_____e_____n_____d_____ _____m_____o_____r_____e_____ _____t_____i_____m_____e_____ _____w_____i_____t_____h_____ _____u_____s_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"My mother chose to be a ______ to spend more time with us.\"",
       "options": [
-        "A. ",
-        "B. volunteer",
-        "C. environment",
-        "D. community"
+        "A. vulnerable",
+        "B. homemaker",
+        "C. appreciate",
+        "D. relationship"
       ],
-      "answer": 0,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 1,
+      "explanation": "'homemaker' (n) nghĩa là: người nội trợ."
     },
     {
       "id": "u01_q10",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____A_____ _____s_____u_____p_____p_____o_____r_____t_____i_____v_____e_____ _____r_____e_____l_____a_____t_____i_____o_____n_____s_____h_____i_____p_____ _____b_____e_____t_____w_____e_____e_____n_____ _____s_____i_____b_____l_____i_____n_____g_____s_____ _____f_____o_____s_____t_____e_____r_____s_____ _____a_____ _____w_____a_____r_____m_____ _____h_____o_____m_____e_____ _____a_____t_____m_____o_____s_____p_____h_____e_____r_____e_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"A supportive ______ between siblings fosters a warm home atmosphere.\"",
       "options": [
-        "A. volunteer",
-        "B. community",
-        "C. ",
-        "D. environment"
+        "A. resilience",
+        "B. minor",
+        "C. relationship",
+        "D. harmony"
       ],
       "answer": 2,
-      "explanation": "'' (n) nghĩa là: ."
+      "explanation": "'relationship' (n) nghĩa là: mối quan hệ."
     }
   ]
 }
