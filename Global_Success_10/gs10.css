@@ -19,11 +19,16 @@
 
      Lấy min() của vw và vh, KHÔNG chỉ vw: máy chiếu lớp phổ biến là 1366×768,
      rộng nhưng thấp. Neo theo mỗi bề rộng thì chữ to quá và slide tràn xuống
-     dưới, giữa giờ cô phải cuộn. */
-  --t-body:clamp(18px, min(2.05vw, 3.2vh), 34px);
-  --t-lead:clamp(21px, min(2.60vw, 4.1vh), 42px);
-  --t-h2:clamp(26px, min(3.50vw, 5.4vh), 60px);
-  --t-h1:clamp(32px, min(4.60vw, 7.2vh), 78px);
+     dưới, giữa giờ cô phải cuộn.
+
+     MỐC: chữ thân bài phải ≥ **Calibri 24 pt** khi chiếu. Quy đổi: slide
+     PowerPoint 16:9 cao 7,5 inch, nên 24 pt = 24/72 inch = **4,44% chiều cao
+     ảnh chiếu**. Màn 1366×768 → 34 px. Đó là lý do --t-body neo 4,45vh.
+     Đừng hạ con số này để nhét thêm chữ vào slide — tràn thì TÁCH SLIDE. */
+  --t-body:clamp(22px, min(3.30vw, 4.45vh), 44px);   /* 34 px @768 = 24 pt   */
+  --t-lead:clamp(26px, min(3.95vw, 5.35vh), 52px);   /* 41 px @768 = 29 pt   */
+  --t-h2:clamp(30px, min(4.60vw, 6.30vh), 68px);     /* 48 px @768 = 34 pt   */
+  --t-h1:clamp(38px, min(6.20vw, 9.00vh), 96px);     /* 69 px @768 = 49 pt   */
 
   /* Nền sáng là mặc định: phòng học bật đèn thì nền tối bị rửa trôi. */
   color-scheme: light;
@@ -189,16 +194,64 @@ body.is-locked{ overflow:hidden; }
 .slide{
   position:absolute; inset:0;
   display:none;
-  padding:clamp(24px, 3.6vw, 72px) clamp(24px, 3.6vw, 72px) clamp(96px, 8vw, 130px);
+  /* Đệm dưới phải chừa đủ nút "Hiện hết đáp án" (cao 44px, cách đáy 41px)
+     — dưới 88px là chữ chạm nút. Trên/hai bên thu bớt để lấy chỗ cho chữ to. */
+  padding:clamp(18px, 2.8vw, 56px) clamp(22px, 3.2vw, 64px) clamp(72px, 5.6vw, 94px);
   overflow-y:auto;
 }
 .slide.is-current{ display:block; }
+/* JS gắn .has-reveal-all cho slide có đáp án — chỉ những slide đó mới phải
+   chừa nút "Hiện hết đáp án" ở góc dưới. */
+.slide.has-reveal-all{ padding-bottom:clamp(100px, 7.8vw, 122px); }
 .slide > :first-child{ margin-top:0; }
 
-/* Slide nhiều chữ (hội thoại dài, bảng nhiều dòng): thu cả slide lại một nấc
-   để vừa màn 768px mà không phải cuộn. Kiểm bằng §6 của GLOBAL-SUCCESS-10.md. */
-.slide.dense{ font-size:.82em; }
-.slide.denser{ font-size:.72em; }
+/* Slide nhiều chữ (hội thoại dài, bảng nhiều dòng).
+   TRƯỚC ĐÂY hai lớp này thu cỡ chữ (.82× và .72×). Bỏ cách đó: .72× của
+   34px là 24px ≈ 17 pt — dưới mốc 24 pt, hàng ghế cuối mất chữ.
+   Giờ hai lớp này thu KHOẢNG CÁCH: giãn dòng, lề đoạn, khe lưới, đệm thẻ.
+   Vẫn tràn thì tách slide — §7 "Ba cái bẫy khi viết slide". */
+.slide.dense { line-height:1.32; }
+.slide.denser{ line-height:1.22; }
+.slide.dense  h2, .slide.denser h2{ margin-bottom:.3em; }
+.slide.dense  .kicker, .slide.denser .kicker{ margin-bottom:.28em; }
+.slide.dense  .q{ margin-bottom:.5em; }
+.slide.denser .q{ margin-bottom:.26em; }
+.slide.dense  li{ margin-bottom:.26em; }
+.slide.denser li{ margin-bottom:.16em; }
+.slide.dense  p, .slide.denser p{ margin-bottom:.5em; }
+.slide.dense  .cards, .slide.dense  .words,
+.slide.denser .cards, .slide.denser .words{ gap:clamp(8px,.9vw,14px); }
+.slide.dense  .card,  .slide.dense  .word{ padding:clamp(9px,1vw,15px); }
+.slide.denser .card,  .slide.denser .word{ padding:clamp(6px,.7vw,11px); }
+.slide.dense  .box,   .slide.denser .box{ padding:clamp(10px,1.1vw,18px); }
+.slide.dense  .colloc li, .slide.dense  .tf li{ padding:.3em .62em; margin-bottom:.3em; }
+.slide.denser .colloc li, .slide.denser .tf li{ padding:.2em .55em; margin-bottom:.2em; }
+.slide.dense  .reveal{ min-height:38px; padding:.14em .8em; }
+.slide.denser .reveal{ min-height:32px; padding:.08em .7em; }
+.slide.dense  .card .ico, .slide.denser .card .ico{ font-size:1.15em; margin-bottom:.06em; }
+.slide.dense  .card h3,  .slide.denser .card h3{ margin-bottom:.1em; line-height:1.1; }
+.slide.dense  .cards, .slide.dense  .words,
+.slide.denser .cards, .slide.denser .words{ margin-bottom:.35em; }
+.slide.dense  h1, .slide.dense  h2, .slide.dense  h3,
+.slide.denser h1, .slide.denser h2, .slide.denser h3{ line-height:1.06; }
+.slide.dense  .chips, .slide.denser .chips{ gap:.24em .34em; margin-bottom:.42em; }
+.slide.denser .chips li{ padding:.14em .62em; }
+.slide.dense  .box, .slide.denser .box{ margin-bottom:.5em; }
+.slide.denser .compare > div{ padding:clamp(8px,.9vw,14px); }
+.slide.denser .brief{ padding:clamp(8px,.9vw,14px); }
+.slide.dense  .brief, .slide.denser .brief{ margin-bottom:.5em; }
+.slide.dense  .brief .slogan,
+.slide.denser .brief .slogan{ margin:.2em 0 .3em; }
+.slide.dense  .pics figcaption, .slide.denser .pics figcaption{ margin-top:.22em; }
+.slide.dense  .pics, .slide.denser .pics{ gap:clamp(8px,1vw,15px); }
+/* Ảnh nhỏ lại một nấc trên slide dày chữ — ảnh không phải chữ, thu được.
+   Chữ trong ảnh vẫn đủ to vì object-fit:contain không cắt. */
+.slide.denser .pics img{ height:clamp(140px,23vh,240px); }
+.slide.dense  th, .slide.dense  td{ padding:.34em .55em; }
+.slide.denser th, .slide.denser td{ padding:.22em .45em; }
+.slide.dense  table, .slide.denser table{ margin-bottom:.5em; }
+.slide.denser .chat{ gap:.24em; }
+.slide.denser .bubble{ padding:.38em .8em; }
 
 /* Slide mở đầu mỗi phần */
 .slide.title{
@@ -210,7 +263,7 @@ body.is-locked{ overflow:hidden; }
 
 .kicker{
   display:inline-block; margin-bottom:.6em;
-  font-size:.58em; letter-spacing:.16em; text-transform:uppercase;
+  font-size:.68em; letter-spacing:.16em; text-transform:uppercase;
   color:var(--brass); font-family:"Segoe UI",system-ui,sans-serif;
 }
 
@@ -250,7 +303,7 @@ body.is-locked{ overflow:hidden; }
   min-height:48px; padding:.25em 1em; margin-left:.4em;
   border:2px dashed var(--muted); border-radius:999px;
   background:transparent; color:var(--muted);
-  font:inherit; font-size:.82em; cursor:pointer;
+  font:inherit; font-size:.9em; cursor:pointer;
   vertical-align:middle;
 }
 .reveal:hover{ border-color:var(--navy); color:var(--navy); }
@@ -267,11 +320,13 @@ body.is-locked{ overflow:hidden; }
 
 /* Nút lật hết một slide */
 .reveal-all{
-  position:absolute; right:clamp(24px,3.6vw,72px); bottom:clamp(24px,3vw,44px);
-  min-height:44px; padding:0 16px;
+  /* Thanh điều hướng cố định cao 65px đè lên đáy slide. Đặt ở 24px là nút
+     bị cắt mất nửa dưới — phải đẩy lên trên thanh đó. */
+  position:absolute; right:clamp(24px,3.6vw,72px); bottom:clamp(66px,8.6vh,84px);
+  min-height:34px; padding:0 16px;
   border:1px solid var(--rule); border-radius:999px;
   background:var(--surface); color:var(--muted);
-  font:inherit; font-size:.7em; cursor:pointer;
+  font:inherit; font-size:.8em; cursor:pointer;
 }
 .reveal-all:hover{ border-color:var(--navy); color:var(--navy); }
 
@@ -397,7 +452,7 @@ body[data-unit="10"]{ --accent:#33691E; --accent-2:#00695C; --accent-soft:#EDF3E
 .badge{
   display:inline-flex; align-items:center; gap:.4em;
   padding:.3em .85em; border-radius:999px;
-  font-family:var(--font-display); font-size:.62em; font-weight:700;
+  font-family:var(--font-display); font-size:.72em; font-weight:700;
   letter-spacing:.04em; white-space:nowrap;
 }
 .badge.time{ background:var(--accent); color:var(--on-accent); }
@@ -411,7 +466,7 @@ body[data-unit="10"]{ --accent:#33691E; --accent-2:#00695C; --accent-soft:#EDF3E
 .chips li, .chip{
   display:inline-block; padding:.34em .95em;
   background:var(--surface); border:2px solid var(--rule); border-radius:999px;
-  font-size:.86em;
+  font-size:1em;
 }
 .chips li.hot, .chip.hot{
   background:var(--accent-soft); border-color:var(--accent); color:var(--accent); font-weight:700;
@@ -421,8 +476,11 @@ body[data-unit="10"]{ --accent:#33691E; --accent-2:#00695C; --accent-soft:#EDF3E
 
 .cards{
   display:grid; gap:clamp(12px,1.4vw,22px);
-  grid-template-columns:repeat(auto-fit, minmax(230px,1fr));
-  margin:0 0 1em; padding:0; list-style:none;
+  /* 200px chứ không rộng hơn: đo thực tế trên 16 tiết, cột rộng hơn làm giảm
+     số cột → thêm một hàng thẻ → slide cao thêm ~200px. Hẹp mà một hàng
+     vẫn thấp hơn rộng mà hai hàng. */
+  grid-template-columns:repeat(auto-fit, minmax(min(185px,100%),1fr));
+  margin:0 0 .7em; padding:0; list-style:none;
 }
 .card{
   background:var(--surface); border:1px solid var(--rule);
@@ -432,7 +490,7 @@ body[data-unit="10"]{ --accent:#33691E; --accent-2:#00695C; --accent-soft:#EDF3E
 }
 .card .ico{ font-size:1.7em; line-height:1; display:block; margin-bottom:.24em; }
 .card h3{ color:var(--accent); font-size:1.02em; margin-bottom:.22em; }
-.card p{ font-size:.86em; color:var(--muted); margin:0; }
+.card p{ font-size:1em; color:var(--muted); margin:0; }
 .card.alt{ border-top-color:var(--accent-2); }
 .card.alt h3{ color:var(--accent-2); }
 
@@ -440,8 +498,8 @@ body[data-unit="10"]{ --accent:#33691E; --accent-2:#00695C; --accent-soft:#EDF3E
 
 .words{
   display:grid; gap:clamp(12px,1.3vw,20px);
-  grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
-  margin:0 0 1em; padding:0; list-style:none;
+  grid-template-columns:repeat(auto-fit, minmax(min(195px,100%),1fr));
+  margin:0 0 .7em; padding:0; list-style:none;
 }
 .word{
   background:var(--surface); border:2px solid var(--rule); border-radius:var(--radius);
@@ -451,12 +509,12 @@ body[data-unit="10"]{ --accent:#33691E; --accent-2:#00695C; --accent-soft:#EDF3E
   display:block; font-family:var(--font-display); font-weight:800;
   font-size:1.15em; color:var(--accent);
 }
-.word .pos{ font-size:.72em; color:var(--muted); font-style:italic; }
+.word .pos{ font-size:.84em; color:var(--muted); font-style:italic; }
 .word .ipa{
   display:block; margin:.2em 0 .45em;
-  font-size:.86em; color:var(--accent-2); font-weight:600;
+  font-size:1em; color:var(--accent-2); font-weight:600;
 }
-.word .reveal{ margin:0; font-size:.7em; min-height:40px; }
+.word .reveal{ margin:0; font-size:.8em; min-height:40px; }
 .word .answer.is-open{ display:block; margin-top:.35em; font-weight:600; }
 
 /* ---------- Hội thoại dạng bong bóng chat -------------------------------- */
@@ -465,11 +523,11 @@ body[data-unit="10"]{ --accent:#33691E; --accent-2:#00695C; --accent-soft:#EDF3E
 .slide.dense .chat, .slide.denser .chat{ gap:.30em; }
 .bubble{
   max-width:78%; padding:.55em .95em;
-  border-radius:18px; font-size:.86em; line-height:1.45;
+  border-radius:18px; font-size:1em; line-height:1.4;
 }
 .bubble .who{
   display:block; font-family:var(--font-display); font-weight:700;
-  font-size:.76em; letter-spacing:.04em; margin-bottom:.1em; opacity:.72;
+  font-size:.84em; letter-spacing:.04em; margin-bottom:.1em; opacity:.72;
 }
 .bubble.l{ align-self:flex-start; background:var(--sunk); border-bottom-left-radius:5px; }
 .bubble.r{
@@ -494,7 +552,7 @@ body[data-unit="10"]{ --accent:#33691E; --accent-2:#00695C; --accent-soft:#EDF3E
   flex:0 0 auto; display:grid; place-content:center;
   width:1.7em; height:1.7em; border-radius:50%;
   background:var(--accent-soft); color:var(--accent);
-  font-family:var(--font-display); font-weight:800; font-size:.8em;
+  font-family:var(--font-display); font-weight:800; font-size:.86em;
 }
 .tf .verdict{ display:none; font-family:var(--font-display); font-weight:800; }
 .tf .verdict.is-open{ display:inline-block; }
@@ -537,7 +595,32 @@ body[data-unit="10"]{ --accent:#33691E; --accent-2:#00695C; --accent-soft:#EDF3E
 .compare h3{ margin-bottom:.3em; }
 .compare > div:first-child h3{ color:var(--accent); }
 .compare > div:last-child  h3{ color:var(--accent-2); }
-.compare .eg{ font-size:.88em; color:var(--muted); font-style:italic; }
+.compare .eg{ font-size:1em; color:var(--muted); font-style:italic; }
+
+/* ---------- Ảnh nhiệm vụ cắt từ SGK ----------------------------------------- */
+/* Ảnh cắt từ bản PDF của sách chỉ ~150 dpi — đủ nét ở khổ này, đừng phóng
+   to hơn. object-fit:contain để cả hàng cao bằng nhau mà KHÔNG cắt mất chữ
+   trong ảnh (ví dụ biển "PLEASE TURN OFF LIGHTS"); nền --sunk lấp phần thừa
+   nên hai bên không hở trắng trên nền tối. */
+.pics{
+  display:grid; gap:clamp(10px,1.2vw,20px);
+  grid-template-columns:repeat(auto-fit, minmax(170px,1fr));
+  margin:0 0 1em;
+}
+.pics figure{ margin:0; }
+.pics img{
+  display:block; width:100%; height:clamp(150px,30vh,300px);
+  object-fit:contain; background:var(--sunk);
+  border:1px solid var(--rule); border-radius:var(--radius);
+}
+.pics figcaption{ margin-top:.42em; font-size:1em; color:var(--muted); }
+.pics figcaption b{ color:var(--ink); }
+/* .pics.wide — một ảnh lớn duy nhất: giữ nguyên tỉ lệ, không giới hạn chiều cao */
+.pics.wide{ grid-template-columns:1fr; }
+.pics.wide img{ height:auto; background:none; }
+@media (max-width:900px){
+  .pics{ grid-template-columns:repeat(auto-fit, minmax(140px,1fr)); }
+}
 
 /* ---------- Khung nhiệm vụ lớn (poster, project) ------------------------- */
 
@@ -607,7 +690,7 @@ body[data-unit="10"]{ --accent:#33691E; --accent-2:#00695C; --accent-soft:#EDF3E
 .video-play:hover{ background:rgba(255,255,255,.3); transform:scale(1.07); }
 
 .video .t{ display:block; font-family:var(--font-display); font-weight:800; font-size:1.02em; }
-.video .s{ display:block; font-size:.74em; color:rgba(255,255,255,.85); margin-top:.15em; }
+.video .s{ display:block; font-size:.84em; color:rgba(255,255,255,.85); margin-top:.15em; }
 
 /* Báo mất mạng — hiện thay cho iframe khi navigator.onLine = false */
 .video.offline{ background:var(--sunk); color:var(--ink); border-color:var(--muted); }
@@ -901,9 +984,14 @@ body.tpl-env .slide.phase .badge.time{ background:#8A4A12; color:#F9ECCF; }
 body.tpl-env .slide:not(.cover):not(.phase):not(.side){
   background:url(assets/tpl-env-content.webp) center/cover no-repeat;
   color:var(--ink);
-  /* Khung tối ở x 6.1–93.8%, y 10.9–89.0%. Lề dưới cộng thêm ~8vh để chừa
-     thanh điều hướng cố định ở đáy màn. */
-  padding:12vh 8.5% 19vh 8.5%;
+  /* Khung tối ở x 6.1–93.8%, y 10.9–89.0% — tức cách trên 10,9% × 712px ≈ 78px
+     (≈10,1vh) và cách dưới cũng 78px. Đệm cũ 12vh/19vh thụt sâu hơn khung
+     nhiều, ăn mất 61px chiều cao — gần hai dòng chữ 24 pt. Thu sát khung.
+     12vh dưới = 92px, vừa vượt nút "Hiện hết đáp án" (đỉnh ở 85px). */
+  padding:11vh 8.5% 12vh 8.5%;
+}
+body.tpl-env .slide.has-reveal-all:not(.cover):not(.phase):not(.side){
+  padding-bottom:13.5vh;   /* chừa nút "Hiện hết đáp án" ở đúng chỗ mới */
 }
 
 /* ---- Slide "khoe hình": khung kem hẹp bên phải ---- */

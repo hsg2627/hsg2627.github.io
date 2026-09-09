@@ -221,6 +221,9 @@
         b.className = 'reveal-all';
         b.textContent = 'Hiện hết đáp án';
         s.appendChild(b);
+        // Chỉ slide NÀO có nút này mới cần đệm dưới dày. Slide không có đáp án
+        // được dùng thêm ~24px chiều cao — đủ cứu một dòng chữ 24 pt.
+        s.classList.add('has-reveal-all');
       });
     }
 

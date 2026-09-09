@@ -42,7 +42,8 @@ Global_Success_10/
 ├── assets/
 │   ├── map.webp        bản đồ chính — 10 unit + 4 review (WebP, đừng đưa PNG lại)
 │   ├── unit01-map.webp … unit10-map.webp  bản đồ 10 unit, mỗi bản 8 tiết
-│   └── audio/          u01-track02.mp3 …  (tệp cục bộ, phát được khi mất mạng)
+│   ├── audio/          u01-track02.mp3 …  (tệp cục bộ, phát được khi mất mạng)
+│   └── images/         u02-l3-task1-a.webp …  ảnh nhiệm vụ cắt từ SGK
 ├── unit01/
 │   ├── index.html      BẢN ĐỒ UNIT — 8 thẻ tiết
 │   └── lesson1.html    MẪU — chép tệp này để dựng tiết mới
@@ -84,6 +85,12 @@ Track gốc ở `Documents\GA Global Success 10 NLS-…\Audio\Unit N\TrackNN.mp3
 
 Chỉ chép track nào bài đang dùng, đừng chép cả bộ.
 
+**Số track lấy ở đâu:** ngay trên đầu bài trong SGK, cạnh số thứ tự task có
+biểu tượng loa in sẵn con số — đó mới là số track, đừng suy từ thứ tự trên
+đĩa hay từ thời lượng. Hai task "listen" rồi "listen again" của cùng một bài
+nghe thường mang **hai số track khác nhau** (Unit 2: Track 14 và Track 15) —
+cùng nội dung, thu làm hai bản. Chép cả hai.
+
 ```html
 <span class="badge soft">🎧 Track 02 · 1:43 · nghe 2 lượt</span>
 <audio class="tight" controls preload="metadata" src="../assets/audio/u01-track02.mp3">
@@ -91,6 +98,32 @@ Chỉ chép track nào bài đang dùng, đừng chép cả bộ.
 
 `class="tight"` thu lề thanh audio — thiếu nó là slide hội thoại tràn màn.
 `preload="metadata"` để thanh tua hiện sẵn thời lượng mà chưa tải cả tệp.
+
+## Thêm ảnh nhiệm vụ
+
+Ảnh trong SGK cắt từ bản PDF của sách. Mỗi trang PDF là **một ảnh JPEG
+1199×1689** (~150 dpi) nên không rút ảnh con ra được — phải cắt từ ảnh trang.
+Đó cũng là trần độ nét: chỉ có từng ấy điểm ảnh, phóng to hơn là vỡ.
+Đặt vào `assets/images/` với tên `uNN-lM-task….webp` (WebP q88).
+
+```html
+<div class="pics">
+  <figure class="q">
+    <img src="../assets/images/u02-l3-task1-a.webp" alt="Mô tả thật nội dung ảnh">
+    <figcaption><b>a</b> · plastic bags
+      <button class="reveal" type="button" aria-expanded="false">?</button>
+      <span class="answer">not green</span></figcaption>
+  </figure>
+</div>
+```
+
+`.pics` xếp ảnh thành hàng cao bằng nhau bằng `object-fit:contain` — cố tình
+**không** dùng `cover`, vì ảnh SGK hay có chữ trong ảnh (biển báo, nhãn hàng),
+`cover` sẽ cắt mất. Một ảnh lớn đứng riêng thì dùng `<div class="pics wide">`.
+
+`class="q"` đặt trên `<figure>` để nút lật đáp án chỉ mở đáp án của ảnh đó.
+`alt` phải tả đúng thứ trong ảnh — đó là thứ học sinh phải đoán, đừng viết
+"ảnh a" hay để trống.
 
 ## Nhúng video
 
@@ -126,6 +159,26 @@ Khai **một lần** trong `gs10.css`, cả unit dùng chung — không sửa t�
 
 Đường dẫn `url()` trong CSS tính từ chính tệp CSS, nên viết
 `assets/bg-unitNN.webp` là đúng cho mọi bài ở mọi thư mục con.
+
+## Cỡ chữ — sàn là 24 pt Calibri
+
+Chữ thân bài trên mọi slide phải **≥ tương đương Calibri 24 pt**. Quy đổi:
+slide PowerPoint 16:9 cao 7,5 inch = 540 pt, nên 24 pt chiếm **4,44% chiều cao
+ảnh chiếu**. Máy chiếu 1366×768 → **34 px**. Cả thang chữ neo theo `vh` cho
+đúng tỉ lệ đó:
+
+| biến | dùng cho | @768px | ≈ pt |
+|---|---|---|---|
+| `--t-body` | chữ thân bài, câu hỏi, đáp án, ô chữ | 34 px | **24 pt** |
+| `--t-lead` | `h3`, câu dẫn dưới tiêu đề | 41 px | 29 pt |
+| `--t-h2` | tiêu đề slide | 48 px | 34 pt |
+| `--t-h1` | tiêu đề slide bìa / phân đoạn | 69 px | 49 pt |
+
+Nhãn phụ trợ — `.kicker`, `.badge`, nút lật, thanh điều hướng — nhỏ hơn sàn
+(0,68–0,9 em). Đó là chữ của cô, không phải chữ học sinh phải đọc từ cuối lớp.
+Mọi thứ học sinh phải đọc đều để 1 em trở lên.
+
+**Đừng hạ thang này để nhét thêm chữ vào slide.** Tràn thì tách slide.
 
 ### Đừng hạ `--scrim` xuống dưới 0,88
 
@@ -291,9 +344,10 @@ Màu nhấn theo unit: khai `<body data-unit="1">`, đừng viết mã màu vào
    Một câu hai chỗ trống mà chung một `.q` thì bấm một nút lật cả hai.
 2. **Đừng nhét `<ul>` vào `<span class="answer">`** — trình duyệt đẩy nó ra ngoài
    `<p>` và nút lật mất tác dụng. Dùng `<div class="answer note">`.
-3. **Slide phải vừa màn 1366×768.** Nhiều chữ thì thêm `dense` (0,82×) hoặc
-   `denser` (0,72×) vào `class` của `<section>`; vẫn tràn thì **tách slide** chứ
-   đừng thu chữ nhỏ nữa — hàng ghế cuối không đọc được.
+3. **Slide phải vừa màn 1366×768.** Nhiều chữ thì thêm `dense` hoặc `denser`
+   vào `class` của `<section>`. Hai lớp này **thu khoảng cách** (giãn dòng, lề
+   đoạn, khe lưới, đệm thẻ) chứ không thu cỡ chữ — cỡ chữ đã chạm sàn 24 pt.
+   Vẫn tràn thì **tách slide**, đừng thu chữ — hàng ghế cuối không đọc được.
 
 ## Phím trong lớp
 

@@ -407,7 +407,8 @@ Kiểm bảy mục, theo thứ tự:
 - [ ] Mở `/Global_Success_10/` → bản đồ hiện đủ ảnh, 14 ghim
 - [ ] Ghim Unit 1–5 bấm được; Unit 6–10 và Review 1–4 hiện mờ, bấm không ăn
 - [ ] Bấm Unit 1 → popup mở, **URL trên thanh địa chỉ không đổi**
-- [ ] Trong popup bấm Lesson 1 → ra 8 slide, `← →` chuyển được, đếm `1 / 8`
+- [ ] Trong popup bấm Lesson 1 → ra bộ slide, `← →` chuyển được, số đếm chạy
+      đúng (mỗi tiết 15–31 slide, không cố định — JS tự đếm)
 - [ ] Bấm "Đáp án" ở một câu → chỉ câu đó hiện, các câu khác vẫn ẩn
 - [ ] `Esc` → lùi về mục lục; `Esc` lần nữa → đóng popup, bản đồ nguyên chỗ cũ
 - [ ] **Không slide nào phải cuộn** ở 1366×768. Đo bằng đoạn này trong Console:
@@ -415,6 +416,11 @@ Kiểm bảy mục, theo thứ tự:
       document.querySelectorAll('.slide').forEach((s,i)=>{ s.classList.add('is-current');
         const o=s.scrollHeight-s.clientHeight; if(o>4) console.log('slide',i+1,'tràn',o,'px');
         if(i) s.classList.remove('is-current'); });
+
+      **Máy chiếu lớp là 16:9.** Đã đo sạch ở 1280×720, 1360×768, 1366×768,
+      1600×900 và 1920×1080. Dưới 720p (ví dụ 1024×576) vẫn có slide tràn —
+      vì một số giá trị sàn trong CSS là px cố định (lưới thẻ 185px, đệm dưới
+      72–100px) nên chiếm tỉ lệ lớn hơn khi màn quá nhỏ. Không đuổi theo mức đó.
 
 - [ ] **Kiểm không có log:** mở DevTools → Network, bấm khắp module. Không được
       có request nào đi ra ngoài tên miền, đặc biệt là tới Apps Script.
@@ -502,8 +508,12 @@ Slide nào có `.answer` thì JS tự thêm nút **Hiện hết đáp án** ở 
 2. **Đừng nhét `<ul>`/`<div>` vào `<span class="answer">`.** Trình duyệt đẩy nó
    ra ngoài `<p>` và nút lật mất tác dụng. Dùng `<div class="answer note">`.
 3. **Slide phải vừa màn 1366×768, không cuộn.** Nhiều chữ thì thêm
-   `class="slide dense"` (0,82×) hoặc `denser` (0,72×); vẫn tràn thì **tách slide**,
-   đừng thu chữ nhỏ thêm — hàng ghế cuối không đọc được.
+   `class="slide dense"` hoặc `denser`. **Hai lớp này không còn thu cỡ chữ nữa**
+   (trước là 0,82× và 0,72×) — chúng thu khoảng cách: giãn dòng, lề đoạn, khe
+   lưới, đệm thẻ. Lý do: chữ thân bài đã neo ở **sàn 24 pt Calibri** (34 px @768,
+   = 4,44% chiều cao ảnh chiếu, đúng tỉ lệ 24 pt trên slide PowerPoint 16:9);
+   0,72× của 34 px là 24 px ≈ 17 pt, hàng ghế cuối mất chữ.
+   Vẫn tràn thì **tách slide** — đó là cách duy nhất còn lại.
 
 ### Màu
 
