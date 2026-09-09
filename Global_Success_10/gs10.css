@@ -250,8 +250,13 @@ body.is-locked{ overflow:hidden; }
 .slide.dense  th, .slide.dense  td{ padding:.34em .55em; }
 .slide.denser th, .slide.denser td{ padding:.22em .45em; }
 .slide.dense  table, .slide.denser table{ margin-bottom:.5em; }
-.slide.denser .chat{ gap:.24em; }
-.slide.denser .bubble{ padding:.38em .8em; }
+.slide.denser .chat{ gap:.18em; }
+.slide.denser .bubble{ padding:.3em .68em; }
+/* Slide hội thoại thì bóng thoại là toàn bộ nội dung — 78% bề ngang là phí.
+   Nới ra 90% để câu dài bớt xuống dòng, vẫn còn lệch trái/phải để phân vai. */
+.slide.dense .bubble, .slide.denser .bubble{ max-width:90%; }
+.slide.denser .bubble .who{ margin-bottom:0; }
+.slide.dense .bubble, .slide.denser .bubble{ line-height:1.26; }
 
 /* Slide mở đầu mỗi phần */
 .slide.title{
@@ -317,6 +322,11 @@ body.is-locked{ overflow:hidden; }
   padding:.08em .45em; border-radius:6px;
 }
 .answer.note.is-open{ display:block; margin-top:.5em; font-weight:400; }
+/* Đáp án lật ra làm slide cao thêm. Trên slide dày chữ thì thu lề lại,
+   để lúc cô mở hết đáp án cuối mục vẫn không phải cuộn. */
+.slide.dense  .answer.note.is-open{ margin-top:.3em; }
+.slide.denser .answer.note.is-open{ margin-top:.2em; }
+.slide.denser .answer.is-open{ padding:.04em .35em; }
 
 /* Nút lật hết một slide */
 .reveal-all{
@@ -360,6 +370,7 @@ body.is-locked{ overflow:hidden; }
 
 .slide audio, .slide video{ width:100%; max-width:760px; margin:.5em 0 1em; display:block; }
 .slide audio.tight{ margin:.1em 0 .3em; }
+.slide.dense audio.tight, .slide.denser audio.tight{ margin:.04em 0 .16em; }
 
 /* ---------- In ra giấy --------------------------------------------------- */
 
@@ -498,23 +509,30 @@ body[data-unit="10"]{ --accent:#33691E; --accent-2:#00695C; --accent-soft:#EDF3E
 
 .words{
   display:grid; gap:clamp(12px,1.3vw,20px);
-  grid-template-columns:repeat(auto-fit, minmax(min(195px,100%),1fr));
+  /* Chữ trong thẻ to gấp rưỡi thân bài nên phiên âm dài (/rɪˌspɒnsəˈbɪləti/)
+     cần cả cột rộng mới không xuống dòng. 460px = hai thẻ một hàng ở 1366. */
+  grid-template-columns:repeat(auto-fit, minmax(min(460px,100%),1fr));
   margin:0 0 .7em; padding:0; list-style:none;
 }
 .word{
   background:var(--surface); border:2px solid var(--rule); border-radius:var(--radius);
-  padding:clamp(14px,1.5vw,22px); text-align:center;
+  padding:clamp(10px,1.1vw,16px); text-align:center;
+  /* Thẻ từ vựng là thứ cả lớp phải chép vào vở — to hơn thân bài 1,5 lần.
+     Con chữ trong thẻ đều tính bằng em nên chỉ cần đặt một chỗ này;
+     tiêu đề slide không đổi (h2 nằm ngoài thẻ). */
+  font-size:1.5em;
 }
+/* Tu va tu loai chung mot dong: o co 1,5em, moi dong an ~50px chieu cao. */
 .word .w{
-  display:block; font-family:var(--font-display); font-weight:800;
-  font-size:1.15em; color:var(--accent);
+  display:inline; font-family:var(--font-display); font-weight:800;
+  font-size:1.15em; line-height:1.12; color:var(--accent);
 }
 .word .pos{ font-size:.84em; color:var(--muted); font-style:italic; }
 .word .ipa{
-  display:block; margin:.2em 0 .45em;
+  display:block; margin:.08em 0 .26em;
   font-size:1em; color:var(--accent-2); font-weight:600;
 }
-.word .reveal{ margin:0; font-size:.8em; min-height:40px; }
+.word .reveal{ margin:0; font-size:.8em; min-height:34px; }
 .word .answer.is-open{ display:block; margin-top:.35em; font-weight:600; }
 
 /* ---------- Hội thoại dạng bong bóng chat -------------------------------- */
@@ -522,8 +540,10 @@ body[data-unit="10"]{ --accent:#33691E; --accent-2:#00695C; --accent-soft:#EDF3E
 .chat{ display:flex; flex-direction:column; gap:.5em; margin:0 0 1em; }
 .slide.dense .chat, .slide.denser .chat{ gap:.30em; }
 .bubble{
-  max-width:78%; padding:.55em .95em;
-  border-radius:18px; font-size:1em; line-height:1.4;
+  max-width:78%; padding:.5em .9em;
+  /* Hội thoại là thứ cả lớp dò từng dòng theo băng — to hơn thân bài một
+     nấc (1,3 em = 44px @768 ≈ 31 pt), vẫn thấp hơn tiêu đề slide (48px). */
+  border-radius:18px; font-size:1.3em; line-height:1.34;
 }
 .bubble .who{
   display:block; font-family:var(--font-display); font-weight:700;
@@ -615,9 +635,23 @@ body[data-unit="10"]{ --accent:#33691E; --accent-2:#00695C; --accent-soft:#EDF3E
 }
 .pics figcaption{ margin-top:.42em; font-size:1em; color:var(--muted); }
 .pics figcaption b{ color:var(--ink); }
-/* .pics.wide — một ảnh lớn duy nhất: giữ nguyên tỉ lệ, không giới hạn chiều cao */
+/* .pics.wide — một ảnh lớn duy nhất: giữ nguyên tỉ lệ, chặn chiều cao.
+   Ảnh dọc (tr. 11 Unit 1) nếu để height:auto sẽ cao bằng cả cột → tràn slide.
+   max-height chặn lại, width:auto giữ đúng tỉ lệ, không bóp méo. */
+/* .pics.small — hàng ảnh đi kèm bảng cụm từ trên cùng một slide: ảnh thấp
+   hơn một nấc để cả bảng lẫn ảnh cùng vừa màn. */
+/* .pics.small — hàng ảnh đi kèm bảng cụm từ; .pics.big — hàng ảnh đứng một
+   mình, chừa sẵn chỗ cho đáp án lật ra (cao thêm một dòng). Cả hai phải
+   thắng được .slide.denser .pics img nên viết kèm .slide ở đầu. */
+.slide .pics.small img{ height:clamp(120px,19vh,200px); }
+.slide .pics.big img{ height:clamp(150px,30vh,300px); }
+.slide .pics.big figcaption{ min-height:2.4em; }
 .pics.wide{ grid-template-columns:1fr; }
-.pics.wide img{ height:auto; background:none; }
+.pics.wide img{
+  height:auto; max-height:52vh; width:auto; max-width:100%;
+  margin-inline:auto; background:none;
+}
+.slide.denser .pics.wide img{ max-height:50vh; }
 @media (max-width:900px){
   .pics{ grid-template-columns:repeat(auto-fit, minmax(140px,1fr)); }
 }
