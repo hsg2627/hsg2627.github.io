@@ -96,6 +96,7 @@
     background:var(--surface); border:2px solid var(--rule);
     border-top:6px solid var(--muted); border-radius:12px;
     padding:.5em .8em; display:flex; flex-direction:column; justify-content:center;
+    min-height:5.2em;   /* giữ nguyên cao dù câu mẫu ẩn hay hiện */
   }
   .debate.for-should  { border-top-color:var(--accent-2); }
   .debate.for-shouldnt{ border-top-color:#C0392B; }
@@ -106,7 +107,19 @@
   .debate.for-should   .badge{ color:var(--accent-2); }
   .debate.for-shouldnt .badge{ color:#C0392B; }
   .claim{ font-weight:700; line-height:1.2; color:var(--ink); }
-  .why{ font-size:.68em; color:var(--muted); line-height:1.25; margin-top:.15em; }
+  /* Câu mẫu MẶC ĐẮNH ẨN. Đây chính là câu học sinh phải tự nói ra —
+     bày sẵn thì các em chỉ việc đọc lại, hoạt động nói thành hoạt động đọc.
+     Cô chỉ bật sau khi đội đã nói xong, để đối chiếu — hoặc khi đội bí. */
+  .why{ font-size:.68em; color:var(--muted); line-height:1.25; margin-top:.2em; }
+  .why[hidden]{ display:none; }
+  .model{
+    align-self:flex-start; margin-top:.25em;
+    background:none; border:2px dashed var(--rule); border-radius:999px;
+    color:var(--muted); font:inherit; font-size:.55em; font-weight:700;
+    padding:.2em .9em; cursor:pointer;
+  }
+  .model:hover{ border-color:var(--accent); color:var(--accent); }
+  .model[hidden]{ display:none; }
 
   .pulls{ display:flex; flex-direction:column; gap:8px; }
   .pull{
@@ -142,6 +155,7 @@
   <div class="debate" id="card">
     <span class="badge" id="badge">Classroom debate</span>
     <div class="claim" id="claim">Ready to argue?</div>
+    <button class="model" id="model" type="button" hidden>Model answer</button>
     <div class="why" id="why">Press “Next argument” to draw a card.</div>
   </div>
   <div class="pulls">
@@ -192,6 +206,7 @@
   var card = document.getElementById('card'), badge = document.getElementById('badge');
   var claim = document.getElementById('claim'), why = document.getElementById('why');
   var btnS = document.getElementById('pullS'), btnN = document.getElementById('pullN');
+  var model = document.getElementById('model');
   var rules = document.getElementById('rules');
 
   // ---- tiếng động: Web Audio, không tải tệp nào ----
@@ -227,6 +242,8 @@
     badge.textContent = 'Result';
     claim.textContent = text;
     why.textContent = 'Well argued — press Reset for another match.';
+    why.hidden = false;
+    model.hidden = true;
     card.className = 'debate';
   }
 
@@ -256,6 +273,9 @@
     badge.textContent = a.s === 'should' ? 'Argument for SHOULD' : 'Argument for SHOULDN’T';
     claim.textContent = '“' + a.t + '”';
     why.textContent = a.d;
+    why.hidden = true;              // đội phải tự nói trước
+    model.hidden = false;
+    model.textContent = 'Model answer';
   }
 
   function reset() {
@@ -266,11 +286,17 @@
     badge.textContent = 'Classroom debate';
     claim.textContent = 'Ready to argue?';
     why.textContent = 'Press “Next argument” to draw a card.';
+    why.hidden = false;
+    model.hidden = true;
     paint();
   }
 
   btnS.addEventListener('click', function () { pull('should'); });
   btnN.addEventListener('click', function () { pull('shouldnt'); });
+  model.addEventListener('click', function () {
+    why.hidden = !why.hidden;
+    model.textContent = why.hidden ? 'Model answer' : 'Hide model';
+  });
   document.getElementById('next').addEventListener('click', nextArg);
   document.getElementById('reset').addEventListener('click', reset);
   document.getElementById('rulesBtn').addEventListener('click', function () {
