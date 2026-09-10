@@ -1110,3 +1110,118 @@ body.tpl-env .tf li{ padding:.4em .62em; margin-bottom:.32em; }
   body.tpl-env .card, body.tpl-env .box, body.tpl-env .word,
   body.tpl-env .colloc li, body.tpl-env .tf li{ background:none !important; color:#1A1F35 !important; }
 }
+
+/* ==========================================================================
+   THEME "MUSIC" — dựng từ PPT Unit 3 của cô, thêm 2026-09-10
+   --------------------------------------------------------------------------
+   Bật bằng: <body data-unit="3" class="tpl-music">
+
+   Ba ảnh nền kết xuất thẳng từ PPT (PowerPoint COM, xoá hết hình mang chữ
+   rồi Export 1920×1080) nên giống hệt bản cô đang chiếu:
+     .slide.cover  tpl-music-cover    khung teal+coral, đĩa than, băng cassette
+     .slide.phase  tpl-music-phase    khung teal+coral, lá đen hai góc trên
+     .slide        tpl-music-content  dải cam trên đỉnh, hai vệt hồng nhạt
+
+   Khung đặt chữ đo từ chính ảnh:
+     cover/phase  khung teal x 5.6–94.3%, bàn cờ đáy bắt đầu y 81–83%
+     content      dải cam chiếm y 0–12.6% — chữ phải bắt đầu dưới đó
+
+   ⚠ MÀU: coral gốc #E0644A chỉ đạt 3.27 trên nền kem, teal gốc #6FBFB5 đạt 2.03
+   — đều dưới ngưỡng AA. Nên tách làm hai: --accent / --accent-2 đã hạ đủ
+   tối để viết CHỮ (4.85 và 4.62), --accent-fill giữ màu gốc để TÔ NỀN.
+   ========================================================================== */
+
+body.tpl-music{
+  --paper:#FFF8EC;          /* kem, đo từ chính ảnh nền */
+  --panel:#FFFDF6;
+  --surface:#FFFDF6;
+  --sunk:#FBF1E2;
+  --ink:#3A322C;            /* nâu than — 11.9 trên kem */
+  --muted:#7A6A5E;          /* 4.91, vừa qua AA */
+  --rule:#E7D9C4;
+  --accent:#C0442C;         /* coral cho CHỮ — 4.85 */
+  --accent-fill:#E0644A;    /* coral gốc — chỉ TÔ NỀN */
+  --accent-2:#2E7D75;       /* teal cho CHỮ — 4.62 */
+  --accent-soft:#FDEDE6;
+  --on-accent:#FFF8EC;
+  --font-display:"Arial Black", "Segoe UI Black", "Segoe UI", Impact, sans-serif;
+}
+
+body.tpl-music .deck{ background:var(--paper); }
+body.tpl-music .deck h1,
+body.tpl-music .deck h2{ font-family:var(--font-display); font-weight:800; }
+body.tpl-music .deck h2{ color:var(--accent); }
+body.tpl-music .kicker{ color:var(--accent-2); }
+body.tpl-music .bar{ background:var(--panel); border-bottom-color:var(--rule); }
+body.tpl-music .bar .brand{ color:var(--accent); font-family:var(--font-display); }
+
+/* ---- Bìa: khung teal+coral in sẵn, chữ nằm giữa khung ---- */
+body.tpl-music .slide.cover{
+  background:url(assets/tpl-music-cover.webp) center/100% 100% no-repeat;
+  color:var(--ink);
+  /* ĐẶT BẮNG vh: đệm tính theo % là CSS lấy theo chiều RỘNG, 14% ra 191px.
+     Khung teal ở y 10–90%, băng bàn cờ từ y 83% — chữ phải nằm giữa hai mốc. */
+  padding:13vh 13% 20vh 13%;
+}
+body.tpl-music .slide.cover h1{ color:var(--accent); }
+body.tpl-music .slide.cover .sub{ color:var(--muted); font-size:var(--t-body); }
+body.tpl-music .slide.cover .kicker{ color:var(--accent-2); }
+body.tpl-music .slide.cover .unit-no{ display:none; }   /* ảnh nền đã có đĩa than rồi */
+
+/* ---- Slide phân đoạn ---- */
+body.tpl-music .slide.phase{
+  background:url(assets/tpl-music-phase.webp) center/100% 100% no-repeat;
+  padding:12vh 13% 20vh 13%;
+}
+body.tpl-music .slide.phase h1{ color:var(--accent); }
+body.tpl-music .slide.phase .sub{ color:var(--muted); }
+body.tpl-music .slide.phase .step{ background:var(--accent-fill); color:#FFF8EC; }
+body.tpl-music .slide.phase .badge.time{ background:var(--accent-fill); color:#FFF8EC; }
+
+/* ---- Slide nội dung: dải cam chiếm 12,6% trên đỉnh ---- */
+body.tpl-music .slide:not(.cover):not(.phase):not(.side){
+  background:url(assets/tpl-music-content.webp) center/100% 100% no-repeat;
+  /* Dải cam trong ảnh đã được thu từ 12,6% xuống 7% chiều cao (xem
+     scratchpad/slim_bar.py) — 7% × 712px = 50px, đệm trên 7,6vh (58px) là vừa
+     vượt. Mỗi slide nội dung nhờ vậy được thêm ~40px cho chữ. */
+  padding:7.2vh 7% clamp(68px, 5.2vw, 90px) 7%;
+}
+body.tpl-music .slide.has-reveal-all:not(.cover):not(.phase):not(.side){
+  padding-bottom:clamp(100px, 7.8vw, 122px);
+}
+
+/* ---- Thành phần trên nền sáng ---- */
+body.tpl-music .card,
+body.tpl-music .word,
+body.tpl-music .colloc li,
+body.tpl-music .tf li,
+body.tpl-music .box,
+body.tpl-music table{ background:var(--surface); color:var(--ink); }
+body.tpl-music .card{ border-color:var(--rule); border-top-color:var(--accent-fill); }
+body.tpl-music .card.alt{ border-top-color:var(--accent-2); }
+body.tpl-music .box{ border-color:var(--rule); border-left-color:var(--accent-fill); }
+body.tpl-music .box h3{ color:var(--accent); }
+body.tpl-music .brief{
+  background:linear-gradient(135deg, var(--accent-soft), var(--surface));
+  border-color:var(--accent-fill);
+}
+body.tpl-music .brief h3, body.tpl-music .brief .slogan{ color:var(--accent); }
+body.tpl-music .chips li.hot, body.tpl-music .chip.hot{
+  background:var(--accent-fill); border-color:var(--accent-fill); color:#FFF8EC;
+}
+body.tpl-music .bubble.l{ background:var(--sunk); color:var(--ink); }
+body.tpl-music .bubble.r{ background:var(--accent-fill); color:#FFF8EC; }
+body.tpl-music .badge.time{ background:var(--accent-fill); color:#FFF8EC; }
+body.tpl-music .badge.soft{ background:var(--accent-soft); color:var(--accent); border-color:var(--rule); }
+body.tpl-music .slide th{ color:var(--accent); }
+body.tpl-music .colloc .v{ color:var(--accent); }
+body.tpl-music .word .w{ color:var(--accent); }
+body.tpl-music .word .ipa{ color:var(--accent-2); }
+body.tpl-music .tf li::before{ background:var(--accent-fill); color:#FFF8EC; }
+body.tpl-music .compare > div:first-child{ border-color:var(--accent-fill); }
+body.tpl-music .compare > div:last-child{ border-color:var(--accent-2); }
+
+/* In ra giấy: bỏ ảnh nền cho đỡ tốn mực */
+@media print{
+  body.tpl-music .slide{ background:none !important; padding:0 0 24px !important; }
+}
