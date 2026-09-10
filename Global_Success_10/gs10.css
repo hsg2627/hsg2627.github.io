@@ -627,6 +627,9 @@ body[data-unit="10"]{ --accent:#33691E; --accent-2:#00695C; --accent-soft:#EDF3E
   height:clamp(250px, 53vh, 490px); margin:0 0 .2em;
 }
 .slide.dense .game, .slide.denser .game{ height:clamp(240px, 51vh, 470px); }
+/* .game.tall — trò chiếm trọn slide (không có gì khác ngoài tiêu đề):
+   cho cao hết phần còn lại của khung nội dung. */
+.slide .game.tall{ height:clamp(280px, 61vh, 540px); }
 
 /* ---------- Ảnh nhiệm vụ cắt từ SGK ----------------------------------------- */
 /* Ảnh cắt từ bản PDF của sách chỉ ~150 dpi — đủ nét ở khổ này, đừng phóng
