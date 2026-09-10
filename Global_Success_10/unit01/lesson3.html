@@ -143,9 +143,9 @@
   <div class="pics wide">
         <figure>
           <img src="../assets/images/u01-l3-task1.webp"
-               alt="A family in the kitchen: the mother washes vegetables at the sink,
-                    the father brings a plate of food to the table, a boy vacuums the
-                    floor and a girl stirs a pot on the stove">
+               alt="A family in the kitchen: one person washes vegetables at the sink,
+                    one carries a plate of food to the table, one vacuums the floor
+                    and one stirs a pot on the stove">
         </figure>
       </div>
 </section>
@@ -160,6 +160,16 @@
   <p class="q">What do you think the text will be about?
         <button class="reveal" type="button" aria-expanded="false">Check</button>
         <span class="answer">Why doing housework is good for children.</span></p>
+</section>
+
+<!-- ════════════════════ TRÒ CHƠI: Task 1 — ghép người với việc
+     Trò của cô, đặt ở assets/games/. Nhúng bằng iframe — đừng dán thẳng
+     mã trò vào slide, lớp .card/.grid của nó sẽ đè lên .card của module. -->
+<section class="slide dense">
+  <span class="kicker">Task 1 · Who is doing what?</span>
+  <h2>Match the person to the chore</h2>
+  <iframe class="game" src="../assets/games/u01-l3-task1-chores.html"
+          title="Match the person to the chore" loading="lazy"></iframe>
 </section>
 
 <!-- ══ 9. TỪ VỰNG ═════════════════════════════════════════════════════ -->
@@ -255,13 +265,23 @@
   </ul>
 </section>
 
+<!-- ════════════════════ TRÒ CHƠI: Task 2 — lật thẻ ghép nghĩa
+     Trò của cô, đặt ở assets/games/. Nhúng bằng iframe — đừng dán thẳng
+     mã trò vào slide, lớp .card/.grid của nó sẽ đè lên .card của module. -->
+<section class="slide dense">
+  <span class="kicker">Task 2 · Memory match</span>
+  <h2>Five words, five meanings</h2>
+  <iframe class="game" src="../assets/games/u01-l3-task2-memory.html"
+          title="Five words, five meanings" loading="lazy"></iframe>
+</section>
+
 <!-- ══════════════════════════ 12. TASK 3 · LUCKY NUMBER — LUẬT CHƠI
      Trước đây Task 3 chỉ là dãy câu hỏi bấm ra đáp án — không có gì để học sinh
      tranh nhau. Bọc lại thành Lucky Number: bảng tám ô, ba ô may mắn.
      Luồng dạy: LUẬT → BẢNG SỐ → (→) sang slide câu hỏi → (←) về bảng.
      Bảng điểm ở slide cuối. -->
 <section class="slide dense">
-  <span class="kicker">Task 3 · Lucky Number</span> <span class="badge time">13 min</span>
+  <span class="kicker">Task 3 · Reading quiz</span> <span class="badge time">13 min</span>
   <h2>How to play</h2>
   <ul class="cards">
     <li class="card"><span class="ico">👥</span><h3>Three teams</h3>
@@ -270,72 +290,19 @@
       <p>A correct answer wins 10 points for your team.</p></li>
     <li class="card"><span class="ico">📖</span><h3>+5 bonus</h3>
       <p>Read out the line in the text that proves it — five extra points.</p></li>
-    <li class="card alt"><span class="ico">⭐</span><h3>Lucky number</h3>
-      <p>Three of the eight squares are free points — no question at all.</p></li>
+    <li class="card alt"><span class="ico">🖥️</span><h3>On screen</h3>
+      <p>The quiz keeps the score for you — five questions, one per turn.</p></li>
   </ul>
 </section>
 
-<!-- ══════════════════════════ 13. TASK 3 · BẢNG SỐ
-     Mỗi ô là một .q riêng — bấm ô nào chỉ mở ô đó, các ô khác vẫn kín. -->
+<!-- ════════════════════ TRÒ CHƠI: Task 3 — hỏi đáp đọc hiểu
+     Trò của cô, đặt ở assets/games/. Nhúng bằng iframe — đừng dán thẳng
+     mã trò vào slide, lớp .card/.grid của nó sẽ đè lên .card của module. -->
 <section class="slide dense">
-  <span class="kicker">Task 3 · Lucky Number</span>
-  <h2>Pick a number · page 12</h2>
-  <ul class="cards" style="grid-template-columns:repeat(4,1fr)">
-    <li class="card q"><span class="ico">1</span>
-      <button class="reveal" type="button" aria-expanded="false">Open</button>
-      <span class="answer">Question 1</span></li>
-    <li class="card alt q"><span class="ico">2</span>
-      <button class="reveal" type="button" aria-expanded="false">Open</button>
-      <span class="answer">⭐ LUCKY · +10</span></li>
-    <li class="card q"><span class="ico">3</span>
-      <button class="reveal" type="button" aria-expanded="false">Open</button>
-      <span class="answer">Question 2</span></li>
-    <li class="card alt q"><span class="ico">4</span>
-      <button class="reveal" type="button" aria-expanded="false">Open</button>
-      <span class="answer">Question 3</span></li>
-    <li class="card q"><span class="ico">5</span>
-      <button class="reveal" type="button" aria-expanded="false">Open</button>
-      <span class="answer">⭐ LUCKY · +10</span></li>
-    <li class="card alt q"><span class="ico">6</span>
-      <button class="reveal" type="button" aria-expanded="false">Open</button>
-      <span class="answer">Question 4</span></li>
-    <li class="card q"><span class="ico">7</span>
-      <button class="reveal" type="button" aria-expanded="false">Open</button>
-      <span class="answer">Question 5</span></li>
-    <li class="card alt q"><span class="ico">8</span>
-      <button class="reveal" type="button" aria-expanded="false">Open</button>
-      <span class="answer">⭐ LUCKY · +10</span></li>
-  </ul>
-</section>
-
-<!-- ══════════════════════════ 14. TASK 3 · CÂU 1–3 -->
-<section class="slide dense">
-  <span class="kicker">Task 3 · Lucky Number</span>
-  <h2>Questions 1–3 · page 12</h2>
-  <p class="q"><b>1.</b> What do many people wrongly believe about housework?
-    <button class="reveal" type="button" aria-expanded="false">Answer</button>
-    <span class="answer note">That housework is boring, and that it is only the duty of wives and mothers.</span></p>
-  <p class="q"><b>2.</b> Why do some parents not ask their children to help?
-    <button class="reveal" type="button" aria-expanded="false">Answer</button>
-    <span class="answer note">To give them more time to play or study.</span></p>
-  <p class="q"><b>3.</b> What kinds of chores can teach life skills?
-    <button class="reveal" type="button" aria-expanded="false">Answer</button>
-    <span class="answer note">Doing the laundry, cleaning the house, and taking care of other family members.</span></p>
-</section>
-
-<!-- ══════════════════════════ 15. TASK 3 · CÂU 4–5 -->
-<section class="slide dense">
-  <span class="kicker">Task 3 · Lucky Number</span>
-  <h2>Questions 4–5 — the hard ones</h2>
-  <p class="q"><b>4.</b> How does housework build character?
-    <button class="reveal" type="button" aria-expanded="false">Answer</button>
-    <span class="answer note">Children learn to finish a task even when they do not enjoy doing it.</span></p>
-  <p class="q"><b>5.</b> Why does sharing housework bring a family closer?
-    <button class="reveal" type="button" aria-expanded="false">Answer</button>
-    <span class="answer note">Because children learn to appreciate how hard their parents work, and they share special moments together.</span></p>
-  <div class="box"><h3>Notice</h3>
-    <p>Questions 4 and 5 ask <b>why</b>, not <b>what</b> — your answer needs
-      <i>because</i> or <i>so that</i>. Do not copy one line straight from the text.</p></div>
+  <span class="kicker">Task 3 · Reading quiz</span>
+  <h2>Five questions · page 12</h2>
+  <iframe class="game" src="../assets/games/u01-l3-task3-quiz.html"
+          title="Five questions · page 12" loading="lazy"></iframe>
 </section>
 
 <!-- ══════════════════════════ 16. TASK 3 · BẢNG ĐIỂM -->
@@ -386,6 +353,16 @@
   <p class="q"><span class="badge code">10.C2.3</span> Build the mind map with a digital tool if you have a device.
     <button class="reveal" type="button" aria-expanded="false">AI check</button>
     <span class="answer note"><span class="badge code">10.A1.2</span> If you ask AI for more ideas, check them against the text. Mark anything the text does not say as an outside idea — do not mix the two.</span></p>
+</section>
+
+<!-- ════════════════════ TRÒ CHƠI: Task 4 — vòng quay chủ đề
+     Trò của cô, đặt ở assets/games/. Nhúng bằng iframe — đừng dán thẳng
+     mã trò vào slide, lớp .card/.grid của nó sẽ đè lên .card của module. -->
+<section class="slide dense">
+  <span class="kicker">Task 4 · Discussion wheel</span>
+  <h2>Spin for your topic</h2>
+  <iframe class="game" src="../assets/games/u01-l3-task4-wheel.html"
+          title="Spin for your topic" loading="lazy"></iframe>
 </section>
 
 <!-- ══ 16. CỦNG CỐ ════════════════════════════════════════════════════ -->
