@@ -7,575 +7,1280 @@
   "words": [
     {
       "id": "u05_w01",
-      "word": "",
+      "word": "patent",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "The young engineer successfully applied for a patent for his portable device."
+      "meaning": "bằng sáng chế, độc quyền sáng chế",
+      "example": "The young engineer successfully applied for a patent for his portable device.",
+      "level": "C1"
     },
     {
       "id": "u05_w02",
-      "word": "",
+      "word": "driverless",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "Driverless cars are expected to reduce traffic accidents dramatically."
+      "meaning": "không người lái (xe tự hành)",
+      "example": "Driverless cars are expected to reduce traffic accidents dramatically.",
+      "level": "C1"
     },
     {
       "id": "u05_w03",
-      "word": "",
+      "word": "dimensional",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "Three-dimensional printing has completely revolutionized medicine and manufacturing."
+      "meaning": "thuộc về chiều, kích thước (3D)",
+      "example": "Three-dimensional printing has completely revolutionized medicine and manufacturing.",
+      "level": "C1"
     },
     {
       "id": "u05_w04",
-      "word": "",
+      "word": "portable",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "Laptops are highly portable, allowing students to study anywhere."
+      "meaning": "có thể mang theo dễ dàng, di động",
+      "example": "Laptops are highly portable, allowing students to study anywhere.",
+      "level": "B2"
     },
     {
       "id": "u05_w05",
-      "word": "",
+      "word": "innovative",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "Scientists are looking for innovative ways to convert solar energy more efficiently."
+      "meaning": "mang tính đột phá, đổi mới sáng tạo",
+      "example": "Scientists are looking for innovative ways to convert solar energy more efficiently.",
+      "level": "B2"
     },
     {
       "id": "u05_w06",
-      "word": "",
+      "word": "versatile",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "Smartphones are versatile devices that serve both communication and entertainment purposes."
+      "meaning": "linh hoạt, đa năng",
+      "example": "Smartphones are versatile devices that serve both communication and entertainment purposes.",
+      "level": "C1"
     },
     {
       "id": "u05_w07",
-      "word": "",
+      "word": "3D printing",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "3D printing is used to create complex machine components in laboratories."
+      "meaning": "công nghệ in ba chiều",
+      "example": "3D printing is used to create complex machine components in laboratories.",
+      "level": "C1"
     },
     {
       "id": "u05_w08",
-      "word": "",
+      "word": "AI (artificial intelligence)",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "AI is playing a growing role in automating classroom administration."
+      "meaning": "trí tuệ nhân tạo",
+      "example": "AI is playing a growing role in automating classroom administration.",
+      "level": "C1"
     },
     {
       "id": "u05_w09",
-      "word": "",
+      "word": "device",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Smartwatches are modern devices that track our daily physical activities."
+      "meaning": "thiết bị, công cụ",
+      "example": "Smartwatches are modern devices that track our daily physical activities.",
+      "level": "B1"
     },
     {
       "id": "u05_w10",
-      "word": "",
+      "word": "e-reader",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "An e-reader can store thousands of books in a highly compact space."
+      "meaning": "thiết bị đọc sách điện tử",
+      "example": "An e-reader can store thousands of books in a highly compact space.",
+      "level": "B2"
     },
     {
       "id": "u05_w11",
-      "word": "",
+      "word": "vacuum cleaner",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "A robotic vacuum cleaner cleans the house completely automatically."
+      "meaning": "máy hút bụi",
+      "example": "A robotic vacuum cleaner cleans the house completely automatically.",
+      "level": "B2"
     },
     {
       "id": "u05_w12",
-      "word": "",
+      "word": "hardware",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Upgrading computer hardware can significantly improve processing speed."
+      "meaning": "phần cứng máy tính",
+      "example": "Upgrading computer hardware can significantly improve processing speed.",
+      "level": "B2"
     },
     {
       "id": "u05_w13",
-      "word": "",
+      "word": "software",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "He is learning to write educational software for children."
+      "meaning": "phần mềm máy tính",
+      "example": "He is learning to write educational software for children.",
+      "level": "B2"
     },
     {
       "id": "u05_w14",
-      "word": "",
+      "word": "stain",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "The advanced washing machine easily removed the stubborn coffee stain."
+      "meaning": "vết bẩn, vết ố cứng đầu",
+      "example": "The advanced washing machine easily removed the stubborn coffee stain.",
+      "level": "B2"
     },
     {
       "id": "u05_w15",
-      "word": "",
+      "word": "button",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Just press this red button to turn on the modern device."
+      "meaning": "nút bấm",
+      "example": "Just press this red button to turn on the modern device.",
+      "level": "B1"
     },
     {
       "id": "u05_w16",
-      "word": "",
+      "word": "charge",
       "ipa": "",
       "pos": "v",
-      "meaning": "",
-      "example": "You need to charge your smartphone; the battery is very low."
+      "meaning": "sạc pin, nạp điện",
+      "example": "You need to charge your smartphone; the battery is very low.",
+      "level": "B1"
     },
     {
       "id": "u05_w17",
-      "word": "",
+      "word": "display",
       "ipa": "",
       "pos": "v/n",
-      "meaning": "",
-      "example": "The new laptop model features a highly vibrant OLED display."
+      "meaning": "hiển thị / màn hình hiển thị",
+      "example": "The new laptop model features a highly vibrant OLED display.",
+      "level": "B2"
     },
     {
       "id": "u05_w18",
-      "word": "",
+      "word": "storage space",
       "ipa": "",
       "pos": "n.phr",
-      "meaning": "",
-      "example": "Make sure you have enough storage space before downloading large files."
+      "meaning": "dung lượng lưu trữ",
+      "example": "Make sure you have enough storage space before downloading large files.",
+      "level": "B2"
     },
     {
       "id": "u05_w19",
-      "word": "",
+      "word": "technology",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Modern classroom technology makes learning far more interactive and fun."
+      "meaning": "công nghệ",
+      "example": "Modern classroom technology makes learning far more interactive and fun.",
+      "level": "B1"
     },
     {
       "id": "u05_w20",
-      "word": "",
+      "word": "processor",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "The speed of a computer depends primarily on its processor."
+      "meaning": "bộ vi xử lý",
+      "example": "The speed of a computer depends primarily on its processor.",
+      "level": "B2"
     },
     {
       "id": "u05_w21",
-      "word": "",
+      "word": "RAM (random access memory)",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Having more RAM allows you to run multiple software programs smoothly."
+      "meaning": "bộ nhớ truy cập ngẫu nhiên",
+      "example": "Having more RAM allows you to run multiple software programs smoothly.",
+      "level": "C1"
     },
     {
       "id": "u05_w22",
-      "word": "",
+      "word": "experiment",
       "ipa": "",
       "pos": "n/v",
-      "meaning": "",
-      "example": "Scientists conducted an experiment to test the safety of the new vaccine."
+      "meaning": "thí nghiệm / tiến hành thí nghiệm",
+      "example": "Scientists conducted an experiment to test the safety of the new vaccine.",
+      "level": "B1"
     },
     {
       "id": "u05_w23",
-      "word": "",
+      "word": "laboratory",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "The chemistry students spend three hours in the laboratory every week."
+      "meaning": "phòng thí nghiệm",
+      "example": "The chemistry students spend three hours in the laboratory every week.",
+      "level": "B2"
     },
     {
       "id": "u05_w24",
-      "word": "",
+      "word": "application",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "AI has several practical applications in modern agriculture."
+      "meaning": "sự ứng dụng, đơn xin",
+      "example": "AI has several practical applications in modern agriculture.",
+      "level": "B2"
     },
     {
       "id": "u05_w25",
-      "word": "",
+      "word": "valuable",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "These online courses provide valuable knowledge for exam candidate."
+      "meaning": "có giá trị, hữu ích",
+      "example": "These online courses provide valuable knowledge for exam candidate.",
+      "level": "B1"
     },
     {
       "id": "u05_w26",
-      "word": "",
+      "word": "bring about",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "The invention of the internet has brought about a digital revolution."
+      "meaning": "mang lại, dẫn tới (sự thay đổi lớn)",
+      "example": "The invention of the internet has brought about a digital revolution.",
+      "level": "B2"
     },
     {
       "id": "u05_w27",
-      "word": "",
+      "word": "break down",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Plastic bags take hundreds of years to break down in the environment."
+      "meaning": "hỏng hóc; tự phân rã, phân hủy",
+      "example": "Plastic bags take hundreds of years to break down in the environment.",
+      "level": "B2"
     },
     {
       "id": "u05_w28",
-      "word": "",
+      "word": "put an end to sth",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "High-tech security systems put an end to frequent burglaries in the area."
+      "meaning": "chấm dứt hoàn toàn một vấn nạn",
+      "example": "High-tech security systems put an end to frequent burglaries in the area.",
+      "level": "B2"
     },
     {
       "id": "u05_w29",
-      "word": "",
+      "word": "print out",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Could you please print out this diagram for my study group?"
+      "meaning": "in tài liệu ra giấy",
+      "example": "Could you please print out this diagram for my study group?",
+      "level": "B1"
     },
     {
       "id": "u05_w30",
-      "word": "",
+      "word": "plug in",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "He forgot to plug in the charger, so his laptop ran out of battery."
+      "meaning": "cắm nguồn điện",
+      "example": "He forgot to plug in the charger, so his laptop ran out of battery.",
+      "level": "B1"
     },
     {
       "id": "u05_w31",
-      "word": "",
+      "word": "set up",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "We need to set up the software before starting the experiment."
+      "meaning": "thiết lập, cài đặt hệ thống",
+      "example": "We need to set up the software before starting the experiment.",
+      "level": "B1"
     },
     {
       "id": "u05_w32",
-      "word": "",
+      "word": "look up",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "You can look up the definition of the academic word on azVocab."
+      "meaning": "tra cứu (từ điển, thông tin)",
+      "example": "You can look up the definition of the academic word on azVocab.",
+      "level": "B1"
     },
     {
       "id": "u05_w33",
-      "word": "",
+      "word": "turn on",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Turn on the computer and log in with your password."
+      "meaning": "bật thiết bị điện",
+      "example": "Turn on the computer and log in with your password.",
+      "level": "B1"
     },
     {
       "id": "u05_w34",
-      "word": "",
+      "word": "carry out",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "The scientist carried out the experiment in her state-of-the-art lab."
+      "meaning": "thực hiện thí nghiệm/khảo sát",
+      "example": "The scientist carried out the experiment in her state-of-the-art lab.",
+      "level": "B2"
     },
     {
       "id": "u05_w35",
-      "word": "",
+      "word": "work out",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "She used a calculator to work out the complex mathematical equation."
+      "meaning": "giải quyết, tính toán con số",
+      "example": "She used a calculator to work out the complex mathematical equation.",
+      "level": "B2"
     },
     {
       "id": "u05_w36",
-      "word": "",
+      "word": "conduct / carry out an experiment",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "The chemistry students conducted an experiment under their teacher's supervision."
+      "meaning": "tiến hành một thí nghiệm khoa học",
+      "example": "The chemistry students conducted an experiment under their teacher's supervision.",
+      "level": "B2"
     },
     {
       "id": "u05_w37",
-      "word": "",
+      "word": "collect / gather information",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "The search engine helps researchers collect information within seconds."
+      "meaning": "thu thập thông tin",
+      "example": "The search engine helps researchers collect information within seconds.",
+      "level": "B2"
     },
     {
       "id": "u05_w38",
-      "word": "",
+      "word": "remove stubborn stains",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "This advanced vacuum cleaner has a special brush to remove stubborn stains."
+      "meaning": "loại bỏ các vết bẩn cứng đầu",
+      "example": "This advanced vacuum cleaner has a special brush to remove stubborn stains.",
+      "level": "B2"
     },
     {
       "id": "u05_w39",
-      "word": "",
+      "word": "portable device",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Smartphones are the most popular portable devices in the world."
+      "meaning": "thiết bị di động cầm tay",
+      "example": "Smartphones are the most popular portable devices in the world.",
+      "level": "B2"
     },
     {
       "id": "u05_w40",
-      "word": "",
+      "word": "artificial intelligence",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Artificial intelligence is transforming how we search for data."
+      "meaning": "trí tuệ nhân tạo",
+      "example": "Artificial intelligence is transforming how we search for data.",
+      "level": "C1"
     },
     {
       "id": "u05_w41",
-      "word": "",
+      "word": "vacuum cleaner",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "A robotic vacuum cleaner helps save time on daily housework."
+      "meaning": "máy hút bụi gia dụng",
+      "example": "A robotic vacuum cleaner helps save time on daily housework.",
+      "level": "B2"
     },
     {
       "id": "u05_w42",
-      "word": "",
+      "word": "storage space",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "This new laptop offers exceptionally large storage space."
+      "meaning": "dung lượng, không gian lưu trữ",
+      "example": "This new laptop offers exceptionally large storage space.",
+      "level": "B2"
     },
     {
       "id": "u05_w43",
-      "word": "",
+      "word": "process data",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Supercomputers are used to process massive amounts of scientific data."
+      "meaning": "xử lý dữ liệu",
+      "example": "Supercomputers are used to process massive amounts of scientific data.",
+      "level": "C1"
     },
     {
       "id": "u05_w44",
-      "word": "",
+      "word": "processor speed",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Gamers usually care a lot about processor speed and graphics."
+      "meaning": "tốc độ của bộ xử lý",
+      "example": "Gamers usually care a lot about processor speed and graphics.",
+      "level": "C1"
     },
     {
       "id": "u05_w45",
-      "word": "",
+      "word": "save money",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "I have saved money since Tet to buy something new for my studies."
+      "meaning": "tiết kiệm tiền",
+      "example": "I have saved money since Tet to buy something new for my studies.",
+      "level": "B1"
     },
     {
       "id": "u05_w46",
-      "word": "",
+      "word": "make a decision",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "It is hard to make a decision between a smartphone and a laptop."
+      "meaning": "đưa ra quyết định",
+      "example": "It is hard to make a decision between a smartphone and a laptop.",
+      "level": "B1"
     },
     {
       "id": "u05_w47",
-      "word": "",
+      "word": "allow/permit someone to do something",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Computers allow us to study and work much faster."
+      "meaning": "cho phép ai làm việc gì",
+      "example": "Computers allow us to study and work much faster.",
+      "level": "B2"
     },
     {
       "id": "u05_w48",
-      "word": "",
+      "word": "highly beneficial",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Switching to eco-friendly appliances is highly beneficial."
+      "meaning": "cực kỳ có lợi, hữu ích",
+      "example": "Switching to eco-friendly appliances is highly beneficial.",
+      "level": "B2"
     },
     {
       "id": "u05_w49",
-      "word": "",
+      "word": "convenient tool",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Online dictionaries are a highly convenient tool for language learners."
+      "meaning": "công cụ thuận tiện, hữu ích",
+      "example": "Online dictionaries are a highly convenient tool for language learners.",
+      "level": "B2"
     },
     {
       "id": "u05_w50",
-      "word": "",
+      "word": "make a mistake",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Don't make the mistake of choosing a computer blindly."
+      "meaning": "phạm sai lầm",
+      "example": "Don't make the mistake of choosing a computer blindly.",
+      "level": "B1"
     },
     {
       "id": "u05_w51",
-      "word": "",
+      "word": "think outside the box",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "To design a driverless car, engineers had to think outside the box."
+      "meaning": "tư duy đột phá, sáng tạo, vượt ranh giới",
+      "example": "To design a driverless car, engineers had to think outside the box.",
+      "level": "C1/C2"
     },
     {
       "id": "u05_w52",
-      "word": "",
+      "word": "reinvent the wheel",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "Don't reinvent the wheel; just use existing software for your project."
+      "meaning": "tốn công vô ích làm lại việc người khác đã làm tốt",
+      "example": "Don't reinvent the wheel; just use existing software for your project.",
+      "level": "C2"
     },
     {
       "id": "u05_w53",
-      "word": "",
+      "word": "state of the art",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "The band recorded their new album in a state-of-the-art studio."
+      "meaning": "hiện đại nhất, tối tân nhất",
+      "example": "The band recorded their new album in a state-of-the-art studio.",
+      "level": "C1"
     },
     {
       "id": "u05_w54",
-      "word": "",
+      "word": "light years ahead",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "Their latest software design is light years ahead of the competition."
+      "meaning": "đi trước thời đại, vượt trội hoàn toàn",
+      "example": "Their latest software design is light years ahead of the competition.",
+      "level": "C2"
     },
     {
       "id": "u05_w55",
-      "word": "",
+      "word": "bells and whistles",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "I prefer a simple laptop without any unnecessary bells and whistles."
+      "meaning": "những tính năng phụ trợ hào nhoáng (nhưng không cốt lõi)",
+      "example": "I prefer a simple laptop without any unnecessary bells and whistles.",
+      "level": "C1"
     }
   ],
   "items": [
     {
       "id": "u05_q01",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____y_____o_____u_____n_____g_____ _____e_____n_____g_____i_____n_____e_____e_____r_____ _____s_____u_____c_____c_____e_____s_____s_____f_____u_____l_____l_____y_____ _____a_____p_____p_____l_____i_____e_____d_____ _____f_____o_____r_____ _____a_____ _____p_____a_____t_____e_____n_____t_____ _____f_____o_____r_____ _____h_____i_____s_____ _____p_____o_____r_____t_____a_____b_____l_____e_____ _____d_____e_____v_____i_____c_____e_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The young engineer successfully applied for a ______ for his portable device.\"",
       "options": [
-        "A. volunteer",
-        "B. environment",
-        "C. ",
-        "D. community"
+        "A. highly beneficial",
+        "B. print out",
+        "C. plug in",
+        "D. patent"
       ],
-      "answer": 2,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 3,
+      "explanation": "'patent' (n) nghĩa là: bằng sáng chế, độc quyền sáng chế."
     },
     {
       "id": "u05_q02",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____D_____r_____i_____v_____e_____r_____l_____e_____s_____s_____ _____c_____a_____r_____s_____ _____a_____r_____e_____ _____e_____x_____p_____e_____c_____t_____e_____d_____ _____t_____o_____ _____r_____e_____d_____u_____c_____e_____ _____t_____r_____a_____f_____f_____i_____c_____ _____a_____c_____c_____i_____d_____e_____n_____t_____s_____ _____d_____r_____a_____m_____a_____t_____i_____c_____a_____l_____l_____y_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ cars are expected to reduce traffic accidents dramatically.\"",
       "options": [
-        "A. community",
-        "B. ",
-        "C. volunteer",
-        "D. environment"
+        "A. device",
+        "B. look up",
+        "C. driverless",
+        "D. reinvent the wheel"
       ],
-      "answer": 1,
-      "explanation": "'' (adj) nghĩa là: ."
+      "answer": 2,
+      "explanation": "'driverless' (adj) nghĩa là: không người lái (xe tự hành)."
     },
     {
       "id": "u05_q03",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____r_____e_____e_____-_____d_____i_____m_____e_____n_____s_____i_____o_____n_____a_____l_____ _____p_____r_____i_____n_____t_____i_____n_____g_____ _____h_____a_____s_____ _____c_____o_____m_____p_____l_____e_____t_____e_____l_____y_____ _____r_____e_____v_____o_____l_____u_____t_____i_____o_____n_____i_____z_____e_____d_____ _____m_____e_____d_____i_____c_____i_____n_____e_____ _____a_____n_____d_____ _____m_____a_____n_____u_____f_____a_____c_____t_____u_____r_____i_____n_____g_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Three-______ printing has completely revolutionized medicine and manufacturing.\"",
       "options": [
-        "A. environment",
-        "B. community",
-        "C. ",
-        "D. volunteer"
+        "A. dimensional",
+        "B. reinvent the wheel",
+        "C. storage space",
+        "D. software"
       ],
-      "answer": 2,
-      "explanation": "'' (adj) nghĩa là: ."
+      "answer": 0,
+      "explanation": "'dimensional' (adj) nghĩa là: thuộc về chiều, kích thước (3D)."
     },
     {
       "id": "u05_q04",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____L_____a_____p_____t_____o_____p_____s_____ _____a_____r_____e_____ _____h_____i_____g_____h_____l_____y_____ _____p_____o_____r_____t_____a_____b_____l_____e_____,_____ _____a_____l_____l_____o_____w_____i_____n_____g_____ _____s_____t_____u_____d_____e_____n_____t_____s_____ _____t_____o_____ _____s_____t_____u_____d_____y_____ _____a_____n_____y_____w_____h_____e_____r_____e_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Laptops are highly ______, allowing students to study anywhere.\"",
       "options": [
-        "A. volunteer",
-        "B. community",
-        "C. ",
-        "D. environment"
+        "A. portable",
+        "B. hardware",
+        "C. stain",
+        "D. device"
       ],
-      "answer": 2,
-      "explanation": "'' (adj) nghĩa là: ."
+      "answer": 0,
+      "explanation": "'portable' (adj) nghĩa là: có thể mang theo dễ dàng, di động."
     },
     {
       "id": "u05_q05",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____S_____c_____i_____e_____n_____t_____i_____s_____t_____s_____ _____a_____r_____e_____ _____l_____o_____o_____k_____i_____n_____g_____ _____f_____o_____r_____ _____i_____n_____n_____o_____v_____a_____t_____i_____v_____e_____ _____w_____a_____y_____s_____ _____t_____o_____ _____c_____o_____n_____v_____e_____r_____t_____ _____s_____o_____l_____a_____r_____ _____e_____n_____e_____r_____g_____y_____ _____m_____o_____r_____e_____ _____e_____f_____f_____i_____c_____i_____e_____n_____t_____l_____y_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Scientists are looking for ______ ways to convert solar energy more efficiently.\"",
       "options": [
-        "A. environment",
-        "B. community",
-        "C. volunteer",
-        "D. "
+        "A. e-reader",
+        "B. innovative",
+        "C. processor",
+        "D. experiment"
       ],
-      "answer": 3,
-      "explanation": "'' (adj) nghĩa là: ."
+      "answer": 1,
+      "explanation": "'innovative' (adj) nghĩa là: mang tính đột phá, đổi mới sáng tạo."
     },
     {
       "id": "u05_q06",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____S_____m_____a_____r_____t_____p_____h_____o_____n_____e_____s_____ _____a_____r_____e_____ _____v_____e_____r_____s_____a_____t_____i_____l_____e_____ _____d_____e_____v_____i_____c_____e_____s_____ _____t_____h_____a_____t_____ _____s_____e_____r_____v_____e_____ _____b_____o_____t_____h_____ _____c_____o_____m_____m_____u_____n_____i_____c_____a_____t_____i_____o_____n_____ _____a_____n_____d_____ _____e_____n_____t_____e_____r_____t_____a_____i_____n_____m_____e_____n_____t_____ _____p_____u_____r_____p_____o_____s_____e_____s_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Smartphones are ______ devices that serve both communication and entertainment purposes.\"",
       "options": [
-        "A. volunteer",
-        "B. environment",
-        "C. ",
-        "D. community"
+        "A. reinvent the wheel",
+        "B. charge",
+        "C. storage space",
+        "D. versatile"
       ],
-      "answer": 2,
-      "explanation": "'' (adj) nghĩa là: ."
+      "answer": 3,
+      "explanation": "'versatile' (adj) nghĩa là: linh hoạt, đa năng."
     },
     {
       "id": "u05_q07",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____3_____D_____ _____p_____r_____i_____n_____t_____i_____n_____g_____ _____i_____s_____ _____u_____s_____e_____d_____ _____t_____o_____ _____c_____r_____e_____a_____t_____e_____ _____c_____o_____m_____p_____l_____e_____x_____ _____m_____a_____c_____h_____i_____n_____e_____ _____c_____o_____m_____p_____o_____n_____e_____n_____t_____s_____ _____i_____n_____ _____l_____a_____b_____o_____r_____a_____t_____o_____r_____i_____e_____s_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ is used to create complex machine components in laboratories.\"",
       "options": [
-        "A. volunteer",
-        "B. ",
-        "C. community",
-        "D. environment"
+        "A. 3D printing",
+        "B. processor speed",
+        "C. stain",
+        "D. patent"
       ],
-      "answer": 1,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 0,
+      "explanation": "'3D printing' (n) nghĩa là: công nghệ in ba chiều."
     },
     {
       "id": "u05_q08",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____A_____I_____ _____i_____s_____ _____p_____l_____a_____y_____i_____n_____g_____ _____a_____ _____g_____r_____o_____w_____i_____n_____g_____ _____r_____o_____l_____e_____ _____i_____n_____ _____a_____u_____t_____o_____m_____a_____t_____i_____n_____g_____ _____c_____l_____a_____s_____s_____r_____o_____o_____m_____ _____a_____d_____m_____i_____n_____i_____s_____t_____r_____a_____t_____i_____o_____n_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"___ is playing a growing role in automating classroom administration.\"",
       "options": [
-        "A. community",
-        "B. volunteer",
-        "C. environment",
-        "D. "
+        "A. plug in",
+        "B. AI (artificial intelligence)",
+        "C. versatile",
+        "D. stain"
       ],
-      "answer": 3,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 1,
+      "explanation": "'AI (artificial intelligence)' (n) nghĩa là: trí tuệ nhân tạo."
     },
     {
       "id": "u05_q09",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____S_____m_____a_____r_____t_____w_____a_____t_____c_____h_____e_____s_____ _____a_____r_____e_____ _____m_____o_____d_____e_____r_____n_____ _____d_____e_____v_____i_____c_____e_____s_____ _____t_____h_____a_____t_____ _____t_____r_____a_____c_____k_____ _____o_____u_____r_____ _____d_____a_____i_____l_____y_____ _____p_____h_____y_____s_____i_____c_____a_____l_____ _____a_____c_____t_____i_____v_____i_____t_____i_____e_____s_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Smartwatches are modern ______s that track our daily physical activities.\"",
       "options": [
-        "A. community",
-        "B. environment",
-        "C. ",
-        "D. volunteer"
+        "A. device",
+        "B. plug in",
+        "C. vacuum cleaner",
+        "D. break down"
       ],
-      "answer": 2,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 0,
+      "explanation": "'device' (n) nghĩa là: thiết bị, công cụ."
     },
     {
       "id": "u05_q10",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____A_____n_____ _____e_____-_____r_____e_____a_____d_____e_____r_____ _____c_____a_____n_____ _____s_____t_____o_____r_____e_____ _____t_____h_____o_____u_____s_____a_____n_____d_____s_____ _____o_____f_____ _____b_____o_____o_____k_____s_____ _____i_____n_____ _____a_____ _____h_____i_____g_____h_____l_____y_____ _____c_____o_____m_____p_____a_____c_____t_____ _____s_____p_____a_____c_____e_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"An ______ can store thousands of books in a highly compact space.\"",
       "options": [
-        "A. volunteer",
-        "B. community",
-        "C. environment",
-        "D. "
+        "A. conduct / carry out an experiment",
+        "B. print out",
+        "C. storage space",
+        "D. e-reader"
       ],
       "answer": 3,
-      "explanation": "'' (n) nghĩa là: ."
+      "explanation": "'e-reader' (n) nghĩa là: thiết bị đọc sách điện tử."
+    },
+    {
+      "id": "u05_q11",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"A robotic ______ cleans the house completely automatically.\"",
+      "options": [
+        "A. 3D printing",
+        "B. remove stubborn stains",
+        "C. plug in",
+        "D. vacuum cleaner"
+      ],
+      "answer": 3,
+      "explanation": "'vacuum cleaner' (n) nghĩa là: máy hút bụi."
+    },
+    {
+      "id": "u05_q12",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Upgrading computer ______ can significantly improve processing speed.\"",
+      "options": [
+        "A. processor",
+        "B. hardware",
+        "C. work out",
+        "D. break down"
+      ],
+      "answer": 1,
+      "explanation": "'hardware' (n) nghĩa là: phần cứng máy tính."
+    },
+    {
+      "id": "u05_q13",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"He is learning to write educational ______ for children.\"",
+      "options": [
+        "A. conduct / carry out an experiment",
+        "B. software",
+        "C. bring about",
+        "D. versatile"
+      ],
+      "answer": 1,
+      "explanation": "'software' (n) nghĩa là: phần mềm máy tính."
+    },
+    {
+      "id": "u05_q14",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The advanced washing machine easily removed the stubborn coffee ______.\"",
+      "options": [
+        "A. patent",
+        "B. break down",
+        "C. stain",
+        "D. application"
+      ],
+      "answer": 2,
+      "explanation": "'stain' (n) nghĩa là: vết bẩn, vết ố cứng đầu."
+    },
+    {
+      "id": "u05_q15",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Just press this red ______ to turn on the modern device.\"",
+      "options": [
+        "A. bells and whistles",
+        "B. valuable",
+        "C. make a mistake",
+        "D. button"
+      ],
+      "answer": 3,
+      "explanation": "'button' (n) nghĩa là: nút bấm."
+    },
+    {
+      "id": "u05_q16",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"You need to ______ your smartphone; the battery is very low.\"",
+      "options": [
+        "A. charge",
+        "B. look up",
+        "C. device",
+        "D. carry out"
+      ],
+      "answer": 0,
+      "explanation": "'charge' (v) nghĩa là: sạc pin, nạp điện."
+    },
+    {
+      "id": "u05_q17",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The new laptop model features a highly vibrant OLED ______.\"",
+      "options": [
+        "A. processor speed",
+        "B. display",
+        "C. vacuum cleaner",
+        "D. make a decision"
+      ],
+      "answer": 1,
+      "explanation": "'display' (v/n) nghĩa là: hiển thị / màn hình hiển thị."
+    },
+    {
+      "id": "u05_q18",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Make sure you have enough ______ before downloading large files.\"",
+      "options": [
+        "A. print out",
+        "B. storage space",
+        "C. look up",
+        "D. highly beneficial"
+      ],
+      "answer": 1,
+      "explanation": "'storage space' (n.phr) nghĩa là: dung lượng lưu trữ."
+    },
+    {
+      "id": "u05_q19",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Modern classroom ______ makes learning far more interactive and fun.\"",
+      "options": [
+        "A. technology",
+        "B. set up",
+        "C. light years ahead",
+        "D. experiment"
+      ],
+      "answer": 0,
+      "explanation": "'technology' (n) nghĩa là: công nghệ."
+    },
+    {
+      "id": "u05_q20",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The speed of a computer depends primarily on its ______.\"",
+      "options": [
+        "A. allow/permit someone to do something",
+        "B. AI (artificial intelligence)",
+        "C. processor",
+        "D. innovative"
+      ],
+      "answer": 2,
+      "explanation": "'processor' (n) nghĩa là: bộ vi xử lý."
+    },
+    {
+      "id": "u05_q21",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"bộ nhớ truy cập ngẫu nhiên\"?",
+      "options": [
+        "A. RAM (random access memory)",
+        "B. print out",
+        "C. application",
+        "D. processor speed"
+      ],
+      "answer": 0,
+      "explanation": "'RAM (random access memory)' (n) nghĩa là: bộ nhớ truy cập ngẫu nhiên."
+    },
+    {
+      "id": "u05_q22",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"thí nghiệm / tiến hành thí nghiệm\"?",
+      "options": [
+        "A. driverless",
+        "B. print out",
+        "C. processor speed",
+        "D. experiment"
+      ],
+      "answer": 3,
+      "explanation": "'experiment' (n/v) nghĩa là: thí nghiệm / tiến hành thí nghiệm."
+    },
+    {
+      "id": "u05_q23",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"phòng thí nghiệm\"?",
+      "options": [
+        "A. storage space",
+        "B. device",
+        "C. laboratory",
+        "D. light years ahead"
+      ],
+      "answer": 2,
+      "explanation": "'laboratory' (n) nghĩa là: phòng thí nghiệm."
+    },
+    {
+      "id": "u05_q24",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"sự ứng dụng, đơn xin\"?",
+      "options": [
+        "A. plug in",
+        "B. look up",
+        "C. storage space",
+        "D. application"
+      ],
+      "answer": 3,
+      "explanation": "'application' (n) nghĩa là: sự ứng dụng, đơn xin."
+    },
+    {
+      "id": "u05_q25",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"có giá trị, hữu ích\"?",
+      "options": [
+        "A. portable",
+        "B. collect / gather information",
+        "C. display",
+        "D. valuable"
+      ],
+      "answer": 3,
+      "explanation": "'valuable' (adj) nghĩa là: có giá trị, hữu ích."
+    },
+    {
+      "id": "u05_q26",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"mang lại, dẫn tới (sự thay đổi lớn)\"?",
+      "options": [
+        "A. charge",
+        "B. set up",
+        "C. allow/permit someone to do something",
+        "D. bring about"
+      ],
+      "answer": 3,
+      "explanation": "'bring about' (phr.v) nghĩa là: mang lại, dẫn tới (sự thay đổi lớn)."
+    },
+    {
+      "id": "u05_q27",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"hỏng hóc; tự phân rã, phân hủy\"?",
+      "options": [
+        "A. laboratory",
+        "B. break down",
+        "C. print out",
+        "D. process data"
+      ],
+      "answer": 1,
+      "explanation": "'break down' (phr.v) nghĩa là: hỏng hóc; tự phân rã, phân hủy."
+    },
+    {
+      "id": "u05_q28",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"chấm dứt hoàn toàn một vấn nạn\"?",
+      "options": [
+        "A. portable device",
+        "B. put an end to sth",
+        "C. bring about",
+        "D. look up"
+      ],
+      "answer": 1,
+      "explanation": "'put an end to sth' (phr.v) nghĩa là: chấm dứt hoàn toàn một vấn nạn."
+    },
+    {
+      "id": "u05_q29",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"in tài liệu ra giấy\"?",
+      "options": [
+        "A. save money",
+        "B. turn on",
+        "C. print out",
+        "D. vacuum cleaner"
+      ],
+      "answer": 2,
+      "explanation": "'print out' (phr.v) nghĩa là: in tài liệu ra giấy."
+    },
+    {
+      "id": "u05_q30",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"cắm nguồn điện\"?",
+      "options": [
+        "A. plug in",
+        "B. laboratory",
+        "C. look up",
+        "D. portable device"
+      ],
+      "answer": 0,
+      "explanation": "'plug in' (phr.v) nghĩa là: cắm nguồn điện."
+    },
+    {
+      "id": "u05_q31",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"thiết lập, cài đặt hệ thống\"?",
+      "options": [
+        "A. innovative",
+        "B. reinvent the wheel",
+        "C. experiment",
+        "D. set up"
+      ],
+      "answer": 3,
+      "explanation": "'set up' (phr.v) nghĩa là: thiết lập, cài đặt hệ thống."
+    },
+    {
+      "id": "u05_q32",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tra cứu (từ điển, thông tin)\"?",
+      "options": [
+        "A. look up",
+        "B. processor",
+        "C. technology",
+        "D. innovative"
+      ],
+      "answer": 0,
+      "explanation": "'look up' (phr.v) nghĩa là: tra cứu (từ điển, thông tin)."
+    },
+    {
+      "id": "u05_q33",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"bật thiết bị điện\"?",
+      "options": [
+        "A. patent",
+        "B. turn on",
+        "C. versatile",
+        "D. processor speed"
+      ],
+      "answer": 1,
+      "explanation": "'turn on' (phr.v) nghĩa là: bật thiết bị điện."
+    },
+    {
+      "id": "u05_q34",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"thực hiện thí nghiệm/khảo sát\"?",
+      "options": [
+        "A. carry out",
+        "B. experiment",
+        "C. light years ahead",
+        "D. laboratory"
+      ],
+      "answer": 0,
+      "explanation": "'carry out' (phr.v) nghĩa là: thực hiện thí nghiệm/khảo sát."
+    },
+    {
+      "id": "u05_q35",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"giải quyết, tính toán con số\"?",
+      "options": [
+        "A. patent",
+        "B. device",
+        "C. button",
+        "D. work out"
+      ],
+      "answer": 3,
+      "explanation": "'work out' (phr.v) nghĩa là: giải quyết, tính toán con số."
+    },
+    {
+      "id": "u05_q36",
+      "ai_generated": true,
+      "prompt": "\"vacuum cleaner\" (n) có nghĩa là gì?",
+      "options": [
+        "A. phần mềm máy tính",
+        "B. chấm dứt hoàn toàn một vấn nạn",
+        "C. bộ vi xử lý",
+        "D. máy hút bụi"
+      ],
+      "answer": 3,
+      "explanation": "'vacuum cleaner' (n) nghĩa là: máy hút bụi."
+    },
+    {
+      "id": "u05_q37",
+      "ai_generated": true,
+      "prompt": "\"hardware\" (n) có nghĩa là gì?",
+      "options": [
+        "A. in tài liệu ra giấy",
+        "B. phần cứng máy tính",
+        "C. vết bẩn, vết ố cứng đầu",
+        "D. tiết kiệm tiền"
+      ],
+      "answer": 1,
+      "explanation": "'hardware' (n) nghĩa là: phần cứng máy tính."
+    },
+    {
+      "id": "u05_q38",
+      "ai_generated": true,
+      "prompt": "\"software\" (n) có nghĩa là gì?",
+      "options": [
+        "A. trí tuệ nhân tạo",
+        "B. hỏng hóc; tự phân rã, phân hủy",
+        "C. phần mềm máy tính",
+        "D. thiết bị di động cầm tay"
+      ],
+      "answer": 2,
+      "explanation": "'software' (n) nghĩa là: phần mềm máy tính."
+    },
+    {
+      "id": "u05_q39",
+      "ai_generated": true,
+      "prompt": "\"stain\" (n) có nghĩa là gì?",
+      "options": [
+        "A. tư duy đột phá, sáng tạo, vượt ranh giới",
+        "B. vết bẩn, vết ố cứng đầu",
+        "C. cho phép ai làm việc gì",
+        "D. thu thập thông tin"
+      ],
+      "answer": 1,
+      "explanation": "'stain' (n) nghĩa là: vết bẩn, vết ố cứng đầu."
+    },
+    {
+      "id": "u05_q40",
+      "ai_generated": true,
+      "prompt": "\"button\" (n) có nghĩa là gì?",
+      "options": [
+        "A. dung lượng, không gian lưu trữ",
+        "B. cắm nguồn điện",
+        "C. nút bấm",
+        "D. trí tuệ nhân tạo"
+      ],
+      "answer": 2,
+      "explanation": "'button' (n) nghĩa là: nút bấm."
+    },
+    {
+      "id": "u05_q41",
+      "ai_generated": true,
+      "prompt": "\"charge\" (v) có nghĩa là gì?",
+      "options": [
+        "A. trí tuệ nhân tạo",
+        "B. sạc pin, nạp điện",
+        "C. công nghệ in ba chiều",
+        "D. công nghệ"
+      ],
+      "answer": 1,
+      "explanation": "'charge' (v) nghĩa là: sạc pin, nạp điện."
+    },
+    {
+      "id": "u05_q42",
+      "ai_generated": true,
+      "prompt": "\"display\" (v/n) có nghĩa là gì?",
+      "options": [
+        "A. hiển thị / màn hình hiển thị",
+        "B. cắm nguồn điện",
+        "C. mang tính đột phá, đổi mới sáng tạo",
+        "D. trí tuệ nhân tạo"
+      ],
+      "answer": 0,
+      "explanation": "'display' (v/n) nghĩa là: hiển thị / màn hình hiển thị."
+    },
+    {
+      "id": "u05_q43",
+      "ai_generated": true,
+      "prompt": "\"storage space\" (n.phr) có nghĩa là gì?",
+      "options": [
+        "A. dung lượng lưu trữ",
+        "B. đi trước thời đại, vượt trội hoàn toàn",
+        "C. phạm sai lầm",
+        "D. thiết bị đọc sách điện tử"
+      ],
+      "answer": 0,
+      "explanation": "'storage space' (n.phr) nghĩa là: dung lượng lưu trữ."
+    },
+    {
+      "id": "u05_q44",
+      "ai_generated": true,
+      "prompt": "\"technology\" (n) có nghĩa là gì?",
+      "options": [
+        "A. công nghệ",
+        "B. có thể mang theo dễ dàng, di động",
+        "C. phần cứng máy tính",
+        "D. cắm nguồn điện"
+      ],
+      "answer": 0,
+      "explanation": "'technology' (n) nghĩa là: công nghệ."
+    },
+    {
+      "id": "u05_q45",
+      "ai_generated": true,
+      "prompt": "\"processor\" (n) có nghĩa là gì?",
+      "options": [
+        "A. thiết bị đọc sách điện tử",
+        "B. sự ứng dụng, đơn xin",
+        "C. dung lượng lưu trữ",
+        "D. bộ vi xử lý"
+      ],
+      "answer": 3,
+      "explanation": "'processor' (n) nghĩa là: bộ vi xử lý."
+    },
+    {
+      "id": "u05_q46",
+      "ai_generated": true,
+      "prompt": "\"RAM (random access memory)\" (n) có nghĩa là gì?",
+      "options": [
+        "A. hiển thị / màn hình hiển thị",
+        "B. dung lượng, không gian lưu trữ",
+        "C. bộ nhớ truy cập ngẫu nhiên",
+        "D. những tính năng phụ trợ hào nhoáng (nhưng không cốt lõi)"
+      ],
+      "answer": 2,
+      "explanation": "'RAM (random access memory)' (n) nghĩa là: bộ nhớ truy cập ngẫu nhiên."
+    },
+    {
+      "id": "u05_q47",
+      "ai_generated": true,
+      "prompt": "\"experiment\" (n/v) có nghĩa là gì?",
+      "options": [
+        "A. tốn công vô ích làm lại việc người khác đã làm tốt",
+        "B. máy hút bụi",
+        "C. thí nghiệm / tiến hành thí nghiệm",
+        "D. bộ vi xử lý"
+      ],
+      "answer": 2,
+      "explanation": "'experiment' (n/v) nghĩa là: thí nghiệm / tiến hành thí nghiệm."
+    },
+    {
+      "id": "u05_q48",
+      "ai_generated": true,
+      "prompt": "\"laboratory\" (n) có nghĩa là gì?",
+      "options": [
+        "A. đi trước thời đại, vượt trội hoàn toàn",
+        "B. trí tuệ nhân tạo",
+        "C. thuộc về chiều, kích thước (3D)",
+        "D. phòng thí nghiệm"
+      ],
+      "answer": 3,
+      "explanation": "'laboratory' (n) nghĩa là: phòng thí nghiệm."
+    },
+    {
+      "id": "u05_q49",
+      "ai_generated": true,
+      "prompt": "\"application\" (n) có nghĩa là gì?",
+      "options": [
+        "A. nút bấm",
+        "B. công nghệ",
+        "C. sự ứng dụng, đơn xin",
+        "D. cắm nguồn điện"
+      ],
+      "answer": 2,
+      "explanation": "'application' (n) nghĩa là: sự ứng dụng, đơn xin."
+    },
+    {
+      "id": "u05_q50",
+      "ai_generated": true,
+      "prompt": "\"valuable\" (adj) có nghĩa là gì?",
+      "options": [
+        "A. thiết bị, công cụ",
+        "B. công cụ thuận tiện, hữu ích",
+        "C. có giá trị, hữu ích",
+        "D. loại bỏ các vết bẩn cứng đầu"
+      ],
+      "answer": 2,
+      "explanation": "'valuable' (adj) nghĩa là: có giá trị, hữu ích."
+    },
+    {
+      "id": "u05_q51",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The chemistry students conducted an experiment under their teacher's supervision.\"?",
+      "options": [
+        "A. conduct / carry out an experiment",
+        "B. work out",
+        "C. convenient tool",
+        "D. allow/permit someone to do something"
+      ],
+      "answer": 0,
+      "explanation": "'conduct / carry out an experiment' (colloc) nghĩa là: tiến hành một thí nghiệm khoa học."
+    },
+    {
+      "id": "u05_q52",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The search engine helps researchers collect information within seconds.\"?",
+      "options": [
+        "A. display",
+        "B. make a decision",
+        "C. collect / gather information",
+        "D. device"
+      ],
+      "answer": 2,
+      "explanation": "'collect / gather information' (colloc) nghĩa là: thu thập thông tin."
+    },
+    {
+      "id": "u05_q53",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"This advanced vacuum cleaner has a special brush to ______.\"?",
+      "options": [
+        "A. remove stubborn stains",
+        "B. process data",
+        "C. e-reader",
+        "D. conduct / carry out an experiment"
+      ],
+      "answer": 0,
+      "explanation": "'remove stubborn stains' (colloc) nghĩa là: loại bỏ các vết bẩn cứng đầu."
+    },
+    {
+      "id": "u05_q54",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Smartphones are the most popular ______s in the world.\"?",
+      "options": [
+        "A. portable device",
+        "B. bells and whistles",
+        "C. technology",
+        "D. make a decision"
+      ],
+      "answer": 0,
+      "explanation": "'portable device' (colloc) nghĩa là: thiết bị di động cầm tay."
+    },
+    {
+      "id": "u05_q55",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"______ is transforming how we search for data.\"?",
+      "options": [
+        "A. artificial intelligence",
+        "B. collect / gather information",
+        "C. look up",
+        "D. light years ahead"
+      ],
+      "answer": 0,
+      "explanation": "'artificial intelligence' (colloc) nghĩa là: trí tuệ nhân tạo."
+    },
+    {
+      "id": "u05_q56",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"A robotic ______ helps save time on daily housework.\"?",
+      "options": [
+        "A. innovative",
+        "B. charge",
+        "C. vacuum cleaner",
+        "D. storage space"
+      ],
+      "answer": 2,
+      "explanation": "'vacuum cleaner' (colloc) nghĩa là: máy hút bụi gia dụng."
+    },
+    {
+      "id": "u05_q57",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"This new laptop offers exceptionally large ______.\"?",
+      "options": [
+        "A. storage space",
+        "B. print out",
+        "C. portable device",
+        "D. experiment"
+      ],
+      "answer": 0,
+      "explanation": "'storage space' (colloc) nghĩa là: dung lượng, không gian lưu trữ."
+    },
+    {
+      "id": "u05_q58",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Supercomputers are used to process massive amounts of scientific data.\"?",
+      "options": [
+        "A. dimensional",
+        "B. conduct / carry out an experiment",
+        "C. process data",
+        "D. software"
+      ],
+      "answer": 2,
+      "explanation": "'process data' (colloc) nghĩa là: xử lý dữ liệu."
+    },
+    {
+      "id": "u05_q59",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Gamers usually care a lot about ______ and graphics.\"?",
+      "options": [
+        "A. processor speed",
+        "B. save money",
+        "C. valuable",
+        "D. bells and whistles"
+      ],
+      "answer": 0,
+      "explanation": "'processor speed' (colloc) nghĩa là: tốc độ của bộ xử lý."
+    },
+    {
+      "id": "u05_q60",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"I have saved money since Tet to buy something new for my studies.\"?",
+      "options": [
+        "A. driverless",
+        "B. look up",
+        "C. hardware",
+        "D. save money"
+      ],
+      "answer": 3,
+      "explanation": "'save money' (colloc) nghĩa là: tiết kiệm tiền."
     }
   ]
 }

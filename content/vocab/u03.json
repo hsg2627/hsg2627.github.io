@@ -7,575 +7,1280 @@
   "words": [
     {
       "id": "u03_w01",
-      "word": "",
+      "word": "eliminate",
       "ipa": "",
       "pos": "v",
-      "meaning": "",
-      "example": "He was eliminated in the semi-final of the national music competition."
+      "meaning": "loại bỏ, loại trừ khỏi cuộc thi",
+      "example": "He was eliminated in the semi-final of the national music competition.",
+      "level": "B2"
     },
     {
       "id": "u03_w02",
-      "word": "",
+      "word": "phenomenon",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "The young pop singer has become a global musical phenomenon."
+      "meaning": "hiện tượng đột phá, đặc sắc",
+      "example": "The young pop singer has become a global musical phenomenon.",
+      "level": "C1"
     },
     {
       "id": "u03_w03",
-      "word": "",
+      "word": "revolutionary",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "Her style of music is considered revolutionary for her generation."
+      "meaning": "mang tính cách mạng, đột phá",
+      "example": "Her style of music is considered revolutionary for her generation.",
+      "level": "B2"
     },
     {
       "id": "u03_w04",
-      "word": "",
+      "word": "composer",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Many Vietnamese composers wrote patriotic songs to motivate the public."
+      "meaning": "nhà soạn nhạc",
+      "example": "Many Vietnamese composers wrote patriotic songs to motivate the public.",
+      "level": "B2"
     },
     {
       "id": "u03_w05",
-      "word": "",
+      "word": "intricate",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "The folk melody features intricate rhythms played by the percussion section."
+      "meaning": "phức tạp, tinh vi, tinh xảo",
+      "example": "The folk melody features intricate rhythms played by the percussion section.",
+      "level": "C2"
     },
     {
       "id": "u03_w06",
-      "word": "",
+      "word": "profound",
       "ipa": "",
       "pos": "adj",
-      "meaning": "",
-      "example": "Art and music play a profound role in shaping a country's historical narratives."
+      "meaning": "sâu sắc, lớn lao",
+      "example": "Art and music play a profound role in shaping a country's historical narratives.",
+      "level": "C1"
     },
     {
       "id": "u03_w07",
-      "word": "",
+      "word": "curriculum",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Music should be fully integrated into the school curriculum."
+      "meaning": "chương trình giảng dạy học thuật",
+      "example": "Music should be fully integrated into the school curriculum.",
+      "level": "B2"
     },
     {
       "id": "u03_w08",
-      "word": "",
+      "word": "talent",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "The judges were looking for original talent during the auditions."
+      "meaning": "tài năng, năng khiếu",
+      "example": "The judges were looking for original talent during the auditions.",
+      "level": "B1"
     },
     {
       "id": "u03_w09",
-      "word": "",
+      "word": "instrument",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "The piano is a very versatile musical instrument."
+      "meaning": "nhạc cụ, công cụ",
+      "example": "The piano is a very versatile musical instrument.",
+      "level": "B1"
     },
     {
       "id": "u03_w10",
-      "word": "",
+      "word": "concert",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Thousands of fans attended the outdoor rock concert last night."
+      "meaning": "buổi hòa nhạc",
+      "example": "Thousands of fans attended the outdoor rock concert last night.",
+      "level": "B1"
     },
     {
       "id": "u03_w11",
-      "word": "",
+      "word": "judge",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "The famous composer was invited to be a judge on the music show."
+      "meaning": "giám khảo, ban giám khảo",
+      "example": "The famous composer was invited to be a judge on the music show.",
+      "level": "B1"
     },
     {
       "id": "u03_w12",
-      "word": "",
+      "word": "location",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "The iconic opera house is a popular location for musical performances."
+      "meaning": "vị trí, địa điểm",
+      "example": "The iconic opera house is a popular location for musical performances.",
+      "level": "B1"
     },
     {
       "id": "u03_w13",
-      "word": "",
+      "word": "moon-shaped lute",
       "ipa": "",
       "pos": "n.phr",
-      "meaning": "",
-      "example": "The artist played a traditional melody on the moon-shaped lute."
+      "meaning": "đàn nguyệt (nhạc cụ cổ truyền)",
+      "example": "The artist played a traditional melody on the moon-shaped lute.",
+      "level": "C1"
     },
     {
       "id": "u03_w14",
-      "word": "",
+      "word": "bamboo clapper",
       "ipa": "",
       "pos": "n.phr",
-      "meaning": "",
-      "example": "Bamboo clapper is a key percussion instrument in Vietnamese folk music."
+      "meaning": "phách (nhạc cụ tre gõ cổ truyền)",
+      "example": "Bamboo clapper is a key percussion instrument in Vietnamese folk music.",
+      "level": "C1"
     },
     {
       "id": "u03_w15",
-      "word": "",
+      "word": "participant",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "The participants in the competition showed incredible musicality."
+      "meaning": "thí sinh, người tham gia",
+      "example": "The participants in the competition showed incredible musicality.",
+      "level": "B2"
     },
     {
       "id": "u03_w16",
-      "word": "",
+      "word": "performance",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "The singer gave an outstanding live performance that moved the audience."
+      "meaning": "buổi trình diễn, biểu diễn",
+      "example": "The singer gave an outstanding live performance that moved the audience.",
+      "level": "B1"
     },
     {
       "id": "u03_w17",
-      "word": "",
+      "word": "reach",
       "ipa": "",
       "pos": "v",
-      "meaning": "",
-      "example": "The music video managed to reach one million views in just one day."
+      "meaning": "đạt mốc, chạm tới",
+      "example": "The music video managed to reach one million views in just one day.",
+      "level": "B1"
     },
     {
       "id": "u03_w18",
-      "word": "",
+      "word": "single",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "She released her debut single last month and it immediately became a hit."
+      "meaning": "đĩa đơn",
+      "example": "She released her debut single last month and it immediately became a hit.",
+      "level": "B1"
     },
     {
       "id": "u03_w19",
-      "word": "",
+      "word": "trumpet",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "He plays the trumpet beautifully in the school jazz band."
+      "meaning": "kèn trumpet",
+      "example": "He plays the trumpet beautifully in the school jazz band.",
+      "level": "B2"
     },
     {
       "id": "u03_w20",
-      "word": "",
+      "word": "upload",
       "ipa": "",
       "pos": "v",
-      "meaning": "",
-      "example": "My brother uploaded his cover song to YouTube to share with friends."
+      "meaning": "đăng tải lên mạng",
+      "example": "My brother uploaded his cover song to YouTube to share with friends.",
+      "level": "B1"
     },
     {
       "id": "u03_w21",
-      "word": "",
+      "word": "audience",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "The audience clapped enthusiastically at the end of the show."
+      "meaning": "khán giả nghe nhạc, kịch, diễn thuyết",
+      "example": "The audience clapped enthusiastically at the end of the show.",
+      "level": "B1"
     },
     {
       "id": "u03_w22",
-      "word": "",
+      "word": "spectator",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "The football stadium was packed with excited spectators."
+      "meaning": "khán giả xem thể thao ngoài trời",
+      "example": "The football stadium was packed with excited spectators.",
+      "level": "B2"
     },
     {
       "id": "u03_w23",
-      "word": "",
+      "word": "onlooker",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "A crowd of onlookers gathered to watch the street performance."
+      "meaning": "người đứng ngoài xem sự việc",
+      "example": "A crowd of onlookers gathered to watch the street performance.",
+      "level": "B2"
     },
     {
       "id": "u03_w24",
-      "word": "",
+      "word": "recording",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "I bought a high-quality recording of the live concert."
+      "meaning": "bản thu âm, ghi hình",
+      "example": "I bought a high-quality recording of the live concert.",
+      "level": "B1"
     },
     {
       "id": "u03_w25",
-      "word": "",
+      "word": "musicality",
       "ipa": "",
       "pos": "n",
-      "meaning": "",
-      "example": "Her natural musicality was clear from the way she played the piano."
+      "meaning": "năng khiếu, cảm thụ âm nhạc",
+      "example": "Her natural musicality was clear from the way she played the piano.",
+      "level": "C1"
     },
     {
       "id": "u03_w26",
-      "word": "",
+      "word": "come up with",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "She came up with a brilliant idea for an interactive music show."
+      "meaning": "nảy ra, nghĩ ra (một ý tưởng, sáng kiến)",
+      "example": "She came up with a brilliant idea for an interactive music show.",
+      "level": "B2"
     },
     {
       "id": "u03_w27",
-      "word": "",
+      "word": "turn up",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Could you turn up the music? This is my favorite song!"
+      "meaning": "vặn to âm lượng, xuất hiện",
+      "example": "Could you turn up the music? This is my favorite song!",
+      "level": "B1"
     },
     {
       "id": "u03_w28",
-      "word": "",
+      "word": "turn down",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Please turn down the TV; I am trying to focus on my studies."
+      "meaning": "vặn nhỏ âm lượng, từ chối",
+      "example": "Please turn down the TV; I am trying to focus on my studies.",
+      "level": "B1"
     },
     {
       "id": "u03_w29",
-      "word": "",
+      "word": "dress up",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Performers love to dress up in traditional costumes for the festival."
+      "meaning": "ăn diện, hóa trang lộng lẫy",
+      "example": "Performers love to dress up in traditional costumes for the festival.",
+      "level": "B2"
     },
     {
       "id": "u03_w30",
-      "word": "",
+      "word": "sing along",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "The entire audience started singing along with the main singer."
+      "meaning": "hát theo, đồng ca",
+      "example": "The entire audience started singing along with the main singer.",
+      "level": "B1"
     },
     {
       "id": "u03_w31",
-      "word": "",
+      "word": "pop up",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "Ad pop-ups are highly annoying when watching music videos online."
+      "meaning": "đột nhiên xuất hiện",
+      "example": "Ad pop-ups are highly annoying when watching music videos online.",
+      "level": "B2"
     },
     {
       "id": "u03_w32",
-      "word": "",
+      "word": "carry out",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "The research team carried out a survey on teenagers' music tastes."
+      "meaning": "tiến hành, thực hiện",
+      "example": "The research team carried out a survey on teenagers' music tastes.",
+      "level": "B2"
     },
     {
       "id": "u03_w33",
-      "word": "",
+      "word": "sign up",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "He signed up for the audition of the national music competition."
+      "meaning": "đăng ký tham gia",
+      "example": "He signed up for the audition of the national music competition.",
+      "level": "B1"
     },
     {
       "id": "u03_w34",
-      "word": "",
+      "word": "set out",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "The young artist set out to create a new style of modern folk music."
+      "meaning": "bắt đầu một hành trình, kế hoạch",
+      "example": "The young artist set out to create a new style of modern folk music.",
+      "level": "B2"
     },
     {
       "id": "u03_w35",
-      "word": "",
+      "word": "back up",
       "ipa": "",
       "pos": "phr.v",
-      "meaning": "",
-      "example": "My friends always back me up whenever I feel discouraged."
+      "meaning": "ủng hộ, sao lưu dữ liệu",
+      "example": "My friends always back me up whenever I feel discouraged.",
+      "level": "B2"
     },
     {
       "id": "u03_w36",
-      "word": "",
+      "word": "play an important role / part in sth",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Music plays an important role in preserving cultural identity."
+      "meaning": "đóng vai trò quan trọng trong việc gì",
+      "example": "Music plays an important role in preserving cultural identity.",
+      "level": "B2"
     },
     {
       "id": "u03_w37",
-      "word": "",
+      "word": "identify with sb",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "The audience can easily identify with ordinary participants in reality shows."
+      "meaning": "đồng cảm, tìm thấy sự tương đồng ở ai",
+      "example": "The audience can easily identify with ordinary participants in reality shows.",
+      "level": "B2"
     },
     {
       "id": "u03_w38",
-      "word": "",
+      "word": "break a record",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "The latest hit single broke a national streaming record."
+      "meaning": "phá kỷ lục",
+      "example": "The latest hit single broke a national streaming record.",
+      "level": "B2"
     },
     {
       "id": "u03_w39",
-      "word": "",
+      "word": "convey the appropriate mood",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Soundtracks must convey the appropriate mood and tone of the film."
+      "meaning": "truyền tải tâm trạng phù hợp",
+      "example": "Soundtracks must convey the appropriate mood and tone of the film.",
+      "level": "B2"
     },
     {
       "id": "u03_w40",
-      "word": "",
+      "word": "create a sense of belonging",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Singing together in a choir helps children create a sense of belonging."
+      "meaning": "tạo ra cảm giác thuộc về, gắn kết",
+      "example": "Singing together in a choir helps children create a sense of belonging.",
+      "level": "C1"
     },
     {
       "id": "u03_w41",
-      "word": "",
+      "word": "hit single",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Her hit single remained at the top of the music charts for weeks."
+      "meaning": "đĩa đơn thành công vang dội",
+      "example": "Her hit single remained at the top of the music charts for weeks.",
+      "level": "B2"
     },
     {
       "id": "u03_w42",
-      "word": "",
+      "word": "social media",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Artists use social media to interact directly with their fans."
+      "meaning": "mạng xã hội",
+      "example": "Artists use social media to interact directly with their fans.",
+      "level": "B1"
     },
     {
       "id": "u03_w43",
-      "word": "",
+      "word": "cash prize",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "The winner of the music competition received a large cash prize."
+      "meaning": "giải thưởng bằng tiền mặt",
+      "example": "The winner of the music competition received a large cash prize.",
+      "level": "B2"
     },
     {
       "id": "u03_w44",
-      "word": "",
+      "word": "runner-up",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Though he was only the runner-up, he received great praise from judges."
+      "meaning": "á quân, người về nhì",
+      "example": "Though he was only the runner-up, he received great praise from judges.",
+      "level": "B2"
     },
     {
       "id": "u03_w45",
-      "word": "",
+      "word": "traditional musical instruments",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "My brother collects traditional musical instruments like the gong."
+      "meaning": "nhạc cụ truyền thống",
+      "example": "My brother collects traditional musical instruments like the gong.",
+      "level": "C1"
     },
     {
       "id": "u03_w46",
-      "word": "",
+      "word": "national hero",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Chau van singing is used to worship national heroes in Vietnam."
+      "meaning": "anh hùng dân tộc",
+      "example": "Chau van singing is used to worship national heroes in Vietnam.",
+      "level": "B2"
     },
     {
       "id": "u03_w47",
-      "word": "",
+      "word": "party atmosphere",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "The rock concert had an incredibly energetic party atmosphere."
+      "meaning": "không khí lễ hội, tiệc tùng",
+      "example": "The rock concert had an incredibly energetic party atmosphere.",
+      "level": "B2"
     },
     {
       "id": "u03_w48",
-      "word": "",
+      "word": "art exhibition",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "The local museum is hosting an art exhibition this weekend."
+      "meaning": "triển lãm nghệ thuật",
+      "example": "The local museum is hosting an art exhibition this weekend.",
+      "level": "B2"
     },
     {
       "id": "u03_w49",
-      "word": "",
+      "word": "gain great popularity",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "Folk music is gaining great popularity among the younger generation."
+      "meaning": "đạt được sự phổ biến rộng rãi",
+      "example": "Folk music is gaining great popularity among the younger generation.",
+      "level": "B2"
     },
     {
       "id": "u03_w50",
-      "word": "",
+      "word": "do extensive research",
       "ipa": "",
       "pos": "colloc",
-      "meaning": "",
-      "example": "We had to do extensive research on chau van singing for our presentation."
+      "meaning": "nghiên cứu sâu rộng",
+      "example": "We had to do extensive research on chau van singing for our presentation.",
+      "level": "B2"
     },
     {
       "id": "u03_w51",
-      "word": "",
+      "word": "get creative juices flowing",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "Classical music is excellent for getting your creative juices flowing while writing."
+      "meaning": "khơi dậy cảm hứng sáng tạo dạt dào",
+      "example": "Classical music is excellent for getting your creative juices flowing while writing.",
+      "level": "C1"
     },
     {
       "id": "u03_w52",
-      "word": "",
+      "word": "hit the right note",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "Her emotional speech hit the right note with the audience."
+      "meaning": "đánh trúng tâm lý, đi vào lòng người",
+      "example": "Her emotional speech hit the right note with the audience.",
+      "level": "C1"
     },
     {
       "id": "u03_w53",
-      "word": "",
+      "word": "music to my ears",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "Hearing that she won the scholarship was absolute music to my ears."
+      "meaning": "tin vui, âm thanh dễ nghe, sướng tai",
+      "example": "Hearing that she won the scholarship was absolute music to my ears.",
+      "level": "C1"
     },
     {
       "id": "u03_w54",
-      "word": "",
+      "word": "blow one's own trumpet",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "He is highly talented, but he never blows his own trumpet."
+      "meaning": "tự phụ, khoe khoang thành tích bản thân",
+      "example": "He is highly talented, but he never blows his own trumpet.",
+      "level": "C1"
     },
     {
       "id": "u03_w55",
-      "word": "",
+      "word": "face the music",
       "ipa": "",
       "pos": "idiom",
-      "meaning": "",
-      "example": "After skipping the rehearsals, she had to face the music from the conductor."
+      "meaning": "chấp nhận hình phạt, đối mặt hậu quả",
+      "example": "After skipping the rehearsals, she had to face the music from the conductor.",
+      "level": "C1"
     }
   ],
   "items": [
     {
       "id": "u03_q01",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____H_____e_____ _____w_____a_____s_____ _____e_____l_____i_____m_____i_____n_____a_____t_____e_____d_____ _____i_____n_____ _____t_____h_____e_____ _____s_____e_____m_____i_____-_____f_____i_____n_____a_____l_____ _____o_____f_____ _____t_____h_____e_____ _____n_____a_____t_____i_____o_____n_____a_____l_____ _____m_____u_____s_____i_____c_____ _____c_____o_____m_____p_____e_____t_____i_____t_____i_____o_____n_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"He was ______d in the semi-final of the national music competition.\"",
       "options": [
-        "A. community",
-        "B. environment",
-        "C. volunteer",
-        "D. "
+        "A. eliminate",
+        "B. blow one's own trumpet",
+        "C. pop up",
+        "D. judge"
       ],
-      "answer": 3,
-      "explanation": "'' (v) nghĩa là: ."
+      "answer": 0,
+      "explanation": "'eliminate' (v) nghĩa là: loại bỏ, loại trừ khỏi cuộc thi."
     },
     {
       "id": "u03_q02",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____y_____o_____u_____n_____g_____ _____p_____o_____p_____ _____s_____i_____n_____g_____e_____r_____ _____h_____a_____s_____ _____b_____e_____c_____o_____m_____e_____ _____a_____ _____g_____l_____o_____b_____a_____l_____ _____m_____u_____s_____i_____c_____a_____l_____ _____p_____h_____e_____n_____o_____m_____e_____n_____o_____n_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The young pop singer has become a global musical ______.\"",
       "options": [
-        "A. community",
-        "B. ",
-        "C. volunteer",
-        "D. environment"
+        "A. phenomenon",
+        "B. break a record",
+        "C. hit single",
+        "D. location"
       ],
-      "answer": 1,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 0,
+      "explanation": "'phenomenon' (n) nghĩa là: hiện tượng đột phá, đặc sắc."
     },
     {
       "id": "u03_q03",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____H_____e_____r_____ _____s_____t_____y_____l_____e_____ _____o_____f_____ _____m_____u_____s_____i_____c_____ _____i_____s_____ _____c_____o_____n_____s_____i_____d_____e_____r_____e_____d_____ _____r_____e_____v_____o_____l_____u_____t_____i_____o_____n_____a_____r_____y_____ _____f_____o_____r_____ _____h_____e_____r_____ _____g_____e_____n_____e_____r_____a_____t_____i_____o_____n_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Her style of music is considered ______ for her generation.\"",
       "options": [
-        "A. volunteer",
-        "B. ",
-        "C. environment",
-        "D. community"
+        "A. face the music",
+        "B. profound",
+        "C. convey the appropriate mood",
+        "D. revolutionary"
       ],
-      "answer": 1,
-      "explanation": "'' (adj) nghĩa là: ."
+      "answer": 3,
+      "explanation": "'revolutionary' (adj) nghĩa là: mang tính cách mạng, đột phá."
     },
     {
       "id": "u03_q04",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____M_____a_____n_____y_____ _____V_____i_____e_____t_____n_____a_____m_____e_____s_____e_____ _____c_____o_____m_____p_____o_____s_____e_____r_____s_____ _____w_____r_____o_____t_____e_____ _____p_____a_____t_____r_____i_____o_____t_____i_____c_____ _____s_____o_____n_____g_____s_____ _____t_____o_____ _____m_____o_____t_____i_____v_____a_____t_____e_____ _____t_____h_____e_____ _____p_____u_____b_____l_____i_____c_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Many Vietnamese ______s wrote patriotic songs to motivate the public.\"",
       "options": [
-        "A. community",
-        "B. ",
-        "C. volunteer",
-        "D. environment"
+        "A. hit the right note",
+        "B. social media",
+        "C. composer",
+        "D. instrument"
       ],
-      "answer": 1,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 2,
+      "explanation": "'composer' (n) nghĩa là: nhà soạn nhạc."
     },
     {
       "id": "u03_q05",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____f_____o_____l_____k_____ _____m_____e_____l_____o_____d_____y_____ _____f_____e_____a_____t_____u_____r_____e_____s_____ _____i_____n_____t_____r_____i_____c_____a_____t_____e_____ _____r_____h_____y_____t_____h_____m_____s_____ _____p_____l_____a_____y_____e_____d_____ _____b_____y_____ _____t_____h_____e_____ _____p_____e_____r_____c_____u_____s_____s_____i_____o_____n_____ _____s_____e_____c_____t_____i_____o_____n_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The folk melody features ______ rhythms played by the percussion section.\"",
       "options": [
-        "A. volunteer",
-        "B. environment",
-        "C. ",
-        "D. community"
+        "A. intricate",
+        "B. upload",
+        "C. convey the appropriate mood",
+        "D. location"
       ],
-      "answer": 2,
-      "explanation": "'' (adj) nghĩa là: ."
+      "answer": 0,
+      "explanation": "'intricate' (adj) nghĩa là: phức tạp, tinh vi, tinh xảo."
     },
     {
       "id": "u03_q06",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____A_____r_____t_____ _____a_____n_____d_____ _____m_____u_____s_____i_____c_____ _____p_____l_____a_____y_____ _____a_____ _____p_____r_____o_____f_____o_____u_____n_____d_____ _____r_____o_____l_____e_____ _____i_____n_____ _____s_____h_____a_____p_____i_____n_____g_____ _____a_____ _____c_____o_____u_____n_____t_____r_____y_____'_____s_____ _____h_____i_____s_____t_____o_____r_____i_____c_____a_____l_____ _____n_____a_____r_____r_____a_____t_____i_____v_____e_____s_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Art and music play a ______ role in shaping a country's historical narratives.\"",
       "options": [
-        "A. volunteer",
-        "B. ",
-        "C. community",
-        "D. environment"
+        "A. profound",
+        "B. sign up",
+        "C. phenomenon",
+        "D. spectator"
       ],
-      "answer": 1,
-      "explanation": "'' (adj) nghĩa là: ."
+      "answer": 0,
+      "explanation": "'profound' (adj) nghĩa là: sâu sắc, lớn lao."
     },
     {
       "id": "u03_q07",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____M_____u_____s_____i_____c_____ _____s_____h_____o_____u_____l_____d_____ _____b_____e_____ _____f_____u_____l_____l_____y_____ _____i_____n_____t_____e_____g_____r_____a_____t_____e_____d_____ _____i_____n_____t_____o_____ _____t_____h_____e_____ _____s_____c_____h_____o_____o_____l_____ _____c_____u_____r_____r_____i_____c_____u_____l_____u_____m_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Music should be fully integrated into the school ______.\"",
       "options": [
-        "A. volunteer",
-        "B. ",
-        "C. environment",
-        "D. community"
+        "A. hit the right note",
+        "B. moon-shaped lute",
+        "C. curriculum",
+        "D. participant"
       ],
-      "answer": 1,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 2,
+      "explanation": "'curriculum' (n) nghĩa là: chương trình giảng dạy học thuật."
     },
     {
       "id": "u03_q08",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____j_____u_____d_____g_____e_____s_____ _____w_____e_____r_____e_____ _____l_____o_____o_____k_____i_____n_____g_____ _____f_____o_____r_____ _____o_____r_____i_____g_____i_____n_____a_____l_____ _____t_____a_____l_____e_____n_____t_____ _____d_____u_____r_____i_____n_____g_____ _____t_____h_____e_____ _____a_____u_____d_____i_____t_____i_____o_____n_____s_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The judges were looking for original ______ during the auditions.\"",
       "options": [
-        "A. ",
-        "B. volunteer",
-        "C. environment",
-        "D. community"
+        "A. national hero",
+        "B. talent",
+        "C. bamboo clapper",
+        "D. come up with"
       ],
-      "answer": 0,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 1,
+      "explanation": "'talent' (n) nghĩa là: tài năng, năng khiếu."
     },
     {
       "id": "u03_q09",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____e_____ _____p_____i_____a_____n_____o_____ _____i_____s_____ _____a_____ _____v_____e_____r_____y_____ _____v_____e_____r_____s_____a_____t_____i_____l_____e_____ _____m_____u_____s_____i_____c_____a_____l_____ _____i_____n_____s_____t_____r_____u_____m_____e_____n_____t_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The piano is a very versatile musical ______.\"",
       "options": [
-        "A. volunteer",
-        "B. ",
-        "C. environment",
-        "D. community"
+        "A. revolutionary",
+        "B. runner-up",
+        "C. instrument",
+        "D. performance"
       ],
-      "answer": 1,
-      "explanation": "'' (n) nghĩa là: ."
+      "answer": 2,
+      "explanation": "'instrument' (n) nghĩa là: nhạc cụ, công cụ."
     },
     {
       "id": "u03_q10",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"_____T_____h_____o_____u_____s_____a_____n_____d_____s_____ _____o_____f_____ _____f_____a_____n_____s_____ _____a_____t_____t_____e_____n_____d_____e_____d_____ _____t_____h_____e_____ _____o_____u_____t_____d_____o_____o_____r_____ _____r_____o_____c_____k_____ _____c_____o_____n_____c_____e_____r_____t_____ _____l_____a_____s_____t_____ _____n_____i_____g_____h_____t_____._____\"",
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"Thousands of fans attended the outdoor rock ______ last night.\"",
       "options": [
-        "A. volunteer",
-        "B. community",
-        "C. environment",
-        "D. "
+        "A. concert",
+        "B. traditional musical instruments",
+        "C. instrument",
+        "D. get creative juices flowing"
+      ],
+      "answer": 0,
+      "explanation": "'concert' (n) nghĩa là: buổi hòa nhạc."
+    },
+    {
+      "id": "u03_q11",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The famous composer was invited to be a ______ on the music show.\"",
+      "options": [
+        "A. music to my ears",
+        "B. judge",
+        "C. identify with sb",
+        "D. revolutionary"
+      ],
+      "answer": 1,
+      "explanation": "'judge' (n) nghĩa là: giám khảo, ban giám khảo."
+    },
+    {
+      "id": "u03_q12",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The iconic opera house is a popular ______ for musical performances.\"",
+      "options": [
+        "A. blow one's own trumpet",
+        "B. runner-up",
+        "C. location",
+        "D. hit single"
+      ],
+      "answer": 2,
+      "explanation": "'location' (n) nghĩa là: vị trí, địa điểm."
+    },
+    {
+      "id": "u03_q13",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The artist played a traditional melody on the ______.\"",
+      "options": [
+        "A. onlooker",
+        "B. participant",
+        "C. moon-shaped lute",
+        "D. hit the right note"
+      ],
+      "answer": 2,
+      "explanation": "'moon-shaped lute' (n.phr) nghĩa là: đàn nguyệt (nhạc cụ cổ truyền)."
+    },
+    {
+      "id": "u03_q14",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ is a key percussion instrument in Vietnamese folk music.\"",
+      "options": [
+        "A. turn up",
+        "B. bamboo clapper",
+        "C. national hero",
+        "D. upload"
+      ],
+      "answer": 1,
+      "explanation": "'bamboo clapper' (n.phr) nghĩa là: phách (nhạc cụ tre gõ cổ truyền)."
+    },
+    {
+      "id": "u03_q15",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The ______s in the competition showed incredible musicality.\"",
+      "options": [
+        "A. reach",
+        "B. participant",
+        "C. identify with sb",
+        "D. party atmosphere"
+      ],
+      "answer": 1,
+      "explanation": "'participant' (n) nghĩa là: thí sinh, người tham gia."
+    },
+    {
+      "id": "u03_q16",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The singer gave an outstanding live ______ that moved the audience.\"",
+      "options": [
+        "A. performance",
+        "B. gain great popularity",
+        "C. judge",
+        "D. concert"
+      ],
+      "answer": 0,
+      "explanation": "'performance' (n) nghĩa là: buổi trình diễn, biểu diễn."
+    },
+    {
+      "id": "u03_q17",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"The music video managed to ______ one million views in just one day.\"",
+      "options": [
+        "A. performance",
+        "B. participant",
+        "C. intricate",
+        "D. reach"
       ],
       "answer": 3,
-      "explanation": "'' (n) nghĩa là: ."
+      "explanation": "'reach' (v) nghĩa là: đạt mốc, chạm tới."
+    },
+    {
+      "id": "u03_q18",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"She released her debut ______ last month and it immediately became a hit.\"",
+      "options": [
+        "A. art exhibition",
+        "B. audience",
+        "C. single",
+        "D. onlooker"
+      ],
+      "answer": 2,
+      "explanation": "'single' (n) nghĩa là: đĩa đơn."
+    },
+    {
+      "id": "u03_q19",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"He plays the ______ beautifully in the school jazz band.\"",
+      "options": [
+        "A. art exhibition",
+        "B. composer",
+        "C. sign up",
+        "D. trumpet"
+      ],
+      "answer": 3,
+      "explanation": "'trumpet' (n) nghĩa là: kèn trumpet."
+    },
+    {
+      "id": "u03_q20",
+      "ai_generated": true,
+      "prompt": "Điền từ thích hợp vào chỗ trống: \"My brother ______ed his cover song to YouTube to share with friends.\"",
+      "options": [
+        "A. upload",
+        "B. trumpet",
+        "C. recording",
+        "D. turn up"
+      ],
+      "answer": 0,
+      "explanation": "'upload' (v) nghĩa là: đăng tải lên mạng."
+    },
+    {
+      "id": "u03_q21",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"khán giả nghe nhạc, kịch, diễn thuyết\"?",
+      "options": [
+        "A. trumpet",
+        "B. traditional musical instruments",
+        "C. social media",
+        "D. audience"
+      ],
+      "answer": 3,
+      "explanation": "'audience' (n) nghĩa là: khán giả nghe nhạc, kịch, diễn thuyết."
+    },
+    {
+      "id": "u03_q22",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"khán giả xem thể thao ngoài trời\"?",
+      "options": [
+        "A. cash prize",
+        "B. audience",
+        "C. spectator",
+        "D. play an important role / part in sth"
+      ],
+      "answer": 2,
+      "explanation": "'spectator' (n) nghĩa là: khán giả xem thể thao ngoài trời."
+    },
+    {
+      "id": "u03_q23",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"người đứng ngoài xem sự việc\"?",
+      "options": [
+        "A. pop up",
+        "B. location",
+        "C. onlooker",
+        "D. judge"
+      ],
+      "answer": 2,
+      "explanation": "'onlooker' (n) nghĩa là: người đứng ngoài xem sự việc."
+    },
+    {
+      "id": "u03_q24",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"bản thu âm, ghi hình\"?",
+      "options": [
+        "A. cash prize",
+        "B. gain great popularity",
+        "C. break a record",
+        "D. recording"
+      ],
+      "answer": 3,
+      "explanation": "'recording' (n) nghĩa là: bản thu âm, ghi hình."
+    },
+    {
+      "id": "u03_q25",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"năng khiếu, cảm thụ âm nhạc\"?",
+      "options": [
+        "A. judge",
+        "B. moon-shaped lute",
+        "C. talent",
+        "D. musicality"
+      ],
+      "answer": 3,
+      "explanation": "'musicality' (n) nghĩa là: năng khiếu, cảm thụ âm nhạc."
+    },
+    {
+      "id": "u03_q26",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"nảy ra, nghĩ ra (một ý tưởng, sáng kiến)\"?",
+      "options": [
+        "A. blow one's own trumpet",
+        "B. turn down",
+        "C. traditional musical instruments",
+        "D. come up with"
+      ],
+      "answer": 3,
+      "explanation": "'come up with' (phr.v) nghĩa là: nảy ra, nghĩ ra (một ý tưởng, sáng kiến)."
+    },
+    {
+      "id": "u03_q27",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"vặn to âm lượng, xuất hiện\"?",
+      "options": [
+        "A. traditional musical instruments",
+        "B. turn up",
+        "C. gain great popularity",
+        "D. runner-up"
+      ],
+      "answer": 1,
+      "explanation": "'turn up' (phr.v) nghĩa là: vặn to âm lượng, xuất hiện."
+    },
+    {
+      "id": "u03_q28",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"vặn nhỏ âm lượng, từ chối\"?",
+      "options": [
+        "A. talent",
+        "B. gain great popularity",
+        "C. turn down",
+        "D. blow one's own trumpet"
+      ],
+      "answer": 2,
+      "explanation": "'turn down' (phr.v) nghĩa là: vặn nhỏ âm lượng, từ chối."
+    },
+    {
+      "id": "u03_q29",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"ăn diện, hóa trang lộng lẫy\"?",
+      "options": [
+        "A. dress up",
+        "B. bamboo clapper",
+        "C. runner-up",
+        "D. turn down"
+      ],
+      "answer": 0,
+      "explanation": "'dress up' (phr.v) nghĩa là: ăn diện, hóa trang lộng lẫy."
+    },
+    {
+      "id": "u03_q30",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"hát theo, đồng ca\"?",
+      "options": [
+        "A. sing along",
+        "B. hit the right note",
+        "C. back up",
+        "D. audience"
+      ],
+      "answer": 0,
+      "explanation": "'sing along' (phr.v) nghĩa là: hát theo, đồng ca."
+    },
+    {
+      "id": "u03_q31",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"đột nhiên xuất hiện\"?",
+      "options": [
+        "A. runner-up",
+        "B. moon-shaped lute",
+        "C. pop up",
+        "D. phenomenon"
+      ],
+      "answer": 2,
+      "explanation": "'pop up' (phr.v) nghĩa là: đột nhiên xuất hiện."
+    },
+    {
+      "id": "u03_q32",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tiến hành, thực hiện\"?",
+      "options": [
+        "A. phenomenon",
+        "B. turn down",
+        "C. onlooker",
+        "D. carry out"
+      ],
+      "answer": 3,
+      "explanation": "'carry out' (phr.v) nghĩa là: tiến hành, thực hiện."
+    },
+    {
+      "id": "u03_q33",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"đăng ký tham gia\"?",
+      "options": [
+        "A. instrument",
+        "B. dress up",
+        "C. sign up",
+        "D. hit single"
+      ],
+      "answer": 2,
+      "explanation": "'sign up' (phr.v) nghĩa là: đăng ký tham gia."
+    },
+    {
+      "id": "u03_q34",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"bắt đầu một hành trình, kế hoạch\"?",
+      "options": [
+        "A. concert",
+        "B. set out",
+        "C. hit the right note",
+        "D. judge"
+      ],
+      "answer": 1,
+      "explanation": "'set out' (phr.v) nghĩa là: bắt đầu một hành trình, kế hoạch."
+    },
+    {
+      "id": "u03_q35",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"ủng hộ, sao lưu dữ liệu\"?",
+      "options": [
+        "A. turn up",
+        "B. back up",
+        "C. trumpet",
+        "D. pop up"
+      ],
+      "answer": 1,
+      "explanation": "'back up' (phr.v) nghĩa là: ủng hộ, sao lưu dữ liệu."
+    },
+    {
+      "id": "u03_q36",
+      "ai_generated": true,
+      "prompt": "\"judge\" (n) có nghĩa là gì?",
+      "options": [
+        "A. anh hùng dân tộc",
+        "B. người đứng ngoài xem sự việc",
+        "C. giám khảo, ban giám khảo",
+        "D. giải thưởng bằng tiền mặt"
+      ],
+      "answer": 2,
+      "explanation": "'judge' (n) nghĩa là: giám khảo, ban giám khảo."
+    },
+    {
+      "id": "u03_q37",
+      "ai_generated": true,
+      "prompt": "\"location\" (n) có nghĩa là gì?",
+      "options": [
+        "A. mạng xã hội",
+        "B. phá kỷ lục",
+        "C. vị trí, địa điểm",
+        "D. á quân, người về nhì"
+      ],
+      "answer": 2,
+      "explanation": "'location' (n) nghĩa là: vị trí, địa điểm."
+    },
+    {
+      "id": "u03_q38",
+      "ai_generated": true,
+      "prompt": "\"moon-shaped lute\" (n.phr) có nghĩa là gì?",
+      "options": [
+        "A. đàn nguyệt (nhạc cụ cổ truyền)",
+        "B. chương trình giảng dạy học thuật",
+        "C. thí sinh, người tham gia",
+        "D. tạo ra cảm giác thuộc về, gắn kết"
+      ],
+      "answer": 0,
+      "explanation": "'moon-shaped lute' (n.phr) nghĩa là: đàn nguyệt (nhạc cụ cổ truyền)."
+    },
+    {
+      "id": "u03_q39",
+      "ai_generated": true,
+      "prompt": "\"bamboo clapper\" (n.phr) có nghĩa là gì?",
+      "options": [
+        "A. đĩa đơn",
+        "B. triển lãm nghệ thuật",
+        "C. giải thưởng bằng tiền mặt",
+        "D. phách (nhạc cụ tre gõ cổ truyền)"
+      ],
+      "answer": 3,
+      "explanation": "'bamboo clapper' (n.phr) nghĩa là: phách (nhạc cụ tre gõ cổ truyền)."
+    },
+    {
+      "id": "u03_q40",
+      "ai_generated": true,
+      "prompt": "\"participant\" (n) có nghĩa là gì?",
+      "options": [
+        "A. thí sinh, người tham gia",
+        "B. khán giả xem thể thao ngoài trời",
+        "C. đĩa đơn",
+        "D. vị trí, địa điểm"
+      ],
+      "answer": 0,
+      "explanation": "'participant' (n) nghĩa là: thí sinh, người tham gia."
+    },
+    {
+      "id": "u03_q41",
+      "ai_generated": true,
+      "prompt": "\"performance\" (n) có nghĩa là gì?",
+      "options": [
+        "A. đóng vai trò quan trọng trong việc gì",
+        "B. chấp nhận hình phạt, đối mặt hậu quả",
+        "C. buổi trình diễn, biểu diễn",
+        "D. đạt mốc, chạm tới"
+      ],
+      "answer": 2,
+      "explanation": "'performance' (n) nghĩa là: buổi trình diễn, biểu diễn."
+    },
+    {
+      "id": "u03_q42",
+      "ai_generated": true,
+      "prompt": "\"reach\" (v) có nghĩa là gì?",
+      "options": [
+        "A. đạt mốc, chạm tới",
+        "B. nghiên cứu sâu rộng",
+        "C. mang tính cách mạng, đột phá",
+        "D. buổi hòa nhạc"
+      ],
+      "answer": 0,
+      "explanation": "'reach' (v) nghĩa là: đạt mốc, chạm tới."
+    },
+    {
+      "id": "u03_q43",
+      "ai_generated": true,
+      "prompt": "\"single\" (n) có nghĩa là gì?",
+      "options": [
+        "A. đĩa đơn",
+        "B. đĩa đơn thành công vang dội",
+        "C. loại bỏ, loại trừ khỏi cuộc thi",
+        "D. đánh trúng tâm lý, đi vào lòng người"
+      ],
+      "answer": 0,
+      "explanation": "'single' (n) nghĩa là: đĩa đơn."
+    },
+    {
+      "id": "u03_q44",
+      "ai_generated": true,
+      "prompt": "\"trumpet\" (n) có nghĩa là gì?",
+      "options": [
+        "A. đĩa đơn",
+        "B. đăng ký tham gia",
+        "C. kèn trumpet",
+        "D. không khí lễ hội, tiệc tùng"
+      ],
+      "answer": 2,
+      "explanation": "'trumpet' (n) nghĩa là: kèn trumpet."
+    },
+    {
+      "id": "u03_q45",
+      "ai_generated": true,
+      "prompt": "\"upload\" (v) có nghĩa là gì?",
+      "options": [
+        "A. năng khiếu, cảm thụ âm nhạc",
+        "B. ăn diện, hóa trang lộng lẫy",
+        "C. đĩa đơn",
+        "D. đăng tải lên mạng"
+      ],
+      "answer": 3,
+      "explanation": "'upload' (v) nghĩa là: đăng tải lên mạng."
+    },
+    {
+      "id": "u03_q46",
+      "ai_generated": true,
+      "prompt": "\"audience\" (n) có nghĩa là gì?",
+      "options": [
+        "A. khán giả nghe nhạc, kịch, diễn thuyết",
+        "B. triển lãm nghệ thuật",
+        "C. đạt được sự phổ biến rộng rãi",
+        "D. tạo ra cảm giác thuộc về, gắn kết"
+      ],
+      "answer": 0,
+      "explanation": "'audience' (n) nghĩa là: khán giả nghe nhạc, kịch, diễn thuyết."
+    },
+    {
+      "id": "u03_q47",
+      "ai_generated": true,
+      "prompt": "\"spectator\" (n) có nghĩa là gì?",
+      "options": [
+        "A. khán giả xem thể thao ngoài trời",
+        "B. á quân, người về nhì",
+        "C. không khí lễ hội, tiệc tùng",
+        "D. đĩa đơn thành công vang dội"
+      ],
+      "answer": 0,
+      "explanation": "'spectator' (n) nghĩa là: khán giả xem thể thao ngoài trời."
+    },
+    {
+      "id": "u03_q48",
+      "ai_generated": true,
+      "prompt": "\"onlooker\" (n) có nghĩa là gì?",
+      "options": [
+        "A. ủng hộ, sao lưu dữ liệu",
+        "B. á quân, người về nhì",
+        "C. mạng xã hội",
+        "D. người đứng ngoài xem sự việc"
+      ],
+      "answer": 3,
+      "explanation": "'onlooker' (n) nghĩa là: người đứng ngoài xem sự việc."
+    },
+    {
+      "id": "u03_q49",
+      "ai_generated": true,
+      "prompt": "\"recording\" (n) có nghĩa là gì?",
+      "options": [
+        "A. bản thu âm, ghi hình",
+        "B. anh hùng dân tộc",
+        "C. nghiên cứu sâu rộng",
+        "D. nhạc cụ, công cụ"
+      ],
+      "answer": 0,
+      "explanation": "'recording' (n) nghĩa là: bản thu âm, ghi hình."
+    },
+    {
+      "id": "u03_q50",
+      "ai_generated": true,
+      "prompt": "\"musicality\" (n) có nghĩa là gì?",
+      "options": [
+        "A. khán giả nghe nhạc, kịch, diễn thuyết",
+        "B. bản thu âm, ghi hình",
+        "C. năng khiếu, cảm thụ âm nhạc",
+        "D. nhạc cụ, công cụ"
+      ],
+      "answer": 2,
+      "explanation": "'musicality' (n) nghĩa là: năng khiếu, cảm thụ âm nhạc."
+    },
+    {
+      "id": "u03_q51",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Music plays an important role in preserving cultural identity.\"?",
+      "options": [
+        "A. performance",
+        "B. gain great popularity",
+        "C. play an important role / part in sth",
+        "D. onlooker"
+      ],
+      "answer": 2,
+      "explanation": "'play an important role / part in sth' (colloc) nghĩa là: đóng vai trò quan trọng trong việc gì."
+    },
+    {
+      "id": "u03_q52",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The audience can easily identify with ordinary participants in reality shows.\"?",
+      "options": [
+        "A. judge",
+        "B. face the music",
+        "C. identify with sb",
+        "D. profound"
+      ],
+      "answer": 2,
+      "explanation": "'identify with sb' (colloc) nghĩa là: đồng cảm, tìm thấy sự tương đồng ở ai."
+    },
+    {
+      "id": "u03_q53",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The latest hit single broke a national streaming record.\"?",
+      "options": [
+        "A. dress up",
+        "B. sing along",
+        "C. spectator",
+        "D. break a record"
+      ],
+      "answer": 3,
+      "explanation": "'break a record' (colloc) nghĩa là: phá kỷ lục."
+    },
+    {
+      "id": "u03_q54",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Soundtracks must ______ and tone of the film.\"?",
+      "options": [
+        "A. convey the appropriate mood",
+        "B. bamboo clapper",
+        "C. talent",
+        "D. spectator"
+      ],
+      "answer": 0,
+      "explanation": "'convey the appropriate mood' (colloc) nghĩa là: truyền tải tâm trạng phù hợp."
+    },
+    {
+      "id": "u03_q55",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Singing together in a choir helps children ______.\"?",
+      "options": [
+        "A. create a sense of belonging",
+        "B. curriculum",
+        "C. art exhibition",
+        "D. come up with"
+      ],
+      "answer": 0,
+      "explanation": "'create a sense of belonging' (colloc) nghĩa là: tạo ra cảm giác thuộc về, gắn kết."
+    },
+    {
+      "id": "u03_q56",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Her ______ remained at the top of the music charts for weeks.\"?",
+      "options": [
+        "A. phenomenon",
+        "B. carry out",
+        "C. hit single",
+        "D. spectator"
+      ],
+      "answer": 2,
+      "explanation": "'hit single' (colloc) nghĩa là: đĩa đơn thành công vang dội."
+    },
+    {
+      "id": "u03_q57",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Artists use ______ to interact directly with their fans.\"?",
+      "options": [
+        "A. trumpet",
+        "B. gain great popularity",
+        "C. social media",
+        "D. pop up"
+      ],
+      "answer": 2,
+      "explanation": "'social media' (colloc) nghĩa là: mạng xã hội."
+    },
+    {
+      "id": "u03_q58",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The winner of the music competition received a large ______.\"?",
+      "options": [
+        "A. cash prize",
+        "B. pop up",
+        "C. turn up",
+        "D. sing along"
+      ],
+      "answer": 0,
+      "explanation": "'cash prize' (colloc) nghĩa là: giải thưởng bằng tiền mặt."
+    },
+    {
+      "id": "u03_q59",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Though he was only the ______, he received great praise from judges.\"?",
+      "options": [
+        "A. turn up",
+        "B. curriculum",
+        "C. runner-up",
+        "D. blow one's own trumpet"
+      ],
+      "answer": 2,
+      "explanation": "'runner-up' (colloc) nghĩa là: á quân, người về nhì."
+    },
+    {
+      "id": "u03_q60",
+      "ai_generated": true,
+      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"My brother collects ______ like the gong.\"?",
+      "options": [
+        "A. traditional musical instruments",
+        "B. single",
+        "C. party atmosphere",
+        "D. talent"
+      ],
+      "answer": 0,
+      "explanation": "'traditional musical instruments' (colloc) nghĩa là: nhạc cụ truyền thống."
     }
   ]
 }
