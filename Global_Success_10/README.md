@@ -331,6 +331,7 @@ Nhãn nút thống nhất: `Answer` · `Hint` · `Meaning` · `Example` · `Show
 | Khung nhiệm vụ lớn | `<div class="brief">` + `<p class="slogan">` |
 | Khung nhấn mạnh nhỏ | `<div class="box">` |
 | Hai cột thường | `<div class="cols">` |
+| Trò lớn chiếm trọn slide (trò tự có logo, tiêu đề) | `<section class="slide play">` + `<iframe class="game" …>` — không kicker, không h2 |
 | Câu hỏi có đáp án lật | `<p class="q">… <button class="reveal" type="button" aria-expanded="false">Đáp án</button> <span class="answer">…</span></p>` |
 | Giải thích dài (xuống dòng) | thêm `note`: `<span class="answer note">` |
 
