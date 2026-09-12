@@ -22,6 +22,21 @@ const ADMIN_TOKEN = 'doi-chuoi-nay-thanh-mat-khau-cua-rieng-chi';
 const EVENTS_SHEET  = 'events';
 const ROSTER_SHEET  = 'roster';
 const SUMMARY_SHEET = 'summary';
+const LETTERS_SHEET = 'thu';     // hộp thư báo lỗi của học sinh, đọc bằng mắt
+
+/** Cột của sheet 'thu' — mỗi lá thư một dòng, đọc được luôn, không phải mở JSON. */
+const LETTER_COLS = [
+  'ts_server', 'ts_client', 'pseudo_id', 'class_id',
+  'item_id', 'bo_de', 'hang_muc', 'loai_bao_loi', 'lam_dung_bai',
+  'noi_dung_thu', 'em_chon', 'dap_an_he_thong',
+  'content_version', 'event_id', 'da_xu_ly', 'ket_luan_cua_co',
+];
+
+const LETTER_TYPE_VN = {
+  key:  'Đáp án sai',
+  text: 'Tiếng Anh AI viết hỏng',
+  app:  'Trang chạy sai',
+};
 
 /** Thứ tự cột — phải khớp với đối tượng row trong core/logger.js. */
 const COLS = [
@@ -39,7 +54,7 @@ const VALID_EVENT_TYPES = {
   'item_view': 1, 'item_answer': 1,
   'quest_accept': 1, 'quest_complete': 1,
   'shop_purchase': 1, 'level_up': 1,
-  'ai_eval_open': 1, 'ai_eval_answer': 1,
+  'ai_eval_open': 1, 'ai_eval_answer': 1, 'ai_eval_bug': 1,
   'artifact_submit': 1,
   'error_shown': 1, 'help_open': 1,
   'data_export': 1, 'data_delete': 1,
@@ -68,6 +83,15 @@ function setup() {
     rs.setFrozenRows(1);
   }
 
+  let lt = ss.getSheetByName(LETTERS_SHEET);
+  if (!lt) lt = ss.insertSheet(LETTERS_SHEET);
+  if (lt.getLastRow() === 0) {
+    lt.appendRow(LETTER_COLS);
+    lt.setFrozenRows(1);
+    lt.setColumnWidth(LETTER_COLS.indexOf('noi_dung_thu') + 1, 420);
+    lt.setColumnWidth(LETTER_COLS.indexOf('ket_luan_cua_co') + 1, 320);
+  }
+
   let sum = ss.getSheetByName(SUMMARY_SHEET);
   if (!sum) sum = ss.insertSheet(SUMMARY_SHEET);
   if (sum.getLastRow() === 0) {
@@ -75,7 +99,7 @@ function setup() {
     sum.setFrozenRows(1);
   }
 
-  return 'Xong: đã tạo sheets events, roster và summary.';
+  return 'Xong: đã tạo sheets events, thu, roster và summary.';
 }
 
 // ─────────────────────────────────────────────────────────────────────────
@@ -110,6 +134,10 @@ function doPost(e) {
     const body = JSON.parse(e.postData.contents);
     const events = (body && body.events) || [];
     if (!events.length) return json({ ok: true, accepted: [] });
+    // Cửa ghi buộc phải mở cho "Anyone" thì trình duyệt học sinh mới POST được,
+    // nên URL này ai xem mã nguồn cũng thấy. Không giấu được, chỉ chặn được lô
+    // quá khổ. Dòng rác vẫn lọc lại được lúc phân tích nhờ cột roster.
+    if (events.length > 200) return json({ ok: false, error: 'batch_too_large', accepted: [] });
 
     const ss = SpreadsheetApp.openById(SHEET_ID);
     const rosterSet = getRosterSet(ss);
@@ -120,6 +148,7 @@ function doPost(e) {
 
     const ts = new Date().toISOString();
     const rows = [];
+    const letters = [];
     const accepted = [];
     const toMark = {};
 
@@ -151,6 +180,26 @@ function doPost(e) {
         ev.extra = JSON.stringify(extraObj);
       }
 
+      // Thư báo lỗi ghi thêm một dòng ở sheet 'thu' để đọc bằng mắt, thay vì
+      // phải bới cột extra. Hai cột cuối để trống cho cô điền lúc duyệt.
+      if (ev.event_type === 'ai_eval_bug') {
+        var reason = String(extraObj.reason || '');
+        if (reason.length > 500) reason = reason.slice(0, 500) + '…';
+        letters.push([
+          ts, ev.ts_client || '', ev.pseudo_id || '', ev.class_id || '',
+          ev.item_id || '', ev.unit || '',
+          extraObj.category === undefined ? '' : extraObj.category,
+          LETTER_TYPE_VN[extraObj.bug_type] || extraObj.bug_type || '',
+          extraObj.item_correct ? 1 : 0,
+          reason,
+          extraObj.chosen_text === '__NO_ERROR__'
+            ? 'Bấm "đoạn này không có lỗi"'
+            : (extraObj.chosen_text || ''),
+          extraObj.answer_span || '',
+          ev.content_version || '', ev.event_id || '', '', '',
+        ]);
+      }
+
       ev.ts_server = ts;
       rows.push(COLS.map(function (c) {
         return ev[c] === undefined || ev[c] === null ? '' : ev[c];
@@ -163,11 +212,18 @@ function doPost(e) {
       const sh = ss.getSheetByName(EVENTS_SHEET);
       sh.getRange(sh.getLastRow() + 1, 1, rows.length, COLS.length).setValues(rows);
     }
+    if (letters.length) {
+      const lt = ss.getSheetByName(LETTERS_SHEET);
+      if (lt) {
+        lt.getRange(lt.getLastRow() + 1, 1, letters.length, LETTER_COLS.length)
+          .setValues(letters);
+      }
+    }
     if (Object.keys(toMark).length) {
       cache.putAll(toMark, 21600);   // nhớ 6 tiếng, đủ phủ mọi lần thử lại
     }
 
-    return json({ ok: true, accepted: accepted, written: rows.length });
+    return json({ ok: true, accepted: accepted, written: rows.length, letters: letters.length });
   } catch (err) {
     return json({ ok: false, error: String(err), accepted: [] });
   } finally {

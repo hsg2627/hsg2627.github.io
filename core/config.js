@@ -3,7 +3,7 @@
 export const CONFIG = {
   // ---- Nhận dạng phiên bản: ghi vào MỌI dòng log ----
   APP_VERSION: 'v0.1.0',
-  CONTENT_VERSION: 'c1.0.0',
+  CONTENT_VERSION: 'c1.0.1',
   SCHEMA_VERSION: 1,
 
   // ---- Điểm nhận dữ liệu (dán URL Apps Script sau khi Deploy) ----
@@ -51,7 +51,7 @@ export const EVENT_TYPES = [
   'item_view', 'item_answer',
   'quest_accept', 'quest_complete',
   'shop_purchase', 'level_up',
-  'ai_eval_open', 'ai_eval_answer',
+  'ai_eval_open', 'ai_eval_answer', 'ai_eval_bug',
   'artifact_submit',
   'error_shown', 'help_open',
   'data_export', 'data_delete',

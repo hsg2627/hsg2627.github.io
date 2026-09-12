@@ -967,6 +967,7 @@ cam kết phân tích — mất sạch dữ liệu, và không ai biết là đ�
 | Viết | Nộp bài | `Spine.submitArtifact(id, { unit, aiUse })` |
 | Xưởng AI | Tác vụ hiện lên | `Spine.aiEvalOpen(id, { kind, hasError })` |
 | | Trả lời | `Spine.aiEvalAnswer(id, { kind, hasError, correct, chosen, reason, category })` |
+| | Báo lỗi học liệu | `Spine.aiEvalBug(id, { kind, bugType, reason, itemCorrect, category, unit })` |
 | Nhiệm vụ hôm nay | Nhận / xong | `Spine.acceptQuest(id)` · `Spine.completeQuest(id, {...})` |
 | Của tôi | Tải về / xoá | `Spine.exportMyData()` · `Spine.deleteMyData()` |
 | Bất kỳ | Lỗi hiện ra cho HS | `Spine.errorShown(code, detail)` |
@@ -1282,22 +1283,50 @@ Bảy luật của màn hình này:
 4. Giao diện **không bao giờ** để lộ tỉ lệ có lỗi / không lỗi. Không hiện "3
    trong 10 bài này không có lỗi".
 5. `correct` tính như sau, và chỉ như sau:
-   - `error.present === true` → đúng khi `chosen === error.span`
+   - `error.present === true` → đúng khi em chạm **đúng cụm chứa** `error.span`
    - `error.present === false` → đúng khi học sinh bấm "không có lỗi"
+
+   Neo bằng **chỉ số cụm**, không bằng `===` trên chuỗi. Ngân hàng viết
+   `error.span` theo hai kiểu — nguyên cụm, hoặc chỉ mấy chữ sai bên trong cụm
+   ("an useful advice", "are gooder") — nên so chuỗi làm 14/42 item có lỗi
+   không đời nào trả lời đúng được, và ép tỉ lệ phát hiện của hạng mục 7 học kỳ
+   2 về 0%. `resolveAnswerIdx()` trong `ai-logs/js/app.js` quy cả hai kiểu về
+   một chỉ số. Chạy `scratch/check_ai_eval_bank.py` sau mỗi lần sửa ngân hàng.
 6. Phản hồi hiện `error.correction` và `error.explanation`. Với item sạch: "Đúng
    rồi, đoạn này không có lỗi." — và với em chọn nhầm một span, nói rõ chỗ đó
    **đúng** chứ không phải "gần đúng".
 7. `category` truyền vào `aiEvalAnswer` lấy từ `error.category`; item sạch lấy
    `error.probe_category`. Nhờ đó báo động giả cũng quy được về từng loại lỗi.
+8. **Hộp thư báo lỗi** — nút "🐞 Em thấy bài này có chỗ chưa ổn?" dưới thẻ phản
+   hồi. Học sinh ở đây đóng vai **người kiểm thử học liệu**, không phải người
+   xin phúc khảo. Bốn ràng buộc, cả bốn đều là ràng buộc đo lường:
+   - Chỉ hiện **sau** khi em đã nộp nhận định. Hiện sớm là mách nước "bài này có
+     thể hỏng" trước khi em kịp phán xét — hỏng luôn phép đo chính.
+   - **Không đổi điểm, không sửa `correct`.** Item có hỏng thật hay không thì
+     loại item khỏi mẫu ở khâu phân tích, không phải lật điểm trong giao diện.
+   - **Bắt buộc viết lý do** ≥ 15 ký tự. Thư trống không phải dữ liệu.
+   - **Không thưởng XP.** Thưởng là mua lấy báo lỗi rác, và phá luật cường độ
+     game hoá ngang nhau giữa Luyện tập và Xưởng AI.
+
+   `bugType` có ba giá trị: `key` (đáp án sai) · `text` (câu tiếng Anh AI viết
+   hỏng) · `app` (trang chạy sai). Hai cái đầu là dữ liệu Miền 6; `app` là lưới
+   an toàn kỹ thuật, lọc riêng ra, đừng trộn vào tỉ lệ nào.
+
+   Trường đáng giá nhất là `item_correct`. Em báo lỗi **trong khi đã làm đúng**
+   bài đó là bằng chứng sạch nhất trong cả bộ dữ liệu, vì em chẳng được lợi gì
+   khi báo. Thư của em hiện lại ở `/me/` §9.7.
 
 ### 9.7 `/me/` — Dữ liệu của tôi
 
-Ba khối:
+Bốn khối:
 
 1. **Tiến độ** — từ `Spine.metrics`: ngày hoạt động, câu đã làm, độ chính xác,
    chuỗi dài nhất, cấp độ, XP.
 2. **Trạng thái gửi** — `Spine.pending` ("đang chờ gửi: 0") và nút "Gửi ngay"
    (`Spine.flush()`). Để học sinh mạng yếu tự bấm trước khi tắt máy.
+2b. **Hộp thư của em** — `Spine.myBugReports()`, mới nhất trước. Nói thẳng ở đầu
+   khối là gửi bao nhiêu thư cũng không ảnh hưởng điểm. Chữ học sinh gõ phải đi
+   qua `esc()` trước khi vào HTML.
 3. **Quyền của em** — hai nút:
    - "Tải dữ liệu của tôi" → `Spine.exportMyData()`
    - "**Xoá dữ liệu học tập của tôi**" → `Spine.deleteMyData()`, có bước xác nhận

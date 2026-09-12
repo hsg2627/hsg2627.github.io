@@ -78,8 +78,35 @@ async function renderTaskSequence(setKey) {
     }
 
     let taskIndex = 0;
-    let chosenSpan = null; // null | '__NO_ERROR__' | exact span string
+    let chosenSpan = null; // null | '__NO_ERROR__' | nội dung cụm học sinh chạm
+    let chosenIdx = null;  // null | -1 (chọn "không có lỗi") | chỉ số cụm
     let isEvaluated = false;
+
+    // Neo đáp án về CHỈ SỐ cụm, không so khớp chuỗi.
+    //
+    // `error.span` trong ngân hàng được viết theo hai kiểu: có item ghi nguyên
+    // văn cả cụm, có item chỉ ghi mấy chữ sai nằm bên trong cụm ("an useful
+    // advice", "are gooder", "relies with digital devices"). So bằng === thì
+    // kiểu thứ hai không đời nào khớp — học sinh chạm đúng cụm vẫn bị chấm sai,
+    // và tỉ lệ phát hiện của những hạng mục đó bị ép về 0. Hàm này quy cả hai
+    // kiểu về một chỉ số duy nhất. Xem SITE-SPEC.md §9.6 luật 5.
+    function resolveAnswerIdx(task) {
+      if (!task.error || !task.error.present) return -1;
+      const spans = task.spans.map(s => String(s).trim());
+      const key = String(task.error.span || '').trim();
+
+      let idx = spans.indexOf(key);
+      if (idx === -1) idx = spans.findIndex(s => s.includes(key));
+      if (idx === -1) {
+        const norm = t => t.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+        const nk = norm(key);
+        if (nk) idx = spans.findIndex(s => norm(s).includes(nk));
+      }
+      if (idx === -1) {
+        console.error(`[Xưởng AI] ${task.id}: error.span không nằm trong cụm nào —`, key);
+      }
+      return idx;
+    }
 
     function renderTask(idx) {
       if (idx >= data.items.length) {
@@ -89,6 +116,7 @@ async function renderTaskSequence(setKey) {
 
       const task = data.items[idx];
       chosenSpan = null;
+      chosenIdx = null;
       isEvaluated = false;
 
       // 1. Mở bài và bấm giờ
@@ -134,6 +162,7 @@ async function renderTaskSequence(setKey) {
           </div>
 
           <div id="ai-feedback-box"></div>
+          <div id="ai-bug-box"></div>
 
           <div class="btn-row">
             <button id="btn-submit-eval" class="btn btn-wide" disabled>Gửi nhận xét thẩm định</button>
@@ -159,6 +188,7 @@ async function renderTaskSequence(setKey) {
 
           el.classList.add('selected');
           chosenSpan = el.textContent.trim();
+          chosenIdx = Number(el.dataset.spanIdx);
           submitBtn.disabled = false;
         });
       });
@@ -171,6 +201,7 @@ async function renderTaskSequence(setKey) {
         noErrorBtn.classList.add('selected');
 
         chosenSpan = '__NO_ERROR__';
+        chosenIdx = -1;
         submitBtn.disabled = false;
       });
 
@@ -182,50 +213,57 @@ async function renderTaskSequence(setKey) {
         noErrorBtn.disabled = true;
 
         const hasError = !!task.error.present;
-        let isCorrect = false;
+        const answerIdx = resolveAnswerIdx(task);
+        const isCorrect = hasError ? (chosenIdx === answerIdx) : (chosenIdx === -1);
 
-        if (hasError) {
-          isCorrect = (chosenSpan === task.error.span);
-        } else {
-          isCorrect = (chosenSpan === '__NO_ERROR__');
-        }
-
-        // Highlight spans
-        spanEls.forEach(el => {
-          const txt = el.textContent.trim();
-          if (hasError && txt === task.error.span) {
+        // Tô màu theo chỉ số cụm, cùng một neo với lúc chấm
+        spanEls.forEach((el, i) => {
+          if (hasError && i === answerIdx) {
             el.classList.add('correct-span');
-          } else if (txt === chosenSpan && !isCorrect) {
+          } else if (i === chosenIdx && !isCorrect) {
             el.classList.add('wrong-span');
           }
         });
 
-        // Phản hồi chi tiết
+        // Phản hồi chi tiết — SITE-SPEC.md §9.6 luật 6
+        const picked = chosenIdx >= 0 ? String(task.spans[chosenIdx]).trim() : '';
         let fbHtml = '';
-        if (isCorrect) {
+
+        if (isCorrect && hasError) {
           fbHtml = `
             <div class="fb">
               <h4>✓ Nhận định chính xác!</h4>
-              ${hasError ? `
-                <p><strong>Cụm từ sai:</strong> <code>${task.error.span}</code><br>
-                <strong>Sửa đúng:</strong> <code>${task.error.correction}</code><br>
-                ${task.error.explanation}</p>
-              ` : `
-                <p>Đúng rồi, đoạn văn này hoàn toàn chuẩn xác và không chứa lỗi ngữ pháp hay từ vựng.</p>
-              `}
+              <p><strong>Cụm sai:</strong> <code>${task.error.span}</code><br>
+              <strong>Sửa lại:</strong> <code>${task.error.correction}</code><br>
+              <strong>Giải thích:</strong> ${task.error.explanation}</p>
+            </div>
+          `;
+        } else if (isCorrect) {
+          fbHtml = `
+            <div class="fb">
+              <h4>✓ Nhận định chính xác!</h4>
+              <p>Đúng rồi, đoạn này không có lỗi.</p>
+              ${task.error.explanation ? `<p><strong>Vì sao:</strong> ${task.error.explanation}</p>` : ''}
+            </div>
+          `;
+        } else if (hasError) {
+          fbHtml = `
+            <div class="fb bad">
+              <h4>✕ Nhận định chưa chính xác</h4>
+              ${picked
+                ? `<p>Cụm em chọn — <code>${picked}</code> — <strong>dùng đúng</strong>.</p>`
+                : `<p>Đoạn này <strong>có lỗi sai</strong>, em đã bỏ sót.</p>`}
+              <p>Lỗi nằm ở cụm: <code>${task.error.span}</code><br>
+              <strong>Sửa lại:</strong> <code>${task.error.correction}</code><br>
+              <strong>Giải thích:</strong> ${task.error.explanation}</p>
             </div>
           `;
         } else {
           fbHtml = `
             <div class="fb bad">
               <h4>✕ Nhận định chưa chính xác</h4>
-              ${hasError ? `
-                <p>Đoạn văn này <strong>có lỗi sai</strong> tại cụm: <code>${task.error.span}</code><br>
-                <strong>Sửa lại:</strong> <code>${task.error.correction}</code><br>
-                <strong>Giải thích:</strong> ${task.error.explanation}</p>
-              ` : `
-                <p>Đoạn văn này là một đoạn văn <strong>chuẩn xác, không có lỗi</strong>. Cụm từ em chọn đã được dùng đúng ngữ pháp.</p>
-              `}
+              <p>Đoạn này <strong>không có lỗi</strong>. Cụm em chọn — <code>${picked}</code> — <strong>dùng đúng</strong>.</p>
+              ${task.error.explanation ? `<p><strong>Vì sao:</strong> ${task.error.explanation}</p>` : ''}
             </div>
           `;
         }
@@ -249,6 +287,8 @@ async function renderTaskSequence(setKey) {
           Portal.toast('+10 XP (Thẩm định đúng)');
         }
 
+        renderBugBox(task, { isCorrect, categoryId, chosenIdx, answerIdx, hasError });
+
         nextBtn.style.display = 'block';
       });
 
@@ -256,6 +296,161 @@ async function renderTaskSequence(setKey) {
         taskIndex++;
         renderTask(taskIndex);
       });
+    }
+
+    // Hộp chat báo lỗi — học sinh đóng vai NGƯỜI KIỂM THỬ học liệu.
+    //
+    // Chỉ dựng SAU khi em đã nộp nhận định. Hiện sớm là mách nước "bài này có
+    // thể hỏng" trước khi em kịp phán xét, hỏng luôn phép đo chính.
+    //
+    // Dạng chat để em chịu viết — form thì em bỏ trống, khung nhắn thì em gõ.
+    // Nhưng KHÔNG giả vờ có người trả lời ngay: bong bóng xác nhận nói thẳng là
+    // cô đọc khi thu dữ liệu. Hứa hão một lần là các em thôi gửi mãi mãi.
+    //
+    // Không thưởng XP. Thưởng là mua lấy báo lỗi rác, và còn phá luật cường độ
+    // game hoá ngang nhau giữa Luyện tập và Xưởng AI.
+    function renderBugBox(task, { isCorrect, categoryId, chosenIdx, answerIdx, hasError }) {
+      const box = document.getElementById('ai-bug-box');
+      if (!box) return;
+
+      const MIN_REASON = 15;
+      const MAX_MESSAGES = 3;
+      const TYPES = [
+        { id: 'key', label: 'Đáp án sai' },
+        { id: 'text', label: 'Tiếng Anh nghe kỳ' },
+        { id: 'app', label: 'Trang chạy sai' },
+      ];
+
+      const GREETING = 'Đoạn văn này do AI viết, nên bản thân nó vẫn sai được — '
+        + 'kể cả đáp án. Em thấy chỗ nào chưa ổn thì nhắn cho cô nhé.';
+
+      let bugType = null;
+      let sent = 0;
+
+      box.innerHTML = `
+        <button id="btn-open-bug" class="btn ghost btn-wide">💬 Nhắn cho cô về bài này</button>
+      `;
+      document.getElementById('btn-open-bug').addEventListener('click', openChat);
+
+      function openChat() {
+        box.innerHTML = `
+          <div class="panel chat">
+            <h4 class="chat-title">💬 Nhắn cho cô về bài này</h4>
+            <div class="chat-log" id="chat-log">
+              <div class="msg from-teacher">${GREETING}</div>
+            </div>
+
+            <p class="chat-hint" id="chat-type-label">Em muốn báo chuyện gì?</p>
+            <div class="chat-chips" id="chat-chips">
+              ${TYPES.map(t => `
+                <button class="chip-btn" data-bug="${t.id}" aria-pressed="false">${t.label}</button>
+              `).join('')}
+            </div>
+
+            <div class="chat-compose">
+              <textarea id="bug-reason" class="chat-input" rows="2" maxlength="400"
+                placeholder="Em nói rõ giúp cô: sai ở chỗ nào, theo em thì đúng phải thế nào?"></textarea>
+              <button id="btn-send-bug" class="btn chat-send" disabled>Gửi</button>
+            </div>
+            <p class="chat-hint" id="chat-foot">
+              Nhắn cho cô <strong>không làm đổi kết quả</strong> bài này.
+            </p>
+          </div>
+        `;
+
+        const chips = box.querySelectorAll('.chip-btn');
+        const log = document.getElementById('chat-log');
+        const reasonEl = document.getElementById('bug-reason');
+        const sendBtn = document.getElementById('btn-send-bug');
+
+        function refresh() {
+          sendBtn.disabled = !bugType || reasonEl.value.trim().length < MIN_REASON;
+        }
+
+        chips.forEach(c => c.addEventListener('click', () => {
+          chips.forEach(o => o.setAttribute('aria-pressed', 'false'));
+          c.setAttribute('aria-pressed', 'true');
+          bugType = c.dataset.bug;
+          refresh();
+          reasonEl.focus();
+        }));
+
+        reasonEl.addEventListener('input', refresh);
+        reasonEl.addEventListener('keydown', (e) => {
+          // Enter gửi, Shift+Enter xuống dòng — đúng thói quen nhắn tin.
+          if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            if (!sendBtn.disabled) send();
+          }
+        });
+        sendBtn.addEventListener('click', () => { if (!sendBtn.disabled) send(); });
+
+        function bubble(cls, htmlText) {
+          const el = document.createElement('div');
+          el.className = 'msg ' + cls;
+          el.innerHTML = htmlText;
+          log.appendChild(el);
+          log.scrollTop = log.scrollHeight;
+        }
+
+        function send() {
+          const text = reasonEl.value.trim();
+          const typeLabel = (TYPES.find(t => t.id === bugType) || {}).label || '';
+
+          Portal.spine.aiEvalBug(task.id, {
+            kind: task.kind,
+            bugType,
+            reason: text,
+            itemCorrect: isCorrect,
+            category: categoryId,
+            unit: setId,
+            snapshot: {
+              spans: task.spans.slice(),
+              chosen_idx: chosenIdx,
+              chosen_text: chosenIdx >= 0 ? String(task.spans[chosenIdx]).trim() : null,
+              chose_no_error: chosenIdx === -1,
+              answer_idx: hasError ? answerIdx : null,
+              has_error: hasError,
+              answer_span: hasError ? task.error.span : null,
+              correction: hasError ? task.error.correction : null,
+              explanation: task.error.explanation || null,
+            },
+          });
+
+          sent += 1;
+          const time = new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' });
+          bubble('from-me',
+            `<span class="msg-tag">${escapeHtml(typeLabel)}</span>${escapeHtml(text)}` +
+            `<span class="msg-meta">${time} · ✓ đã ghi vào hộp thư</span>`);
+
+          reasonEl.value = '';
+          refresh();
+
+          if (sent === 1) {
+            bubble('from-teacher',
+              'Cô nhận được rồi. Cô đọc và kiểm lại từng cái khi thu dữ liệu — ' +
+              'không trả lời ngay ở đây được, nhưng thư của em không mất đi đâu cả.');
+          }
+
+          if (sent >= MAX_MESSAGES) {
+            document.getElementById('chat-chips').style.display = 'none';
+            document.getElementById('chat-type-label').style.display = 'none';
+            document.querySelector('.chat-compose').style.display = 'none';
+            document.getElementById('chat-foot').innerHTML =
+              'Em đã nhắn ' + sent + ' tin cho bài này. Xem lại mọi thư ở mục <strong>Của tôi</strong>.';
+          } else {
+            document.getElementById('chat-foot').innerHTML =
+              'Nhắn cho cô <strong>không làm đổi kết quả</strong> bài này. ' +
+              'Xem lại thư đã gửi ở mục <strong>Của tôi</strong>.';
+          }
+        }
+      }
+    }
+
+    function escapeHtml(t) {
+      return String(t == null ? '' : t).replace(/[&<>"']/g, c => (
+        { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]
+      ));
     }
 
     function renderCompletion() {

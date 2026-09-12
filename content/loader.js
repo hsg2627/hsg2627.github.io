@@ -4,7 +4,7 @@
 // không xử lý sự kiện. Xem DATA-DESIGN.md §10. Đừng "sửa" thành Spine.*.
 // Tệp này KHÔNG được import bất cứ thứ gì trong core/.
 
-const VER = 'c1.0.0';   // phải khớp CONTENT_VERSION trong core/config.js
+const VER = 'c1.0.1';   // phải khớp CONTENT_VERSION trong core/config.js
 
 export async function loadJSON(relPath) {
   const cleanPath = relPath.startsWith('/') ? relPath.slice(1) : relPath;

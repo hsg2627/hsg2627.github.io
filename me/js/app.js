@@ -1,6 +1,18 @@
 // me/js/app.js — Màn hình "Dữ liệu của tôi"
 import { Portal } from '/js/progress.js';
 
+const BUG_LABEL = {
+  key:  'Đáp án sai',
+  text: 'Tiếng Anh hỏng',
+  app:  'Trang chạy sai',
+};
+
+function esc(t) {
+  return String(t ?? '').replace(/[&<>"']/g, c => (
+    { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]
+  ));
+}
+
 const boot = await Portal.boot({ module: 'me', tab: 'me' });
 
 if (boot.ok) {
@@ -16,6 +28,21 @@ function renderMe() {
   const state = spine.state;
   const pseudoId = spine.id || 'Chưa đăng nhập';
   const pending = spine.pending;
+  const bugs = spine.myBugReports();
+
+  // Gom thành luồng theo từng bài, trong luồng thì cũ trước mới sau — đọc như
+  // một cuộc trò chuyện chứ không phải một chồng phiếu rời.
+  const threads = [];
+  const byItem = {};
+  for (const b of bugs) {
+    if (!byItem[b.item_id]) {
+      byItem[b.item_id] = {
+        itemId: b.item_id, unit: b.unit || '', itemCorrect: !!b.item_correct, msgs: [],
+      };
+      threads.push(byItem[b.item_id]);
+    }
+    byItem[b.item_id].msgs.unshift(b);
+  }
 
   const totalItems = metrics.items_answered || 0;
   const accuracyPct = Math.round((metrics.accuracy || 0) * 100);
@@ -75,7 +102,45 @@ function renderMe() {
       </p>
     </section>
 
-    <!-- Khối 3: Quyền riêng tư & Dữ liệu của em -->
+    <!-- Khối 3: Hộp thư báo lỗi -->
+    <section class="panel">
+      <h2 style="margin-top:0;">📮 Hộp thư của em</h2>
+      <p style="font-size:14.5px; color:var(--muted); margin:-4px 0 14px; line-height:1.5;">
+        Những lỗi em phát hiện được trong học liệu do AI viết. Em gửi bao nhiêu thư
+        cũng <strong>không ảnh hưởng điểm</strong> — đây là việc của người kiểm thử,
+        không phải xin phúc khảo.
+      </p>
+      ${bugs.length === 0 ? `
+        <p style="font-size:14.5px; color:var(--muted); margin:0;">
+          Em chưa nhắn tin nào. Khi làm Xưởng AI, nếu thấy đáp án chưa đúng hoặc câu
+          tiếng Anh nghe kỳ, bấm <strong>💬 Nhắn cho cô về bài này</strong>
+          ở cuối phần phản hồi nhé.
+        </p>
+      ` : `
+        <p style="font-size:14.5px; margin:0 0 14px;">
+          Em đã nhắn <strong style="color:var(--navy);">${bugs.length}</strong> tin
+          về <strong style="color:var(--navy);">${threads.length}</strong> bài.
+        </p>
+        ${threads.map(t => `
+          <div class="thread">
+            <div class="thread-head">
+              <strong>${esc(t.itemId)}</strong>
+              <span>${esc(t.unit)}${t.itemCorrect ? ' · em đã làm đúng bài này' : ''}</span>
+            </div>
+            ${t.msgs.map(b => `
+              <div class="msg from-me">
+                <span class="msg-tag">${esc(BUG_LABEL[b.bug_type] || 'Khác')}</span>${esc(b.reason)}
+                <span class="msg-meta">${new Date(b.at).toLocaleString('vi-VN', {
+                  day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit',
+                })} · ✓ đã ghi</span>
+              </div>
+            `).join('')}
+          </div>
+        `).join('')}
+      `}
+    </section>
+
+    <!-- Khối 4: Quyền riêng tư & Dữ liệu của em -->
     <section class="panel">
       <h2 style="margin-top:0;">🔒 Quyền của em</h2>
       <p style="font-size:15px;">

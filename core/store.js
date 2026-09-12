@@ -4,9 +4,13 @@
 // Mọi thay đổi đi qua Store.update() để chỉ có một chỗ ghi xuống đĩa.
 
 import { RULES } from './config.js';
-import { readJSON, writeJSON, todayKey, debounce } from './util.js';
+import { readJSON, writeJSON, todayKey, debounce, uuid, nowISO } from './util.js';
 
 const KEY = 'dt_state_v1';
+
+// Trần số thư giữ trên máy. Thư đã vào hàng đợi Transport rồi, mảng này chỉ
+// để em xem lại ở màn "Của tôi" — không cần giữ vô hạn.
+const MAX_BUG_REPORTS = 200;
 
 function blank() {
   return {
@@ -21,6 +25,7 @@ function blank() {
     items: {},            // { 'U1-VOC-014': { attempts, correct } }
     quests: {},           // { 'daily-2026-09-14': { accepted, done } }
     flags: {},            // { leaderboard_optin: false }
+    bug_reports: [],       // thư báo lỗi Xưởng AI, xem addBugReport()
   };
 }
 
@@ -131,6 +136,28 @@ export const Store = {
       s.xp += n;
       s.level = levelFor(s.xp);
     });
+  },
+
+  /**
+   * Ghi một thư phản biện ở Xưởng AI.
+   *
+   * KHÔNG đụng tới xp, streak, hay s.items: gửi thư không đổi kết quả bài nào
+   * cả. Đây là bản lưu để em đọc lại; bản dùng cho nghiên cứu đi qua Log.event.
+   */
+  addBugReport(rec) {
+    const row = { id: uuid(), at: nowISO(), ...rec };
+    Store.update((s) => {
+      if (!Array.isArray(s.bug_reports)) s.bug_reports = [];
+      s.bug_reports.push(row);
+      while (s.bug_reports.length > MAX_BUG_REPORTS) s.bug_reports.shift();
+    });
+    return row;
+  },
+
+  /** Bản sao mảng thư, cũ trước mới sau. */
+  bugReports() {
+    const s = Store.get();
+    return Array.isArray(s.bug_reports) ? s.bug_reports.slice() : [];
   },
 
   /** Chỉ số phục vụ phân tích, tính ngay trên máy để hiển thị màn "Tiến độ". */

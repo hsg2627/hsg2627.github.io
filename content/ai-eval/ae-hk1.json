@@ -297,7 +297,7 @@
         "category": 3,
         "span": "Community centers should build",
         "correction": "Community centers should be built",
-        "explanation": "Chủ ngữ là vật 'Community centers' nên phải dùng bị động 'should be built'."
+        "explanation": "Chủ ngữ 'Community centers' là cái ĐƯỢC xây, không phải người xây -> dùng bị động. Sau modal verb luôn là 'be + V3': should be built."
       }
     },
     {
@@ -437,7 +437,7 @@
         "category": 5,
         "span": "an useful advice",
         "correction": "useful advice",
-        "explanation": "'Advice' là danh từ không đếm được nên không dùng 'an', và 'useful' bắt đầu bằng bán nguyên âm /j/."
+        "explanation": "'Advice' là danh từ không đếm được nên không đi với 'an'. Muốn đếm thì nói 'a piece of advice'."
       }
     },
     {
@@ -485,7 +485,7 @@
         "category": 5,
         "span": "many electronic furnitures",
         "correction": "much electronic furniture",
-        "explanation": "'Furniture' là danh từ không đếm được, không có dạng số nhiều thêm 's'."
+        "explanation": "'Furniture' là danh từ không đếm được: không thêm '-s', và không đi với 'many' mà đi với 'much / a lot of'."
       }
     },
     {

@@ -2,3 +2,10 @@ GEMINI.md
 .antigravity
 ocr_dump.json
 scratch/
+
+# Chữ học sinh viết — KHÔNG BAO GIỜ commit.
+# Repo này publish công khai qua GitHub Pages: commit vào đây là đăng bài viết
+# của trẻ vị thành niên lên một URL ai cũng mở được. Xem AGENTS.md mục 3.
+minh-chung/
+scratch/exports/
+du-lieu-cua-toi-*.json

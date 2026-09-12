@@ -480,6 +480,13 @@ khi thực hiện.
 | 2026-08-26 | Bỏ `/english10/` phía học sinh | Học sinh chỉ có Luyện tập và Xưởng AI; không dựng hai đường vào cùng nội dung |
 | 2026-08-26 | Mã giáo viên `GV-NK-01`, **không** thêm vào `ID_PATTERN` | Giáo viên không phải đối tượng nghiên cứu; mã GV không được xuất hiện trong log |
 | 2026-08-26 | Cảnh báo AI **chỉ tiếng Anh**, không thêm bản dịch tiếng Việt | Đã cân nhắc và bác |
+| 2026-08-27 | Chấm Xưởng AI neo theo **chỉ số cụm**, bỏ so chuỗi `===` | 14/42 item có lỗi không thể trả lời đúng vì `error.span` viết theo hai kiểu; hạng mục 7 HK2 bị ép về 0% phát hiện — hỏng RQ3 |
+| 2026-08-27 | Thêm **hộp thư báo lỗi**, học sinh đóng vai người kiểm thử | Em phát hiện AI viết sai mà không có cách nào nói ra thì bị ghi thành báo động giả — sai số đang có thật, không phải tính năng thêm cho vui |
+| 2026-08-27 | Thêm loại sự kiện `ai_eval_bug`, đi lệch ghi chú 21/08 | Báo lỗi là hành vi khác hẳn trả lời; ghép vào `ai_eval_answer` là đếm sai số bài đã làm |
+| 2026-08-27 | Báo lỗi **không đổi điểm, không thưởng XP** | Lật điểm thì tỉ lệ phát hiện mất nghĩa; thưởng XP thì mua lấy báo lỗi rác và phá parity game hoá với Luyện tập |
+| 2026-09-12 | **Huỷ toàn bộ dữ liệu Xưởng AI thu trước bản sửa 27/08**, dọn một lần trên từng máy | Mọi câu trả lời cũ đều chấm bằng `===`, mang đúng lỗi đo đã ghi ở dòng 27/08; trộn với dữ liệu sau khi sửa là hỏng RQ3. ENDPOINT còn rỗng nên chưa dòng nào rời máy học sinh — không dọn thì lúc cắm endpoint chúng chảy thẳng vào Sheet |
+| 2026-09-12 | Dọn **hẹp**: xoá sự kiện `module === ai_forge` và `bug_reports`, giữ nguyên XP, vàng, cấp độ, streak, ngày hoạt động | Xưởng AI không cộng XP (chỉ đường Luyện tập cộng) nên tiến trình game hoá không nhiễm lỗi đo. Xoá sạch trạng thái là phạt học sinh vì lỗi của trang, và thổi bay luôn dữ liệu Miền 1 vốn sạch |
+| 2026-09-12 | Xoá cả `module_open` của Xưởng AI, không chỉ riêng câu trả lời | Giữ lượt mở mà bỏ câu trả lời thì trong phân tích em thành "vào rồi bỏ ngang" — một hành vi không có thật, sai lệch hơn là không có dòng nào |
 
 ---
 
