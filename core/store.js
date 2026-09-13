@@ -12,6 +12,20 @@ const KEY = 'dt_state_v1';
 // để em xem lại ở màn "Của tôi" — không cần giữ vô hạn.
 const MAX_BUG_REPORTS = 200;
 
+// Bộ đếm theo ngày chỉ phục vụ thẻ Today / Week ở trang chủ. Dữ liệu
+// nghiên cứu vẫn là các dòng item_answer có dấu thời gian trong log; đây chỉ là bản
+// tóm tắt để hiển thị, nên giữ 60 ngày gần nhất là đủ.
+const DAILY_KEEP = 60;
+
+/** Khoá ngày theo giờ máy, cùng dạng với todayKey(). offset âm là lùi về quá khứ. */
+function dayKey(offset) {
+  const d = new Date();
+  d.setDate(d.getDate() + offset);
+  const p = (n) => String(n).padStart(2, '0');
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+}
+
+
 function blank() {
   return {
     v: 1,
@@ -26,6 +40,7 @@ function blank() {
     quests: {},           // { 'daily-2026-09-14': { accepted, done } }
     flags: {},            // { leaderboard_optin: false }
     bug_reports: [],       // thư báo lỗi Xưởng AI, xem addBugReport()
+    daily: {},             // { '2026-09-14': { answered, correct } } — thẻ Today / Week
   };
 }
 
@@ -94,6 +109,15 @@ export const Store = {
       u.items_done += 1;
       if (correct) u.correct += 1;
       s.units[String(unit)] = u;
+
+      if (!s.daily || typeof s.daily !== 'object') s.daily = {};
+      const dk = dayKey(0);
+      const dd = s.daily[dk] || { answered: 0, correct: 0 };
+      dd.answered += 1;
+      if (correct) dd.correct += 1;
+      s.daily[dk] = dd;
+      const days = Object.keys(s.daily).sort();
+      while (days.length > DAILY_KEEP) delete s.daily[days.shift()];
 
       if (correct) {
         xp_delta += RULES.XP_CORRECT;
@@ -166,6 +190,19 @@ export const Store = {
     const items = Object.values(s.items);
     const attempts = items.reduce((a, b) => a + b.attempts, 0);
     const correct = items.reduce((a, b) => a + b.correct, 0);
+    const daily = s.daily || {};
+    const sumDays = (n) => {
+      let answered = 0;
+      let dayCorrect = 0;
+      for (let i = 0; i < n; i++) {
+        const d = daily[dayKey(-i)];
+        if (d) {
+          answered += d.answered;
+          dayCorrect += d.correct;
+        }
+      }
+      return { answered, correct: dayCorrect };
+    };
     return {
       active_days: s.active_days.length,
       units_touched: Object.keys(s.units).length,
@@ -176,6 +213,9 @@ export const Store = {
       xp: s.xp,
       gold: s.gold,
       level: s.level,
+      total_correct: correct,
+      today: sumDays(1),
+      week: sumDays(7),
     };
   },
 

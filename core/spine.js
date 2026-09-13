@@ -13,6 +13,7 @@ import { Log } from './logger.js';
 import { Transport } from './transport.js';
 import { storageAvailable, downloadText, todayKey } from './util.js';
 import { purgeAiEvalOnce } from './purge-ai-eval.js';
+import { Theme } from './theme.js';
 
 let ready = false;
 
@@ -58,6 +59,12 @@ export const Spine = {
   get metrics() { return Store.metrics(); },
   get pending() { return Transport.pending; },
   get isReady() { return ready; },
+
+  /** Nền đang hiển thị: 'light' | 'dark'. */
+  get theme() { return Theme.current; },
+
+  /** Đổi nền sáng/tối. KHÔNG ghi log — tuỳ chọn hiển thị, không phải hành vi học. */
+  setTheme(t) { return Theme.set(t); },
 
   // ── Ghi nhận hành vi ────────────────────────────────────────────────
 

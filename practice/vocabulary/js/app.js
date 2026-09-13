@@ -135,7 +135,7 @@ async function renderUnit(unitNum) {
               <span style="font-size:13px; color:var(--muted);">Progress: <strong>${answered}/${total}</strong> items</span>
               <span style="font-size:13px; color:var(--muted);">${pct}%</span>
             </div>
-            <div class="bar" style="height:8px; border-radius:4px; background:var(--surface2, #e8e8e8);"><i style="width:${pct}%; background:var(--ok, #34a853); height:100%; display:block; border-radius:4px; transition:width 0.3s ease;"></i></div>
+            <div class="bar" style="height:8px; border-radius:4px; background:var(--sunk);"><i style="width:${pct}%; background:var(--ok); height:100%; display:block; border-radius:4px; transition:width 0.2s ease;"></i></div>
           </div>
         ` : ''}
 
@@ -305,7 +305,7 @@ async function renderUnit(unitNum) {
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:6px;">
           <span style="font-size:13.5px; font-weight:700; color:var(--muted);">Question ${quizIndex + 1} of ${data.items.length}</span>
           <div style="display:flex; gap:6px; align-items:center;">
-            ${typeLabel ? `<span style="font-size:11px; padding:2px 8px; background:var(--surface2, #f0f0f0); border-radius:10px; color:var(--muted);">${typeLabel}</span>` : ''}
+            ${typeLabel ? `<span style="font-size:11px; padding:2px 8px; background:var(--sunk); border-radius:10px; color:var(--muted);">${typeLabel}</span>` : ''}
             ${item.ai_generated ? `<div class="chip-ai" style="margin:0;">🤖 AI-Generated</div>` : ''}
           </div>
         </div>

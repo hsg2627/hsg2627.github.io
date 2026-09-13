@@ -44,7 +44,9 @@ function renderMe() {
     byItem[b.item_id].msgs.unshift(b);
   }
 
-  const totalItems = metrics.items_answered || 0;
+  // Đúng tên khoá của Store.metrics(). Bản cũ đọc items_answered và days_active —
+  // hai khoá không tồn tại — nên trang luôn báo 1 ngày, 0 câu, độ chính xác "--".
+  const totalItems = metrics.items_attempted || 0;
   const accuracyPct = Math.round((metrics.accuracy || 0) * 100);
 
   main.innerHTML = `
@@ -72,7 +74,7 @@ function renderMe() {
       </div>
       <div class="metrics-grid" style="margin-top:8px;">
         <div class="metric-box">
-          <span class="metric-val">${metrics.days_active || 1}</span>
+          <span class="metric-val">${metrics.active_days || 0}</span>
           <span class="metric-lbl">Active days</span>
         </div>
         <div class="metric-box">

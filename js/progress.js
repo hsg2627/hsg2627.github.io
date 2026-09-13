@@ -65,13 +65,14 @@ export const Portal = {
   },
 
   /**
-   * Vẽ thanh HUD trạng thái (Cấp độ, Thanh XP, Chuỗi đúng, Chờ gửi).
+   * Cụm trạng thái ở góc phải header: cấp độ + thanh XP, chuỗi trả lời đúng, số dòng
+   * chờ gửi, nút đổi nền và lối vào My Progress. Gọi lại được nhiều lần — các module
+   * gọi sau mỗi câu trả lời để cập nhật XP.
    */
   renderHud() {
     const el = document.getElementById('hud');
     if (!el || !Spine.isReady) return;
 
-    const m = Spine.metrics;
     const s = Spine.state;
     const pending = Spine.pending;
 
@@ -80,14 +81,36 @@ export const Portal = {
     const nextLvlXp = RULES.LEVELS[lvl] || (lvl * 500);
     const prevLvlXp = RULES.LEVELS[lvl - 1] || 0;
     const progressPct = Math.min(100, Math.max(0, Math.round(((currentXp - prevLvlXp) / (nextLvlXp - prevLvlXp || 1)) * 100)));
+    // Deploy xong, trình duyệt có thể còn spine.js cũ trong cache (Pages: max-age=600)
+    // trong khi tệp này đã mới: chưa có setTheme thì ẩn nút, đừng để nút bấm ra lỗi.
+    const canTheme = typeof Spine.setTheme === 'function';
+    const dark = Spine.theme === 'dark';
 
     el.innerHTML = `
-      <div>Level <b>${lvl}</b></div>
-      <div class="bar" title="XP: ${currentXp}/${nextLvlXp}"><i style="width: ${progressPct}%"></i></div>
-      <div>XP: <b>${currentXp}</b></div>
-      <div>🔥 Streak: <b>${s.streak || 0}</b></div>
-      ${pending > 0 ? `<div title="Data not yet sent to the server" style="color:var(--brass)">⏳ Pending: <b>${pending}</b></div>` : ''}
+      <span class="pill pill-level" title="${currentXp} / ${nextLvlXp} XP">
+        <b>Level ${lvl}</b>
+        <span class="pill-bar" aria-hidden="true"><i style="width:${progressPct}%"></i></span>
+        <span class="pill-xp">${currentXp} XP</span>
+      </span>
+      <span class="pill" title="Correct answers in a row">🔥 <b>${s.streak || 0}</b><span class="sr-only"> correct answers in a row</span></span>
+      ${pending > 0 ? `<span class="pill pill-pending" title="Data not yet sent to the server">⏳ <b>${pending}</b><span class="sr-only"> rows waiting to be sent</span></span>` : ''}
+      ${canTheme ? `<button type="button" class="pill-btn" id="theme-toggle" aria-pressed="${dark}" title="${dark ? 'Switch to light theme' : 'Switch to dark theme'}">
+        <span aria-hidden="true">${dark ? '☀️' : '🌙'}</span><span class="sr-only">Dark theme</span>
+      </button>` : ''}
+      <a class="avatar" href="/me/" title="My Progress"><span aria-hidden="true">👤</span><span class="sr-only">My Progress</span></a>
     `;
+
+    // Đổi tại chỗ, không vẽ lại cả cụm: vẽ lại là nút bị thay mới và người dùng bàn
+    // phím mất vị trí focus ngay sau khi bấm.
+    const btn = el.querySelector('#theme-toggle');
+    if (btn) btn.addEventListener('click', () => {
+      const next = Spine.theme === 'dark' ? 'light' : 'dark';
+      Spine.setTheme(next);
+      const isDark = next === 'dark';
+      btn.setAttribute('aria-pressed', String(isDark));
+      btn.title = isDark ? 'Switch to light theme' : 'Switch to dark theme';
+      btn.firstElementChild.textContent = isDark ? '☀️' : '🌙';
+    });
   },
 
   /**
@@ -103,6 +126,76 @@ export const Portal = {
         <span>${item.label}</span>
       </a>
     `).join('');
+  },
+
+  /**
+   * Cột phải của trang chủ và trang Luyện tập. Chỉ số của CHÍNH em, không so với bạn
+   * khác: mã học sinh là lớp + số thứ tự sổ điểm, nên bảng xếp hạng theo mã là lộ danh
+   * tính trong lớp — và trang không có máy chủ để so giữa các máy.
+   * Trả về HTML; gắn vào DOM rồi gọi bindSidebar() để nút Today / Week / All time chạy.
+   */
+  sidebarHTML() {
+    if (!Spine.isReady) return '';
+    const m = Spine.metrics;
+    // Cùng lý do cache như ở renderHud: store.js cũ chưa có các khoá theo ngày.
+    // Thiếu thì hiện 0 — một thẻ số 0 trong vài phút tốt hơn trang chủ trắng.
+    const today = m.today || { answered: 0, correct: 0 };
+    const week = m.week || { answered: 0, correct: 0 };
+    const totalCorrect = m.total_correct ?? 0;
+    const acc = m.total_attempts ? Math.round(m.accuracy * 100) + '%' : '—';
+    const word = (n, one, many) => (n === 1 ? one : many);
+    const panel = (key, when, answered, correct, hidden) => `
+        <div class="seg-panel" id="seg-${key}" role="tabpanel" aria-labelledby="segtab-${key}"${hidden ? ' hidden' : ''}>
+          <span class="stat-big">${answered}</span>
+          <p class="stat-sub">${word(answered, 'answer', 'answers')} ${when} · <b>${correct}</b> correct</p>
+        </div>`;
+
+    return `
+      <section class="side-card" aria-labelledby="side-practice-h">
+        <h2 class="side-eyebrow" id="side-practice-h"><span aria-hidden="true">⭐</span> Your practice</h2>
+        <div class="seg" role="tablist" aria-label="Period">
+          <button type="button" role="tab" id="segtab-today" aria-controls="seg-today" aria-selected="true">Today</button>
+          <button type="button" role="tab" id="segtab-week" aria-controls="seg-week" aria-selected="false" tabindex="-1">Week</button>
+          <button type="button" role="tab" id="segtab-all" aria-controls="seg-all" aria-selected="false" tabindex="-1">All time</button>
+        </div>
+        ${panel('today', 'today', today.answered, today.correct, false)}
+        ${panel('week', 'in the last 7 days', week.answered, week.correct, true)}
+        ${panel('all', 'in total', m.total_attempts, totalCorrect, true)}
+      </section>
+
+      <section class="side-card" aria-labelledby="side-overview-h">
+        <h2 class="side-eyebrow" id="side-overview-h">Overview</h2>
+        <div class="overview">
+          <div><b>${m.active_days}</b><span>Study days</span></div>
+          <div><b>${m.items_attempted}</b><span>Items tried</span></div>
+          <div><b>${acc}</b><span>Accuracy</span></div>
+        </div>
+      </section>
+    `;
+  },
+
+  /** Nút Today / Week / All time: bấm, hoặc mũi tên trái/phải khi đang focus. */
+  bindSidebar(root) {
+    const tabs = [...root.querySelectorAll('.seg [role="tab"]')];
+    const select = (tab) => {
+      for (const t of tabs) {
+        const on = t === tab;
+        t.setAttribute('aria-selected', String(on));
+        t.tabIndex = on ? 0 : -1;
+        const panelEl = root.querySelector('#' + t.getAttribute('aria-controls'));
+        if (panelEl) panelEl.hidden = !on;
+      }
+    };
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', () => select(t));
+      t.addEventListener('keydown', (e) => {
+        if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+        const step = e.key === 'ArrowRight' ? 1 : tabs.length - 1;
+        const nextTab = tabs[(i + step) % tabs.length];
+        select(nextTab);
+        nextTab.focus();
+      });
+    });
   },
 
   /**
