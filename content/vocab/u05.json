@@ -505,7 +505,7 @@
     {
       "id": "u05_q01",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"The young engineer successfully applied for a ______ for his portable device.\"",
+      "prompt": "Fill in the blank with a suitable word: \"The young engineer successfully applied for a ______ for his portable device.\"",
       "options": [
         "A. highly beneficial",
         "B. print out",
@@ -518,7 +518,7 @@
     {
       "id": "u05_q02",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ cars are expected to reduce traffic accidents dramatically.\"",
+      "prompt": "Fill in the blank with a suitable word: \"______ cars are expected to reduce traffic accidents dramatically.\"",
       "options": [
         "A. device",
         "B. look up",
@@ -531,7 +531,7 @@
     {
       "id": "u05_q03",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Three-______ printing has completely revolutionized medicine and manufacturing.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Three-______ printing has completely revolutionized medicine and manufacturing.\"",
       "options": [
         "A. dimensional",
         "B. reinvent the wheel",
@@ -544,7 +544,7 @@
     {
       "id": "u05_q04",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Laptops are highly ______, allowing students to study anywhere.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Laptops are highly ______, allowing students to study anywhere.\"",
       "options": [
         "A. portable",
         "B. hardware",
@@ -557,7 +557,7 @@
     {
       "id": "u05_q05",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Scientists are looking for ______ ways to convert solar energy more efficiently.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Scientists are looking for ______ ways to convert solar energy more efficiently.\"",
       "options": [
         "A. e-reader",
         "B. innovative",
@@ -570,7 +570,7 @@
     {
       "id": "u05_q06",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Smartphones are ______ devices that serve both communication and entertainment purposes.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Smartphones are ______ devices that serve both communication and entertainment purposes.\"",
       "options": [
         "A. reinvent the wheel",
         "B. charge",
@@ -583,7 +583,7 @@
     {
       "id": "u05_q07",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ is used to create complex machine components in laboratories.\"",
+      "prompt": "Fill in the blank with a suitable word: \"______ is used to create complex machine components in laboratories.\"",
       "options": [
         "A. 3D printing",
         "B. processor speed",
@@ -596,7 +596,7 @@
     {
       "id": "u05_q08",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"___ is playing a growing role in automating classroom administration.\"",
+      "prompt": "Fill in the blank with a suitable word: \"___ is playing a growing role in automating classroom administration.\"",
       "options": [
         "A. plug in",
         "B. AI (artificial intelligence)",
@@ -609,7 +609,7 @@
     {
       "id": "u05_q09",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Smartwatches are modern ______s that track our daily physical activities.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Smartwatches are modern ______s that track our daily physical activities.\"",
       "options": [
         "A. device",
         "B. plug in",
@@ -622,7 +622,7 @@
     {
       "id": "u05_q10",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"An ______ can store thousands of books in a highly compact space.\"",
+      "prompt": "Fill in the blank with a suitable word: \"An ______ can store thousands of books in a highly compact space.\"",
       "options": [
         "A. conduct / carry out an experiment",
         "B. print out",
@@ -635,7 +635,7 @@
     {
       "id": "u05_q11",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"A robotic ______ cleans the house completely automatically.\"",
+      "prompt": "Fill in the blank with a suitable word: \"A robotic ______ cleans the house completely automatically.\"",
       "options": [
         "A. 3D printing",
         "B. remove stubborn stains",
@@ -648,7 +648,7 @@
     {
       "id": "u05_q12",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Upgrading computer ______ can significantly improve processing speed.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Upgrading computer ______ can significantly improve processing speed.\"",
       "options": [
         "A. processor",
         "B. hardware",
@@ -661,7 +661,7 @@
     {
       "id": "u05_q13",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"He is learning to write educational ______ for children.\"",
+      "prompt": "Fill in the blank with a suitable word: \"He is learning to write educational ______ for children.\"",
       "options": [
         "A. conduct / carry out an experiment",
         "B. software",
@@ -674,7 +674,7 @@
     {
       "id": "u05_q14",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"The advanced washing machine easily removed the stubborn coffee ______.\"",
+      "prompt": "Fill in the blank with a suitable word: \"The advanced washing machine easily removed the stubborn coffee ______.\"",
       "options": [
         "A. patent",
         "B. break down",
@@ -687,7 +687,7 @@
     {
       "id": "u05_q15",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Just press this red ______ to turn on the modern device.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Just press this red ______ to turn on the modern device.\"",
       "options": [
         "A. bells and whistles",
         "B. valuable",
@@ -700,7 +700,7 @@
     {
       "id": "u05_q16",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"You need to ______ your smartphone; the battery is very low.\"",
+      "prompt": "Fill in the blank with a suitable word: \"You need to ______ your smartphone; the battery is very low.\"",
       "options": [
         "A. charge",
         "B. look up",
@@ -713,7 +713,7 @@
     {
       "id": "u05_q17",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"The new laptop model features a highly vibrant OLED ______.\"",
+      "prompt": "Fill in the blank with a suitable word: \"The new laptop model features a highly vibrant OLED ______.\"",
       "options": [
         "A. processor speed",
         "B. display",
@@ -726,7 +726,7 @@
     {
       "id": "u05_q18",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Make sure you have enough ______ before downloading large files.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Make sure you have enough ______ before downloading large files.\"",
       "options": [
         "A. print out",
         "B. storage space",
@@ -739,7 +739,7 @@
     {
       "id": "u05_q19",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Modern classroom ______ makes learning far more interactive and fun.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Modern classroom ______ makes learning far more interactive and fun.\"",
       "options": [
         "A. technology",
         "B. set up",
@@ -752,7 +752,7 @@
     {
       "id": "u05_q20",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"The speed of a computer depends primarily on its ______.\"",
+      "prompt": "Fill in the blank with a suitable word: \"The speed of a computer depends primarily on its ______.\"",
       "options": [
         "A. allow/permit someone to do something",
         "B. AI (artificial intelligence)",
@@ -765,7 +765,7 @@
     {
       "id": "u05_q21",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"bộ nhớ truy cập ngẫu nhiên\"?",
+      "prompt": "Which English word or phrase means \"bộ nhớ truy cập ngẫu nhiên\"?",
       "options": [
         "A. RAM (random access memory)",
         "B. print out",
@@ -778,7 +778,7 @@
     {
       "id": "u05_q22",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"thí nghiệm / tiến hành thí nghiệm\"?",
+      "prompt": "Which English word or phrase means \"thí nghiệm / tiến hành thí nghiệm\"?",
       "options": [
         "A. driverless",
         "B. print out",
@@ -791,7 +791,7 @@
     {
       "id": "u05_q23",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"phòng thí nghiệm\"?",
+      "prompt": "Which English word or phrase means \"phòng thí nghiệm\"?",
       "options": [
         "A. storage space",
         "B. device",
@@ -804,7 +804,7 @@
     {
       "id": "u05_q24",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"sự ứng dụng, đơn xin\"?",
+      "prompt": "Which English word or phrase means \"sự ứng dụng, đơn xin\"?",
       "options": [
         "A. plug in",
         "B. look up",
@@ -817,7 +817,7 @@
     {
       "id": "u05_q25",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"có giá trị, hữu ích\"?",
+      "prompt": "Which English word or phrase means \"có giá trị, hữu ích\"?",
       "options": [
         "A. portable",
         "B. collect / gather information",
@@ -830,7 +830,7 @@
     {
       "id": "u05_q26",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"mang lại, dẫn tới (sự thay đổi lớn)\"?",
+      "prompt": "Which English word or phrase means \"mang lại, dẫn tới (sự thay đổi lớn)\"?",
       "options": [
         "A. charge",
         "B. set up",
@@ -843,7 +843,7 @@
     {
       "id": "u05_q27",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"hỏng hóc; tự phân rã, phân hủy\"?",
+      "prompt": "Which English word or phrase means \"hỏng hóc; tự phân rã, phân hủy\"?",
       "options": [
         "A. laboratory",
         "B. break down",
@@ -856,7 +856,7 @@
     {
       "id": "u05_q28",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"chấm dứt hoàn toàn một vấn nạn\"?",
+      "prompt": "Which English word or phrase means \"chấm dứt hoàn toàn một vấn nạn\"?",
       "options": [
         "A. portable device",
         "B. put an end to sth",
@@ -869,7 +869,7 @@
     {
       "id": "u05_q29",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"in tài liệu ra giấy\"?",
+      "prompt": "Which English word or phrase means \"in tài liệu ra giấy\"?",
       "options": [
         "A. save money",
         "B. turn on",
@@ -882,7 +882,7 @@
     {
       "id": "u05_q30",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"cắm nguồn điện\"?",
+      "prompt": "Which English word or phrase means \"cắm nguồn điện\"?",
       "options": [
         "A. plug in",
         "B. laboratory",
@@ -895,7 +895,7 @@
     {
       "id": "u05_q31",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"thiết lập, cài đặt hệ thống\"?",
+      "prompt": "Which English word or phrase means \"thiết lập, cài đặt hệ thống\"?",
       "options": [
         "A. innovative",
         "B. reinvent the wheel",
@@ -908,7 +908,7 @@
     {
       "id": "u05_q32",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tra cứu (từ điển, thông tin)\"?",
+      "prompt": "Which English word or phrase means \"tra cứu (từ điển, thông tin)\"?",
       "options": [
         "A. look up",
         "B. processor",
@@ -921,7 +921,7 @@
     {
       "id": "u05_q33",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"bật thiết bị điện\"?",
+      "prompt": "Which English word or phrase means \"bật thiết bị điện\"?",
       "options": [
         "A. patent",
         "B. turn on",
@@ -934,7 +934,7 @@
     {
       "id": "u05_q34",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"thực hiện thí nghiệm/khảo sát\"?",
+      "prompt": "Which English word or phrase means \"thực hiện thí nghiệm/khảo sát\"?",
       "options": [
         "A. carry out",
         "B. experiment",
@@ -947,7 +947,7 @@
     {
       "id": "u05_q35",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"giải quyết, tính toán con số\"?",
+      "prompt": "Which English word or phrase means \"giải quyết, tính toán con số\"?",
       "options": [
         "A. patent",
         "B. device",
@@ -960,7 +960,7 @@
     {
       "id": "u05_q36",
       "ai_generated": true,
-      "prompt": "\"vacuum cleaner\" (n) có nghĩa là gì?",
+      "prompt": "What does \"vacuum cleaner\" (n) mean?",
       "options": [
         "A. phần mềm máy tính",
         "B. chấm dứt hoàn toàn một vấn nạn",
@@ -973,7 +973,7 @@
     {
       "id": "u05_q37",
       "ai_generated": true,
-      "prompt": "\"hardware\" (n) có nghĩa là gì?",
+      "prompt": "What does \"hardware\" (n) mean?",
       "options": [
         "A. in tài liệu ra giấy",
         "B. phần cứng máy tính",
@@ -986,7 +986,7 @@
     {
       "id": "u05_q38",
       "ai_generated": true,
-      "prompt": "\"software\" (n) có nghĩa là gì?",
+      "prompt": "What does \"software\" (n) mean?",
       "options": [
         "A. trí tuệ nhân tạo",
         "B. hỏng hóc; tự phân rã, phân hủy",
@@ -999,7 +999,7 @@
     {
       "id": "u05_q39",
       "ai_generated": true,
-      "prompt": "\"stain\" (n) có nghĩa là gì?",
+      "prompt": "What does \"stain\" (n) mean?",
       "options": [
         "A. tư duy đột phá, sáng tạo, vượt ranh giới",
         "B. vết bẩn, vết ố cứng đầu",
@@ -1012,7 +1012,7 @@
     {
       "id": "u05_q40",
       "ai_generated": true,
-      "prompt": "\"button\" (n) có nghĩa là gì?",
+      "prompt": "What does \"button\" (n) mean?",
       "options": [
         "A. dung lượng, không gian lưu trữ",
         "B. cắm nguồn điện",
@@ -1025,7 +1025,7 @@
     {
       "id": "u05_q41",
       "ai_generated": true,
-      "prompt": "\"charge\" (v) có nghĩa là gì?",
+      "prompt": "What does \"charge\" (v) mean?",
       "options": [
         "A. trí tuệ nhân tạo",
         "B. sạc pin, nạp điện",
@@ -1038,7 +1038,7 @@
     {
       "id": "u05_q42",
       "ai_generated": true,
-      "prompt": "\"display\" (v/n) có nghĩa là gì?",
+      "prompt": "What does \"display\" (v/n) mean?",
       "options": [
         "A. hiển thị / màn hình hiển thị",
         "B. cắm nguồn điện",
@@ -1051,7 +1051,7 @@
     {
       "id": "u05_q43",
       "ai_generated": true,
-      "prompt": "\"storage space\" (n.phr) có nghĩa là gì?",
+      "prompt": "What does \"storage space\" (n.phr) mean?",
       "options": [
         "A. dung lượng lưu trữ",
         "B. đi trước thời đại, vượt trội hoàn toàn",
@@ -1064,7 +1064,7 @@
     {
       "id": "u05_q44",
       "ai_generated": true,
-      "prompt": "\"technology\" (n) có nghĩa là gì?",
+      "prompt": "What does \"technology\" (n) mean?",
       "options": [
         "A. công nghệ",
         "B. có thể mang theo dễ dàng, di động",
@@ -1077,7 +1077,7 @@
     {
       "id": "u05_q45",
       "ai_generated": true,
-      "prompt": "\"processor\" (n) có nghĩa là gì?",
+      "prompt": "What does \"processor\" (n) mean?",
       "options": [
         "A. thiết bị đọc sách điện tử",
         "B. sự ứng dụng, đơn xin",
@@ -1090,7 +1090,7 @@
     {
       "id": "u05_q46",
       "ai_generated": true,
-      "prompt": "\"RAM (random access memory)\" (n) có nghĩa là gì?",
+      "prompt": "What does \"RAM (random access memory)\" (n) mean?",
       "options": [
         "A. hiển thị / màn hình hiển thị",
         "B. dung lượng, không gian lưu trữ",
@@ -1103,7 +1103,7 @@
     {
       "id": "u05_q47",
       "ai_generated": true,
-      "prompt": "\"experiment\" (n/v) có nghĩa là gì?",
+      "prompt": "What does \"experiment\" (n/v) mean?",
       "options": [
         "A. tốn công vô ích làm lại việc người khác đã làm tốt",
         "B. máy hút bụi",
@@ -1116,7 +1116,7 @@
     {
       "id": "u05_q48",
       "ai_generated": true,
-      "prompt": "\"laboratory\" (n) có nghĩa là gì?",
+      "prompt": "What does \"laboratory\" (n) mean?",
       "options": [
         "A. đi trước thời đại, vượt trội hoàn toàn",
         "B. trí tuệ nhân tạo",
@@ -1129,7 +1129,7 @@
     {
       "id": "u05_q49",
       "ai_generated": true,
-      "prompt": "\"application\" (n) có nghĩa là gì?",
+      "prompt": "What does \"application\" (n) mean?",
       "options": [
         "A. nút bấm",
         "B. công nghệ",
@@ -1142,7 +1142,7 @@
     {
       "id": "u05_q50",
       "ai_generated": true,
-      "prompt": "\"valuable\" (adj) có nghĩa là gì?",
+      "prompt": "What does \"valuable\" (adj) mean?",
       "options": [
         "A. thiết bị, công cụ",
         "B. công cụ thuận tiện, hữu ích",
@@ -1155,7 +1155,7 @@
     {
       "id": "u05_q51",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The chemistry students conducted an experiment under their teacher's supervision.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"The chemistry students conducted an experiment under their teacher's supervision.\"?",
       "options": [
         "A. conduct / carry out an experiment",
         "B. work out",
@@ -1168,7 +1168,7 @@
     {
       "id": "u05_q52",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The search engine helps researchers collect information within seconds.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"The search engine helps researchers collect information within seconds.\"?",
       "options": [
         "A. display",
         "B. make a decision",
@@ -1181,7 +1181,7 @@
     {
       "id": "u05_q53",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"This advanced vacuum cleaner has a special brush to ______.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"This advanced vacuum cleaner has a special brush to ______.\"?",
       "options": [
         "A. remove stubborn stains",
         "B. process data",
@@ -1194,7 +1194,7 @@
     {
       "id": "u05_q54",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Smartphones are the most popular ______s in the world.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"Smartphones are the most popular ______s in the world.\"?",
       "options": [
         "A. portable device",
         "B. bells and whistles",
@@ -1207,7 +1207,7 @@
     {
       "id": "u05_q55",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"______ is transforming how we search for data.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"______ is transforming how we search for data.\"?",
       "options": [
         "A. artificial intelligence",
         "B. collect / gather information",
@@ -1220,7 +1220,7 @@
     {
       "id": "u05_q56",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"A robotic ______ helps save time on daily housework.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"A robotic ______ helps save time on daily housework.\"?",
       "options": [
         "A. innovative",
         "B. charge",
@@ -1233,7 +1233,7 @@
     {
       "id": "u05_q57",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"This new laptop offers exceptionally large ______.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"This new laptop offers exceptionally large ______.\"?",
       "options": [
         "A. storage space",
         "B. print out",
@@ -1246,7 +1246,7 @@
     {
       "id": "u05_q58",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Supercomputers are used to process massive amounts of scientific data.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"Supercomputers are used to process massive amounts of scientific data.\"?",
       "options": [
         "A. dimensional",
         "B. conduct / carry out an experiment",
@@ -1259,7 +1259,7 @@
     {
       "id": "u05_q59",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Gamers usually care a lot about ______ and graphics.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"Gamers usually care a lot about ______ and graphics.\"?",
       "options": [
         "A. processor speed",
         "B. save money",
@@ -1272,7 +1272,7 @@
     {
       "id": "u05_q60",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"I have saved money since Tet to buy something new for my studies.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"I have saved money since Tet to buy something new for my studies.\"?",
       "options": [
         "A. driverless",
         "B. look up",

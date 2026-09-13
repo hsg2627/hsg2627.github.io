@@ -505,7 +505,7 @@
     {
       "id": "u09_q01",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Burning fossil fuels harms ecosystems and leads to a loss of ______.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Burning fossil fuels harms ecosystems and leads to a loss of ______.\"",
       "options": [
         "A. greenhouse effect",
         "B. carry out",
@@ -518,7 +518,7 @@
     {
       "id": "u09_q02",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ is a primary cause of global warming and climate change.\"",
+      "prompt": "Fill in the blank with a suitable word: \"______ is a primary cause of global warming and climate change.\"",
       "options": [
         "A. deforestation",
         "B. climate change",
@@ -531,7 +531,7 @@
     {
       "id": "u09_q03",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Industrial waste can destroy marine ______s and harm wildlife.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Industrial waste can destroy marine ______s and harm wildlife.\"",
       "options": [
         "A. environmental protection",
         "B. conservation",
@@ -544,7 +544,7 @@
     {
       "id": "u09_q04",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Fine dust from factories causes severe ______ illnesses in children.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Fine dust from factories causes severe ______ illnesses in children.\"",
       "options": [
         "A. greenhouse effect",
         "B. fight a losing battle",
@@ -557,7 +557,7 @@
     {
       "id": "u09_q05",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Rising global temperatures are a direct ______ of greenhouse gas emissions.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Rising global temperatures are a direct ______ of greenhouse gas emissions.\"",
       "options": [
         "A. use up",
         "B. marine ecosystems",
@@ -570,7 +570,7 @@
     {
       "id": "u09_q06",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Commercial hunting upsets the natural ______ of forest ecosystems.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Commercial hunting upsets the natural ______ of forest ecosystems.\"",
       "options": [
         "A. global warming effects",
         "B. balance",
@@ -583,7 +583,7 @@
     {
       "id": "u09_q07",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Deforestation is accelerating global warming and ______.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Deforestation is accelerating global warming and ______.\"",
       "options": [
         "A. burn fossil fuels",
         "B. climate change",
@@ -596,7 +596,7 @@
     {
       "id": "u09_q08",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"The government has established national parks to protect ______ species.\"",
+      "prompt": "Fill in the blank with a suitable word: \"The government has established national parks to protect ______ species.\"",
       "options": [
         "A. throw away",
         "B. endangered",
@@ -609,7 +609,7 @@
     {
       "id": "u09_q09",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Young people play a key role in raising awareness of ______.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Young people play a key role in raising awareness of ______.\"",
       "options": [
         "A. use up",
         "B. heatwave",
@@ -622,7 +622,7 @@
     {
       "id": "u09_q10",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Global warming is causing ______ weather events like floods and heatwaves.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Global warming is causing ______ weather events like floods and heatwaves.\"",
       "options": [
         "A. climate change",
         "B. biodiversity",
@@ -635,7 +635,7 @@
     {
       "id": "u09_q11",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"The ______ panda is one of the most famous endangered animals.\"",
+      "prompt": "Fill in the blank with a suitable word: \"The ______ panda is one of the most famous endangered animals.\"",
       "options": [
         "A. ice melting",
         "B. run out of",
@@ -648,7 +648,7 @@
     {
       "id": "u09_q12",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Mountain ______s are threatened by habitat loss and illegal hunting.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Mountain ______s are threatened by habitat loss and illegal hunting.\"",
       "options": [
         "A. respiratory illnesses / diseases",
         "B. gorilla",
@@ -661,7 +661,7 @@
     {
       "id": "u09_q13",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Deforestation destroys the natural ______ of wild animals.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Deforestation destroys the natural ______ of wild animals.\"",
       "options": [
         "A. carry out",
         "B. gorilla",
@@ -674,7 +674,7 @@
     {
       "id": "u09_q14",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"The intense ______ caused serious forest fires in several regions.\"",
+      "prompt": "Fill in the blank with a suitable word: \"The intense ______ caused serious forest fires in several regions.\"",
       "options": [
         "A. clear out",
         "B. giant",
@@ -687,7 +687,7 @@
     {
       "id": "u09_q15",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ at the polar caps leads to rising sea levels worldwide.\"",
+      "prompt": "Fill in the blank with a suitable word: \"______ at the polar caps leads to rising sea levels worldwide.\"",
       "options": [
         "A. cut down on",
         "B. protect from",
@@ -700,7 +700,7 @@
     {
       "id": "u09_q16",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Pollution is a pressing ______ that requires multilateral cooperation.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Pollution is a pressing ______ that requires multilateral cooperation.\"",
       "options": [
         "A. issue",
         "B. upset",
@@ -713,7 +713,7 @@
     {
       "id": "u09_q17",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"______ conservation programs have successfully increased their population.\"",
+      "prompt": "Fill in the blank with a suitable word: \"______ conservation programs have successfully increased their population.\"",
       "options": [
         "A. giant",
         "B. throw away",
@@ -726,7 +726,7 @@
     {
       "id": "u09_q18",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Choosing reusable shopping bags is a highly ______ way to reduce waste.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Choosing reusable shopping bags is a highly ______ way to reduce waste.\"",
       "options": [
         "A. protect from",
         "B. ecological balance",
@@ -739,7 +739,7 @@
     {
       "id": "u09_q19",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"The giant ______ is a protected species on the remote island.\"",
+      "prompt": "Fill in the blank with a suitable word: \"The giant ______ is a protected species on the remote island.\"",
       "options": [
         "A. tortoise",
         "B. gorilla",
@@ -752,7 +752,7 @@
     {
       "id": "u09_q20",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"The illegal ______ in wild animal parts must be completely banned.\"",
+      "prompt": "Fill in the blank with a suitable word: \"The illegal ______ in wild animal parts must be completely banned.\"",
       "options": [
         "A. save endangered animals from extinction",
         "B. out of the woods",
@@ -765,7 +765,7 @@
     {
       "id": "u09_q21",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"làm rối loạn, đảo lộn (cân bằng)\"?",
+      "prompt": "Which English word or phrase means \"làm rối loạn, đảo lộn (cân bằng)\"?",
       "options": [
         "A. wildlife",
         "B. upset",
@@ -778,7 +778,7 @@
     {
       "id": "u09_q22",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"động vật hoang dã\"?",
+      "prompt": "Which English word or phrase means \"động vật hoang dã\"?",
       "options": [
         "A. panda",
         "B. issue",
@@ -791,7 +791,7 @@
     {
       "id": "u09_q23",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"nhiên liệu hóa thạch (than, dầu)\"?",
+      "prompt": "Which English word or phrase means \"nhiên liệu hóa thạch (than, dầu)\"?",
       "options": [
         "A. trade",
         "B. clear out",
@@ -804,7 +804,7 @@
     {
       "id": "u09_q24",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"khí nhà kính\"?",
+      "prompt": "Which English word or phrase means \"khí nhà kính\"?",
       "options": [
         "A. conservation",
         "B. greenhouse gases",
@@ -817,7 +817,7 @@
     {
       "id": "u09_q25",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"sự bảo tồn, gìn giữ\"?",
+      "prompt": "Which English word or phrase means \"sự bảo tồn, gìn giữ\"?",
       "options": [
         "A. use up",
         "B. biodiversity",
@@ -830,7 +830,7 @@
     {
       "id": "u09_q26",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"cạn kiệt tài nguyên\"?",
+      "prompt": "Which English word or phrase means \"cạn kiệt tài nguyên\"?",
       "options": [
         "A. save endangered animals from extinction",
         "B. respiratory illnesses / diseases",
@@ -843,7 +843,7 @@
     {
       "id": "u09_q27",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tiêu thụ hết sạch\"?",
+      "prompt": "Which English word or phrase means \"tiêu thụ hết sạch\"?",
       "options": [
         "A. trade",
         "B. consequence",
@@ -856,7 +856,7 @@
     {
       "id": "u09_q28",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"cắt giảm lượng xả thải/tiêu thụ\"?",
+      "prompt": "Which English word or phrase means \"cắt giảm lượng xả thải/tiêu thụ\"?",
       "options": [
         "A. climate change",
         "B. respiratory",
@@ -869,7 +869,7 @@
     {
       "id": "u09_q29",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tuyệt chủng, biến mất hoàn toàn\"?",
+      "prompt": "Which English word or phrase means \"tuyệt chủng, biến mất hoàn toàn\"?",
       "options": [
         "A. environmental conservation campaigns",
         "B. biodiversity",
@@ -882,7 +882,7 @@
     {
       "id": "u09_q30",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"dọn sạch, phát quang\"?",
+      "prompt": "Which English word or phrase means \"dọn sạch, phát quang\"?",
       "options": [
         "A. clear out",
         "B. soil erosion",
@@ -895,7 +895,7 @@
     {
       "id": "u09_q31",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"chăm sóc, bảo vệ\"?",
+      "prompt": "Which English word or phrase means \"chăm sóc, bảo vệ\"?",
       "options": [
         "A. look after",
         "B. build up",
@@ -908,7 +908,7 @@
     {
       "id": "u09_q32",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tiến hành dự án/thí nghiệm\"?",
+      "prompt": "Which English word or phrase means \"tiến hành dự án/thí nghiệm\"?",
       "options": [
         "A. carry out",
         "B. upset",
@@ -921,7 +921,7 @@
     {
       "id": "u09_q33",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"vứt bỏ rác thải nhựa\"?",
+      "prompt": "Which English word or phrase means \"vứt bỏ rác thải nhựa\"?",
       "options": [
         "A. endangered",
         "B. carry out",
@@ -934,7 +934,7 @@
     {
       "id": "u09_q34",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tích tụ dần lên (chất độc)\"?",
+      "prompt": "Which English word or phrase means \"tích tụ dần lên (chất độc)\"?",
       "options": [
         "A. build up",
         "B. fossil fuels",
@@ -947,7 +947,7 @@
     {
       "id": "u09_q35",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"bảo vệ khỏi tác nhân xấu\"?",
+      "prompt": "Which English word or phrase means \"bảo vệ khỏi tác nhân xấu\"?",
       "options": [
         "A. run out of",
         "B. protect from",
@@ -960,7 +960,7 @@
     {
       "id": "u09_q36",
       "ai_generated": true,
-      "prompt": "\"giant\" (adj) có nghĩa là gì?",
+      "prompt": "What does \"giant\" (adj) mean?",
       "options": [
         "A. thực tế, thiết thực",
         "B. khí nhà kính",
@@ -973,7 +973,7 @@
     {
       "id": "u09_q37",
       "ai_generated": true,
-      "prompt": "\"gorilla\" (n) có nghĩa là gì?",
+      "prompt": "What does \"gorilla\" (n) mean?",
       "options": [
         "A. làm rối loạn, đảo lộn (cân bằng)",
         "B. tích tụ dần lên (chất độc)",
@@ -986,7 +986,7 @@
     {
       "id": "u09_q38",
       "ai_generated": true,
-      "prompt": "\"habitat\" (n) có nghĩa là gì?",
+      "prompt": "What does \"habitat\" (n) mean?",
       "options": [
         "A. cắt giảm lượng xả thải/tiêu thụ",
         "B. tiến hành dự án/thí nghiệm",
@@ -999,7 +999,7 @@
     {
       "id": "u09_q39",
       "ai_generated": true,
-      "prompt": "\"heatwave\" (n) có nghĩa là gì?",
+      "prompt": "What does \"heatwave\" (n) mean?",
       "options": [
         "A. dọn sạch, phát quang",
         "B. sóng nhiệt, đợt nắng nóng khắc nghiệt",
@@ -1012,7 +1012,7 @@
     {
       "id": "u09_q40",
       "ai_generated": true,
-      "prompt": "\"ice melting\" (n.phr) có nghĩa là gì?",
+      "prompt": "What does \"ice melting\" (n.phr) mean?",
       "options": [
         "A. hiện tượng tan băng ở cực",
         "B. trở về với lối sống thiên nhiên giản dị",
@@ -1025,7 +1025,7 @@
     {
       "id": "u09_q41",
       "ai_generated": true,
-      "prompt": "\"issue\" (n) có nghĩa là gì?",
+      "prompt": "What does \"issue\" (n) mean?",
       "options": [
         "A. nạn phá rừng quy mô lớn",
         "B. tiến hành dự án/thí nghiệm",
@@ -1038,7 +1038,7 @@
     {
       "id": "u09_q42",
       "ai_generated": true,
-      "prompt": "\"panda\" (n) có nghĩa là gì?",
+      "prompt": "What does \"panda\" (n) mean?",
       "options": [
         "A. rùa cạn",
         "B. sự bảo vệ môi trường",
@@ -1051,7 +1051,7 @@
     {
       "id": "u09_q43",
       "ai_generated": true,
-      "prompt": "\"practical\" (adj) có nghĩa là gì?",
+      "prompt": "What does \"practical\" (adj) mean?",
       "options": [
         "A. trở về với lối sống thiên nhiên giản dị",
         "B. hậu quả, hệ quả",
@@ -1064,7 +1064,7 @@
     {
       "id": "u09_q44",
       "ai_generated": true,
-      "prompt": "\"tortoise\" (n) có nghĩa là gì?",
+      "prompt": "What does \"tortoise\" (n) mean?",
       "options": [
         "A. sự xói mòn đất",
         "B. rùa cạn",
@@ -1077,7 +1077,7 @@
     {
       "id": "u09_q45",
       "ai_generated": true,
-      "prompt": "\"trade\" (n/v) có nghĩa là gì?",
+      "prompt": "What does \"trade\" (n/v) mean?",
       "options": [
         "A. giảm nhẹ tác động của biến đổi khí hậu",
         "B. môi trường sống tự nhiên",
@@ -1090,7 +1090,7 @@
     {
       "id": "u09_q46",
       "ai_generated": true,
-      "prompt": "\"upset\" (v) có nghĩa là gì?",
+      "prompt": "What does \"upset\" (v) mean?",
       "options": [
         "A. vứt bỏ rác thải nhựa",
         "B. khỉ đột",
@@ -1103,7 +1103,7 @@
     {
       "id": "u09_q47",
       "ai_generated": true,
-      "prompt": "\"wildlife\" (n) có nghĩa là gì?",
+      "prompt": "What does \"wildlife\" (n) mean?",
       "options": [
         "A. các bệnh đường hô hấp",
         "B. nhiên liệu hóa thạch (than, dầu)",
@@ -1116,7 +1116,7 @@
     {
       "id": "u09_q48",
       "ai_generated": true,
-      "prompt": "\"fossil fuels\" (n.phr) có nghĩa là gì?",
+      "prompt": "What does \"fossil fuels\" (n.phr) mean?",
       "options": [
         "A. sự bảo tồn, gìn giữ",
         "B. đấu tranh trong vô vọng, cầm chắc thất bại",
@@ -1129,7 +1129,7 @@
     {
       "id": "u09_q49",
       "ai_generated": true,
-      "prompt": "\"greenhouse gases\" (n.phr) có nghĩa là gì?",
+      "prompt": "What does \"greenhouse gases\" (n.phr) mean?",
       "options": [
         "A. rùa cạn",
         "B. vấn đề nan giải",
@@ -1142,7 +1142,7 @@
     {
       "id": "u09_q50",
       "ai_generated": true,
-      "prompt": "\"conservation\" (n) có nghĩa là gì?",
+      "prompt": "What does \"conservation\" (n) mean?",
       "options": [
         "A. sự bảo tồn, gìn giữ",
         "B. thực tế, thiết thực",
@@ -1155,7 +1155,7 @@
     {
       "id": "u09_q51",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Commercial hunting can upset the natural balance of forest ecosystems.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"Commercial hunting can upset the natural balance of forest ecosystems.\"?",
       "options": [
         "A. upset the natural balance of ecosystems",
         "B. use up",
@@ -1168,7 +1168,7 @@
     {
       "id": "u09_q52",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"International organizations work collaboratively to save endangered pandas from extinction.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"International organizations work collaboratively to save endangered pandas from extinction.\"?",
       "options": [
         "A. save endangered animals from extinction",
         "B. environmental conservation campaigns",
@@ -1181,7 +1181,7 @@
     {
       "id": "u09_q53",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Building new highways can disrupt the natural habitats of local wildlife.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"Building new highways can disrupt the natural habitats of local wildlife.\"?",
       "options": [
         "A. panda",
         "B. disrupt natural habitats",
@@ -1194,7 +1194,7 @@
     {
       "id": "u09_q54",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Reducing ______ is the main target of the agreement.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"Reducing ______ is the main target of the agreement.\"?",
       "options": [
         "A. ecosystem",
         "B. greenhouse gas emissions",
@@ -1207,7 +1207,7 @@
     {
       "id": "u09_q55",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Deforestation is a major barrier to global ______.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"Deforestation is a major barrier to global ______.\"?",
       "options": [
         "A. disrupt natural habitats",
         "B. climate change mitigation",
@@ -1220,7 +1220,7 @@
     {
       "id": "u09_q56",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Air pollution causes severe respiratory illnesses in crowded urban areas.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"Air pollution causes severe respiratory illnesses in crowded urban areas.\"?",
       "options": [
         "A. fossil fuels",
         "B. respiratory illnesses / diseases",
@@ -1233,7 +1233,7 @@
     {
       "id": "u09_q57",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Plastic waste dumped into the ocean causes immense harm to ______.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"Plastic waste dumped into the ocean causes immense harm to ______.\"?",
       "options": [
         "A. burn fossil fuels",
         "B. ice melting",
@@ -1246,7 +1246,7 @@
     {
       "id": "u09_q58",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Global warming leads to more frequent ______ like heatwaves.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"Global warming leads to more frequent ______ like heatwaves.\"?",
       "options": [
         "A. back to nature",
         "B. out of the woods",
@@ -1259,7 +1259,7 @@
     {
       "id": "u09_q59",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The ______ in the city center has reached an alarming stage.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"The ______ in the city center has reached an alarming stage.\"?",
       "options": [
         "A. climate change mitigation",
         "B. heatwave",
@@ -1272,7 +1272,7 @@
     {
       "id": "u09_q60",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Burning fossil fuels to generate electricity releases massive greenhouse gases.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"Burning fossil fuels to generate electricity releases massive greenhouse gases.\"?",
       "options": [
         "A. soil erosion",
         "B. deforestation",

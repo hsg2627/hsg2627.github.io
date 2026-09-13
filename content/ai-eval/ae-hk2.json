@@ -1,41 +1,41 @@
 {
   "id": "ae-hk2",
-  "title": "Xưởng AI · Học kỳ 2",
+  "title": "AI Error Log · Term 2",
   "semester": "HK2",
   "categories": [
     {
       "id": 1,
-      "name": "Thì và thể",
+      "name": "Tense and aspect",
       "nameEn": "Tenses & Aspects"
     },
     {
       "id": 2,
-      "name": "Dạng động từ",
+      "name": "Verb forms",
       "nameEn": "Verb Forms"
     },
     {
       "id": 3,
-      "name": "Câu bị động",
+      "name": "Passive voice",
       "nameEn": "Passive Voice"
     },
     {
       "id": 4,
-      "name": "Mệnh đề & câu điều kiện",
+      "name": "Clauses and conditionals",
       "nameEn": "Clauses & Conditionals"
     },
     {
       "id": 5,
-      "name": "Mạo từ và danh từ",
+      "name": "Articles and nouns",
       "nameEn": "Articles & Nouns"
     },
     {
       "id": 6,
-      "name": "Tính từ & so sánh",
+      "name": "Adjectives and comparison",
       "nameEn": "Adjectives & Comparisons"
     },
     {
       "id": 7,
-      "name": "Giới từ & kết hợp từ",
+      "name": "Prepositions and collocations",
       "nameEn": "Prepositions & Collocations"
     }
   ],

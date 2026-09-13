@@ -505,7 +505,7 @@
     {
       "id": "u04_q01",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Volunteering is a noble act of pure ______.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Volunteering is a noble act of pure ______.\"",
       "options": [
         "A. poverty",
         "B. lend a helping hand",
@@ -518,7 +518,7 @@
     {
       "id": "u04_q02",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"The billionaire decided to dedicate his wealth to ______ and education.\"",
+      "prompt": "Fill in the blank with a suitable word: \"The billionaire decided to dedicate his wealth to ______ and education.\"",
       "options": [
         "A. raise money / funds for charity",
         "B. remote",
@@ -531,7 +531,7 @@
     {
       "id": "u04_q03",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"We organized a fundraiser to support ______ students in mountainous areas.\"",
+      "prompt": "Fill in the blank with a suitable word: \"We organized a fundraiser to support ______ students in mountainous areas.\"",
       "options": [
         "A. community",
         "B. announcement",
@@ -544,7 +544,7 @@
     {
       "id": "u04_q04",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Non-profit organizations must be fully ______ about their financial transactions.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Non-profit organizations must be fully ______ about their financial transactions.\"",
       "options": [
         "A. involved",
         "B. lend a helping hand",
@@ -557,7 +557,7 @@
     {
       "id": "u04_q05",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Many young volunteers work in remote areas despite facing extreme ______s.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Many young volunteers work in remote areas despite facing extreme ______s.\"",
       "options": [
         "A. life-saving skills",
         "B. take part in",
@@ -570,7 +570,7 @@
     {
       "id": "u04_q06",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Vietnamese soldiers worked tirelessly to coordinate ______ after the landslide.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Vietnamese soldiers worked tirelessly to coordinate ______ after the landslide.\"",
       "options": [
         "A. confused",
         "B. volunteer project",
@@ -583,7 +583,7 @@
     {
       "id": "u04_q07",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"She gained practical experience by working with an international ______ organization.\"",
+      "prompt": "Fill in the blank with a suitable word: \"She gained practical experience by working with an international ______ organization.\"",
       "options": [
         "A. look forward to",
         "B. by mistake",
@@ -596,7 +596,7 @@
     {
       "id": "u04_q08",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Improving infrastructure helps remote villages gain ______ to health services.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Improving infrastructure helps remote villages gain ______ to health services.\"",
       "options": [
         "A. non-profit organisation",
         "B. access",
@@ -609,7 +609,7 @@
     {
       "id": "u04_q09",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"The school made an ______ about the upcoming volunteer trip.\"",
+      "prompt": "Fill in the blank with a suitable word: \"The school made an ______ about the upcoming volunteer trip.\"",
       "options": [
         "A. non-governmental",
         "B. announcement",
@@ -622,7 +622,7 @@
     {
       "id": "u04_q10",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Helping others can significantly ______ your mood and self-confidence.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Helping others can significantly ______ your mood and self-confidence.\"",
       "options": [
         "A. involved",
         "B. donation",
@@ -635,7 +635,7 @@
     {
       "id": "u04_q11",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"The ______ volunteers handed out warm meals to the homeless.\"",
+      "prompt": "Fill in the blank with a suitable word: \"The ______ volunteers handed out warm meals to the homeless.\"",
       "options": [
         "A. raise money / funds for charity",
         "B. cheerful",
@@ -648,7 +648,7 @@
     {
       "id": "u04_q12",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"A healthy ______ is built on mutual support and cooperation.\"",
+      "prompt": "Fill in the blank with a suitable word: \"A healthy ______ is built on mutual support and cooperation.\"",
       "options": [
         "A. step up",
         "B. announcement",
@@ -661,7 +661,7 @@
     {
       "id": "u04_q13",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Public speaking at community centers helped her build immense ______.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Public speaking at community centers helped her build immense ______.\"",
       "options": [
         "A. confidence",
         "B. hardship",
@@ -674,7 +674,7 @@
     {
       "id": "u04_q14",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"The instructions for the project were unclear, leaving many volunteers ______.\"",
+      "prompt": "Fill in the blank with a suitable word: \"The instructions for the project were unclear, leaving many volunteers ______.\"",
       "options": [
         "A. various",
         "B. confused",
@@ -687,7 +687,7 @@
     {
       "id": "u04_q15",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"We ______ed food packages directly to families affected by the flood.\"",
+      "prompt": "Fill in the blank with a suitable word: \"We ______ed food packages directly to families affected by the flood.\"",
       "options": [
         "A. community",
         "B. make a significant difference",
@@ -700,7 +700,7 @@
     {
       "id": "u04_q16",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"Many students ______d old books and warm clothes to the charity drive.\"",
+      "prompt": "Fill in the blank with a suitable word: \"Many students ______d old books and warm clothes to the charity drive.\"",
       "options": [
         "A. donate",
         "B. deliver",
@@ -713,7 +713,7 @@
     {
       "id": "u04_q17",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"The orphanage received generous ______s from local businesses.\"",
+      "prompt": "Fill in the blank with a suitable word: \"The orphanage received generous ______s from local businesses.\"",
       "options": [
         "A. generous",
         "B. disaster relief",
@@ -726,7 +726,7 @@
     {
       "id": "u04_q18",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"She is extremely ______, always donating half of her pocket money.\"",
+      "prompt": "Fill in the blank with a suitable word: \"She is extremely ______, always donating half of her pocket money.\"",
       "options": [
         "A. community development",
         "B. boost",
@@ -739,7 +739,7 @@
     {
       "id": "u04_q19",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"More and more teenagers are getting ______ in community service nowadays.\"",
+      "prompt": "Fill in the blank with a suitable word: \"More and more teenagers are getting ______ in community service nowadays.\"",
       "options": [
         "A. confused",
         "B. involved",
@@ -752,7 +752,7 @@
     {
       "id": "u04_q20",
       "ai_generated": true,
-      "prompt": "Điền từ thích hợp vào chỗ trống: \"The medical group travelled to ______ mountainous areas to vaccinate children.\"",
+      "prompt": "Fill in the blank with a suitable word: \"The medical group travelled to ______ mountainous areas to vaccinate children.\"",
       "options": [
         "A. remote areas",
         "B. orphanage",
@@ -765,7 +765,7 @@
     {
       "id": "u04_q21",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"đa dạng, nhiều loại khác nhau\"?",
+      "prompt": "Which English word or phrase means \"đa dạng, nhiều loại khác nhau\"?",
       "options": [
         "A. various",
         "B. disaster relief",
@@ -778,7 +778,7 @@
     {
       "id": "u04_q22",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"trại trẻ mồ côi\"?",
+      "prompt": "Which English word or phrase means \"trại trẻ mồ côi\"?",
       "options": [
         "A. raise money / funds for charity",
         "B. orphanage",
@@ -791,7 +791,7 @@
     {
       "id": "u04_q23",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"thuộc từ thiện, nhân đạo\"?",
+      "prompt": "Which English word or phrase means \"thuộc từ thiện, nhân đạo\"?",
       "options": [
         "A. non-governmental",
         "B. charitable",
@@ -804,7 +804,7 @@
     {
       "id": "u04_q24",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"chịu đựng đau đớn, mất mát\"?",
+      "prompt": "Which English word or phrase means \"chịu đựng đau đớn, mất mát\"?",
       "options": [
         "A. suffer",
         "B. gain practical experience",
@@ -817,7 +817,7 @@
     {
       "id": "u04_q25",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"sự nghèo đói\"?",
+      "prompt": "Which English word or phrase means \"sự nghèo đói\"?",
       "options": [
         "A. access",
         "B. involved",
@@ -830,7 +830,7 @@
     {
       "id": "u04_q26",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"chủ động gánh vác trách nhiệm, gầy dựng\"?",
+      "prompt": "Which English word or phrase means \"chủ động gánh vác trách nhiệm, gầy dựng\"?",
       "options": [
         "A. altruism",
         "B. step up",
@@ -843,7 +843,7 @@
     {
       "id": "u04_q27",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"cống hiến, đền đáp lại cho xã hội\"?",
+      "prompt": "Which English word or phrase means \"cống hiến, đền đáp lại cho xã hội\"?",
       "options": [
         "A. hand out",
         "B. disaster relief",
@@ -856,7 +856,7 @@
     {
       "id": "u04_q28",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tiến hành, thực hiện dự án\"?",
+      "prompt": "Which English word or phrase means \"tiến hành, thực hiện dự án\"?",
       "options": [
         "A. volunteer project",
         "B. hardship",
@@ -869,7 +869,7 @@
     {
       "id": "u04_q29",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"giúp đỡ một tay (trong lúc khó khăn)\"?",
+      "prompt": "Which English word or phrase means \"giúp đỡ một tay (trong lúc khó khăn)\"?",
       "options": [
         "A. gain practical experience",
         "B. help out",
@@ -882,7 +882,7 @@
     {
       "id": "u04_q30",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"trông chờ, mong mỏi điều gì\"?",
+      "prompt": "Which English word or phrase means \"trông chờ, mong mỏi điều gì\"?",
       "options": [
         "A. orphanage",
         "B. ripple effect",
@@ -895,7 +895,7 @@
     {
       "id": "u04_q31",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"đăng ký tham gia một sự kiện\"?",
+      "prompt": "Which English word or phrase means \"đăng ký tham gia một sự kiện\"?",
       "options": [
         "A. by mistake",
         "B. transparent",
@@ -908,7 +908,7 @@
     {
       "id": "u04_q32",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"điền thông tin (vào đơn)\"?",
+      "prompt": "Which English word or phrase means \"điền thông tin (vào đơn)\"?",
       "options": [
         "A. community development",
         "B. lend a helping hand",
@@ -921,7 +921,7 @@
     {
       "id": "u04_q33",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"phát quà, phân phát tài liệu\"?",
+      "prompt": "Which English word or phrase means \"phát quà, phân phát tài liệu\"?",
       "options": [
         "A. altruism",
         "B. hand out",
@@ -934,7 +934,7 @@
     {
       "id": "u04_q34",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"tham gia vào hoạt động gì\"?",
+      "prompt": "Which English word or phrase means \"tham gia vào hoạt động gì\"?",
       "options": [
         "A. community",
         "B. remote",
@@ -947,7 +947,7 @@
     {
       "id": "u04_q35",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ tiếng Anh nào có nghĩa: \"chung tay, cùng nhau hợp tác\"?",
+      "prompt": "Which English word or phrase means \"chung tay, cùng nhau hợp tác\"?",
       "options": [
         "A. access",
         "B. flood victims",
@@ -960,7 +960,7 @@
     {
       "id": "u04_q36",
       "ai_generated": true,
-      "prompt": "\"cheerful\" (adj) có nghĩa là gì?",
+      "prompt": "What does \"cheerful\" (adj) mean?",
       "options": [
         "A. vui vẻ, hăng hái, đầy sức sống",
         "B. tạo ra sự khác biệt lớn lao",
@@ -973,7 +973,7 @@
     {
       "id": "u04_q37",
       "ai_generated": true,
-      "prompt": "\"community\" (n) có nghĩa là gì?",
+      "prompt": "What does \"community\" (n) mean?",
       "options": [
         "A. sự tiếp cận / tiếp cận cái gì",
         "B. gặt hái kinh nghiệm thực tế quý báu",
@@ -986,7 +986,7 @@
     {
       "id": "u04_q38",
       "ai_generated": true,
-      "prompt": "\"confidence\" (n) có nghĩa là gì?",
+      "prompt": "What does \"confidence\" (n) mean?",
       "options": [
         "A. tạo ra sự khác biệt lớn lao",
         "B. điền thông tin (vào đơn)",
@@ -999,7 +999,7 @@
     {
       "id": "u04_q39",
       "ai_generated": true,
-      "prompt": "\"confused\" (adj) có nghĩa là gì?",
+      "prompt": "What does \"confused\" (adj) mean?",
       "options": [
         "A. bối rối, lúng túng",
         "B. phát quà, phân phát tài liệu",
@@ -1012,7 +1012,7 @@
     {
       "id": "u04_q40",
       "ai_generated": true,
-      "prompt": "\"deliver\" (v) có nghĩa là gì?",
+      "prompt": "What does \"deliver\" (v) mean?",
       "options": [
         "A. giao hàng, phát quà, cứu tế",
         "B. hẻo lánh, vùng sâu vùng xa",
@@ -1025,7 +1025,7 @@
     {
       "id": "u04_q41",
       "ai_generated": true,
-      "prompt": "\"donate\" (v) có nghĩa là gì?",
+      "prompt": "What does \"donate\" (v) mean?",
       "options": [
         "A. bối rối, lúng túng",
         "B. giúp đỡ một tay (trong lúc khó khăn)",
@@ -1038,7 +1038,7 @@
     {
       "id": "u04_q42",
       "ai_generated": true,
-      "prompt": "\"donation\" (n) có nghĩa là gì?",
+      "prompt": "What does \"donation\" (n) mean?",
       "options": [
         "A. đồ quyên góp, vật phẩm quyên tặng",
         "B. tham gia vào hoạt động gì",
@@ -1051,7 +1051,7 @@
     {
       "id": "u04_q43",
       "ai_generated": true,
-      "prompt": "\"generous\" (adj) có nghĩa là gì?",
+      "prompt": "What does \"generous\" (adj) mean?",
       "options": [
         "A. cống hiến, đền đáp lại cho xã hội",
         "B. vui vẻ, hăng hái, đầy sức sống",
@@ -1064,7 +1064,7 @@
     {
       "id": "u04_q44",
       "ai_generated": true,
-      "prompt": "\"involved\" (adj) có nghĩa là gì?",
+      "prompt": "What does \"involved\" (adj) mean?",
       "options": [
         "A. hoạt động cứu trợ thiên tai",
         "B. tham gia, dính dáng, có mặt",
@@ -1077,7 +1077,7 @@
     {
       "id": "u04_q45",
       "ai_generated": true,
-      "prompt": "\"remote\" (adj) có nghĩa là gì?",
+      "prompt": "What does \"remote\" (adj) mean?",
       "options": [
         "A. các tầng lớp xã hội / hoàn cảnh khác nhau",
         "B. sự tự tin, lòng tin cậy",
@@ -1090,7 +1090,7 @@
     {
       "id": "u04_q46",
       "ai_generated": true,
-      "prompt": "\"various\" (adj) có nghĩa là gì?",
+      "prompt": "What does \"various\" (adj) mean?",
       "options": [
         "A. quyên góp tiền, gây quỹ từ thiện",
         "B. cộng đồng",
@@ -1103,7 +1103,7 @@
     {
       "id": "u04_q47",
       "ai_generated": true,
-      "prompt": "\"orphanage\" (n) có nghĩa là gì?",
+      "prompt": "What does \"orphanage\" (n) mean?",
       "options": [
         "A. trông chờ, mong mỏi điều gì",
         "B. do nhầm lẫn, sơ suất",
@@ -1116,7 +1116,7 @@
     {
       "id": "u04_q48",
       "ai_generated": true,
-      "prompt": "\"charitable\" (adj) có nghĩa là gì?",
+      "prompt": "What does \"charitable\" (adj) mean?",
       "options": [
         "A. hào phóng, rộng lượng",
         "B. thuộc từ thiện, nhân đạo",
@@ -1129,7 +1129,7 @@
     {
       "id": "u04_q49",
       "ai_generated": true,
-      "prompt": "\"suffer\" (v) có nghĩa là gì?",
+      "prompt": "What does \"suffer\" (v) mean?",
       "options": [
         "A. thúc đẩy, làm tăng thêm (năng lượng, tự tin)",
         "B. gặt hái kinh nghiệm thực tế quý báu",
@@ -1142,7 +1142,7 @@
     {
       "id": "u04_q50",
       "ai_generated": true,
-      "prompt": "\"poverty\" (n) có nghĩa là gì?",
+      "prompt": "What does \"poverty\" (n) mean?",
       "options": [
         "A. sự nghèo đói",
         "B. giúp đỡ một tay",
@@ -1155,7 +1155,7 @@
     {
       "id": "u04_q51",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Joining charity campaigns is a great way for teenagers to ______.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"Joining charity campaigns is a great way for teenagers to ______.\"?",
       "options": [
         "A. lend a helping hand",
         "B. flood victims",
@@ -1168,7 +1168,7 @@
     {
       "id": "u04_q52",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Volunteering allows students to come into contact with people from different backgrounds.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"Volunteering allows students to come into contact with people from different backgrounds.\"?",
       "options": [
         "A. cheerful",
         "B. generous",
@@ -1181,7 +1181,7 @@
     {
       "id": "u04_q53",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The students set up a fundraiser to raise money for local orphanages.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"The students set up a fundraiser to raise money for local orphanages.\"?",
       "options": [
         "A. walks of life",
         "B. remote",
@@ -1194,7 +1194,7 @@
     {
       "id": "u04_q54",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Even small daily contributions can ______ in saving raw materials.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"Even small daily contributions can ______ in saving raw materials.\"?",
       "options": [
         "A. make a significant difference",
         "B. access",
@@ -1207,7 +1207,7 @@
     {
       "id": "u04_q55",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Public speaking at community centers helps boost students' self-confidence.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"Public speaking at community centers helps boost students' self-confidence.\"?",
       "options": [
         "A. emergency supplies",
         "B. boost self-confidence",
@@ -1220,7 +1220,7 @@
     {
       "id": "u04_q56",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Investing in local education is a catalyst for ______.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"Investing in local education is a catalyst for ______.\"?",
       "options": [
         "A. fill in",
         "B. philanthropy",
@@ -1233,7 +1233,7 @@
     {
       "id": "u04_q57",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"A helicopter airlifted tons of ______ to the isolated village.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"A helicopter airlifted tons of ______ to the isolated village.\"?",
       "options": [
         "A. boost",
         "B. emergency supplies",
@@ -1246,7 +1246,7 @@
     {
       "id": "u04_q58",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"She works as a volunteer for an international ______.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"She works as a volunteer for an international ______.\"?",
       "options": [
         "A. community",
         "B. help out",
@@ -1259,7 +1259,7 @@
     {
       "id": "u04_q59",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"The youth union launched a new ______ to clean up local rivers.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"The youth union launched a new ______ to clean up local rivers.\"?",
       "options": [
         "A. come into contact with sb",
         "B. volunteer project",
@@ -1272,7 +1272,7 @@
     {
       "id": "u04_q60",
       "ai_generated": true,
-      "prompt": "Từ/cụm từ nào phù hợp nhất để điền vào câu: \"Volunteers are trained in basic ______ like first aid.\"?",
+      "prompt": "Which word or phrase best fits the sentence: \"Volunteers are trained in basic ______ like first aid.\"?",
       "options": [
         "A. gain practical experience",
         "B. suffer",

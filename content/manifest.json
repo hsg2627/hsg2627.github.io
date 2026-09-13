@@ -129,7 +129,7 @@
     {
       "id": "g01",
       "kind": "grammar",
-      "title": "Thì hiện tại hoàn thành (Present Perfect)",
+      "title": "Present Perfect",
       "grammar": [1],
       "semester": "HK1",
       "parts": { "items": "grammar/g01.json" }
@@ -137,7 +137,7 @@
     {
       "id": "g02",
       "kind": "grammar",
-      "title": "Hiện tại đơn và hiện tại tiếp diễn (Present Simple vs Continuous)",
+      "title": "Present Simple vs Continuous",
       "grammar": [2],
       "semester": "HK1",
       "parts": { "items": "grammar/g02.json" }
@@ -145,7 +145,7 @@
     {
       "id": "g03",
       "kind": "grammar",
-      "title": "Tương lai đơn và Be Going To (Will vs Be Going To)",
+      "title": "Will vs Be Going To",
       "grammar": [3],
       "semester": "HK1",
       "parts": { "items": "grammar/g03.json" }
@@ -153,7 +153,7 @@
     {
       "id": "g04",
       "kind": "grammar",
-      "title": "Quá khứ đơn và quá khứ tiếp diễn (Past Simple vs Continuous)",
+      "title": "Past Simple vs Continuous",
       "grammar": [4],
       "semester": "HK1",
       "parts": { "items": "grammar/g04.json" }
@@ -161,7 +161,7 @@
     {
       "id": "g05",
       "kind": "grammar",
-      "title": "Động từ nguyên thể có 'to' và không 'to' (Infinitives)",
+      "title": "Infinitives with and without 'to'",
       "grammar": [5],
       "semester": "HK1",
       "parts": { "items": "grammar/g05.json" }
@@ -169,7 +169,7 @@
     {
       "id": "g06",
       "kind": "grammar",
-      "title": "Danh động từ và động từ nguyên thể (Gerunds & To-Infinitives)",
+      "title": "Gerunds & To-Infinitives",
       "grammar": [6],
       "semester": "HK1",
       "parts": { "items": "grammar/g06.json" }
@@ -177,7 +177,7 @@
     {
       "id": "g07",
       "kind": "grammar",
-      "title": "Câu bị động (Passive Voice)",
+      "title": "Passive Voice",
       "grammar": [7],
       "semester": "HK2",
       "parts": { "items": "grammar/g07.json" }
@@ -185,7 +185,7 @@
     {
       "id": "g08",
       "kind": "grammar",
-      "title": "Câu ghép và liên từ (Compound Sentences & Conjunctions)",
+      "title": "Compound Sentences & Conjunctions",
       "grammar": [8],
       "semester": "HK1",
       "parts": { "items": "grammar/g08.json" }
@@ -193,7 +193,7 @@
     {
       "id": "g09",
       "kind": "grammar",
-      "title": "Mệnh đề quan hệ (Relative Clauses)",
+      "title": "Relative Clauses",
       "grammar": [9],
       "semester": "HK2",
       "parts": { "items": "grammar/g09.json" }
@@ -201,7 +201,7 @@
     {
       "id": "g10",
       "kind": "grammar",
-      "title": "Câu điều kiện loại 1 (Conditional Type 1)",
+      "title": "Conditional Type 1",
       "grammar": [10],
       "semester": "HK2",
       "parts": { "items": "grammar/g10.json" }
@@ -209,7 +209,7 @@
     {
       "id": "g11",
       "kind": "grammar",
-      "title": "Câu điều kiện loại 2 (Conditional Type 2)",
+      "title": "Conditional Type 2",
       "grammar": [11],
       "semester": "HK2",
       "parts": { "items": "grammar/g11.json" }
@@ -217,7 +217,7 @@
     {
       "id": "g12",
       "kind": "grammar",
-      "title": "Câu tường thuật (Reported Speech)",
+      "title": "Reported Speech",
       "grammar": [12],
       "semester": "HK2",
       "parts": { "items": "grammar/g12.json" }
@@ -225,7 +225,7 @@
     {
       "id": "g13",
       "kind": "grammar",
-      "title": "Tính từ và so sánh (Adjectives & Comparisons)",
+      "title": "Adjectives & Comparisons",
       "grammar": [13, 14],
       "semester": "HK2",
       "parts": { "items": "grammar/g13.json" }
@@ -233,7 +233,7 @@
     {
       "id": "g14",
       "kind": "grammar",
-      "title": "Mạo từ (Articles)",
+      "title": "Articles",
       "grammar": [15],
       "semester": "HK1",
       "parts": { "items": "grammar/g14.json" }
@@ -241,28 +241,28 @@
     {
       "id": "ae-hk1",
       "kind": "ai_eval",
-      "title": "Xưởng AI · Học kỳ 1",
+      "title": "AI Error Log · Term 1",
       "semester": "HK1",
       "parts": { "items": "ai-eval/ae-hk1.json" }
     },
     {
       "id": "ae-hk2",
       "kind": "ai_eval",
-      "title": "Xưởng AI · Học kỳ 2",
+      "title": "AI Error Log · Term 2",
       "semester": "HK2",
       "parts": { "items": "ai-eval/ae-hk2.json" }
     },
     {
       "id": "hk1-01",
       "kind": "exam",
-      "title": "Đề ôn tập tổng hợp Học kỳ 1",
+      "title": "Term 1 comprehensive revision paper",
       "semester": "HK1",
       "parts": { "items": "exams/hk1-01.json" }
     },
     {
       "id": "hk2-01",
       "kind": "exam",
-      "title": "Đề ôn tập tổng hợp Học kỳ 2",
+      "title": "Term 2 comprehensive revision paper",
       "semester": "HK2",
       "parts": { "items": "exams/hk2-01.json" }
     }

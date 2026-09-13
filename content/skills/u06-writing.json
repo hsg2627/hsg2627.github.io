@@ -5,11 +5,11 @@
   "word_limit": "120-150 words",
   "prompt": "Write an opinion paragraph (120-150 words) discussing why equal career opportunities should be provided for both men and women in technical professions.",
   "checklist": [
-    "Đoạn văn có câu chủ đề (Topic Sentence) rõ ràng",
-    "Độ dài đạt yêu cầu 120 - 150 từ",
-    "Có ít nhất 2 luận điểm bổ trợ kèm ví dụ hoặc giải thích",
-    "Sử dụng đúng thì và các liên từ nối ý (Furthermore, However, In addition...)",
-    "Không mắc lỗi chính tả hay dấu câu cơ bản"
+    "The paragraph has a clear topic sentence",
+    "The length is within the required 120–150 words",
+    "There are at least 2 supporting points with examples or explanations",
+    "Tenses and linking words are used correctly (Furthermore, However, In addition...)",
+    "There are no basic spelling or punctuation mistakes"
   ],
   "model_essay": "In modern society, equal career opportunities in technical fields should be accessible to both men and women without gender bias. First, professional excellence depends on intellectual competence, technical training, and problem-solving skills rather than gender stereotypes. When women are encouraged to study science and engineering, they demonstrate outstanding leadership and analytical ability in complex projects. Second, workplace diversity significantly enhances creativity and team performance. Having both male and female perspectives in technology companies leads to more comprehensive software design and balanced decision-making. Furthermore, excluding capable individuals based on traditional biases limits economic growth and wastes valuable human potential. In conclusion, ensuring equal professional opportunities in STEM disciplines not only upholds social justice but also empowers our nation to build a competitive and sustainable digital economy.",
   "key_vocab": [

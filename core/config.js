@@ -3,7 +3,7 @@
 export const CONFIG = {
   // ---- Nhận dạng phiên bản: ghi vào MỌI dòng log ----
   APP_VERSION: 'v0.1.0',
-  CONTENT_VERSION: 'c1.0.1',
+  CONTENT_VERSION: 'c1.0.2',
   SCHEMA_VERSION: 1,
 
   // ---- Điểm nhận dữ liệu (dán URL Apps Script sau khi Deploy) ----

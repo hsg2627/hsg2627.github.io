@@ -294,10 +294,12 @@ async function renderUnit(unitNum) {
 
       // Determine question type label
       let typeLabel = '';
-      if (item.prompt.startsWith('Điền từ')) typeLabel = '📝 Gap fill';
-      else if (item.prompt.startsWith('Từ/cụm từ tiếng Anh')) typeLabel = '🇻🇳→🇬🇧 Meaning → Word';
-      else if (item.prompt.includes('có nghĩa là gì')) typeLabel = '🇬🇧→🇻🇳 Word → Meaning';
-      else if (item.prompt.startsWith('Từ/cụm từ nào phù hợp')) typeLabel = '📖 Context';
+      // Bốn tiền tố này phải khớp từng chữ với khung câu lệnh trong content/vocab/*.json.
+      // Đổi khung ở JSON thì đổi luôn ở đây, trong cùng một commit — lệch là nhãn hỏng âm thầm.
+      if (item.prompt.startsWith('Fill in the blank')) typeLabel = '📝 Gap fill';
+      else if (item.prompt.startsWith('Which English word or phrase')) typeLabel = '🇻🇳→🇬🇧 Meaning → Word';
+      else if (item.prompt.startsWith('What does ')) typeLabel = '🇬🇧→🇻🇳 Word → Meaning';
+      else if (item.prompt.startsWith('Which word or phrase best fits')) typeLabel = '📖 Context';
 
       tabContent.innerHTML = `
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:6px;">

@@ -5,11 +5,11 @@
   "word_limit": "120-150 words",
   "prompt": "Write a paragraph (120-150 words) highlighting the main benefits of blended learning for Grade 10 students.",
   "checklist": [
-    "Đoạn văn có câu chủ đề (Topic Sentence) rõ ràng",
-    "Độ dài đạt yêu cầu 120 - 150 từ",
-    "Có ít nhất 2 luận điểm bổ trợ kèm ví dụ hoặc giải thích",
-    "Sử dụng đúng thì và các liên từ nối ý (Furthermore, However, In addition...)",
-    "Không mắc lỗi chính tả hay dấu câu cơ bản"
+    "The paragraph has a clear topic sentence",
+    "The length is within the required 120–150 words",
+    "There are at least 2 supporting points with examples or explanations",
+    "Tenses and linking words are used correctly (Furthermore, However, In addition...)",
+    "There are no basic spelling or punctuation mistakes"
   ],
   "model_essay": "Blended learning has become an effective educational model that significantly enhances high school students' academic performance and learning autonomy. First, digital learning platforms enable students to review theoretical lessons, complete automated practice quizzes, and access multimedia resources at their own pace. This flexibility allows learners to master difficult grammar points and vocabulary without feeling pressured. Second, combining digital materials with classroom lessons frees up valuable class time for interactive discussions, group presentations, and critical debates guided by the teacher. As a result, students develop strong collaborative skills and higher-order thinking abilities rather than relying on passive memorization. In conclusion, by combining digital convenience with teacher-led instruction, blended learning equips high school students with the essential digital competencies and self-discipline required for university success.",
   "key_vocab": [

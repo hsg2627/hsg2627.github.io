@@ -4,7 +4,7 @@
 // không xử lý sự kiện. Xem DATA-DESIGN.md §10. Đừng "sửa" thành Spine.*.
 // Tệp này KHÔNG được import bất cứ thứ gì trong core/.
 
-const VER = 'c1.0.1';   // phải khớp CONTENT_VERSION trong core/config.js
+const VER = 'c1.0.2';   // phải khớp CONTENT_VERSION trong core/config.js
 
 export async function loadJSON(relPath) {
   const cleanPath = relPath.startsWith('/') ? relPath.slice(1) : relPath;
@@ -21,7 +21,11 @@ export async function loadJSON(relPath) {
 
   // Tải từ máy chủ
   try {
-    const res = await fetch(url);
+    // ?v= theo phiên bản: mỗi lần tăng CONTENT_VERSION là một URL mới, nên cả bộ đệm
+    // HTTP của trình duyệt lẫn CDN (max-age=600) đều không trả lại tệp cũ. Thiếu nó,
+    // máy tải trong 10 phút đầu sau deploy nhận JSON cũ rồi cất dưới khoá phiên bản
+    // MỚI — và giữ mãi, vì khoá cache ở trên không bao giờ hết hạn.
+    const res = await fetch(`${url}?v=${VER}`);
     if (!res.ok) {
       throw new Error(`HTTP ${res.status} while loading ${url}`);
     }
@@ -58,3 +62,9 @@ export function purgeOldCache() {
     }
   } catch (_) {}
 }
+
+// DATA-DESIGN §10: xoá khoá học liệu mang phiên bản cũ khi khởi động. Hàm này có từ
+// đầu nhưng chưa từng được gọi, nên mỗi lần tăng CONTENT_VERSION lại để thêm một bản
+// sao học liệu nằm trong localStorage — chung quota với hàng đợi dữ liệu nghiên cứu.
+// Chỉ đụng khoá bắt đầu bằng "content:"; khoá dt_* của xương sống không bị chạm.
+purgeOldCache();
