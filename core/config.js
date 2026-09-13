@@ -29,6 +29,17 @@ export const CONFIG = {
   // ---- Mã định danh giả: NK + khối 10-12 + lớp 2 số + '-' + số thứ tự 2 chữ số ----
   ID_PATTERN: /^(NK)(1[0-2])(\d{2})-(\d{2})$/i,
   ID_EXAMPLE: 'NK1009-07',
+
+  // ---- Học kỳ hiện tại (DATA-DESIGN §5) ----
+  // Nhiệm vụ hằng ngày chỉ giao bài của học kỳ này. SANG HỌC KỲ 2 PHẢI ĐỔI THÀNH 'HK2'.
+  CURRENT_TERM: 'HK1',
+
+  // Bài Ngữ pháp theo học kỳ cho nhiệm vụ hằng ngày. Phải khớp trường `semester` của
+  // từng module trong content/manifest.json — đổi manifest thì đổi luôn ở đây.
+  QUEST_POOL: {
+    HK1: ['g01', 'g02', 'g03', 'g04', 'g05', 'g06', 'g08', 'g14'],
+    HK2: ['g07', 'g09', 'g10', 'g11', 'g12', 'g13'],
+  },
 };
 
 // Luật trò chơi gom một chỗ để chỉnh mà không phải sửa logic.
@@ -37,6 +48,7 @@ export const RULES = {
   XP_WRONG: 2,            // vẫn thưởng nhẹ: phạt 0 điểm làm HS bỏ giữa chừng
   XP_ITEM_FIRST_TRY: 5,   // thưởng thêm nếu đúng ngay lần đầu
   GOLD_PER_QUEST: 20,
+  QUEST_TARGET: 5,        // nhiệm vụ hôm nay: số câu KHÁC NHAU của bài được giao
   STREAK_BONUS_EVERY: 5,  // cứ 5 câu đúng liên tiếp thưởng thêm
   STREAK_BONUS_XP: 15,
   // Ngưỡng XP để lên cấp: cấp n cần LEVELS[n-1] XP tích luỹ.

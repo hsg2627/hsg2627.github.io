@@ -133,8 +133,9 @@ export const Portal = {
    * khác: mã học sinh là lớp + số thứ tự sổ điểm, nên bảng xếp hạng theo mã là lộ danh
    * tính trong lớp — và trang không có máy chủ để so giữa các máy.
    * Trả về HTML; gắn vào DOM rồi gọi bindSidebar() để nút Today / Week / All time chạy.
+   * overview:false ở trang chủ — ba con số đã nằm ngay dưới lời chào (SITE-SPEC §9.1).
    */
-  sidebarHTML() {
+  sidebarHTML({ overview = true } = {}) {
     if (!Spine.isReady) return '';
     const m = Spine.metrics;
     // Cùng lý do cache như ở renderHud: store.js cũ chưa có các khoá theo ngày.
@@ -163,14 +164,14 @@ export const Portal = {
         ${panel('all', 'in total', m.total_attempts, totalCorrect, true)}
       </section>
 
-      <section class="side-card" aria-labelledby="side-overview-h">
+      ${overview ? `<section class="side-card" aria-labelledby="side-overview-h">
         <h2 class="side-eyebrow" id="side-overview-h">Overview</h2>
         <div class="overview">
           <div><b>${m.active_days}</b><span>Study days</span></div>
           <div><b>${m.items_attempted}</b><span>Items tried</span></div>
           <div><b>${acc}</b><span>Accuracy</span></div>
         </div>
-      </section>
+      </section>` : ''}
     `;
   },
 

@@ -185,7 +185,10 @@ async function renderDrill(moduleGid) {
         });
 
         Portal.renderHud();
-        if (res.xp_delta > 0) {
+        // Mỗi lần một toast (toast mới thay toast cũ): câu làm xong nhiệm vụ thì báo nhiệm vụ.
+        if (res.quest_completed) {
+          Portal.toast(`🎯 Today's quest complete · +${res.quest_gold} gold`);
+        } else if (res.xp_delta > 0) {
           Portal.toast(`+${res.xp_delta} XP`);
         }
 

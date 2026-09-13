@@ -14,6 +14,7 @@ import { Transport } from './transport.js';
 import { storageAvailable, downloadText, todayKey } from './util.js';
 import { purgeAiEvalOnce } from './purge-ai-eval.js';
 import { Theme } from './theme.js';
+import { questFor, recordQuestAnswer } from './quest.js';
 
 let ready = false;
 
@@ -101,25 +102,55 @@ export const Spine = {
     if (res.leveled_up) {
       Log.event('level_up', { extra: { level: res.level, xp: Store.get().xp } });
     }
+
+    // Nhiệm vụ hôm nay: câu thuộc bài được giao thì đếm; đủ chỉ tiêu là hoàn thành NGAY
+    // tại đây — em không cần quay lại trang chủ. quest_complete ghi SAU item_answer của
+    // chính câu làm nhiệm vụ đủ chỉ tiêu.
+    const quest = questFor();
+    if (quest && module === quest.module && String(unit) === quest.unit) {
+      let reached = false;
+      Store.update((s) => { reached = recordQuestAnswer(s, quest, { module, unit, itemId }); });
+      if (reached) {
+        Spine.completeQuest(quest.id, { unit: quest.unit });
+        res.quest_completed = true;
+        res.quest_gold = RULES.GOLD_PER_QUEST;
+      }
+    }
     return res;
   },
 
-  acceptQuest(questId) {
+  /** Em bấm vào thẻ nhiệm vụ. Ghi một lần mỗi nhiệm vụ — bấm lại không ghi thêm. */
+  acceptQuest(questId, { unit } = {}) {
+    if (Store.get().quests?.[questId]?.accepted) return;
     Store.update((s) => {
       s.quests[questId] = { ...(s.quests[questId] || {}), accepted: true, date: todayKey() };
     });
-    Log.event('quest_accept', { extra: { quest_id: questId } });
+    Log.event('quest_accept', { unit: unit ?? '', extra: { quest_id: questId } });
   },
 
-  completeQuest(questId, { gold = RULES.GOLD_PER_QUEST, xp = 0 } = {}) {
+  /** Hoàn thành nhiệm vụ. Chặn lần gọi thứ hai: không cộng vàng, không ghi sự kiện hai lần. */
+  completeQuest(questId, { gold = RULES.GOLD_PER_QUEST, xp = 0, unit } = {}) {
+    if (Store.get().quests?.[questId]?.done) return;
     Store.update((s) => {
       s.quests[questId] = { ...(s.quests[questId] || {}), done: true };
       s.gold += gold;
     });
     if (xp) Store.addXP(xp);
     Log.event('quest_complete', {
-      gold_delta: gold, xp_delta: xp, extra: { quest_id: questId },
+      unit: unit ?? '', gold_delta: gold, xp_delta: xp, extra: { quest_id: questId },
     });
+  },
+
+  /**
+   * Nhiệm vụ hôm nay kèm tiến độ, cho thẻ ở trang chủ:
+   * { id, module, unit, target, gold, progress, accepted, done } — null nếu học kỳ không có bài.
+   */
+  get todayQuest() {
+    const q = questFor();
+    if (!q) return null;
+    const rec = (Store.get().quests || {})[q.id] || {};
+    const progress = Array.isArray(rec.items) ? Math.min(rec.items.length, q.target) : 0;
+    return { ...q, gold: RULES.GOLD_PER_QUEST, progress, accepted: !!rec.accepted, done: !!rec.done };
   },
 
   /**

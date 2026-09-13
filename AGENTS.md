@@ -430,6 +430,7 @@ Kiểm tra tĩnh thì luôn được phép: đọc mã, soi JSON, chạy linter,
 - [ ] Thử trên điện thoại thật của học sinh
 - [ ] Đổi `APP_VERSION` thành `v1.0.0` và `CONTENT_VERSION` thành `c1.0.0`, rồi
       **đóng băng cả hai**
+- [ ] `CURRENT_TERM` trong `core/config.js` đúng học kỳ đang học; sang tháng 2 đổi thành `HK2`
 
 ---
 
@@ -505,6 +506,9 @@ khi thực hiện.
 | 2026-09-13 | `Store` thêm bộ đếm `daily` (giữ 60 ngày) cho thẻ Today / Week | Chỉ để hiển thị; dữ liệu nghiên cứu vẫn là dòng `item_answer` có dấu thời gian. Trạng thái cũ không có `daily` vẫn chạy |
 | 2026-09-13 | Sửa trang chủ và My Progress đọc sai khoá `days_active` / `items_answered` | Hai khoá không có trong `Store.metrics()`, nên cả hai trang luôn báo 1 ngày, 0 câu, độ chính xác "--" bất kể học sinh đã làm bao nhiêu |
 | 2026-09-13 | Bảng điều khiển **chịu được module lẫn phiên bản** trong cache | URL module không gắn phiên bản và Pages cho cache 10 phút, nên ngay sau deploy một máy có thể chạy `progress.js` mới với `store.js` cũ. Thiếu khoá mới thì hiện 0, thiếu hàm thì bỏ cột phải hoặc ẩn nút đổi nền — không để trang chủ trắng |
+| 2026-09-14 | **Sửa nhiệm vụ hôm nay**: mỗi ngày một bài Ngữ pháp của học kỳ hiện tại, xoay vòng theo ngày; xong khi đủ 5 câu khác nhau của bài đó trong ngày | Bản cũ không bao giờ xong (không chỗ nào gọi `completeQuest`), id không gắn ngày, và luôn giao Câu bị động — bài HK2 — ngay trong HK1. Cả lớp cùng một bài trong cùng ngày nên so sánh được. Xong thì +20 vàng, không cộng XP (XP đã tính theo từng câu), hoàn thành ngay trong `answerItem`. `quest_accept` ghi một lần khi em bấm thẻ; câu làm mà không bấm thẻ vẫn được tính, nên phân tích tách được "làm theo nhiệm vụ" với "tình cờ làm trùng bài" |
+| 2026-09-14 | Thêm `CURRENT_TERM`, `QUEST_POOL`, `QUEST_TARGET` vào `core/config.js`; `quest_accept` / `quest_complete` mang `unit` | DATA-DESIGN §5 đòi đọc học kỳ hiện tại từ cấu hình mà chưa có. `QUEST_POOL` phải khớp `semester` trong manifest. **Sang học kỳ 2 phải đổi `CURRENT_TERM` thành `HK2`.** Không thêm `event_type` mới |
+| 2026-09-14 | Trang chủ về đúng thứ tự §9.1: lời chào + ba con số → nhiệm vụ → hai thẻ lớn → chân trang | Bản thiết kế lại 13/09 đặt hai thẻ lớn trước nhiệm vụ và đưa ba con số sang cột phải — trên điện thoại cột phải rơi xuống cuối trang. Cột phải trang chủ còn thẻ "Your practice"; trang Luyện tập vẫn giữ thẻ Overview |
 
 ---
 
