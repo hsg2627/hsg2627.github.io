@@ -2,9 +2,9 @@
 import { Portal } from '/js/progress.js';
 
 const BUG_LABEL = {
-  key:  'Đáp án sai',
-  text: 'Tiếng Anh hỏng',
-  app:  'Trang chạy sai',
+  key:  'Wrong answer key',
+  text: 'Broken or odd English',
+  app:  'Page not working',
 };
 
 function esc(t) {
@@ -26,7 +26,7 @@ function renderMe() {
   const spine = Portal.spine;
   const metrics = spine.metrics;
   const state = spine.state;
-  const pseudoId = spine.id || 'Chưa đăng nhập';
+  const pseudoId = spine.id || 'Not signed in';
   const pending = spine.pending;
   const bugs = spine.myBugReports();
 
@@ -48,91 +48,91 @@ function renderMe() {
   const accuracyPct = Math.round((metrics.accuracy || 0) * 100);
 
   main.innerHTML = `
-    <h1>👤 Dữ liệu của tôi</h1>
+    <h1>👤 My Progress</h1>
     <p style="color:var(--muted); margin-top:-8px;">
-      Mã học sinh của em: <strong style="color:var(--navy); font-size:1.05rem;">${pseudoId}</strong>
+      Your student code: <strong style="color:var(--navy); font-size:1.05rem;">${pseudoId}</strong>
     </p>
 
-    <!-- Khối 1: Tiến độ học tập -->
+    <!-- Block 1: study progress -->
     <section class="panel">
-      <h2 style="margin-top:0;">📊 Thống kê học tập</h2>
+      <h2 style="margin-top:0;">📊 Study statistics</h2>
       <div class="metrics-grid">
         <div class="metric-box">
           <span class="metric-val">${state.level || 1}</span>
-          <span class="metric-lbl">Cấp độ</span>
+          <span class="metric-lbl">Level</span>
         </div>
         <div class="metric-box">
           <span class="metric-val">${state.xp || 0}</span>
-          <span class="metric-lbl">Tổng XP</span>
+          <span class="metric-lbl">Total XP</span>
         </div>
         <div class="metric-box">
           <span class="metric-val">${state.streak_max || 0}</span>
-          <span class="metric-lbl">Chuỗi đúng kỷ lục</span>
+          <span class="metric-lbl">Best streak</span>
         </div>
       </div>
       <div class="metrics-grid" style="margin-top:8px;">
         <div class="metric-box">
           <span class="metric-val">${metrics.days_active || 1}</span>
-          <span class="metric-lbl">Ngày hoạt động</span>
+          <span class="metric-lbl">Active days</span>
         </div>
         <div class="metric-box">
           <span class="metric-val">${totalItems}</span>
-          <span class="metric-lbl">Câu đã trả lời</span>
+          <span class="metric-lbl">Items answered</span>
         </div>
         <div class="metric-box">
           <span class="metric-val">${totalItems > 0 ? accuracyPct + '%' : '--'}</span>
-          <span class="metric-lbl">Độ chính xác</span>
+          <span class="metric-lbl">Accuracy</span>
         </div>
       </div>
     </section>
 
-    <!-- Khối 2: Trạng thái đồng bộ -->
+    <!-- Block 2: sync status -->
     <section class="panel">
-      <h2 style="margin-top:0;">📡 Trạng thái đồng bộ</h2>
+      <h2 style="margin-top:0;">📡 Sync status</h2>
       <p style="font-size:15px; margin-bottom:12px;">
-        Số dòng dữ liệu đang chờ gửi lên máy chủ: <strong id="pending-count" style="color:var(--navy); font-size:1.1rem;">${pending}</strong>
+        Data rows waiting to be sent to the server: <strong id="pending-count" style="color:var(--navy); font-size:1.1rem;">${pending}</strong>
       </p>
       <div class="btn-row">
         <button id="btn-flush" class="btn" ${pending === 0 ? 'disabled' : ''}>
-          Gửi ngay lên máy chủ
+          Send to the server now
         </button>
       </div>
       <p style="font-size:12.5px; color:var(--muted); margin-top:8px;">
-        Dữ liệu sẽ tự động gửi khi có kết nối mạng. Nếu sắp tắt máy hoặc đổi thiết bị, em có thể bấm nút này để gửi ngay.
+        Data is sent automatically when you are online. If you are about to switch off or change devices, tap this button to send it now.
       </p>
     </section>
 
-    <!-- Khối 3: Hộp thư báo lỗi -->
+    <!-- Block 3: bug-report inbox -->
     <section class="panel">
-      <h2 style="margin-top:0;">📮 Hộp thư của em</h2>
+      <h2 style="margin-top:0;">📮 Your messages</h2>
       <p style="font-size:14.5px; color:var(--muted); margin:-4px 0 14px; line-height:1.5;">
-        Những lỗi em phát hiện được trong học liệu do AI viết. Em gửi bao nhiêu thư
-        cũng <strong>không ảnh hưởng điểm</strong> — đây là việc của người kiểm thử,
-        không phải xin phúc khảo.
+        The errors you have found in the AI-written materials. However many messages you send,
+        they <strong>do not affect your score</strong> — this is a tester’s job,
+        not an appeal against a mark.
       </p>
       ${bugs.length === 0 ? `
         <p style="font-size:14.5px; color:var(--muted); margin:0;">
-          Em chưa nhắn tin nào. Khi làm Xưởng AI, nếu thấy đáp án chưa đúng hoặc câu
-          tiếng Anh nghe kỳ, bấm <strong>💬 Nhắn cho cô về bài này</strong>
-          ở cuối phần phản hồi nhé.
+          You have not sent any messages yet. In the AI Error Log, if an answer looks wrong or a sentence
+          of English sounds odd, tap <strong>💬 Message your teacher about this item</strong>
+          at the end of the feedback.
         </p>
       ` : `
         <p style="font-size:14.5px; margin:0 0 14px;">
-          Em đã nhắn <strong style="color:var(--navy);">${bugs.length}</strong> tin
-          về <strong style="color:var(--navy);">${threads.length}</strong> bài.
+          You have sent <strong style="color:var(--navy);">${bugs.length}</strong> ${bugs.length === 1 ? 'message' : 'messages'}
+          about <strong style="color:var(--navy);">${threads.length}</strong> ${threads.length === 1 ? 'item' : 'items'}.
         </p>
         ${threads.map(t => `
           <div class="thread">
             <div class="thread-head">
               <strong>${esc(t.itemId)}</strong>
-              <span>${esc(t.unit)}${t.itemCorrect ? ' · em đã làm đúng bài này' : ''}</span>
+              <span>${esc(t.unit)}${t.itemCorrect ? ' · you got this one right' : ''}</span>
             </div>
             ${t.msgs.map(b => `
               <div class="msg from-me">
-                <span class="msg-tag">${esc(BUG_LABEL[b.bug_type] || 'Khác')}</span>${esc(b.reason)}
+                <span class="msg-tag">${esc(BUG_LABEL[b.bug_type] || 'Other')}</span>${esc(b.reason)}
                 <span class="msg-meta">${new Date(b.at).toLocaleString('vi-VN', {
                   day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit',
-                })} · ✓ đã ghi</span>
+                })} · ✓ recorded</span>
               </div>
             `).join('')}
           </div>
@@ -140,22 +140,22 @@ function renderMe() {
       `}
     </section>
 
-    <!-- Khối 4: Quyền riêng tư & Dữ liệu của em -->
+    <!-- Block 4: privacy and your data -->
     <section class="panel">
-      <h2 style="margin-top:0;">🔒 Quyền của em</h2>
+      <h2 style="margin-top:0;">🔒 Your rights</h2>
       <p style="font-size:15px;">
-        Em có toàn quyền tải về bản sao tiến độ hoặc xoá thông tin học tập lưu trên thiết bị này.
+        You have every right to download a copy of your progress or delete the study data stored on this device.
       </p>
       <div class="btn-row">
         <button id="btn-export" class="btn ghost">
-          📥 Tải dữ liệu của tôi (.json)
+          📥 Download my data (.json)
         </button>
         <button id="btn-delete" class="btn danger">
-          🗑️ Xoá dữ liệu học tập của tôi
+          🗑️ Delete my study data
         </button>
       </div>
       <p style="font-size:12px; color:var(--muted); margin-top:12px; line-height:1.45;">
-        Nút này xoá tiến độ học và mã của em trên máy này. Số liệu thống kê ẩn danh mà trang dùng để biết có bao nhiêu người vào học thì không xoá được từ đây — em hỏi cô nếu muốn biết thêm.
+        This button deletes your study progress and your code on this device. The anonymous statistics the site uses to know how many people visit cannot be deleted from here — ask your teacher if you want to know more.
       </p>
     </section>
   `;
@@ -164,22 +164,22 @@ function renderMe() {
     const btn = document.getElementById('btn-flush');
     if (!btn) return;
     btn.disabled = true;
-    btn.textContent = 'Đang gửi...';
+    btn.textContent = 'Sending…';
     const res = await spine.flush();
     Portal.renderHud();
-    Portal.toast(res.sent > 0 ? `Đã gửi thành công ${res.sent} sự kiện!` : 'Đã đồng bộ đầy đủ!');
+    Portal.toast(res.sent > 0 ? `${res.sent} ${res.sent === 1 ? 'event' : 'events'} sent!` : 'Everything is already synced!');
     renderMe();
   });
 
   document.getElementById('btn-export')?.addEventListener('click', () => {
     spine.exportMyData();
-    Portal.toast('Đang tải tệp dữ liệu...');
+    Portal.toast('Downloading your data file…');
   });
 
   document.getElementById('btn-delete')?.addEventListener('click', () => {
     const ok = confirm(
-      'Em có chắc chắn muốn xoá toàn bộ dữ liệu học tập và mã định danh trên máy này không?\n\n' +
-      'Tiến độ trên máy sẽ về ban đầu. Em sẽ cần nhập lại mã phiếu để tiếp tục học.'
+      'Are you sure you want to delete all your study data and your student code on this device?\n\n' +
+      'Your progress on this device will be reset. You will need to enter the code from your slip again to carry on.'
     );
     if (ok) {
       spine.deleteMyData();

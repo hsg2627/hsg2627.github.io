@@ -20,13 +20,13 @@ async function renderList() {
   if (!main) return;
 
   main.innerHTML = `
-    ${Portal.crumb('Luyện tập', '/practice/')}
-    <h1>📚 10 Chủ đề Từ vựng Lớp 10</h1>
+    ${Portal.crumb('Practice', '/practice/')}
+    <h1>📚 10 Grade 10 Vocabulary Topics</h1>
     <p style="color:var(--muted); margin-top:-8px;">
-      Vốn từ vựng trọng tâm theo các chủ đề Chương trình GDPT 2018.
+      The core vocabulary for the topics of the 2018 National Curriculum.
     </p>
     <div id="vocab-list-container" class="cards" style="margin-top:20px;">
-      <p style="color:var(--muted);">Đang tải danh mục từ vựng...</p>
+      <p style="color:var(--muted);">Loading the vocabulary list…</p>
     </div>
   `;
 
@@ -48,15 +48,15 @@ async function renderList() {
       ).length;
 
       const progressText = answeredCount > 0
-        ? `<span style="color:var(--ok);">✓ ${answeredCount}/60 câu</span>`
-        : `<span>60 câu luyện tập</span>`;
+        ? `<span style="color:var(--ok);">✓ ${answeredCount}/60 items</span>`
+        : `<span>60 practice items</span>`;
 
       return `
         <a class="card" href="/practice/vocabulary/?unit=${m.gs_unit}">
           <span class="ico">📖</span>
           <h3>Unit ${m.gs_unit}: ${m.title}</h3>
           <div class="meta">
-            <span>Học kỳ: <strong>${m.semester}</strong></span>
+            <span>Term: <strong>${m.semester}</strong></span>
             ${progressText}
           </div>
         </a>
@@ -65,7 +65,7 @@ async function renderList() {
   } catch (err) {
     const container = document.getElementById('vocab-list-container');
     if (container) {
-      container.innerHTML = Portal.empty('Chưa tải được danh mục từ vựng. Em kiểm tra mạng rồi thử lại nhé.');
+      container.innerHTML = Portal.empty('The vocabulary list could not be loaded. Check your connection and try again.');
     }
   }
 }
@@ -76,9 +76,9 @@ async function renderUnit(unitNum) {
 
   const pad = String(unitNum).padStart(2, '0');
   main.innerHTML = `
-    ${Portal.crumb('Danh sách chủ đề', '/practice/vocabulary/')}
+    ${Portal.crumb('Topic list', '/practice/vocabulary/')}
     <div id="vocab-unit-container">
-      <p style="color:var(--muted);">Đang tải dữ liệu từ vựng Unit ${unitNum}...</p>
+      <p style="color:var(--muted);">Loading vocabulary for Unit ${unitNum}…</p>
     </div>
   `;
 
@@ -124,15 +124,15 @@ async function renderUnit(unitNum) {
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px;">
           <h2 style="margin:0;">Unit ${data.unit}: ${data.title}</h2>
           <div style="display:flex; gap:6px;">
-            <button id="tab-btn-flashcard" class="btn ${activeTab === 'flashcard' ? '' : 'ghost'}" style="min-height:36px; padding:6px 12px; font-size:13.5px;">🗂️ Thẻ từ (${data.words.length})</button>
-            <button id="tab-btn-quiz" class="btn ${activeTab === 'quiz' ? '' : 'ghost'}" style="min-height:36px; padding:6px 12px; font-size:13.5px;">📝 Luyện tập (${answered}/${total})</button>
+            <button id="tab-btn-flashcard" class="btn ${activeTab === 'flashcard' ? '' : 'ghost'}" style="min-height:36px; padding:6px 12px; font-size:13.5px;">🗂️ Flashcards (${data.words.length})</button>
+            <button id="tab-btn-quiz" class="btn ${activeTab === 'quiz' ? '' : 'ghost'}" style="min-height:36px; padding:6px 12px; font-size:13.5px;">📝 Practice (${answered}/${total})</button>
           </div>
         </div>
 
         ${activeTab === 'quiz' ? `
           <div class="progress-bar-wrap" style="margin-bottom:16px;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
-              <span style="font-size:13px; color:var(--muted);">Tiến độ: <strong>${answered}/${total}</strong> câu</span>
+              <span style="font-size:13px; color:var(--muted);">Progress: <strong>${answered}/${total}</strong> items</span>
               <span style="font-size:13px; color:var(--muted);">${pct}%</span>
             </div>
             <div class="bar" style="height:8px; border-radius:4px; background:var(--surface2, #e8e8e8);"><i style="width:${pct}%; background:var(--ok, #34a853); height:100%; display:block; border-radius:4px; transition:width 0.3s ease;"></i></div>
@@ -162,7 +162,7 @@ async function renderUnit(unitNum) {
 
     function renderFlashcardTab(tabContent) {
       if (!data.words || data.words.length === 0) {
-        tabContent.innerHTML = Portal.empty('Chưa có từ vựng cho bài học này.');
+        tabContent.innerHTML = Portal.empty('There is no vocabulary for this lesson yet.');
         return;
       }
 
@@ -171,7 +171,7 @@ async function renderUnit(unitNum) {
 
       tabContent.innerHTML = `
         <div style="text-align:center; margin-bottom:8px; font-size:13.5px; color:var(--muted);">
-          Từ <strong>${flashcardIndex + 1}</strong> / ${data.words.length}
+          Word <strong>${flashcardIndex + 1}</strong> of ${data.words.length}
         </div>
 
         <div id="card-box" class="flashcard">
@@ -184,12 +184,12 @@ async function renderUnit(unitNum) {
         </div>
 
         <div class="btn-row" style="justify-content:space-between;">
-          <button id="btn-prev-word" class="btn ghost" ${flashcardIndex === 0 ? 'disabled' : ''}>← Từ trước</button>
-          <button id="btn-next-word" class="btn" ${flashcardIndex === data.words.length - 1 ? 'disabled' : ''}>Từ tiếp theo →</button>
+          <button id="btn-prev-word" class="btn ghost" ${flashcardIndex === 0 ? 'disabled' : ''}>← Previous word</button>
+          <button id="btn-next-word" class="btn" ${flashcardIndex === data.words.length - 1 ? 'disabled' : ''}>Next word →</button>
         </div>
 
         <div style="margin-top:24px;">
-          <h3>📋 Danh sách toàn bộ từ vựng</h3>
+          <h3>📋 Full word list</h3>
           <div style="display:grid; gap:8px; margin-top:10px;">
             ${data.words.map((item, idx) => `
               <div class="card" style="padding:10px 14px; cursor:pointer;" onclick="window.selectWord(${idx})">
@@ -227,7 +227,7 @@ async function renderUnit(unitNum) {
 
     function renderQuizTab(tabContent) {
       if (!data.items || data.items.length === 0) {
-        tabContent.innerHTML = Portal.empty('Chưa có câu hỏi luyện tập cho chủ đề này.');
+        tabContent.innerHTML = Portal.empty('There are no practice questions for this topic yet.');
         return;
       }
 
@@ -245,12 +245,12 @@ async function renderUnit(unitNum) {
         tabContent.innerHTML = `
           <div class="panel" style="text-align:center; padding:32px 16px;">
             <div style="font-size:42px; margin-bottom:12px;">🎉</div>
-            <h2 style="color:var(--navy); margin-top:0;">Hoàn thành bài tập từ vựng!</h2>
-            <p style="color:var(--muted);">Em đã hoàn thành tất cả ${total} câu hỏi của Unit ${data.unit}.</p>
+            <h2 style="color:var(--navy); margin-top:0;">Vocabulary practice complete!</h2>
+            <p style="color:var(--muted);">You have finished all ${total} questions in Unit ${data.unit}.</p>
             <div style="display:flex; justify-content:center; gap:20px; margin:16px 0;">
               <div style="text-align:center;">
                 <div style="font-size:24px; font-weight:700; color:var(--ok);">${correctCount}</div>
-                <div style="font-size:12px; color:var(--muted);">Đúng</div>
+                <div style="font-size:12px; color:var(--muted);">Correct</div>
               </div>
               <div style="text-align:center;">
                 <div style="font-size:24px; font-weight:700; color:var(--crit);">${total - correctCount}</div>
@@ -258,12 +258,12 @@ async function renderUnit(unitNum) {
               </div>
               <div style="text-align:center;">
                 <div style="font-size:24px; font-weight:700; color:var(--navy);">${accuracy}%</div>
-                <div style="font-size:12px; color:var(--muted);">Chính xác</div>
+                <div style="font-size:12px; color:var(--muted);">Accuracy</div>
               </div>
             </div>
             <div class="btn-row" style="justify-content:center; margin-top:20px;">
-              <button id="btn-review-wrong" class="btn ghost">Ôn lại câu sai</button>
-              <a href="/practice/vocabulary/" class="btn">Chủ đề khác →</a>
+              <button id="btn-review-wrong" class="btn ghost">Review the ones you missed</button>
+              <a href="/practice/vocabulary/" class="btn">Another topic →</a>
             </div>
           </div>
         `;
@@ -294,14 +294,14 @@ async function renderUnit(unitNum) {
 
       // Determine question type label
       let typeLabel = '';
-      if (item.prompt.startsWith('Điền từ')) typeLabel = '📝 Điền từ';
-      else if (item.prompt.startsWith('Từ/cụm từ tiếng Anh')) typeLabel = '🇻🇳→🇬🇧 Nghĩa → Từ';
-      else if (item.prompt.includes('có nghĩa là gì')) typeLabel = '🇬🇧→🇻🇳 Từ → Nghĩa';
-      else if (item.prompt.startsWith('Từ/cụm từ nào phù hợp')) typeLabel = '📖 Ngữ cảnh';
+      if (item.prompt.startsWith('Điền từ')) typeLabel = '📝 Gap fill';
+      else if (item.prompt.startsWith('Từ/cụm từ tiếng Anh')) typeLabel = '🇻🇳→🇬🇧 Meaning → Word';
+      else if (item.prompt.includes('có nghĩa là gì')) typeLabel = '🇬🇧→🇻🇳 Word → Meaning';
+      else if (item.prompt.startsWith('Từ/cụm từ nào phù hợp')) typeLabel = '📖 Context';
 
       tabContent.innerHTML = `
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:6px;">
-          <span style="font-size:13.5px; font-weight:700; color:var(--muted);">Câu ${quizIndex + 1}/${data.items.length}</span>
+          <span style="font-size:13.5px; font-weight:700; color:var(--muted);">Question ${quizIndex + 1} of ${data.items.length}</span>
           <div style="display:flex; gap:6px; align-items:center;">
             ${typeLabel ? `<span style="font-size:11px; padding:2px 8px; background:var(--surface2, #f0f0f0); border-radius:10px; color:var(--muted);">${typeLabel}</span>` : ''}
             ${item.ai_generated ? `<div class="chip-ai" style="margin:0;">🤖 AI-Generated</div>` : ''}
@@ -323,15 +323,15 @@ async function renderUnit(unitNum) {
           <div id="feedback-area"></div>
 
           <div class="btn-row" style="margin-top:16px; flex-wrap:wrap; gap:8px;">
-            <button id="btn-check" class="btn btn-wide" disabled>Kiểm tra</button>
-            <button id="btn-next" class="btn btn-wide" style="display:none;">Câu tiếp theo →</button>
-            <button id="btn-skip" class="btn ghost" style="font-size:13px;">Bỏ qua →</button>
+            <button id="btn-check" class="btn btn-wide" disabled>Check</button>
+            <button id="btn-next" class="btn btn-wide" style="display:none;">Next question →</button>
+            <button id="btn-skip" class="btn ghost" style="font-size:13px;">Skip →</button>
           </div>
         </div>
 
         <div style="margin-top:12px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap;">
-          <button id="btn-jump-start" class="btn ghost" style="font-size:12px; padding:4px 10px;">⏮ Câu 1</button>
-          <button id="btn-jump-next-unanswered" class="btn ghost" style="font-size:12px; padding:4px 10px;">⏭ Câu chưa làm</button>
+          <button id="btn-jump-start" class="btn ghost" style="font-size:12px; padding:4px 10px;">⏮ Question 1</button>
+          <button id="btn-jump-next-unanswered" class="btn ghost" style="font-size:12px; padding:4px 10px;">⏭ Next unanswered</button>
         </div>
       `;
 
@@ -401,8 +401,8 @@ async function renderUnit(unitNum) {
 
         feedbackArea.innerHTML = `
           <div class="fb ${isCorrect ? '' : 'bad'}">
-            <h4>${isCorrect ? '✓ Chính xác!' : '✕ Chưa chính xác'}</h4>
-            <p>${item.explanation || (isCorrect ? 'Em đã chọn từ vựng đúng.' : 'Hãy xem lại nghĩa của từ nhé.')}</p>
+            <h4>${isCorrect ? '✓ Correct!' : '✕ Not correct'}</h4>
+            <p>${item.explanation || (isCorrect ? 'You picked the right word.' : 'Look again at what the word means.')}</p>
           </div>
         `;
 
@@ -431,7 +431,7 @@ async function renderUnit(unitNum) {
     renderView();
 
   } catch (err) {
-    console.error('Lỗi nạp từ vựng:', err);
-    container.innerHTML = Portal.empty('Không thể tải dữ liệu bài học này.', '/practice/vocabulary/', '← Quay lại danh mục');
+    console.error('Failed to load vocabulary:', err);
+    container.innerHTML = Portal.empty('The data for this lesson could not be loaded.', '/practice/vocabulary/', '← Back to the list');
   }
 }

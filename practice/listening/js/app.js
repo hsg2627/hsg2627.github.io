@@ -20,18 +20,18 @@ async function renderList() {
   if (!main) return;
 
   const hk2Units = [
-    { unit: 6, title: 'Gender Equality', desc: 'Luyện nghe về bình đẳng giới và cơ hội nghề nghiệp.' },
-    { unit: 7, title: 'Viet Nam & International Organisations', desc: 'Luyện nghe về quan hệ hợp tác với các tổ chức quốc tế.' },
-    { unit: 8, title: 'New Ways to Learn', desc: 'Luyện nghe về các phương pháp học tập số và trực tuyến.' },
-    { unit: 9, title: 'Protecting the Environment', desc: 'Luyện nghe về bảo tồn đa dạng sinh học và giảm rác thải.' },
-    { unit: 10, title: 'Ecotourism', desc: 'Luyện nghe về du lịch sinh thái có trách nhiệm.' }
+    { unit: 6, title: 'Gender Equality', desc: 'Listening practice on gender equality and career opportunities.' },
+    { unit: 7, title: 'Viet Nam & International Organisations', desc: 'Listening practice on cooperation with international organisations.' },
+    { unit: 8, title: 'New Ways to Learn', desc: 'Listening practice on digital and online ways of learning.' },
+    { unit: 9, title: 'Protecting the Environment', desc: 'Listening practice on conserving biodiversity and cutting waste.' },
+    { unit: 10, title: 'Ecotourism', desc: 'Listening practice on responsible ecotourism.' }
   ];
 
   main.innerHTML = `
-    ${Portal.crumb('Luyện tập', '/practice/')}
-    <h1>🎧 Kỹ năng Nghe (Listening)</h1>
+    ${Portal.crumb('Practice', '/practice/')}
+    <h1>🎧 Listening</h1>
     <p style="color:var(--muted); margin-top:-8px;">
-      5 bài luyện nghe tiếng Anh Học kỳ 2 bám sát Chương trình GDPT 2018 (độ dài 180–200 từ).
+      5 term 2 listening exercises aligned to the 2018 National Curriculum (180–200 words each).
     </p>
 
     <div class="cards" style="margin-top:20px;">
@@ -40,7 +40,7 @@ async function renderList() {
           <span class="ico">🎧</span>
           <h3>Unit ${u.unit}: ${u.title}</h3>
           <p>${u.desc}</p>
-          <div class="meta"><span>Học kỳ 2</span><span>Audio đối thoại</span></div>
+          <div class="meta"><span>Term 2</span><span>Dialogue audio</span></div>
         </a>
       `).join('')}
     </div>
@@ -53,9 +53,9 @@ async function renderDrill(unitNum) {
 
   const pad = String(unitNum).padStart(2, '0');
   main.innerHTML = `
-    ${Portal.crumb('Danh sách bài nghe', '/practice/listening/')}
+    ${Portal.crumb('Listening list', '/practice/listening/')}
     <div id="listening-drill-container">
-      <p style="color:var(--muted);">Đang nạp bài nghe...</p>
+      <p style="color:var(--muted);">Loading the listening exercise…</p>
     </div>
   `;
 
@@ -82,24 +82,24 @@ async function renderDrill(unitNum) {
       container.innerHTML = `
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
           <h2 style="margin:0; font-size:1.15rem;">Unit ${data.unit}: ${data.title}</h2>
-          <span style="font-size:13.5px; font-weight:700; color:var(--muted);">Câu ${idx + 1}/${data.questions.length}</span>
+          <span style="font-size:13.5px; font-weight:700; color:var(--muted);">Question ${idx + 1} of ${data.questions.length}</span>
         </div>
 
-        <!-- Trình phát âm thanh gốc HTML5 -->
+        <!-- Native HTML5 audio player -->
         <div class="panel" style="margin-bottom:16px;">
           <div style="font-size:14px; font-weight:600; margin-bottom:8px; color:var(--navy);">
-            🔊 Nghe đoạn hội thoại:
+            🔊 Listen to the dialogue:
           </div>
           <audio id="audio-player" controls preload="none" style="width:100%;">
             <source src="/assets/audio/04_Track_4.mp3" type="audio/mpeg">
-            Trình duyệt của em không hỗ trợ phát âm thanh trực tiếp.
+            Your browser cannot play this audio directly.
           </audio>
           <p style="font-size:12.5px; color:var(--muted); margin:6px 0 0;">
-            💡 Em hãy bấm Play để nghe và trả lời câu hỏi bên dưới.
+            💡 Press Play, then answer the questions below.
           </p>
         </div>
 
-        <!-- Khung câu hỏi -->
+        <!-- Question frame -->
         <div class="panel">
           <p style="font-size:1.05rem; font-weight:600; margin:0 0 16px;">${q.prompt}</p>
 
@@ -115,12 +115,12 @@ async function renderDrill(unitNum) {
           <div id="feedback-area"></div>
 
           <div class="btn-row" style="margin-top:16px;">
-            <button id="btn-check" class="btn btn-wide" disabled>Kiểm tra</button>
-            <button id="btn-next" class="btn btn-wide" style="display:none;">Câu tiếp theo →</button>
+            <button id="btn-check" class="btn btn-wide" disabled>Check</button>
+            <button id="btn-next" class="btn btn-wide" style="display:none;">Next question →</button>
           </div>
         </div>
 
-        <!-- Lời thoại mở sau khi trả lời -->
+        <!-- Transcript, revealed after answering -->
         <div id="transcript-container" style="margin-top:16px;"></div>
       `;
 
@@ -170,8 +170,8 @@ async function renderDrill(unitNum) {
 
         feedbackArea.innerHTML = `
           <div class="fb ${isCorrect ? '' : 'bad'}">
-            <h4>${isCorrect ? '✓ Chính xác!' : '✕ Chưa chính xác'}</h4>
-            <p>${q.explanation || (isCorrect ? 'Em đã nghe và chọn đúng.' : 'Hãy đọc lời thoại để đối chiếu nhé.')}</p>
+            <h4>${isCorrect ? '✓ Correct!' : '✕ Not correct'}</h4>
+            <p>${q.explanation || (isCorrect ? 'You listened and chose correctly.' : 'Read the transcript to check what was said.')}</p>
           </div>
         `;
 
@@ -179,7 +179,7 @@ async function renderDrill(unitNum) {
         if (data.transcript) {
           transcriptContainer.innerHTML = `
             <details style="background:var(--surface); border:1px solid var(--rule); border-radius:var(--radius); padding:12px 16px;">
-              <summary style="cursor:pointer; font-weight:600; color:var(--navy);">📄 Xem lời thoại bài nghe (Audio Transcript)</summary>
+              <summary style="cursor:pointer; font-weight:600; color:var(--navy);">📄 Show the audio transcript</summary>
               <p style="margin-top:12px; font-size:15px; line-height:1.6; white-space:pre-line;">${data.transcript}</p>
             </details>
           `;
@@ -210,11 +210,11 @@ async function renderDrill(unitNum) {
       container.innerHTML = `
         <div class="panel" style="text-align:center; padding:32px 16px;">
           <div style="font-size:42px; margin-bottom:12px;">🎉</div>
-          <h2 style="color:var(--navy); margin-top:0;">Hoàn thành bài nghe!</h2>
-          <p style="color:var(--muted);">Em đã hoàn thành các câu hỏi luyện nghe Unit ${data.unit}.</p>
+          <h2 style="color:var(--navy); margin-top:0;">Listening exercise complete!</h2>
+          <p style="color:var(--muted);">You have finished the listening questions for Unit ${data.unit}.</p>
           <div class="btn-row" style="justify-content:center; margin-top:20px;">
-            <a href="/practice/listening/" class="btn ghost">← Danh sách bài nghe</a>
-            <a href="/practice/" class="btn">Về Luyện tập →</a>
+            <a href="/practice/listening/" class="btn ghost">← Listening list</a>
+            <a href="/practice/" class="btn">Back to Practice →</a>
           </div>
         </div>
       `;
@@ -223,7 +223,7 @@ async function renderDrill(unitNum) {
     renderQuestion(0);
 
   } catch (err) {
-    console.error('Lỗi nạp bài nghe:', err);
-    container.innerHTML = Portal.empty('Không tải được bài nghe này.', '/practice/listening/', '← Danh sách bài nghe');
+    console.error('Failed to load the listening exercise:', err);
+    container.innerHTML = Portal.empty('This listening exercise could not be loaded.', '/practice/listening/', '← Listening list');
   }
 }

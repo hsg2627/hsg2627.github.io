@@ -23,7 +23,7 @@ export async function loadJSON(relPath) {
   try {
     const res = await fetch(url);
     if (!res.ok) {
-      throw new Error(`HTTP ${res.status} khi tải ${url}`);
+      throw new Error(`HTTP ${res.status} while loading ${url}`);
     }
     const data = await res.json();
     try {
@@ -31,7 +31,7 @@ export async function loadJSON(relPath) {
     } catch (_) {}
     return data;
   } catch (err) {
-    console.error(`[loader] Không tải được dữ liệu từ ${url}`, err);
+    console.error(`[loader] Could not load data from ${url}`, err);
     throw err;
   }
 }

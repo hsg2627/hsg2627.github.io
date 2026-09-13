@@ -23,41 +23,41 @@ function renderHome() {
 
   main.innerHTML = `
     <section>
-      <h1>Chào em! 👋</h1>
+      <h1>Hello! 👋</h1>
       <p style="color:var(--muted); margin-top:-8px;">
-        Hôm nay là ngày học thứ <b>${daysActive}</b> của em. Cùng tiếp tục tích lũy kiến thức nhé!
+        This is study day <b>${daysActive}</b> for you. Keep building on it!
       </p>
 
       <div class="metrics-grid">
         <div class="metric-box">
           <span class="metric-val">${daysActive}</span>
-          <span class="metric-lbl">Ngày học</span>
+          <span class="metric-lbl">Study days</span>
         </div>
         <div class="metric-box">
           <span class="metric-val">${totalItems}</span>
-          <span class="metric-lbl">Câu đã làm</span>
+          <span class="metric-lbl">Items done</span>
         </div>
         <div class="metric-box">
           <span class="metric-val">${totalItems > 0 ? accuracyPct + '%' : '--'}</span>
-          <span class="metric-lbl">Độ chính xác</span>
+          <span class="metric-lbl">Accuracy</span>
         </div>
       </div>
     </section>
 
-    <!-- Nhiệm vụ hôm nay -->
+    <!-- Today's quest -->
     <section class="quest-box">
-      <h4>🎯 Nhiệm vụ hôm nay</h4>
-      <p>Luyện tập 5 câu <strong>Ngữ pháp · Câu bị động (Passive Voice)</strong> để rèn kỹ năng nhận biết và cấu trúc câu.</p>
+      <h4>🎯 Today's quest</h4>
+      <p>Practise 5 items on <strong>Grammar · Passive Voice</strong> to work on recognising the structure and building it yourself.</p>
       ${isQuestDone ? `
-        <span style="color:var(--ok); font-weight:700; font-size:14.5px;">✓ Đã hoàn thành nhiệm vụ hôm nay (+20 vàng)</span>
+        <span style="color:var(--ok); font-weight:700; font-size:14.5px;">✓ Today's quest complete (+20 gold)</span>
       ` : `
-        <a href="/practice/grammar/?g=g07" class="btn" style="min-height:38px; padding:6px 14px; font-size:14px;">Bắt đầu ngay →</a>
+        <a href="/practice/grammar/?g=g07" class="btn" style="min-height:38px; padding:6px 14px; font-size:14px;">Start now →</a>
       `}
     </section>
 
-    <!-- Hai thẻ lớn -->
+    <!-- Two main cards -->
     <section>
-      <h2>Trung tâm học tập</h2>
+      <h2>Learning centre</h2>
       <div class="cards">
         ${HOME_CARDS.map(card => `
           <a class="card" href="${card.href}">
@@ -69,10 +69,10 @@ function renderHome() {
       </div>
     </section>
 
-    <!-- Chân trang -->
+    <!-- Footer -->
     <footer class="home-foot">
-      <p>Học liệu bám Chương trình GDPT 2018, góp phần vào lộ trình đạt Bậc 3 khi kết thúc THPT.</p>
-      <p><a href="/Global_Success_10/">Khu vực giáo viên · Bài giảng trình chiếu</a></p>
+      <p>Materials follow the 2018 National Curriculum and contribute to the pathway towards Level 3 by the end of upper secondary school.</p>
+      <p><a href="/Global_Success_10/">Teacher area · Lecture slides</a></p>
     </footer>
   `;
 }

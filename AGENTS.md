@@ -207,8 +207,10 @@ ENGLISH INSIDERS LEARNING PORTAL
 Bỏ cụm `| HSG 12 & English 10`. Tiêu đề trang, dùng cho cả `<title>`:
 
 ```
-English Insiders Learning Portal · Tiếng Anh 10 — CT GDPT 2018
+English Insiders Learning Portal · English 10 — National Curriculum 2018
 ```
+
+Đổi từ bản có tiếng Việt ngày 2026-09-13 để khớp mục 15 — xem mục 13.
 
 **Dòng phụ, ngay dưới tên dự án, không đẩy xuống chân trang:**
 
@@ -487,6 +489,10 @@ khi thực hiện.
 | 2026-09-12 | **Huỷ toàn bộ dữ liệu Xưởng AI thu trước bản sửa 27/08**, dọn một lần trên từng máy | Mọi câu trả lời cũ đều chấm bằng `===`, mang đúng lỗi đo đã ghi ở dòng 27/08; trộn với dữ liệu sau khi sửa là hỏng RQ3. ENDPOINT còn rỗng nên chưa dòng nào rời máy học sinh — không dọn thì lúc cắm endpoint chúng chảy thẳng vào Sheet |
 | 2026-09-12 | Dọn **hẹp**: xoá sự kiện `module === ai_forge` và `bug_reports`, giữ nguyên XP, vàng, cấp độ, streak, ngày hoạt động | Xưởng AI không cộng XP (chỉ đường Luyện tập cộng) nên tiến trình game hoá không nhiễm lỗi đo. Xoá sạch trạng thái là phạt học sinh vì lỗi của trang, và thổi bay luôn dữ liệu Miền 1 vốn sạch |
 | 2026-09-12 | Xoá cả `module_open` của Xưởng AI, không chỉ riêng câu trả lời | Giữ lượt mở mà bỏ câu trả lời thì trong phân tích em thành "vào rồi bỏ ngang" — một hành vi không có thật, sai lệch hơn là không có dòng nào |
+| 2026-09-13 | **Giao diện chuyển hết sang tiếng Anh** theo mục 15 | Mục 15 đã quy định từ trước; giao diện tiếng Việt là vi phạm có sẵn, cộng thêm cổng đăng nhập viết ngày 12/09. Tiếng Việt chỉ còn ở chỗ mục 15 miễn trừ (`explanation`, `meaning`), tên riêng (`Nguyễn Khuyến`), và chuỗi so sánh với `prompt` ở module Từ vựng — dịch chuỗi đó mà JSON còn tiếng Việt thì nhãn dạng câu hỏi hỏng âm thầm |
+| 2026-09-13 | `<title>` trang chủ thành `English Insiders Learning Portal · English 10 — National Curriculum 2018`, **sửa luôn nguyên văn mục 6** | Mục 6 ghi nguyên văn một tiêu đề có tiếng Việt, mục 15 đòi mọi thông tin bằng tiếng Anh — hai mục mâu thuẫn. Nghiên cứu viên chốt theo mục 15 và sửa văn bản mục 6, để tác nhân sau không đổi ngược lại |
+| 2026-09-13 | Dịch nhãn bảng hỏi dùng AI (§9.4), **giữ nguyên mã** `none` · `idea` · `draft` · `edit` | Log ghi mã chứ không ghi nhãn, nên dữ liệu vẫn so sánh được. Nhãn dịch bám sát nghĩa từng phương án, không gộp, không đổi thứ tự |
+| 2026-09-13 | **Không** tăng `APP_VERSION` khi đổi ngôn ngữ giao diện | Mục 11 buộc giữ `v0.1.0` suốt pilot. Dữ liệu chính thức chưa thu và sẽ mang `v1.0.0` cùng giao diện tiếng Anh, nên ranh giới tự sạch |
 
 ---
 

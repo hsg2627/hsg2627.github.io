@@ -504,52 +504,350 @@ h3 {
   font-size: 15px;
 }
 
-/* Auth Gate Modal / Screen */
-.auth-gate {
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-radius: var(--radius);
-  padding: 24px 20px;
-  margin: 20px auto;
-  max-width: 420px;
-  text-align: center;
+/* ==========================================================================
+   Cổng nhập mã — bố cục hai cột
+   Cột trái là mảng thương hiệu và giữ nguyên dòng cảnh báo AI của mục 6.
+   Cột phải là ô nhập mã.
+
+   Cột trái CỐ Ý tối ở cả chế độ sáng và tối, nên KHÔNG dùng var(--navy):
+   biến đó đảo sang xanh nhạt (#A3B1E4) ở chế độ tối và sẽ phá sạch nền.
+   Màu của cột trái đặt cứng trong khối này.
+   ========================================================================== */
+
+body.auth-screen {
+  padding-bottom: 0;
 }
 
-.auth-gate h2 {
-  margin-top: 0;
+/* Bảng hiệu, cảnh báo AI đã hiện trong cột trái nên không hiện lại ở thanh
+   trên. Thanh tab trước khi đăng nhập chỉ dẫn sang trang cũng đang khoá. */
+body.auth-screen .topbar,
+body.auth-screen .hud,
+body.auth-screen .tabbar {
+  display: none;
+}
+
+body.auth-screen .wrap {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.auth-split {
+  display: grid;
+  grid-template-columns: 1.08fr 1fr;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* ---------- Cột trái ---------- */
+
+.auth-hero {
+  --hero-ink: #F5F7FC;
+  --hero-dim: #C3CBE2;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 36px 44px;
+  background: linear-gradient(155deg, #1E2846 0%, #141C33 100%);
+  color: var(--hero-ink);
+}
+
+.auth-brand {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.auth-mark {
+  flex: none;
+  width: 46px;
+  height: 46px;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.28);
+}
+
+.auth-brand-txt strong {
+  display: block;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.auth-brand-txt small {
+  display: block;
+  margin-top: 2px;
+  font-size: 13.5px;
+  color: var(--hero-dim);
+}
+
+/* Mục 6: cỡ đọc được, tương phản cao (#EDF1FA trên nền tối ~12:1).
+   Không thu nhỏ, không chuyển thành chữ xám nhạt, không bọc vào <details>. */
+.auth-ai {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 12px 14px;
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: #EDF1FA;
+  background: rgb(255 255 255 / 0.07);
+  border-left: 3px solid #D8B75F;
+  border-radius: 8px;
+}
+
+/* margin doc auto ca hai dau: canh khoi nay vao giua phan trong con lai,
+   duoi bang hieu va dong canh bao. */
+.auth-hero-main {
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Neo vao ca cot trai (.auth-hero), khong phai vao khoi chu. */
+.auth-wm {
+  position: absolute;
+  z-index: 0;
+  right: -52px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: clamp(180px, 26vw, 300px);
+  font-weight: 800;
+  line-height: 1;
+  color: rgb(255 255 255 / 0.045);
+  pointer-events: none;
+  user-select: none;
+}
+
+.auth-h1 {
+  position: relative;
+  z-index: 1;
+  /* h1 toan cuc dat color:var(--navy) — o day phai ke thua --hero-ink,
+     neu khong o che do toi tieu de se ra xanh nhat tren nen toi. */
+  color: inherit;
+  margin: 0 0 26px;
+  font-size: clamp(28px, 3.4vw, 40px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+}
+
+.auth-feats {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.auth-feats li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15.5px;
+  line-height: 1.45;
+}
+
+.auth-fi {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  font-size: 16px;
+  border-radius: 9px;
+  background: rgb(255 255 255 / 0.1);
+}
+
+/* ---------- Cột phải ---------- */
+
+/* Đường phân cách: ở chế độ SÁNG hai cột đã khác nhau rõ, nhưng ở chế độ
+   TỐI nền hai bên là #1E2846 và #13161F — tương phản giữa chúng chỉ 1,27:1,
+   cấu trúc chia đôi biến mất. var(--rule) sáng hơn cả hai nên thành mối nối
+   thấy được; ở chế độ sáng nó nằm sát cột giấy nên chỉ là viền mảnh. */
+.auth-panel {
+  display: flex;
+  padding: 36px 28px;
+  background: var(--paper);
+  border-left: 1px solid var(--rule);
+}
+
+/* margin:auto thay cho place-items:center — canh giữa mà không cắt đầu thẻ
+   khi màn hình thấp hơn thẻ. */
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.auth-card .auth-brand {
+  margin-bottom: 30px;
+}
+
+.auth-card .auth-mark {
+  width: 40px;
+  height: 40px;
+}
+
+.auth-card .auth-brand-txt strong {
+  font-size: 16.5px;
+  color: var(--ink);
+}
+
+.auth-card .auth-brand-txt small {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.auth-h2 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.auth-sub {
+  margin: 0 0 26px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.auth-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 7px;
+}
+
+.auth-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.auth-lost {
+  font-size: 13px;
+  color: var(--muted);
 }
 
 .auth-input {
   width: 100%;
+  font: inherit;
   font-size: 18px;
-  letter-spacing: 0.05em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+  min-height: var(--tap);
   padding: 12px 14px;
-  margin: 14px 0;
   border: 1.5px solid var(--rule);
   border-radius: var(--radius);
-  background: var(--paper);
+  background: var(--surface);
   color: var(--ink);
-  text-align: center;
-  box-sizing: border-box;
+}
+
+.auth-input::placeholder {
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  opacity: 0.7;
 }
 
 .auth-input:focus {
   border-color: var(--navy);
   outline: none;
-}
-
-.auth-hint {
-  font-size: 13px;
-  color: var(--muted);
-  margin: 8px 0 16px;
-  line-height: 1.4;
+  box-shadow: 0 0 0 3px rgb(40 53 103 / 0.14);
 }
 
 .auth-err {
-  color: var(--crit);
+  margin: 8px 0 0;
   font-size: 13.5px;
-  margin-bottom: 12px;
+  color: var(--crit);
+}
+
+.auth-hint {
+  margin: 10px 0 18px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.auth-note {
+  margin: 22px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* ---------- Xếp dọc khi hẹp ---------- */
+
+@media (max-width: 900px) {
+  .auth-split {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .auth-hero {
+    gap: 20px;
+    padding: 24px 20px 28px;
+  }
+
+  .auth-wm {
+    display: none;
+  }
+
+  .auth-h1 {
+    margin-bottom: 18px;
+    font-size: 25px;
+  }
+
+  .auth-feats {
+    gap: 11px;
+  }
+
+  .auth-feats li {
+    font-size: 14.5px;
+  }
+
+  .auth-panel {
+    padding: 28px 20px 44px;
+    border-left: none;
+  }
+
+  /* Bảng hiệu đã nằm ngay phía trên, không lặp lại trong thẻ. */
+  .auth-card .auth-brand {
+    display: none;
+  }
+}
+
+/* Điện thoại THẤP (375x667 và tương tự): bỏ phần trang trí, giữ bảng hiệu và
+   dòng cảnh báo AI. Đo trước khi bỏ: nút "Vào học" nằm dưới mép màn hình 104px
+   và ô nhập mã bắt đầu ở y=620 — em mở trang ra chỉ thấy phần giới thiệu, phải
+   kéo xuống mới tìm được chỗ gõ mã. Ô nhập mã là việc duy nhất cần làm ở màn
+   hình này nên nó phải thấy được ngay, phần giới thiệu thì không. */
+@media (max-width: 900px) and (max-height: 740px) {
+  .auth-hero {
+    gap: 16px;
+    padding: 20px 20px 22px;
+  }
+
+  .auth-hero-main {
+    display: none;
+  }
+
+  .auth-sub {
+    margin-bottom: 20px;
+  }
 }
 
 /* AI Error Log Spans */

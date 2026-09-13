@@ -2,23 +2,23 @@
 // đáp án hay siêu dữ liệu chương trình. Học liệu nằm ở /content/*.json.
 
 export const NAV = [
-  { id: 'home',      ico: '🏠', label: 'Trang chủ',    href: '/' },
-  { id: 'practice',  ico: '📖', label: 'Luyện tập',    href: '/practice/' },
-  { id: 'ai',        ico: '🤖', label: 'Xưởng AI',     href: '/ai-logs/' },
-  { id: 'me',        ico: '👤', label: 'Của tôi',      href: '/me/' },
+  { id: 'home',      ico: '🏠', label: 'Home',         href: '/' },
+  { id: 'practice',  ico: '📖', label: 'Practice',     href: '/practice/' },
+  { id: 'ai',        ico: '🤖', label: 'AI Error Log', href: '/ai-logs/' },
+  { id: 'me',        ico: '👤', label: 'My Progress',  href: '/me/' },
 ];
 
 export const HOME_CARDS = [
   {
     ico: '📖',
-    title: 'Luyện tập',
-    desc: 'Ngữ pháp, từ vựng, nghe, viết và đề luyện.',
+    title: 'Practice',
+    desc: 'Grammar, vocabulary, listening, writing and practice tests.',
     href: '/practice/'
   },
   {
     ico: '🤖',
-    title: 'Xưởng AI',
-    desc: 'Đọc đoạn văn do AI viết và tìm chỗ sai. Không phải bài nào cũng có lỗi.',
+    title: 'AI Error Log',
+    desc: 'Read a passage written by AI and find what is wrong. Not every passage has an error.',
     href: '/ai-logs/'
   },
 ];
@@ -27,36 +27,36 @@ export const PRACTICE_CARDS = [
   {
     id: 'grammar',
     ico: '📐',
-    title: 'Ngữ pháp',
-    desc: '14 module ngữ pháp chuẩn GDPT 2018.',
+    title: 'Grammar',
+    desc: '14 grammar modules aligned to the 2018 national curriculum.',
     href: '/practice/grammar/'
   },
   {
     id: 'vocabulary',
     ico: '📚',
-    title: 'Từ vựng',
-    desc: '10 chủ đề từ vựng lớp 10 bám sát chương trình.',
+    title: 'Vocabulary',
+    desc: '10 Grade 10 vocabulary topics aligned to the curriculum.',
     href: '/practice/vocabulary/'
   },
   {
     id: 'listening',
     ico: '🎧',
-    title: 'Nghe',
-    desc: '5 bài luyện nghe HK2 kèm lời thoại đối chiếu.',
+    title: 'Listening',
+    desc: '5 term 2 listening exercises, each with a transcript to check against.',
     href: '/practice/listening/'
   },
   {
     id: 'writing',
     ico: '✍️',
-    title: 'Viết',
-    desc: '5 chủ đề viết đoạn văn và tự đánh giá với bài mẫu.',
+    title: 'Writing',
+    desc: '5 paragraph topics with model answers to assess your own writing against.',
     href: '/practice/writing/'
   },
   {
     id: 'exam',
     ico: '📝',
-    title: 'Đề luyện',
-    desc: 'Đề ôn tập kiểm tra định kỳ bám chuẩn lớp 10.',
+    title: 'Practice Tests',
+    desc: 'Revision papers for the periodic tests, aligned to the Grade 10 standard.',
     href: '/practice/exam/'
   },
 ];

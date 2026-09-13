@@ -39,7 +39,7 @@ export const Identity = {
     if (!m) {
       return {
         ok: false,
-        error: `Mã chưa đúng dạng. Ví dụ đúng: ${CONFIG.ID_EXAMPLE}`,
+        error: `That code is not in the right format. Example: ${CONFIG.ID_EXAMPLE}`,
       };
     }
     return { ok: true, pseudo_id: s, class_id: m[2] + m[3], seat: m[4] };
@@ -56,7 +56,7 @@ export const Identity = {
       joined_at: new Date().toISOString(),
     };
     if (!writeJSON(KEY, rec)) {
-      return { ok: false, error: 'Máy không cho lưu dữ liệu. Em thử tắt chế độ ẩn danh giúp cô nhé.' };
+      return { ok: false, error: 'This device will not let the page save data. Please turn off private browsing.' };
     }
     cache = rec;
     return { ok: true };

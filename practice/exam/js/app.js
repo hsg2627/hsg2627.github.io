@@ -22,23 +22,23 @@ async function renderList() {
   const exams = [
     {
       id: 'hk1-01',
-      title: 'Đề ôn tập tổng hợp Học kỳ 1',
-      desc: '10 câu hỏi tổng hợp kiến thức ngữ pháp và từ vựng Unit 1 đến Unit 5.',
-      semester: 'Học kỳ 1'
+      title: 'Term 1 comprehensive revision paper',
+      desc: '10 questions drawing together the grammar and vocabulary of Units 1 to 5.',
+      semester: 'Term 1'
     },
     {
       id: 'hk2-01',
-      title: 'Đề ôn tập tổng hợp Học kỳ 2',
-      desc: '10 câu hỏi tổng hợp kiến thức ngữ pháp và từ vựng Unit 6 đến Unit 10.',
-      semester: 'Học kỳ 2'
+      title: 'Term 2 comprehensive revision paper',
+      desc: '10 questions drawing together the grammar and vocabulary of Units 6 to 10.',
+      semester: 'Term 2'
     }
   ];
 
   main.innerHTML = `
-    ${Portal.crumb('Luyện tập', '/practice/')}
-    <h1>📝 Đề luyện tập định kỳ Lớp 10</h1>
+    ${Portal.crumb('Practice', '/practice/')}
+    <h1>📝 Grade 10 Periodic Practice Papers</h1>
     <p style="color:var(--muted); margin-top:-8px;">
-      Đề kiểm tra bám sát ma trận đánh giá năng lực tiếng Anh lớp 10 GDPT 2018.
+      Papers built to the Grade 10 English assessment matrix of the 2018 National Curriculum.
     </p>
 
     <div class="cards" style="margin-top:20px;">
@@ -47,7 +47,7 @@ async function renderList() {
           <span class="ico">📋</span>
           <h3>${e.title}</h3>
           <p>${e.desc}</p>
-          <div class="meta"><span>10 câu trắc nghiệm</span><span>${e.semester}</span></div>
+          <div class="meta"><span>10 multiple-choice items</span><span>${e.semester}</span></div>
         </a>
       `).join('')}
     </div>
@@ -59,9 +59,9 @@ async function renderDrill(testId) {
   if (!main) return;
 
   main.innerHTML = `
-    ${Portal.crumb('Danh sách đề luyện', '/practice/exam/')}
+    ${Portal.crumb('Paper list', '/practice/exam/')}
     <div id="exam-drill-container">
-      <p style="color:var(--muted);">Đang nạp đề kiểm tra...</p>
+      <p style="color:var(--muted);">Loading the paper…</p>
     </div>
   `;
 
@@ -69,7 +69,7 @@ async function renderDrill(testId) {
     const data = await loadJSON(`exams/${testId}.json`);
     const container = document.getElementById('exam-drill-container');
     if (!container || !data.items || data.items.length === 0) {
-      if (container) container.innerHTML = Portal.empty('Chưa có dữ liệu cho đề kiểm tra này.', '/practice/exam/', '← Danh sách đề');
+      if (container) container.innerHTML = Portal.empty('There is no data for this paper yet.', '/practice/exam/', '← Paper list');
       return;
     }
 
@@ -92,7 +92,7 @@ async function renderDrill(testId) {
       container.innerHTML = `
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
           <h2 style="margin:0; font-size:1.15rem;">${data.title}</h2>
-          <span style="font-size:13.5px; font-weight:700; color:var(--muted);">Câu ${idx + 1}/${data.items.length}</span>
+          <span style="font-size:13.5px; font-weight:700; color:var(--muted);">Question ${idx + 1} of ${data.items.length}</span>
         </div>
 
         <div class="panel">
@@ -110,8 +110,8 @@ async function renderDrill(testId) {
           <div id="feedback-area"></div>
 
           <div class="btn-row" style="margin-top:16px;">
-            <button id="btn-check" class="btn btn-wide" disabled>Kiểm tra</button>
-            <button id="btn-next" class="btn btn-wide" style="display:none;">Câu tiếp theo →</button>
+            <button id="btn-check" class="btn btn-wide" disabled>Check</button>
+            <button id="btn-next" class="btn btn-wide" style="display:none;">Next question →</button>
           </div>
         </div>
       `;
@@ -153,8 +153,8 @@ async function renderDrill(testId) {
 
         feedbackArea.innerHTML = `
           <div class="fb ${isCorrect ? '' : 'bad'}">
-            <h4>${isCorrect ? '✓ Chính xác!' : '✕ Chưa chính xác'}</h4>
-            <p>${item.explanation || (isCorrect ? 'Em đã chọn đáp án đúng.' : 'Hãy xem lại lý thuyết của câu này nhé.')}</p>
+            <h4>${isCorrect ? '✓ Correct!' : '✕ Not correct'}</h4>
+            <p>${item.explanation || (isCorrect ? 'You picked the right answer.' : 'Look again at the point this question tests.')}</p>
           </div>
         `;
 
@@ -183,11 +183,11 @@ async function renderDrill(testId) {
       container.innerHTML = `
         <div class="panel" style="text-align:center; padding:32px 16px;">
           <div style="font-size:42px; margin-bottom:12px;">🎉</div>
-          <h2 style="color:var(--navy); margin-top:0;">Hoàn thành đề kiểm tra!</h2>
-          <p style="color:var(--muted);">Em đã hoàn thành tất cả câu hỏi trong <strong>${data.title}</strong>.</p>
+          <h2 style="color:var(--navy); margin-top:0;">Paper complete!</h2>
+          <p style="color:var(--muted);">You have finished every question in <strong>${data.title}</strong>.</p>
           <div class="btn-row" style="justify-content:center; margin-top:20px;">
-            <a href="/practice/exam/" class="btn ghost">← Danh sách đề thi</a>
-            <a href="/practice/" class="btn">Về Luyện tập →</a>
+            <a href="/practice/exam/" class="btn ghost">← Paper list</a>
+            <a href="/practice/" class="btn">Back to Practice →</a>
           </div>
         </div>
       `;
@@ -196,7 +196,7 @@ async function renderDrill(testId) {
     renderQuestion(0);
 
   } catch (err) {
-    console.error('Lỗi nạp đề thi:', err);
-    container.innerHTML = Portal.empty('Không thể tải đề luyện thi này.', '/practice/exam/', '← Danh sách đề');
+    console.error('Failed to load the paper:', err);
+    container.innerHTML = Portal.empty('This practice paper could not be loaded.', '/practice/exam/', '← Paper list');
   }
 }

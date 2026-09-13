@@ -40,7 +40,7 @@ function currentSession() {
 /** Dựng một dòng log đầy đủ rồi đẩy vào hàng đợi. */
 function emit(type, fields = {}, forcedSession = null) {
   if (!EVENT_TYPES.includes(type)) {
-    console.warn(`[spine] event_type không hợp lệ: "${type}" — bỏ qua.`);
+    console.warn(`[spine] invalid event_type: "${type}" — skipped.`);
     return null;
   }
   const s = forcedSession || currentSession();

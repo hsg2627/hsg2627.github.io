@@ -23,7 +23,7 @@ export const Spine = {
       return {
         ok: false,
         needIdentity: false,
-        error: 'Trình duyệt đang chặn lưu dữ liệu. Em thử tắt chế độ ẩn danh rồi mở lại nhé.',
+        error: 'Your browser is blocking saved data. Please turn off private browsing and open the page again.',
       };
     }
     // Dọn một lần dữ liệu Xưởng AI thu trước bản sửa cách chấm.
@@ -203,7 +203,7 @@ export const Spine = {
 
   purchase(itemKey, cost) {
     const s = Store.get();
-    if (s.gold < cost) return { ok: false, error: 'Chưa đủ vàng' };
+    if (s.gold < cost) return { ok: false, error: 'Not enough gold' };
     Store.update((st) => { st.gold -= cost; });
     Log.event('shop_purchase', { gold_delta: -cost, extra: { item: itemKey } });
     return { ok: true };
@@ -258,7 +258,7 @@ export const Spine = {
   /** Chỉ dùng khi gỡ lỗi. */
   _debug() {
     return {
-      endpoint: CONFIG.ENDPOINT || '(chưa cấu hình)',
+      endpoint: CONFIG.ENDPOINT || '(not configured)',
       identity: Identity.get(),
       pending: Transport.pending,
       queueHead: Transport.peek(3),

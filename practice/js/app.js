@@ -13,9 +13,9 @@ function renderPracticeHub() {
   if (!main) return;
 
   main.innerHTML = `
-    <h1>📖 Trung tâm Luyện tập</h1>
+    <h1>📖 Practice Centre</h1>
     <p style="color:var(--muted); margin-top:-8px;">
-      Chọn một nội dung bên dưới để bắt đầu luyện tập và củng cố kiến thức Tiếng Anh lớp 10.
+      Pick a section below to start practising and consolidating your Grade 10 English.
     </p>
 
     <div class="cards" style="margin-top:20px;">
