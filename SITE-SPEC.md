@@ -247,7 +247,7 @@ mới phải đổi sang tương đối — lúc đó sửa một lượt bằng
 |---|---|---|---|
 | Trang chủ | `/` | có | Chào + tiến độ + 2 thẻ lớn + nhiệm vụ hôm nay |
 | Luyện tập | `/practice/` | có | 5 thẻ kỹ năng |
-| Ngữ pháp | `/practice/grammar/` | có | 14 module ngữ pháp |
+| Ngữ pháp | `/practice/grammar/` | có | 14 level ngữ pháp theo knowledge map (16 module) |
 | Làm ngữ pháp | `/practice/grammar/?g=g07` | có | Chuỗi câu hỏi |
 | Từ vựng | `/practice/vocabulary/` | có | 10 bộ từ theo chủ đề |
 | Làm từ vựng | `/practice/vocabulary/?unit=6` | có | Thẻ ghi nhớ + câu hỏi |
@@ -764,7 +764,7 @@ const gid = params.get('g');
 
 const boot = await Portal.boot({ module:'grammar', tab:'practice' });
 if (boot.ok) {
-  if (!gid) renderList();      // danh sách 14 module
+  if (!gid) renderList();      // danh sách 14 level theo knowledge map
   else      renderDrill(gid);  // chuỗi câu hỏi
 }
 ```
@@ -1153,35 +1153,40 @@ duy nhất là dòng chân trang chủ (§9.1).
 bảo mật thật ở đây (ai cũng đọc được `gate.js` và thử lại), nhưng nó ngăn việc
 mật khẩu hiện ra ngay trước mắt em nào tình cờ mở `View source`.
 
-### 9.3 `/practice/grammar/` — 14 module ↔ 15 mục của chương trình
+### 9.3 `/practice/grammar/` — 14 level theo knowledge map
 
-`DATA-DESIGN.md` §2 quy định 14 tệp `g01…g14`, nhưng `CONTENT-SPEC.md` §3 có
-**15** mục ngữ pháp. Bảng dưới đây là ánh xạ chuẩn: mục 13 và 14 gộp làm một
-module, đúng như typology lỗi đã gộp chúng ở hạng mục 6.
+Trang xếp bài theo **knowledge map của nghiên cứu viên** (`content/knowledge-map.json`),
+không theo số tệp: tên level lấy nguyên văn từ map, `id` module giữ nguyên. Level có
+hai module (Level 14) hiện hai thẻ cùng tên level. Module Ngữ pháp chưa gắn vào map vẫn
+hiện ở mục "More grammar" cuối trang, không bị ẩn.
 
-| Tệp | Tên hiển thị | Mục §3 | Hạng mục lỗi |
-|---|---|---|---|
-| `g01` | Thì hiện tại hoàn thành | 1 | 1 |
-| `g02` | Hiện tại đơn và hiện tại tiếp diễn | 2 | 1 |
-| `g03` | Tương lai đơn và `be going to` | 3 | 1 |
-| `g04` | Quá khứ đơn và quá khứ tiếp diễn (`when`/`while`) | 4 | 1 |
-| `g05` | Động từ nguyên thể có `to` và không `to` | 5 | 2 |
-| `g06` | Danh động từ và động từ nguyên thể | 6 | 2 |
-| `g07` | Câu bị động (kể cả với động từ tình thái) | 7 | 3 |
-| `g08` | Câu ghép | 8 | 4 |
-| `g09` | Mệnh đề quan hệ xác định và không xác định | 9 | 4 |
-| `g10` | Câu điều kiện loại 1 | 10 | 4 |
-| `g11` | Câu điều kiện loại 2 | 11 | 4 |
-| `g12` | Câu tường thuật | 12 | 4 |
-| `g13` | Tính từ: so sánh hơn, so sánh nhất, chỉ thái độ | 13 + 14 | 6 |
-| `g14` | Mạo từ | 15 | 5 |
+| Level | Tên hiển thị | Tệp | Mục §3 | Hạng mục lỗi |
+|---|---|---|---|---|
+| 1 | Parts of Speech | `g15` | — | — |
+| 2 | Phrases | `g16` | — | — |
+| 3 | Sentences | `g08` | 8 | 4 |
+| 4 | Passive voice | `g07` | 7 | 3 |
+| 5 | Present simple vs. Present continuous | `g02` | 2 | 1 |
+| 6 | Will vs. Be going to | `g03` | 3 | 1 |
+| 7 | Past simple vs. Past continuous | `g04` | 4 | 1 |
+| 8 | Infinitives | `g05` | 5 | 2 |
+| 9 | Present perfect | `g01` | 1 | 1 |
+| 10 | Gerunds and to infinitives | `g06` | 6 | 2 |
+| 11 | Comparative and superlative adjectives | `g13` | 13 + 14 | 6 |
+| 12 | Relative clauses | `g09` | 9 | 4 |
+| 13 | Reported speech | `g12` | 12 | 4 |
+| 14 | Conditional | `g10` + `g11` | 10, 11 | 4 |
+| More grammar | Articles | `g14` | 15 | 5 |
 
-Ba điều đi kèm bảng này:
+Bốn điều đi kèm bảng này:
 
+- Level 1–2 là **ngoại lệ duy nhất** của danh mục đóng §3: bài nền theo lộ trình của
+  nghiên cứu viên, không thêm cấu trúc mới. Câu hỏi trong hai bài vẫn chịu danh mục.
 - Cột "Hạng mục lỗi" trỏ vào typology 7 loại ở `CONTENT-SPEC.md` §6. Nhờ nó, khi
   RQ3 cho thấy học sinh yếu ở hạng mục 5, chị chỉ ngay được về `g14`.
 - Trường `grammar: [n]` trong `manifest.json` là **neo thật**; số thứ tự tệp chỉ
-  là tên. Đừng đánh số lại (`AGENTS.md` §3).
+  là tên. Đừng đánh số lại (`AGENTS.md` §3) — đổi thứ tự hay tên level thì sửa
+  `knowledge-map.json`.
 - 📌 `DATA-DESIGN.md` §4 lấy ví dụ `g07` = *"Past Simple vs Past Continuous"* với
   `grammar: [4]`. Theo bảng này `g07` là câu bị động và quá khứ là `g04`. Sửa ví
   dụ trong `DATA-DESIGN.md` cho khớp, hoặc bảng này sẽ bị đọc là sai.
@@ -1447,7 +1452,7 @@ Theo đúng thứ tự. Bước 7 là bước chặn cả luận văn.
 | 2 | `/css/style.css` + `/index.html` + `js/progress.js` + `js/data.js` + `js/app.js` | Trang chủ hiện đúng trên màn 360px, cổng nhập mã chạy |
 | 3 | `content/loader.js` + `manifest.json` + `schedules.json` | Nạp được manifest, cache đúng khoá |
 | 4 | `/practice/` + `/me/` + `404.html` (khung) **và cổng khoá §9.2 cho `Global_Success_10/`** | Điều hướng 4 mục thông suốt; mở bài giảng bằng máy có mã học sinh thì thấy màn hình khoá |
-| 5 | `/practice/grammar/` + 14 tệp `content/grammar/` | Đủ 14 module theo bảng §9.3 |
+| 5 | `/practice/grammar/` + 16 tệp `content/grammar/` + `knowledge-map.json` | Đủ 14 level theo bảng §9.3 |
 | 6 | `/practice/vocabulary/` + 10 tệp `content/vocab/` | 10 chủ đề, không từ nào vượt Bậc 3 |
 | 7 | **`/ai-logs/` + `ae-hk1.json` + `ae-hk2.json` — 56 item** | 7 loại × 8, ~30% `present:false`, mọi item có `category` |
 | 8 | Một unit HK2 mẫu đủ 4 kỹ năng (đề xuất `u06`) | Đúng độ dài §9.4 |

@@ -66,6 +66,11 @@ Cấu trúc **không** có trong danh mục (câu điều kiện loại 3, quá 
 tương lai tiếp diễn, đảo ngữ, mệnh đề rút gọn) là **căn cứ loại bỏ** khi thẩm
 định, kể cả khi câu đúng ngữ pháp.
 
+Ngoại lệ duy nhất là **hai bài nền** Parts of Speech và Phrases (Level 1–2 của
+knowledge map, `g15`–`g16`): chúng dạy gọi tên từ loại và cụm từ, không thêm cấu
+trúc mới, và câu hỏi trong đó vẫn chịu danh mục trên. Quyết định của nghiên cứu
+viên ngày 2026-09-15.
+
 ## 4. Độ dài văn bản theo kỹ năng (tr. 42)
 
 | Kỹ năng | Độ dài quy định |

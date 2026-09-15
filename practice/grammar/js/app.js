@@ -2,6 +2,11 @@
 import { Portal } from '/js/progress.js';
 import { loadJSON, manifest } from '/content/loader.js';
 
+// Knowledge map nạp bằng loadJSON, KHÔNG thêm hàm export mới vào loader.js: Pages cache module
+// 10 phút mà URL module không gắn phiên bản, nên ngay sau deploy app.js mới có thể gặp loader.js
+// cũ — import một tên mà loader cũ không có là lỗi liên kết, trắng cả trang.
+const KNOWLEDGE_MAP = 'knowledge-map.json';
+
 const params = new URLSearchParams(location.search);
 const gid = params.get('g');
 
@@ -21,31 +26,52 @@ async function renderList() {
 
   main.innerHTML = `
     ${Portal.crumb('Practice', '/practice/')}
-    <h1>📐 14 Grade 10 Grammar Topics</h1>
+    <h1>📐 Grammar: 14 Levels</h1>
     <p style="color:var(--muted); margin-top:-8px;">
-      The core grammar topics of the 2018 National Curriculum.
+      From parts of speech to conditionals. Start at Level 1 or go straight to the level you need.
     </p>
-    <div id="grammar-list-container" class="cards" style="margin-top:20px;">
-      <p style="color:var(--muted);">Loading the topic list…</p>
+    <div id="grammar-list-container">
+      <p style="color:var(--muted);">Loading the levels…</p>
     </div>
   `;
 
   try {
-    const mf = await manifest();
-    const grammarModules = mf.modules.filter(m => m.kind === 'grammar');
+    const [mf, km] = await Promise.all([manifest(), loadJSON(KNOWLEDGE_MAP)]);
     const container = document.getElementById('grammar-list-container');
     if (!container) return;
 
-    container.innerHTML = grammarModules.map((m, idx) => `
+    // Thứ tự và tên level theo content/knowledge-map.json; id module không đổi. Module không có
+    // trong manifest (cache lẫn phiên bản) thì bỏ qua. Module Ngữ pháp chưa gắn vào map vẫn
+    // hiện ở "More grammar" — thiếu một dòng trong map không được làm mất cả bài.
+    const byId = new Map(mf.modules.filter(m => m.kind === 'grammar').map(m => [m.id, m]));
+    const levels = km.grammar?.levels || [];
+    const extra = km.grammar?.extra || [];
+    const mapped = new Set([...levels, ...extra].flatMap(e => e.modules));
+
+    const card = (m, heading, sub) => `
       <a class="card" href="/practice/grammar/?g=${m.id}">
         <span class="ico">📝</span>
-        <h3>${idx + 1}. ${m.title}</h3>
+        <h3>${heading}</h3>
+        ${sub ? `<p>${sub}</p>` : ''}
         <div class="meta">
           <span>Term: <strong>${m.semester}</strong></span>
-          <span>Curriculum item: <strong>${m.grammar?.join(', ') || ''}</strong></span>
+          ${m.grammar?.length ? `<span>Curriculum item: <strong>${m.grammar.join(', ')}</strong></span>` : ''}
         </div>
       </a>
-    `).join('');
+    `;
+    const cardsFor = (entry, heading) => {
+      const mods = entry.modules.map(id => byId.get(id)).filter(Boolean);
+      // Level có hai module (Level 14: loại 1 và loại 2) hiện hai thẻ cùng tên level.
+      return mods.map(m => card(m, heading, mods.length > 1 ? m.title : '')).join('');
+    };
+
+    const moreCards = extra.map(e => cardsFor(e, e.title)).join('')
+      + [...byId.values()].filter(m => !mapped.has(m.id)).map(m => card(m, m.title, '')).join('');
+
+    container.innerHTML = `
+      <div class="cards">${levels.map(lv => cardsFor(lv, `Level ${lv.level} · ${lv.title}`)).join('')}</div>
+      ${moreCards ? `<h2>More grammar</h2><div class="cards">${moreCards}</div>` : ''}
+    `;
   } catch (err) {
     const container = document.getElementById('grammar-list-container');
     if (container) {
@@ -59,7 +85,7 @@ async function renderDrill(moduleGid) {
   if (!main) return;
 
   main.innerHTML = `
-    ${Portal.crumb('Grammar topics', '/practice/grammar/')}
+    ${Portal.crumb('Grammar levels', '/practice/grammar/')}
     <div id="drill-container">
       <p style="color:var(--muted);">Loading exercises…</p>
     </div>
@@ -72,6 +98,14 @@ async function renderDrill(moduleGid) {
       if (container) container.innerHTML = Portal.empty('There are no questions for this topic yet.');
       return;
     }
+
+    // Tiêu đề theo tên level trong knowledge map, khớp thẻ ở trang danh sách; Level 14 có hai
+    // module nên thêm tên module. Không nạp được map thì dùng tên trong JSON, bài vẫn làm được.
+    const km = await loadJSON(KNOWLEDGE_MAP).catch(() => null);
+    const level = (km?.grammar?.levels || []).find(lv => lv.modules.includes(moduleGid));
+    const heading = level
+      ? `Level ${level.level} · ${level.title}${level.modules.length > 1 ? ` — ${data.title}` : ''}`
+      : data.title;
 
     let currentIndex = 0;
     let selectedOptionIndex = null;
@@ -92,7 +126,7 @@ async function renderDrill(moduleGid) {
 
       container.innerHTML = `
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
-          <h2 style="margin:0; font-size:1.15rem;">${data.title}</h2>
+          <h2 style="margin:0; font-size:1.15rem;">${heading}</h2>
           <span style="font-size:13.5px; font-weight:700; color:var(--muted);">Question ${index + 1} of ${data.items.length}</span>
         </div>
 
@@ -208,10 +242,10 @@ async function renderDrill(moduleGid) {
           <div style="font-size:42px; margin-bottom:12px;">🎉</div>
           <h2 style="color:var(--navy); margin-top:0;">Topic complete!</h2>
           <p style="color:var(--muted); font-size:15.5px;">
-            You have finished every question in <strong>${data.title}</strong>.
+            You have finished every question in <strong>${heading}</strong>.
           </p>
           <div class="btn-row" style="justify-content:center; margin-top:20px;">
-            <a href="/practice/grammar/" class="btn ghost">← Grammar topics</a>
+            <a href="/practice/grammar/" class="btn ghost">← Grammar levels</a>
             <a href="/practice/" class="btn">Back to Practice Centre →</a>
           </div>
         </div>
@@ -222,6 +256,11 @@ async function renderDrill(moduleGid) {
 
   } catch (err) {
     console.error('Failed to load exercises:', err);
-    container.innerHTML = Portal.empty('The grammar exercise data could not be loaded.', '/practice/grammar/', '← Back to the list');
+    // container khai báo trong try nên ở đây phải lấy lại; dùng thẳng là ReferenceError và
+    // trang kẹt ở "Loading exercises…".
+    const container = document.getElementById('drill-container');
+    if (container) {
+      container.innerHTML = Portal.empty('The grammar exercise data could not be loaded.', '/practice/grammar/', '← Back to the list');
+    }
   }
 }

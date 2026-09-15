@@ -2,6 +2,11 @@
 import { Portal } from '/js/progress.js';
 import { loadJSON, manifest } from '/content/loader.js';
 
+// Knowledge map nạp bằng loadJSON, KHÔNG thêm hàm export mới vào loader.js: Pages cache module
+// 10 phút mà URL module không gắn phiên bản, nên ngay sau deploy app.js mới có thể gặp loader.js
+// cũ — import một tên mà loader cũ không có là lỗi liên kết, trắng cả trang.
+const KNOWLEDGE_MAP = 'knowledge-map.json';
+
 const params = new URLSearchParams(location.search);
 const unitParam = params.get('unit');
 
@@ -21,27 +26,31 @@ async function renderList() {
 
   main.innerHTML = `
     ${Portal.crumb('Practice', '/practice/')}
-    <h1>📚 10 Grade 10 Vocabulary Topics</h1>
+    <h1>📚 Vocabulary: 4 Chapters</h1>
     <p style="color:var(--muted); margin-top:-8px;">
-      The core vocabulary for the topics of the 2018 National Curriculum.
+      10 topic levels from the 2018 National Curriculum, grouped into four chapters.
     </p>
-    <div id="vocab-list-container" class="cards" style="margin-top:20px;">
+    <div id="vocab-list-container">
       <p style="color:var(--muted);">Loading the vocabulary list…</p>
     </div>
   `;
 
   try {
-    const mf = await manifest();
-    const unitModules = mf.modules.filter(m => m.kind === 'unit');
+    const [mf, km] = await Promise.all([manifest(), loadJSON(KNOWLEDGE_MAP)]);
     const container = document.getElementById('vocab-list-container');
     if (!container) return;
 
     // Get progress from Spine state
     const spineState = Portal.spine.state;
 
-    container.innerHTML = unitModules.map(m => {
+    // Chapter và level theo content/knowledge-map.json; link vẫn dùng số unit như cũ. Unit chưa
+    // gắn vào map vẫn hiện ở "More topics", không bị ẩn.
+    const byId = new Map(mf.modules.filter(m => m.kind === 'unit').map(m => [m.id, m]));
+    const chapters = km.vocabulary?.chapters || [];
+    const mapped = new Set(chapters.flatMap(ch => ch.levels.map(lv => lv.unit)));
+
+    const card = (m, heading) => {
       // Count how many quiz items the student has answered for this unit's vocab
-      const unitKey = String(m.gs_unit);
       const unitPad = String(m.gs_unit).padStart(2, '0');
       const answeredCount = Object.keys(spineState.items || {}).filter(
         k => k.startsWith(`u${unitPad}_q`)
@@ -54,14 +63,26 @@ async function renderList() {
       return `
         <a class="card" href="/practice/vocabulary/?unit=${m.gs_unit}">
           <span class="ico">📖</span>
-          <h3>Unit ${m.gs_unit}: ${m.title}</h3>
+          <h3>${heading}</h3>
           <div class="meta">
+            <span>Unit ${m.gs_unit}</span>
             <span>Term: <strong>${m.semester}</strong></span>
             ${progressText}
           </div>
         </a>
       `;
-    }).join('');
+    };
+
+    const unmapped = [...byId.values()].filter(m => !mapped.has(m.id));
+    container.innerHTML = chapters.map(ch => `
+      <h2>Chapter ${ch.chapter}: ${ch.title}</h2>
+      <div class="cards">
+        ${ch.levels.filter(lv => byId.has(lv.unit)).map(lv => card(byId.get(lv.unit), `Level ${lv.level} · ${lv.title}`)).join('')}
+      </div>
+    `).join('') + (unmapped.length ? `
+      <h2>More topics</h2>
+      <div class="cards">${unmapped.map(m => card(m, m.title)).join('')}</div>
+    ` : '');
   } catch (err) {
     const container = document.getElementById('vocab-list-container');
     if (container) {
@@ -86,6 +107,13 @@ async function renderUnit(unitNum) {
     const data = await loadJSON(`vocab/u${pad}.json`);
     const container = document.getElementById('vocab-unit-container');
     if (!container) return;
+
+    // Vị trí của unit trong knowledge map, để tiêu đề khớp thẻ ở trang danh sách. Không nạp được
+    // map thì giữ tiêu đề "Unit N" cũ, bài vẫn làm được.
+    const km = await loadJSON(KNOWLEDGE_MAP).catch(() => null);
+    const place = (km?.vocabulary?.chapters || [])
+      .flatMap(ch => ch.levels.map(lv => ({ ch, lv })))
+      .find(p => p.lv.unit === `u${pad}`);
 
     let activeTab = 'flashcard'; // 'flashcard' | 'quiz'
     let flashcardIndex = 0;
@@ -122,7 +150,10 @@ async function renderUnit(unitNum) {
 
       container.innerHTML = `
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:16px;">
-          <h2 style="margin:0;">Unit ${data.unit}: ${data.title}</h2>
+          <div>
+            ${place ? `<p style="margin:0 0 2px; font-size:13px; font-weight:700; color:var(--muted);">Chapter ${place.ch.chapter}: ${place.ch.title} · Unit ${data.unit}</p>` : ''}
+            <h2 style="margin:0;">${place ? `Level ${place.lv.level} · ${place.lv.title}` : `Unit ${data.unit}: ${data.title}`}</h2>
+          </div>
           <div style="display:flex; gap:6px;">
             <button id="tab-btn-flashcard" class="btn ${activeTab === 'flashcard' ? '' : 'ghost'}" style="min-height:36px; padding:6px 12px; font-size:13.5px;">🗂️ Flashcards (${data.words.length})</button>
             <button id="tab-btn-quiz" class="btn ${activeTab === 'quiz' ? '' : 'ghost'}" style="min-height:36px; padding:6px 12px; font-size:13.5px;">📝 Practice (${answered}/${total})</button>

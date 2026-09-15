@@ -1,0 +1,61 @@
+{
+  "grammar": {
+    "levels": [
+      { "level": 1, "title": "Parts of Speech", "modules": ["g15"] },
+      { "level": 2, "title": "Phrases", "modules": ["g16"] },
+      { "level": 3, "title": "Sentences", "modules": ["g08"] },
+      { "level": 4, "title": "Passive voice", "modules": ["g07"] },
+      { "level": 5, "title": "Present simple vs. Present continuous", "modules": ["g02"] },
+      { "level": 6, "title": "Will vs. Be going to", "modules": ["g03"] },
+      { "level": 7, "title": "Past simple vs. Past continuous", "modules": ["g04"] },
+      { "level": 8, "title": "Infinitives", "modules": ["g05"] },
+      { "level": 9, "title": "Present perfect", "modules": ["g01"] },
+      { "level": 10, "title": "Gerunds and to infinitives", "modules": ["g06"] },
+      { "level": 11, "title": "Comparative and superlative adjectives", "modules": ["g13"] },
+      { "level": 12, "title": "Relative clauses", "modules": ["g09"] },
+      { "level": 13, "title": "Reported speech", "modules": ["g12"] },
+      { "level": 14, "title": "Conditional", "modules": ["g10", "g11"] }
+    ],
+    "extra": [
+      { "title": "Articles", "modules": ["g14"] }
+    ]
+  },
+  "vocabulary": {
+    "chapters": [
+      {
+        "chapter": 1,
+        "title": "Our life",
+        "levels": [
+          { "level": 1, "title": "Family life", "unit": "u01" },
+          { "level": 2, "title": "Music", "unit": "u03" }
+        ]
+      },
+      {
+        "chapter": 2,
+        "title": "Our society",
+        "levels": [
+          { "level": 1, "title": "For a better community", "unit": "u04" },
+          { "level": 2, "title": "Gender equality", "unit": "u06" },
+          { "level": 3, "title": "Vietnam and international organizations", "unit": "u07" }
+        ]
+      },
+      {
+        "chapter": 3,
+        "title": "Our future",
+        "levels": [
+          { "level": 1, "title": "Invention", "unit": "u05" },
+          { "level": 2, "title": "New way to learn", "unit": "u08" }
+        ]
+      },
+      {
+        "chapter": 4,
+        "title": "Our environment",
+        "levels": [
+          { "level": 1, "title": "Humans and the environment", "unit": "u02" },
+          { "level": 2, "title": "Protecting the environment", "unit": "u09" },
+          { "level": 3, "title": "Ecotourism", "unit": "u10" }
+        ]
+      }
+    ]
+  }
+}

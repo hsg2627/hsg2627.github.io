@@ -5,7 +5,7 @@
 // Bỏ có chủ ý (AGENTS.md mục 13): bảng xếp hạng, ô góp ý tự do, ô ủng hộ, thẻ giới thiệu
 // người biên soạn, chuỗi ngày học.
 import { Portal } from '/js/progress.js';
-import { manifest } from '/content/loader.js';
+import { loadJSON, manifest } from '/content/loader.js';
 
 const boot = await Portal.boot({ module: null, tab: 'home' });
 
@@ -31,6 +31,11 @@ async function renderHome() {
       const mf = await manifest();
       const mod = (mf.modules || []).find((x) => x.id === quest.unit);
       if (mod && mod.title) questTitle = mod.title;
+      // Cùng tên level với trang Ngữ pháp (content/knowledge-map.json); Level 14 có hai module nên
+      // thêm tên module. Nạp bằng loadJSON, không import hàm mới — lý do ở practice/grammar/js/app.js.
+      const km = await loadJSON('knowledge-map.json').catch(() => null);
+      const level = (km?.grammar?.levels || []).find((lv) => lv.modules.includes(quest.unit));
+      if (level) questTitle = `Level ${level.level} · ${level.title}${level.modules.length > 1 && mod ? ` — ${mod.title}` : ''}`;
     } catch (_) {
       // Mất mạng ở lần mở đầu tiên: hiện mã bài thay cho tên, nhiệm vụ vẫn làm được.
     }

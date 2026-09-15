@@ -239,6 +239,22 @@
       "parts": { "items": "grammar/g14.json" }
     },
     {
+      "id": "g15",
+      "kind": "grammar",
+      "title": "Parts of Speech",
+      "grammar": [],
+      "semester": "HK1",
+      "parts": { "items": "grammar/g15.json" }
+    },
+    {
+      "id": "g16",
+      "kind": "grammar",
+      "title": "Phrases",
+      "grammar": [],
+      "semester": "HK1",
+      "parts": { "items": "grammar/g16.json" }
+    },
+    {
       "id": "ae-hk1",
       "kind": "ai_eval",
       "title": "AI Error Log · Term 1",

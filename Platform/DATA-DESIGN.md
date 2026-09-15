@@ -33,7 +33,8 @@ Platform/
 │  ├─ loader.js          nạp + cache JSON (KHÔNG log, KHÔNG đụng core)
 │  ├─ manifest.json      chỉ mục toàn bộ module
 │  ├─ schedules.json     thứ tự học theo từng trường
-│  ├─ grammar/           g01.json … g14.json
+│  ├─ knowledge-map.json thứ tự + tên level/chapter ở trang Luyện tập (id module không đổi)
+│  ├─ grammar/           g01.json … g16.json
 │  ├─ vocab/             u01.json … u10.json
 │  ├─ skills/            u06-reading.json, u06-listening.json, u06-writing.json …
 │  ├─ exams/             hk1-01.json, hk2-01.json …

@@ -3,7 +3,7 @@
 export const CONFIG = {
   // ---- Nhận dạng phiên bản: ghi vào MỌI dòng log ----
   APP_VERSION: 'v0.1.0',
-  CONTENT_VERSION: 'c1.0.2',
+  CONTENT_VERSION: 'c1.1.0',
   SCHEMA_VERSION: 1,
 
   // ---- Điểm nhận dữ liệu (dán URL Apps Script sau khi Deploy) ----
@@ -36,9 +36,10 @@ export const CONFIG = {
 
   // Bài Ngữ pháp theo học kỳ cho nhiệm vụ hằng ngày. Phải khớp trường `semester` của
   // từng module trong content/manifest.json — đổi manifest thì đổi luôn ở đây.
+  // Xếp theo thứ tự level trong content/knowledge-map.json; Articles (g14) đứng cuối.
   QUEST_POOL: {
-    HK1: ['g01', 'g02', 'g03', 'g04', 'g05', 'g06', 'g08', 'g14'],
-    HK2: ['g07', 'g09', 'g10', 'g11', 'g12', 'g13'],
+    HK1: ['g15', 'g16', 'g08', 'g02', 'g03', 'g04', 'g05', 'g01', 'g06', 'g14'],
+    HK2: ['g07', 'g13', 'g09', 'g12', 'g10', 'g11'],
   },
 };
 

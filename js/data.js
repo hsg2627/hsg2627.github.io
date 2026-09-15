@@ -28,14 +28,14 @@ export const PRACTICE_CARDS = [
     id: 'grammar',
     ico: '📐',
     title: 'Grammar',
-    desc: '14 grammar modules aligned to the 2018 national curriculum.',
+    desc: '14 levels from parts of speech to conditionals, plus articles.',
     href: '/practice/grammar/'
   },
   {
     id: 'vocabulary',
     ico: '📚',
     title: 'Vocabulary',
-    desc: '10 Grade 10 vocabulary topics aligned to the curriculum.',
+    desc: '4 chapters and 10 topic levels: our life, society, future and environment.',
     href: '/practice/vocabulary/'
   },
   {
