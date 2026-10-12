@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UNO Challenge · Idioms &amp; Similes — Global Success 10</title>
+  <link rel="stylesheet" href="uno.css">
+</head>
+<body>
+
+  <!-- TOP HEADER -->
+  <header class="game-header">
+    <div class="logo-area">
+      <div class="uno-badge">UNO</div>
+      <div class="game-title">Name That Song · UNO Challenge (4 Teams)</div>
+    </div>
+    <div class="header-actions">
+      <button class="btn-ctrl" id="btn-leaderboard" type="button">🏆 Bảng điểm</button>
+      <button class="btn-ctrl" id="btn-mute" type="button">🔊 Tắt âm</button>
+      <button class="btn-ctrl" id="btn-fullscreen" type="button">⛶ Toàn màn hình</button>
+      <a class="btn-ctrl" href="../../../unit03/lesson1.html" style="text-decoration:none">← Về bài giảng</a>
+    </div>
+  </header>
+
+  <!-- SCOREBOARD (4 TEAMS) -->
+  <section class="scoreboard">
+    <!-- Team 1 -->
+    <div class="team-card team-1" id="team-card-1">
+      <div class="team-head">
+        <span class="team-name" id="name-1" title="Bấm để đổi tên">Đội 1 (Đỏ)</span>
+        <span class="turn-pill">Đang chơi</span>
+      </div>
+      <div class="team-score" id="score-1">0</div>
+      <div class="score-adjust">
+        <button class="btn-adj" data-team="0" data-adj="-1" title="Trừ 1 điểm">-</button>
+        <button class="btn-adj" data-team="0" data-adj="1" title="Cộng 1 điểm">+</button>
+      </div>
+    </div>
+
+    <!-- Team 2 -->
+    <div class="team-card team-2" id="team-card-2">
+      <div class="team-head">
+        <span class="team-name" id="name-2" title="Bấm để đổi tên">Đội 2 (Xanh dương)</span>
+        <span class="turn-pill">Đang chơi</span>
+      </div>
+      <div class="team-score" id="score-2">0</div>
+      <div class="score-adjust">
+        <button class="btn-adj" data-team="1" data-adj="-1" title="Trừ 1 điểm">-</button>
+        <button class="btn-adj" data-team="1" data-adj="1" title="Cộng 1 điểm">+</button>
+      </div>
+    </div>
+
+    <!-- Team 3 -->
+    <div class="team-card team-3" id="team-card-3">
+      <div class="team-head">
+        <span class="team-name" id="name-3" title="Bấm để đổi tên">Đội 3 (Xanh lá)</span>
+        <span class="turn-pill">Đang chơi</span>
+      </div>
+      <div class="team-score" id="score-3">0</div>
+      <div class="score-adjust">
+        <button class="btn-adj" data-team="2" data-adj="-1" title="Trừ 1 điểm">-</button>
+        <button class="btn-adj" data-team="2" data-adj="1" title="Cộng 1 điểm">+</button>
+      </div>
+    </div>
+
+    <!-- Team 4 -->
+    <div class="team-card team-4" id="team-card-4">
+      <div class="team-head">
+        <span class="team-name" id="name-4" title="Bấm để đổi tên">Đội 4 (Vàng)</span>
+        <span class="turn-pill">Đang chơi</span>
+      </div>
+      <div class="team-score" id="score-4">0</div>
+      <div class="score-adjust">
+        <button class="btn-adj" data-team="3" data-adj="-1" title="Trừ 1 điểm">-</button>
+        <button class="btn-adj" data-team="3" data-adj="1" title="Cộng 1 điểm">+</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN PLAY AREA -->
+  <main class="play-area">
+    <div class="status-bar" id="status-bar">
+      🎯 Lượt chơi: <span class="highlight">Đội 1</span> — Hãy chọn một số bài hát trên bảng!
+    </div>
+
+    <!-- QUESTION CARDS GRID (1 - 19) -->
+    <div class="cards-grid" id="cards-grid">
+      <!-- 19 Cards injected via JS -->
+    </div>
+  </main>
+
+  <!-- QUESTION MODAL (NAME THAT SONG) -->
+  <div class="modal-overlay" id="question-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title" id="q-modal-title">🎵 Bài hát số 1 · Đội 1 đang đoán</div>
+        <button class="modal-close" id="btn-close-q" type="button">✕</button>
+      </div>
+      <div class="question-body">
+        <!-- Challenge prompt banner -->
+        <div class="song-challenge-box">
+          <div class="challenge-header">
+            <span class="challenge-icon">🎧</span>
+            <div>
+              <h3 class="challenge-title">NAME THAT SONG · ĐOÁN TÊN BÀI HÁT</h3>
+              <p class="challenge-desc">Lắng nghe đoạn cao trào / điệp khúc và đoán tên bài hát!</p>
+            </div>
+          </div>
+
+          <!-- Audio Player Stage -->
+          <div class="audio-stage">
+            <div class="track-mystery-tag">
+              <span class="mystery-badge">BÀI HÁT BÍ ẨN</span>
+              <span class="mystery-name" id="player-track-id">❓ Tên bài hát: ? ? ? ? ?</span>
+            </div>
+
+            <!-- Music Player Wrapper with Mystery Cover Mask -->
+            <div class="player-wrapper" id="player-wrapper">
+              <!-- Real YouTube Player (Sized normally so YouTube never blocks audio) -->
+              <div class="yt-embed-box">
+                <iframe id="uno-yt-audio" 
+                        src="about:blank" 
+                        allow="autoplay; encrypted-media; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+              </div>
+
+              <!-- Mystery Mask (Hides title & video thumbnail during guessing) -->
+              <div class="mystery-mask" id="mystery-mask">
+                <div class="vinyl-disc" id="vinyl-disc">
+                  <div class="vinyl-inner">🎵</div>
+                </div>
+                <div class="mask-info">
+                  <div class="mask-status" id="mask-status">Nhấn "Phát đoạn cao trào" để nghe</div>
+                  <div class="eq-bars" id="eq-bars">
+                    <span></span><span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Play Controls (Hidden song titles!) -->
+            <div class="audio-controls">
+              <button class="btn-audio-play" id="btn-q-play-song" type="button">
+                <span id="q-play-icon">▶</span>
+                <span id="q-play-txt">Phát đoạn cao trào (Highlight)</span>
+              </button>
+              <button class="btn-audio-replay" id="btn-q-replay-song" type="button" title="Phát lại từ đầu">
+                🔄 Phát lại
+              </button>
+              <a class="btn-audio-ext" id="btn-q-ext-link" href="#" target="_blank" rel="noopener" title="Nghe trên YouTube Music nếu mạng trường chặn embed">
+                🎵 Mở YT Music ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Answer Reveal Box (Hidden until teacher/team reveals) -->
+        <div class="answer-box" id="answer-box">
+          <button class="btn-reveal-answer" id="btn-reveal-answer" type="button">
+            👁️ Hiện tên bài hát / Reveal Song Title
+          </button>
+          <div class="answer-content" id="answer-content">
+            <div class="answer-title" id="answer-text">Tên bài hát</div>
+            <div class="answer-artist" id="answer-artist">Ca sĩ / Chi tiết</div>
+            <a class="answer-yt-link" id="answer-yt-link" href="#" target="_blank" rel="noopener">
+              🎵 Mở trên YouTube Music ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Verdict Buttons for Teacher -->
+        <div class="question-actions">
+          <button class="btn-action btn-correct" id="btn-correct" type="button">
+            ✅ ĐÚNG (Rút thẻ thưởng UNO)
+          </button>
+          <button class="btn-action btn-wrong" id="btn-wrong" type="button">
+            ❌ SAI (Mất lượt)
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REWARD / CARD DRAW SCREEN (PUSH-YOUR-LUCK) -->
+  <div class="modal-overlay" id="reward-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title" id="reward-team-title">🎉 ĐỘI 1 TRẢ LỜI ĐÚNG! · VÒNG RÚT THẺ</div>
+      </div>
+      <div class="reward-body">
+        <div class="reward-accumulated" id="reward-score-text">
+          Điểm tích luỹ lượt này: +0 điểm
+        </div>
+
+        <!-- 3D FLIPPABLE UNO CARD -->
+        <div class="uno-card-stage">
+          <div class="uno-card-3d" id="uno-card-3d">
+            <!-- BACK OF CARD -->
+            <div class="card-face card-back">
+              <div class="card-back-oval">
+                <span class="card-back-text">UNO</span>
+              </div>
+            </div>
+            <!-- FRONT OF CARD -->
+            <div class="card-face card-front c-red" id="card-front">
+              <span class="card-corner corner-tl" id="card-corner-tl">+9</span>
+              <div class="card-front-oval">
+                <span class="card-val-big" id="card-val-big">+9</span>
+              </div>
+              <span class="card-corner corner-br" id="card-corner-br">+9</span>
+              <div class="card-desc" id="card-desc">CỘNG 9 ĐIỂM</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DECISION BUTTONS -->
+        <div class="reward-actions">
+          <button class="btn-reward btn-bank" id="btn-bank" type="button">
+            💰 Giữ điểm &amp; Kết thúc lượt
+          </button>
+          <button class="btn-reward btn-draw" id="btn-draw-again" type="button">
+            🃏 Rút tiếp (Có rủi ro)
+          </button>
+          <button class="btn-reward btn-draw" id="btn-done-reward" type="button" style="display:none">
+            Quay về bảng câu hỏi
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RARE CARD CHOICES MODAL -->
+  <div class="modal-overlay" id="rare-modal">
+    <div class="rare-modal">
+      <div class="rare-title">🌟 BẠN RÚT ĐƯỢC THẺ HIẾM!</div>
+      <p class="rare-desc">
+        Đội của bạn có 2 lựa chọn:<br>
+        <b>1. An toàn:</b> Nhận ngay <b>5 điểm</b> chắc chắn.<br>
+        <b>2. Thử vận may:</b> Lật thẻ may rủi — hoặc <b>MẤT TẤT CẢ ĐIỂM</b> lượt này, hoặc <b>HOÁN ĐỔI TOÀN BỘ ĐIỂM</b> với 1 đội bất kỳ!
+      </p>
+      <div class="rare-buttons">
+        <button class="btn-safe" id="btn-rare-safe" type="button">🛡️ Nhận an toàn 5 điểm</button>
+        <button class="btn-gamble" id="btn-rare-gamble" type="button">🎲 Liều thử vận may (50/50)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SWAP POINTS MODAL -->
+  <div class="modal-overlay" id="swap-modal">
+    <div class="swap-modal">
+      <h2 style="color:#2EC4B6; margin-bottom:12px;">🔄 HOÁN ĐỔI ĐIỂM!</h2>
+      <p style="color:#CBD5E1">Chọn một đội đối thủ để đổi toàn bộ điểm số của bạn lấy điểm của họ:</p>
+      <div class="swap-teams-grid" id="swap-teams-grid">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- VICTORY PODIUM MODAL -->
+  <div class="modal-overlay" id="victory-modal">
+    <div class="victory-modal">
+      <div class="victory-title">🏆 KẾT THÚC TRÒ CHƠI!</div>
+      <div class="winner-announce" id="winner-name">ĐỘI CHIẾN THẮNG</div>
+
+      <!-- 3D PODIUM -->
+      <div class="podium-grid" id="podium-grid">
+        <!-- Injected via JS -->
+      </div>
+
+      <button class="btn-reward btn-bank" id="btn-restart-game" type="button" style="margin: 0 auto;">
+        🔄 Chơi lại từ đầu
+      </button>
+    </div>
+  </div>
+
+
+  <script src="uno.js"></script>
+</body>
+</html>

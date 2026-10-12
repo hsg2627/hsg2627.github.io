@@ -1,0 +1,154 @@
+[
+  {
+    "id": 1,
+    "slide": 14,
+    "answer": "as slow as a snail",
+    "images": [
+      "image26.png",
+      "image28.png",
+      "image29.png"
+    ]
+  },
+  {
+    "id": 2,
+    "slide": 16,
+    "answer": "as black as coal",
+    "images": [
+      "image29.png",
+      "image31.png",
+      "image32.png"
+    ]
+  },
+  {
+    "id": 3,
+    "slide": 18,
+    "answer": "as old as a hill",
+    "images": [
+      "image29.png",
+      "image34.png",
+      "image35.png"
+    ]
+  },
+  {
+    "id": 4,
+    "slide": 20,
+    "answer": "as cool as a cucumber",
+    "images": [
+      "image29.png",
+      "image36.png",
+      "image38.png"
+    ]
+  },
+  {
+    "id": 5,
+    "slide": 22,
+    "answer": "as poor as a church mouse",
+    "images": [
+      "image29.png",
+      "image39.png",
+      "image41.png",
+      "image43.png"
+    ]
+  },
+  {
+    "id": 6,
+    "slide": 24,
+    "answer": "like two peas in a pond",
+    "images": [
+      "image29.png",
+      "image45.png",
+      "image46.png"
+    ]
+  },
+  {
+    "id": 7,
+    "slide": 26,
+    "answer": "A fish out of water",
+    "images": [
+      "image47.png"
+    ]
+  },
+  {
+    "id": 8,
+    "slide": 28,
+    "answer": "Cost an arm and a leg",
+    "images": [
+      "image48.png",
+      "image50.png",
+      "image52.png",
+      "image29.png"
+    ]
+  },
+  {
+    "id": 9,
+    "slide": 30,
+    "answer": "love at first sight",
+    "images": [
+      "image29.png",
+      "image54.png",
+      "image56.png",
+      "image58.png"
+    ]
+  },
+  {
+    "id": 10,
+    "slide": 32,
+    "answer": "Born with a silver spoon in one’s mouth",
+    "images": [
+      "image29.png",
+      "image60.png",
+      "image62.png",
+      "image63.png"
+    ]
+  },
+  {
+    "id": 11,
+    "slide": 34,
+    "answer": "Eat like a horse",
+    "images": [
+      "image29.png",
+      "image65.png",
+      "image67.png"
+    ]
+  },
+  {
+    "id": 12,
+    "slide": 36,
+    "answer": "coach potato",
+    "images": [
+      "image29.png",
+      "image69.png",
+      "image71.png"
+    ]
+  },
+  {
+    "id": 13,
+    "slide": 38,
+    "answer": "as gentle as a lamb",
+    "images": [
+      "image29.png",
+      "image73.png",
+      "image75.png"
+    ]
+  },
+  {
+    "id": 14,
+    "slide": 40,
+    "answer": "A snake in the grass",
+    "images": [
+      "image29.png",
+      "image77.png",
+      "image78.png"
+    ]
+  },
+  {
+    "id": 15,
+    "slide": 42,
+    "answer": "as cunning as a fox",
+    "images": [
+      "image29.png",
+      "image80.png",
+      "image82.png"
+    ]
+  }
+]

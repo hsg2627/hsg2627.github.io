@@ -6,6 +6,113 @@
 <title>Unit 3 · Lesson 1: Getting started — Global Success 10</title>
 <meta name="robots" content="noindex, nofollow">
 <link rel="stylesheet" href="../gs10.css">
+<style>
+/* --- UNO Launch Button on Phase 1 --- */
+.uno-launch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #e71d36, #ff9f1c);
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 19px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(231, 29, 54, 0.45);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.uno-launch-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 24px rgba(231, 29, 54, 0.6);
+}
+.uno-tag {
+  background: #000;
+  color: #ffd700;
+  font-style: italic;
+  font-weight: 900;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+/* --- YouTube Audio Controls on Slide 5 & 6 --- */
+.yt-playlist .q {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.yt-audio-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  margin-right: 12px;
+}
+.yt-play-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #2a2250;
+  color: #fff;
+  border: 2px solid #5a4b9c;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.yt-play-toggle:hover {
+  background: #43337e;
+  border-color: #ffd700;
+  color: #ffd700;
+}
+.yt-play-toggle.is-playing {
+  background: #e71d36;
+  border-color: #ff9f1c;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(231, 29, 54, 0.5);
+}
+.yt-eq {
+  display: none;
+  align-items: flex-end;
+  gap: 2px;
+  height: 14px;
+}
+.yt-play-toggle.is-playing .yt-eq {
+  display: inline-flex;
+}
+.yt-eq span {
+  width: 3px;
+  background: #fff;
+  border-radius: 1px;
+  animation: yt-bounce 0.8s infinite ease-in-out alternate;
+}
+.yt-eq span:nth-child(1) { height: 6px; animation-delay: 0.1s; }
+.yt-eq span:nth-child(2) { height: 14px; animation-delay: 0.3s; }
+.yt-eq span:nth-child(3) { height: 9px; animation-delay: 0.2s; }
+
+@keyframes yt-bounce {
+  0% { height: 4px; }
+  100% { height: 14px; }
+}
+
+.yt-ext-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #a79ad6;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: all 0.15s;
+}
+.yt-ext-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+</style>
 </head>
 <body data-unit="3" class="tpl-music">
 
@@ -47,7 +154,7 @@
   <h2>Five stops in 45 minutes</h2>
   <ul class="cards">
     <li class="card"><span class="ico">🎵</span>
-      <h3>Name that song</h3><p>Five clips, one artist</p>
+      <h3>Name that song</h3><p>19 highlight clips · Guess the song</p>
       <span class="badge time">5 min</span></li>
     <li class="card alt"><span class="ico">📚</span>
       <h3>New words</h3><p>Five words you will need</p>
@@ -97,53 +204,359 @@
 <section class="slide phase">
   <span class="step">1</span>
   <h1>Name that song</h1>
-  <p class="sub">Teams · five clips</p>
+  <p class="sub">Teams · 19 highlight clips</p>
   <span class="badge time">5 minutes</span>
+  <div style="margin-top:1.5rem">
+    <a href="../assets/games/uno/index.html" target="_blank" class="uno-launch-btn">
+      <span class="uno-tag">UNO</span>
+      <span>🎮 Chơi UNO GAME: Đoán Tên Bài Hát (4 Đội · 19 Bài hát) ↗</span>
+    </a>
+  </div>
 </section>
 
-<!-- ══ 5. KHỞI ĐỘNG · ĐOÁN TÊN BÀI ════════════════════════════════════
-     PPT nhúng sẵn năm đoạn nhạc. HTML không nhúng được nhạc bản quyền,
-     nên cô mở nhạc ngoài (điện thoại, YouTube) rồi bấm lật tên bài. -->
+<!-- ══ 5. KHỞI ĐỘNG · ĐOÁN TÊN BÀI (CLIPS 1–4) ═════════════════════════
+     Nhúng phát đoạn cao trào / highlight của từng bài từ YouTube Music
+     Ẩn video, chỉ phát audio để học sinh nghe và đoán tên bài. -->
 <section class="slide denser">
-  <span class="kicker">Warm-up · guess the song</span> <span class="badge time">5 min</span>
-  <h2>Five clips. Who sings them all? · 1–3</h2>
-  <ul class="colloc">
-    <li class="q"><span class="v">Clip 1</span><span class="n">
-      <button class="reveal" type="button" aria-expanded="false">?</button>
-      <span class="answer">Love Yourself</span></span></li>
-    <li class="q"><span class="v">Clip 2</span><span class="n">
-      <button class="reveal" type="button" aria-expanded="false">?</button>
-      <span class="answer">Sorry</span></span></li>
-    <li class="q"><span class="v">Clip 3</span><span class="n">
-      <button class="reveal" type="button" aria-expanded="false">?</button>
-      <span class="answer">What Do You Mean?</span></span></li>
+  <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+    <span class="kicker" style="margin-bottom:0">Warm-up · guess the song</span>
+    <a href="../assets/games/uno/index.html" target="_blank" class="uno-launch-btn" style="padding:4px 12px; font-size:13px; text-decoration:none;">
+      <span class="uno-tag" style="font-size:11px; padding:1px 6px;">UNO</span>
+      <span>Mở UNO Game (4 Đội) ↗</span>
+    </a>
+  </div>
+  <h2>Name that song · Climax highlights · 1–4</h2>
+  <ul class="colloc yt-playlist">
+    <li class="q yt-clip-row" data-video-id="fcnDmrtj6Sk" data-start="48">
+      <span class="v">Clip 1</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 1">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=fcnDmrtj6Sk" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">Dai Dai <span style="font-size:0.8em;opacity:0.8">(Shakira &amp; Burna Boy)</span></span>
+      </span>
+    </li>
+    <li class="q yt-clip-row" data-video-id="GqWYJT-iMTw" data-start="45">
+      <span class="v">Clip 2</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 2">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=GqWYJT-iMTw" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">Baby <span style="font-size:0.8em;opacity:0.8">(Justin Bieber)</span></span>
+      </span>
+    </li>
+    <li class="q yt-clip-row" data-video-id="d57qSDCxVA4" data-start="46">
+      <span class="v">Clip 3</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 3">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=d57qSDCxVA4" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">What Makes You Beautiful <span style="font-size:0.8em;opacity:0.8">(One Direction)</span></span>
+      </span>
+    </li>
+    <li class="q yt-clip-row" data-video-id="DiTd771WumE" data-start="29">
+      <span class="v">Clip 4</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 4">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=DiTd771WumE" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">APT. <span style="font-size:0.8em;opacity:0.8">(ROSÉ &amp; Bruno Mars)</span></span>
+      </span>
+    </li>
   </ul>
 </section>
 
+<!-- ══ 6. KHỞI ĐỘNG · ĐOÁN TÊN BÀI (CLIPS 5–8) ═════════════════════════ -->
 <section class="slide denser">
   <span class="kicker">Warm-up · guess the song</span>
-  <h2>Five clips. Who sings them all? · 4–5</h2>
-  <ul class="colloc">
-    <li class="q"><span class="v">Clip 4</span><span class="n">
-      <button class="reveal" type="button" aria-expanded="false">?</button>
-      <span class="answer">Where Are You Now</span></span></li>
-    <li class="q"><span class="v">Clip 5</span><span class="n">
-      <button class="reveal" type="button" aria-expanded="false">?</button>
-      <span class="answer">Stuck in the Moment</span></span></li>
+  <h2>Name that song · Climax highlights · 5–8</h2>
+  <ul class="colloc yt-playlist">
+    <li class="q yt-clip-row" data-video-id="nugmZqIP0uk" data-start="27">
+      <span class="v">Clip 5</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 5">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=nugmZqIP0uk" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">See You Again <span style="font-size:0.8em;opacity:0.8">(Wiz Khalifa ft. Charlie Puth)</span></span>
+      </span>
+    </li>
+    <li class="q yt-clip-row" data-video-id="ffqliB42Nh4" data-start="47">
+      <span class="v">Clip 6</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 6">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=ffqliB42Nh4" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">We Don't Talk Anymore <span style="font-size:0.8em;opacity:0.8">(Charlie Puth)</span></span>
+      </span>
+    </li>
+    <li class="q yt-clip-row" data-video-id="x17ZnrQHI90" data-start="49">
+      <span class="v">Clip 7</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 7">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=x17ZnrQHI90" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">I Do <span style="font-size:0.8em;opacity:0.8">(911)</span></span>
+      </span>
+    </li>
+    <li class="q yt-clip-row" data-video-id="S6AI2qlVjtY" data-start="53">
+      <span class="v">Clip 8</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 8">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=S6AI2qlVjtY" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">Nothing's Going to Change My Love For You <span style="font-size:0.8em;opacity:0.8">(Westlife)</span></span>
+      </span>
+    </li>
   </ul>
 </section>
 
-<!-- ══ 6. KHỞI ĐỘNG · DẪN VÀO CHỦ ĐỀ ══════════════════════════════════ -->
+<!-- ══ 7. KHỞI ĐỘNG · ĐOÁN TÊN BÀI (CLIPS 9–12 · V-POP & DÂN CA) ═══════ -->
+<section class="slide denser">
+  <span class="kicker">Warm-up · guess the song</span>
+  <h2>Name that song · Climax highlights · 9–12</h2>
+  <ul class="colloc yt-playlist">
+    <li class="q yt-clip-row" data-video-id="rNW6MLNyMwk" data-start="76">
+      <span class="v">Clip 9</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 9">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=rNW6MLNyMwk" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">Tan Biến <span style="font-size:0.8em;opacity:0.8">(M4U)</span></span>
+      </span>
+    </li>
+    <li class="q yt-clip-row" data-video-id="48XgscozT-A" data-start="72">
+      <span class="v">Clip 10</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 10">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=48XgscozT-A" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">Mưa Trên Phố Huế <span style="font-size:0.8em;opacity:0.8">(Dân ca xứ Huế)</span></span>
+      </span>
+    </li>
+    <li class="q yt-clip-row" data-video-id="nIGb7Z_NwBM" data-start="59">
+      <span class="v">Clip 11</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 11">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=nIGb7Z_NwBM" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">Chiếc Khăn Piêu <span style="font-size:0.8em;opacity:0.8">(Tùng Dương ft. Đinh Nhật Minh Sáo Trúc)</span></span>
+      </span>
+    </li>
+    <li class="q yt-clip-row" data-video-id="xJN73LSnito" data-start="43">
+      <span class="v">Clip 12</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 12">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=xJN73LSnito" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">Trống Cơm <span style="font-size:0.8em;opacity:0.8">(Cường Seven, NSND Tự Long, SOOBIN)</span></span>
+      </span>
+    </li>
+  </ul>
+</section>
+
+<!-- ══ 8. KHỞI ĐỘNG · ĐOÁN TÊN BÀI (CLIPS 13–16) ═════════════════════════ -->
+<section class="slide denser">
+  <span class="kicker">Warm-up · guess the song</span>
+  <h2>Name that song · Climax highlights · 13–16</h2>
+  <ul class="colloc yt-playlist">
+    <li class="q yt-clip-row" data-video-id="RKd3P1R2G0Q" data-start="125">
+      <span class="v">Clip 13</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 13">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=RKd3P1R2G0Q" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">Em Tôi <span style="font-size:0.8em;opacity:0.8">(Liên Minh Kỳ Tích · Anh Trai Vượt Ngàn Chông Gai)</span></span>
+      </span>
+    </li>
+    <li class="q yt-clip-row" data-video-id="c6rP-YP4c5I" data-start="48">
+      <span class="v">Clip 14</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 14">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=c6rP-YP4c5I" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">Try Everything <span style="font-size:0.8em;opacity:0.8">(Shakira · Zootopia OST)</span></span>
+      </span>
+    </li>
+    <li class="q yt-clip-row" data-video-id="WTJSt4wP2ME" data-start="34">
+      <span class="v">Clip 15</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 15">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=WTJSt4wP2ME" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">Wavin' Flag <span style="font-size:0.8em;opacity:0.8">(K'NAAN · World Cup Anthem)</span></span>
+      </span>
+    </li>
+    <li class="q yt-clip-row" data-video-id="pJxuD9fiibM" data-start="52">
+      <span class="v">Clip 16</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 16">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=pJxuD9fiibM" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">Flashlight <span style="font-size:0.8em;opacity:0.8">(Jessie J · Pitch Perfect 2 OST)</span></span>
+      </span>
+    </li>
+  </ul>
+</section>
+
+<!-- ══ 9. KHỞI ĐỘNG · ĐOÁN TÊN BÀI (CLIPS 17–19) ═════════════════════════ -->
+<section class="slide denser">
+  <span class="kicker">Warm-up · guess the song</span>
+  <h2>Name that song · Climax highlights · 17–19</h2>
+  <ul class="colloc yt-playlist">
+    <li class="q yt-clip-row" data-video-id="wSOc5jmvF-k" data-start="44">
+      <span class="v">Clip 17</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 17">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=wSOc5jmvF-k" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">Sugar <span style="font-size:0.8em;opacity:0.8">(Maroon 5)</span></span>
+      </span>
+    </li>
+    <li class="q yt-clip-row" data-video-id="Ys7-6_t7OEQ" data-start="78">
+      <span class="v">Clip 18</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 18">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=Ys7-6_t7OEQ" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">Beauty And A Beat <span style="font-size:0.8em;opacity:0.8">(Justin Bieber ft. Nicki Minaj)</span></span>
+      </span>
+    </li>
+    <li class="q yt-clip-row" data-video-id="omh8RAoJ47M" data-start="42">
+      <span class="v">Clip 19</span>
+      <div class="yt-audio-pill">
+        <button class="yt-play-toggle" type="button" aria-label="Play Clip 19">
+          <span class="yt-icon">▶</span>
+          <span class="yt-txt">Play highlight</span>
+          <span class="yt-eq"><span></span><span></span><span></span></span>
+        </button>
+        <a class="yt-ext-link" href="https://music.youtube.com/watch?v=omh8RAoJ47M" target="_blank" rel="noopener" title="Mở bài hát trên YouTube Music">🎵 YT Music</a>
+      </div>
+      <span class="n">
+        <button class="reveal" type="button" aria-expanded="false">?</button>
+        <span class="answer">See Tình <span style="font-size:0.8em;opacity:0.8">(Hoàng Thùy Linh · Cukak Remix)</span></span>
+      </span>
+    </li>
+  </ul>
+</section>
+
+<!-- ══ 9. KHỞI ĐỘNG · DẪN VÀO CHỦ ĐỀ ══════════════════════════════════ -->
 <section class="slide">
   <span class="kicker">Warm-up · lead-in</span>
-  <h2>So — whose songs are they?</h2>
-  <p class="q">Whose songs are they?
+  <h2>Music genres &amp; talented artists</h2>
+  <p class="q">Which songs or musical genres did you hear?
     <button class="reveal" type="button" aria-expanded="false">Answer</button>
-    <span class="answer">They are Justin Bieber’s.</span></p>
-  <p class="q">Is he a talented singer?
+    <span class="answer">A rich blend of international pop, romantic ballads, modern hits, and traditional Vietnamese folk music.</span></p>
+  <p class="q">Which musical instruments could you recognise?
     <button class="reveal" type="button" aria-expanded="false">Answer</button>
-    <span class="answer note">Yes — he is considered the Prince of Pop. Today’s
-      conversation is about an artist just like him.</span></p>
+    <span class="answer note">Piano, acoustic guitar, traditional bamboo flute (sáo trúc), and drums. Today’s unit explores all about music, instruments, and talented artists!</span></p>
 </section>
 
 <!-- ══ 7. PHASE 2 ═════════════════════════════════════════════════════ -->
@@ -475,5 +888,96 @@
 </main>
 
 <script src="../gs10.js"></script>
+
+<!-- YouTube Audio Engine iframe with valid dimensions & media permissions to prevent browser autoplay block -->
+<iframe id="yt-audio-player" style="position:fixed;width:240px;height:140px;bottom:10px;right:10px;opacity:0.001;pointer-events:none;z-index:-1;" src="about:blank" allow="autoplay; encrypted-media; picture-in-picture"></iframe>
+
+<script>
+(function () {
+  'use strict';
+  var iframe = document.getElementById('yt-audio-player');
+  var audio = new Audio();
+  var currentBtn = null;
+
+  audio.addEventListener('ended', stopAudio);
+
+  function stopAudio() {
+    try { audio.pause(); audio.currentTime = 0; } catch (_) {}
+    if (iframe) iframe.src = 'about:blank';
+    if (currentBtn) {
+      currentBtn.classList.remove('is-playing');
+      var icon = currentBtn.querySelector('.yt-icon');
+      var txt = currentBtn.querySelector('.yt-txt');
+      if (icon) icon.textContent = '▶';
+      if (txt) txt.textContent = 'Play highlight';
+      currentBtn = null;
+    }
+  }
+
+  function playAudio(btn, videoId, startTime, clipNum) {
+    if (currentBtn === btn) {
+      // Toggle pause
+      stopAudio();
+      return;
+    }
+
+    // Stop previous playing clip
+    stopAudio();
+
+    // Start current
+    currentBtn = btn;
+    btn.classList.add('is-playing');
+    var icon = btn.querySelector('.yt-icon');
+    var txt = btn.querySelector('.yt-txt');
+    if (icon) icon.textContent = '⏸';
+    if (txt) txt.textContent = 'Playing...';
+
+    if (clipNum) {
+      audio.src = '../assets/games/uno/media/songs/song' + clipNum + '.mp3';
+      audio.currentTime = 0;
+      audio.play().catch(function () {
+        var startParam = startTime ? '&start=' + startTime : '';
+        if (iframe) {
+          iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&enablejsapi=1&playsinline=1' + startParam;
+        }
+      });
+    } else {
+      var startParam = startTime ? '&start=' + startTime : '';
+      if (iframe) {
+        iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&enablejsapi=1&playsinline=1' + startParam;
+      }
+    }
+  }
+
+  // Click handler on play toggles
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('.yt-play-toggle');
+    if (!btn) return;
+    e.preventDefault();
+    var row = btn.closest('.yt-clip-row');
+    if (row) {
+      var videoId = row.getAttribute('data-video-id');
+      var startTime = row.getAttribute('data-start') || '0';
+      var clipText = row.querySelector('.v') ? row.querySelector('.v').textContent : '';
+      var clipNum = (clipText.match(/\d+/) || [])[0];
+      playAudio(btn, videoId, startTime, clipNum);
+    }
+  });
+
+  // Stop audio on slide change (Arrow keys, Escape, etc.)
+  document.addEventListener('keydown', function (e) {
+    if (['ArrowLeft', 'ArrowRight', 'Escape'].indexOf(e.key) >= 0) {
+      stopAudio();
+    }
+  });
+
+  // Stop audio when deck navigation buttons clicked
+  document.addEventListener('click', function (e) {
+    if (e.target.closest('.deck-nav button')) {
+      stopAudio();
+    }
+  });
+})();
+</script>
 </body>
 </html>
