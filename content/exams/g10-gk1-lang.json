@@ -1,0 +1,282 @@
+{
+  "id": "g10-gk1-lang",
+  "title": "Ôn tập Giữa kì 1 · Phần Ngôn ngữ (Language Focus)",
+  "semester": "HK1",
+  "curriculum": {
+    "topics": [
+      1,
+      2,
+      3
+    ],
+    "grammar": [
+      1,
+      2,
+      3,
+      5,
+      8,
+      14
+    ]
+  },
+  "items": [
+    {
+      "id": "g10_gk1_l01",
+      "section": "I. LANGUAGE: Grammar",
+      "prompt": "1. We're hoping _______ tickets to the concert.",
+      "options": [
+        "A. got",
+        "B. get",
+        "C. to get",
+        "D. getting"
+      ],
+      "answer": 2,
+      "explanation": "Cấu trúc: 'hope + to-infinitive' (hy vọng làm gì) -> chọn 'to get'."
+    },
+    {
+      "id": "g10_gk1_l02",
+      "section": "I. LANGUAGE: Vocabulary",
+      "prompt": "2. We need to _______ public awareness of the environmental issues.",
+      "options": [
+        "A. achieve",
+        "B. organise",
+        "C. raise",
+        "D. plan"
+      ],
+      "answer": 2,
+      "explanation": "Collocation cố định: 'raise awareness of something' (nâng cao nhận thức của cộng đồng về vấn đề gì)."
+    },
+    {
+      "id": "g10_gk1_l03",
+      "section": "I. LANGUAGE: Vocabulary",
+      "prompt": "3. Our music teacher has been invited to be a _______ in many music competitions and talent shows.",
+      "options": [
+        "A. contestant",
+        "B. judge",
+        "C. fan",
+        "D. competitor"
+      ],
+      "answer": 1,
+      "explanation": "'judge' (giám khảo trong cuộc thi âm nhạc). Contestant/competitor là thí sinh; fan là người hâm mộ."
+    },
+    {
+      "id": "g10_gk1_l04",
+      "section": "I. LANGUAGE: Preposition",
+      "prompt": "4. He always helps _______ the housework.",
+      "options": [
+        "A. with",
+        "B. in",
+        "C. on",
+        "D. to"
+      ],
+      "answer": 0,
+      "explanation": "Cấu trúc: 'help (someone) with something' (giúp đỡ việc gì) -> 'helps with the housework'."
+    },
+    {
+      "id": "g10_gk1_l05",
+      "section": "I. LANGUAGE: Word Form",
+      "prompt": "5. We're going to hold a _______ to see who can swim the fastest.",
+      "options": [
+        "A. competition",
+        "B. competitor",
+        "C. competitive",
+        "D. compete"
+      ],
+      "answer": 0,
+      "explanation": "Sau mạo từ 'a' cần một danh từ chỉ sự kiện cuộc thi -> 'competition' (cuộc thi)."
+    },
+    {
+      "id": "g10_gk1_l06",
+      "section": "I. LANGUAGE: Conjunction",
+      "prompt": "6. We've invited the boss, _______ she may decide not to come.",
+      "options": [
+        "A. and",
+        "B. but",
+        "C. or",
+        "D. so"
+      ],
+      "answer": 1,
+      "explanation": "Liên từ chỉ sự tương phản: 'Chúng tôi đã mời sếp, nhưng có thể cô ấy sẽ quyết định không đến' -> chọn 'but'."
+    },
+    {
+      "id": "g10_gk1_l07",
+      "section": "I. LANGUAGE: Vocabulary",
+      "prompt": "7. When all members of the family share housework, family _______ become stronger.",
+      "options": [
+        "A. bonds",
+        "B. joys",
+        "C. happiness",
+        "D. life"
+      ],
+      "answer": 0,
+      "explanation": "Cụm danh từ: 'family bonds' (sự gắn kết gia đình / tình cảm gia đình)."
+    },
+    {
+      "id": "g10_gk1_l08",
+      "section": "I. LANGUAGE: Word Form",
+      "prompt": "8. Voluntary / Volunteer work is a great way for _______ to teach children in remote areas.",
+      "options": [
+        "A. volunteer",
+        "B. voluntary",
+        "C. volunteered",
+        "D. volunteers"
+      ],
+      "answer": 3,
+      "explanation": "'a great way for volunteers to teach...' (là cơ hội tuyệt vời cho các tình nguyện viên giảng dạy trẻ em vùng sâu vùng xa)."
+    },
+    {
+      "id": "g10_gk1_l09",
+      "section": "I. LANGUAGE: Preposition",
+      "prompt": "9. Can you tell me who is responsible _______ the finances in your family?",
+      "options": [
+        "A. with",
+        "B. to",
+        "C. about",
+        "D. for"
+      ],
+      "answer": 3,
+      "explanation": "Cấu trúc tính từ đi với giới từ: 'be responsible for something' (chịu trách nhiệm về cái gì)."
+    },
+    {
+      "id": "g10_gk1_l10",
+      "section": "I. LANGUAGE: Vocabulary",
+      "prompt": "10. When you do something good for others, you will find your life _______.",
+      "options": [
+        "A. meaningless",
+        "B. hopeless",
+        "C. harmful",
+        "D. meaningful"
+      ],
+      "answer": 3,
+      "explanation": "Cấu trúc: 'find something + adj' (thấy cái gì như thế nào). Làm việc tốt giúp cuộc sống có ý nghĩa -> chọn 'meaningful'."
+    },
+    {
+      "id": "g10_gk1_l11",
+      "section": "I. LANGUAGE: Vocabulary",
+      "prompt": "11. Doing volunteer work, we are more _______ of global problems facing our world.",
+      "options": [
+        "A. aware",
+        "B. devote",
+        "C. communicate",
+        "D. dedicate"
+      ],
+      "answer": 0,
+      "explanation": "Cấu trúc tính từ: 'be aware of something' (nhận thức được điều gì)."
+    },
+    {
+      "id": "g10_gk1_l12",
+      "section": "I. LANGUAGE: Idiom",
+      "prompt": "12. Environmental pollution is a hot _______ nowadays because it is really complicated and hard to solve.",
+      "options": [
+        "A. orange",
+        "B. apple",
+        "C. potato",
+        "D. dog"
+      ],
+      "answer": 2,
+      "explanation": "Thành ngữ: 'a hot potato' (một vấn đề nan giải, nóng bỏng, khó giải quyết)."
+    },
+    {
+      "id": "g10_gk1_l13",
+      "section": "I. LANGUAGE: Grammar",
+      "prompt": "13. It’s been raining all day. This weather makes me _______.",
+      "options": [
+        "A. depress",
+        "B. depressed",
+        "C. depressing",
+        "D. to depress"
+      ],
+      "answer": 1,
+      "explanation": "Cấu trúc: 'make someone + adj': tính từ chỉ cảm xúc của con người dùng đuôi -ed -> 'makes me depressed' (khiến tôi cảm thấy chán nản/buồn bã)."
+    },
+    {
+      "id": "g10_gk1_l14",
+      "section": "I. LANGUAGE: Grammar",
+      "prompt": "14. We _______ in Ha Noi since 2000. We love living here.",
+      "options": [
+        "A. live",
+        "B. lived",
+        "C. have lived",
+        "D. are living"
+      ],
+      "answer": 2,
+      "explanation": "Dấu hiệu 'since 2000' (từ năm 2000 đến nay) -> chia thì Hiện tại hoàn thành 'have lived'."
+    },
+    {
+      "id": "g10_gk1_l15",
+      "section": "I. LANGUAGE: Closest Meaning",
+      "prompt": "15. Mark the letter A, B, C or D to indicate the word CLOSEST in meaning to the underlined word:<br>We always <u>split</u> the housework equally - my mom cooks, my dad cleans the house and I do the washing-up.",
+      "options": [
+        "A. pick up",
+        "B. join",
+        "C. share",
+        "D. break"
+      ],
+      "answer": 2,
+      "explanation": "'split the housework' = 'share the housework' (phân chia, sẻ chia công việc nhà)."
+    },
+    {
+      "id": "g10_gk1_l16",
+      "section": "I. LANGUAGE: Closest Meaning",
+      "prompt": "16. Mark the letter A, B, C or D to indicate the word CLOSEST in meaning to the underlined word:<br>Lan’s main <u>responsibility</u> in her home is to keep the house clean.",
+      "options": [
+        "A. right",
+        "B. honor",
+        "C. part",
+        "D. duty"
+      ],
+      "answer": 3,
+      "explanation": "'responsibility' (trách nhiệm, bổn phận) đồng nghĩa với 'duty'."
+    },
+    {
+      "id": "g10_gk1_l17",
+      "section": "I. LANGUAGE: Word Stress",
+      "prompt": "17. Mark the letter A, B, C or D to indicate the word that differs from the other three in the position of primary stress.",
+      "options": [
+        "A. cover",
+        "B. protect",
+        "C. perform",
+        "D. respect"
+      ],
+      "answer": 0,
+      "explanation": "cover /ˈkʌv.ər/ có trọng âm 1. Các từ còn lại có trọng âm 2: protect /prəˈtekt/, perform /pəˈfɔːm/, respect /rɪˈspekt/."
+    },
+    {
+      "id": "g10_gk1_l18",
+      "section": "I. LANGUAGE: Word Stress",
+      "prompt": "18. Mark the letter A, B, C or D to indicate the word that differs from the other three in the position of primary stress.",
+      "options": [
+        "A. footprint",
+        "B. artist",
+        "C. routine",
+        "D. housework"
+      ],
+      "answer": 2,
+      "explanation": "routine /ruːˈtiːn/ có trọng âm 2. Các từ còn lại có trọng âm 1: footprint /ˈfʊt.prɪnt/, artist /ˈɑː.tɪst/, housework /ˈhaʊs.wɜːk/."
+    },
+    {
+      "id": "g10_gk1_l19",
+      "section": "I. LANGUAGE: Word Stress",
+      "prompt": "19. Mark the letter A, B, C or D to indicate the word that differs from the other three in the position of primary stress.",
+      "options": [
+        "A. damage",
+        "B. routine",
+        "C. service",
+        "D. manner"
+      ],
+      "answer": 1,
+      "explanation": "routine /ruːˈtiːn/ có trọng âm 2. Các từ còn lại có trọng âm 1: damage /ˈdæm.ɪdʒ/, service /ˈsɜː.vɪs/, manner /ˈmæn.ər/."
+    },
+    {
+      "id": "g10_gk1_l20",
+      "section": "I. LANGUAGE: Word Stress",
+      "prompt": "20. Mark the letter A, B, C or D to indicate the word that differs from the other three in the position of primary stress.",
+      "options": [
+        "A. organic",
+        "B. encourage",
+        "C. volunteer",
+        "D. location"
+      ],
+      "answer": 2,
+      "explanation": "volunteer /ˌvɒl.ənˈtɪər/ có trọng âm rơi vào âm tiết 3. Các từ còn lại có trọng âm 2: organic /ɔːˈɡæn.ɪk/, encourage /ɪnˈkʌr.ɪdʒ/, location /ləʊˈkeɪ.ʃən/."
+    }
+  ]
+}

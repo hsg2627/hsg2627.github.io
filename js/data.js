@@ -56,7 +56,7 @@ export const PRACTICE_CARDS = [
     id: 'exam',
     ico: '📝',
     title: 'Practice Tests',
-    desc: 'Revision papers for the periodic tests, aligned to the Grade 10 standard.',
+    desc: 'Midterm 1 revision papers and periodic tests, aligned with the curriculum standard.',
     href: '/practice/exam/'
   },
 ];

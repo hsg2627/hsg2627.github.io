@@ -269,6 +269,34 @@
       "parts": { "items": "ai-eval/ae-hk2.json" }
     },
     {
+      "id": "g10-gk1-lang",
+      "kind": "exam",
+      "title": "Ôn tập Giữa kì 1 · Phần Ngôn ngữ (Language Focus)",
+      "semester": "HK1",
+      "parts": { "items": "exams/g10-gk1-lang.json" }
+    },
+    {
+      "id": "g10-gk1-read",
+      "kind": "exam",
+      "title": "Ôn tập Giữa kì 1 · Phần Đọc hiểu & Điền từ (Reading Mastery)",
+      "semester": "HK1",
+      "parts": { "items": "exams/g10-gk1-read.json" }
+    },
+    {
+      "id": "g10-gk1-write",
+      "kind": "exam",
+      "title": "Ôn tập Giữa kì 1 · Kỹ năng Viết (Writing Skills)",
+      "semester": "HK1",
+      "parts": { "items": "exams/g10-gk1-write.json" }
+    },
+    {
+      "id": "g10-gk1-full",
+      "kind": "exam",
+      "title": "Đề Ôn tập Toàn diện Giữa kì 1 — Tiếng Anh 10 (Trọn bộ 80 câu)",
+      "semester": "HK1",
+      "parts": { "items": "exams/g10-gk1-full.json" }
+    },
+    {
       "id": "hk1-01",
       "kind": "exam",
       "title": "Term 1 comprehensive revision paper",

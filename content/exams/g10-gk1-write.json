@@ -1,0 +1,218 @@
+{
+  "id": "g10-gk1-write",
+  "title": "Ôn tập Giữa kì 1 · Kỹ năng Viết (Writing Skills)",
+  "semester": "HK1",
+  "curriculum": {
+    "topics": [
+      1,
+      2,
+      3
+    ],
+    "grammar": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8
+    ]
+  },
+  "items": [
+    {
+      "id": "g10_gk1_w01",
+      "section": "IV. WRITING: Arrangement",
+      "prompt": "Question 1. Mark the letter A, B, C, or D to indicate the correct arrangement of sentences to make a meaningful exchange:<br>a. Lan: Maybe I can help you. What windows do you need to clean?<br>b. Nam: Can you help me clean these windows? I can’t stand cleaning windows.<br>c. Nam: I need to clean the windows in front of the house. I’ve already done the ones in the back of the house.",
+      "options": [
+        "A. a – b – c",
+        "B. c – b – a",
+        "C. b – a – c",
+        "D. c – a – b"
+      ],
+      "answer": 2,
+      "explanation": "Nam nhờ vả (b) -> Lan đồng ý và hỏi cần lau cửa nào (a) -> Nam chỉ rõ vị trí cửa sổ (c)."
+    },
+    {
+      "id": "g10_gk1_w02",
+      "section": "IV. WRITING: Arrangement",
+      "prompt": "Question 2. Mark the letter A, B, C, or D to indicate the correct arrangement of sentences to make a meaningful exchange:<br>a. Anna: Hi! How have you been? How’s your family?<br>b. John: Hey! I’ve been good, thanks. My parents are doing well, and my sister just started college. How about your family?<br>c. Anna: That’s great to hear! My family is good too — my brother just got a new job, so we’re all excited.",
+      "options": [
+        "A. a – b – c",
+        "B. c – a – b",
+        "C. b – c – a",
+        "D. a – c – b"
+      ],
+      "answer": 0,
+      "explanation": "Anna chào hỏi thăm gia đình (a) -> John đáp và hỏi lại (b) -> Anna hào hứng chia sẻ về gia đình mình (c)."
+    },
+    {
+      "id": "g10_gk1_w03",
+      "section": "IV. WRITING: Arrangement",
+      "prompt": "Question 3. Mark the letter A, B, C, or D to indicate the correct arrangement of sentences to make a meaningful exchange:<br>a. Son: That’s a great idea! I can also make a birthday card for her.<br>b. Son: Dad, Mom’s birthday is this weekend. Should we do something special for her?<br>c. Father: Yes, definitely. I was thinking we could cook her favorite meal and buy her a nice gift.",
+      "options": [
+        "A. b – c – a",
+        "B. c – b – a",
+        "C. b – a – c",
+        "D. a – b – c"
+      ],
+      "answer": 0,
+      "explanation": "Con trai nhắc ngày sinh nhật mẹ và hỏi ý kiến bố (b) -> Bố gợi ý nấu ăn và tặng quà (c) -> Con trai khen ý tưởng và đề nghị làm thiệp (a)."
+    },
+    {
+      "id": "g10_gk1_w04",
+      "section": "IV. WRITING: Arrangement",
+      "prompt": "Question 4. Mark the letter A, B, C, or D to indicate the correct arrangement of sentences to make a meaningful exchange:<br>a. Daughter: I agree. It will also give us more time to relax together.<br>b. Mother: That would be wonderful. It’s important that we all share the chores to keep the house clean.<br>c. Mother: That’s very responsible of you! You could start by doing the dishes after dinner and helping with the laundry on weekends.<br>d. Daughter: Mom, I feel like I should help more around the house. What can I do to help?<br>e. Daughter: That sounds fair. I can also vacuum the living room twice a week.",
+      "options": [
+        "A. d – b – a – e – c",
+        "B. d – b – a – c – e",
+        "C. a – b – c – d – e",
+        "D. d – c – e – b – a"
+      ],
+      "answer": 3,
+      "explanation": "Con gái chủ động đề nghị giúp đỡ việc nhà (d) -> Mẹ gợi ý rửa bát và giặt đồ (c) -> Con đồng ý và nhận thêm hút bụi (e) -> Mẹ vui mừng khen ngợi việc cùng chia sẻ việc nhà (b) -> Con đồng tình rằng sẽ có nhiều thời gian nghỉ ngơi cùng nhau (a)."
+    },
+    {
+      "id": "g10_gk1_w05",
+      "section": "IV. WRITING: Arrangement",
+      "prompt": "Question 5. Mark the letter A, B, C, or D to indicate the correct arrangement to make a meaningful letter:<br>Hi Emily,<br>I hope you're doing well. I wanted to share something personal with you because I trust you.<br>a. Lately, I’ve been feeling a bit sad because my parents are not getting along. They argue a lot, and it’s making things really difficult at home.<br>b. Thanks for listening. I hope we can meet this weekend, maybe talking in person would help.<br>c. It’s hard to concentrate at school, and I don’t really feel like talking to anyone about it. I just needed to tell someone, and I thought of you.<br>d. Have you ever been through something like this? If you have any advice, I’d really appreciate it.<br>e. I’m not sure what’s going to happen, but I’m scared they might separate.<br>Take care, Anna",
+      "options": [
+        "A. e – a – c – d – b",
+        "B. a – e – c – d – b",
+        "C. e – d – a – c – b",
+        "D. a – d – c – e – b"
+      ],
+      "answer": 1,
+      "explanation": "Anna tâm sự bố mẹ cãi nhau (a) -> sợ bố mẹ ly hôn (e) -> ảnh hưởng tâm lý và việc học ở trường (c) -> hỏi xin lời khuyên của bạn (d) -> cảm ơn và hẹn gặp (b)."
+    },
+    {
+      "id": "g10_gk1_w06",
+      "section": "IV. WRITING: Arrangement",
+      "prompt": "Question 6. Mark the letter A, B, C, or D to indicate the correct arrangement to make a meaningful paragraph:<br>a. This not only reduces stress for parents but also teaches children how to work as part of a team.<br>b. When children take part in tasks like washing dishes, doing laundry, or sweeping the floor, they learn responsibility and important life skills.<br>c. Although housework may not always be enjoyable, it brings the family closer and builds respect for one another.<br>d. In a family, it is important that everyone helps with household chores so the home stays clean and organized.<br>e. Doing chores together can also be a great time for family members to talk, share stories, and strengthen their bond.",
+      "options": [
+        "A. b – d – a – c – e",
+        "B. d – e – b – a – c",
+        "C. d – b – a – e – c",
+        "D. b – a – d – c – e"
+      ],
+      "answer": 2,
+      "explanation": "d (Câu chủ đề: Mọi người cần giúp việc nhà) -> b (Khi trẻ làm việc nhà sẽ học được tính trách nhiệm) -> a (Điều này giảm áp lực cho bố mẹ và dạy kỹ năng làm việc nhóm) -> e (Cùng làm việc nhà giúp gắn kết) -> c (Kết luận: việc nhà đem lại sự gần gũi và tôn trọng lẫn nhau)."
+    },
+    {
+      "id": "g10_gk1_w07",
+      "section": "IV. WRITING: Arrangement",
+      "prompt": "Question 7. Mark the letter A, B, C, or D to indicate the correct arrangement to make a meaningful paragraph:<br>a. Music strongly influences the human mind because it can shape both our emotions and our thoughts.<br>b. When people listen to gentle melodies, they often experience a sense of calm, which reduces stress and helps them think more clearly.<br>c. For these reasons, music is more than entertainment; it is also a powerful tool for emotional balance and mental growth.<br>d. However, upbeat and energetic songs create a different effect, since they boost motivation and encourage people to stay active.<br>e. This clear state of mind is useful for studying or working, as soft background music can improve focus and productivity.",
+      "options": [
+        "A. e – a – b – d – c",
+        "B. a – b – d – c – e",
+        "C. a – b – e – d – c",
+        "D. e – d – b – a – c"
+      ],
+      "answer": 2,
+      "explanation": "a (Câu chủ đề: Âm nhạc tác động mạnh đến tâm trí) -> b (Giai điệu nhẹ nhàng giúp thư thái, bình tĩnh) -> e (Tâm trí sáng suốt này giúp ích cho học tập, làm việc) -> d (Ngược lại, nhạc sôi động giúp tăng động lực) -> c (Kết luận: âm nhạc là công cụ cân bằng cảm xúc)."
+    },
+    {
+      "id": "g10_gk1_w08",
+      "section": "IV. WRITING: Sentence Transformation",
+      "type": "text",
+      "prompt": "Finish the sentence so that it means the same as the sentence before it:<br><b>1. Alex was instructing all the workers of the company.</b><br>All the workers ____________________",
+      "model_answers": [
+        "All the workers of the company were being instructed by Alex.",
+        "All the workers were being instructed by Alex."
+      ],
+      "explanation": "Câu bị động thì Quá khứ tiếp diễn: 'was/were + being + V3/ed'. Đáp án: 'All the workers of the company were being instructed by Alex.'"
+    },
+    {
+      "id": "g10_gk1_w09",
+      "section": "IV. WRITING: Sentence Transformation",
+      "type": "text",
+      "prompt": "Finish the sentence so that it means the same as the sentence before it:<br><b>2. My mother lets me go out with my friends on Sundays.</b><br>My mother allows me ____________________",
+      "model_answers": [
+        "My mother allows me to go out with my friends on Sundays."
+      ],
+      "explanation": "Cấu trúc: 'let someone + V-bare' = 'allow someone + to-V'. Đáp án: 'My mother allows me to go out with my friends on Sundays.'"
+    },
+    {
+      "id": "g10_gk1_w10",
+      "section": "IV. WRITING: Sentence Transformation",
+      "type": "text",
+      "prompt": "Finish the sentence so that it means the same as the sentence before it:<br><b>3. The local people have arranged to plant more trees in the neighbourhood this weekend.</b><br>The local people are going ____________________",
+      "model_answers": [
+        "The local people are going to plant more trees in the neighbourhood this weekend."
+      ],
+      "explanation": "Diễn đạt kế hoạch đã sắp xếp dùng 'be going to + V': 'The local people are going to plant more trees in the neighbourhood this weekend.'"
+    },
+    {
+      "id": "g10_gk1_w11",
+      "section": "IV. WRITING: Sentence Transformation",
+      "type": "text",
+      "prompt": "Finish the sentence so that it means the same as the sentence before it:<br><b>4. I advised you to prepare your lesson at home.</b><br>You had better ____________________",
+      "model_answers": [
+        "You had better prepare your lesson at home."
+      ],
+      "explanation": "Cấu trúc khuyên nhủ: 'advise someone to-V' = 'had better + V-bare'. Đáp án: 'You had better prepare your lesson at home.'"
+    },
+    {
+      "id": "g10_gk1_w12",
+      "section": "IV. WRITING: Sentence Transformation",
+      "type": "text",
+      "prompt": "Finish the sentence so that it means the same as the sentence before it:<br><b>5. His parents don’t allow him to watch such TV shows.</b><br>His parents don’t let ____________________",
+      "model_answers": [
+        "His parents don’t let him watch such TV shows.",
+        "His parents don't let him watch such TV shows."
+      ],
+      "explanation": "'not allow someone to-V' = 'not let someone + V-bare'. Đáp án: 'His parents don’t let him watch such TV shows.'"
+    },
+    {
+      "id": "g10_gk1_w13",
+      "section": "IV. WRITING: Sentence Transformation",
+      "type": "text",
+      "prompt": "Finish the sentence so that it means the same as the sentence before it:<br><b>6. We divide household chores equally in our family.</b><br>Household chores ____________________",
+      "model_answers": [
+        "Household chores are divided equally in our family."
+      ],
+      "explanation": "Câu bị động Hiện tại đơn: 'S + am/is/are + V3/ed': 'Household chores are divided equally in our family.'"
+    },
+    {
+      "id": "g10_gk1_w14",
+      "section": "IV. WRITING: Sentence Transformation",
+      "type": "text",
+      "prompt": "Finish the sentence using the cue in bracket:<br><b>7. Jaine last visited her hometown 3 years ago. (has)</b><br>Jaine ____________________",
+      "model_answers": [
+        "Jaine has not visited her hometown for 3 years.",
+        "Jaine hasn't visited her hometown for 3 years."
+      ],
+      "explanation": "'last + V2 + time + ago' chuyển sang thì Hiện tại hoàn thành dạng phủ định: 'has not (hasn't) visited her hometown for 3 years.'"
+    },
+    {
+      "id": "g10_gk1_w15",
+      "section": "IV. WRITING: Sentence Transformation",
+      "type": "text",
+      "prompt": "Finish the sentence using infinitive verb:<br><b>8. My cousin spent three hours driving to the concert hall.</b><br>It took ____________________",
+      "model_answers": [
+        "It took my cousin three hours to drive to the concert hall."
+      ],
+      "explanation": "'spend time V-ing' = 'It takes/took someone + time + to-V'. Đáp án: 'It took my cousin three hours to drive to the concert hall.'"
+    },
+    {
+      "id": "g10_gk1_w16",
+      "section": "IV. WRITING: Sentence Transformation",
+      "type": "text",
+      "prompt": "Combine the two sentences using 'When':<br><b>9. Nick and Judy were arguing about the case. Chief Bogo called them. (called)</b><br>When ____________________",
+      "model_answers": [
+        "When Chief Bogo called them, Nick and Judy were arguing about the case.",
+        "When Nick and Judy were arguing about the case, Chief Bogo called them."
+      ],
+      "explanation": "Hành động đang xảy ra (Quá khứ tiếp diễn) thì hành động khác xen vào (Quá khứ đơn): 'When Chief Bogo called them, Nick and Judy were arguing about the case.'"
+    },
+    {
+      "id": "g10_gk1_w17",
+      "section": "IV. WRITING: Sentence Transformation",
+      "type": "text",
+      "prompt": "Change into passive voice:<br><b>10. A small company introduced the first e-reader in 1999.</b><br>The first ____________________",
+      "model_answers": [
+        "The first e-reader was introduced by a small company in 1999."
+      ],
+      "explanation": "Câu bị động Quá khứ đơn: 'was/were + V3/ed + by O': 'The first e-reader was introduced by a small company in 1999.'"
+    }
+  ]
+}

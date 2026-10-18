@@ -1,0 +1,623 @@
+{
+  "id": "g10-gk1-read",
+  "title": "Ôn tập Giữa kì 1 · Phần Đọc hiểu & Điền từ (Reading Mastery)",
+  "semester": "HK1",
+  "curriculum": {
+    "topics": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "grammar": [
+      1,
+      2,
+      7,
+      8
+    ]
+  },
+  "items": [
+    {
+      "id": "g10_gk1_r01",
+      "section": "II. READING: Soil and Environment",
+      "passage": "More than a third of the world's soil is endangered, according to a recent UN report. If we don't slow the decline, all farmable soil could be gone in 60 years. Since soil grows 95% of our food, and sustains human life in other more surprising ways, that is a huge problem. A single gram of healthy soil might contain 100 million bacteria, as well as other microorganisms such as viruses and fungi, living amid decomposing plants and various minerals.\n\nThat means soils do not just grow our food, but are the source of nearly all our existing antibiotics, and could be our best hope in the fight against antibiotic-resistant bacteria. Soil is also an ally against climate change: as microorganisms within soil digest dead animals and plants, they lock in their carbon content, holding three times the amount of carbon as does the entire atmosphere. Soils also store water, preventing flood damage: in the UK, damage to buildings, roads and bridges from floods caused by soil degradation costs £233 million every year.\n\nIf the soil loses its ability to perform these functions, the human race could be in big trouble. The danger is not that the soil will disappear completely, but that the microorganisms that give it its special properties will be lost. And once this has happened, it may take the soil thousands of years to recover.\n(Adapted from ieltsfighter.com)",
+      "prompt": "Question 1. The word \"its\" in the third paragraph refers to ________.",
+      "options": [
+        "A. degradation's",
+        "B. the human race",
+        "C. flood's",
+        "D. soil's"
+      ],
+      "answer": 3,
+      "explanation": "'If the soil loses its ability...': 'its' ở đây là sở hữu của danh từ 'soil' (đất đai) phía trước."
+    },
+    {
+      "id": "g10_gk1_r02",
+      "section": "II. READING: Soil and Environment",
+      "passage": "More than a third of the world's soil is endangered, according to a recent UN report. If we don't slow the decline, all farmable soil could be gone in 60 years. Since soil grows 95% of our food, and sustains human life in other more surprising ways, that is a huge problem. A single gram of healthy soil might contain 100 million bacteria, as well as other microorganisms such as viruses and fungi, living amid decomposing plants and various minerals.\n\nThat means soils do not just grow our food, but are the source of nearly all our existing antibiotics, and could be our best hope in the fight against antibiotic-resistant bacteria. Soil is also an ally against climate change: as microorganisms within soil digest dead animals and plants, they lock in their carbon content, holding three times the amount of carbon as does the entire atmosphere. Soils also store water, preventing flood damage: in the UK, damage to buildings, roads and bridges from floods caused by soil degradation costs £233 million every year.\n\nIf the soil loses its ability to perform these functions, the human race could be in big trouble. The danger is not that the soil will disappear completely, but that the microorganisms that give it its special properties will be lost. And once this has happened, it may take the soil thousands of years to recover.\n(Adapted from ieltsfighter.com)",
+      "prompt": "Question 2. In the passage, what threatens the fertility and health of soil?",
+      "options": [
+        "A. Forest fires remove the nutrients from the soil.",
+        "B. Soil degradation and loss of vital microorganisms.",
+        "C. Long months of drought as a result of climate change.",
+        "D. Plants and animals absorb the nutrients from the soil."
+      ],
+      "answer": 1,
+      "explanation": "Đoạn 3 chỉ rõ: 'the microorganisms that give it its special properties will be lost' do suy thoái đất."
+    },
+    {
+      "id": "g10_gk1_r03",
+      "section": "II. READING: Soil and Environment",
+      "passage": "More than a third of the world's soil is endangered, according to a recent UN report. If we don't slow the decline, all farmable soil could be gone in 60 years. Since soil grows 95% of our food, and sustains human life in other more surprising ways, that is a huge problem. A single gram of healthy soil might contain 100 million bacteria, as well as other microorganisms such as viruses and fungi, living amid decomposing plants and various minerals.\n\nThat means soils do not just grow our food, but are the source of nearly all our existing antibiotics, and could be our best hope in the fight against antibiotic-resistant bacteria. Soil is also an ally against climate change: as microorganisms within soil digest dead animals and plants, they lock in their carbon content, holding three times the amount of carbon as does the entire atmosphere. Soils also store water, preventing flood damage: in the UK, damage to buildings, roads and bridges from floods caused by soil degradation costs £233 million every year.\n\nIf the soil loses its ability to perform these functions, the human race could be in big trouble. The danger is not that the soil will disappear completely, but that the microorganisms that give it its special properties will be lost. And once this has happened, it may take the soil thousands of years to recover.\n(Adapted from ieltsfighter.com)",
+      "prompt": "Question 3. According to the second paragraph, soil also helps fight against _______.",
+      "options": [
+        "A. antibiotic-resistant bacteria",
+        "B. antibiotics",
+        "C. climate change",
+        "D. dead animal and plants"
+      ],
+      "answer": 2,
+      "explanation": "Đoạn 2 nêu rõ: 'Soil is also an ally against climate change' (Đất cũng là một đồng minh chống lại biến đổi khí hậu)."
+    },
+    {
+      "id": "g10_gk1_r04",
+      "section": "II. READING: Soil and Environment",
+      "passage": "More than a third of the world's soil is endangered, according to a recent UN report. If we don't slow the decline, all farmable soil could be gone in 60 years. Since soil grows 95% of our food, and sustains human life in other more surprising ways, that is a huge problem. A single gram of healthy soil might contain 100 million bacteria, as well as other microorganisms such as viruses and fungi, living amid decomposing plants and various minerals.\n\nThat means soils do not just grow our food, but are the source of nearly all our existing antibiotics, and could be our best hope in the fight against antibiotic-resistant bacteria. Soil is also an ally against climate change: as microorganisms within soil digest dead animals and plants, they lock in their carbon content, holding three times the amount of carbon as does the entire atmosphere. Soils also store water, preventing flood damage: in the UK, damage to buildings, roads and bridges from floods caused by soil degradation costs £233 million every year.\n\nIf the soil loses its ability to perform these functions, the human race could be in big trouble. The danger is not that the soil will disappear completely, but that the microorganisms that give it its special properties will be lost. And once this has happened, it may take the soil thousands of years to recover.\n(Adapted from ieltsfighter.com)",
+      "prompt": "Question 4. The word \"contain\" in the first paragraph is closest in meaning to _______.",
+      "options": [
+        "A. live",
+        "B. exist",
+        "C. has",
+        "D. raise"
+      ],
+      "answer": 2,
+      "explanation": "'contain' có nghĩa là chứa đựng, bao gồm (= has / holds)."
+    },
+    {
+      "id": "g10_gk1_r05",
+      "section": "II. READING: Soil and Environment",
+      "passage": "More than a third of the world's soil is endangered, according to a recent UN report. If we don't slow the decline, all farmable soil could be gone in 60 years. Since soil grows 95% of our food, and sustains human life in other more surprising ways, that is a huge problem. A single gram of healthy soil might contain 100 million bacteria, as well as other microorganisms such as viruses and fungi, living amid decomposing plants and various minerals.\n\nThat means soils do not just grow our food, but are the source of nearly all our existing antibiotics, and could be our best hope in the fight against antibiotic-resistant bacteria. Soil is also an ally against climate change: as microorganisms within soil digest dead animals and plants, they lock in their carbon content, holding three times the amount of carbon as does the entire atmosphere. Soils also store water, preventing flood damage: in the UK, damage to buildings, roads and bridges from floods caused by soil degradation costs £233 million every year.\n\nIf the soil loses its ability to perform these functions, the human race could be in big trouble. The danger is not that the soil will disappear completely, but that the microorganisms that give it its special properties will be lost. And once this has happened, it may take the soil thousands of years to recover.\n(Adapted from ieltsfighter.com)",
+      "prompt": "Question 5. What is the main idea of the passage?",
+      "options": [
+        "A. Soil degradation's danger to the human race.",
+        "B. Soil's important roles in human life.",
+        "C. How bacteria as well as other microorganisms affect human life.",
+        "D. What needs to be done to protect natural resources like soil."
+      ],
+      "answer": 0,
+      "explanation": "Bài đọc nhấn mạnh sự nguy hiểm của suy thoái đất đối với loài người ('If we don't slow the decline... the human race could be in big trouble')."
+    },
+    {
+      "id": "g10_gk1_r06",
+      "section": "II. READING: Family Life",
+      "passage": "My (6) _______ family consists of four members. My husband is an engineer at a big company in Hanoi. I am an English teacher at an international school. We have a six-year-old son and a three-year-old daughter. All of the members often spend time (7) _______ the household chores with each other in the evening. My husband and I (8) _______ dinner together. My children help me clean the house. Although there (9) _______ a lot of household duties around the house, I am not tired because my husband joins hands to do the (10) _______ with me.",
+      "prompt": "Question 6. Choose the best option to fit blank (6):",
+      "options": [
+        "A. extended",
+        "B. nuclear",
+        "C. big",
+        "D. huge"
+      ],
+      "answer": 1,
+      "explanation": "Gia đình gồm 4 người (bố mẹ và 2 con) là gia đình hạt nhân -> 'nuclear family'."
+    },
+    {
+      "id": "g10_gk1_r07",
+      "section": "II. READING: Family Life",
+      "passage": "My (6) _______ family consists of four members. My husband is an engineer at a big company in Hanoi. I am an English teacher at an international school. We have a six-year-old son and a three-year-old daughter. All of the members often spend time (7) _______ the household chores with each other in the evening. My husband and I (8) _______ dinner together. My children help me clean the house. Although there (9) _______ a lot of household duties around the house, I am not tired because my husband joins hands to do the (10) _______ with me.",
+      "prompt": "Question 7. Choose the best option to fit blank (7):",
+      "options": [
+        "A. doing",
+        "B. to do",
+        "C. did",
+        "D. do"
+      ],
+      "answer": 0,
+      "explanation": "Cấu trúc: 'spend time + V-ing': 'spend time doing the household chores'."
+    },
+    {
+      "id": "g10_gk1_r08",
+      "section": "II. READING: Family Life",
+      "passage": "My (6) _______ family consists of four members. My husband is an engineer at a big company in Hanoi. I am an English teacher at an international school. We have a six-year-old son and a three-year-old daughter. All of the members often spend time (7) _______ the household chores with each other in the evening. My husband and I (8) _______ dinner together. My children help me clean the house. Although there (9) _______ a lot of household duties around the house, I am not tired because my husband joins hands to do the (10) _______ with me.",
+      "prompt": "Question 8. Choose the best option to fit blank (8):",
+      "options": [
+        "A. watch",
+        "B. bring",
+        "C. cook",
+        "D. take"
+      ],
+      "answer": 2,
+      "explanation": "Collocation: 'cook dinner' (nấu bữa tối)."
+    },
+    {
+      "id": "g10_gk1_r09",
+      "section": "II. READING: Family Life",
+      "passage": "My (6) _______ family consists of four members. My husband is an engineer at a big company in Hanoi. I am an English teacher at an international school. We have a six-year-old son and a three-year-old daughter. All of the members often spend time (7) _______ the household chores with each other in the evening. My husband and I (8) _______ dinner together. My children help me clean the house. Although there (9) _______ a lot of household duties around the house, I am not tired because my husband joins hands to do the (10) _______ with me.",
+      "prompt": "Question 9. Choose the best option to fit blank (9):",
+      "options": [
+        "A. are",
+        "B. was",
+        "C. is",
+        "D. were"
+      ],
+      "answer": 0,
+      "explanation": "Chủ ngữ số nhiều 'a lot of household duties' ở hiện tại -> dùng 'are'."
+    },
+    {
+      "id": "g10_gk1_r10",
+      "section": "II. READING: Family Life",
+      "passage": "My (6) _______ family consists of four members. My husband is an engineer at a big company in Hanoi. I am an English teacher at an international school. We have a six-year-old son and a three-year-old daughter. All of the members often spend time (7) _______ the household chores with each other in the evening. My husband and I (8) _______ dinner together. My children help me clean the house. Although there (9) _______ a lot of household duties around the house, I am not tired because my husband joins hands to do the (10) _______ with me.",
+      "prompt": "Question 10. Choose the best option to fit blank (10):",
+      "options": [
+        "A. hearts",
+        "B. housework",
+        "C. heads",
+        "D. feet"
+      ],
+      "answer": 1,
+      "explanation": "'do the housework' (làm việc nhà)."
+    },
+    {
+      "id": "g10_gk1_r11",
+      "section": "II. READING: Environment Ad",
+      "passage": "SAVE THE PLANET – EAT MORE PLANTS! 🌎\nYou don’t need to buy an electric car to help the environment — just change your diet! Choosing a (11) _________ can make a huge difference.\n\n🥦 Reduce Greenhouse Gases\nLivestock farming (12) _________ about 14.5% of the world’s greenhouse gases. By eating more plant-based foods, we could cut food-related emissions by up to 70% by 2050!\n\n💧 Save Water\nRaising animals uses enormous amounts of water — over 15,000 liters for one kilogram of beef! Vegetables need just a few hundred liters.\n\n🌳 Protect Forests & Wildlife\nMost farmland (13) _________ for livestock and their feed. If we grow more food for people instead, there will be more land for forests (14) _________ wild animals. Eating less meat is one of the easiest and most powerful ways to protect our planet.\n\n✨ Small changes in your diet can create a big (15) _________!\n(Adapted from i-learn smart world-unit 8)",
+      "prompt": "Question 11. Choose the correct option to fit blank (11):",
+      "options": [
+        "A. plant-based action",
+        "B. based-plant action",
+        "C. plant-action based",
+        "D. action-based plant"
+      ],
+      "answer": 0,
+      "explanation": "Tính từ ghép: 'plant-based' (có nguồn gốc thực vật) -> 'plant-based action'."
+    },
+    {
+      "id": "g10_gk1_r12",
+      "section": "II. READING: Environment Ad",
+      "passage": "SAVE THE PLANET – EAT MORE PLANTS! 🌎\nYou don’t need to buy an electric car to help the environment — just change your diet! Choosing a (11) _________ can make a huge difference.\n\n🥦 Reduce Greenhouse Gases\nLivestock farming (12) _________ about 14.5% of the world’s greenhouse gases. By eating more plant-based foods, we could cut food-related emissions by up to 70% by 2050!\n\n💧 Save Water\nRaising animals uses enormous amounts of water — over 15,000 liters for one kilogram of beef! Vegetables need just a few hundred liters.\n\n🌳 Protect Forests & Wildlife\nMost farmland (13) _________ for livestock and their feed. If we grow more food for people instead, there will be more land for forests (14) _________ wild animals. Eating less meat is one of the easiest and most powerful ways to protect our planet.\n\n✨ Small changes in your diet can create a big (15) _________!\n(Adapted from i-learn smart world-unit 8)",
+      "prompt": "Question 12. Choose the correct option to fit blank (12):",
+      "options": [
+        "A. produces",
+        "B. is producing",
+        "C. will produce",
+        "D. has produced"
+      ],
+      "answer": 0,
+      "explanation": "Diễn tả sự thật khách quan khoa học, chủ ngữ 'Livestock farming' số ít -> dùng Hiện tại đơn 'produces'."
+    },
+    {
+      "id": "g10_gk1_r13",
+      "section": "II. READING: Environment Ad",
+      "passage": "SAVE THE PLANET – EAT MORE PLANTS! 🌎\nYou don’t need to buy an electric car to help the environment — just change your diet! Choosing a (11) _________ can make a huge difference.\n\n🥦 Reduce Greenhouse Gases\nLivestock farming (12) _________ about 14.5% of the world’s greenhouse gases. By eating more plant-based foods, we could cut food-related emissions by up to 70% by 2050!\n\n💧 Save Water\nRaising animals uses enormous amounts of water — over 15,000 liters for one kilogram of beef! Vegetables need just a few hundred liters.\n\n🌳 Protect Forests & Wildlife\nMost farmland (13) _________ for livestock and their feed. If we grow more food for people instead, there will be more land for forests (14) _________ wild animals. Eating less meat is one of the easiest and most powerful ways to protect our planet.\n\n✨ Small changes in your diet can create a big (15) _________!\n(Adapted from i-learn smart world-unit 8)",
+      "prompt": "Question 13. Choose the correct option to fit blank (13):",
+      "options": [
+        "A. used",
+        "B. is used",
+        "C. will use",
+        "D. uses"
+      ],
+      "answer": 1,
+      "explanation": "Câu bị động ở hiện tại: 'Most farmland is used for...' (Đất nông nghiệp được dùng cho...)."
+    },
+    {
+      "id": "g10_gk1_r14",
+      "section": "II. READING: Environment Ad",
+      "passage": "SAVE THE PLANET – EAT MORE PLANTS! 🌎\nYou don’t need to buy an electric car to help the environment — just change your diet! Choosing a (11) _________ can make a huge difference.\n\n🥦 Reduce Greenhouse Gases\nLivestock farming (12) _________ about 14.5% of the world’s greenhouse gases. By eating more plant-based foods, we could cut food-related emissions by up to 70% by 2050!\n\n💧 Save Water\nRaising animals uses enormous amounts of water — over 15,000 liters for one kilogram of beef! Vegetables need just a few hundred liters.\n\n🌳 Protect Forests & Wildlife\nMost farmland (13) _________ for livestock and their feed. If we grow more food for people instead, there will be more land for forests (14) _________ wild animals. Eating less meat is one of the easiest and most powerful ways to protect our planet.\n\n✨ Small changes in your diet can create a big (15) _________!\n(Adapted from i-learn smart world-unit 8)",
+      "prompt": "Question 14. Choose the correct option to fit blank (14):",
+      "options": [
+        "A. but",
+        "B. and",
+        "C. so",
+        "D. yet"
+      ],
+      "answer": 1,
+      "explanation": "Liên từ 'and' kết nối hai danh từ đồng cấp 'forests and wild animals'."
+    },
+    {
+      "id": "g10_gk1_r15",
+      "section": "II. READING: Environment Ad",
+      "passage": "SAVE THE PLANET – EAT MORE PLANTS! 🌎\nYou don’t need to buy an electric car to help the environment — just change your diet! Choosing a (11) _________ can make a huge difference.\n\n🥦 Reduce Greenhouse Gases\nLivestock farming (12) _________ about 14.5% of the world’s greenhouse gases. By eating more plant-based foods, we could cut food-related emissions by up to 70% by 2050!\n\n💧 Save Water\nRaising animals uses enormous amounts of water — over 15,000 liters for one kilogram of beef! Vegetables need just a few hundred liters.\n\n🌳 Protect Forests & Wildlife\nMost farmland (13) _________ for livestock and their feed. If we grow more food for people instead, there will be more land for forests (14) _________ wild animals. Eating less meat is one of the easiest and most powerful ways to protect our planet.\n\n✨ Small changes in your diet can create a big (15) _________!\n(Adapted from i-learn smart world-unit 8)",
+      "prompt": "Question 15. Choose the correct option to fit blank (15):",
+      "options": [
+        "A. impact",
+        "B. consequence",
+        "C. convenience",
+        "D. drawback"
+      ],
+      "answer": 0,
+      "explanation": "Collocation: 'create a big impact' (tạo ra tác động to lớn tích cực)."
+    },
+    {
+      "id": "g10_gk1_r16",
+      "section": "II. READING: Music Culture",
+      "passage": "Breaking Boundaries: A Reality Music Show That Transforms Society\nSince its debut in June 2024, \"Anh Trai Vuot Ngan Chong Gai\" (16) _________ Vietnamese audiences, creating an unprecedented bridge between generations and geographic divides.\n\nOriginally adapted from MangoTV's show Call Me By Fire, the show brings together 33 distinguished men over the age of 30—renowned stars and influential figures across various fields, including music, dance, film, sports, and photography. Evolving beyond a (17) _________ music competition, the show has become a powerful cultural and social movement. This helps inspiring audiences and (18) _________ the landscape of Vietnam's creative industry.\n\nThrough innovative production, the show breathed new life into (19) _________ Vietnamese art forms such as \"Chèo\" or \"Cải lương\", making the heritage accessible to diverse audiences. Even in the digital age, the show unites multigenerational families, recreating the shared excitement and discussions like during the Television's Golden Era. It has also brought overseas Vietnamese home, showcasing the show's profound cross-border influence. (20) _________, one particular performance—filled with storytelling and emotion—deeply connected with audiences and helped raise funds for over 100 life-saving heart surgeries.\n(Adapted from AAP Releases)",
+      "prompt": "Question 16. Choose the best option to fit blank (16):",
+      "options": [
+        "A. is captivating",
+        "B. captivates",
+        "C. has captivated",
+        "D. will captivate"
+      ],
+      "answer": 2,
+      "explanation": "'Since its debut in June 2024' -> thì Hiện tại hoàn thành 'has captivated'."
+    },
+    {
+      "id": "g10_gk1_r17",
+      "section": "II. READING: Music Culture",
+      "passage": "Breaking Boundaries: A Reality Music Show That Transforms Society\nSince its debut in June 2024, \"Anh Trai Vuot Ngan Chong Gai\" (16) _________ Vietnamese audiences, creating an unprecedented bridge between generations and geographic divides.\n\nOriginally adapted from MangoTV's show Call Me By Fire, the show brings together 33 distinguished men over the age of 30—renowned stars and influential figures across various fields, including music, dance, film, sports, and photography. Evolving beyond a (17) _________ music competition, the show has become a powerful cultural and social movement. This helps inspiring audiences and (18) _________ the landscape of Vietnam's creative industry.\n\nThrough innovative production, the show breathed new life into (19) _________ Vietnamese art forms such as \"Chèo\" or \"Cải lương\", making the heritage accessible to diverse audiences. Even in the digital age, the show unites multigenerational families, recreating the shared excitement and discussions like during the Television's Golden Era. It has also brought overseas Vietnamese home, showcasing the show's profound cross-border influence. (20) _________, one particular performance—filled with storytelling and emotion—deeply connected with audiences and helped raise funds for over 100 life-saving heart surgeries.\n(Adapted from AAP Releases)",
+      "prompt": "Question 17. Choose the best option to fit blank (17):",
+      "options": [
+        "A. reality",
+        "B. really",
+        "C. real",
+        "D. realistic"
+      ],
+      "answer": 0,
+      "explanation": "'reality music competition' (cuộc thi âm nhạc truyền hình thực tế)."
+    },
+    {
+      "id": "g10_gk1_r18",
+      "section": "II. READING: Music Culture",
+      "passage": "Breaking Boundaries: A Reality Music Show That Transforms Society\nSince its debut in June 2024, \"Anh Trai Vuot Ngan Chong Gai\" (16) _________ Vietnamese audiences, creating an unprecedented bridge between generations and geographic divides.\n\nOriginally adapted from MangoTV's show Call Me By Fire, the show brings together 33 distinguished men over the age of 30—renowned stars and influential figures across various fields, including music, dance, film, sports, and photography. Evolving beyond a (17) _________ music competition, the show has become a powerful cultural and social movement. This helps inspiring audiences and (18) _________ the landscape of Vietnam's creative industry.\n\nThrough innovative production, the show breathed new life into (19) _________ Vietnamese art forms such as \"Chèo\" or \"Cải lương\", making the heritage accessible to diverse audiences. Even in the digital age, the show unites multigenerational families, recreating the shared excitement and discussions like during the Television's Golden Era. It has also brought overseas Vietnamese home, showcasing the show's profound cross-border influence. (20) _________, one particular performance—filled with storytelling and emotion—deeply connected with audiences and helped raise funds for over 100 life-saving heart surgeries.\n(Adapted from AAP Releases)",
+      "prompt": "Question 18. Choose the best option to fit blank (18):",
+      "options": [
+        "A. to redefine",
+        "B. redefine",
+        "C. redefining",
+        "D. redefined"
+      ],
+      "answer": 2,
+      "explanation": "Cấu trúc song hành với 'inspiring audiences': 'and redefining the landscape'."
+    },
+    {
+      "id": "g10_gk1_r19",
+      "section": "II. READING: Music Culture",
+      "passage": "Breaking Boundaries: A Reality Music Show That Transforms Society\nSince its debut in June 2024, \"Anh Trai Vuot Ngan Chong Gai\" (16) _________ Vietnamese audiences, creating an unprecedented bridge between generations and geographic divides.\n\nOriginally adapted from MangoTV's show Call Me By Fire, the show brings together 33 distinguished men over the age of 30—renowned stars and influential figures across various fields, including music, dance, film, sports, and photography. Evolving beyond a (17) _________ music competition, the show has become a powerful cultural and social movement. This helps inspiring audiences and (18) _________ the landscape of Vietnam's creative industry.\n\nThrough innovative production, the show breathed new life into (19) _________ Vietnamese art forms such as \"Chèo\" or \"Cải lương\", making the heritage accessible to diverse audiences. Even in the digital age, the show unites multigenerational families, recreating the shared excitement and discussions like during the Television's Golden Era. It has also brought overseas Vietnamese home, showcasing the show's profound cross-border influence. (20) _________, one particular performance—filled with storytelling and emotion—deeply connected with audiences and helped raise funds for over 100 life-saving heart surgeries.\n(Adapted from AAP Releases)",
+      "prompt": "Question 19. Choose the best option to fit blank (19):",
+      "options": [
+        "A. traditional",
+        "B. international",
+        "C. modern",
+        "D. competitive"
+      ],
+      "answer": 0,
+      "explanation": "'Chèo' và 'Cải lương' là các loại hình nghệ thuật truyền thống của Việt Nam -> 'traditional Vietnamese art forms'."
+    },
+    {
+      "id": "g10_gk1_r20",
+      "section": "II. READING: Music Culture",
+      "passage": "Breaking Boundaries: A Reality Music Show That Transforms Society\nSince its debut in June 2024, \"Anh Trai Vuot Ngan Chong Gai\" (16) _________ Vietnamese audiences, creating an unprecedented bridge between generations and geographic divides.\n\nOriginally adapted from MangoTV's show Call Me By Fire, the show brings together 33 distinguished men over the age of 30—renowned stars and influential figures across various fields, including music, dance, film, sports, and photography. Evolving beyond a (17) _________ music competition, the show has become a powerful cultural and social movement. This helps inspiring audiences and (18) _________ the landscape of Vietnam's creative industry.\n\nThrough innovative production, the show breathed new life into (19) _________ Vietnamese art forms such as \"Chèo\" or \"Cải lương\", making the heritage accessible to diverse audiences. Even in the digital age, the show unites multigenerational families, recreating the shared excitement and discussions like during the Television's Golden Era. It has also brought overseas Vietnamese home, showcasing the show's profound cross-border influence. (20) _________, one particular performance—filled with storytelling and emotion—deeply connected with audiences and helped raise funds for over 100 life-saving heart surgeries.\n(Adapted from AAP Releases)",
+      "prompt": "Question 20. Choose the best option to fit blank (20):",
+      "options": [
+        "A. Moreover",
+        "B. However",
+        "C. Therefore",
+        "D. Although"
+      ],
+      "answer": 0,
+      "explanation": "Liên từ bổ sung thông tin ý nghĩa xã hội của chương trình: 'Moreover' (Hơn thế nữa)."
+    },
+    {
+      "id": "g10_gk1_r21",
+      "section": "II. READING: Plastic & Environment",
+      "passage": "PLASTIC AND THE ENVIRONMENT\nPlastic is a material we use every day. The first plastics were made more than 100 years ago from parts of plants. Plastics are now made from oil, coal and natural gas. We are using up these things so fast that the Earth’s supplies may run out. Because of this, scientists are investigating new ideas for making plastics from plants such as sweet potato, bamboo and flax.\n\nThings made from plastic can be useful for people but bad for the planet. Some plastics can last for a long time without wearing out, and can be difficult to get rid of when they are not needed. They can remain in rubbish dumps called landfill sites for hundreds of years. Landfills can be smelly, ugly, and harmful to our planet.\n\nRecycling is a good way to get rid of unwanted plastics. Recycled waste materials can be used again to make new products. This can be difficult as different types of plastic need to be recycled in different ways. Some kinds of plastics can be melted down and used to make new things such as bags and bottles. Others can be made into fibres (strands of material) for clothing.\n\nAnother way to protect the environment is to use canvas bags for shopping rather than plastic ones. A lot of plastic objects can also be reused. Plastic bottles can be refilled many times, rather than throwing them away once they are empty. Unwanted plastic goods such as CDs and toys can be sold or given away to charity shops.\n(Adapted from: esolcourses.com)",
+      "prompt": "Question 21. According to the passage, things made from plastic are bad for our environment because ______.",
+      "options": [
+        "A. they are a danger to marine life such as whales, turtles and so on.",
+        "B. they are very convenient for people to use in different purposes.",
+        "C. people reuse plastic objects before recycling them.",
+        "D. plastics can exist for a long time without decomposing."
+      ],
+      "answer": 3,
+      "explanation": "Đoạn 2 nêu rõ: 'Some plastics can last for a long time without wearing out, and can be difficult to get rid of... remain in rubbish dumps... for hundreds of years'."
+    },
+    {
+      "id": "g10_gk1_r22",
+      "section": "II. READING: Plastic & Environment",
+      "passage": "PLASTIC AND THE ENVIRONMENT\nPlastic is a material we use every day. The first plastics were made more than 100 years ago from parts of plants. Plastics are now made from oil, coal and natural gas. We are using up these things so fast that the Earth’s supplies may run out. Because of this, scientists are investigating new ideas for making plastics from plants such as sweet potato, bamboo and flax.\n\nThings made from plastic can be useful for people but bad for the planet. Some plastics can last for a long time without wearing out, and can be difficult to get rid of when they are not needed. They can remain in rubbish dumps called landfill sites for hundreds of years. Landfills can be smelly, ugly, and harmful to our planet.\n\nRecycling is a good way to get rid of unwanted plastics. Recycled waste materials can be used again to make new products. This can be difficult as different types of plastic need to be recycled in different ways. Some kinds of plastics can be melted down and used to make new things such as bags and bottles. Others can be made into fibres (strands of material) for clothing.\n\nAnother way to protect the environment is to use canvas bags for shopping rather than plastic ones. A lot of plastic objects can also be reused. Plastic bottles can be refilled many times, rather than throwing them away once they are empty. Unwanted plastic goods such as CDs and toys can be sold or given away to charity shops.\n(Adapted from: esolcourses.com)",
+      "prompt": "Question 22. The word “They” in paragraph 2 refers to ______.",
+      "options": [
+        "A. Plastics",
+        "B. Things",
+        "C. Rubbish dumps",
+        "D. People"
+      ],
+      "answer": 0,
+      "explanation": "'Some plastics can last for a long time... They can remain in rubbish dumps...' -> 'They' chỉ 'Plastics'."
+    },
+    {
+      "id": "g10_gk1_r23",
+      "section": "II. READING: Plastic & Environment",
+      "passage": "PLASTIC AND THE ENVIRONMENT\nPlastic is a material we use every day. The first plastics were made more than 100 years ago from parts of plants. Plastics are now made from oil, coal and natural gas. We are using up these things so fast that the Earth’s supplies may run out. Because of this, scientists are investigating new ideas for making plastics from plants such as sweet potato, bamboo and flax.\n\nThings made from plastic can be useful for people but bad for the planet. Some plastics can last for a long time without wearing out, and can be difficult to get rid of when they are not needed. They can remain in rubbish dumps called landfill sites for hundreds of years. Landfills can be smelly, ugly, and harmful to our planet.\n\nRecycling is a good way to get rid of unwanted plastics. Recycled waste materials can be used again to make new products. This can be difficult as different types of plastic need to be recycled in different ways. Some kinds of plastics can be melted down and used to make new things such as bags and bottles. Others can be made into fibres (strands of material) for clothing.\n\nAnother way to protect the environment is to use canvas bags for shopping rather than plastic ones. A lot of plastic objects can also be reused. Plastic bottles can be refilled many times, rather than throwing them away once they are empty. Unwanted plastic goods such as CDs and toys can be sold or given away to charity shops.\n(Adapted from: esolcourses.com)",
+      "prompt": "Question 23. The phrase “get rid of” in paragraph 2 is closest in meaning to ______.",
+      "options": [
+        "A. remove",
+        "B. create",
+        "C. make",
+        "D. keep"
+      ],
+      "answer": 0,
+      "explanation": "'get rid of' có nghĩa là vứt bỏ, loại bỏ (= remove / discard)."
+    },
+    {
+      "id": "g10_gk1_r24",
+      "section": "II. READING: Plastic & Environment",
+      "passage": "PLASTIC AND THE ENVIRONMENT\nPlastic is a material we use every day. The first plastics were made more than 100 years ago from parts of plants. Plastics are now made from oil, coal and natural gas. We are using up these things so fast that the Earth’s supplies may run out. Because of this, scientists are investigating new ideas for making plastics from plants such as sweet potato, bamboo and flax.\n\nThings made from plastic can be useful for people but bad for the planet. Some plastics can last for a long time without wearing out, and can be difficult to get rid of when they are not needed. They can remain in rubbish dumps called landfill sites for hundreds of years. Landfills can be smelly, ugly, and harmful to our planet.\n\nRecycling is a good way to get rid of unwanted plastics. Recycled waste materials can be used again to make new products. This can be difficult as different types of plastic need to be recycled in different ways. Some kinds of plastics can be melted down and used to make new things such as bags and bottles. Others can be made into fibres (strands of material) for clothing.\n\nAnother way to protect the environment is to use canvas bags for shopping rather than plastic ones. A lot of plastic objects can also be reused. Plastic bottles can be refilled many times, rather than throwing them away once they are empty. Unwanted plastic goods such as CDs and toys can be sold or given away to charity shops.\n(Adapted from: esolcourses.com)",
+      "prompt": "Question 24. According to the passage, which of the following is TRUE?",
+      "options": [
+        "A. Plastic objects are useful for people without negative impacts.",
+        "B. Plastics and plastic objects can be thrown away to tidy the room.",
+        "C. Plastics and plastic objects can be recycled or reused.",
+        "D. Some kinds of plastics can be melted down, then released into the river."
+      ],
+      "answer": 2,
+      "explanation": "Đoạn 3 và 4 nêu rõ các giải pháp tái chế (recycled) và tái sử dụng (reused) đồ nhựa."
+    },
+    {
+      "id": "g10_gk1_r25",
+      "section": "II. READING: Plastic & Environment",
+      "passage": "PLASTIC AND THE ENVIRONMENT\nPlastic is a material we use every day. The first plastics were made more than 100 years ago from parts of plants. Plastics are now made from oil, coal and natural gas. We are using up these things so fast that the Earth’s supplies may run out. Because of this, scientists are investigating new ideas for making plastics from plants such as sweet potato, bamboo and flax.\n\nThings made from plastic can be useful for people but bad for the planet. Some plastics can last for a long time without wearing out, and can be difficult to get rid of when they are not needed. They can remain in rubbish dumps called landfill sites for hundreds of years. Landfills can be smelly, ugly, and harmful to our planet.\n\nRecycling is a good way to get rid of unwanted plastics. Recycled waste materials can be used again to make new products. This can be difficult as different types of plastic need to be recycled in different ways. Some kinds of plastics can be melted down and used to make new things such as bags and bottles. Others can be made into fibres (strands of material) for clothing.\n\nAnother way to protect the environment is to use canvas bags for shopping rather than plastic ones. A lot of plastic objects can also be reused. Plastic bottles can be refilled many times, rather than throwing them away once they are empty. Unwanted plastic goods such as CDs and toys can be sold or given away to charity shops.\n(Adapted from: esolcourses.com)",
+      "prompt": "Question 25. What is the passage mainly about?",
+      "options": [
+        "A. The history of plastic and its usefulness",
+        "B. Materials that plastic is made of",
+        "C. Plastic: effects and solutions to the problem",
+        "D. The ways to reduce the harm of plastics on the environment"
+      ],
+      "answer": 2,
+      "explanation": "Bài đọc trình bày về tác hại của đồ nhựa và các giải pháp giải quyết vấn đề (tái chế, tái sử dụng, vật liệu thay thế)."
+    },
+    {
+      "id": "g10_gk1_r26",
+      "section": "II. READING: Community Service",
+      "passage": "VOLUNTEERS NEEDED IN MAI CHÂU – HOÀ BÌNH\nV.E.O would like to connects people who want to give a helping hand in volunteering for education in the breathtaking mountainous region of Mai Châu. Our focus is on providing informal education and essential skill development for local communities, with special attention to supporting the poor and disadvantaged in remote areas. We need help from both local and international volunteers to train community members in practical new skills and modern approaches through hands-on, daily tasks. A core part of our mission involves providing engaging English language classes and vibrant cultural activities for local children, fostering both education and joy.\n\nThis program is a great way to get involved in meaningful community service while experiencing authentic travel. International volunteers will gain a deep, personal understanding of Vietnam's rich culture through daily interaction and have opportunities to explore the country's stunning natural landscapes on weekends. You will live and work within the community, sharing meals and stories, for a truly unforgettable cultural exchange.\n\nProgram Details:\nTime length: One week (available all year round).\nMinimum Age: 15+\nPrice includes: Accommodation, transportation (to/ from the project site and your accommodation), meals featuring local Vietnamese cuisine, beginner Vietnamese language lessons, 24-hour emergency assistance, airport pick-up upon arrival in Hanoi, and a formal participation certificate.\nPrice excludes: Việt Nam visa cost, mandatory international medical insurance, and international flights to/from Hanoi.\nExtras provided: umbrella, sun cream, and T-shirt.\n(Adapted from English Discovery 10 – workbook)",
+      "prompt": "Question 26. What is the main idea of the passage?",
+      "options": [
+        "A. The promotion of a luxury travel tour to the mountainous region of Mai Châu.",
+        "B. The recruitment of volunteers for a program in Mai Châu.",
+        "C. A request for financial donations for the construction in Hòa Bình.",
+        "D. The advertisement of a Vietnamese language course."
+      ],
+      "answer": 1,
+      "explanation": "Toàn văn bản là thông báo tuyển tình nguyện viên tham gia dự án tại Mai Châu ('VOLUNTEERS NEEDED IN MAI CHÂU – HOÀ BÌNH')."
+    },
+    {
+      "id": "g10_gk1_r27",
+      "section": "II. READING: Community Service",
+      "passage": "VOLUNTEERS NEEDED IN MAI CHÂU – HOÀ BÌNH\nV.E.O would like to connects people who want to give a helping hand in volunteering for education in the breathtaking mountainous region of Mai Châu. Our focus is on providing informal education and essential skill development for local communities, with special attention to supporting the poor and disadvantaged in remote areas. We need help from both local and international volunteers to train community members in practical new skills and modern approaches through hands-on, daily tasks. A core part of our mission involves providing engaging English language classes and vibrant cultural activities for local children, fostering both education and joy.\n\nThis program is a great way to get involved in meaningful community service while experiencing authentic travel. International volunteers will gain a deep, personal understanding of Vietnam's rich culture through daily interaction and have opportunities to explore the country's stunning natural landscapes on weekends. You will live and work within the community, sharing meals and stories, for a truly unforgettable cultural exchange.\n\nProgram Details:\nTime length: One week (available all year round).\nMinimum Age: 15+\nPrice includes: Accommodation, transportation (to/ from the project site and your accommodation), meals featuring local Vietnamese cuisine, beginner Vietnamese language lessons, 24-hour emergency assistance, airport pick-up upon arrival in Hanoi, and a formal participation certificate.\nPrice excludes: Việt Nam visa cost, mandatory international medical insurance, and international flights to/from Hanoi.\nExtras provided: umbrella, sun cream, and T-shirt.\n(Adapted from English Discovery 10 – workbook)",
+      "prompt": "Question 27. According to paragraph 1, V.E.O calls for volunteers to help _________.",
+      "options": [
+        "A. sick people",
+        "B. the needy",
+        "C. people in remote areas",
+        "D. disadvantaged children"
+      ],
+      "answer": 1,
+      "explanation": "Đoạn 1 nêu: 'with special attention to supporting the poor and disadvantaged in remote areas' -> 'the needy' (những người có hoàn cảnh khó khăn)."
+    },
+    {
+      "id": "g10_gk1_r28",
+      "section": "II. READING: Community Service",
+      "passage": "VOLUNTEERS NEEDED IN MAI CHÂU – HOÀ BÌNH\nV.E.O would like to connects people who want to give a helping hand in volunteering for education in the breathtaking mountainous region of Mai Châu. Our focus is on providing informal education and essential skill development for local communities, with special attention to supporting the poor and disadvantaged in remote areas. We need help from both local and international volunteers to train community members in practical new skills and modern approaches through hands-on, daily tasks. A core part of our mission involves providing engaging English language classes and vibrant cultural activities for local children, fostering both education and joy.\n\nThis program is a great way to get involved in meaningful community service while experiencing authentic travel. International volunteers will gain a deep, personal understanding of Vietnam's rich culture through daily interaction and have opportunities to explore the country's stunning natural landscapes on weekends. You will live and work within the community, sharing meals and stories, for a truly unforgettable cultural exchange.\n\nProgram Details:\nTime length: One week (available all year round).\nMinimum Age: 15+\nPrice includes: Accommodation, transportation (to/ from the project site and your accommodation), meals featuring local Vietnamese cuisine, beginner Vietnamese language lessons, 24-hour emergency assistance, airport pick-up upon arrival in Hanoi, and a formal participation certificate.\nPrice excludes: Việt Nam visa cost, mandatory international medical insurance, and international flights to/from Hanoi.\nExtras provided: umbrella, sun cream, and T-shirt.\n(Adapted from English Discovery 10 – workbook)",
+      "prompt": "Question 28. The word “hands-on” in paragraph 1 is OPPOSITE in meaning to _________.",
+      "options": [
+        "A. practical",
+        "B. active",
+        "C. unrealistic",
+        "D. realistic"
+      ],
+      "answer": 2,
+      "explanation": "'hands-on' nghĩa là thực tế, thực hành; từ trái nghĩa là 'unrealistic' (không thực tế)."
+    },
+    {
+      "id": "g10_gk1_r29",
+      "section": "II. READING: Community Service",
+      "passage": "VOLUNTEERS NEEDED IN MAI CHÂU – HOÀ BÌNH\nV.E.O would like to connects people who want to give a helping hand in volunteering for education in the breathtaking mountainous region of Mai Châu. Our focus is on providing informal education and essential skill development for local communities, with special attention to supporting the poor and disadvantaged in remote areas. We need help from both local and international volunteers to train community members in practical new skills and modern approaches through hands-on, daily tasks. A core part of our mission involves providing engaging English language classes and vibrant cultural activities for local children, fostering both education and joy.\n\nThis program is a great way to get involved in meaningful community service while experiencing authentic travel. International volunteers will gain a deep, personal understanding of Vietnam's rich culture through daily interaction and have opportunities to explore the country's stunning natural landscapes on weekends. You will live and work within the community, sharing meals and stories, for a truly unforgettable cultural exchange.\n\nProgram Details:\nTime length: One week (available all year round).\nMinimum Age: 15+\nPrice includes: Accommodation, transportation (to/ from the project site and your accommodation), meals featuring local Vietnamese cuisine, beginner Vietnamese language lessons, 24-hour emergency assistance, airport pick-up upon arrival in Hanoi, and a formal participation certificate.\nPrice excludes: Việt Nam visa cost, mandatory international medical insurance, and international flights to/from Hanoi.\nExtras provided: umbrella, sun cream, and T-shirt.\n(Adapted from English Discovery 10 – workbook)",
+      "prompt": "Question 29. The phrase “This program” in paragraph 2 refers to _________.",
+      "options": [
+        "A. the volunteer opportunity in Mai Châu organized by V.E.O",
+        "B. the English language classes for children",
+        "C. the skill development for local communities",
+        "D. exploring Vietnam's natural landscapes on weekends"
+      ],
+      "answer": 0,
+      "explanation": "'This program' đại diện cho toàn bộ chương trình tình nguyện tại Mai Châu do V.E.O tổ chức."
+    },
+    {
+      "id": "g10_gk1_r30",
+      "section": "II. READING: Community Service",
+      "passage": "VOLUNTEERS NEEDED IN MAI CHÂU – HOÀ BÌNH\nV.E.O would like to connects people who want to give a helping hand in volunteering for education in the breathtaking mountainous region of Mai Châu. Our focus is on providing informal education and essential skill development for local communities, with special attention to supporting the poor and disadvantaged in remote areas. We need help from both local and international volunteers to train community members in practical new skills and modern approaches through hands-on, daily tasks. A core part of our mission involves providing engaging English language classes and vibrant cultural activities for local children, fostering both education and joy.\n\nThis program is a great way to get involved in meaningful community service while experiencing authentic travel. International volunteers will gain a deep, personal understanding of Vietnam's rich culture through daily interaction and have opportunities to explore the country's stunning natural landscapes on weekends. You will live and work within the community, sharing meals and stories, for a truly unforgettable cultural exchange.\n\nProgram Details:\nTime length: One week (available all year round).\nMinimum Age: 15+\nPrice includes: Accommodation, transportation (to/ from the project site and your accommodation), meals featuring local Vietnamese cuisine, beginner Vietnamese language lessons, 24-hour emergency assistance, airport pick-up upon arrival in Hanoi, and a formal participation certificate.\nPrice excludes: Việt Nam visa cost, mandatory international medical insurance, and international flights to/from Hanoi.\nExtras provided: umbrella, sun cream, and T-shirt.\n(Adapted from English Discovery 10 – workbook)",
+      "prompt": "Question 30. It can be inferred from the passage that _________.",
+      "options": [
+        "A. The program is fully funded, so volunteers do not have to pay for anything.",
+        "B. Volunteers must pay for their own airfare to reach Vietnam.",
+        "C. The program fully covers the cost of the visa to enter Vietnam.",
+        "D. Volunteers are required to pay extra for accommodation and meals."
+      ],
+      "answer": 1,
+      "explanation": "Mục 'Price excludes: international flights to/from Hanoi' cho thấy tình nguyện viên phải tự chi trả vé máy bay đến Việt Nam."
+    },
+    {
+      "id": "g10_gk1_r31",
+      "section": "II. READING: 3R Model",
+      "passage": "The 3R model, which stands for Reduce – Reuse – Recycle, is considered one of the most effective methods for protecting the environment. In today’s world, pollution and the overuse of natural resources are becoming serious problems. For this reason, many countries have adopted the 3R approach as a solution. Its main purpose is to reduce waste, make better use of products, and transform discarded materials into useful items. This model is not only simple to understand but also practical to apply in daily life.\n\nThe first step of the model is Reduce, which means limiting the amount of waste produced. People can do this by buying fewer unnecessary items, choosing products with less packaging, and using energy efficiently. The second step is Reuse. Instead of throwing things away after one use, people can reuse bottles, bags, or clothes, or find new purposes for them. This helps to extend the life of objects. The final step is Recycle, which refers to processing waste materials into new products. Recycling not only saves raw materials but also reduces the need for landfill space.\n\nWhen combined, these three steps bring many benefits to both society and the environment. Firstly, they help to reduce pollution, making the air, soil, and water cleaner. Secondly, they support the economy by saving costs and creating opportunities in the recycling industry. Furthermore, the 3R model encourages people to think more carefully about their daily choices and take responsibility for protecting nature. In the long term, these actions can also create jobs and improve community well-being.\n\nIn summary, the 3R model offers a clear and practical way to move towards sustainable development. Each of its steps—reducing, reusing, and recycling—plays an important role, but they are most effective when practiced together. If individuals, communities, and governments apply this model consistently, the pressure on natural resources will decrease, and future generations will enjoy a cleaner and healthier environment. Therefore, adopting the 3R principles should be seen as a shared duty for everyone.\n(Adapted from mdi.vn)",
+      "prompt": "Question 31. The phrase “raw materials” in paragraph 2 could best be replaced by _______.",
+      "options": [
+        "A. electrical home devices",
+        "B. basic natural resources",
+        "C. processed chemical waste",
+        "D. important digital files"
+      ],
+      "answer": 1,
+      "explanation": "'raw materials' (nguyên liệu thô) tương đương với 'basic natural resources' (tài nguyên thiên nhiên cơ bản)."
+    },
+    {
+      "id": "g10_gk1_r32",
+      "section": "II. READING: 3R Model",
+      "passage": "The 3R model, which stands for Reduce – Reuse – Recycle, is considered one of the most effective methods for protecting the environment. In today’s world, pollution and the overuse of natural resources are becoming serious problems. For this reason, many countries have adopted the 3R approach as a solution. Its main purpose is to reduce waste, make better use of products, and transform discarded materials into useful items. This model is not only simple to understand but also practical to apply in daily life.\n\nThe first step of the model is Reduce, which means limiting the amount of waste produced. People can do this by buying fewer unnecessary items, choosing products with less packaging, and using energy efficiently. The second step is Reuse. Instead of throwing things away after one use, people can reuse bottles, bags, or clothes, or find new purposes for them. This helps to extend the life of objects. The final step is Recycle, which refers to processing waste materials into new products. Recycling not only saves raw materials but also reduces the need for landfill space.\n\nWhen combined, these three steps bring many benefits to both society and the environment. Firstly, they help to reduce pollution, making the air, soil, and water cleaner. Secondly, they support the economy by saving costs and creating opportunities in the recycling industry. Furthermore, the 3R model encourages people to think more carefully about their daily choices and take responsibility for protecting nature. In the long term, these actions can also create jobs and improve community well-being.\n\nIn summary, the 3R model offers a clear and practical way to move towards sustainable development. Each of its steps—reducing, reusing, and recycling—plays an important role, but they are most effective when practiced together. If individuals, communities, and governments apply this model consistently, the pressure on natural resources will decrease, and future generations will enjoy a cleaner and healthier environment. Therefore, adopting the 3R principles should be seen as a shared duty for everyone.\n(Adapted from mdi.vn)",
+      "prompt": "Question 32. According to the passage, which benefits does the “Recycle” step bring?",
+      "options": [
+        "A. It extends the life of objects and encourages buying fewer items.",
+        "B. It saves raw materials and reduces the need for landfill space.",
+        "C. It makes air and soil cleaner and supports the economy.",
+        "D. It limits waste production and makes better use of products."
+      ],
+      "answer": 1,
+      "explanation": "Đoạn 2 nêu rõ: 'Recycling not only saves raw materials but also reduces the need for landfill space'."
+    },
+    {
+      "id": "g10_gk1_r33",
+      "section": "II. READING: 3R Model",
+      "passage": "The 3R model, which stands for Reduce – Reuse – Recycle, is considered one of the most effective methods for protecting the environment. In today’s world, pollution and the overuse of natural resources are becoming serious problems. For this reason, many countries have adopted the 3R approach as a solution. Its main purpose is to reduce waste, make better use of products, and transform discarded materials into useful items. This model is not only simple to understand but also practical to apply in daily life.\n\nThe first step of the model is Reduce, which means limiting the amount of waste produced. People can do this by buying fewer unnecessary items, choosing products with less packaging, and using energy efficiently. The second step is Reuse. Instead of throwing things away after one use, people can reuse bottles, bags, or clothes, or find new purposes for them. This helps to extend the life of objects. The final step is Recycle, which refers to processing waste materials into new products. Recycling not only saves raw materials but also reduces the need for landfill space.\n\nWhen combined, these three steps bring many benefits to both society and the environment. Firstly, they help to reduce pollution, making the air, soil, and water cleaner. Secondly, they support the economy by saving costs and creating opportunities in the recycling industry. Furthermore, the 3R model encourages people to think more carefully about their daily choices and take responsibility for protecting nature. In the long term, these actions can also create jobs and improve community well-being.\n\nIn summary, the 3R model offers a clear and practical way to move towards sustainable development. Each of its steps—reducing, reusing, and recycling—plays an important role, but they are most effective when practiced together. If individuals, communities, and governments apply this model consistently, the pressure on natural resources will decrease, and future generations will enjoy a cleaner and healthier environment. Therefore, adopting the 3R principles should be seen as a shared duty for everyone.\n(Adapted from mdi.vn)",
+      "prompt": "Question 33. The word \"they\" in paragraph 3 refers to ________.",
+      "options": [
+        "A. society",
+        "B. environment",
+        "C. steps",
+        "D. benefits"
+      ],
+      "answer": 2,
+      "explanation": "'these three steps bring many benefits... Firstly, they help to reduce pollution...': 'they' thay cho 'these three steps'."
+    },
+    {
+      "id": "g10_gk1_r34",
+      "section": "II. READING: 3R Model",
+      "passage": "The 3R model, which stands for Reduce – Reuse – Recycle, is considered one of the most effective methods for protecting the environment. In today’s world, pollution and the overuse of natural resources are becoming serious problems. For this reason, many countries have adopted the 3R approach as a solution. Its main purpose is to reduce waste, make better use of products, and transform discarded materials into useful items. This model is not only simple to understand but also practical to apply in daily life.\n\nThe first step of the model is Reduce, which means limiting the amount of waste produced. People can do this by buying fewer unnecessary items, choosing products with less packaging, and using energy efficiently. The second step is Reuse. Instead of throwing things away after one use, people can reuse bottles, bags, or clothes, or find new purposes for them. This helps to extend the life of objects. The final step is Recycle, which refers to processing waste materials into new products. Recycling not only saves raw materials but also reduces the need for landfill space.\n\nWhen combined, these three steps bring many benefits to both society and the environment. Firstly, they help to reduce pollution, making the air, soil, and water cleaner. Secondly, they support the economy by saving costs and creating opportunities in the recycling industry. Furthermore, the 3R model encourages people to think more carefully about their daily choices and take responsibility for protecting nature. In the long term, these actions can also create jobs and improve community well-being.\n\nIn summary, the 3R model offers a clear and practical way to move towards sustainable development. Each of its steps—reducing, reusing, and recycling—plays an important role, but they are most effective when practiced together. If individuals, communities, and governments apply this model consistently, the pressure on natural resources will decrease, and future generations will enjoy a cleaner and healthier environment. Therefore, adopting the 3R principles should be seen as a shared duty for everyone.\n(Adapted from mdi.vn)",
+      "prompt": "Question 34. According to the passage, which of the following is NOT mentioned as one of the benefits of the 3R model?",
+      "options": [
+        "A. It helps reduce pollution and makes the environment cleaner.",
+        "B. It creates opportunities in the recycling industry and saves costs.",
+        "C. It improves community well-being and provides new job chances.",
+        "D. It reduces stress and encourages old people to live longer lives."
+      ],
+      "answer": 3,
+      "explanation": "Bài đọc không hề đề cập đến việc giảm căng thẳng hay giúp người già sống thọ hơn (D)."
+    },
+    {
+      "id": "g10_gk1_r35",
+      "section": "II. READING: 3R Model",
+      "passage": "The 3R model, which stands for Reduce – Reuse – Recycle, is considered one of the most effective methods for protecting the environment. In today’s world, pollution and the overuse of natural resources are becoming serious problems. For this reason, many countries have adopted the 3R approach as a solution. Its main purpose is to reduce waste, make better use of products, and transform discarded materials into useful items. This model is not only simple to understand but also practical to apply in daily life.\n\nThe first step of the model is Reduce, which means limiting the amount of waste produced. People can do this by buying fewer unnecessary items, choosing products with less packaging, and using energy efficiently. The second step is Reuse. Instead of throwing things away after one use, people can reuse bottles, bags, or clothes, or find new purposes for them. This helps to extend the life of objects. The final step is Recycle, which refers to processing waste materials into new products. Recycling not only saves raw materials but also reduces the need for landfill space.\n\nWhen combined, these three steps bring many benefits to both society and the environment. Firstly, they help to reduce pollution, making the air, soil, and water cleaner. Secondly, they support the economy by saving costs and creating opportunities in the recycling industry. Furthermore, the 3R model encourages people to think more carefully about their daily choices and take responsibility for protecting nature. In the long term, these actions can also create jobs and improve community well-being.\n\nIn summary, the 3R model offers a clear and practical way to move towards sustainable development. Each of its steps—reducing, reusing, and recycling—plays an important role, but they are most effective when practiced together. If individuals, communities, and governments apply this model consistently, the pressure on natural resources will decrease, and future generations will enjoy a cleaner and healthier environment. Therefore, adopting the 3R principles should be seen as a shared duty for everyone.\n(Adapted from mdi.vn)",
+      "prompt": "Question 35. In which part of the passage does the writer mention the purpose of the 3R model?",
+      "options": [
+        "A. Paragraph 1",
+        "B. Paragraph 2",
+        "C. Paragraph 3",
+        "D. Paragraph 4"
+      ],
+      "answer": 0,
+      "explanation": "Đoạn 1 nêu: 'Its main purpose is to reduce waste, make better use of products, and transform discarded materials into useful items'."
+    },
+    {
+      "id": "g10_gk1_r36",
+      "section": "II. READING: Vietnamese Culture",
+      "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+      "prompt": "Question 36. According to paragraph 2, Cải Lương became popular because ______.",
+      "options": [
+        "A. it mixed melodies and stories to attract audiences",
+        "B. it included Western drama with historical traditions",
+        "C. it avoided serious subjects and only showed comedies",
+        "D. it focused on legends that inspired foreign performers"
+      ],
+      "answer": 0,
+      "explanation": "Đoạn 2 nêu: 'It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories'."
+    },
+    {
+      "id": "g10_gk1_r37",
+      "section": "II. READING: Vietnamese Culture",
+      "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+      "prompt": "Question 37. Which of the following best summarises paragraph 4?",
+      "options": [
+        "A. Audiences prefer the lighter rhythms of modern Cải Lương because ancient forms are too serious for them.",
+        "B. Traditional Vietnamese instruments are used in Cải Lương performances that highlight stories of heroes and romances.",
+        "C. Cải Lương has both ancient and modern types, with contrasting themes and different accompanying musical styles.",
+        "D. French colonial influence changed Cải Lương by adding romance, social themes, and modern musical expressions."
+      ],
+      "answer": 2,
+      "explanation": "Đoạn 4 tóm tắt sự phân chia thành hai loại chính: tuồng tích cổ và xã hội hiện đại, với chủ đề và phong cách âm nhạc tương phản."
+    },
+    {
+      "id": "g10_gk1_r38",
+      "section": "II. READING: Vietnamese Culture",
+      "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+      "prompt": "Question 38. Which of the following is NOT mentioned as a musical instrument in Cải Lương?",
+      "options": [
+        "A. đàn tranh with sixteen strings",
+        "B. đàn bầu with single string",
+        "C. piano with classical chords",
+        "D. guitar with special sounds"
+      ],
+      "answer": 2,
+      "explanation": "Đoạn 3 nhắc đến đàn tranh, đàn bầu và guitar, hoàn toàn không nhắc đến đàn piano (C)."
+    },
+    {
+      "id": "g10_gk1_r39",
+      "section": "II. READING: Vietnamese Culture",
+      "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+      "prompt": "Question 39. The word “melody” in paragraph 3 mostly means ______.",
+      "options": [
+        "A. sequence of pleasant sounds",
+        "B. structure of dramatic scenes",
+        "C. influence of historical figures",
+        "D. direction of emotional stories"
+      ],
+      "answer": 0,
+      "explanation": "'melody' (giai điệu) nghĩa là một chuỗi các âm thanh dễ chịu, du dương (= sequence of pleasant sounds)."
+    },
+    {
+      "id": "g10_gk1_r40",
+      "section": "II. READING: Vietnamese Culture",
+      "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+      "prompt": "Question 40. The word “it” in paragraph 2 refers to __________.",
+      "options": [
+        "A. musical theatre",
+        "B. French colonialism",
+        "C. Vietnamese history",
+        "D. middle class life"
+      ],
+      "answer": 0,
+      "explanation": "'Over time, this musical theatre became not only a form of entertainment... Today, although it faces competition...': 'it' thay cho Cải Lương / 'this musical theatre'."
+    },
+    {
+      "id": "g10_gk1_r41",
+      "section": "II. READING: Vietnamese Culture",
+      "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+      "prompt": "Question 41. Which of the following best paraphrases the sentence: \"When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\"?",
+      "options": [
+        "A. Vọng cổ performances are often promoted because of complex melodies.",
+        "B. Musicians usually use vọng cổ because audiences enjoy it deeply.",
+        "C. The opening rhythm of vọng cổ usually moves listeners emotionally.",
+        "D. The notes of vọng cổ encourage actors to remember musical training."
+      ],
+      "answer": 2,
+      "explanation": "Câu viết lại chính xác: 'Những nốt nhạc mở đầu của vọng cổ thường lay động người nghe một cách sâu sắc về mặt cảm xúc'."
+    },
+    {
+      "id": "g10_gk1_r42",
+      "section": "II. READING: Vietnamese Culture",
+      "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+      "prompt": "Question 42. According to the passage, modern Cải Lương often ______.",
+      "options": [
+        "A. describes everyday life and social issues",
+        "B. describes heroic kings and national warriors",
+        "C. highlights Chinese legends and tragic battles",
+        "D. focuses only on serious family tragedies"
+      ],
+      "answer": 0,
+      "explanation": "Đoạn 4 nêu: 'In contrast, modern Cải Lương focuses on daily life, romance, and social problems'."
+    },
+    {
+      "id": "g10_gk1_r43",
+      "section": "II. READING: Vietnamese Culture",
+      "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+      "prompt": "Question 43. Where in the passage does the following sentence best fit?<br>“This musical mixture creates a performance that feels both traditional and modern, making it easier for the audience to enjoy and understand.”",
+      "options": [
+        "A. [IV]",
+        "B. [III]",
+        "C. [II]",
+        "D. [I]"
+      ],
+      "answer": 3,
+      "explanation": "Vị trí [I] sau đoạn 1 miêu tả sự pha trộn các dòng nhạc ('blends different musical and theatrical traditions... combines southern folk songs, classical Vietnamese music, and tuồng with spoken drama') -> câu trên giải thích tác dụng của 'This musical mixture'."
+    }
+  ]
+}
