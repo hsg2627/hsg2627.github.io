@@ -1,0 +1,526 @@
+{
+  "id": "test3",
+  "title": "Đề Ôn Tập Số 3 (Practice Test 3)",
+  "subtitle": "Units 1, 2, 3: A Long and Healthy Life · The Generation Gap · Cities of the Future",
+  "total_questions": 28,
+  "time_minutes": 60,
+  "max_score": 10.0,
+  "passages": {
+    "t3_p1": {
+      "title": "Secrets of Longevity in the Blue Zones",
+      "paragraphs": [
+        "Living a long and fulfilling life is not merely a matter of genetic luck; it depends heavily on everyday lifestyle choices. Residents of the famous \"Blue Zones\"—regions where people regularly live past 100—share several common habits. First and foremost, their diets consist primarily of plant-based foods, such as beans, nuts, and fresh vegetables. (11) __________ people in these areas consume red meat, doing so only on special occasions. Regular, natural movement is another vital component. Rather than lifting heavy weights in gyms, they engage (12) __________ physical activities through walking, gardening, and doing manual household chores.",
+        "(13) __________, managing chronic stress is indispensable for emotional balance and cardiovascular fitness. Blue Zone dwellers intentionally slow down each day to pray, take naps, or visit their neighbours. Strong social connections also play an instrumental role. They cultivate lifelong bonds, which provides them with a strong sense of belonging and helps (14) __________ their life expectancy. (15) __________, maintaining healthy routines along with loving relationships is the true recipe for enduring vitality."
+      ]
+    },
+    "t3_p2": {
+      "title": "Sleep Duration and Cardiovascular & Cognitive Health",
+      "source": "Medical Journal of Lifestyle Medicine",
+      "paragraphs": [
+        "In recent years, the scientific community has paid increasing attention to the profound relationship between sleep duration and physical well-being. Chronic sleep deprivation has ceased to be viewed as a harmless consequence of modern ambition; instead, it is recognized as a direct risk factor for severe cardiovascular diseases, obesity, and impaired immune function. When individuals sleep less than six hours per night on a consistent basis, their bodies release excessive cortisol—a hormone that triggers systemic inflammation and damages arterial walls.",
+        "During slow-wave deep sleep, the brain activates the glymphatic system, a specialized cleansing mechanism that clears metabolic waste products accumulated throughout the waking day. Among these toxins is beta-amyloid, a protein strongly associated with cognitive decline. Depriving oneself of restorative rest inhibits this vital detoxification process.",
+        "Moreover, inadequate rest significantly interferes with appetite-regulating hormones. It reduces leptin, which signals fullness, while increasing ghrelin, the compound responsible for stimulating hunger. Consequently, sleep-deprived individuals experience intense cravings for foods high in saturated fat and refined sugars. Medical practitioners advocate establishing strict bedtime routines and eliminating screen exposure at least one hour before turning in. Ensuring seven to eight hours of sound rest nightly remains one of the simplest yet most potent strategies for sustaining optimal health."
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "t3_q01",
+      "num": 1,
+      "section": "I. PHONETICS & CONTRACTIONS",
+      "section_vi": "I. NGỮ ÂM & DẠNG RÚT GỌN",
+      "type": "binary",
+      "instruction": "Mark the letter A or B to indicate the common pronunciation of the underlined auxiliary verb.",
+      "instruction_vi": "Chọn A hoặc B để chỉ cách phát âm thông thường của trợ động từ được gạch chân.",
+      "prompt": "What does this smart sensor do when it detects smoke?",
+      "underlined": "does",
+      "options": [
+        "A. /dʌz/",
+        "B. /dəz/"
+      ],
+      "answer": 1,
+      "explanation": "Trong câu hỏi có từ để hỏi (Wh-question), trợ động từ 'does' không mang trọng âm nên được phát âm ở dạng yếu (weak form) là /dəz/. Dạng mạnh /dʌz/ dùng khi nhấn mạnh hoặc câu trả lời ngắn."
+    },
+    {
+      "id": "t3_q02",
+      "num": 2,
+      "section": "I. PHONETICS & CONTRACTIONS",
+      "section_vi": "I. NGỮ ÂM & DẠNG RÚT GỌN",
+      "type": "binary",
+      "instruction": "Mark the letter A or B to indicate the full form of the underlined contraction.",
+      "instruction_vi": "Chọn A hoặc B để chỉ dạng đầy đủ của từ viết tắt được gạch chân.",
+      "prompt": "He’d better change his sedentary habits to avoid cardiovascular diseases.",
+      "underlined": "He’d",
+      "options": [
+        "A. He had",
+        "B. He would"
+      ],
+      "answer": 0,
+      "explanation": "Cấu trúc lời khuyên: 'had better + V-bare' (nên làm gì thì tốt hơn). Do đó 'He’d better' là dạng viết tắt của 'He had better'."
+    },
+    {
+      "id": "t3_q03",
+      "num": 3,
+      "section": "I. PHONETICS & CONTRACTIONS",
+      "section_vi": "I. TRỌNG ÂM TỪ",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress.",
+      "instruction_vi": "Chọn từ có vị trí trọng âm chính khác với ba từ còn lại.",
+      "prompt": "Choose the word with different primary stress position:",
+      "options": [
+        "A. treatment",
+        "B. conflict",
+        "C. promote",
+        "D. mindset"
+      ],
+      "answer": 2,
+      "explanation": "• treatment /ˈtriːt.mənt/ (danh từ, trọng âm rơi vào âm tiết 1)\n• conflict /ˈkɒn.flɪkt/ (danh từ, trọng âm âm tiết 1)\n• promote /prəˈməʊt/ (động từ, trọng âm âm tiết 2)\n• mindset /ˈmaɪnd.set/ (danh từ ghép, trọng âm âm tiết 1)\n→ Đáp án đúng là C. promote."
+    },
+    {
+      "id": "t3_q04",
+      "num": 4,
+      "section": "I. PHONETICS & CONTRACTIONS",
+      "section_vi": "I. TRỌNG ÂM TỪ",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress.",
+      "instruction_vi": "Chọn từ có vị trí trọng âm chính khác với ba từ còn lại.",
+      "prompt": "Choose the word with different primary stress position:",
+      "options": [
+        "A. operate",
+        "B. emission",
+        "C. pollutant",
+        "D. renewable"
+      ],
+      "answer": 0,
+      "explanation": "• operate /ˈɒp.ər.eɪt/ (động từ, trọng âm rơi vào âm tiết 1)\n• emission /iˈmɪʃ.ən/ (danh từ có đuôi -ion, trọng âm âm tiết 2)\n• pollutant /pəˈluː.tənt/ (danh từ, trọng âm âm tiết 2)\n• renewable /rɪˈnjuː.ə.bəl/ (tính từ, trọng âm âm tiết 2)\n→ Đáp án đúng là A. operate."
+    },
+    {
+      "id": "t3_q05",
+      "num": 5,
+      "section": "II. LEXICO-GRAMMAR",
+      "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+      "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+      "prompt": "Urban planners are designing pedestrian zones to decrease toxic vehicle __________ in the city center.",
+      "options": [
+        "A. footprints",
+        "B. emissions",
+        "C. diets",
+        "D. views"
+      ],
+      "answer": 1,
+      "explanation": "Cụm danh từ: 'vehicle emissions' mang nghĩa là 'lượng khí thải của các phương tiện giao thông'. Khu phố đi bộ giúp giảm khí thải xe cơ giới độc hại."
+    },
+    {
+      "id": "t3_q06",
+      "num": 6,
+      "section": "II. LEXICO-GRAMMAR",
+      "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+      "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+      "prompt": "Living under the same roof with three generations often requires family members to respect each other's __________.",
+      "options": [
+        "A. viewpoints",
+        "B. conflicts",
+        "C. arguments",
+        "D. barriers"
+      ],
+      "answer": 0,
+      "explanation": "'Respect each other's viewpoints' = tôn trọng quan điểm / góc nhìn của nhau giữa các thế hệ. (conflicts = xung đột, arguments = cãi vã, barriers = rào cản)."
+    },
+    {
+      "id": "t3_q07",
+      "num": 7,
+      "section": "II. LEXICO-GRAMMAR",
+      "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+      "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+      "prompt": "Eating fresh fruits and raw vegetables provides a variety of essential vitamins and __________ for our bodies.",
+      "options": [
+        "A. nutritionally",
+        "B. nutritive",
+        "C. nutrients",
+        "D. nourish"
+      ],
+      "answer": 2,
+      "explanation": "Cấu trúc song hành với liên từ 'and': 'vitamins and __________' cần một danh từ số nhiều tương ứng. 'nutrients' (chất dinh dưỡng) là danh từ chính xác."
+    },
+    {
+      "id": "t3_q08",
+      "num": 8,
+      "section": "II. LEXICO-GRAMMAR",
+      "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+      "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+      "prompt": "Nam __________ badminton every afternoon since he was in secondary school",
+      "options": [
+        "A. has played",
+        "B. played",
+        "C. is playing",
+        "D. plays"
+      ],
+      "answer": 0,
+      "explanation": "Mệnh đề 'since he was in secondary school' (kể từ khi còn học cấp 2) đi với mệnh đề chính ở thì Hiện tại hoàn thành: 'has played'."
+    },
+    {
+      "id": "t3_q09",
+      "num": 9,
+      "section": "II. LEXICO-GRAMMAR",
+      "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+      "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+      "prompt": "You __________ buy paper bus tickets because the entire city transit system accepts contactless smartcards.",
+      "options": [
+        "A. mustn't",
+        "B. don’t have to",
+        "C. should",
+        "D. must"
+      ],
+      "answer": 1,
+      "explanation": "'Don't have to' chỉ sự không cần thiết (lack of necessity): Bạn không cần phải mua vé giấy vì toàn bộ hệ thống chấp nhận thẻ từ thông minh chạm không tiếp xúc."
+    },
+    {
+      "id": "t3_q10",
+      "num": 10,
+      "section": "II. LEXICO-GRAMMAR",
+      "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+      "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+      "prompt": "Look at those smart traffic cameras! The technician __________ how the vehicle tracking software operates.",
+      "options": [
+        "A. is demonstrating",
+        "B. demonstrates",
+        "C. has demonstrated",
+        "D. was demonstrated"
+      ],
+      "answer": 0,
+      "explanation": "Dấu hiệu câu mệnh lệnh cảm thán: 'Look at those smart traffic cameras!' chỉ hành động đang diễn ra tại thời điểm nói → chia thì Hiện tại tiếp diễn: 'is demonstrating'."
+    },
+    {
+      "id": "t3_q11",
+      "num": 11,
+      "section": "III. CLOZE READING",
+      "section_vi": "III. ĐỌC ĐIỀN TỪ",
+      "type": "reading_cloze",
+      "passage_id": "t3_p1",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+      "prompt": "First and foremost, their diets consist primarily of plant-based foods, such as beans, nuts, and fresh vegetables. (11) __________ people in these areas consume red meat, doing so only on special occasions.",
+      "options": [
+        "A. Few",
+        "B. Many",
+        "C. Much",
+        "D. A little"
+      ],
+      "answer": 0,
+      "explanation": "'People' là danh từ đếm được số nhiều. Ngữ cảnh nêu họ chủ yếu ăn thực vật và chỉ ăn thịt đỏ vào dịp đặc biệt → Rất ít người ('Few people') ăn thịt đỏ."
+    },
+    {
+      "id": "t3_q12",
+      "num": 12,
+      "section": "III. CLOZE READING",
+      "section_vi": "III. ĐỌC ĐIỀN TỪ",
+      "type": "reading_cloze",
+      "passage_id": "t3_p1",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+      "prompt": "Rather than lifting heavy weights in gyms, they engage (12) __________ physical activities through walking, gardening, and doing manual household chores.",
+      "options": [
+        "A. on",
+        "B. with",
+        "C. in",
+        "D. for"
+      ],
+      "answer": 2,
+      "explanation": "Cụm động từ cố định: 'engage in something' (tham gia vào việc gì/hoạt động gì)."
+    },
+    {
+      "id": "t3_q13",
+      "num": 13,
+      "section": "III. CLOZE READING",
+      "section_vi": "III. ĐỌC ĐIỀN TỪ",
+      "type": "reading_cloze",
+      "passage_id": "t3_p1",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+      "prompt": "(13) __________, managing chronic stress is indispensable for emotional balance and cardiovascular fitness.",
+      "options": [
+        "A. However",
+        "B. Furthermore",
+        "C. Therefore",
+        "D. In contrast"
+      ],
+      "answer": 1,
+      "explanation": "Đoạn 1 nói về chế độ ăn và vận động thể chất. Đoạn 2 tiếp tục bổ sung yếu tố quan trọng thứ 3 là kiểm soát căng thẳng tinh thần. Liên từ bổ sung thông tin: 'Furthermore' (Hơn thế nữa / Thêm vào đó)."
+    },
+    {
+      "id": "t3_q14",
+      "num": 14,
+      "section": "III. CLOZE READING",
+      "section_vi": "III. ĐỌC ĐIỀN TỪ",
+      "type": "reading_cloze",
+      "passage_id": "t3_p1",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+      "prompt": "They cultivate lifelong bonds, which provides them with a strong sense of belonging and helps (14) __________ their life expectancy.",
+      "options": [
+        "A. boost",
+        "B. decline",
+        "C. control",
+        "D. damage"
+      ],
+      "answer": 0,
+      "explanation": "'Boost their life expectancy' mang nghĩa 'nâng cao, gia tăng tuổi thọ kỳ vọng của họ'. (decline = giảm, damage = tổn hại)."
+    },
+    {
+      "id": "t3_q15",
+      "num": 15,
+      "section": "III. CLOZE READING",
+      "section_vi": "III. ĐỌC ĐIỀN TỪ",
+      "type": "reading_cloze",
+      "passage_id": "t3_p1",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+      "prompt": "(15) __________, maintaining healthy routines along with loving relationships is the true recipe for enduring vitality.",
+      "options": [
+        "A. In addition",
+        "B. By contrast",
+        "C. In short",
+        "D. For instance"
+      ],
+      "answer": 2,
+      "explanation": "Câu cuối cùng mang tính đúc kết, tóm tắt toàn bộ bài viết: 'Tóm lại (In short), duy trì các thói quen lành mạnh cùng các mối quan hệ yêu thương là công thức thực sự cho sức sống bền bỉ'."
+    },
+    {
+      "id": "t3_q16",
+      "num": 16,
+      "section": "IV. READING COMPREHENSION",
+      "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+      "type": "reading_comp",
+      "passage_id": "t3_p2",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+      "prompt": "According to paragraph 1, what happens when people consistently sleep fewer than six hours a night?",
+      "options": [
+        "A. Their cognitive performance immediately peaks.",
+        "B. Their bodies release excessive amounts of cortisol.",
+        "C. Their immune systems eradicate inflammation completely.",
+        "D. Their arterial walls become stronger and more flexible."
+      ],
+      "answer": 1,
+      "explanation": "Đoạn 1 nêu rõ: 'When individuals sleep less than six hours per night on a consistent basis, their bodies release excessive cortisol—a hormone that triggers systemic inflammation and damages arterial walls.'"
+    },
+    {
+      "id": "t3_q17",
+      "num": 17,
+      "section": "IV. READING COMPREHENSION",
+      "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+      "type": "reading_comp",
+      "passage_id": "t3_p2",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+      "prompt": "The word It in paragraph 3 refers to __________.",
+      "underlined": "It",
+      "options": [
+        "A. restorative rest",
+        "B. toxic protein",
+        "C. inadequate rest",
+        "D. physical well-being"
+      ],
+      "answer": 2,
+      "explanation": "Trong đoạn 3: 'Moreover, inadequate rest significantly interferes with appetite-regulating hormones. It reduces leptin, which signals fullness...', đại từ 'It' thay thế cho cụm danh từ 'inadequate rest' (việc nghỉ ngơi không đầy đủ/thiếu ngủ)."
+    },
+    {
+      "id": "t3_q18",
+      "num": 18,
+      "section": "IV. READING COMPREHENSION",
+      "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+      "type": "reading_comp",
+      "passage_id": "t3_p2",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+      "prompt": "The word advocate in paragraph 3 is closest in meaning to __________.",
+      "underlined": "advocate",
+      "options": [
+        "A. recommend",
+        "B. oppose",
+        "C. ignore",
+        "D. prohibit"
+      ],
+      "answer": 0,
+      "explanation": "'Advocate' có nghĩa là 'khuyên, đề xuất, ủng hộ' (~ recommend, support). Các chuyên gia y tế khuyên thiết lập thói quen đi ngủ nghiêm ngặt."
+    },
+    {
+      "id": "t3_q19",
+      "num": 19,
+      "section": "IV. READING COMPREHENSION",
+      "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+      "type": "reading_comp",
+      "passage_id": "t3_p2",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+      "prompt": "Which of the following best serves as the main idea of the passage?",
+      "options": [
+        "A. The psychological benefits of sleeping medication for seniors.",
+        "B. How late-night screen exposure disrupts academic performance.",
+        "C. The indispensable role of sufficient sleep in protecting physical and mental health.",
+        "D. Common strategies to eradicate ghrelin and suppress hunger cravings."
+      ],
+      "answer": 2,
+      "explanation": "Bài viết phân tích cơ chế sinh học sâu sắc mà giấc ngủ ảnh hưởng đến tim mạch, giải độc não bộ và kiểm soát hormone, từ đó khẳng định vai trò thiết yếu của giấc ngủ đủ đối với sức khỏe thể chất và tinh thần."
+    },
+    {
+      "id": "t3_q20",
+      "num": 20,
+      "section": "IV. READING COMPREHENSION",
+      "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+      "type": "reading_comp",
+      "passage_id": "t3_p2",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+      "prompt": "What can be inferred from the discussion of the glymphatic system in paragraph 2?",
+      "options": [
+        "A. The glymphatic system operates most efficiently during vigorous waking exercise.",
+        "B. Long-term sleep deficiency may elevate the vulnerability to neurodegenerative disorders.",
+        "C. Beta-amyloid is a beneficial protein necessary for arterial protection.",
+        "D. Cleansing metabolic waste relies primarily on rigorous dietary restrictions."
+      ],
+      "answer": 1,
+      "explanation": "Đoạn 2 nêu rõ hệ thống glymphatic dọn sạch độc tố beta-amyloid (protein gắn liền với sự suy giảm nhận thức/sa sút trí tuệ) trong giấc ngủ sâu. Nếu thiếu ngủ kéo dài, chất độc tích tụ sẽ làm tăng nguy cơ mắc các rối loạn thoái hóa thần kinh (neurodegenerative disorders)."
+    },
+    {
+      "id": "t3_q21",
+      "num": 21,
+      "section": "V. WRITING: Dialogue Arrangement",
+      "section_vi": "V. VIẾT: SẮP XẾP ĐOẠN HỘI THOẠI",
+      "type": "dialogue_arrange",
+      "instruction": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text.",
+      "instruction_vi": "Chọn A, B, C hoặc D để sắp xếp các câu thành đoạn đối thoại hợp lý và có nghĩa.",
+      "prompt": "Arrange the following sentences into a meaningful exchange:\na. Minh: That’s a sensible decision. Cooking at home lets you control sodium and avoid unhealthy fats.\nb. An: I’ve decided to cut down on processed foods and prepare my own lunches instead.\nc. An: Exactly. I’m already feeling much more energetic throughout the afternoon!\nd. Minh: Really? What made you change your eating habits so suddenly?",
+      "options": [
+        "A. b – a – c – d",
+        "B. d – b – a – c",
+        "C. b – d – c – a",
+        "D. b – d – a – c"
+      ],
+      "answer": 1,
+      "explanation": "Trình tự đàm thoại hợp lý:\n1. (d) Minh nhận thấy điều khác lạ và hỏi mở: 'Thật á? Điều gì khiến bạn thay đổi thói quen ăn uống đột ngột thế?'\n2. (b) An giải thích: 'Mình đã quyết định giảm đồ ăn chế biến sẵn và tự chuẩn bị bữa trưa.'\n3. (a) Minh khen ngợi: 'Đó là quyết định sáng suốt. Tự nấu giúp kiểm soát muối và chất béo xấu.'\n4. (c) An hào hứng xác nhận: 'Chính xác. Mình đã cảm thấy tràn đầy năng lượng hơn suốt buổi chiều!'\n→ Thứ tự đúng: d – b – a – c (hoặc nếu mở đầu bằng thông báo của An b thì tiếp nối là d – a – c)."
+    },
+    {
+      "id": "t3_q22",
+      "num": 22,
+      "section": "V. WRITING: Paragraph Arrangement",
+      "section_vi": "V. VIẾT: SẮP XẾP ĐOẠN VĂN",
+      "type": "paragraph_arrange",
+      "instruction": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text.",
+      "instruction_vi": "Chọn A, B, C hoặc D để sắp xếp các câu thành đoạn văn hoàn chỉnh.",
+      "prompt": "Arrange the following sentences into a coherent paragraph:\na. In addition, maintaining proper hydration by drinking enough water keeps your digestive system functioning smoothly.\nb. Adopting a nutritious and balanced diet is essential for long-term health and well-being.\nc. For instance, incorporating fresh vegetables, whole grains, and lean proteins provides the body with vital nutrients.\nd. In conclusion, combining wholesome food with adequate water intake is key to preventing chronic illnesses.\ne. Eating nutrient-rich meals regularly helps strengthen your immune system and boost your energy.",
+      "options": [
+        "A. b – a – e – c – d",
+        "B. e – c – b – a – d",
+        "C. b – e – c – a – d",
+        "D. b – c – e – a – d"
+      ],
+      "answer": 2,
+      "explanation": "Cấu trúc đoạn văn mạch lạc:\n• (b) Câu chủ đề: Chế độ ăn uống dinh dưỡng và cân bằng là thiết yếu cho sức khỏe lâu dài.\n• (e) Lợi ích chính: Ăn các bữa giàu dưỡng chất củng cố hệ miễn dịch và gia tăng năng lượng.\n• (c) Ví dụ cụ thể (For instance): Bổ sung rau tươi, ngũ cốc nguyên hạt và đạm nạc.\n• (a) Ý bổ sung (In addition): Uống đủ nước giúp hệ tiêu hóa hoạt động trơn tru.\n• (d) Kết luận (In conclusion): Kết hợp thực phẩm lành mạnh và uống đủ nước là chìa khóa phòng ngừa bệnh mãn tính.\n→ Thứ tự đúng: b – e – c – a – d (Đáp án C)."
+    },
+    {
+      "id": "t3_q23",
+      "num": 23,
+      "section": "V. WRITING: Sentence Transformation",
+      "section_vi": "V. VIẾT: VIẾT LẠI CÂU",
+      "type": "transform",
+      "instruction": "Rewrite the following sentences without changing their meaning, using the cues provided.",
+      "instruction_vi": "Viết lại câu sau sao cho nghĩa không đổi, sử dụng từ gợi ý trong ngoặc.",
+      "prompt": "It is against the school rules for students to bring food into the computer lab. (Using MUSTN’T)",
+      "lead_in": "Students",
+      "model_answers": [
+        "Students mustn't bring food into the computer lab.",
+        "Students must not bring food into the computer lab."
+      ],
+      "explanation": "'It is against the school rules' (vi phạm nội quy trường học) = 'Students mustn't + V-bare' (Học sinh không được phép mang thức ăn vào phòng máy tính)."
+    },
+    {
+      "id": "t3_q24",
+      "num": 24,
+      "section": "V. WRITING: Sentence Transformation",
+      "section_vi": "V. VIẾT: VIẾT LẠI CÂU",
+      "type": "transform",
+      "instruction": "Rewrite the following sentences without changing their meaning, using the cues provided.",
+      "instruction_vi": "Viết lại câu sau sao cho nghĩa không đổi, sử dụng từ gợi ý trong ngoặc.",
+      "prompt": "My parents started living in this eco-friendly residential area five years ago. (Using present perfect tense)",
+      "lead_in": "My parents have",
+      "model_answers": [
+        "My parents have lived in this eco-friendly residential area for five years.",
+        "My parents have been living in this eco-friendly residential area for five years."
+      ],
+      "explanation": "Chuyển từ Quá khứ đơn 'started living... five years ago' sang Hiện tại hoàn thành: 'have lived in... for five years' (hoặc Hiện tại hoàn thành tiếp diễn: have been living)."
+    },
+    {
+      "id": "t3_q25",
+      "num": 25,
+      "section": "V. WRITING: Sentence Building",
+      "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+      "type": "sentence_building",
+      "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+      "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+      "prompt": "Although / cycle / be / time-consuming, / ride / a bike / reduce / carbon emissions / and / improve / physical health.",
+      "model_answers": [
+        "Although cycling is time-consuming, riding a bike reduces carbon emissions and improves physical health.",
+        "Although to cycle is time-consuming, riding a bike reduces carbon emissions and improves physical health."
+      ],
+      "explanation": "• Mệnh đề nhượng bộ: Danh động từ 'Cycling' làm chủ ngữ số ít → 'is time-consuming'.\n• Mệnh đề chính: Danh động từ 'riding a bike' làm chủ ngữ số ít → động từ chia số ít: 'reduces carbon emissions and improves physical health'."
+    },
+    {
+      "id": "t3_q26",
+      "num": 26,
+      "section": "V. WRITING: Sentence Building",
+      "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+      "type": "sentence_building",
+      "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+      "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+      "prompt": "Regular / physical exercise / and / balanced diet / be / vital / boost / immune system / and / prevent / chronic illnesses.",
+      "model_answers": [
+        "Regular physical exercise and a balanced diet are vital to boost the immune system and prevent chronic illnesses.",
+        "Regular physical exercise and a balanced diet are vital to boost our immune system and prevent chronic illnesses."
+      ],
+      "explanation": "• Chủ ngữ gồm 2 thành tố 'Regular physical exercise and a balanced diet' → động từ to be chia là 'are'.\n• Cấu trúc: 'be vital to do something' (mang tính sống còn để làm gì) → 'are vital to boost the immune system and prevent chronic illnesses'."
+    },
+    {
+      "id": "t3_q27",
+      "num": 27,
+      "section": "V. WRITING: Sentence Building",
+      "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+      "type": "sentence_building",
+      "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+      "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+      "prompt": "Install / smart solar panels / which / generate / green electricity / make / modern homes / more / energy-efficient.",
+      "model_answers": [
+        "Installing smart solar panels which generate green electricity makes modern homes more energy-efficient.",
+        "Installing smart solar panels which generate green electricity will make modern homes more energy-efficient."
+      ],
+      "explanation": "• Danh động từ 'Installing smart solar panels' làm chủ ngữ.\n• Mệnh đề quan hệ: 'which generate green electricity' (tạo ra điện năng sạch).\n• Vị ngữ: 'makes modern homes more energy-efficient' (khiến ngôi nhà hiện đại tiết kiệm năng lượng hơn)."
+    },
+    {
+      "id": "t3_q28",
+      "num": 28,
+      "section": "V. WRITING: Sentence Building",
+      "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+      "type": "sentence_building",
+      "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+      "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+      "prompt": "Many / teenagers / believe / generational conflicts / happen / because / parents / fail / understand / modern trends.",
+      "model_answers": [
+        "Many teenagers believe that generational conflicts happen because parents fail to understand modern trends.",
+        "Many teenagers believe generational conflicts happen because parents fail to understand modern trends."
+      ],
+      "explanation": "• Mệnh đề chính: 'Many teenagers believe that generational conflicts happen'.\n• Mệnh đề chỉ nguyên nhân: 'because parents fail to understand modern trends' (cấu trúc fail to do something: không thể/thất bại trong việc hiểu các xu hướng hiện đại)."
+    }
+  ]
+}

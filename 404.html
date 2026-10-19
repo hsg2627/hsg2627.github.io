@@ -8,6 +8,12 @@
 <link rel="icon" href="/favicon.svg">
 <script src="/core/theme-boot.js"></script>
 <link rel="stylesheet" href="/css/style.css">
+<script>
+  const p = location.pathname.toLowerCase();
+  if (p.includes('grade') && p.includes('11')) {
+    location.replace('/Grade%2011/' + location.hash);
+  }
+</script>
 </head>
 <body>
 

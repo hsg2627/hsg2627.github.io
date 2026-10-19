@@ -1,0 +1,529 @@
+{
+  "id": "test1",
+  "title": "Đề Ôn Tập Số 1 (Practice Test 1)",
+  "subtitle": "Units 1, 2, 3: A Long and Healthy Life · The Generation Gap · Cities of the Future",
+  "total_questions": 28,
+  "time_minutes": 60,
+  "max_score": 10.0,
+  "passages": {
+    "t1_p1": {
+      "title": "Longevity and Daily Health Routines",
+      "paragraphs": [
+        "Living a long and vigorous life is not merely a consequence of fortunate genetics; it is deeply shaped by our daily health routines. Nutritional scientists consistently emphasize the (11) __________ of consuming balanced meals rich in natural vitamins, dietary fiber, and essential minerals. In addition, individuals who regularly (12) __________ in moderate physical exercise—such as brisk walking or swimming—tend to maintain superior cardiovascular fitness and lower body fat levels.",
+        "(13) __________, achieving longevity requires more than just dietary care and physical movement. Chronic emotional distress can severely weaken the body’s natural defenses over time. Therefore, modern health specialists strongly advise people to (14) __________ their daily screen exposure and spend time outdoors to alleviate tension. Cultivating positive relationships also helps people overcome anxiety and (15) __________ their mental resilience throughout the aging process."
+      ]
+    },
+    "t1_p2": {
+      "title": "The Modern Generation Gap in America",
+      "source": "Adapted from www.verywellfamily.com",
+      "paragraphs": [
+        "The generation gap that was so in evidence during the 60s has resurfaced, but it is not the disruptive force that it was during the Vietnam era, a 2009 study suggests. The Pew Research Center study found that 79% of Americans see major differences between younger and older adults in the way they look at the world. In 1969, a Gallup Poll found that a smaller percentage, 74%, perceived major differences.",
+        "Today, however, although more Americans see generational differences, most do not see them as divisive. That is partly because of the areas of difference. The top areas of disagreement between young and old, according to the Pew Research Study, are the use of technology and taste in music. Grandparents are likely to have observed these differences in their grandchildren who are tweens, teens, and young adults.",
+        "If large differences between the generations exist, why don't they spawn conflict? The answer is twofold.",
+        "First, the two largest areas of difference technology and music are less emotionally charged than political issues. The older generation is likely to be proud of the younger generation's prowess in technology rather than to view it as a problem. As for the musical differences, each generation wants its own style of music, and the older generation generally can relate to that desire.",
+        "Second, in the other areas of difference, the younger generation tends to regard the older generation as superior to their own generation—clearly a difference from the 1960s with its rallying cry of \"Don't trust anyone over thirty.\" According to the Pew study, all generations regard older Americans as superior in moral values, work ethic and respect for others."
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "t1_q01",
+      "num": 1,
+      "section": "I. PHONETICS & CONTRACTIONS",
+      "section_vi": "I. NGỮ ÂM & DẠNG RÚT GỌN",
+      "type": "binary",
+      "instruction": "Mark the letter A or B to indicate the common pronunciation of the underlined auxiliary verb.",
+      "instruction_vi": "Chọn A hoặc B để chỉ cách phát âm thông thường của trợ động từ được gạch chân.",
+      "prompt": "Can you explain how this smart sensor works?",
+      "underlined": "Can",
+      "options": [
+        "A. /kæn/",
+        "B. /kən/"
+      ],
+      "answer": 1,
+      "explanation": "Trong câu hỏi Yes/No thông thường, trợ động từ 'Can' đứng đầu câu và không nhận trọng âm nên được phát âm ở dạng yếu (weak form) là /kən/. Dạng mạnh /kæn/ chỉ dùng trong câu trả lời ngắn (Yes, I can), ở cuối mệnh đề hoặc khi cần nhấn mạnh tương phản."
+    },
+    {
+      "id": "t1_q02",
+      "num": 2,
+      "section": "I. PHONETICS & CONTRACTIONS",
+      "section_vi": "I. NGỮ ÂM & DẠNG RÚT GỌN",
+      "type": "binary",
+      "instruction": "Mark the letter A or B to indicate the full form of the underlined contraction.",
+      "instruction_vi": "Chọn A hoặc B để chỉ dạng đầy đủ của từ viết tắt được gạch chân.",
+      "prompt": "He’s lived in this eco-friendly apartment for three years.",
+      "underlined": "He’s",
+      "options": [
+        "A. He is",
+        "B. He has"
+      ],
+      "answer": 1,
+      "explanation": "Theo sau là quá khứ phân từ 'lived' cùng trạng từ thời gian 'for three years' (thì Hiện tại hoàn thành: S + have/has + V3/ed). Do đó, 'He’s' ở đây là dạng viết tắt của 'He has'."
+    },
+    {
+      "id": "t1_q03",
+      "num": 3,
+      "section": "I. PHONETICS & CONTRACTIONS",
+      "section_vi": "I. TRỌNG ÂM TỪ",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress.",
+      "instruction_vi": "Chọn từ có vị trí trọng âm chính khác với ba từ còn lại.",
+      "prompt": "Choose the word with different primary stress position:",
+      "options": [
+        "A. sensor",
+        "B. impact",
+        "C. prescribe",
+        "D. greenhouse"
+      ],
+      "answer": 2,
+      "explanation": "• sensor /ˈsen.sər/ (trọng âm rơi vào âm tiết 1)\n• impact /ˈɪm.pækt/ (danh từ, trọng âm âm tiết 1)\n• prescribe /prɪˈskraɪb/ (động từ kê đơn, trọng âm âm tiết 2)\n• greenhouse /ˈɡriːn.haʊs/ (danh từ ghép, trọng âm âm tiết 1)\n→ Đáp án đúng là C. prescribe."
+    },
+    {
+      "id": "t1_q04",
+      "num": 4,
+      "section": "I. PHONETICS & CONTRACTIONS",
+      "section_vi": "I. TRỌNG ÂM TỪ",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress.",
+      "instruction_vi": "Chọn từ có vị trí trọng âm chính khác với ba từ còn lại.",
+      "prompt": "Choose the word with different primary stress position:",
+      "options": [
+        "A. pedestrian",
+        "B. energy",
+        "C. resident",
+        "D. modernise"
+      ],
+      "answer": 0,
+      "explanation": "• pedestrian /pəˈdes.tri.ən/ (trọng âm rơi vào âm tiết 2)\n• energy /ˈen.ə.dʒi/ (trọng âm âm tiết 1)\n• resident /ˈrez.ɪ.dənt/ (trọng âm âm tiết 1)\n• modernise /ˈmɒd.ən.aɪz/ (trọng âm âm tiết 1)\n→ Đáp án đúng là A. pedestrian."
+    },
+    {
+      "id": "t1_q05",
+      "num": 5,
+      "section": "II. LEXICO-GRAMMAR",
+      "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+      "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+      "prompt": "Regular physical exercise helps strengthen the immune system and boosts life __________.",
+      "options": [
+        "A. cycle",
+        "B. expectancy",
+        "C. insurance",
+        "D. limitation"
+      ],
+      "answer": 1,
+      "explanation": "Cụm danh từ cố định (collocation): 'life expectancy' mang nghĩa là 'tuổi thọ kỳ vọng / tuổi thọ trung bình'.\n(A. life cycle = vòng đời; C. life insurance = bảo hiểm nhân thọ; D. limitation = giới hạn)."
+    },
+    {
+      "id": "t1_q06",
+      "num": 6,
+      "section": "II. LEXICO-GRAMMAR",
+      "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+      "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+      "prompt": "Due to different viewpoints on career choices, conflicts often arise between children and their parents in an __________ family.",
+      "options": [
+        "A. extended",
+        "B. single",
+        "C. nuclear",
+        "D. identical"
+      ],
+      "answer": 0,
+      "explanation": "Thuật ngữ 'extended family' chỉ gia đình đa thế hệ (ông bà, cha mẹ, con cái cùng sống chung). Về mặt ngữ pháp, mạo từ 'an' đứng trước danh từ bắt đầu bằng nguyên âm 'extended'.\n(C. nuclear family = gia đình hạt nhân nhưng đi với mạo từ 'a')."
+    },
+    {
+      "id": "t1_q07",
+      "num": 7,
+      "section": "II. LEXICO-GRAMMAR",
+      "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+      "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+      "prompt": "Scientists are testing the __________ of high-speed maglev trains in reducing traffic congestion.",
+      "options": [
+        "A. effective",
+        "B. effectively",
+        "C. effect",
+        "D. ineffective"
+      ],
+      "answer": 2,
+      "explanation": "Sau mạo từ 'the' và trước giới từ 'of' cần một danh từ. Trong các lựa chọn, 'effect' (hiệu quả / tác động) là danh từ duy nhất phù hợp.\n(effective/ineffective là tính từ, effectively là trạng từ)."
+    },
+    {
+      "id": "t1_q08",
+      "num": 8,
+      "section": "II. LEXICO-GRAMMAR",
+      "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+      "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+      "prompt": "The local government __________ tens of thousands of trees in urban areas since last October.",
+      "options": [
+        "A. plant",
+        "B. planted",
+        "C. has planted",
+        "D. is planting"
+      ],
+      "answer": 2,
+      "explanation": "Dấu hiệu thời gian 'since last October' (kể từ tháng 10 năm ngoái) đòi hỏi thì Hiện tại hoàn thành (have/has + V3/ed). Chủ ngữ 'The local government' là danh từ số ít nên dùng 'has planted'."
+    },
+    {
+      "id": "t1_q09",
+      "num": 9,
+      "section": "II. LEXICO-GRAMMAR",
+      "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+      "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+      "prompt": "You __________ honk your horn near hospitals and schools; it is against the traffic laws.",
+      "options": [
+        "A. mustn't",
+        "B. needn't",
+        "C. shouldn't",
+        "D. won't"
+      ],
+      "answer": 0,
+      "explanation": "Mệnh đề sau giải thích 'it is against the traffic laws' (vi phạm luật giao thông) → chỉ sự cấm đoán mang tính pháp lý hoặc quy định nghiêm ngặt. Ta dùng động từ khuyết thiếu 'mustn't' (không được phép làm gì)."
+    },
+    {
+      "id": "t1_q10",
+      "num": 10,
+      "section": "II. LEXICO-GRAMMAR",
+      "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+      "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+      "prompt": "This herbal tea __________ wonderful; it contains chamomile and natural honey.",
+      "options": [
+        "A. is smelling",
+        "B. smells",
+        "C. has been smelling",
+        "D. was smelling"
+      ],
+      "answer": 1,
+      "explanation": "'Smell' là động từ chỉ tri giác/trạng thái (stative verb) khi mang nghĩa 'có mùi, toả hương'. Khi diễn tả tính chất của sự vật, không dùng ở thì tiếp diễn, mà chia ở thì Hiện tại đơn: 'smells'."
+    },
+    {
+      "id": "t1_q11",
+      "num": 11,
+      "section": "III. CLOZE READING",
+      "section_vi": "III. ĐỌC ĐIỀN TỪ",
+      "type": "reading_cloze",
+      "passage_id": "t1_p1",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+      "prompt": "Nutritional scientists consistently emphasize the (11) __________ of consuming balanced meals rich in natural vitamins, dietary fiber, and essential minerals.",
+      "options": [
+        "A. important",
+        "B. importance",
+        "C. importantly",
+        "D. import"
+      ],
+      "answer": 1,
+      "explanation": "Cấu trúc 'the + noun + of': cần một danh từ đứng sau 'the' và trước giới từ 'of'. 'importance' (tầm quan trọng) là danh từ phù hợp."
+    },
+    {
+      "id": "t1_q12",
+      "num": 12,
+      "section": "III. CLOZE READING",
+      "section_vi": "III. ĐỌC ĐIỀN TỪ",
+      "type": "reading_cloze",
+      "passage_id": "t1_p1",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+      "prompt": "In addition, individuals who regularly (12) __________ in moderate physical exercise—such as brisk walking or swimming—tend to maintain superior cardiovascular fitness and lower body fat levels.",
+      "options": [
+        "A. engage",
+        "B. take",
+        "C. bring",
+        "D. keep"
+      ],
+      "answer": 0,
+      "explanation": "Cụm động từ cố định: 'engage in something' (tham gia vào hoạt động gì). 'engage in moderate physical exercise' = tham gia vào các bài tập thể dục vừa phải."
+    },
+    {
+      "id": "t1_q13",
+      "num": 13,
+      "section": "III. CLOZE READING",
+      "section_vi": "III. ĐỌC ĐIỀN TỪ",
+      "type": "reading_cloze",
+      "passage_id": "t1_p1",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+      "prompt": "(13) __________, achieving longevity requires more than just dietary care and physical movement.",
+      "options": [
+        "A. However",
+        "B. Therefore",
+        "C. Because",
+        "D. For instance"
+      ],
+      "answer": 0,
+      "explanation": "Đoạn 1 nói về dinh dưỡng và vận động. Câu đầu đoạn 2 bổ sung khía cạnh tinh thần với ý tương phản: 'Tuy nhiên, đạt được tuổi thọ đòi hỏi nhiều hơn là chỉ chăm sóc ăn uống và vận động cơ thể'. Do đó liên từ 'However' là chính xác."
+    },
+    {
+      "id": "t1_q14",
+      "num": 14,
+      "section": "III. CLOZE READING",
+      "section_vi": "III. ĐỌC ĐIỀN TỪ",
+      "type": "reading_cloze",
+      "passage_id": "t1_p1",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+      "prompt": "Therefore, modern health specialists strongly advise people to (14) __________ their daily screen exposure and spend time outdoors to alleviate tension.",
+      "options": [
+        "A. limit",
+        "B. foster",
+        "C. damage",
+        "D. ignore"
+      ],
+      "answer": 0,
+      "explanation": "Theo ngữ cảnh giảm căng thẳng (alleviate tension), các chuyên gia khuyên mọi người nên 'limit their daily screen exposure' (hạn chế thời gian tiếp xúc với màn hình thiết bị điện tử hàng ngày)."
+    },
+    {
+      "id": "t1_q15",
+      "num": 15,
+      "section": "III. CLOZE READING",
+      "section_vi": "III. ĐỌC ĐIỀN TỪ",
+      "type": "reading_cloze",
+      "passage_id": "t1_p1",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+      "prompt": "Cultivating positive relationships also helps people overcome anxiety and (15) __________ their mental resilience throughout the aging process.",
+      "options": [
+        "A. dismiss",
+        "B. enhance",
+        "C. exhaust",
+        "D. avoid"
+      ],
+      "answer": 1,
+      "explanation": "'Enhance' có nghĩa là 'nâng cao, củng cố'. 'enhance their mental resilience' = củng cố sức dẻo dai và khả năng phục hồi tinh thần qua quá trình lão hóa."
+    },
+    {
+      "id": "t1_q16",
+      "num": 16,
+      "section": "IV. READING COMPREHENSION",
+      "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+      "type": "reading_comp",
+      "passage_id": "t1_p2",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+      "prompt": "Which of the following could be the main idea of the passage?",
+      "options": [
+        "A. Generation gap doesn’t cause a big problem in American families.",
+        "B. Different points of view are the main problem between generations in America.",
+        "C. The generation gap in the past was different from that in modern time.",
+        "D. The areas of differences in the generation gap have changed over the years."
+      ],
+      "answer": 0,
+      "explanation": "Ý chính của bài đọc: Đoạn 2 nêu rõ 'although more Americans see generational differences, most do not see them as divisive' (hầu hết không xem đó là sự chia rẽ) và các đoạn sau giải thích lý do tại sao sự khác biệt không biến thành xung đột lớn. Do đó đáp án A là bao quát và chính xác nhất."
+    },
+    {
+      "id": "t1_q17",
+      "num": 17,
+      "section": "IV. READING COMPREHENSION",
+      "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+      "type": "reading_comp",
+      "passage_id": "t1_p2",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+      "prompt": "The word “prowess” in paragraph 4 is closest in meaning to _________.",
+      "underlined": "prowess",
+      "options": [
+        "A. enrichment",
+        "B. skill",
+        "C. creation",
+        "D. awareness"
+      ],
+      "answer": 1,
+      "explanation": "Từ 'prowess' mang nghĩa là 'kỹ năng điêu luyện, sự thành thạo xuất sắc' (~ exceptional skill/ability). Thế hệ đi trước tự hào về kỹ năng công nghệ (skill in technology) của con cháu."
+    },
+    {
+      "id": "t1_q18",
+      "num": 18,
+      "section": "IV. READING COMPREHENSION",
+      "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+      "type": "reading_comp",
+      "passage_id": "t1_p2",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+      "prompt": "What are the two reasons why large differences between generations don’t cause disagreement?",
+      "options": [
+        "A. The generosity of the elder generation and the attitude of the younger generation.",
+        "B. The different styles of music and the knowledge of the elder generation.",
+        "C. The major aspects of differences between generations and the respect to the elder generation.",
+        "D. The pride of the elder generation and the obedience of the younger one"
+      ],
+      "answer": 2,
+      "explanation": "Bài đọc chỉ ra 2 lý do: Thứ nhất, lĩnh vực khác biệt (công nghệ và âm nhạc) ít gay gắt về cảm xúc so với vấn đề chính trị ('The major aspects of differences'); Thứ hai, thế hệ trẻ rất tôn trọng và đánh giá cao thế hệ già về giá trị đạo đức, đạo đức làm việc ('respect to the elder generation')."
+    },
+    {
+      "id": "t1_q19",
+      "num": 19,
+      "section": "IV. READING COMPREHENSION",
+      "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+      "type": "reading_comp",
+      "passage_id": "t1_p2",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+      "prompt": "The word “their” in the last paragraph refers to __________.",
+      "underlined": "their",
+      "options": [
+        "A. the older generation’s",
+        "B. the younger generation’s",
+        "C. supervisor’s",
+        "D. over-thirty people’s"
+      ],
+      "answer": 1,
+      "explanation": "Trong câu: 'the younger generation tends to regard the older generation as superior to their own generation', đại từ sở hữu 'their' thay thế cho chủ ngữ 'the younger generation'."
+    },
+    {
+      "id": "t1_q20",
+      "num": 20,
+      "section": "IV. READING COMPREHENSION",
+      "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+      "type": "reading_comp",
+      "passage_id": "t1_p2",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+      "prompt": "According to the passage, which is NOT true?",
+      "options": [
+        "A. The majority of Americans agree generations’ viewpoint to be the major differences.",
+        "B. Technology is one of the two biggest areas creating the gap between the old and the young.",
+        "C. Grandparents feel uncomfortable with their grandchildren because of their better technology skills.",
+        "D. The elderly in America are admired in moral values, work ethic and respect for others."
+      ],
+      "answer": 2,
+      "explanation": "Câu C sai so với bài: Bài đọc nêu rõ 'The older generation is likely to be proud of the younger generation's prowess in technology rather than to view it as a problem' (thế hệ ông bà tự hào về kỹ năng công nghệ của cháu mình chứ không hề cảm thấy khó chịu/phiền lòng)."
+    },
+    {
+      "id": "t1_q21",
+      "num": 21,
+      "section": "V. WRITING: Dialogue Arrangement",
+      "section_vi": "V. VIẾT: SẮP XẾP ĐOẠN HỘI THOẠI",
+      "type": "dialogue_arrange",
+      "instruction": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text.",
+      "instruction_vi": "Chọn A, B, C hoặc D để sắp xếp các câu thành đoạn đối thoại hợp lý và có nghĩa.",
+      "prompt": "Arrange the following sentences into a meaningful exchange:\na. Nam: Yes, we argued about my career choice. My parents want me to follow in their footsteps, but I prefer graphic design.\nb. Lan: Did you have an argument with your parents again? You look quite stressed.\nc. Lan: I think you should sit down and calmly explain your passion and future plan to them.\nd. Nam: Thank you for the advice, Lan. I’ll give it a try tonight.",
+      "options": [
+        "A. b – a – c – d",
+        "B. a – b – c – d",
+        "C. b – c – a – d",
+        "D. c – b – a – d"
+      ],
+      "answer": 0,
+      "explanation": "Thứ tự hội thoại tự nhiên:\n1. (b) Lan mở lời hỏi thăm: 'Bạn lại cãi nhau với bố mẹ à? Trông bạn căng thẳng thế.'\n2. (a) Nam trả lời lý do: 'Ừ, tụi mình cãi nhau về định hướng nghề nghiệp...'\n3. (c) Lan đưa ra lời khuyên: 'Mình nghĩ bạn nên ngồi xuống bình tĩnh giải thích...'\n4. (d) Nam cảm ơn: 'Cảm ơn lời khuyên nhé, mình sẽ thử vào tối nay.'\n→ Thứ tự đúng: b – a – c – d."
+    },
+    {
+      "id": "t1_q22",
+      "num": 22,
+      "section": "V. WRITING: Paragraph Arrangement",
+      "section_vi": "V. VIẾT: SẮP XẾP ĐOẠN VĂN",
+      "type": "paragraph_arrange",
+      "instruction": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text.",
+      "instruction_vi": "Chọn A, B, C hoặc D để sắp xếp các câu thành đoạn văn hoàn chỉnh.",
+      "prompt": "Arrange the following sentences into a coherent paragraph:\na. In addition, disagreements frequently arise over how teenagers dress and spend their free time.\nb. The generation gap can lead to significant conflicts between parents and children.\nc. For instance, while older family members value traditional customs, young people often embrace modern digital trends.\nd. To bridge this divide, both generations need to listen actively and respect each other's perspectives.\ne. One primary cause of these misunderstandings is the noticeable difference in values and lifestyles.",
+      "options": [
+        "A. b – a – c – e – d",
+        "B. b – e – c – a – d",
+        "C. e – c – b – a – d",
+        "D. b – e – a – c – d"
+      ],
+      "answer": 1,
+      "explanation": "Cấu trúc đoạn văn chuẩn logic:\n• (b) Câu chủ đề (Topic sentence): Khoảng cách thế hệ dẫn đến xung đột lớn.\n• (e) Nêu nguyên nhân cốt lõi: Sự khác biệt rõ rệt về giá trị sống và phong cách sống.\n• (c) Đưa ví dụ minh họa: Người lớn giữ truyền thống, người trẻ theo xu hướng số.\n• (a) Bổ sung ví dụ thứ 2: Cách ăn mặc và sử dụng thời gian rảnh rỗi.\n• (d) Câu kết luận / giải pháp: Cần tích cực lắng nghe và tôn trọng nhau.\n→ Thứ tự đúng: b – e – c – a – d."
+    },
+    {
+      "id": "t1_q23",
+      "num": 23,
+      "section": "V. WRITING: Sentence Transformation",
+      "section_vi": "V. VIẾT: VIẾT LẠI CÂU",
+      "type": "transform",
+      "instruction": "Rewrite the following sentences without changing their meaning, using the cues provided.",
+      "instruction_vi": "Viết lại câu sau sao cho nghĩa không đổi, sử dụng từ gợi ý trong ngoặc.",
+      "prompt": "Visitors are not allowed to touch any artifacts displayed in the museum. (Using MUSTN’T)",
+      "lead_in": "Visitors",
+      "model_answers": [
+        "Visitors mustn't touch any artifacts displayed in the museum.",
+        "Visitors mustn't touch any of the artifacts displayed in the museum.",
+        "Visitors must not touch any artifacts displayed in the museum."
+      ],
+      "explanation": "Cấu trúc: 'be not allowed to + V' (không được phép) = 'mustn't + V-bare' (cấm không được làm gì)."
+    },
+    {
+      "id": "t1_q24",
+      "num": 24,
+      "section": "V. WRITING: Sentence Transformation",
+      "section_vi": "V. VIẾT: VIẾT LẠI CÂU",
+      "type": "transform",
+      "instruction": "Rewrite the following sentences without changing their meaning, using the cues provided.",
+      "instruction_vi": "Viết lại câu sau sao cho nghĩa không đổi, sử dụng từ gợi ý trong ngoặc.",
+      "prompt": "The volunteers began cleaning up the community park two hours ago. (Using present perfect tense)",
+      "lead_in": "The volunteers have",
+      "model_answers": [
+        "The volunteers have cleaned up the community park for two hours.",
+        "The volunteers have been cleaning up the community park for two hours."
+      ],
+      "explanation": "Chuyển từ Quá khứ đơn 'began/started + V-ing + time + ago' sang Hiện tại hoàn thành: 'have/has + V3/ed + for + time' (hoặc Hiện tại hoàn thành tiếp diễn: have been V-ing)."
+    },
+    {
+      "id": "t1_q25",
+      "num": 25,
+      "section": "V. WRITING: Sentence Building",
+      "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+      "type": "sentence_building",
+      "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+      "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+      "prompt": "Although / install / solar lights / be / expensive, / switch / to / renewable energy / help / households / cut / power bills.",
+      "model_answers": [
+        "Although installing solar lights is expensive, switching to renewable energy helps households cut power bills.",
+        "Although installing solar lights is expensive, switching to renewable energy helps households cut down power bills.",
+        "Although installing solar lights is expensive, switching to renewable energy helps households cut their power bills."
+      ],
+      "explanation": "• Mệnh đề nhượng bộ: Danh động từ 'Installing solar lights' làm chủ ngữ số ít → 'is expensive'.\n• Mệnh đề chính: Danh động từ 'switching to renewable energy' làm chủ ngữ số ít → động từ 'helps'.\n• Cấu trúc: 'help someone (to) do something' → 'helps households cut power bills'."
+    },
+    {
+      "id": "t1_q26",
+      "num": 26,
+      "section": "V. WRITING: Sentence Building",
+      "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+      "type": "sentence_building",
+      "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+      "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+      "prompt": "Mutual / respect / and / active listening / be / necessary / bridge / generation gap / between / parents / and / children.",
+      "model_answers": [
+        "Mutual respect and active listening are necessary to bridge the generation gap between parents and children."
+      ],
+      "explanation": "• Chủ ngữ gồm hai thành tố 'Mutual respect and active listening' (danh từ số nhiều) → to be chia là 'are'.\n• Cấu trúc: 'be necessary to do something' (cần thiết để làm gì) → 'are necessary to bridge the generation gap between parents and children'."
+    },
+    {
+      "id": "t1_q27",
+      "num": 27,
+      "section": "V. WRITING: Sentence Building",
+      "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+      "type": "sentence_building",
+      "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+      "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+      "prompt": "Develop / public transport / which / run / on / electricity / make / future / cities / less / polluted.",
+      "model_answers": [
+        "Developing public transport which runs on electricity will make future cities less polluted.",
+        "Developing public transport which runs on electricity makes future cities less polluted."
+      ],
+      "explanation": "• Danh động từ 'Developing public transport' làm chủ ngữ.\n• Mệnh đề quan hệ: 'which runs on electricity' (chạy bằng điện).\n• Vị ngữ: 'will make future cities less polluted' (khiến cho các thành phố tương lai bớt ô nhiễm hơn)."
+    },
+    {
+      "id": "t1_q28",
+      "num": 28,
+      "section": "V. WRITING: Sentence Building",
+      "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+      "type": "sentence_building",
+      "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+      "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+      "prompt": "Some / experts / think / smart devices / not / benefit / elderly people / because / they / find / digital interfaces / hard / use.",
+      "model_answers": [
+        "Some experts think that smart devices do not benefit elderly people because they find digital interfaces hard to use.",
+        "Some experts think smart devices do not benefit elderly people because they find digital interfaces hard to use."
+      ],
+      "explanation": "• Mệnh đề chính: 'think that smart devices do not benefit elderly people' (thiết bị thông minh không mang lại lợi ích cho người cao tuổi).\n• Mệnh đề chỉ nguyên nhân: 'because they find digital interfaces hard to use' (cấu trúc find something + adj + to-V: thấy cái gì khó sử dụng)."
+    }
+  ]
+}

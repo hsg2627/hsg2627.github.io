@@ -1,0 +1,527 @@
+{
+  "id": "test2",
+  "title": "Đề Ôn Tập Số 2 (Practice Test 2)",
+  "subtitle": "Units 1, 2, 3: A Long and Healthy Life · The Generation Gap · Cities of the Future",
+  "total_questions": 28,
+  "time_minutes": 60,
+  "max_score": 10.0,
+  "passages": {
+    "t2_p1": {
+      "title": "Smart Cities Engineering and Green Metropolises",
+      "paragraphs": [
+        "Urban planners around the world are rethinking urban spaces to construct more livable, energy-efficient environments. A key priority in smart city engineering is the (11) __________ of cutting-edge sensor networks that monitor real-time traffic volume and public lighting. By gathering detailed data, municipal authorities can operate transit systems efficiently and (12) __________ a significant reduction in air pollutants.",
+        "(13) __________, high-tech infrastructure alone cannot create an ideal metropolis if social and environmental needs are overlooked. Futuristic cities must incorporate abundant green areas, roof gardens, and designated pedestrian promenades to (14) __________ public well-being. Expanding automated public transit also discourages private automobile usage, helping cities (15) __________ urban carbon footprints and combat the severe effects of climate change."
+      ]
+    },
+    "t2_p2": {
+      "title": "Super Size Me: An Experiment with Fast Food",
+      "source": "Documentary review & analysis",
+      "paragraphs": [
+        "Super Size Me is a 2004 film by Morgan Spurlock, in which he documents his experiment to eat only McDonald's fast food three times a day, every day, for thirty days.",
+        "Spurlock made himself a short list of rules for the experiment, including an obligation to eat all of the three meals he ordered. He also had to 'Super Size', which means accepting a giant portion every time the option was offered to him. He ended up vomiting after the first Super Size meal he finished, after taking nearly twenty minutes to consume it.",
+        "After five days Spurlock put on almost 5kg, and he soon found himself feeling depressed, with no energy. The only thing that got rid of his headaches and made him feel better was another McDonald's meal, so his doctors told him he was addicted. More seriously, around day twenty, he started experiencing heart palpitations and one of the doctors detected liver problems. However, in spite of his doctor's advice, Spurlock continued to the end of the month and achieved a total weight gain of 11kg. His body mass index also increased from a healthy 23.2 to an overweight 27.",
+        "It took Spurlock fifteen months to recover from his experiment and return to his original weight, but the film also had a wider impact. Just after its showing in 2004, McDonald's phased out the Super Size option and healthier options like salads appeared on the menu.",
+        "Unfortunately, McDonald's denied the connection between the film and the changes, but it is interesting to note how closely they coincided with the release of the film."
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "t2_q01",
+      "num": 1,
+      "section": "I. PHONETICS & CONTRACTIONS",
+      "section_vi": "I. NGỮ ÂM & DẠNG RÚT GỌN",
+      "type": "binary",
+      "instruction": "Mark the letter A or B to indicate the common pronunciation of the underlined auxiliary verb.",
+      "instruction_vi": "Chọn A hoặc B để chỉ cách phát âm thông thường của trợ động từ được gạch chân.",
+      "prompt": "Where have you lived since you moved to this eco-city?",
+      "underlined": "have",
+      "options": [
+        "A. /hæv/",
+        "B. /həv/"
+      ],
+      "answer": 1,
+      "explanation": "Trợ động từ 'have' trong câu hỏi Wh- khi không được nhấn mạnh thường được phát âm ở dạng yếu (weak form) là /həv/. Dạng mạnh /hæv/ chỉ dùng khi cần nhấn mạnh hoặc ở cuối câu."
+    },
+    {
+      "id": "t2_q02",
+      "num": 2,
+      "section": "I. PHONETICS & CONTRACTIONS",
+      "section_vi": "I. NGỮ ÂM & DẠNG RÚT GỌN",
+      "type": "binary",
+      "instruction": "Mark the letter A or B to indicate the full form of the underlined contraction.",
+      "instruction_vi": "Chọn A hoặc B để chỉ dạng đầy đủ của từ viết tắt được gạch chân.",
+      "prompt": "My grandfather’s keen on doing morning tai chi in the park.",
+      "underlined": "My grandfather’s",
+      "options": [
+        "A. My grandfather is",
+        "B. My grandfather has"
+      ],
+      "answer": 0,
+      "explanation": "Cấu trúc tính từ: 'be keen on doing something' (say mê, thích thú làm việc gì). Vì vậy 'My grandfather’s' là dạng rút gọn của 'My grandfather is'."
+    },
+    {
+      "id": "t2_q03",
+      "num": 3,
+      "section": "I. PHONETICS & CONTRACTIONS",
+      "section_vi": "I. TRỌNG ÂM TỪ",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress.",
+      "instruction_vi": "Chọn từ có vị trí trọng âm chính khác với ba từ còn lại.",
+      "prompt": "Choose the word with different primary stress position:",
+      "options": [
+        "A. disease",
+        "B. illness",
+        "C. dweller",
+        "D. balance"
+      ],
+      "answer": 0,
+      "explanation": "• disease /dɪˈziːz/ (danh từ, trọng âm rơi vào âm tiết 2)\n• illness /ˈɪl.nəs/ (danh từ, trọng âm âm tiết 1)\n• dweller /ˈdwel.ər/ (danh từ, trọng âm âm tiết 1)\n• balance /ˈbæl.əns/ (danh từ, trọng âm âm tiết 1)\n→ Đáp án đúng là A. disease."
+    },
+    {
+      "id": "t2_q04",
+      "num": 4,
+      "section": "I. PHONETICS & CONTRACTIONS",
+      "section_vi": "I. TRỌNG ÂM TỪ",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress.",
+      "instruction_vi": "Chọn từ có vị trí trọng âm chính khác với ba từ còn lại.",
+      "prompt": "Choose the word with different primary stress position:",
+      "options": [
+        "A. properly",
+        "B. essential",
+        "C. extended",
+        "D. infectious"
+      ],
+      "answer": 0,
+      "explanation": "• properly /ˈprɒp.əl.i/ (trạng từ, trọng âm rơi vào âm tiết 1)\n• essential /ɪˈsen.ʃəl/ (tính từ, trọng âm âm tiết 2)\n• extended /ɪkˈsten.dɪd/ (tính từ, trọng âm âm tiết 2)\n• infectious /ɪnˈfek.ʃəs/ (tính từ, trọng âm âm tiết 2)\n→ Đáp án đúng là A. properly."
+    },
+    {
+      "id": "t2_q05",
+      "num": 5,
+      "section": "II. LEXICO-GRAMMAR",
+      "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+      "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+      "prompt": "Antibiotics should only be used to treat __________ infections caused by bacteria, not viruses.",
+      "options": [
+        "A. bacterial",
+        "B. immune",
+        "C. physical",
+        "D. nutrient"
+      ],
+      "answer": 0,
+      "explanation": "Cụm danh từ: 'bacterial infections' mang nghĩa 'bệnh nhiễm khuẩn (do vi khuẩn gây ra)'. Kháng sinh chỉ có tác dụng tiêu diệt vi khuẩn, không diệt được vi-rút."
+    },
+    {
+      "id": "t2_q06",
+      "num": 6,
+      "section": "II. LEXICO-GRAMMAR",
+      "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+      "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+      "prompt": "The generation __________ between teenagers and their parents often leads to misunderstandings about fashion and lifestyle choices.",
+      "options": [
+        "A. space",
+        "B. bridge",
+        "C. gap",
+        "D. distance"
+      ],
+      "answer": 2,
+      "explanation": "Collocation quen thuộc: 'generation gap' có nghĩa là 'khoảng cách thế hệ'."
+    },
+    {
+      "id": "t2_q07",
+      "num": 7,
+      "section": "II. LEXICO-GRAMMAR",
+      "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+      "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+      "prompt": "Installing rooftop solar panels has significantly contributed to the __________ of household utility bills.",
+      "options": [
+        "A. reduce",
+        "B. reduction",
+        "C. reducible",
+        "D. reductively"
+      ],
+      "answer": 1,
+      "explanation": "Sau mạo từ 'the' và trước giới từ 'of' cần một danh từ. 'reduction' (sự cắt giảm, giảm bớt) là danh từ chính xác."
+    },
+    {
+      "id": "t2_q08",
+      "num": 8,
+      "section": "II. LEXICO-GRAMMAR",
+      "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+      "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+      "prompt": "The municipal council __________ several sensor-based streetlights along the main avenue last week.",
+      "options": [
+        "A. installed",
+        "B. has installed",
+        "C. installs",
+        "D. is installing"
+      ],
+      "answer": 0,
+      "explanation": "Trạng từ thời gian xác định trong quá khứ 'last week' (tuần trước) yêu cầu chia thì Quá khứ đơn: 'installed'."
+    },
+    {
+      "id": "t2_q09",
+      "num": 9,
+      "section": "II. LEXICO-GRAMMAR",
+      "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+      "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+      "prompt": "You __________ share your personal passwords or biometric data with strangers; it is extremely unsafe.",
+      "options": [
+        "A. ought to",
+        "B. needn't",
+        "C. mustn't",
+        "D. may"
+      ],
+      "answer": 2,
+      "explanation": "'it is extremely unsafe' (cực kỳ mất an toàn) → diễn đạt điều cấm tuyệt đối, không được làm. Dùng 'mustn't' (không được phép)."
+    },
+    {
+      "id": "t2_q10",
+      "num": 10,
+      "section": "II. LEXICO-GRAMMAR",
+      "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+      "type": "mcq",
+      "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+      "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+      "prompt": "These ripe strawberries __________ delicious and sweet; you should try one.",
+      "options": [
+        "A. are tasting",
+        "B. taste",
+        "C. have tasted",
+        "D. were tasting"
+      ],
+      "answer": 1,
+      "explanation": "'Taste' là động từ nối chỉ cảm giác/trạng thái (stative verb), mang nghĩa 'có vị'. Không dùng ở thì tiếp diễn khi miêu tả tính chất đặc trưng của món ăn. Chọn Hiện tại đơn 'taste'."
+    },
+    {
+      "id": "t2_q11",
+      "num": 11,
+      "section": "III. CLOZE READING",
+      "section_vi": "III. ĐỌC ĐIỀN TỪ",
+      "type": "reading_cloze",
+      "passage_id": "t2_p1",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+      "prompt": "A key priority in smart city engineering is the (11) __________ of cutting-edge sensor networks that monitor real-time traffic volume and public lighting.",
+      "options": [
+        "A. installation",
+        "B. install",
+        "C. installed",
+        "D. installer"
+      ],
+      "answer": 0,
+      "explanation": "Đứng sau 'the' và trước 'of' cần một danh từ chỉ hành động/sự việc: 'installation' (việc lắp đặt mạng lưới cảm biến hiện đại)."
+    },
+    {
+      "id": "t2_q12",
+      "num": 12,
+      "section": "III. CLOZE READING",
+      "section_vi": "III. ĐỌC ĐIỀN TỪ",
+      "type": "reading_cloze",
+      "passage_id": "t2_p1",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+      "prompt": "By gathering detailed data, municipal authorities can operate transit systems efficiently and (12) __________ a significant reduction in air pollutants.",
+      "options": [
+        "A. make",
+        "B. take",
+        "C. achieve",
+        "D. hold"
+      ],
+      "answer": 2,
+      "explanation": "Cụm động từ kết hợp (collocation): 'achieve a reduction in something' (đạt được mức giảm lượng chất ô nhiễm)."
+    },
+    {
+      "id": "t2_q13",
+      "num": 13,
+      "section": "III. CLOZE READING",
+      "section_vi": "III. ĐỌC ĐIỀN TỪ",
+      "type": "reading_cloze",
+      "passage_id": "t2_p1",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+      "prompt": "(13) __________, high-tech infrastructure alone cannot create an ideal metropolis if social and environmental needs are overlooked.",
+      "options": [
+        "A. Therefore",
+        "B. Moreover",
+        "C. However",
+        "D. For example"
+      ],
+      "answer": 2,
+      "explanation": "Ý tương phản với đoạn trước (công nghệ rất tốt, nhưng một mình công nghệ cao thì không thể tạo nên thành phố lý tưởng nếu bỏ qua nhu cầu xã hội/môi trường). Do đó dùng liên từ chuyển ý 'However'."
+    },
+    {
+      "id": "t2_q14",
+      "num": 14,
+      "section": "III. CLOZE READING",
+      "section_vi": "III. ĐỌC ĐIỀN TỪ",
+      "type": "reading_cloze",
+      "passage_id": "t2_p1",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+      "prompt": "Futuristic cities must incorporate abundant green areas, roof gardens, and designated pedestrian promenades to (14) __________ public well-being.",
+      "options": [
+        "A. promote",
+        "B. threaten",
+        "C. decline",
+        "D. disregard"
+      ],
+      "answer": 0,
+      "explanation": "'Promote public well-being' mang nghĩa 'nâng cao, thúc đẩy sức khoẻ và đời sống tốt đẹp của cộng đồng'."
+    },
+    {
+      "id": "t2_q15",
+      "num": 15,
+      "section": "III. CLOZE READING",
+      "section_vi": "III. ĐỌC ĐIỀN TỪ",
+      "type": "reading_cloze",
+      "passage_id": "t2_p1",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+      "prompt": "Expanding automated public transit also discourages private automobile usage, helping cities (15) __________ urban carbon footprints and combat the severe effects of climate change.",
+      "options": [
+        "A. generate",
+        "B. shrink",
+        "C. maintain",
+        "D. emit"
+      ],
+      "answer": 1,
+      "explanation": "'Shrink carbon footprints' mang nghĩa 'thu nhỏ, cắt giảm lượng phát thải khí nhà kính (dấu chân carbon)'. (generate = tạo ra, maintain = duy trì, emit = phát thải)."
+    },
+    {
+      "id": "t2_q16",
+      "num": 16,
+      "section": "IV. READING COMPREHENSION",
+      "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+      "type": "reading_comp",
+      "passage_id": "t2_p2",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+      "prompt": "Which of the following is the best title for the passage?",
+      "options": [
+        "A. How fast food trigger liver damage",
+        "B. An experiment with McDonald's fast food",
+        "C. Connection between fast food and heart diseases",
+        "D. Putting on weight due to eating fast food"
+      ],
+      "answer": 1,
+      "explanation": "Toàn bộ bài đọc kể về thí nghiệm ăn thức ăn nhanh McDonald's trong 30 ngày của Morgan Spurlock trong bộ phim tài liệu 'Super Size Me'. Do đó, 'An experiment with McDonald's fast food' là tiêu đề phù hợp và khái quát nhất."
+    },
+    {
+      "id": "t2_q17",
+      "num": 17,
+      "section": "IV. READING COMPREHENSION",
+      "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+      "type": "reading_comp",
+      "passage_id": "t2_p2",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+      "prompt": "Which of the following is TRUE about Morgan Spurlock?",
+      "options": [
+        "A. He had to eat Super Size meal three times a week.",
+        "B. He had to eat Super Size meal once a week.",
+        "C. He had to consume Super Size for three meals a day",
+        "D. He had to eat Super Size meal twice a day."
+      ],
+      "answer": 2,
+      "explanation": "Đoạn 1 nêu: 'eat only McDonald's fast food three times a day, every day, for thirty days' kết hợp với nguyên tắc chấp nhận Super Size bất cứ khi nào được gợi ý."
+    },
+    {
+      "id": "t2_q18",
+      "num": 18,
+      "section": "IV. READING COMPREHENSION",
+      "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+      "type": "reading_comp",
+      "passage_id": "t2_p2",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+      "prompt": "In paragraph 2, the word \"giant\" is closest in meaning to __________.",
+      "underlined": "giant",
+      "options": [
+        "A. healthy",
+        "B. light",
+        "C. balanced",
+        "D. big"
+      ],
+      "answer": 3,
+      "explanation": "'Giant' có nghĩa là khổng lồ, cực lớn (~ very big, huge). 'a giant portion' = một khẩu phần ăn rất lớn."
+    },
+    {
+      "id": "t2_q19",
+      "num": 19,
+      "section": "IV. READING COMPREHENSION",
+      "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+      "type": "reading_comp",
+      "passage_id": "t2_p2",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+      "prompt": "Which of the following could get rid of Spurlock's headaches?",
+      "options": [
+        "A. a pain killer",
+        "B. a McDonald's meal",
+        "C. nothing",
+        "D. salad"
+      ],
+      "answer": 1,
+      "explanation": "Đoạn 3 viết: 'The only thing that got rid of his headaches and made him feel better was another McDonald's meal, so his doctors told him he was addicted.'"
+    },
+    {
+      "id": "t2_q20",
+      "num": 20,
+      "section": "IV. READING COMPREHENSION",
+      "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+      "type": "reading_comp",
+      "passage_id": "t2_p2",
+      "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+      "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+      "prompt": "The word \"its\" in paragraph 4 refers to __________.",
+      "underlined": "its",
+      "options": [
+        "A. the film Super Size Me",
+        "B. the menu",
+        "C. McDonald's",
+        "D. the experiment"
+      ],
+      "answer": 0,
+      "explanation": "Trong câu: '...but the film also had a wider impact. Just after its showing in 2004...', đại từ 'its' thay thế cho danh từ 'the film' (Super Size Me) đứng ngay trước."
+    },
+    {
+      "id": "t2_q21",
+      "num": 21,
+      "section": "V. WRITING: Dialogue Arrangement",
+      "section_vi": "V. VIẾT: SẮP XẾP ĐOẠN HỘI THOẠI",
+      "type": "dialogue_arrange",
+      "instruction": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text.",
+      "instruction_vi": "Chọn A, B, C hoặc D để sắp xếp các câu thành đoạn đối thoại hợp lý và có nghĩa.",
+      "prompt": "Arrange the following sentences into a meaningful exchange:\na. Peter: Absolutely. Driverless electric buses and smart traffic sensors will definitely cut down emissions.\nb. Peter: That’s a good point! We'll probably see sensors adjusting traffic lights in real time to avoid congestion.\nc. Mai: Do you think our city will become much greener and smarter in the next decade?\nd. Mai: I agree, and AI technology will also make public transit run on schedule without delays.",
+      "options": [
+        "A. c – d – b – a",
+        "B. a – c – d – b",
+        "C. c – a – d – b",
+        "D. c – b – a – d"
+      ],
+      "answer": 2,
+      "explanation": "Diễn tiến đối thoại mạch lạc:\n1. (c) Mai mở đầu bằng câu hỏi: 'Bạn có nghĩ thành phố chúng ta sẽ xanh và thông minh hơn trong thập kỷ tới không?'\n2. (a) Peter tán thành và dẫn chứng: 'Chắc chắn rồi. Xe buýt điện không người lái và cảm biến thông minh sẽ giảm khí thải.'\n3. (d) Mai đồng tình và bổ sung ý AI: 'Mình đồng ý, và công nghệ AI cũng sẽ giúp phương tiện công cộng đúng giờ.'\n4. (b) Peter khen ý kiến hay và mở rộng thêm: 'Ý kiến hay đó! Chúng ta cũng sẽ thấy cảm biến điều chỉnh đèn giao thông theo thời gian thực.'\n→ Thứ tự đúng: c – a – d – b (Đáp án C)."
+    },
+    {
+      "id": "t2_q22",
+      "num": 22,
+      "section": "V. WRITING: Paragraph Arrangement",
+      "section_vi": "V. VIẾT: SẮP XẾP ĐOẠN VĂN",
+      "type": "paragraph_arrange",
+      "instruction": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text.",
+      "instruction_vi": "Chọn A, B, C hoặc D để sắp xếp các câu thành đoạn văn hoàn chỉnh.",
+      "prompt": "Arrange the following sentences into a coherent paragraph:\na. Furthermore, renewable energy sources such as solar and wind will power most residential buildings and offices.\nb. Smart cities are being developed to offer residents a cleaner and more sustainable lifestyle.\nc. As a result, urban dwellers will enjoy better living standards with minimal impact on the environment.\nd. First of all, advanced technologies are installed to optimize energy use and reduce carbon emissions.\ne. For example, intelligent waste management systems can sort recycling automatically and alert collectors when bins are full.",
+      "options": [
+        "A. b – d – e – a – c",
+        "B. b – e – d – a – c",
+        "C. d – e – b – a – c",
+        "D. b – d – a – e – c"
+      ],
+      "answer": 0,
+      "explanation": "Cấu trúc triển khai đoạn văn:\n• (b) Câu mở đoạn: Các thành phố thông minh đang được phát triển để đem lại lối sống xanh bền vững.\n• (d) Luận điểm 1: Đầu tiên (First of all), công nghệ tiên tiến được lắp đặt để tối ưu năng lượng.\n• (e) Dẫn chứng luận điểm 1: Ví dụ (For example), hệ thống xử lý rác thông minh tự phân loại.\n• (a) Luận điểm 2: Hơn nữa (Furthermore), năng lượng tái tạo sẽ cung cấp điện cho nhà ở và văn phòng.\n• (c) Câu kết đoạn: Nhờ đó (As a result), cư dân đô thị sẽ có mức sống tốt hơn với tác động tối thiểu lên môi trường.\n→ Thứ tự đúng: b – d – e – a – c (Đáp án A)."
+    },
+    {
+      "id": "t2_q23",
+      "num": 23,
+      "section": "V. WRITING: Sentence Transformation",
+      "section_vi": "V. VIẾT: VIẾT LẠI CÂU",
+      "type": "transform",
+      "instruction": "Rewrite the following sentences without changing their meaning, using the cues provided.",
+      "instruction_vi": "Viết lại câu sau sao cho nghĩa không đổi, sử dụng từ gợi ý trong ngoặc.",
+      "prompt": "Passengers are prohibited from opening the emergency exit doors during the flight. (Using MUSTN’T)",
+      "lead_in": "Passengers",
+      "model_answers": [
+        "Passengers mustn't open the emergency exit doors during the flight.",
+        "Passengers must not open the emergency exit doors during the flight."
+      ],
+      "explanation": "Cấu trúc: 'be prohibited from + V-ing' (bị cấm làm gì) = 'mustn't + V-bare' (không được phép làm gì)."
+    },
+    {
+      "id": "t2_q24",
+      "num": 24,
+      "section": "V. WRITING: Sentence Transformation",
+      "section_vi": "V. VIẾT: VIẾT LẠI CÂU",
+      "type": "transform",
+      "instruction": "Rewrite the following sentences without changing their meaning, using the cues provided.",
+      "instruction_vi": "Viết lại câu sau sao cho nghĩa không đổi, sử dụng từ gợi ý trong ngoặc.",
+      "prompt": "That university hospital started researching the new vaccine six months ago. (Using present perfect tense)",
+      "lead_in": "That university hospital has",
+      "model_answers": [
+        "That university hospital has researched the new vaccine for six months.",
+        "That university hospital has been researching the new vaccine for six months."
+      ],
+      "explanation": "Chuyển từ Quá khứ đơn 'started researching... six months ago' sang Hiện tại hoàn thành: 'has researched... for six months' (hoặc Hiện tại hoàn thành tiếp diễn: has been researching)."
+    },
+    {
+      "id": "t2_q25",
+      "num": 25,
+      "section": "V. WRITING: Sentence Building",
+      "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+      "type": "sentence_building",
+      "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+      "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+      "prompt": "Although / sort / household waste / take / time, / recycle / plastic containers / help / protect / the / marine environment.",
+      "model_answers": [
+        "Although sorting household waste takes time, recycling plastic containers helps protect the marine environment.",
+        "Although sorting household waste takes time, recycling plastic containers helps to protect the marine environment."
+      ],
+      "explanation": "• Mệnh đề nhượng bộ: Danh động từ 'Sorting household waste' làm chủ ngữ số ít → động từ 'takes time'.\n• Mệnh đề chính: Danh động từ 'recycling plastic containers' làm chủ ngữ số ít → động từ 'helps protect the marine environment'."
+    },
+    {
+      "id": "t2_q26",
+      "num": 26,
+      "section": "V. WRITING: Sentence Building",
+      "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+      "type": "sentence_building",
+      "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+      "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+      "prompt": "Spend / quality time / together / be / crucial / strengthen / family bonds / and / resolve / daily misunderstandings.",
+      "model_answers": [
+        "Spending quality time together is crucial to strengthen family bonds and resolve daily misunderstandings.",
+        "Spending quality time together is crucial for strengthening family bonds and resolving daily misunderstandings."
+      ],
+      "explanation": "• Chủ ngữ: Danh động từ 'Spending quality time together' (việc dành thời gian chất lượng bên nhau) là số ít → to be chia là 'is'.\n• Cấu trúc: 'be crucial to do something' (mang tính thiết yếu để làm gì) → 'is crucial to strengthen family bonds and resolve daily misunderstandings'."
+    },
+    {
+      "id": "t2_q27",
+      "num": 27,
+      "section": "V. WRITING: Sentence Building",
+      "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+      "type": "sentence_building",
+      "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+      "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+      "prompt": "Create / more / green spaces / which / provide / fresh air / make / metropolitan areas / much / healthier.",
+      "model_answers": [
+        "Creating more green spaces which provide fresh air makes metropolitan areas much healthier.",
+        "Creating more green spaces which provide fresh air will make metropolitan areas much healthier."
+      ],
+      "explanation": "• Chủ ngữ: Danh động từ 'Creating more green spaces' (việc tạo thêm nhiều không gian xanh).\n• Mệnh đề quan hệ bổ nghĩa cho spaces: 'which provide fresh air'.\n• Vị ngữ chính: 'makes/will make metropolitan areas much healthier' (cấu trúc make + O + adj)."
+    },
+    {
+      "id": "t2_q28",
+      "num": 28,
+      "section": "V. WRITING: Sentence Building",
+      "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+      "type": "sentence_building",
+      "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+      "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+      "prompt": "Many / citizens / worry / that / smart technology / not / guarantee / complete safety / because / cyberattacks / can / disrupt / city services.",
+      "model_answers": [
+        "Many citizens worry that smart technology does not guarantee complete safety because cyberattacks can disrupt city services."
+      ],
+      "explanation": "• Mệnh đề chính: 'Many citizens worry that smart technology does not guarantee complete safety' (chủ ngữ technology số ít dùng trợ động từ 'does not').\n• Mệnh đề nguyên nhân: 'because cyberattacks can disrupt city services' (vì các cuộc tấn công mạng có thể gây đình trệ các dịch vụ đô thị)."
+    }
+  ]
+}
