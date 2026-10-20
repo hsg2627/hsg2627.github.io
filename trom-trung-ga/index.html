@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Trộm Trứng Gà! — Gọi Tên Theo Định Mệnh (Questora Style)</title>
-  <meta name="description" content="Game gọi tên học sinh ngẫu nhiên theo phong cách Questora 'Run, Little Sheep' với chủ đề Trộm Trứng Gà. Thầy cô chiếu trên lớp học để gọi tên trả bài.">
+  <title>Trộm Trứng Gà! — Gọi Tên Theo Định Mệnh (Ngân Hàng 47 Mã Đề Unit 1-2)</title>
+  <meta name="description" content="Game gọi tên học sinh ngẫu nhiên theo phong cách Questora 'Run, Little Sheep' với chủ đề Trộm Trứng Gà tích hợp 705 câu hỏi trắc nghiệm từ 47 mã đề Global Success 10.">
   <link rel="icon" href="/favicon.svg">
+  <script src="/assets/trom-trung-ga/mcq_bank.js"></script>
   <style>
     :root {
       --bg: #f4f6f0;
@@ -123,7 +124,7 @@
     }
 
     .arena-header {
-      padding: 16px 24px;
+      padding: 14px 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -132,7 +133,7 @@
     }
 
     .arena-header h2 {
-      font-size: 1.35rem;
+      font-size: 1.3rem;
       font-weight: 800;
       color: var(--green-dark);
     }
@@ -212,23 +213,25 @@
 
     /* RIGHT SIDEBAR: CONTROLS & CLASSROOM */
     .sidebar {
-      width: 360px;
+      width: 380px;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 14px;
       flex-shrink: 0;
+      overflow-y: auto;
+      padding-right: 2px;
     }
 
     .side-card {
       background: #ffffff;
       border-radius: 18px;
       border: 1px solid var(--card-border);
-      padding: 18px;
+      padding: 16px;
       box-shadow: 0 4px 14px rgba(0,0,0,0.03);
     }
 
     .card-title {
-      font-size: 1.05rem;
+      font-size: 1.02rem;
       font-weight: 800;
       color: var(--green-dark);
       display: flex;
@@ -246,9 +249,9 @@
     }
 
     .card-desc {
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       color: var(--text-muted);
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     /* Student Chips Preview */
@@ -256,10 +259,10 @@
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
-      max-height: 130px;
+      max-height: 105px;
       overflow-y: auto;
       padding-right: 4px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .s-chip {
@@ -300,12 +303,32 @@
       background: var(--green-light);
     }
 
+    /* QUESTION BANK SELECTOR */
+    .filter-select {
+      width: 100%;
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1.5px solid #d1d5db;
+      background: #f9fafb;
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      outline: none;
+    }
+
+    .filter-select:focus {
+      border-color: var(--green-mid);
+      background: #fff;
+    }
+
     /* Chase Settings */
     .time-selector {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 8px;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
     .time-btn {
@@ -339,8 +362,8 @@
       font-size: 0.9rem;
       font-weight: 600;
       color: #374151;
-      margin-bottom: 16px;
-      padding: 6px 0;
+      margin-bottom: 14px;
+      padding: 4px 0;
     }
 
     .toggle-switch {
@@ -383,7 +406,7 @@
       background: linear-gradient(135deg, #1e392a, #2d5a3f);
       color: #ffffff;
       border: none;
-      padding: 16px;
+      padding: 15px;
       border-radius: 14px;
       font-size: 1.15rem;
       font-weight: 800;
@@ -423,7 +446,7 @@
     .reveal-modal {
       position: fixed;
       inset: 0;
-      background: rgba(15, 23, 42, 0.75);
+      background: rgba(15, 23, 42, 0.8);
       backdrop-filter: blur(8px);
       z-index: 100;
       display: flex;
@@ -443,9 +466,11 @@
     .reveal-card {
       background: #ffffff;
       border-radius: 24px;
-      max-width: 640px;
+      max-width: 720px;
       width: 100%;
-      padding: 32px;
+      max-height: 94vh;
+      overflow-y: auto;
+      padding: 28px;
       text-align: center;
       box-shadow: 0 25px 60px rgba(0,0,0,0.3);
       border: 4px solid #ef4444;
@@ -459,9 +484,9 @@
     }
 
     .reveal-avatar {
-      width: 110px;
-      height: 110px;
-      margin: 0 auto 16px;
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 12px;
       border-radius: 50%;
       background: #fee2e2;
       border: 4px solid #ef4444;
@@ -482,47 +507,159 @@
       background: #fee2e2;
       color: #dc2626;
       font-weight: 800;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       padding: 4px 14px;
       border-radius: 999px;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .reveal-name {
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-weight: 900;
       color: #1e392a;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
     .reveal-sub {
       color: var(--text-muted);
-      font-size: 1rem;
-      margin-bottom: 20px;
+      font-size: 0.95rem;
+      margin-bottom: 16px;
     }
 
-    .question-box {
+    /* MCQ QUESTION DISPLAY */
+    .mcq-container {
       background: #fffbeb;
       border: 2px dashed #f59e0b;
-      border-radius: 14px;
-      padding: 18px;
+      border-radius: 16px;
+      padding: 18px 20px;
+      text-align: left;
+      margin-bottom: 18px;
+    }
+
+    .mcq-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .mcq-tag {
+      background: #fef3c7;
+      color: #b45309;
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 999px;
+      border: 1px solid #fde68a;
+    }
+
+    .mcq-question-text {
       font-size: 1.25rem;
       font-weight: 700;
       color: #1f2937;
-      margin-bottom: 22px;
-      line-height: 1.4;
+      line-height: 1.45;
+      margin-bottom: 16px;
+    }
+
+    .mcq-question-text u {
+      text-decoration-color: #ef4444;
+      text-decoration-thickness: 3px;
+      color: #b91c1c;
+      background: #fee2e2;
+      padding: 0 4px;
+      border-radius: 4px;
+    }
+
+    /* 4 MCQ OPTIONS GRID (A, B, C, D) */
+    .mcq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .mcq-opt {
+      background: #ffffff;
+      border: 2px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 12px 14px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #374151;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-align: left;
+      transition: all 0.15s ease;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    }
+
+    .mcq-opt:hover {
+      border-color: #3b82f6;
+      background: #eff6ff;
+      transform: translateY(-1px);
+    }
+
+    .mcq-opt .opt-letter {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #f3f4f6;
+      color: #1f2937;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 0.9rem;
+    }
+
+    .mcq-opt.correct {
+      background: #dcfce7 !important;
+      border-color: #22c55e !important;
+      color: #15803d !important;
+    }
+    .mcq-opt.correct .opt-letter {
+      background: #22c55e;
+      color: #fff;
+    }
+
+    .mcq-opt.wrong {
+      background: #fee2e2 !important;
+      border-color: #ef4444 !important;
+      color: #b91c1c !important;
+    }
+    .mcq-opt.wrong .opt-letter {
+      background: #ef4444;
+      color: #fff;
+    }
+
+    /* TEACHER ANSWER KEY REVEAL */
+    .teacher-key-box {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 10px;
+      padding: 8px 14px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #166534;
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
     }
 
     .reveal-actions {
       display: flex;
-      gap: 12px;
+      gap: 10px;
       justify-content: center;
       flex-wrap: wrap;
     }
 
     .btn-act {
-      padding: 12px 24px;
-      font-size: 1rem;
+      padding: 12px 22px;
+      font-size: 0.98rem;
       font-weight: 800;
       border-radius: 12px;
       border: none;
@@ -534,13 +671,16 @@
     }
 
     .btn-correct { background: #16a34a; color: #fff; }
-    .btn-correct:hover { background: #15803d; transform: scale(1.04); }
+    .btn-correct:hover { background: #15803d; transform: scale(1.03); }
 
     .btn-wrong { background: #dc2626; color: #fff; }
-    .btn-wrong:hover { background: #b91c1c; transform: scale(1.04); }
+    .btn-wrong:hover { background: #b91c1c; transform: scale(1.03); }
 
-    .btn-oral { background: #f59e0b; color: #fff; }
-    .btn-oral:hover { background: #d97706; transform: scale(1.04); }
+    .btn-change { background: #f59e0b; color: #fff; }
+    .btn-change:hover { background: #d97706; transform: scale(1.03); }
+
+    .btn-key-toggle { background: #3b82f6; color: #fff; }
+    .btn-key-toggle:hover { background: #2563eb; transform: scale(1.03); }
 
     /* EDIT CLASS MODAL */
     .edit-modal {
@@ -644,7 +784,8 @@
     @media (max-width: 900px) {
       .app-main { flex-direction: column; overflow-y: auto; }
       .sidebar { width: 100%; }
-      .canvas-wrapper { min-height: 480px; }
+      .canvas-wrapper { min-height: 440px; }
+      .mcq-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -693,10 +834,36 @@
       </div>
     </section>
 
-    <!-- RIGHT: CONTROLS (QUESTORA SIDEBAR) -->
+    <!-- RIGHT: CONTROLS & QUESTION BANK CONFIG -->
     <aside class="sidebar">
       
-      <!-- CARD 1: YOUR CLASSROOM -->
+      <!-- CARD 1: QUESTION BANK SELECTOR (47 MÃ ĐỀ) -->
+      <div class="side-card">
+        <div class="card-title">
+          <span>Ngân hàng câu hỏi</span>
+          <span class="badge" id="bankCountBadge">705 câu</span>
+        </div>
+        <p class="card-desc">47 mã đề 15 phút Unit 1-2 Global Success 10 (trừ cloze test):</p>
+
+        <label style="font-size:0.8rem; font-weight:700; color:#4b5563; display:block; margin-bottom:4px;">Chế độ câu hỏi:</label>
+        <select class="filter-select" id="bankModeSelect">
+          <option value="ALL">📚 Toàn bộ 47 mã đề (705 câu ngẫu nhiên)</option>
+          <option value="CLOSEST">🔤 Chỉ câu Đồng nghĩa - Closest (235 câu)</option>
+          <option value="OPPOSITE">🔀 Chỉ câu Trái nghĩa - Opposite (235 câu)</option>
+          <option value="COMPLETION">✏️ Chỉ câu Hoàn thành câu (235 câu)</option>
+          <option value="BY_TEST">🎯 Chọn theo Mã đề cụ thể...</option>
+          <option value="ORAL">🗣 Hỏi miệng trực tiếp ngoài lớp</option>
+        </select>
+
+        <div id="testPickerWrap" style="display:none; margin-bottom:8px;">
+          <label style="font-size:0.8rem; font-weight:700; color:#4b5563; display:block; margin-bottom:4px;">Chọn mã đề:</label>
+          <select class="filter-select" id="testCodeSelect">
+            <!-- Populated by JS -->
+          </select>
+        </div>
+      </div>
+
+      <!-- CARD 2: YOUR CLASSROOM -->
       <div class="side-card">
         <div class="card-title">
           <span>Lớp học của bạn</span>
@@ -713,7 +880,7 @@
         </button>
       </div>
 
-      <!-- CARD 2: THE CHASE -->
+      <!-- CARD 3: THE CHASE -->
       <div class="side-card">
         <div class="card-title">
           <span>Cuộc rượt đuổi (The chase)</span>
@@ -735,7 +902,7 @@
             <span class="slider"></span>
           </label>
         </div>
-        <p style="font-size:0.8rem; color:#6b7280; margin-top:-10px; margin-bottom:16px;">
+        <p style="font-size:0.8rem; color:#6b7280; margin-top:-10px; margin-bottom:14px;">
           Còn lại: <b id="remainingCount">21</b> học sinh chưa bị gọi
         </p>
 
@@ -759,14 +926,36 @@
       <h1 class="reveal-name" id="revealStudentName">Nguyễn Văn A</h1>
       <p class="reveal-sub">Định mệnh đã chọn em lên bảng trả bài!</p>
 
-      <div class="question-box" id="revealQuestion">
-        🗣 Thầy/cô đặt câu hỏi miệng ngoài lớp hoặc bốc câu hỏi bất kỳ!
+      <!-- MCQ BOX -->
+      <div class="mcq-container" id="mcqBox">
+        <div class="mcq-meta">
+          <span class="mcq-tag" id="mcqMetaTag">MÃ ĐỀ 01 ARCANINE · CÂU 02</span>
+          <span class="mcq-tag" style="background:#fee2e2; color:#dc2626;" id="mcqTypeTag">ĐỒNG NGHĨA</span>
+        </div>
+
+        <div class="mcq-question-text" id="mcqQuestionText">
+          We should <u>split</u> the housework fairly among all family members.
+        </div>
+
+        <div class="mcq-grid" id="mcqGrid">
+          <button class="mcq-opt" data-opt="A"><span class="opt-letter">A</span> <span class="opt-val">avoid</span></button>
+          <button class="mcq-opt" data-opt="B"><span class="opt-letter">B</span> <span class="opt-val">finish</span></button>
+          <button class="mcq-opt" data-opt="C"><span class="opt-letter">C</span> <span class="opt-val">divide</span></button>
+          <button class="mcq-opt" data-opt="D"><span class="opt-letter">D</span> <span class="opt-val">forget</span></button>
+        </div>
+
+        <div class="teacher-key-box" id="teacherKeyBox">
+          <span>🔑 <b>Đáp án đúng:</b> <span id="correctKeyText">C. divide</span></span>
+          <span style="font-size:0.8rem; opacity:0.8;">(Giáo viên đối chiếu)</span>
+        </div>
       </div>
 
+      <!-- ACTIONS -->
       <div class="reveal-actions">
         <button class="btn-act btn-correct" id="btnMarkCorrect">✓ Trả lời ĐÚNG (+1 Trứng)</button>
         <button class="btn-act btn-wrong" id="btnMarkWrong">✗ Chưa thuộc bài (Bị mổ)</button>
-        <button class="btn-act btn-oral" id="btnChangeQuestion">🎲 Đổi câu hỏi khác</button>
+        <button class="btn-act btn-key-toggle" id="btnToggleKey">👁️ Xem đáp án</button>
+        <button class="btn-act btn-change" id="btnChangeQuestion">🎲 Đổi câu hỏi khác</button>
       </div>
     </div>
   </div>
@@ -794,7 +983,7 @@
   /**
    * ====================================================================
    * TRỘM TRỨNG GÀ — GỌI TÊN THEO ĐỊNH MỆNH (QUESTORA RUN LITTLE SHEEP STYLE)
-   * Sử dụng toàn bộ Sprite & Animation thực từ Game Asset
+   * Tích hợp 705 câu hỏi trắc nghiệm MCQ từ 47 mã đề Global Success 10
    * ====================================================================
    */
 
@@ -818,8 +1007,8 @@
       try {
         const o = this.ctx.createOscillator();
         const g = this.ctx.createGain();
+        o.frequency.value = freq;
         o.type = type;
-        o.frequency.setValueAtTime(freq, this.ctx.currentTime);
         g.gain.setValueAtTime(gain, this.ctx.currentTime);
         g.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + dur);
         o.connect(g); g.connect(this.ctx.destination);
@@ -828,7 +1017,6 @@
       } catch(e) {}
     }
     playChaseStart() {
-      // Cluck squawk & drum
       this.playTone(300, 'sawtooth', 0.2, 0.25);
       setTimeout(() => this.playTone(220, 'sawtooth', 0.3, 0.3), 120);
     }
@@ -847,7 +1035,7 @@
   }
   const sound = new SoundEngine();
 
-  // --- DEFAULT ROSTER (MATCHING TIKTOK VIDEO SCREENSHOT) ---
+  // --- DEFAULT ROSTER ---
   const DEFAULT_STUDENTS = [
     "Bảo Trân", "Hoàng Nhân", "Nguyễn Hoài", "Phúc Nhân", "Hồng Xuyến",
     "Đăng Triều", "Hoàng Long", "Tiến Đạt", "Hoài Thy", "Văn Chương",
@@ -858,20 +1046,24 @@
   const CLASS_1009 = Array.from({ length: 42 }, (_, i) => `NK1009-${String(i + 1).padStart(2, '0')}`);
   const CLASS_1010 = Array.from({ length: 40 }, (_, i) => `NK1010-${String(i + 1).padStart(2, '0')}`);
 
-  const SAMPLE_QUESTIONS = [
-    "Give the English word for 'bảo vệ môi trường' (2 words).",
-    "What is the synonym of 'essential'?",
-    "Fill in the blank: We must cut down on our carbon ______.",
-    "What does 'biodiversity' mean in Vietnamese?",
-    "Give the noun form of the verb 'pollute'.",
-    "Conditional Type 1: 'If it (rain) ______, we will stay at home.'",
-    "Rewrite using Passive: 'The cat ate the fish.'",
-    "Which modal verb expresses strong prohibition: 'mustn't' or 'needn't'?",
-    "Reported Speech: She said, 'I am tired.' -> She said that ______.",
-    "🗣 Thầy/cô đặt câu hỏi miệng trực tiếp cho học sinh!"
+  // Fallback if mcq_bank.js is not loaded
+  const FALLBACK_BANK = [
+    {
+      test_stt: 1, test_code: "Arcanine", q_num: 1,
+      section_label: "ĐỒNG NGHĨA",
+      question: "My father is the <u>breadwinner</u> in our family.",
+      options: {
+        A: "person who earns money for the family",
+        B: "person who cooks for the family",
+        C: "person who looks after the children",
+        D: "person who cleans the house"
+      },
+      answer: "A",
+      answer_text: "person who earns money for the family"
+    }
   ];
 
-  // --- PRELOAD SPRITE IMAGES ---
+  // --- PRELOAD SPRITES ---
   const sprites = {};
   const spriteSources = {
     boySneak: '/assets/trom-trung-ga/boy_sneak.png',
@@ -880,15 +1072,13 @@
     henWalk:  '/assets/trom-trung-ga/hen_walk.png',
     henAlert: '/assets/trom-trung-ga/hen_alert.png',
     henPeck:  '/assets/trom-trung-ga/hen_peck.png',
-    coop:     '/assets/trom-trung-ga/coop.png',
-    fxPow:    '/assets/trom-trung-ga/fx_pow.png',
-    fxBonk:   '/assets/trom-trung-ga/fx_bonk.png'
+    coop:     '/assets/trom-trung-ga/coop.png'
   };
 
-  Object.entries(spriteSources).forEach(([key, src]) => {
+  Object.entries(spriteSources).forEach(([k, src]) => {
     const img = new Image();
     img.src = src;
-    sprites[key] = img;
+    sprites[k] = img;
   });
 
   // --- ENTITY CLASSES ---
@@ -896,7 +1086,6 @@
     constructor(name, cx, cy, rx, ry) {
       this.name = name;
       this.called = false;
-      // Spawn random inside ellipse
       const angle = Math.random() * Math.PI * 2;
       const r = Math.sqrt(Math.random()) * 0.75;
       this.x = cx + Math.cos(angle) * (rx * r);
@@ -904,7 +1093,7 @@
       this.vx = (Math.random() - 0.5) * 40;
       this.vy = (Math.random() - 0.5) * 40;
       this.radius = 24;
-      this.state = 'wander'; // wander, flee, pecked
+      this.state = 'wander';
       this.wanderTimer = Math.random() * 2;
       this.animBob = Math.random() * Math.PI * 2;
       this.facing = Math.random() < 0.5 ? 1 : -1;
@@ -912,13 +1101,9 @@
 
     update(dt, cx, cy, rx, ry, hen, isChasing) {
       this.animBob += dt * 6;
-
-      if (this.state === 'pecked') {
-        return; // stay in shock
-      }
+      if (this.state === 'pecked') return;
 
       if (isChasing) {
-        // FLEE FROM HEN!
         const dx = this.x - hen.x;
         const dy = this.y - hen.y;
         const dist = Math.hypot(dx, dy);
@@ -929,7 +1114,6 @@
           this.facing = dx > 0 ? 1 : -1;
         }
       } else {
-        // GENTLE WANDER
         this.wanderTimer -= dt;
         if (this.wanderTimer <= 0) {
           this.wanderTimer = 1.5 + Math.random() * 2;
@@ -941,7 +1125,6 @@
         }
       }
 
-      // Max speed clamp
       const maxSpd = isChasing ? 140 : 45;
       const curSpd = Math.hypot(this.vx, this.vy);
       if (curSpd > maxSpd) {
@@ -952,16 +1135,13 @@
       this.x += this.vx * dt;
       this.y += this.vy * dt;
 
-      // Soft damping
       this.vx *= 0.96;
       this.vy *= 0.96;
 
-      // Elliptical Fence Boundary Constraint
       const nx = (this.x - cx) / rx;
       const ny = (this.y - cy) / ry;
       const d = Math.hypot(nx, ny);
       if (d > 0.88) {
-        // Push gently back inward
         this.vx -= nx * 150 * dt;
         this.vy -= ny * 150 * dt;
       }
@@ -971,13 +1151,11 @@
       ctx.save();
       const bob = Math.sin(this.animBob) * 3;
 
-      // Drop shadow
       ctx.fillStyle = "rgba(0,0,0,0.12)";
       ctx.beginPath();
       ctx.ellipse(this.x, this.y + 18, 18, 7, 0, 0, Math.PI * 2);
       ctx.fill();
 
-      // Student Sprite
       let img = sprites.boySneak;
       if (this.state === 'pecked') img = sprites.boyHurt;
       else if (Math.hypot(this.vx, this.vy) < 5) img = sprites.boyIdle;
@@ -988,15 +1166,9 @@
         ctx.scale(this.facing, 1);
         ctx.drawImage(img, -24, -28, 48, 48);
         ctx.restore();
-      } else {
-        // Fallback circle avatar
-        ctx.fillStyle = "#3b82f6";
-        ctx.beginPath();
-        ctx.arc(this.x, this.y - 10 + bob, 18, 0, Math.PI * 2);
-        ctx.fill();
       }
 
-      // Floating Name Pill Tag (Questora style)
+      // Name Pill
       ctx.font = "bold 13px system-ui";
       const nameW = ctx.measureText(this.name).width;
       const pillW = nameW + 20;
@@ -1004,13 +1176,11 @@
       const pillX = this.x - pillW / 2;
       const pillY = this.y - 48 + bob;
 
-      // Pill shadow
       ctx.fillStyle = "rgba(0,0,0,0.08)";
       ctx.beginPath();
       ctx.roundRect(pillX + 1, pillY + 2, pillW, pillH, 999);
       ctx.fill();
 
-      // Pill background
       ctx.fillStyle = this.called ? "#e5e7eb" : "#ffffff";
       ctx.beginPath();
       ctx.roundRect(pillX, pillY, pillW, pillH, 999);
@@ -1019,7 +1189,6 @@
       ctx.lineWidth = this.state === 'pecked' ? 2 : 1;
       ctx.stroke();
 
-      // Pill text
       ctx.fillStyle = this.called ? "#9ca3af" : "#1f2937";
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
@@ -1036,16 +1205,14 @@
       this.vx = 0;
       this.vy = 0;
       this.target = null;
-      this.state = 'idle'; // idle, chase, peck
+      this.state = 'idle';
       this.facing = 1;
       this.animBob = 0;
     }
 
     update(dt, cx, cy, rx, ry, isChasing) {
       this.animBob += dt * 10;
-
       if (!isChasing || !this.target) {
-        // Rest near chicken coop on the right
         const tx = cx + rx * 0.75;
         const ty = cy - ry * 0.2;
         this.x += (tx - this.x) * dt * 2;
@@ -1054,7 +1221,6 @@
         return;
       }
 
-      // RUSH TOWARDS TARGET!
       const dx = this.target.x - this.x;
       const dy = this.target.y - this.y;
       const dist = Math.hypot(dx, dy);
@@ -1065,7 +1231,7 @@
         this.vy = (dy / dist) * chaseSpeed;
         this.x += this.vx * dt;
         this.y += this.vy * dt;
-        this.facing = dx > 0 ? -1 : 1; // Facing forward
+        this.facing = dx > 0 ? -1 : 1;
       }
     }
 
@@ -1073,7 +1239,6 @@
       ctx.save();
       const bob = Math.sin(this.animBob) * 4;
 
-      // Drop shadow
       ctx.fillStyle = "rgba(0,0,0,0.15)";
       ctx.beginPath();
       ctx.ellipse(this.x, this.y + 22, 22, 8, 0, 0, Math.PI * 2);
@@ -1115,10 +1280,16 @@
       this.targetStudent = null;
       this.noRepeat = true;
 
+      // Question Bank
+      this.bankData = window.MCQ_BANK || { questions: FALLBACK_BANK, tests: [] };
+      this.currentQ = null;
+      this.isKeyVisible = false;
+
       this.initData();
       this.resize();
       window.addEventListener("resize", () => this.resize());
 
+      this.populateTestPicker();
       this.bindUI();
       this.lastTime = performance.now();
       requestAnimationFrame(this.loop.bind(this));
@@ -1133,6 +1304,20 @@
       }
       this.resetEntities();
       this.renderSidebar();
+    }
+
+    populateTestPicker() {
+      const select = document.getElementById("testCodeSelect");
+      select.innerHTML = "";
+      const tests = this.bankData.tests || [];
+      tests.forEach(t => {
+        const opt = document.createElement("option");
+        opt.value = t.stt;
+        opt.textContent = `Mã ${String(t.stt).padStart(2, '0')}: ${t.code} (${t.question_count} câu)`;
+        select.appendChild(opt);
+      });
+
+      document.getElementById("bankCountBadge").textContent = `${this.bankData.questions.length} câu`;
     }
 
     resetEntities() {
@@ -1180,19 +1365,47 @@
       remainEl.textContent = this.noRepeat ? uncalled : this.studentList.length;
     }
 
+    // Filter questions based on sidebar selection
+    pickQuestion() {
+      const mode = document.getElementById("bankModeSelect").value;
+      const questions = this.bankData.questions;
+
+      if (mode === "ORAL") {
+        return {
+          isOral: true,
+          test_code: "HỎI MIỆNG",
+          section_label: "TRẢ BÀI",
+          question: "🗣 Thầy/cô đặt câu hỏi miệng trực tiếp cho học sinh ngoài lớp!"
+        };
+      }
+
+      let pool = questions;
+      if (mode === "CLOSEST") {
+        pool = questions.filter(q => q.section === "CLOSEST");
+      } else if (mode === "OPPOSITE") {
+        pool = questions.filter(q => q.section === "OPPOSITE");
+      } else if (mode === "COMPLETION") {
+        pool = questions.filter(q => q.section === "COMPLETION");
+      } else if (mode === "BY_TEST") {
+        const testStt = parseInt(document.getElementById("testCodeSelect").value, 10);
+        pool = questions.filter(q => q.test_stt === testStt);
+      }
+
+      if (!pool || pool.length === 0) pool = questions;
+      return pool[Math.floor(Math.random() * pool.length)];
+    }
+
     startChase() {
       if (this.isChasing) return;
 
-      // Choose candidate pool
       let pool = this.students;
       if (this.noRepeat) {
         pool = this.students.filter(s => !this.calledSet.has(s.name));
         if (pool.length === 0) {
-          // Reset pool if all were called
           this.calledSet.clear();
           this.students.forEach(s => s.called = false);
           pool = this.students;
-          showToast("Đã hoàn thành 1 vòng gọi tất cả! Đang bắt đầu vòng mới.");
+          showToast("Đã hoàn thành 1 vòng gọi cả lớp! Đang bắt đầu vòng mới.");
         }
       }
 
@@ -1201,7 +1414,6 @@
         return;
       }
 
-      // Pick random lucky/unlucky student!
       this.targetStudent = pool[Math.floor(Math.random() * pool.length)];
       this.hen.target = this.targetStudent;
       this.hen.state = 'chase';
@@ -1234,7 +1446,6 @@
 
         sound.playPeckHit();
 
-        // Show Reveal Modal after slight pause
         setTimeout(() => {
           this.showReveal(this.targetStudent.name);
         }, 600);
@@ -1245,10 +1456,65 @@
 
     showReveal(name) {
       document.getElementById("revealStudentName").textContent = name;
-      const q = SAMPLE_QUESTIONS[Math.floor(Math.random() * SAMPLE_QUESTIONS.length)];
-      document.getElementById("revealQuestion").textContent = q;
+      this.currentQ = this.pickQuestion();
+      this.renderMCQ(this.currentQ);
       document.getElementById("revealModal").classList.add("show");
       sound.playFanfare();
+    }
+
+    renderMCQ(q) {
+      this.isKeyVisible = false;
+      document.getElementById("teacherKeyBox").style.display = "none";
+      document.getElementById("btnToggleKey").textContent = "👁️ Xem đáp án";
+
+      const metaTag = document.getElementById("mcqMetaTag");
+      const typeTag = document.getElementById("mcqTypeTag");
+      const qText = document.getElementById("mcqQuestionText");
+      const grid = document.getElementById("mcqGrid");
+
+      if (q.isOral) {
+        metaTag.textContent = "HỎI MIỆNG TRỰC TIẾP";
+        typeTag.textContent = "TRẢ BÀI";
+        qText.innerHTML = q.question;
+        grid.style.display = "none";
+        document.getElementById("teacherKeyBox").style.display = "none";
+        return;
+      }
+
+      grid.style.display = "grid";
+      metaTag.textContent = `MÃ ĐỀ: ${String(q.test_stt).padStart(2,'0')} ${q.test_code.toUpperCase()} · CÂU ${q.q_num}`;
+      typeTag.textContent = q.section_label;
+      qText.innerHTML = q.question;
+
+      grid.innerHTML = "";
+      ['A', 'B', 'C', 'D'].forEach(letter => {
+        const val = q.options[letter] || '';
+        const btn = document.createElement("button");
+        btn.className = "mcq-opt";
+        btn.dataset.letter = letter;
+        btn.innerHTML = `<span class="opt-letter">${letter}</span> <span class="opt-val">${escapeHtml(val)}</span>`;
+
+        btn.onclick = () => {
+          // Check correctness on option click
+          grid.querySelectorAll(".mcq-opt").forEach(b => b.classList.remove("correct", "wrong"));
+          if (letter === q.answer) {
+            btn.classList.add("correct");
+            sound.playTone(880, 'sine', 0.2, 0.2);
+            showToast("Chính xác! Học sinh chọn đáp án đúng.");
+          } else {
+            btn.classList.add("wrong");
+            // Highlight true answer
+            const correctBtn = grid.querySelector(`[data-letter="${q.answer}"]`);
+            if (correctBtn) correctBtn.classList.add("correct");
+            sound.playTone(200, 'sawtooth', 0.3, 0.2);
+            showToast("Sai rồi!");
+          }
+        };
+
+        grid.appendChild(btn);
+      });
+
+      document.getElementById("correctKeyText").textContent = `${q.answer}. ${q.answer_text}`;
     }
 
     closeReveal() {
@@ -1261,10 +1527,8 @@
     }
 
     bindUI() {
-      // Start button
       document.getElementById("btnStartChase").onclick = () => this.startChase();
 
-      // Spacebar hotkey
       window.addEventListener("keydown", (e) => {
         if (e.code === "Space" && !document.querySelector(".edit-modal.show")) {
           e.preventDefault();
@@ -1285,20 +1549,17 @@
         };
       });
 
-      // Toggle no repeat
       document.getElementById("toggleNoRepeat").onchange = (e) => {
         this.noRepeat = e.target.checked;
         this.renderSidebar();
       };
 
-      // Sound button
       document.getElementById("btnSound").onclick = () => {
         sound.enabled = !sound.enabled;
         document.getElementById("btnSound").textContent = sound.enabled ? "🔊 Âm thanh" : "🔇 Âm thanh";
         showToast(sound.enabled ? "Đã bật âm thanh" : "Đã tắt âm thanh");
       };
 
-      // Reset pool button
       document.getElementById("btnResetPool").onclick = () => {
         this.calledSet.clear();
         this.students.forEach(s => s.called = false);
@@ -1306,7 +1567,6 @@
         showToast("Đã đặt lại danh sách gọi tên!");
       };
 
-      // Fullscreen
       document.getElementById("btnFullscreen").onclick = () => {
         if (!document.fullscreenElement) {
           document.documentElement.requestFullscreen().catch(() => {});
@@ -1315,19 +1575,30 @@
         }
       };
 
+      // Bank mode selector
+      document.getElementById("bankModeSelect").onchange = (e) => {
+        const pickerWrap = document.getElementById("testPickerWrap");
+        pickerWrap.style.display = e.target.value === "BY_TEST" ? "block" : "none";
+      };
+
       // Reveal buttons
       document.getElementById("btnMarkCorrect").onclick = () => {
-        showToast("Đã ghi nhận ĐÚNG!");
+        showToast("✓ Đã ghi nhận ĐÚNG!");
         this.closeReveal();
       };
       document.getElementById("btnMarkWrong").onclick = () => {
-        showToast("Đã ghi nhận CHƯA THUỘC!");
+        showToast("✗ Đã ghi nhận CHƯA THUỘC!");
         this.closeReveal();
       };
       document.getElementById("btnChangeQuestion").onclick = () => {
-        const q = SAMPLE_QUESTIONS[Math.floor(Math.random() * SAMPLE_QUESTIONS.length)];
-        document.getElementById("revealQuestion").textContent = q;
-        showToast("Đã đổi câu hỏi!");
+        this.currentQ = this.pickQuestion();
+        this.renderMCQ(this.currentQ);
+        showToast("Đã đổi câu hỏi khác!");
+      };
+      document.getElementById("btnToggleKey").onclick = () => {
+        this.isKeyVisible = !this.isKeyVisible;
+        document.getElementById("teacherKeyBox").style.display = this.isKeyVisible ? "flex" : "none";
+        document.getElementById("btnToggleKey").textContent = this.isKeyVisible ? "🙈 Ẩn đáp án" : "👁️ Xem đáp án";
       };
 
       // Edit class modal
@@ -1356,7 +1627,6 @@
         showToast(`Đã lưu ${list.length} học sinh thành công!`);
       };
 
-      // Presets
       document.getElementById("loadPreset1009").onclick = () => {
         document.getElementById("editListInput").value = CLASS_1009.join("\n");
       };
@@ -1413,7 +1683,7 @@
 
       ctx.clearRect(0, 0, w, h);
 
-      // 1. Draw Farm Meadow Ground
+      // Farm Meadow Ground
       const groundGrad = ctx.createRadialGradient(cx, cy, 50, cx, cy, rx * 1.1);
       groundGrad.addColorStop(0, "#eef6e6");
       groundGrad.addColorStop(0.85, "#dce9ce");
@@ -1430,20 +1700,18 @@
       ctx.ellipse(cx, cy, rx * 0.75, ry * 0.75, 0, 0, Math.PI * 2);
       ctx.stroke();
 
-      // 2. Draw Wooden Fence Posts around the perimeter
+      // Wooden Fence Posts
       const fencePosts = 28;
       for (let i = 0; i < fencePosts; i++) {
         const ang = (Math.PI * 2 * i) / fencePosts;
         const fx = cx + Math.cos(ang) * rx;
         const fy = cy + Math.sin(ang) * ry;
 
-        // Wooden fence post shadow
         ctx.fillStyle = "rgba(0,0,0,0.1)";
         ctx.beginPath();
         ctx.ellipse(fx + 2, fy + 8, 8, 4, 0, 0, Math.PI * 2);
         ctx.fill();
 
-        // Wooden Post
         ctx.fillStyle = "#8d6e63";
         ctx.beginPath();
         ctx.roundRect(fx - 4, fy - 18, 8, 24, 2);
@@ -1453,7 +1721,7 @@
         ctx.stroke();
       }
 
-      // Connecting fence rails
+      // Rails
       ctx.strokeStyle = "rgba(109, 76, 65, 0.55)";
       ctx.lineWidth = 3;
       ctx.beginPath();
@@ -1463,7 +1731,7 @@
       ctx.ellipse(cx, cy - 14, rx, ry, 0, 0, Math.PI * 2);
       ctx.stroke();
 
-      // 3. Draw Farm Trees & Bushes around perimeter
+      // Trees
       const treeAngles = [0.2, 0.8, 1.6, 2.5, 3.4, 4.3, 5.2];
       treeAngles.forEach(ang => {
         const tx = cx + Math.cos(ang) * (rx + 42);
@@ -1471,24 +1739,24 @@
         this.drawTree(ctx, tx, ty);
       });
 
-      // 4. Draw Center Straw Bedding with Golden Eggs!
+      // Eggs
       this.drawEggNest(ctx, cx, cy);
 
-      // 5. Draw Chicken Coop on the right
+      // Coop
       const coopX = cx + rx * 0.8;
       const coopY = cy - ry * 0.25;
       if (sprites.coop && sprites.coop.complete) {
         ctx.drawImage(sprites.coop, coopX - 45, coopY - 45, 90, 80);
       }
 
-      // 6. Draw Students sorted by Y for correct isometric depth!
+      // Draw Entities sorted by Y
       const allEntities = [...this.students];
       if (this.hen) allEntities.push(this.hen);
       allEntities.sort((a, b) => a.y - b.y);
 
       allEntities.forEach(ent => ent.draw(ctx));
 
-      // 7. Spotlight on caught student during reveal
+      // Spotlight on caught student
       if (this.targetStudent && this.targetStudent.state === 'pecked') {
         ctx.save();
         ctx.fillStyle = "rgba(239, 68, 68, 0.15)";
@@ -1501,17 +1769,14 @@
 
     drawTree(ctx, x, y) {
       ctx.save();
-      // Tree shadow
       ctx.fillStyle = "rgba(0,0,0,0.1)";
       ctx.beginPath();
       ctx.ellipse(x + 2, y + 15, 20, 8, 0, 0, Math.PI * 2);
       ctx.fill();
 
-      // Trunk
       ctx.fillStyle = "#795548";
       ctx.fillRect(x - 4, y, 8, 16);
 
-      // Leaves (soft pastel green balls)
       ctx.fillStyle = "#81c784";
       ctx.beginPath();
       ctx.arc(x, y - 10, 24, 0, Math.PI * 2);
@@ -1526,7 +1791,6 @@
 
     drawEggNest(ctx, cx, cy) {
       ctx.save();
-      // Straw bed
       ctx.fillStyle = "#fef3c7";
       ctx.beginPath();
       ctx.ellipse(cx, cy, 55, 36, 0, 0, Math.PI * 2);
@@ -1535,7 +1799,6 @@
       ctx.lineWidth = 2;
       ctx.stroke();
 
-      // Straw texture lines
       ctx.strokeStyle = "#f59e0b";
       for (let i = 0; i < 8; i++) {
         const a = (Math.PI * 2 * i) / 8;
@@ -1545,7 +1808,6 @@
         ctx.stroke();
       }
 
-      // Golden Eggs
       const eggPositions = [[-14, -5], [12, -4], [0, 8], [-6, -12], [8, 5]];
       eggPositions.forEach(([dx, dy]) => {
         ctx.fillStyle = "#fffbeb";
@@ -1561,8 +1823,6 @@
     }
   }
 
-  // --- TOAST HELPER ---
-  let toastTimer = null;
   function showToast(msg) {
     const t = document.getElementById("toast");
     t.textContent = msg;
@@ -1570,8 +1830,12 @@
     clearTimeout(toastTimer);
     toastTimer = setTimeout(() => t.classList.remove("show"), 2000);
   }
+  let toastTimer = null;
 
-  // Start app
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;" }[c]));
+  }
+
   window.addEventListener("DOMContentLoaded", () => {
     new QuestoraGame();
   });
