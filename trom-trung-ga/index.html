@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Trộm Trứng Gà! — Gọi Tên Theo Định Mệnh (Questora Style)</title>
+  <meta name="description" content="Game gọi tên học sinh ngẫu nhiên theo phong cách Questora 'Run, Little Sheep' với chủ đề Trộm Trứng Gà. Thầy cô chiếu trên lớp học để gọi tên trả bài.">
+  <link rel="icon" href="/favicon.svg">
+  <style>
+    :root {
+      --bg: #f4f6f0;
+      --card-bg: #ffffff;
+      --card-border: #e2e8d8;
+      --text-main: #1f2937;
+      --text-muted: #6b7280;
+      --green-dark: #1e392a;
+      --green-mid: #2d5a3f;
+      --green-light: #e8ede0;
+      --green-accent: #10b981;
+      --danger: #ef4444;
+      --warning: #f59e0b;
+      --font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: var(--font);
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* TOP BAR */
+    header.topbar {
+      height: 56px;
+      background: #ffffff;
+      border-bottom: 1px solid var(--card-border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      flex-shrink: 0;
+      z-index: 10;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+
+    .brand-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--green-dark);
+    }
+
+    .brand-title .brand-badge {
+      font-size: 0.75rem;
+      background: var(--green-light);
+      color: var(--green-mid);
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-weight: 700;
+      border: 1px solid var(--card-border);
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .top-btn {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      color: var(--text-main);
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .top-btn:hover {
+      background: #f3f4f6;
+      border-color: #d1d5db;
+      transform: translateY(-1px);
+    }
+
+    /* MAIN CONTAINER: 2 COLUMNS (QUESTORA STYLE) */
+    .app-main {
+      flex: 1;
+      display: flex;
+      overflow: hidden;
+      padding: 16px;
+      gap: 16px;
+    }
+
+    /* LEFT: BIG ARENA CARD */
+    .arena-container {
+      flex: 1;
+      background: #ffffff;
+      border-radius: 20px;
+      border: 1px solid var(--card-border);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.03);
+    }
+
+    .arena-header {
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #f0f3ea;
+      z-index: 5;
+    }
+
+    .arena-header h2 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--green-dark);
+    }
+
+    .arena-header .sub-status {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .arena-header .sub-status .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--green-accent);
+    }
+
+    .arena-header .sub-status .dot.chasing {
+      background: var(--danger);
+      animation: pulse 0.4s infinite;
+    }
+
+    @keyframes pulse { 50% { opacity: 0.5; } }
+
+    .canvas-wrapper {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      background: radial-gradient(circle at center, #edf4e4 0%, #d8e5cb 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #gameCanvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* COUNTDOWN BANNER IN ARENA */
+    .timer-overlay {
+      position: absolute;
+      top: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(30, 57, 42, 0.92);
+      backdrop-filter: blur(6px);
+      color: #ffffff;
+      padding: 8px 24px;
+      border-radius: 999px;
+      font-size: 1.25rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      pointer-events: none;
+      z-index: 6;
+      opacity: 0;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .timer-overlay.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .timer-overlay .num {
+      color: #facc15;
+      font-size: 1.6rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* RIGHT SIDEBAR: CONTROLS & CLASSROOM */
+    .sidebar {
+      width: 360px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      flex-shrink: 0;
+    }
+
+    .side-card {
+      background: #ffffff;
+      border-radius: 18px;
+      border: 1px solid var(--card-border);
+      padding: 18px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.03);
+    }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--green-dark);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+
+    .card-title .badge {
+      font-size: 0.8rem;
+      background: var(--green-light);
+      color: var(--green-mid);
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+
+    .card-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    /* Student Chips Preview */
+    .chip-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      max-height: 130px;
+      overflow-y: auto;
+      padding-right: 4px;
+      margin-bottom: 12px;
+    }
+
+    .s-chip {
+      background: #f3f4f6;
+      color: #374151;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border: 1px solid #e5e7eb;
+    }
+
+    .s-chip.called {
+      opacity: 0.45;
+      text-decoration: line-through;
+    }
+
+    .btn-outline {
+      width: 100%;
+      background: #ffffff;
+      border: 1.5px dashed #cbd5e1;
+      color: #475569;
+      padding: 8px;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--green-mid);
+      color: var(--green-mid);
+      background: var(--green-light);
+    }
+
+    /* Chase Settings */
+    .time-selector {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .time-btn {
+      background: #f9fafb;
+      border: 1.5px solid #e5e7eb;
+      color: #4b5563;
+      padding: 8px 4px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.12s ease;
+    }
+
+    .time-btn:hover {
+      border-color: #9ca3af;
+    }
+
+    .time-btn.active {
+      background: var(--green-light);
+      border-color: var(--green-mid);
+      color: var(--green-dark);
+      font-weight: 800;
+    }
+
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #374151;
+      margin-bottom: 16px;
+      padding: 6px 0;
+    }
+
+    .toggle-switch {
+      position: relative;
+      width: 44px;
+      height: 24px;
+      display: inline-block;
+    }
+
+    .toggle-switch input { opacity: 0; width: 0; height: 0; }
+
+    .slider {
+      position: absolute;
+      inset: 0;
+      background: #d1d5db;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background: #fff;
+      border-radius: 50%;
+      transition: 0.2s;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+
+    input:checked + .slider { background: var(--green-accent); }
+    input:checked + .slider:before { transform: translateX(20px); }
+
+    /* BIG START THE CHASE BUTTON */
+    .btn-chase {
+      width: 100%;
+      background: linear-gradient(135deg, #1e392a, #2d5a3f);
+      color: #ffffff;
+      border: none;
+      padding: 16px;
+      border-radius: 14px;
+      font-size: 1.15rem;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 8px 20px rgba(30, 57, 42, 0.25);
+      transition: all 0.15s ease;
+    }
+
+    .btn-chase:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(30, 57, 42, 0.35);
+      background: linear-gradient(135deg, #244633, #356b4a);
+    }
+
+    .btn-chase:active {
+      transform: translateY(0);
+    }
+
+    .btn-chase:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    .key-tip {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    /* REVEAL / QUESTION MODAL (KHI BỊ GÀ MỔ) */
+    .reveal-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+
+    .reveal-modal.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .reveal-card {
+      background: #ffffff;
+      border-radius: 24px;
+      max-width: 640px;
+      width: 100%;
+      padding: 32px;
+      text-align: center;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+      border: 4px solid #ef4444;
+      transform: scale(0.9);
+      transition: transform 0.25s ease;
+      position: relative;
+    }
+
+    .reveal-modal.show .reveal-card {
+      transform: scale(1);
+    }
+
+    .reveal-avatar {
+      width: 110px;
+      height: 110px;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      background: #fee2e2;
+      border: 4px solid #ef4444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 20px rgba(239, 68, 68, 0.25);
+    }
+
+    .reveal-avatar img {
+      width: 85%;
+      height: 85%;
+      object-fit: contain;
+    }
+
+    .reveal-badge {
+      display: inline-block;
+      background: #fee2e2;
+      color: #dc2626;
+      font-weight: 800;
+      font-size: 0.85rem;
+      padding: 4px 14px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+
+    .reveal-name {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: #1e392a;
+      margin-bottom: 6px;
+    }
+
+    .reveal-sub {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .question-box {
+      background: #fffbeb;
+      border: 2px dashed #f59e0b;
+      border-radius: 14px;
+      padding: 18px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #1f2937;
+      margin-bottom: 22px;
+      line-height: 1.4;
+    }
+
+    .reveal-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-act {
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: 800;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+
+    .btn-correct { background: #16a34a; color: #fff; }
+    .btn-correct:hover { background: #15803d; transform: scale(1.04); }
+
+    .btn-wrong { background: #dc2626; color: #fff; }
+    .btn-wrong:hover { background: #b91c1c; transform: scale(1.04); }
+
+    .btn-oral { background: #f59e0b; color: #fff; }
+    .btn-oral:hover { background: #d97706; transform: scale(1.04); }
+
+    /* EDIT CLASS MODAL */
+    .edit-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(6px);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+
+    .edit-modal.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .edit-box {
+      background: #ffffff;
+      border-radius: 20px;
+      max-width: 640px;
+      width: 100%;
+      padding: 24px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    }
+
+    .edit-box h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--green-dark);
+      margin-bottom: 12px;
+    }
+
+    .edit-box textarea {
+      width: 100%;
+      height: 180px;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #d1d5db;
+      font-family: inherit;
+      font-size: 0.95rem;
+      margin-bottom: 14px;
+      resize: vertical;
+    }
+
+    .preset-chips {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .chip-btn {
+      background: #f3f4f6;
+      border: 1px solid #e5e7eb;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .chip-btn:hover {
+      background: #e5e7eb;
+    }
+
+    .edit-footer {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    /* TOAST */
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(30px);
+      background: rgba(15, 23, 42, 0.92);
+      color: #ffffff;
+      padding: 8px 20px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.2s ease;
+      z-index: 200;
+    }
+
+    #toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    @media (max-width: 900px) {
+      .app-main { flex-direction: column; overflow-y: auto; }
+      .sidebar { width: 100%; }
+      .canvas-wrapper { min-height: 480px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="brand-title">
+      <span style="font-size: 1.5rem;">🐔</span>
+      <span>Trộm Trứng Gà!</span>
+      <span class="brand-badge">Gọi Tên Theo Định Mệnh</span>
+    </div>
+
+    <div class="top-actions">
+      <button class="top-btn" id="btnSound">🔊 Âm thanh</button>
+      <button class="top-btn" id="btnResetPool">🔄 Đặt lại danh sách</button>
+      <button class="top-btn" id="btnFullscreen">⛶ Toàn màn hình</button>
+      <a class="top-btn" href="/Global_Success_10/" style="text-decoration:none;">🏠 Teacher Corner</a>
+    </div>
+  </header>
+
+  <!-- MAIN APP (QUESTORA STYLE 2 COLUMNS) -->
+  <main class="app-main">
+    
+    <!-- LEFT: ARENA -->
+    <section class="arena-container">
+      <div class="arena-header">
+        <div>
+          <h2>Who will be called today? 🎯</h2>
+          <p style="font-size:0.85rem; color:#6b7280; margin-top:2px;">
+            Học sinh đang lén trộm trứng trong sân — Gà mẹ sẽ rượt đuổi và mổ trúng một em!
+          </p>
+        </div>
+        <div class="sub-status">
+          <span class="dot" id="statusDot"></span>
+          <span id="statusText">The chickens are ready</span>
+        </div>
+      </div>
+
+      <div class="canvas-wrapper" id="canvasWrapper">
+        <canvas id="gameCanvas"></canvas>
+        <div class="timer-overlay" id="timerOverlay">
+          <span>⚡ GÀ MẸ ĐANG RƯỢT ĐUỔI:</span>
+          <span class="num" id="countdownSec">5s</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIGHT: CONTROLS (QUESTORA SIDEBAR) -->
+    <aside class="sidebar">
+      
+      <!-- CARD 1: YOUR CLASSROOM -->
+      <div class="side-card">
+        <div class="card-title">
+          <span>Lớp học của bạn</span>
+          <span class="badge" id="studentCountBadge">21 học sinh</span>
+        </div>
+        <p class="card-desc">Mỗi học sinh là một chú bé trộm trứng trong sân.</p>
+
+        <div class="chip-list" id="chipList">
+          <!-- Rendered by JS -->
+        </div>
+
+        <button class="btn-outline" id="btnEditClass">
+          <span>✏️ Chỉnh sửa danh sách lớp</span>
+        </button>
+      </div>
+
+      <!-- CARD 2: THE CHASE -->
+      <div class="side-card">
+        <div class="card-title">
+          <span>Cuộc rượt đuổi (The chase)</span>
+          <span style="font-size:1.1rem;">⏱</span>
+        </div>
+        <p class="card-desc">Thời gian gà mẹ rượt bắt học sinh:</p>
+
+        <div class="time-selector">
+          <button class="time-btn active" data-time="5">5s</button>
+          <button class="time-btn" data-time="10">10s</button>
+          <button class="time-btn" data-time="15">15s</button>
+          <button class="time-btn" data-time="20">20s</button>
+        </div>
+
+        <div class="toggle-row">
+          <span>Không gọi lặp lại (Do not repeat)</span>
+          <label class="toggle-switch">
+            <input type="checkbox" id="toggleNoRepeat" checked>
+            <span class="slider"></span>
+          </label>
+        </div>
+        <p style="font-size:0.8rem; color:#6b7280; margin-top:-10px; margin-bottom:16px;">
+          Còn lại: <b id="remainingCount">21</b> học sinh chưa bị gọi
+        </p>
+
+        <button class="btn-chase" id="btnStartChase">
+          <span>🚀 Bắt đầu rượt đuổi</span>
+        </button>
+        <p class="key-tip">Hoặc bấm <b>[Phím cách]</b> để bắt đầu</p>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- REVEAL MODAL (KHI BỊ GÀ MỔ TRÚNG) -->
+  <div class="reveal-modal" id="revealModal">
+    <div class="reveal-card">
+      <div class="reveal-avatar">
+        <img src="/assets/trom-trung-ga/boy_hurt.png" alt="Ouch">
+      </div>
+      <div class="reveal-badge">🚨 BỊ GÀ MẸ MỔ TRÚNG ĐẦU!</div>
+      <h1 class="reveal-name" id="revealStudentName">Nguyễn Văn A</h1>
+      <p class="reveal-sub">Định mệnh đã chọn em lên bảng trả bài!</p>
+
+      <div class="question-box" id="revealQuestion">
+        🗣 Thầy/cô đặt câu hỏi miệng ngoài lớp hoặc bốc câu hỏi bất kỳ!
+      </div>
+
+      <div class="reveal-actions">
+        <button class="btn-act btn-correct" id="btnMarkCorrect">✓ Trả lời ĐÚNG (+1 Trứng)</button>
+        <button class="btn-act btn-wrong" id="btnMarkWrong">✗ Chưa thuộc bài (Bị mổ)</button>
+        <button class="btn-act btn-oral" id="btnChangeQuestion">🎲 Đổi câu hỏi khác</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDIT CLASS MODAL -->
+  <div class="edit-modal" id="editModal">
+    <div class="edit-box">
+      <h3>✏️ Nhập danh sách học sinh</h3>
+      <div class="preset-chips">
+        <button class="chip-btn" id="loadPreset1009">🏫 Lớp 10/9 (42 em)</button>
+        <button class="chip-btn" id="loadPreset1010">🏫 Lớp 10/10 (40 em)</button>
+        <button class="chip-btn" id="loadPresetDefault">📝 Danh sách TikTok mẫu (21 em)</button>
+      </div>
+      <textarea id="editListInput" placeholder="Mỗi dòng 1 tên học sinh..."></textarea>
+      <div class="edit-footer">
+        <button class="top-btn" id="btnCancelEdit">Huỷ</button>
+        <button class="top-btn" style="background:#1e392a; color:#fff;" id="btnSaveEdit">💾 Lưu danh sách</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast">Thông báo</div>
+
+  <script>
+  /**
+   * ====================================================================
+   * TRỘM TRỨNG GÀ — GỌI TÊN THEO ĐỊNH MỆNH (QUESTORA RUN LITTLE SHEEP STYLE)
+   * Sử dụng toàn bộ Sprite & Animation thực từ Game Asset
+   * ====================================================================
+   */
+
+  // --- AUDIO SYNTHESIZER ---
+  class SoundEngine {
+    constructor() {
+      this.ctx = null;
+      this.enabled = true;
+    }
+    init() {
+      if (!this.ctx) {
+        const AC = window.AudioContext || window.webkitAudioContext;
+        if (AC) this.ctx = new AC();
+      }
+      if (this.ctx && this.ctx.state === 'suspended') this.ctx.resume();
+    }
+    playTone(freq, type='sine', dur=0.15, gain=0.1) {
+      if (!this.enabled) return;
+      this.init();
+      if (!this.ctx) return;
+      try {
+        const o = this.ctx.createOscillator();
+        const g = this.ctx.createGain();
+        o.type = type;
+        o.frequency.setValueAtTime(freq, this.ctx.currentTime);
+        g.gain.setValueAtTime(gain, this.ctx.currentTime);
+        g.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + dur);
+        o.connect(g); g.connect(this.ctx.destination);
+        o.start();
+        o.stop(this.ctx.currentTime + dur);
+      } catch(e) {}
+    }
+    playChaseStart() {
+      // Cluck squawk & drum
+      this.playTone(300, 'sawtooth', 0.2, 0.25);
+      setTimeout(() => this.playTone(220, 'sawtooth', 0.3, 0.3), 120);
+    }
+    playTick() {
+      this.playTone(800, 'triangle', 0.05, 0.1);
+    }
+    playPeckHit() {
+      this.playTone(180, 'sawtooth', 0.4, 0.35);
+      setTimeout(() => this.playTone(120, 'sawtooth', 0.45, 0.4), 80);
+    }
+    playFanfare() {
+      [523, 659, 783, 1046].forEach((f, i) => {
+        setTimeout(() => this.playTone(f, 'sine', 0.25, 0.18), i * 90);
+      });
+    }
+  }
+  const sound = new SoundEngine();
+
+  // --- DEFAULT ROSTER (MATCHING TIKTOK VIDEO SCREENSHOT) ---
+  const DEFAULT_STUDENTS = [
+    "Bảo Trân", "Hoàng Nhân", "Nguyễn Hoài", "Phúc Nhân", "Hồng Xuyến",
+    "Đăng Triều", "Hoàng Long", "Tiến Đạt", "Hoài Thy", "Văn Chương",
+    "Thùy Dương", "Đông Nhi", "Ngọc Anh", "Thuyên Kim", "Bảo Hân",
+    "Hồng Nhung", "Hoàng Nghĩa", "Xuân Nguyên", "Hoàng Phúc", "Bảo Long", "Thanh Mai"
+  ];
+
+  const CLASS_1009 = Array.from({ length: 42 }, (_, i) => `NK1009-${String(i + 1).padStart(2, '0')}`);
+  const CLASS_1010 = Array.from({ length: 40 }, (_, i) => `NK1010-${String(i + 1).padStart(2, '0')}`);
+
+  const SAMPLE_QUESTIONS = [
+    "Give the English word for 'bảo vệ môi trường' (2 words).",
+    "What is the synonym of 'essential'?",
+    "Fill in the blank: We must cut down on our carbon ______.",
+    "What does 'biodiversity' mean in Vietnamese?",
+    "Give the noun form of the verb 'pollute'.",
+    "Conditional Type 1: 'If it (rain) ______, we will stay at home.'",
+    "Rewrite using Passive: 'The cat ate the fish.'",
+    "Which modal verb expresses strong prohibition: 'mustn't' or 'needn't'?",
+    "Reported Speech: She said, 'I am tired.' -> She said that ______.",
+    "🗣 Thầy/cô đặt câu hỏi miệng trực tiếp cho học sinh!"
+  ];
+
+  // --- PRELOAD SPRITE IMAGES ---
+  const sprites = {};
+  const spriteSources = {
+    boySneak: '/assets/trom-trung-ga/boy_sneak.png',
+    boyIdle:  '/assets/trom-trung-ga/boy_idle.png',
+    boyHurt:  '/assets/trom-trung-ga/boy_hurt.png',
+    henWalk:  '/assets/trom-trung-ga/hen_walk.png',
+    henAlert: '/assets/trom-trung-ga/hen_alert.png',
+    henPeck:  '/assets/trom-trung-ga/hen_peck.png',
+    coop:     '/assets/trom-trung-ga/coop.png',
+    fxPow:    '/assets/trom-trung-ga/fx_pow.png',
+    fxBonk:   '/assets/trom-trung-ga/fx_bonk.png'
+  };
+
+  Object.entries(spriteSources).forEach(([key, src]) => {
+    const img = new Image();
+    img.src = src;
+    sprites[key] = img;
+  });
+
+  // --- ENTITY CLASSES ---
+  class StudentEntity {
+    constructor(name, cx, cy, rx, ry) {
+      this.name = name;
+      this.called = false;
+      // Spawn random inside ellipse
+      const angle = Math.random() * Math.PI * 2;
+      const r = Math.sqrt(Math.random()) * 0.75;
+      this.x = cx + Math.cos(angle) * (rx * r);
+      this.y = cy + Math.sin(angle) * (ry * r);
+      this.vx = (Math.random() - 0.5) * 40;
+      this.vy = (Math.random() - 0.5) * 40;
+      this.radius = 24;
+      this.state = 'wander'; // wander, flee, pecked
+      this.wanderTimer = Math.random() * 2;
+      this.animBob = Math.random() * Math.PI * 2;
+      this.facing = Math.random() < 0.5 ? 1 : -1;
+    }
+
+    update(dt, cx, cy, rx, ry, hen, isChasing) {
+      this.animBob += dt * 6;
+
+      if (this.state === 'pecked') {
+        return; // stay in shock
+      }
+
+      if (isChasing) {
+        // FLEE FROM HEN!
+        const dx = this.x - hen.x;
+        const dy = this.y - hen.y;
+        const dist = Math.hypot(dx, dy);
+        if (dist > 0 && dist < 320) {
+          const force = (320 - dist) / 320 * 220;
+          this.vx += (dx / dist) * force * dt;
+          this.vy += (dy / dist) * force * dt;
+          this.facing = dx > 0 ? 1 : -1;
+        }
+      } else {
+        // GENTLE WANDER
+        this.wanderTimer -= dt;
+        if (this.wanderTimer <= 0) {
+          this.wanderTimer = 1.5 + Math.random() * 2;
+          const a = Math.random() * Math.PI * 2;
+          const spd = 20 + Math.random() * 30;
+          this.vx = Math.cos(a) * spd;
+          this.vy = Math.sin(a) * spd;
+          this.facing = this.vx > 0 ? 1 : -1;
+        }
+      }
+
+      // Max speed clamp
+      const maxSpd = isChasing ? 140 : 45;
+      const curSpd = Math.hypot(this.vx, this.vy);
+      if (curSpd > maxSpd) {
+        this.vx = (this.vx / curSpd) * maxSpd;
+        this.vy = (this.vy / curSpd) * maxSpd;
+      }
+
+      this.x += this.vx * dt;
+      this.y += this.vy * dt;
+
+      // Soft damping
+      this.vx *= 0.96;
+      this.vy *= 0.96;
+
+      // Elliptical Fence Boundary Constraint
+      const nx = (this.x - cx) / rx;
+      const ny = (this.y - cy) / ry;
+      const d = Math.hypot(nx, ny);
+      if (d > 0.88) {
+        // Push gently back inward
+        this.vx -= nx * 150 * dt;
+        this.vy -= ny * 150 * dt;
+      }
+    }
+
+    draw(ctx) {
+      ctx.save();
+      const bob = Math.sin(this.animBob) * 3;
+
+      // Drop shadow
+      ctx.fillStyle = "rgba(0,0,0,0.12)";
+      ctx.beginPath();
+      ctx.ellipse(this.x, this.y + 18, 18, 7, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Student Sprite
+      let img = sprites.boySneak;
+      if (this.state === 'pecked') img = sprites.boyHurt;
+      else if (Math.hypot(this.vx, this.vy) < 5) img = sprites.boyIdle;
+
+      if (img && img.complete) {
+        ctx.save();
+        ctx.translate(this.x, this.y - 10 + bob);
+        ctx.scale(this.facing, 1);
+        ctx.drawImage(img, -24, -28, 48, 48);
+        ctx.restore();
+      } else {
+        // Fallback circle avatar
+        ctx.fillStyle = "#3b82f6";
+        ctx.beginPath();
+        ctx.arc(this.x, this.y - 10 + bob, 18, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      // Floating Name Pill Tag (Questora style)
+      ctx.font = "bold 13px system-ui";
+      const nameW = ctx.measureText(this.name).width;
+      const pillW = nameW + 20;
+      const pillH = 24;
+      const pillX = this.x - pillW / 2;
+      const pillY = this.y - 48 + bob;
+
+      // Pill shadow
+      ctx.fillStyle = "rgba(0,0,0,0.08)";
+      ctx.beginPath();
+      ctx.roundRect(pillX + 1, pillY + 2, pillW, pillH, 999);
+      ctx.fill();
+
+      // Pill background
+      ctx.fillStyle = this.called ? "#e5e7eb" : "#ffffff";
+      ctx.beginPath();
+      ctx.roundRect(pillX, pillY, pillW, pillH, 999);
+      ctx.fill();
+      ctx.strokeStyle = this.state === 'pecked' ? "#ef4444" : "#d1d5db";
+      ctx.lineWidth = this.state === 'pecked' ? 2 : 1;
+      ctx.stroke();
+
+      // Pill text
+      ctx.fillStyle = this.called ? "#9ca3af" : "#1f2937";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(this.name, this.x, pillY + pillH / 2);
+
+      ctx.restore();
+    }
+  }
+
+  class HenEntity {
+    constructor(x, y) {
+      this.x = x;
+      this.y = y;
+      this.vx = 0;
+      this.vy = 0;
+      this.target = null;
+      this.state = 'idle'; // idle, chase, peck
+      this.facing = 1;
+      this.animBob = 0;
+    }
+
+    update(dt, cx, cy, rx, ry, isChasing) {
+      this.animBob += dt * 10;
+
+      if (!isChasing || !this.target) {
+        // Rest near chicken coop on the right
+        const tx = cx + rx * 0.75;
+        const ty = cy - ry * 0.2;
+        this.x += (tx - this.x) * dt * 2;
+        this.y += (ty - this.y) * dt * 2;
+        this.facing = -1;
+        return;
+      }
+
+      // RUSH TOWARDS TARGET!
+      const dx = this.target.x - this.x;
+      const dy = this.target.y - this.y;
+      const dist = Math.hypot(dx, dy);
+
+      if (dist > 8) {
+        const chaseSpeed = 190;
+        this.vx = (dx / dist) * chaseSpeed;
+        this.vy = (dy / dist) * chaseSpeed;
+        this.x += this.vx * dt;
+        this.y += this.vy * dt;
+        this.facing = dx > 0 ? -1 : 1; // Facing forward
+      }
+    }
+
+    draw(ctx) {
+      ctx.save();
+      const bob = Math.sin(this.animBob) * 4;
+
+      // Drop shadow
+      ctx.fillStyle = "rgba(0,0,0,0.15)";
+      ctx.beginPath();
+      ctx.ellipse(this.x, this.y + 22, 22, 8, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      let img = sprites.henWalk;
+      if (this.state === 'chase') img = sprites.henPeck;
+      else if (this.state === 'peck') img = sprites.henAlert;
+
+      if (img && img.complete) {
+        ctx.save();
+        ctx.translate(this.x, this.y - 12 + bob);
+        ctx.scale(this.facing, 1);
+        ctx.drawImage(img, -32, -32, 64, 64);
+        ctx.restore();
+      }
+
+      ctx.restore();
+    }
+  }
+
+  // --- GAME CONTROLLER ---
+  class QuestoraGame {
+    constructor() {
+      this.canvas = document.getElementById("gameCanvas");
+      this.ctx = this.canvas.getContext("2d");
+      this.wrapper = document.getElementById("canvasWrapper");
+
+      this.students = [];
+      this.studentList = [];
+      this.calledSet = new Set();
+
+      this.hen = null;
+      this.isChasing = false;
+      this.chaseDuration = 5;
+      this.chaseTimer = 0;
+      this.lastTickSec = 0;
+
+      this.targetStudent = null;
+      this.noRepeat = true;
+
+      this.initData();
+      this.resize();
+      window.addEventListener("resize", () => this.resize());
+
+      this.bindUI();
+      this.lastTime = performance.now();
+      requestAnimationFrame(this.loop.bind(this));
+    }
+
+    initData() {
+      try {
+        const saved = localStorage.getItem("questora_students");
+        this.studentList = saved ? JSON.parse(saved) : [...DEFAULT_STUDENTS];
+      } catch(e) {
+        this.studentList = [...DEFAULT_STUDENTS];
+      }
+      this.resetEntities();
+      this.renderSidebar();
+    }
+
+    resetEntities() {
+      const cx = this.canvas.width / 2;
+      const cy = this.canvas.height / 2;
+      const rx = this.canvas.width * 0.42;
+      const ry = this.canvas.height * 0.38;
+
+      this.students = this.studentList.map(name => {
+        const s = new StudentEntity(name, cx, cy, rx, ry);
+        s.called = this.calledSet.has(name);
+        return s;
+      });
+
+      this.hen = new HenEntity(cx + rx * 0.75, cy - ry * 0.2);
+    }
+
+    resize() {
+      const rect = this.wrapper.getBoundingClientRect();
+      this.canvas.width = rect.width;
+      this.canvas.height = rect.height;
+      if (this.students.length > 0) {
+        this.resetEntities();
+      }
+    }
+
+    renderSidebar() {
+      const countEl = document.getElementById("studentCountBadge");
+      const chipList = document.getElementById("chipList");
+      const remainEl = document.getElementById("remainingCount");
+
+      countEl.textContent = `${this.studentList.length} học sinh`;
+      chipList.innerHTML = "";
+
+      let uncalled = 0;
+      this.studentList.forEach(name => {
+        const isCalled = this.calledSet.has(name);
+        if (!isCalled) uncalled++;
+        const chip = document.createElement("span");
+        chip.className = "s-chip" + (isCalled ? " called" : "");
+        chip.textContent = name;
+        chipList.appendChild(chip);
+      });
+
+      remainEl.textContent = this.noRepeat ? uncalled : this.studentList.length;
+    }
+
+    startChase() {
+      if (this.isChasing) return;
+
+      // Choose candidate pool
+      let pool = this.students;
+      if (this.noRepeat) {
+        pool = this.students.filter(s => !this.calledSet.has(s.name));
+        if (pool.length === 0) {
+          // Reset pool if all were called
+          this.calledSet.clear();
+          this.students.forEach(s => s.called = false);
+          pool = this.students;
+          showToast("Đã hoàn thành 1 vòng gọi tất cả! Đang bắt đầu vòng mới.");
+        }
+      }
+
+      if (pool.length === 0) {
+        alert("Danh sách học sinh rỗng!");
+        return;
+      }
+
+      // Pick random lucky/unlucky student!
+      this.targetStudent = pool[Math.floor(Math.random() * pool.length)];
+      this.hen.target = this.targetStudent;
+      this.hen.state = 'chase';
+
+      this.isChasing = true;
+      this.chaseTimer = this.chaseDuration;
+      this.lastTickSec = Math.ceil(this.chaseDuration);
+
+      document.getElementById("btnStartChase").disabled = true;
+      document.getElementById("statusDot").className = "dot chasing";
+      document.getElementById("statusText").textContent = "Gà mẹ đang rượt đuổi! ⚡";
+      document.getElementById("timerOverlay").classList.add("show");
+      document.getElementById("countdownSec").textContent = `${this.lastTickSec}s`;
+
+      sound.playChaseStart();
+    }
+
+    endChase() {
+      this.isChasing = false;
+      document.getElementById("btnStartChase").disabled = false;
+      document.getElementById("statusDot").className = "dot";
+      document.getElementById("statusText").textContent = "The chickens are ready";
+      document.getElementById("timerOverlay").classList.remove("show");
+
+      if (this.targetStudent) {
+        this.targetStudent.state = 'pecked';
+        this.hen.state = 'peck';
+        this.calledSet.add(this.targetStudent.name);
+        this.targetStudent.called = true;
+
+        sound.playPeckHit();
+
+        // Show Reveal Modal after slight pause
+        setTimeout(() => {
+          this.showReveal(this.targetStudent.name);
+        }, 600);
+      }
+
+      this.renderSidebar();
+    }
+
+    showReveal(name) {
+      document.getElementById("revealStudentName").textContent = name;
+      const q = SAMPLE_QUESTIONS[Math.floor(Math.random() * SAMPLE_QUESTIONS.length)];
+      document.getElementById("revealQuestion").textContent = q;
+      document.getElementById("revealModal").classList.add("show");
+      sound.playFanfare();
+    }
+
+    closeReveal() {
+      document.getElementById("revealModal").classList.remove("show");
+      if (this.targetStudent) {
+        this.targetStudent.state = 'wander';
+      }
+      this.hen.state = 'idle';
+      this.hen.target = null;
+    }
+
+    bindUI() {
+      // Start button
+      document.getElementById("btnStartChase").onclick = () => this.startChase();
+
+      // Spacebar hotkey
+      window.addEventListener("keydown", (e) => {
+        if (e.code === "Space" && !document.querySelector(".edit-modal.show")) {
+          e.preventDefault();
+          if (document.getElementById("revealModal").classList.contains("show")) {
+            this.closeReveal();
+          } else {
+            this.startChase();
+          }
+        }
+      });
+
+      // Time duration buttons
+      document.querySelectorAll(".time-btn").forEach(btn => {
+        btn.onclick = () => {
+          document.querySelectorAll(".time-btn").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          this.chaseDuration = parseInt(btn.dataset.time, 10);
+        };
+      });
+
+      // Toggle no repeat
+      document.getElementById("toggleNoRepeat").onchange = (e) => {
+        this.noRepeat = e.target.checked;
+        this.renderSidebar();
+      };
+
+      // Sound button
+      document.getElementById("btnSound").onclick = () => {
+        sound.enabled = !sound.enabled;
+        document.getElementById("btnSound").textContent = sound.enabled ? "🔊 Âm thanh" : "🔇 Âm thanh";
+        showToast(sound.enabled ? "Đã bật âm thanh" : "Đã tắt âm thanh");
+      };
+
+      // Reset pool button
+      document.getElementById("btnResetPool").onclick = () => {
+        this.calledSet.clear();
+        this.students.forEach(s => s.called = false);
+        this.renderSidebar();
+        showToast("Đã đặt lại danh sách gọi tên!");
+      };
+
+      // Fullscreen
+      document.getElementById("btnFullscreen").onclick = () => {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen().catch(() => {});
+        } else {
+          document.exitFullscreen().catch(() => {});
+        }
+      };
+
+      // Reveal buttons
+      document.getElementById("btnMarkCorrect").onclick = () => {
+        showToast("Đã ghi nhận ĐÚNG!");
+        this.closeReveal();
+      };
+      document.getElementById("btnMarkWrong").onclick = () => {
+        showToast("Đã ghi nhận CHƯA THUỘC!");
+        this.closeReveal();
+      };
+      document.getElementById("btnChangeQuestion").onclick = () => {
+        const q = SAMPLE_QUESTIONS[Math.floor(Math.random() * SAMPLE_QUESTIONS.length)];
+        document.getElementById("revealQuestion").textContent = q;
+        showToast("Đã đổi câu hỏi!");
+      };
+
+      // Edit class modal
+      document.getElementById("btnEditClass").onclick = () => {
+        document.getElementById("editListInput").value = this.studentList.join("\n");
+        document.getElementById("editModal").classList.add("show");
+      };
+      document.getElementById("btnCancelEdit").onclick = () => {
+        document.getElementById("editModal").classList.remove("show");
+      };
+      document.getElementById("btnSaveEdit").onclick = () => {
+        const list = document.getElementById("editListInput").value
+          .split("\n").map(s => s.trim()).filter(Boolean);
+        if (list.length === 0) {
+          alert("Vui lòng nhập ít nhất 1 học sinh!");
+          return;
+        }
+        this.studentList = list;
+        this.calledSet.clear();
+        try {
+          localStorage.setItem("questora_students", JSON.stringify(list));
+        } catch(e) {}
+        this.resetEntities();
+        this.renderSidebar();
+        document.getElementById("editModal").classList.remove("show");
+        showToast(`Đã lưu ${list.length} học sinh thành công!`);
+      };
+
+      // Presets
+      document.getElementById("loadPreset1009").onclick = () => {
+        document.getElementById("editListInput").value = CLASS_1009.join("\n");
+      };
+      document.getElementById("loadPreset1010").onclick = () => {
+        document.getElementById("editListInput").value = CLASS_1010.join("\n");
+      };
+      document.getElementById("loadPresetDefault").onclick = () => {
+        document.getElementById("editListInput").value = DEFAULT_STUDENTS.join("\n");
+      };
+    }
+
+    loop(timestamp) {
+      const dt = Math.min((timestamp - this.lastTime) / 1000, 0.1);
+      this.lastTime = timestamp;
+
+      this.update(dt);
+      this.draw();
+
+      requestAnimationFrame(this.loop.bind(this));
+    }
+
+    update(dt) {
+      const cx = this.canvas.width / 2;
+      const cy = this.canvas.height / 2;
+      const rx = this.canvas.width * 0.42;
+      const ry = this.canvas.height * 0.38;
+
+      if (this.isChasing) {
+        this.chaseTimer -= dt;
+        const curSec = Math.ceil(this.chaseTimer);
+        if (curSec !== this.lastTickSec && curSec > 0) {
+          this.lastTickSec = curSec;
+          document.getElementById("countdownSec").textContent = `${curSec}s`;
+          sound.playTick();
+        }
+
+        if (this.chaseTimer <= 0) {
+          this.endChase();
+        }
+      }
+
+      this.students.forEach(s => s.update(dt, cx, cy, rx, ry, this.hen, this.isChasing));
+      if (this.hen) this.hen.update(dt, cx, cy, rx, ry, this.isChasing);
+    }
+
+    draw() {
+      const ctx = this.ctx;
+      const w = this.canvas.width;
+      const h = this.canvas.height;
+      const cx = w / 2;
+      const cy = h / 2;
+      const rx = w * 0.42;
+      const ry = h * 0.38;
+
+      ctx.clearRect(0, 0, w, h);
+
+      // 1. Draw Farm Meadow Ground
+      const groundGrad = ctx.createRadialGradient(cx, cy, 50, cx, cy, rx * 1.1);
+      groundGrad.addColorStop(0, "#eef6e6");
+      groundGrad.addColorStop(0.85, "#dce9ce");
+      groundGrad.addColorStop(1, "#c9dbb8");
+      ctx.fillStyle = groundGrad;
+      ctx.beginPath();
+      ctx.ellipse(cx, cy, rx, ry, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Inner dirt ring
+      ctx.strokeStyle = "rgba(163, 137, 100, 0.18)";
+      ctx.lineWidth = 14;
+      ctx.beginPath();
+      ctx.ellipse(cx, cy, rx * 0.75, ry * 0.75, 0, 0, Math.PI * 2);
+      ctx.stroke();
+
+      // 2. Draw Wooden Fence Posts around the perimeter
+      const fencePosts = 28;
+      for (let i = 0; i < fencePosts; i++) {
+        const ang = (Math.PI * 2 * i) / fencePosts;
+        const fx = cx + Math.cos(ang) * rx;
+        const fy = cy + Math.sin(ang) * ry;
+
+        // Wooden fence post shadow
+        ctx.fillStyle = "rgba(0,0,0,0.1)";
+        ctx.beginPath();
+        ctx.ellipse(fx + 2, fy + 8, 8, 4, 0, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Wooden Post
+        ctx.fillStyle = "#8d6e63";
+        ctx.beginPath();
+        ctx.roundRect(fx - 4, fy - 18, 8, 24, 2);
+        ctx.fill();
+        ctx.strokeStyle = "#4e342e";
+        ctx.lineWidth = 1;
+        ctx.stroke();
+      }
+
+      // Connecting fence rails
+      ctx.strokeStyle = "rgba(109, 76, 65, 0.55)";
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.ellipse(cx, cy - 8, rx, ry, 0, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.ellipse(cx, cy - 14, rx, ry, 0, 0, Math.PI * 2);
+      ctx.stroke();
+
+      // 3. Draw Farm Trees & Bushes around perimeter
+      const treeAngles = [0.2, 0.8, 1.6, 2.5, 3.4, 4.3, 5.2];
+      treeAngles.forEach(ang => {
+        const tx = cx + Math.cos(ang) * (rx + 42);
+        const ty = cy + Math.sin(ang) * (ry + 32);
+        this.drawTree(ctx, tx, ty);
+      });
+
+      // 4. Draw Center Straw Bedding with Golden Eggs!
+      this.drawEggNest(ctx, cx, cy);
+
+      // 5. Draw Chicken Coop on the right
+      const coopX = cx + rx * 0.8;
+      const coopY = cy - ry * 0.25;
+      if (sprites.coop && sprites.coop.complete) {
+        ctx.drawImage(sprites.coop, coopX - 45, coopY - 45, 90, 80);
+      }
+
+      // 6. Draw Students sorted by Y for correct isometric depth!
+      const allEntities = [...this.students];
+      if (this.hen) allEntities.push(this.hen);
+      allEntities.sort((a, b) => a.y - b.y);
+
+      allEntities.forEach(ent => ent.draw(ctx));
+
+      // 7. Spotlight on caught student during reveal
+      if (this.targetStudent && this.targetStudent.state === 'pecked') {
+        ctx.save();
+        ctx.fillStyle = "rgba(239, 68, 68, 0.15)";
+        ctx.beginPath();
+        ctx.arc(this.targetStudent.x, this.targetStudent.y - 10, 60, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      }
+    }
+
+    drawTree(ctx, x, y) {
+      ctx.save();
+      // Tree shadow
+      ctx.fillStyle = "rgba(0,0,0,0.1)";
+      ctx.beginPath();
+      ctx.ellipse(x + 2, y + 15, 20, 8, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Trunk
+      ctx.fillStyle = "#795548";
+      ctx.fillRect(x - 4, y, 8, 16);
+
+      // Leaves (soft pastel green balls)
+      ctx.fillStyle = "#81c784";
+      ctx.beginPath();
+      ctx.arc(x, y - 10, 24, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = "#a5d6a7";
+      ctx.beginPath();
+      ctx.arc(x - 6, y - 16, 16, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    }
+
+    drawEggNest(ctx, cx, cy) {
+      ctx.save();
+      // Straw bed
+      ctx.fillStyle = "#fef3c7";
+      ctx.beginPath();
+      ctx.ellipse(cx, cy, 55, 36, 0, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.strokeStyle = "#d97706";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+
+      // Straw texture lines
+      ctx.strokeStyle = "#f59e0b";
+      for (let i = 0; i < 8; i++) {
+        const a = (Math.PI * 2 * i) / 8;
+        ctx.beginPath();
+        ctx.moveTo(cx + Math.cos(a) * 35, cy + Math.sin(a) * 22);
+        ctx.lineTo(cx + Math.cos(a) * 50, cy + Math.sin(a) * 32);
+        ctx.stroke();
+      }
+
+      // Golden Eggs
+      const eggPositions = [[-14, -5], [12, -4], [0, 8], [-6, -12], [8, 5]];
+      eggPositions.forEach(([dx, dy]) => {
+        ctx.fillStyle = "#fffbeb";
+        ctx.beginPath();
+        ctx.ellipse(cx + dx, cy + dy, 9, 12, 0.2, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = "#ca8a04";
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+      });
+
+      ctx.restore();
+    }
+  }
+
+  // --- TOAST HELPER ---
+  let toastTimer = null;
+  function showToast(msg) {
+    const t = document.getElementById("toast");
+    t.textContent = msg;
+    t.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.classList.remove("show"), 2000);
+  }
+
+  // Start app
+  window.addEventListener("DOMContentLoaded", () => {
+    new QuestoraGame();
+  });
+  </script>
+</body>
+</html>
