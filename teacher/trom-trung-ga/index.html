@@ -496,7 +496,7 @@
       transform: translateX(20px);
     }
 
-    /* BIG CHASE CTA BUTTON */
+    /* BIG CHASE CTA BUTTON: CHANGED TO 'Start' TO AVOID FONT GLITCH */
     .btn-chase {
       width: 100%;
       background: linear-gradient(135deg, #10b981, #047857);
@@ -504,15 +504,17 @@
       border: none;
       padding: 14px;
       border-radius: 14px;
-      font-size: 1.15rem;
-      font-weight: 800;
+      font-size: 1.3rem;
+      font-weight: 900;
+      letter-spacing: 0.5px;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 10px;
-      box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+      box-shadow: 0 8px 20px rgba(16, 185, 129, 0.35);
       transition: all 0.15s ease;
+      font-family: inherit;
     }
 
     .btn-chase:hover {
@@ -532,7 +534,7 @@
     }
 
     .key-tip {
-      font-size: 0.75rem;
+      font-size: 0.78rem;
       color: var(--text-muted);
       text-align: center;
       margin-top: 8px;
@@ -940,7 +942,7 @@
         <div>
           <h2>Who will be called tonight? 🌙</h2>
           <p style="font-size:0.85rem; color:var(--text-muted); margin-top:2px;">
-            Học sinh đang lén trộm trứng trong trang trại đêm — Gà mẹ đi tuần sẽ mổ trúng một em!
+            Trang trại đêm: Gà mẹ và đàn gà đang đi tuần — Học sinh nào sẽ bị mổ trúng?
           </p>
         </div>
         <div class="sub-status">
@@ -952,7 +954,7 @@
       <div class="canvas-wrapper" id="canvasWrapper">
         <canvas id="gameCanvas"></canvas>
         <div class="timer-overlay" id="timerOverlay">
-          <span>⚡ GÀ MẸ ĐANG RƯỢT ĐUỔI:</span>
+          <span>⚡ CHASE:</span>
           <span class="num" id="countdownSec">5s</span>
         </div>
       </div>
@@ -1010,7 +1012,7 @@
           <span>Cuộc rượt đuổi (The chase)</span>
           <span style="font-size:1.1rem;">⏱</span>
         </div>
-        <p class="card-desc">Thời gian gà mẹ rượt bắt học sinh:</p>
+        <p class="card-desc">Thời gian đàn gà rượt bắt học sinh:</p>
 
         <div class="time-selector">
           <button class="time-btn active" data-time="5">5s</button>
@@ -1030,10 +1032,11 @@
           Còn lại: <b id="remainingCount" style="color:#facc15;">21</b> học sinh chưa bị gọi
         </p>
 
+        <!-- CHANGED TO 'Start' TO AVOID FONT RENDERING ISSUE -->
         <button class="btn-chase" id="btnStartChase">
-          <span>🚀 Bắt đầu rượt đuổi</span>
+          <span>🚀 Start</span>
         </button>
-        <p class="key-tip">Hoặc bấm <b>[Phím cách]</b> để bắt đầu</p>
+        <p class="key-tip">Hoặc bấm <b>[Space]</b> để Start</p>
       </div>
 
     </aside>
@@ -1111,7 +1114,7 @@
   /**
    * ====================================================================
    * TRỘM TRỨNG GÀ — GỌI TÊN THEO ĐỊNH MỆNH (QUESTORA RUN LITTLE SHEEP STYLE)
-   * Bản Cảnh Đêm (Night Tile Map) + 705 câu hỏi trắc nghiệm MCQ 47 mã đề
+   * Bản Cảnh Đêm Chuẩn Mặt Đất + Đa Dạng Đàn Gà + 705 MCQ 47 Mã Đề
    * ====================================================================
    */
 
@@ -1145,19 +1148,19 @@
       } catch(e) {}
     }
     playChaseStart() {
-      this.playTone(300, 'sawtooth', 0.2, 0.25);
-      setTimeout(() => this.playTone(220, 'sawtooth', 0.3, 0.3), 120);
+      this.playTone(320, 'sawtooth', 0.18, 0.25);
+      setTimeout(() => this.playTone(440, 'sawtooth', 0.22, 0.28), 110);
     }
     playTick() {
-      this.playTone(800, 'triangle', 0.05, 0.1);
+      this.playTone(850, 'triangle', 0.04, 0.1);
     }
     playPeckHit() {
-      this.playTone(180, 'sawtooth', 0.4, 0.35);
-      setTimeout(() => this.playTone(120, 'sawtooth', 0.45, 0.4), 80);
+      this.playTone(180, 'sawtooth', 0.35, 0.35);
+      setTimeout(() => this.playTone(130, 'sawtooth', 0.45, 0.4), 80);
     }
     playFanfare() {
       [523, 659, 783, 1046].forEach((f, i) => {
-        setTimeout(() => this.playTone(f, 'sine', 0.25, 0.18), i * 90);
+        setTimeout(() => this.playTone(f, 'sine', 0.22, 0.18), i * 85);
       });
     }
   }
@@ -1192,7 +1195,7 @@
     }
   ];
 
-  // Smart asset resolver for GitHub Pages, local server, and file: protocol
+  // Smart asset resolver
   function getAssetPath(filename) {
     if (window.location.protocol === 'file:') {
       const p = window.location.pathname.replace(/\\/g, '/');
@@ -1228,7 +1231,6 @@
     const img = new Image();
     img.src = src;
     img.onerror = () => {
-      // Fallback relative attempt
       if (!img.dataset.retry) {
         img.dataset.retry = "1";
         img.src = '../../assets/trom-trung-ga/' + src.split('/').pop();
@@ -1237,7 +1239,7 @@
     sprites[k] = img;
   });
 
-  // Wire side art images in reveal modal
+  // Modal side artwork
   const sideBoyEl = document.getElementById("sideBoyArt");
   const sideHenEl = document.getElementById("sideHenArt");
   const revealAvatarEl = document.getElementById("revealAvatarImg");
@@ -1246,13 +1248,15 @@
   if (revealAvatarEl) revealAvatarEl.src = spriteSources.boyHurt;
 
   // --- ENTITY CLASSES ---
+
+  // STUDENT THIEF (Chân chạm đất 100%, bóng đổ tại chỗ đứng)
   class StudentEntity {
     constructor(name, bounds) {
       this.name = name;
       this.called = false;
       this.bounds = bounds;
       this.spawn();
-      this.vx = (Math.random() - 0.5) * 35;
+      this.vx = (Math.random() - 0.5) * 40;
       this.vy = (Math.random() - 0.5) * 35;
       this.state = 'wander'; // wander, panic, pecked
       this.wanderTimer = Math.random() * 2;
@@ -1263,40 +1267,33 @@
 
     spawn() {
       const b = this.bounds;
-      const angle = Math.random() * Math.PI * 2;
-      const rx = (b.right - b.left) * 0.45;
-      const ry = (b.bottom - b.top) * 0.45;
-      const cx = (b.left + b.right) / 2;
-      const cy = (b.top + b.bottom) / 2;
-      const r = Math.sqrt(Math.random()) * 0.85;
-      this.x = cx + Math.cos(angle) * (rx * r);
-      this.y = cy + Math.sin(angle) * (ry * r);
+      this.x = b.left + 30 + Math.random() * (b.right - b.left - 60);
+      this.y = b.top + 20 + Math.random() * (b.bottom - b.top - 40);
     }
 
-    update(dt, hen, isChasing) {
+    update(dt, chaserHen, isChasing) {
       this.animBob += dt * 7;
       if (this.state === 'pecked') return;
 
       const b = this.bounds;
 
       if (isChasing) {
-        const dx = this.x - hen.x;
-        const dy = this.y - hen.y;
+        const dx = this.x - chaserHen.x;
+        const dy = this.y - chaserHen.y;
         const dist = Math.hypot(dx, dy);
 
-        // Flee from hen when she gets close
-        if (dist > 0 && dist < 340) {
-          const force = (340 - dist) / 340 * 240;
+        // Flee from chaser hen when she gets close
+        if (dist > 0 && dist < 320) {
+          const force = (320 - dist) / 320 * 250;
           this.vx += (dx / dist) * force * dt;
           this.vy += (dy / dist) * force * dt;
           this.facing = dx > 0 ? 1 : -1;
         } else {
-          // Wander anxiously
           this.wanderTimer -= dt;
           if (this.wanderTimer <= 0) {
             this.wanderTimer = 0.8 + Math.random() * 1.2;
             const a = Math.random() * Math.PI * 2;
-            const spd = 40 + Math.random() * 40;
+            const spd = 45 + Math.random() * 45;
             this.vx = Math.cos(a) * spd;
             this.vy = Math.sin(a) * spd;
             this.facing = this.vx > 0 ? 1 : -1;
@@ -1307,14 +1304,14 @@
         if (this.wanderTimer <= 0) {
           this.wanderTimer = 1.6 + Math.random() * 2.2;
           const a = Math.random() * Math.PI * 2;
-          const spd = 20 + Math.random() * 30;
+          const spd = 20 + Math.random() * 32;
           this.vx = Math.cos(a) * spd;
           this.vy = Math.sin(a) * spd;
           this.facing = this.vx > 0 ? 1 : -1;
         }
       }
 
-      const maxSpd = isChasing ? 150 : 45;
+      const maxSpd = isChasing ? 155 : 45;
       const curSpd = Math.hypot(this.vx, this.vy);
       if (curSpd > maxSpd) {
         this.vx = (this.vx / curSpd) * maxSpd;
@@ -1327,21 +1324,21 @@
       this.vx *= 0.96;
       this.vy *= 0.96;
 
-      // Soft boundary clamp to keep students on authentic lawn
+      // Clamp strictly within the grass lawn boundaries
       if (this.x < b.left) { this.x = b.left; this.vx = Math.abs(this.vx); }
       if (this.x > b.right) { this.x = b.right; this.vx = -Math.abs(this.vx); }
       if (this.y < b.top) { this.y = b.top; this.vy = Math.abs(this.vy); }
       if (this.y > b.bottom) { this.y = b.bottom; this.vy = -Math.abs(this.vy); }
 
-      // Steer away from chicken coop on right side
-      if (this.x > b.right - 180 && this.y < b.top + 160) {
-        this.vx -= 120 * dt;
+      // Avoid chicken coop on right side
+      if (this.x > b.right - 170 && this.y < b.top + 130) {
+        this.vx -= 130 * dt;
         this.vy += 80 * dt;
       }
 
-      // Calculate 2.5D perspective scaling based on vertical depth on lawn
+      // 2.5D Depth Perspective (0.72 in background to 1.18 in foreground)
       const t = Math.max(0, Math.min(1, (this.y - b.top) / (b.bottom - b.top)));
-      this.scale = 0.72 + t * 0.46; // 0.72 in background, 1.18 in foreground
+      this.scale = 0.72 + t * 0.46;
     }
 
     draw(ctx, isNight, isChasing) {
@@ -1349,50 +1346,55 @@
       const s = this.scale;
       const bob = Math.sin(this.animBob) * (2 * s);
 
-      // Drop shadow on authentic grass
-      ctx.fillStyle = isNight ? "rgba(0,0,0,0.38)" : "rgba(0,0,0,0.18)";
+      // (A) SHADOW: Anchored right at (this.x, this.y) on the ground!
+      ctx.fillStyle = isNight ? "rgba(0,0,0,0.42)" : "rgba(0,0,0,0.2)";
       ctx.beginPath();
-      ctx.ellipse(this.x, this.y + 14 * s, 16 * s, 6 * s, 0, 0, Math.PI * 2);
+      ctx.ellipse(this.x, this.y, 18 * s, 7 * s, 0, 0, Math.PI * 2);
       ctx.fill();
 
+      // (B) SPRITE: Drawn UPWARDS from ground level (y)
       let img = sprites.boySneak;
       if (this.state === 'pecked') img = sprites.boyHurt;
       else if (Math.hypot(this.vx, this.vy) < 6) img = sprites.boyIdle;
 
+      const sw = 56 * s;
+      const sh = 56 * s;
+
       if (img && img.complete && img.naturalWidth > 0) {
         ctx.save();
-        ctx.translate(this.x, this.y - 12 * s + bob);
-        ctx.scale(this.facing * s, s);
-        ctx.drawImage(img, -24, -28, 48, 48);
+        ctx.translate(this.x, this.y);
+        ctx.scale(this.facing, 1);
+        // Sprite feet rest firmly on y=0
+        ctx.drawImage(img, -sw / 2, -sh + 4 * s + bob, sw, sh);
         ctx.restore();
       }
 
-      // Panic sweat drop when being chased
-      if (isChasing && this.state !== 'pecked' && Math.random() < 0.4) {
+      // Panic sweat drop when chased
+      if (isChasing && this.state !== 'pecked' && Math.random() < 0.35) {
         ctx.fillStyle = "#38bdf8";
         ctx.beginPath();
-        ctx.arc(this.x + 12 * s, this.y - 36 * s + bob, 2.5 * s, 0, Math.PI * 2);
+        ctx.arc(this.x + 14 * s, this.y - sh + bob, 3 * s, 0, Math.PI * 2);
         ctx.fill();
       }
 
-      // Floating Name Pill
+      // (C) FLOATING NAME PILL: Sits cleanly above the student's head
       const fontSize = Math.max(10, Math.round(12 * s));
       ctx.font = `bold ${fontSize}px system-ui, sans-serif`;
       const nameW = ctx.measureText(this.name).width;
       const pillW = nameW + 18 * s;
       const pillH = 22 * s;
       const pillX = this.x - pillW / 2;
-      const pillY = this.y - 44 * s + bob;
+      const pillY = this.y - sh - 12 * s + bob;
 
       // Pill Shadow
-      ctx.fillStyle = isNight ? "rgba(0,0,0,0.45)" : "rgba(0,0,0,0.12)";
+      ctx.fillStyle = isNight ? "rgba(0,0,0,0.5)" : "rgba(0,0,0,0.15)";
       ctx.beginPath();
       ctx.roundRect(pillX + 1, pillY + 2, pillW, pillH, 999);
       ctx.fill();
 
-      // Pill Background
+      // Pill Body
       if (isNight) {
-        ctx.fillStyle = this.called ? "rgba(30, 41, 59, 0.85)" : "rgba(255, 255, 255, 0.94)";
+        ctx.fillStyle = this.called ? "rgba(30, 41, 59, 0.88)" : "rgba(255, 255, 255, 0.95)";
       } else {
         ctx.fillStyle = this.called ? "#e2e8f0" : "#ffffff";
       }
@@ -1413,7 +1415,8 @@
     }
   }
 
-  class HenEntity {
+  // CHICKEN 1: THE LEAD CHASER HEN (Gà mẹ rượt đuổi, lao nhanh xé gió)
+  class ChaserHen {
     constructor(homeX, homeY, bounds) {
       this.homeX = homeX;
       this.homeY = homeY;
@@ -1431,11 +1434,10 @@
     }
 
     update(dt, isChasing) {
-      this.animBob += dt * 12;
-      this.runFrame += dt * 10;
+      this.animBob += dt * 14;
+      this.runFrame += dt * 12;
 
       if (!isChasing || !this.target) {
-        // Return gently to roost near chicken coop
         this.x += (this.homeX - this.x) * dt * 2.5;
         this.y += (this.homeY - this.y) * dt * 2.5;
         this.facing = -1;
@@ -1448,7 +1450,7 @@
       const dist = Math.hypot(dx, dy);
 
       if (dist > 10) {
-        const chaseSpeed = 210;
+        const chaseSpeed = 225;
         this.vx = (dx / dist) * chaseSpeed;
         this.vy = (dy / dist) * chaseSpeed;
         this.x += this.vx * dt;
@@ -1456,7 +1458,6 @@
         this.facing = dx > 0 ? 1 : -1;
       }
 
-      // 2.5D perspective scaling
       const b = this.bounds;
       const t = Math.max(0, Math.min(1, (this.y - b.top) / (b.bottom - b.top)));
       this.scale = 0.75 + t * 0.45;
@@ -1467,35 +1468,133 @@
       const s = this.scale;
       const bob = Math.sin(this.animBob) * (3.5 * s);
 
-      // Running dust particles
-      if (isChasing && Math.abs(this.vx) > 30 && Math.random() < 0.4) {
-        ctx.fillStyle = isNight ? "rgba(255,255,255,0.18)" : "rgba(180,160,130,0.25)";
+      // Dust puffs kicked behind her feet
+      if (isChasing && Math.abs(this.vx) > 30 && Math.random() < 0.45) {
+        ctx.fillStyle = isNight ? "rgba(255,255,255,0.2)" : "rgba(180,160,130,0.3)";
         ctx.beginPath();
-        ctx.arc(this.x - this.facing * (16 * s), this.y + 12 * s, 5 * s, 0, Math.PI * 2);
+        ctx.arc(this.x - this.facing * (18 * s), this.y - 2, 6 * s, 0, Math.PI * 2);
         ctx.fill();
       }
 
-      // Hen Drop Shadow
-      ctx.fillStyle = isNight ? "rgba(0,0,0,0.42)" : "rgba(0,0,0,0.2)";
+      // Shadow at feet
+      ctx.fillStyle = isNight ? "rgba(0,0,0,0.45)" : "rgba(0,0,0,0.22)";
       ctx.beginPath();
-      ctx.ellipse(this.x, this.y + 18 * s, 22 * s, 8 * s, 0, 0, Math.PI * 2);
+      ctx.ellipse(this.x, this.y, 22 * s, 8 * s, 0, 0, Math.PI * 2);
       ctx.fill();
 
+      // Alternate running sprite frames
       let img = sprites.henWalk;
       if (this.state === 'chase') {
-        img = (Math.floor(this.runFrame) % 2 === 0 && sprites.henRun) ? sprites.henRun : sprites.henWalk;
+        img = (Math.floor(this.runFrame) % 2 === 0 && sprites.henRun) ? sprites.henRun : (sprites.henPeck || sprites.henWalk);
       } else if (this.state === 'peck') {
         img = sprites.henPeck || sprites.henAlert;
       }
 
+      const sw = 68 * s;
+      const sh = 68 * s;
+
       if (img && img.complete && img.naturalWidth > 0) {
         ctx.save();
-        ctx.translate(this.x, this.y - 12 * s + bob);
-        ctx.scale(-this.facing * s, s); // sprite default faces left
-        ctx.drawImage(img, -32, -32, 64, 64);
+        ctx.translate(this.x, this.y);
+        ctx.scale(-this.facing, 1); // sprite default faces left
+        ctx.drawImage(img, -sw / 2, -sh + 6 * s + bob, sw, sh);
         ctx.restore();
       }
 
+      ctx.restore();
+    }
+  }
+
+  // CHICKEN 2: PATROLLING HEN (Gà đi tuần, thong thả đi dạo trên bãi cỏ)
+  class PatrolHen {
+    constructor(startX, startY, bounds) {
+      this.x = startX;
+      this.y = startY;
+      this.bounds = bounds;
+      this.vx = 22;
+      this.vy = 0;
+      this.facing = 1;
+      this.animBob = Math.random() * Math.PI;
+      this.scale = 0.9;
+    }
+    update(dt) {
+      this.animBob += dt * 6;
+      this.x += this.vx * dt;
+
+      if (this.x < this.bounds.left + 50) {
+        this.x = this.bounds.left + 50;
+        this.vx = 22 + Math.random() * 15;
+        this.facing = 1;
+      } else if (this.x > this.bounds.left + 380) {
+        this.x = this.bounds.left + 380;
+        this.vx = -(22 + Math.random() * 15);
+        this.facing = -1;
+      }
+
+      const b = this.bounds;
+      const t = Math.max(0, Math.min(1, (this.y - b.top) / (b.bottom - b.top)));
+      this.scale = 0.75 + t * 0.45;
+    }
+    draw(ctx, isNight) {
+      ctx.save();
+      const s = this.scale;
+      const bob = Math.sin(this.animBob) * (2 * s);
+
+      ctx.fillStyle = isNight ? "rgba(0,0,0,0.35)" : "rgba(0,0,0,0.18)";
+      ctx.beginPath();
+      ctx.ellipse(this.x, this.y, 18 * s, 6 * s, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      const img = sprites.henWalk;
+      const sw = 58 * s;
+      const sh = 58 * s;
+      if (img && img.complete && img.naturalWidth > 0) {
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.scale(-this.facing, 1);
+        ctx.drawImage(img, -sw / 2, -sh + 5 * s + bob, sw, sh);
+        ctx.restore();
+      }
+      ctx.restore();
+    }
+  }
+
+  // CHICKEN 3: ALERT HEN (Gà cảnh giác với dấu chấm than !, canh ổ trứng)
+  class AlertHen {
+    constructor(x, y, bounds) {
+      this.x = x;
+      this.y = y;
+      this.bounds = bounds;
+      this.animBob = 0;
+      this.facing = 1;
+      this.scale = 0.85;
+    }
+    update(dt, isChasing) {
+      this.animBob += dt * (isChasing ? 12 : 5);
+      const b = this.bounds;
+      const t = Math.max(0, Math.min(1, (this.y - b.top) / (b.bottom - b.top)));
+      this.scale = 0.75 + t * 0.45;
+    }
+    draw(ctx, isNight, isChasing) {
+      ctx.save();
+      const s = this.scale;
+      const bob = Math.sin(this.animBob) * ((isChasing ? 5 : 2) * s);
+
+      ctx.fillStyle = isNight ? "rgba(0,0,0,0.38)" : "rgba(0,0,0,0.18)";
+      ctx.beginPath();
+      ctx.ellipse(this.x, this.y, 19 * s, 7 * s, 0, 0, Math.PI * 2);
+      ctx.fill();
+
+      const img = sprites.henAlert;
+      const sw = 62 * s;
+      const sh = 62 * s;
+      if (img && img.complete && img.naturalWidth > 0) {
+        ctx.save();
+        ctx.translate(this.x, this.y);
+        ctx.scale(this.facing, 1);
+        ctx.drawImage(img, -sw / 2, -sh + 5 * s + bob, sw, sh);
+        ctx.restore();
+      }
       ctx.restore();
     }
   }
@@ -1526,13 +1625,11 @@
     draw(ctx) {
       const alpha = Math.abs(Math.sin(this.phase)) * 0.85 + 0.15;
       ctx.save();
-      // Glow halo
       ctx.fillStyle = `rgba(250, 204, 21, ${alpha * 0.35})`;
       ctx.beginPath();
       ctx.arc(this.x, this.y, 9, 0, Math.PI * 2);
       ctx.fill();
 
-      // Bright core
       ctx.fillStyle = `rgba(254, 240, 138, ${alpha})`;
       ctx.beginPath();
       ctx.arc(this.x, this.y, 2.5, 0, Math.PI * 2);
@@ -1541,7 +1638,7 @@
     }
   }
 
-  // Twinkling Night Star
+  // Twinkling Star
   class StarParticle {
     constructor(xRatio, yRatio) {
       this.xRatio = xRatio;
@@ -1568,7 +1665,7 @@
       this.ctx = this.canvas.getContext("2d");
       this.wrapper = document.getElementById("canvasWrapper");
 
-      this.theme = 'night'; // Default NIGHT TILE MAP
+      this.theme = 'night';
       this.animTime = 0;
 
       this.bounds = { left: 0, right: 0, top: 0, bottom: 0 };
@@ -1576,7 +1673,11 @@
       this.studentList = [];
       this.calledSet = new Set();
 
-      this.hen = null;
+      // ĐA DẠNG ĐÀN GÀ (Multiple chicken icons active!)
+      this.chaserHen = null;
+      this.patrolHen = null;
+      this.alertHen = null;
+
       this.fireflies = [];
       this.stars = [];
 
@@ -1615,7 +1716,6 @@
     }
 
     initStars() {
-      // 18 twinkling stars placed across the sky area (y < 0.42)
       this.stars = [
         new StarParticle(0.08, 0.08), new StarParticle(0.18, 0.12),
         new StarParticle(0.25, 0.06), new StarParticle(0.32, 0.15),
@@ -1647,12 +1747,12 @@
       const w = this.canvas.width;
       const h = this.canvas.height;
 
-      // Authentic lawn area on the 16:9 night tile map
+      // Authentic Farm Meadow boundaries: strictly on the grass ground!
       this.bounds = {
         left: w * 0.08,
         right: w * 0.88,
-        top: h * 0.54,
-        bottom: h * 0.89
+        top: h * 0.47,
+        bottom: h * 0.90
       };
 
       this.students = this.studentList.map(name => {
@@ -1661,12 +1761,16 @@
         return s;
       });
 
-      // Hen roosts near the coop on the right side
-      const coopHomeX = w * 0.80;
-      const coopHomeY = h * 0.65;
-      this.hen = new HenEntity(coopHomeX, coopHomeY, this.bounds);
+      // 1. Chaser Hen (starts roosted on the right near coop)
+      this.chaserHen = new ChaserHen(w * 0.78, this.bounds.top + 30, this.bounds);
 
-      // 24 glowing fireflies for night scene
+      // 2. Patrol Hen (walks along left/middle lawn)
+      this.patrolHen = new PatrolHen(w * 0.22, this.bounds.top + 90, this.bounds);
+
+      // 3. Alert Hen (stands watchful near egg nest in center-back)
+      this.alertHen = new AlertHen(w * 0.48, this.bounds.top + 40, this.bounds);
+
+      // 24 fireflies for night scene
       this.fireflies = Array.from({ length: 24 }, () => new Firefly(this.bounds));
     }
 
@@ -1749,16 +1853,19 @@
       }
 
       this.targetStudent = pool[Math.floor(Math.random() * pool.length)];
-      this.hen.target = this.targetStudent;
-      this.hen.state = 'chase';
+      this.chaserHen.target = this.targetStudent;
+      this.chaserHen.state = 'chase';
 
       this.isChasing = true;
       this.chaseTimer = this.chaseDuration;
       this.lastTickSec = Math.ceil(this.chaseDuration);
 
-      document.getElementById("btnStartChase").disabled = true;
+      const btnChase = document.getElementById("btnStartChase");
+      btnChase.disabled = true;
+      btnChase.innerHTML = "<span>⚡ Chasing...</span>";
+
       document.getElementById("statusDot").className = "dot chasing";
-      document.getElementById("statusText").textContent = "Gà mẹ đang rượt đuổi trong đêm! ⚡";
+      document.getElementById("statusText").textContent = "Gà mẹ đang rượt đuổi! ⚡";
       document.getElementById("timerOverlay").classList.add("show");
       document.getElementById("countdownSec").textContent = `${this.lastTickSec}s`;
 
@@ -1767,14 +1874,17 @@
 
     endChase() {
       this.isChasing = false;
-      document.getElementById("btnStartChase").disabled = false;
+      const btnChase = document.getElementById("btnStartChase");
+      btnChase.disabled = false;
+      btnChase.innerHTML = "<span>🚀 Start</span>";
+
       document.getElementById("statusDot").className = "dot";
       document.getElementById("statusText").textContent = this.theme === 'night' ? "The chickens are sleeping... 🌙" : "The chickens are ready ☀️";
       document.getElementById("timerOverlay").classList.remove("show");
 
       if (this.targetStudent) {
         this.targetStudent.state = 'pecked';
-        this.hen.state = 'peck';
+        this.chaserHen.state = 'peck';
         this.calledSet.add(this.targetStudent.name);
         this.targetStudent.called = true;
 
@@ -1854,8 +1964,8 @@
       if (this.targetStudent) {
         this.targetStudent.state = 'wander';
       }
-      this.hen.state = 'idle';
-      this.hen.target = null;
+      this.chaserHen.state = 'idle';
+      this.chaserHen.target = null;
     }
 
     bindUI() {
@@ -2025,8 +2135,13 @@
         }
       }
 
-      this.students.forEach(s => s.update(dt, this.hen, this.isChasing));
-      if (this.hen) this.hen.update(dt, this.isChasing);
+      // Update all students
+      this.students.forEach(s => s.update(dt, this.chaserHen, this.isChasing));
+
+      // Update multiple chickens
+      if (this.chaserHen) this.chaserHen.update(dt, this.isChasing);
+      if (this.patrolHen) this.patrolHen.update(dt);
+      if (this.alertHen) this.alertHen.update(dt, this.isChasing);
 
       if (this.theme === 'night') {
         this.fireflies.forEach(f => f.update(dt));
@@ -2038,127 +2153,216 @@
       const w = this.canvas.width;
       const h = this.canvas.height;
       const isNight = this.theme === 'night';
+      const groundTop = h * 0.45;
 
       ctx.clearRect(0, 0, w, h);
 
-      // 1. DRAW AUTHENTIC BACKGROUND TILE MAP (asset_05.png / asset_15.png)
+      // 1. SKY & DISTANT MOUNTAINS BACKDROP (Upper 45% of Canvas)
       const bgImg = isNight ? sprites.nightBg : sprites.dayBg;
-      let dx = 0, dy = 0, dw = w, dh = h;
-
       if (bgImg && bgImg.complete && bgImg.naturalWidth > 0) {
-        const imgRatio = bgImg.naturalWidth / bgImg.naturalHeight;
-        const cRatio = w / h;
-        if (cRatio > imgRatio) {
-          dw = w;
-          dh = w / imgRatio;
-          dx = 0;
-          dy = (h - dh) / 2;
-        } else {
-          dh = h;
-          dw = h * imgRatio;
-          dx = (w - dw) / 2;
-          dy = 0;
-        }
-        ctx.drawImage(bgImg, dx, dy, dw, dh);
+        // Draw the upper sky and mountains cleanly in the top 48%
+        ctx.drawImage(bgImg, 0, 0, bgImg.naturalWidth, 680, 0, 0, w, groundTop + 10);
       } else {
-        // High quality fallback gradient while image loads
-        const skyGrad = ctx.createLinearGradient(0, 0, 0, h);
+        const skyGrad = ctx.createLinearGradient(0, 0, 0, groundTop);
         if (isNight) {
           skyGrad.addColorStop(0, "#081426");
-          skyGrad.addColorStop(0.5, "#0f233d");
           skyGrad.addColorStop(1, "#183324");
         } else {
           skyGrad.addColorStop(0, "#38bdf8");
-          skyGrad.addColorStop(0.5, "#bae6fd");
           skyGrad.addColorStop(1, "#86efac");
         }
         ctx.fillStyle = skyGrad;
-        ctx.fillRect(0, 0, w, h);
+        ctx.fillRect(0, 0, w, groundTop);
       }
 
-      // 2. NIGHT ATMOSPHERE & LIGHTING OVER TILE MAP
+      // 2. NIGHT SKY AURA & TWINKLING STARS
       if (isNight) {
-        // (A) Pulsing Aura around Golden Crescent Moon (located at top-left ~12.5% w, 17% h)
-        const moonX = dx + dw * 0.125;
-        const moonY = dy + dh * 0.17;
-        const moonGlow = ctx.createRadialGradient(moonX, moonY, 15, moonX, moonY, 80);
-        const mPulse = 0.3 + 0.15 * Math.sin(this.animTime * 1.6);
+        // Moon Breathing Aura at top-left
+        const moonX = w * 0.125;
+        const moonY = groundTop * 0.35;
+        const moonGlow = ctx.createRadialGradient(moonX, moonY, 12, moonX, moonY, 75);
+        const mPulse = 0.35 + 0.18 * Math.sin(this.animTime * 1.6);
         moonGlow.addColorStop(0, `rgba(254, 240, 138, ${mPulse})`);
         moonGlow.addColorStop(1, "rgba(254, 240, 138, 0)");
         ctx.fillStyle = moonGlow;
         ctx.beginPath();
-        ctx.arc(moonX, moonY, 80, 0, Math.PI * 2);
+        ctx.arc(moonX, moonY, 75, 0, Math.PI * 2);
         ctx.fill();
 
-        // (B) Twinkling Stars in Night Sky
-        this.stars.forEach(st => st.draw(ctx, w, h, this.animTime));
+        // Stars in upper sky
+        this.stars.forEach(st => st.draw(ctx, w, groundTop, this.animTime));
+      }
 
-        // (C) Pulsing Golden Glow over the 5 Eggs in the spotlight (located at bottom-center ~51% w, 88% h)
-        const eggX = dx + dw * 0.51;
-        const eggY = dy + dh * 0.88;
-        const eggGlow = ctx.createRadialGradient(eggX, eggY, 10, eggX, eggY, 85);
-        const eggPulse = 0.28 + 0.18 * Math.sin(this.animTime * 2.8);
-        eggGlow.addColorStop(0, `rgba(251, 191, 36, ${eggPulse})`);
-        eggGlow.addColorStop(1, "rgba(251, 191, 36, 0)");
-        ctx.fillStyle = eggGlow;
-        ctx.beginPath();
-        ctx.ellipse(eggX, eggY, 85, 34, 0, 0, Math.PI * 2);
-        ctx.fill();
+      // 3. FARM MEADOW GROUND (Spans from groundTop down to bottom)
+      const groundGrad = ctx.createLinearGradient(0, groundTop, 0, h);
+      if (isNight) {
+        groundGrad.addColorStop(0, "#1e3e29");
+        groundGrad.addColorStop(0.35, "#173421");
+        groundGrad.addColorStop(1, "#0d2014");
+      } else {
+        groundGrad.addColorStop(0, "#eef6e6");
+        groundGrad.addColorStop(0.4, "#dce9ce");
+        groundGrad.addColorStop(1, "#c5d7b3");
+      }
+      ctx.fillStyle = groundGrad;
+      ctx.fillRect(0, groundTop, w, h - groundTop);
 
-        // (D) Animated Fireflies dancing across the lawn
+      // Wooden Fence Posts along horizon (groundTop)
+      this.drawFence(ctx, w, groundTop, isNight);
+
+      // Inner dirt ring / circular running path
+      const cx = w * 0.46;
+      const cy = groundTop + (h - groundTop) * 0.48;
+      const rx = w * 0.38;
+      const ry = (h - groundTop) * 0.36;
+      ctx.strokeStyle = isNight ? "rgba(90, 75, 55, 0.28)" : "rgba(163, 137, 100, 0.22)";
+      ctx.lineWidth = 14;
+      ctx.beginPath();
+      ctx.ellipse(cx, cy, rx, ry, 0, 0, Math.PI * 2);
+      ctx.stroke();
+
+      // Chicken Coop with Guard Chicken at back right of the lawn (hen_coop.png)
+      if (sprites.henCoop && sprites.henCoop.complete && sprites.henCoop.naturalWidth > 0) {
+        const coopW = 145;
+        const coopH = 145;
+        ctx.drawImage(sprites.henCoop, w * 0.81 - coopW / 2, groundTop - coopH * 0.55, coopW, coopH);
+      }
+
+      // Egg Nest with Golden Eggs in center
+      this.drawEggNest(ctx, cx, cy, isNight);
+
+      // 4. ANIMATED FIREFLIES
+      if (isNight) {
         this.fireflies.forEach(f => f.draw(ctx));
 
-        // (E) Dynamic Searchlight Beam during Chase Mode
-        if (this.isChasing && this.hen) {
-          const hx = this.hen.x;
-          const hy = this.hen.y - 10;
-          const tx = this.hen.target ? this.hen.target.x : (hx + this.hen.facing * 180);
-          const ty = this.hen.target ? this.hen.target.y : hy;
+        // Searchlight during chase
+        if (this.isChasing && this.chaserHen) {
+          const hx = this.chaserHen.x;
+          const hy = this.chaserHen.y - 12;
+          const tx = this.chaserHen.target ? this.chaserHen.target.x : (hx + this.chaserHen.facing * 180);
+          const ty = this.chaserHen.target ? this.chaserHen.target.y : hy;
           const ang = Math.atan2(ty - hy, tx - hx);
 
           ctx.save();
-          const coneGrad = ctx.createRadialGradient(hx, hy, 10, hx, hy, 260);
+          const coneGrad = ctx.createRadialGradient(hx, hy, 10, hx, hy, 270);
           coneGrad.addColorStop(0, "rgba(254, 240, 138, 0.45)");
           coneGrad.addColorStop(1, "rgba(254, 240, 138, 0)");
           ctx.fillStyle = coneGrad;
           ctx.beginPath();
           ctx.moveTo(hx, hy);
-          ctx.arc(hx, hy, 260, ang - 0.35, ang + 0.35);
+          ctx.arc(hx, hy, 270, ang - 0.35, ang + 0.35);
           ctx.closePath();
           ctx.fill();
           ctx.restore();
         }
       }
 
-      // 3. 2.5D ENTITY DEPTH SORTING (Students & Hen)
+      // 5. ALL CHARACTERS (Students & Multiple Chickens) SORTED BY Y (DEPTH SORTING)
       const allEntities = [...this.students];
-      if (this.hen) allEntities.push(this.hen);
+      if (this.chaserHen) allEntities.push(this.chaserHen);
+      if (this.patrolHen) allEntities.push(this.patrolHen);
+      if (this.alertHen) allEntities.push(this.alertHen);
+
       allEntities.sort((a, b) => a.y - b.y);
 
       allEntities.forEach(ent => {
         if (ent instanceof StudentEntity) {
           ent.draw(ctx, isNight, this.isChasing);
-        } else if (ent instanceof HenEntity) {
+        } else if (ent instanceof ChaserHen) {
+          ent.draw(ctx, isNight, this.isChasing);
+        } else if (ent instanceof PatrolHen) {
+          ent.draw(ctx, isNight);
+        } else if (ent instanceof AlertHen) {
           ent.draw(ctx, isNight, this.isChasing);
         }
       });
 
-      // 4. SPOTLIGHT ON CAUGHT STUDENT (Impact comic FX)
+      // 6. SPOTLIGHT ON CAUGHT STUDENT (Impact comic FX)
       if (this.targetStudent && this.targetStudent.state === 'pecked') {
         ctx.save();
         const s = this.targetStudent.scale;
-        ctx.fillStyle = "rgba(239, 68, 68, 0.3)";
+        ctx.fillStyle = "rgba(239, 68, 68, 0.32)";
         ctx.beginPath();
-        ctx.arc(this.targetStudent.x, this.targetStudent.y - 10 * s, 65 * s, 0, Math.PI * 2);
+        ctx.arc(this.targetStudent.x, this.targetStudent.y - 20 * s, 68 * s, 0, Math.PI * 2);
         ctx.fill();
 
         // Comic FX POW / BONK
         const fxImg = sprites.fxPow && sprites.fxPow.complete ? sprites.fxPow : sprites.fxBonk;
         if (fxImg && fxImg.complete && fxImg.naturalWidth > 0) {
-          ctx.drawImage(fxImg, this.targetStudent.x - 38 * s, this.targetStudent.y - 78 * s, 76 * s, 76 * s);
+          ctx.drawImage(fxImg, this.targetStudent.x - 42 * s, this.targetStudent.y - 88 * s, 84 * s, 84 * s);
         }
         ctx.restore();
       }
+    }
+
+    drawFence(ctx, w, groundY, isNight) {
+      ctx.save();
+      const posts = 26;
+      ctx.fillStyle = isNight ? "#5c4033" : "#8d6e63";
+      ctx.strokeStyle = isNight ? "#3e2723" : "#4e342e";
+      ctx.lineWidth = 1;
+
+      for (let i = 0; i <= posts; i++) {
+        const fx = i * (w / posts);
+        ctx.fillRect(fx - 4, groundY - 18, 8, 22);
+        ctx.strokeRect(fx - 4, groundY - 18, 8, 22);
+      }
+
+      ctx.strokeStyle = isNight ? "rgba(78, 52, 46, 0.75)" : "rgba(109, 76, 65, 0.65)";
+      ctx.lineWidth = 3;
+      ctx.beginPath();
+      ctx.moveTo(0, groundY - 6);
+      ctx.lineTo(w, groundY - 6);
+      ctx.stroke();
+
+      ctx.beginPath();
+      ctx.moveTo(0, groundY - 13);
+      ctx.lineTo(w, groundY - 13);
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    drawEggNest(ctx, cx, cy, isNight) {
+      ctx.save();
+      // Straw bed
+      ctx.fillStyle = isNight ? "#854d0e" : "#fef3c7";
+      ctx.beginPath();
+      ctx.ellipse(cx, cy, 62, 38, 0, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.strokeStyle = isNight ? "#713f12" : "#d97706";
+      ctx.lineWidth = 2.5;
+      ctx.stroke();
+
+      // Straw lines
+      ctx.strokeStyle = isNight ? "#ca8a04" : "#f59e0b";
+      for (let i = 0; i < 8; i++) {
+        const a = (Math.PI * 2 * i) / 8;
+        ctx.beginPath();
+        ctx.moveTo(cx + Math.cos(a) * 38, cy + Math.sin(a) * 24);
+        ctx.lineTo(cx + Math.cos(a) * 56, cy + Math.sin(a) * 35);
+        ctx.stroke();
+      }
+
+      // Golden Eggs with subtle night pulse
+      const eggPositions = [[-16, -6], [14, -5], [0, 8], [-7, -13], [9, 6]];
+      eggPositions.forEach(([dx, dy]) => {
+        if (isNight) {
+          ctx.fillStyle = "rgba(254, 240, 138, 0.4)";
+          ctx.beginPath();
+          ctx.arc(cx + dx, cy + dy, 16, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        ctx.fillStyle = "#fffbeb";
+        ctx.beginPath();
+        ctx.ellipse(cx + dx, cy + dy, 9.5, 13, 0.2, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = "#ca8a04";
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+      });
+
+      ctx.restore();
     }
   }
 
