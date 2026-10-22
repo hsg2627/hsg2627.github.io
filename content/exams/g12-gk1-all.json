@@ -1,0 +1,1312 @@
+{
+  "title": "Bộ Bài Tập Ôn Thi Giữa Kì 1 — Tiếng Anh Lớp 12 (Chương trình 2018)",
+  "description": "Toàn bộ 3 đề ôn thi giữa kì 1 Tiếng Anh 12 bám sát chuẩn kiến thức kĩ năng, có đáp án chi tiết và giải thích chuẩn mực.",
+  "tests": [
+    {
+      "id": "g12_de1",
+      "title": "Đề Ôn Tập Số 1 (Đề 1 — Tiếng Anh 12)",
+      "subtitle": "Language · Reading · Writing (30 câu)",
+      "grade": 12,
+      "items": [
+        {
+          "id": "g12_t1_01",
+          "num": 1,
+          "section": "I. LANGUAGE: Opposite in Meaning",
+          "type": "mcq",
+          "prompt": "Mark the letter A, B, C or D on your answer sheet to indicate the word(s) OPPOSITE in meaning to the underlined word(s):<br><b><u>Single-use</u> products provide great convenience, but they also harm the environment.</b>",
+          "options": [
+            "A. Contaminated",
+            "B. Decomposed",
+            "C. Reusable",
+            "D. Released"
+          ],
+          "answer": 2,
+          "explanation": "<b>Single-use</b> có nghĩa là 'sử dụng một lần rồi vứt bỏ'. Trái nghĩa là <b>Reusable</b> (có thể tái sử dụng nhiều lần).<br>• Contaminated: bị ô nhiễm<br>• Decomposed: bị phân hủy<br>• Released: được giải phóng, thải ra."
+        },
+        {
+          "id": "g12_t1_02",
+          "num": 2,
+          "section": "I. LANGUAGE: Closest in Meaning",
+          "type": "mcq",
+          "prompt": "Mark the letter A, B, C or D on your answer sheet to indicate the word(s) CLOSEST in meaning to the underlined word(s):<br><b>One of her <u>impressive</u> achievements is the discovery of radium and polonium.</b>",
+          "options": [
+            "A. visionary",
+            "B. animated",
+            "C. outstanding",
+            "D. stylish"
+          ],
+          "answer": 2,
+          "explanation": "<b>impressive</b> (gây ấn tượng sâu sắc, xuất sắc) đồng nghĩa với <b>outstanding</b> (nổi bật, kiệt xuất).<br>• visionary: nhìn xa trông rộng<br>• animated: sôi nổi, sống động<br>• stylish: phong cách, hợp thời trang."
+        },
+        {
+          "id": "g12_t1_03",
+          "num": 3,
+          "section": "I. LANGUAGE: Word Stress",
+          "type": "mcq",
+          "prompt": "Mark the letter A, B, C or D on your answer sheet to indicate the word that differs from the other three in the position of primary stress.",
+          "options": [
+            "A. origin",
+            "B. confusion",
+            "C. autograph",
+            "D. specialty"
+          ],
+          "answer": 1,
+          "explanation": "<b>confusion</b> /kənˈfjuːʒn/ có trọng âm rơi vào âm tiết 2 (đuôi -ion có trọng âm rơi vào âm liền trước).<br>Các từ còn lại có trọng âm rơi vào âm tiết 1:<br>• origin: /ˈɒrɪdʒɪn/<br>• autograph: /ˈɔːtəɡrɑːf/<br>• specialty: /ˈspeʃəlti/."
+        },
+        {
+          "id": "g12_t1_04",
+          "num": 4,
+          "section": "I. LANGUAGE: Grammar",
+          "type": "mcq",
+          "prompt": "We ________ a documentary about war heroes at 8.30 P.M. last Friday.",
+          "options": [
+            "A. watched",
+            "B. have watched",
+            "C. were watching",
+            "D. are watching"
+          ],
+          "answer": 2,
+          "explanation": "Trạng ngữ chỉ thời gian xác định cụ thể trong quá khứ 'at 8.30 P.M. last Friday' (vào lúc 8h30 tối thứ Sáu tuần trước) -> dùng thì <b>Quá khứ tiếp diễn (Past Continuous)</b>: S + was/were + V-ing -> <b>were watching</b>."
+        },
+        {
+          "id": "g12_t1_05",
+          "num": 5,
+          "section": "I. LANGUAGE: Vocabulary",
+          "type": "mcq",
+          "prompt": "Many Vietnamese young men volunteered to join the army during the ________ war against France.",
+          "options": [
+            "A. resistance",
+            "B. biography",
+            "C. account",
+            "D. experience"
+          ],
+          "answer": 0,
+          "explanation": "Collocation lịch sử cố định: <b>resistance war</b> (cuộc kháng chiến). 'the resistance war against France' = cuộc kháng chiến chống thực dân Pháp."
+        },
+        {
+          "id": "g12_t1_06",
+          "num": 6,
+          "section": "I. LANGUAGE: Vocabulary",
+          "type": "mcq",
+          "prompt": "Some people are concerned that celebrating foreign festivals can make people lose their sense of ________.",
+          "options": [
+            "A. specialty",
+            "B. anxiety",
+            "C. identity",
+            "D. cuisine"
+          ],
+          "answer": 2,
+          "explanation": "Cụm danh từ cố định: <b>sense of identity</b> (ý thức về bản sắc / bản sắc văn hóa dân tộc). 'lose their sense of identity' = đánh mất bản sắc của mình."
+        },
+        {
+          "id": "g12_t1_07",
+          "num": 7,
+          "section": "I. LANGUAGE: Phrasal Verb",
+          "type": "mcq",
+          "prompt": "They carried ________ extensive research on the environmental effects of using fake Christmas trees.",
+          "options": [
+            "A. off",
+            "B. out",
+            "C. after",
+            "D. for"
+          ],
+          "answer": 1,
+          "explanation": "Phrasal verb: <b>carry out</b> (tiến hành, thực hiện). 'carry out research/experiments' = tiến hành nghiên cứu/thí nghiệm."
+        },
+        {
+          "id": "g12_t1_08",
+          "num": 8,
+          "section": "I. LANGUAGE: Vocabulary",
+          "type": "mcq",
+          "prompt": "Electric cars are generally more ________ than cars running on petrol.",
+          "options": [
+            "A. eco-friendly",
+            "B. friendly",
+            "C. economical",
+            "D. ecological"
+          ],
+          "answer": 0,
+          "explanation": "<b>eco-friendly</b> (thân thiện với môi trường). Xe điện thân thiện với môi trường hơn xe chạy bằng xăng do không phát thải trực tiếp khí CO2."
+        },
+        {
+          "id": "g12_t1_09",
+          "num": 9,
+          "section": "I. LANGUAGE: Articles",
+          "type": "mcq",
+          "prompt": "George Washington was ________ first president of ________ United States.",
+          "options": [
+            "A. the - the",
+            "B. a - no article",
+            "C. the - a",
+            "D. a - the"
+          ],
+          "answer": 0,
+          "explanation": "Quy tắc mạo từ:<br>1. Trước số thứ tự (first, second, ...) dùng <b>the</b>: 'the first president'.<br>2. Trước tên quốc gia có danh từ chung/dạng liên bang số nhiều (United States, United Kingdom, Netherlands) dùng <b>the</b>: 'the United States'."
+        },
+        {
+          "id": "g12_t1_10",
+          "num": 10,
+          "section": "I. LANGUAGE: Error Correction",
+          "type": "mcq",
+          "prompt": "Mark the letter A, B, C or D to indicate the underlined part that needs correction:<br><b><u>Many</u> (A) celebrities <u>adopt</u> (B) a green lifestyle, <u>that</u> (C) <u>helps</u> (D) the environment a lot.</b>",
+          "options": [
+            "A. that",
+            "B. many",
+            "C. helps",
+            "D. adopt"
+          ],
+          "answer": 0,
+          "explanation": "Lỗi sai ở <b>that</b> (A). Trong mệnh đề quan hệ không xác định (đứng sau dấu phẩy) dùng để bổ nghĩa cho toàn bộ mệnh đề phía trước, ta bắt buộc phải dùng <b>which</b>, không được dùng <i>that</i>.<br>Sửa lại: <i>, which helps the environment a lot.</i>"
+        },
+        {
+          "id": "g12_t1_11",
+          "num": 11,
+          "section": "II. READING: Cloze Test (Medieval Alchemists)",
+          "type": "reading_cloze",
+          "passage_ref": "g12_t1_cloze",
+          "prompt": "Choose the best option to fit blank (11):<br><i>'...discover how to turn lead and (11)______ \"base\" metals into gold.'</i>",
+          "options": [
+            "A. another",
+            "B. others",
+            "C. other",
+            "D. one"
+          ],
+          "answer": 2,
+          "explanation": "Sau chỗ trống là danh từ số nhiều 'metals' -> dùng lượng từ <b>other</b> (+ N số nhiều): 'other \"base\" metals' (các kim loại cơ bản khác).<br>• another + N số ít<br>• others đóng vai trò đại từ, không đứng trước danh từ."
+        },
+        {
+          "id": "g12_t1_12",
+          "num": 12,
+          "section": "II. READING: Cloze Test (Medieval Alchemists)",
+          "type": "reading_cloze",
+          "passage_ref": "g12_t1_cloze",
+          "prompt": "Choose the best option to fit blank (12):<br><i>'Their (12)______ was based on the ancient idea that all matter consists of different proportions...'</i>",
+          "options": [
+            "A. expedition",
+            "B. quest",
+            "C. adventure",
+            "D. investigation"
+          ],
+          "answer": 1,
+          "explanation": "<b>quest</b> (cuộc truy tìm, tìm kiếm mục tiêu gian nan/cao cả). Cuộc tìm kiếm biến kim loại thành vàng của các nhà giả kim thuật được gọi là 'quest'.<br>• expedition: chuyến thám hiểm<br>• adventure: chuyến phiêu lưu<br>• investigation: cuộc điều tra."
+        },
+        {
+          "id": "g12_t1_13",
+          "num": 13,
+          "section": "II. READING: Cloze Test (Medieval Alchemists)",
+          "type": "reading_cloze",
+          "passage_ref": "g12_t1_cloze",
+          "prompt": "Choose the best option to fit blank (13):<br><i>'...finding the substance - (13)______ they called the philosopher's stone - that, when added to lead...'</i>",
+          "options": [
+            "A. which",
+            "B. who",
+            "C. where",
+            "D. whose"
+          ],
+          "answer": 0,
+          "explanation": "Đại từ quan hệ <b>which</b> thay thế cho danh từ chỉ vật đứng trước 'the substance' làm tân ngữ trong mệnh đề xen vào."
+        },
+        {
+          "id": "g12_t1_14",
+          "num": 14,
+          "section": "II. READING: Cloze Test (Medieval Alchemists)",
+          "type": "reading_cloze",
+          "passage_ref": "g12_t1_cloze",
+          "prompt": "Choose the best option to fit blank (14):<br><i>'...a substance that could cure diseases and (14)______ life.'</i>",
+          "options": [
+            "A. prolong",
+            "B. lengthen",
+            "C. expand",
+            "D. increase"
+          ],
+          "answer": 0,
+          "explanation": "Collocation: <b>prolong life</b> (kéo dài sự sống / tuổi thọ). 'lengthen' dùng cho chiều dài vật lý hoặc khoảng cách; 'expand' dùng cho mở rộng diện tích/quy mô."
+        },
+        {
+          "id": "g12_t1_15",
+          "num": 15,
+          "section": "II. READING: Cloze Test (Medieval Alchemists)",
+          "type": "reading_cloze",
+          "passage_ref": "g12_t1_cloze",
+          "prompt": "Choose the best option to fit blank (15):<br><i>'They failed on both counts. (15)______, their techniques for preparing and studying chemicals helped lay the foundation...'</i>",
+          "options": [
+            "A. Despite",
+            "B. However",
+            "C. Furthermore",
+            "D. Therefore"
+          ],
+          "answer": 1,
+          "explanation": "Trạng từ liên kết chỉ sự tương phản đứng đầu câu, sau dấu chấm và trước dấu phẩy -> dùng <b>However</b> (Tuy nhiên). 'Họ thất bại ở cả hai mục tiêu. Tuy nhiên, các kỹ thuật điều chế của họ đã đặt nền móng cho ngành hóa học hiện đại.'"
+        },
+        {
+          "id": "g12_t1_16",
+          "num": 16,
+          "section": "II. READING: Reading Comprehension (Globalisation & Culture)",
+          "type": "reading_comp",
+          "passage_ref": "g12_t1_comp",
+          "prompt": "What does the passage mainly discuss?",
+          "options": [
+            "A. The popularity of foreign foods",
+            "B. The effects of globalisation on cultural diversity",
+            "C. The disappearance of some traditional customs",
+            "D. The combination of different fashion ideas"
+          ],
+          "answer": 1,
+          "explanation": "Bài viết bàn về tác động của toàn cầu hóa đối với sự đa dạng văn hóa (thể hiện qua ẩm thực, âm nhạc và thời trang), được nêu rõ ở đoạn 1 ('globalisation has also encouraged cultural diversity') và kết luận ở đoạn cuối."
+        },
+        {
+          "id": "g12_t1_17",
+          "num": 17,
+          "section": "II. READING: Reading Comprehension (Globalisation & Culture)",
+          "type": "reading_comp",
+          "passage_ref": "g12_t1_comp",
+          "prompt": "The word <b>them</b> in paragraph 2 refers to ________.",
+          "options": [
+            "A. local tastes",
+            "B. Vietnamese specialties",
+            "C. local ingredients",
+            "D. international dishes"
+          ],
+          "answer": 3,
+          "explanation": "Xem ngữ cảnh đoạn 2: <i>'Moreover, some international dishes use local ingredients, which make <u>them</u> unique and more suitable to local tastes.'</i> Từ 'them' thay thế cho danh từ số nhiều làm chủ ngữ phía trước là <b>international dishes</b> (các món ăn quốc tế)."
+        },
+        {
+          "id": "g12_t1_18",
+          "num": 18,
+          "section": "II. READING: Reading Comprehension (Globalisation & Culture)",
+          "type": "reading_comp",
+          "passage_ref": "g12_t1_comp",
+          "prompt": "According to paragraph 3, which of the following is NOT mentioned as an impact of globalisation on music?",
+          "options": [
+            "A. Musicians in different countries work on music projects.",
+            "B. People now can listen to music from different cultures.",
+            "C. New music is discovered quickly from all over the world.",
+            "D. Music festivals help improve some artists' quality of life."
+          ],
+          "answer": 3,
+          "explanation": "Trong đoạn 3 chỉ nhắc đến: 'bring artists and music fans together' (kết nối nghệ sĩ và người hâm mộ), KHÔNG hề đề cập đến việc cải thiện chất lượng cuộc sống của nghệ sĩ (improve quality of life) -> Chọn D."
+        },
+        {
+          "id": "g12_t1_19",
+          "num": 19,
+          "section": "II. READING: Reading Comprehension (Globalisation & Culture)",
+          "type": "reading_comp",
+          "passage_ref": "g12_t1_comp",
+          "prompt": "The word <b>captivated</b> in paragraph 3 is OPPOSITE in meaning to ________.",
+          "options": [
+            "A. blended",
+            "B. reflected",
+            "C. attracted",
+            "D. disappointed"
+          ],
+          "answer": 3,
+          "explanation": "<b>captivated</b> nghĩa là 'bị cuốn hút, say mê'. Trái nghĩa là <b>disappointed</b> (thất vọng, chán nản).<br>• attracted: bị thu hút (đồng nghĩa)<br>• blended: pha trộn<br>• reflected: phản chiếu."
+        },
+        {
+          "id": "g12_t1_20",
+          "num": 20,
+          "section": "II. READING: Reading Comprehension (Globalisation & Culture)",
+          "type": "reading_comp",
+          "passage_ref": "g12_t1_comp",
+          "prompt": "Which of the following is TRUE according to the passage?",
+          "options": [
+            "A. People now can keep up with fashion trends from different cultures.",
+            "B. Globalisation threatens to put cultural diversity at risk.",
+            "C. Cross-cultural fashion styles only use traditional elements.",
+            "D. Foreign foods are now more popular than traditional foods in Vietnam."
+          ],
+          "answer": 0,
+          "explanation": "Căn cứ thông tin đoạn 4: <i>'It is now easier for people to keep up with fashion trends from different cultures and regions...'</i> -> Phát biểu A là ĐÚNG."
+        },
+        {
+          "id": "g12_t1_21",
+          "num": 21,
+          "section": "III. WRITING: Sentence Arrangement",
+          "type": "mcq",
+          "prompt": "Mark the letter A, B, C or D to indicate the correct arrangement of sentences to make a meaningful paragraph:<br><i>a. More than 300 students attended the fair and enjoyed Vietnamese dishes, songs and games.<br>b. In my view, the day was a great success. All the attendees felt happy.<br>c. There were 30 stalls where various activities were offered.<br>d. Yesterday, our school organised the Spring Fair in the playground.<br>e. However, it would be better if we could make Banh Chung during the night.</i>",
+          "options": [
+            "A. d - a - c - b - e",
+            "B. d - b - a - c - e",
+            "C. b - d - a - e - c",
+            "D. b - c - d - e - a"
+          ],
+          "answer": 0,
+          "explanation": "Trình tự hợp lý:<br>1. (d) Mở đầu giới thiệu sự kiện: Hôm qua trường tổ chức Hội chợ Xuân.<br>2. (a) Số lượng người tham gia và các hoạt động chung.<br>3. (c) Chi tiết về quy mô: Có 30 gian hàng với nhiều hoạt động.<br>4. (b) Đánh giá tổng quan: Ngày hội thành công tốt đẹp.<br>5. (e) Đề xuất cải thiện: Tuy nhiên sẽ tuyệt hơn nếu gói bánh chưng qua đêm.<br>-> Thứ tự: <b>d - a - c - b - e</b>."
+        },
+        {
+          "id": "g12_t1_22",
+          "num": 22,
+          "section": "III. WRITING: Sentence Arrangement",
+          "type": "mcq",
+          "prompt": "Mark the letter A, B, C or D to indicate the correct arrangement of sentences to make a meaningful paragraph:<br><i>a. Secondly, it’s a good idea that you try to cook traditional food frequently.<br>b. There are two main ways to maintain your cultural identity in a new culture.<br>c. Staying connected with your family and friends helps you to feel part of your native culture.<br>d. You should also remember to make mealtimes special and important occasions.<br>e. Firstly, keep in touch with people you know back home.</i>",
+          "options": [
+            "A. c - a - d - e - a",
+            "B. b - a - e - d - c",
+            "C. b - e - d - a - c",
+            "D. b - e - c - a - d"
+          ],
+          "answer": 3,
+          "explanation": "Trình tự logic đoạn văn nghị luận:<br>• (b) Câu chủ đề: Có hai cách chính để duy trì bản sắc văn hóa...<br>• (e) Cách thứ nhất: Firstly, giữ liên lạc với người quen ở quê nhà.<br>• (c) Diễn giải cách 1: Giữ kết nối giúp bạn cảm thấy là một phần của văn hóa gốc.<br>• (a) Cách thứ hai: Secondly, nấu món ăn truyền thống thường xuyên.<br>• (d) Diễn giải bổ sung cách 2: Bạn cũng nên biến bữa ăn thành dịp đặc biệt.<br>-> Thứ tự chuẩn: <b>b - e - c - a - d</b>."
+        },
+        {
+          "id": "g12_t1_23",
+          "num": 23,
+          "section": "III. WRITING: Sentence Transformation",
+          "type": "transform",
+          "prompt": "Complete the second sentence so that it has the same meaning as the first:<br><b>I always turn off the fans when I leave the room. This helps save energy. (which)</b><br>→ ___________________________________________________________.",
+          "model_answers": [
+            "I always turn off the fans when I leave the room, which helps save energy.",
+            "I always turn off the fans when leaving the room, which helps save energy."
+          ],
+          "explanation": "Cấu trúc mệnh đề quan hệ không xác định với <b>which</b> thay thế cho toàn bộ sự việc ở mệnh đề đứng trước: <i>S + V, which + V...</i> Lưu ý bắt buộc phải có dấu phẩy trước <b>which</b>."
+        },
+        {
+          "id": "g12_t1_24",
+          "num": 24,
+          "section": "III. WRITING: Sentence Transformation",
+          "type": "transform",
+          "prompt": "Complete the second sentence so that it has the same meaning as the first:<br><b>No mountain in the Indochinese Peninsula is as high as Fanxifan.</b><br>→ Fanxifan is ___________________________________________________________.",
+          "model_answers": [
+            "Fanxifan is the highest mountain in the Indochinese Peninsula."
+          ],
+          "explanation": "Chuyển từ so sánh bằng dạng phủ định sang so sánh nhất:<br><i>No + N + is as + adj + as + X → X is the + adj-est / most adj + N.</i>"
+        },
+        {
+          "id": "g12_t1_25",
+          "num": 25,
+          "section": "III. WRITING: Sentence Transformation",
+          "type": "transform",
+          "prompt": "Complete the second sentence so that it has the same meaning as the first:<br><b>Protecting the environment is up to everyone doing small things everyday. (depends)</b><br>→ ___________________________________________________________.",
+          "model_answers": [
+            "Protecting the environment depends on everyone doing small things everyday.",
+            "Protecting the environment depends on everyone doing small things every day."
+          ],
+          "explanation": "Cụm thành ngữ tương đương: <b>be up to someone</b> = <b>depend on someone</b> (phụ thuộc vào ai / do ai quyết định)."
+        },
+        {
+          "id": "g12_t1_26",
+          "num": 26,
+          "section": "III. WRITING: Sentence Transformation",
+          "type": "transform",
+          "prompt": "Complete the second sentence so that it has the same meaning as the first:<br><b>During my lunch time, someone knocked the door.</b><br>→ While ___________________________________________________________.",
+          "model_answers": [
+            "While I was having lunch, someone knocked on the door.",
+            "While I was having lunch, someone knocked at the door.",
+            "While I was eating lunch, someone knocked on the door.",
+            "While I was eating lunch, someone knocked at the door.",
+            "While I was having my lunch, someone knocked on the door."
+          ],
+          "explanation": "Quy tắc chuyển đổi: <i>During + Noun phrase → While + S + was/were + V-ing</i> (Hành động đang xảy ra trong quá khứ thì hành động khác xen vào)."
+        },
+        {
+          "id": "g12_t1_27",
+          "num": 27,
+          "section": "III. WRITING: Sentence Building",
+          "type": "sentence_building",
+          "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>While / Vo Nguyen Giap / work / as / history / teacher / he / join / revolutionary / activities</b>",
+          "model_answers": [
+            "While Vo Nguyen Giap was working as a history teacher, he joined revolutionary activities."
+          ],
+          "explanation": "Cấu trúc quá khứ tiếp diễn kết hợp quá khứ đơn với liên từ While:<br><i>While + S + was/were + V-ing, S + V2/ed.</i>"
+        },
+        {
+          "id": "g12_t1_28",
+          "num": 28,
+          "section": "III. WRITING: Sentence Building",
+          "type": "sentence_building",
+          "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>Cultural / diffusion / happen / when / people / of / different / cultures / interact / each other .</b>",
+          "model_answers": [
+            "Cultural diffusion happens when people of different cultures interact with each other.",
+            "Cultural diffusion happens when people from different cultures interact with each other."
+          ],
+          "explanation": "Hiện tại đơn diễn tả định nghĩa / quy luật khoa học: Cultural diffusion (danh từ số ít -> chia 'happens'), đi kèm cụm 'interact with each other' (tương tác với nhau)."
+        },
+        {
+          "id": "g12_t1_29",
+          "num": 29,
+          "section": "III. WRITING: Sentence Building",
+          "type": "sentence_building",
+          "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>Not until / they / set up / eco-club / did / students / start / clean up / school / yard</b>",
+          "model_answers": [
+            "Not until they set up an eco-club did students start to clean up the school yard.",
+            "Not until they set up the eco-club did students start cleaning up the school yard.",
+            "Not until they set up an eco-club did students start cleaning up the school yard.",
+            "Not until they set up the eco-club did students start to clean up the school yard."
+          ],
+          "explanation": "Cấu trúc đảo ngữ với <b>Not until</b>: <i>Not until + mệnh đề thời gian + trợ động từ + S + V(nguyên mẫu).</i>"
+        },
+        {
+          "id": "g12_t1_30",
+          "num": 30,
+          "section": "III. WRITING: Sentence Building",
+          "type": "sentence_building",
+          "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>The / country / adopt / sustainable / practices / which / help / protect / natural / resources .</b>",
+          "model_answers": [
+            "The country has adopted sustainable practices which help protect natural resources.",
+            "The country adopts sustainable practices which help protect natural resources.",
+            "The country adopted sustainable practices which helped protect natural resources."
+          ],
+          "explanation": "Chia thì hiện tại hoàn thành hoặc hiện tại đơn, kết hợp mệnh đề quan hệ bổ nghĩa cho 'sustainable practices' (số nhiều -> help protect natural resources)."
+        }
+      ],
+      "passages": {
+        "g12_t1_cloze": {
+          "title": "Medieval Alchemists and the Search for Transmutation",
+          "text": "Through the centuries, the dream of medieval alchemists was to discover how to turn lead and (11)______ \"base\" metals into gold. Some were fakes, but many were learned men with philosophical goals. Their (12)______ was based on the ancient idea that all matter consists of different proportions of just four substances - earth, water, fire, and air. They believed that it was possible to adjust the proportions of the elements that made up lead by chemical means so that it turned into gold, a process called transmutation. Their experiments were concerned with finding the substance - (13)______ they called the philosopher's stone - that, when added to lead, would cause this astonishing change to take place. Alchemists also searched for the elixir of life, a substance that could cure diseases and (14)______ life. They failed on both counts. (15)______, their techniques for preparing and studying chemicals helped lay the foundation for the modern science of chemistry.<br><small>(Adapted from “VSTEP Collection”)</small>"
+        },
+        "g12_t1_comp": {
+          "title": "Globalisation and Cultural Diversity",
+          "text": "As a result of globalisation, the world is becoming more and more connected. This has changed people's way of life, beliefs, art and customs, or their culture, in many respects. Although people's experiences around the world have become very similar, globalisation has also encouraged cultural diversity. Below are some examples.<br><br>Fast food chains and international restaurants have become popular, offering a wide range of dishes and more food choices to local people. For example, here in Viet Nam, we can enjoy Italian pizza or Japanese sushi, in addition to our traditional food. Moreover, some international dishes use local ingredients, which make <b><u>them</u></b> unique and more suitable to local tastes. On the other hand, Vietnamese specialties, such as pho and banh mi, are also gaining popularity worldwide.<br><br>Thanks to globalisation, people can quickly discover new music from all over the world. People nowadays enjoy listening to music from different countries and cultures, and in different languages. For example, American teens are <b><u>captivated</u></b> by K-pop music and dance. There are also many music festivals around the globe that bring artists and music fans together. In today's connected world, it is very common for musicians across the world to work on music projects and share ideas together.<br><br>Globalisation has also impacted fashion by opening it up to a variety of styles and influences from around the world. Cross-cultural styles that blend both traditional and modern elements are on the rise. This presents opportunities for fashion designers to be creative and reflect the cultural richness of the world. It is now easier for people to keep up with fashion trends from different cultures and regions, and express their identities in new and exciting ways.<br><br>In conclusion, globalisation has helped strengthen cultural diversity in the world and made people appreciate different cultures and lifestyles.<br><small>(Adapted from Global Success)</small>"
+        }
+      }
+    },
+    {
+      "id": "g12_de2",
+      "title": "Đề Ôn Tập Số 2 (Đề 2 — Tiếng Anh 12)",
+      "subtitle": "Language · Reading · Writing (28 câu)",
+      "grade": 12,
+      "items": [
+        {
+          "id": "g12_t2_01",
+          "num": 1,
+          "section": "I. LANGUAGE: Pronunciation",
+          "type": "mcq",
+          "prompt": "Mark the letter A, B, C or D on your answer sheet to indicate the word that differs from the other three in the pronunciation of the underlined part:<br>A. short<u>age</u> &nbsp;&nbsp;&nbsp;&nbsp; B. teen<u>age</u> &nbsp;&nbsp;&nbsp;&nbsp; C. vill<u>age</u> &nbsp;&nbsp;&nbsp;&nbsp; D. cott<u>age</u>",
+          "options": [
+            "A. shortage",
+            "B. teenage",
+            "C. village",
+            "D. cottage"
+          ],
+          "answer": 1,
+          "explanation": "Đuôi 'age' trong <b>teenage</b> /ˈtiːneɪdʒ/ được phát âm là <b>/eɪdʒ/</b>.<br>Trong các từ còn lại, đuôi 'age' phát âm là <b>/ɪdʒ/</b>:<br>• shortage: /ˈʃɔːtɪdʒ/<br>• village: /ˈvɪlɪdʒ/<br>• cottage: /ˈkɒtɪdʒ/."
+        },
+        {
+          "id": "g12_t2_02",
+          "num": 2,
+          "section": "I. LANGUAGE: Word Stress",
+          "type": "mcq",
+          "prompt": "Mark the letter A, B, C or D on your answer sheet to indicate the word that differs from the other three in the position of primary stress.",
+          "options": [
+            "A. tradition",
+            "B. cultural",
+            "C. military",
+            "D. poetry"
+          ],
+          "answer": 0,
+          "explanation": "<b>tradition</b> /trəˈdɪʃn/ có trọng âm rơi vào âm tiết 2 (hậu tố -tion trọng âm rơi vào âm liền trước).<br>Các từ còn lại có trọng âm rơi vào âm tiết 1:<br>• cultural: /ˈkʌltʃərəl/<br>• military: /ˈmɪlətri/<br>• poetry: /ˈpəʊətri/."
+        },
+        {
+          "id": "g12_t2_03",
+          "num": 3,
+          "section": "I. LANGUAGE: Vocabulary",
+          "type": "mcq",
+          "prompt": "Albert Einstein is often regarded as a scientific ________ due to his groundbreaking theories in the field of physics.",
+          "options": [
+            "A. hero",
+            "B. filmmaker",
+            "C. genius",
+            "D. actor"
+          ],
+          "answer": 2,
+          "explanation": "Cụm từ: <b>scientific genius</b> (thiên tài khoa học). Albert Einstein là nhà bác học vĩ đại với các lý thuyết đột phá trong vật lý."
+        },
+        {
+          "id": "g12_t2_04",
+          "num": 4,
+          "section": "I. LANGUAGE: Preposition",
+          "type": "mcq",
+          "prompt": "Billions of trees are cut down every year, releasing carbon dioxide back into the air and contributing ________ climate change.",
+          "options": [
+            "A. to",
+            "B. at",
+            "C. of",
+            "D. in"
+          ],
+          "answer": 0,
+          "explanation": "Cấu trúc động từ đi kèm giới từ: <b>contribute to something</b> (góp phần vào / gây ra cái gì)."
+        },
+        {
+          "id": "g12_t2_05",
+          "num": 5,
+          "section": "I. LANGUAGE: Word Form / Passive",
+          "type": "mcq",
+          "prompt": "It is becoming worrying that rivers, lakes, and oceans are ________ by large farms and transport industries.",
+          "options": [
+            "A. contaminated",
+            "B. contamination",
+            "C. contaminants",
+            "D. contaminating"
+          ],
+          "answer": 0,
+          "explanation": "Cấu trúc bị động ở hiện tại tiếp diễn: <i>are + V3/ed + by O</i> -> chọn tính từ/phân từ <b>contaminated</b> (bị làm ô nhiễm).<br>• contamination (n): sự ô nhiễm<br>• contaminants (n): các chất gây ô nhiễm."
+        },
+        {
+          "id": "g12_t2_06",
+          "num": 6,
+          "section": "I. LANGUAGE: Collocation",
+          "type": "mcq",
+          "prompt": "To avoid culture shock, learn about the ________ and behaviour of our local people in advance.",
+          "options": [
+            "A. customs",
+            "B. experiences",
+            "C. cultures",
+            "D. performances"
+          ],
+          "answer": 0,
+          "explanation": "Cụm danh từ: <b>customs and behaviour</b> (phong tục tập quán và hành vi ứng xử của người dân bản địa)."
+        },
+        {
+          "id": "g12_t2_07",
+          "num": 7,
+          "section": "I. LANGUAGE: Phrasal Verb",
+          "type": "mcq",
+          "prompt": "He decided to ________ college after the first semester because he felt unfulfilled by the courses.",
+          "options": [
+            "A. drop out of",
+            "B. come up with",
+            "C. keep away from",
+            "D. put up with"
+          ],
+          "answer": 0,
+          "explanation": "Cụm động từ: <b>drop out of college/school</b> (bỏ học giữa chừng).<br>• come up with: nảy ra (ý tưởng)<br>• keep away from: tránh xa khỏi<br>• put up with: chịu đựng."
+        },
+        {
+          "id": "g12_t2_08",
+          "num": 8,
+          "section": "I. LANGUAGE: Relative Clause",
+          "type": "mcq",
+          "prompt": "More and more people are becoming aware of saving energy, ________ is good for the environment.",
+          "options": [
+            "A. whom",
+            "B. when",
+            "C. which",
+            "D. who"
+          ],
+          "answer": 2,
+          "explanation": "Đại từ quan hệ <b>which</b> đứng sau dấu phẩy dùng để thay thế cho toàn bộ sự việc ở mệnh đề đứng trước ('Ngày càng nhiều người có ý thức tiết kiệm năng lượng, điều này rất tốt cho môi trường')."
+        },
+        {
+          "id": "g12_t2_09",
+          "num": 9,
+          "section": "I. LANGUAGE: Past Tense with While",
+          "type": "mcq",
+          "prompt": "While the teacher ________ the life story of Uncle Ho, everyone in our class ________ notes carefully.",
+          "options": [
+            "A. was telling / was taking",
+            "B. told / took",
+            "C. told / was taking",
+            "D. was telling / took"
+          ],
+          "answer": 0,
+          "explanation": "Hai hành động diễn ra song song cùng lúc trong quá khứ với liên từ <b>While</b> -> cả hai mệnh đề đều chia ở thì <b>Quá khứ tiếp diễn (Past Continuous)</b>: <i>was telling / was taking</i>."
+        },
+        {
+          "id": "g12_t2_10",
+          "num": 10,
+          "section": "I. LANGUAGE: Closest in Meaning",
+          "type": "mcq",
+          "prompt": "Mark the letter A, B, C, or D to indicate the word(s) CLOSEST in meaning to the underlined word:<br><b>Taking part in exchange programmes teaches students to respect the <u>diversity</u> of other cultures.</b>",
+          "options": [
+            "A. variety",
+            "B. uniformity",
+            "C. scarcity",
+            "D. uniqueness"
+          ],
+          "answer": 0,
+          "explanation": "<b>diversity</b> (sự đa dạng, phong phú) đồng nghĩa với <b>variety</b>.<br>• uniformity: sự đồng nhất<br>• scarcity: sự khan hiếm<br>• uniqueness: tính độc nhất."
+        },
+        {
+          "id": "g12_t2_11",
+          "num": 11,
+          "section": "II. READING: Cloze Test (Bill Gates)",
+          "type": "reading_cloze",
+          "passage_ref": "g12_t2_cloze",
+          "prompt": "Choose the best option to fit blank (11):<br><i>'In 1973, Gates enrolled at Harvard University, (11) _________ he later dropped out to pursue his dream...'</i>",
+          "options": [
+            "A. what",
+            "B. which",
+            "C. when",
+            "D. where"
+          ],
+          "answer": 3,
+          "explanation": "Đại từ quan hệ trạng từ chỉ nơi chốn <b>where</b> thay thế cho Harvard University (nơi mà sau đó ông đã thôi học)."
+        },
+        {
+          "id": "g12_t2_12",
+          "num": 12,
+          "section": "II. READING: Cloze Test (Bill Gates)",
+          "type": "reading_cloze",
+          "passage_ref": "g12_t2_cloze",
+          "prompt": "Choose the best option to fit blank (12):<br><i>'Microsoft soon dominated the personal computer software (12) ________, making Gates one of the wealthiest individuals...'</i>",
+          "options": [
+            "A. industry",
+            "B. industrial",
+            "C. industrialism",
+            "D. industrialise"
+          ],
+          "answer": 0,
+          "explanation": "Cụm danh từ: <b>software industry</b> (ngành công nghiệp phần mềm). Chỗ trống cần danh từ chính đứng sau cụm bổ nghĩa 'personal computer software'."
+        },
+        {
+          "id": "g12_t2_13",
+          "num": 13,
+          "section": "II. READING: Cloze Test (Bill Gates)",
+          "type": "reading_cloze",
+          "passage_ref": "g12_t2_cloze",
+          "prompt": "Choose the best option to fit blank (13):<br><i>'...stepped down to focus (13) ________ his philanthropic work through the Bill & Melinda Gates Foundation.'</i>",
+          "options": [
+            "A. at",
+            "B. on",
+            "C. in",
+            "D. for"
+          ],
+          "answer": 1,
+          "explanation": "Cụm động từ: <b>focus on something</b> (tập trung vào điều gì)."
+        },
+        {
+          "id": "g12_t2_14",
+          "num": 14,
+          "section": "II. READING: Cloze Test (Bill Gates)",
+          "type": "reading_cloze",
+          "passage_ref": "g12_t2_cloze",
+          "prompt": "Choose the best option to fit blank (14):<br><i>'Gates has also been a vocal advocate for technological innovation and (14) _________ development...'</i>",
+          "options": [
+            "A. sustainable",
+            "B. depletable",
+            "C. temporary",
+            "D. permanent"
+          ],
+          "answer": 0,
+          "explanation": "Collocation quen thuộc: <b>sustainable development</b> (phát triển bền vững)."
+        },
+        {
+          "id": "g12_t2_15",
+          "num": 15,
+          "section": "II. READING: Cloze Test (Bill Gates)",
+          "type": "reading_cloze",
+          "passage_ref": "g12_t2_cloze",
+          "prompt": "Choose the best option to fit blank (15):<br><i>'(15) _________ his immense wealth and success, Gates is known for his modest lifestyle and commitment to giving back...'</i>",
+          "options": [
+            "A. Because",
+            "B. Although",
+            "C. Despite",
+            "D. Because of"
+          ],
+          "answer": 2,
+          "explanation": "Sau chỗ trống là cụm danh từ 'his immense wealth and success' diễn tả sự tương phản với việc ông có lối sống giản dị (modest lifestyle) -> dùng giới từ <b>Despite</b> (+ Noun phrase). Although phải đi với một mệnh đề (clause)."
+        },
+        {
+          "id": "g12_t2_16",
+          "num": 16,
+          "section": "II. READING: Reading Comprehension (Earth Hour)",
+          "type": "reading_comp",
+          "passage_ref": "g12_t2_comp",
+          "prompt": "Where and when did Earth Hour first begin?",
+          "options": [
+            "A. New York City, 2005",
+            "B. Paris, 2009",
+            "C. Sydney, 2007",
+            "D. Tokyo, 2010"
+          ],
+          "answer": 2,
+          "explanation": "Thông tin ở câu thứ 2 đoạn 1: <i>'It began in Sydney, Australia, in 2007, and has since grown into a worldwide movement.'</i>"
+        },
+        {
+          "id": "g12_t2_17",
+          "num": 17,
+          "section": "II. READING: Reading Comprehension (Earth Hour)",
+          "type": "reading_comp",
+          "passage_ref": "g12_t2_comp",
+          "prompt": "What does the word <b>their</b> in paragraph 2 refer to?",
+          "options": [
+            "A. Long-term changes",
+            "B. Efforts to combat climate change",
+            "C. Individuals and communities",
+            "D. Lights turned off during Earth Hour"
+          ],
+          "answer": 2,
+          "explanation": "Căn cứ câu cuối đoạn 2: <i>'By participating in Earth Hour, <u>individuals and communities</u> show <b>their</b> support for efforts to reduce carbon footprints and combat climate change.'</i> 'their' thay thế cho <b>Individuals and communities</b>."
+        },
+        {
+          "id": "g12_t2_18",
+          "num": 18,
+          "section": "II. READING: Reading Comprehension (Earth Hour)",
+          "type": "reading_comp",
+          "passage_ref": "g12_t2_comp",
+          "prompt": "What actions are participants encouraged to take during Earth Hour?",
+          "options": [
+            "A. Replace their water taps and lights",
+            "B. Turn off their lights and electrical appliances",
+            "C. Plant trees and turn off electrical appliances",
+            "D. Use only solar power and save electricity"
+          ],
+          "answer": 1,
+          "explanation": "Thông tin ở đoạn 1: <i>'participants are encouraged to turn off their lights and electrical appliances for one hour, from 8:30 to 9:30 PM local time.'</i>"
+        },
+        {
+          "id": "g12_t2_19",
+          "num": 19,
+          "section": "II. READING: Reading Comprehension (Earth Hour)",
+          "type": "reading_comp",
+          "passage_ref": "g12_t2_comp",
+          "prompt": "The word <b>significantly</b> in paragraph 3 is OPPOSITE in meaning to ________.",
+          "options": [
+            "A. slightly",
+            "B. dramatically",
+            "C. notably",
+            "D. substantially"
+          ],
+          "answer": 0,
+          "explanation": "<b>significantly</b> (đáng kể, một cách to lớn) trái nghĩa với <b>slightly</b> (nhẹ, chút ít, không đáng kể).<br>• dramatically, notably, substantially đều mang nghĩa là đáng kể, lớn lao."
+        },
+        {
+          "id": "g12_t2_20",
+          "num": 20,
+          "section": "II. READING: Reading Comprehension (Earth Hour)",
+          "type": "reading_comp",
+          "passage_ref": "g12_t2_comp",
+          "prompt": "What is the main idea of the passage?",
+          "options": [
+            "A. To promote energy conservation and raise awareness about climate change.",
+            "B. To encourage people to switch to renewable energy sources.",
+            "C. To raise funds for environmental organizations.",
+            "D. To create a global network of environmental activists."
+          ],
+          "answer": 0,
+          "explanation": "Ý chính của cả bài viết là giới thiệu Giờ Trái đất nhằm khuyến khích tiết kiệm năng lượng và nâng cao nhận thức về biến đổi khí hậu ('attract people's attention to climate change and promote energy conservation')."
+        },
+        {
+          "id": "g12_t2_21",
+          "num": 21,
+          "section": "III. WRITING: Sentence Transformation",
+          "type": "transform",
+          "prompt": "Finish the sentence in such a way that it means the same as the sentence printed before it:<br><b>My older sister surfed the Internet during her breakfast. (use “while”)</b><br>→ My older sister surfed __________________________________________.",
+          "model_answers": [
+            "My older sister surfed the Internet while she was having breakfast.",
+            "My older sister surfed the Internet while having breakfast.",
+            "My older sister surfed the Internet while she was eating breakfast."
+          ],
+          "explanation": "Chuyển từ giới từ <i>during + Noun</i> sang liên từ <i>while + S + was/were + V-ing</i> (hoặc mệnh đề rút gọn <i>while V-ing</i>)."
+        },
+        {
+          "id": "g12_t2_22",
+          "num": 22,
+          "section": "III. WRITING: Sentence Transformation",
+          "type": "transform",
+          "prompt": "Finish the sentence in such a way that it means the same as the sentence printed before it:<br><b>Many people have now started to pay attention to the environment. (use “care + a preposition”)</b><br>→ Many people have now started __________________________________________.",
+          "model_answers": [
+            "Many people have now started to care about the environment.",
+            "Many people have now started caring about the environment.",
+            "Many people have now started to care for the environment.",
+            "Many people have now started caring for the environment."
+          ],
+          "explanation": "Cụm từ tương đương: <b>pay attention to</b> = <b>care about / care for</b> (quan tâm, để tâm đến điều gì). Động từ start có thể đi với to-V hoặc V-ing."
+        },
+        {
+          "id": "g12_t2_23",
+          "num": 23,
+          "section": "III. WRITING: Sentence Combining",
+          "type": "transform",
+          "prompt": "Combine the two sentences into a meaningful sentence:<br><b>Plastic takes hundreds of years to decompose in the ground. This explains why it is harmful to the environment. (use “which”)</b><br>→ Plastic takes hundreds of years to decompose in the ground __________________________________________.",
+          "model_answers": [
+            "Plastic takes hundreds of years to decompose in the ground, which explains why it is harmful to the environment."
+          ],
+          "explanation": "Dùng đại từ quan hệ <b>which</b> thay thế cho toàn bộ sự việc ở mệnh đề trước trong mệnh đề quan hệ không xác định (phải có dấu phẩy phía trước)."
+        },
+        {
+          "id": "g12_t2_24",
+          "num": 24,
+          "section": "III. WRITING: Sentence Combining",
+          "type": "transform",
+          "prompt": "Combine the two sentences into a meaningful sentence:<br><b>The band was playing their first song. All the lights went out. (use “when”)</b><br>→ The band __________________________________________.",
+          "model_answers": [
+            "The band was playing their first song when all the lights went out."
+          ],
+          "explanation": "Cấu trúc kết hợp quá khứ tiếp diễn và quá khứ đơn với liên từ <b>when</b>: <i>S + was/were + V-ing when + S + V2/ed</i> (Hành động đang diễn ra thì hành động khác đột ngột xen vào)."
+        },
+        {
+          "id": "g12_t2_25",
+          "num": 25,
+          "section": "III. WRITING: Sentence Building",
+          "type": "sentence_building",
+          "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>While / Steve Jobs / work / Apple / he / introduce / revolutionary / products / like / iPhone</b>",
+          "model_answers": [
+            "While Steve Jobs was working at Apple, he introduced revolutionary products like the iPhone.",
+            "While Steve Jobs was working for Apple, he introduced revolutionary products like the iPhone."
+          ],
+          "explanation": "Mệnh đề While chia thì Quá khứ tiếp diễn (was working at/for Apple), mệnh đề chính chia thì Quá khứ đơn (introduced revolutionary products like the iPhone)."
+        },
+        {
+          "id": "g12_t2_26",
+          "num": 26,
+          "section": "III. WRITING: Sentence Building",
+          "type": "sentence_building",
+          "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>Ha Long Bay / be / one / of / most / popular / tourist / destinations / in / Viet Nam</b>",
+          "model_answers": [
+            "Ha Long Bay is one of the most popular tourist destinations in Viet Nam.",
+            "Ha Long Bay is one of the most popular tourist destinations in Vietnam."
+          ],
+          "explanation": "Cấu trúc so sánh nhất: <i>one of the most + adj + plural noun</i> (một trong những điểm đến du lịch nổi tiếng nhất ở Việt Nam)."
+        },
+        {
+          "id": "g12_t2_27",
+          "num": 27,
+          "section": "III. WRITING: Sentence Building",
+          "type": "sentence_building",
+          "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>It / be / his / biological / father / who / pass away / when / Steve Jobs / be / only / a / boy</b>",
+          "model_answers": [
+            "It was his biological father who passed away when Steve Jobs was only a boy."
+          ],
+          "explanation": "Cấu trúc câu chẻ (Cleft sentence) nhấn mạnh ở quá khứ: <i>It was + O/S + who + V2/ed...</i>"
+        },
+        {
+          "id": "g12_t2_28",
+          "num": 28,
+          "section": "III. WRITING: Sentence Building",
+          "type": "sentence_building",
+          "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>Global / warming / lead / to / extreme / weather / events / which / cause / severe / floods</b>",
+          "model_answers": [
+            "Global warming leads to extreme weather events which cause severe floods.",
+            "Global warming has led to extreme weather events which cause severe floods.",
+            "Global warming has led to extreme weather events which have caused severe floods."
+          ],
+          "explanation": "Thì hiện tại đơn diễn tả thực tế khoa học: 'Global warming leads to extreme weather events which cause severe floods' (Hiện tượng ấm lên toàn cầu dẫn đến các hiện tượng thời tiết cực đoan, điều này gây ra lũ lụt nghiêm trọng)."
+        }
+      ],
+      "passages": {
+        "g12_t2_cloze": {
+          "title": "Bill Gates — The Visionary Tech Entrepreneur",
+          "text": "Bill Gates is a renowned American entrepreneur, software developer, and philanthropist. He was born on October 28, 1955, in Seattle, Washington. Gates showed a passion for technology from an early age, and by the age of 13, he had already started programming computers. In 1973, Gates enrolled at Harvard University, (11) _________ he later dropped out to pursue his dream of starting a software company. In 1975, he co-founded Microsoft with his childhood friend Paul Allen. The company’s breakthrough came when they developed the MS-DOS operating system for IBM's first personal computer. Microsoft soon dominated the personal computer software (12) ________, making Gates one of the wealthiest individuals in the world.<br><br>Gates served as the CEO of Microsoft until 2000 when he stepped down to focus (13) ________ his philanthropic work through the Bill & Melinda Gates Foundation. The foundation, which he founded with his then-wife Melinda, is one of the largest private charitable foundations in the world. It has donated billions of dollars to various causes, including global health, education, and poverty elimination. Gates has also been a vocal advocate for technological innovation and (14) _________ development, urging the world to tackle climate change and other pressing global issues. (15) _________ his immense wealth and success, Gates is known for his modest lifestyle and commitment to giving back to society. Today, he continues to be actively involved in various initiatives aimed at improving the world for future generations, including economic development.<br><small>(https://www.biography.com/business-figure/bill-gates)</small>"
+        },
+        "g12_t2_comp": {
+          "title": "Earth Hour: A Global Movement for Nature",
+          "text": "Earth Hour is a global event organized by the World Wildlife Fund (WWF) to attract people’s attention to climate change and encourage people to take action to protect the environment. It began in Sydney, Australia, in 2007, and has since grown into a worldwide movement. On a designated day each year, participants are encouraged to turn off their lights and electrical appliances for one hour, from 8:30 to 9:30 PM local time. This symbolic gesture aims to highlight the impact of human activity on the planet and to promote energy conservation.<br><br>During Earth Hour, landmarks and iconic buildings around the world switch off their lights, creating a visual representation of collective commitment to sustainability. The event is not only about reducing energy consumption for one hour but also about inspiring long-term changes in behavior. By participating in Earth Hour, individuals and communities show <b><u>their</u></b> support for efforts to reduce carbon footprints and combat climate change.<br><br>Earth Hour also serves as a platform for discussions about environmental issues and encourages people to adopt more sustainable lifestyles. Through social media and community events, participants share their experiences and ideas for reducing environmental impact. The initiative has grown <b><u>significantly</u></b>, involving millions of people in over 180 countries. Its success demonstrates the power of collective action in addressing global environmental challenges.<br><small>(Adapted from https://www.earthhour.org/)</small>"
+        }
+      }
+    },
+    {
+      "id": "g12_de3",
+      "title": "Đề Ôn Tập Số 3 (Đề 3 — Tiếng Anh 12)",
+      "subtitle": "Language · Reading · Writing (28 câu)",
+      "grade": 12,
+      "items": [
+        {
+          "id": "g12_t3_01",
+          "num": 1,
+          "section": "I. LANGUAGE: Pronunciation",
+          "type": "mcq",
+          "prompt": "Mark the letter A, B, C, or D to indicate the word whose underlined part differs from the others in pronunciation:<br>A. adm<u>i</u>re &nbsp;&nbsp;&nbsp;&nbsp; B. publ<u>i</u>sh &nbsp;&nbsp;&nbsp;&nbsp; C. f<u>i</u>nish &nbsp;&nbsp;&nbsp;&nbsp; D. <u>i</u>nclude",
+          "options": [
+            "A. admire",
+            "B. publish",
+            "C. finish",
+            "D. include"
+          ],
+          "answer": 0,
+          "explanation": "Chữ 'i' trong <b>admire</b> /ədˈmaɪər/ được phát âm là <b>/aɪ/</b>.<br>Trong các từ còn lại, chữ 'i' phát âm là <b>/ɪ/</b>:<br>• publish: /ˈpʌblɪʃ/<br>• finish: /ˈfɪnɪʃ/<br>• include: /ɪnˈkluːd/."
+        },
+        {
+          "id": "g12_t3_02",
+          "num": 2,
+          "section": "I. LANGUAGE: Pronunciation",
+          "type": "mcq",
+          "prompt": "Mark the letter A, B, C, or D to indicate the word whose underlined part differs from the others in pronunciation:<br>A. dev<u>o</u>te &nbsp;&nbsp;&nbsp;&nbsp; B. her<u>o</u> &nbsp;&nbsp;&nbsp;&nbsp; C. p<u>o</u>em &nbsp;&nbsp;&nbsp;&nbsp; D. cust<u>o</u>m",
+          "options": [
+            "A. devote",
+            "B. hero",
+            "C. poem",
+            "D. custom"
+          ],
+          "answer": 3,
+          "explanation": "Chữ 'o' trong <b>custom</b> /ˈkʌstəm/ được phát âm là âm schwa <b>/ə/</b>.<br>Trong các từ còn lại, chữ 'o' phát âm là diphthong <b>/əʊ/</b>:<br>• devote: /dɪˈvəʊt/<br>• hero: /ˈhɪərəʊ/<br>• poem: /ˈpəʊɪm/."
+        },
+        {
+          "id": "g12_t3_03",
+          "num": 3,
+          "section": "I. LANGUAGE: Word Form",
+          "type": "mcq",
+          "prompt": "Thomas Edison's ________ achievement in developing the first practical electric light bulb revolutionized the way the world illuminated the night.",
+          "options": [
+            "A. impress",
+            "B. impressive",
+            "C. impression",
+            "D. impressively"
+          ],
+          "answer": 1,
+          "explanation": "Trước danh từ 'achievement' cần một tính từ bổ nghĩa -> chọn <b>impressive</b> (đầy ấn tượng).<br>• impress (v): gây ấn tượng<br>• impression (n): sự ấn tượng<br>• impressively (adv): một cách ấn tượng."
+        },
+        {
+          "id": "g12_t3_04",
+          "num": 4,
+          "section": "I. LANGUAGE: Vocabulary",
+          "type": "mcq",
+          "prompt": "Vo Nguyen Giap was widely recognized as a ________ genius for his pivotal role in leading Vietnamese forces during the First Indochina War and the Vietnam War.",
+          "options": [
+            "A. military",
+            "B. artistic",
+            "C. musical",
+            "D. literary"
+          ],
+          "answer": 0,
+          "explanation": "Cụm danh từ: <b>military genius</b> (thiên tài quân sự). Đại tướng Võ Nguyên Giáp là vị tướng lỗi lạc lãnh đạo quân đội nhân dân Việt Nam lập nên những chiến công vang dội."
+        },
+        {
+          "id": "g12_t3_05",
+          "num": 5,
+          "section": "I. LANGUAGE: Vocabulary",
+          "type": "mcq",
+          "prompt": "The food at the festival is not only diverse but also incredibly ________.",
+          "options": [
+            "A. tasty",
+            "B. boring",
+            "C. plain",
+            "D. unhealthy"
+          ],
+          "answer": 0,
+          "explanation": "Ngữ cảnh khen ngợi: 'Món ăn tại lễ hội không chỉ phong phú mà còn vô cùng thơm ngon' -> chọn <b>tasty</b> (ngon miệng). Các từ còn lại mang nghĩa tiêu cực/nhạt nhẽo."
+        },
+        {
+          "id": "g12_t3_06",
+          "num": 6,
+          "section": "I. LANGUAGE: Vocabulary",
+          "type": "mcq",
+          "prompt": "A popular Vietnamese ________ is Bun Cha, which includes grilled pork and noodles.",
+          "options": [
+            "A. speciality",
+            "B. meal",
+            "C. dessert",
+            "D. beverage"
+          ],
+          "answer": 0,
+          "explanation": "<b>speciality</b> (đặc sản). Bún chả là món đặc sản nổi tiếng của ẩm thực Việt Nam."
+        },
+        {
+          "id": "g12_t3_07",
+          "num": 7,
+          "section": "I. LANGUAGE: Phrasal Verb",
+          "type": "mcq",
+          "prompt": "Despite numerous successes, he ________ after a long battle with pancreatic cancer.",
+          "options": [
+            "A. passed away",
+            "B. came across",
+            "C. got over",
+            "D. took on"
+          ],
+          "answer": 0,
+          "explanation": "Cụm động từ: <b>pass away</b> (qua đời, mất đi sau cơn bạo bệnh ung thư).<br>• come across: tình cờ gặp/thấy<br>• get over: vượt qua, hồi phục<br>• take on: đảm nhận."
+        },
+        {
+          "id": "g12_t3_08",
+          "num": 8,
+          "section": "I. LANGUAGE: Past Continuous & Simple",
+          "type": "mcq",
+          "prompt": "While Dang Thuy Tram ________ her duty in Quang Ngai Province, the cruel enemy ________ her.",
+          "options": [
+            "A. was doing / killed",
+            "B. did / killed",
+            "C. did / was killing",
+            "D. was doing / was killing"
+          ],
+          "answer": 0,
+          "explanation": "Hành động đang diễn ra trong quá khứ (chia Quá khứ tiếp diễn: <i>was doing</i> her duty) thì hành động khác bất ngờ xen vào cắt ngang (chia Quá khứ đơn: <i>killed</i>)."
+        },
+        {
+          "id": "g12_t3_09",
+          "num": 9,
+          "section": "I. LANGUAGE: Articles",
+          "type": "mcq",
+          "prompt": "He enjoys playing ________ guitar in his free time.",
+          "options": [
+            "A. a",
+            "B. an",
+            "C. the",
+            "D. Ø"
+          ],
+          "answer": 2,
+          "explanation": "Quy tắc ngữ pháp về nhạc cụ: Động từ <b>play</b> khi đi với tên nhạc cụ (guitar, piano, violin...) bắt buộc phải có mạo từ xác định <b>the</b>: <i>play the guitar</i>."
+        },
+        {
+          "id": "g12_t3_10",
+          "num": 10,
+          "section": "I. LANGUAGE: Closest in Meaning",
+          "type": "mcq",
+          "prompt": "Mark the letter A, B, C or D to indicate the word(s) CLOSEST in meaning to the underlined word:<br><b>Apple products were not only designed to be <u>cutting-edge</u> technology, but also to be stylish and easy to use.</b>",
+          "options": [
+            "A. modern",
+            "B. flexible",
+            "C. old-fashioned",
+            "D. simple"
+          ],
+          "answer": 0,
+          "explanation": "<b>cutting-edge</b> (tối tân, tiên tiến, đi đầu công nghệ) đồng nghĩa với <b>modern</b> (hiện đại, tiên tiến).<br>• flexible: linh hoạt<br>• old-fashioned: lỗi thời (trái nghĩa)<br>• simple: đơn giản."
+        },
+        {
+          "id": "g12_t3_11",
+          "num": 11,
+          "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+          "type": "reading_cloze",
+          "passage_ref": "g12_t3_cloze",
+          "prompt": "Choose the best option to fit blank (11):<br><i>'The Kinh people are primarily located in the (11) ________, while the minority groups are scattered throughout the mountainous regions.'</i>",
+          "options": [
+            "A. lowlands",
+            "B. cities",
+            "C. communities",
+            "D. countries"
+          ],
+          "answer": 0,
+          "explanation": "Đối lập với 'mountainous regions' (vùng núi) là <b>lowlands</b> (vùng đồng bằng). Người Kinh chủ yếu sinh sống ở các vùng đồng bằng."
+        },
+        {
+          "id": "g12_t3_12",
+          "num": 12,
+          "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+          "type": "reading_cloze",
+          "passage_ref": "g12_t3_cloze",
+          "prompt": "Choose the best option to fit blank (12):<br><i>'Traditional families often have three or four generations living under (12) _______ same roof...'</i>",
+          "options": [
+            "A. a",
+            "B. the",
+            "C. an",
+            "D. X"
+          ],
+          "answer": 1,
+          "explanation": "Cụm thành ngữ cố định: <b>under the same roof</b> (sống dưới cùng một mái nhà)."
+        },
+        {
+          "id": "g12_t3_13",
+          "num": 13,
+          "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+          "type": "reading_cloze",
+          "passage_ref": "g12_t3_cloze",
+          "prompt": "Choose the best option to fit blank (13):<br><i>'Confucianism has also played a significant role... (13) _______, in recent years, there has been a growing movement towards gender equality...'</i>",
+          "options": [
+            "A. However",
+            "B. Although",
+            "C. Because",
+            "D. Moreover"
+          ],
+          "answer": 0,
+          "explanation": "Trạng từ liên kết đứng đầu câu chỉ sự tương phản: <b>However</b> (Tuy nhiên). Nho giáo từng đề cao vai trò truyền thống, tuy nhiên những năm gần đây đã có phong trào bình đẳng giới mạnh mẽ."
+        },
+        {
+          "id": "g12_t3_14",
+          "num": 14,
+          "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+          "type": "reading_cloze",
+          "passage_ref": "g12_t3_cloze",
+          "prompt": "Choose the best option to fit blank (14):<br><i>'...characterized by a strong emphasis on community and living in harmony (14) ________ nature.'</i>",
+          "options": [
+            "A. for",
+            "B. of",
+            "C. on",
+            "D. with"
+          ],
+          "answer": 3,
+          "explanation": "Cụm từ cố định: <b>in harmony with something/nature</b> (sống hòa hợp, chan hòa với thiên nhiên)."
+        },
+        {
+          "id": "g12_t3_15",
+          "num": 15,
+          "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+          "type": "reading_cloze",
+          "passage_ref": "g12_t3_cloze",
+          "prompt": "Choose the best option to fit blank (15):<br><i>'The Vietnamese government is working to (15) ________ the gap between the lowland and mountainous communities...'</i>",
+          "options": [
+            "A. keep",
+            "B. have",
+            "C. bridge",
+            "D. take"
+          ],
+          "answer": 2,
+          "explanation": "Collocation: <b>bridge the gap</b> (thu hẹp khoảng cách / bắc nhịp cầu nối). Chính phủ đang nỗ lực thu hẹp khoảng cách giữa các cộng đồng vùng xuôi và vùng núi."
+        },
+        {
+          "id": "g12_t3_16",
+          "num": 16,
+          "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+          "type": "reading_comp",
+          "passage_ref": "g12_t3_comp",
+          "prompt": "When was Alexander Hamilton appointed as the first Secretary of the Treasury?",
+          "options": [
+            "A. September 11, 1787",
+            "B. September 11, 1789",
+            "C. July 4, 1776",
+            "D. January 11, 1755"
+          ],
+          "answer": 1,
+          "explanation": "Căn cứ câu đầu đoạn 4: <i>'Alexander Hamilton was appointed as the country’s first Secretary of The Treasury on September 11, 1789.'</i>"
+        },
+        {
+          "id": "g12_t3_17",
+          "num": 17,
+          "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+          "type": "reading_comp",
+          "passage_ref": "g12_t3_comp",
+          "prompt": "Which best serves as the title for the passage?",
+          "options": [
+            "A. A brief history of Alexander Hamilton.",
+            "B. Founding Fathers of the United States.",
+            "C. Pursuing your dream no matter what.",
+            "D. An unbecoming historical figure."
+          ],
+          "answer": 0,
+          "explanation": "Bài văn tóm lược cuộc đời, sự nghiệp quân sự, chính trị và những đóng góp của Alexander Hamilton từ khi sinh ra đến khi qua đời -> Tiêu đề phù hợp nhất là: <b>A brief history of Alexander Hamilton</b>."
+        },
+        {
+          "id": "g12_t3_18",
+          "num": 18,
+          "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+          "type": "reading_comp",
+          "passage_ref": "g12_t3_comp",
+          "prompt": "According to paragraph 1, what can be concluded from Alexander Hamilton’s childhood?",
+          "options": [
+            "A. Hamilton had a miserable youth which left him a pessimistic attitude to life.",
+            "B. Hamilton boasted an incomplete yet happy childhood at a Caribbean orphanage.",
+            "C. He experienced a series of misfortunes but still thrived and overcame them all.",
+            "D. His hard time from childhood became the incentives for him to join the army."
+          ],
+          "answer": 2,
+          "explanation": "Hamilton không được công nhận là con hợp pháp, bị từ chối vào trường học của nhà thờ, mẹ mất sớm và phải đi làm thư ký, nhưng ông vẫn không ngừng viết lách và được cộng đồng quyên góp tiền cho đi học -> Ông trải qua nhiều bất hạnh nhưng đã vươn lên vượt qua tất cả (C)."
+        },
+        {
+          "id": "g12_t3_19",
+          "num": 19,
+          "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+          "type": "reading_comp",
+          "passage_ref": "g12_t3_comp",
+          "prompt": "The word <b>elected</b> in paragraph 2 is CLOSEST in meaning to ________.",
+          "options": [
+            "A. locked",
+            "B. transferred",
+            "C. appointed",
+            "D. voted"
+          ],
+          "answer": 3,
+          "explanation": "<b>elect</b> (bầu cử thông qua bỏ phiếu) đồng nghĩa với <b>voted</b>."
+        },
+        {
+          "id": "g12_t3_20",
+          "num": 20,
+          "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+          "type": "reading_comp",
+          "passage_ref": "g12_t3_comp",
+          "prompt": "The word <b>it</b> in paragraph 3 refers to ________.",
+          "options": [
+            "A. government",
+            "B. document",
+            "C. ratification",
+            "D. confederation"
+          ],
+          "answer": 1,
+          "explanation": "Căn cứ đoạn 3: <i>'...despite his disagreements, he promoted the <u>document</u> because he believed <b>it</b> was a vast improvement over the Articles of Confederation.'</i> Từ 'it' thay thế cho <b>document</b> (bản tài liệu Hiến pháp)."
+        },
+        {
+          "id": "g12_t3_21",
+          "num": 21,
+          "section": "III. WRITING: Sentence Transformation",
+          "type": "transform",
+          "prompt": "Finish the sentence in such a way that it means the same as the one printed before it:<br><b>I have not seen him for ten years.</b><br>→ The last time __________________________________________.",
+          "model_answers": [
+            "The last time I saw him was ten years ago."
+          ],
+          "explanation": "Cấu trúc chuyển đổi giữa Hiện tại hoàn thành phủ định và The last time:<br><i>S + have/has not + V3/ed + for + time → The last time + S + V2/ed + was + time + ago.</i>"
+        },
+        {
+          "id": "g12_t3_22",
+          "num": 22,
+          "section": "III. WRITING: Sentence Transformation",
+          "type": "transform",
+          "prompt": "Finish the sentence in such a way that it means the same as the one printed before it:<br><b>Last year there was an increase in the number of tourists visiting this area.</b><br>→ The number of __________________________________________.",
+          "model_answers": [
+            "The number of tourists visiting this area increased last year.",
+            "The number of tourists visiting this area went up last year."
+          ],
+          "explanation": "Chuyển từ cấu trúc tồn tại với danh từ: <i>there was an increase in + N</i> sang câu chủ động với động từ: <i>The number of... increased last year.</i>"
+        },
+        {
+          "id": "g12_t3_23",
+          "num": 23,
+          "section": "III. WRITING: Sentence Combining",
+          "type": "transform",
+          "prompt": "Combine these pairs of sentences into one, using the given word in brackets:<br><b>My parents were waiting in the queue to buy museum tickets. My brother and I were queuing up for ice cream. (while)</b><br>→ __________________________________________.",
+          "model_answers": [
+            "My parents were waiting in the queue to buy museum tickets while my brother and I were queuing up for ice cream.",
+            "While my parents were waiting in the queue to buy museum tickets, my brother and I were queuing up for ice cream."
+          ],
+          "explanation": "Hai hành động diễn ra đồng thời song song trong quá khứ kết hợp với liên từ <b>while</b>."
+        },
+        {
+          "id": "g12_t3_24",
+          "num": 24,
+          "section": "III. WRITING: Sentence Combining",
+          "type": "transform",
+          "prompt": "Combine these pairs of sentences into one, using the given word in brackets:<br><b>The band was playing their first song. All the lights went out. (when)</b><br>→ __________________________________________.",
+          "model_answers": [
+            "The band was playing their first song when all the lights went out."
+          ],
+          "explanation": "Một hành động đang diễn ra (Past Continuous) thì một hành động khác bất ngờ xen vào (Past Simple với when)."
+        },
+        {
+          "id": "g12_t3_25",
+          "num": 25,
+          "section": "III. WRITING: Sentence Building",
+          "type": "sentence_building",
+          "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>When / Michael Jackson / die / in / 2009 / he / still / work / on / his / dangerous / tour</b>",
+          "model_answers": [
+            "When Michael Jackson died in 2009, he was still working on his Dangerous tour.",
+            "When Michael Jackson died in 2009, he was still working on his dangerous tour."
+          ],
+          "explanation": "Cấu trúc: <i>When + S + V2/ed, S + was/were + still + V-ing.</i> (Khi Michael Jackson qua đời năm 2009, ông vẫn đang làm việc cho chuyến lưu diễn của mình)."
+        },
+        {
+          "id": "g12_t3_26",
+          "num": 26,
+          "section": "III. WRITING: Sentence Building",
+          "type": "sentence_building",
+          "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>People / from / different / cultures / may / have / different / interpretations / of / same / gesture .</b>",
+          "model_answers": [
+            "People from different cultures may have different interpretations of the same gesture."
+          ],
+          "explanation": "Thêm mạo từ xác định <b>the</b> trước cụm 'same gesture': <i>interpretations of the same gesture</i> (cách hiểu khác nhau về cùng một cử chỉ)."
+        },
+        {
+          "id": "g12_t3_27",
+          "num": 27,
+          "section": "III. WRITING: Sentence Building",
+          "type": "sentence_building",
+          "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>So / serious / be / plastic / pollution / that / many / countries / ban / single-use / plastic / bags</b>",
+          "model_answers": [
+            "So serious is plastic pollution that many countries have banned single-use plastic bags.",
+            "So serious was plastic pollution that many countries banned single-use plastic bags.",
+            "So serious is plastic pollution that many countries ban single-use plastic bags."
+          ],
+          "explanation": "Cấu trúc đảo ngữ với <b>So + adj</b>: <i>So + adj + be + S + that + clause</i> (Ô nhiễm nhựa nghiêm trọng đến mức mà nhiều quốc gia đã cấm túi nhựa dùng một lần)."
+        },
+        {
+          "id": "g12_t3_28",
+          "num": 28,
+          "section": "III. WRITING: Sentence Building",
+          "type": "sentence_building",
+          "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>Traditional / music / help / maintain / cultural / identity / which / be / important / in / globalised / world</b>",
+          "model_answers": [
+            "Traditional music helps maintain cultural identity, which is important in a globalised world.",
+            "Traditional music helps to maintain cultural identity, which is important in a globalised world.",
+            "Traditional music helps maintain cultural identity, which is important in a globalized world."
+          ],
+          "explanation": "Chủ ngữ số ít 'Traditional music' đi với động từ 'helps maintain'. Mệnh đề quan hệ không xác định 'which is important in a globalised world'."
+        }
+      ],
+      "passages": {
+        "g12_t3_cloze": {
+          "title": "Vietnam’s Rich Cultural Tapestry and Ethnic Harmony",
+          "text": "Vietnam is a country with a rich and diverse culture, shaped by its history and the many ethnic groups that call it home. The majority of the population is made up of the Kinh people, but there are 53 other ethnic minority groups, each with their own unique traditions and customs. The Kinh people are primarily located in the (11) ________, while the minority groups are scattered throughout the mountainous regions. This diverse mix of cultures has created a fascinating tapestry of traditions, languages, and beliefs.<br><br>The Vietnamese culture is deeply rooted in family and community. Traditional families often have three or four generations living under (12) _______ same roof, with a strong emphasis on respect for elders. Confucianism has also played a significant role in shaping Vietnamese society, particularly in the traditional roles of men and women. (13) _______, in recent years, there has been a growing movement towards gender equality, with the government enacting laws to promote more equitable family relations.<br><br>Vietnamese culture is also characterized by a strong emphasis on community and living in harmony (14) ________ nature. This is reflected in the traditional costumes of many ethnic groups, which are often made from natural fibers like silk, cotton, and pineapple yarn. These materials are durable, breathable, and well-suited to the tropical climate of Vietnam.<br><br>Despite the differences between the various ethnic groups, there is a strong sense of solidarity and cooperation among them. This unity has been forged through centuries of shared history, including times of war and peace. The Vietnamese government is working to (15) ________ the gap between the lowland and mountainous communities, striving to ensure that all citizens have access to the same opportunities and resources.<br><small>(Source: https://vietnamembassy-usa.org/culture/ethnic-groups)</small>"
+        },
+        "g12_t3_comp": {
+          "title": "A Brief History of Alexander Hamilton",
+          "text": "Alexander Hamilton was born on January 11, 1755 or 1757 in the West Indies. Due to his mother’s lack of marital status, Hamilton was not seen as a legitimate child and was thus denied access to church schools. When his mother died he was adopted by a merchant in Nevis, where he worked as a clerk. During his time in Nevis, Hamilton continued to write; one of his essays impressed the community leaders so much that they worked together and collected funds to send Hamilton to the colonies.<br><br>Hamilton served in the revolutionary war, during which time he worked his way through battles and earned himself a place aiding General Washington. After the war, Hamilton was <b><u>elected</u></b> into the Congress of the Confederation. He was dissatisfied with the decentralized government that was set up and the inability to raise money from the states to pay the soldiers.<br><br>Hamilton was involved in the Constitution Convention but did not fully agree with the document; despite his disagreements, he promoted the document because he believed <b><u>it</u></b> was a vast improvement over the Articles of Confederation. He pushed the ratification of the Constitution, teaming up with John Jay and James Madison to write the Federalist papers, which were often cited when pushing for the Constitution’s ratification.<br><br>Alexander Hamilton was appointed as the country’s first Secretary of The Treasury on September 11, 1789. During his time as Secretary of the Treasury Hamilton helped write economic policies, develop the funding of state debts, establish the national bank, create a national currency, a system of tariffs, and a peaceful trade relationship with Britain. After his time in politics finished, Alexander Hamilton went back to New York to practice law. He died in a duel with Aaron Burr in Weehawken, New Jersey on July 12, 1804.<br><small>(Source: https://poole.ncsu.edu/)</small>"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "id": "g12_de2",
+  "title": "Đề Ôn Tập Số 2 (Đề 2 — Tiếng Anh 12)",
+  "subtitle": "Language · Reading · Writing (28 câu)",
+  "grade": 12,
+  "items": [
+    {
+      "id": "g12_t2_01",
+      "num": 1,
+      "section": "I. LANGUAGE: Pronunciation",
+      "type": "mcq",
+      "prompt": "Mark the letter A, B, C or D on your answer sheet to indicate the word that differs from the other three in the pronunciation of the underlined part:<br>A. short<u>age</u> &nbsp;&nbsp;&nbsp;&nbsp; B. teen<u>age</u> &nbsp;&nbsp;&nbsp;&nbsp; C. vill<u>age</u> &nbsp;&nbsp;&nbsp;&nbsp; D. cott<u>age</u>",
+      "options": [
+        "A. shortage",
+        "B. teenage",
+        "C. village",
+        "D. cottage"
+      ],
+      "answer": 1,
+      "explanation": "Đuôi 'age' trong <b>teenage</b> /ˈtiːneɪdʒ/ được phát âm là <b>/eɪdʒ/</b>.<br>Trong các từ còn lại, đuôi 'age' phát âm là <b>/ɪdʒ/</b>:<br>• shortage: /ˈʃɔːtɪdʒ/<br>• village: /ˈvɪlɪdʒ/<br>• cottage: /ˈkɒtɪdʒ/."
+    },
+    {
+      "id": "g12_t2_02",
+      "num": 2,
+      "section": "I. LANGUAGE: Word Stress",
+      "type": "mcq",
+      "prompt": "Mark the letter A, B, C or D on your answer sheet to indicate the word that differs from the other three in the position of primary stress.",
+      "options": [
+        "A. tradition",
+        "B. cultural",
+        "C. military",
+        "D. poetry"
+      ],
+      "answer": 0,
+      "explanation": "<b>tradition</b> /trəˈdɪʃn/ có trọng âm rơi vào âm tiết 2 (hậu tố -tion trọng âm rơi vào âm liền trước).<br>Các từ còn lại có trọng âm rơi vào âm tiết 1:<br>• cultural: /ˈkʌltʃərəl/<br>• military: /ˈmɪlətri/<br>• poetry: /ˈpəʊətri/."
+    },
+    {
+      "id": "g12_t2_03",
+      "num": 3,
+      "section": "I. LANGUAGE: Vocabulary",
+      "type": "mcq",
+      "prompt": "Albert Einstein is often regarded as a scientific ________ due to his groundbreaking theories in the field of physics.",
+      "options": [
+        "A. hero",
+        "B. filmmaker",
+        "C. genius",
+        "D. actor"
+      ],
+      "answer": 2,
+      "explanation": "Cụm từ: <b>scientific genius</b> (thiên tài khoa học). Albert Einstein là nhà bác học vĩ đại với các lý thuyết đột phá trong vật lý."
+    },
+    {
+      "id": "g12_t2_04",
+      "num": 4,
+      "section": "I. LANGUAGE: Preposition",
+      "type": "mcq",
+      "prompt": "Billions of trees are cut down every year, releasing carbon dioxide back into the air and contributing ________ climate change.",
+      "options": [
+        "A. to",
+        "B. at",
+        "C. of",
+        "D. in"
+      ],
+      "answer": 0,
+      "explanation": "Cấu trúc động từ đi kèm giới từ: <b>contribute to something</b> (góp phần vào / gây ra cái gì)."
+    },
+    {
+      "id": "g12_t2_05",
+      "num": 5,
+      "section": "I. LANGUAGE: Word Form / Passive",
+      "type": "mcq",
+      "prompt": "It is becoming worrying that rivers, lakes, and oceans are ________ by large farms and transport industries.",
+      "options": [
+        "A. contaminated",
+        "B. contamination",
+        "C. contaminants",
+        "D. contaminating"
+      ],
+      "answer": 0,
+      "explanation": "Cấu trúc bị động ở hiện tại tiếp diễn: <i>are + V3/ed + by O</i> -> chọn tính từ/phân từ <b>contaminated</b> (bị làm ô nhiễm).<br>• contamination (n): sự ô nhiễm<br>• contaminants (n): các chất gây ô nhiễm."
+    },
+    {
+      "id": "g12_t2_06",
+      "num": 6,
+      "section": "I. LANGUAGE: Collocation",
+      "type": "mcq",
+      "prompt": "To avoid culture shock, learn about the ________ and behaviour of our local people in advance.",
+      "options": [
+        "A. customs",
+        "B. experiences",
+        "C. cultures",
+        "D. performances"
+      ],
+      "answer": 0,
+      "explanation": "Cụm danh từ: <b>customs and behaviour</b> (phong tục tập quán và hành vi ứng xử của người dân bản địa)."
+    },
+    {
+      "id": "g12_t2_07",
+      "num": 7,
+      "section": "I. LANGUAGE: Phrasal Verb",
+      "type": "mcq",
+      "prompt": "He decided to ________ college after the first semester because he felt unfulfilled by the courses.",
+      "options": [
+        "A. drop out of",
+        "B. come up with",
+        "C. keep away from",
+        "D. put up with"
+      ],
+      "answer": 0,
+      "explanation": "Cụm động từ: <b>drop out of college/school</b> (bỏ học giữa chừng).<br>• come up with: nảy ra (ý tưởng)<br>• keep away from: tránh xa khỏi<br>• put up with: chịu đựng."
+    },
+    {
+      "id": "g12_t2_08",
+      "num": 8,
+      "section": "I. LANGUAGE: Relative Clause",
+      "type": "mcq",
+      "prompt": "More and more people are becoming aware of saving energy, ________ is good for the environment.",
+      "options": [
+        "A. whom",
+        "B. when",
+        "C. which",
+        "D. who"
+      ],
+      "answer": 2,
+      "explanation": "Đại từ quan hệ <b>which</b> đứng sau dấu phẩy dùng để thay thế cho toàn bộ sự việc ở mệnh đề đứng trước ('Ngày càng nhiều người có ý thức tiết kiệm năng lượng, điều này rất tốt cho môi trường')."
+    },
+    {
+      "id": "g12_t2_09",
+      "num": 9,
+      "section": "I. LANGUAGE: Past Tense with While",
+      "type": "mcq",
+      "prompt": "While the teacher ________ the life story of Uncle Ho, everyone in our class ________ notes carefully.",
+      "options": [
+        "A. was telling / was taking",
+        "B. told / took",
+        "C. told / was taking",
+        "D. was telling / took"
+      ],
+      "answer": 0,
+      "explanation": "Hai hành động diễn ra song song cùng lúc trong quá khứ với liên từ <b>While</b> -> cả hai mệnh đề đều chia ở thì <b>Quá khứ tiếp diễn (Past Continuous)</b>: <i>was telling / was taking</i>."
+    },
+    {
+      "id": "g12_t2_10",
+      "num": 10,
+      "section": "I. LANGUAGE: Closest in Meaning",
+      "type": "mcq",
+      "prompt": "Mark the letter A, B, C, or D to indicate the word(s) CLOSEST in meaning to the underlined word:<br><b>Taking part in exchange programmes teaches students to respect the <u>diversity</u> of other cultures.</b>",
+      "options": [
+        "A. variety",
+        "B. uniformity",
+        "C. scarcity",
+        "D. uniqueness"
+      ],
+      "answer": 0,
+      "explanation": "<b>diversity</b> (sự đa dạng, phong phú) đồng nghĩa với <b>variety</b>.<br>• uniformity: sự đồng nhất<br>• scarcity: sự khan hiếm<br>• uniqueness: tính độc nhất."
+    },
+    {
+      "id": "g12_t2_11",
+      "num": 11,
+      "section": "II. READING: Cloze Test (Bill Gates)",
+      "type": "reading_cloze",
+      "passage_ref": "g12_t2_cloze",
+      "prompt": "Choose the best option to fit blank (11):<br><i>'In 1973, Gates enrolled at Harvard University, (11) _________ he later dropped out to pursue his dream...'</i>",
+      "options": [
+        "A. what",
+        "B. which",
+        "C. when",
+        "D. where"
+      ],
+      "answer": 3,
+      "explanation": "Đại từ quan hệ trạng từ chỉ nơi chốn <b>where</b> thay thế cho Harvard University (nơi mà sau đó ông đã thôi học)."
+    },
+    {
+      "id": "g12_t2_12",
+      "num": 12,
+      "section": "II. READING: Cloze Test (Bill Gates)",
+      "type": "reading_cloze",
+      "passage_ref": "g12_t2_cloze",
+      "prompt": "Choose the best option to fit blank (12):<br><i>'Microsoft soon dominated the personal computer software (12) ________, making Gates one of the wealthiest individuals...'</i>",
+      "options": [
+        "A. industry",
+        "B. industrial",
+        "C. industrialism",
+        "D. industrialise"
+      ],
+      "answer": 0,
+      "explanation": "Cụm danh từ: <b>software industry</b> (ngành công nghiệp phần mềm). Chỗ trống cần danh từ chính đứng sau cụm bổ nghĩa 'personal computer software'."
+    },
+    {
+      "id": "g12_t2_13",
+      "num": 13,
+      "section": "II. READING: Cloze Test (Bill Gates)",
+      "type": "reading_cloze",
+      "passage_ref": "g12_t2_cloze",
+      "prompt": "Choose the best option to fit blank (13):<br><i>'...stepped down to focus (13) ________ his philanthropic work through the Bill & Melinda Gates Foundation.'</i>",
+      "options": [
+        "A. at",
+        "B. on",
+        "C. in",
+        "D. for"
+      ],
+      "answer": 1,
+      "explanation": "Cụm động từ: <b>focus on something</b> (tập trung vào điều gì)."
+    },
+    {
+      "id": "g12_t2_14",
+      "num": 14,
+      "section": "II. READING: Cloze Test (Bill Gates)",
+      "type": "reading_cloze",
+      "passage_ref": "g12_t2_cloze",
+      "prompt": "Choose the best option to fit blank (14):<br><i>'Gates has also been a vocal advocate for technological innovation and (14) _________ development...'</i>",
+      "options": [
+        "A. sustainable",
+        "B. depletable",
+        "C. temporary",
+        "D. permanent"
+      ],
+      "answer": 0,
+      "explanation": "Collocation quen thuộc: <b>sustainable development</b> (phát triển bền vững)."
+    },
+    {
+      "id": "g12_t2_15",
+      "num": 15,
+      "section": "II. READING: Cloze Test (Bill Gates)",
+      "type": "reading_cloze",
+      "passage_ref": "g12_t2_cloze",
+      "prompt": "Choose the best option to fit blank (15):<br><i>'(15) _________ his immense wealth and success, Gates is known for his modest lifestyle and commitment to giving back...'</i>",
+      "options": [
+        "A. Because",
+        "B. Although",
+        "C. Despite",
+        "D. Because of"
+      ],
+      "answer": 2,
+      "explanation": "Sau chỗ trống là cụm danh từ 'his immense wealth and success' diễn tả sự tương phản với việc ông có lối sống giản dị (modest lifestyle) -> dùng giới từ <b>Despite</b> (+ Noun phrase). Although phải đi với một mệnh đề (clause)."
+    },
+    {
+      "id": "g12_t2_16",
+      "num": 16,
+      "section": "II. READING: Reading Comprehension (Earth Hour)",
+      "type": "reading_comp",
+      "passage_ref": "g12_t2_comp",
+      "prompt": "Where and when did Earth Hour first begin?",
+      "options": [
+        "A. New York City, 2005",
+        "B. Paris, 2009",
+        "C. Sydney, 2007",
+        "D. Tokyo, 2010"
+      ],
+      "answer": 2,
+      "explanation": "Thông tin ở câu thứ 2 đoạn 1: <i>'It began in Sydney, Australia, in 2007, and has since grown into a worldwide movement.'</i>"
+    },
+    {
+      "id": "g12_t2_17",
+      "num": 17,
+      "section": "II. READING: Reading Comprehension (Earth Hour)",
+      "type": "reading_comp",
+      "passage_ref": "g12_t2_comp",
+      "prompt": "What does the word <b>their</b> in paragraph 2 refer to?",
+      "options": [
+        "A. Long-term changes",
+        "B. Efforts to combat climate change",
+        "C. Individuals and communities",
+        "D. Lights turned off during Earth Hour"
+      ],
+      "answer": 2,
+      "explanation": "Căn cứ câu cuối đoạn 2: <i>'By participating in Earth Hour, <u>individuals and communities</u> show <b>their</b> support for efforts to reduce carbon footprints and combat climate change.'</i> 'their' thay thế cho <b>Individuals and communities</b>."
+    },
+    {
+      "id": "g12_t2_18",
+      "num": 18,
+      "section": "II. READING: Reading Comprehension (Earth Hour)",
+      "type": "reading_comp",
+      "passage_ref": "g12_t2_comp",
+      "prompt": "What actions are participants encouraged to take during Earth Hour?",
+      "options": [
+        "A. Replace their water taps and lights",
+        "B. Turn off their lights and electrical appliances",
+        "C. Plant trees and turn off electrical appliances",
+        "D. Use only solar power and save electricity"
+      ],
+      "answer": 1,
+      "explanation": "Thông tin ở đoạn 1: <i>'participants are encouraged to turn off their lights and electrical appliances for one hour, from 8:30 to 9:30 PM local time.'</i>"
+    },
+    {
+      "id": "g12_t2_19",
+      "num": 19,
+      "section": "II. READING: Reading Comprehension (Earth Hour)",
+      "type": "reading_comp",
+      "passage_ref": "g12_t2_comp",
+      "prompt": "The word <b>significantly</b> in paragraph 3 is OPPOSITE in meaning to ________.",
+      "options": [
+        "A. slightly",
+        "B. dramatically",
+        "C. notably",
+        "D. substantially"
+      ],
+      "answer": 0,
+      "explanation": "<b>significantly</b> (đáng kể, một cách to lớn) trái nghĩa với <b>slightly</b> (nhẹ, chút ít, không đáng kể).<br>• dramatically, notably, substantially đều mang nghĩa là đáng kể, lớn lao."
+    },
+    {
+      "id": "g12_t2_20",
+      "num": 20,
+      "section": "II. READING: Reading Comprehension (Earth Hour)",
+      "type": "reading_comp",
+      "passage_ref": "g12_t2_comp",
+      "prompt": "What is the main idea of the passage?",
+      "options": [
+        "A. To promote energy conservation and raise awareness about climate change.",
+        "B. To encourage people to switch to renewable energy sources.",
+        "C. To raise funds for environmental organizations.",
+        "D. To create a global network of environmental activists."
+      ],
+      "answer": 0,
+      "explanation": "Ý chính của cả bài viết là giới thiệu Giờ Trái đất nhằm khuyến khích tiết kiệm năng lượng và nâng cao nhận thức về biến đổi khí hậu ('attract people's attention to climate change and promote energy conservation')."
+    },
+    {
+      "id": "g12_t2_21",
+      "num": 21,
+      "section": "III. WRITING: Sentence Transformation",
+      "type": "transform",
+      "prompt": "Finish the sentence in such a way that it means the same as the sentence printed before it:<br><b>My older sister surfed the Internet during her breakfast. (use “while”)</b><br>→ My older sister surfed __________________________________________.",
+      "model_answers": [
+        "My older sister surfed the Internet while she was having breakfast.",
+        "My older sister surfed the Internet while having breakfast.",
+        "My older sister surfed the Internet while she was eating breakfast."
+      ],
+      "explanation": "Chuyển từ giới từ <i>during + Noun</i> sang liên từ <i>while + S + was/were + V-ing</i> (hoặc mệnh đề rút gọn <i>while V-ing</i>)."
+    },
+    {
+      "id": "g12_t2_22",
+      "num": 22,
+      "section": "III. WRITING: Sentence Transformation",
+      "type": "transform",
+      "prompt": "Finish the sentence in such a way that it means the same as the sentence printed before it:<br><b>Many people have now started to pay attention to the environment. (use “care + a preposition”)</b><br>→ Many people have now started __________________________________________.",
+      "model_answers": [
+        "Many people have now started to care about the environment.",
+        "Many people have now started caring about the environment.",
+        "Many people have now started to care for the environment.",
+        "Many people have now started caring for the environment."
+      ],
+      "explanation": "Cụm từ tương đương: <b>pay attention to</b> = <b>care about / care for</b> (quan tâm, để tâm đến điều gì). Động từ start có thể đi với to-V hoặc V-ing."
+    },
+    {
+      "id": "g12_t2_23",
+      "num": 23,
+      "section": "III. WRITING: Sentence Combining",
+      "type": "transform",
+      "prompt": "Combine the two sentences into a meaningful sentence:<br><b>Plastic takes hundreds of years to decompose in the ground. This explains why it is harmful to the environment. (use “which”)</b><br>→ Plastic takes hundreds of years to decompose in the ground __________________________________________.",
+      "model_answers": [
+        "Plastic takes hundreds of years to decompose in the ground, which explains why it is harmful to the environment."
+      ],
+      "explanation": "Dùng đại từ quan hệ <b>which</b> thay thế cho toàn bộ sự việc ở mệnh đề trước trong mệnh đề quan hệ không xác định (phải có dấu phẩy phía trước)."
+    },
+    {
+      "id": "g12_t2_24",
+      "num": 24,
+      "section": "III. WRITING: Sentence Combining",
+      "type": "transform",
+      "prompt": "Combine the two sentences into a meaningful sentence:<br><b>The band was playing their first song. All the lights went out. (use “when”)</b><br>→ The band __________________________________________.",
+      "model_answers": [
+        "The band was playing their first song when all the lights went out."
+      ],
+      "explanation": "Cấu trúc kết hợp quá khứ tiếp diễn và quá khứ đơn với liên từ <b>when</b>: <i>S + was/were + V-ing when + S + V2/ed</i> (Hành động đang diễn ra thì hành động khác đột ngột xen vào)."
+    },
+    {
+      "id": "g12_t2_25",
+      "num": 25,
+      "section": "III. WRITING: Sentence Building",
+      "type": "sentence_building",
+      "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>While / Steve Jobs / work / Apple / he / introduce / revolutionary / products / like / iPhone</b>",
+      "model_answers": [
+        "While Steve Jobs was working at Apple, he introduced revolutionary products like the iPhone.",
+        "While Steve Jobs was working for Apple, he introduced revolutionary products like the iPhone."
+      ],
+      "explanation": "Mệnh đề While chia thì Quá khứ tiếp diễn (was working at/for Apple), mệnh đề chính chia thì Quá khứ đơn (introduced revolutionary products like the iPhone)."
+    },
+    {
+      "id": "g12_t2_26",
+      "num": 26,
+      "section": "III. WRITING: Sentence Building",
+      "type": "sentence_building",
+      "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>Ha Long Bay / be / one / of / most / popular / tourist / destinations / in / Viet Nam</b>",
+      "model_answers": [
+        "Ha Long Bay is one of the most popular tourist destinations in Viet Nam.",
+        "Ha Long Bay is one of the most popular tourist destinations in Vietnam."
+      ],
+      "explanation": "Cấu trúc so sánh nhất: <i>one of the most + adj + plural noun</i> (một trong những điểm đến du lịch nổi tiếng nhất ở Việt Nam)."
+    },
+    {
+      "id": "g12_t2_27",
+      "num": 27,
+      "section": "III. WRITING: Sentence Building",
+      "type": "sentence_building",
+      "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>It / be / his / biological / father / who / pass away / when / Steve Jobs / be / only / a / boy</b>",
+      "model_answers": [
+        "It was his biological father who passed away when Steve Jobs was only a boy."
+      ],
+      "explanation": "Cấu trúc câu chẻ (Cleft sentence) nhấn mạnh ở quá khứ: <i>It was + O/S + who + V2/ed...</i>"
+    },
+    {
+      "id": "g12_t2_28",
+      "num": 28,
+      "section": "III. WRITING: Sentence Building",
+      "type": "sentence_building",
+      "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>Global / warming / lead / to / extreme / weather / events / which / cause / severe / floods</b>",
+      "model_answers": [
+        "Global warming leads to extreme weather events which cause severe floods.",
+        "Global warming has led to extreme weather events which cause severe floods.",
+        "Global warming has led to extreme weather events which have caused severe floods."
+      ],
+      "explanation": "Thì hiện tại đơn diễn tả thực tế khoa học: 'Global warming leads to extreme weather events which cause severe floods' (Hiện tượng ấm lên toàn cầu dẫn đến các hiện tượng thời tiết cực đoan, điều này gây ra lũ lụt nghiêm trọng)."
+    }
+  ],
+  "passages": {
+    "g12_t2_cloze": {
+      "title": "Bill Gates — The Visionary Tech Entrepreneur",
+      "text": "Bill Gates is a renowned American entrepreneur, software developer, and philanthropist. He was born on October 28, 1955, in Seattle, Washington. Gates showed a passion for technology from an early age, and by the age of 13, he had already started programming computers. In 1973, Gates enrolled at Harvard University, (11) _________ he later dropped out to pursue his dream of starting a software company. In 1975, he co-founded Microsoft with his childhood friend Paul Allen. The company’s breakthrough came when they developed the MS-DOS operating system for IBM's first personal computer. Microsoft soon dominated the personal computer software (12) ________, making Gates one of the wealthiest individuals in the world.<br><br>Gates served as the CEO of Microsoft until 2000 when he stepped down to focus (13) ________ his philanthropic work through the Bill & Melinda Gates Foundation. The foundation, which he founded with his then-wife Melinda, is one of the largest private charitable foundations in the world. It has donated billions of dollars to various causes, including global health, education, and poverty elimination. Gates has also been a vocal advocate for technological innovation and (14) _________ development, urging the world to tackle climate change and other pressing global issues. (15) _________ his immense wealth and success, Gates is known for his modest lifestyle and commitment to giving back to society. Today, he continues to be actively involved in various initiatives aimed at improving the world for future generations, including economic development.<br><small>(https://www.biography.com/business-figure/bill-gates)</small>"
+    },
+    "g12_t2_comp": {
+      "title": "Earth Hour: A Global Movement for Nature",
+      "text": "Earth Hour is a global event organized by the World Wildlife Fund (WWF) to attract people’s attention to climate change and encourage people to take action to protect the environment. It began in Sydney, Australia, in 2007, and has since grown into a worldwide movement. On a designated day each year, participants are encouraged to turn off their lights and electrical appliances for one hour, from 8:30 to 9:30 PM local time. This symbolic gesture aims to highlight the impact of human activity on the planet and to promote energy conservation.<br><br>During Earth Hour, landmarks and iconic buildings around the world switch off their lights, creating a visual representation of collective commitment to sustainability. The event is not only about reducing energy consumption for one hour but also about inspiring long-term changes in behavior. By participating in Earth Hour, individuals and communities show <b><u>their</u></b> support for efforts to reduce carbon footprints and combat climate change.<br><br>Earth Hour also serves as a platform for discussions about environmental issues and encourages people to adopt more sustainable lifestyles. Through social media and community events, participants share their experiences and ideas for reducing environmental impact. The initiative has grown <b><u>significantly</u></b>, involving millions of people in over 180 countries. Its success demonstrates the power of collective action in addressing global environmental challenges.<br><small>(Adapted from https://www.earthhour.org/)</small>"
+    }
+  }
+}

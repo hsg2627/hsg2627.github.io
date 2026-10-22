@@ -1,0 +1,423 @@
+{
+  "id": "g12_de3",
+  "title": "Đề Ôn Tập Số 3 (Đề 3 — Tiếng Anh 12)",
+  "subtitle": "Language · Reading · Writing (28 câu)",
+  "grade": 12,
+  "items": [
+    {
+      "id": "g12_t3_01",
+      "num": 1,
+      "section": "I. LANGUAGE: Pronunciation",
+      "type": "mcq",
+      "prompt": "Mark the letter A, B, C, or D to indicate the word whose underlined part differs from the others in pronunciation:<br>A. adm<u>i</u>re &nbsp;&nbsp;&nbsp;&nbsp; B. publ<u>i</u>sh &nbsp;&nbsp;&nbsp;&nbsp; C. f<u>i</u>nish &nbsp;&nbsp;&nbsp;&nbsp; D. <u>i</u>nclude",
+      "options": [
+        "A. admire",
+        "B. publish",
+        "C. finish",
+        "D. include"
+      ],
+      "answer": 0,
+      "explanation": "Chữ 'i' trong <b>admire</b> /ədˈmaɪər/ được phát âm là <b>/aɪ/</b>.<br>Trong các từ còn lại, chữ 'i' phát âm là <b>/ɪ/</b>:<br>• publish: /ˈpʌblɪʃ/<br>• finish: /ˈfɪnɪʃ/<br>• include: /ɪnˈkluːd/."
+    },
+    {
+      "id": "g12_t3_02",
+      "num": 2,
+      "section": "I. LANGUAGE: Pronunciation",
+      "type": "mcq",
+      "prompt": "Mark the letter A, B, C, or D to indicate the word whose underlined part differs from the others in pronunciation:<br>A. dev<u>o</u>te &nbsp;&nbsp;&nbsp;&nbsp; B. her<u>o</u> &nbsp;&nbsp;&nbsp;&nbsp; C. p<u>o</u>em &nbsp;&nbsp;&nbsp;&nbsp; D. cust<u>o</u>m",
+      "options": [
+        "A. devote",
+        "B. hero",
+        "C. poem",
+        "D. custom"
+      ],
+      "answer": 3,
+      "explanation": "Chữ 'o' trong <b>custom</b> /ˈkʌstəm/ được phát âm là âm schwa <b>/ə/</b>.<br>Trong các từ còn lại, chữ 'o' phát âm là diphthong <b>/əʊ/</b>:<br>• devote: /dɪˈvəʊt/<br>• hero: /ˈhɪərəʊ/<br>• poem: /ˈpəʊɪm/."
+    },
+    {
+      "id": "g12_t3_03",
+      "num": 3,
+      "section": "I. LANGUAGE: Word Form",
+      "type": "mcq",
+      "prompt": "Thomas Edison's ________ achievement in developing the first practical electric light bulb revolutionized the way the world illuminated the night.",
+      "options": [
+        "A. impress",
+        "B. impressive",
+        "C. impression",
+        "D. impressively"
+      ],
+      "answer": 1,
+      "explanation": "Trước danh từ 'achievement' cần một tính từ bổ nghĩa -> chọn <b>impressive</b> (đầy ấn tượng).<br>• impress (v): gây ấn tượng<br>• impression (n): sự ấn tượng<br>• impressively (adv): một cách ấn tượng."
+    },
+    {
+      "id": "g12_t3_04",
+      "num": 4,
+      "section": "I. LANGUAGE: Vocabulary",
+      "type": "mcq",
+      "prompt": "Vo Nguyen Giap was widely recognized as a ________ genius for his pivotal role in leading Vietnamese forces during the First Indochina War and the Vietnam War.",
+      "options": [
+        "A. military",
+        "B. artistic",
+        "C. musical",
+        "D. literary"
+      ],
+      "answer": 0,
+      "explanation": "Cụm danh từ: <b>military genius</b> (thiên tài quân sự). Đại tướng Võ Nguyên Giáp là vị tướng lỗi lạc lãnh đạo quân đội nhân dân Việt Nam lập nên những chiến công vang dội."
+    },
+    {
+      "id": "g12_t3_05",
+      "num": 5,
+      "section": "I. LANGUAGE: Vocabulary",
+      "type": "mcq",
+      "prompt": "The food at the festival is not only diverse but also incredibly ________.",
+      "options": [
+        "A. tasty",
+        "B. boring",
+        "C. plain",
+        "D. unhealthy"
+      ],
+      "answer": 0,
+      "explanation": "Ngữ cảnh khen ngợi: 'Món ăn tại lễ hội không chỉ phong phú mà còn vô cùng thơm ngon' -> chọn <b>tasty</b> (ngon miệng). Các từ còn lại mang nghĩa tiêu cực/nhạt nhẽo."
+    },
+    {
+      "id": "g12_t3_06",
+      "num": 6,
+      "section": "I. LANGUAGE: Vocabulary",
+      "type": "mcq",
+      "prompt": "A popular Vietnamese ________ is Bun Cha, which includes grilled pork and noodles.",
+      "options": [
+        "A. speciality",
+        "B. meal",
+        "C. dessert",
+        "D. beverage"
+      ],
+      "answer": 0,
+      "explanation": "<b>speciality</b> (đặc sản). Bún chả là món đặc sản nổi tiếng của ẩm thực Việt Nam."
+    },
+    {
+      "id": "g12_t3_07",
+      "num": 7,
+      "section": "I. LANGUAGE: Phrasal Verb",
+      "type": "mcq",
+      "prompt": "Despite numerous successes, he ________ after a long battle with pancreatic cancer.",
+      "options": [
+        "A. passed away",
+        "B. came across",
+        "C. got over",
+        "D. took on"
+      ],
+      "answer": 0,
+      "explanation": "Cụm động từ: <b>pass away</b> (qua đời, mất đi sau cơn bạo bệnh ung thư).<br>• come across: tình cờ gặp/thấy<br>• get over: vượt qua, hồi phục<br>• take on: đảm nhận."
+    },
+    {
+      "id": "g12_t3_08",
+      "num": 8,
+      "section": "I. LANGUAGE: Past Continuous & Simple",
+      "type": "mcq",
+      "prompt": "While Dang Thuy Tram ________ her duty in Quang Ngai Province, the cruel enemy ________ her.",
+      "options": [
+        "A. was doing / killed",
+        "B. did / killed",
+        "C. did / was killing",
+        "D. was doing / was killing"
+      ],
+      "answer": 0,
+      "explanation": "Hành động đang diễn ra trong quá khứ (chia Quá khứ tiếp diễn: <i>was doing</i> her duty) thì hành động khác bất ngờ xen vào cắt ngang (chia Quá khứ đơn: <i>killed</i>)."
+    },
+    {
+      "id": "g12_t3_09",
+      "num": 9,
+      "section": "I. LANGUAGE: Articles",
+      "type": "mcq",
+      "prompt": "He enjoys playing ________ guitar in his free time.",
+      "options": [
+        "A. a",
+        "B. an",
+        "C. the",
+        "D. Ø"
+      ],
+      "answer": 2,
+      "explanation": "Quy tắc ngữ pháp về nhạc cụ: Động từ <b>play</b> khi đi với tên nhạc cụ (guitar, piano, violin...) bắt buộc phải có mạo từ xác định <b>the</b>: <i>play the guitar</i>."
+    },
+    {
+      "id": "g12_t3_10",
+      "num": 10,
+      "section": "I. LANGUAGE: Closest in Meaning",
+      "type": "mcq",
+      "prompt": "Mark the letter A, B, C or D to indicate the word(s) CLOSEST in meaning to the underlined word:<br><b>Apple products were not only designed to be <u>cutting-edge</u> technology, but also to be stylish and easy to use.</b>",
+      "options": [
+        "A. modern",
+        "B. flexible",
+        "C. old-fashioned",
+        "D. simple"
+      ],
+      "answer": 0,
+      "explanation": "<b>cutting-edge</b> (tối tân, tiên tiến, đi đầu công nghệ) đồng nghĩa với <b>modern</b> (hiện đại, tiên tiến).<br>• flexible: linh hoạt<br>• old-fashioned: lỗi thời (trái nghĩa)<br>• simple: đơn giản."
+    },
+    {
+      "id": "g12_t3_11",
+      "num": 11,
+      "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+      "type": "reading_cloze",
+      "passage_ref": "g12_t3_cloze",
+      "prompt": "Choose the best option to fit blank (11):<br><i>'The Kinh people are primarily located in the (11) ________, while the minority groups are scattered throughout the mountainous regions.'</i>",
+      "options": [
+        "A. lowlands",
+        "B. cities",
+        "C. communities",
+        "D. countries"
+      ],
+      "answer": 0,
+      "explanation": "Đối lập với 'mountainous regions' (vùng núi) là <b>lowlands</b> (vùng đồng bằng). Người Kinh chủ yếu sinh sống ở các vùng đồng bằng."
+    },
+    {
+      "id": "g12_t3_12",
+      "num": 12,
+      "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+      "type": "reading_cloze",
+      "passage_ref": "g12_t3_cloze",
+      "prompt": "Choose the best option to fit blank (12):<br><i>'Traditional families often have three or four generations living under (12) _______ same roof...'</i>",
+      "options": [
+        "A. a",
+        "B. the",
+        "C. an",
+        "D. X"
+      ],
+      "answer": 1,
+      "explanation": "Cụm thành ngữ cố định: <b>under the same roof</b> (sống dưới cùng một mái nhà)."
+    },
+    {
+      "id": "g12_t3_13",
+      "num": 13,
+      "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+      "type": "reading_cloze",
+      "passage_ref": "g12_t3_cloze",
+      "prompt": "Choose the best option to fit blank (13):<br><i>'Confucianism has also played a significant role... (13) _______, in recent years, there has been a growing movement towards gender equality...'</i>",
+      "options": [
+        "A. However",
+        "B. Although",
+        "C. Because",
+        "D. Moreover"
+      ],
+      "answer": 0,
+      "explanation": "Trạng từ liên kết đứng đầu câu chỉ sự tương phản: <b>However</b> (Tuy nhiên). Nho giáo từng đề cao vai trò truyền thống, tuy nhiên những năm gần đây đã có phong trào bình đẳng giới mạnh mẽ."
+    },
+    {
+      "id": "g12_t3_14",
+      "num": 14,
+      "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+      "type": "reading_cloze",
+      "passage_ref": "g12_t3_cloze",
+      "prompt": "Choose the best option to fit blank (14):<br><i>'...characterized by a strong emphasis on community and living in harmony (14) ________ nature.'</i>",
+      "options": [
+        "A. for",
+        "B. of",
+        "C. on",
+        "D. with"
+      ],
+      "answer": 3,
+      "explanation": "Cụm từ cố định: <b>in harmony with something/nature</b> (sống hòa hợp, chan hòa với thiên nhiên)."
+    },
+    {
+      "id": "g12_t3_15",
+      "num": 15,
+      "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+      "type": "reading_cloze",
+      "passage_ref": "g12_t3_cloze",
+      "prompt": "Choose the best option to fit blank (15):<br><i>'The Vietnamese government is working to (15) ________ the gap between the lowland and mountainous communities...'</i>",
+      "options": [
+        "A. keep",
+        "B. have",
+        "C. bridge",
+        "D. take"
+      ],
+      "answer": 2,
+      "explanation": "Collocation: <b>bridge the gap</b> (thu hẹp khoảng cách / bắc nhịp cầu nối). Chính phủ đang nỗ lực thu hẹp khoảng cách giữa các cộng đồng vùng xuôi và vùng núi."
+    },
+    {
+      "id": "g12_t3_16",
+      "num": 16,
+      "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+      "type": "reading_comp",
+      "passage_ref": "g12_t3_comp",
+      "prompt": "When was Alexander Hamilton appointed as the first Secretary of the Treasury?",
+      "options": [
+        "A. September 11, 1787",
+        "B. September 11, 1789",
+        "C. July 4, 1776",
+        "D. January 11, 1755"
+      ],
+      "answer": 1,
+      "explanation": "Căn cứ câu đầu đoạn 4: <i>'Alexander Hamilton was appointed as the country’s first Secretary of The Treasury on September 11, 1789.'</i>"
+    },
+    {
+      "id": "g12_t3_17",
+      "num": 17,
+      "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+      "type": "reading_comp",
+      "passage_ref": "g12_t3_comp",
+      "prompt": "Which best serves as the title for the passage?",
+      "options": [
+        "A. A brief history of Alexander Hamilton.",
+        "B. Founding Fathers of the United States.",
+        "C. Pursuing your dream no matter what.",
+        "D. An unbecoming historical figure."
+      ],
+      "answer": 0,
+      "explanation": "Bài văn tóm lược cuộc đời, sự nghiệp quân sự, chính trị và những đóng góp của Alexander Hamilton từ khi sinh ra đến khi qua đời -> Tiêu đề phù hợp nhất là: <b>A brief history of Alexander Hamilton</b>."
+    },
+    {
+      "id": "g12_t3_18",
+      "num": 18,
+      "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+      "type": "reading_comp",
+      "passage_ref": "g12_t3_comp",
+      "prompt": "According to paragraph 1, what can be concluded from Alexander Hamilton’s childhood?",
+      "options": [
+        "A. Hamilton had a miserable youth which left him a pessimistic attitude to life.",
+        "B. Hamilton boasted an incomplete yet happy childhood at a Caribbean orphanage.",
+        "C. He experienced a series of misfortunes but still thrived and overcame them all.",
+        "D. His hard time from childhood became the incentives for him to join the army."
+      ],
+      "answer": 2,
+      "explanation": "Hamilton không được công nhận là con hợp pháp, bị từ chối vào trường học của nhà thờ, mẹ mất sớm và phải đi làm thư ký, nhưng ông vẫn không ngừng viết lách và được cộng đồng quyên góp tiền cho đi học -> Ông trải qua nhiều bất hạnh nhưng đã vươn lên vượt qua tất cả (C)."
+    },
+    {
+      "id": "g12_t3_19",
+      "num": 19,
+      "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+      "type": "reading_comp",
+      "passage_ref": "g12_t3_comp",
+      "prompt": "The word <b>elected</b> in paragraph 2 is CLOSEST in meaning to ________.",
+      "options": [
+        "A. locked",
+        "B. transferred",
+        "C. appointed",
+        "D. voted"
+      ],
+      "answer": 3,
+      "explanation": "<b>elect</b> (bầu cử thông qua bỏ phiếu) đồng nghĩa với <b>voted</b>."
+    },
+    {
+      "id": "g12_t3_20",
+      "num": 20,
+      "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+      "type": "reading_comp",
+      "passage_ref": "g12_t3_comp",
+      "prompt": "The word <b>it</b> in paragraph 3 refers to ________.",
+      "options": [
+        "A. government",
+        "B. document",
+        "C. ratification",
+        "D. confederation"
+      ],
+      "answer": 1,
+      "explanation": "Căn cứ đoạn 3: <i>'...despite his disagreements, he promoted the <u>document</u> because he believed <b>it</b> was a vast improvement over the Articles of Confederation.'</i> Từ 'it' thay thế cho <b>document</b> (bản tài liệu Hiến pháp)."
+    },
+    {
+      "id": "g12_t3_21",
+      "num": 21,
+      "section": "III. WRITING: Sentence Transformation",
+      "type": "transform",
+      "prompt": "Finish the sentence in such a way that it means the same as the one printed before it:<br><b>I have not seen him for ten years.</b><br>→ The last time __________________________________________.",
+      "model_answers": [
+        "The last time I saw him was ten years ago."
+      ],
+      "explanation": "Cấu trúc chuyển đổi giữa Hiện tại hoàn thành phủ định và The last time:<br><i>S + have/has not + V3/ed + for + time → The last time + S + V2/ed + was + time + ago.</i>"
+    },
+    {
+      "id": "g12_t3_22",
+      "num": 22,
+      "section": "III. WRITING: Sentence Transformation",
+      "type": "transform",
+      "prompt": "Finish the sentence in such a way that it means the same as the one printed before it:<br><b>Last year there was an increase in the number of tourists visiting this area.</b><br>→ The number of __________________________________________.",
+      "model_answers": [
+        "The number of tourists visiting this area increased last year.",
+        "The number of tourists visiting this area went up last year."
+      ],
+      "explanation": "Chuyển từ cấu trúc tồn tại với danh từ: <i>there was an increase in + N</i> sang câu chủ động với động từ: <i>The number of... increased last year.</i>"
+    },
+    {
+      "id": "g12_t3_23",
+      "num": 23,
+      "section": "III. WRITING: Sentence Combining",
+      "type": "transform",
+      "prompt": "Combine these pairs of sentences into one, using the given word in brackets:<br><b>My parents were waiting in the queue to buy museum tickets. My brother and I were queuing up for ice cream. (while)</b><br>→ __________________________________________.",
+      "model_answers": [
+        "My parents were waiting in the queue to buy museum tickets while my brother and I were queuing up for ice cream.",
+        "While my parents were waiting in the queue to buy museum tickets, my brother and I were queuing up for ice cream."
+      ],
+      "explanation": "Hai hành động diễn ra đồng thời song song trong quá khứ kết hợp với liên từ <b>while</b>."
+    },
+    {
+      "id": "g12_t3_24",
+      "num": 24,
+      "section": "III. WRITING: Sentence Combining",
+      "type": "transform",
+      "prompt": "Combine these pairs of sentences into one, using the given word in brackets:<br><b>The band was playing their first song. All the lights went out. (when)</b><br>→ __________________________________________.",
+      "model_answers": [
+        "The band was playing their first song when all the lights went out."
+      ],
+      "explanation": "Một hành động đang diễn ra (Past Continuous) thì một hành động khác bất ngờ xen vào (Past Simple với when)."
+    },
+    {
+      "id": "g12_t3_25",
+      "num": 25,
+      "section": "III. WRITING: Sentence Building",
+      "type": "sentence_building",
+      "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>When / Michael Jackson / die / in / 2009 / he / still / work / on / his / dangerous / tour</b>",
+      "model_answers": [
+        "When Michael Jackson died in 2009, he was still working on his Dangerous tour.",
+        "When Michael Jackson died in 2009, he was still working on his dangerous tour."
+      ],
+      "explanation": "Cấu trúc: <i>When + S + V2/ed, S + was/were + still + V-ing.</i> (Khi Michael Jackson qua đời năm 2009, ông vẫn đang làm việc cho chuyến lưu diễn của mình)."
+    },
+    {
+      "id": "g12_t3_26",
+      "num": 26,
+      "section": "III. WRITING: Sentence Building",
+      "type": "sentence_building",
+      "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>People / from / different / cultures / may / have / different / interpretations / of / same / gesture .</b>",
+      "model_answers": [
+        "People from different cultures may have different interpretations of the same gesture."
+      ],
+      "explanation": "Thêm mạo từ xác định <b>the</b> trước cụm 'same gesture': <i>interpretations of the same gesture</i> (cách hiểu khác nhau về cùng một cử chỉ)."
+    },
+    {
+      "id": "g12_t3_27",
+      "num": 27,
+      "section": "III. WRITING: Sentence Building",
+      "type": "sentence_building",
+      "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>So / serious / be / plastic / pollution / that / many / countries / ban / single-use / plastic / bags</b>",
+      "model_answers": [
+        "So serious is plastic pollution that many countries have banned single-use plastic bags.",
+        "So serious was plastic pollution that many countries banned single-use plastic bags.",
+        "So serious is plastic pollution that many countries ban single-use plastic bags."
+      ],
+      "explanation": "Cấu trúc đảo ngữ với <b>So + adj</b>: <i>So + adj + be + S + that + clause</i> (Ô nhiễm nhựa nghiêm trọng đến mức mà nhiều quốc gia đã cấm túi nhựa dùng một lần)."
+    },
+    {
+      "id": "g12_t3_28",
+      "num": 28,
+      "section": "III. WRITING: Sentence Building",
+      "type": "sentence_building",
+      "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>Traditional / music / help / maintain / cultural / identity / which / be / important / in / globalised / world</b>",
+      "model_answers": [
+        "Traditional music helps maintain cultural identity, which is important in a globalised world.",
+        "Traditional music helps to maintain cultural identity, which is important in a globalised world.",
+        "Traditional music helps maintain cultural identity, which is important in a globalized world."
+      ],
+      "explanation": "Chủ ngữ số ít 'Traditional music' đi với động từ 'helps maintain'. Mệnh đề quan hệ không xác định 'which is important in a globalised world'."
+    }
+  ],
+  "passages": {
+    "g12_t3_cloze": {
+      "title": "Vietnam’s Rich Cultural Tapestry and Ethnic Harmony",
+      "text": "Vietnam is a country with a rich and diverse culture, shaped by its history and the many ethnic groups that call it home. The majority of the population is made up of the Kinh people, but there are 53 other ethnic minority groups, each with their own unique traditions and customs. The Kinh people are primarily located in the (11) ________, while the minority groups are scattered throughout the mountainous regions. This diverse mix of cultures has created a fascinating tapestry of traditions, languages, and beliefs.<br><br>The Vietnamese culture is deeply rooted in family and community. Traditional families often have three or four generations living under (12) _______ same roof, with a strong emphasis on respect for elders. Confucianism has also played a significant role in shaping Vietnamese society, particularly in the traditional roles of men and women. (13) _______, in recent years, there has been a growing movement towards gender equality, with the government enacting laws to promote more equitable family relations.<br><br>Vietnamese culture is also characterized by a strong emphasis on community and living in harmony (14) ________ nature. This is reflected in the traditional costumes of many ethnic groups, which are often made from natural fibers like silk, cotton, and pineapple yarn. These materials are durable, breathable, and well-suited to the tropical climate of Vietnam.<br><br>Despite the differences between the various ethnic groups, there is a strong sense of solidarity and cooperation among them. This unity has been forged through centuries of shared history, including times of war and peace. The Vietnamese government is working to (15) ________ the gap between the lowland and mountainous communities, striving to ensure that all citizens have access to the same opportunities and resources.<br><small>(Source: https://vietnamembassy-usa.org/culture/ethnic-groups)</small>"
+    },
+    "g12_t3_comp": {
+      "title": "A Brief History of Alexander Hamilton",
+      "text": "Alexander Hamilton was born on January 11, 1755 or 1757 in the West Indies. Due to his mother’s lack of marital status, Hamilton was not seen as a legitimate child and was thus denied access to church schools. When his mother died he was adopted by a merchant in Nevis, where he worked as a clerk. During his time in Nevis, Hamilton continued to write; one of his essays impressed the community leaders so much that they worked together and collected funds to send Hamilton to the colonies.<br><br>Hamilton served in the revolutionary war, during which time he worked his way through battles and earned himself a place aiding General Washington. After the war, Hamilton was <b><u>elected</u></b> into the Congress of the Confederation. He was dissatisfied with the decentralized government that was set up and the inability to raise money from the states to pay the soldiers.<br><br>Hamilton was involved in the Constitution Convention but did not fully agree with the document; despite his disagreements, he promoted the document because he believed <b><u>it</u></b> was a vast improvement over the Articles of Confederation. He pushed the ratification of the Constitution, teaming up with John Jay and James Madison to write the Federalist papers, which were often cited when pushing for the Constitution’s ratification.<br><br>Alexander Hamilton was appointed as the country’s first Secretary of The Treasury on September 11, 1789. During his time as Secretary of the Treasury Hamilton helped write economic policies, develop the funding of state debts, establish the national bank, create a national currency, a system of tariffs, and a peaceful trade relationship with Britain. After his time in politics finished, Alexander Hamilton went back to New York to practice law. He died in a duel with Aaron Burr in Weehawken, New Jersey on July 12, 1804.<br><small>(Source: https://poole.ncsu.edu/)</small>"
+    }
+  }
+}

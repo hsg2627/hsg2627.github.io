@@ -1,0 +1,8377 @@
+// Cổng Luyện Tập Ôn Thi Giữa Kì 1 — Khối 10, 11, 12
+// Tự động tổng hợp từ các file tài liệu gốc, không phụ thuộc máy chủ
+window.ON_TAP_DATA = {
+  "metadata": {
+    "title": "Cổng Luyện Tập Ôn Thi Giữa Kì 1 — Tiếng Anh 10 · 11 · 12",
+    "description": "Hệ thống luyện tập và tự chấm điểm trực tuyến 3 khối THPT, không cần đăng nhập. 100% bám sát ngữ liệu ôn tập chính khóa.",
+    "version": "1.0.0",
+    "total_grades": 3,
+    "total_questions": 250
+  },
+  "grades": {
+    "10": {
+      "name": "Khối 10",
+      "title": "Tiếng Anh 10 · Ôn Tập Giữa Kì 1 (Global Success / GDPT 2018)",
+      "description": "Ngân hàng 80 câu hỏi trọng tâm gồm Ngôn ngữ (Phát âm, Trọng âm, Ngữ pháp, Từ vựng), Đọc hiểu, Điền từ và Kỹ năng Viết.",
+      "total_items": 80,
+      "tests": [
+        {
+          "id": "g10_full",
+          "title": "Đề Ôn Tập Toàn Diện (Trọn bộ 80 câu)",
+          "subtitle": "Đầy đủ 4 kỹ năng: Language, Reading & Writing",
+          "duration_minutes": 90,
+          "items": [
+            {
+              "id": "g10_gk1_l01",
+              "section": "I. LANGUAGE: Grammar",
+              "prompt": "1. We're hoping _______ tickets to the concert.",
+              "options": [
+                "A. got",
+                "B. get",
+                "C. to get",
+                "D. getting"
+              ],
+              "answer": 2,
+              "explanation": "Cấu trúc: 'hope + to-infinitive' (hy vọng làm gì) -> chọn 'to get'.",
+              "num": 1,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l02",
+              "section": "I. LANGUAGE: Vocabulary",
+              "prompt": "2. We need to _______ public awareness of the environmental issues.",
+              "options": [
+                "A. achieve",
+                "B. organise",
+                "C. raise",
+                "D. plan"
+              ],
+              "answer": 2,
+              "explanation": "Collocation cố định: 'raise awareness of something' (nâng cao nhận thức của cộng đồng về vấn đề gì).",
+              "num": 2,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l03",
+              "section": "I. LANGUAGE: Vocabulary",
+              "prompt": "3. Our music teacher has been invited to be a _______ in many music competitions and talent shows.",
+              "options": [
+                "A. contestant",
+                "B. judge",
+                "C. fan",
+                "D. competitor"
+              ],
+              "answer": 1,
+              "explanation": "'judge' (giám khảo trong cuộc thi âm nhạc). Contestant/competitor là thí sinh; fan là người hâm mộ.",
+              "num": 3,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l04",
+              "section": "I. LANGUAGE: Preposition",
+              "prompt": "4. He always helps _______ the housework.",
+              "options": [
+                "A. with",
+                "B. in",
+                "C. on",
+                "D. to"
+              ],
+              "answer": 0,
+              "explanation": "Cấu trúc: 'help (someone) with something' (giúp đỡ việc gì) -> 'helps with the housework'.",
+              "num": 4,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l05",
+              "section": "I. LANGUAGE: Word Form",
+              "prompt": "5. We're going to hold a _______ to see who can swim the fastest.",
+              "options": [
+                "A. competition",
+                "B. competitor",
+                "C. competitive",
+                "D. compete"
+              ],
+              "answer": 0,
+              "explanation": "Sau mạo từ 'a' cần một danh từ chỉ sự kiện cuộc thi -> 'competition' (cuộc thi).",
+              "num": 5,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l06",
+              "section": "I. LANGUAGE: Conjunction",
+              "prompt": "6. We've invited the boss, _______ she may decide not to come.",
+              "options": [
+                "A. and",
+                "B. but",
+                "C. or",
+                "D. so"
+              ],
+              "answer": 1,
+              "explanation": "Liên từ chỉ sự tương phản: 'Chúng tôi đã mời sếp, nhưng có thể cô ấy sẽ quyết định không đến' -> chọn 'but'.",
+              "num": 6,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l07",
+              "section": "I. LANGUAGE: Vocabulary",
+              "prompt": "7. When all members of the family share housework, family _______ become stronger.",
+              "options": [
+                "A. bonds",
+                "B. joys",
+                "C. happiness",
+                "D. life"
+              ],
+              "answer": 0,
+              "explanation": "Cụm danh từ: 'family bonds' (sự gắn kết gia đình / tình cảm gia đình).",
+              "num": 7,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l08",
+              "section": "I. LANGUAGE: Word Form",
+              "prompt": "8. Voluntary / Volunteer work is a great way for _______ to teach children in remote areas.",
+              "options": [
+                "A. volunteer",
+                "B. voluntary",
+                "C. volunteered",
+                "D. volunteers"
+              ],
+              "answer": 3,
+              "explanation": "'a great way for volunteers to teach...' (là cơ hội tuyệt vời cho các tình nguyện viên giảng dạy trẻ em vùng sâu vùng xa).",
+              "num": 8,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l09",
+              "section": "I. LANGUAGE: Preposition",
+              "prompt": "9. Can you tell me who is responsible _______ the finances in your family?",
+              "options": [
+                "A. with",
+                "B. to",
+                "C. about",
+                "D. for"
+              ],
+              "answer": 3,
+              "explanation": "Cấu trúc tính từ đi với giới từ: 'be responsible for something' (chịu trách nhiệm về cái gì).",
+              "num": 9,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l10",
+              "section": "I. LANGUAGE: Vocabulary",
+              "prompt": "10. When you do something good for others, you will find your life _______.",
+              "options": [
+                "A. meaningless",
+                "B. hopeless",
+                "C. harmful",
+                "D. meaningful"
+              ],
+              "answer": 3,
+              "explanation": "Cấu trúc: 'find something + adj' (thấy cái gì như thế nào). Làm việc tốt giúp cuộc sống có ý nghĩa -> chọn 'meaningful'.",
+              "num": 10,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l11",
+              "section": "I. LANGUAGE: Vocabulary",
+              "prompt": "11. Doing volunteer work, we are more _______ of global problems facing our world.",
+              "options": [
+                "A. aware",
+                "B. devote",
+                "C. communicate",
+                "D. dedicate"
+              ],
+              "answer": 0,
+              "explanation": "Cấu trúc tính từ: 'be aware of something' (nhận thức được điều gì).",
+              "num": 11,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l12",
+              "section": "I. LANGUAGE: Idiom",
+              "prompt": "12. Environmental pollution is a hot _______ nowadays because it is really complicated and hard to solve.",
+              "options": [
+                "A. orange",
+                "B. apple",
+                "C. potato",
+                "D. dog"
+              ],
+              "answer": 2,
+              "explanation": "Thành ngữ: 'a hot potato' (một vấn đề nan giải, nóng bỏng, khó giải quyết).",
+              "num": 12,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l13",
+              "section": "I. LANGUAGE: Grammar",
+              "prompt": "13. It’s been raining all day. This weather makes me _______.",
+              "options": [
+                "A. depress",
+                "B. depressed",
+                "C. depressing",
+                "D. to depress"
+              ],
+              "answer": 1,
+              "explanation": "Cấu trúc: 'make someone + adj': tính từ chỉ cảm xúc của con người dùng đuôi -ed -> 'makes me depressed' (khiến tôi cảm thấy chán nản/buồn bã).",
+              "num": 13,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l14",
+              "section": "I. LANGUAGE: Grammar",
+              "prompt": "14. We _______ in Ha Noi since 2000. We love living here.",
+              "options": [
+                "A. live",
+                "B. lived",
+                "C. have lived",
+                "D. are living"
+              ],
+              "answer": 2,
+              "explanation": "Dấu hiệu 'since 2000' (từ năm 2000 đến nay) -> chia thì Hiện tại hoàn thành 'have lived'.",
+              "num": 14,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l15",
+              "section": "I. LANGUAGE: Closest Meaning",
+              "prompt": "15. Mark the letter A, B, C or D to indicate the word CLOSEST in meaning to the underlined word:<br>We always <u>split</u> the housework equally - my mom cooks, my dad cleans the house and I do the washing-up.",
+              "options": [
+                "A. pick up",
+                "B. join",
+                "C. share",
+                "D. break"
+              ],
+              "answer": 2,
+              "explanation": "'split the housework' = 'share the housework' (phân chia, sẻ chia công việc nhà).",
+              "num": 15,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l16",
+              "section": "I. LANGUAGE: Closest Meaning",
+              "prompt": "16. Mark the letter A, B, C or D to indicate the word CLOSEST in meaning to the underlined word:<br>Lan’s main <u>responsibility</u> in her home is to keep the house clean.",
+              "options": [
+                "A. right",
+                "B. honor",
+                "C. part",
+                "D. duty"
+              ],
+              "answer": 3,
+              "explanation": "'responsibility' (trách nhiệm, bổn phận) đồng nghĩa với 'duty'.",
+              "num": 16,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l17",
+              "section": "I. LANGUAGE: Word Stress",
+              "prompt": "17. Mark the letter A, B, C or D to indicate the word that differs from the other three in the position of primary stress.",
+              "options": [
+                "A. cover",
+                "B. protect",
+                "C. perform",
+                "D. respect"
+              ],
+              "answer": 0,
+              "explanation": "cover /ˈkʌv.ər/ có trọng âm 1. Các từ còn lại có trọng âm 2: protect /prəˈtekt/, perform /pəˈfɔːm/, respect /rɪˈspekt/.",
+              "num": 17,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l18",
+              "section": "I. LANGUAGE: Word Stress",
+              "prompt": "18. Mark the letter A, B, C or D to indicate the word that differs from the other three in the position of primary stress.",
+              "options": [
+                "A. footprint",
+                "B. artist",
+                "C. routine",
+                "D. housework"
+              ],
+              "answer": 2,
+              "explanation": "routine /ruːˈtiːn/ có trọng âm 2. Các từ còn lại có trọng âm 1: footprint /ˈfʊt.prɪnt/, artist /ˈɑː.tɪst/, housework /ˈhaʊs.wɜːk/.",
+              "num": 18,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l19",
+              "section": "I. LANGUAGE: Word Stress",
+              "prompt": "19. Mark the letter A, B, C or D to indicate the word that differs from the other three in the position of primary stress.",
+              "options": [
+                "A. damage",
+                "B. routine",
+                "C. service",
+                "D. manner"
+              ],
+              "answer": 1,
+              "explanation": "routine /ruːˈtiːn/ có trọng âm 2. Các từ còn lại có trọng âm 1: damage /ˈdæm.ɪdʒ/, service /ˈsɜː.vɪs/, manner /ˈmæn.ər/.",
+              "num": 19,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l20",
+              "section": "I. LANGUAGE: Word Stress",
+              "prompt": "20. Mark the letter A, B, C or D to indicate the word that differs from the other three in the position of primary stress.",
+              "options": [
+                "A. organic",
+                "B. encourage",
+                "C. volunteer",
+                "D. location"
+              ],
+              "answer": 2,
+              "explanation": "volunteer /ˌvɒl.ənˈtɪər/ có trọng âm rơi vào âm tiết 3. Các từ còn lại có trọng âm 2: organic /ɔːˈɡæn.ɪk/, encourage /ɪnˈkʌr.ɪdʒ/, location /ləʊˈkeɪ.ʃən/.",
+              "num": 20,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r01",
+              "section": "II. READING: Soil and Environment",
+              "passage": "More than a third of the world's soil is endangered, according to a recent UN report. If we don't slow the decline, all farmable soil could be gone in 60 years. Since soil grows 95% of our food, and sustains human life in other more surprising ways, that is a huge problem. A single gram of healthy soil might contain 100 million bacteria, as well as other microorganisms such as viruses and fungi, living amid decomposing plants and various minerals.\n\nThat means soils do not just grow our food, but are the source of nearly all our existing antibiotics, and could be our best hope in the fight against antibiotic-resistant bacteria. Soil is also an ally against climate change: as microorganisms within soil digest dead animals and plants, they lock in their carbon content, holding three times the amount of carbon as does the entire atmosphere. Soils also store water, preventing flood damage: in the UK, damage to buildings, roads and bridges from floods caused by soil degradation costs £233 million every year.\n\nIf the soil loses its ability to perform these functions, the human race could be in big trouble. The danger is not that the soil will disappear completely, but that the microorganisms that give it its special properties will be lost. And once this has happened, it may take the soil thousands of years to recover.\n(Adapted from ieltsfighter.com)",
+              "prompt": "Question 1. The word \"its\" in the third paragraph refers to ________.",
+              "options": [
+                "A. degradation's",
+                "B. the human race",
+                "C. flood's",
+                "D. soil's"
+              ],
+              "answer": 3,
+              "explanation": "'If the soil loses its ability...': 'its' ở đây là sở hữu của danh từ 'soil' (đất đai) phía trước.",
+              "num": 21,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r02",
+              "section": "II. READING: Soil and Environment",
+              "passage": "More than a third of the world's soil is endangered, according to a recent UN report. If we don't slow the decline, all farmable soil could be gone in 60 years. Since soil grows 95% of our food, and sustains human life in other more surprising ways, that is a huge problem. A single gram of healthy soil might contain 100 million bacteria, as well as other microorganisms such as viruses and fungi, living amid decomposing plants and various minerals.\n\nThat means soils do not just grow our food, but are the source of nearly all our existing antibiotics, and could be our best hope in the fight against antibiotic-resistant bacteria. Soil is also an ally against climate change: as microorganisms within soil digest dead animals and plants, they lock in their carbon content, holding three times the amount of carbon as does the entire atmosphere. Soils also store water, preventing flood damage: in the UK, damage to buildings, roads and bridges from floods caused by soil degradation costs £233 million every year.\n\nIf the soil loses its ability to perform these functions, the human race could be in big trouble. The danger is not that the soil will disappear completely, but that the microorganisms that give it its special properties will be lost. And once this has happened, it may take the soil thousands of years to recover.\n(Adapted from ieltsfighter.com)",
+              "prompt": "Question 2. In the passage, what threatens the fertility and health of soil?",
+              "options": [
+                "A. Forest fires remove the nutrients from the soil.",
+                "B. Soil degradation and loss of vital microorganisms.",
+                "C. Long months of drought as a result of climate change.",
+                "D. Plants and animals absorb the nutrients from the soil."
+              ],
+              "answer": 1,
+              "explanation": "Đoạn 3 chỉ rõ: 'the microorganisms that give it its special properties will be lost' do suy thoái đất.",
+              "num": 22,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r03",
+              "section": "II. READING: Soil and Environment",
+              "passage": "More than a third of the world's soil is endangered, according to a recent UN report. If we don't slow the decline, all farmable soil could be gone in 60 years. Since soil grows 95% of our food, and sustains human life in other more surprising ways, that is a huge problem. A single gram of healthy soil might contain 100 million bacteria, as well as other microorganisms such as viruses and fungi, living amid decomposing plants and various minerals.\n\nThat means soils do not just grow our food, but are the source of nearly all our existing antibiotics, and could be our best hope in the fight against antibiotic-resistant bacteria. Soil is also an ally against climate change: as microorganisms within soil digest dead animals and plants, they lock in their carbon content, holding three times the amount of carbon as does the entire atmosphere. Soils also store water, preventing flood damage: in the UK, damage to buildings, roads and bridges from floods caused by soil degradation costs £233 million every year.\n\nIf the soil loses its ability to perform these functions, the human race could be in big trouble. The danger is not that the soil will disappear completely, but that the microorganisms that give it its special properties will be lost. And once this has happened, it may take the soil thousands of years to recover.\n(Adapted from ieltsfighter.com)",
+              "prompt": "Question 3. According to the second paragraph, soil also helps fight against _______.",
+              "options": [
+                "A. antibiotic-resistant bacteria",
+                "B. antibiotics",
+                "C. climate change",
+                "D. dead animal and plants"
+              ],
+              "answer": 2,
+              "explanation": "Đoạn 2 nêu rõ: 'Soil is also an ally against climate change' (Đất cũng là một đồng minh chống lại biến đổi khí hậu).",
+              "num": 23,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r04",
+              "section": "II. READING: Soil and Environment",
+              "passage": "More than a third of the world's soil is endangered, according to a recent UN report. If we don't slow the decline, all farmable soil could be gone in 60 years. Since soil grows 95% of our food, and sustains human life in other more surprising ways, that is a huge problem. A single gram of healthy soil might contain 100 million bacteria, as well as other microorganisms such as viruses and fungi, living amid decomposing plants and various minerals.\n\nThat means soils do not just grow our food, but are the source of nearly all our existing antibiotics, and could be our best hope in the fight against antibiotic-resistant bacteria. Soil is also an ally against climate change: as microorganisms within soil digest dead animals and plants, they lock in their carbon content, holding three times the amount of carbon as does the entire atmosphere. Soils also store water, preventing flood damage: in the UK, damage to buildings, roads and bridges from floods caused by soil degradation costs £233 million every year.\n\nIf the soil loses its ability to perform these functions, the human race could be in big trouble. The danger is not that the soil will disappear completely, but that the microorganisms that give it its special properties will be lost. And once this has happened, it may take the soil thousands of years to recover.\n(Adapted from ieltsfighter.com)",
+              "prompt": "Question 4. The word \"contain\" in the first paragraph is closest in meaning to _______.",
+              "options": [
+                "A. live",
+                "B. exist",
+                "C. has",
+                "D. raise"
+              ],
+              "answer": 2,
+              "explanation": "'contain' có nghĩa là chứa đựng, bao gồm (= has / holds).",
+              "num": 24,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r05",
+              "section": "II. READING: Soil and Environment",
+              "passage": "More than a third of the world's soil is endangered, according to a recent UN report. If we don't slow the decline, all farmable soil could be gone in 60 years. Since soil grows 95% of our food, and sustains human life in other more surprising ways, that is a huge problem. A single gram of healthy soil might contain 100 million bacteria, as well as other microorganisms such as viruses and fungi, living amid decomposing plants and various minerals.\n\nThat means soils do not just grow our food, but are the source of nearly all our existing antibiotics, and could be our best hope in the fight against antibiotic-resistant bacteria. Soil is also an ally against climate change: as microorganisms within soil digest dead animals and plants, they lock in their carbon content, holding three times the amount of carbon as does the entire atmosphere. Soils also store water, preventing flood damage: in the UK, damage to buildings, roads and bridges from floods caused by soil degradation costs £233 million every year.\n\nIf the soil loses its ability to perform these functions, the human race could be in big trouble. The danger is not that the soil will disappear completely, but that the microorganisms that give it its special properties will be lost. And once this has happened, it may take the soil thousands of years to recover.\n(Adapted from ieltsfighter.com)",
+              "prompt": "Question 5. What is the main idea of the passage?",
+              "options": [
+                "A. Soil degradation's danger to the human race.",
+                "B. Soil's important roles in human life.",
+                "C. How bacteria as well as other microorganisms affect human life.",
+                "D. What needs to be done to protect natural resources like soil."
+              ],
+              "answer": 0,
+              "explanation": "Bài đọc nhấn mạnh sự nguy hiểm của suy thoái đất đối với loài người ('If we don't slow the decline... the human race could be in big trouble').",
+              "num": 25,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r06",
+              "section": "II. READING: Family Life",
+              "passage": "My (6) _______ family consists of four members. My husband is an engineer at a big company in Hanoi. I am an English teacher at an international school. We have a six-year-old son and a three-year-old daughter. All of the members often spend time (7) _______ the household chores with each other in the evening. My husband and I (8) _______ dinner together. My children help me clean the house. Although there (9) _______ a lot of household duties around the house, I am not tired because my husband joins hands to do the (10) _______ with me.",
+              "prompt": "Question 6. Choose the best option to fit blank (6):",
+              "options": [
+                "A. extended",
+                "B. nuclear",
+                "C. big",
+                "D. huge"
+              ],
+              "answer": 1,
+              "explanation": "Gia đình gồm 4 người (bố mẹ và 2 con) là gia đình hạt nhân -> 'nuclear family'.",
+              "num": 26,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r07",
+              "section": "II. READING: Family Life",
+              "passage": "My (6) _______ family consists of four members. My husband is an engineer at a big company in Hanoi. I am an English teacher at an international school. We have a six-year-old son and a three-year-old daughter. All of the members often spend time (7) _______ the household chores with each other in the evening. My husband and I (8) _______ dinner together. My children help me clean the house. Although there (9) _______ a lot of household duties around the house, I am not tired because my husband joins hands to do the (10) _______ with me.",
+              "prompt": "Question 7. Choose the best option to fit blank (7):",
+              "options": [
+                "A. doing",
+                "B. to do",
+                "C. did",
+                "D. do"
+              ],
+              "answer": 0,
+              "explanation": "Cấu trúc: 'spend time + V-ing': 'spend time doing the household chores'.",
+              "num": 27,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r08",
+              "section": "II. READING: Family Life",
+              "passage": "My (6) _______ family consists of four members. My husband is an engineer at a big company in Hanoi. I am an English teacher at an international school. We have a six-year-old son and a three-year-old daughter. All of the members often spend time (7) _______ the household chores with each other in the evening. My husband and I (8) _______ dinner together. My children help me clean the house. Although there (9) _______ a lot of household duties around the house, I am not tired because my husband joins hands to do the (10) _______ with me.",
+              "prompt": "Question 8. Choose the best option to fit blank (8):",
+              "options": [
+                "A. watch",
+                "B. bring",
+                "C. cook",
+                "D. take"
+              ],
+              "answer": 2,
+              "explanation": "Collocation: 'cook dinner' (nấu bữa tối).",
+              "num": 28,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r09",
+              "section": "II. READING: Family Life",
+              "passage": "My (6) _______ family consists of four members. My husband is an engineer at a big company in Hanoi. I am an English teacher at an international school. We have a six-year-old son and a three-year-old daughter. All of the members often spend time (7) _______ the household chores with each other in the evening. My husband and I (8) _______ dinner together. My children help me clean the house. Although there (9) _______ a lot of household duties around the house, I am not tired because my husband joins hands to do the (10) _______ with me.",
+              "prompt": "Question 9. Choose the best option to fit blank (9):",
+              "options": [
+                "A. are",
+                "B. was",
+                "C. is",
+                "D. were"
+              ],
+              "answer": 0,
+              "explanation": "Chủ ngữ số nhiều 'a lot of household duties' ở hiện tại -> dùng 'are'.",
+              "num": 29,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r10",
+              "section": "II. READING: Family Life",
+              "passage": "My (6) _______ family consists of four members. My husband is an engineer at a big company in Hanoi. I am an English teacher at an international school. We have a six-year-old son and a three-year-old daughter. All of the members often spend time (7) _______ the household chores with each other in the evening. My husband and I (8) _______ dinner together. My children help me clean the house. Although there (9) _______ a lot of household duties around the house, I am not tired because my husband joins hands to do the (10) _______ with me.",
+              "prompt": "Question 10. Choose the best option to fit blank (10):",
+              "options": [
+                "A. hearts",
+                "B. housework",
+                "C. heads",
+                "D. feet"
+              ],
+              "answer": 1,
+              "explanation": "'do the housework' (làm việc nhà).",
+              "num": 30,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r11",
+              "section": "II. READING: Environment Ad",
+              "passage": "SAVE THE PLANET – EAT MORE PLANTS! 🌎\nYou don’t need to buy an electric car to help the environment — just change your diet! Choosing a (11) _________ can make a huge difference.\n\n🥦 Reduce Greenhouse Gases\nLivestock farming (12) _________ about 14.5% of the world’s greenhouse gases. By eating more plant-based foods, we could cut food-related emissions by up to 70% by 2050!\n\n💧 Save Water\nRaising animals uses enormous amounts of water — over 15,000 liters for one kilogram of beef! Vegetables need just a few hundred liters.\n\n🌳 Protect Forests & Wildlife\nMost farmland (13) _________ for livestock and their feed. If we grow more food for people instead, there will be more land for forests (14) _________ wild animals. Eating less meat is one of the easiest and most powerful ways to protect our planet.\n\n✨ Small changes in your diet can create a big (15) _________!\n(Adapted from i-learn smart world-unit 8)",
+              "prompt": "Question 11. Choose the correct option to fit blank (11):",
+              "options": [
+                "A. plant-based action",
+                "B. based-plant action",
+                "C. plant-action based",
+                "D. action-based plant"
+              ],
+              "answer": 0,
+              "explanation": "Tính từ ghép: 'plant-based' (có nguồn gốc thực vật) -> 'plant-based action'.",
+              "num": 31,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r12",
+              "section": "II. READING: Environment Ad",
+              "passage": "SAVE THE PLANET – EAT MORE PLANTS! 🌎\nYou don’t need to buy an electric car to help the environment — just change your diet! Choosing a (11) _________ can make a huge difference.\n\n🥦 Reduce Greenhouse Gases\nLivestock farming (12) _________ about 14.5% of the world’s greenhouse gases. By eating more plant-based foods, we could cut food-related emissions by up to 70% by 2050!\n\n💧 Save Water\nRaising animals uses enormous amounts of water — over 15,000 liters for one kilogram of beef! Vegetables need just a few hundred liters.\n\n🌳 Protect Forests & Wildlife\nMost farmland (13) _________ for livestock and their feed. If we grow more food for people instead, there will be more land for forests (14) _________ wild animals. Eating less meat is one of the easiest and most powerful ways to protect our planet.\n\n✨ Small changes in your diet can create a big (15) _________!\n(Adapted from i-learn smart world-unit 8)",
+              "prompt": "Question 12. Choose the correct option to fit blank (12):",
+              "options": [
+                "A. produces",
+                "B. is producing",
+                "C. will produce",
+                "D. has produced"
+              ],
+              "answer": 0,
+              "explanation": "Diễn tả sự thật khách quan khoa học, chủ ngữ 'Livestock farming' số ít -> dùng Hiện tại đơn 'produces'.",
+              "num": 32,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r13",
+              "section": "II. READING: Environment Ad",
+              "passage": "SAVE THE PLANET – EAT MORE PLANTS! 🌎\nYou don’t need to buy an electric car to help the environment — just change your diet! Choosing a (11) _________ can make a huge difference.\n\n🥦 Reduce Greenhouse Gases\nLivestock farming (12) _________ about 14.5% of the world’s greenhouse gases. By eating more plant-based foods, we could cut food-related emissions by up to 70% by 2050!\n\n💧 Save Water\nRaising animals uses enormous amounts of water — over 15,000 liters for one kilogram of beef! Vegetables need just a few hundred liters.\n\n🌳 Protect Forests & Wildlife\nMost farmland (13) _________ for livestock and their feed. If we grow more food for people instead, there will be more land for forests (14) _________ wild animals. Eating less meat is one of the easiest and most powerful ways to protect our planet.\n\n✨ Small changes in your diet can create a big (15) _________!\n(Adapted from i-learn smart world-unit 8)",
+              "prompt": "Question 13. Choose the correct option to fit blank (13):",
+              "options": [
+                "A. used",
+                "B. is used",
+                "C. will use",
+                "D. uses"
+              ],
+              "answer": 1,
+              "explanation": "Câu bị động ở hiện tại: 'Most farmland is used for...' (Đất nông nghiệp được dùng cho...).",
+              "num": 33,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r14",
+              "section": "II. READING: Environment Ad",
+              "passage": "SAVE THE PLANET – EAT MORE PLANTS! 🌎\nYou don’t need to buy an electric car to help the environment — just change your diet! Choosing a (11) _________ can make a huge difference.\n\n🥦 Reduce Greenhouse Gases\nLivestock farming (12) _________ about 14.5% of the world’s greenhouse gases. By eating more plant-based foods, we could cut food-related emissions by up to 70% by 2050!\n\n💧 Save Water\nRaising animals uses enormous amounts of water — over 15,000 liters for one kilogram of beef! Vegetables need just a few hundred liters.\n\n🌳 Protect Forests & Wildlife\nMost farmland (13) _________ for livestock and their feed. If we grow more food for people instead, there will be more land for forests (14) _________ wild animals. Eating less meat is one of the easiest and most powerful ways to protect our planet.\n\n✨ Small changes in your diet can create a big (15) _________!\n(Adapted from i-learn smart world-unit 8)",
+              "prompt": "Question 14. Choose the correct option to fit blank (14):",
+              "options": [
+                "A. but",
+                "B. and",
+                "C. so",
+                "D. yet"
+              ],
+              "answer": 1,
+              "explanation": "Liên từ 'and' kết nối hai danh từ đồng cấp 'forests and wild animals'.",
+              "num": 34,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r15",
+              "section": "II. READING: Environment Ad",
+              "passage": "SAVE THE PLANET – EAT MORE PLANTS! 🌎\nYou don’t need to buy an electric car to help the environment — just change your diet! Choosing a (11) _________ can make a huge difference.\n\n🥦 Reduce Greenhouse Gases\nLivestock farming (12) _________ about 14.5% of the world’s greenhouse gases. By eating more plant-based foods, we could cut food-related emissions by up to 70% by 2050!\n\n💧 Save Water\nRaising animals uses enormous amounts of water — over 15,000 liters for one kilogram of beef! Vegetables need just a few hundred liters.\n\n🌳 Protect Forests & Wildlife\nMost farmland (13) _________ for livestock and their feed. If we grow more food for people instead, there will be more land for forests (14) _________ wild animals. Eating less meat is one of the easiest and most powerful ways to protect our planet.\n\n✨ Small changes in your diet can create a big (15) _________!\n(Adapted from i-learn smart world-unit 8)",
+              "prompt": "Question 15. Choose the correct option to fit blank (15):",
+              "options": [
+                "A. impact",
+                "B. consequence",
+                "C. convenience",
+                "D. drawback"
+              ],
+              "answer": 0,
+              "explanation": "Collocation: 'create a big impact' (tạo ra tác động to lớn tích cực).",
+              "num": 35,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r16",
+              "section": "II. READING: Music Culture",
+              "passage": "Breaking Boundaries: A Reality Music Show That Transforms Society\nSince its debut in June 2024, \"Anh Trai Vuot Ngan Chong Gai\" (16) _________ Vietnamese audiences, creating an unprecedented bridge between generations and geographic divides.\n\nOriginally adapted from MangoTV's show Call Me By Fire, the show brings together 33 distinguished men over the age of 30—renowned stars and influential figures across various fields, including music, dance, film, sports, and photography. Evolving beyond a (17) _________ music competition, the show has become a powerful cultural and social movement. This helps inspiring audiences and (18) _________ the landscape of Vietnam's creative industry.\n\nThrough innovative production, the show breathed new life into (19) _________ Vietnamese art forms such as \"Chèo\" or \"Cải lương\", making the heritage accessible to diverse audiences. Even in the digital age, the show unites multigenerational families, recreating the shared excitement and discussions like during the Television's Golden Era. It has also brought overseas Vietnamese home, showcasing the show's profound cross-border influence. (20) _________, one particular performance—filled with storytelling and emotion—deeply connected with audiences and helped raise funds for over 100 life-saving heart surgeries.\n(Adapted from AAP Releases)",
+              "prompt": "Question 16. Choose the best option to fit blank (16):",
+              "options": [
+                "A. is captivating",
+                "B. captivates",
+                "C. has captivated",
+                "D. will captivate"
+              ],
+              "answer": 2,
+              "explanation": "'Since its debut in June 2024' -> thì Hiện tại hoàn thành 'has captivated'.",
+              "num": 36,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r17",
+              "section": "II. READING: Music Culture",
+              "passage": "Breaking Boundaries: A Reality Music Show That Transforms Society\nSince its debut in June 2024, \"Anh Trai Vuot Ngan Chong Gai\" (16) _________ Vietnamese audiences, creating an unprecedented bridge between generations and geographic divides.\n\nOriginally adapted from MangoTV's show Call Me By Fire, the show brings together 33 distinguished men over the age of 30—renowned stars and influential figures across various fields, including music, dance, film, sports, and photography. Evolving beyond a (17) _________ music competition, the show has become a powerful cultural and social movement. This helps inspiring audiences and (18) _________ the landscape of Vietnam's creative industry.\n\nThrough innovative production, the show breathed new life into (19) _________ Vietnamese art forms such as \"Chèo\" or \"Cải lương\", making the heritage accessible to diverse audiences. Even in the digital age, the show unites multigenerational families, recreating the shared excitement and discussions like during the Television's Golden Era. It has also brought overseas Vietnamese home, showcasing the show's profound cross-border influence. (20) _________, one particular performance—filled with storytelling and emotion—deeply connected with audiences and helped raise funds for over 100 life-saving heart surgeries.\n(Adapted from AAP Releases)",
+              "prompt": "Question 17. Choose the best option to fit blank (17):",
+              "options": [
+                "A. reality",
+                "B. really",
+                "C. real",
+                "D. realistic"
+              ],
+              "answer": 0,
+              "explanation": "'reality music competition' (cuộc thi âm nhạc truyền hình thực tế).",
+              "num": 37,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r18",
+              "section": "II. READING: Music Culture",
+              "passage": "Breaking Boundaries: A Reality Music Show That Transforms Society\nSince its debut in June 2024, \"Anh Trai Vuot Ngan Chong Gai\" (16) _________ Vietnamese audiences, creating an unprecedented bridge between generations and geographic divides.\n\nOriginally adapted from MangoTV's show Call Me By Fire, the show brings together 33 distinguished men over the age of 30—renowned stars and influential figures across various fields, including music, dance, film, sports, and photography. Evolving beyond a (17) _________ music competition, the show has become a powerful cultural and social movement. This helps inspiring audiences and (18) _________ the landscape of Vietnam's creative industry.\n\nThrough innovative production, the show breathed new life into (19) _________ Vietnamese art forms such as \"Chèo\" or \"Cải lương\", making the heritage accessible to diverse audiences. Even in the digital age, the show unites multigenerational families, recreating the shared excitement and discussions like during the Television's Golden Era. It has also brought overseas Vietnamese home, showcasing the show's profound cross-border influence. (20) _________, one particular performance—filled with storytelling and emotion—deeply connected with audiences and helped raise funds for over 100 life-saving heart surgeries.\n(Adapted from AAP Releases)",
+              "prompt": "Question 18. Choose the best option to fit blank (18):",
+              "options": [
+                "A. to redefine",
+                "B. redefine",
+                "C. redefining",
+                "D. redefined"
+              ],
+              "answer": 2,
+              "explanation": "Cấu trúc song hành với 'inspiring audiences': 'and redefining the landscape'.",
+              "num": 38,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r19",
+              "section": "II. READING: Music Culture",
+              "passage": "Breaking Boundaries: A Reality Music Show That Transforms Society\nSince its debut in June 2024, \"Anh Trai Vuot Ngan Chong Gai\" (16) _________ Vietnamese audiences, creating an unprecedented bridge between generations and geographic divides.\n\nOriginally adapted from MangoTV's show Call Me By Fire, the show brings together 33 distinguished men over the age of 30—renowned stars and influential figures across various fields, including music, dance, film, sports, and photography. Evolving beyond a (17) _________ music competition, the show has become a powerful cultural and social movement. This helps inspiring audiences and (18) _________ the landscape of Vietnam's creative industry.\n\nThrough innovative production, the show breathed new life into (19) _________ Vietnamese art forms such as \"Chèo\" or \"Cải lương\", making the heritage accessible to diverse audiences. Even in the digital age, the show unites multigenerational families, recreating the shared excitement and discussions like during the Television's Golden Era. It has also brought overseas Vietnamese home, showcasing the show's profound cross-border influence. (20) _________, one particular performance—filled with storytelling and emotion—deeply connected with audiences and helped raise funds for over 100 life-saving heart surgeries.\n(Adapted from AAP Releases)",
+              "prompt": "Question 19. Choose the best option to fit blank (19):",
+              "options": [
+                "A. traditional",
+                "B. international",
+                "C. modern",
+                "D. competitive"
+              ],
+              "answer": 0,
+              "explanation": "'Chèo' và 'Cải lương' là các loại hình nghệ thuật truyền thống của Việt Nam -> 'traditional Vietnamese art forms'.",
+              "num": 39,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r20",
+              "section": "II. READING: Music Culture",
+              "passage": "Breaking Boundaries: A Reality Music Show That Transforms Society\nSince its debut in June 2024, \"Anh Trai Vuot Ngan Chong Gai\" (16) _________ Vietnamese audiences, creating an unprecedented bridge between generations and geographic divides.\n\nOriginally adapted from MangoTV's show Call Me By Fire, the show brings together 33 distinguished men over the age of 30—renowned stars and influential figures across various fields, including music, dance, film, sports, and photography. Evolving beyond a (17) _________ music competition, the show has become a powerful cultural and social movement. This helps inspiring audiences and (18) _________ the landscape of Vietnam's creative industry.\n\nThrough innovative production, the show breathed new life into (19) _________ Vietnamese art forms such as \"Chèo\" or \"Cải lương\", making the heritage accessible to diverse audiences. Even in the digital age, the show unites multigenerational families, recreating the shared excitement and discussions like during the Television's Golden Era. It has also brought overseas Vietnamese home, showcasing the show's profound cross-border influence. (20) _________, one particular performance—filled with storytelling and emotion—deeply connected with audiences and helped raise funds for over 100 life-saving heart surgeries.\n(Adapted from AAP Releases)",
+              "prompt": "Question 20. Choose the best option to fit blank (20):",
+              "options": [
+                "A. Moreover",
+                "B. However",
+                "C. Therefore",
+                "D. Although"
+              ],
+              "answer": 0,
+              "explanation": "Liên từ bổ sung thông tin ý nghĩa xã hội của chương trình: 'Moreover' (Hơn thế nữa).",
+              "num": 40,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r21",
+              "section": "II. READING: Plastic & Environment",
+              "passage": "PLASTIC AND THE ENVIRONMENT\nPlastic is a material we use every day. The first plastics were made more than 100 years ago from parts of plants. Plastics are now made from oil, coal and natural gas. We are using up these things so fast that the Earth’s supplies may run out. Because of this, scientists are investigating new ideas for making plastics from plants such as sweet potato, bamboo and flax.\n\nThings made from plastic can be useful for people but bad for the planet. Some plastics can last for a long time without wearing out, and can be difficult to get rid of when they are not needed. They can remain in rubbish dumps called landfill sites for hundreds of years. Landfills can be smelly, ugly, and harmful to our planet.\n\nRecycling is a good way to get rid of unwanted plastics. Recycled waste materials can be used again to make new products. This can be difficult as different types of plastic need to be recycled in different ways. Some kinds of plastics can be melted down and used to make new things such as bags and bottles. Others can be made into fibres (strands of material) for clothing.\n\nAnother way to protect the environment is to use canvas bags for shopping rather than plastic ones. A lot of plastic objects can also be reused. Plastic bottles can be refilled many times, rather than throwing them away once they are empty. Unwanted plastic goods such as CDs and toys can be sold or given away to charity shops.\n(Adapted from: esolcourses.com)",
+              "prompt": "Question 21. According to the passage, things made from plastic are bad for our environment because ______.",
+              "options": [
+                "A. they are a danger to marine life such as whales, turtles and so on.",
+                "B. they are very convenient for people to use in different purposes.",
+                "C. people reuse plastic objects before recycling them.",
+                "D. plastics can exist for a long time without decomposing."
+              ],
+              "answer": 3,
+              "explanation": "Đoạn 2 nêu rõ: 'Some plastics can last for a long time without wearing out, and can be difficult to get rid of... remain in rubbish dumps... for hundreds of years'.",
+              "num": 41,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r22",
+              "section": "II. READING: Plastic & Environment",
+              "passage": "PLASTIC AND THE ENVIRONMENT\nPlastic is a material we use every day. The first plastics were made more than 100 years ago from parts of plants. Plastics are now made from oil, coal and natural gas. We are using up these things so fast that the Earth’s supplies may run out. Because of this, scientists are investigating new ideas for making plastics from plants such as sweet potato, bamboo and flax.\n\nThings made from plastic can be useful for people but bad for the planet. Some plastics can last for a long time without wearing out, and can be difficult to get rid of when they are not needed. They can remain in rubbish dumps called landfill sites for hundreds of years. Landfills can be smelly, ugly, and harmful to our planet.\n\nRecycling is a good way to get rid of unwanted plastics. Recycled waste materials can be used again to make new products. This can be difficult as different types of plastic need to be recycled in different ways. Some kinds of plastics can be melted down and used to make new things such as bags and bottles. Others can be made into fibres (strands of material) for clothing.\n\nAnother way to protect the environment is to use canvas bags for shopping rather than plastic ones. A lot of plastic objects can also be reused. Plastic bottles can be refilled many times, rather than throwing them away once they are empty. Unwanted plastic goods such as CDs and toys can be sold or given away to charity shops.\n(Adapted from: esolcourses.com)",
+              "prompt": "Question 22. The word “They” in paragraph 2 refers to ______.",
+              "options": [
+                "A. Plastics",
+                "B. Things",
+                "C. Rubbish dumps",
+                "D. People"
+              ],
+              "answer": 0,
+              "explanation": "'Some plastics can last for a long time... They can remain in rubbish dumps...' -> 'They' chỉ 'Plastics'.",
+              "num": 42,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r23",
+              "section": "II. READING: Plastic & Environment",
+              "passage": "PLASTIC AND THE ENVIRONMENT\nPlastic is a material we use every day. The first plastics were made more than 100 years ago from parts of plants. Plastics are now made from oil, coal and natural gas. We are using up these things so fast that the Earth’s supplies may run out. Because of this, scientists are investigating new ideas for making plastics from plants such as sweet potato, bamboo and flax.\n\nThings made from plastic can be useful for people but bad for the planet. Some plastics can last for a long time without wearing out, and can be difficult to get rid of when they are not needed. They can remain in rubbish dumps called landfill sites for hundreds of years. Landfills can be smelly, ugly, and harmful to our planet.\n\nRecycling is a good way to get rid of unwanted plastics. Recycled waste materials can be used again to make new products. This can be difficult as different types of plastic need to be recycled in different ways. Some kinds of plastics can be melted down and used to make new things such as bags and bottles. Others can be made into fibres (strands of material) for clothing.\n\nAnother way to protect the environment is to use canvas bags for shopping rather than plastic ones. A lot of plastic objects can also be reused. Plastic bottles can be refilled many times, rather than throwing them away once they are empty. Unwanted plastic goods such as CDs and toys can be sold or given away to charity shops.\n(Adapted from: esolcourses.com)",
+              "prompt": "Question 23. The phrase “get rid of” in paragraph 2 is closest in meaning to ______.",
+              "options": [
+                "A. remove",
+                "B. create",
+                "C. make",
+                "D. keep"
+              ],
+              "answer": 0,
+              "explanation": "'get rid of' có nghĩa là vứt bỏ, loại bỏ (= remove / discard).",
+              "num": 43,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r24",
+              "section": "II. READING: Plastic & Environment",
+              "passage": "PLASTIC AND THE ENVIRONMENT\nPlastic is a material we use every day. The first plastics were made more than 100 years ago from parts of plants. Plastics are now made from oil, coal and natural gas. We are using up these things so fast that the Earth’s supplies may run out. Because of this, scientists are investigating new ideas for making plastics from plants such as sweet potato, bamboo and flax.\n\nThings made from plastic can be useful for people but bad for the planet. Some plastics can last for a long time without wearing out, and can be difficult to get rid of when they are not needed. They can remain in rubbish dumps called landfill sites for hundreds of years. Landfills can be smelly, ugly, and harmful to our planet.\n\nRecycling is a good way to get rid of unwanted plastics. Recycled waste materials can be used again to make new products. This can be difficult as different types of plastic need to be recycled in different ways. Some kinds of plastics can be melted down and used to make new things such as bags and bottles. Others can be made into fibres (strands of material) for clothing.\n\nAnother way to protect the environment is to use canvas bags for shopping rather than plastic ones. A lot of plastic objects can also be reused. Plastic bottles can be refilled many times, rather than throwing them away once they are empty. Unwanted plastic goods such as CDs and toys can be sold or given away to charity shops.\n(Adapted from: esolcourses.com)",
+              "prompt": "Question 24. According to the passage, which of the following is TRUE?",
+              "options": [
+                "A. Plastic objects are useful for people without negative impacts.",
+                "B. Plastics and plastic objects can be thrown away to tidy the room.",
+                "C. Plastics and plastic objects can be recycled or reused.",
+                "D. Some kinds of plastics can be melted down, then released into the river."
+              ],
+              "answer": 2,
+              "explanation": "Đoạn 3 và 4 nêu rõ các giải pháp tái chế (recycled) và tái sử dụng (reused) đồ nhựa.",
+              "num": 44,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r25",
+              "section": "II. READING: Plastic & Environment",
+              "passage": "PLASTIC AND THE ENVIRONMENT\nPlastic is a material we use every day. The first plastics were made more than 100 years ago from parts of plants. Plastics are now made from oil, coal and natural gas. We are using up these things so fast that the Earth’s supplies may run out. Because of this, scientists are investigating new ideas for making plastics from plants such as sweet potato, bamboo and flax.\n\nThings made from plastic can be useful for people but bad for the planet. Some plastics can last for a long time without wearing out, and can be difficult to get rid of when they are not needed. They can remain in rubbish dumps called landfill sites for hundreds of years. Landfills can be smelly, ugly, and harmful to our planet.\n\nRecycling is a good way to get rid of unwanted plastics. Recycled waste materials can be used again to make new products. This can be difficult as different types of plastic need to be recycled in different ways. Some kinds of plastics can be melted down and used to make new things such as bags and bottles. Others can be made into fibres (strands of material) for clothing.\n\nAnother way to protect the environment is to use canvas bags for shopping rather than plastic ones. A lot of plastic objects can also be reused. Plastic bottles can be refilled many times, rather than throwing them away once they are empty. Unwanted plastic goods such as CDs and toys can be sold or given away to charity shops.\n(Adapted from: esolcourses.com)",
+              "prompt": "Question 25. What is the passage mainly about?",
+              "options": [
+                "A. The history of plastic and its usefulness",
+                "B. Materials that plastic is made of",
+                "C. Plastic: effects and solutions to the problem",
+                "D. The ways to reduce the harm of plastics on the environment"
+              ],
+              "answer": 2,
+              "explanation": "Bài đọc trình bày về tác hại của đồ nhựa và các giải pháp giải quyết vấn đề (tái chế, tái sử dụng, vật liệu thay thế).",
+              "num": 45,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r26",
+              "section": "II. READING: Community Service",
+              "passage": "VOLUNTEERS NEEDED IN MAI CHÂU – HOÀ BÌNH\nV.E.O would like to connects people who want to give a helping hand in volunteering for education in the breathtaking mountainous region of Mai Châu. Our focus is on providing informal education and essential skill development for local communities, with special attention to supporting the poor and disadvantaged in remote areas. We need help from both local and international volunteers to train community members in practical new skills and modern approaches through hands-on, daily tasks. A core part of our mission involves providing engaging English language classes and vibrant cultural activities for local children, fostering both education and joy.\n\nThis program is a great way to get involved in meaningful community service while experiencing authentic travel. International volunteers will gain a deep, personal understanding of Vietnam's rich culture through daily interaction and have opportunities to explore the country's stunning natural landscapes on weekends. You will live and work within the community, sharing meals and stories, for a truly unforgettable cultural exchange.\n\nProgram Details:\nTime length: One week (available all year round).\nMinimum Age: 15+\nPrice includes: Accommodation, transportation (to/ from the project site and your accommodation), meals featuring local Vietnamese cuisine, beginner Vietnamese language lessons, 24-hour emergency assistance, airport pick-up upon arrival in Hanoi, and a formal participation certificate.\nPrice excludes: Việt Nam visa cost, mandatory international medical insurance, and international flights to/from Hanoi.\nExtras provided: umbrella, sun cream, and T-shirt.\n(Adapted from English Discovery 10 – workbook)",
+              "prompt": "Question 26. What is the main idea of the passage?",
+              "options": [
+                "A. The promotion of a luxury travel tour to the mountainous region of Mai Châu.",
+                "B. The recruitment of volunteers for a program in Mai Châu.",
+                "C. A request for financial donations for the construction in Hòa Bình.",
+                "D. The advertisement of a Vietnamese language course."
+              ],
+              "answer": 1,
+              "explanation": "Toàn văn bản là thông báo tuyển tình nguyện viên tham gia dự án tại Mai Châu ('VOLUNTEERS NEEDED IN MAI CHÂU – HOÀ BÌNH').",
+              "num": 46,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r27",
+              "section": "II. READING: Community Service",
+              "passage": "VOLUNTEERS NEEDED IN MAI CHÂU – HOÀ BÌNH\nV.E.O would like to connects people who want to give a helping hand in volunteering for education in the breathtaking mountainous region of Mai Châu. Our focus is on providing informal education and essential skill development for local communities, with special attention to supporting the poor and disadvantaged in remote areas. We need help from both local and international volunteers to train community members in practical new skills and modern approaches through hands-on, daily tasks. A core part of our mission involves providing engaging English language classes and vibrant cultural activities for local children, fostering both education and joy.\n\nThis program is a great way to get involved in meaningful community service while experiencing authentic travel. International volunteers will gain a deep, personal understanding of Vietnam's rich culture through daily interaction and have opportunities to explore the country's stunning natural landscapes on weekends. You will live and work within the community, sharing meals and stories, for a truly unforgettable cultural exchange.\n\nProgram Details:\nTime length: One week (available all year round).\nMinimum Age: 15+\nPrice includes: Accommodation, transportation (to/ from the project site and your accommodation), meals featuring local Vietnamese cuisine, beginner Vietnamese language lessons, 24-hour emergency assistance, airport pick-up upon arrival in Hanoi, and a formal participation certificate.\nPrice excludes: Việt Nam visa cost, mandatory international medical insurance, and international flights to/from Hanoi.\nExtras provided: umbrella, sun cream, and T-shirt.\n(Adapted from English Discovery 10 – workbook)",
+              "prompt": "Question 27. According to paragraph 1, V.E.O calls for volunteers to help _________.",
+              "options": [
+                "A. sick people",
+                "B. the needy",
+                "C. people in remote areas",
+                "D. disadvantaged children"
+              ],
+              "answer": 1,
+              "explanation": "Đoạn 1 nêu: 'with special attention to supporting the poor and disadvantaged in remote areas' -> 'the needy' (những người có hoàn cảnh khó khăn).",
+              "num": 47,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r28",
+              "section": "II. READING: Community Service",
+              "passage": "VOLUNTEERS NEEDED IN MAI CHÂU – HOÀ BÌNH\nV.E.O would like to connects people who want to give a helping hand in volunteering for education in the breathtaking mountainous region of Mai Châu. Our focus is on providing informal education and essential skill development for local communities, with special attention to supporting the poor and disadvantaged in remote areas. We need help from both local and international volunteers to train community members in practical new skills and modern approaches through hands-on, daily tasks. A core part of our mission involves providing engaging English language classes and vibrant cultural activities for local children, fostering both education and joy.\n\nThis program is a great way to get involved in meaningful community service while experiencing authentic travel. International volunteers will gain a deep, personal understanding of Vietnam's rich culture through daily interaction and have opportunities to explore the country's stunning natural landscapes on weekends. You will live and work within the community, sharing meals and stories, for a truly unforgettable cultural exchange.\n\nProgram Details:\nTime length: One week (available all year round).\nMinimum Age: 15+\nPrice includes: Accommodation, transportation (to/ from the project site and your accommodation), meals featuring local Vietnamese cuisine, beginner Vietnamese language lessons, 24-hour emergency assistance, airport pick-up upon arrival in Hanoi, and a formal participation certificate.\nPrice excludes: Việt Nam visa cost, mandatory international medical insurance, and international flights to/from Hanoi.\nExtras provided: umbrella, sun cream, and T-shirt.\n(Adapted from English Discovery 10 – workbook)",
+              "prompt": "Question 28. The word “hands-on” in paragraph 1 is OPPOSITE in meaning to _________.",
+              "options": [
+                "A. practical",
+                "B. active",
+                "C. unrealistic",
+                "D. realistic"
+              ],
+              "answer": 2,
+              "explanation": "'hands-on' nghĩa là thực tế, thực hành; từ trái nghĩa là 'unrealistic' (không thực tế).",
+              "num": 48,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r29",
+              "section": "II. READING: Community Service",
+              "passage": "VOLUNTEERS NEEDED IN MAI CHÂU – HOÀ BÌNH\nV.E.O would like to connects people who want to give a helping hand in volunteering for education in the breathtaking mountainous region of Mai Châu. Our focus is on providing informal education and essential skill development for local communities, with special attention to supporting the poor and disadvantaged in remote areas. We need help from both local and international volunteers to train community members in practical new skills and modern approaches through hands-on, daily tasks. A core part of our mission involves providing engaging English language classes and vibrant cultural activities for local children, fostering both education and joy.\n\nThis program is a great way to get involved in meaningful community service while experiencing authentic travel. International volunteers will gain a deep, personal understanding of Vietnam's rich culture through daily interaction and have opportunities to explore the country's stunning natural landscapes on weekends. You will live and work within the community, sharing meals and stories, for a truly unforgettable cultural exchange.\n\nProgram Details:\nTime length: One week (available all year round).\nMinimum Age: 15+\nPrice includes: Accommodation, transportation (to/ from the project site and your accommodation), meals featuring local Vietnamese cuisine, beginner Vietnamese language lessons, 24-hour emergency assistance, airport pick-up upon arrival in Hanoi, and a formal participation certificate.\nPrice excludes: Việt Nam visa cost, mandatory international medical insurance, and international flights to/from Hanoi.\nExtras provided: umbrella, sun cream, and T-shirt.\n(Adapted from English Discovery 10 – workbook)",
+              "prompt": "Question 29. The phrase “This program” in paragraph 2 refers to _________.",
+              "options": [
+                "A. the volunteer opportunity in Mai Châu organized by V.E.O",
+                "B. the English language classes for children",
+                "C. the skill development for local communities",
+                "D. exploring Vietnam's natural landscapes on weekends"
+              ],
+              "answer": 0,
+              "explanation": "'This program' đại diện cho toàn bộ chương trình tình nguyện tại Mai Châu do V.E.O tổ chức.",
+              "num": 49,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r30",
+              "section": "II. READING: Community Service",
+              "passage": "VOLUNTEERS NEEDED IN MAI CHÂU – HOÀ BÌNH\nV.E.O would like to connects people who want to give a helping hand in volunteering for education in the breathtaking mountainous region of Mai Châu. Our focus is on providing informal education and essential skill development for local communities, with special attention to supporting the poor and disadvantaged in remote areas. We need help from both local and international volunteers to train community members in practical new skills and modern approaches through hands-on, daily tasks. A core part of our mission involves providing engaging English language classes and vibrant cultural activities for local children, fostering both education and joy.\n\nThis program is a great way to get involved in meaningful community service while experiencing authentic travel. International volunteers will gain a deep, personal understanding of Vietnam's rich culture through daily interaction and have opportunities to explore the country's stunning natural landscapes on weekends. You will live and work within the community, sharing meals and stories, for a truly unforgettable cultural exchange.\n\nProgram Details:\nTime length: One week (available all year round).\nMinimum Age: 15+\nPrice includes: Accommodation, transportation (to/ from the project site and your accommodation), meals featuring local Vietnamese cuisine, beginner Vietnamese language lessons, 24-hour emergency assistance, airport pick-up upon arrival in Hanoi, and a formal participation certificate.\nPrice excludes: Việt Nam visa cost, mandatory international medical insurance, and international flights to/from Hanoi.\nExtras provided: umbrella, sun cream, and T-shirt.\n(Adapted from English Discovery 10 – workbook)",
+              "prompt": "Question 30. It can be inferred from the passage that _________.",
+              "options": [
+                "A. The program is fully funded, so volunteers do not have to pay for anything.",
+                "B. Volunteers must pay for their own airfare to reach Vietnam.",
+                "C. The program fully covers the cost of the visa to enter Vietnam.",
+                "D. Volunteers are required to pay extra for accommodation and meals."
+              ],
+              "answer": 1,
+              "explanation": "Mục 'Price excludes: international flights to/from Hanoi' cho thấy tình nguyện viên phải tự chi trả vé máy bay đến Việt Nam.",
+              "num": 50,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r31",
+              "section": "II. READING: 3R Model",
+              "passage": "The 3R model, which stands for Reduce – Reuse – Recycle, is considered one of the most effective methods for protecting the environment. In today’s world, pollution and the overuse of natural resources are becoming serious problems. For this reason, many countries have adopted the 3R approach as a solution. Its main purpose is to reduce waste, make better use of products, and transform discarded materials into useful items. This model is not only simple to understand but also practical to apply in daily life.\n\nThe first step of the model is Reduce, which means limiting the amount of waste produced. People can do this by buying fewer unnecessary items, choosing products with less packaging, and using energy efficiently. The second step is Reuse. Instead of throwing things away after one use, people can reuse bottles, bags, or clothes, or find new purposes for them. This helps to extend the life of objects. The final step is Recycle, which refers to processing waste materials into new products. Recycling not only saves raw materials but also reduces the need for landfill space.\n\nWhen combined, these three steps bring many benefits to both society and the environment. Firstly, they help to reduce pollution, making the air, soil, and water cleaner. Secondly, they support the economy by saving costs and creating opportunities in the recycling industry. Furthermore, the 3R model encourages people to think more carefully about their daily choices and take responsibility for protecting nature. In the long term, these actions can also create jobs and improve community well-being.\n\nIn summary, the 3R model offers a clear and practical way to move towards sustainable development. Each of its steps—reducing, reusing, and recycling—plays an important role, but they are most effective when practiced together. If individuals, communities, and governments apply this model consistently, the pressure on natural resources will decrease, and future generations will enjoy a cleaner and healthier environment. Therefore, adopting the 3R principles should be seen as a shared duty for everyone.\n(Adapted from mdi.vn)",
+              "prompt": "Question 31. The phrase “raw materials” in paragraph 2 could best be replaced by _______.",
+              "options": [
+                "A. electrical home devices",
+                "B. basic natural resources",
+                "C. processed chemical waste",
+                "D. important digital files"
+              ],
+              "answer": 1,
+              "explanation": "'raw materials' (nguyên liệu thô) tương đương với 'basic natural resources' (tài nguyên thiên nhiên cơ bản).",
+              "num": 51,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r32",
+              "section": "II. READING: 3R Model",
+              "passage": "The 3R model, which stands for Reduce – Reuse – Recycle, is considered one of the most effective methods for protecting the environment. In today’s world, pollution and the overuse of natural resources are becoming serious problems. For this reason, many countries have adopted the 3R approach as a solution. Its main purpose is to reduce waste, make better use of products, and transform discarded materials into useful items. This model is not only simple to understand but also practical to apply in daily life.\n\nThe first step of the model is Reduce, which means limiting the amount of waste produced. People can do this by buying fewer unnecessary items, choosing products with less packaging, and using energy efficiently. The second step is Reuse. Instead of throwing things away after one use, people can reuse bottles, bags, or clothes, or find new purposes for them. This helps to extend the life of objects. The final step is Recycle, which refers to processing waste materials into new products. Recycling not only saves raw materials but also reduces the need for landfill space.\n\nWhen combined, these three steps bring many benefits to both society and the environment. Firstly, they help to reduce pollution, making the air, soil, and water cleaner. Secondly, they support the economy by saving costs and creating opportunities in the recycling industry. Furthermore, the 3R model encourages people to think more carefully about their daily choices and take responsibility for protecting nature. In the long term, these actions can also create jobs and improve community well-being.\n\nIn summary, the 3R model offers a clear and practical way to move towards sustainable development. Each of its steps—reducing, reusing, and recycling—plays an important role, but they are most effective when practiced together. If individuals, communities, and governments apply this model consistently, the pressure on natural resources will decrease, and future generations will enjoy a cleaner and healthier environment. Therefore, adopting the 3R principles should be seen as a shared duty for everyone.\n(Adapted from mdi.vn)",
+              "prompt": "Question 32. According to the passage, which benefits does the “Recycle” step bring?",
+              "options": [
+                "A. It extends the life of objects and encourages buying fewer items.",
+                "B. It saves raw materials and reduces the need for landfill space.",
+                "C. It makes air and soil cleaner and supports the economy.",
+                "D. It limits waste production and makes better use of products."
+              ],
+              "answer": 1,
+              "explanation": "Đoạn 2 nêu rõ: 'Recycling not only saves raw materials but also reduces the need for landfill space'.",
+              "num": 52,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r33",
+              "section": "II. READING: 3R Model",
+              "passage": "The 3R model, which stands for Reduce – Reuse – Recycle, is considered one of the most effective methods for protecting the environment. In today’s world, pollution and the overuse of natural resources are becoming serious problems. For this reason, many countries have adopted the 3R approach as a solution. Its main purpose is to reduce waste, make better use of products, and transform discarded materials into useful items. This model is not only simple to understand but also practical to apply in daily life.\n\nThe first step of the model is Reduce, which means limiting the amount of waste produced. People can do this by buying fewer unnecessary items, choosing products with less packaging, and using energy efficiently. The second step is Reuse. Instead of throwing things away after one use, people can reuse bottles, bags, or clothes, or find new purposes for them. This helps to extend the life of objects. The final step is Recycle, which refers to processing waste materials into new products. Recycling not only saves raw materials but also reduces the need for landfill space.\n\nWhen combined, these three steps bring many benefits to both society and the environment. Firstly, they help to reduce pollution, making the air, soil, and water cleaner. Secondly, they support the economy by saving costs and creating opportunities in the recycling industry. Furthermore, the 3R model encourages people to think more carefully about their daily choices and take responsibility for protecting nature. In the long term, these actions can also create jobs and improve community well-being.\n\nIn summary, the 3R model offers a clear and practical way to move towards sustainable development. Each of its steps—reducing, reusing, and recycling—plays an important role, but they are most effective when practiced together. If individuals, communities, and governments apply this model consistently, the pressure on natural resources will decrease, and future generations will enjoy a cleaner and healthier environment. Therefore, adopting the 3R principles should be seen as a shared duty for everyone.\n(Adapted from mdi.vn)",
+              "prompt": "Question 33. The word \"they\" in paragraph 3 refers to ________.",
+              "options": [
+                "A. society",
+                "B. environment",
+                "C. steps",
+                "D. benefits"
+              ],
+              "answer": 2,
+              "explanation": "'these three steps bring many benefits... Firstly, they help to reduce pollution...': 'they' thay cho 'these three steps'.",
+              "num": 53,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r34",
+              "section": "II. READING: 3R Model",
+              "passage": "The 3R model, which stands for Reduce – Reuse – Recycle, is considered one of the most effective methods for protecting the environment. In today’s world, pollution and the overuse of natural resources are becoming serious problems. For this reason, many countries have adopted the 3R approach as a solution. Its main purpose is to reduce waste, make better use of products, and transform discarded materials into useful items. This model is not only simple to understand but also practical to apply in daily life.\n\nThe first step of the model is Reduce, which means limiting the amount of waste produced. People can do this by buying fewer unnecessary items, choosing products with less packaging, and using energy efficiently. The second step is Reuse. Instead of throwing things away after one use, people can reuse bottles, bags, or clothes, or find new purposes for them. This helps to extend the life of objects. The final step is Recycle, which refers to processing waste materials into new products. Recycling not only saves raw materials but also reduces the need for landfill space.\n\nWhen combined, these three steps bring many benefits to both society and the environment. Firstly, they help to reduce pollution, making the air, soil, and water cleaner. Secondly, they support the economy by saving costs and creating opportunities in the recycling industry. Furthermore, the 3R model encourages people to think more carefully about their daily choices and take responsibility for protecting nature. In the long term, these actions can also create jobs and improve community well-being.\n\nIn summary, the 3R model offers a clear and practical way to move towards sustainable development. Each of its steps—reducing, reusing, and recycling—plays an important role, but they are most effective when practiced together. If individuals, communities, and governments apply this model consistently, the pressure on natural resources will decrease, and future generations will enjoy a cleaner and healthier environment. Therefore, adopting the 3R principles should be seen as a shared duty for everyone.\n(Adapted from mdi.vn)",
+              "prompt": "Question 34. According to the passage, which of the following is NOT mentioned as one of the benefits of the 3R model?",
+              "options": [
+                "A. It helps reduce pollution and makes the environment cleaner.",
+                "B. It creates opportunities in the recycling industry and saves costs.",
+                "C. It improves community well-being and provides new job chances.",
+                "D. It reduces stress and encourages old people to live longer lives."
+              ],
+              "answer": 3,
+              "explanation": "Bài đọc không hề đề cập đến việc giảm căng thẳng hay giúp người già sống thọ hơn (D).",
+              "num": 54,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r35",
+              "section": "II. READING: 3R Model",
+              "passage": "The 3R model, which stands for Reduce – Reuse – Recycle, is considered one of the most effective methods for protecting the environment. In today’s world, pollution and the overuse of natural resources are becoming serious problems. For this reason, many countries have adopted the 3R approach as a solution. Its main purpose is to reduce waste, make better use of products, and transform discarded materials into useful items. This model is not only simple to understand but also practical to apply in daily life.\n\nThe first step of the model is Reduce, which means limiting the amount of waste produced. People can do this by buying fewer unnecessary items, choosing products with less packaging, and using energy efficiently. The second step is Reuse. Instead of throwing things away after one use, people can reuse bottles, bags, or clothes, or find new purposes for them. This helps to extend the life of objects. The final step is Recycle, which refers to processing waste materials into new products. Recycling not only saves raw materials but also reduces the need for landfill space.\n\nWhen combined, these three steps bring many benefits to both society and the environment. Firstly, they help to reduce pollution, making the air, soil, and water cleaner. Secondly, they support the economy by saving costs and creating opportunities in the recycling industry. Furthermore, the 3R model encourages people to think more carefully about their daily choices and take responsibility for protecting nature. In the long term, these actions can also create jobs and improve community well-being.\n\nIn summary, the 3R model offers a clear and practical way to move towards sustainable development. Each of its steps—reducing, reusing, and recycling—plays an important role, but they are most effective when practiced together. If individuals, communities, and governments apply this model consistently, the pressure on natural resources will decrease, and future generations will enjoy a cleaner and healthier environment. Therefore, adopting the 3R principles should be seen as a shared duty for everyone.\n(Adapted from mdi.vn)",
+              "prompt": "Question 35. In which part of the passage does the writer mention the purpose of the 3R model?",
+              "options": [
+                "A. Paragraph 1",
+                "B. Paragraph 2",
+                "C. Paragraph 3",
+                "D. Paragraph 4"
+              ],
+              "answer": 0,
+              "explanation": "Đoạn 1 nêu: 'Its main purpose is to reduce waste, make better use of products, and transform discarded materials into useful items'.",
+              "num": 55,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r36",
+              "section": "II. READING: Vietnamese Culture",
+              "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+              "prompt": "Question 36. According to paragraph 2, Cải Lương became popular because ______.",
+              "options": [
+                "A. it mixed melodies and stories to attract audiences",
+                "B. it included Western drama with historical traditions",
+                "C. it avoided serious subjects and only showed comedies",
+                "D. it focused on legends that inspired foreign performers"
+              ],
+              "answer": 0,
+              "explanation": "Đoạn 2 nêu: 'It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories'.",
+              "num": 56,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r37",
+              "section": "II. READING: Vietnamese Culture",
+              "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+              "prompt": "Question 37. Which of the following best summarises paragraph 4?",
+              "options": [
+                "A. Audiences prefer the lighter rhythms of modern Cải Lương because ancient forms are too serious for them.",
+                "B. Traditional Vietnamese instruments are used in Cải Lương performances that highlight stories of heroes and romances.",
+                "C. Cải Lương has both ancient and modern types, with contrasting themes and different accompanying musical styles.",
+                "D. French colonial influence changed Cải Lương by adding romance, social themes, and modern musical expressions."
+              ],
+              "answer": 2,
+              "explanation": "Đoạn 4 tóm tắt sự phân chia thành hai loại chính: tuồng tích cổ và xã hội hiện đại, với chủ đề và phong cách âm nhạc tương phản.",
+              "num": 57,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r38",
+              "section": "II. READING: Vietnamese Culture",
+              "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+              "prompt": "Question 38. Which of the following is NOT mentioned as a musical instrument in Cải Lương?",
+              "options": [
+                "A. đàn tranh with sixteen strings",
+                "B. đàn bầu with single string",
+                "C. piano with classical chords",
+                "D. guitar with special sounds"
+              ],
+              "answer": 2,
+              "explanation": "Đoạn 3 nhắc đến đàn tranh, đàn bầu và guitar, hoàn toàn không nhắc đến đàn piano (C).",
+              "num": 58,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r39",
+              "section": "II. READING: Vietnamese Culture",
+              "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+              "prompt": "Question 39. The word “melody” in paragraph 3 mostly means ______.",
+              "options": [
+                "A. sequence of pleasant sounds",
+                "B. structure of dramatic scenes",
+                "C. influence of historical figures",
+                "D. direction of emotional stories"
+              ],
+              "answer": 0,
+              "explanation": "'melody' (giai điệu) nghĩa là một chuỗi các âm thanh dễ chịu, du dương (= sequence of pleasant sounds).",
+              "num": 59,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r40",
+              "section": "II. READING: Vietnamese Culture",
+              "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+              "prompt": "Question 40. The word “it” in paragraph 2 refers to __________.",
+              "options": [
+                "A. musical theatre",
+                "B. French colonialism",
+                "C. Vietnamese history",
+                "D. middle class life"
+              ],
+              "answer": 0,
+              "explanation": "'Over time, this musical theatre became not only a form of entertainment... Today, although it faces competition...': 'it' thay cho Cải Lương / 'this musical theatre'.",
+              "num": 60,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r41",
+              "section": "II. READING: Vietnamese Culture",
+              "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+              "prompt": "Question 41. Which of the following best paraphrases the sentence: \"When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\"?",
+              "options": [
+                "A. Vọng cổ performances are often promoted because of complex melodies.",
+                "B. Musicians usually use vọng cổ because audiences enjoy it deeply.",
+                "C. The opening rhythm of vọng cổ usually moves listeners emotionally.",
+                "D. The notes of vọng cổ encourage actors to remember musical training."
+              ],
+              "answer": 2,
+              "explanation": "Câu viết lại chính xác: 'Những nốt nhạc mở đầu của vọng cổ thường lay động người nghe một cách sâu sắc về mặt cảm xúc'.",
+              "num": 61,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r42",
+              "section": "II. READING: Vietnamese Culture",
+              "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+              "prompt": "Question 42. According to the passage, modern Cải Lương often ______.",
+              "options": [
+                "A. describes everyday life and social issues",
+                "B. describes heroic kings and national warriors",
+                "C. highlights Chinese legends and tragic battles",
+                "D. focuses only on serious family tragedies"
+              ],
+              "answer": 0,
+              "explanation": "Đoạn 4 nêu: 'In contrast, modern Cải Lương focuses on daily life, romance, and social problems'.",
+              "num": 62,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r43",
+              "section": "II. READING: Vietnamese Culture",
+              "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+              "prompt": "Question 43. Where in the passage does the following sentence best fit?<br>“This musical mixture creates a performance that feels both traditional and modern, making it easier for the audience to enjoy and understand.”",
+              "options": [
+                "A. [IV]",
+                "B. [III]",
+                "C. [II]",
+                "D. [I]"
+              ],
+              "answer": 3,
+              "explanation": "Vị trí [I] sau đoạn 1 miêu tả sự pha trộn các dòng nhạc ('blends different musical and theatrical traditions... combines southern folk songs, classical Vietnamese music, and tuồng with spoken drama') -> câu trên giải thích tác dụng của 'This musical mixture'.",
+              "num": 63,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_w01",
+              "section": "IV. WRITING: Arrangement",
+              "prompt": "Question 1. Mark the letter A, B, C, or D to indicate the correct arrangement of sentences to make a meaningful exchange:<br>a. Lan: Maybe I can help you. What windows do you need to clean?<br>b. Nam: Can you help me clean these windows? I can’t stand cleaning windows.<br>c. Nam: I need to clean the windows in front of the house. I’ve already done the ones in the back of the house.",
+              "options": [
+                "A. a – b – c",
+                "B. c – b – a",
+                "C. b – a – c",
+                "D. c – a – b"
+              ],
+              "answer": 2,
+              "explanation": "Nam nhờ vả (b) -> Lan đồng ý và hỏi cần lau cửa nào (a) -> Nam chỉ rõ vị trí cửa sổ (c).",
+              "num": 64,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_w02",
+              "section": "IV. WRITING: Arrangement",
+              "prompt": "Question 2. Mark the letter A, B, C, or D to indicate the correct arrangement of sentences to make a meaningful exchange:<br>a. Anna: Hi! How have you been? How’s your family?<br>b. John: Hey! I’ve been good, thanks. My parents are doing well, and my sister just started college. How about your family?<br>c. Anna: That’s great to hear! My family is good too — my brother just got a new job, so we’re all excited.",
+              "options": [
+                "A. a – b – c",
+                "B. c – a – b",
+                "C. b – c – a",
+                "D. a – c – b"
+              ],
+              "answer": 0,
+              "explanation": "Anna chào hỏi thăm gia đình (a) -> John đáp và hỏi lại (b) -> Anna hào hứng chia sẻ về gia đình mình (c).",
+              "num": 65,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_w03",
+              "section": "IV. WRITING: Arrangement",
+              "prompt": "Question 3. Mark the letter A, B, C, or D to indicate the correct arrangement of sentences to make a meaningful exchange:<br>a. Son: That’s a great idea! I can also make a birthday card for her.<br>b. Son: Dad, Mom’s birthday is this weekend. Should we do something special for her?<br>c. Father: Yes, definitely. I was thinking we could cook her favorite meal and buy her a nice gift.",
+              "options": [
+                "A. b – c – a",
+                "B. c – b – a",
+                "C. b – a – c",
+                "D. a – b – c"
+              ],
+              "answer": 0,
+              "explanation": "Con trai nhắc ngày sinh nhật mẹ và hỏi ý kiến bố (b) -> Bố gợi ý nấu ăn và tặng quà (c) -> Con trai khen ý tưởng và đề nghị làm thiệp (a).",
+              "num": 66,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_w04",
+              "section": "IV. WRITING: Arrangement",
+              "prompt": "Question 4. Mark the letter A, B, C, or D to indicate the correct arrangement of sentences to make a meaningful exchange:<br>a. Daughter: I agree. It will also give us more time to relax together.<br>b. Mother: That would be wonderful. It’s important that we all share the chores to keep the house clean.<br>c. Mother: That’s very responsible of you! You could start by doing the dishes after dinner and helping with the laundry on weekends.<br>d. Daughter: Mom, I feel like I should help more around the house. What can I do to help?<br>e. Daughter: That sounds fair. I can also vacuum the living room twice a week.",
+              "options": [
+                "A. d – b – a – e – c",
+                "B. d – b – a – c – e",
+                "C. a – b – c – d – e",
+                "D. d – c – e – b – a"
+              ],
+              "answer": 3,
+              "explanation": "Con gái chủ động đề nghị giúp đỡ việc nhà (d) -> Mẹ gợi ý rửa bát và giặt đồ (c) -> Con đồng ý và nhận thêm hút bụi (e) -> Mẹ vui mừng khen ngợi việc cùng chia sẻ việc nhà (b) -> Con đồng tình rằng sẽ có nhiều thời gian nghỉ ngơi cùng nhau (a).",
+              "num": 67,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_w05",
+              "section": "IV. WRITING: Arrangement",
+              "prompt": "Question 5. Mark the letter A, B, C, or D to indicate the correct arrangement to make a meaningful letter:<br>Hi Emily,<br>I hope you're doing well. I wanted to share something personal with you because I trust you.<br>a. Lately, I’ve been feeling a bit sad because my parents are not getting along. They argue a lot, and it’s making things really difficult at home.<br>b. Thanks for listening. I hope we can meet this weekend, maybe talking in person would help.<br>c. It’s hard to concentrate at school, and I don’t really feel like talking to anyone about it. I just needed to tell someone, and I thought of you.<br>d. Have you ever been through something like this? If you have any advice, I’d really appreciate it.<br>e. I’m not sure what’s going to happen, but I’m scared they might separate.<br>Take care, Anna",
+              "options": [
+                "A. e – a – c – d – b",
+                "B. a – e – c – d – b",
+                "C. e – d – a – c – b",
+                "D. a – d – c – e – b"
+              ],
+              "answer": 1,
+              "explanation": "Anna tâm sự bố mẹ cãi nhau (a) -> sợ bố mẹ ly hôn (e) -> ảnh hưởng tâm lý và việc học ở trường (c) -> hỏi xin lời khuyên của bạn (d) -> cảm ơn và hẹn gặp (b).",
+              "num": 68,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_w06",
+              "section": "IV. WRITING: Arrangement",
+              "prompt": "Question 6. Mark the letter A, B, C, or D to indicate the correct arrangement to make a meaningful paragraph:<br>a. This not only reduces stress for parents but also teaches children how to work as part of a team.<br>b. When children take part in tasks like washing dishes, doing laundry, or sweeping the floor, they learn responsibility and important life skills.<br>c. Although housework may not always be enjoyable, it brings the family closer and builds respect for one another.<br>d. In a family, it is important that everyone helps with household chores so the home stays clean and organized.<br>e. Doing chores together can also be a great time for family members to talk, share stories, and strengthen their bond.",
+              "options": [
+                "A. b – d – a – c – e",
+                "B. d – e – b – a – c",
+                "C. d – b – a – e – c",
+                "D. b – a – d – c – e"
+              ],
+              "answer": 2,
+              "explanation": "d (Câu chủ đề: Mọi người cần giúp việc nhà) -> b (Khi trẻ làm việc nhà sẽ học được tính trách nhiệm) -> a (Điều này giảm áp lực cho bố mẹ và dạy kỹ năng làm việc nhóm) -> e (Cùng làm việc nhà giúp gắn kết) -> c (Kết luận: việc nhà đem lại sự gần gũi và tôn trọng lẫn nhau).",
+              "num": 69,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_w07",
+              "section": "IV. WRITING: Arrangement",
+              "prompt": "Question 7. Mark the letter A, B, C, or D to indicate the correct arrangement to make a meaningful paragraph:<br>a. Music strongly influences the human mind because it can shape both our emotions and our thoughts.<br>b. When people listen to gentle melodies, they often experience a sense of calm, which reduces stress and helps them think more clearly.<br>c. For these reasons, music is more than entertainment; it is also a powerful tool for emotional balance and mental growth.<br>d. However, upbeat and energetic songs create a different effect, since they boost motivation and encourage people to stay active.<br>e. This clear state of mind is useful for studying or working, as soft background music can improve focus and productivity.",
+              "options": [
+                "A. e – a – b – d – c",
+                "B. a – b – d – c – e",
+                "C. a – b – e – d – c",
+                "D. e – d – b – a – c"
+              ],
+              "answer": 2,
+              "explanation": "a (Câu chủ đề: Âm nhạc tác động mạnh đến tâm trí) -> b (Giai điệu nhẹ nhàng giúp thư thái, bình tĩnh) -> e (Tâm trí sáng suốt này giúp ích cho học tập, làm việc) -> d (Ngược lại, nhạc sôi động giúp tăng động lực) -> c (Kết luận: âm nhạc là công cụ cân bằng cảm xúc).",
+              "num": 70,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_w08",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence so that it means the same as the sentence before it:<br><b>1. Alex was instructing all the workers of the company.</b><br>All the workers ____________________",
+              "model_answers": [
+                "All the workers of the company were being instructed by Alex.",
+                "All the workers were being instructed by Alex."
+              ],
+              "explanation": "Câu bị động thì Quá khứ tiếp diễn: 'was/were + being + V3/ed'. Đáp án: 'All the workers of the company were being instructed by Alex.'",
+              "num": 71
+            },
+            {
+              "id": "g10_gk1_w09",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence so that it means the same as the sentence before it:<br><b>2. My mother lets me go out with my friends on Sundays.</b><br>My mother allows me ____________________",
+              "model_answers": [
+                "My mother allows me to go out with my friends on Sundays."
+              ],
+              "explanation": "Cấu trúc: 'let someone + V-bare' = 'allow someone + to-V'. Đáp án: 'My mother allows me to go out with my friends on Sundays.'",
+              "num": 72
+            },
+            {
+              "id": "g10_gk1_w10",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence so that it means the same as the sentence before it:<br><b>3. The local people have arranged to plant more trees in the neighbourhood this weekend.</b><br>The local people are going ____________________",
+              "model_answers": [
+                "The local people are going to plant more trees in the neighbourhood this weekend."
+              ],
+              "explanation": "Diễn đạt kế hoạch đã sắp xếp dùng 'be going to + V': 'The local people are going to plant more trees in the neighbourhood this weekend.'",
+              "num": 73
+            },
+            {
+              "id": "g10_gk1_w11",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence so that it means the same as the sentence before it:<br><b>4. I advised you to prepare your lesson at home.</b><br>You had better ____________________",
+              "model_answers": [
+                "You had better prepare your lesson at home."
+              ],
+              "explanation": "Cấu trúc khuyên nhủ: 'advise someone to-V' = 'had better + V-bare'. Đáp án: 'You had better prepare your lesson at home.'",
+              "num": 74
+            },
+            {
+              "id": "g10_gk1_w12",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence so that it means the same as the sentence before it:<br><b>5. His parents don’t allow him to watch such TV shows.</b><br>His parents don’t let ____________________",
+              "model_answers": [
+                "His parents don’t let him watch such TV shows.",
+                "His parents don't let him watch such TV shows."
+              ],
+              "explanation": "'not allow someone to-V' = 'not let someone + V-bare'. Đáp án: 'His parents don’t let him watch such TV shows.'",
+              "num": 75
+            },
+            {
+              "id": "g10_gk1_w13",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence so that it means the same as the sentence before it:<br><b>6. We divide household chores equally in our family.</b><br>Household chores ____________________",
+              "model_answers": [
+                "Household chores are divided equally in our family."
+              ],
+              "explanation": "Câu bị động Hiện tại đơn: 'S + am/is/are + V3/ed': 'Household chores are divided equally in our family.'",
+              "num": 76
+            },
+            {
+              "id": "g10_gk1_w14",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence using the cue in bracket:<br><b>7. Jaine last visited her hometown 3 years ago. (has)</b><br>Jaine ____________________",
+              "model_answers": [
+                "Jaine has not visited her hometown for 3 years.",
+                "Jaine hasn't visited her hometown for 3 years."
+              ],
+              "explanation": "'last + V2 + time + ago' chuyển sang thì Hiện tại hoàn thành dạng phủ định: 'has not (hasn't) visited her hometown for 3 years.'",
+              "num": 77
+            },
+            {
+              "id": "g10_gk1_w15",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence using infinitive verb:<br><b>8. My cousin spent three hours driving to the concert hall.</b><br>It took ____________________",
+              "model_answers": [
+                "It took my cousin three hours to drive to the concert hall."
+              ],
+              "explanation": "'spend time V-ing' = 'It takes/took someone + time + to-V'. Đáp án: 'It took my cousin three hours to drive to the concert hall.'",
+              "num": 78
+            },
+            {
+              "id": "g10_gk1_w16",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Combine the two sentences using 'When':<br><b>9. Nick and Judy were arguing about the case. Chief Bogo called them. (called)</b><br>When ____________________",
+              "model_answers": [
+                "When Chief Bogo called them, Nick and Judy were arguing about the case.",
+                "When Nick and Judy were arguing about the case, Chief Bogo called them."
+              ],
+              "explanation": "Hành động đang xảy ra (Quá khứ tiếp diễn) thì hành động khác xen vào (Quá khứ đơn): 'When Chief Bogo called them, Nick and Judy were arguing about the case.'",
+              "num": 79
+            },
+            {
+              "id": "g10_gk1_w17",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Change into passive voice:<br><b>10. A small company introduced the first e-reader in 1999.</b><br>The first ____________________",
+              "model_answers": [
+                "The first e-reader was introduced by a small company in 1999."
+              ],
+              "explanation": "Câu bị động Quá khứ đơn: 'was/were + V3/ed + by O': 'The first e-reader was introduced by a small company in 1999.'",
+              "num": 80
+            }
+          ]
+        },
+        {
+          "id": "g10_lang",
+          "title": "Phần I: Ngôn Ngữ — Language Focus",
+          "subtitle": "20 câu: Phát âm, Trọng âm, Ngữ pháp & Từ vựng Unit 1–3",
+          "duration_minutes": 25,
+          "items": [
+            {
+              "id": "g10_gk1_l01",
+              "section": "I. LANGUAGE: Grammar",
+              "prompt": "1. We're hoping _______ tickets to the concert.",
+              "options": [
+                "A. got",
+                "B. get",
+                "C. to get",
+                "D. getting"
+              ],
+              "answer": 2,
+              "explanation": "Cấu trúc: 'hope + to-infinitive' (hy vọng làm gì) -> chọn 'to get'.",
+              "num": 1,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l02",
+              "section": "I. LANGUAGE: Vocabulary",
+              "prompt": "2. We need to _______ public awareness of the environmental issues.",
+              "options": [
+                "A. achieve",
+                "B. organise",
+                "C. raise",
+                "D. plan"
+              ],
+              "answer": 2,
+              "explanation": "Collocation cố định: 'raise awareness of something' (nâng cao nhận thức của cộng đồng về vấn đề gì).",
+              "num": 2,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l03",
+              "section": "I. LANGUAGE: Vocabulary",
+              "prompt": "3. Our music teacher has been invited to be a _______ in many music competitions and talent shows.",
+              "options": [
+                "A. contestant",
+                "B. judge",
+                "C. fan",
+                "D. competitor"
+              ],
+              "answer": 1,
+              "explanation": "'judge' (giám khảo trong cuộc thi âm nhạc). Contestant/competitor là thí sinh; fan là người hâm mộ.",
+              "num": 3,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l04",
+              "section": "I. LANGUAGE: Preposition",
+              "prompt": "4. He always helps _______ the housework.",
+              "options": [
+                "A. with",
+                "B. in",
+                "C. on",
+                "D. to"
+              ],
+              "answer": 0,
+              "explanation": "Cấu trúc: 'help (someone) with something' (giúp đỡ việc gì) -> 'helps with the housework'.",
+              "num": 4,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l05",
+              "section": "I. LANGUAGE: Word Form",
+              "prompt": "5. We're going to hold a _______ to see who can swim the fastest.",
+              "options": [
+                "A. competition",
+                "B. competitor",
+                "C. competitive",
+                "D. compete"
+              ],
+              "answer": 0,
+              "explanation": "Sau mạo từ 'a' cần một danh từ chỉ sự kiện cuộc thi -> 'competition' (cuộc thi).",
+              "num": 5,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l06",
+              "section": "I. LANGUAGE: Conjunction",
+              "prompt": "6. We've invited the boss, _______ she may decide not to come.",
+              "options": [
+                "A. and",
+                "B. but",
+                "C. or",
+                "D. so"
+              ],
+              "answer": 1,
+              "explanation": "Liên từ chỉ sự tương phản: 'Chúng tôi đã mời sếp, nhưng có thể cô ấy sẽ quyết định không đến' -> chọn 'but'.",
+              "num": 6,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l07",
+              "section": "I. LANGUAGE: Vocabulary",
+              "prompt": "7. When all members of the family share housework, family _______ become stronger.",
+              "options": [
+                "A. bonds",
+                "B. joys",
+                "C. happiness",
+                "D. life"
+              ],
+              "answer": 0,
+              "explanation": "Cụm danh từ: 'family bonds' (sự gắn kết gia đình / tình cảm gia đình).",
+              "num": 7,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l08",
+              "section": "I. LANGUAGE: Word Form",
+              "prompt": "8. Voluntary / Volunteer work is a great way for _______ to teach children in remote areas.",
+              "options": [
+                "A. volunteer",
+                "B. voluntary",
+                "C. volunteered",
+                "D. volunteers"
+              ],
+              "answer": 3,
+              "explanation": "'a great way for volunteers to teach...' (là cơ hội tuyệt vời cho các tình nguyện viên giảng dạy trẻ em vùng sâu vùng xa).",
+              "num": 8,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l09",
+              "section": "I. LANGUAGE: Preposition",
+              "prompt": "9. Can you tell me who is responsible _______ the finances in your family?",
+              "options": [
+                "A. with",
+                "B. to",
+                "C. about",
+                "D. for"
+              ],
+              "answer": 3,
+              "explanation": "Cấu trúc tính từ đi với giới từ: 'be responsible for something' (chịu trách nhiệm về cái gì).",
+              "num": 9,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l10",
+              "section": "I. LANGUAGE: Vocabulary",
+              "prompt": "10. When you do something good for others, you will find your life _______.",
+              "options": [
+                "A. meaningless",
+                "B. hopeless",
+                "C. harmful",
+                "D. meaningful"
+              ],
+              "answer": 3,
+              "explanation": "Cấu trúc: 'find something + adj' (thấy cái gì như thế nào). Làm việc tốt giúp cuộc sống có ý nghĩa -> chọn 'meaningful'.",
+              "num": 10,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l11",
+              "section": "I. LANGUAGE: Vocabulary",
+              "prompt": "11. Doing volunteer work, we are more _______ of global problems facing our world.",
+              "options": [
+                "A. aware",
+                "B. devote",
+                "C. communicate",
+                "D. dedicate"
+              ],
+              "answer": 0,
+              "explanation": "Cấu trúc tính từ: 'be aware of something' (nhận thức được điều gì).",
+              "num": 11,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l12",
+              "section": "I. LANGUAGE: Idiom",
+              "prompt": "12. Environmental pollution is a hot _______ nowadays because it is really complicated and hard to solve.",
+              "options": [
+                "A. orange",
+                "B. apple",
+                "C. potato",
+                "D. dog"
+              ],
+              "answer": 2,
+              "explanation": "Thành ngữ: 'a hot potato' (một vấn đề nan giải, nóng bỏng, khó giải quyết).",
+              "num": 12,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l13",
+              "section": "I. LANGUAGE: Grammar",
+              "prompt": "13. It’s been raining all day. This weather makes me _______.",
+              "options": [
+                "A. depress",
+                "B. depressed",
+                "C. depressing",
+                "D. to depress"
+              ],
+              "answer": 1,
+              "explanation": "Cấu trúc: 'make someone + adj': tính từ chỉ cảm xúc của con người dùng đuôi -ed -> 'makes me depressed' (khiến tôi cảm thấy chán nản/buồn bã).",
+              "num": 13,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l14",
+              "section": "I. LANGUAGE: Grammar",
+              "prompt": "14. We _______ in Ha Noi since 2000. We love living here.",
+              "options": [
+                "A. live",
+                "B. lived",
+                "C. have lived",
+                "D. are living"
+              ],
+              "answer": 2,
+              "explanation": "Dấu hiệu 'since 2000' (từ năm 2000 đến nay) -> chia thì Hiện tại hoàn thành 'have lived'.",
+              "num": 14,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l15",
+              "section": "I. LANGUAGE: Closest Meaning",
+              "prompt": "15. Mark the letter A, B, C or D to indicate the word CLOSEST in meaning to the underlined word:<br>We always <u>split</u> the housework equally - my mom cooks, my dad cleans the house and I do the washing-up.",
+              "options": [
+                "A. pick up",
+                "B. join",
+                "C. share",
+                "D. break"
+              ],
+              "answer": 2,
+              "explanation": "'split the housework' = 'share the housework' (phân chia, sẻ chia công việc nhà).",
+              "num": 15,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l16",
+              "section": "I. LANGUAGE: Closest Meaning",
+              "prompt": "16. Mark the letter A, B, C or D to indicate the word CLOSEST in meaning to the underlined word:<br>Lan’s main <u>responsibility</u> in her home is to keep the house clean.",
+              "options": [
+                "A. right",
+                "B. honor",
+                "C. part",
+                "D. duty"
+              ],
+              "answer": 3,
+              "explanation": "'responsibility' (trách nhiệm, bổn phận) đồng nghĩa với 'duty'.",
+              "num": 16,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l17",
+              "section": "I. LANGUAGE: Word Stress",
+              "prompt": "17. Mark the letter A, B, C or D to indicate the word that differs from the other three in the position of primary stress.",
+              "options": [
+                "A. cover",
+                "B. protect",
+                "C. perform",
+                "D. respect"
+              ],
+              "answer": 0,
+              "explanation": "cover /ˈkʌv.ər/ có trọng âm 1. Các từ còn lại có trọng âm 2: protect /prəˈtekt/, perform /pəˈfɔːm/, respect /rɪˈspekt/.",
+              "num": 17,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l18",
+              "section": "I. LANGUAGE: Word Stress",
+              "prompt": "18. Mark the letter A, B, C or D to indicate the word that differs from the other three in the position of primary stress.",
+              "options": [
+                "A. footprint",
+                "B. artist",
+                "C. routine",
+                "D. housework"
+              ],
+              "answer": 2,
+              "explanation": "routine /ruːˈtiːn/ có trọng âm 2. Các từ còn lại có trọng âm 1: footprint /ˈfʊt.prɪnt/, artist /ˈɑː.tɪst/, housework /ˈhaʊs.wɜːk/.",
+              "num": 18,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l19",
+              "section": "I. LANGUAGE: Word Stress",
+              "prompt": "19. Mark the letter A, B, C or D to indicate the word that differs from the other three in the position of primary stress.",
+              "options": [
+                "A. damage",
+                "B. routine",
+                "C. service",
+                "D. manner"
+              ],
+              "answer": 1,
+              "explanation": "routine /ruːˈtiːn/ có trọng âm 2. Các từ còn lại có trọng âm 1: damage /ˈdæm.ɪdʒ/, service /ˈsɜː.vɪs/, manner /ˈmæn.ər/.",
+              "num": 19,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_l20",
+              "section": "I. LANGUAGE: Word Stress",
+              "prompt": "20. Mark the letter A, B, C or D to indicate the word that differs from the other three in the position of primary stress.",
+              "options": [
+                "A. organic",
+                "B. encourage",
+                "C. volunteer",
+                "D. location"
+              ],
+              "answer": 2,
+              "explanation": "volunteer /ˌvɒl.ənˈtɪər/ có trọng âm rơi vào âm tiết 3. Các từ còn lại có trọng âm 2: organic /ɔːˈɡæn.ɪk/, encourage /ɪnˈkʌr.ɪdʒ/, location /ləʊˈkeɪ.ʃən/.",
+              "num": 20,
+              "type": "mcq"
+            }
+          ]
+        },
+        {
+          "id": "g10_read",
+          "title": "Phần II: Đọc Hiểu & Điền Từ — Reading Mastery",
+          "subtitle": "43 câu: 3 bài điền từ khuyết & 4 bài đọc hiểu chuyên sâu",
+          "duration_minutes": 45,
+          "items": [
+            {
+              "id": "g10_gk1_r01",
+              "section": "II. READING: Soil and Environment",
+              "passage": "More than a third of the world's soil is endangered, according to a recent UN report. If we don't slow the decline, all farmable soil could be gone in 60 years. Since soil grows 95% of our food, and sustains human life in other more surprising ways, that is a huge problem. A single gram of healthy soil might contain 100 million bacteria, as well as other microorganisms such as viruses and fungi, living amid decomposing plants and various minerals.\n\nThat means soils do not just grow our food, but are the source of nearly all our existing antibiotics, and could be our best hope in the fight against antibiotic-resistant bacteria. Soil is also an ally against climate change: as microorganisms within soil digest dead animals and plants, they lock in their carbon content, holding three times the amount of carbon as does the entire atmosphere. Soils also store water, preventing flood damage: in the UK, damage to buildings, roads and bridges from floods caused by soil degradation costs £233 million every year.\n\nIf the soil loses its ability to perform these functions, the human race could be in big trouble. The danger is not that the soil will disappear completely, but that the microorganisms that give it its special properties will be lost. And once this has happened, it may take the soil thousands of years to recover.\n(Adapted from ieltsfighter.com)",
+              "prompt": "Question 1. The word \"its\" in the third paragraph refers to ________.",
+              "options": [
+                "A. degradation's",
+                "B. the human race",
+                "C. flood's",
+                "D. soil's"
+              ],
+              "answer": 3,
+              "explanation": "'If the soil loses its ability...': 'its' ở đây là sở hữu của danh từ 'soil' (đất đai) phía trước.",
+              "num": 1,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r02",
+              "section": "II. READING: Soil and Environment",
+              "passage": "More than a third of the world's soil is endangered, according to a recent UN report. If we don't slow the decline, all farmable soil could be gone in 60 years. Since soil grows 95% of our food, and sustains human life in other more surprising ways, that is a huge problem. A single gram of healthy soil might contain 100 million bacteria, as well as other microorganisms such as viruses and fungi, living amid decomposing plants and various minerals.\n\nThat means soils do not just grow our food, but are the source of nearly all our existing antibiotics, and could be our best hope in the fight against antibiotic-resistant bacteria. Soil is also an ally against climate change: as microorganisms within soil digest dead animals and plants, they lock in their carbon content, holding three times the amount of carbon as does the entire atmosphere. Soils also store water, preventing flood damage: in the UK, damage to buildings, roads and bridges from floods caused by soil degradation costs £233 million every year.\n\nIf the soil loses its ability to perform these functions, the human race could be in big trouble. The danger is not that the soil will disappear completely, but that the microorganisms that give it its special properties will be lost. And once this has happened, it may take the soil thousands of years to recover.\n(Adapted from ieltsfighter.com)",
+              "prompt": "Question 2. In the passage, what threatens the fertility and health of soil?",
+              "options": [
+                "A. Forest fires remove the nutrients from the soil.",
+                "B. Soil degradation and loss of vital microorganisms.",
+                "C. Long months of drought as a result of climate change.",
+                "D. Plants and animals absorb the nutrients from the soil."
+              ],
+              "answer": 1,
+              "explanation": "Đoạn 3 chỉ rõ: 'the microorganisms that give it its special properties will be lost' do suy thoái đất.",
+              "num": 2,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r03",
+              "section": "II. READING: Soil and Environment",
+              "passage": "More than a third of the world's soil is endangered, according to a recent UN report. If we don't slow the decline, all farmable soil could be gone in 60 years. Since soil grows 95% of our food, and sustains human life in other more surprising ways, that is a huge problem. A single gram of healthy soil might contain 100 million bacteria, as well as other microorganisms such as viruses and fungi, living amid decomposing plants and various minerals.\n\nThat means soils do not just grow our food, but are the source of nearly all our existing antibiotics, and could be our best hope in the fight against antibiotic-resistant bacteria. Soil is also an ally against climate change: as microorganisms within soil digest dead animals and plants, they lock in their carbon content, holding three times the amount of carbon as does the entire atmosphere. Soils also store water, preventing flood damage: in the UK, damage to buildings, roads and bridges from floods caused by soil degradation costs £233 million every year.\n\nIf the soil loses its ability to perform these functions, the human race could be in big trouble. The danger is not that the soil will disappear completely, but that the microorganisms that give it its special properties will be lost. And once this has happened, it may take the soil thousands of years to recover.\n(Adapted from ieltsfighter.com)",
+              "prompt": "Question 3. According to the second paragraph, soil also helps fight against _______.",
+              "options": [
+                "A. antibiotic-resistant bacteria",
+                "B. antibiotics",
+                "C. climate change",
+                "D. dead animal and plants"
+              ],
+              "answer": 2,
+              "explanation": "Đoạn 2 nêu rõ: 'Soil is also an ally against climate change' (Đất cũng là một đồng minh chống lại biến đổi khí hậu).",
+              "num": 3,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r04",
+              "section": "II. READING: Soil and Environment",
+              "passage": "More than a third of the world's soil is endangered, according to a recent UN report. If we don't slow the decline, all farmable soil could be gone in 60 years. Since soil grows 95% of our food, and sustains human life in other more surprising ways, that is a huge problem. A single gram of healthy soil might contain 100 million bacteria, as well as other microorganisms such as viruses and fungi, living amid decomposing plants and various minerals.\n\nThat means soils do not just grow our food, but are the source of nearly all our existing antibiotics, and could be our best hope in the fight against antibiotic-resistant bacteria. Soil is also an ally against climate change: as microorganisms within soil digest dead animals and plants, they lock in their carbon content, holding three times the amount of carbon as does the entire atmosphere. Soils also store water, preventing flood damage: in the UK, damage to buildings, roads and bridges from floods caused by soil degradation costs £233 million every year.\n\nIf the soil loses its ability to perform these functions, the human race could be in big trouble. The danger is not that the soil will disappear completely, but that the microorganisms that give it its special properties will be lost. And once this has happened, it may take the soil thousands of years to recover.\n(Adapted from ieltsfighter.com)",
+              "prompt": "Question 4. The word \"contain\" in the first paragraph is closest in meaning to _______.",
+              "options": [
+                "A. live",
+                "B. exist",
+                "C. has",
+                "D. raise"
+              ],
+              "answer": 2,
+              "explanation": "'contain' có nghĩa là chứa đựng, bao gồm (= has / holds).",
+              "num": 4,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r05",
+              "section": "II. READING: Soil and Environment",
+              "passage": "More than a third of the world's soil is endangered, according to a recent UN report. If we don't slow the decline, all farmable soil could be gone in 60 years. Since soil grows 95% of our food, and sustains human life in other more surprising ways, that is a huge problem. A single gram of healthy soil might contain 100 million bacteria, as well as other microorganisms such as viruses and fungi, living amid decomposing plants and various minerals.\n\nThat means soils do not just grow our food, but are the source of nearly all our existing antibiotics, and could be our best hope in the fight against antibiotic-resistant bacteria. Soil is also an ally against climate change: as microorganisms within soil digest dead animals and plants, they lock in their carbon content, holding three times the amount of carbon as does the entire atmosphere. Soils also store water, preventing flood damage: in the UK, damage to buildings, roads and bridges from floods caused by soil degradation costs £233 million every year.\n\nIf the soil loses its ability to perform these functions, the human race could be in big trouble. The danger is not that the soil will disappear completely, but that the microorganisms that give it its special properties will be lost. And once this has happened, it may take the soil thousands of years to recover.\n(Adapted from ieltsfighter.com)",
+              "prompt": "Question 5. What is the main idea of the passage?",
+              "options": [
+                "A. Soil degradation's danger to the human race.",
+                "B. Soil's important roles in human life.",
+                "C. How bacteria as well as other microorganisms affect human life.",
+                "D. What needs to be done to protect natural resources like soil."
+              ],
+              "answer": 0,
+              "explanation": "Bài đọc nhấn mạnh sự nguy hiểm của suy thoái đất đối với loài người ('If we don't slow the decline... the human race could be in big trouble').",
+              "num": 5,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r06",
+              "section": "II. READING: Family Life",
+              "passage": "My (6) _______ family consists of four members. My husband is an engineer at a big company in Hanoi. I am an English teacher at an international school. We have a six-year-old son and a three-year-old daughter. All of the members often spend time (7) _______ the household chores with each other in the evening. My husband and I (8) _______ dinner together. My children help me clean the house. Although there (9) _______ a lot of household duties around the house, I am not tired because my husband joins hands to do the (10) _______ with me.",
+              "prompt": "Question 6. Choose the best option to fit blank (6):",
+              "options": [
+                "A. extended",
+                "B. nuclear",
+                "C. big",
+                "D. huge"
+              ],
+              "answer": 1,
+              "explanation": "Gia đình gồm 4 người (bố mẹ và 2 con) là gia đình hạt nhân -> 'nuclear family'.",
+              "num": 6,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r07",
+              "section": "II. READING: Family Life",
+              "passage": "My (6) _______ family consists of four members. My husband is an engineer at a big company in Hanoi. I am an English teacher at an international school. We have a six-year-old son and a three-year-old daughter. All of the members often spend time (7) _______ the household chores with each other in the evening. My husband and I (8) _______ dinner together. My children help me clean the house. Although there (9) _______ a lot of household duties around the house, I am not tired because my husband joins hands to do the (10) _______ with me.",
+              "prompt": "Question 7. Choose the best option to fit blank (7):",
+              "options": [
+                "A. doing",
+                "B. to do",
+                "C. did",
+                "D. do"
+              ],
+              "answer": 0,
+              "explanation": "Cấu trúc: 'spend time + V-ing': 'spend time doing the household chores'.",
+              "num": 7,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r08",
+              "section": "II. READING: Family Life",
+              "passage": "My (6) _______ family consists of four members. My husband is an engineer at a big company in Hanoi. I am an English teacher at an international school. We have a six-year-old son and a three-year-old daughter. All of the members often spend time (7) _______ the household chores with each other in the evening. My husband and I (8) _______ dinner together. My children help me clean the house. Although there (9) _______ a lot of household duties around the house, I am not tired because my husband joins hands to do the (10) _______ with me.",
+              "prompt": "Question 8. Choose the best option to fit blank (8):",
+              "options": [
+                "A. watch",
+                "B. bring",
+                "C. cook",
+                "D. take"
+              ],
+              "answer": 2,
+              "explanation": "Collocation: 'cook dinner' (nấu bữa tối).",
+              "num": 8,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r09",
+              "section": "II. READING: Family Life",
+              "passage": "My (6) _______ family consists of four members. My husband is an engineer at a big company in Hanoi. I am an English teacher at an international school. We have a six-year-old son and a three-year-old daughter. All of the members often spend time (7) _______ the household chores with each other in the evening. My husband and I (8) _______ dinner together. My children help me clean the house. Although there (9) _______ a lot of household duties around the house, I am not tired because my husband joins hands to do the (10) _______ with me.",
+              "prompt": "Question 9. Choose the best option to fit blank (9):",
+              "options": [
+                "A. are",
+                "B. was",
+                "C. is",
+                "D. were"
+              ],
+              "answer": 0,
+              "explanation": "Chủ ngữ số nhiều 'a lot of household duties' ở hiện tại -> dùng 'are'.",
+              "num": 9,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r10",
+              "section": "II. READING: Family Life",
+              "passage": "My (6) _______ family consists of four members. My husband is an engineer at a big company in Hanoi. I am an English teacher at an international school. We have a six-year-old son and a three-year-old daughter. All of the members often spend time (7) _______ the household chores with each other in the evening. My husband and I (8) _______ dinner together. My children help me clean the house. Although there (9) _______ a lot of household duties around the house, I am not tired because my husband joins hands to do the (10) _______ with me.",
+              "prompt": "Question 10. Choose the best option to fit blank (10):",
+              "options": [
+                "A. hearts",
+                "B. housework",
+                "C. heads",
+                "D. feet"
+              ],
+              "answer": 1,
+              "explanation": "'do the housework' (làm việc nhà).",
+              "num": 10,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r11",
+              "section": "II. READING: Environment Ad",
+              "passage": "SAVE THE PLANET – EAT MORE PLANTS! 🌎\nYou don’t need to buy an electric car to help the environment — just change your diet! Choosing a (11) _________ can make a huge difference.\n\n🥦 Reduce Greenhouse Gases\nLivestock farming (12) _________ about 14.5% of the world’s greenhouse gases. By eating more plant-based foods, we could cut food-related emissions by up to 70% by 2050!\n\n💧 Save Water\nRaising animals uses enormous amounts of water — over 15,000 liters for one kilogram of beef! Vegetables need just a few hundred liters.\n\n🌳 Protect Forests & Wildlife\nMost farmland (13) _________ for livestock and their feed. If we grow more food for people instead, there will be more land for forests (14) _________ wild animals. Eating less meat is one of the easiest and most powerful ways to protect our planet.\n\n✨ Small changes in your diet can create a big (15) _________!\n(Adapted from i-learn smart world-unit 8)",
+              "prompt": "Question 11. Choose the correct option to fit blank (11):",
+              "options": [
+                "A. plant-based action",
+                "B. based-plant action",
+                "C. plant-action based",
+                "D. action-based plant"
+              ],
+              "answer": 0,
+              "explanation": "Tính từ ghép: 'plant-based' (có nguồn gốc thực vật) -> 'plant-based action'.",
+              "num": 11,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r12",
+              "section": "II. READING: Environment Ad",
+              "passage": "SAVE THE PLANET – EAT MORE PLANTS! 🌎\nYou don’t need to buy an electric car to help the environment — just change your diet! Choosing a (11) _________ can make a huge difference.\n\n🥦 Reduce Greenhouse Gases\nLivestock farming (12) _________ about 14.5% of the world’s greenhouse gases. By eating more plant-based foods, we could cut food-related emissions by up to 70% by 2050!\n\n💧 Save Water\nRaising animals uses enormous amounts of water — over 15,000 liters for one kilogram of beef! Vegetables need just a few hundred liters.\n\n🌳 Protect Forests & Wildlife\nMost farmland (13) _________ for livestock and their feed. If we grow more food for people instead, there will be more land for forests (14) _________ wild animals. Eating less meat is one of the easiest and most powerful ways to protect our planet.\n\n✨ Small changes in your diet can create a big (15) _________!\n(Adapted from i-learn smart world-unit 8)",
+              "prompt": "Question 12. Choose the correct option to fit blank (12):",
+              "options": [
+                "A. produces",
+                "B. is producing",
+                "C. will produce",
+                "D. has produced"
+              ],
+              "answer": 0,
+              "explanation": "Diễn tả sự thật khách quan khoa học, chủ ngữ 'Livestock farming' số ít -> dùng Hiện tại đơn 'produces'.",
+              "num": 12,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r13",
+              "section": "II. READING: Environment Ad",
+              "passage": "SAVE THE PLANET – EAT MORE PLANTS! 🌎\nYou don’t need to buy an electric car to help the environment — just change your diet! Choosing a (11) _________ can make a huge difference.\n\n🥦 Reduce Greenhouse Gases\nLivestock farming (12) _________ about 14.5% of the world’s greenhouse gases. By eating more plant-based foods, we could cut food-related emissions by up to 70% by 2050!\n\n💧 Save Water\nRaising animals uses enormous amounts of water — over 15,000 liters for one kilogram of beef! Vegetables need just a few hundred liters.\n\n🌳 Protect Forests & Wildlife\nMost farmland (13) _________ for livestock and their feed. If we grow more food for people instead, there will be more land for forests (14) _________ wild animals. Eating less meat is one of the easiest and most powerful ways to protect our planet.\n\n✨ Small changes in your diet can create a big (15) _________!\n(Adapted from i-learn smart world-unit 8)",
+              "prompt": "Question 13. Choose the correct option to fit blank (13):",
+              "options": [
+                "A. used",
+                "B. is used",
+                "C. will use",
+                "D. uses"
+              ],
+              "answer": 1,
+              "explanation": "Câu bị động ở hiện tại: 'Most farmland is used for...' (Đất nông nghiệp được dùng cho...).",
+              "num": 13,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r14",
+              "section": "II. READING: Environment Ad",
+              "passage": "SAVE THE PLANET – EAT MORE PLANTS! 🌎\nYou don’t need to buy an electric car to help the environment — just change your diet! Choosing a (11) _________ can make a huge difference.\n\n🥦 Reduce Greenhouse Gases\nLivestock farming (12) _________ about 14.5% of the world’s greenhouse gases. By eating more plant-based foods, we could cut food-related emissions by up to 70% by 2050!\n\n💧 Save Water\nRaising animals uses enormous amounts of water — over 15,000 liters for one kilogram of beef! Vegetables need just a few hundred liters.\n\n🌳 Protect Forests & Wildlife\nMost farmland (13) _________ for livestock and their feed. If we grow more food for people instead, there will be more land for forests (14) _________ wild animals. Eating less meat is one of the easiest and most powerful ways to protect our planet.\n\n✨ Small changes in your diet can create a big (15) _________!\n(Adapted from i-learn smart world-unit 8)",
+              "prompt": "Question 14. Choose the correct option to fit blank (14):",
+              "options": [
+                "A. but",
+                "B. and",
+                "C. so",
+                "D. yet"
+              ],
+              "answer": 1,
+              "explanation": "Liên từ 'and' kết nối hai danh từ đồng cấp 'forests and wild animals'.",
+              "num": 14,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r15",
+              "section": "II. READING: Environment Ad",
+              "passage": "SAVE THE PLANET – EAT MORE PLANTS! 🌎\nYou don’t need to buy an electric car to help the environment — just change your diet! Choosing a (11) _________ can make a huge difference.\n\n🥦 Reduce Greenhouse Gases\nLivestock farming (12) _________ about 14.5% of the world’s greenhouse gases. By eating more plant-based foods, we could cut food-related emissions by up to 70% by 2050!\n\n💧 Save Water\nRaising animals uses enormous amounts of water — over 15,000 liters for one kilogram of beef! Vegetables need just a few hundred liters.\n\n🌳 Protect Forests & Wildlife\nMost farmland (13) _________ for livestock and their feed. If we grow more food for people instead, there will be more land for forests (14) _________ wild animals. Eating less meat is one of the easiest and most powerful ways to protect our planet.\n\n✨ Small changes in your diet can create a big (15) _________!\n(Adapted from i-learn smart world-unit 8)",
+              "prompt": "Question 15. Choose the correct option to fit blank (15):",
+              "options": [
+                "A. impact",
+                "B. consequence",
+                "C. convenience",
+                "D. drawback"
+              ],
+              "answer": 0,
+              "explanation": "Collocation: 'create a big impact' (tạo ra tác động to lớn tích cực).",
+              "num": 15,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r16",
+              "section": "II. READING: Music Culture",
+              "passage": "Breaking Boundaries: A Reality Music Show That Transforms Society\nSince its debut in June 2024, \"Anh Trai Vuot Ngan Chong Gai\" (16) _________ Vietnamese audiences, creating an unprecedented bridge between generations and geographic divides.\n\nOriginally adapted from MangoTV's show Call Me By Fire, the show brings together 33 distinguished men over the age of 30—renowned stars and influential figures across various fields, including music, dance, film, sports, and photography. Evolving beyond a (17) _________ music competition, the show has become a powerful cultural and social movement. This helps inspiring audiences and (18) _________ the landscape of Vietnam's creative industry.\n\nThrough innovative production, the show breathed new life into (19) _________ Vietnamese art forms such as \"Chèo\" or \"Cải lương\", making the heritage accessible to diverse audiences. Even in the digital age, the show unites multigenerational families, recreating the shared excitement and discussions like during the Television's Golden Era. It has also brought overseas Vietnamese home, showcasing the show's profound cross-border influence. (20) _________, one particular performance—filled with storytelling and emotion—deeply connected with audiences and helped raise funds for over 100 life-saving heart surgeries.\n(Adapted from AAP Releases)",
+              "prompt": "Question 16. Choose the best option to fit blank (16):",
+              "options": [
+                "A. is captivating",
+                "B. captivates",
+                "C. has captivated",
+                "D. will captivate"
+              ],
+              "answer": 2,
+              "explanation": "'Since its debut in June 2024' -> thì Hiện tại hoàn thành 'has captivated'.",
+              "num": 16,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r17",
+              "section": "II. READING: Music Culture",
+              "passage": "Breaking Boundaries: A Reality Music Show That Transforms Society\nSince its debut in June 2024, \"Anh Trai Vuot Ngan Chong Gai\" (16) _________ Vietnamese audiences, creating an unprecedented bridge between generations and geographic divides.\n\nOriginally adapted from MangoTV's show Call Me By Fire, the show brings together 33 distinguished men over the age of 30—renowned stars and influential figures across various fields, including music, dance, film, sports, and photography. Evolving beyond a (17) _________ music competition, the show has become a powerful cultural and social movement. This helps inspiring audiences and (18) _________ the landscape of Vietnam's creative industry.\n\nThrough innovative production, the show breathed new life into (19) _________ Vietnamese art forms such as \"Chèo\" or \"Cải lương\", making the heritage accessible to diverse audiences. Even in the digital age, the show unites multigenerational families, recreating the shared excitement and discussions like during the Television's Golden Era. It has also brought overseas Vietnamese home, showcasing the show's profound cross-border influence. (20) _________, one particular performance—filled with storytelling and emotion—deeply connected with audiences and helped raise funds for over 100 life-saving heart surgeries.\n(Adapted from AAP Releases)",
+              "prompt": "Question 17. Choose the best option to fit blank (17):",
+              "options": [
+                "A. reality",
+                "B. really",
+                "C. real",
+                "D. realistic"
+              ],
+              "answer": 0,
+              "explanation": "'reality music competition' (cuộc thi âm nhạc truyền hình thực tế).",
+              "num": 17,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r18",
+              "section": "II. READING: Music Culture",
+              "passage": "Breaking Boundaries: A Reality Music Show That Transforms Society\nSince its debut in June 2024, \"Anh Trai Vuot Ngan Chong Gai\" (16) _________ Vietnamese audiences, creating an unprecedented bridge between generations and geographic divides.\n\nOriginally adapted from MangoTV's show Call Me By Fire, the show brings together 33 distinguished men over the age of 30—renowned stars and influential figures across various fields, including music, dance, film, sports, and photography. Evolving beyond a (17) _________ music competition, the show has become a powerful cultural and social movement. This helps inspiring audiences and (18) _________ the landscape of Vietnam's creative industry.\n\nThrough innovative production, the show breathed new life into (19) _________ Vietnamese art forms such as \"Chèo\" or \"Cải lương\", making the heritage accessible to diverse audiences. Even in the digital age, the show unites multigenerational families, recreating the shared excitement and discussions like during the Television's Golden Era. It has also brought overseas Vietnamese home, showcasing the show's profound cross-border influence. (20) _________, one particular performance—filled with storytelling and emotion—deeply connected with audiences and helped raise funds for over 100 life-saving heart surgeries.\n(Adapted from AAP Releases)",
+              "prompt": "Question 18. Choose the best option to fit blank (18):",
+              "options": [
+                "A. to redefine",
+                "B. redefine",
+                "C. redefining",
+                "D. redefined"
+              ],
+              "answer": 2,
+              "explanation": "Cấu trúc song hành với 'inspiring audiences': 'and redefining the landscape'.",
+              "num": 18,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r19",
+              "section": "II. READING: Music Culture",
+              "passage": "Breaking Boundaries: A Reality Music Show That Transforms Society\nSince its debut in June 2024, \"Anh Trai Vuot Ngan Chong Gai\" (16) _________ Vietnamese audiences, creating an unprecedented bridge between generations and geographic divides.\n\nOriginally adapted from MangoTV's show Call Me By Fire, the show brings together 33 distinguished men over the age of 30—renowned stars and influential figures across various fields, including music, dance, film, sports, and photography. Evolving beyond a (17) _________ music competition, the show has become a powerful cultural and social movement. This helps inspiring audiences and (18) _________ the landscape of Vietnam's creative industry.\n\nThrough innovative production, the show breathed new life into (19) _________ Vietnamese art forms such as \"Chèo\" or \"Cải lương\", making the heritage accessible to diverse audiences. Even in the digital age, the show unites multigenerational families, recreating the shared excitement and discussions like during the Television's Golden Era. It has also brought overseas Vietnamese home, showcasing the show's profound cross-border influence. (20) _________, one particular performance—filled with storytelling and emotion—deeply connected with audiences and helped raise funds for over 100 life-saving heart surgeries.\n(Adapted from AAP Releases)",
+              "prompt": "Question 19. Choose the best option to fit blank (19):",
+              "options": [
+                "A. traditional",
+                "B. international",
+                "C. modern",
+                "D. competitive"
+              ],
+              "answer": 0,
+              "explanation": "'Chèo' và 'Cải lương' là các loại hình nghệ thuật truyền thống của Việt Nam -> 'traditional Vietnamese art forms'.",
+              "num": 19,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r20",
+              "section": "II. READING: Music Culture",
+              "passage": "Breaking Boundaries: A Reality Music Show That Transforms Society\nSince its debut in June 2024, \"Anh Trai Vuot Ngan Chong Gai\" (16) _________ Vietnamese audiences, creating an unprecedented bridge between generations and geographic divides.\n\nOriginally adapted from MangoTV's show Call Me By Fire, the show brings together 33 distinguished men over the age of 30—renowned stars and influential figures across various fields, including music, dance, film, sports, and photography. Evolving beyond a (17) _________ music competition, the show has become a powerful cultural and social movement. This helps inspiring audiences and (18) _________ the landscape of Vietnam's creative industry.\n\nThrough innovative production, the show breathed new life into (19) _________ Vietnamese art forms such as \"Chèo\" or \"Cải lương\", making the heritage accessible to diverse audiences. Even in the digital age, the show unites multigenerational families, recreating the shared excitement and discussions like during the Television's Golden Era. It has also brought overseas Vietnamese home, showcasing the show's profound cross-border influence. (20) _________, one particular performance—filled with storytelling and emotion—deeply connected with audiences and helped raise funds for over 100 life-saving heart surgeries.\n(Adapted from AAP Releases)",
+              "prompt": "Question 20. Choose the best option to fit blank (20):",
+              "options": [
+                "A. Moreover",
+                "B. However",
+                "C. Therefore",
+                "D. Although"
+              ],
+              "answer": 0,
+              "explanation": "Liên từ bổ sung thông tin ý nghĩa xã hội của chương trình: 'Moreover' (Hơn thế nữa).",
+              "num": 20,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r21",
+              "section": "II. READING: Plastic & Environment",
+              "passage": "PLASTIC AND THE ENVIRONMENT\nPlastic is a material we use every day. The first plastics were made more than 100 years ago from parts of plants. Plastics are now made from oil, coal and natural gas. We are using up these things so fast that the Earth’s supplies may run out. Because of this, scientists are investigating new ideas for making plastics from plants such as sweet potato, bamboo and flax.\n\nThings made from plastic can be useful for people but bad for the planet. Some plastics can last for a long time without wearing out, and can be difficult to get rid of when they are not needed. They can remain in rubbish dumps called landfill sites for hundreds of years. Landfills can be smelly, ugly, and harmful to our planet.\n\nRecycling is a good way to get rid of unwanted plastics. Recycled waste materials can be used again to make new products. This can be difficult as different types of plastic need to be recycled in different ways. Some kinds of plastics can be melted down and used to make new things such as bags and bottles. Others can be made into fibres (strands of material) for clothing.\n\nAnother way to protect the environment is to use canvas bags for shopping rather than plastic ones. A lot of plastic objects can also be reused. Plastic bottles can be refilled many times, rather than throwing them away once they are empty. Unwanted plastic goods such as CDs and toys can be sold or given away to charity shops.\n(Adapted from: esolcourses.com)",
+              "prompt": "Question 21. According to the passage, things made from plastic are bad for our environment because ______.",
+              "options": [
+                "A. they are a danger to marine life such as whales, turtles and so on.",
+                "B. they are very convenient for people to use in different purposes.",
+                "C. people reuse plastic objects before recycling them.",
+                "D. plastics can exist for a long time without decomposing."
+              ],
+              "answer": 3,
+              "explanation": "Đoạn 2 nêu rõ: 'Some plastics can last for a long time without wearing out, and can be difficult to get rid of... remain in rubbish dumps... for hundreds of years'.",
+              "num": 21,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r22",
+              "section": "II. READING: Plastic & Environment",
+              "passage": "PLASTIC AND THE ENVIRONMENT\nPlastic is a material we use every day. The first plastics were made more than 100 years ago from parts of plants. Plastics are now made from oil, coal and natural gas. We are using up these things so fast that the Earth’s supplies may run out. Because of this, scientists are investigating new ideas for making plastics from plants such as sweet potato, bamboo and flax.\n\nThings made from plastic can be useful for people but bad for the planet. Some plastics can last for a long time without wearing out, and can be difficult to get rid of when they are not needed. They can remain in rubbish dumps called landfill sites for hundreds of years. Landfills can be smelly, ugly, and harmful to our planet.\n\nRecycling is a good way to get rid of unwanted plastics. Recycled waste materials can be used again to make new products. This can be difficult as different types of plastic need to be recycled in different ways. Some kinds of plastics can be melted down and used to make new things such as bags and bottles. Others can be made into fibres (strands of material) for clothing.\n\nAnother way to protect the environment is to use canvas bags for shopping rather than plastic ones. A lot of plastic objects can also be reused. Plastic bottles can be refilled many times, rather than throwing them away once they are empty. Unwanted plastic goods such as CDs and toys can be sold or given away to charity shops.\n(Adapted from: esolcourses.com)",
+              "prompt": "Question 22. The word “They” in paragraph 2 refers to ______.",
+              "options": [
+                "A. Plastics",
+                "B. Things",
+                "C. Rubbish dumps",
+                "D. People"
+              ],
+              "answer": 0,
+              "explanation": "'Some plastics can last for a long time... They can remain in rubbish dumps...' -> 'They' chỉ 'Plastics'.",
+              "num": 22,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r23",
+              "section": "II. READING: Plastic & Environment",
+              "passage": "PLASTIC AND THE ENVIRONMENT\nPlastic is a material we use every day. The first plastics were made more than 100 years ago from parts of plants. Plastics are now made from oil, coal and natural gas. We are using up these things so fast that the Earth’s supplies may run out. Because of this, scientists are investigating new ideas for making plastics from plants such as sweet potato, bamboo and flax.\n\nThings made from plastic can be useful for people but bad for the planet. Some plastics can last for a long time without wearing out, and can be difficult to get rid of when they are not needed. They can remain in rubbish dumps called landfill sites for hundreds of years. Landfills can be smelly, ugly, and harmful to our planet.\n\nRecycling is a good way to get rid of unwanted plastics. Recycled waste materials can be used again to make new products. This can be difficult as different types of plastic need to be recycled in different ways. Some kinds of plastics can be melted down and used to make new things such as bags and bottles. Others can be made into fibres (strands of material) for clothing.\n\nAnother way to protect the environment is to use canvas bags for shopping rather than plastic ones. A lot of plastic objects can also be reused. Plastic bottles can be refilled many times, rather than throwing them away once they are empty. Unwanted plastic goods such as CDs and toys can be sold or given away to charity shops.\n(Adapted from: esolcourses.com)",
+              "prompt": "Question 23. The phrase “get rid of” in paragraph 2 is closest in meaning to ______.",
+              "options": [
+                "A. remove",
+                "B. create",
+                "C. make",
+                "D. keep"
+              ],
+              "answer": 0,
+              "explanation": "'get rid of' có nghĩa là vứt bỏ, loại bỏ (= remove / discard).",
+              "num": 23,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r24",
+              "section": "II. READING: Plastic & Environment",
+              "passage": "PLASTIC AND THE ENVIRONMENT\nPlastic is a material we use every day. The first plastics were made more than 100 years ago from parts of plants. Plastics are now made from oil, coal and natural gas. We are using up these things so fast that the Earth’s supplies may run out. Because of this, scientists are investigating new ideas for making plastics from plants such as sweet potato, bamboo and flax.\n\nThings made from plastic can be useful for people but bad for the planet. Some plastics can last for a long time without wearing out, and can be difficult to get rid of when they are not needed. They can remain in rubbish dumps called landfill sites for hundreds of years. Landfills can be smelly, ugly, and harmful to our planet.\n\nRecycling is a good way to get rid of unwanted plastics. Recycled waste materials can be used again to make new products. This can be difficult as different types of plastic need to be recycled in different ways. Some kinds of plastics can be melted down and used to make new things such as bags and bottles. Others can be made into fibres (strands of material) for clothing.\n\nAnother way to protect the environment is to use canvas bags for shopping rather than plastic ones. A lot of plastic objects can also be reused. Plastic bottles can be refilled many times, rather than throwing them away once they are empty. Unwanted plastic goods such as CDs and toys can be sold or given away to charity shops.\n(Adapted from: esolcourses.com)",
+              "prompt": "Question 24. According to the passage, which of the following is TRUE?",
+              "options": [
+                "A. Plastic objects are useful for people without negative impacts.",
+                "B. Plastics and plastic objects can be thrown away to tidy the room.",
+                "C. Plastics and plastic objects can be recycled or reused.",
+                "D. Some kinds of plastics can be melted down, then released into the river."
+              ],
+              "answer": 2,
+              "explanation": "Đoạn 3 và 4 nêu rõ các giải pháp tái chế (recycled) và tái sử dụng (reused) đồ nhựa.",
+              "num": 24,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r25",
+              "section": "II. READING: Plastic & Environment",
+              "passage": "PLASTIC AND THE ENVIRONMENT\nPlastic is a material we use every day. The first plastics were made more than 100 years ago from parts of plants. Plastics are now made from oil, coal and natural gas. We are using up these things so fast that the Earth’s supplies may run out. Because of this, scientists are investigating new ideas for making plastics from plants such as sweet potato, bamboo and flax.\n\nThings made from plastic can be useful for people but bad for the planet. Some plastics can last for a long time without wearing out, and can be difficult to get rid of when they are not needed. They can remain in rubbish dumps called landfill sites for hundreds of years. Landfills can be smelly, ugly, and harmful to our planet.\n\nRecycling is a good way to get rid of unwanted plastics. Recycled waste materials can be used again to make new products. This can be difficult as different types of plastic need to be recycled in different ways. Some kinds of plastics can be melted down and used to make new things such as bags and bottles. Others can be made into fibres (strands of material) for clothing.\n\nAnother way to protect the environment is to use canvas bags for shopping rather than plastic ones. A lot of plastic objects can also be reused. Plastic bottles can be refilled many times, rather than throwing them away once they are empty. Unwanted plastic goods such as CDs and toys can be sold or given away to charity shops.\n(Adapted from: esolcourses.com)",
+              "prompt": "Question 25. What is the passage mainly about?",
+              "options": [
+                "A. The history of plastic and its usefulness",
+                "B. Materials that plastic is made of",
+                "C. Plastic: effects and solutions to the problem",
+                "D. The ways to reduce the harm of plastics on the environment"
+              ],
+              "answer": 2,
+              "explanation": "Bài đọc trình bày về tác hại của đồ nhựa và các giải pháp giải quyết vấn đề (tái chế, tái sử dụng, vật liệu thay thế).",
+              "num": 25,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r26",
+              "section": "II. READING: Community Service",
+              "passage": "VOLUNTEERS NEEDED IN MAI CHÂU – HOÀ BÌNH\nV.E.O would like to connects people who want to give a helping hand in volunteering for education in the breathtaking mountainous region of Mai Châu. Our focus is on providing informal education and essential skill development for local communities, with special attention to supporting the poor and disadvantaged in remote areas. We need help from both local and international volunteers to train community members in practical new skills and modern approaches through hands-on, daily tasks. A core part of our mission involves providing engaging English language classes and vibrant cultural activities for local children, fostering both education and joy.\n\nThis program is a great way to get involved in meaningful community service while experiencing authentic travel. International volunteers will gain a deep, personal understanding of Vietnam's rich culture through daily interaction and have opportunities to explore the country's stunning natural landscapes on weekends. You will live and work within the community, sharing meals and stories, for a truly unforgettable cultural exchange.\n\nProgram Details:\nTime length: One week (available all year round).\nMinimum Age: 15+\nPrice includes: Accommodation, transportation (to/ from the project site and your accommodation), meals featuring local Vietnamese cuisine, beginner Vietnamese language lessons, 24-hour emergency assistance, airport pick-up upon arrival in Hanoi, and a formal participation certificate.\nPrice excludes: Việt Nam visa cost, mandatory international medical insurance, and international flights to/from Hanoi.\nExtras provided: umbrella, sun cream, and T-shirt.\n(Adapted from English Discovery 10 – workbook)",
+              "prompt": "Question 26. What is the main idea of the passage?",
+              "options": [
+                "A. The promotion of a luxury travel tour to the mountainous region of Mai Châu.",
+                "B. The recruitment of volunteers for a program in Mai Châu.",
+                "C. A request for financial donations for the construction in Hòa Bình.",
+                "D. The advertisement of a Vietnamese language course."
+              ],
+              "answer": 1,
+              "explanation": "Toàn văn bản là thông báo tuyển tình nguyện viên tham gia dự án tại Mai Châu ('VOLUNTEERS NEEDED IN MAI CHÂU – HOÀ BÌNH').",
+              "num": 26,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r27",
+              "section": "II. READING: Community Service",
+              "passage": "VOLUNTEERS NEEDED IN MAI CHÂU – HOÀ BÌNH\nV.E.O would like to connects people who want to give a helping hand in volunteering for education in the breathtaking mountainous region of Mai Châu. Our focus is on providing informal education and essential skill development for local communities, with special attention to supporting the poor and disadvantaged in remote areas. We need help from both local and international volunteers to train community members in practical new skills and modern approaches through hands-on, daily tasks. A core part of our mission involves providing engaging English language classes and vibrant cultural activities for local children, fostering both education and joy.\n\nThis program is a great way to get involved in meaningful community service while experiencing authentic travel. International volunteers will gain a deep, personal understanding of Vietnam's rich culture through daily interaction and have opportunities to explore the country's stunning natural landscapes on weekends. You will live and work within the community, sharing meals and stories, for a truly unforgettable cultural exchange.\n\nProgram Details:\nTime length: One week (available all year round).\nMinimum Age: 15+\nPrice includes: Accommodation, transportation (to/ from the project site and your accommodation), meals featuring local Vietnamese cuisine, beginner Vietnamese language lessons, 24-hour emergency assistance, airport pick-up upon arrival in Hanoi, and a formal participation certificate.\nPrice excludes: Việt Nam visa cost, mandatory international medical insurance, and international flights to/from Hanoi.\nExtras provided: umbrella, sun cream, and T-shirt.\n(Adapted from English Discovery 10 – workbook)",
+              "prompt": "Question 27. According to paragraph 1, V.E.O calls for volunteers to help _________.",
+              "options": [
+                "A. sick people",
+                "B. the needy",
+                "C. people in remote areas",
+                "D. disadvantaged children"
+              ],
+              "answer": 1,
+              "explanation": "Đoạn 1 nêu: 'with special attention to supporting the poor and disadvantaged in remote areas' -> 'the needy' (những người có hoàn cảnh khó khăn).",
+              "num": 27,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r28",
+              "section": "II. READING: Community Service",
+              "passage": "VOLUNTEERS NEEDED IN MAI CHÂU – HOÀ BÌNH\nV.E.O would like to connects people who want to give a helping hand in volunteering for education in the breathtaking mountainous region of Mai Châu. Our focus is on providing informal education and essential skill development for local communities, with special attention to supporting the poor and disadvantaged in remote areas. We need help from both local and international volunteers to train community members in practical new skills and modern approaches through hands-on, daily tasks. A core part of our mission involves providing engaging English language classes and vibrant cultural activities for local children, fostering both education and joy.\n\nThis program is a great way to get involved in meaningful community service while experiencing authentic travel. International volunteers will gain a deep, personal understanding of Vietnam's rich culture through daily interaction and have opportunities to explore the country's stunning natural landscapes on weekends. You will live and work within the community, sharing meals and stories, for a truly unforgettable cultural exchange.\n\nProgram Details:\nTime length: One week (available all year round).\nMinimum Age: 15+\nPrice includes: Accommodation, transportation (to/ from the project site and your accommodation), meals featuring local Vietnamese cuisine, beginner Vietnamese language lessons, 24-hour emergency assistance, airport pick-up upon arrival in Hanoi, and a formal participation certificate.\nPrice excludes: Việt Nam visa cost, mandatory international medical insurance, and international flights to/from Hanoi.\nExtras provided: umbrella, sun cream, and T-shirt.\n(Adapted from English Discovery 10 – workbook)",
+              "prompt": "Question 28. The word “hands-on” in paragraph 1 is OPPOSITE in meaning to _________.",
+              "options": [
+                "A. practical",
+                "B. active",
+                "C. unrealistic",
+                "D. realistic"
+              ],
+              "answer": 2,
+              "explanation": "'hands-on' nghĩa là thực tế, thực hành; từ trái nghĩa là 'unrealistic' (không thực tế).",
+              "num": 28,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r29",
+              "section": "II. READING: Community Service",
+              "passage": "VOLUNTEERS NEEDED IN MAI CHÂU – HOÀ BÌNH\nV.E.O would like to connects people who want to give a helping hand in volunteering for education in the breathtaking mountainous region of Mai Châu. Our focus is on providing informal education and essential skill development for local communities, with special attention to supporting the poor and disadvantaged in remote areas. We need help from both local and international volunteers to train community members in practical new skills and modern approaches through hands-on, daily tasks. A core part of our mission involves providing engaging English language classes and vibrant cultural activities for local children, fostering both education and joy.\n\nThis program is a great way to get involved in meaningful community service while experiencing authentic travel. International volunteers will gain a deep, personal understanding of Vietnam's rich culture through daily interaction and have opportunities to explore the country's stunning natural landscapes on weekends. You will live and work within the community, sharing meals and stories, for a truly unforgettable cultural exchange.\n\nProgram Details:\nTime length: One week (available all year round).\nMinimum Age: 15+\nPrice includes: Accommodation, transportation (to/ from the project site and your accommodation), meals featuring local Vietnamese cuisine, beginner Vietnamese language lessons, 24-hour emergency assistance, airport pick-up upon arrival in Hanoi, and a formal participation certificate.\nPrice excludes: Việt Nam visa cost, mandatory international medical insurance, and international flights to/from Hanoi.\nExtras provided: umbrella, sun cream, and T-shirt.\n(Adapted from English Discovery 10 – workbook)",
+              "prompt": "Question 29. The phrase “This program” in paragraph 2 refers to _________.",
+              "options": [
+                "A. the volunteer opportunity in Mai Châu organized by V.E.O",
+                "B. the English language classes for children",
+                "C. the skill development for local communities",
+                "D. exploring Vietnam's natural landscapes on weekends"
+              ],
+              "answer": 0,
+              "explanation": "'This program' đại diện cho toàn bộ chương trình tình nguyện tại Mai Châu do V.E.O tổ chức.",
+              "num": 29,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r30",
+              "section": "II. READING: Community Service",
+              "passage": "VOLUNTEERS NEEDED IN MAI CHÂU – HOÀ BÌNH\nV.E.O would like to connects people who want to give a helping hand in volunteering for education in the breathtaking mountainous region of Mai Châu. Our focus is on providing informal education and essential skill development for local communities, with special attention to supporting the poor and disadvantaged in remote areas. We need help from both local and international volunteers to train community members in practical new skills and modern approaches through hands-on, daily tasks. A core part of our mission involves providing engaging English language classes and vibrant cultural activities for local children, fostering both education and joy.\n\nThis program is a great way to get involved in meaningful community service while experiencing authentic travel. International volunteers will gain a deep, personal understanding of Vietnam's rich culture through daily interaction and have opportunities to explore the country's stunning natural landscapes on weekends. You will live and work within the community, sharing meals and stories, for a truly unforgettable cultural exchange.\n\nProgram Details:\nTime length: One week (available all year round).\nMinimum Age: 15+\nPrice includes: Accommodation, transportation (to/ from the project site and your accommodation), meals featuring local Vietnamese cuisine, beginner Vietnamese language lessons, 24-hour emergency assistance, airport pick-up upon arrival in Hanoi, and a formal participation certificate.\nPrice excludes: Việt Nam visa cost, mandatory international medical insurance, and international flights to/from Hanoi.\nExtras provided: umbrella, sun cream, and T-shirt.\n(Adapted from English Discovery 10 – workbook)",
+              "prompt": "Question 30. It can be inferred from the passage that _________.",
+              "options": [
+                "A. The program is fully funded, so volunteers do not have to pay for anything.",
+                "B. Volunteers must pay for their own airfare to reach Vietnam.",
+                "C. The program fully covers the cost of the visa to enter Vietnam.",
+                "D. Volunteers are required to pay extra for accommodation and meals."
+              ],
+              "answer": 1,
+              "explanation": "Mục 'Price excludes: international flights to/from Hanoi' cho thấy tình nguyện viên phải tự chi trả vé máy bay đến Việt Nam.",
+              "num": 30,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r31",
+              "section": "II. READING: 3R Model",
+              "passage": "The 3R model, which stands for Reduce – Reuse – Recycle, is considered one of the most effective methods for protecting the environment. In today’s world, pollution and the overuse of natural resources are becoming serious problems. For this reason, many countries have adopted the 3R approach as a solution. Its main purpose is to reduce waste, make better use of products, and transform discarded materials into useful items. This model is not only simple to understand but also practical to apply in daily life.\n\nThe first step of the model is Reduce, which means limiting the amount of waste produced. People can do this by buying fewer unnecessary items, choosing products with less packaging, and using energy efficiently. The second step is Reuse. Instead of throwing things away after one use, people can reuse bottles, bags, or clothes, or find new purposes for them. This helps to extend the life of objects. The final step is Recycle, which refers to processing waste materials into new products. Recycling not only saves raw materials but also reduces the need for landfill space.\n\nWhen combined, these three steps bring many benefits to both society and the environment. Firstly, they help to reduce pollution, making the air, soil, and water cleaner. Secondly, they support the economy by saving costs and creating opportunities in the recycling industry. Furthermore, the 3R model encourages people to think more carefully about their daily choices and take responsibility for protecting nature. In the long term, these actions can also create jobs and improve community well-being.\n\nIn summary, the 3R model offers a clear and practical way to move towards sustainable development. Each of its steps—reducing, reusing, and recycling—plays an important role, but they are most effective when practiced together. If individuals, communities, and governments apply this model consistently, the pressure on natural resources will decrease, and future generations will enjoy a cleaner and healthier environment. Therefore, adopting the 3R principles should be seen as a shared duty for everyone.\n(Adapted from mdi.vn)",
+              "prompt": "Question 31. The phrase “raw materials” in paragraph 2 could best be replaced by _______.",
+              "options": [
+                "A. electrical home devices",
+                "B. basic natural resources",
+                "C. processed chemical waste",
+                "D. important digital files"
+              ],
+              "answer": 1,
+              "explanation": "'raw materials' (nguyên liệu thô) tương đương với 'basic natural resources' (tài nguyên thiên nhiên cơ bản).",
+              "num": 31,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r32",
+              "section": "II. READING: 3R Model",
+              "passage": "The 3R model, which stands for Reduce – Reuse – Recycle, is considered one of the most effective methods for protecting the environment. In today’s world, pollution and the overuse of natural resources are becoming serious problems. For this reason, many countries have adopted the 3R approach as a solution. Its main purpose is to reduce waste, make better use of products, and transform discarded materials into useful items. This model is not only simple to understand but also practical to apply in daily life.\n\nThe first step of the model is Reduce, which means limiting the amount of waste produced. People can do this by buying fewer unnecessary items, choosing products with less packaging, and using energy efficiently. The second step is Reuse. Instead of throwing things away after one use, people can reuse bottles, bags, or clothes, or find new purposes for them. This helps to extend the life of objects. The final step is Recycle, which refers to processing waste materials into new products. Recycling not only saves raw materials but also reduces the need for landfill space.\n\nWhen combined, these three steps bring many benefits to both society and the environment. Firstly, they help to reduce pollution, making the air, soil, and water cleaner. Secondly, they support the economy by saving costs and creating opportunities in the recycling industry. Furthermore, the 3R model encourages people to think more carefully about their daily choices and take responsibility for protecting nature. In the long term, these actions can also create jobs and improve community well-being.\n\nIn summary, the 3R model offers a clear and practical way to move towards sustainable development. Each of its steps—reducing, reusing, and recycling—plays an important role, but they are most effective when practiced together. If individuals, communities, and governments apply this model consistently, the pressure on natural resources will decrease, and future generations will enjoy a cleaner and healthier environment. Therefore, adopting the 3R principles should be seen as a shared duty for everyone.\n(Adapted from mdi.vn)",
+              "prompt": "Question 32. According to the passage, which benefits does the “Recycle” step bring?",
+              "options": [
+                "A. It extends the life of objects and encourages buying fewer items.",
+                "B. It saves raw materials and reduces the need for landfill space.",
+                "C. It makes air and soil cleaner and supports the economy.",
+                "D. It limits waste production and makes better use of products."
+              ],
+              "answer": 1,
+              "explanation": "Đoạn 2 nêu rõ: 'Recycling not only saves raw materials but also reduces the need for landfill space'.",
+              "num": 32,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r33",
+              "section": "II. READING: 3R Model",
+              "passage": "The 3R model, which stands for Reduce – Reuse – Recycle, is considered one of the most effective methods for protecting the environment. In today’s world, pollution and the overuse of natural resources are becoming serious problems. For this reason, many countries have adopted the 3R approach as a solution. Its main purpose is to reduce waste, make better use of products, and transform discarded materials into useful items. This model is not only simple to understand but also practical to apply in daily life.\n\nThe first step of the model is Reduce, which means limiting the amount of waste produced. People can do this by buying fewer unnecessary items, choosing products with less packaging, and using energy efficiently. The second step is Reuse. Instead of throwing things away after one use, people can reuse bottles, bags, or clothes, or find new purposes for them. This helps to extend the life of objects. The final step is Recycle, which refers to processing waste materials into new products. Recycling not only saves raw materials but also reduces the need for landfill space.\n\nWhen combined, these three steps bring many benefits to both society and the environment. Firstly, they help to reduce pollution, making the air, soil, and water cleaner. Secondly, they support the economy by saving costs and creating opportunities in the recycling industry. Furthermore, the 3R model encourages people to think more carefully about their daily choices and take responsibility for protecting nature. In the long term, these actions can also create jobs and improve community well-being.\n\nIn summary, the 3R model offers a clear and practical way to move towards sustainable development. Each of its steps—reducing, reusing, and recycling—plays an important role, but they are most effective when practiced together. If individuals, communities, and governments apply this model consistently, the pressure on natural resources will decrease, and future generations will enjoy a cleaner and healthier environment. Therefore, adopting the 3R principles should be seen as a shared duty for everyone.\n(Adapted from mdi.vn)",
+              "prompt": "Question 33. The word \"they\" in paragraph 3 refers to ________.",
+              "options": [
+                "A. society",
+                "B. environment",
+                "C. steps",
+                "D. benefits"
+              ],
+              "answer": 2,
+              "explanation": "'these three steps bring many benefits... Firstly, they help to reduce pollution...': 'they' thay cho 'these three steps'.",
+              "num": 33,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r34",
+              "section": "II. READING: 3R Model",
+              "passage": "The 3R model, which stands for Reduce – Reuse – Recycle, is considered one of the most effective methods for protecting the environment. In today’s world, pollution and the overuse of natural resources are becoming serious problems. For this reason, many countries have adopted the 3R approach as a solution. Its main purpose is to reduce waste, make better use of products, and transform discarded materials into useful items. This model is not only simple to understand but also practical to apply in daily life.\n\nThe first step of the model is Reduce, which means limiting the amount of waste produced. People can do this by buying fewer unnecessary items, choosing products with less packaging, and using energy efficiently. The second step is Reuse. Instead of throwing things away after one use, people can reuse bottles, bags, or clothes, or find new purposes for them. This helps to extend the life of objects. The final step is Recycle, which refers to processing waste materials into new products. Recycling not only saves raw materials but also reduces the need for landfill space.\n\nWhen combined, these three steps bring many benefits to both society and the environment. Firstly, they help to reduce pollution, making the air, soil, and water cleaner. Secondly, they support the economy by saving costs and creating opportunities in the recycling industry. Furthermore, the 3R model encourages people to think more carefully about their daily choices and take responsibility for protecting nature. In the long term, these actions can also create jobs and improve community well-being.\n\nIn summary, the 3R model offers a clear and practical way to move towards sustainable development. Each of its steps—reducing, reusing, and recycling—plays an important role, but they are most effective when practiced together. If individuals, communities, and governments apply this model consistently, the pressure on natural resources will decrease, and future generations will enjoy a cleaner and healthier environment. Therefore, adopting the 3R principles should be seen as a shared duty for everyone.\n(Adapted from mdi.vn)",
+              "prompt": "Question 34. According to the passage, which of the following is NOT mentioned as one of the benefits of the 3R model?",
+              "options": [
+                "A. It helps reduce pollution and makes the environment cleaner.",
+                "B. It creates opportunities in the recycling industry and saves costs.",
+                "C. It improves community well-being and provides new job chances.",
+                "D. It reduces stress and encourages old people to live longer lives."
+              ],
+              "answer": 3,
+              "explanation": "Bài đọc không hề đề cập đến việc giảm căng thẳng hay giúp người già sống thọ hơn (D).",
+              "num": 34,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r35",
+              "section": "II. READING: 3R Model",
+              "passage": "The 3R model, which stands for Reduce – Reuse – Recycle, is considered one of the most effective methods for protecting the environment. In today’s world, pollution and the overuse of natural resources are becoming serious problems. For this reason, many countries have adopted the 3R approach as a solution. Its main purpose is to reduce waste, make better use of products, and transform discarded materials into useful items. This model is not only simple to understand but also practical to apply in daily life.\n\nThe first step of the model is Reduce, which means limiting the amount of waste produced. People can do this by buying fewer unnecessary items, choosing products with less packaging, and using energy efficiently. The second step is Reuse. Instead of throwing things away after one use, people can reuse bottles, bags, or clothes, or find new purposes for them. This helps to extend the life of objects. The final step is Recycle, which refers to processing waste materials into new products. Recycling not only saves raw materials but also reduces the need for landfill space.\n\nWhen combined, these three steps bring many benefits to both society and the environment. Firstly, they help to reduce pollution, making the air, soil, and water cleaner. Secondly, they support the economy by saving costs and creating opportunities in the recycling industry. Furthermore, the 3R model encourages people to think more carefully about their daily choices and take responsibility for protecting nature. In the long term, these actions can also create jobs and improve community well-being.\n\nIn summary, the 3R model offers a clear and practical way to move towards sustainable development. Each of its steps—reducing, reusing, and recycling—plays an important role, but they are most effective when practiced together. If individuals, communities, and governments apply this model consistently, the pressure on natural resources will decrease, and future generations will enjoy a cleaner and healthier environment. Therefore, adopting the 3R principles should be seen as a shared duty for everyone.\n(Adapted from mdi.vn)",
+              "prompt": "Question 35. In which part of the passage does the writer mention the purpose of the 3R model?",
+              "options": [
+                "A. Paragraph 1",
+                "B. Paragraph 2",
+                "C. Paragraph 3",
+                "D. Paragraph 4"
+              ],
+              "answer": 0,
+              "explanation": "Đoạn 1 nêu: 'Its main purpose is to reduce waste, make better use of products, and transform discarded materials into useful items'.",
+              "num": 35,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r36",
+              "section": "II. READING: Vietnamese Culture",
+              "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+              "prompt": "Question 36. According to paragraph 2, Cải Lương became popular because ______.",
+              "options": [
+                "A. it mixed melodies and stories to attract audiences",
+                "B. it included Western drama with historical traditions",
+                "C. it avoided serious subjects and only showed comedies",
+                "D. it focused on legends that inspired foreign performers"
+              ],
+              "answer": 0,
+              "explanation": "Đoạn 2 nêu: 'It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories'.",
+              "num": 36,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r37",
+              "section": "II. READING: Vietnamese Culture",
+              "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+              "prompt": "Question 37. Which of the following best summarises paragraph 4?",
+              "options": [
+                "A. Audiences prefer the lighter rhythms of modern Cải Lương because ancient forms are too serious for them.",
+                "B. Traditional Vietnamese instruments are used in Cải Lương performances that highlight stories of heroes and romances.",
+                "C. Cải Lương has both ancient and modern types, with contrasting themes and different accompanying musical styles.",
+                "D. French colonial influence changed Cải Lương by adding romance, social themes, and modern musical expressions."
+              ],
+              "answer": 2,
+              "explanation": "Đoạn 4 tóm tắt sự phân chia thành hai loại chính: tuồng tích cổ và xã hội hiện đại, với chủ đề và phong cách âm nhạc tương phản.",
+              "num": 37,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r38",
+              "section": "II. READING: Vietnamese Culture",
+              "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+              "prompt": "Question 38. Which of the following is NOT mentioned as a musical instrument in Cải Lương?",
+              "options": [
+                "A. đàn tranh with sixteen strings",
+                "B. đàn bầu with single string",
+                "C. piano with classical chords",
+                "D. guitar with special sounds"
+              ],
+              "answer": 2,
+              "explanation": "Đoạn 3 nhắc đến đàn tranh, đàn bầu và guitar, hoàn toàn không nhắc đến đàn piano (C).",
+              "num": 38,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r39",
+              "section": "II. READING: Vietnamese Culture",
+              "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+              "prompt": "Question 39. The word “melody” in paragraph 3 mostly means ______.",
+              "options": [
+                "A. sequence of pleasant sounds",
+                "B. structure of dramatic scenes",
+                "C. influence of historical figures",
+                "D. direction of emotional stories"
+              ],
+              "answer": 0,
+              "explanation": "'melody' (giai điệu) nghĩa là một chuỗi các âm thanh dễ chịu, du dương (= sequence of pleasant sounds).",
+              "num": 39,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r40",
+              "section": "II. READING: Vietnamese Culture",
+              "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+              "prompt": "Question 40. The word “it” in paragraph 2 refers to __________.",
+              "options": [
+                "A. musical theatre",
+                "B. French colonialism",
+                "C. Vietnamese history",
+                "D. middle class life"
+              ],
+              "answer": 0,
+              "explanation": "'Over time, this musical theatre became not only a form of entertainment... Today, although it faces competition...': 'it' thay cho Cải Lương / 'this musical theatre'.",
+              "num": 40,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r41",
+              "section": "II. READING: Vietnamese Culture",
+              "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+              "prompt": "Question 41. Which of the following best paraphrases the sentence: \"When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\"?",
+              "options": [
+                "A. Vọng cổ performances are often promoted because of complex melodies.",
+                "B. Musicians usually use vọng cổ because audiences enjoy it deeply.",
+                "C. The opening rhythm of vọng cổ usually moves listeners emotionally.",
+                "D. The notes of vọng cổ encourage actors to remember musical training."
+              ],
+              "answer": 2,
+              "explanation": "Câu viết lại chính xác: 'Những nốt nhạc mở đầu của vọng cổ thường lay động người nghe một cách sâu sắc về mặt cảm xúc'.",
+              "num": 41,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r42",
+              "section": "II. READING: Vietnamese Culture",
+              "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+              "prompt": "Question 42. According to the passage, modern Cải Lương often ______.",
+              "options": [
+                "A. describes everyday life and social issues",
+                "B. describes heroic kings and national warriors",
+                "C. highlights Chinese legends and tragic battles",
+                "D. focuses only on serious family tragedies"
+              ],
+              "answer": 0,
+              "explanation": "Đoạn 4 nêu: 'In contrast, modern Cải Lương focuses on daily life, romance, and social problems'.",
+              "num": 42,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_r43",
+              "section": "II. READING: Vietnamese Culture",
+              "passage": "Cải Lương, often translated as “reformed theatre,” is one of the most distinctive musical art forms in Vietnam. It is a type of folk opera that grew in Southern Vietnam during the early 20th century. What makes Cải Lương special is the way it blends different musical and theatrical traditions. It combines southern folk songs, classical Vietnamese music, and tuồng (a Chinese-influenced opera) with spoken drama. [I]\n\nHistorically, Cải Lương developed during French colonial times and reached its peak popularity in the 1930s. [II] It quickly attracted the attention of the middle class, who enjoyed its rich melodies and emotional stories. Over time, this musical theatre became not only a form of entertainment but also a cultural symbol that reflects the values and lifestyle of the Vietnamese people. Today, although it faces competition from modern entertainment, Cải Lương still holds a special place in Vietnam’s musical heritage.\n\nA typical Cải Lương performance is full of musical variety. The most famous element is the singing of vọng cổ, a style that means “nostalgia for the past.” This song is usually performed in slow, emotional rhythms that touch the hearts of the listeners. The melody is supported by traditional instruments such as the đàn tranh (16-string zither), đàn bầu (monochord), and guitar. [III] These instruments provide harmony and create a soundscape that makes the performance both powerful and moving. When audiences hear the first notes of vọng cổ, they often respond with strong feelings because the music connects deeply to memory and emotion.\n\nThe themes of Cải Lương also add musical richness. There are two main types: ancient and modern. Ancient Cải Lương often tells stories of history, legends, and heroic figures, which are accompanied by solemn and dramatic music. In contrast, modern Cải Lương focuses on daily life, romance, and social problems. The music in these plays is lighter and sometimes more playful, but it can also carry a tragic tone when the story is serious. Whether happy or sad, the rhythm and harmony of the songs help the audience to follow the emotions of the characters. [IV]\n\nAlthough more than one hundred years have passed since its creation, Cải Lương remains a meaningful part of Vietnam’s musical culture. It continues to be performed on stages in Ho Chi Minh City and other southern provinces, and it is also shown on television programs. For anyone interested in music and culture, watching a Cải Lương play is not only an entertaining experience but also a way to explore Vietnamese history, tradition, and identity through melody, rhythm, and performance.\n(Adapted from vietnamdiscovery.com)",
+              "prompt": "Question 43. Where in the passage does the following sentence best fit?<br>“This musical mixture creates a performance that feels both traditional and modern, making it easier for the audience to enjoy and understand.”",
+              "options": [
+                "A. [IV]",
+                "B. [III]",
+                "C. [II]",
+                "D. [I]"
+              ],
+              "answer": 3,
+              "explanation": "Vị trí [I] sau đoạn 1 miêu tả sự pha trộn các dòng nhạc ('blends different musical and theatrical traditions... combines southern folk songs, classical Vietnamese music, and tuồng with spoken drama') -> câu trên giải thích tác dụng của 'This musical mixture'.",
+              "num": 43,
+              "type": "mcq"
+            }
+          ]
+        },
+        {
+          "id": "g10_write",
+          "title": "Phần IV: Kỹ Năng Viết — Writing Skills",
+          "subtitle": "17 câu: Sắp xếp hội thoại/đoạn văn & Viết lại câu",
+          "duration_minutes": 30,
+          "items": [
+            {
+              "id": "g10_gk1_w01",
+              "section": "IV. WRITING: Arrangement",
+              "prompt": "Question 1. Mark the letter A, B, C, or D to indicate the correct arrangement of sentences to make a meaningful exchange:<br>a. Lan: Maybe I can help you. What windows do you need to clean?<br>b. Nam: Can you help me clean these windows? I can’t stand cleaning windows.<br>c. Nam: I need to clean the windows in front of the house. I’ve already done the ones in the back of the house.",
+              "options": [
+                "A. a – b – c",
+                "B. c – b – a",
+                "C. b – a – c",
+                "D. c – a – b"
+              ],
+              "answer": 2,
+              "explanation": "Nam nhờ vả (b) -> Lan đồng ý và hỏi cần lau cửa nào (a) -> Nam chỉ rõ vị trí cửa sổ (c).",
+              "num": 1,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_w02",
+              "section": "IV. WRITING: Arrangement",
+              "prompt": "Question 2. Mark the letter A, B, C, or D to indicate the correct arrangement of sentences to make a meaningful exchange:<br>a. Anna: Hi! How have you been? How’s your family?<br>b. John: Hey! I’ve been good, thanks. My parents are doing well, and my sister just started college. How about your family?<br>c. Anna: That’s great to hear! My family is good too — my brother just got a new job, so we’re all excited.",
+              "options": [
+                "A. a – b – c",
+                "B. c – a – b",
+                "C. b – c – a",
+                "D. a – c – b"
+              ],
+              "answer": 0,
+              "explanation": "Anna chào hỏi thăm gia đình (a) -> John đáp và hỏi lại (b) -> Anna hào hứng chia sẻ về gia đình mình (c).",
+              "num": 2,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_w03",
+              "section": "IV. WRITING: Arrangement",
+              "prompt": "Question 3. Mark the letter A, B, C, or D to indicate the correct arrangement of sentences to make a meaningful exchange:<br>a. Son: That’s a great idea! I can also make a birthday card for her.<br>b. Son: Dad, Mom’s birthday is this weekend. Should we do something special for her?<br>c. Father: Yes, definitely. I was thinking we could cook her favorite meal and buy her a nice gift.",
+              "options": [
+                "A. b – c – a",
+                "B. c – b – a",
+                "C. b – a – c",
+                "D. a – b – c"
+              ],
+              "answer": 0,
+              "explanation": "Con trai nhắc ngày sinh nhật mẹ và hỏi ý kiến bố (b) -> Bố gợi ý nấu ăn và tặng quà (c) -> Con trai khen ý tưởng và đề nghị làm thiệp (a).",
+              "num": 3,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_w04",
+              "section": "IV. WRITING: Arrangement",
+              "prompt": "Question 4. Mark the letter A, B, C, or D to indicate the correct arrangement of sentences to make a meaningful exchange:<br>a. Daughter: I agree. It will also give us more time to relax together.<br>b. Mother: That would be wonderful. It’s important that we all share the chores to keep the house clean.<br>c. Mother: That’s very responsible of you! You could start by doing the dishes after dinner and helping with the laundry on weekends.<br>d. Daughter: Mom, I feel like I should help more around the house. What can I do to help?<br>e. Daughter: That sounds fair. I can also vacuum the living room twice a week.",
+              "options": [
+                "A. d – b – a – e – c",
+                "B. d – b – a – c – e",
+                "C. a – b – c – d – e",
+                "D. d – c – e – b – a"
+              ],
+              "answer": 3,
+              "explanation": "Con gái chủ động đề nghị giúp đỡ việc nhà (d) -> Mẹ gợi ý rửa bát và giặt đồ (c) -> Con đồng ý và nhận thêm hút bụi (e) -> Mẹ vui mừng khen ngợi việc cùng chia sẻ việc nhà (b) -> Con đồng tình rằng sẽ có nhiều thời gian nghỉ ngơi cùng nhau (a).",
+              "num": 4,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_w05",
+              "section": "IV. WRITING: Arrangement",
+              "prompt": "Question 5. Mark the letter A, B, C, or D to indicate the correct arrangement to make a meaningful letter:<br>Hi Emily,<br>I hope you're doing well. I wanted to share something personal with you because I trust you.<br>a. Lately, I’ve been feeling a bit sad because my parents are not getting along. They argue a lot, and it’s making things really difficult at home.<br>b. Thanks for listening. I hope we can meet this weekend, maybe talking in person would help.<br>c. It’s hard to concentrate at school, and I don’t really feel like talking to anyone about it. I just needed to tell someone, and I thought of you.<br>d. Have you ever been through something like this? If you have any advice, I’d really appreciate it.<br>e. I’m not sure what’s going to happen, but I’m scared they might separate.<br>Take care, Anna",
+              "options": [
+                "A. e – a – c – d – b",
+                "B. a – e – c – d – b",
+                "C. e – d – a – c – b",
+                "D. a – d – c – e – b"
+              ],
+              "answer": 1,
+              "explanation": "Anna tâm sự bố mẹ cãi nhau (a) -> sợ bố mẹ ly hôn (e) -> ảnh hưởng tâm lý và việc học ở trường (c) -> hỏi xin lời khuyên của bạn (d) -> cảm ơn và hẹn gặp (b).",
+              "num": 5,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_w06",
+              "section": "IV. WRITING: Arrangement",
+              "prompt": "Question 6. Mark the letter A, B, C, or D to indicate the correct arrangement to make a meaningful paragraph:<br>a. This not only reduces stress for parents but also teaches children how to work as part of a team.<br>b. When children take part in tasks like washing dishes, doing laundry, or sweeping the floor, they learn responsibility and important life skills.<br>c. Although housework may not always be enjoyable, it brings the family closer and builds respect for one another.<br>d. In a family, it is important that everyone helps with household chores so the home stays clean and organized.<br>e. Doing chores together can also be a great time for family members to talk, share stories, and strengthen their bond.",
+              "options": [
+                "A. b – d – a – c – e",
+                "B. d – e – b – a – c",
+                "C. d – b – a – e – c",
+                "D. b – a – d – c – e"
+              ],
+              "answer": 2,
+              "explanation": "d (Câu chủ đề: Mọi người cần giúp việc nhà) -> b (Khi trẻ làm việc nhà sẽ học được tính trách nhiệm) -> a (Điều này giảm áp lực cho bố mẹ và dạy kỹ năng làm việc nhóm) -> e (Cùng làm việc nhà giúp gắn kết) -> c (Kết luận: việc nhà đem lại sự gần gũi và tôn trọng lẫn nhau).",
+              "num": 6,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_w07",
+              "section": "IV. WRITING: Arrangement",
+              "prompt": "Question 7. Mark the letter A, B, C, or D to indicate the correct arrangement to make a meaningful paragraph:<br>a. Music strongly influences the human mind because it can shape both our emotions and our thoughts.<br>b. When people listen to gentle melodies, they often experience a sense of calm, which reduces stress and helps them think more clearly.<br>c. For these reasons, music is more than entertainment; it is also a powerful tool for emotional balance and mental growth.<br>d. However, upbeat and energetic songs create a different effect, since they boost motivation and encourage people to stay active.<br>e. This clear state of mind is useful for studying or working, as soft background music can improve focus and productivity.",
+              "options": [
+                "A. e – a – b – d – c",
+                "B. a – b – d – c – e",
+                "C. a – b – e – d – c",
+                "D. e – d – b – a – c"
+              ],
+              "answer": 2,
+              "explanation": "a (Câu chủ đề: Âm nhạc tác động mạnh đến tâm trí) -> b (Giai điệu nhẹ nhàng giúp thư thái, bình tĩnh) -> e (Tâm trí sáng suốt này giúp ích cho học tập, làm việc) -> d (Ngược lại, nhạc sôi động giúp tăng động lực) -> c (Kết luận: âm nhạc là công cụ cân bằng cảm xúc).",
+              "num": 7,
+              "type": "mcq"
+            },
+            {
+              "id": "g10_gk1_w08",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence so that it means the same as the sentence before it:<br><b>1. Alex was instructing all the workers of the company.</b><br>All the workers ____________________",
+              "model_answers": [
+                "All the workers of the company were being instructed by Alex.",
+                "All the workers were being instructed by Alex."
+              ],
+              "explanation": "Câu bị động thì Quá khứ tiếp diễn: 'was/were + being + V3/ed'. Đáp án: 'All the workers of the company were being instructed by Alex.'",
+              "num": 8
+            },
+            {
+              "id": "g10_gk1_w09",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence so that it means the same as the sentence before it:<br><b>2. My mother lets me go out with my friends on Sundays.</b><br>My mother allows me ____________________",
+              "model_answers": [
+                "My mother allows me to go out with my friends on Sundays."
+              ],
+              "explanation": "Cấu trúc: 'let someone + V-bare' = 'allow someone + to-V'. Đáp án: 'My mother allows me to go out with my friends on Sundays.'",
+              "num": 9
+            },
+            {
+              "id": "g10_gk1_w10",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence so that it means the same as the sentence before it:<br><b>3. The local people have arranged to plant more trees in the neighbourhood this weekend.</b><br>The local people are going ____________________",
+              "model_answers": [
+                "The local people are going to plant more trees in the neighbourhood this weekend."
+              ],
+              "explanation": "Diễn đạt kế hoạch đã sắp xếp dùng 'be going to + V': 'The local people are going to plant more trees in the neighbourhood this weekend.'",
+              "num": 10
+            },
+            {
+              "id": "g10_gk1_w11",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence so that it means the same as the sentence before it:<br><b>4. I advised you to prepare your lesson at home.</b><br>You had better ____________________",
+              "model_answers": [
+                "You had better prepare your lesson at home."
+              ],
+              "explanation": "Cấu trúc khuyên nhủ: 'advise someone to-V' = 'had better + V-bare'. Đáp án: 'You had better prepare your lesson at home.'",
+              "num": 11
+            },
+            {
+              "id": "g10_gk1_w12",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence so that it means the same as the sentence before it:<br><b>5. His parents don’t allow him to watch such TV shows.</b><br>His parents don’t let ____________________",
+              "model_answers": [
+                "His parents don’t let him watch such TV shows.",
+                "His parents don't let him watch such TV shows."
+              ],
+              "explanation": "'not allow someone to-V' = 'not let someone + V-bare'. Đáp án: 'His parents don’t let him watch such TV shows.'",
+              "num": 12
+            },
+            {
+              "id": "g10_gk1_w13",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence so that it means the same as the sentence before it:<br><b>6. We divide household chores equally in our family.</b><br>Household chores ____________________",
+              "model_answers": [
+                "Household chores are divided equally in our family."
+              ],
+              "explanation": "Câu bị động Hiện tại đơn: 'S + am/is/are + V3/ed': 'Household chores are divided equally in our family.'",
+              "num": 13
+            },
+            {
+              "id": "g10_gk1_w14",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence using the cue in bracket:<br><b>7. Jaine last visited her hometown 3 years ago. (has)</b><br>Jaine ____________________",
+              "model_answers": [
+                "Jaine has not visited her hometown for 3 years.",
+                "Jaine hasn't visited her hometown for 3 years."
+              ],
+              "explanation": "'last + V2 + time + ago' chuyển sang thì Hiện tại hoàn thành dạng phủ định: 'has not (hasn't) visited her hometown for 3 years.'",
+              "num": 14
+            },
+            {
+              "id": "g10_gk1_w15",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence using infinitive verb:<br><b>8. My cousin spent three hours driving to the concert hall.</b><br>It took ____________________",
+              "model_answers": [
+                "It took my cousin three hours to drive to the concert hall."
+              ],
+              "explanation": "'spend time V-ing' = 'It takes/took someone + time + to-V'. Đáp án: 'It took my cousin three hours to drive to the concert hall.'",
+              "num": 15
+            },
+            {
+              "id": "g10_gk1_w16",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Combine the two sentences using 'When':<br><b>9. Nick and Judy were arguing about the case. Chief Bogo called them. (called)</b><br>When ____________________",
+              "model_answers": [
+                "When Chief Bogo called them, Nick and Judy were arguing about the case.",
+                "When Nick and Judy were arguing about the case, Chief Bogo called them."
+              ],
+              "explanation": "Hành động đang xảy ra (Quá khứ tiếp diễn) thì hành động khác xen vào (Quá khứ đơn): 'When Chief Bogo called them, Nick and Judy were arguing about the case.'",
+              "num": 16
+            },
+            {
+              "id": "g10_gk1_w17",
+              "section": "IV. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Change into passive voice:<br><b>10. A small company introduced the first e-reader in 1999.</b><br>The first ____________________",
+              "model_answers": [
+                "The first e-reader was introduced by a small company in 1999."
+              ],
+              "explanation": "Câu bị động Quá khứ đơn: 'was/were + V3/ed + by O': 'The first e-reader was introduced by a small company in 1999.'",
+              "num": 17
+            }
+          ]
+        }
+      ]
+    },
+    "11": {
+      "name": "Khối 11",
+      "title": "Tiếng Anh 11 · Bộ Đề Ôn Thi Giữa Kì 1 (2025–2026)",
+      "description": "Bộ 3 đề thi chuẩn định dạng mới: Phát âm, Trọng âm, Ngữ pháp, Đọc điền từ, Đọc hiểu, Sắp xếp hội thoại và Viết câu.",
+      "total_items": 84,
+      "tests": [
+        {
+          "id": "g11_t1",
+          "title": "Đề Ôn Tập Số 1 (Test 1 — Tiếng Anh 11)",
+          "subtitle": "28 câu · Có bài đọc Healthy Life & Smart Cities",
+          "duration_minutes": 60,
+          "items": [
+            {
+              "id": "t1_q01",
+              "num": 1,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. NGỮ ÂM & DẠNG RÚT GỌN",
+              "type": "binary",
+              "instruction": "Mark the letter A or B to indicate the common pronunciation of the underlined auxiliary verb.",
+              "instruction_vi": "Chọn A hoặc B để chỉ cách phát âm thông thường của trợ động từ được gạch chân.",
+              "prompt": "Can you explain how this smart sensor works?",
+              "underlined": "Can",
+              "options": [
+                "A. /kæn/",
+                "B. /kən/"
+              ],
+              "answer": 1,
+              "explanation": "Trong câu hỏi Yes/No thông thường, trợ động từ 'Can' đứng đầu câu và không nhận trọng âm nên được phát âm ở dạng yếu (weak form) là /kən/. Dạng mạnh /kæn/ chỉ dùng trong câu trả lời ngắn (Yes, I can), ở cuối mệnh đề hoặc khi cần nhấn mạnh tương phản."
+            },
+            {
+              "id": "t1_q02",
+              "num": 2,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. NGỮ ÂM & DẠNG RÚT GỌN",
+              "type": "binary",
+              "instruction": "Mark the letter A or B to indicate the full form of the underlined contraction.",
+              "instruction_vi": "Chọn A hoặc B để chỉ dạng đầy đủ của từ viết tắt được gạch chân.",
+              "prompt": "He’s lived in this eco-friendly apartment for three years.",
+              "underlined": "He’s",
+              "options": [
+                "A. He is",
+                "B. He has"
+              ],
+              "answer": 1,
+              "explanation": "Theo sau là quá khứ phân từ 'lived' cùng trạng từ thời gian 'for three years' (thì Hiện tại hoàn thành: S + have/has + V3/ed). Do đó, 'He’s' ở đây là dạng viết tắt của 'He has'."
+            },
+            {
+              "id": "t1_q03",
+              "num": 3,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. TRỌNG ÂM TỪ",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress.",
+              "instruction_vi": "Chọn từ có vị trí trọng âm chính khác với ba từ còn lại.",
+              "prompt": "Choose the word with different primary stress position:",
+              "options": [
+                "A. sensor",
+                "B. impact",
+                "C. prescribe",
+                "D. greenhouse"
+              ],
+              "answer": 2,
+              "explanation": "• sensor /ˈsen.sər/ (trọng âm rơi vào âm tiết 1)\n• impact /ˈɪm.pækt/ (danh từ, trọng âm âm tiết 1)\n• prescribe /prɪˈskraɪb/ (động từ kê đơn, trọng âm âm tiết 2)\n• greenhouse /ˈɡriːn.haʊs/ (danh từ ghép, trọng âm âm tiết 1)\n→ Đáp án đúng là C. prescribe."
+            },
+            {
+              "id": "t1_q04",
+              "num": 4,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. TRỌNG ÂM TỪ",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress.",
+              "instruction_vi": "Chọn từ có vị trí trọng âm chính khác với ba từ còn lại.",
+              "prompt": "Choose the word with different primary stress position:",
+              "options": [
+                "A. pedestrian",
+                "B. energy",
+                "C. resident",
+                "D. modernise"
+              ],
+              "answer": 0,
+              "explanation": "• pedestrian /pəˈdes.tri.ən/ (trọng âm rơi vào âm tiết 2)\n• energy /ˈen.ə.dʒi/ (trọng âm âm tiết 1)\n• resident /ˈrez.ɪ.dənt/ (trọng âm âm tiết 1)\n• modernise /ˈmɒd.ən.aɪz/ (trọng âm âm tiết 1)\n→ Đáp án đúng là A. pedestrian."
+            },
+            {
+              "id": "t1_q05",
+              "num": 5,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Regular physical exercise helps strengthen the immune system and boosts life __________.",
+              "options": [
+                "A. cycle",
+                "B. expectancy",
+                "C. insurance",
+                "D. limitation"
+              ],
+              "answer": 1,
+              "explanation": "Cụm danh từ cố định (collocation): 'life expectancy' mang nghĩa là 'tuổi thọ kỳ vọng / tuổi thọ trung bình'.\n(A. life cycle = vòng đời; C. life insurance = bảo hiểm nhân thọ; D. limitation = giới hạn)."
+            },
+            {
+              "id": "t1_q06",
+              "num": 6,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Due to different viewpoints on career choices, conflicts often arise between children and their parents in an __________ family.",
+              "options": [
+                "A. extended",
+                "B. single",
+                "C. nuclear",
+                "D. identical"
+              ],
+              "answer": 0,
+              "explanation": "Thuật ngữ 'extended family' chỉ gia đình đa thế hệ (ông bà, cha mẹ, con cái cùng sống chung). Về mặt ngữ pháp, mạo từ 'an' đứng trước danh từ bắt đầu bằng nguyên âm 'extended'.\n(C. nuclear family = gia đình hạt nhân nhưng đi với mạo từ 'a')."
+            },
+            {
+              "id": "t1_q07",
+              "num": 7,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Scientists are testing the __________ of high-speed maglev trains in reducing traffic congestion.",
+              "options": [
+                "A. effective",
+                "B. effectively",
+                "C. effect",
+                "D. ineffective"
+              ],
+              "answer": 2,
+              "explanation": "Sau mạo từ 'the' và trước giới từ 'of' cần một danh từ. Trong các lựa chọn, 'effect' (hiệu quả / tác động) là danh từ duy nhất phù hợp.\n(effective/ineffective là tính từ, effectively là trạng từ)."
+            },
+            {
+              "id": "t1_q08",
+              "num": 8,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "The local government __________ tens of thousands of trees in urban areas since last October.",
+              "options": [
+                "A. plant",
+                "B. planted",
+                "C. has planted",
+                "D. is planting"
+              ],
+              "answer": 2,
+              "explanation": "Dấu hiệu thời gian 'since last October' (kể từ tháng 10 năm ngoái) đòi hỏi thì Hiện tại hoàn thành (have/has + V3/ed). Chủ ngữ 'The local government' là danh từ số ít nên dùng 'has planted'."
+            },
+            {
+              "id": "t1_q09",
+              "num": 9,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "You __________ honk your horn near hospitals and schools; it is against the traffic laws.",
+              "options": [
+                "A. mustn't",
+                "B. needn't",
+                "C. shouldn't",
+                "D. won't"
+              ],
+              "answer": 0,
+              "explanation": "Mệnh đề sau giải thích 'it is against the traffic laws' (vi phạm luật giao thông) → chỉ sự cấm đoán mang tính pháp lý hoặc quy định nghiêm ngặt. Ta dùng động từ khuyết thiếu 'mustn't' (không được phép làm gì)."
+            },
+            {
+              "id": "t1_q10",
+              "num": 10,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "This herbal tea __________ wonderful; it contains chamomile and natural honey.",
+              "options": [
+                "A. is smelling",
+                "B. smells",
+                "C. has been smelling",
+                "D. was smelling"
+              ],
+              "answer": 1,
+              "explanation": "'Smell' là động từ chỉ tri giác/trạng thái (stative verb) khi mang nghĩa 'có mùi, toả hương'. Khi diễn tả tính chất của sự vật, không dùng ở thì tiếp diễn, mà chia ở thì Hiện tại đơn: 'smells'."
+            },
+            {
+              "id": "t1_q11",
+              "num": 11,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t1_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "Nutritional scientists consistently emphasize the (11) __________ of consuming balanced meals rich in natural vitamins, dietary fiber, and essential minerals.",
+              "options": [
+                "A. important",
+                "B. importance",
+                "C. importantly",
+                "D. import"
+              ],
+              "answer": 1,
+              "explanation": "Cấu trúc 'the + noun + of': cần một danh từ đứng sau 'the' và trước giới từ 'of'. 'importance' (tầm quan trọng) là danh từ phù hợp."
+            },
+            {
+              "id": "t1_q12",
+              "num": 12,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t1_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "In addition, individuals who regularly (12) __________ in moderate physical exercise—such as brisk walking or swimming—tend to maintain superior cardiovascular fitness and lower body fat levels.",
+              "options": [
+                "A. engage",
+                "B. take",
+                "C. bring",
+                "D. keep"
+              ],
+              "answer": 0,
+              "explanation": "Cụm động từ cố định: 'engage in something' (tham gia vào hoạt động gì). 'engage in moderate physical exercise' = tham gia vào các bài tập thể dục vừa phải."
+            },
+            {
+              "id": "t1_q13",
+              "num": 13,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t1_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "(13) __________, achieving longevity requires more than just dietary care and physical movement.",
+              "options": [
+                "A. However",
+                "B. Therefore",
+                "C. Because",
+                "D. For instance"
+              ],
+              "answer": 0,
+              "explanation": "Đoạn 1 nói về dinh dưỡng và vận động. Câu đầu đoạn 2 bổ sung khía cạnh tinh thần với ý tương phản: 'Tuy nhiên, đạt được tuổi thọ đòi hỏi nhiều hơn là chỉ chăm sóc ăn uống và vận động cơ thể'. Do đó liên từ 'However' là chính xác."
+            },
+            {
+              "id": "t1_q14",
+              "num": 14,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t1_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "Therefore, modern health specialists strongly advise people to (14) __________ their daily screen exposure and spend time outdoors to alleviate tension.",
+              "options": [
+                "A. limit",
+                "B. foster",
+                "C. damage",
+                "D. ignore"
+              ],
+              "answer": 0,
+              "explanation": "Theo ngữ cảnh giảm căng thẳng (alleviate tension), các chuyên gia khuyên mọi người nên 'limit their daily screen exposure' (hạn chế thời gian tiếp xúc với màn hình thiết bị điện tử hàng ngày)."
+            },
+            {
+              "id": "t1_q15",
+              "num": 15,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t1_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "Cultivating positive relationships also helps people overcome anxiety and (15) __________ their mental resilience throughout the aging process.",
+              "options": [
+                "A. dismiss",
+                "B. enhance",
+                "C. exhaust",
+                "D. avoid"
+              ],
+              "answer": 1,
+              "explanation": "'Enhance' có nghĩa là 'nâng cao, củng cố'. 'enhance their mental resilience' = củng cố sức dẻo dai và khả năng phục hồi tinh thần qua quá trình lão hóa."
+            },
+            {
+              "id": "t1_q16",
+              "num": 16,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t1_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "Which of the following could be the main idea of the passage?",
+              "options": [
+                "A. Generation gap doesn’t cause a big problem in American families.",
+                "B. Different points of view are the main problem between generations in America.",
+                "C. The generation gap in the past was different from that in modern time.",
+                "D. The areas of differences in the generation gap have changed over the years."
+              ],
+              "answer": 0,
+              "explanation": "Ý chính của bài đọc: Đoạn 2 nêu rõ 'although more Americans see generational differences, most do not see them as divisive' (hầu hết không xem đó là sự chia rẽ) và các đoạn sau giải thích lý do tại sao sự khác biệt không biến thành xung đột lớn. Do đó đáp án A là bao quát và chính xác nhất."
+            },
+            {
+              "id": "t1_q17",
+              "num": 17,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t1_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "The word “prowess” in paragraph 4 is closest in meaning to _________.",
+              "underlined": "prowess",
+              "options": [
+                "A. enrichment",
+                "B. skill",
+                "C. creation",
+                "D. awareness"
+              ],
+              "answer": 1,
+              "explanation": "Từ 'prowess' mang nghĩa là 'kỹ năng điêu luyện, sự thành thạo xuất sắc' (~ exceptional skill/ability). Thế hệ đi trước tự hào về kỹ năng công nghệ (skill in technology) của con cháu."
+            },
+            {
+              "id": "t1_q18",
+              "num": 18,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t1_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "What are the two reasons why large differences between generations don’t cause disagreement?",
+              "options": [
+                "A. The generosity of the elder generation and the attitude of the younger generation.",
+                "B. The different styles of music and the knowledge of the elder generation.",
+                "C. The major aspects of differences between generations and the respect to the elder generation.",
+                "D. The pride of the elder generation and the obedience of the younger one"
+              ],
+              "answer": 2,
+              "explanation": "Bài đọc chỉ ra 2 lý do: Thứ nhất, lĩnh vực khác biệt (công nghệ và âm nhạc) ít gay gắt về cảm xúc so với vấn đề chính trị ('The major aspects of differences'); Thứ hai, thế hệ trẻ rất tôn trọng và đánh giá cao thế hệ già về giá trị đạo đức, đạo đức làm việc ('respect to the elder generation')."
+            },
+            {
+              "id": "t1_q19",
+              "num": 19,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t1_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "The word “their” in the last paragraph refers to __________.",
+              "underlined": "their",
+              "options": [
+                "A. the older generation’s",
+                "B. the younger generation’s",
+                "C. supervisor’s",
+                "D. over-thirty people’s"
+              ],
+              "answer": 1,
+              "explanation": "Trong câu: 'the younger generation tends to regard the older generation as superior to their own generation', đại từ sở hữu 'their' thay thế cho chủ ngữ 'the younger generation'."
+            },
+            {
+              "id": "t1_q20",
+              "num": 20,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t1_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "According to the passage, which is NOT true?",
+              "options": [
+                "A. The majority of Americans agree generations’ viewpoint to be the major differences.",
+                "B. Technology is one of the two biggest areas creating the gap between the old and the young.",
+                "C. Grandparents feel uncomfortable with their grandchildren because of their better technology skills.",
+                "D. The elderly in America are admired in moral values, work ethic and respect for others."
+              ],
+              "answer": 2,
+              "explanation": "Câu C sai so với bài: Bài đọc nêu rõ 'The older generation is likely to be proud of the younger generation's prowess in technology rather than to view it as a problem' (thế hệ ông bà tự hào về kỹ năng công nghệ của cháu mình chứ không hề cảm thấy khó chịu/phiền lòng)."
+            },
+            {
+              "id": "t1_q21",
+              "num": 21,
+              "section": "V. WRITING: Dialogue Arrangement",
+              "section_vi": "V. VIẾT: SẮP XẾP ĐOẠN HỘI THOẠI",
+              "type": "dialogue_arrange",
+              "instruction": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text.",
+              "instruction_vi": "Chọn A, B, C hoặc D để sắp xếp các câu thành đoạn đối thoại hợp lý và có nghĩa.",
+              "prompt": "Arrange the following sentences into a meaningful exchange:\na. Nam: Yes, we argued about my career choice. My parents want me to follow in their footsteps, but I prefer graphic design.\nb. Lan: Did you have an argument with your parents again? You look quite stressed.\nc. Lan: I think you should sit down and calmly explain your passion and future plan to them.\nd. Nam: Thank you for the advice, Lan. I’ll give it a try tonight.",
+              "options": [
+                "A. b – a – c – d",
+                "B. a – b – c – d",
+                "C. b – c – a – d",
+                "D. c – b – a – d"
+              ],
+              "answer": 0,
+              "explanation": "Thứ tự hội thoại tự nhiên:\n1. (b) Lan mở lời hỏi thăm: 'Bạn lại cãi nhau với bố mẹ à? Trông bạn căng thẳng thế.'\n2. (a) Nam trả lời lý do: 'Ừ, tụi mình cãi nhau về định hướng nghề nghiệp...'\n3. (c) Lan đưa ra lời khuyên: 'Mình nghĩ bạn nên ngồi xuống bình tĩnh giải thích...'\n4. (d) Nam cảm ơn: 'Cảm ơn lời khuyên nhé, mình sẽ thử vào tối nay.'\n→ Thứ tự đúng: b – a – c – d."
+            },
+            {
+              "id": "t1_q22",
+              "num": 22,
+              "section": "V. WRITING: Paragraph Arrangement",
+              "section_vi": "V. VIẾT: SẮP XẾP ĐOẠN VĂN",
+              "type": "paragraph_arrange",
+              "instruction": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text.",
+              "instruction_vi": "Chọn A, B, C hoặc D để sắp xếp các câu thành đoạn văn hoàn chỉnh.",
+              "prompt": "Arrange the following sentences into a coherent paragraph:\na. In addition, disagreements frequently arise over how teenagers dress and spend their free time.\nb. The generation gap can lead to significant conflicts between parents and children.\nc. For instance, while older family members value traditional customs, young people often embrace modern digital trends.\nd. To bridge this divide, both generations need to listen actively and respect each other's perspectives.\ne. One primary cause of these misunderstandings is the noticeable difference in values and lifestyles.",
+              "options": [
+                "A. b – a – c – e – d",
+                "B. b – e – c – a – d",
+                "C. e – c – b – a – d",
+                "D. b – e – a – c – d"
+              ],
+              "answer": 1,
+              "explanation": "Cấu trúc đoạn văn chuẩn logic:\n• (b) Câu chủ đề (Topic sentence): Khoảng cách thế hệ dẫn đến xung đột lớn.\n• (e) Nêu nguyên nhân cốt lõi: Sự khác biệt rõ rệt về giá trị sống và phong cách sống.\n• (c) Đưa ví dụ minh họa: Người lớn giữ truyền thống, người trẻ theo xu hướng số.\n• (a) Bổ sung ví dụ thứ 2: Cách ăn mặc và sử dụng thời gian rảnh rỗi.\n• (d) Câu kết luận / giải pháp: Cần tích cực lắng nghe và tôn trọng nhau.\n→ Thứ tự đúng: b – e – c – a – d."
+            },
+            {
+              "id": "t1_q23",
+              "num": 23,
+              "section": "V. WRITING: Sentence Transformation",
+              "section_vi": "V. VIẾT: VIẾT LẠI CÂU",
+              "type": "transform",
+              "instruction": "Rewrite the following sentences without changing their meaning, using the cues provided.",
+              "instruction_vi": "Viết lại câu sau sao cho nghĩa không đổi, sử dụng từ gợi ý trong ngoặc.",
+              "prompt": "Visitors are not allowed to touch any artifacts displayed in the museum. (Using MUSTN’T)",
+              "lead_in": "Visitors",
+              "model_answers": [
+                "Visitors mustn't touch any artifacts displayed in the museum.",
+                "Visitors mustn't touch any of the artifacts displayed in the museum.",
+                "Visitors must not touch any artifacts displayed in the museum."
+              ],
+              "explanation": "Cấu trúc: 'be not allowed to + V' (không được phép) = 'mustn't + V-bare' (cấm không được làm gì)."
+            },
+            {
+              "id": "t1_q24",
+              "num": 24,
+              "section": "V. WRITING: Sentence Transformation",
+              "section_vi": "V. VIẾT: VIẾT LẠI CÂU",
+              "type": "transform",
+              "instruction": "Rewrite the following sentences without changing their meaning, using the cues provided.",
+              "instruction_vi": "Viết lại câu sau sao cho nghĩa không đổi, sử dụng từ gợi ý trong ngoặc.",
+              "prompt": "The volunteers began cleaning up the community park two hours ago. (Using present perfect tense)",
+              "lead_in": "The volunteers have",
+              "model_answers": [
+                "The volunteers have cleaned up the community park for two hours.",
+                "The volunteers have been cleaning up the community park for two hours."
+              ],
+              "explanation": "Chuyển từ Quá khứ đơn 'began/started + V-ing + time + ago' sang Hiện tại hoàn thành: 'have/has + V3/ed + for + time' (hoặc Hiện tại hoàn thành tiếp diễn: have been V-ing)."
+            },
+            {
+              "id": "t1_q25",
+              "num": 25,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Although / install / solar lights / be / expensive, / switch / to / renewable energy / help / households / cut / power bills.",
+              "model_answers": [
+                "Although installing solar lights is expensive, switching to renewable energy helps households cut power bills.",
+                "Although installing solar lights is expensive, switching to renewable energy helps households cut down power bills.",
+                "Although installing solar lights is expensive, switching to renewable energy helps households cut their power bills."
+              ],
+              "explanation": "• Mệnh đề nhượng bộ: Danh động từ 'Installing solar lights' làm chủ ngữ số ít → 'is expensive'.\n• Mệnh đề chính: Danh động từ 'switching to renewable energy' làm chủ ngữ số ít → động từ 'helps'.\n• Cấu trúc: 'help someone (to) do something' → 'helps households cut power bills'."
+            },
+            {
+              "id": "t1_q26",
+              "num": 26,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Mutual / respect / and / active listening / be / necessary / bridge / generation gap / between / parents / and / children.",
+              "model_answers": [
+                "Mutual respect and active listening are necessary to bridge the generation gap between parents and children."
+              ],
+              "explanation": "• Chủ ngữ gồm hai thành tố 'Mutual respect and active listening' (danh từ số nhiều) → to be chia là 'are'.\n• Cấu trúc: 'be necessary to do something' (cần thiết để làm gì) → 'are necessary to bridge the generation gap between parents and children'."
+            },
+            {
+              "id": "t1_q27",
+              "num": 27,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Develop / public transport / which / run / on / electricity / make / future / cities / less / polluted.",
+              "model_answers": [
+                "Developing public transport which runs on electricity will make future cities less polluted.",
+                "Developing public transport which runs on electricity makes future cities less polluted."
+              ],
+              "explanation": "• Danh động từ 'Developing public transport' làm chủ ngữ.\n• Mệnh đề quan hệ: 'which runs on electricity' (chạy bằng điện).\n• Vị ngữ: 'will make future cities less polluted' (khiến cho các thành phố tương lai bớt ô nhiễm hơn)."
+            },
+            {
+              "id": "t1_q28",
+              "num": 28,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Some / experts / think / smart devices / not / benefit / elderly people / because / they / find / digital interfaces / hard / use.",
+              "model_answers": [
+                "Some experts think that smart devices do not benefit elderly people because they find digital interfaces hard to use.",
+                "Some experts think smart devices do not benefit elderly people because they find digital interfaces hard to use."
+              ],
+              "explanation": "• Mệnh đề chính: 'think that smart devices do not benefit elderly people' (thiết bị thông minh không mang lại lợi ích cho người cao tuổi).\n• Mệnh đề chỉ nguyên nhân: 'because they find digital interfaces hard to use' (cấu trúc find something + adj + to-V: thấy cái gì khó sử dụng)."
+            }
+          ],
+          "passages": {
+            "t1_p1": {
+              "title": "Longevity and Daily Health Routines",
+              "paragraphs": [
+                "Living a long and vigorous life is not merely a consequence of fortunate genetics; it is deeply shaped by our daily health routines. Nutritional scientists consistently emphasize the (11) __________ of consuming balanced meals rich in natural vitamins, dietary fiber, and essential minerals. In addition, individuals who regularly (12) __________ in moderate physical exercise—such as brisk walking or swimming—tend to maintain superior cardiovascular fitness and lower body fat levels.",
+                "(13) __________, achieving longevity requires more than just dietary care and physical movement. Chronic emotional distress can severely weaken the body’s natural defenses over time. Therefore, modern health specialists strongly advise people to (14) __________ their daily screen exposure and spend time outdoors to alleviate tension. Cultivating positive relationships also helps people overcome anxiety and (15) __________ their mental resilience throughout the aging process."
+              ]
+            },
+            "t1_p2": {
+              "title": "The Modern Generation Gap in America",
+              "source": "Adapted from www.verywellfamily.com",
+              "paragraphs": [
+                "The generation gap that was so in evidence during the 60s has resurfaced, but it is not the disruptive force that it was during the Vietnam era, a 2009 study suggests. The Pew Research Center study found that 79% of Americans see major differences between younger and older adults in the way they look at the world. In 1969, a Gallup Poll found that a smaller percentage, 74%, perceived major differences.",
+                "Today, however, although more Americans see generational differences, most do not see them as divisive. That is partly because of the areas of difference. The top areas of disagreement between young and old, according to the Pew Research Study, are the use of technology and taste in music. Grandparents are likely to have observed these differences in their grandchildren who are tweens, teens, and young adults.",
+                "If large differences between the generations exist, why don't they spawn conflict? The answer is twofold.",
+                "First, the two largest areas of difference technology and music are less emotionally charged than political issues. The older generation is likely to be proud of the younger generation's prowess in technology rather than to view it as a problem. As for the musical differences, each generation wants its own style of music, and the older generation generally can relate to that desire.",
+                "Second, in the other areas of difference, the younger generation tends to regard the older generation as superior to their own generation—clearly a difference from the 1960s with its rallying cry of \"Don't trust anyone over thirty.\" According to the Pew study, all generations regard older Americans as superior in moral values, work ethic and respect for others."
+              ]
+            }
+          }
+        },
+        {
+          "id": "g11_t2",
+          "title": "Đề Ôn Tập Số 2 (Test 2 — Tiếng Anh 11)",
+          "subtitle": "28 câu · Có bài đọc Generation Gap & Vietnam in ASEAN",
+          "duration_minutes": 60,
+          "items": [
+            {
+              "id": "t2_q01",
+              "num": 1,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. NGỮ ÂM & DẠNG RÚT GỌN",
+              "type": "binary",
+              "instruction": "Mark the letter A or B to indicate the common pronunciation of the underlined auxiliary verb.",
+              "instruction_vi": "Chọn A hoặc B để chỉ cách phát âm thông thường của trợ động từ được gạch chân.",
+              "prompt": "Where have you lived since you moved to this eco-city?",
+              "underlined": "have",
+              "options": [
+                "A. /hæv/",
+                "B. /həv/"
+              ],
+              "answer": 1,
+              "explanation": "Trợ động từ 'have' trong câu hỏi Wh- khi không được nhấn mạnh thường được phát âm ở dạng yếu (weak form) là /həv/. Dạng mạnh /hæv/ chỉ dùng khi cần nhấn mạnh hoặc ở cuối câu."
+            },
+            {
+              "id": "t2_q02",
+              "num": 2,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. NGỮ ÂM & DẠNG RÚT GỌN",
+              "type": "binary",
+              "instruction": "Mark the letter A or B to indicate the full form of the underlined contraction.",
+              "instruction_vi": "Chọn A hoặc B để chỉ dạng đầy đủ của từ viết tắt được gạch chân.",
+              "prompt": "My grandfather’s keen on doing morning tai chi in the park.",
+              "underlined": "My grandfather’s",
+              "options": [
+                "A. My grandfather is",
+                "B. My grandfather has"
+              ],
+              "answer": 0,
+              "explanation": "Cấu trúc tính từ: 'be keen on doing something' (say mê, thích thú làm việc gì). Vì vậy 'My grandfather’s' là dạng rút gọn của 'My grandfather is'."
+            },
+            {
+              "id": "t2_q03",
+              "num": 3,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. TRỌNG ÂM TỪ",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress.",
+              "instruction_vi": "Chọn từ có vị trí trọng âm chính khác với ba từ còn lại.",
+              "prompt": "Choose the word with different primary stress position:",
+              "options": [
+                "A. disease",
+                "B. illness",
+                "C. dweller",
+                "D. balance"
+              ],
+              "answer": 0,
+              "explanation": "• disease /dɪˈziːz/ (danh từ, trọng âm rơi vào âm tiết 2)\n• illness /ˈɪl.nəs/ (danh từ, trọng âm âm tiết 1)\n• dweller /ˈdwel.ər/ (danh từ, trọng âm âm tiết 1)\n• balance /ˈbæl.əns/ (danh từ, trọng âm âm tiết 1)\n→ Đáp án đúng là A. disease."
+            },
+            {
+              "id": "t2_q04",
+              "num": 4,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. TRỌNG ÂM TỪ",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress.",
+              "instruction_vi": "Chọn từ có vị trí trọng âm chính khác với ba từ còn lại.",
+              "prompt": "Choose the word with different primary stress position:",
+              "options": [
+                "A. properly",
+                "B. essential",
+                "C. extended",
+                "D. infectious"
+              ],
+              "answer": 0,
+              "explanation": "• properly /ˈprɒp.əl.i/ (trạng từ, trọng âm rơi vào âm tiết 1)\n• essential /ɪˈsen.ʃəl/ (tính từ, trọng âm âm tiết 2)\n• extended /ɪkˈsten.dɪd/ (tính từ, trọng âm âm tiết 2)\n• infectious /ɪnˈfek.ʃəs/ (tính từ, trọng âm âm tiết 2)\n→ Đáp án đúng là A. properly."
+            },
+            {
+              "id": "t2_q05",
+              "num": 5,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Antibiotics should only be used to treat __________ infections caused by bacteria, not viruses.",
+              "options": [
+                "A. bacterial",
+                "B. immune",
+                "C. physical",
+                "D. nutrient"
+              ],
+              "answer": 0,
+              "explanation": "Cụm danh từ: 'bacterial infections' mang nghĩa 'bệnh nhiễm khuẩn (do vi khuẩn gây ra)'. Kháng sinh chỉ có tác dụng tiêu diệt vi khuẩn, không diệt được vi-rút."
+            },
+            {
+              "id": "t2_q06",
+              "num": 6,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "The generation __________ between teenagers and their parents often leads to misunderstandings about fashion and lifestyle choices.",
+              "options": [
+                "A. space",
+                "B. bridge",
+                "C. gap",
+                "D. distance"
+              ],
+              "answer": 2,
+              "explanation": "Collocation quen thuộc: 'generation gap' có nghĩa là 'khoảng cách thế hệ'."
+            },
+            {
+              "id": "t2_q07",
+              "num": 7,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Installing rooftop solar panels has significantly contributed to the __________ of household utility bills.",
+              "options": [
+                "A. reduce",
+                "B. reduction",
+                "C. reducible",
+                "D. reductively"
+              ],
+              "answer": 1,
+              "explanation": "Sau mạo từ 'the' và trước giới từ 'of' cần một danh từ. 'reduction' (sự cắt giảm, giảm bớt) là danh từ chính xác."
+            },
+            {
+              "id": "t2_q08",
+              "num": 8,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "The municipal council __________ several sensor-based streetlights along the main avenue last week.",
+              "options": [
+                "A. installed",
+                "B. has installed",
+                "C. installs",
+                "D. is installing"
+              ],
+              "answer": 0,
+              "explanation": "Trạng từ thời gian xác định trong quá khứ 'last week' (tuần trước) yêu cầu chia thì Quá khứ đơn: 'installed'."
+            },
+            {
+              "id": "t2_q09",
+              "num": 9,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "You __________ share your personal passwords or biometric data with strangers; it is extremely unsafe.",
+              "options": [
+                "A. ought to",
+                "B. needn't",
+                "C. mustn't",
+                "D. may"
+              ],
+              "answer": 2,
+              "explanation": "'it is extremely unsafe' (cực kỳ mất an toàn) → diễn đạt điều cấm tuyệt đối, không được làm. Dùng 'mustn't' (không được phép)."
+            },
+            {
+              "id": "t2_q10",
+              "num": 10,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "These ripe strawberries __________ delicious and sweet; you should try one.",
+              "options": [
+                "A. are tasting",
+                "B. taste",
+                "C. have tasted",
+                "D. were tasting"
+              ],
+              "answer": 1,
+              "explanation": "'Taste' là động từ nối chỉ cảm giác/trạng thái (stative verb), mang nghĩa 'có vị'. Không dùng ở thì tiếp diễn khi miêu tả tính chất đặc trưng của món ăn. Chọn Hiện tại đơn 'taste'."
+            },
+            {
+              "id": "t2_q11",
+              "num": 11,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t2_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "A key priority in smart city engineering is the (11) __________ of cutting-edge sensor networks that monitor real-time traffic volume and public lighting.",
+              "options": [
+                "A. installation",
+                "B. install",
+                "C. installed",
+                "D. installer"
+              ],
+              "answer": 0,
+              "explanation": "Đứng sau 'the' và trước 'of' cần một danh từ chỉ hành động/sự việc: 'installation' (việc lắp đặt mạng lưới cảm biến hiện đại)."
+            },
+            {
+              "id": "t2_q12",
+              "num": 12,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t2_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "By gathering detailed data, municipal authorities can operate transit systems efficiently and (12) __________ a significant reduction in air pollutants.",
+              "options": [
+                "A. make",
+                "B. take",
+                "C. achieve",
+                "D. hold"
+              ],
+              "answer": 2,
+              "explanation": "Cụm động từ kết hợp (collocation): 'achieve a reduction in something' (đạt được mức giảm lượng chất ô nhiễm)."
+            },
+            {
+              "id": "t2_q13",
+              "num": 13,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t2_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "(13) __________, high-tech infrastructure alone cannot create an ideal metropolis if social and environmental needs are overlooked.",
+              "options": [
+                "A. Therefore",
+                "B. Moreover",
+                "C. However",
+                "D. For example"
+              ],
+              "answer": 2,
+              "explanation": "Ý tương phản với đoạn trước (công nghệ rất tốt, nhưng một mình công nghệ cao thì không thể tạo nên thành phố lý tưởng nếu bỏ qua nhu cầu xã hội/môi trường). Do đó dùng liên từ chuyển ý 'However'."
+            },
+            {
+              "id": "t2_q14",
+              "num": 14,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t2_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "Futuristic cities must incorporate abundant green areas, roof gardens, and designated pedestrian promenades to (14) __________ public well-being.",
+              "options": [
+                "A. promote",
+                "B. threaten",
+                "C. decline",
+                "D. disregard"
+              ],
+              "answer": 0,
+              "explanation": "'Promote public well-being' mang nghĩa 'nâng cao, thúc đẩy sức khoẻ và đời sống tốt đẹp của cộng đồng'."
+            },
+            {
+              "id": "t2_q15",
+              "num": 15,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t2_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "Expanding automated public transit also discourages private automobile usage, helping cities (15) __________ urban carbon footprints and combat the severe effects of climate change.",
+              "options": [
+                "A. generate",
+                "B. shrink",
+                "C. maintain",
+                "D. emit"
+              ],
+              "answer": 1,
+              "explanation": "'Shrink carbon footprints' mang nghĩa 'thu nhỏ, cắt giảm lượng phát thải khí nhà kính (dấu chân carbon)'. (generate = tạo ra, maintain = duy trì, emit = phát thải)."
+            },
+            {
+              "id": "t2_q16",
+              "num": 16,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t2_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "Which of the following is the best title for the passage?",
+              "options": [
+                "A. How fast food trigger liver damage",
+                "B. An experiment with McDonald's fast food",
+                "C. Connection between fast food and heart diseases",
+                "D. Putting on weight due to eating fast food"
+              ],
+              "answer": 1,
+              "explanation": "Toàn bộ bài đọc kể về thí nghiệm ăn thức ăn nhanh McDonald's trong 30 ngày của Morgan Spurlock trong bộ phim tài liệu 'Super Size Me'. Do đó, 'An experiment with McDonald's fast food' là tiêu đề phù hợp và khái quát nhất."
+            },
+            {
+              "id": "t2_q17",
+              "num": 17,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t2_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "Which of the following is TRUE about Morgan Spurlock?",
+              "options": [
+                "A. He had to eat Super Size meal three times a week.",
+                "B. He had to eat Super Size meal once a week.",
+                "C. He had to consume Super Size for three meals a day",
+                "D. He had to eat Super Size meal twice a day."
+              ],
+              "answer": 2,
+              "explanation": "Đoạn 1 nêu: 'eat only McDonald's fast food three times a day, every day, for thirty days' kết hợp với nguyên tắc chấp nhận Super Size bất cứ khi nào được gợi ý."
+            },
+            {
+              "id": "t2_q18",
+              "num": 18,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t2_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "In paragraph 2, the word \"giant\" is closest in meaning to __________.",
+              "underlined": "giant",
+              "options": [
+                "A. healthy",
+                "B. light",
+                "C. balanced",
+                "D. big"
+              ],
+              "answer": 3,
+              "explanation": "'Giant' có nghĩa là khổng lồ, cực lớn (~ very big, huge). 'a giant portion' = một khẩu phần ăn rất lớn."
+            },
+            {
+              "id": "t2_q19",
+              "num": 19,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t2_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "Which of the following could get rid of Spurlock's headaches?",
+              "options": [
+                "A. a pain killer",
+                "B. a McDonald's meal",
+                "C. nothing",
+                "D. salad"
+              ],
+              "answer": 1,
+              "explanation": "Đoạn 3 viết: 'The only thing that got rid of his headaches and made him feel better was another McDonald's meal, so his doctors told him he was addicted.'"
+            },
+            {
+              "id": "t2_q20",
+              "num": 20,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t2_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "The word \"its\" in paragraph 4 refers to __________.",
+              "underlined": "its",
+              "options": [
+                "A. the film Super Size Me",
+                "B. the menu",
+                "C. McDonald's",
+                "D. the experiment"
+              ],
+              "answer": 0,
+              "explanation": "Trong câu: '...but the film also had a wider impact. Just after its showing in 2004...', đại từ 'its' thay thế cho danh từ 'the film' (Super Size Me) đứng ngay trước."
+            },
+            {
+              "id": "t2_q21",
+              "num": 21,
+              "section": "V. WRITING: Dialogue Arrangement",
+              "section_vi": "V. VIẾT: SẮP XẾP ĐOẠN HỘI THOẠI",
+              "type": "dialogue_arrange",
+              "instruction": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text.",
+              "instruction_vi": "Chọn A, B, C hoặc D để sắp xếp các câu thành đoạn đối thoại hợp lý và có nghĩa.",
+              "prompt": "Arrange the following sentences into a meaningful exchange:\na. Peter: Absolutely. Driverless electric buses and smart traffic sensors will definitely cut down emissions.\nb. Peter: That’s a good point! We'll probably see sensors adjusting traffic lights in real time to avoid congestion.\nc. Mai: Do you think our city will become much greener and smarter in the next decade?\nd. Mai: I agree, and AI technology will also make public transit run on schedule without delays.",
+              "options": [
+                "A. c – d – b – a",
+                "B. a – c – d – b",
+                "C. c – a – d – b",
+                "D. c – b – a – d"
+              ],
+              "answer": 2,
+              "explanation": "Diễn tiến đối thoại mạch lạc:\n1. (c) Mai mở đầu bằng câu hỏi: 'Bạn có nghĩ thành phố chúng ta sẽ xanh và thông minh hơn trong thập kỷ tới không?'\n2. (a) Peter tán thành và dẫn chứng: 'Chắc chắn rồi. Xe buýt điện không người lái và cảm biến thông minh sẽ giảm khí thải.'\n3. (d) Mai đồng tình và bổ sung ý AI: 'Mình đồng ý, và công nghệ AI cũng sẽ giúp phương tiện công cộng đúng giờ.'\n4. (b) Peter khen ý kiến hay và mở rộng thêm: 'Ý kiến hay đó! Chúng ta cũng sẽ thấy cảm biến điều chỉnh đèn giao thông theo thời gian thực.'\n→ Thứ tự đúng: c – a – d – b (Đáp án C)."
+            },
+            {
+              "id": "t2_q22",
+              "num": 22,
+              "section": "V. WRITING: Paragraph Arrangement",
+              "section_vi": "V. VIẾT: SẮP XẾP ĐOẠN VĂN",
+              "type": "paragraph_arrange",
+              "instruction": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text.",
+              "instruction_vi": "Chọn A, B, C hoặc D để sắp xếp các câu thành đoạn văn hoàn chỉnh.",
+              "prompt": "Arrange the following sentences into a coherent paragraph:\na. Furthermore, renewable energy sources such as solar and wind will power most residential buildings and offices.\nb. Smart cities are being developed to offer residents a cleaner and more sustainable lifestyle.\nc. As a result, urban dwellers will enjoy better living standards with minimal impact on the environment.\nd. First of all, advanced technologies are installed to optimize energy use and reduce carbon emissions.\ne. For example, intelligent waste management systems can sort recycling automatically and alert collectors when bins are full.",
+              "options": [
+                "A. b – d – e – a – c",
+                "B. b – e – d – a – c",
+                "C. d – e – b – a – c",
+                "D. b – d – a – e – c"
+              ],
+              "answer": 0,
+              "explanation": "Cấu trúc triển khai đoạn văn:\n• (b) Câu mở đoạn: Các thành phố thông minh đang được phát triển để đem lại lối sống xanh bền vững.\n• (d) Luận điểm 1: Đầu tiên (First of all), công nghệ tiên tiến được lắp đặt để tối ưu năng lượng.\n• (e) Dẫn chứng luận điểm 1: Ví dụ (For example), hệ thống xử lý rác thông minh tự phân loại.\n• (a) Luận điểm 2: Hơn nữa (Furthermore), năng lượng tái tạo sẽ cung cấp điện cho nhà ở và văn phòng.\n• (c) Câu kết đoạn: Nhờ đó (As a result), cư dân đô thị sẽ có mức sống tốt hơn với tác động tối thiểu lên môi trường.\n→ Thứ tự đúng: b – d – e – a – c (Đáp án A)."
+            },
+            {
+              "id": "t2_q23",
+              "num": 23,
+              "section": "V. WRITING: Sentence Transformation",
+              "section_vi": "V. VIẾT: VIẾT LẠI CÂU",
+              "type": "transform",
+              "instruction": "Rewrite the following sentences without changing their meaning, using the cues provided.",
+              "instruction_vi": "Viết lại câu sau sao cho nghĩa không đổi, sử dụng từ gợi ý trong ngoặc.",
+              "prompt": "Passengers are prohibited from opening the emergency exit doors during the flight. (Using MUSTN’T)",
+              "lead_in": "Passengers",
+              "model_answers": [
+                "Passengers mustn't open the emergency exit doors during the flight.",
+                "Passengers must not open the emergency exit doors during the flight."
+              ],
+              "explanation": "Cấu trúc: 'be prohibited from + V-ing' (bị cấm làm gì) = 'mustn't + V-bare' (không được phép làm gì)."
+            },
+            {
+              "id": "t2_q24",
+              "num": 24,
+              "section": "V. WRITING: Sentence Transformation",
+              "section_vi": "V. VIẾT: VIẾT LẠI CÂU",
+              "type": "transform",
+              "instruction": "Rewrite the following sentences without changing their meaning, using the cues provided.",
+              "instruction_vi": "Viết lại câu sau sao cho nghĩa không đổi, sử dụng từ gợi ý trong ngoặc.",
+              "prompt": "That university hospital started researching the new vaccine six months ago. (Using present perfect tense)",
+              "lead_in": "That university hospital has",
+              "model_answers": [
+                "That university hospital has researched the new vaccine for six months.",
+                "That university hospital has been researching the new vaccine for six months."
+              ],
+              "explanation": "Chuyển từ Quá khứ đơn 'started researching... six months ago' sang Hiện tại hoàn thành: 'has researched... for six months' (hoặc Hiện tại hoàn thành tiếp diễn: has been researching)."
+            },
+            {
+              "id": "t2_q25",
+              "num": 25,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Although / sort / household waste / take / time, / recycle / plastic containers / help / protect / the / marine environment.",
+              "model_answers": [
+                "Although sorting household waste takes time, recycling plastic containers helps protect the marine environment.",
+                "Although sorting household waste takes time, recycling plastic containers helps to protect the marine environment."
+              ],
+              "explanation": "• Mệnh đề nhượng bộ: Danh động từ 'Sorting household waste' làm chủ ngữ số ít → động từ 'takes time'.\n• Mệnh đề chính: Danh động từ 'recycling plastic containers' làm chủ ngữ số ít → động từ 'helps protect the marine environment'."
+            },
+            {
+              "id": "t2_q26",
+              "num": 26,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Spend / quality time / together / be / crucial / strengthen / family bonds / and / resolve / daily misunderstandings.",
+              "model_answers": [
+                "Spending quality time together is crucial to strengthen family bonds and resolve daily misunderstandings.",
+                "Spending quality time together is crucial for strengthening family bonds and resolving daily misunderstandings."
+              ],
+              "explanation": "• Chủ ngữ: Danh động từ 'Spending quality time together' (việc dành thời gian chất lượng bên nhau) là số ít → to be chia là 'is'.\n• Cấu trúc: 'be crucial to do something' (mang tính thiết yếu để làm gì) → 'is crucial to strengthen family bonds and resolve daily misunderstandings'."
+            },
+            {
+              "id": "t2_q27",
+              "num": 27,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Create / more / green spaces / which / provide / fresh air / make / metropolitan areas / much / healthier.",
+              "model_answers": [
+                "Creating more green spaces which provide fresh air makes metropolitan areas much healthier.",
+                "Creating more green spaces which provide fresh air will make metropolitan areas much healthier."
+              ],
+              "explanation": "• Chủ ngữ: Danh động từ 'Creating more green spaces' (việc tạo thêm nhiều không gian xanh).\n• Mệnh đề quan hệ bổ nghĩa cho spaces: 'which provide fresh air'.\n• Vị ngữ chính: 'makes/will make metropolitan areas much healthier' (cấu trúc make + O + adj)."
+            },
+            {
+              "id": "t2_q28",
+              "num": 28,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Many / citizens / worry / that / smart technology / not / guarantee / complete safety / because / cyberattacks / can / disrupt / city services.",
+              "model_answers": [
+                "Many citizens worry that smart technology does not guarantee complete safety because cyberattacks can disrupt city services."
+              ],
+              "explanation": "• Mệnh đề chính: 'Many citizens worry that smart technology does not guarantee complete safety' (chủ ngữ technology số ít dùng trợ động từ 'does not').\n• Mệnh đề nguyên nhân: 'because cyberattacks can disrupt city services' (vì các cuộc tấn công mạng có thể gây đình trệ các dịch vụ đô thị)."
+            }
+          ],
+          "passages": {
+            "t2_p1": {
+              "title": "Smart Cities Engineering and Green Metropolises",
+              "paragraphs": [
+                "Urban planners around the world are rethinking urban spaces to construct more livable, energy-efficient environments. A key priority in smart city engineering is the (11) __________ of cutting-edge sensor networks that monitor real-time traffic volume and public lighting. By gathering detailed data, municipal authorities can operate transit systems efficiently and (12) __________ a significant reduction in air pollutants.",
+                "(13) __________, high-tech infrastructure alone cannot create an ideal metropolis if social and environmental needs are overlooked. Futuristic cities must incorporate abundant green areas, roof gardens, and designated pedestrian promenades to (14) __________ public well-being. Expanding automated public transit also discourages private automobile usage, helping cities (15) __________ urban carbon footprints and combat the severe effects of climate change."
+              ]
+            },
+            "t2_p2": {
+              "title": "Super Size Me: An Experiment with Fast Food",
+              "source": "Documentary review & analysis",
+              "paragraphs": [
+                "Super Size Me is a 2004 film by Morgan Spurlock, in which he documents his experiment to eat only McDonald's fast food three times a day, every day, for thirty days.",
+                "Spurlock made himself a short list of rules for the experiment, including an obligation to eat all of the three meals he ordered. He also had to 'Super Size', which means accepting a giant portion every time the option was offered to him. He ended up vomiting after the first Super Size meal he finished, after taking nearly twenty minutes to consume it.",
+                "After five days Spurlock put on almost 5kg, and he soon found himself feeling depressed, with no energy. The only thing that got rid of his headaches and made him feel better was another McDonald's meal, so his doctors told him he was addicted. More seriously, around day twenty, he started experiencing heart palpitations and one of the doctors detected liver problems. However, in spite of his doctor's advice, Spurlock continued to the end of the month and achieved a total weight gain of 11kg. His body mass index also increased from a healthy 23.2 to an overweight 27.",
+                "It took Spurlock fifteen months to recover from his experiment and return to his original weight, but the film also had a wider impact. Just after its showing in 2004, McDonald's phased out the Super Size option and healthier options like salads appeared on the menu.",
+                "Unfortunately, McDonald's denied the connection between the film and the changes, but it is interesting to note how closely they coincided with the release of the film."
+              ]
+            }
+          }
+        },
+        {
+          "id": "g11_t3",
+          "title": "Đề Ôn Tập Số 3 (Test 3 — Tiếng Anh 11)",
+          "subtitle": "28 câu · Có bài đọc Green Living & Global Issues",
+          "duration_minutes": 60,
+          "items": [
+            {
+              "id": "t3_q01",
+              "num": 1,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. NGỮ ÂM & DẠNG RÚT GỌN",
+              "type": "binary",
+              "instruction": "Mark the letter A or B to indicate the common pronunciation of the underlined auxiliary verb.",
+              "instruction_vi": "Chọn A hoặc B để chỉ cách phát âm thông thường của trợ động từ được gạch chân.",
+              "prompt": "What does this smart sensor do when it detects smoke?",
+              "underlined": "does",
+              "options": [
+                "A. /dʌz/",
+                "B. /dəz/"
+              ],
+              "answer": 1,
+              "explanation": "Trong câu hỏi có từ để hỏi (Wh-question), trợ động từ 'does' không mang trọng âm nên được phát âm ở dạng yếu (weak form) là /dəz/. Dạng mạnh /dʌz/ dùng khi nhấn mạnh hoặc câu trả lời ngắn."
+            },
+            {
+              "id": "t3_q02",
+              "num": 2,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. NGỮ ÂM & DẠNG RÚT GỌN",
+              "type": "binary",
+              "instruction": "Mark the letter A or B to indicate the full form of the underlined contraction.",
+              "instruction_vi": "Chọn A hoặc B để chỉ dạng đầy đủ của từ viết tắt được gạch chân.",
+              "prompt": "He’d better change his sedentary habits to avoid cardiovascular diseases.",
+              "underlined": "He’d",
+              "options": [
+                "A. He had",
+                "B. He would"
+              ],
+              "answer": 0,
+              "explanation": "Cấu trúc lời khuyên: 'had better + V-bare' (nên làm gì thì tốt hơn). Do đó 'He’d better' là dạng viết tắt của 'He had better'."
+            },
+            {
+              "id": "t3_q03",
+              "num": 3,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. TRỌNG ÂM TỪ",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress.",
+              "instruction_vi": "Chọn từ có vị trí trọng âm chính khác với ba từ còn lại.",
+              "prompt": "Choose the word with different primary stress position:",
+              "options": [
+                "A. treatment",
+                "B. conflict",
+                "C. promote",
+                "D. mindset"
+              ],
+              "answer": 2,
+              "explanation": "• treatment /ˈtriːt.mənt/ (danh từ, trọng âm rơi vào âm tiết 1)\n• conflict /ˈkɒn.flɪkt/ (danh từ, trọng âm âm tiết 1)\n• promote /prəˈməʊt/ (động từ, trọng âm âm tiết 2)\n• mindset /ˈmaɪnd.set/ (danh từ ghép, trọng âm âm tiết 1)\n→ Đáp án đúng là C. promote."
+            },
+            {
+              "id": "t3_q04",
+              "num": 4,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. TRỌNG ÂM TỪ",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress.",
+              "instruction_vi": "Chọn từ có vị trí trọng âm chính khác với ba từ còn lại.",
+              "prompt": "Choose the word with different primary stress position:",
+              "options": [
+                "A. operate",
+                "B. emission",
+                "C. pollutant",
+                "D. renewable"
+              ],
+              "answer": 0,
+              "explanation": "• operate /ˈɒp.ər.eɪt/ (động từ, trọng âm rơi vào âm tiết 1)\n• emission /iˈmɪʃ.ən/ (danh từ có đuôi -ion, trọng âm âm tiết 2)\n• pollutant /pəˈluː.tənt/ (danh từ, trọng âm âm tiết 2)\n• renewable /rɪˈnjuː.ə.bəl/ (tính từ, trọng âm âm tiết 2)\n→ Đáp án đúng là A. operate."
+            },
+            {
+              "id": "t3_q05",
+              "num": 5,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Urban planners are designing pedestrian zones to decrease toxic vehicle __________ in the city center.",
+              "options": [
+                "A. footprints",
+                "B. emissions",
+                "C. diets",
+                "D. views"
+              ],
+              "answer": 1,
+              "explanation": "Cụm danh từ: 'vehicle emissions' mang nghĩa là 'lượng khí thải của các phương tiện giao thông'. Khu phố đi bộ giúp giảm khí thải xe cơ giới độc hại."
+            },
+            {
+              "id": "t3_q06",
+              "num": 6,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Living under the same roof with three generations often requires family members to respect each other's __________.",
+              "options": [
+                "A. viewpoints",
+                "B. conflicts",
+                "C. arguments",
+                "D. barriers"
+              ],
+              "answer": 0,
+              "explanation": "'Respect each other's viewpoints' = tôn trọng quan điểm / góc nhìn của nhau giữa các thế hệ. (conflicts = xung đột, arguments = cãi vã, barriers = rào cản)."
+            },
+            {
+              "id": "t3_q07",
+              "num": 7,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Eating fresh fruits and raw vegetables provides a variety of essential vitamins and __________ for our bodies.",
+              "options": [
+                "A. nutritionally",
+                "B. nutritive",
+                "C. nutrients",
+                "D. nourish"
+              ],
+              "answer": 2,
+              "explanation": "Cấu trúc song hành với liên từ 'and': 'vitamins and __________' cần một danh từ số nhiều tương ứng. 'nutrients' (chất dinh dưỡng) là danh từ chính xác."
+            },
+            {
+              "id": "t3_q08",
+              "num": 8,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Nam __________ badminton every afternoon since he was in secondary school",
+              "options": [
+                "A. has played",
+                "B. played",
+                "C. is playing",
+                "D. plays"
+              ],
+              "answer": 0,
+              "explanation": "Mệnh đề 'since he was in secondary school' (kể từ khi còn học cấp 2) đi với mệnh đề chính ở thì Hiện tại hoàn thành: 'has played'."
+            },
+            {
+              "id": "t3_q09",
+              "num": 9,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "You __________ buy paper bus tickets because the entire city transit system accepts contactless smartcards.",
+              "options": [
+                "A. mustn't",
+                "B. don’t have to",
+                "C. should",
+                "D. must"
+              ],
+              "answer": 1,
+              "explanation": "'Don't have to' chỉ sự không cần thiết (lack of necessity): Bạn không cần phải mua vé giấy vì toàn bộ hệ thống chấp nhận thẻ từ thông minh chạm không tiếp xúc."
+            },
+            {
+              "id": "t3_q10",
+              "num": 10,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Look at those smart traffic cameras! The technician __________ how the vehicle tracking software operates.",
+              "options": [
+                "A. is demonstrating",
+                "B. demonstrates",
+                "C. has demonstrated",
+                "D. was demonstrated"
+              ],
+              "answer": 0,
+              "explanation": "Dấu hiệu câu mệnh lệnh cảm thán: 'Look at those smart traffic cameras!' chỉ hành động đang diễn ra tại thời điểm nói → chia thì Hiện tại tiếp diễn: 'is demonstrating'."
+            },
+            {
+              "id": "t3_q11",
+              "num": 11,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t3_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "First and foremost, their diets consist primarily of plant-based foods, such as beans, nuts, and fresh vegetables. (11) __________ people in these areas consume red meat, doing so only on special occasions.",
+              "options": [
+                "A. Few",
+                "B. Many",
+                "C. Much",
+                "D. A little"
+              ],
+              "answer": 0,
+              "explanation": "'People' là danh từ đếm được số nhiều. Ngữ cảnh nêu họ chủ yếu ăn thực vật và chỉ ăn thịt đỏ vào dịp đặc biệt → Rất ít người ('Few people') ăn thịt đỏ."
+            },
+            {
+              "id": "t3_q12",
+              "num": 12,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t3_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "Rather than lifting heavy weights in gyms, they engage (12) __________ physical activities through walking, gardening, and doing manual household chores.",
+              "options": [
+                "A. on",
+                "B. with",
+                "C. in",
+                "D. for"
+              ],
+              "answer": 2,
+              "explanation": "Cụm động từ cố định: 'engage in something' (tham gia vào việc gì/hoạt động gì)."
+            },
+            {
+              "id": "t3_q13",
+              "num": 13,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t3_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "(13) __________, managing chronic stress is indispensable for emotional balance and cardiovascular fitness.",
+              "options": [
+                "A. However",
+                "B. Furthermore",
+                "C. Therefore",
+                "D. In contrast"
+              ],
+              "answer": 1,
+              "explanation": "Đoạn 1 nói về chế độ ăn và vận động thể chất. Đoạn 2 tiếp tục bổ sung yếu tố quan trọng thứ 3 là kiểm soát căng thẳng tinh thần. Liên từ bổ sung thông tin: 'Furthermore' (Hơn thế nữa / Thêm vào đó)."
+            },
+            {
+              "id": "t3_q14",
+              "num": 14,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t3_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "They cultivate lifelong bonds, which provides them with a strong sense of belonging and helps (14) __________ their life expectancy.",
+              "options": [
+                "A. boost",
+                "B. decline",
+                "C. control",
+                "D. damage"
+              ],
+              "answer": 0,
+              "explanation": "'Boost their life expectancy' mang nghĩa 'nâng cao, gia tăng tuổi thọ kỳ vọng của họ'. (decline = giảm, damage = tổn hại)."
+            },
+            {
+              "id": "t3_q15",
+              "num": 15,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t3_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "(15) __________, maintaining healthy routines along with loving relationships is the true recipe for enduring vitality.",
+              "options": [
+                "A. In addition",
+                "B. By contrast",
+                "C. In short",
+                "D. For instance"
+              ],
+              "answer": 2,
+              "explanation": "Câu cuối cùng mang tính đúc kết, tóm tắt toàn bộ bài viết: 'Tóm lại (In short), duy trì các thói quen lành mạnh cùng các mối quan hệ yêu thương là công thức thực sự cho sức sống bền bỉ'."
+            },
+            {
+              "id": "t3_q16",
+              "num": 16,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t3_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "According to paragraph 1, what happens when people consistently sleep fewer than six hours a night?",
+              "options": [
+                "A. Their cognitive performance immediately peaks.",
+                "B. Their bodies release excessive amounts of cortisol.",
+                "C. Their immune systems eradicate inflammation completely.",
+                "D. Their arterial walls become stronger and more flexible."
+              ],
+              "answer": 1,
+              "explanation": "Đoạn 1 nêu rõ: 'When individuals sleep less than six hours per night on a consistent basis, their bodies release excessive cortisol—a hormone that triggers systemic inflammation and damages arterial walls.'"
+            },
+            {
+              "id": "t3_q17",
+              "num": 17,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t3_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "The word It in paragraph 3 refers to __________.",
+              "underlined": "It",
+              "options": [
+                "A. restorative rest",
+                "B. toxic protein",
+                "C. inadequate rest",
+                "D. physical well-being"
+              ],
+              "answer": 2,
+              "explanation": "Trong đoạn 3: 'Moreover, inadequate rest significantly interferes with appetite-regulating hormones. It reduces leptin, which signals fullness...', đại từ 'It' thay thế cho cụm danh từ 'inadequate rest' (việc nghỉ ngơi không đầy đủ/thiếu ngủ)."
+            },
+            {
+              "id": "t3_q18",
+              "num": 18,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t3_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "The word advocate in paragraph 3 is closest in meaning to __________.",
+              "underlined": "advocate",
+              "options": [
+                "A. recommend",
+                "B. oppose",
+                "C. ignore",
+                "D. prohibit"
+              ],
+              "answer": 0,
+              "explanation": "'Advocate' có nghĩa là 'khuyên, đề xuất, ủng hộ' (~ recommend, support). Các chuyên gia y tế khuyên thiết lập thói quen đi ngủ nghiêm ngặt."
+            },
+            {
+              "id": "t3_q19",
+              "num": 19,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t3_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "Which of the following best serves as the main idea of the passage?",
+              "options": [
+                "A. The psychological benefits of sleeping medication for seniors.",
+                "B. How late-night screen exposure disrupts academic performance.",
+                "C. The indispensable role of sufficient sleep in protecting physical and mental health.",
+                "D. Common strategies to eradicate ghrelin and suppress hunger cravings."
+              ],
+              "answer": 2,
+              "explanation": "Bài viết phân tích cơ chế sinh học sâu sắc mà giấc ngủ ảnh hưởng đến tim mạch, giải độc não bộ và kiểm soát hormone, từ đó khẳng định vai trò thiết yếu của giấc ngủ đủ đối với sức khỏe thể chất và tinh thần."
+            },
+            {
+              "id": "t3_q20",
+              "num": 20,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t3_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "What can be inferred from the discussion of the glymphatic system in paragraph 2?",
+              "options": [
+                "A. The glymphatic system operates most efficiently during vigorous waking exercise.",
+                "B. Long-term sleep deficiency may elevate the vulnerability to neurodegenerative disorders.",
+                "C. Beta-amyloid is a beneficial protein necessary for arterial protection.",
+                "D. Cleansing metabolic waste relies primarily on rigorous dietary restrictions."
+              ],
+              "answer": 1,
+              "explanation": "Đoạn 2 nêu rõ hệ thống glymphatic dọn sạch độc tố beta-amyloid (protein gắn liền với sự suy giảm nhận thức/sa sút trí tuệ) trong giấc ngủ sâu. Nếu thiếu ngủ kéo dài, chất độc tích tụ sẽ làm tăng nguy cơ mắc các rối loạn thoái hóa thần kinh (neurodegenerative disorders)."
+            },
+            {
+              "id": "t3_q21",
+              "num": 21,
+              "section": "V. WRITING: Dialogue Arrangement",
+              "section_vi": "V. VIẾT: SẮP XẾP ĐOẠN HỘI THOẠI",
+              "type": "dialogue_arrange",
+              "instruction": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text.",
+              "instruction_vi": "Chọn A, B, C hoặc D để sắp xếp các câu thành đoạn đối thoại hợp lý và có nghĩa.",
+              "prompt": "Arrange the following sentences into a meaningful exchange:\na. Minh: That’s a sensible decision. Cooking at home lets you control sodium and avoid unhealthy fats.\nb. An: I’ve decided to cut down on processed foods and prepare my own lunches instead.\nc. An: Exactly. I’m already feeling much more energetic throughout the afternoon!\nd. Minh: Really? What made you change your eating habits so suddenly?",
+              "options": [
+                "A. b – a – c – d",
+                "B. d – b – a – c",
+                "C. b – d – c – a",
+                "D. b – d – a – c"
+              ],
+              "answer": 1,
+              "explanation": "Trình tự đàm thoại hợp lý:\n1. (d) Minh nhận thấy điều khác lạ và hỏi mở: 'Thật á? Điều gì khiến bạn thay đổi thói quen ăn uống đột ngột thế?'\n2. (b) An giải thích: 'Mình đã quyết định giảm đồ ăn chế biến sẵn và tự chuẩn bị bữa trưa.'\n3. (a) Minh khen ngợi: 'Đó là quyết định sáng suốt. Tự nấu giúp kiểm soát muối và chất béo xấu.'\n4. (c) An hào hứng xác nhận: 'Chính xác. Mình đã cảm thấy tràn đầy năng lượng hơn suốt buổi chiều!'\n→ Thứ tự đúng: d – b – a – c (hoặc nếu mở đầu bằng thông báo của An b thì tiếp nối là d – a – c)."
+            },
+            {
+              "id": "t3_q22",
+              "num": 22,
+              "section": "V. WRITING: Paragraph Arrangement",
+              "section_vi": "V. VIẾT: SẮP XẾP ĐOẠN VĂN",
+              "type": "paragraph_arrange",
+              "instruction": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text.",
+              "instruction_vi": "Chọn A, B, C hoặc D để sắp xếp các câu thành đoạn văn hoàn chỉnh.",
+              "prompt": "Arrange the following sentences into a coherent paragraph:\na. In addition, maintaining proper hydration by drinking enough water keeps your digestive system functioning smoothly.\nb. Adopting a nutritious and balanced diet is essential for long-term health and well-being.\nc. For instance, incorporating fresh vegetables, whole grains, and lean proteins provides the body with vital nutrients.\nd. In conclusion, combining wholesome food with adequate water intake is key to preventing chronic illnesses.\ne. Eating nutrient-rich meals regularly helps strengthen your immune system and boost your energy.",
+              "options": [
+                "A. b – a – e – c – d",
+                "B. e – c – b – a – d",
+                "C. b – e – c – a – d",
+                "D. b – c – e – a – d"
+              ],
+              "answer": 2,
+              "explanation": "Cấu trúc đoạn văn mạch lạc:\n• (b) Câu chủ đề: Chế độ ăn uống dinh dưỡng và cân bằng là thiết yếu cho sức khỏe lâu dài.\n• (e) Lợi ích chính: Ăn các bữa giàu dưỡng chất củng cố hệ miễn dịch và gia tăng năng lượng.\n• (c) Ví dụ cụ thể (For instance): Bổ sung rau tươi, ngũ cốc nguyên hạt và đạm nạc.\n• (a) Ý bổ sung (In addition): Uống đủ nước giúp hệ tiêu hóa hoạt động trơn tru.\n• (d) Kết luận (In conclusion): Kết hợp thực phẩm lành mạnh và uống đủ nước là chìa khóa phòng ngừa bệnh mãn tính.\n→ Thứ tự đúng: b – e – c – a – d (Đáp án C)."
+            },
+            {
+              "id": "t3_q23",
+              "num": 23,
+              "section": "V. WRITING: Sentence Transformation",
+              "section_vi": "V. VIẾT: VIẾT LẠI CÂU",
+              "type": "transform",
+              "instruction": "Rewrite the following sentences without changing their meaning, using the cues provided.",
+              "instruction_vi": "Viết lại câu sau sao cho nghĩa không đổi, sử dụng từ gợi ý trong ngoặc.",
+              "prompt": "It is against the school rules for students to bring food into the computer lab. (Using MUSTN’T)",
+              "lead_in": "Students",
+              "model_answers": [
+                "Students mustn't bring food into the computer lab.",
+                "Students must not bring food into the computer lab."
+              ],
+              "explanation": "'It is against the school rules' (vi phạm nội quy trường học) = 'Students mustn't + V-bare' (Học sinh không được phép mang thức ăn vào phòng máy tính)."
+            },
+            {
+              "id": "t3_q24",
+              "num": 24,
+              "section": "V. WRITING: Sentence Transformation",
+              "section_vi": "V. VIẾT: VIẾT LẠI CÂU",
+              "type": "transform",
+              "instruction": "Rewrite the following sentences without changing their meaning, using the cues provided.",
+              "instruction_vi": "Viết lại câu sau sao cho nghĩa không đổi, sử dụng từ gợi ý trong ngoặc.",
+              "prompt": "My parents started living in this eco-friendly residential area five years ago. (Using present perfect tense)",
+              "lead_in": "My parents have",
+              "model_answers": [
+                "My parents have lived in this eco-friendly residential area for five years.",
+                "My parents have been living in this eco-friendly residential area for five years."
+              ],
+              "explanation": "Chuyển từ Quá khứ đơn 'started living... five years ago' sang Hiện tại hoàn thành: 'have lived in... for five years' (hoặc Hiện tại hoàn thành tiếp diễn: have been living)."
+            },
+            {
+              "id": "t3_q25",
+              "num": 25,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Although / cycle / be / time-consuming, / ride / a bike / reduce / carbon emissions / and / improve / physical health.",
+              "model_answers": [
+                "Although cycling is time-consuming, riding a bike reduces carbon emissions and improves physical health.",
+                "Although to cycle is time-consuming, riding a bike reduces carbon emissions and improves physical health."
+              ],
+              "explanation": "• Mệnh đề nhượng bộ: Danh động từ 'Cycling' làm chủ ngữ số ít → 'is time-consuming'.\n• Mệnh đề chính: Danh động từ 'riding a bike' làm chủ ngữ số ít → động từ chia số ít: 'reduces carbon emissions and improves physical health'."
+            },
+            {
+              "id": "t3_q26",
+              "num": 26,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Regular / physical exercise / and / balanced diet / be / vital / boost / immune system / and / prevent / chronic illnesses.",
+              "model_answers": [
+                "Regular physical exercise and a balanced diet are vital to boost the immune system and prevent chronic illnesses.",
+                "Regular physical exercise and a balanced diet are vital to boost our immune system and prevent chronic illnesses."
+              ],
+              "explanation": "• Chủ ngữ gồm 2 thành tố 'Regular physical exercise and a balanced diet' → động từ to be chia là 'are'.\n• Cấu trúc: 'be vital to do something' (mang tính sống còn để làm gì) → 'are vital to boost the immune system and prevent chronic illnesses'."
+            },
+            {
+              "id": "t3_q27",
+              "num": 27,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Install / smart solar panels / which / generate / green electricity / make / modern homes / more / energy-efficient.",
+              "model_answers": [
+                "Installing smart solar panels which generate green electricity makes modern homes more energy-efficient.",
+                "Installing smart solar panels which generate green electricity will make modern homes more energy-efficient."
+              ],
+              "explanation": "• Danh động từ 'Installing smart solar panels' làm chủ ngữ.\n• Mệnh đề quan hệ: 'which generate green electricity' (tạo ra điện năng sạch).\n• Vị ngữ: 'makes modern homes more energy-efficient' (khiến ngôi nhà hiện đại tiết kiệm năng lượng hơn)."
+            },
+            {
+              "id": "t3_q28",
+              "num": 28,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Many / teenagers / believe / generational conflicts / happen / because / parents / fail / understand / modern trends.",
+              "model_answers": [
+                "Many teenagers believe that generational conflicts happen because parents fail to understand modern trends.",
+                "Many teenagers believe generational conflicts happen because parents fail to understand modern trends."
+              ],
+              "explanation": "• Mệnh đề chính: 'Many teenagers believe that generational conflicts happen'.\n• Mệnh đề chỉ nguyên nhân: 'because parents fail to understand modern trends' (cấu trúc fail to do something: không thể/thất bại trong việc hiểu các xu hướng hiện đại)."
+            }
+          ],
+          "passages": {
+            "t3_p1": {
+              "title": "Secrets of Longevity in the Blue Zones",
+              "paragraphs": [
+                "Living a long and fulfilling life is not merely a matter of genetic luck; it depends heavily on everyday lifestyle choices. Residents of the famous \"Blue Zones\"—regions where people regularly live past 100—share several common habits. First and foremost, their diets consist primarily of plant-based foods, such as beans, nuts, and fresh vegetables. (11) __________ people in these areas consume red meat, doing so only on special occasions. Regular, natural movement is another vital component. Rather than lifting heavy weights in gyms, they engage (12) __________ physical activities through walking, gardening, and doing manual household chores.",
+                "(13) __________, managing chronic stress is indispensable for emotional balance and cardiovascular fitness. Blue Zone dwellers intentionally slow down each day to pray, take naps, or visit their neighbours. Strong social connections also play an instrumental role. They cultivate lifelong bonds, which provides them with a strong sense of belonging and helps (14) __________ their life expectancy. (15) __________, maintaining healthy routines along with loving relationships is the true recipe for enduring vitality."
+              ]
+            },
+            "t3_p2": {
+              "title": "Sleep Duration and Cardiovascular & Cognitive Health",
+              "source": "Medical Journal of Lifestyle Medicine",
+              "paragraphs": [
+                "In recent years, the scientific community has paid increasing attention to the profound relationship between sleep duration and physical well-being. Chronic sleep deprivation has ceased to be viewed as a harmless consequence of modern ambition; instead, it is recognized as a direct risk factor for severe cardiovascular diseases, obesity, and impaired immune function. When individuals sleep less than six hours per night on a consistent basis, their bodies release excessive cortisol—a hormone that triggers systemic inflammation and damages arterial walls.",
+                "During slow-wave deep sleep, the brain activates the glymphatic system, a specialized cleansing mechanism that clears metabolic waste products accumulated throughout the waking day. Among these toxins is beta-amyloid, a protein strongly associated with cognitive decline. Depriving oneself of restorative rest inhibits this vital detoxification process.",
+                "Moreover, inadequate rest significantly interferes with appetite-regulating hormones. It reduces leptin, which signals fullness, while increasing ghrelin, the compound responsible for stimulating hunger. Consequently, sleep-deprived individuals experience intense cravings for foods high in saturated fat and refined sugars. Medical practitioners advocate establishing strict bedtime routines and eliminating screen exposure at least one hour before turning in. Ensuring seven to eight hours of sound rest nightly remains one of the simplest yet most potent strategies for sustaining optimal health."
+              ]
+            }
+          }
+        },
+        {
+          "id": "g11_all",
+          "title": "Tổng Hợp Trọn Bộ 3 Đề Khối 11 (84 câu)",
+          "subtitle": "Luyện tập toàn bộ ngân hàng câu hỏi Lớp 11",
+          "duration_minutes": 120,
+          "items": [
+            {
+              "id": "t1_q01",
+              "num": 1,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. NGỮ ÂM & DẠNG RÚT GỌN",
+              "type": "binary",
+              "instruction": "Mark the letter A or B to indicate the common pronunciation of the underlined auxiliary verb.",
+              "instruction_vi": "Chọn A hoặc B để chỉ cách phát âm thông thường của trợ động từ được gạch chân.",
+              "prompt": "Can you explain how this smart sensor works?",
+              "underlined": "Can",
+              "options": [
+                "A. /kæn/",
+                "B. /kən/"
+              ],
+              "answer": 1,
+              "explanation": "Trong câu hỏi Yes/No thông thường, trợ động từ 'Can' đứng đầu câu và không nhận trọng âm nên được phát âm ở dạng yếu (weak form) là /kən/. Dạng mạnh /kæn/ chỉ dùng trong câu trả lời ngắn (Yes, I can), ở cuối mệnh đề hoặc khi cần nhấn mạnh tương phản.",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q02",
+              "num": 2,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. NGỮ ÂM & DẠNG RÚT GỌN",
+              "type": "binary",
+              "instruction": "Mark the letter A or B to indicate the full form of the underlined contraction.",
+              "instruction_vi": "Chọn A hoặc B để chỉ dạng đầy đủ của từ viết tắt được gạch chân.",
+              "prompt": "He’s lived in this eco-friendly apartment for three years.",
+              "underlined": "He’s",
+              "options": [
+                "A. He is",
+                "B. He has"
+              ],
+              "answer": 1,
+              "explanation": "Theo sau là quá khứ phân từ 'lived' cùng trạng từ thời gian 'for three years' (thì Hiện tại hoàn thành: S + have/has + V3/ed). Do đó, 'He’s' ở đây là dạng viết tắt của 'He has'.",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q03",
+              "num": 3,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. TRỌNG ÂM TỪ",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress.",
+              "instruction_vi": "Chọn từ có vị trí trọng âm chính khác với ba từ còn lại.",
+              "prompt": "Choose the word with different primary stress position:",
+              "options": [
+                "A. sensor",
+                "B. impact",
+                "C. prescribe",
+                "D. greenhouse"
+              ],
+              "answer": 2,
+              "explanation": "• sensor /ˈsen.sər/ (trọng âm rơi vào âm tiết 1)\n• impact /ˈɪm.pækt/ (danh từ, trọng âm âm tiết 1)\n• prescribe /prɪˈskraɪb/ (động từ kê đơn, trọng âm âm tiết 2)\n• greenhouse /ˈɡriːn.haʊs/ (danh từ ghép, trọng âm âm tiết 1)\n→ Đáp án đúng là C. prescribe.",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q04",
+              "num": 4,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. TRỌNG ÂM TỪ",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress.",
+              "instruction_vi": "Chọn từ có vị trí trọng âm chính khác với ba từ còn lại.",
+              "prompt": "Choose the word with different primary stress position:",
+              "options": [
+                "A. pedestrian",
+                "B. energy",
+                "C. resident",
+                "D. modernise"
+              ],
+              "answer": 0,
+              "explanation": "• pedestrian /pəˈdes.tri.ən/ (trọng âm rơi vào âm tiết 2)\n• energy /ˈen.ə.dʒi/ (trọng âm âm tiết 1)\n• resident /ˈrez.ɪ.dənt/ (trọng âm âm tiết 1)\n• modernise /ˈmɒd.ən.aɪz/ (trọng âm âm tiết 1)\n→ Đáp án đúng là A. pedestrian.",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q05",
+              "num": 5,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Regular physical exercise helps strengthen the immune system and boosts life __________.",
+              "options": [
+                "A. cycle",
+                "B. expectancy",
+                "C. insurance",
+                "D. limitation"
+              ],
+              "answer": 1,
+              "explanation": "Cụm danh từ cố định (collocation): 'life expectancy' mang nghĩa là 'tuổi thọ kỳ vọng / tuổi thọ trung bình'.\n(A. life cycle = vòng đời; C. life insurance = bảo hiểm nhân thọ; D. limitation = giới hạn).",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q06",
+              "num": 6,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Due to different viewpoints on career choices, conflicts often arise between children and their parents in an __________ family.",
+              "options": [
+                "A. extended",
+                "B. single",
+                "C. nuclear",
+                "D. identical"
+              ],
+              "answer": 0,
+              "explanation": "Thuật ngữ 'extended family' chỉ gia đình đa thế hệ (ông bà, cha mẹ, con cái cùng sống chung). Về mặt ngữ pháp, mạo từ 'an' đứng trước danh từ bắt đầu bằng nguyên âm 'extended'.\n(C. nuclear family = gia đình hạt nhân nhưng đi với mạo từ 'a').",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q07",
+              "num": 7,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Scientists are testing the __________ of high-speed maglev trains in reducing traffic congestion.",
+              "options": [
+                "A. effective",
+                "B. effectively",
+                "C. effect",
+                "D. ineffective"
+              ],
+              "answer": 2,
+              "explanation": "Sau mạo từ 'the' và trước giới từ 'of' cần một danh từ. Trong các lựa chọn, 'effect' (hiệu quả / tác động) là danh từ duy nhất phù hợp.\n(effective/ineffective là tính từ, effectively là trạng từ).",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q08",
+              "num": 8,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "The local government __________ tens of thousands of trees in urban areas since last October.",
+              "options": [
+                "A. plant",
+                "B. planted",
+                "C. has planted",
+                "D. is planting"
+              ],
+              "answer": 2,
+              "explanation": "Dấu hiệu thời gian 'since last October' (kể từ tháng 10 năm ngoái) đòi hỏi thì Hiện tại hoàn thành (have/has + V3/ed). Chủ ngữ 'The local government' là danh từ số ít nên dùng 'has planted'.",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q09",
+              "num": 9,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "You __________ honk your horn near hospitals and schools; it is against the traffic laws.",
+              "options": [
+                "A. mustn't",
+                "B. needn't",
+                "C. shouldn't",
+                "D. won't"
+              ],
+              "answer": 0,
+              "explanation": "Mệnh đề sau giải thích 'it is against the traffic laws' (vi phạm luật giao thông) → chỉ sự cấm đoán mang tính pháp lý hoặc quy định nghiêm ngặt. Ta dùng động từ khuyết thiếu 'mustn't' (không được phép làm gì).",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q10",
+              "num": 10,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "This herbal tea __________ wonderful; it contains chamomile and natural honey.",
+              "options": [
+                "A. is smelling",
+                "B. smells",
+                "C. has been smelling",
+                "D. was smelling"
+              ],
+              "answer": 1,
+              "explanation": "'Smell' là động từ chỉ tri giác/trạng thái (stative verb) khi mang nghĩa 'có mùi, toả hương'. Khi diễn tả tính chất của sự vật, không dùng ở thì tiếp diễn, mà chia ở thì Hiện tại đơn: 'smells'.",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q11",
+              "num": 11,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t1_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "Nutritional scientists consistently emphasize the (11) __________ of consuming balanced meals rich in natural vitamins, dietary fiber, and essential minerals.",
+              "options": [
+                "A. important",
+                "B. importance",
+                "C. importantly",
+                "D. import"
+              ],
+              "answer": 1,
+              "explanation": "Cấu trúc 'the + noun + of': cần một danh từ đứng sau 'the' và trước giới từ 'of'. 'importance' (tầm quan trọng) là danh từ phù hợp.",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q12",
+              "num": 12,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t1_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "In addition, individuals who regularly (12) __________ in moderate physical exercise—such as brisk walking or swimming—tend to maintain superior cardiovascular fitness and lower body fat levels.",
+              "options": [
+                "A. engage",
+                "B. take",
+                "C. bring",
+                "D. keep"
+              ],
+              "answer": 0,
+              "explanation": "Cụm động từ cố định: 'engage in something' (tham gia vào hoạt động gì). 'engage in moderate physical exercise' = tham gia vào các bài tập thể dục vừa phải.",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q13",
+              "num": 13,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t1_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "(13) __________, achieving longevity requires more than just dietary care and physical movement.",
+              "options": [
+                "A. However",
+                "B. Therefore",
+                "C. Because",
+                "D. For instance"
+              ],
+              "answer": 0,
+              "explanation": "Đoạn 1 nói về dinh dưỡng và vận động. Câu đầu đoạn 2 bổ sung khía cạnh tinh thần với ý tương phản: 'Tuy nhiên, đạt được tuổi thọ đòi hỏi nhiều hơn là chỉ chăm sóc ăn uống và vận động cơ thể'. Do đó liên từ 'However' là chính xác.",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q14",
+              "num": 14,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t1_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "Therefore, modern health specialists strongly advise people to (14) __________ their daily screen exposure and spend time outdoors to alleviate tension.",
+              "options": [
+                "A. limit",
+                "B. foster",
+                "C. damage",
+                "D. ignore"
+              ],
+              "answer": 0,
+              "explanation": "Theo ngữ cảnh giảm căng thẳng (alleviate tension), các chuyên gia khuyên mọi người nên 'limit their daily screen exposure' (hạn chế thời gian tiếp xúc với màn hình thiết bị điện tử hàng ngày).",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q15",
+              "num": 15,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t1_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "Cultivating positive relationships also helps people overcome anxiety and (15) __________ their mental resilience throughout the aging process.",
+              "options": [
+                "A. dismiss",
+                "B. enhance",
+                "C. exhaust",
+                "D. avoid"
+              ],
+              "answer": 1,
+              "explanation": "'Enhance' có nghĩa là 'nâng cao, củng cố'. 'enhance their mental resilience' = củng cố sức dẻo dai và khả năng phục hồi tinh thần qua quá trình lão hóa.",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q16",
+              "num": 16,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t1_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "Which of the following could be the main idea of the passage?",
+              "options": [
+                "A. Generation gap doesn’t cause a big problem in American families.",
+                "B. Different points of view are the main problem between generations in America.",
+                "C. The generation gap in the past was different from that in modern time.",
+                "D. The areas of differences in the generation gap have changed over the years."
+              ],
+              "answer": 0,
+              "explanation": "Ý chính của bài đọc: Đoạn 2 nêu rõ 'although more Americans see generational differences, most do not see them as divisive' (hầu hết không xem đó là sự chia rẽ) và các đoạn sau giải thích lý do tại sao sự khác biệt không biến thành xung đột lớn. Do đó đáp án A là bao quát và chính xác nhất.",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q17",
+              "num": 17,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t1_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "The word “prowess” in paragraph 4 is closest in meaning to _________.",
+              "underlined": "prowess",
+              "options": [
+                "A. enrichment",
+                "B. skill",
+                "C. creation",
+                "D. awareness"
+              ],
+              "answer": 1,
+              "explanation": "Từ 'prowess' mang nghĩa là 'kỹ năng điêu luyện, sự thành thạo xuất sắc' (~ exceptional skill/ability). Thế hệ đi trước tự hào về kỹ năng công nghệ (skill in technology) của con cháu.",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q18",
+              "num": 18,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t1_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "What are the two reasons why large differences between generations don’t cause disagreement?",
+              "options": [
+                "A. The generosity of the elder generation and the attitude of the younger generation.",
+                "B. The different styles of music and the knowledge of the elder generation.",
+                "C. The major aspects of differences between generations and the respect to the elder generation.",
+                "D. The pride of the elder generation and the obedience of the younger one"
+              ],
+              "answer": 2,
+              "explanation": "Bài đọc chỉ ra 2 lý do: Thứ nhất, lĩnh vực khác biệt (công nghệ và âm nhạc) ít gay gắt về cảm xúc so với vấn đề chính trị ('The major aspects of differences'); Thứ hai, thế hệ trẻ rất tôn trọng và đánh giá cao thế hệ già về giá trị đạo đức, đạo đức làm việc ('respect to the elder generation').",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q19",
+              "num": 19,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t1_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "The word “their” in the last paragraph refers to __________.",
+              "underlined": "their",
+              "options": [
+                "A. the older generation’s",
+                "B. the younger generation’s",
+                "C. supervisor’s",
+                "D. over-thirty people’s"
+              ],
+              "answer": 1,
+              "explanation": "Trong câu: 'the younger generation tends to regard the older generation as superior to their own generation', đại từ sở hữu 'their' thay thế cho chủ ngữ 'the younger generation'.",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q20",
+              "num": 20,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t1_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "According to the passage, which is NOT true?",
+              "options": [
+                "A. The majority of Americans agree generations’ viewpoint to be the major differences.",
+                "B. Technology is one of the two biggest areas creating the gap between the old and the young.",
+                "C. Grandparents feel uncomfortable with their grandchildren because of their better technology skills.",
+                "D. The elderly in America are admired in moral values, work ethic and respect for others."
+              ],
+              "answer": 2,
+              "explanation": "Câu C sai so với bài: Bài đọc nêu rõ 'The older generation is likely to be proud of the younger generation's prowess in technology rather than to view it as a problem' (thế hệ ông bà tự hào về kỹ năng công nghệ của cháu mình chứ không hề cảm thấy khó chịu/phiền lòng).",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q21",
+              "num": 21,
+              "section": "V. WRITING: Dialogue Arrangement",
+              "section_vi": "V. VIẾT: SẮP XẾP ĐOẠN HỘI THOẠI",
+              "type": "dialogue_arrange",
+              "instruction": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text.",
+              "instruction_vi": "Chọn A, B, C hoặc D để sắp xếp các câu thành đoạn đối thoại hợp lý và có nghĩa.",
+              "prompt": "Arrange the following sentences into a meaningful exchange:\na. Nam: Yes, we argued about my career choice. My parents want me to follow in their footsteps, but I prefer graphic design.\nb. Lan: Did you have an argument with your parents again? You look quite stressed.\nc. Lan: I think you should sit down and calmly explain your passion and future plan to them.\nd. Nam: Thank you for the advice, Lan. I’ll give it a try tonight.",
+              "options": [
+                "A. b – a – c – d",
+                "B. a – b – c – d",
+                "C. b – c – a – d",
+                "D. c – b – a – d"
+              ],
+              "answer": 0,
+              "explanation": "Thứ tự hội thoại tự nhiên:\n1. (b) Lan mở lời hỏi thăm: 'Bạn lại cãi nhau với bố mẹ à? Trông bạn căng thẳng thế.'\n2. (a) Nam trả lời lý do: 'Ừ, tụi mình cãi nhau về định hướng nghề nghiệp...'\n3. (c) Lan đưa ra lời khuyên: 'Mình nghĩ bạn nên ngồi xuống bình tĩnh giải thích...'\n4. (d) Nam cảm ơn: 'Cảm ơn lời khuyên nhé, mình sẽ thử vào tối nay.'\n→ Thứ tự đúng: b – a – c – d.",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q22",
+              "num": 22,
+              "section": "V. WRITING: Paragraph Arrangement",
+              "section_vi": "V. VIẾT: SẮP XẾP ĐOẠN VĂN",
+              "type": "paragraph_arrange",
+              "instruction": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text.",
+              "instruction_vi": "Chọn A, B, C hoặc D để sắp xếp các câu thành đoạn văn hoàn chỉnh.",
+              "prompt": "Arrange the following sentences into a coherent paragraph:\na. In addition, disagreements frequently arise over how teenagers dress and spend their free time.\nb. The generation gap can lead to significant conflicts between parents and children.\nc. For instance, while older family members value traditional customs, young people often embrace modern digital trends.\nd. To bridge this divide, both generations need to listen actively and respect each other's perspectives.\ne. One primary cause of these misunderstandings is the noticeable difference in values and lifestyles.",
+              "options": [
+                "A. b – a – c – e – d",
+                "B. b – e – c – a – d",
+                "C. e – c – b – a – d",
+                "D. b – e – a – c – d"
+              ],
+              "answer": 1,
+              "explanation": "Cấu trúc đoạn văn chuẩn logic:\n• (b) Câu chủ đề (Topic sentence): Khoảng cách thế hệ dẫn đến xung đột lớn.\n• (e) Nêu nguyên nhân cốt lõi: Sự khác biệt rõ rệt về giá trị sống và phong cách sống.\n• (c) Đưa ví dụ minh họa: Người lớn giữ truyền thống, người trẻ theo xu hướng số.\n• (a) Bổ sung ví dụ thứ 2: Cách ăn mặc và sử dụng thời gian rảnh rỗi.\n• (d) Câu kết luận / giải pháp: Cần tích cực lắng nghe và tôn trọng nhau.\n→ Thứ tự đúng: b – e – c – a – d.",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q23",
+              "num": 23,
+              "section": "V. WRITING: Sentence Transformation",
+              "section_vi": "V. VIẾT: VIẾT LẠI CÂU",
+              "type": "transform",
+              "instruction": "Rewrite the following sentences without changing their meaning, using the cues provided.",
+              "instruction_vi": "Viết lại câu sau sao cho nghĩa không đổi, sử dụng từ gợi ý trong ngoặc.",
+              "prompt": "Visitors are not allowed to touch any artifacts displayed in the museum. (Using MUSTN’T)",
+              "lead_in": "Visitors",
+              "model_answers": [
+                "Visitors mustn't touch any artifacts displayed in the museum.",
+                "Visitors mustn't touch any of the artifacts displayed in the museum.",
+                "Visitors must not touch any artifacts displayed in the museum."
+              ],
+              "explanation": "Cấu trúc: 'be not allowed to + V' (không được phép) = 'mustn't + V-bare' (cấm không được làm gì).",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q24",
+              "num": 24,
+              "section": "V. WRITING: Sentence Transformation",
+              "section_vi": "V. VIẾT: VIẾT LẠI CÂU",
+              "type": "transform",
+              "instruction": "Rewrite the following sentences without changing their meaning, using the cues provided.",
+              "instruction_vi": "Viết lại câu sau sao cho nghĩa không đổi, sử dụng từ gợi ý trong ngoặc.",
+              "prompt": "The volunteers began cleaning up the community park two hours ago. (Using present perfect tense)",
+              "lead_in": "The volunteers have",
+              "model_answers": [
+                "The volunteers have cleaned up the community park for two hours.",
+                "The volunteers have been cleaning up the community park for two hours."
+              ],
+              "explanation": "Chuyển từ Quá khứ đơn 'began/started + V-ing + time + ago' sang Hiện tại hoàn thành: 'have/has + V3/ed + for + time' (hoặc Hiện tại hoàn thành tiếp diễn: have been V-ing).",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q25",
+              "num": 25,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Although / install / solar lights / be / expensive, / switch / to / renewable energy / help / households / cut / power bills.",
+              "model_answers": [
+                "Although installing solar lights is expensive, switching to renewable energy helps households cut power bills.",
+                "Although installing solar lights is expensive, switching to renewable energy helps households cut down power bills.",
+                "Although installing solar lights is expensive, switching to renewable energy helps households cut their power bills."
+              ],
+              "explanation": "• Mệnh đề nhượng bộ: Danh động từ 'Installing solar lights' làm chủ ngữ số ít → 'is expensive'.\n• Mệnh đề chính: Danh động từ 'switching to renewable energy' làm chủ ngữ số ít → động từ 'helps'.\n• Cấu trúc: 'help someone (to) do something' → 'helps households cut power bills'.",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q26",
+              "num": 26,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Mutual / respect / and / active listening / be / necessary / bridge / generation gap / between / parents / and / children.",
+              "model_answers": [
+                "Mutual respect and active listening are necessary to bridge the generation gap between parents and children."
+              ],
+              "explanation": "• Chủ ngữ gồm hai thành tố 'Mutual respect and active listening' (danh từ số nhiều) → to be chia là 'are'.\n• Cấu trúc: 'be necessary to do something' (cần thiết để làm gì) → 'are necessary to bridge the generation gap between parents and children'.",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q27",
+              "num": 27,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Develop / public transport / which / run / on / electricity / make / future / cities / less / polluted.",
+              "model_answers": [
+                "Developing public transport which runs on electricity will make future cities less polluted.",
+                "Developing public transport which runs on electricity makes future cities less polluted."
+              ],
+              "explanation": "• Danh động từ 'Developing public transport' làm chủ ngữ.\n• Mệnh đề quan hệ: 'which runs on electricity' (chạy bằng điện).\n• Vị ngữ: 'will make future cities less polluted' (khiến cho các thành phố tương lai bớt ô nhiễm hơn).",
+              "test_id": "test1"
+            },
+            {
+              "id": "t1_q28",
+              "num": 28,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Some / experts / think / smart devices / not / benefit / elderly people / because / they / find / digital interfaces / hard / use.",
+              "model_answers": [
+                "Some experts think that smart devices do not benefit elderly people because they find digital interfaces hard to use.",
+                "Some experts think smart devices do not benefit elderly people because they find digital interfaces hard to use."
+              ],
+              "explanation": "• Mệnh đề chính: 'think that smart devices do not benefit elderly people' (thiết bị thông minh không mang lại lợi ích cho người cao tuổi).\n• Mệnh đề chỉ nguyên nhân: 'because they find digital interfaces hard to use' (cấu trúc find something + adj + to-V: thấy cái gì khó sử dụng).",
+              "test_id": "test1"
+            },
+            {
+              "id": "t2_q01",
+              "num": 1,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. NGỮ ÂM & DẠNG RÚT GỌN",
+              "type": "binary",
+              "instruction": "Mark the letter A or B to indicate the common pronunciation of the underlined auxiliary verb.",
+              "instruction_vi": "Chọn A hoặc B để chỉ cách phát âm thông thường của trợ động từ được gạch chân.",
+              "prompt": "Where have you lived since you moved to this eco-city?",
+              "underlined": "have",
+              "options": [
+                "A. /hæv/",
+                "B. /həv/"
+              ],
+              "answer": 1,
+              "explanation": "Trợ động từ 'have' trong câu hỏi Wh- khi không được nhấn mạnh thường được phát âm ở dạng yếu (weak form) là /həv/. Dạng mạnh /hæv/ chỉ dùng khi cần nhấn mạnh hoặc ở cuối câu.",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q02",
+              "num": 2,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. NGỮ ÂM & DẠNG RÚT GỌN",
+              "type": "binary",
+              "instruction": "Mark the letter A or B to indicate the full form of the underlined contraction.",
+              "instruction_vi": "Chọn A hoặc B để chỉ dạng đầy đủ của từ viết tắt được gạch chân.",
+              "prompt": "My grandfather’s keen on doing morning tai chi in the park.",
+              "underlined": "My grandfather’s",
+              "options": [
+                "A. My grandfather is",
+                "B. My grandfather has"
+              ],
+              "answer": 0,
+              "explanation": "Cấu trúc tính từ: 'be keen on doing something' (say mê, thích thú làm việc gì). Vì vậy 'My grandfather’s' là dạng rút gọn của 'My grandfather is'.",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q03",
+              "num": 3,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. TRỌNG ÂM TỪ",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress.",
+              "instruction_vi": "Chọn từ có vị trí trọng âm chính khác với ba từ còn lại.",
+              "prompt": "Choose the word with different primary stress position:",
+              "options": [
+                "A. disease",
+                "B. illness",
+                "C. dweller",
+                "D. balance"
+              ],
+              "answer": 0,
+              "explanation": "• disease /dɪˈziːz/ (danh từ, trọng âm rơi vào âm tiết 2)\n• illness /ˈɪl.nəs/ (danh từ, trọng âm âm tiết 1)\n• dweller /ˈdwel.ər/ (danh từ, trọng âm âm tiết 1)\n• balance /ˈbæl.əns/ (danh từ, trọng âm âm tiết 1)\n→ Đáp án đúng là A. disease.",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q04",
+              "num": 4,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. TRỌNG ÂM TỪ",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress.",
+              "instruction_vi": "Chọn từ có vị trí trọng âm chính khác với ba từ còn lại.",
+              "prompt": "Choose the word with different primary stress position:",
+              "options": [
+                "A. properly",
+                "B. essential",
+                "C. extended",
+                "D. infectious"
+              ],
+              "answer": 0,
+              "explanation": "• properly /ˈprɒp.əl.i/ (trạng từ, trọng âm rơi vào âm tiết 1)\n• essential /ɪˈsen.ʃəl/ (tính từ, trọng âm âm tiết 2)\n• extended /ɪkˈsten.dɪd/ (tính từ, trọng âm âm tiết 2)\n• infectious /ɪnˈfek.ʃəs/ (tính từ, trọng âm âm tiết 2)\n→ Đáp án đúng là A. properly.",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q05",
+              "num": 5,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Antibiotics should only be used to treat __________ infections caused by bacteria, not viruses.",
+              "options": [
+                "A. bacterial",
+                "B. immune",
+                "C. physical",
+                "D. nutrient"
+              ],
+              "answer": 0,
+              "explanation": "Cụm danh từ: 'bacterial infections' mang nghĩa 'bệnh nhiễm khuẩn (do vi khuẩn gây ra)'. Kháng sinh chỉ có tác dụng tiêu diệt vi khuẩn, không diệt được vi-rút.",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q06",
+              "num": 6,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "The generation __________ between teenagers and their parents often leads to misunderstandings about fashion and lifestyle choices.",
+              "options": [
+                "A. space",
+                "B. bridge",
+                "C. gap",
+                "D. distance"
+              ],
+              "answer": 2,
+              "explanation": "Collocation quen thuộc: 'generation gap' có nghĩa là 'khoảng cách thế hệ'.",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q07",
+              "num": 7,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Installing rooftop solar panels has significantly contributed to the __________ of household utility bills.",
+              "options": [
+                "A. reduce",
+                "B. reduction",
+                "C. reducible",
+                "D. reductively"
+              ],
+              "answer": 1,
+              "explanation": "Sau mạo từ 'the' và trước giới từ 'of' cần một danh từ. 'reduction' (sự cắt giảm, giảm bớt) là danh từ chính xác.",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q08",
+              "num": 8,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "The municipal council __________ several sensor-based streetlights along the main avenue last week.",
+              "options": [
+                "A. installed",
+                "B. has installed",
+                "C. installs",
+                "D. is installing"
+              ],
+              "answer": 0,
+              "explanation": "Trạng từ thời gian xác định trong quá khứ 'last week' (tuần trước) yêu cầu chia thì Quá khứ đơn: 'installed'.",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q09",
+              "num": 9,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "You __________ share your personal passwords or biometric data with strangers; it is extremely unsafe.",
+              "options": [
+                "A. ought to",
+                "B. needn't",
+                "C. mustn't",
+                "D. may"
+              ],
+              "answer": 2,
+              "explanation": "'it is extremely unsafe' (cực kỳ mất an toàn) → diễn đạt điều cấm tuyệt đối, không được làm. Dùng 'mustn't' (không được phép).",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q10",
+              "num": 10,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "These ripe strawberries __________ delicious and sweet; you should try one.",
+              "options": [
+                "A. are tasting",
+                "B. taste",
+                "C. have tasted",
+                "D. were tasting"
+              ],
+              "answer": 1,
+              "explanation": "'Taste' là động từ nối chỉ cảm giác/trạng thái (stative verb), mang nghĩa 'có vị'. Không dùng ở thì tiếp diễn khi miêu tả tính chất đặc trưng của món ăn. Chọn Hiện tại đơn 'taste'.",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q11",
+              "num": 11,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t2_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "A key priority in smart city engineering is the (11) __________ of cutting-edge sensor networks that monitor real-time traffic volume and public lighting.",
+              "options": [
+                "A. installation",
+                "B. install",
+                "C. installed",
+                "D. installer"
+              ],
+              "answer": 0,
+              "explanation": "Đứng sau 'the' và trước 'of' cần một danh từ chỉ hành động/sự việc: 'installation' (việc lắp đặt mạng lưới cảm biến hiện đại).",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q12",
+              "num": 12,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t2_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "By gathering detailed data, municipal authorities can operate transit systems efficiently and (12) __________ a significant reduction in air pollutants.",
+              "options": [
+                "A. make",
+                "B. take",
+                "C. achieve",
+                "D. hold"
+              ],
+              "answer": 2,
+              "explanation": "Cụm động từ kết hợp (collocation): 'achieve a reduction in something' (đạt được mức giảm lượng chất ô nhiễm).",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q13",
+              "num": 13,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t2_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "(13) __________, high-tech infrastructure alone cannot create an ideal metropolis if social and environmental needs are overlooked.",
+              "options": [
+                "A. Therefore",
+                "B. Moreover",
+                "C. However",
+                "D. For example"
+              ],
+              "answer": 2,
+              "explanation": "Ý tương phản với đoạn trước (công nghệ rất tốt, nhưng một mình công nghệ cao thì không thể tạo nên thành phố lý tưởng nếu bỏ qua nhu cầu xã hội/môi trường). Do đó dùng liên từ chuyển ý 'However'.",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q14",
+              "num": 14,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t2_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "Futuristic cities must incorporate abundant green areas, roof gardens, and designated pedestrian promenades to (14) __________ public well-being.",
+              "options": [
+                "A. promote",
+                "B. threaten",
+                "C. decline",
+                "D. disregard"
+              ],
+              "answer": 0,
+              "explanation": "'Promote public well-being' mang nghĩa 'nâng cao, thúc đẩy sức khoẻ và đời sống tốt đẹp của cộng đồng'.",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q15",
+              "num": 15,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t2_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "Expanding automated public transit also discourages private automobile usage, helping cities (15) __________ urban carbon footprints and combat the severe effects of climate change.",
+              "options": [
+                "A. generate",
+                "B. shrink",
+                "C. maintain",
+                "D. emit"
+              ],
+              "answer": 1,
+              "explanation": "'Shrink carbon footprints' mang nghĩa 'thu nhỏ, cắt giảm lượng phát thải khí nhà kính (dấu chân carbon)'. (generate = tạo ra, maintain = duy trì, emit = phát thải).",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q16",
+              "num": 16,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t2_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "Which of the following is the best title for the passage?",
+              "options": [
+                "A. How fast food trigger liver damage",
+                "B. An experiment with McDonald's fast food",
+                "C. Connection between fast food and heart diseases",
+                "D. Putting on weight due to eating fast food"
+              ],
+              "answer": 1,
+              "explanation": "Toàn bộ bài đọc kể về thí nghiệm ăn thức ăn nhanh McDonald's trong 30 ngày của Morgan Spurlock trong bộ phim tài liệu 'Super Size Me'. Do đó, 'An experiment with McDonald's fast food' là tiêu đề phù hợp và khái quát nhất.",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q17",
+              "num": 17,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t2_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "Which of the following is TRUE about Morgan Spurlock?",
+              "options": [
+                "A. He had to eat Super Size meal three times a week.",
+                "B. He had to eat Super Size meal once a week.",
+                "C. He had to consume Super Size for three meals a day",
+                "D. He had to eat Super Size meal twice a day."
+              ],
+              "answer": 2,
+              "explanation": "Đoạn 1 nêu: 'eat only McDonald's fast food three times a day, every day, for thirty days' kết hợp với nguyên tắc chấp nhận Super Size bất cứ khi nào được gợi ý.",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q18",
+              "num": 18,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t2_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "In paragraph 2, the word \"giant\" is closest in meaning to __________.",
+              "underlined": "giant",
+              "options": [
+                "A. healthy",
+                "B. light",
+                "C. balanced",
+                "D. big"
+              ],
+              "answer": 3,
+              "explanation": "'Giant' có nghĩa là khổng lồ, cực lớn (~ very big, huge). 'a giant portion' = một khẩu phần ăn rất lớn.",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q19",
+              "num": 19,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t2_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "Which of the following could get rid of Spurlock's headaches?",
+              "options": [
+                "A. a pain killer",
+                "B. a McDonald's meal",
+                "C. nothing",
+                "D. salad"
+              ],
+              "answer": 1,
+              "explanation": "Đoạn 3 viết: 'The only thing that got rid of his headaches and made him feel better was another McDonald's meal, so his doctors told him he was addicted.'",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q20",
+              "num": 20,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t2_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "The word \"its\" in paragraph 4 refers to __________.",
+              "underlined": "its",
+              "options": [
+                "A. the film Super Size Me",
+                "B. the menu",
+                "C. McDonald's",
+                "D. the experiment"
+              ],
+              "answer": 0,
+              "explanation": "Trong câu: '...but the film also had a wider impact. Just after its showing in 2004...', đại từ 'its' thay thế cho danh từ 'the film' (Super Size Me) đứng ngay trước.",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q21",
+              "num": 21,
+              "section": "V. WRITING: Dialogue Arrangement",
+              "section_vi": "V. VIẾT: SẮP XẾP ĐOẠN HỘI THOẠI",
+              "type": "dialogue_arrange",
+              "instruction": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text.",
+              "instruction_vi": "Chọn A, B, C hoặc D để sắp xếp các câu thành đoạn đối thoại hợp lý và có nghĩa.",
+              "prompt": "Arrange the following sentences into a meaningful exchange:\na. Peter: Absolutely. Driverless electric buses and smart traffic sensors will definitely cut down emissions.\nb. Peter: That’s a good point! We'll probably see sensors adjusting traffic lights in real time to avoid congestion.\nc. Mai: Do you think our city will become much greener and smarter in the next decade?\nd. Mai: I agree, and AI technology will also make public transit run on schedule without delays.",
+              "options": [
+                "A. c – d – b – a",
+                "B. a – c – d – b",
+                "C. c – a – d – b",
+                "D. c – b – a – d"
+              ],
+              "answer": 2,
+              "explanation": "Diễn tiến đối thoại mạch lạc:\n1. (c) Mai mở đầu bằng câu hỏi: 'Bạn có nghĩ thành phố chúng ta sẽ xanh và thông minh hơn trong thập kỷ tới không?'\n2. (a) Peter tán thành và dẫn chứng: 'Chắc chắn rồi. Xe buýt điện không người lái và cảm biến thông minh sẽ giảm khí thải.'\n3. (d) Mai đồng tình và bổ sung ý AI: 'Mình đồng ý, và công nghệ AI cũng sẽ giúp phương tiện công cộng đúng giờ.'\n4. (b) Peter khen ý kiến hay và mở rộng thêm: 'Ý kiến hay đó! Chúng ta cũng sẽ thấy cảm biến điều chỉnh đèn giao thông theo thời gian thực.'\n→ Thứ tự đúng: c – a – d – b (Đáp án C).",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q22",
+              "num": 22,
+              "section": "V. WRITING: Paragraph Arrangement",
+              "section_vi": "V. VIẾT: SẮP XẾP ĐOẠN VĂN",
+              "type": "paragraph_arrange",
+              "instruction": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text.",
+              "instruction_vi": "Chọn A, B, C hoặc D để sắp xếp các câu thành đoạn văn hoàn chỉnh.",
+              "prompt": "Arrange the following sentences into a coherent paragraph:\na. Furthermore, renewable energy sources such as solar and wind will power most residential buildings and offices.\nb. Smart cities are being developed to offer residents a cleaner and more sustainable lifestyle.\nc. As a result, urban dwellers will enjoy better living standards with minimal impact on the environment.\nd. First of all, advanced technologies are installed to optimize energy use and reduce carbon emissions.\ne. For example, intelligent waste management systems can sort recycling automatically and alert collectors when bins are full.",
+              "options": [
+                "A. b – d – e – a – c",
+                "B. b – e – d – a – c",
+                "C. d – e – b – a – c",
+                "D. b – d – a – e – c"
+              ],
+              "answer": 0,
+              "explanation": "Cấu trúc triển khai đoạn văn:\n• (b) Câu mở đoạn: Các thành phố thông minh đang được phát triển để đem lại lối sống xanh bền vững.\n• (d) Luận điểm 1: Đầu tiên (First of all), công nghệ tiên tiến được lắp đặt để tối ưu năng lượng.\n• (e) Dẫn chứng luận điểm 1: Ví dụ (For example), hệ thống xử lý rác thông minh tự phân loại.\n• (a) Luận điểm 2: Hơn nữa (Furthermore), năng lượng tái tạo sẽ cung cấp điện cho nhà ở và văn phòng.\n• (c) Câu kết đoạn: Nhờ đó (As a result), cư dân đô thị sẽ có mức sống tốt hơn với tác động tối thiểu lên môi trường.\n→ Thứ tự đúng: b – d – e – a – c (Đáp án A).",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q23",
+              "num": 23,
+              "section": "V. WRITING: Sentence Transformation",
+              "section_vi": "V. VIẾT: VIẾT LẠI CÂU",
+              "type": "transform",
+              "instruction": "Rewrite the following sentences without changing their meaning, using the cues provided.",
+              "instruction_vi": "Viết lại câu sau sao cho nghĩa không đổi, sử dụng từ gợi ý trong ngoặc.",
+              "prompt": "Passengers are prohibited from opening the emergency exit doors during the flight. (Using MUSTN’T)",
+              "lead_in": "Passengers",
+              "model_answers": [
+                "Passengers mustn't open the emergency exit doors during the flight.",
+                "Passengers must not open the emergency exit doors during the flight."
+              ],
+              "explanation": "Cấu trúc: 'be prohibited from + V-ing' (bị cấm làm gì) = 'mustn't + V-bare' (không được phép làm gì).",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q24",
+              "num": 24,
+              "section": "V. WRITING: Sentence Transformation",
+              "section_vi": "V. VIẾT: VIẾT LẠI CÂU",
+              "type": "transform",
+              "instruction": "Rewrite the following sentences without changing their meaning, using the cues provided.",
+              "instruction_vi": "Viết lại câu sau sao cho nghĩa không đổi, sử dụng từ gợi ý trong ngoặc.",
+              "prompt": "That university hospital started researching the new vaccine six months ago. (Using present perfect tense)",
+              "lead_in": "That university hospital has",
+              "model_answers": [
+                "That university hospital has researched the new vaccine for six months.",
+                "That university hospital has been researching the new vaccine for six months."
+              ],
+              "explanation": "Chuyển từ Quá khứ đơn 'started researching... six months ago' sang Hiện tại hoàn thành: 'has researched... for six months' (hoặc Hiện tại hoàn thành tiếp diễn: has been researching).",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q25",
+              "num": 25,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Although / sort / household waste / take / time, / recycle / plastic containers / help / protect / the / marine environment.",
+              "model_answers": [
+                "Although sorting household waste takes time, recycling plastic containers helps protect the marine environment.",
+                "Although sorting household waste takes time, recycling plastic containers helps to protect the marine environment."
+              ],
+              "explanation": "• Mệnh đề nhượng bộ: Danh động từ 'Sorting household waste' làm chủ ngữ số ít → động từ 'takes time'.\n• Mệnh đề chính: Danh động từ 'recycling plastic containers' làm chủ ngữ số ít → động từ 'helps protect the marine environment'.",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q26",
+              "num": 26,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Spend / quality time / together / be / crucial / strengthen / family bonds / and / resolve / daily misunderstandings.",
+              "model_answers": [
+                "Spending quality time together is crucial to strengthen family bonds and resolve daily misunderstandings.",
+                "Spending quality time together is crucial for strengthening family bonds and resolving daily misunderstandings."
+              ],
+              "explanation": "• Chủ ngữ: Danh động từ 'Spending quality time together' (việc dành thời gian chất lượng bên nhau) là số ít → to be chia là 'is'.\n• Cấu trúc: 'be crucial to do something' (mang tính thiết yếu để làm gì) → 'is crucial to strengthen family bonds and resolve daily misunderstandings'.",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q27",
+              "num": 27,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Create / more / green spaces / which / provide / fresh air / make / metropolitan areas / much / healthier.",
+              "model_answers": [
+                "Creating more green spaces which provide fresh air makes metropolitan areas much healthier.",
+                "Creating more green spaces which provide fresh air will make metropolitan areas much healthier."
+              ],
+              "explanation": "• Chủ ngữ: Danh động từ 'Creating more green spaces' (việc tạo thêm nhiều không gian xanh).\n• Mệnh đề quan hệ bổ nghĩa cho spaces: 'which provide fresh air'.\n• Vị ngữ chính: 'makes/will make metropolitan areas much healthier' (cấu trúc make + O + adj).",
+              "test_id": "test2"
+            },
+            {
+              "id": "t2_q28",
+              "num": 28,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Many / citizens / worry / that / smart technology / not / guarantee / complete safety / because / cyberattacks / can / disrupt / city services.",
+              "model_answers": [
+                "Many citizens worry that smart technology does not guarantee complete safety because cyberattacks can disrupt city services."
+              ],
+              "explanation": "• Mệnh đề chính: 'Many citizens worry that smart technology does not guarantee complete safety' (chủ ngữ technology số ít dùng trợ động từ 'does not').\n• Mệnh đề nguyên nhân: 'because cyberattacks can disrupt city services' (vì các cuộc tấn công mạng có thể gây đình trệ các dịch vụ đô thị).",
+              "test_id": "test2"
+            },
+            {
+              "id": "t3_q01",
+              "num": 1,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. NGỮ ÂM & DẠNG RÚT GỌN",
+              "type": "binary",
+              "instruction": "Mark the letter A or B to indicate the common pronunciation of the underlined auxiliary verb.",
+              "instruction_vi": "Chọn A hoặc B để chỉ cách phát âm thông thường của trợ động từ được gạch chân.",
+              "prompt": "What does this smart sensor do when it detects smoke?",
+              "underlined": "does",
+              "options": [
+                "A. /dʌz/",
+                "B. /dəz/"
+              ],
+              "answer": 1,
+              "explanation": "Trong câu hỏi có từ để hỏi (Wh-question), trợ động từ 'does' không mang trọng âm nên được phát âm ở dạng yếu (weak form) là /dəz/. Dạng mạnh /dʌz/ dùng khi nhấn mạnh hoặc câu trả lời ngắn.",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q02",
+              "num": 2,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. NGỮ ÂM & DẠNG RÚT GỌN",
+              "type": "binary",
+              "instruction": "Mark the letter A or B to indicate the full form of the underlined contraction.",
+              "instruction_vi": "Chọn A hoặc B để chỉ dạng đầy đủ của từ viết tắt được gạch chân.",
+              "prompt": "He’d better change his sedentary habits to avoid cardiovascular diseases.",
+              "underlined": "He’d",
+              "options": [
+                "A. He had",
+                "B. He would"
+              ],
+              "answer": 0,
+              "explanation": "Cấu trúc lời khuyên: 'had better + V-bare' (nên làm gì thì tốt hơn). Do đó 'He’d better' là dạng viết tắt của 'He had better'.",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q03",
+              "num": 3,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. TRỌNG ÂM TỪ",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress.",
+              "instruction_vi": "Chọn từ có vị trí trọng âm chính khác với ba từ còn lại.",
+              "prompt": "Choose the word with different primary stress position:",
+              "options": [
+                "A. treatment",
+                "B. conflict",
+                "C. promote",
+                "D. mindset"
+              ],
+              "answer": 2,
+              "explanation": "• treatment /ˈtriːt.mənt/ (danh từ, trọng âm rơi vào âm tiết 1)\n• conflict /ˈkɒn.flɪkt/ (danh từ, trọng âm âm tiết 1)\n• promote /prəˈməʊt/ (động từ, trọng âm âm tiết 2)\n• mindset /ˈmaɪnd.set/ (danh từ ghép, trọng âm âm tiết 1)\n→ Đáp án đúng là C. promote.",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q04",
+              "num": 4,
+              "section": "I. PHONETICS & CONTRACTIONS",
+              "section_vi": "I. TRỌNG ÂM TỪ",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the word that differs from the other three in the position of primary stress.",
+              "instruction_vi": "Chọn từ có vị trí trọng âm chính khác với ba từ còn lại.",
+              "prompt": "Choose the word with different primary stress position:",
+              "options": [
+                "A. operate",
+                "B. emission",
+                "C. pollutant",
+                "D. renewable"
+              ],
+              "answer": 0,
+              "explanation": "• operate /ˈɒp.ər.eɪt/ (động từ, trọng âm rơi vào âm tiết 1)\n• emission /iˈmɪʃ.ən/ (danh từ có đuôi -ion, trọng âm âm tiết 2)\n• pollutant /pəˈluː.tənt/ (danh từ, trọng âm âm tiết 2)\n• renewable /rɪˈnjuː.ə.bəl/ (tính từ, trọng âm âm tiết 2)\n→ Đáp án đúng là A. operate.",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q05",
+              "num": 5,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Urban planners are designing pedestrian zones to decrease toxic vehicle __________ in the city center.",
+              "options": [
+                "A. footprints",
+                "B. emissions",
+                "C. diets",
+                "D. views"
+              ],
+              "answer": 1,
+              "explanation": "Cụm danh từ: 'vehicle emissions' mang nghĩa là 'lượng khí thải của các phương tiện giao thông'. Khu phố đi bộ giúp giảm khí thải xe cơ giới độc hại.",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q06",
+              "num": 6,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Living under the same roof with three generations often requires family members to respect each other's __________.",
+              "options": [
+                "A. viewpoints",
+                "B. conflicts",
+                "C. arguments",
+                "D. barriers"
+              ],
+              "answer": 0,
+              "explanation": "'Respect each other's viewpoints' = tôn trọng quan điểm / góc nhìn của nhau giữa các thế hệ. (conflicts = xung đột, arguments = cãi vã, barriers = rào cản).",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q07",
+              "num": 7,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Eating fresh fruits and raw vegetables provides a variety of essential vitamins and __________ for our bodies.",
+              "options": [
+                "A. nutritionally",
+                "B. nutritive",
+                "C. nutrients",
+                "D. nourish"
+              ],
+              "answer": 2,
+              "explanation": "Cấu trúc song hành với liên từ 'and': 'vitamins and __________' cần một danh từ số nhiều tương ứng. 'nutrients' (chất dinh dưỡng) là danh từ chính xác.",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q08",
+              "num": 8,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Nam __________ badminton every afternoon since he was in secondary school",
+              "options": [
+                "A. has played",
+                "B. played",
+                "C. is playing",
+                "D. plays"
+              ],
+              "answer": 0,
+              "explanation": "Mệnh đề 'since he was in secondary school' (kể từ khi còn học cấp 2) đi với mệnh đề chính ở thì Hiện tại hoàn thành: 'has played'.",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q09",
+              "num": 9,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "You __________ buy paper bus tickets because the entire city transit system accepts contactless smartcards.",
+              "options": [
+                "A. mustn't",
+                "B. don’t have to",
+                "C. should",
+                "D. must"
+              ],
+              "answer": 1,
+              "explanation": "'Don't have to' chỉ sự không cần thiết (lack of necessity): Bạn không cần phải mua vé giấy vì toàn bộ hệ thống chấp nhận thẻ từ thông minh chạm không tiếp xúc.",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q10",
+              "num": 10,
+              "section": "II. LEXICO-GRAMMAR",
+              "section_vi": "II. TỪ VỰNG - NGỮ PHÁP",
+              "type": "mcq",
+              "instruction": "Mark the letter A, B, C, or D to indicate the correct answer to each of the following questions.",
+              "instruction_vi": "Chọn A, B, C hoặc D để hoàn thành câu.",
+              "prompt": "Look at those smart traffic cameras! The technician __________ how the vehicle tracking software operates.",
+              "options": [
+                "A. is demonstrating",
+                "B. demonstrates",
+                "C. has demonstrated",
+                "D. was demonstrated"
+              ],
+              "answer": 0,
+              "explanation": "Dấu hiệu câu mệnh lệnh cảm thán: 'Look at those smart traffic cameras!' chỉ hành động đang diễn ra tại thời điểm nói → chia thì Hiện tại tiếp diễn: 'is demonstrating'.",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q11",
+              "num": 11,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t3_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "First and foremost, their diets consist primarily of plant-based foods, such as beans, nuts, and fresh vegetables. (11) __________ people in these areas consume red meat, doing so only on special occasions.",
+              "options": [
+                "A. Few",
+                "B. Many",
+                "C. Much",
+                "D. A little"
+              ],
+              "answer": 0,
+              "explanation": "'People' là danh từ đếm được số nhiều. Ngữ cảnh nêu họ chủ yếu ăn thực vật và chỉ ăn thịt đỏ vào dịp đặc biệt → Rất ít người ('Few people') ăn thịt đỏ.",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q12",
+              "num": 12,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t3_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "Rather than lifting heavy weights in gyms, they engage (12) __________ physical activities through walking, gardening, and doing manual household chores.",
+              "options": [
+                "A. on",
+                "B. with",
+                "C. in",
+                "D. for"
+              ],
+              "answer": 2,
+              "explanation": "Cụm động từ cố định: 'engage in something' (tham gia vào việc gì/hoạt động gì).",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q13",
+              "num": 13,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t3_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "(13) __________, managing chronic stress is indispensable for emotional balance and cardiovascular fitness.",
+              "options": [
+                "A. However",
+                "B. Furthermore",
+                "C. Therefore",
+                "D. In contrast"
+              ],
+              "answer": 1,
+              "explanation": "Đoạn 1 nói về chế độ ăn và vận động thể chất. Đoạn 2 tiếp tục bổ sung yếu tố quan trọng thứ 3 là kiểm soát căng thẳng tinh thần. Liên từ bổ sung thông tin: 'Furthermore' (Hơn thế nữa / Thêm vào đó).",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q14",
+              "num": 14,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t3_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "They cultivate lifelong bonds, which provides them with a strong sense of belonging and helps (14) __________ their life expectancy.",
+              "options": [
+                "A. boost",
+                "B. decline",
+                "C. control",
+                "D. damage"
+              ],
+              "answer": 0,
+              "explanation": "'Boost their life expectancy' mang nghĩa 'nâng cao, gia tăng tuổi thọ kỳ vọng của họ'. (decline = giảm, damage = tổn hại).",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q15",
+              "num": 15,
+              "section": "III. CLOZE READING",
+              "section_vi": "III. ĐỌC ĐIỀN TỪ",
+              "type": "reading_cloze",
+              "passage_id": "t3_p1",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct word or phrase that best fits each of the numbered blanks from 11 to 15.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để điền vào chỗ trống thích hợp từ 11 đến 15.",
+              "prompt": "(15) __________, maintaining healthy routines along with loving relationships is the true recipe for enduring vitality.",
+              "options": [
+                "A. In addition",
+                "B. By contrast",
+                "C. In short",
+                "D. For instance"
+              ],
+              "answer": 2,
+              "explanation": "Câu cuối cùng mang tính đúc kết, tóm tắt toàn bộ bài viết: 'Tóm lại (In short), duy trì các thói quen lành mạnh cùng các mối quan hệ yêu thương là công thức thực sự cho sức sống bền bỉ'.",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q16",
+              "num": 16,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t3_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "According to paragraph 1, what happens when people consistently sleep fewer than six hours a night?",
+              "options": [
+                "A. Their cognitive performance immediately peaks.",
+                "B. Their bodies release excessive amounts of cortisol.",
+                "C. Their immune systems eradicate inflammation completely.",
+                "D. Their arterial walls become stronger and more flexible."
+              ],
+              "answer": 1,
+              "explanation": "Đoạn 1 nêu rõ: 'When individuals sleep less than six hours per night on a consistent basis, their bodies release excessive cortisol—a hormone that triggers systemic inflammation and damages arterial walls.'",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q17",
+              "num": 17,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t3_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "The word It in paragraph 3 refers to __________.",
+              "underlined": "It",
+              "options": [
+                "A. restorative rest",
+                "B. toxic protein",
+                "C. inadequate rest",
+                "D. physical well-being"
+              ],
+              "answer": 2,
+              "explanation": "Trong đoạn 3: 'Moreover, inadequate rest significantly interferes with appetite-regulating hormones. It reduces leptin, which signals fullness...', đại từ 'It' thay thế cho cụm danh từ 'inadequate rest' (việc nghỉ ngơi không đầy đủ/thiếu ngủ).",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q18",
+              "num": 18,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t3_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "The word advocate in paragraph 3 is closest in meaning to __________.",
+              "underlined": "advocate",
+              "options": [
+                "A. recommend",
+                "B. oppose",
+                "C. ignore",
+                "D. prohibit"
+              ],
+              "answer": 0,
+              "explanation": "'Advocate' có nghĩa là 'khuyên, đề xuất, ủng hộ' (~ recommend, support). Các chuyên gia y tế khuyên thiết lập thói quen đi ngủ nghiêm ngặt.",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q19",
+              "num": 19,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t3_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "Which of the following best serves as the main idea of the passage?",
+              "options": [
+                "A. The psychological benefits of sleeping medication for seniors.",
+                "B. How late-night screen exposure disrupts academic performance.",
+                "C. The indispensable role of sufficient sleep in protecting physical and mental health.",
+                "D. Common strategies to eradicate ghrelin and suppress hunger cravings."
+              ],
+              "answer": 2,
+              "explanation": "Bài viết phân tích cơ chế sinh học sâu sắc mà giấc ngủ ảnh hưởng đến tim mạch, giải độc não bộ và kiểm soát hormone, từ đó khẳng định vai trò thiết yếu của giấc ngủ đủ đối với sức khỏe thể chất và tinh thần.",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q20",
+              "num": 20,
+              "section": "IV. READING COMPREHENSION",
+              "section_vi": "IV. ĐỌC HIỂU VĂN BẢN",
+              "type": "reading_comp",
+              "passage_id": "t3_p2",
+              "instruction": "Read the following passage and mark the letter A, B, C, or D to indicate the correct answer to each of the questions from 16 to 20.",
+              "instruction_vi": "Đọc đoạn văn sau và chọn A, B, C hoặc D để trả lời các câu hỏi từ 16 đến 20.",
+              "prompt": "What can be inferred from the discussion of the glymphatic system in paragraph 2?",
+              "options": [
+                "A. The glymphatic system operates most efficiently during vigorous waking exercise.",
+                "B. Long-term sleep deficiency may elevate the vulnerability to neurodegenerative disorders.",
+                "C. Beta-amyloid is a beneficial protein necessary for arterial protection.",
+                "D. Cleansing metabolic waste relies primarily on rigorous dietary restrictions."
+              ],
+              "answer": 1,
+              "explanation": "Đoạn 2 nêu rõ hệ thống glymphatic dọn sạch độc tố beta-amyloid (protein gắn liền với sự suy giảm nhận thức/sa sút trí tuệ) trong giấc ngủ sâu. Nếu thiếu ngủ kéo dài, chất độc tích tụ sẽ làm tăng nguy cơ mắc các rối loạn thoái hóa thần kinh (neurodegenerative disorders).",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q21",
+              "num": 21,
+              "section": "V. WRITING: Dialogue Arrangement",
+              "section_vi": "V. VIẾT: SẮP XẾP ĐOẠN HỘI THOẠI",
+              "type": "dialogue_arrange",
+              "instruction": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text.",
+              "instruction_vi": "Chọn A, B, C hoặc D để sắp xếp các câu thành đoạn đối thoại hợp lý và có nghĩa.",
+              "prompt": "Arrange the following sentences into a meaningful exchange:\na. Minh: That’s a sensible decision. Cooking at home lets you control sodium and avoid unhealthy fats.\nb. An: I’ve decided to cut down on processed foods and prepare my own lunches instead.\nc. An: Exactly. I’m already feeling much more energetic throughout the afternoon!\nd. Minh: Really? What made you change your eating habits so suddenly?",
+              "options": [
+                "A. b – a – c – d",
+                "B. d – b – a – c",
+                "C. b – d – c – a",
+                "D. b – d – a – c"
+              ],
+              "answer": 1,
+              "explanation": "Trình tự đàm thoại hợp lý:\n1. (d) Minh nhận thấy điều khác lạ và hỏi mở: 'Thật á? Điều gì khiến bạn thay đổi thói quen ăn uống đột ngột thế?'\n2. (b) An giải thích: 'Mình đã quyết định giảm đồ ăn chế biến sẵn và tự chuẩn bị bữa trưa.'\n3. (a) Minh khen ngợi: 'Đó là quyết định sáng suốt. Tự nấu giúp kiểm soát muối và chất béo xấu.'\n4. (c) An hào hứng xác nhận: 'Chính xác. Mình đã cảm thấy tràn đầy năng lượng hơn suốt buổi chiều!'\n→ Thứ tự đúng: d – b – a – c (hoặc nếu mở đầu bằng thông báo của An b thì tiếp nối là d – a – c).",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q22",
+              "num": 22,
+              "section": "V. WRITING: Paragraph Arrangement",
+              "section_vi": "V. VIẾT: SẮP XẾP ĐOẠN VĂN",
+              "type": "paragraph_arrange",
+              "instruction": "Mark the letter A, B, C or D on your answer sheet to indicate the best arrangement of utterances or sentences to make a meaningful exchange or text.",
+              "instruction_vi": "Chọn A, B, C hoặc D để sắp xếp các câu thành đoạn văn hoàn chỉnh.",
+              "prompt": "Arrange the following sentences into a coherent paragraph:\na. In addition, maintaining proper hydration by drinking enough water keeps your digestive system functioning smoothly.\nb. Adopting a nutritious and balanced diet is essential for long-term health and well-being.\nc. For instance, incorporating fresh vegetables, whole grains, and lean proteins provides the body with vital nutrients.\nd. In conclusion, combining wholesome food with adequate water intake is key to preventing chronic illnesses.\ne. Eating nutrient-rich meals regularly helps strengthen your immune system and boost your energy.",
+              "options": [
+                "A. b – a – e – c – d",
+                "B. e – c – b – a – d",
+                "C. b – e – c – a – d",
+                "D. b – c – e – a – d"
+              ],
+              "answer": 2,
+              "explanation": "Cấu trúc đoạn văn mạch lạc:\n• (b) Câu chủ đề: Chế độ ăn uống dinh dưỡng và cân bằng là thiết yếu cho sức khỏe lâu dài.\n• (e) Lợi ích chính: Ăn các bữa giàu dưỡng chất củng cố hệ miễn dịch và gia tăng năng lượng.\n• (c) Ví dụ cụ thể (For instance): Bổ sung rau tươi, ngũ cốc nguyên hạt và đạm nạc.\n• (a) Ý bổ sung (In addition): Uống đủ nước giúp hệ tiêu hóa hoạt động trơn tru.\n• (d) Kết luận (In conclusion): Kết hợp thực phẩm lành mạnh và uống đủ nước là chìa khóa phòng ngừa bệnh mãn tính.\n→ Thứ tự đúng: b – e – c – a – d (Đáp án C).",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q23",
+              "num": 23,
+              "section": "V. WRITING: Sentence Transformation",
+              "section_vi": "V. VIẾT: VIẾT LẠI CÂU",
+              "type": "transform",
+              "instruction": "Rewrite the following sentences without changing their meaning, using the cues provided.",
+              "instruction_vi": "Viết lại câu sau sao cho nghĩa không đổi, sử dụng từ gợi ý trong ngoặc.",
+              "prompt": "It is against the school rules for students to bring food into the computer lab. (Using MUSTN’T)",
+              "lead_in": "Students",
+              "model_answers": [
+                "Students mustn't bring food into the computer lab.",
+                "Students must not bring food into the computer lab."
+              ],
+              "explanation": "'It is against the school rules' (vi phạm nội quy trường học) = 'Students mustn't + V-bare' (Học sinh không được phép mang thức ăn vào phòng máy tính).",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q24",
+              "num": 24,
+              "section": "V. WRITING: Sentence Transformation",
+              "section_vi": "V. VIẾT: VIẾT LẠI CÂU",
+              "type": "transform",
+              "instruction": "Rewrite the following sentences without changing their meaning, using the cues provided.",
+              "instruction_vi": "Viết lại câu sau sao cho nghĩa không đổi, sử dụng từ gợi ý trong ngoặc.",
+              "prompt": "My parents started living in this eco-friendly residential area five years ago. (Using present perfect tense)",
+              "lead_in": "My parents have",
+              "model_answers": [
+                "My parents have lived in this eco-friendly residential area for five years.",
+                "My parents have been living in this eco-friendly residential area for five years."
+              ],
+              "explanation": "Chuyển từ Quá khứ đơn 'started living... five years ago' sang Hiện tại hoàn thành: 'have lived in... for five years' (hoặc Hiện tại hoàn thành tiếp diễn: have been living).",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q25",
+              "num": 25,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Although / cycle / be / time-consuming, / ride / a bike / reduce / carbon emissions / and / improve / physical health.",
+              "model_answers": [
+                "Although cycling is time-consuming, riding a bike reduces carbon emissions and improves physical health.",
+                "Although to cycle is time-consuming, riding a bike reduces carbon emissions and improves physical health."
+              ],
+              "explanation": "• Mệnh đề nhượng bộ: Danh động từ 'Cycling' làm chủ ngữ số ít → 'is time-consuming'.\n• Mệnh đề chính: Danh động từ 'riding a bike' làm chủ ngữ số ít → động từ chia số ít: 'reduces carbon emissions and improves physical health'.",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q26",
+              "num": 26,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Regular / physical exercise / and / balanced diet / be / vital / boost / immune system / and / prevent / chronic illnesses.",
+              "model_answers": [
+                "Regular physical exercise and a balanced diet are vital to boost the immune system and prevent chronic illnesses.",
+                "Regular physical exercise and a balanced diet are vital to boost our immune system and prevent chronic illnesses."
+              ],
+              "explanation": "• Chủ ngữ gồm 2 thành tố 'Regular physical exercise and a balanced diet' → động từ to be chia là 'are'.\n• Cấu trúc: 'be vital to do something' (mang tính sống còn để làm gì) → 'are vital to boost the immune system and prevent chronic illnesses'.",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q27",
+              "num": 27,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Install / smart solar panels / which / generate / green electricity / make / modern homes / more / energy-efficient.",
+              "model_answers": [
+                "Installing smart solar panels which generate green electricity makes modern homes more energy-efficient.",
+                "Installing smart solar panels which generate green electricity will make modern homes more energy-efficient."
+              ],
+              "explanation": "• Danh động từ 'Installing smart solar panels' làm chủ ngữ.\n• Mệnh đề quan hệ: 'which generate green electricity' (tạo ra điện năng sạch).\n• Vị ngữ: 'makes modern homes more energy-efficient' (khiến ngôi nhà hiện đại tiết kiệm năng lượng hơn).",
+              "test_id": "test3"
+            },
+            {
+              "id": "t3_q28",
+              "num": 28,
+              "section": "V. WRITING: Sentence Building",
+              "section_vi": "V. VIẾT: TẠO CÂU TỪ TỪ GỢI Ý",
+              "type": "sentence_building",
+              "instruction": "Use the cues given to write complete and meaningful sentences. Make any necessary changes.",
+              "instruction_vi": "Dùng các từ gợi ý để viết câu hoàn chỉnh, thêm hoặc biến đổi từ nếu cần.",
+              "prompt": "Many / teenagers / believe / generational conflicts / happen / because / parents / fail / understand / modern trends.",
+              "model_answers": [
+                "Many teenagers believe that generational conflicts happen because parents fail to understand modern trends.",
+                "Many teenagers believe generational conflicts happen because parents fail to understand modern trends."
+              ],
+              "explanation": "• Mệnh đề chính: 'Many teenagers believe that generational conflicts happen'.\n• Mệnh đề chỉ nguyên nhân: 'because parents fail to understand modern trends' (cấu trúc fail to do something: không thể/thất bại trong việc hiểu các xu hướng hiện đại).",
+              "test_id": "test3"
+            }
+          ],
+          "passages": {
+            "t1_p1": {
+              "title": "Longevity and Daily Health Routines",
+              "paragraphs": [
+                "Living a long and vigorous life is not merely a consequence of fortunate genetics; it is deeply shaped by our daily health routines. Nutritional scientists consistently emphasize the (11) __________ of consuming balanced meals rich in natural vitamins, dietary fiber, and essential minerals. In addition, individuals who regularly (12) __________ in moderate physical exercise—such as brisk walking or swimming—tend to maintain superior cardiovascular fitness and lower body fat levels.",
+                "(13) __________, achieving longevity requires more than just dietary care and physical movement. Chronic emotional distress can severely weaken the body’s natural defenses over time. Therefore, modern health specialists strongly advise people to (14) __________ their daily screen exposure and spend time outdoors to alleviate tension. Cultivating positive relationships also helps people overcome anxiety and (15) __________ their mental resilience throughout the aging process."
+              ]
+            },
+            "t1_p2": {
+              "title": "The Modern Generation Gap in America",
+              "source": "Adapted from www.verywellfamily.com",
+              "paragraphs": [
+                "The generation gap that was so in evidence during the 60s has resurfaced, but it is not the disruptive force that it was during the Vietnam era, a 2009 study suggests. The Pew Research Center study found that 79% of Americans see major differences between younger and older adults in the way they look at the world. In 1969, a Gallup Poll found that a smaller percentage, 74%, perceived major differences.",
+                "Today, however, although more Americans see generational differences, most do not see them as divisive. That is partly because of the areas of difference. The top areas of disagreement between young and old, according to the Pew Research Study, are the use of technology and taste in music. Grandparents are likely to have observed these differences in their grandchildren who are tweens, teens, and young adults.",
+                "If large differences between the generations exist, why don't they spawn conflict? The answer is twofold.",
+                "First, the two largest areas of difference technology and music are less emotionally charged than political issues. The older generation is likely to be proud of the younger generation's prowess in technology rather than to view it as a problem. As for the musical differences, each generation wants its own style of music, and the older generation generally can relate to that desire.",
+                "Second, in the other areas of difference, the younger generation tends to regard the older generation as superior to their own generation—clearly a difference from the 1960s with its rallying cry of \"Don't trust anyone over thirty.\" According to the Pew study, all generations regard older Americans as superior in moral values, work ethic and respect for others."
+              ]
+            },
+            "t2_p1": {
+              "title": "Smart Cities Engineering and Green Metropolises",
+              "paragraphs": [
+                "Urban planners around the world are rethinking urban spaces to construct more livable, energy-efficient environments. A key priority in smart city engineering is the (11) __________ of cutting-edge sensor networks that monitor real-time traffic volume and public lighting. By gathering detailed data, municipal authorities can operate transit systems efficiently and (12) __________ a significant reduction in air pollutants.",
+                "(13) __________, high-tech infrastructure alone cannot create an ideal metropolis if social and environmental needs are overlooked. Futuristic cities must incorporate abundant green areas, roof gardens, and designated pedestrian promenades to (14) __________ public well-being. Expanding automated public transit also discourages private automobile usage, helping cities (15) __________ urban carbon footprints and combat the severe effects of climate change."
+              ]
+            },
+            "t2_p2": {
+              "title": "Super Size Me: An Experiment with Fast Food",
+              "source": "Documentary review & analysis",
+              "paragraphs": [
+                "Super Size Me is a 2004 film by Morgan Spurlock, in which he documents his experiment to eat only McDonald's fast food three times a day, every day, for thirty days.",
+                "Spurlock made himself a short list of rules for the experiment, including an obligation to eat all of the three meals he ordered. He also had to 'Super Size', which means accepting a giant portion every time the option was offered to him. He ended up vomiting after the first Super Size meal he finished, after taking nearly twenty minutes to consume it.",
+                "After five days Spurlock put on almost 5kg, and he soon found himself feeling depressed, with no energy. The only thing that got rid of his headaches and made him feel better was another McDonald's meal, so his doctors told him he was addicted. More seriously, around day twenty, he started experiencing heart palpitations and one of the doctors detected liver problems. However, in spite of his doctor's advice, Spurlock continued to the end of the month and achieved a total weight gain of 11kg. His body mass index also increased from a healthy 23.2 to an overweight 27.",
+                "It took Spurlock fifteen months to recover from his experiment and return to his original weight, but the film also had a wider impact. Just after its showing in 2004, McDonald's phased out the Super Size option and healthier options like salads appeared on the menu.",
+                "Unfortunately, McDonald's denied the connection between the film and the changes, but it is interesting to note how closely they coincided with the release of the film."
+              ]
+            },
+            "t3_p1": {
+              "title": "Secrets of Longevity in the Blue Zones",
+              "paragraphs": [
+                "Living a long and fulfilling life is not merely a matter of genetic luck; it depends heavily on everyday lifestyle choices. Residents of the famous \"Blue Zones\"—regions where people regularly live past 100—share several common habits. First and foremost, their diets consist primarily of plant-based foods, such as beans, nuts, and fresh vegetables. (11) __________ people in these areas consume red meat, doing so only on special occasions. Regular, natural movement is another vital component. Rather than lifting heavy weights in gyms, they engage (12) __________ physical activities through walking, gardening, and doing manual household chores.",
+                "(13) __________, managing chronic stress is indispensable for emotional balance and cardiovascular fitness. Blue Zone dwellers intentionally slow down each day to pray, take naps, or visit their neighbours. Strong social connections also play an instrumental role. They cultivate lifelong bonds, which provides them with a strong sense of belonging and helps (14) __________ their life expectancy. (15) __________, maintaining healthy routines along with loving relationships is the true recipe for enduring vitality."
+              ]
+            },
+            "t3_p2": {
+              "title": "Sleep Duration and Cardiovascular & Cognitive Health",
+              "source": "Medical Journal of Lifestyle Medicine",
+              "paragraphs": [
+                "In recent years, the scientific community has paid increasing attention to the profound relationship between sleep duration and physical well-being. Chronic sleep deprivation has ceased to be viewed as a harmless consequence of modern ambition; instead, it is recognized as a direct risk factor for severe cardiovascular diseases, obesity, and impaired immune function. When individuals sleep less than six hours per night on a consistent basis, their bodies release excessive cortisol—a hormone that triggers systemic inflammation and damages arterial walls.",
+                "During slow-wave deep sleep, the brain activates the glymphatic system, a specialized cleansing mechanism that clears metabolic waste products accumulated throughout the waking day. Among these toxins is beta-amyloid, a protein strongly associated with cognitive decline. Depriving oneself of restorative rest inhibits this vital detoxification process.",
+                "Moreover, inadequate rest significantly interferes with appetite-regulating hormones. It reduces leptin, which signals fullness, while increasing ghrelin, the compound responsible for stimulating hunger. Consequently, sleep-deprived individuals experience intense cravings for foods high in saturated fat and refined sugars. Medical practitioners advocate establishing strict bedtime routines and eliminating screen exposure at least one hour before turning in. Ensuring seven to eight hours of sound rest nightly remains one of the simplest yet most potent strategies for sustaining optimal health."
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "12": {
+      "name": "Khối 12",
+      "title": "Tiếng Anh 12 · Bộ Đề Ôn Thi Giữa Kì 1 (Chương trình GDPT 2018)",
+      "description": "Bộ 3 đề thi trắc nghiệm & tự luận: Tự hào lịch sử, Lối sống xanh, Đa dạng văn hóa và Nhân vật nổi tiếng.",
+      "total_items": 86,
+      "tests": [
+        {
+          "id": "g12_de1",
+          "title": "Đề Ôn Tập Số 1 (Đề 1 — Tiếng Anh 12)",
+          "subtitle": "30 câu · Bài đọc Alchemists & Toàn cầu hóa văn hóa",
+          "duration_minutes": 60,
+          "items": [
+            {
+              "id": "g12_t1_01",
+              "num": 1,
+              "section": "I. LANGUAGE: Opposite in Meaning",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C or D on your answer sheet to indicate the word(s) OPPOSITE in meaning to the underlined word(s):<br><b><u>Single-use</u> products provide great convenience, but they also harm the environment.</b>",
+              "options": [
+                "A. Contaminated",
+                "B. Decomposed",
+                "C. Reusable",
+                "D. Released"
+              ],
+              "answer": 2,
+              "explanation": "<b>Single-use</b> có nghĩa là 'sử dụng một lần rồi vứt bỏ'. Trái nghĩa là <b>Reusable</b> (có thể tái sử dụng nhiều lần).<br>• Contaminated: bị ô nhiễm<br>• Decomposed: bị phân hủy<br>• Released: được giải phóng, thải ra."
+            },
+            {
+              "id": "g12_t1_02",
+              "num": 2,
+              "section": "I. LANGUAGE: Closest in Meaning",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C or D on your answer sheet to indicate the word(s) CLOSEST in meaning to the underlined word(s):<br><b>One of her <u>impressive</u> achievements is the discovery of radium and polonium.</b>",
+              "options": [
+                "A. visionary",
+                "B. animated",
+                "C. outstanding",
+                "D. stylish"
+              ],
+              "answer": 2,
+              "explanation": "<b>impressive</b> (gây ấn tượng sâu sắc, xuất sắc) đồng nghĩa với <b>outstanding</b> (nổi bật, kiệt xuất).<br>• visionary: nhìn xa trông rộng<br>• animated: sôi nổi, sống động<br>• stylish: phong cách, hợp thời trang."
+            },
+            {
+              "id": "g12_t1_03",
+              "num": 3,
+              "section": "I. LANGUAGE: Word Stress",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C or D on your answer sheet to indicate the word that differs from the other three in the position of primary stress.",
+              "options": [
+                "A. origin",
+                "B. confusion",
+                "C. autograph",
+                "D. specialty"
+              ],
+              "answer": 1,
+              "explanation": "<b>confusion</b> /kənˈfjuːʒn/ có trọng âm rơi vào âm tiết 2 (đuôi -ion có trọng âm rơi vào âm liền trước).<br>Các từ còn lại có trọng âm rơi vào âm tiết 1:<br>• origin: /ˈɒrɪdʒɪn/<br>• autograph: /ˈɔːtəɡrɑːf/<br>• specialty: /ˈspeʃəlti/."
+            },
+            {
+              "id": "g12_t1_04",
+              "num": 4,
+              "section": "I. LANGUAGE: Grammar",
+              "type": "mcq",
+              "prompt": "We ________ a documentary about war heroes at 8.30 P.M. last Friday.",
+              "options": [
+                "A. watched",
+                "B. have watched",
+                "C. were watching",
+                "D. are watching"
+              ],
+              "answer": 2,
+              "explanation": "Trạng ngữ chỉ thời gian xác định cụ thể trong quá khứ 'at 8.30 P.M. last Friday' (vào lúc 8h30 tối thứ Sáu tuần trước) -> dùng thì <b>Quá khứ tiếp diễn (Past Continuous)</b>: S + was/were + V-ing -> <b>were watching</b>."
+            },
+            {
+              "id": "g12_t1_05",
+              "num": 5,
+              "section": "I. LANGUAGE: Vocabulary",
+              "type": "mcq",
+              "prompt": "Many Vietnamese young men volunteered to join the army during the ________ war against France.",
+              "options": [
+                "A. resistance",
+                "B. biography",
+                "C. account",
+                "D. experience"
+              ],
+              "answer": 0,
+              "explanation": "Collocation lịch sử cố định: <b>resistance war</b> (cuộc kháng chiến). 'the resistance war against France' = cuộc kháng chiến chống thực dân Pháp."
+            },
+            {
+              "id": "g12_t1_06",
+              "num": 6,
+              "section": "I. LANGUAGE: Vocabulary",
+              "type": "mcq",
+              "prompt": "Some people are concerned that celebrating foreign festivals can make people lose their sense of ________.",
+              "options": [
+                "A. specialty",
+                "B. anxiety",
+                "C. identity",
+                "D. cuisine"
+              ],
+              "answer": 2,
+              "explanation": "Cụm danh từ cố định: <b>sense of identity</b> (ý thức về bản sắc / bản sắc văn hóa dân tộc). 'lose their sense of identity' = đánh mất bản sắc của mình."
+            },
+            {
+              "id": "g12_t1_07",
+              "num": 7,
+              "section": "I. LANGUAGE: Phrasal Verb",
+              "type": "mcq",
+              "prompt": "They carried ________ extensive research on the environmental effects of using fake Christmas trees.",
+              "options": [
+                "A. off",
+                "B. out",
+                "C. after",
+                "D. for"
+              ],
+              "answer": 1,
+              "explanation": "Phrasal verb: <b>carry out</b> (tiến hành, thực hiện). 'carry out research/experiments' = tiến hành nghiên cứu/thí nghiệm."
+            },
+            {
+              "id": "g12_t1_08",
+              "num": 8,
+              "section": "I. LANGUAGE: Vocabulary",
+              "type": "mcq",
+              "prompt": "Electric cars are generally more ________ than cars running on petrol.",
+              "options": [
+                "A. eco-friendly",
+                "B. friendly",
+                "C. economical",
+                "D. ecological"
+              ],
+              "answer": 0,
+              "explanation": "<b>eco-friendly</b> (thân thiện với môi trường). Xe điện thân thiện với môi trường hơn xe chạy bằng xăng do không phát thải trực tiếp khí CO2."
+            },
+            {
+              "id": "g12_t1_09",
+              "num": 9,
+              "section": "I. LANGUAGE: Articles",
+              "type": "mcq",
+              "prompt": "George Washington was ________ first president of ________ United States.",
+              "options": [
+                "A. the - the",
+                "B. a - no article",
+                "C. the - a",
+                "D. a - the"
+              ],
+              "answer": 0,
+              "explanation": "Quy tắc mạo từ:<br>1. Trước số thứ tự (first, second, ...) dùng <b>the</b>: 'the first president'.<br>2. Trước tên quốc gia có danh từ chung/dạng liên bang số nhiều (United States, United Kingdom, Netherlands) dùng <b>the</b>: 'the United States'."
+            },
+            {
+              "id": "g12_t1_10",
+              "num": 10,
+              "section": "I. LANGUAGE: Error Correction",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C or D to indicate the underlined part that needs correction:<br><b><u>Many</u> (A) celebrities <u>adopt</u> (B) a green lifestyle, <u>that</u> (C) <u>helps</u> (D) the environment a lot.</b>",
+              "options": [
+                "A. that",
+                "B. many",
+                "C. helps",
+                "D. adopt"
+              ],
+              "answer": 0,
+              "explanation": "Lỗi sai ở <b>that</b> (A). Trong mệnh đề quan hệ không xác định (đứng sau dấu phẩy) dùng để bổ nghĩa cho toàn bộ mệnh đề phía trước, ta bắt buộc phải dùng <b>which</b>, không được dùng <i>that</i>.<br>Sửa lại: <i>, which helps the environment a lot.</i>"
+            },
+            {
+              "id": "g12_t1_11",
+              "num": 11,
+              "section": "II. READING: Cloze Test (Medieval Alchemists)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t1_cloze",
+              "prompt": "Choose the best option to fit blank (11):<br><i>'...discover how to turn lead and (11)______ \"base\" metals into gold.'</i>",
+              "options": [
+                "A. another",
+                "B. others",
+                "C. other",
+                "D. one"
+              ],
+              "answer": 2,
+              "explanation": "Sau chỗ trống là danh từ số nhiều 'metals' -> dùng lượng từ <b>other</b> (+ N số nhiều): 'other \"base\" metals' (các kim loại cơ bản khác).<br>• another + N số ít<br>• others đóng vai trò đại từ, không đứng trước danh từ."
+            },
+            {
+              "id": "g12_t1_12",
+              "num": 12,
+              "section": "II. READING: Cloze Test (Medieval Alchemists)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t1_cloze",
+              "prompt": "Choose the best option to fit blank (12):<br><i>'Their (12)______ was based on the ancient idea that all matter consists of different proportions...'</i>",
+              "options": [
+                "A. expedition",
+                "B. quest",
+                "C. adventure",
+                "D. investigation"
+              ],
+              "answer": 1,
+              "explanation": "<b>quest</b> (cuộc truy tìm, tìm kiếm mục tiêu gian nan/cao cả). Cuộc tìm kiếm biến kim loại thành vàng của các nhà giả kim thuật được gọi là 'quest'.<br>• expedition: chuyến thám hiểm<br>• adventure: chuyến phiêu lưu<br>• investigation: cuộc điều tra."
+            },
+            {
+              "id": "g12_t1_13",
+              "num": 13,
+              "section": "II. READING: Cloze Test (Medieval Alchemists)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t1_cloze",
+              "prompt": "Choose the best option to fit blank (13):<br><i>'...finding the substance - (13)______ they called the philosopher's stone - that, when added to lead...'</i>",
+              "options": [
+                "A. which",
+                "B. who",
+                "C. where",
+                "D. whose"
+              ],
+              "answer": 0,
+              "explanation": "Đại từ quan hệ <b>which</b> thay thế cho danh từ chỉ vật đứng trước 'the substance' làm tân ngữ trong mệnh đề xen vào."
+            },
+            {
+              "id": "g12_t1_14",
+              "num": 14,
+              "section": "II. READING: Cloze Test (Medieval Alchemists)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t1_cloze",
+              "prompt": "Choose the best option to fit blank (14):<br><i>'...a substance that could cure diseases and (14)______ life.'</i>",
+              "options": [
+                "A. prolong",
+                "B. lengthen",
+                "C. expand",
+                "D. increase"
+              ],
+              "answer": 0,
+              "explanation": "Collocation: <b>prolong life</b> (kéo dài sự sống / tuổi thọ). 'lengthen' dùng cho chiều dài vật lý hoặc khoảng cách; 'expand' dùng cho mở rộng diện tích/quy mô."
+            },
+            {
+              "id": "g12_t1_15",
+              "num": 15,
+              "section": "II. READING: Cloze Test (Medieval Alchemists)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t1_cloze",
+              "prompt": "Choose the best option to fit blank (15):<br><i>'They failed on both counts. (15)______, their techniques for preparing and studying chemicals helped lay the foundation...'</i>",
+              "options": [
+                "A. Despite",
+                "B. However",
+                "C. Furthermore",
+                "D. Therefore"
+              ],
+              "answer": 1,
+              "explanation": "Trạng từ liên kết chỉ sự tương phản đứng đầu câu, sau dấu chấm và trước dấu phẩy -> dùng <b>However</b> (Tuy nhiên). 'Họ thất bại ở cả hai mục tiêu. Tuy nhiên, các kỹ thuật điều chế của họ đã đặt nền móng cho ngành hóa học hiện đại.'"
+            },
+            {
+              "id": "g12_t1_16",
+              "num": 16,
+              "section": "II. READING: Reading Comprehension (Globalisation & Culture)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t1_comp",
+              "prompt": "What does the passage mainly discuss?",
+              "options": [
+                "A. The popularity of foreign foods",
+                "B. The effects of globalisation on cultural diversity",
+                "C. The disappearance of some traditional customs",
+                "D. The combination of different fashion ideas"
+              ],
+              "answer": 1,
+              "explanation": "Bài viết bàn về tác động của toàn cầu hóa đối với sự đa dạng văn hóa (thể hiện qua ẩm thực, âm nhạc và thời trang), được nêu rõ ở đoạn 1 ('globalisation has also encouraged cultural diversity') và kết luận ở đoạn cuối."
+            },
+            {
+              "id": "g12_t1_17",
+              "num": 17,
+              "section": "II. READING: Reading Comprehension (Globalisation & Culture)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t1_comp",
+              "prompt": "The word <b>them</b> in paragraph 2 refers to ________.",
+              "options": [
+                "A. local tastes",
+                "B. Vietnamese specialties",
+                "C. local ingredients",
+                "D. international dishes"
+              ],
+              "answer": 3,
+              "explanation": "Xem ngữ cảnh đoạn 2: <i>'Moreover, some international dishes use local ingredients, which make <u>them</u> unique and more suitable to local tastes.'</i> Từ 'them' thay thế cho danh từ số nhiều làm chủ ngữ phía trước là <b>international dishes</b> (các món ăn quốc tế)."
+            },
+            {
+              "id": "g12_t1_18",
+              "num": 18,
+              "section": "II. READING: Reading Comprehension (Globalisation & Culture)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t1_comp",
+              "prompt": "According to paragraph 3, which of the following is NOT mentioned as an impact of globalisation on music?",
+              "options": [
+                "A. Musicians in different countries work on music projects.",
+                "B. People now can listen to music from different cultures.",
+                "C. New music is discovered quickly from all over the world.",
+                "D. Music festivals help improve some artists' quality of life."
+              ],
+              "answer": 3,
+              "explanation": "Trong đoạn 3 chỉ nhắc đến: 'bring artists and music fans together' (kết nối nghệ sĩ và người hâm mộ), KHÔNG hề đề cập đến việc cải thiện chất lượng cuộc sống của nghệ sĩ (improve quality of life) -> Chọn D."
+            },
+            {
+              "id": "g12_t1_19",
+              "num": 19,
+              "section": "II. READING: Reading Comprehension (Globalisation & Culture)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t1_comp",
+              "prompt": "The word <b>captivated</b> in paragraph 3 is OPPOSITE in meaning to ________.",
+              "options": [
+                "A. blended",
+                "B. reflected",
+                "C. attracted",
+                "D. disappointed"
+              ],
+              "answer": 3,
+              "explanation": "<b>captivated</b> nghĩa là 'bị cuốn hút, say mê'. Trái nghĩa là <b>disappointed</b> (thất vọng, chán nản).<br>• attracted: bị thu hút (đồng nghĩa)<br>• blended: pha trộn<br>• reflected: phản chiếu."
+            },
+            {
+              "id": "g12_t1_20",
+              "num": 20,
+              "section": "II. READING: Reading Comprehension (Globalisation & Culture)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t1_comp",
+              "prompt": "Which of the following is TRUE according to the passage?",
+              "options": [
+                "A. People now can keep up with fashion trends from different cultures.",
+                "B. Globalisation threatens to put cultural diversity at risk.",
+                "C. Cross-cultural fashion styles only use traditional elements.",
+                "D. Foreign foods are now more popular than traditional foods in Vietnam."
+              ],
+              "answer": 0,
+              "explanation": "Căn cứ thông tin đoạn 4: <i>'It is now easier for people to keep up with fashion trends from different cultures and regions...'</i> -> Phát biểu A là ĐÚNG."
+            },
+            {
+              "id": "g12_t1_21",
+              "num": 21,
+              "section": "III. WRITING: Sentence Arrangement",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C or D to indicate the correct arrangement of sentences to make a meaningful paragraph:<br><i>a. More than 300 students attended the fair and enjoyed Vietnamese dishes, songs and games.<br>b. In my view, the day was a great success. All the attendees felt happy.<br>c. There were 30 stalls where various activities were offered.<br>d. Yesterday, our school organised the Spring Fair in the playground.<br>e. However, it would be better if we could make Banh Chung during the night.</i>",
+              "options": [
+                "A. d - a - c - b - e",
+                "B. d - b - a - c - e",
+                "C. b - d - a - e - c",
+                "D. b - c - d - e - a"
+              ],
+              "answer": 0,
+              "explanation": "Trình tự hợp lý:<br>1. (d) Mở đầu giới thiệu sự kiện: Hôm qua trường tổ chức Hội chợ Xuân.<br>2. (a) Số lượng người tham gia và các hoạt động chung.<br>3. (c) Chi tiết về quy mô: Có 30 gian hàng với nhiều hoạt động.<br>4. (b) Đánh giá tổng quan: Ngày hội thành công tốt đẹp.<br>5. (e) Đề xuất cải thiện: Tuy nhiên sẽ tuyệt hơn nếu gói bánh chưng qua đêm.<br>-> Thứ tự: <b>d - a - c - b - e</b>."
+            },
+            {
+              "id": "g12_t1_22",
+              "num": 22,
+              "section": "III. WRITING: Sentence Arrangement",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C or D to indicate the correct arrangement of sentences to make a meaningful paragraph:<br><i>a. Secondly, it’s a good idea that you try to cook traditional food frequently.<br>b. There are two main ways to maintain your cultural identity in a new culture.<br>c. Staying connected with your family and friends helps you to feel part of your native culture.<br>d. You should also remember to make mealtimes special and important occasions.<br>e. Firstly, keep in touch with people you know back home.</i>",
+              "options": [
+                "A. c - a - d - e - a",
+                "B. b - a - e - d - c",
+                "C. b - e - d - a - c",
+                "D. b - e - c - a - d"
+              ],
+              "answer": 3,
+              "explanation": "Trình tự logic đoạn văn nghị luận:<br>• (b) Câu chủ đề: Có hai cách chính để duy trì bản sắc văn hóa...<br>• (e) Cách thứ nhất: Firstly, giữ liên lạc với người quen ở quê nhà.<br>• (c) Diễn giải cách 1: Giữ kết nối giúp bạn cảm thấy là một phần của văn hóa gốc.<br>• (a) Cách thứ hai: Secondly, nấu món ăn truyền thống thường xuyên.<br>• (d) Diễn giải bổ sung cách 2: Bạn cũng nên biến bữa ăn thành dịp đặc biệt.<br>-> Thứ tự chuẩn: <b>b - e - c - a - d</b>."
+            },
+            {
+              "id": "g12_t1_23",
+              "num": 23,
+              "section": "III. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Complete the second sentence so that it has the same meaning as the first:<br><b>I always turn off the fans when I leave the room. This helps save energy. (which)</b><br>→ ___________________________________________________________.",
+              "model_answers": [
+                "I always turn off the fans when I leave the room, which helps save energy.",
+                "I always turn off the fans when leaving the room, which helps save energy."
+              ],
+              "explanation": "Cấu trúc mệnh đề quan hệ không xác định với <b>which</b> thay thế cho toàn bộ sự việc ở mệnh đề đứng trước: <i>S + V, which + V...</i> Lưu ý bắt buộc phải có dấu phẩy trước <b>which</b>."
+            },
+            {
+              "id": "g12_t1_24",
+              "num": 24,
+              "section": "III. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Complete the second sentence so that it has the same meaning as the first:<br><b>No mountain in the Indochinese Peninsula is as high as Fanxifan.</b><br>→ Fanxifan is ___________________________________________________________.",
+              "model_answers": [
+                "Fanxifan is the highest mountain in the Indochinese Peninsula."
+              ],
+              "explanation": "Chuyển từ so sánh bằng dạng phủ định sang so sánh nhất:<br><i>No + N + is as + adj + as + X → X is the + adj-est / most adj + N.</i>"
+            },
+            {
+              "id": "g12_t1_25",
+              "num": 25,
+              "section": "III. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Complete the second sentence so that it has the same meaning as the first:<br><b>Protecting the environment is up to everyone doing small things everyday. (depends)</b><br>→ ___________________________________________________________.",
+              "model_answers": [
+                "Protecting the environment depends on everyone doing small things everyday.",
+                "Protecting the environment depends on everyone doing small things every day."
+              ],
+              "explanation": "Cụm thành ngữ tương đương: <b>be up to someone</b> = <b>depend on someone</b> (phụ thuộc vào ai / do ai quyết định)."
+            },
+            {
+              "id": "g12_t1_26",
+              "num": 26,
+              "section": "III. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Complete the second sentence so that it has the same meaning as the first:<br><b>During my lunch time, someone knocked the door.</b><br>→ While ___________________________________________________________.",
+              "model_answers": [
+                "While I was having lunch, someone knocked on the door.",
+                "While I was having lunch, someone knocked at the door.",
+                "While I was eating lunch, someone knocked on the door.",
+                "While I was eating lunch, someone knocked at the door.",
+                "While I was having my lunch, someone knocked on the door."
+              ],
+              "explanation": "Quy tắc chuyển đổi: <i>During + Noun phrase → While + S + was/were + V-ing</i> (Hành động đang xảy ra trong quá khứ thì hành động khác xen vào)."
+            },
+            {
+              "id": "g12_t1_27",
+              "num": 27,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>While / Vo Nguyen Giap / work / as / history / teacher / he / join / revolutionary / activities</b>",
+              "model_answers": [
+                "While Vo Nguyen Giap was working as a history teacher, he joined revolutionary activities."
+              ],
+              "explanation": "Cấu trúc quá khứ tiếp diễn kết hợp quá khứ đơn với liên từ While:<br><i>While + S + was/were + V-ing, S + V2/ed.</i>"
+            },
+            {
+              "id": "g12_t1_28",
+              "num": 28,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>Cultural / diffusion / happen / when / people / of / different / cultures / interact / each other .</b>",
+              "model_answers": [
+                "Cultural diffusion happens when people of different cultures interact with each other.",
+                "Cultural diffusion happens when people from different cultures interact with each other."
+              ],
+              "explanation": "Hiện tại đơn diễn tả định nghĩa / quy luật khoa học: Cultural diffusion (danh từ số ít -> chia 'happens'), đi kèm cụm 'interact with each other' (tương tác với nhau)."
+            },
+            {
+              "id": "g12_t1_29",
+              "num": 29,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>Not until / they / set up / eco-club / did / students / start / clean up / school / yard</b>",
+              "model_answers": [
+                "Not until they set up an eco-club did students start to clean up the school yard.",
+                "Not until they set up the eco-club did students start cleaning up the school yard.",
+                "Not until they set up an eco-club did students start cleaning up the school yard.",
+                "Not until they set up the eco-club did students start to clean up the school yard."
+              ],
+              "explanation": "Cấu trúc đảo ngữ với <b>Not until</b>: <i>Not until + mệnh đề thời gian + trợ động từ + S + V(nguyên mẫu).</i>"
+            },
+            {
+              "id": "g12_t1_30",
+              "num": 30,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>The / country / adopt / sustainable / practices / which / help / protect / natural / resources .</b>",
+              "model_answers": [
+                "The country has adopted sustainable practices which help protect natural resources.",
+                "The country adopts sustainable practices which help protect natural resources.",
+                "The country adopted sustainable practices which helped protect natural resources."
+              ],
+              "explanation": "Chia thì hiện tại hoàn thành hoặc hiện tại đơn, kết hợp mệnh đề quan hệ bổ nghĩa cho 'sustainable practices' (số nhiều -> help protect natural resources)."
+            }
+          ],
+          "passages": {
+            "g12_t1_cloze": {
+              "title": "Medieval Alchemists and the Search for Transmutation",
+              "text": "Through the centuries, the dream of medieval alchemists was to discover how to turn lead and (11)______ \"base\" metals into gold. Some were fakes, but many were learned men with philosophical goals. Their (12)______ was based on the ancient idea that all matter consists of different proportions of just four substances - earth, water, fire, and air. They believed that it was possible to adjust the proportions of the elements that made up lead by chemical means so that it turned into gold, a process called transmutation. Their experiments were concerned with finding the substance - (13)______ they called the philosopher's stone - that, when added to lead, would cause this astonishing change to take place. Alchemists also searched for the elixir of life, a substance that could cure diseases and (14)______ life. They failed on both counts. (15)______, their techniques for preparing and studying chemicals helped lay the foundation for the modern science of chemistry.<br><small>(Adapted from “VSTEP Collection”)</small>"
+            },
+            "g12_t1_comp": {
+              "title": "Globalisation and Cultural Diversity",
+              "text": "As a result of globalisation, the world is becoming more and more connected. This has changed people's way of life, beliefs, art and customs, or their culture, in many respects. Although people's experiences around the world have become very similar, globalisation has also encouraged cultural diversity. Below are some examples.<br><br>Fast food chains and international restaurants have become popular, offering a wide range of dishes and more food choices to local people. For example, here in Viet Nam, we can enjoy Italian pizza or Japanese sushi, in addition to our traditional food. Moreover, some international dishes use local ingredients, which make <b><u>them</u></b> unique and more suitable to local tastes. On the other hand, Vietnamese specialties, such as pho and banh mi, are also gaining popularity worldwide.<br><br>Thanks to globalisation, people can quickly discover new music from all over the world. People nowadays enjoy listening to music from different countries and cultures, and in different languages. For example, American teens are <b><u>captivated</u></b> by K-pop music and dance. There are also many music festivals around the globe that bring artists and music fans together. In today's connected world, it is very common for musicians across the world to work on music projects and share ideas together.<br><br>Globalisation has also impacted fashion by opening it up to a variety of styles and influences from around the world. Cross-cultural styles that blend both traditional and modern elements are on the rise. This presents opportunities for fashion designers to be creative and reflect the cultural richness of the world. It is now easier for people to keep up with fashion trends from different cultures and regions, and express their identities in new and exciting ways.<br><br>In conclusion, globalisation has helped strengthen cultural diversity in the world and made people appreciate different cultures and lifestyles.<br><small>(Adapted from Global Success)</small>"
+            }
+          }
+        },
+        {
+          "id": "g12_de2",
+          "title": "Đề Ôn Tập Số 2 (Đề 2 — Tiếng Anh 12)",
+          "subtitle": "28 câu · Bài đọc Bill Gates & Giờ Trái Đất (Earth Hour)",
+          "duration_minutes": 60,
+          "items": [
+            {
+              "id": "g12_t2_01",
+              "num": 1,
+              "section": "I. LANGUAGE: Pronunciation",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C or D on your answer sheet to indicate the word that differs from the other three in the pronunciation of the underlined part:<br>A. short<u>age</u> &nbsp;&nbsp;&nbsp;&nbsp; B. teen<u>age</u> &nbsp;&nbsp;&nbsp;&nbsp; C. vill<u>age</u> &nbsp;&nbsp;&nbsp;&nbsp; D. cott<u>age</u>",
+              "options": [
+                "A. shortage",
+                "B. teenage",
+                "C. village",
+                "D. cottage"
+              ],
+              "answer": 1,
+              "explanation": "Đuôi 'age' trong <b>teenage</b> /ˈtiːneɪdʒ/ được phát âm là <b>/eɪdʒ/</b>.<br>Trong các từ còn lại, đuôi 'age' phát âm là <b>/ɪdʒ/</b>:<br>• shortage: /ˈʃɔːtɪdʒ/<br>• village: /ˈvɪlɪdʒ/<br>• cottage: /ˈkɒtɪdʒ/."
+            },
+            {
+              "id": "g12_t2_02",
+              "num": 2,
+              "section": "I. LANGUAGE: Word Stress",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C or D on your answer sheet to indicate the word that differs from the other three in the position of primary stress.",
+              "options": [
+                "A. tradition",
+                "B. cultural",
+                "C. military",
+                "D. poetry"
+              ],
+              "answer": 0,
+              "explanation": "<b>tradition</b> /trəˈdɪʃn/ có trọng âm rơi vào âm tiết 2 (hậu tố -tion trọng âm rơi vào âm liền trước).<br>Các từ còn lại có trọng âm rơi vào âm tiết 1:<br>• cultural: /ˈkʌltʃərəl/<br>• military: /ˈmɪlətri/<br>• poetry: /ˈpəʊətri/."
+            },
+            {
+              "id": "g12_t2_03",
+              "num": 3,
+              "section": "I. LANGUAGE: Vocabulary",
+              "type": "mcq",
+              "prompt": "Albert Einstein is often regarded as a scientific ________ due to his groundbreaking theories in the field of physics.",
+              "options": [
+                "A. hero",
+                "B. filmmaker",
+                "C. genius",
+                "D. actor"
+              ],
+              "answer": 2,
+              "explanation": "Cụm từ: <b>scientific genius</b> (thiên tài khoa học). Albert Einstein là nhà bác học vĩ đại với các lý thuyết đột phá trong vật lý."
+            },
+            {
+              "id": "g12_t2_04",
+              "num": 4,
+              "section": "I. LANGUAGE: Preposition",
+              "type": "mcq",
+              "prompt": "Billions of trees are cut down every year, releasing carbon dioxide back into the air and contributing ________ climate change.",
+              "options": [
+                "A. to",
+                "B. at",
+                "C. of",
+                "D. in"
+              ],
+              "answer": 0,
+              "explanation": "Cấu trúc động từ đi kèm giới từ: <b>contribute to something</b> (góp phần vào / gây ra cái gì)."
+            },
+            {
+              "id": "g12_t2_05",
+              "num": 5,
+              "section": "I. LANGUAGE: Word Form / Passive",
+              "type": "mcq",
+              "prompt": "It is becoming worrying that rivers, lakes, and oceans are ________ by large farms and transport industries.",
+              "options": [
+                "A. contaminated",
+                "B. contamination",
+                "C. contaminants",
+                "D. contaminating"
+              ],
+              "answer": 0,
+              "explanation": "Cấu trúc bị động ở hiện tại tiếp diễn: <i>are + V3/ed + by O</i> -> chọn tính từ/phân từ <b>contaminated</b> (bị làm ô nhiễm).<br>• contamination (n): sự ô nhiễm<br>• contaminants (n): các chất gây ô nhiễm."
+            },
+            {
+              "id": "g12_t2_06",
+              "num": 6,
+              "section": "I. LANGUAGE: Collocation",
+              "type": "mcq",
+              "prompt": "To avoid culture shock, learn about the ________ and behaviour of our local people in advance.",
+              "options": [
+                "A. customs",
+                "B. experiences",
+                "C. cultures",
+                "D. performances"
+              ],
+              "answer": 0,
+              "explanation": "Cụm danh từ: <b>customs and behaviour</b> (phong tục tập quán và hành vi ứng xử của người dân bản địa)."
+            },
+            {
+              "id": "g12_t2_07",
+              "num": 7,
+              "section": "I. LANGUAGE: Phrasal Verb",
+              "type": "mcq",
+              "prompt": "He decided to ________ college after the first semester because he felt unfulfilled by the courses.",
+              "options": [
+                "A. drop out of",
+                "B. come up with",
+                "C. keep away from",
+                "D. put up with"
+              ],
+              "answer": 0,
+              "explanation": "Cụm động từ: <b>drop out of college/school</b> (bỏ học giữa chừng).<br>• come up with: nảy ra (ý tưởng)<br>• keep away from: tránh xa khỏi<br>• put up with: chịu đựng."
+            },
+            {
+              "id": "g12_t2_08",
+              "num": 8,
+              "section": "I. LANGUAGE: Relative Clause",
+              "type": "mcq",
+              "prompt": "More and more people are becoming aware of saving energy, ________ is good for the environment.",
+              "options": [
+                "A. whom",
+                "B. when",
+                "C. which",
+                "D. who"
+              ],
+              "answer": 2,
+              "explanation": "Đại từ quan hệ <b>which</b> đứng sau dấu phẩy dùng để thay thế cho toàn bộ sự việc ở mệnh đề đứng trước ('Ngày càng nhiều người có ý thức tiết kiệm năng lượng, điều này rất tốt cho môi trường')."
+            },
+            {
+              "id": "g12_t2_09",
+              "num": 9,
+              "section": "I. LANGUAGE: Past Tense with While",
+              "type": "mcq",
+              "prompt": "While the teacher ________ the life story of Uncle Ho, everyone in our class ________ notes carefully.",
+              "options": [
+                "A. was telling / was taking",
+                "B. told / took",
+                "C. told / was taking",
+                "D. was telling / took"
+              ],
+              "answer": 0,
+              "explanation": "Hai hành động diễn ra song song cùng lúc trong quá khứ với liên từ <b>While</b> -> cả hai mệnh đề đều chia ở thì <b>Quá khứ tiếp diễn (Past Continuous)</b>: <i>was telling / was taking</i>."
+            },
+            {
+              "id": "g12_t2_10",
+              "num": 10,
+              "section": "I. LANGUAGE: Closest in Meaning",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C, or D to indicate the word(s) CLOSEST in meaning to the underlined word:<br><b>Taking part in exchange programmes teaches students to respect the <u>diversity</u> of other cultures.</b>",
+              "options": [
+                "A. variety",
+                "B. uniformity",
+                "C. scarcity",
+                "D. uniqueness"
+              ],
+              "answer": 0,
+              "explanation": "<b>diversity</b> (sự đa dạng, phong phú) đồng nghĩa với <b>variety</b>.<br>• uniformity: sự đồng nhất<br>• scarcity: sự khan hiếm<br>• uniqueness: tính độc nhất."
+            },
+            {
+              "id": "g12_t2_11",
+              "num": 11,
+              "section": "II. READING: Cloze Test (Bill Gates)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t2_cloze",
+              "prompt": "Choose the best option to fit blank (11):<br><i>'In 1973, Gates enrolled at Harvard University, (11) _________ he later dropped out to pursue his dream...'</i>",
+              "options": [
+                "A. what",
+                "B. which",
+                "C. when",
+                "D. where"
+              ],
+              "answer": 3,
+              "explanation": "Đại từ quan hệ trạng từ chỉ nơi chốn <b>where</b> thay thế cho Harvard University (nơi mà sau đó ông đã thôi học)."
+            },
+            {
+              "id": "g12_t2_12",
+              "num": 12,
+              "section": "II. READING: Cloze Test (Bill Gates)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t2_cloze",
+              "prompt": "Choose the best option to fit blank (12):<br><i>'Microsoft soon dominated the personal computer software (12) ________, making Gates one of the wealthiest individuals...'</i>",
+              "options": [
+                "A. industry",
+                "B. industrial",
+                "C. industrialism",
+                "D. industrialise"
+              ],
+              "answer": 0,
+              "explanation": "Cụm danh từ: <b>software industry</b> (ngành công nghiệp phần mềm). Chỗ trống cần danh từ chính đứng sau cụm bổ nghĩa 'personal computer software'."
+            },
+            {
+              "id": "g12_t2_13",
+              "num": 13,
+              "section": "II. READING: Cloze Test (Bill Gates)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t2_cloze",
+              "prompt": "Choose the best option to fit blank (13):<br><i>'...stepped down to focus (13) ________ his philanthropic work through the Bill & Melinda Gates Foundation.'</i>",
+              "options": [
+                "A. at",
+                "B. on",
+                "C. in",
+                "D. for"
+              ],
+              "answer": 1,
+              "explanation": "Cụm động từ: <b>focus on something</b> (tập trung vào điều gì)."
+            },
+            {
+              "id": "g12_t2_14",
+              "num": 14,
+              "section": "II. READING: Cloze Test (Bill Gates)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t2_cloze",
+              "prompt": "Choose the best option to fit blank (14):<br><i>'Gates has also been a vocal advocate for technological innovation and (14) _________ development...'</i>",
+              "options": [
+                "A. sustainable",
+                "B. depletable",
+                "C. temporary",
+                "D. permanent"
+              ],
+              "answer": 0,
+              "explanation": "Collocation quen thuộc: <b>sustainable development</b> (phát triển bền vững)."
+            },
+            {
+              "id": "g12_t2_15",
+              "num": 15,
+              "section": "II. READING: Cloze Test (Bill Gates)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t2_cloze",
+              "prompt": "Choose the best option to fit blank (15):<br><i>'(15) _________ his immense wealth and success, Gates is known for his modest lifestyle and commitment to giving back...'</i>",
+              "options": [
+                "A. Because",
+                "B. Although",
+                "C. Despite",
+                "D. Because of"
+              ],
+              "answer": 2,
+              "explanation": "Sau chỗ trống là cụm danh từ 'his immense wealth and success' diễn tả sự tương phản với việc ông có lối sống giản dị (modest lifestyle) -> dùng giới từ <b>Despite</b> (+ Noun phrase). Although phải đi với một mệnh đề (clause)."
+            },
+            {
+              "id": "g12_t2_16",
+              "num": 16,
+              "section": "II. READING: Reading Comprehension (Earth Hour)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t2_comp",
+              "prompt": "Where and when did Earth Hour first begin?",
+              "options": [
+                "A. New York City, 2005",
+                "B. Paris, 2009",
+                "C. Sydney, 2007",
+                "D. Tokyo, 2010"
+              ],
+              "answer": 2,
+              "explanation": "Thông tin ở câu thứ 2 đoạn 1: <i>'It began in Sydney, Australia, in 2007, and has since grown into a worldwide movement.'</i>"
+            },
+            {
+              "id": "g12_t2_17",
+              "num": 17,
+              "section": "II. READING: Reading Comprehension (Earth Hour)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t2_comp",
+              "prompt": "What does the word <b>their</b> in paragraph 2 refer to?",
+              "options": [
+                "A. Long-term changes",
+                "B. Efforts to combat climate change",
+                "C. Individuals and communities",
+                "D. Lights turned off during Earth Hour"
+              ],
+              "answer": 2,
+              "explanation": "Căn cứ câu cuối đoạn 2: <i>'By participating in Earth Hour, <u>individuals and communities</u> show <b>their</b> support for efforts to reduce carbon footprints and combat climate change.'</i> 'their' thay thế cho <b>Individuals and communities</b>."
+            },
+            {
+              "id": "g12_t2_18",
+              "num": 18,
+              "section": "II. READING: Reading Comprehension (Earth Hour)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t2_comp",
+              "prompt": "What actions are participants encouraged to take during Earth Hour?",
+              "options": [
+                "A. Replace their water taps and lights",
+                "B. Turn off their lights and electrical appliances",
+                "C. Plant trees and turn off electrical appliances",
+                "D. Use only solar power and save electricity"
+              ],
+              "answer": 1,
+              "explanation": "Thông tin ở đoạn 1: <i>'participants are encouraged to turn off their lights and electrical appliances for one hour, from 8:30 to 9:30 PM local time.'</i>"
+            },
+            {
+              "id": "g12_t2_19",
+              "num": 19,
+              "section": "II. READING: Reading Comprehension (Earth Hour)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t2_comp",
+              "prompt": "The word <b>significantly</b> in paragraph 3 is OPPOSITE in meaning to ________.",
+              "options": [
+                "A. slightly",
+                "B. dramatically",
+                "C. notably",
+                "D. substantially"
+              ],
+              "answer": 0,
+              "explanation": "<b>significantly</b> (đáng kể, một cách to lớn) trái nghĩa với <b>slightly</b> (nhẹ, chút ít, không đáng kể).<br>• dramatically, notably, substantially đều mang nghĩa là đáng kể, lớn lao."
+            },
+            {
+              "id": "g12_t2_20",
+              "num": 20,
+              "section": "II. READING: Reading Comprehension (Earth Hour)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t2_comp",
+              "prompt": "What is the main idea of the passage?",
+              "options": [
+                "A. To promote energy conservation and raise awareness about climate change.",
+                "B. To encourage people to switch to renewable energy sources.",
+                "C. To raise funds for environmental organizations.",
+                "D. To create a global network of environmental activists."
+              ],
+              "answer": 0,
+              "explanation": "Ý chính của cả bài viết là giới thiệu Giờ Trái đất nhằm khuyến khích tiết kiệm năng lượng và nâng cao nhận thức về biến đổi khí hậu ('attract people's attention to climate change and promote energy conservation')."
+            },
+            {
+              "id": "g12_t2_21",
+              "num": 21,
+              "section": "III. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence in such a way that it means the same as the sentence printed before it:<br><b>My older sister surfed the Internet during her breakfast. (use “while”)</b><br>→ My older sister surfed __________________________________________.",
+              "model_answers": [
+                "My older sister surfed the Internet while she was having breakfast.",
+                "My older sister surfed the Internet while having breakfast.",
+                "My older sister surfed the Internet while she was eating breakfast."
+              ],
+              "explanation": "Chuyển từ giới từ <i>during + Noun</i> sang liên từ <i>while + S + was/were + V-ing</i> (hoặc mệnh đề rút gọn <i>while V-ing</i>)."
+            },
+            {
+              "id": "g12_t2_22",
+              "num": 22,
+              "section": "III. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence in such a way that it means the same as the sentence printed before it:<br><b>Many people have now started to pay attention to the environment. (use “care + a preposition”)</b><br>→ Many people have now started __________________________________________.",
+              "model_answers": [
+                "Many people have now started to care about the environment.",
+                "Many people have now started caring about the environment.",
+                "Many people have now started to care for the environment.",
+                "Many people have now started caring for the environment."
+              ],
+              "explanation": "Cụm từ tương đương: <b>pay attention to</b> = <b>care about / care for</b> (quan tâm, để tâm đến điều gì). Động từ start có thể đi với to-V hoặc V-ing."
+            },
+            {
+              "id": "g12_t2_23",
+              "num": 23,
+              "section": "III. WRITING: Sentence Combining",
+              "type": "transform",
+              "prompt": "Combine the two sentences into a meaningful sentence:<br><b>Plastic takes hundreds of years to decompose in the ground. This explains why it is harmful to the environment. (use “which”)</b><br>→ Plastic takes hundreds of years to decompose in the ground __________________________________________.",
+              "model_answers": [
+                "Plastic takes hundreds of years to decompose in the ground, which explains why it is harmful to the environment."
+              ],
+              "explanation": "Dùng đại từ quan hệ <b>which</b> thay thế cho toàn bộ sự việc ở mệnh đề trước trong mệnh đề quan hệ không xác định (phải có dấu phẩy phía trước)."
+            },
+            {
+              "id": "g12_t2_24",
+              "num": 24,
+              "section": "III. WRITING: Sentence Combining",
+              "type": "transform",
+              "prompt": "Combine the two sentences into a meaningful sentence:<br><b>The band was playing their first song. All the lights went out. (use “when”)</b><br>→ The band __________________________________________.",
+              "model_answers": [
+                "The band was playing their first song when all the lights went out."
+              ],
+              "explanation": "Cấu trúc kết hợp quá khứ tiếp diễn và quá khứ đơn với liên từ <b>when</b>: <i>S + was/were + V-ing when + S + V2/ed</i> (Hành động đang diễn ra thì hành động khác đột ngột xen vào)."
+            },
+            {
+              "id": "g12_t2_25",
+              "num": 25,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>While / Steve Jobs / work / Apple / he / introduce / revolutionary / products / like / iPhone</b>",
+              "model_answers": [
+                "While Steve Jobs was working at Apple, he introduced revolutionary products like the iPhone.",
+                "While Steve Jobs was working for Apple, he introduced revolutionary products like the iPhone."
+              ],
+              "explanation": "Mệnh đề While chia thì Quá khứ tiếp diễn (was working at/for Apple), mệnh đề chính chia thì Quá khứ đơn (introduced revolutionary products like the iPhone)."
+            },
+            {
+              "id": "g12_t2_26",
+              "num": 26,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>Ha Long Bay / be / one / of / most / popular / tourist / destinations / in / Viet Nam</b>",
+              "model_answers": [
+                "Ha Long Bay is one of the most popular tourist destinations in Viet Nam.",
+                "Ha Long Bay is one of the most popular tourist destinations in Vietnam."
+              ],
+              "explanation": "Cấu trúc so sánh nhất: <i>one of the most + adj + plural noun</i> (một trong những điểm đến du lịch nổi tiếng nhất ở Việt Nam)."
+            },
+            {
+              "id": "g12_t2_27",
+              "num": 27,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>It / be / his / biological / father / who / pass away / when / Steve Jobs / be / only / a / boy</b>",
+              "model_answers": [
+                "It was his biological father who passed away when Steve Jobs was only a boy."
+              ],
+              "explanation": "Cấu trúc câu chẻ (Cleft sentence) nhấn mạnh ở quá khứ: <i>It was + O/S + who + V2/ed...</i>"
+            },
+            {
+              "id": "g12_t2_28",
+              "num": 28,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>Global / warming / lead / to / extreme / weather / events / which / cause / severe / floods</b>",
+              "model_answers": [
+                "Global warming leads to extreme weather events which cause severe floods.",
+                "Global warming has led to extreme weather events which cause severe floods.",
+                "Global warming has led to extreme weather events which have caused severe floods."
+              ],
+              "explanation": "Thì hiện tại đơn diễn tả thực tế khoa học: 'Global warming leads to extreme weather events which cause severe floods' (Hiện tượng ấm lên toàn cầu dẫn đến các hiện tượng thời tiết cực đoan, điều này gây ra lũ lụt nghiêm trọng)."
+            }
+          ],
+          "passages": {
+            "g12_t2_cloze": {
+              "title": "Bill Gates — The Visionary Tech Entrepreneur",
+              "text": "Bill Gates is a renowned American entrepreneur, software developer, and philanthropist. He was born on October 28, 1955, in Seattle, Washington. Gates showed a passion for technology from an early age, and by the age of 13, he had already started programming computers. In 1973, Gates enrolled at Harvard University, (11) _________ he later dropped out to pursue his dream of starting a software company. In 1975, he co-founded Microsoft with his childhood friend Paul Allen. The company’s breakthrough came when they developed the MS-DOS operating system for IBM's first personal computer. Microsoft soon dominated the personal computer software (12) ________, making Gates one of the wealthiest individuals in the world.<br><br>Gates served as the CEO of Microsoft until 2000 when he stepped down to focus (13) ________ his philanthropic work through the Bill & Melinda Gates Foundation. The foundation, which he founded with his then-wife Melinda, is one of the largest private charitable foundations in the world. It has donated billions of dollars to various causes, including global health, education, and poverty elimination. Gates has also been a vocal advocate for technological innovation and (14) _________ development, urging the world to tackle climate change and other pressing global issues. (15) _________ his immense wealth and success, Gates is known for his modest lifestyle and commitment to giving back to society. Today, he continues to be actively involved in various initiatives aimed at improving the world for future generations, including economic development.<br><small>(https://www.biography.com/business-figure/bill-gates)</small>"
+            },
+            "g12_t2_comp": {
+              "title": "Earth Hour: A Global Movement for Nature",
+              "text": "Earth Hour is a global event organized by the World Wildlife Fund (WWF) to attract people’s attention to climate change and encourage people to take action to protect the environment. It began in Sydney, Australia, in 2007, and has since grown into a worldwide movement. On a designated day each year, participants are encouraged to turn off their lights and electrical appliances for one hour, from 8:30 to 9:30 PM local time. This symbolic gesture aims to highlight the impact of human activity on the planet and to promote energy conservation.<br><br>During Earth Hour, landmarks and iconic buildings around the world switch off their lights, creating a visual representation of collective commitment to sustainability. The event is not only about reducing energy consumption for one hour but also about inspiring long-term changes in behavior. By participating in Earth Hour, individuals and communities show <b><u>their</u></b> support for efforts to reduce carbon footprints and combat climate change.<br><br>Earth Hour also serves as a platform for discussions about environmental issues and encourages people to adopt more sustainable lifestyles. Through social media and community events, participants share their experiences and ideas for reducing environmental impact. The initiative has grown <b><u>significantly</u></b>, involving millions of people in over 180 countries. Its success demonstrates the power of collective action in addressing global environmental challenges.<br><small>(Adapted from https://www.earthhour.org/)</small>"
+            }
+          }
+        },
+        {
+          "id": "g12_de3",
+          "title": "Đề Ôn Tập Số 3 (Đề 3 — Tiếng Anh 12)",
+          "subtitle": "28 câu · Bài đọc Các dân tộc Việt Nam & Alexander Hamilton",
+          "duration_minutes": 60,
+          "items": [
+            {
+              "id": "g12_t3_01",
+              "num": 1,
+              "section": "I. LANGUAGE: Pronunciation",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C, or D to indicate the word whose underlined part differs from the others in pronunciation:<br>A. adm<u>i</u>re &nbsp;&nbsp;&nbsp;&nbsp; B. publ<u>i</u>sh &nbsp;&nbsp;&nbsp;&nbsp; C. f<u>i</u>nish &nbsp;&nbsp;&nbsp;&nbsp; D. <u>i</u>nclude",
+              "options": [
+                "A. admire",
+                "B. publish",
+                "C. finish",
+                "D. include"
+              ],
+              "answer": 0,
+              "explanation": "Chữ 'i' trong <b>admire</b> /ədˈmaɪər/ được phát âm là <b>/aɪ/</b>.<br>Trong các từ còn lại, chữ 'i' phát âm là <b>/ɪ/</b>:<br>• publish: /ˈpʌblɪʃ/<br>• finish: /ˈfɪnɪʃ/<br>• include: /ɪnˈkluːd/."
+            },
+            {
+              "id": "g12_t3_02",
+              "num": 2,
+              "section": "I. LANGUAGE: Pronunciation",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C, or D to indicate the word whose underlined part differs from the others in pronunciation:<br>A. dev<u>o</u>te &nbsp;&nbsp;&nbsp;&nbsp; B. her<u>o</u> &nbsp;&nbsp;&nbsp;&nbsp; C. p<u>o</u>em &nbsp;&nbsp;&nbsp;&nbsp; D. cust<u>o</u>m",
+              "options": [
+                "A. devote",
+                "B. hero",
+                "C. poem",
+                "D. custom"
+              ],
+              "answer": 3,
+              "explanation": "Chữ 'o' trong <b>custom</b> /ˈkʌstəm/ được phát âm là âm schwa <b>/ə/</b>.<br>Trong các từ còn lại, chữ 'o' phát âm là diphthong <b>/əʊ/</b>:<br>• devote: /dɪˈvəʊt/<br>• hero: /ˈhɪərəʊ/<br>• poem: /ˈpəʊɪm/."
+            },
+            {
+              "id": "g12_t3_03",
+              "num": 3,
+              "section": "I. LANGUAGE: Word Form",
+              "type": "mcq",
+              "prompt": "Thomas Edison's ________ achievement in developing the first practical electric light bulb revolutionized the way the world illuminated the night.",
+              "options": [
+                "A. impress",
+                "B. impressive",
+                "C. impression",
+                "D. impressively"
+              ],
+              "answer": 1,
+              "explanation": "Trước danh từ 'achievement' cần một tính từ bổ nghĩa -> chọn <b>impressive</b> (đầy ấn tượng).<br>• impress (v): gây ấn tượng<br>• impression (n): sự ấn tượng<br>• impressively (adv): một cách ấn tượng."
+            },
+            {
+              "id": "g12_t3_04",
+              "num": 4,
+              "section": "I. LANGUAGE: Vocabulary",
+              "type": "mcq",
+              "prompt": "Vo Nguyen Giap was widely recognized as a ________ genius for his pivotal role in leading Vietnamese forces during the First Indochina War and the Vietnam War.",
+              "options": [
+                "A. military",
+                "B. artistic",
+                "C. musical",
+                "D. literary"
+              ],
+              "answer": 0,
+              "explanation": "Cụm danh từ: <b>military genius</b> (thiên tài quân sự). Đại tướng Võ Nguyên Giáp là vị tướng lỗi lạc lãnh đạo quân đội nhân dân Việt Nam lập nên những chiến công vang dội."
+            },
+            {
+              "id": "g12_t3_05",
+              "num": 5,
+              "section": "I. LANGUAGE: Vocabulary",
+              "type": "mcq",
+              "prompt": "The food at the festival is not only diverse but also incredibly ________.",
+              "options": [
+                "A. tasty",
+                "B. boring",
+                "C. plain",
+                "D. unhealthy"
+              ],
+              "answer": 0,
+              "explanation": "Ngữ cảnh khen ngợi: 'Món ăn tại lễ hội không chỉ phong phú mà còn vô cùng thơm ngon' -> chọn <b>tasty</b> (ngon miệng). Các từ còn lại mang nghĩa tiêu cực/nhạt nhẽo."
+            },
+            {
+              "id": "g12_t3_06",
+              "num": 6,
+              "section": "I. LANGUAGE: Vocabulary",
+              "type": "mcq",
+              "prompt": "A popular Vietnamese ________ is Bun Cha, which includes grilled pork and noodles.",
+              "options": [
+                "A. speciality",
+                "B. meal",
+                "C. dessert",
+                "D. beverage"
+              ],
+              "answer": 0,
+              "explanation": "<b>speciality</b> (đặc sản). Bún chả là món đặc sản nổi tiếng của ẩm thực Việt Nam."
+            },
+            {
+              "id": "g12_t3_07",
+              "num": 7,
+              "section": "I. LANGUAGE: Phrasal Verb",
+              "type": "mcq",
+              "prompt": "Despite numerous successes, he ________ after a long battle with pancreatic cancer.",
+              "options": [
+                "A. passed away",
+                "B. came across",
+                "C. got over",
+                "D. took on"
+              ],
+              "answer": 0,
+              "explanation": "Cụm động từ: <b>pass away</b> (qua đời, mất đi sau cơn bạo bệnh ung thư).<br>• come across: tình cờ gặp/thấy<br>• get over: vượt qua, hồi phục<br>• take on: đảm nhận."
+            },
+            {
+              "id": "g12_t3_08",
+              "num": 8,
+              "section": "I. LANGUAGE: Past Continuous & Simple",
+              "type": "mcq",
+              "prompt": "While Dang Thuy Tram ________ her duty in Quang Ngai Province, the cruel enemy ________ her.",
+              "options": [
+                "A. was doing / killed",
+                "B. did / killed",
+                "C. did / was killing",
+                "D. was doing / was killing"
+              ],
+              "answer": 0,
+              "explanation": "Hành động đang diễn ra trong quá khứ (chia Quá khứ tiếp diễn: <i>was doing</i> her duty) thì hành động khác bất ngờ xen vào cắt ngang (chia Quá khứ đơn: <i>killed</i>)."
+            },
+            {
+              "id": "g12_t3_09",
+              "num": 9,
+              "section": "I. LANGUAGE: Articles",
+              "type": "mcq",
+              "prompt": "He enjoys playing ________ guitar in his free time.",
+              "options": [
+                "A. a",
+                "B. an",
+                "C. the",
+                "D. Ø"
+              ],
+              "answer": 2,
+              "explanation": "Quy tắc ngữ pháp về nhạc cụ: Động từ <b>play</b> khi đi với tên nhạc cụ (guitar, piano, violin...) bắt buộc phải có mạo từ xác định <b>the</b>: <i>play the guitar</i>."
+            },
+            {
+              "id": "g12_t3_10",
+              "num": 10,
+              "section": "I. LANGUAGE: Closest in Meaning",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C or D to indicate the word(s) CLOSEST in meaning to the underlined word:<br><b>Apple products were not only designed to be <u>cutting-edge</u> technology, but also to be stylish and easy to use.</b>",
+              "options": [
+                "A. modern",
+                "B. flexible",
+                "C. old-fashioned",
+                "D. simple"
+              ],
+              "answer": 0,
+              "explanation": "<b>cutting-edge</b> (tối tân, tiên tiến, đi đầu công nghệ) đồng nghĩa với <b>modern</b> (hiện đại, tiên tiến).<br>• flexible: linh hoạt<br>• old-fashioned: lỗi thời (trái nghĩa)<br>• simple: đơn giản."
+            },
+            {
+              "id": "g12_t3_11",
+              "num": 11,
+              "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t3_cloze",
+              "prompt": "Choose the best option to fit blank (11):<br><i>'The Kinh people are primarily located in the (11) ________, while the minority groups are scattered throughout the mountainous regions.'</i>",
+              "options": [
+                "A. lowlands",
+                "B. cities",
+                "C. communities",
+                "D. countries"
+              ],
+              "answer": 0,
+              "explanation": "Đối lập với 'mountainous regions' (vùng núi) là <b>lowlands</b> (vùng đồng bằng). Người Kinh chủ yếu sinh sống ở các vùng đồng bằng."
+            },
+            {
+              "id": "g12_t3_12",
+              "num": 12,
+              "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t3_cloze",
+              "prompt": "Choose the best option to fit blank (12):<br><i>'Traditional families often have three or four generations living under (12) _______ same roof...'</i>",
+              "options": [
+                "A. a",
+                "B. the",
+                "C. an",
+                "D. X"
+              ],
+              "answer": 1,
+              "explanation": "Cụm thành ngữ cố định: <b>under the same roof</b> (sống dưới cùng một mái nhà)."
+            },
+            {
+              "id": "g12_t3_13",
+              "num": 13,
+              "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t3_cloze",
+              "prompt": "Choose the best option to fit blank (13):<br><i>'Confucianism has also played a significant role... (13) _______, in recent years, there has been a growing movement towards gender equality...'</i>",
+              "options": [
+                "A. However",
+                "B. Although",
+                "C. Because",
+                "D. Moreover"
+              ],
+              "answer": 0,
+              "explanation": "Trạng từ liên kết đứng đầu câu chỉ sự tương phản: <b>However</b> (Tuy nhiên). Nho giáo từng đề cao vai trò truyền thống, tuy nhiên những năm gần đây đã có phong trào bình đẳng giới mạnh mẽ."
+            },
+            {
+              "id": "g12_t3_14",
+              "num": 14,
+              "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t3_cloze",
+              "prompt": "Choose the best option to fit blank (14):<br><i>'...characterized by a strong emphasis on community and living in harmony (14) ________ nature.'</i>",
+              "options": [
+                "A. for",
+                "B. of",
+                "C. on",
+                "D. with"
+              ],
+              "answer": 3,
+              "explanation": "Cụm từ cố định: <b>in harmony with something/nature</b> (sống hòa hợp, chan hòa với thiên nhiên)."
+            },
+            {
+              "id": "g12_t3_15",
+              "num": 15,
+              "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t3_cloze",
+              "prompt": "Choose the best option to fit blank (15):<br><i>'The Vietnamese government is working to (15) ________ the gap between the lowland and mountainous communities...'</i>",
+              "options": [
+                "A. keep",
+                "B. have",
+                "C. bridge",
+                "D. take"
+              ],
+              "answer": 2,
+              "explanation": "Collocation: <b>bridge the gap</b> (thu hẹp khoảng cách / bắc nhịp cầu nối). Chính phủ đang nỗ lực thu hẹp khoảng cách giữa các cộng đồng vùng xuôi và vùng núi."
+            },
+            {
+              "id": "g12_t3_16",
+              "num": 16,
+              "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t3_comp",
+              "prompt": "When was Alexander Hamilton appointed as the first Secretary of the Treasury?",
+              "options": [
+                "A. September 11, 1787",
+                "B. September 11, 1789",
+                "C. July 4, 1776",
+                "D. January 11, 1755"
+              ],
+              "answer": 1,
+              "explanation": "Căn cứ câu đầu đoạn 4: <i>'Alexander Hamilton was appointed as the country’s first Secretary of The Treasury on September 11, 1789.'</i>"
+            },
+            {
+              "id": "g12_t3_17",
+              "num": 17,
+              "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t3_comp",
+              "prompt": "Which best serves as the title for the passage?",
+              "options": [
+                "A. A brief history of Alexander Hamilton.",
+                "B. Founding Fathers of the United States.",
+                "C. Pursuing your dream no matter what.",
+                "D. An unbecoming historical figure."
+              ],
+              "answer": 0,
+              "explanation": "Bài văn tóm lược cuộc đời, sự nghiệp quân sự, chính trị và những đóng góp của Alexander Hamilton từ khi sinh ra đến khi qua đời -> Tiêu đề phù hợp nhất là: <b>A brief history of Alexander Hamilton</b>."
+            },
+            {
+              "id": "g12_t3_18",
+              "num": 18,
+              "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t3_comp",
+              "prompt": "According to paragraph 1, what can be concluded from Alexander Hamilton’s childhood?",
+              "options": [
+                "A. Hamilton had a miserable youth which left him a pessimistic attitude to life.",
+                "B. Hamilton boasted an incomplete yet happy childhood at a Caribbean orphanage.",
+                "C. He experienced a series of misfortunes but still thrived and overcame them all.",
+                "D. His hard time from childhood became the incentives for him to join the army."
+              ],
+              "answer": 2,
+              "explanation": "Hamilton không được công nhận là con hợp pháp, bị từ chối vào trường học của nhà thờ, mẹ mất sớm và phải đi làm thư ký, nhưng ông vẫn không ngừng viết lách và được cộng đồng quyên góp tiền cho đi học -> Ông trải qua nhiều bất hạnh nhưng đã vươn lên vượt qua tất cả (C)."
+            },
+            {
+              "id": "g12_t3_19",
+              "num": 19,
+              "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t3_comp",
+              "prompt": "The word <b>elected</b> in paragraph 2 is CLOSEST in meaning to ________.",
+              "options": [
+                "A. locked",
+                "B. transferred",
+                "C. appointed",
+                "D. voted"
+              ],
+              "answer": 3,
+              "explanation": "<b>elect</b> (bầu cử thông qua bỏ phiếu) đồng nghĩa với <b>voted</b>."
+            },
+            {
+              "id": "g12_t3_20",
+              "num": 20,
+              "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t3_comp",
+              "prompt": "The word <b>it</b> in paragraph 3 refers to ________.",
+              "options": [
+                "A. government",
+                "B. document",
+                "C. ratification",
+                "D. confederation"
+              ],
+              "answer": 1,
+              "explanation": "Căn cứ đoạn 3: <i>'...despite his disagreements, he promoted the <u>document</u> because he believed <b>it</b> was a vast improvement over the Articles of Confederation.'</i> Từ 'it' thay thế cho <b>document</b> (bản tài liệu Hiến pháp)."
+            },
+            {
+              "id": "g12_t3_21",
+              "num": 21,
+              "section": "III. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence in such a way that it means the same as the one printed before it:<br><b>I have not seen him for ten years.</b><br>→ The last time __________________________________________.",
+              "model_answers": [
+                "The last time I saw him was ten years ago."
+              ],
+              "explanation": "Cấu trúc chuyển đổi giữa Hiện tại hoàn thành phủ định và The last time:<br><i>S + have/has not + V3/ed + for + time → The last time + S + V2/ed + was + time + ago.</i>"
+            },
+            {
+              "id": "g12_t3_22",
+              "num": 22,
+              "section": "III. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence in such a way that it means the same as the one printed before it:<br><b>Last year there was an increase in the number of tourists visiting this area.</b><br>→ The number of __________________________________________.",
+              "model_answers": [
+                "The number of tourists visiting this area increased last year.",
+                "The number of tourists visiting this area went up last year."
+              ],
+              "explanation": "Chuyển từ cấu trúc tồn tại với danh từ: <i>there was an increase in + N</i> sang câu chủ động với động từ: <i>The number of... increased last year.</i>"
+            },
+            {
+              "id": "g12_t3_23",
+              "num": 23,
+              "section": "III. WRITING: Sentence Combining",
+              "type": "transform",
+              "prompt": "Combine these pairs of sentences into one, using the given word in brackets:<br><b>My parents were waiting in the queue to buy museum tickets. My brother and I were queuing up for ice cream. (while)</b><br>→ __________________________________________.",
+              "model_answers": [
+                "My parents were waiting in the queue to buy museum tickets while my brother and I were queuing up for ice cream.",
+                "While my parents were waiting in the queue to buy museum tickets, my brother and I were queuing up for ice cream."
+              ],
+              "explanation": "Hai hành động diễn ra đồng thời song song trong quá khứ kết hợp với liên từ <b>while</b>."
+            },
+            {
+              "id": "g12_t3_24",
+              "num": 24,
+              "section": "III. WRITING: Sentence Combining",
+              "type": "transform",
+              "prompt": "Combine these pairs of sentences into one, using the given word in brackets:<br><b>The band was playing their first song. All the lights went out. (when)</b><br>→ __________________________________________.",
+              "model_answers": [
+                "The band was playing their first song when all the lights went out."
+              ],
+              "explanation": "Một hành động đang diễn ra (Past Continuous) thì một hành động khác bất ngờ xen vào (Past Simple với when)."
+            },
+            {
+              "id": "g12_t3_25",
+              "num": 25,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>When / Michael Jackson / die / in / 2009 / he / still / work / on / his / dangerous / tour</b>",
+              "model_answers": [
+                "When Michael Jackson died in 2009, he was still working on his Dangerous tour.",
+                "When Michael Jackson died in 2009, he was still working on his dangerous tour."
+              ],
+              "explanation": "Cấu trúc: <i>When + S + V2/ed, S + was/were + still + V-ing.</i> (Khi Michael Jackson qua đời năm 2009, ông vẫn đang làm việc cho chuyến lưu diễn của mình)."
+            },
+            {
+              "id": "g12_t3_26",
+              "num": 26,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>People / from / different / cultures / may / have / different / interpretations / of / same / gesture .</b>",
+              "model_answers": [
+                "People from different cultures may have different interpretations of the same gesture."
+              ],
+              "explanation": "Thêm mạo từ xác định <b>the</b> trước cụm 'same gesture': <i>interpretations of the same gesture</i> (cách hiểu khác nhau về cùng một cử chỉ)."
+            },
+            {
+              "id": "g12_t3_27",
+              "num": 27,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>So / serious / be / plastic / pollution / that / many / countries / ban / single-use / plastic / bags</b>",
+              "model_answers": [
+                "So serious is plastic pollution that many countries have banned single-use plastic bags.",
+                "So serious was plastic pollution that many countries banned single-use plastic bags.",
+                "So serious is plastic pollution that many countries ban single-use plastic bags."
+              ],
+              "explanation": "Cấu trúc đảo ngữ với <b>So + adj</b>: <i>So + adj + be + S + that + clause</i> (Ô nhiễm nhựa nghiêm trọng đến mức mà nhiều quốc gia đã cấm túi nhựa dùng một lần)."
+            },
+            {
+              "id": "g12_t3_28",
+              "num": 28,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>Traditional / music / help / maintain / cultural / identity / which / be / important / in / globalised / world</b>",
+              "model_answers": [
+                "Traditional music helps maintain cultural identity, which is important in a globalised world.",
+                "Traditional music helps to maintain cultural identity, which is important in a globalised world.",
+                "Traditional music helps maintain cultural identity, which is important in a globalized world."
+              ],
+              "explanation": "Chủ ngữ số ít 'Traditional music' đi với động từ 'helps maintain'. Mệnh đề quan hệ không xác định 'which is important in a globalised world'."
+            }
+          ],
+          "passages": {
+            "g12_t3_cloze": {
+              "title": "Vietnam’s Rich Cultural Tapestry and Ethnic Harmony",
+              "text": "Vietnam is a country with a rich and diverse culture, shaped by its history and the many ethnic groups that call it home. The majority of the population is made up of the Kinh people, but there are 53 other ethnic minority groups, each with their own unique traditions and customs. The Kinh people are primarily located in the (11) ________, while the minority groups are scattered throughout the mountainous regions. This diverse mix of cultures has created a fascinating tapestry of traditions, languages, and beliefs.<br><br>The Vietnamese culture is deeply rooted in family and community. Traditional families often have three or four generations living under (12) _______ same roof, with a strong emphasis on respect for elders. Confucianism has also played a significant role in shaping Vietnamese society, particularly in the traditional roles of men and women. (13) _______, in recent years, there has been a growing movement towards gender equality, with the government enacting laws to promote more equitable family relations.<br><br>Vietnamese culture is also characterized by a strong emphasis on community and living in harmony (14) ________ nature. This is reflected in the traditional costumes of many ethnic groups, which are often made from natural fibers like silk, cotton, and pineapple yarn. These materials are durable, breathable, and well-suited to the tropical climate of Vietnam.<br><br>Despite the differences between the various ethnic groups, there is a strong sense of solidarity and cooperation among them. This unity has been forged through centuries of shared history, including times of war and peace. The Vietnamese government is working to (15) ________ the gap between the lowland and mountainous communities, striving to ensure that all citizens have access to the same opportunities and resources.<br><small>(Source: https://vietnamembassy-usa.org/culture/ethnic-groups)</small>"
+            },
+            "g12_t3_comp": {
+              "title": "A Brief History of Alexander Hamilton",
+              "text": "Alexander Hamilton was born on January 11, 1755 or 1757 in the West Indies. Due to his mother’s lack of marital status, Hamilton was not seen as a legitimate child and was thus denied access to church schools. When his mother died he was adopted by a merchant in Nevis, where he worked as a clerk. During his time in Nevis, Hamilton continued to write; one of his essays impressed the community leaders so much that they worked together and collected funds to send Hamilton to the colonies.<br><br>Hamilton served in the revolutionary war, during which time he worked his way through battles and earned himself a place aiding General Washington. After the war, Hamilton was <b><u>elected</u></b> into the Congress of the Confederation. He was dissatisfied with the decentralized government that was set up and the inability to raise money from the states to pay the soldiers.<br><br>Hamilton was involved in the Constitution Convention but did not fully agree with the document; despite his disagreements, he promoted the document because he believed <b><u>it</u></b> was a vast improvement over the Articles of Confederation. He pushed the ratification of the Constitution, teaming up with John Jay and James Madison to write the Federalist papers, which were often cited when pushing for the Constitution’s ratification.<br><br>Alexander Hamilton was appointed as the country’s first Secretary of The Treasury on September 11, 1789. During his time as Secretary of the Treasury Hamilton helped write economic policies, develop the funding of state debts, establish the national bank, create a national currency, a system of tariffs, and a peaceful trade relationship with Britain. After his time in politics finished, Alexander Hamilton went back to New York to practice law. He died in a duel with Aaron Burr in Weehawken, New Jersey on July 12, 1804.<br><small>(Source: https://poole.ncsu.edu/)</small>"
+            }
+          }
+        },
+        {
+          "id": "g12_all",
+          "title": "Tổng Hợp Trọn Bộ 3 Đề Khối 12 (86 câu)",
+          "subtitle": "Luyện tập toàn bộ ngân hàng câu hỏi Lớp 12",
+          "duration_minutes": 120,
+          "items": [
+            {
+              "id": "g12_t1_01",
+              "num": 1,
+              "section": "I. LANGUAGE: Opposite in Meaning",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C or D on your answer sheet to indicate the word(s) OPPOSITE in meaning to the underlined word(s):<br><b><u>Single-use</u> products provide great convenience, but they also harm the environment.</b>",
+              "options": [
+                "A. Contaminated",
+                "B. Decomposed",
+                "C. Reusable",
+                "D. Released"
+              ],
+              "answer": 2,
+              "explanation": "<b>Single-use</b> có nghĩa là 'sử dụng một lần rồi vứt bỏ'. Trái nghĩa là <b>Reusable</b> (có thể tái sử dụng nhiều lần).<br>• Contaminated: bị ô nhiễm<br>• Decomposed: bị phân hủy<br>• Released: được giải phóng, thải ra.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_02",
+              "num": 2,
+              "section": "I. LANGUAGE: Closest in Meaning",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C or D on your answer sheet to indicate the word(s) CLOSEST in meaning to the underlined word(s):<br><b>One of her <u>impressive</u> achievements is the discovery of radium and polonium.</b>",
+              "options": [
+                "A. visionary",
+                "B. animated",
+                "C. outstanding",
+                "D. stylish"
+              ],
+              "answer": 2,
+              "explanation": "<b>impressive</b> (gây ấn tượng sâu sắc, xuất sắc) đồng nghĩa với <b>outstanding</b> (nổi bật, kiệt xuất).<br>• visionary: nhìn xa trông rộng<br>• animated: sôi nổi, sống động<br>• stylish: phong cách, hợp thời trang.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_03",
+              "num": 3,
+              "section": "I. LANGUAGE: Word Stress",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C or D on your answer sheet to indicate the word that differs from the other three in the position of primary stress.",
+              "options": [
+                "A. origin",
+                "B. confusion",
+                "C. autograph",
+                "D. specialty"
+              ],
+              "answer": 1,
+              "explanation": "<b>confusion</b> /kənˈfjuːʒn/ có trọng âm rơi vào âm tiết 2 (đuôi -ion có trọng âm rơi vào âm liền trước).<br>Các từ còn lại có trọng âm rơi vào âm tiết 1:<br>• origin: /ˈɒrɪdʒɪn/<br>• autograph: /ˈɔːtəɡrɑːf/<br>• specialty: /ˈspeʃəlti/.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_04",
+              "num": 4,
+              "section": "I. LANGUAGE: Grammar",
+              "type": "mcq",
+              "prompt": "We ________ a documentary about war heroes at 8.30 P.M. last Friday.",
+              "options": [
+                "A. watched",
+                "B. have watched",
+                "C. were watching",
+                "D. are watching"
+              ],
+              "answer": 2,
+              "explanation": "Trạng ngữ chỉ thời gian xác định cụ thể trong quá khứ 'at 8.30 P.M. last Friday' (vào lúc 8h30 tối thứ Sáu tuần trước) -> dùng thì <b>Quá khứ tiếp diễn (Past Continuous)</b>: S + was/were + V-ing -> <b>were watching</b>.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_05",
+              "num": 5,
+              "section": "I. LANGUAGE: Vocabulary",
+              "type": "mcq",
+              "prompt": "Many Vietnamese young men volunteered to join the army during the ________ war against France.",
+              "options": [
+                "A. resistance",
+                "B. biography",
+                "C. account",
+                "D. experience"
+              ],
+              "answer": 0,
+              "explanation": "Collocation lịch sử cố định: <b>resistance war</b> (cuộc kháng chiến). 'the resistance war against France' = cuộc kháng chiến chống thực dân Pháp.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_06",
+              "num": 6,
+              "section": "I. LANGUAGE: Vocabulary",
+              "type": "mcq",
+              "prompt": "Some people are concerned that celebrating foreign festivals can make people lose their sense of ________.",
+              "options": [
+                "A. specialty",
+                "B. anxiety",
+                "C. identity",
+                "D. cuisine"
+              ],
+              "answer": 2,
+              "explanation": "Cụm danh từ cố định: <b>sense of identity</b> (ý thức về bản sắc / bản sắc văn hóa dân tộc). 'lose their sense of identity' = đánh mất bản sắc của mình.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_07",
+              "num": 7,
+              "section": "I. LANGUAGE: Phrasal Verb",
+              "type": "mcq",
+              "prompt": "They carried ________ extensive research on the environmental effects of using fake Christmas trees.",
+              "options": [
+                "A. off",
+                "B. out",
+                "C. after",
+                "D. for"
+              ],
+              "answer": 1,
+              "explanation": "Phrasal verb: <b>carry out</b> (tiến hành, thực hiện). 'carry out research/experiments' = tiến hành nghiên cứu/thí nghiệm.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_08",
+              "num": 8,
+              "section": "I. LANGUAGE: Vocabulary",
+              "type": "mcq",
+              "prompt": "Electric cars are generally more ________ than cars running on petrol.",
+              "options": [
+                "A. eco-friendly",
+                "B. friendly",
+                "C. economical",
+                "D. ecological"
+              ],
+              "answer": 0,
+              "explanation": "<b>eco-friendly</b> (thân thiện với môi trường). Xe điện thân thiện với môi trường hơn xe chạy bằng xăng do không phát thải trực tiếp khí CO2.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_09",
+              "num": 9,
+              "section": "I. LANGUAGE: Articles",
+              "type": "mcq",
+              "prompt": "George Washington was ________ first president of ________ United States.",
+              "options": [
+                "A. the - the",
+                "B. a - no article",
+                "C. the - a",
+                "D. a - the"
+              ],
+              "answer": 0,
+              "explanation": "Quy tắc mạo từ:<br>1. Trước số thứ tự (first, second, ...) dùng <b>the</b>: 'the first president'.<br>2. Trước tên quốc gia có danh từ chung/dạng liên bang số nhiều (United States, United Kingdom, Netherlands) dùng <b>the</b>: 'the United States'.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_10",
+              "num": 10,
+              "section": "I. LANGUAGE: Error Correction",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C or D to indicate the underlined part that needs correction:<br><b><u>Many</u> (A) celebrities <u>adopt</u> (B) a green lifestyle, <u>that</u> (C) <u>helps</u> (D) the environment a lot.</b>",
+              "options": [
+                "A. that",
+                "B. many",
+                "C. helps",
+                "D. adopt"
+              ],
+              "answer": 0,
+              "explanation": "Lỗi sai ở <b>that</b> (A). Trong mệnh đề quan hệ không xác định (đứng sau dấu phẩy) dùng để bổ nghĩa cho toàn bộ mệnh đề phía trước, ta bắt buộc phải dùng <b>which</b>, không được dùng <i>that</i>.<br>Sửa lại: <i>, which helps the environment a lot.</i>",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_11",
+              "num": 11,
+              "section": "II. READING: Cloze Test (Medieval Alchemists)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t1_cloze",
+              "prompt": "Choose the best option to fit blank (11):<br><i>'...discover how to turn lead and (11)______ \"base\" metals into gold.'</i>",
+              "options": [
+                "A. another",
+                "B. others",
+                "C. other",
+                "D. one"
+              ],
+              "answer": 2,
+              "explanation": "Sau chỗ trống là danh từ số nhiều 'metals' -> dùng lượng từ <b>other</b> (+ N số nhiều): 'other \"base\" metals' (các kim loại cơ bản khác).<br>• another + N số ít<br>• others đóng vai trò đại từ, không đứng trước danh từ.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_12",
+              "num": 12,
+              "section": "II. READING: Cloze Test (Medieval Alchemists)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t1_cloze",
+              "prompt": "Choose the best option to fit blank (12):<br><i>'Their (12)______ was based on the ancient idea that all matter consists of different proportions...'</i>",
+              "options": [
+                "A. expedition",
+                "B. quest",
+                "C. adventure",
+                "D. investigation"
+              ],
+              "answer": 1,
+              "explanation": "<b>quest</b> (cuộc truy tìm, tìm kiếm mục tiêu gian nan/cao cả). Cuộc tìm kiếm biến kim loại thành vàng của các nhà giả kim thuật được gọi là 'quest'.<br>• expedition: chuyến thám hiểm<br>• adventure: chuyến phiêu lưu<br>• investigation: cuộc điều tra.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_13",
+              "num": 13,
+              "section": "II. READING: Cloze Test (Medieval Alchemists)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t1_cloze",
+              "prompt": "Choose the best option to fit blank (13):<br><i>'...finding the substance - (13)______ they called the philosopher's stone - that, when added to lead...'</i>",
+              "options": [
+                "A. which",
+                "B. who",
+                "C. where",
+                "D. whose"
+              ],
+              "answer": 0,
+              "explanation": "Đại từ quan hệ <b>which</b> thay thế cho danh từ chỉ vật đứng trước 'the substance' làm tân ngữ trong mệnh đề xen vào.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_14",
+              "num": 14,
+              "section": "II. READING: Cloze Test (Medieval Alchemists)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t1_cloze",
+              "prompt": "Choose the best option to fit blank (14):<br><i>'...a substance that could cure diseases and (14)______ life.'</i>",
+              "options": [
+                "A. prolong",
+                "B. lengthen",
+                "C. expand",
+                "D. increase"
+              ],
+              "answer": 0,
+              "explanation": "Collocation: <b>prolong life</b> (kéo dài sự sống / tuổi thọ). 'lengthen' dùng cho chiều dài vật lý hoặc khoảng cách; 'expand' dùng cho mở rộng diện tích/quy mô.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_15",
+              "num": 15,
+              "section": "II. READING: Cloze Test (Medieval Alchemists)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t1_cloze",
+              "prompt": "Choose the best option to fit blank (15):<br><i>'They failed on both counts. (15)______, their techniques for preparing and studying chemicals helped lay the foundation...'</i>",
+              "options": [
+                "A. Despite",
+                "B. However",
+                "C. Furthermore",
+                "D. Therefore"
+              ],
+              "answer": 1,
+              "explanation": "Trạng từ liên kết chỉ sự tương phản đứng đầu câu, sau dấu chấm và trước dấu phẩy -> dùng <b>However</b> (Tuy nhiên). 'Họ thất bại ở cả hai mục tiêu. Tuy nhiên, các kỹ thuật điều chế của họ đã đặt nền móng cho ngành hóa học hiện đại.'",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_16",
+              "num": 16,
+              "section": "II. READING: Reading Comprehension (Globalisation & Culture)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t1_comp",
+              "prompt": "What does the passage mainly discuss?",
+              "options": [
+                "A. The popularity of foreign foods",
+                "B. The effects of globalisation on cultural diversity",
+                "C. The disappearance of some traditional customs",
+                "D. The combination of different fashion ideas"
+              ],
+              "answer": 1,
+              "explanation": "Bài viết bàn về tác động của toàn cầu hóa đối với sự đa dạng văn hóa (thể hiện qua ẩm thực, âm nhạc và thời trang), được nêu rõ ở đoạn 1 ('globalisation has also encouraged cultural diversity') và kết luận ở đoạn cuối.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_17",
+              "num": 17,
+              "section": "II. READING: Reading Comprehension (Globalisation & Culture)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t1_comp",
+              "prompt": "The word <b>them</b> in paragraph 2 refers to ________.",
+              "options": [
+                "A. local tastes",
+                "B. Vietnamese specialties",
+                "C. local ingredients",
+                "D. international dishes"
+              ],
+              "answer": 3,
+              "explanation": "Xem ngữ cảnh đoạn 2: <i>'Moreover, some international dishes use local ingredients, which make <u>them</u> unique and more suitable to local tastes.'</i> Từ 'them' thay thế cho danh từ số nhiều làm chủ ngữ phía trước là <b>international dishes</b> (các món ăn quốc tế).",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_18",
+              "num": 18,
+              "section": "II. READING: Reading Comprehension (Globalisation & Culture)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t1_comp",
+              "prompt": "According to paragraph 3, which of the following is NOT mentioned as an impact of globalisation on music?",
+              "options": [
+                "A. Musicians in different countries work on music projects.",
+                "B. People now can listen to music from different cultures.",
+                "C. New music is discovered quickly from all over the world.",
+                "D. Music festivals help improve some artists' quality of life."
+              ],
+              "answer": 3,
+              "explanation": "Trong đoạn 3 chỉ nhắc đến: 'bring artists and music fans together' (kết nối nghệ sĩ và người hâm mộ), KHÔNG hề đề cập đến việc cải thiện chất lượng cuộc sống của nghệ sĩ (improve quality of life) -> Chọn D.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_19",
+              "num": 19,
+              "section": "II. READING: Reading Comprehension (Globalisation & Culture)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t1_comp",
+              "prompt": "The word <b>captivated</b> in paragraph 3 is OPPOSITE in meaning to ________.",
+              "options": [
+                "A. blended",
+                "B. reflected",
+                "C. attracted",
+                "D. disappointed"
+              ],
+              "answer": 3,
+              "explanation": "<b>captivated</b> nghĩa là 'bị cuốn hút, say mê'. Trái nghĩa là <b>disappointed</b> (thất vọng, chán nản).<br>• attracted: bị thu hút (đồng nghĩa)<br>• blended: pha trộn<br>• reflected: phản chiếu.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_20",
+              "num": 20,
+              "section": "II. READING: Reading Comprehension (Globalisation & Culture)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t1_comp",
+              "prompt": "Which of the following is TRUE according to the passage?",
+              "options": [
+                "A. People now can keep up with fashion trends from different cultures.",
+                "B. Globalisation threatens to put cultural diversity at risk.",
+                "C. Cross-cultural fashion styles only use traditional elements.",
+                "D. Foreign foods are now more popular than traditional foods in Vietnam."
+              ],
+              "answer": 0,
+              "explanation": "Căn cứ thông tin đoạn 4: <i>'It is now easier for people to keep up with fashion trends from different cultures and regions...'</i> -> Phát biểu A là ĐÚNG.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_21",
+              "num": 21,
+              "section": "III. WRITING: Sentence Arrangement",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C or D to indicate the correct arrangement of sentences to make a meaningful paragraph:<br><i>a. More than 300 students attended the fair and enjoyed Vietnamese dishes, songs and games.<br>b. In my view, the day was a great success. All the attendees felt happy.<br>c. There were 30 stalls where various activities were offered.<br>d. Yesterday, our school organised the Spring Fair in the playground.<br>e. However, it would be better if we could make Banh Chung during the night.</i>",
+              "options": [
+                "A. d - a - c - b - e",
+                "B. d - b - a - c - e",
+                "C. b - d - a - e - c",
+                "D. b - c - d - e - a"
+              ],
+              "answer": 0,
+              "explanation": "Trình tự hợp lý:<br>1. (d) Mở đầu giới thiệu sự kiện: Hôm qua trường tổ chức Hội chợ Xuân.<br>2. (a) Số lượng người tham gia và các hoạt động chung.<br>3. (c) Chi tiết về quy mô: Có 30 gian hàng với nhiều hoạt động.<br>4. (b) Đánh giá tổng quan: Ngày hội thành công tốt đẹp.<br>5. (e) Đề xuất cải thiện: Tuy nhiên sẽ tuyệt hơn nếu gói bánh chưng qua đêm.<br>-> Thứ tự: <b>d - a - c - b - e</b>.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_22",
+              "num": 22,
+              "section": "III. WRITING: Sentence Arrangement",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C or D to indicate the correct arrangement of sentences to make a meaningful paragraph:<br><i>a. Secondly, it’s a good idea that you try to cook traditional food frequently.<br>b. There are two main ways to maintain your cultural identity in a new culture.<br>c. Staying connected with your family and friends helps you to feel part of your native culture.<br>d. You should also remember to make mealtimes special and important occasions.<br>e. Firstly, keep in touch with people you know back home.</i>",
+              "options": [
+                "A. c - a - d - e - a",
+                "B. b - a - e - d - c",
+                "C. b - e - d - a - c",
+                "D. b - e - c - a - d"
+              ],
+              "answer": 3,
+              "explanation": "Trình tự logic đoạn văn nghị luận:<br>• (b) Câu chủ đề: Có hai cách chính để duy trì bản sắc văn hóa...<br>• (e) Cách thứ nhất: Firstly, giữ liên lạc với người quen ở quê nhà.<br>• (c) Diễn giải cách 1: Giữ kết nối giúp bạn cảm thấy là một phần của văn hóa gốc.<br>• (a) Cách thứ hai: Secondly, nấu món ăn truyền thống thường xuyên.<br>• (d) Diễn giải bổ sung cách 2: Bạn cũng nên biến bữa ăn thành dịp đặc biệt.<br>-> Thứ tự chuẩn: <b>b - e - c - a - d</b>.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_23",
+              "num": 23,
+              "section": "III. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Complete the second sentence so that it has the same meaning as the first:<br><b>I always turn off the fans when I leave the room. This helps save energy. (which)</b><br>→ ___________________________________________________________.",
+              "model_answers": [
+                "I always turn off the fans when I leave the room, which helps save energy.",
+                "I always turn off the fans when leaving the room, which helps save energy."
+              ],
+              "explanation": "Cấu trúc mệnh đề quan hệ không xác định với <b>which</b> thay thế cho toàn bộ sự việc ở mệnh đề đứng trước: <i>S + V, which + V...</i> Lưu ý bắt buộc phải có dấu phẩy trước <b>which</b>.",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_24",
+              "num": 24,
+              "section": "III. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Complete the second sentence so that it has the same meaning as the first:<br><b>No mountain in the Indochinese Peninsula is as high as Fanxifan.</b><br>→ Fanxifan is ___________________________________________________________.",
+              "model_answers": [
+                "Fanxifan is the highest mountain in the Indochinese Peninsula."
+              ],
+              "explanation": "Chuyển từ so sánh bằng dạng phủ định sang so sánh nhất:<br><i>No + N + is as + adj + as + X → X is the + adj-est / most adj + N.</i>",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_25",
+              "num": 25,
+              "section": "III. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Complete the second sentence so that it has the same meaning as the first:<br><b>Protecting the environment is up to everyone doing small things everyday. (depends)</b><br>→ ___________________________________________________________.",
+              "model_answers": [
+                "Protecting the environment depends on everyone doing small things everyday.",
+                "Protecting the environment depends on everyone doing small things every day."
+              ],
+              "explanation": "Cụm thành ngữ tương đương: <b>be up to someone</b> = <b>depend on someone</b> (phụ thuộc vào ai / do ai quyết định).",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_26",
+              "num": 26,
+              "section": "III. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Complete the second sentence so that it has the same meaning as the first:<br><b>During my lunch time, someone knocked the door.</b><br>→ While ___________________________________________________________.",
+              "model_answers": [
+                "While I was having lunch, someone knocked on the door.",
+                "While I was having lunch, someone knocked at the door.",
+                "While I was eating lunch, someone knocked on the door.",
+                "While I was eating lunch, someone knocked at the door.",
+                "While I was having my lunch, someone knocked on the door."
+              ],
+              "explanation": "Quy tắc chuyển đổi: <i>During + Noun phrase → While + S + was/were + V-ing</i> (Hành động đang xảy ra trong quá khứ thì hành động khác xen vào).",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_27",
+              "num": 27,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>While / Vo Nguyen Giap / work / as / history / teacher / he / join / revolutionary / activities</b>",
+              "model_answers": [
+                "While Vo Nguyen Giap was working as a history teacher, he joined revolutionary activities."
+              ],
+              "explanation": "Cấu trúc quá khứ tiếp diễn kết hợp quá khứ đơn với liên từ While:<br><i>While + S + was/were + V-ing, S + V2/ed.</i>",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_28",
+              "num": 28,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>Cultural / diffusion / happen / when / people / of / different / cultures / interact / each other .</b>",
+              "model_answers": [
+                "Cultural diffusion happens when people of different cultures interact with each other.",
+                "Cultural diffusion happens when people from different cultures interact with each other."
+              ],
+              "explanation": "Hiện tại đơn diễn tả định nghĩa / quy luật khoa học: Cultural diffusion (danh từ số ít -> chia 'happens'), đi kèm cụm 'interact with each other' (tương tác với nhau).",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_29",
+              "num": 29,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>Not until / they / set up / eco-club / did / students / start / clean up / school / yard</b>",
+              "model_answers": [
+                "Not until they set up an eco-club did students start to clean up the school yard.",
+                "Not until they set up the eco-club did students start cleaning up the school yard.",
+                "Not until they set up an eco-club did students start cleaning up the school yard.",
+                "Not until they set up the eco-club did students start to clean up the school yard."
+              ],
+              "explanation": "Cấu trúc đảo ngữ với <b>Not until</b>: <i>Not until + mệnh đề thời gian + trợ động từ + S + V(nguyên mẫu).</i>",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t1_30",
+              "num": 30,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>The / country / adopt / sustainable / practices / which / help / protect / natural / resources .</b>",
+              "model_answers": [
+                "The country has adopted sustainable practices which help protect natural resources.",
+                "The country adopts sustainable practices which help protect natural resources.",
+                "The country adopted sustainable practices which helped protect natural resources."
+              ],
+              "explanation": "Chia thì hiện tại hoàn thành hoặc hiện tại đơn, kết hợp mệnh đề quan hệ bổ nghĩa cho 'sustainable practices' (số nhiều -> help protect natural resources).",
+              "test_id": "g12_de1"
+            },
+            {
+              "id": "g12_t2_01",
+              "num": 1,
+              "section": "I. LANGUAGE: Pronunciation",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C or D on your answer sheet to indicate the word that differs from the other three in the pronunciation of the underlined part:<br>A. short<u>age</u> &nbsp;&nbsp;&nbsp;&nbsp; B. teen<u>age</u> &nbsp;&nbsp;&nbsp;&nbsp; C. vill<u>age</u> &nbsp;&nbsp;&nbsp;&nbsp; D. cott<u>age</u>",
+              "options": [
+                "A. shortage",
+                "B. teenage",
+                "C. village",
+                "D. cottage"
+              ],
+              "answer": 1,
+              "explanation": "Đuôi 'age' trong <b>teenage</b> /ˈtiːneɪdʒ/ được phát âm là <b>/eɪdʒ/</b>.<br>Trong các từ còn lại, đuôi 'age' phát âm là <b>/ɪdʒ/</b>:<br>• shortage: /ˈʃɔːtɪdʒ/<br>• village: /ˈvɪlɪdʒ/<br>• cottage: /ˈkɒtɪdʒ/.",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_02",
+              "num": 2,
+              "section": "I. LANGUAGE: Word Stress",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C or D on your answer sheet to indicate the word that differs from the other three in the position of primary stress.",
+              "options": [
+                "A. tradition",
+                "B. cultural",
+                "C. military",
+                "D. poetry"
+              ],
+              "answer": 0,
+              "explanation": "<b>tradition</b> /trəˈdɪʃn/ có trọng âm rơi vào âm tiết 2 (hậu tố -tion trọng âm rơi vào âm liền trước).<br>Các từ còn lại có trọng âm rơi vào âm tiết 1:<br>• cultural: /ˈkʌltʃərəl/<br>• military: /ˈmɪlətri/<br>• poetry: /ˈpəʊətri/.",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_03",
+              "num": 3,
+              "section": "I. LANGUAGE: Vocabulary",
+              "type": "mcq",
+              "prompt": "Albert Einstein is often regarded as a scientific ________ due to his groundbreaking theories in the field of physics.",
+              "options": [
+                "A. hero",
+                "B. filmmaker",
+                "C. genius",
+                "D. actor"
+              ],
+              "answer": 2,
+              "explanation": "Cụm từ: <b>scientific genius</b> (thiên tài khoa học). Albert Einstein là nhà bác học vĩ đại với các lý thuyết đột phá trong vật lý.",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_04",
+              "num": 4,
+              "section": "I. LANGUAGE: Preposition",
+              "type": "mcq",
+              "prompt": "Billions of trees are cut down every year, releasing carbon dioxide back into the air and contributing ________ climate change.",
+              "options": [
+                "A. to",
+                "B. at",
+                "C. of",
+                "D. in"
+              ],
+              "answer": 0,
+              "explanation": "Cấu trúc động từ đi kèm giới từ: <b>contribute to something</b> (góp phần vào / gây ra cái gì).",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_05",
+              "num": 5,
+              "section": "I. LANGUAGE: Word Form / Passive",
+              "type": "mcq",
+              "prompt": "It is becoming worrying that rivers, lakes, and oceans are ________ by large farms and transport industries.",
+              "options": [
+                "A. contaminated",
+                "B. contamination",
+                "C. contaminants",
+                "D. contaminating"
+              ],
+              "answer": 0,
+              "explanation": "Cấu trúc bị động ở hiện tại tiếp diễn: <i>are + V3/ed + by O</i> -> chọn tính từ/phân từ <b>contaminated</b> (bị làm ô nhiễm).<br>• contamination (n): sự ô nhiễm<br>• contaminants (n): các chất gây ô nhiễm.",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_06",
+              "num": 6,
+              "section": "I. LANGUAGE: Collocation",
+              "type": "mcq",
+              "prompt": "To avoid culture shock, learn about the ________ and behaviour of our local people in advance.",
+              "options": [
+                "A. customs",
+                "B. experiences",
+                "C. cultures",
+                "D. performances"
+              ],
+              "answer": 0,
+              "explanation": "Cụm danh từ: <b>customs and behaviour</b> (phong tục tập quán và hành vi ứng xử của người dân bản địa).",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_07",
+              "num": 7,
+              "section": "I. LANGUAGE: Phrasal Verb",
+              "type": "mcq",
+              "prompt": "He decided to ________ college after the first semester because he felt unfulfilled by the courses.",
+              "options": [
+                "A. drop out of",
+                "B. come up with",
+                "C. keep away from",
+                "D. put up with"
+              ],
+              "answer": 0,
+              "explanation": "Cụm động từ: <b>drop out of college/school</b> (bỏ học giữa chừng).<br>• come up with: nảy ra (ý tưởng)<br>• keep away from: tránh xa khỏi<br>• put up with: chịu đựng.",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_08",
+              "num": 8,
+              "section": "I. LANGUAGE: Relative Clause",
+              "type": "mcq",
+              "prompt": "More and more people are becoming aware of saving energy, ________ is good for the environment.",
+              "options": [
+                "A. whom",
+                "B. when",
+                "C. which",
+                "D. who"
+              ],
+              "answer": 2,
+              "explanation": "Đại từ quan hệ <b>which</b> đứng sau dấu phẩy dùng để thay thế cho toàn bộ sự việc ở mệnh đề đứng trước ('Ngày càng nhiều người có ý thức tiết kiệm năng lượng, điều này rất tốt cho môi trường').",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_09",
+              "num": 9,
+              "section": "I. LANGUAGE: Past Tense with While",
+              "type": "mcq",
+              "prompt": "While the teacher ________ the life story of Uncle Ho, everyone in our class ________ notes carefully.",
+              "options": [
+                "A. was telling / was taking",
+                "B. told / took",
+                "C. told / was taking",
+                "D. was telling / took"
+              ],
+              "answer": 0,
+              "explanation": "Hai hành động diễn ra song song cùng lúc trong quá khứ với liên từ <b>While</b> -> cả hai mệnh đề đều chia ở thì <b>Quá khứ tiếp diễn (Past Continuous)</b>: <i>was telling / was taking</i>.",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_10",
+              "num": 10,
+              "section": "I. LANGUAGE: Closest in Meaning",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C, or D to indicate the word(s) CLOSEST in meaning to the underlined word:<br><b>Taking part in exchange programmes teaches students to respect the <u>diversity</u> of other cultures.</b>",
+              "options": [
+                "A. variety",
+                "B. uniformity",
+                "C. scarcity",
+                "D. uniqueness"
+              ],
+              "answer": 0,
+              "explanation": "<b>diversity</b> (sự đa dạng, phong phú) đồng nghĩa với <b>variety</b>.<br>• uniformity: sự đồng nhất<br>• scarcity: sự khan hiếm<br>• uniqueness: tính độc nhất.",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_11",
+              "num": 11,
+              "section": "II. READING: Cloze Test (Bill Gates)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t2_cloze",
+              "prompt": "Choose the best option to fit blank (11):<br><i>'In 1973, Gates enrolled at Harvard University, (11) _________ he later dropped out to pursue his dream...'</i>",
+              "options": [
+                "A. what",
+                "B. which",
+                "C. when",
+                "D. where"
+              ],
+              "answer": 3,
+              "explanation": "Đại từ quan hệ trạng từ chỉ nơi chốn <b>where</b> thay thế cho Harvard University (nơi mà sau đó ông đã thôi học).",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_12",
+              "num": 12,
+              "section": "II. READING: Cloze Test (Bill Gates)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t2_cloze",
+              "prompt": "Choose the best option to fit blank (12):<br><i>'Microsoft soon dominated the personal computer software (12) ________, making Gates one of the wealthiest individuals...'</i>",
+              "options": [
+                "A. industry",
+                "B. industrial",
+                "C. industrialism",
+                "D. industrialise"
+              ],
+              "answer": 0,
+              "explanation": "Cụm danh từ: <b>software industry</b> (ngành công nghiệp phần mềm). Chỗ trống cần danh từ chính đứng sau cụm bổ nghĩa 'personal computer software'.",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_13",
+              "num": 13,
+              "section": "II. READING: Cloze Test (Bill Gates)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t2_cloze",
+              "prompt": "Choose the best option to fit blank (13):<br><i>'...stepped down to focus (13) ________ his philanthropic work through the Bill & Melinda Gates Foundation.'</i>",
+              "options": [
+                "A. at",
+                "B. on",
+                "C. in",
+                "D. for"
+              ],
+              "answer": 1,
+              "explanation": "Cụm động từ: <b>focus on something</b> (tập trung vào điều gì).",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_14",
+              "num": 14,
+              "section": "II. READING: Cloze Test (Bill Gates)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t2_cloze",
+              "prompt": "Choose the best option to fit blank (14):<br><i>'Gates has also been a vocal advocate for technological innovation and (14) _________ development...'</i>",
+              "options": [
+                "A. sustainable",
+                "B. depletable",
+                "C. temporary",
+                "D. permanent"
+              ],
+              "answer": 0,
+              "explanation": "Collocation quen thuộc: <b>sustainable development</b> (phát triển bền vững).",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_15",
+              "num": 15,
+              "section": "II. READING: Cloze Test (Bill Gates)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t2_cloze",
+              "prompt": "Choose the best option to fit blank (15):<br><i>'(15) _________ his immense wealth and success, Gates is known for his modest lifestyle and commitment to giving back...'</i>",
+              "options": [
+                "A. Because",
+                "B. Although",
+                "C. Despite",
+                "D. Because of"
+              ],
+              "answer": 2,
+              "explanation": "Sau chỗ trống là cụm danh từ 'his immense wealth and success' diễn tả sự tương phản với việc ông có lối sống giản dị (modest lifestyle) -> dùng giới từ <b>Despite</b> (+ Noun phrase). Although phải đi với một mệnh đề (clause).",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_16",
+              "num": 16,
+              "section": "II. READING: Reading Comprehension (Earth Hour)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t2_comp",
+              "prompt": "Where and when did Earth Hour first begin?",
+              "options": [
+                "A. New York City, 2005",
+                "B. Paris, 2009",
+                "C. Sydney, 2007",
+                "D. Tokyo, 2010"
+              ],
+              "answer": 2,
+              "explanation": "Thông tin ở câu thứ 2 đoạn 1: <i>'It began in Sydney, Australia, in 2007, and has since grown into a worldwide movement.'</i>",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_17",
+              "num": 17,
+              "section": "II. READING: Reading Comprehension (Earth Hour)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t2_comp",
+              "prompt": "What does the word <b>their</b> in paragraph 2 refer to?",
+              "options": [
+                "A. Long-term changes",
+                "B. Efforts to combat climate change",
+                "C. Individuals and communities",
+                "D. Lights turned off during Earth Hour"
+              ],
+              "answer": 2,
+              "explanation": "Căn cứ câu cuối đoạn 2: <i>'By participating in Earth Hour, <u>individuals and communities</u> show <b>their</b> support for efforts to reduce carbon footprints and combat climate change.'</i> 'their' thay thế cho <b>Individuals and communities</b>.",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_18",
+              "num": 18,
+              "section": "II. READING: Reading Comprehension (Earth Hour)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t2_comp",
+              "prompt": "What actions are participants encouraged to take during Earth Hour?",
+              "options": [
+                "A. Replace their water taps and lights",
+                "B. Turn off their lights and electrical appliances",
+                "C. Plant trees and turn off electrical appliances",
+                "D. Use only solar power and save electricity"
+              ],
+              "answer": 1,
+              "explanation": "Thông tin ở đoạn 1: <i>'participants are encouraged to turn off their lights and electrical appliances for one hour, from 8:30 to 9:30 PM local time.'</i>",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_19",
+              "num": 19,
+              "section": "II. READING: Reading Comprehension (Earth Hour)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t2_comp",
+              "prompt": "The word <b>significantly</b> in paragraph 3 is OPPOSITE in meaning to ________.",
+              "options": [
+                "A. slightly",
+                "B. dramatically",
+                "C. notably",
+                "D. substantially"
+              ],
+              "answer": 0,
+              "explanation": "<b>significantly</b> (đáng kể, một cách to lớn) trái nghĩa với <b>slightly</b> (nhẹ, chút ít, không đáng kể).<br>• dramatically, notably, substantially đều mang nghĩa là đáng kể, lớn lao.",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_20",
+              "num": 20,
+              "section": "II. READING: Reading Comprehension (Earth Hour)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t2_comp",
+              "prompt": "What is the main idea of the passage?",
+              "options": [
+                "A. To promote energy conservation and raise awareness about climate change.",
+                "B. To encourage people to switch to renewable energy sources.",
+                "C. To raise funds for environmental organizations.",
+                "D. To create a global network of environmental activists."
+              ],
+              "answer": 0,
+              "explanation": "Ý chính của cả bài viết là giới thiệu Giờ Trái đất nhằm khuyến khích tiết kiệm năng lượng và nâng cao nhận thức về biến đổi khí hậu ('attract people's attention to climate change and promote energy conservation').",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_21",
+              "num": 21,
+              "section": "III. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence in such a way that it means the same as the sentence printed before it:<br><b>My older sister surfed the Internet during her breakfast. (use “while”)</b><br>→ My older sister surfed __________________________________________.",
+              "model_answers": [
+                "My older sister surfed the Internet while she was having breakfast.",
+                "My older sister surfed the Internet while having breakfast.",
+                "My older sister surfed the Internet while she was eating breakfast."
+              ],
+              "explanation": "Chuyển từ giới từ <i>during + Noun</i> sang liên từ <i>while + S + was/were + V-ing</i> (hoặc mệnh đề rút gọn <i>while V-ing</i>).",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_22",
+              "num": 22,
+              "section": "III. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence in such a way that it means the same as the sentence printed before it:<br><b>Many people have now started to pay attention to the environment. (use “care + a preposition”)</b><br>→ Many people have now started __________________________________________.",
+              "model_answers": [
+                "Many people have now started to care about the environment.",
+                "Many people have now started caring about the environment.",
+                "Many people have now started to care for the environment.",
+                "Many people have now started caring for the environment."
+              ],
+              "explanation": "Cụm từ tương đương: <b>pay attention to</b> = <b>care about / care for</b> (quan tâm, để tâm đến điều gì). Động từ start có thể đi với to-V hoặc V-ing.",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_23",
+              "num": 23,
+              "section": "III. WRITING: Sentence Combining",
+              "type": "transform",
+              "prompt": "Combine the two sentences into a meaningful sentence:<br><b>Plastic takes hundreds of years to decompose in the ground. This explains why it is harmful to the environment. (use “which”)</b><br>→ Plastic takes hundreds of years to decompose in the ground __________________________________________.",
+              "model_answers": [
+                "Plastic takes hundreds of years to decompose in the ground, which explains why it is harmful to the environment."
+              ],
+              "explanation": "Dùng đại từ quan hệ <b>which</b> thay thế cho toàn bộ sự việc ở mệnh đề trước trong mệnh đề quan hệ không xác định (phải có dấu phẩy phía trước).",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_24",
+              "num": 24,
+              "section": "III. WRITING: Sentence Combining",
+              "type": "transform",
+              "prompt": "Combine the two sentences into a meaningful sentence:<br><b>The band was playing their first song. All the lights went out. (use “when”)</b><br>→ The band __________________________________________.",
+              "model_answers": [
+                "The band was playing their first song when all the lights went out."
+              ],
+              "explanation": "Cấu trúc kết hợp quá khứ tiếp diễn và quá khứ đơn với liên từ <b>when</b>: <i>S + was/were + V-ing when + S + V2/ed</i> (Hành động đang diễn ra thì hành động khác đột ngột xen vào).",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_25",
+              "num": 25,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>While / Steve Jobs / work / Apple / he / introduce / revolutionary / products / like / iPhone</b>",
+              "model_answers": [
+                "While Steve Jobs was working at Apple, he introduced revolutionary products like the iPhone.",
+                "While Steve Jobs was working for Apple, he introduced revolutionary products like the iPhone."
+              ],
+              "explanation": "Mệnh đề While chia thì Quá khứ tiếp diễn (was working at/for Apple), mệnh đề chính chia thì Quá khứ đơn (introduced revolutionary products like the iPhone).",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_26",
+              "num": 26,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>Ha Long Bay / be / one / of / most / popular / tourist / destinations / in / Viet Nam</b>",
+              "model_answers": [
+                "Ha Long Bay is one of the most popular tourist destinations in Viet Nam.",
+                "Ha Long Bay is one of the most popular tourist destinations in Vietnam."
+              ],
+              "explanation": "Cấu trúc so sánh nhất: <i>one of the most + adj + plural noun</i> (một trong những điểm đến du lịch nổi tiếng nhất ở Việt Nam).",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_27",
+              "num": 27,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>It / be / his / biological / father / who / pass away / when / Steve Jobs / be / only / a / boy</b>",
+              "model_answers": [
+                "It was his biological father who passed away when Steve Jobs was only a boy."
+              ],
+              "explanation": "Cấu trúc câu chẻ (Cleft sentence) nhấn mạnh ở quá khứ: <i>It was + O/S + who + V2/ed...</i>",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t2_28",
+              "num": 28,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>Global / warming / lead / to / extreme / weather / events / which / cause / severe / floods</b>",
+              "model_answers": [
+                "Global warming leads to extreme weather events which cause severe floods.",
+                "Global warming has led to extreme weather events which cause severe floods.",
+                "Global warming has led to extreme weather events which have caused severe floods."
+              ],
+              "explanation": "Thì hiện tại đơn diễn tả thực tế khoa học: 'Global warming leads to extreme weather events which cause severe floods' (Hiện tượng ấm lên toàn cầu dẫn đến các hiện tượng thời tiết cực đoan, điều này gây ra lũ lụt nghiêm trọng).",
+              "test_id": "g12_de2"
+            },
+            {
+              "id": "g12_t3_01",
+              "num": 1,
+              "section": "I. LANGUAGE: Pronunciation",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C, or D to indicate the word whose underlined part differs from the others in pronunciation:<br>A. adm<u>i</u>re &nbsp;&nbsp;&nbsp;&nbsp; B. publ<u>i</u>sh &nbsp;&nbsp;&nbsp;&nbsp; C. f<u>i</u>nish &nbsp;&nbsp;&nbsp;&nbsp; D. <u>i</u>nclude",
+              "options": [
+                "A. admire",
+                "B. publish",
+                "C. finish",
+                "D. include"
+              ],
+              "answer": 0,
+              "explanation": "Chữ 'i' trong <b>admire</b> /ədˈmaɪər/ được phát âm là <b>/aɪ/</b>.<br>Trong các từ còn lại, chữ 'i' phát âm là <b>/ɪ/</b>:<br>• publish: /ˈpʌblɪʃ/<br>• finish: /ˈfɪnɪʃ/<br>• include: /ɪnˈkluːd/.",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_02",
+              "num": 2,
+              "section": "I. LANGUAGE: Pronunciation",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C, or D to indicate the word whose underlined part differs from the others in pronunciation:<br>A. dev<u>o</u>te &nbsp;&nbsp;&nbsp;&nbsp; B. her<u>o</u> &nbsp;&nbsp;&nbsp;&nbsp; C. p<u>o</u>em &nbsp;&nbsp;&nbsp;&nbsp; D. cust<u>o</u>m",
+              "options": [
+                "A. devote",
+                "B. hero",
+                "C. poem",
+                "D. custom"
+              ],
+              "answer": 3,
+              "explanation": "Chữ 'o' trong <b>custom</b> /ˈkʌstəm/ được phát âm là âm schwa <b>/ə/</b>.<br>Trong các từ còn lại, chữ 'o' phát âm là diphthong <b>/əʊ/</b>:<br>• devote: /dɪˈvəʊt/<br>• hero: /ˈhɪərəʊ/<br>• poem: /ˈpəʊɪm/.",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_03",
+              "num": 3,
+              "section": "I. LANGUAGE: Word Form",
+              "type": "mcq",
+              "prompt": "Thomas Edison's ________ achievement in developing the first practical electric light bulb revolutionized the way the world illuminated the night.",
+              "options": [
+                "A. impress",
+                "B. impressive",
+                "C. impression",
+                "D. impressively"
+              ],
+              "answer": 1,
+              "explanation": "Trước danh từ 'achievement' cần một tính từ bổ nghĩa -> chọn <b>impressive</b> (đầy ấn tượng).<br>• impress (v): gây ấn tượng<br>• impression (n): sự ấn tượng<br>• impressively (adv): một cách ấn tượng.",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_04",
+              "num": 4,
+              "section": "I. LANGUAGE: Vocabulary",
+              "type": "mcq",
+              "prompt": "Vo Nguyen Giap was widely recognized as a ________ genius for his pivotal role in leading Vietnamese forces during the First Indochina War and the Vietnam War.",
+              "options": [
+                "A. military",
+                "B. artistic",
+                "C. musical",
+                "D. literary"
+              ],
+              "answer": 0,
+              "explanation": "Cụm danh từ: <b>military genius</b> (thiên tài quân sự). Đại tướng Võ Nguyên Giáp là vị tướng lỗi lạc lãnh đạo quân đội nhân dân Việt Nam lập nên những chiến công vang dội.",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_05",
+              "num": 5,
+              "section": "I. LANGUAGE: Vocabulary",
+              "type": "mcq",
+              "prompt": "The food at the festival is not only diverse but also incredibly ________.",
+              "options": [
+                "A. tasty",
+                "B. boring",
+                "C. plain",
+                "D. unhealthy"
+              ],
+              "answer": 0,
+              "explanation": "Ngữ cảnh khen ngợi: 'Món ăn tại lễ hội không chỉ phong phú mà còn vô cùng thơm ngon' -> chọn <b>tasty</b> (ngon miệng). Các từ còn lại mang nghĩa tiêu cực/nhạt nhẽo.",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_06",
+              "num": 6,
+              "section": "I. LANGUAGE: Vocabulary",
+              "type": "mcq",
+              "prompt": "A popular Vietnamese ________ is Bun Cha, which includes grilled pork and noodles.",
+              "options": [
+                "A. speciality",
+                "B. meal",
+                "C. dessert",
+                "D. beverage"
+              ],
+              "answer": 0,
+              "explanation": "<b>speciality</b> (đặc sản). Bún chả là món đặc sản nổi tiếng của ẩm thực Việt Nam.",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_07",
+              "num": 7,
+              "section": "I. LANGUAGE: Phrasal Verb",
+              "type": "mcq",
+              "prompt": "Despite numerous successes, he ________ after a long battle with pancreatic cancer.",
+              "options": [
+                "A. passed away",
+                "B. came across",
+                "C. got over",
+                "D. took on"
+              ],
+              "answer": 0,
+              "explanation": "Cụm động từ: <b>pass away</b> (qua đời, mất đi sau cơn bạo bệnh ung thư).<br>• come across: tình cờ gặp/thấy<br>• get over: vượt qua, hồi phục<br>• take on: đảm nhận.",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_08",
+              "num": 8,
+              "section": "I. LANGUAGE: Past Continuous & Simple",
+              "type": "mcq",
+              "prompt": "While Dang Thuy Tram ________ her duty in Quang Ngai Province, the cruel enemy ________ her.",
+              "options": [
+                "A. was doing / killed",
+                "B. did / killed",
+                "C. did / was killing",
+                "D. was doing / was killing"
+              ],
+              "answer": 0,
+              "explanation": "Hành động đang diễn ra trong quá khứ (chia Quá khứ tiếp diễn: <i>was doing</i> her duty) thì hành động khác bất ngờ xen vào cắt ngang (chia Quá khứ đơn: <i>killed</i>).",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_09",
+              "num": 9,
+              "section": "I. LANGUAGE: Articles",
+              "type": "mcq",
+              "prompt": "He enjoys playing ________ guitar in his free time.",
+              "options": [
+                "A. a",
+                "B. an",
+                "C. the",
+                "D. Ø"
+              ],
+              "answer": 2,
+              "explanation": "Quy tắc ngữ pháp về nhạc cụ: Động từ <b>play</b> khi đi với tên nhạc cụ (guitar, piano, violin...) bắt buộc phải có mạo từ xác định <b>the</b>: <i>play the guitar</i>.",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_10",
+              "num": 10,
+              "section": "I. LANGUAGE: Closest in Meaning",
+              "type": "mcq",
+              "prompt": "Mark the letter A, B, C or D to indicate the word(s) CLOSEST in meaning to the underlined word:<br><b>Apple products were not only designed to be <u>cutting-edge</u> technology, but also to be stylish and easy to use.</b>",
+              "options": [
+                "A. modern",
+                "B. flexible",
+                "C. old-fashioned",
+                "D. simple"
+              ],
+              "answer": 0,
+              "explanation": "<b>cutting-edge</b> (tối tân, tiên tiến, đi đầu công nghệ) đồng nghĩa với <b>modern</b> (hiện đại, tiên tiến).<br>• flexible: linh hoạt<br>• old-fashioned: lỗi thời (trái nghĩa)<br>• simple: đơn giản.",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_11",
+              "num": 11,
+              "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t3_cloze",
+              "prompt": "Choose the best option to fit blank (11):<br><i>'The Kinh people are primarily located in the (11) ________, while the minority groups are scattered throughout the mountainous regions.'</i>",
+              "options": [
+                "A. lowlands",
+                "B. cities",
+                "C. communities",
+                "D. countries"
+              ],
+              "answer": 0,
+              "explanation": "Đối lập với 'mountainous regions' (vùng núi) là <b>lowlands</b> (vùng đồng bằng). Người Kinh chủ yếu sinh sống ở các vùng đồng bằng.",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_12",
+              "num": 12,
+              "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t3_cloze",
+              "prompt": "Choose the best option to fit blank (12):<br><i>'Traditional families often have three or four generations living under (12) _______ same roof...'</i>",
+              "options": [
+                "A. a",
+                "B. the",
+                "C. an",
+                "D. X"
+              ],
+              "answer": 1,
+              "explanation": "Cụm thành ngữ cố định: <b>under the same roof</b> (sống dưới cùng một mái nhà).",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_13",
+              "num": 13,
+              "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t3_cloze",
+              "prompt": "Choose the best option to fit blank (13):<br><i>'Confucianism has also played a significant role... (13) _______, in recent years, there has been a growing movement towards gender equality...'</i>",
+              "options": [
+                "A. However",
+                "B. Although",
+                "C. Because",
+                "D. Moreover"
+              ],
+              "answer": 0,
+              "explanation": "Trạng từ liên kết đứng đầu câu chỉ sự tương phản: <b>However</b> (Tuy nhiên). Nho giáo từng đề cao vai trò truyền thống, tuy nhiên những năm gần đây đã có phong trào bình đẳng giới mạnh mẽ.",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_14",
+              "num": 14,
+              "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t3_cloze",
+              "prompt": "Choose the best option to fit blank (14):<br><i>'...characterized by a strong emphasis on community and living in harmony (14) ________ nature.'</i>",
+              "options": [
+                "A. for",
+                "B. of",
+                "C. on",
+                "D. with"
+              ],
+              "answer": 3,
+              "explanation": "Cụm từ cố định: <b>in harmony with something/nature</b> (sống hòa hợp, chan hòa với thiên nhiên).",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_15",
+              "num": 15,
+              "section": "II. READING: Cloze Test (Ethnic Groups in Vietnam)",
+              "type": "reading_cloze",
+              "passage_ref": "g12_t3_cloze",
+              "prompt": "Choose the best option to fit blank (15):<br><i>'The Vietnamese government is working to (15) ________ the gap between the lowland and mountainous communities...'</i>",
+              "options": [
+                "A. keep",
+                "B. have",
+                "C. bridge",
+                "D. take"
+              ],
+              "answer": 2,
+              "explanation": "Collocation: <b>bridge the gap</b> (thu hẹp khoảng cách / bắc nhịp cầu nối). Chính phủ đang nỗ lực thu hẹp khoảng cách giữa các cộng đồng vùng xuôi và vùng núi.",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_16",
+              "num": 16,
+              "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t3_comp",
+              "prompt": "When was Alexander Hamilton appointed as the first Secretary of the Treasury?",
+              "options": [
+                "A. September 11, 1787",
+                "B. September 11, 1789",
+                "C. July 4, 1776",
+                "D. January 11, 1755"
+              ],
+              "answer": 1,
+              "explanation": "Căn cứ câu đầu đoạn 4: <i>'Alexander Hamilton was appointed as the country’s first Secretary of The Treasury on September 11, 1789.'</i>",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_17",
+              "num": 17,
+              "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t3_comp",
+              "prompt": "Which best serves as the title for the passage?",
+              "options": [
+                "A. A brief history of Alexander Hamilton.",
+                "B. Founding Fathers of the United States.",
+                "C. Pursuing your dream no matter what.",
+                "D. An unbecoming historical figure."
+              ],
+              "answer": 0,
+              "explanation": "Bài văn tóm lược cuộc đời, sự nghiệp quân sự, chính trị và những đóng góp của Alexander Hamilton từ khi sinh ra đến khi qua đời -> Tiêu đề phù hợp nhất là: <b>A brief history of Alexander Hamilton</b>.",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_18",
+              "num": 18,
+              "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t3_comp",
+              "prompt": "According to paragraph 1, what can be concluded from Alexander Hamilton’s childhood?",
+              "options": [
+                "A. Hamilton had a miserable youth which left him a pessimistic attitude to life.",
+                "B. Hamilton boasted an incomplete yet happy childhood at a Caribbean orphanage.",
+                "C. He experienced a series of misfortunes but still thrived and overcame them all.",
+                "D. His hard time from childhood became the incentives for him to join the army."
+              ],
+              "answer": 2,
+              "explanation": "Hamilton không được công nhận là con hợp pháp, bị từ chối vào trường học của nhà thờ, mẹ mất sớm và phải đi làm thư ký, nhưng ông vẫn không ngừng viết lách và được cộng đồng quyên góp tiền cho đi học -> Ông trải qua nhiều bất hạnh nhưng đã vươn lên vượt qua tất cả (C).",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_19",
+              "num": 19,
+              "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t3_comp",
+              "prompt": "The word <b>elected</b> in paragraph 2 is CLOSEST in meaning to ________.",
+              "options": [
+                "A. locked",
+                "B. transferred",
+                "C. appointed",
+                "D. voted"
+              ],
+              "answer": 3,
+              "explanation": "<b>elect</b> (bầu cử thông qua bỏ phiếu) đồng nghĩa với <b>voted</b>.",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_20",
+              "num": 20,
+              "section": "II. READING: Reading Comprehension (Alexander Hamilton)",
+              "type": "reading_comp",
+              "passage_ref": "g12_t3_comp",
+              "prompt": "The word <b>it</b> in paragraph 3 refers to ________.",
+              "options": [
+                "A. government",
+                "B. document",
+                "C. ratification",
+                "D. confederation"
+              ],
+              "answer": 1,
+              "explanation": "Căn cứ đoạn 3: <i>'...despite his disagreements, he promoted the <u>document</u> because he believed <b>it</b> was a vast improvement over the Articles of Confederation.'</i> Từ 'it' thay thế cho <b>document</b> (bản tài liệu Hiến pháp).",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_21",
+              "num": 21,
+              "section": "III. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence in such a way that it means the same as the one printed before it:<br><b>I have not seen him for ten years.</b><br>→ The last time __________________________________________.",
+              "model_answers": [
+                "The last time I saw him was ten years ago."
+              ],
+              "explanation": "Cấu trúc chuyển đổi giữa Hiện tại hoàn thành phủ định và The last time:<br><i>S + have/has not + V3/ed + for + time → The last time + S + V2/ed + was + time + ago.</i>",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_22",
+              "num": 22,
+              "section": "III. WRITING: Sentence Transformation",
+              "type": "transform",
+              "prompt": "Finish the sentence in such a way that it means the same as the one printed before it:<br><b>Last year there was an increase in the number of tourists visiting this area.</b><br>→ The number of __________________________________________.",
+              "model_answers": [
+                "The number of tourists visiting this area increased last year.",
+                "The number of tourists visiting this area went up last year."
+              ],
+              "explanation": "Chuyển từ cấu trúc tồn tại với danh từ: <i>there was an increase in + N</i> sang câu chủ động với động từ: <i>The number of... increased last year.</i>",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_23",
+              "num": 23,
+              "section": "III. WRITING: Sentence Combining",
+              "type": "transform",
+              "prompt": "Combine these pairs of sentences into one, using the given word in brackets:<br><b>My parents were waiting in the queue to buy museum tickets. My brother and I were queuing up for ice cream. (while)</b><br>→ __________________________________________.",
+              "model_answers": [
+                "My parents were waiting in the queue to buy museum tickets while my brother and I were queuing up for ice cream.",
+                "While my parents were waiting in the queue to buy museum tickets, my brother and I were queuing up for ice cream."
+              ],
+              "explanation": "Hai hành động diễn ra đồng thời song song trong quá khứ kết hợp với liên từ <b>while</b>.",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_24",
+              "num": 24,
+              "section": "III. WRITING: Sentence Combining",
+              "type": "transform",
+              "prompt": "Combine these pairs of sentences into one, using the given word in brackets:<br><b>The band was playing their first song. All the lights went out. (when)</b><br>→ __________________________________________.",
+              "model_answers": [
+                "The band was playing their first song when all the lights went out."
+              ],
+              "explanation": "Một hành động đang diễn ra (Past Continuous) thì một hành động khác bất ngờ xen vào (Past Simple với when).",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_25",
+              "num": 25,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>When / Michael Jackson / die / in / 2009 / he / still / work / on / his / dangerous / tour</b>",
+              "model_answers": [
+                "When Michael Jackson died in 2009, he was still working on his Dangerous tour.",
+                "When Michael Jackson died in 2009, he was still working on his dangerous tour."
+              ],
+              "explanation": "Cấu trúc: <i>When + S + V2/ed, S + was/were + still + V-ing.</i> (Khi Michael Jackson qua đời năm 2009, ông vẫn đang làm việc cho chuyến lưu diễn của mình).",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_26",
+              "num": 26,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>People / from / different / cultures / may / have / different / interpretations / of / same / gesture .</b>",
+              "model_answers": [
+                "People from different cultures may have different interpretations of the same gesture."
+              ],
+              "explanation": "Thêm mạo từ xác định <b>the</b> trước cụm 'same gesture': <i>interpretations of the same gesture</i> (cách hiểu khác nhau về cùng một cử chỉ).",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_27",
+              "num": 27,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>So / serious / be / plastic / pollution / that / many / countries / ban / single-use / plastic / bags</b>",
+              "model_answers": [
+                "So serious is plastic pollution that many countries have banned single-use plastic bags.",
+                "So serious was plastic pollution that many countries banned single-use plastic bags.",
+                "So serious is plastic pollution that many countries ban single-use plastic bags."
+              ],
+              "explanation": "Cấu trúc đảo ngữ với <b>So + adj</b>: <i>So + adj + be + S + that + clause</i> (Ô nhiễm nhựa nghiêm trọng đến mức mà nhiều quốc gia đã cấm túi nhựa dùng một lần).",
+              "test_id": "g12_de3"
+            },
+            {
+              "id": "g12_t3_28",
+              "num": 28,
+              "section": "III. WRITING: Sentence Building",
+              "type": "sentence_building",
+              "prompt": "Use the given words or phrases to complete a meaningful sentence:<br><b>Traditional / music / help / maintain / cultural / identity / which / be / important / in / globalised / world</b>",
+              "model_answers": [
+                "Traditional music helps maintain cultural identity, which is important in a globalised world.",
+                "Traditional music helps to maintain cultural identity, which is important in a globalised world.",
+                "Traditional music helps maintain cultural identity, which is important in a globalized world."
+              ],
+              "explanation": "Chủ ngữ số ít 'Traditional music' đi với động từ 'helps maintain'. Mệnh đề quan hệ không xác định 'which is important in a globalised world'.",
+              "test_id": "g12_de3"
+            }
+          ],
+          "passages": {
+            "g12_t1_cloze": {
+              "title": "Medieval Alchemists and the Search for Transmutation",
+              "text": "Through the centuries, the dream of medieval alchemists was to discover how to turn lead and (11)______ \"base\" metals into gold. Some were fakes, but many were learned men with philosophical goals. Their (12)______ was based on the ancient idea that all matter consists of different proportions of just four substances - earth, water, fire, and air. They believed that it was possible to adjust the proportions of the elements that made up lead by chemical means so that it turned into gold, a process called transmutation. Their experiments were concerned with finding the substance - (13)______ they called the philosopher's stone - that, when added to lead, would cause this astonishing change to take place. Alchemists also searched for the elixir of life, a substance that could cure diseases and (14)______ life. They failed on both counts. (15)______, their techniques for preparing and studying chemicals helped lay the foundation for the modern science of chemistry.<br><small>(Adapted from “VSTEP Collection”)</small>"
+            },
+            "g12_t1_comp": {
+              "title": "Globalisation and Cultural Diversity",
+              "text": "As a result of globalisation, the world is becoming more and more connected. This has changed people's way of life, beliefs, art and customs, or their culture, in many respects. Although people's experiences around the world have become very similar, globalisation has also encouraged cultural diversity. Below are some examples.<br><br>Fast food chains and international restaurants have become popular, offering a wide range of dishes and more food choices to local people. For example, here in Viet Nam, we can enjoy Italian pizza or Japanese sushi, in addition to our traditional food. Moreover, some international dishes use local ingredients, which make <b><u>them</u></b> unique and more suitable to local tastes. On the other hand, Vietnamese specialties, such as pho and banh mi, are also gaining popularity worldwide.<br><br>Thanks to globalisation, people can quickly discover new music from all over the world. People nowadays enjoy listening to music from different countries and cultures, and in different languages. For example, American teens are <b><u>captivated</u></b> by K-pop music and dance. There are also many music festivals around the globe that bring artists and music fans together. In today's connected world, it is very common for musicians across the world to work on music projects and share ideas together.<br><br>Globalisation has also impacted fashion by opening it up to a variety of styles and influences from around the world. Cross-cultural styles that blend both traditional and modern elements are on the rise. This presents opportunities for fashion designers to be creative and reflect the cultural richness of the world. It is now easier for people to keep up with fashion trends from different cultures and regions, and express their identities in new and exciting ways.<br><br>In conclusion, globalisation has helped strengthen cultural diversity in the world and made people appreciate different cultures and lifestyles.<br><small>(Adapted from Global Success)</small>"
+            },
+            "g12_t2_cloze": {
+              "title": "Bill Gates — The Visionary Tech Entrepreneur",
+              "text": "Bill Gates is a renowned American entrepreneur, software developer, and philanthropist. He was born on October 28, 1955, in Seattle, Washington. Gates showed a passion for technology from an early age, and by the age of 13, he had already started programming computers. In 1973, Gates enrolled at Harvard University, (11) _________ he later dropped out to pursue his dream of starting a software company. In 1975, he co-founded Microsoft with his childhood friend Paul Allen. The company’s breakthrough came when they developed the MS-DOS operating system for IBM's first personal computer. Microsoft soon dominated the personal computer software (12) ________, making Gates one of the wealthiest individuals in the world.<br><br>Gates served as the CEO of Microsoft until 2000 when he stepped down to focus (13) ________ his philanthropic work through the Bill & Melinda Gates Foundation. The foundation, which he founded with his then-wife Melinda, is one of the largest private charitable foundations in the world. It has donated billions of dollars to various causes, including global health, education, and poverty elimination. Gates has also been a vocal advocate for technological innovation and (14) _________ development, urging the world to tackle climate change and other pressing global issues. (15) _________ his immense wealth and success, Gates is known for his modest lifestyle and commitment to giving back to society. Today, he continues to be actively involved in various initiatives aimed at improving the world for future generations, including economic development.<br><small>(https://www.biography.com/business-figure/bill-gates)</small>"
+            },
+            "g12_t2_comp": {
+              "title": "Earth Hour: A Global Movement for Nature",
+              "text": "Earth Hour is a global event organized by the World Wildlife Fund (WWF) to attract people’s attention to climate change and encourage people to take action to protect the environment. It began in Sydney, Australia, in 2007, and has since grown into a worldwide movement. On a designated day each year, participants are encouraged to turn off their lights and electrical appliances for one hour, from 8:30 to 9:30 PM local time. This symbolic gesture aims to highlight the impact of human activity on the planet and to promote energy conservation.<br><br>During Earth Hour, landmarks and iconic buildings around the world switch off their lights, creating a visual representation of collective commitment to sustainability. The event is not only about reducing energy consumption for one hour but also about inspiring long-term changes in behavior. By participating in Earth Hour, individuals and communities show <b><u>their</u></b> support for efforts to reduce carbon footprints and combat climate change.<br><br>Earth Hour also serves as a platform for discussions about environmental issues and encourages people to adopt more sustainable lifestyles. Through social media and community events, participants share their experiences and ideas for reducing environmental impact. The initiative has grown <b><u>significantly</u></b>, involving millions of people in over 180 countries. Its success demonstrates the power of collective action in addressing global environmental challenges.<br><small>(Adapted from https://www.earthhour.org/)</small>"
+            },
+            "g12_t3_cloze": {
+              "title": "Vietnam’s Rich Cultural Tapestry and Ethnic Harmony",
+              "text": "Vietnam is a country with a rich and diverse culture, shaped by its history and the many ethnic groups that call it home. The majority of the population is made up of the Kinh people, but there are 53 other ethnic minority groups, each with their own unique traditions and customs. The Kinh people are primarily located in the (11) ________, while the minority groups are scattered throughout the mountainous regions. This diverse mix of cultures has created a fascinating tapestry of traditions, languages, and beliefs.<br><br>The Vietnamese culture is deeply rooted in family and community. Traditional families often have three or four generations living under (12) _______ same roof, with a strong emphasis on respect for elders. Confucianism has also played a significant role in shaping Vietnamese society, particularly in the traditional roles of men and women. (13) _______, in recent years, there has been a growing movement towards gender equality, with the government enacting laws to promote more equitable family relations.<br><br>Vietnamese culture is also characterized by a strong emphasis on community and living in harmony (14) ________ nature. This is reflected in the traditional costumes of many ethnic groups, which are often made from natural fibers like silk, cotton, and pineapple yarn. These materials are durable, breathable, and well-suited to the tropical climate of Vietnam.<br><br>Despite the differences between the various ethnic groups, there is a strong sense of solidarity and cooperation among them. This unity has been forged through centuries of shared history, including times of war and peace. The Vietnamese government is working to (15) ________ the gap between the lowland and mountainous communities, striving to ensure that all citizens have access to the same opportunities and resources.<br><small>(Source: https://vietnamembassy-usa.org/culture/ethnic-groups)</small>"
+            },
+            "g12_t3_comp": {
+              "title": "A Brief History of Alexander Hamilton",
+              "text": "Alexander Hamilton was born on January 11, 1755 or 1757 in the West Indies. Due to his mother’s lack of marital status, Hamilton was not seen as a legitimate child and was thus denied access to church schools. When his mother died he was adopted by a merchant in Nevis, where he worked as a clerk. During his time in Nevis, Hamilton continued to write; one of his essays impressed the community leaders so much that they worked together and collected funds to send Hamilton to the colonies.<br><br>Hamilton served in the revolutionary war, during which time he worked his way through battles and earned himself a place aiding General Washington. After the war, Hamilton was <b><u>elected</u></b> into the Congress of the Confederation. He was dissatisfied with the decentralized government that was set up and the inability to raise money from the states to pay the soldiers.<br><br>Hamilton was involved in the Constitution Convention but did not fully agree with the document; despite his disagreements, he promoted the document because he believed <b><u>it</u></b> was a vast improvement over the Articles of Confederation. He pushed the ratification of the Constitution, teaming up with John Jay and James Madison to write the Federalist papers, which were often cited when pushing for the Constitution’s ratification.<br><br>Alexander Hamilton was appointed as the country’s first Secretary of The Treasury on September 11, 1789. During his time as Secretary of the Treasury Hamilton helped write economic policies, develop the funding of state debts, establish the national bank, create a national currency, a system of tariffs, and a peaceful trade relationship with Britain. After his time in politics finished, Alexander Hamilton went back to New York to practice law. He died in a duel with Aaron Burr in Weehawken, New Jersey on July 12, 1804.<br><small>(Source: https://poole.ncsu.edu/)</small>"
+            }
+          }
+        }
+      ]
+    }
+  }
+};

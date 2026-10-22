@@ -74,6 +74,7 @@ async function renderHome() {
 
         <footer class="home-foot">
           <p>Materials follow the 2018 National Curriculum and contribute to the pathway towards Level 3 by the end of upper secondary school.</p>
+          <p><a href="/on-tap-gk1/" style="font-weight:600;">📝 Ôn tập Giữa kì 1 (Khối 10 · 11 · 12 — Tự do làm bài không cần đăng nhập)</a></p>
           <p><a href="/Global_Success_10/">Teacher area · Lecture slides</a></p>
         </footer>
       </div>
