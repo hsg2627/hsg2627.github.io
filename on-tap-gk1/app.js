@@ -122,19 +122,11 @@
           <span><b>Lưu ý học tập:</b> Toàn bộ học liệu và bài tập ôn tập được xây dựng chuẩn mực theo chương trình GDPT 2018. Học sinh có thể tự do luyện tập không cần đăng nhập.</span>
         </div>
 
-        <!-- Hero Section -->
-        <div class="hero-card">
-          <div class="hero-tag">🎯 Ôn Thi Giữa Học Kì 1 (2025–2026)</div>
-          <h2 class="hero-title">Cổng Luyện Tập Tiếng Anh <span class="highlight">Khối 10 · 11 · 12</span></h2>
-          <p class="hero-desc">
-            Hệ thống bài tập & đề thi ôn tập định kì có <b>xác nhận đáp án tức thì</b> và <b>giải thích ngữ pháp chi tiết</b> cho từng câu. Không cần đăng nhập, hoàn toàn miễn phí.
-          </p>
-          <div class="hero-features">
-            <span>✅ Xác nhận Đúng / Sai ngay lập tức</span>
-            <span>💡 Lời giải & Dịch nghĩa chi tiết</span>
-            <span>⏱️ Chế độ Thi thử tính giờ chuẩn A4</span>
-            <span>🖨️ Xuất bản in làm bài trên giấy</span>
-          </div>
+        <!-- Tiêu đề CỔNG LUYỆN TẬP -->
+        <div style="margin-bottom: 1.25rem;">
+          <h2 style="font-size: 1.85rem; font-weight: 800; letter-spacing: -0.02em; text-transform: uppercase; color: var(--text-main);">
+            CỔNG LUYỆN TẬP
+          </h2>
         </div>
 
         <!-- Grade Tabs Navigation -->
